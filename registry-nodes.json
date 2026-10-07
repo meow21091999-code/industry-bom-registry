@@ -1438,6 +1438,219 @@
           "in_universe_coverage": false
         }
       ]
+    },
+    {
+      "slug": "solar-pv-india",
+      "industry": "Solar PV",
+      "scope": "INDIA",
+      "path": "industries/solar-pv-india.html",
+      "analysis_date": "2026-10-07",
+      "universe": "NSE/BSE",
+      "sector": "Renewable Energy",
+      "derived_from": null,
+      "drill_downs": [],
+      "nodes": [
+        {
+          "id": "polysilicon",
+          "name": "Polysilicon",
+          "level": 2,
+          "aliases": [
+            "polysilicon",
+            "solar grade silicon",
+            "silicon feedstock",
+            "solar polysilicon"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": false
+        },
+        {
+          "id": "wafer",
+          "name": "Ingots & Wafers",
+          "level": 2,
+          "aliases": [
+            "wafer",
+            "wafers",
+            "ingot",
+            "ingots",
+            "solar wafer",
+            "silicon wafer",
+            "mono wafer"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "cell",
+          "name": "Solar Cell Fabrication",
+          "level": 2,
+          "aliases": [
+            "solar cell",
+            "solar cells",
+            "cell",
+            "cells",
+            "cell manufacturing",
+            "photovoltaic cell",
+            "PV cell",
+            "TOPCon cell",
+            "PERC cell"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "module",
+          "name": "Module Assembly",
+          "level": 2,
+          "aliases": [
+            "solar module",
+            "solar modules",
+            "module",
+            "modules",
+            "panel",
+            "solar panel",
+            "solar panels",
+            "pv module"
+          ],
+          "priority": "high",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "glass",
+          "name": "Solar Glass",
+          "level": 2,
+          "aliases": [
+            "solar glass",
+            "pv glass",
+            "low iron glass",
+            "textured glass"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "encapsulant",
+          "name": "Encapsulant",
+          "level": 3,
+          "aliases": [
+            "encapsulant",
+            "EVA",
+            "POE",
+            "EPE",
+            "encapsulation film"
+          ],
+          "priority": "medium",
+          "bottleneck": true,
+          "in_universe_coverage": false
+        },
+        {
+          "id": "backsheet",
+          "name": "Backsheet",
+          "level": 3,
+          "aliases": [
+            "backsheet",
+            "back sheet",
+            "backfilm"
+          ],
+          "priority": "medium",
+          "bottleneck": false,
+          "in_universe_coverage": false
+        },
+        {
+          "id": "frame",
+          "name": "Aluminium Frame",
+          "level": 3,
+          "aliases": [
+            "frame",
+            "aluminium frame",
+            "module frame"
+          ],
+          "priority": "medium",
+          "bottleneck": false,
+          "in_universe_coverage": false
+        },
+        {
+          "id": "silverpaste",
+          "name": "Silver Paste & Ribbon",
+          "level": 3,
+          "aliases": [
+            "silver paste",
+            "ribbon",
+            "solder ribbon",
+            "metallisation paste"
+          ],
+          "priority": "medium",
+          "bottleneck": true,
+          "in_universe_coverage": false
+        },
+        {
+          "id": "inverter",
+          "name": "Inverters",
+          "level": 2,
+          "aliases": [
+            "inverter",
+            "inverters",
+            "string inverter",
+            "central inverter",
+            "solar inverter",
+            "hybrid inverter"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "moduleequip",
+          "name": "Cell / Module Production Equipment",
+          "level": 2,
+          "aliases": [
+            "solar manufacturing equipment",
+            "cell line",
+            "module line",
+            "turnkey line",
+            "jinchen",
+            "pecvd",
+            "stringer",
+            "laminator"
+          ],
+          "priority": "medium",
+          "bottleneck": true,
+          "in_universe_coverage": false
+        },
+        {
+          "id": "epc",
+          "name": "Solar EPC",
+          "level": 2,
+          "aliases": [
+            "solar epc",
+            "epc",
+            "solar construction",
+            "solar installer"
+          ],
+          "priority": "medium",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "developer",
+          "name": "Solar Developer / IPP",
+          "level": 2,
+          "aliases": [
+            "solar developer",
+            "ipp",
+            "solar ipp",
+            "renewable developer",
+            "solar park"
+          ],
+          "priority": "medium",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        }
+      ]
     }
   ]
 }
