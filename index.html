@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Industry BOM Registry</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --font-body: 'IBM Plex Sans', system-ui, sans-serif;
+    --font-mono: 'IBM Plex Mono', 'SF Mono', Consolas, monospace;
+    --bg: #eef2f7; --surface: #ffffff; --surface-recessed: #e6ecf3;
+    --border: rgba(15,37,64,0.10); --border-bright: rgba(15,37,64,0.22);
+    --text: #0f2540; --text-dim: #5a7290;
+    --blue: #1e4e8c; --blue-dim: rgba(30,78,140,0.09);
+    --gold: #b8860b; --gold-dim: rgba(184,134,11,0.12);
+    --high: #c0392b; --high-dim: rgba(192,57,43,0.10);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0a1626; --surface: #10233b; --surface-recessed: #0c1c30;
+      --border: rgba(255,255,255,0.09); --border-bright: rgba(255,255,255,0.20);
+      --text: #dbe6f3; --text-dim: #8ba3c0;
+      --blue: #5b9bd5; --blue-dim: rgba(91,155,213,0.16);
+      --gold: #e0b84c; --gold-dim: rgba(224,184,76,0.16);
+      --high: #ef6a5b; --high-dim: rgba(239,106,91,0.16);
+    }
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    background-color: var(--bg);
+    background-image: linear-gradient(var(--border) 1px, transparent 1px), linear-gradient(90deg, var(--border) 1px, transparent 1px);
+    background-size: 28px 28px;
+    color: var(--text); font-family: var(--font-body); padding: 48px 32px 72px; min-height:100vh;
+    overflow-wrap: break-word; line-height: 1.55;
+  }
+  @keyframes fadeUp { from { opacity:0; transform:translateY(12px);} to {opacity:1; transform:translateY(0);} }
+  .animate { animation: fadeUp 0.45s ease-out both; animation-delay: calc(var(--i,0)*0.06s); }
+  @media (prefers-reduced-motion: reduce){ *{animation-duration:0.01ms!important;animation-delay:0ms!important;} }
+  .container { max-width: 940px; margin: 0 auto; }
+  .eyebrow { font-family: var(--font-mono); font-size: 11px; font-weight:600; letter-spacing:2px; text-transform:uppercase; color: var(--gold); margin-bottom: 12px; }
+  h1 { font-size: clamp(28px,4vw,40px); font-weight:700; letter-spacing:-0.8px; line-height:1.1; }
+  .subtitle { font-family: var(--font-mono); font-size: 12px; color: var(--text-dim); margin-top: 10px; }
+  .masthead { border-bottom: 2px solid var(--blue); padding-bottom: 22px; margin-bottom: 32px; }
+
+  .group-label { font-family: var(--font-mono); font-size: 11px; font-weight:600; letter-spacing:1.5px; text-transform:uppercase; color: var(--text-dim); margin: 30px 0 12px; display:flex; align-items:center; gap:10px; }
+  .group-label::after { content:''; flex:1; height:1px; background: var(--border-bright); }
+
+  a.entry {
+    display: block; text-decoration: none; color: inherit; background: var(--surface);
+    border: 1px solid var(--border); border-left: 3px solid var(--blue); border-radius: 10px;
+    padding: 18px 20px; margin-bottom: 12px; transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+  }
+  a.entry:hover { transform: translateY(-2px); box-shadow: 0 6px 18px rgba(15,37,64,0.10); border-color: var(--border-bright); border-left-color: var(--gold); }
+  .entry__name { font-size: 18px; font-weight: 700; letter-spacing:-0.3px; }
+  .entry__scope { font-family: var(--font-mono); font-size: 11px; color: var(--gold); margin-left: 10px; font-weight:600; }
+  .entry__desc { font-size: 13px; color: var(--text-dim); margin-top: 6px; }
+  .entry__meta { display:flex; flex-wrap:wrap; gap:7px; margin-top: 12px; }
+  .chip { font-family: var(--font-mono); font-size: 10px; padding: 3px 9px; border-radius: 4px; background: var(--blue-dim); color: var(--blue); border:1px solid var(--border); }
+  .chip--gold { background: var(--gold-dim); color: var(--gold); }
+
+  .note { background: var(--surface); border:1px solid var(--border); border-left:3px solid var(--gold); border-radius:0 10px 10px 0; padding: 16px 20px; font-size: 13px; line-height:1.65; color: var(--text-dim); margin-top: 36px; }
+  .note strong { color: var(--text); }
+  .foot { font-family: var(--font-mono); font-size: 10.5px; color: var(--text-dim); margin-top: 28px; line-height:1.7; }
+</style>
+</head>
+<body>
+<div class="container">
+  <header class="masthead animate" style="--i:0">
+    <div class="eyebrow">Sarvam &middot; Industrial BOM &amp; Value-Chain Dissection Engine</div>
+    <h1>Industry BOM Registry</h1>
+    <div class="subtitle">One page per industry analysed &middot; BOM tree + value-chain flowchart + click-through company map</div>
+  </header>
+
+  <div class="animate" style="--i:1">
+    <div class="group-label">Power &amp; Electrical Infrastructure</div>
+
+    <a class="entry" href="industries/power-transmission-india.html">
+      <div class="entry__name">Power Transmission <span class="entry__scope">INDIA</span></div>
+      <div class="entry__desc">Bulk electricity transmission (220&nbsp;kV and above) — overhead lines, substation equipment, HVDC and power electronics, cables, EPC and the regulated-return developer layer.</div>
+      <div class="entry__meta">
+        <span class="chip chip--gold">Analysis date: 2026-10-07</span>
+        <span class="chip">Sector: Power &amp; Electrical Infrastructure</span>
+        <span class="chip">Scope: India</span>
+        <span class="chip">Universe: NSE / BSE</span>
+        <span class="chip">Interest: investment research</span>
+        <span class="chip">Phase 1 — breadth-first</span>
+      </div>
+    </a>
+  </div>
+
+  <div class="note animate" style="--i:2">
+    <strong>How to read an entry.</strong> Each page opens with a KPI strip, then a hierarchical <strong>BOM tree</strong> (Level 0 → systems → components, HIGH-priority nodes emphasised), a linear <strong>value-chain ladder</strong> (raw material → aftermarket, with supplier tiers), a <strong>click-through company map</strong> (click any node to see its listed companies, exposure type and evidence), and a company × node matrix. Entry identity is <strong>industry + geographic scope</strong>; the same industry analysed for a different scope gets its own page rather than overwriting this one.
+  </div>
+
+  <p class="foot animate" style="--i:3">
+    Self-contained pages &middot; no build step &middot; served via GitHub Pages. Numbers inside each entry are date-stamped to that entry's analysis date; time-sensitive facts should be re-checked before use.
+  </p>
+</div>
+</body>
+</html>

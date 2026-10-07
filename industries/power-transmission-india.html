@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>India Power Transmission — BOM, Value Chain & Company Map</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --font-body: 'IBM Plex Sans', system-ui, sans-serif;
+    --font-mono: 'IBM Plex Mono', 'SF Mono', Consolas, monospace;
+
+    --bg: #eef2f7;
+    --surface: #ffffff;
+    --surface-elevated: #ffffff;
+    --surface-recessed: #e6ecf3;
+    --border: rgba(15, 37, 64, 0.10);
+    --border-bright: rgba(15, 37, 64, 0.22);
+    --text: #0f2540;
+    --text-dim: #5a7290;
+
+    --blue: #1e4e8c;
+    --blue-dim: rgba(30, 78, 140, 0.09);
+    --gold: #b8860b;
+    --gold-dim: rgba(184, 134, 11, 0.12);
+    --high: #c0392b;
+    --high-dim: rgba(192, 57, 43, 0.10);
+    --med: #d4a73a;
+    --med-dim: rgba(212, 167, 58, 0.14);
+    --low: #7f8c8d;
+    --low-dim: rgba(127, 140, 141, 0.12);
+    --green: #1a7f5a;
+    --green-dim: rgba(26, 127, 90, 0.11);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0a1626;
+      --surface: #10233b;
+      --surface-elevated: #16304f;
+      --surface-recessed: #0c1c30;
+      --border: rgba(255, 255, 255, 0.09);
+      --border-bright: rgba(255, 255, 255, 0.20);
+      --text: #dbe6f3;
+      --text-dim: #8ba3c0;
+
+      --blue: #5b9bd5;
+      --blue-dim: rgba(91, 155, 213, 0.16);
+      --gold: #e0b84c;
+      --gold-dim: rgba(224, 184, 76, 0.16);
+      --high: #ef6a5b;
+      --high-dim: rgba(239, 106, 91, 0.16);
+      --med: #e0b84c;
+      --med-dim: rgba(224, 184, 76, 0.16);
+      --low: #93a3b5;
+      --low-dim: rgba(147, 163, 181, 0.14);
+      --green: #4cc79a;
+      --green-dim: rgba(76, 199, 154, 0.16);
+    }
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  .grid > *, .flex > *, [style*="display: grid"] > *, [style*="display: flex"] > * { min-width: 0; }
+
+  body {
+    background-color: var(--bg);
+    background-image:
+      linear-gradient(var(--border) 1px, transparent 1px),
+      linear-gradient(90deg, var(--border) 1px, transparent 1px);
+    background-size: 28px 28px;
+    color: var(--text);
+    font-family: var(--font-body);
+    padding: 40px 32px 64px;
+    min-height: 100vh;
+    overflow-wrap: break-word;
+    line-height: 1.55;
+  }
+
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+  .animate { animation: fadeUp 0.45s ease-out both; animation-delay: calc(var(--i, 0) * 0.05s); }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation-duration: 0.01ms !important; animation-delay: 0ms !important; transition-duration: 0.01ms !important; }
+  }
+
+  .container { max-width: 1180px; margin: 0 auto; }
+
+  /* ===== HEADER ===== */
+  .masthead { border-bottom: 2px solid var(--blue); padding-bottom: 20px; margin-bottom: 28px; }
+  .eyebrow {
+    font-family: var(--font-mono); font-size: 11px; font-weight: 600; letter-spacing: 2px;
+    text-transform: uppercase; color: var(--gold); margin-bottom: 10px;
+  }
+  h1 { font-size: clamp(26px, 4vw, 40px); font-weight: 700; letter-spacing: -0.8px; line-height: 1.1; text-wrap: balance; }
+  h1 span { color: var(--blue); }
+  .subtitle { font-family: var(--font-mono); font-size: 12px; color: var(--text-dim); margin-top: 10px; }
+
+  .scope-bar { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
+  .chip {
+    font-family: var(--font-mono); font-size: 10.5px; font-weight: 500; letter-spacing: 0.4px;
+    padding: 4px 10px; border-radius: 4px; background: var(--blue-dim); color: var(--blue);
+    border: 1px solid var(--border);
+  }
+  .chip--gold { background: var(--gold-dim); color: var(--gold); }
+  .chip--high { background: var(--high-dim); color: var(--high); }
+
+  /* ===== SECTION ===== */
+  section { margin-bottom: 44px; }
+  .sec-head { display: flex; align-items: baseline; gap: 14px; margin-bottom: 16px; border-bottom: 1px solid var(--border-bright); padding-bottom: 10px; }
+  .sec-num {
+    font-family: var(--font-mono); font-size: 12px; font-weight: 600; color: var(--gold);
+    border: 1px solid var(--gold); border-radius: 4px; padding: 2px 8px; flex-shrink: 0;
+  }
+  .sec-title { font-size: 20px; font-weight: 600; letter-spacing: -0.3px; }
+  .sec-note { font-family: var(--font-mono); font-size: 11px; color: var(--text-dim); margin-left: auto; text-align: right; }
+
+  /* ===== KPI ===== */
+  .kpi-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(165px, 1fr)); gap: 14px; }
+  .kpi {
+    background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 16px 18px;
+    border-top: 3px solid var(--blue);
+  }
+  .kpi--gold { border-top-color: var(--gold); }
+  .kpi--high { border-top-color: var(--high); }
+  .kpi__val { font-size: clamp(20px, 2.4vw, 27px); font-weight: 700; letter-spacing: -0.8px; font-variant-numeric: tabular-nums; line-height: 1.1; }
+  .kpi__label { font-family: var(--font-mono); font-size: 9.5px; font-weight: 600; text-transform: uppercase; letter-spacing: 1.2px; color: var(--text-dim); margin-top: 7px; }
+  .kpi__sub { font-size: 11px; color: var(--text-dim); margin-top: 3px; }
+
+  /* ===== MERMAID ===== */
+  .diagram-shell { position: relative; }
+  .diagram-shell__hint { font-family: var(--font-mono); font-size: 11px; color: var(--text-dim); margin-bottom: 8px; opacity: 0.8; }
+  .mermaid-wrap {
+    position: relative; background: var(--surface); border: 1px solid var(--border); border-radius: 12px;
+    padding: 28px 20px; overflow: auto; margin-bottom: 8px; display: flex; justify-content: center; align-items: center;
+    min-height: 360px; cursor: grab;
+    padding: 20px 16px;
+  }
+  .mermaid-wrap.is-panning { cursor: grabbing; user-select: none; }
+  .zoom-controls {
+    position: absolute; top: 8px; right: 8px; display: flex; gap: 2px; z-index: 10;
+    background: var(--surface); border: 1px solid var(--border); border-radius: 6px; padding: 2px;
+  }
+  .zoom-controls button {
+    width: 28px; height: 28px; border: none; background: transparent; color: var(--text-dim);
+    font-family: var(--font-mono); font-size: 14px; cursor: pointer; border-radius: 4px;
+    display: flex; align-items: center; justify-content: center; transition: background 0.15s ease, color 0.15s ease;
+  }
+  .zoom-controls button:hover { background: var(--border); color: var(--text); }
+  .mermaid-viewport { position: relative; overflow: hidden; width: 100%; height: 100%; min-height: 220px; }
+  .mermaid-canvas { position: absolute; top: 0; left: 0; }
+  .zoom-label { font-family: var(--font-mono); font-size: 10px; color: var(--text-dim); padding: 0 6px; white-space: nowrap; }
+  .mermaid .nodeLabel { font-family: var(--font-body) !important; font-size: 15px !important; }
+  .mermaid .edgeLabel { font-family: var(--font-mono) !important; font-size: 12px !important; }
+  .mermaid .node rect, .mermaid .node polygon { stroke-width: 1.6px !important; }
+
+  .legend { display: flex; gap: 18px; flex-wrap: wrap; margin-top: 12px; }
+  .legend-item { display: flex; align-items: center; gap: 6px; font-family: var(--font-mono); font-size: 11px; color: var(--text-dim); }
+  .legend-swatch { width: 12px; height: 12px; border-radius: 3px; }
+
+  /* ===== VALUE LADDER ===== */
+  .ladder { display: flex; flex-direction: column; gap: 0; }
+  .rung {
+    display: grid; grid-template-columns: 150px 1fr; gap: 16px; align-items: center;
+    padding: 12px 16px; border: 1px solid var(--border); border-bottom: none; background: var(--surface);
+  }
+  .rung:first-child { border-radius: 10px 10px 0 0; }
+  .rung:last-child { border-radius: 0 0 10px 10px; border-bottom: 1px solid var(--border); }
+  .rung > * { min-width: 0; overflow-wrap: break-word; }
+  .rung__label { font-family: var(--font-mono); font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; }
+  .rung__body { font-size: 13px; color: var(--text-dim); }
+  .rung__body b { color: var(--text); font-weight: 600; }
+  .rung--1 .rung__label { color: var(--low); }
+  .rung--2 .rung__label { color: var(--blue); }
+  .rung--3 .rung__label { color: var(--gold); }
+  .rung--4 .rung__label { color: var(--high); }
+
+  /* ===== INTERACTIVE MAP ===== */
+  .map-layout { display: grid; grid-template-columns: 1fr 380px; gap: 18px; align-items: start; }
+  .map-layout > *, .kpi-row > *, .map-nodes > *, .bn > * { min-width: 0; overflow-wrap: break-word; }
+  .map-nodes { display: grid; grid-template-columns: repeat(auto-fill, minmax(215px, 1fr)); gap: 10px; }
+  .node-btn {
+    text-align: left; background: var(--surface); border: 1px solid var(--border); border-radius: 9px;
+    padding: 12px 14px; cursor: pointer; font-family: var(--font-body); color: var(--text);
+    transition: border-color 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease; position: relative;
+  }
+  .node-btn:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(15,37,64,0.10); border-color: var(--border-bright); }
+  .node-btn.is-active { border-color: var(--blue); box-shadow: 0 0 0 1px var(--blue) inset; }
+  .node-btn__name { font-size: 13px; font-weight: 600; line-height: 1.3; display: flex; align-items: center; gap: 7px; }
+  .node-btn__meta { font-family: var(--font-mono); font-size: 10px; color: var(--text-dim); margin-top: 5px; display: flex; gap: 8px; flex-wrap: wrap; }
+  .dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; display: inline-block; }
+  .dot--high { background: var(--high); }
+  .dot--med { background: var(--med); }
+  .dot--low { background: var(--low); }
+  .dot--none { background: transparent; border: 1.5px dashed var(--text-dim); }
+  .flag { font-family: var(--font-mono); font-size: 9px; padding: 1px 5px; border-radius: 3px; }
+  .flag--gap { background: var(--high-dim); color: var(--high); }
+  .flag--bott { background: var(--med-dim); color: var(--gold); }
+
+  .map-panel {
+    background: var(--surface); border: 1px solid var(--border-bright); border-radius: 12px;
+    padding: 20px; position: sticky; top: 20px; min-height: 260px;
+  }
+  .map-panel__kicker { font-family: var(--font-mono); font-size: 10px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: var(--gold); margin-bottom: 8px; }
+  .map-panel__title { font-size: 17px; font-weight: 700; line-height: 1.25; margin-bottom: 6px; }
+  .map-panel__fn { font-size: 12.5px; color: var(--text-dim); margin-bottom: 14px; line-height: 1.55; }
+  .map-panel__row { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 14px; }
+  .mini { font-family: var(--font-mono); font-size: 10px; padding: 2px 7px; border-radius: 4px; background: var(--surface-recessed); color: var(--text-dim); border: 1px solid var(--border); }
+
+  .co { border-top: 1px solid var(--border); padding: 11px 0; }
+  .co:first-of-type { border-top: none; }
+  .co__name { font-size: 13.5px; font-weight: 600; }
+  .co__ticker { font-family: var(--font-mono); font-size: 10.5px; color: var(--blue); margin-left: 6px; }
+  .co__tags { display: flex; gap: 6px; margin: 5px 0; flex-wrap: wrap; }
+  .tag { font-family: var(--font-mono); font-size: 9.5px; font-weight: 500; padding: 2px 7px; border-radius: 4px; }
+  .tag--direct { background: var(--green-dim); color: var(--green); }
+  .tag--indirect { background: var(--blue-dim); color: var(--blue); }
+  .tag--supplier { background: var(--gold-dim); color: var(--gold); }
+  .tag--conglomerate { background: var(--low-dim); color: var(--low); }
+  .co__mat { font-size: 11.5px; color: var(--text-dim); line-height: 1.5; }
+  .co__ev { font-size: 10.5px; color: var(--text-dim); font-style: italic; margin-top: 3px; }
+
+  .nocov { background: var(--high-dim); border: 1px dashed var(--high); border-radius: 8px; padding: 12px 14px; font-size: 12.5px; line-height: 1.55; }
+  .nocov b { color: var(--high); }
+  .nocov .near { color: var(--text-dim); margin-top: 6px; display: block; font-size: 11.5px; }
+
+  /* ===== TABLE ===== */
+  .table-wrap { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; }
+  .table-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  table.data { width: 100%; border-collapse: collapse; font-size: 12.5px; }
+  table.data th {
+    background: var(--surface-recessed); font-family: var(--font-mono); font-size: 10px; font-weight: 600;
+    text-transform: uppercase; letter-spacing: 0.8px; color: var(--text-dim); text-align: left; padding: 10px 12px;
+    border-bottom: 2px solid var(--border-bright); white-space: nowrap;
+  }
+  table.data td { padding: 9px 12px; border-bottom: 1px solid var(--border); vertical-align: middle; }
+  table.data tbody tr:nth-child(even) { background: var(--blue-dim); }
+  table.data tbody tr:hover { background: var(--border); }
+  table.data td.c { text-align: center; font-family: var(--font-mono); font-weight: 600; }
+  .cell-d { color: var(--green); }
+  .cell-i { color: var(--blue); }
+  .cell-s { color: var(--gold); }
+  .cell-c { color: var(--low); }
+  .cell-x { color: var(--text-dim); opacity: 0.4; }
+
+  /* ===== BOTTLENECK PAIRS ===== */
+  .bn { display: grid; grid-template-columns: 1fr 1fr; gap: 0; border: 1px solid var(--border); border-radius: 10px; overflow: hidden; margin-bottom: 12px; }
+  .bn__risk { background: var(--high-dim); padding: 13px 16px; border-right: 1px solid var(--border); }
+  .bn__opp { background: var(--green-dim); padding: 13px 16px; }
+  .bn__h { font-family: var(--font-mono); font-size: 9.5px; font-weight: 600; letter-spacing: 1.2px; text-transform: uppercase; margin-bottom: 6px; }
+  .bn__risk .bn__h { color: var(--high); }
+  .bn__opp .bn__h { color: var(--green); }
+  .bn p { font-size: 12.5px; line-height: 1.55; }
+  .bn__title { font-weight: 600; color: var(--text); display: block; margin-bottom: 4px; font-size: 13px; }
+
+  .footnote { font-family: var(--font-mono); font-size: 10.5px; color: var(--text-dim); line-height: 1.7; margin-top: 8px; }
+  .callout { background: var(--surface); border: 1px solid var(--border); border-left: 3px solid var(--gold); border-radius: 0 10px 10px 0; padding: 15px 20px; font-size: 13px; line-height: 1.6; color: var(--text-dim); }
+  .callout strong { color: var(--text); }
+
+  @media (max-width: 900px) {
+    .map-layout { grid-template-columns: 1fr; }
+    .map-panel { position: static; }
+    .bn { grid-template-columns: 1fr; }
+    .bn__risk { border-right: none; border-bottom: 1px solid var(--border); }
+  }
+  @media (max-width: 600px) {
+    body { padding: 20px 14px 48px; }
+    .rung { grid-template-columns: 1fr; gap: 4px; }
+  }
+</style>
+</head>
+<body>
+<div style="max-width:1180px;margin:0 auto 18px;font-family:'IBM Plex Mono',monospace;font-size:12px;">
+  <a href="../index.html" style="color:var(--blue);text-decoration:none;border-bottom:1px solid var(--border);">&larr; Industry BOM Registry</a>
+  <span style="color:var(--text-dim);">&nbsp;/&nbsp;Power Transmission &mdash; India</span>
+</div>
+<div class="container">
+
+  <header class="masthead animate" style="--i:0">
+    <div class="eyebrow">Industrial BOM &amp; Value-Chain Dissection</div>
+    <h1>India <span>Power Transmission</span></h1>
+    <div class="subtitle">Bulk electricity transmission (220&nbsp;kV and above) &middot; BOM tree &middot; value-chain ladder &middot; NSE/BSE company map</div>
+    <div class="scope-bar">
+      <span class="chip chip--gold">Analysis date: 2026-10-07</span>
+      <span class="chip">Scope: INDIA</span>
+      <span class="chip">Interest: investment research</span>
+      <span class="chip">Universe: NSE / BSE</span>
+      <span class="chip chip--high">India lens: ON</span>
+      <span class="chip">Materiality: all exposures</span>
+      <span class="chip">Phase 1 — breadth-first</span>
+    </div>
+  </header>
+
+  <!-- KPI -->
+  <section class="animate" style="--i:1">
+    <div class="kpi-row">
+      <div class="kpi kpi--gold">
+        <div class="kpi__val">₹9.16 L cr</div>
+        <div class="kpi__label">NEP 2022–32 capex</div>
+        <div class="kpi__sub">~₹6.60 L cr on ISTS</div>
+      </div>
+      <div class="kpi">
+        <div class="kpi__val">1.41 M MVA</div>
+        <div class="kpi__label">Transformation capacity</div>
+        <div class="kpi__sub">220 kV+ as of Dec 2025</div>
+      </div>
+      <div class="kpi">
+        <div class="kpi__val">4.99 L ckm</div>
+        <div class="kpi__label">Transmission lines</div>
+        <div class="kpi__sub">220 kV+ as of Dec 2025</div>
+      </div>
+      <div class="kpi kpi--high">
+        <div class="kpi__val">~90%</div>
+        <div class="kpi__label">CRGO steel imported</div>
+        <div class="kpi__sub">Domestic ~10–12% of demand</div>
+      </div>
+      <div class="kpi kpi--high">
+        <div class="kpi__val">9–18 mo</div>
+        <div class="kpi__label">Transformer lead time</div>
+        <div class="kpi__sub">Was 4–6 months</div>
+      </div>
+      <div class="kpi">
+        <div class="kpi__val">~₹2.22 L cr</div>
+        <div class="kpi__label">TBCB under execution</div>
+        <div class="kpi__sub">82 projects, Jan 2026</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 1. BOM TREE -->
+  <section class="animate" style="--i:2">
+    <div class="sec-head">
+      <span class="sec-num">01</span>
+      <span class="sec-title">Master BOM Tree</span>
+      <span class="sec-note">Level 0 → systems → key components<br>HIGH-priority nodes emphasised</span>
+    </div>
+    <section class="diagram-shell">
+      <p class="diagram-shell__hint">Ctrl/Cmd + wheel to zoom. Drag to pan when zoomed. Double-click to fit.</p>
+      <div class="mermaid-wrap">
+        <div class="zoom-controls">
+          <button type="button" data-action="zoom-in" title="Zoom in">+</button>
+          <button type="button" data-action="zoom-out" title="Zoom out">&minus;</button>
+          <button type="button" data-action="zoom-fit" title="Smart fit">&#8634;</button>
+          <button type="button" data-action="zoom-one" title="1:1 zoom">1:1</button>
+          <button type="button" data-action="zoom-expand" title="Open full size">&#x26F6;</button>
+          <span class="zoom-label">Loading...</span>
+        </div>
+        <div class="mermaid-viewport">
+          <div class="mermaid mermaid-canvas"></div>
+        </div>
+      </div>
+      <script type="text/plain" class="diagram-source">
+        graph TD
+          L0["<b>Level 0</b><br/>Bulk Power Transmission<br/>(India)"]
+          L0 --> A["A · Overhead Line"]
+          L0 --> B["B · Substation Equipment"]
+          L0 --> C["C · HVDC &amp; Power Electronics"]
+          L0 --> D["D · Underground / Submarine Cable"]
+          L0 --> E["E · Support Systems"]
+          L0 --> F["F · Software / Control"]
+
+          A --> A1["Towers &amp; Structures"]
+          A --> A2["Conductors"]
+          A --> A3["Insulators"]
+          A --> A4["Earthwire / OPGW"]
+
+          B --> B1["Power Transformers / ICTs"]
+          B --> B2["Shunt &amp; Series Reactors"]
+          B --> B3["Switchgear — GIS / AIS"]
+          B --> B4["Instrument Transformers"]
+          B --> B5["Protection &amp; Automation"]
+
+          C --> C1["HVDC Converter Station"]
+          C --> C2["STATCOM / FACTS"]
+          C --> C3["Synchronous Condensers"]
+
+          C1 --> C1a["Converter Valves<br/>(thyristor / IGBT)"]
+          C1 --> C1b["Converter Transformers"]
+          C1 --> C1c["Control &amp; Protection"]
+
+          B1 --> B1a["CRGO Steel Core"]
+          B1 --> B1b["Cu / CTC Winding"]
+          B1 --> B1c["Transformer Oil"]
+          B1 --> B1d["Bushings / Tap Changer"]
+
+          A2 --> A2a["ACSR / AAAC / HTLS"]
+
+          classDef high fill:#c0392b,stroke:#8e2b20,color:#fff,stroke-width:2px;
+          classDef med fill:#d4a73a,stroke:#a37f22,color:#241a05,stroke-width:1.5px;
+          classDef low fill:#e6ecf3,stroke:#b8c6d6,color:#5a7290,stroke-width:1px;
+          classDef root fill:#1e4e8c,stroke:#12335c,color:#fff,stroke-width:2px;
+
+          class L0 root;
+          class A1,A2,A3,B1,B2,B3,C1,C2,C3,B1a,B1b high;
+          class A,B,C,A4,B4,B5,C1a,C1b,C1c,D,E,F,A2a med;
+          class B1c,B1d low;
+      </script>
+    </section>
+    <div class="legend">
+      <div class="legend-item"><div class="legend-swatch" style="background:var(--high)"></div> HIGH priority — bottleneck / import-critical</div>
+      <div class="legend-item"><div class="legend-swatch" style="background:var(--med)"></div> MEDIUM priority</div>
+      <div class="legend-item"><div class="legend-swatch" style="background:var(--low)"></div> LOW priority — name-only</div>
+      <div class="legend-item"><div class="legend-swatch" style="background:var(--blue)"></div> Root node</div>
+    </div>
+  </section>
+
+  <!-- 2. VALUE LADDER -->
+  <section class="animate" style="--i:3">
+    <div class="sec-head">
+      <span class="sec-num">02</span>
+      <span class="sec-title">Value-Chain Ladder &amp; Supplier Tiers</span>
+      <span class="sec-note">raw material → aftermarket &middot; Tier-4 → OEM</span>
+    </div>
+    <div class="ladder">
+      <div class="rung rung--1">
+        <div class="rung__label">Tier 4 · Raw</div>
+        <div class="rung__body"><b>CRGO steel</b> · copper · aluminium · steel · transformer oil · porcelain raw · power semiconductors <span class="mini">JSW-JFE · Hindalco · Vedanta · Apar · global mills</span></div>
+      </div>
+      <div class="rung rung--2">
+        <div class="rung__label">Tier 3 · Specialty</div>
+        <div class="rung__body"><b>CTC/PICC conductor</b> · pressboard · bushings · tap changers · converter valves · IGBT / thyristor modules · HV capacitors</div>
+      </div>
+      <div class="rung rung--3">
+        <div class="rung__label">Tier 2 · Component</div>
+        <div class="rung__body"><b>Transformers</b> · reactors · GIS/AIS · insulators · conductors · cables · towers · instrument transformers · HVDC / STATCOM equipment</div>
+      </div>
+      <div class="rung rung--4">
+        <div class="rung__label">Tier 1 · System/EPC</div>
+        <div class="rung__body"><b>Substation integrators &amp; EPC</b> — KEC · KPIL · Transrail · BHEL · equipment OEMs</div>
+      </div>
+      <div class="rung rung--4">
+        <div class="rung__label">OEM / Developer</div>
+        <div class="rung__body"><b>PGCIL</b> · <b>Adani Energy Solutions</b> · state transmission utilities · self-developing OEMs <span class="mini">25–35 yr regulated / TBCB annuity</span></div>
+      </div>
+      <div class="rung rung--1">
+        <div class="rung__label">Aftermarket</div>
+        <div class="rung__body">O&amp;M · spares · condition monitoring · HVDC refurbishment · InvIT asset recycling <span class="mini">IndiGrid · Resonia</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. INTERACTIVE COMPANY MAP -->
+  <section class="animate" style="--i:4">
+    <div class="sec-head">
+      <span class="sec-num">03</span>
+      <span class="sec-title">Click-Through Company Map</span>
+      <span class="sec-note">click a node → its NSE/BSE companies<br>gaps shown explicitly</span>
+    </div>
+    <div class="map-layout">
+      <div class="map-nodes" id="mapNodes"></div>
+      <aside class="map-panel" id="mapPanel" aria-live="polite"></aside>
+    </div>
+  </section>
+
+  <!-- 4. MATRIX -->
+  <section class="animate" style="--i:5">
+    <div class="sec-head">
+      <span class="sec-num">04</span>
+      <span class="sec-title">Company × Node Matrix</span>
+      <span class="sec-note">D direct · I indirect · S supplier · C conglomerate · — none</span>
+    </div>
+    <div class="table-wrap">
+      <div class="table-scroll">
+        <table class="data">
+          <thead>
+            <tr>
+              <th>Company</th><th>EHV Txfr</th><th>HVDC</th><th>STATCOM/SynCon</th><th>GIS/AIS</th>
+              <th>Conductor</th><th>Insulator</th><th>Towers/EPC</th><th>Cable</th><th>Developer</th><th>Txfr oil</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Hitachi Energy India <small>POWERINDIA</small></td><td class="c cell-d">D</td><td class="c cell-d">D</td><td class="c cell-i">I</td><td class="c cell-d">D</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-i">I</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td></tr>
+            <tr><td>Siemens Energy India</td><td class="c cell-d">D</td><td class="c cell-d">D</td><td class="c cell-d">D</td><td class="c cell-d">D</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td></tr>
+            <tr><td>GE Vernova T&amp;D India</td><td class="c cell-d">D</td><td class="c cell-d">D</td><td class="c cell-d">D</td><td class="c cell-d">D</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td></tr>
+            <tr><td>CG Power <small>CGPOWER</small></td><td class="c cell-d">D</td><td class="c cell-x">—</td><td class="c cell-i">I</td><td class="c cell-d">D</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td></tr>
+            <tr><td>Atlanta Electricals <small>ATLANTAELE</small></td><td class="c cell-d">D</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td></tr>
+            <tr><td>Voltamp Transformers</td><td class="c cell-d">D</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td></tr>
+            <tr><td>Transformers &amp; Rectifiers <small>TARIL</small></td><td class="c cell-d">D</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td></tr>
+            <tr><td>Quality Power</td><td class="c cell-d">D</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-i">I</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td></tr>
+            <tr><td>BHEL <small>BHEL</small></td><td class="c cell-d">D</td><td class="c cell-d">D</td><td class="c cell-d">D</td><td class="c cell-d">D</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-i">I</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td></tr>
+            <tr><td>Apar Industries <small>APARINDS</small></td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-d">D</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-i">I</td><td class="c cell-x">—</td><td class="c cell-d">D</td></tr>
+            <tr><td>Sterlite Electric <small>IPO filed</small></td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-d">D</td><td class="c cell-x">—</td><td class="c cell-i">I</td><td class="c cell-d">D</td><td class="c cell-x">—</td><td class="c cell-x">—</td></tr>
+            <tr><td>KEC International <small>KEC</small></td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-i">I</td><td class="c cell-x">—</td><td class="c cell-d">D</td><td class="c cell-i">I</td><td class="c cell-x">—</td><td class="c cell-x">—</td></tr>
+            <tr><td>Kalpataru Projects <small>KPIL</small></td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-d">D</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td></tr>
+            <tr><td>Transrail Lighting</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-d">D</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td></tr>
+            <tr><td>Polycab <small>POLYCAB</small></td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-d">D</td><td class="c cell-x">—</td><td class="c cell-x">—</td></tr>
+            <tr><td>KEI Industries <small>KEI</small></td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-i">I</td><td class="c cell-d">D</td><td class="c cell-x">—</td><td class="c cell-x">—</td></tr>
+            <tr><td>R R Kabel <small>RRL</small></td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-d">D</td><td class="c cell-x">—</td><td class="c cell-x">—</td></tr>
+            <tr><td>Grasim <small>AB Insulators div.</small></td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-c">C</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td></tr>
+            <tr><td>Power Grid Corp <small>POWERGRID</small></td><td class="c cell-x">—</td><td class="c cell-i">I</td><td class="c cell-i">I</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-d">D</td><td class="c cell-x">—</td></tr>
+            <tr><td>Adani Energy Solutions <small>ADANIENSOL</small></td><td class="c cell-x">—</td><td class="c cell-i">I</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-d">D</td><td class="c cell-x">—</td></tr>
+            <tr><td>IndiGrid <small>INDIGRID</small></td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-d">D</td><td class="c cell-x">—</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <p class="footnote">D direct · I indirect · S supplier · C conglomerate/minor segment · — no exposure. Listing status current as of analysis date. Every mapping is evidence-based; materiality detail is in the click-through panel above.</p>
+  </section>
+
+  <!-- 5. BOTTLENECKS -->
+  <section class="animate" style="--i:6">
+    <div class="sec-head">
+      <span class="sec-num">05</span>
+      <span class="sec-title">Bottlenecks — Risk &amp; Opportunity</span>
+      <span class="sec-note">dual-readable: every risk is a substitution play</span>
+    </div>
+    <div class="bn">
+      <div class="bn__risk"><div class="bn__h">Risk</div><p><span class="bn__title">CRGO electrical steel</span>~90% imported; a live anti-dumping probe could raise transformer costs; BIS-licence lapses have cut supply. Resilience: months–years.</p></div>
+      <div class="bn__opp"><div class="bn__h">Opportunity</div><p><span class="bn__title">Domestic GOES</span>JSW-JFE Nashik scaling to ~3,50,000 tpa by FY2028; a second line would be a protected import-substitution play.</p></div>
+    </div>
+    <div class="bn">
+      <div class="bn__risk"><div class="bn__h">Risk</div><p><span class="bn__title">EHV transformer capacity</span>Lead times 4–6 → 9–18 months; some DISCOM categories 12–18 months; Tamil Nadu ISTS delayed on transformer + GIS shortage.</p></div>
+      <div class="bn__opp"><div class="bn__h">Opportunity</div><p><span class="bn__title">Capacity build-out</span>~315 GVA announced/under construction (~Rs 66 bn); incumbents hold pricing power near-term.</p></div>
+    </div>
+    <div class="bn">
+      <div class="bn__risk"><div class="bn__h">Risk</div><p><span class="bn__title">HVDC converter equipment</span>Few global suppliers, unable to run many large projects at once; Ladakh high-altitude scheme had no global precedent.</p></div>
+      <div class="bn__opp"><div class="bn__h">Opportunity</div><p><span class="bn__title">Localised HVDC</span>Three qualified suppliers in India; domestic valve/IGBT lines being built (GE's $16 m India line).</p></div>
+    </div>
+    <div class="bn">
+      <div class="bn__risk"><div class="bn__h">Risk</div><p><span class="bn__title">STATCOM / power semiconductors</span>~60–65% of core components (IGBT, SiC, HV capacitors) imported.</p></div>
+      <div class="bn__opp"><div class="bn__h">Opportunity</div><p><span class="bn__title">Integration today, upstream tomorrow</span>BHEL/L&amp;T assemble domestically; the upstream semiconductor gap is the open prize.</p></div>
+    </div>
+    <div class="bn">
+      <div class="bn__risk"><div class="bn__h">Risk</div><p><span class="bn__title">Skilled manpower</span>Named as a binding constraint by PGCIL and state utilities — capacity can be bought, people cannot.</p></div>
+      <div class="bn__opp"><div class="bn__h">Opportunity</div><p><span class="bn__title">Training pipelines</span>Slowest to fix, but qualification-gated roles carry durable scarcity value.</p></div>
+    </div>
+    <div class="callout animate" style="--i:7">
+      <strong>Deepest hidden import dependency:</strong> the machine tools and vacuum/oil-processing plants used to build transformers themselves — procurement lead times of 2–4 years for high-end large-power-transformer manufacturing systems.
+    </div>
+  </section>
+
+  <p class="footnote animate" style="--i:8">
+    Sources (plain): Central Electricity Authority (National Electricity Plan Vol. II; Dec-2025 network data; 900 GW transmission plan, Mar-2026) · CareEdge Ratings (Apr-2026) · CTUIL ISTS Rolling Plan · Power Line / T&amp;D India / Transformer Magazine (2025–26) · Mercom India (2026) · GTRI via Economic Times &amp; Business Standard (2024–26) · company results &amp; investor presentations (PGCIL, AESL, Hitachi Energy India, Siemens Energy India, GE Vernova T&amp;D, CG Power, Apar, KEC, KPIL, KEI, Polycab, Grasim) · DRHP/SEBI filings (Sterlite Electric, Transrail, Atlanta Electricals). All figures date-stamped to the analysis date; time-sensitive facts are cyclical or live and should be re-checked before use. Company mappings are evidence-based; impacts are inference unless reported.
+  </p>
+
+</div>
+
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+
+  const config = {
+    fitPadding: 24, minHeight: 300, maxHeightPx: 900, maxHeightVh: 0.85,
+    maxInitialZoom: 1.7, minZoom: 0.08, maxZoom: 6.5, zoomStep: 0.14, readabilityFloor: 0.55
+  };
+  const clamp = (n, lo, hi) => Math.max(lo, Math.min(hi, n));
+  let activeDrag = null;
+  addEventListener('mousemove', (e) => activeDrag?.onMove(e));
+  addEventListener('mouseup', () => { activeDrag?.onEnd(); activeDrag = null; });
+
+  const isDark = matchMedia('(prefers-color-scheme: dark)').matches;
+  mermaid.initialize({
+    startOnLoad: false, theme: 'base', look: 'classic', layout: 'dagre',
+    themeVariables: {
+      fontFamily: "'IBM Plex Sans', system-ui, sans-serif", fontSize: '15px',
+      lineColor: isDark ? '#5b9bd5' : '#9db4cc',
+    }
+  });
+
+  function initDiagram(shell) {
+    const wrap = shell.querySelector('.mermaid-wrap');
+    const viewport = shell.querySelector('.mermaid-viewport');
+    const canvas = shell.querySelector('.mermaid-canvas');
+    const source = shell.querySelector('.diagram-source');
+    const label = shell.querySelector('.zoom-label');
+    if (!wrap || !viewport || !canvas || !source || !label) return;
+
+    let zoom = 1, fitMode = 'contain', panX = 0, panY = 0, svgW = 0, svgH = 0;
+    let sx = 0, sy = 0, spx = 0, spy = 0, touchDist = 0, touchCx = 0, touchCy = 0;
+
+    function constrainPan() {
+      const vpW = viewport.clientWidth, vpH = viewport.clientHeight;
+      const rW = svgW * zoom, rH = svgH * zoom, pad = config.fitPadding;
+      panX = (rW + pad * 2 <= vpW) ? (vpW - rW) / 2 : clamp(panX, vpW - rW - pad, pad);
+      panY = (rH + pad * 2 <= vpH) ? (vpH - rH) / 2 : clamp(panY, vpH - rH - pad, pad);
+    }
+    function applyTransform() {
+      const svg = canvas.querySelector('svg');
+      if (!svg || !svgW) return;
+      constrainPan();
+      svg.style.width = (svgW * zoom) + 'px';
+      svg.style.height = (svgH * zoom) + 'px';
+      canvas.style.transform = `translate(${panX}px, ${panY}px)`;
+      label.textContent = Math.round(zoom * 100) + '%';
+    }
+    function canPan() {
+      return svgW * zoom + config.fitPadding * 2 > viewport.clientWidth
+          || svgH * zoom + config.fitPadding * 2 > viewport.clientHeight;
+    }
+    function computeSmartFit() {
+      const vpW = viewport.clientWidth, vpH = viewport.clientHeight;
+      const aW = Math.max(80, vpW - config.fitPadding * 2);
+      const aH = Math.max(80, vpH - config.fitPadding * 2);
+      const contain = Math.min(aW / svgW, aH / svgH);
+      let z = contain, mode = 'contain';
+      if (contain < config.readabilityFloor) {
+        // For wide BOM trees, fitting width keeps the whole width visible and
+        // scrolls vertically — far more readable than a height-fit that clips columns.
+        z = aW / svgW; mode = 'width';
+      }
+      return { zoom: clamp(z, config.minZoom, config.maxInitialZoom), mode };
+    }
+    function fitDiagram() {
+      if (!svgW) return;
+      const fit = computeSmartFit();
+      zoom = fit.zoom; fitMode = fit.mode;
+      panX = (viewport.clientWidth - svgW * zoom) / 2;
+      panY = (viewport.clientHeight - svgH * zoom) / 2;
+      applyTransform();
+    }
+    function setOneToOne() {
+      zoom = 1; fitMode = '1:1';
+      panX = (viewport.clientWidth - svgW * zoom) / 2;
+      panY = (viewport.clientHeight - svgH * zoom) / 2;
+      applyTransform();
+    }
+    function zoomAround(factor, cx, cy) {
+      const next = clamp(zoom * factor, config.minZoom, config.maxZoom);
+      const ratio = next / zoom;
+      panX = cx - ratio * (cx - panX);
+      panY = cy - ratio * (cy - panY);
+      zoom = next; applyTransform();
+    }
+    function readSvgNaturalSize(svg) {
+      let w = 0, h = 0;
+      if (svg.viewBox?.baseVal?.width > 0) { w = svg.viewBox.baseVal.width; h = svg.viewBox.baseVal.height; }
+      if (!w) { w = parseFloat(svg.getAttribute('width')) || 0; h = parseFloat(svg.getAttribute('height')) || 0; }
+      if (!w) { const b = svg.getBBox(); w = b.width; h = b.height; }
+      if (!w) { const r = svg.getBoundingClientRect(); w = r.width || 1000; h = r.height || 700; }
+      if (!svg.getAttribute('viewBox')) svg.setAttribute('viewBox', `0 0 ${w} ${h}`);
+      return { w, h };
+    }
+    function setAdaptiveHeight() {
+      if (!svgW) return;
+      const usableW = Math.max(280, wrap.getBoundingClientRect().width - 2);
+      const idealH = (svgH / svgW) * usableW + config.fitPadding * 2;
+      const maxVp = Math.floor(innerHeight * config.maxHeightVh);
+      const hardMax = Math.min(config.maxHeightPx, Math.max(config.minHeight + 40, maxVp));
+      wrap.style.height = Math.round(clamp(idealH, config.minHeight, hardMax)) + 'px';
+    }
+    function openInNewTab() {
+      const svg = canvas.querySelector('svg');
+      if (!svg) return;
+      const clone = svg.cloneNode(true);
+      clone.style.width = ''; clone.style.height = '';
+      const bg = isDark ? '#0a1626' : '#eef2f7';
+      const html = `<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>BOM Tree</title><style>body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;background:${bg};padding:40px;box-sizing:border-box}svg{max-width:100%;max-height:90vh;height:auto}</style></head><body>${clone.outerHTML}</body></html>`;
+      open(URL.createObjectURL(new Blob([html], { type: 'text/html' })), '_blank');
+    }
+    async function render() {
+      try {
+        const code = source.textContent.trim();
+        const id = 'dgm-' + Math.random().toString(36).slice(2, 9);
+        const { svg } = await mermaid.render(id, code);
+        canvas.innerHTML = svg;
+        const svgNode = canvas.querySelector('svg');
+        if (!svgNode) { label.textContent = 'Error'; return; }
+        const size = readSvgNaturalSize(svgNode);
+        svgW = size.w; svgH = size.h;
+        svgNode.removeAttribute('width'); svgNode.removeAttribute('height');
+        svgNode.style.maxWidth = 'none'; svgNode.style.display = 'block';
+        setAdaptiveHeight(); fitDiagram();
+      } catch (err) {
+        console.error(err); label.textContent = 'Error';
+      }
+    }
+    const actions = {
+      'zoom-in': () => zoomAround(1 + config.zoomStep, viewport.clientWidth / 2, viewport.clientHeight / 2),
+      'zoom-out': () => zoomAround(1 / (1 + config.zoomStep), viewport.clientWidth / 2, viewport.clientHeight / 2),
+      'zoom-fit': fitDiagram, 'zoom-one': setOneToOne, 'zoom-expand': openInNewTab
+    };
+    Object.entries(actions).forEach(([a, h]) => wrap.querySelector(`[data-action="${a}"]`)?.addEventListener('click', h));
+    viewport.addEventListener('dblclick', fitDiagram);
+    viewport.addEventListener('wheel', (e) => {
+      if (e.ctrlKey || e.metaKey) {
+        e.preventDefault();
+        const rect = viewport.getBoundingClientRect();
+        const factor = e.deltaY < 0 ? 1 + config.zoomStep : 1 / (1 + config.zoomStep);
+        zoomAround(factor, e.clientX - rect.left, e.clientY - rect.top); return;
+      }
+      if (canPan()) { e.preventDefault(); panX -= e.deltaX; panY -= e.deltaY; applyTransform(); }
+    }, { passive: false });
+    viewport.addEventListener('mousedown', (e) => {
+      if (e.target.closest('.zoom-controls') || !canPan()) return;
+      wrap.classList.add('is-panning');
+      sx = e.clientX; sy = e.clientY; spx = panX; spy = panY; e.preventDefault();
+      activeDrag = {
+        onMove: (ev) => { panX = spx + (ev.clientX - sx); panY = spy + (ev.clientY - sy); applyTransform(); },
+        onEnd: () => wrap.classList.remove('is-panning')
+      };
+    });
+    viewport.addEventListener('touchstart', (e) => {
+      if (e.touches.length === 1) { sx = e.touches[0].clientX; sy = e.touches[0].clientY; spx = panX; spy = panY; }
+      else if (e.touches.length === 2) {
+        const dx = e.touches[0].clientX - e.touches[1].clientX, dy = e.touches[0].clientY - e.touches[1].clientY;
+        touchDist = Math.sqrt(dx * dx + dy * dy);
+        const r = viewport.getBoundingClientRect();
+        touchCx = (e.touches[0].clientX + e.touches[1].clientX) / 2 - r.left;
+        touchCy = (e.touches[0].clientY + e.touches[1].clientY) / 2 - r.top;
+      }
+    }, { passive: true });
+    viewport.addEventListener('touchmove', (e) => {
+      if (e.touches.length === 1 && canPan()) {
+        e.preventDefault();
+        panX = spx + (e.touches[0].clientX - sx); panY = spy + (e.touches[0].clientY - sy); applyTransform();
+      } else if (e.touches.length === 2 && touchDist > 0) {
+        e.preventDefault();
+        const dx = e.touches[0].clientX - e.touches[1].clientX, dy = e.touches[0].clientY - e.touches[1].clientY;
+        const d = Math.sqrt(dx * dx + dy * dy);
+        zoomAround(d / touchDist, touchCx, touchCy); touchDist = d;
+      }
+    }, { passive: false });
+    new ResizeObserver(() => { if (svgW) { setAdaptiveHeight(); fitDiagram(); } }).observe(wrap);
+    render();
+  }
+  document.querySelectorAll('.diagram-shell').forEach(initDiagram);
+</script>
+
+<script>
+/* ===== CLICK-THROUGH COMPANY MAP ===== */
+const NODES = [
+  { id:'ehv', name:'EHV Power Transformers & Reactors', pri:'high', bott:true,
+    fn:'Voltage transformation and reactive control at 220–765 kV — the single most schedule-critical node in the industry.',
+    importDep:'Partial — core CRGO imported', conc:'Oligopoly',
+    companies:[
+      {n:'Hitachi Energy India', t:'NSE/BSE: POWERINDIA', e:'direct', m:'Largest T&D segment; order backlog ₹29,555 cr (Mar-2026)', ev:'Company results'},
+      {n:'Siemens Energy India', t:'NSE/BSE', e:'direct', m:'T&D segment; backlog ~₹18,400–19,331 cr', ev:'Company results'},
+      {n:'GE Vernova T&D India', t:'NSE/BSE', e:'direct', m:'Pure T&D; FY26 revenue ~₹6,206 cr', ev:'Company results'},
+      {n:'CG Power & Industrial Solutions', t:'NSE/BSE: CGPOWER', e:'direct', m:'Power Systems segment; backlog ₹17,333 cr standalone', ev:'Company results'},
+      {n:'Atlanta Electricals', t:'NSE/BSE: ATLANTAELE', e:'direct', m:'Pure transformer play; listed Sep-2025', ev:'IPO / company'},
+      {n:'Voltamp Transformers', t:'NSE/BSE', e:'direct', m:'Pure transformer play', ev:'Company'},
+      {n:'Transformers & Rectifiers (India)', t:'NSE/BSE: TARIL', e:'direct', m:'Pure transformer play', ev:'Company'},
+      {n:'Quality Power Electrical Equipments', t:'NSE/BSE', e:'direct', m:'Transformer / grid equipment', ev:'IPO'},
+      {n:'BHEL', t:'NSE/BSE: BHEL', e:'conglomerate', m:'Large capital-goods co.; transformers part of T&D portfolio', ev:'Company'}
+    ] },
+  { id:'hvdc', name:'HVDC Converter Stations & Control', pri:'high', bott:true,
+    fn:'AC↔DC conversion for long-haul, ultra-high-capacity corridors (LCC) and weaker-grid/multi-terminal links (VSC).',
+    importDep:'Imported — valves & controls', conc:'3-player global oligopoly',
+    companies:[
+      {n:'Hitachi Energy India', t:'NSE/BSE: POWERINDIA', e:'direct', m:'HVDC ~15% of FY26 revenue; co-supplied Khavda V-A with BHEL', ev:'Company / earnings call'},
+      {n:'GE Vernova T&D India', t:'NSE/BSE', e:'direct', m:'~23% of India operational HVDC; won Khavda–South Olpad VSC', ev:'Broker / company'},
+      {n:'Siemens Energy India', t:'NSE/BSE', e:'direct', m:'One of three qualified HVDC suppliers in India', ev:'Broker'},
+      {n:'BHEL', t:'NSE/BSE: BHEL', e:'direct', m:'HVDC valves in consortium with Hitachi on Khavda V-A', ev:'Trade press'}
+    ] },
+  { id:'statcom', name:'STATCOM · Synchronous Condensers · FACTS', pri:'high', bott:true,
+    fn:'Grid stability, inertia and reactive support as renewable penetration rises.',
+    importDep:'Imported core (IGBT/SiC ~60–65%)', conc:'Concentrated',
+    companies:[
+      {n:'BHEL', t:'NSE/BSE: BHEL', e:'direct', m:'Synchronous condensers up to 300 MVAr; STATCOM', ev:'Company'},
+      {n:'GE Vernova T&D India', t:'NSE/BSE', e:'direct', m:'FACTS / STATCOM in product line', ev:'Broker'},
+      {n:'Siemens Energy India', t:'NSE/BSE', e:'direct', m:'FACTS portfolio', ev:'Broker'},
+      {n:'CG Power', t:'NSE/BSE: CGPOWER', e:'direct', m:'Switchgear / FACTS adjacent', ev:'Company'}
+    ] },
+  { id:'gis', name:'GIS / AIS Switchgear', pri:'high', bott:true,
+    fn:'Switching and insulation of the substation; GIS bus ducts are a named domestic-capacity gap.',
+    importDep:'Mostly domestic; bus ducts gap', conc:'Oligopoly',
+    companies:[
+      {n:'Hitachi Energy India', t:'NSE/BSE: POWERINDIA', e:'direct', m:'GIS + disconnectors', ev:'Company'},
+      {n:'Siemens Energy India', t:'NSE/BSE', e:'direct', m:'GIS / AIS', ev:'Broker'},
+      {n:'GE Vernova T&D India', t:'NSE/BSE', e:'direct', m:'765/400 kV AIS + GIS', ev:'Company'},
+      {n:'CG Power', t:'NSE/BSE: CGPOWER', e:'direct', m:'EHV switchgear (Nashik, 2026)', ev:'Company'},
+      {n:'BHEL', t:'NSE/BSE: BHEL', e:'direct', m:'GIS up to 420 kV', ev:'Company'}
+    ] },
+  { id:'conductor', name:'Conductors', pri:'high',
+    fn:'Power carriage on the line — ACSR, AAAC, HTLS/ACCC, copper for rail.',
+    importDep:'Domestic — India is a net exporter', conc:'Consolidating',
+    companies:[
+      {n:'Apar Industries', t:'NSE/BSE: APARINDS', e:'direct', m:"World's largest Al conductor maker; conductor revenue ₹12,712 cr FY26", ev:'Company'},
+      {n:'Sterlite Electric (ex-Sterlite Power Transmission)', t:'NSE/BSE — IPO filed', e:'direct', m:'#2 Al conductor/cable; 24–27% B2B conductor share', ev:'Rating / DRHP'},
+      {n:'KEC International', t:'NSE/BSE: KEC', e:'indirect', m:'Cables & conductors vertical', ev:'Company'}
+    ] },
+  { id:'insulator', name:'Insulators', pri:'med',
+    fn:'Electrical isolation on the line and in the substation.',
+    importDep:'Domestic', conc:'Concentrated (ABI largest)',
+    companies:[
+      {n:'Grasim Industries (Aditya Birla Insulators div.)', t:'NSE/BSE: GRASIM', e:'conglomerate', m:"India's largest insulator maker, 41,727 TPA; FY25 insulator revenue ~₹479 cr (minor to group)", ev:'Company annual report'},
+      {n:'Modern Insulators', t:'BSE', e:'direct', m:'Insulator pure-play', ev:'Company'}
+    ] },
+  { id:'towers', name:'Towers & Transmission EPC', pri:'high',
+    fn:'Lattice towers, monopoles and line/substation construction — the physical build.',
+    importDep:'Domestic', conc:'Fragmented (towers) / consolidated (EPC)',
+    companies:[
+      {n:'KEC International', t:'NSE/BSE: KEC', e:'direct', m:'T&D EPC + towers; order book ₹33,398 cr + L1 >₹40,000 cr (FY25)', ev:'Company'},
+      {n:'Kalpataru Projects International', t:'NSE/BSE: KPIL', e:'direct', m:'T&D EPC; order book ₹65,457 cr (FY26)', ev:'Company'},
+      {n:'Transrail Lighting', t:'NSE/BSE', e:'direct', m:'T&D EPC + towers/monopoles; listed Dec-2024', ev:'IPO'},
+      {n:'Jyoti Structures', t:'NSE/BSE', e:'direct', m:'Tower / line EPC', ev:'Company'}
+    ] },
+  { id:'cable', name:'Cables (EHV / HV)', pri:'med',
+    fn:'Underground and submarine power cable; growing for urban and offshore wind.',
+    importDep:'Domestic, scaling EHV', conc:'Consolidating',
+    companies:[
+      {n:'Polycab India', t:'NSE/BSE: POLYCAB', e:'direct', m:'Largest W&C maker; EHV capacity late-2027', ev:'Company'},
+      {n:'KEI Industries', t:'NSE/BSE: KEI', e:'direct', m:'EHV cables up to 400 kV; Sanand EHV plant by Mar-2027', ev:'Company'},
+      {n:'R R Kabel', t:'NSE/BSE: RRL', e:'direct', m:'EHV up to 220 kV by FY28', ev:'Company'},
+      {n:'Sterlite Electric', t:'NSE/BSE — IPO filed', e:'direct', m:'EHV/HV cables + OPGW', ev:'Company'}
+    ] },
+  { id:'developer', name:'Transmission Developer / Owner', pri:'high',
+    fn:'Owns the network asset and earns a 25–35-year regulated or TBCB tariff — the annuity layer.',
+    importDep:'n/a', conc:'Consolidated (PGCIL + Adani + few)',
+    companies:[
+      {n:'Power Grid Corporation of India', t:'NSE/BSE: POWERGRID', e:'direct', m:'Central transmission utility; FY26 PAT ₹15,921 cr', ev:'Company'},
+      {n:'Adani Energy Solutions', t:'NSE/BSE: ADANIENSOL', e:'direct', m:'Largest private transmission co.; network 27,949 ckm; order book ₹71,779 cr', ev:'Company'},
+      {n:'IndiGrid', t:'NSE/BSE: INDIGRID', e:'direct', m:"India's first power-sector InvIT (transmission assets)", ev:'Company'}
+    ] },
+  { id:'txfroil', name:'Transformer Oil', pri:'med',
+    fn:'Insulation and cooling inside transformers and reactors.',
+    importDep:'Domestic — India top-3 global', conc:'Concentrated',
+    companies:[
+      {n:'Apar Industries', t:'NSE/BSE: APARINDS', e:'direct', m:'#3 global & #1 India transformer-oil maker', ev:'Company'}
+    ] },
+  { id:'crgo', name:'CRGO Electrical Steel', pri:'high', bott:true,
+    fn:'Grain-oriented core steel — the strategic material of the industry.',
+    importDep:'~90% imported (CN/JP/KR/RU)', conc:'Domestic near-monopoly',
+    companies:[],
+    gap:'NO COVERAGE IN SELECTED UNIVERSE as a pure-play.',
+    near:'Nearest: JSW Steel (listed) — but JSW-JFE is a 50:50 JV, not a consolidated pure-play. A steel exposure is not a CRGO exposure.' },
+  { id:'semi', name:'Power Semiconductors (IGBT / SiC)', pri:'high', bott:true,
+    fn:'Core of STATCOM, VSC-HVDC and FACTS converters.',
+    importDep:'~60–65% imported (DE/JP/CN)', conc:'Global concentrated',
+    companies:[],
+    gap:'NO LISTED PURE-PLAY IN INDIA.',
+    near:'Nearest: BHEL / Hitachi (as system integrators). Context (unlisted/foreign): Hyosung T&D India, TBEA (China), NR Electric.' },
+  { id:'tap', name:'Tap Changers, Bushings, Pressboard', pri:'med',
+    fn:'Transformer sub-components — on-load tap changers, bushings, insulating pressboard.',
+    importDep:'Largely imported', conc:'Foreign oligopoly',
+    companies:[],
+    gap:'NO LISTED PURE-PLAY IN INDIA.',
+    near:'Largely foreign (MR Reinhausen, Hitachi, ABB). No direct NSE/BSE exposure.' },
+  { id:'syncon', name:'Synchronous Condenser Machines', pri:'med',
+    fn:'Rotating machines providing inertia and short-circuit strength to inverter-dominated grids.',
+    importDep:'Domestic (thin)', conc:'Thin coverage',
+    companies:[
+      {n:'BHEL', t:'NSE/BSE: BHEL', e:'direct', m:'Only clear listed domestic supplier; up to 300 MVAr', ev:'Company'}
+    ] }
+];
+
+const nodesEl = document.getElementById('mapNodes');
+const panelEl = document.getElementById('mapPanel');
+const PRI_LABEL = { high:'HIGH', med:'MEDIUM', low:'LOW' };
+
+function renderPanel(node) {
+  if (!node) { panelEl.innerHTML = '<div class="map-panel__kicker">Company map</div><div class="map-panel__title">Select a node</div><p class="map-panel__fn">Click any node on the left to see its NSE/BSE companies, exposure type, materiality and evidence.</p>'; return; }
+  let html = '';
+  html += `<div class="map-panel__kicker">${PRI_LABEL[node.pri] || ''} priority node</div>`;
+  html += `<div class="map-panel__title">${node.name}</div>`;
+  html += `<p class="map-panel__fn">${node.fn}</p>`;
+  html += `<div class="map-panel__row">`;
+  if (node.importDep && node.importDep !== 'n/a') html += `<span class="mini">Import: ${node.importDep}</span>`;
+  if (node.conc) html += `<span class="mini">Concentration: ${node.conc}</span>`;
+  if (node.bott) html += `<span class="mini" style="color:var(--gold)">Bottleneck</span>`;
+  html += `</div>`;
+
+  if (!node.companies || node.companies.length === 0) {
+    html += `<div class="nocov"><b>${node.gap}</b><span class="near">${node.near}</span></div>`;
+    panelEl.innerHTML = html;
+    return;
+  }
+  node.companies.forEach(c => {
+    html += `<div class="co">`;
+    html += `<div class="co__name">${c.n}<span class="co__ticker">${c.t}</span></div>`;
+    html += `<div class="co__tags"><span class="tag tag--${c.e}">${c.e.toUpperCase()}</span></div>`;
+    html += `<div class="co__mat">${c.m}</div>`;
+    html += `<div class="co__ev">Evidence: ${c.ev}</div>`;
+    html += `</div>`;
+  });
+  panelEl.innerHTML = html;
+}
+
+NODES.forEach((node, i) => {
+  const btn = document.createElement('button');
+  btn.className = 'node-btn';
+  btn.type = 'button';
+  const dotClass = (!node.companies || node.companies.length === 0) ? 'dot--none' : ('dot--' + node.pri);
+  let flags = '';
+  if (!node.companies || node.companies.length === 0) flags += `<span class="flag flag--gap">GAP</span>`;
+  else if (node.bott) flags += `<span class="flag flag--bott">BOTTLENECK</span>`;
+  btn.innerHTML = `<div class="node-btn__name"><span class="dot ${dotClass}"></span>${node.name}</div>
+    <div class="node-btn__meta"><span>${(node.companies || []).length} listed</span>${flags}</div>`;
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.node-btn').forEach(b => b.classList.remove('is-active'));
+    btn.classList.add('is-active');
+    renderPanel(node);
+  });
+  nodesEl.appendChild(btn);
+  if (i === 0) { btn.classList.add('is-active'); renderPanel(node); }
+});
+</script>
+</body>
+</html>
