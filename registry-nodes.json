@@ -15,7 +15,8 @@
       "drill_downs": [
         "overhead-transmission-line-india",
         "substation-equipment-india",
-        "hvdc-power-electronics-india"
+        "hvdc-power-electronics-india",
+        "ehv-hv-cables-india"
       ],
       "nodes": [
         {
@@ -1196,7 +1197,11 @@
       "analysis_date": "2026-10-07",
       "universe": "NSE/BSE",
       "sector": "Power & Electrical Infrastructure",
-      "derived_from": null,
+      "derived_from": {
+        "industry": "Power Transmission",
+        "slug": "power-transmission-india",
+        "node": "Cables (EHV / HV)"
+      },
       "drill_downs": [],
       "nodes": [
         {

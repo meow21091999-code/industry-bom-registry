@@ -292,11 +292,12 @@
   </header>
 
   <div style="display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;background:var(--gold-dim);border:1px solid var(--gold);border-radius:10px;padding:14px 18px;margin-bottom:24px;">
-    <span style="font-size:13px;line-height:1.5;"><strong style="color:var(--text);">Drill-down available &rarr;</strong> <span style="color:var(--text-dim);">three deep-dive entries branch from this page.</span></span>
+    <span style="font-size:13px;line-height:1.5;"><strong style="color:var(--text);">Drill-down available &rarr;</strong> <span style="color:var(--text-dim);">four deep-dive entries branch from this page.</span></span>
     <span style="display:flex;gap:10px;flex-wrap:wrap;">
       <a href="overhead-transmission-line-india.html" style="font-family:var(--font-mono);font-size:12px;font-weight:600;color:var(--gold);text-decoration:none;border:1px solid var(--gold);border-radius:6px;padding:6px 12px;white-space:nowrap;background:var(--surface);">Overhead Transmission Line &rarr;</a>
       <a href="substation-equipment-india.html" style="font-family:var(--font-mono);font-size:12px;font-weight:600;color:var(--gold);text-decoration:none;border:1px solid var(--gold);border-radius:6px;padding:6px 12px;white-space:nowrap;background:var(--surface);">Substation Equipment &rarr;</a>
       <a href="hvdc-power-electronics-india.html" style="font-family:var(--font-mono);font-size:12px;font-weight:600;color:var(--gold);text-decoration:none;border:1px solid var(--gold);border-radius:6px;padding:6px 12px;white-space:nowrap;background:var(--surface);">HVDC &amp; Power Electronics &rarr;</a>
+      <a href="ehv-hv-cables-india.html" style="font-family:var(--font-mono);font-size:12px;font-weight:600;color:var(--gold);text-decoration:none;border:1px solid var(--gold);border-radius:6px;padding:6px 12px;white-space:nowrap;background:var(--surface);">EHV / HV Power Cables &rarr;</a>
     </span>
   </div>
 
@@ -762,7 +763,7 @@ const NODES = [
       {n:'Transrail Lighting', t:'NSE/BSE', e:'direct', m:'T&D EPC + towers/monopoles; listed Dec-2024', ev:'IPO'},
       {n:'Jyoti Structures', t:'NSE/BSE', e:'direct', m:'Tower / line EPC', ev:'Company'}
     ] },
-  { id:'cable', name:'Cables (EHV / HV)', pri:'med',
+  { id:'cable', name:'Cables (EHV / HV)', pri:'med', drill:true, drillTo:'ehv-hv-cables-india.html', drillLabel:'EHV / HV Power Cables',
     fn:'Underground and submarine power cable; growing for urban and offshore wind.',
     importDep:'Domestic, scaling EHV', conc:'Consolidating',
     companies:[
