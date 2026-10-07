@@ -156,6 +156,20 @@
   .legend span{display:flex;align-items:center;gap:6px}
   .sw{width:11px;height:11px;border-radius:3px;flex-shrink:0}
 
+  .ladder{display:flex;flex-direction:column;gap:0}
+  .rung{display:grid;grid-template-columns:150px 1fr;gap:16px;align-items:center;padding:12px 16px;border:1px solid var(--border);border-bottom:none;background:var(--surface)}
+  .rung:first-child{border-radius:10px 10px 0 0}
+  .rung:last-child{border-radius:0 0 10px 10px;border-bottom:1px solid var(--border)}
+  .rung > *{min-width:0;overflow-wrap:break-word}
+  .rung__label{font-family:var(--font-mono);font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:1px}
+  .rung__body{font-size:13px;color:var(--ink-dim)}
+  .rung__body b{color:var(--ink);font-weight:600}
+  .rung--1 .rung__label{color:var(--ink-dim)}
+  .rung--2 .rung__label{color:var(--blue-bright)}
+  .rung--3 .rung__label{color:var(--gold)}
+  .rung--4 .rung__label{color:var(--red)}
+  .mini{font-family:var(--font-mono);font-size:10.5px;color:var(--ink-dim);opacity:.85}
+  @media (max-width:768px){.rung{grid-template-columns:1fr;gap:4px}}
   footer{margin-top:56px;border-top:1px solid var(--border);padding-top:20px;font-size:11.5px;color:var(--ink-dim);line-height:1.8;font-family:var(--font-mono)}
   footer strong{color:var(--ink);font-family:var(--font-body)}
 </style>
@@ -232,36 +246,31 @@ flowchart TD
   <section class="an" style="--i:3">
     <div class="sec-h"><span class="sec-num">02</span><span class="sec-t">Value-chain ladder</span></div>
     <p class="sec-d">Raw material → aftermarket, with the Tier-4 → OEM supplier bands. Note the inversion: the largest physical block (steel) does not capture the most value — the regulated asset layer and the EPC layer do.</p>
-    <div class="diagram-shell">
-      <p class="hint">Linear ladder · zoom and pan enabled</p>
-      <div class="mermaid-wrap">
-        <div class="zoom-controls">
-          <button data-action="zoom-in" title="Zoom in">+</button>
-          <button data-action="zoom-out" title="Zoom out">&minus;</button>
-          <button data-action="zoom-fit" title="Fit">&#8634;</button>
-          <button data-action="zoom-one" title="1:1">1:1</button>
-          <button data-action="zoom-expand" title="Open full size">&#x26F6;</button>
-          <span class="zoom-label">Loading…</span>
-        </div>
-        <div class="mermaid-viewport"><div class="mermaid mermaid-canvas"></div></div>
+    <div class="ladder">
+      <div class="rung rung--1">
+        <div class="rung__label">Tier 4 · Raw</div>
+        <div class="rung__body"><b>Aluminium</b> · iron ore / steel · zinc · kaolin · feldspar · quartz · calcined alumina · silica (glass) <span class="mini">Hindalco · Vedanta · NALCO · SAIL / JSPL / JSW</span></div>
       </div>
-      <script type="text/plain" class="diagram-source">
-flowchart LR
-  A["Raw material<br/>iron ore · bauxite · kaolin"] --> B["Refining<br/>steel · aluminium · zinc"]
-  B --> C["Specialty material<br/>wire rod · angles · porcelain body"]
-  C --> D["Component<br/>conductor · tower · insulator · hardware"]
-  D --> E["Subassembly<br/>tower+fittings · insulator strings"]
-  E --> F["System<br/>conductor + structure"]
-  F --> G["Final product<br/>overhead line"]
-  G --> H["Distribution<br/>EPC → utility / developer"]
-  H --> I["Aftermarket<br/>maintenance · reconductoring · InvIT"]
-  classDef tier4 fill:#1e3a5f18,stroke:#1e3a5f
-  classDef tier2 fill:#2563eb18,stroke:#2563eb
-  classDef tier1 fill:#b8860b22,stroke:#b8860b
-  class A,B,C tier4
-  class D,E tier2
-  class F,G,H,I tier1
-      </script>
+      <div class="rung rung--2">
+        <div class="rung__label">Tier 3 · Specialty</div>
+        <div class="rung__body"><b>EC-grade wire rod</b> · structural angles / plates · porcelain body · composite / Invar core · optical fibre <span class="mini">rod mills · AL-59 alloying</span></div>
+      </div>
+      <div class="rung rung--3">
+        <div class="rung__label">Tier 2 · Component</div>
+        <div class="rung__body"><b>Stranded conductor</b> · fabricated + galvanised tower · insulators · hardware fittings · OPGW <span class="mini">APAR · Skipper · Karamtara · Polycab</span></div>
+      </div>
+      <div class="rung rung--4">
+        <div class="rung__label">Tier 1 · System / EPC</div>
+        <div class="rung__body"><b>Line-materials integrator &amp; turnkey EPC</b> — KEC · KPIL · L&amp;T · Transrail</div>
+      </div>
+      <div class="rung rung--4">
+        <div class="rung__label">OEM / Asset Owner</div>
+        <div class="rung__body"><b>PGCIL</b> · <b>Adani Energy Solutions</b> · IndiGrid · state transcos <span class="mini">35-yr TSA / TBCB annuity</span></div>
+      </div>
+      <div class="rung rung--1">
+        <div class="rung__label">Aftermarket</div>
+        <div class="rung__body">O&amp;M · spares · <b>reconductoring</b> · replacement insulators / hardware · steel &amp; aluminium recovery <span class="mini">APAR reconductoring · IndiGrid</span></div>
+      </div>
     </div>
   </section>
 
