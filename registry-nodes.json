@@ -14,7 +14,8 @@
       "derived_from": null,
       "drill_downs": [
         "overhead-transmission-line-india",
-        "substation-equipment-india"
+        "substation-equipment-india",
+        "hvdc-power-electronics-india"
       ],
       "nodes": [
         {
@@ -567,7 +568,9 @@
         "slug": "power-transmission-india",
         "node": "Substation Equipment"
       },
-      "drill_downs": [],
+      "drill_downs": [
+        "hvdc-power-electronics-india"
+      ],
       "nodes": [
         {
           "id": "xfmr",
@@ -904,6 +907,284 @@
           "bottleneck": false,
           "in_universe_coverage": false,
           "coverage_note": "Copper/steel/oil recovery real but unsized; no listed pure-play."
+        }
+      ]
+    },
+    {
+      "slug": "hvdc-power-electronics-india",
+      "industry": "HVDC & Power Electronics",
+      "scope": "INDIA",
+      "path": "industries/hvdc-power-electronics-india.html",
+      "analysis_date": "2026-10-07",
+      "universe": "NSE/BSE",
+      "sector": "Power & Electrical Infrastructure",
+      "derived_from": [
+        {
+          "industry": "Power Transmission",
+          "slug": "power-transmission-india",
+          "node": "HVDC & Power Electronics"
+        },
+        {
+          "industry": "Substation Equipment",
+          "slug": "substation-equipment-india",
+          "node": "HVDC Converter Stations / HVDC Converter Valves"
+        }
+      ],
+      "drill_downs": [],
+      "nodes": [
+        {
+          "id": "conv",
+          "name": "HVDC Converter Stations",
+          "level": 1,
+          "aliases": [
+            "HVDC",
+            "converter station",
+            "converter terminal",
+            "HVDC terminal",
+            "LCC",
+            "VSC",
+            "converter valve",
+            "thyristor valve",
+            "IGBT valve",
+            "MMC",
+            "HVDC control"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "valve",
+          "name": "Converter Valves (Thyristor / IGBT / MMC)",
+          "level": 2,
+          "aliases": [
+            "converter valve",
+            "thyristor valve",
+            "IGBT valve",
+            "HVDC valve",
+            "MMC submodule",
+            "valve assembly"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": false
+        },
+        {
+          "id": "semi",
+          "name": "Power Semiconductors (Thyristor / IGBT / SiC)",
+          "level": 3,
+          "aliases": [
+            "IGBT",
+            "thyristor",
+            "SiC",
+            "silicon carbide",
+            "power semiconductor",
+            "power module",
+            "power electronics semiconductor"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": false
+        },
+        {
+          "id": "cxfmr",
+          "name": "Converter Transformers & Reactors",
+          "level": 2,
+          "aliases": [
+            "converter transformer",
+            "HVDC transformer",
+            "smoothing reactor",
+            "valve reactor",
+            "HVDC reactor"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "reactor",
+          "name": "Smoothing & Valve Reactors",
+          "level": 2,
+          "aliases": [
+            "smoothing reactor",
+            "valve reactor",
+            "DC reactor",
+            "HVDC reactor"
+          ],
+          "priority": "medium",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "ctrl",
+          "name": "Control & Protection Systems",
+          "level": 2,
+          "aliases": [
+            "HVDC control",
+            "MACH",
+            "converter control",
+            "pole control",
+            "HVDC protection",
+            "SCADA",
+            "control and protection"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "ied",
+          "name": "Numerical Relays / IEDs",
+          "level": 3,
+          "aliases": [
+            "IED",
+            "numerical relay",
+            "protection relay",
+            "grid automation"
+          ],
+          "priority": "medium",
+          "bottleneck": false,
+          "in_universe_coverage": false
+        },
+        {
+          "id": "cable",
+          "name": "HVDC Cables (MI / XLPE DC)",
+          "level": 2,
+          "aliases": [
+            "HVDC cable",
+            "XLPE DC cable",
+            "MI cable",
+            "mass impregnated cable",
+            "submarine cable",
+            "DC cable",
+            "offshore cable"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "xlpe",
+          "name": "HVDC-grade XLPE DC Compound & Accessories",
+          "level": 3,
+          "aliases": [
+            "XLPE compound",
+            "DC insulation compound",
+            "cable joint",
+            "cable termination",
+            "HVDC accessory"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": false
+        },
+        {
+          "id": "acsub",
+          "name": "AC Substation Interface (Switchgear / ICTs / Filters)",
+          "level": 2,
+          "aliases": [
+            "GIS",
+            "AIS",
+            "switchgear",
+            "interconnecting transformer",
+            "ICT",
+            "harmonic filter",
+            "instrument transformer"
+          ],
+          "priority": "medium",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "filter",
+          "name": "Harmonic Filters & HV Capacitors",
+          "level": 3,
+          "aliases": [
+            "harmonic filter",
+            "HV capacitor",
+            "capacitor bank",
+            "AC filter",
+            "DC filter"
+          ],
+          "priority": "medium",
+          "bottleneck": false,
+          "in_universe_coverage": false
+        },
+        {
+          "id": "cooling",
+          "name": "Valve Cooling (Deionised-water skids)",
+          "level": 3,
+          "aliases": [
+            "valve cooling",
+            "deionised water cooling",
+            "cooling skid",
+            "HVDC cooling"
+          ],
+          "priority": "medium",
+          "bottleneck": false,
+          "in_universe_coverage": false
+        },
+        {
+          "id": "epe",
+          "name": "HVDC EPC, Line & Civil",
+          "level": 2,
+          "aliases": [
+            "HVDC EPC",
+            "transmission line EPC",
+            "T&D EPC",
+            "civil works",
+            "tower",
+            "line construction"
+          ],
+          "priority": "medium",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "developer",
+          "name": "Transmission Developer / Owner",
+          "level": 1,
+          "aliases": [
+            "transmission developer",
+            "transmission utility",
+            "TBCB developer",
+            "transmission SPV",
+            "transmission InvIT",
+            "asset owner"
+          ],
+          "priority": "high",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "om",
+          "name": "Aftermarket / Refurbishment / Recycling",
+          "level": 2,
+          "aliases": [
+            "HVDC service",
+            "converter station O&M",
+            "valve refurbishment",
+            "HVDC refurb",
+            "spares"
+          ],
+          "priority": "medium",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "test",
+          "name": "HV Testing / Type-test Facilities",
+          "level": 3,
+          "aliases": [
+            "HV testing",
+            "type test",
+            "DC test lab",
+            "high voltage lab",
+            "CPRI"
+          ],
+          "priority": "medium",
+          "bottleneck": false,
+          "in_universe_coverage": false
         }
       ]
     }

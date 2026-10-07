@@ -19,6 +19,8 @@
     --border-bright:rgba(20,40,70,0.22);
     --ink:#0f2137;
     --ink-dim:#5b7290;
+    --text:#0f2137;
+    --text-dim:#5b7290;
     --blue:#1e3a5f;
     --blue-bright:#2563eb;
     --blue-dim:rgba(37,99,235,0.09);
@@ -41,6 +43,8 @@
       --border-bright:rgba(160,190,225,0.26);
       --ink:#dce7f5;
       --ink-dim:#8ba3c2;
+      --text:#dce7f5;
+      --text-dim:#8ba3c2;
       --blue:#2f6fd0;
       --blue-bright:#5b93ea;
       --blue-dim:rgba(91,147,234,0.13);
@@ -195,6 +199,13 @@
       <span class="badge badge--on">India localisation lens: ON</span>
     </div>
   </header>
+
+  <div style="display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;background:var(--gold-dim);border:1px solid var(--gold);border-radius:10px;padding:14px 18px;margin-bottom:24px;">
+    <span style="font-size:13px;line-height:1.5;"><strong style="color:var(--text);">Drill-down available &rarr;</strong> <span style="color:var(--text-dim);">one deep-dive entry branches from this page.</span></span>
+    <span style="display:flex;gap:10px;flex-wrap:wrap;">
+      <a href="hvdc-power-electronics-india.html" style="font-family:var(--font-mono);font-size:12px;font-weight:600;color:var(--gold);text-decoration:none;border:1px solid var(--gold);border-radius:6px;padding:6px 12px;white-space:nowrap;background:var(--surface);">HVDC &amp; Power Electronics &rarr;</a>
+    </span>
+  </div>
 
   <div class="kpi an" style="--i:1">
     <div class="kpi-c"><div class="kpi-v">₹9.15 L cr</div><div class="kpi-l">NEP transmission outlay to 2032</div></div>
@@ -427,12 +438,12 @@ const NODES = {
     {c:'GE Vernova T&D India',x:'NSE: GVT&D',e:'DIRECT',m:'SCADA (iFIX / CIMPLICITY) for utilities'}]},
   crp:{n:'Control & relay panels (CRP)',lvl:2,pri:'',imp:'domestic',btn:false,vc:'medium',cos:[],gap:'Mostly fabricated in-house by OEMs; unlisted panel builders dominate. No clean listed pure-play.'},
 
-  hvdc:{n:'HVDC & power electronics',lvl:1,pri:'HIGH',imp:'partial',btn:true,vc:'high',cos:[
+  hvdc:{n:'HVDC & power electronics',lvl:1,pri:'HIGH',imp:'partial',btn:true,vc:'high',drillTo:'hvdc-power-electronics-india.html',drillLabel:'HVDC & Power Electronics',cos:[
     {c:'GE Vernova T&D India',x:'NSE: GVT&D',e:'DIRECT',m:'Barmer\u2013South Kalamb 6 GW (L1); Khavda\u2013South Olpad 2.5 GW'},
     {c:'Hitachi Energy India',x:'NSE: POWERINDIA',e:'DIRECT',m:'Khavda\u2013Nagpur & Bhadla\u2013Fatehpur 6 GW (with BHEL)'},
     {c:'BHEL',x:'NSE: BHEL',e:'DIRECT',m:'HVDC consortium partner'},
     {c:'Siemens Energy India',x:'NSE: ENRIN',e:'DIRECT',m:'India\u2019s first VSC HVDC link'}]},
-  valve:{n:'HVDC converter valves',lvl:2,pri:'HIGH',imp:'imported',btn:true,vc:'high',cos:[],gap:'Thyristor / IGBT valves supplied inside HVDC consortia (Hitachi / GE / Siemens / BHEL). No listed pure-play.'},
+  valve:{n:'HVDC converter valves',lvl:2,pri:'HIGH',imp:'imported',btn:true,vc:'high',drillTo:'hvdc-power-electronics-india.html',drillLabel:'HVDC & Power Electronics',cos:[],gap:'Thyristor / IGBT valves supplied inside HVDC consortia (Hitachi / GE / Siemens / BHEL). No listed pure-play.'},
   cxfmr:{n:'Converter transformer',lvl:2,pri:'HIGH',imp:'partial',btn:false,vc:'high',cos:[
     {c:'Hitachi Energy India',x:'NSE: POWERINDIA',e:'DIRECT',m:'Converter transformers in HVDC scope'},
     {c:'CG Power',x:'NSE: CGPOWER',e:'DIRECT',m:'Reactors + power transformers up to 765 kV'}]},
@@ -515,7 +526,7 @@ function select(id){
     body=`<div class="gapmsg"><strong>NO COVERAGE IN SELECTED UNIVERSE.</strong><br>${d.gap||'No NSE/BSE company maps to this node.'}</div>`;
   }
   panel.innerHTML=`<h3>${d.n}</h3><div class="pm">Level ${d.lvl} · node detail</div>`+
-    `<div class="tagrow">${tags}</div>`+body;
+    `<div class="tagrow">${tags}</div>`+(d.drillTo?`<a href="${d.drillTo}" style="display:block;margin:0 0 12px;padding:10px 12px;border:1px solid var(--gold);border-radius:8px;background:var(--gold-dim);color:var(--gold);font-family:var(--font-mono);font-size:11.5px;font-weight:600;text-decoration:none;">Drill-down &rarr; ${d.drillLabel}</a>`:'')+body;
 }
 renderTree();
 select('xfmr');
