@@ -12,7 +12,9 @@
       "universe": "NSE/BSE",
       "sector": "Power & Electrical Infrastructure",
       "derived_from": null,
-      "drill_downs": [],
+      "drill_downs": [
+        "overhead-transmission-line-india"
+      ],
       "nodes": [
         {
           "id": "ehv",
@@ -275,7 +277,8 @@
           ],
           "priority": "high",
           "bottleneck": false,
-          "in_universe_coverage": true
+          "in_universe_coverage": true,
+          "promoted_to": "overhead-transmission-line-india"
         },
         {
           "id": "substation",
@@ -338,6 +341,215 @@
           "priority": "medium",
           "bottleneck": false,
           "in_universe_coverage": true
+        }
+      ]
+    },
+    {
+      "slug": "overhead-transmission-line-india",
+      "industry": "Overhead Transmission Line",
+      "scope": "INDIA",
+      "path": "industries/overhead-transmission-line-india.html",
+      "analysis_date": "2026-10-07",
+      "universe": "NSE/BSE",
+      "sector": "Power & Electrical Infrastructure",
+      "derived_from": {
+        "industry": "Power Transmission",
+        "slug": "power-transmission-india",
+        "node": "Overhead Transmission Line"
+      },
+      "drill_downs": [],
+      "nodes": [
+        {
+          "id": "conductor",
+          "name": "Conductors",
+          "level": 1,
+          "aliases": [
+            "conductor",
+            "ACSR",
+            "AAAC",
+            "AL-59",
+            "HTLS",
+            "ACCC",
+            "ACSS",
+            "aluminium conductor"
+          ],
+          "priority": "high",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "tower",
+          "name": "Transmission Towers / Structures",
+          "level": 1,
+          "aliases": [
+            "transmission tower",
+            "lattice tower",
+            "monopole",
+            "guyed tower",
+            "tower"
+          ],
+          "priority": "high",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "insulator",
+          "name": "Insulators",
+          "level": 1,
+          "aliases": [
+            "insulator",
+            "disc insulator",
+            "porcelain insulator",
+            "composite insulator",
+            "long rod",
+            "hollow insulator"
+          ],
+          "priority": "high",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "hardware",
+          "name": "Hardware Fittings & Stringing Accessories",
+          "level": 1,
+          "aliases": [
+            "hardware fittings",
+            "clamps",
+            "spacers",
+            "dampers",
+            "stringing",
+            "tension string",
+            "suspension string"
+          ],
+          "priority": "high",
+          "bottleneck": false,
+          "in_universe_coverage": false,
+          "coverage_note": "No NSE/BSE pure-play; TAG, IAC, Asbesco, Ventura, MMPT all unlisted."
+        },
+        {
+          "id": "opgw",
+          "name": "Earth Wire / OPGW",
+          "level": 1,
+          "aliases": [
+            "OPGW",
+            "optical ground wire",
+            "earth wire",
+            "GSW",
+            "ADSS"
+          ],
+          "priority": "high",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "foundation",
+          "name": "Foundations & Civil Works",
+          "level": 1,
+          "aliases": [
+            "foundation",
+            "civil works",
+            "concrete",
+            "stub",
+            "earthing"
+          ],
+          "priority": "medium",
+          "bottleneck": false,
+          "in_universe_coverage": false,
+          "coverage_note": "No line-specific listed player; proxy = cement / steel majors."
+        },
+        {
+          "id": "row",
+          "name": "Right-of-Way & Clearances",
+          "level": 1,
+          "aliases": [
+            "right of way",
+            "ROW",
+            "forest clearance",
+            "land compensation",
+            "clearance"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": false,
+          "coverage_note": "Regulatory / non-physical — not investable. The binding execution constraint."
+        },
+        {
+          "id": "erection",
+          "name": "Erection & Stringing (EPC)",
+          "level": 1,
+          "aliases": [
+            "EPC",
+            "transmission line EPC",
+            "stringing",
+            "line construction",
+            "erection"
+          ],
+          "priority": "high",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "testing",
+          "name": "Testing, Protection & Communication",
+          "level": 1,
+          "aliases": [
+            "type test",
+            "tower load test",
+            "RIV",
+            "SCADA",
+            "teleprotection",
+            "testing"
+          ],
+          "priority": "medium",
+          "bottleneck": false,
+          "in_universe_coverage": false,
+          "coverage_note": "Accredited type-test labs mostly unlisted (TAG lab; Skipper load-test station)."
+        },
+        {
+          "id": "om",
+          "name": "O&M / End-of-Life",
+          "level": 1,
+          "aliases": [
+            "O&M",
+            "maintenance",
+            "reconductoring",
+            "replacement",
+            "recycling",
+            "aftermarket"
+          ],
+          "priority": "medium",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "reconductoring",
+          "name": "Reconductoring (asset-light growth)",
+          "level": 2,
+          "aliases": [
+            "reconductoring",
+            "HTLS upgrade",
+            "re-conductoring",
+            "capacity uprating"
+          ],
+          "priority": "high",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "composite-core",
+          "name": "Composite / Invar Conductor Core",
+          "level": 3,
+          "aliases": [
+            "composite core",
+            "carbon core",
+            "Invar",
+            "ACCC core",
+            "HVCRC"
+          ],
+          "priority": "high",
+          "bottleneck": false,
+          "in_universe_coverage": false,
+          "coverage_note": "Imported (CTC Global / Epsilon Composite). No NSE/BSE pure-play."
         }
       ]
     }
