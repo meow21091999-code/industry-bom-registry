@@ -13,7 +13,8 @@
       "sector": "Power & Electrical Infrastructure",
       "derived_from": null,
       "drill_downs": [
-        "overhead-transmission-line-india"
+        "overhead-transmission-line-india",
+        "substation-equipment-india"
       ],
       "nodes": [
         {
@@ -550,6 +551,359 @@
           "bottleneck": false,
           "in_universe_coverage": false,
           "coverage_note": "Imported (CTC Global / Epsilon Composite). No NSE/BSE pure-play."
+        }
+      ]
+    },
+    {
+      "slug": "substation-equipment-india",
+      "industry": "Substation Equipment",
+      "scope": "INDIA",
+      "path": "industries/substation-equipment-india.html",
+      "analysis_date": "2026-10-07",
+      "universe": "NSE/BSE",
+      "sector": "Power & Electrical Infrastructure",
+      "derived_from": {
+        "industry": "Power Transmission",
+        "slug": "power-transmission-india",
+        "node": "Substation Equipment"
+      },
+      "drill_downs": [],
+      "nodes": [
+        {
+          "id": "xfmr",
+          "name": "Power Transformers & Reactors",
+          "level": 1,
+          "aliases": [
+            "power transformer",
+            "power transformers",
+            "ICT",
+            "auto-transformer",
+            "autotransformer",
+            "shunt reactor",
+            "reactor",
+            "transformer"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "crgo",
+          "name": "CRGO Electrical Steel",
+          "level": 2,
+          "aliases": [
+            "CRGO",
+            "grain oriented electrical steel",
+            "GOES",
+            "electrical steel",
+            "core steel"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": false,
+          "coverage_note": "No NSE/BSE pure-play. Nearest: JSW Steel (JSW-JFE is a 50:50 JV, Nashik) and SAIL (Bokaro announced). PLI 1.1 threshold cut to Rs 3,000 cr / 50,000 t."
+        },
+        {
+          "id": "oltc",
+          "name": "OLTC / Tap Changers",
+          "level": 2,
+          "aliases": [
+            "OLTC",
+            "on-load tap changer",
+            "tap changer",
+            "DETC",
+            "off-circuit tap changer"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": false,
+          "coverage_note": "No listed pure-play. EMR (Easun-MR JV) and CTR unlisted; >80% of advanced vacuum OLTCs imported (Reinhausen ~35-40%)."
+        },
+        {
+          "id": "bushing",
+          "name": "EHV Bushings",
+          "level": 2,
+          "aliases": [
+            "bushing",
+            "RIP bushing",
+            "porcelain bushing",
+            "condenser bushing"
+          ],
+          "priority": "high",
+          "bottleneck": false,
+          "in_universe_coverage": false,
+          "coverage_note": "Largely imported (Trench, Modern/HSP). CG Power has partial in-house capability. No listed pure-play."
+        },
+        {
+          "id": "txfroil",
+          "name": "Transformer Oil",
+          "level": 2,
+          "aliases": [
+            "transformer oil",
+            "insulating oil",
+            "ester fluid",
+            "naphthenic oil",
+            "specialty oil"
+          ],
+          "priority": "medium",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "swgr",
+          "name": "GIS / AIS Switchgear",
+          "level": 1,
+          "aliases": [
+            "gas insulated switchgear",
+            "GIS",
+            "air insulated switchgear",
+            "AIS",
+            "circuit breaker",
+            "disconnector",
+            "isolator",
+            "switchgear"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "sf6",
+          "name": "SF6-free / Eco-efficient Switchgear",
+          "level": 2,
+          "aliases": [
+            "SF6",
+            "SF6-free",
+            "EconiQ",
+            "Blue GIS",
+            "eco-efficient switchgear",
+            "fluoronitrile"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "vcb",
+          "name": "Vacuum Interrupters",
+          "level": 2,
+          "aliases": [
+            "vacuum interrupter",
+            "vacuum bottle",
+            "VI"
+          ],
+          "priority": "medium",
+          "bottleneck": false,
+          "in_universe_coverage": false,
+          "coverage_note": "Largely imported; demonstrated but not scaled in India. No listed pure-play."
+        },
+        {
+          "id": "instr",
+          "name": "Instrument Transformers (CT / PT)",
+          "level": 1,
+          "aliases": [
+            "instrument transformer",
+            "current transformer",
+            "CT",
+            "potential transformer",
+            "PT",
+            "voltage transformer",
+            "CVT"
+          ],
+          "priority": "medium",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "prot",
+          "name": "Protection, Control & Automation",
+          "level": 1,
+          "aliases": [
+            "protection relay",
+            "IED",
+            "SCADA",
+            "substation automation",
+            "IEC 61850",
+            "grid automation",
+            "control and relay panel",
+            "CRP"
+          ],
+          "priority": "high",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "relay",
+          "name": "Numerical Relays / IEDs",
+          "level": 2,
+          "aliases": [
+            "numerical relay",
+            "IED",
+            "intelligent electronic device",
+            "protection relay"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": false,
+          "coverage_note": "Core technology foreign (ABB/Hitachi/Siemens/GE/Schneider). India exposure via MNC subsidiaries, not indigenous design."
+        },
+        {
+          "id": "hvdc",
+          "name": "HVDC Converter Stations",
+          "level": 1,
+          "aliases": [
+            "HVDC",
+            "converter station",
+            "LCC",
+            "VSC",
+            "converter valve",
+            "thyristor valve",
+            "IGBT valve"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "valve",
+          "name": "HVDC Converter Valves",
+          "level": 2,
+          "aliases": [
+            "converter valve",
+            "thyristor valve",
+            "IGBT valve",
+            "HVDC valve"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": false,
+          "coverage_note": "Supplied inside HVDC consortia (Hitachi/GE/Siemens/BHEL). No listed pure-play."
+        },
+        {
+          "id": "cxfmr",
+          "name": "Converter Transformers",
+          "level": 2,
+          "aliases": [
+            "converter transformer",
+            "HVDC transformer"
+          ],
+          "priority": "high",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "statcom",
+          "name": "STATCOM / SVC / FACTS",
+          "level": 2,
+          "aliases": [
+            "STATCOM",
+            "SVC",
+            "FACTS",
+            "reactive compensation",
+            "synchronous condenser"
+          ],
+          "priority": "medium",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "conductor",
+          "name": "Busbars & Conductors",
+          "level": 1,
+          "aliases": [
+            "busbar",
+            "conductor",
+            "ACSR",
+            "CTC",
+            "PICC",
+            "aluminium conductor",
+            "bus duct"
+          ],
+          "priority": "medium",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "aux",
+          "name": "Auxiliary & DC Systems",
+          "level": 1,
+          "aliases": [
+            "auxiliary transformer",
+            "station battery",
+            "DC system",
+            "LT panel",
+            "charger",
+            "DG set"
+          ],
+          "priority": "medium",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "cable",
+          "name": "Cables & Wiring",
+          "level": 1,
+          "aliases": [
+            "power cable",
+            "control cable",
+            "XLPE cable",
+            "cable",
+            "wiring"
+          ],
+          "priority": "medium",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "civil",
+          "name": "Civil, Structures & Grounding",
+          "level": 1,
+          "aliases": [
+            "gantry",
+            "foundation",
+            "earthing",
+            "grounding",
+            "control building",
+            "civil works",
+            "structure"
+          ],
+          "priority": "medium",
+          "bottleneck": false,
+          "in_universe_coverage": false,
+          "coverage_note": "No station-specific listed player; proxy = cement/steel majors and EPC firms."
+        },
+        {
+          "id": "om",
+          "name": "Aftermarket / Service",
+          "level": 1,
+          "aliases": [
+            "service",
+            "retrofit",
+            "spares",
+            "O&M",
+            "maintenance",
+            "refurbishment",
+            "GIS upgrade"
+          ],
+          "priority": "medium",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "recycle",
+          "name": "End-of-life / Recycling",
+          "level": 2,
+          "aliases": [
+            "recycling",
+            "end of life",
+            "scrap",
+            "copper recovery",
+            "oil recovery"
+          ],
+          "priority": "medium",
+          "bottleneck": false,
+          "in_universe_coverage": false,
+          "coverage_note": "Copper/steel/oil recovery real but unsized; no listed pure-play."
         }
       ]
     }
