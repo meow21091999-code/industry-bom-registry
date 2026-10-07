@@ -340,8 +340,8 @@
   <section class="animate" style="--i:2">
     <div class="sec-head">
       <span class="sec-num">01</span>
-      <span class="sec-title">Master BOM Tree</span>
-      <span class="sec-note">Level 0 → systems → key components<br>HIGH-priority nodes emphasised</span>
+      <span class="sec-title">System Overview</span>
+      <span class="sec-note">Level 0 → six major systems<br>clickable BOM tree in section 03</span>
     </div>
     <section class="diagram-shell">
       <p class="diagram-shell__hint">Ctrl/Cmd + wheel to zoom. Drag to pan when zoomed. Double-click to fit.</p>
@@ -359,56 +359,25 @@
         </div>
       </div>
       <script type="text/plain" class="diagram-source">
-        graph TD
-          L0["<b>Level 0</b><br/>Bulk Power Transmission<br/>(India)"]
-          L0 --> A["A · Overhead Line"]
-          L0 --> B["B · Substation Equipment"]
-          L0 --> C["C · HVDC &amp; Power Electronics"]
-          L0 --> D["D · Underground / Submarine Cable"]
-          L0 --> E["E · Support Systems"]
-          L0 --> F["F · Software / Control"]
-
-          A --> A1["Towers &amp; Structures"]
-          A --> A2["Conductors"]
-          A --> A3["Insulators"]
-          A --> A4["Earthwire / OPGW"]
-
-          B --> B1["Power Transformers / ICTs"]
-          B --> B2["Shunt &amp; Series Reactors"]
-          B --> B3["Switchgear — GIS / AIS"]
-          B --> B4["Instrument Transformers"]
-          B --> B5["Protection &amp; Automation"]
-
-          C --> C1["HVDC Converter Station"]
-          C --> C2["STATCOM / FACTS"]
-          C --> C3["Synchronous Condensers"]
-
-          C1 --> C1a["Converter Valves<br/>(thyristor / IGBT)"]
-          C1 --> C1b["Converter Transformers"]
-          C1 --> C1c["Control &amp; Protection"]
-
-          B1 --> B1a["CRGO Steel Core"]
-          B1 --> B1b["Cu / CTC Winding"]
-          B1 --> B1c["Transformer Oil"]
-          B1 --> B1d["Bushings / Tap Changer"]
-
-          A2 --> A2a["ACSR / AAAC / HTLS"]
-
-          classDef high fill:#c0392b,stroke:#8e2b20,color:#fff,stroke-width:2px;
-          classDef med fill:#d4a73a,stroke:#a37f22,color:#241a05,stroke-width:1.5px;
-          classDef low fill:#e6ecf3,stroke:#b8c6d6,color:#5a7290,stroke-width:1px;
-          classDef root fill:#1e4e8c,stroke:#12335c,color:#fff,stroke-width:2px;
-
-          class L0 root;
-          class A1,A2,A3,B1,B2,B3,C1,C2,C3,B1a,B1b high;
-          class A,B,C,A4,B4,B5,C1a,C1b,C1c,D,E,F,A2a med;
-          class B1c,B1d low;
+graph TD
+  L0["<b>Level 0</b><br/>Bulk Power Transmission<br/>(India)"]
+  L0 --> A["A · Overhead Line"]
+  L0 --> B["B · Substation Equipment"]
+  L0 --> C["C · HVDC &amp; Power Electronics"]
+  L0 --> D["D · Underground / Submarine Cable"]
+  L0 --> E["E · Support Systems"]
+  L0 --> F["F · Software / Control"]
+  classDef high fill:#c0392b,stroke:#8e2b20,color:#fff,stroke-width:2px;
+  classDef med fill:#d4a73a,stroke:#a37f22,color:#241a05,stroke-width:1.5px;
+  classDef root fill:#1e4e8c,stroke:#12335c,color:#fff,stroke-width:2px;
+  class L0 root;
+  class A,B,C high;
+  class D,E,F med;
       </script>
     </section>
     <div class="legend">
       <div class="legend-item"><div class="legend-swatch" style="background:var(--high)"></div> HIGH priority — bottleneck / import-critical</div>
       <div class="legend-item"><div class="legend-swatch" style="background:var(--med)"></div> MEDIUM priority</div>
-      <div class="legend-item"><div class="legend-swatch" style="background:var(--low)"></div> LOW priority — name-only</div>
       <div class="legend-item"><div class="legend-swatch" style="background:var(--blue)"></div> Root node</div>
     </div>
   </section>
@@ -452,7 +421,7 @@
   <section class="animate" style="--i:4">
     <div class="sec-head">
       <span class="sec-num">03</span>
-      <span class="sec-title">Click-Through Company Map</span>
+      <span class="sec-title">BOM Tree &amp; Company Map</span>
       <span class="sec-note">click a node → its NSE/BSE companies<br>gaps shown explicitly</span>
     </div>
     <div class="map-layout">
@@ -875,24 +844,51 @@ function renderPanel(node) {
   panelEl.innerHTML = html;
 }
 
-NODES.forEach((node, i) => {
-  const btn = document.createElement('button');
-  btn.className = 'node-btn';
-  btn.type = 'button';
-  const dotClass = (!node.companies || node.companies.length === 0) ? 'dot--none' : ('dot--' + node.pri);
-  let flags = '';
-  if (!node.companies || node.companies.length === 0) flags += `<span class="flag flag--gap">GAP</span>`;
-  else if (node.bott) flags += `<span class="flag flag--bott">BOTTLENECK</span>`;
-  btn.innerHTML = `<div class="node-btn__name"><span class="dot ${dotClass}"></span>${node.name}</div>
-    <div class="node-btn__meta"><span>${(node.companies || []).length} listed</span>${flags}</div>`;
-  btn.addEventListener('click', () => {
-    document.querySelectorAll('.node-btn').forEach(b => b.classList.remove('is-active'));
-    btn.classList.add('is-active');
-    renderPanel(node);
+const PTREE = [
+  { icon:'A', group:'Overhead Line', ids:['conductor','insulator','towers'] },
+  { icon:'B', group:'Substation Equipment', ids:['ehv','gis','txfroil','tap','syncon','crgo'] },
+  { icon:'C', group:'HVDC & Power Electronics', ids:['hvdc','statcom','semi'] },
+  { icon:'D', group:'Cable', ids:['cable'] },
+  { icon:'E', group:'Developer / Asset Owner', ids:['developer'] }
+];
+let firstBtn = null;
+PTREE.forEach((grp) => {
+  const wrap = document.createElement('div');
+  const head = document.createElement('button');
+  head.type = 'button';
+  head.style.cssText = 'display:flex;align-items:center;gap:8px;width:100%;text-align:left;background:transparent;border:none;cursor:pointer;padding:8px 6px;font-family:var(--font-mono);font-size:11px;font-weight:600;letter-spacing:.6px;color:var(--text-dim);text-transform:uppercase;';
+  head.innerHTML = '<span class="tgl" style="width:12px;display:inline-block;">&#9662;</span><span>' + grp.icon + ' &middot; ' + grp.group + '</span>';
+  const body = document.createElement('div');
+  body.style.cssText = 'margin-left:14px;border-left:1px dashed var(--border-bright);padding-left:8px;';
+  grp.ids.forEach((id) => {
+    const node = NODES.find((n) => n.id === id);
+    if (!node) return;
+    const btn = document.createElement('button');
+    btn.className = 'node-btn';
+    btn.type = 'button';
+    const dotClass = (!node.companies || node.companies.length === 0) ? 'dot--none' : ('dot--' + node.pri);
+    let flags = '';
+    if (!node.companies || node.companies.length === 0) flags += '<span class="flag flag--gap">GAP</span>';
+    else if (node.bott) flags += '<span class="flag flag--bott">BOTTLENECK</span>';
+    btn.innerHTML = '<div class="node-btn__name"><span class="dot ' + dotClass + '"></span>' + node.name + '</div><div class="node-btn__meta"><span>' + (node.companies || []).length + ' listed</span>' + flags + '</div>';
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.node-btn').forEach((b) => b.classList.remove('is-active'));
+      btn.classList.add('is-active');
+      renderPanel(node);
+    });
+    body.appendChild(btn);
+    if (!firstBtn) firstBtn = btn;
   });
-  nodesEl.appendChild(btn);
-  if (i === 0) { btn.classList.add('is-active'); renderPanel(node); }
+  head.addEventListener('click', () => {
+    const hidden = body.style.display === 'none';
+    body.style.display = hidden ? '' : 'none';
+    head.querySelector('.tgl').innerHTML = hidden ? '&#9662;' : '&#9656;';
+  });
+  wrap.appendChild(head);
+  wrap.appendChild(body);
+  nodesEl.appendChild(wrap);
 });
+if (firstBtn) { firstBtn.classList.add('is-active'); renderPanel(NODES.find((n) => n.id === 'conductor')); }
 </script>
 </body>
 </html>
