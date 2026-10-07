@@ -1,0 +1,345 @@
+{
+  "registry": "Industry BOM Registry",
+  "description": "Machine-readable node index. For every entry, the node names it contains plus the owning entry slug. Used for DEDUP (industry+scope already analysed) and LINEAGE (auto-linking a new industry to a parent when its name matches a node name). Update on every publish.",
+  "generated": "2026-10-07",
+  "entries": [
+    {
+      "slug": "power-transmission-india",
+      "industry": "Power Transmission",
+      "scope": "INDIA",
+      "path": "industries/power-transmission-india.html",
+      "analysis_date": "2026-10-07",
+      "universe": "NSE/BSE",
+      "sector": "Power & Electrical Infrastructure",
+      "derived_from": null,
+      "drill_downs": [],
+      "nodes": [
+        {
+          "id": "ehv",
+          "name": "EHV Power Transformers & Reactors",
+          "level": 2,
+          "aliases": [
+            "power transformer",
+            "power transformers",
+            "EHV transformer",
+            "ICT",
+            "ICTs",
+            "interconnecting transformer",
+            "auto-transformer",
+            "autotransformer",
+            "shunt reactor",
+            "series reactor",
+            "transformer"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "hvdc",
+          "name": "HVDC Converter Stations & Control",
+          "level": 2,
+          "aliases": [
+            "HVDC",
+            "converter station",
+            "LCC",
+            "VSC",
+            "converter valve",
+            "thyristor valve",
+            "IGBT valve",
+            "converter transformer",
+            "HVDC control"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "statcom",
+          "name": "STATCOM / Synchronous Condensers / FACTS",
+          "level": 2,
+          "aliases": [
+            "STATCOM",
+            "synchronous condenser",
+            "SynCon",
+            "FACTS",
+            "SVC",
+            "reactive compensation",
+            "series compensation",
+            "static synchronous compensator"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "gis",
+          "name": "GIS / AIS Switchgear",
+          "level": 2,
+          "aliases": [
+            "gas insulated switchgear",
+            "GIS",
+            "air insulated switchgear",
+            "AIS",
+            "circuit breaker",
+            "disconnector",
+            "isolator",
+            "gas insulated bus duct",
+            "switchgear"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "conductor",
+          "name": "Conductors",
+          "level": 2,
+          "aliases": [
+            "conductor",
+            "ACSR",
+            "AAAC",
+            "HTLS",
+            "ACCC",
+            "aluminium conductor",
+            "aluminum conductor",
+            "copper conductor",
+            "all aluminium alloy conductor"
+          ],
+          "priority": "high",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "insulator",
+          "name": "Insulators",
+          "level": 2,
+          "aliases": [
+            "insulator",
+            "porcelain insulator",
+            "composite insulator",
+            "disc insulator",
+            "hollow core insulator",
+            "long rod insulator"
+          ],
+          "priority": "medium",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "towers",
+          "name": "Towers & Transmission EPC",
+          "level": 2,
+          "aliases": [
+            "lattice tower",
+            "transmission tower",
+            "monopole",
+            "transmission line EPC",
+            "T&D EPC",
+            "tower",
+            "line construction"
+          ],
+          "priority": "high",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "cable",
+          "name": "Cables (EHV / HV)",
+          "level": 2,
+          "aliases": [
+            "power cable",
+            "EHV cable",
+            "HV cable",
+            "XLPE cable",
+            "submarine cable",
+            "underground cable",
+            "OPGW",
+            "cable"
+          ],
+          "priority": "medium",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "developer",
+          "name": "Transmission Developer / Owner",
+          "level": 1,
+          "aliases": [
+            "transmission developer",
+            "transmission utility",
+            "TBCB developer",
+            "BOOT",
+            "transmission SPV",
+            "transmission InvIT",
+            "central transmission utility",
+            "transmission asset owner"
+          ],
+          "priority": "high",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "txfroil",
+          "name": "Transformer Oil",
+          "level": 2,
+          "aliases": [
+            "transformer oil",
+            "insulating oil",
+            "ester fluid",
+            "naphthenic oil",
+            "specialty oil"
+          ],
+          "priority": "medium",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "crgo",
+          "name": "CRGO Electrical Steel",
+          "level": 4,
+          "aliases": [
+            "CRGO",
+            "grain oriented electrical steel",
+            "GOES",
+            "electrical steel",
+            "core steel",
+            "cold rolled grain oriented steel"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": false,
+          "coverage_note": "No NSE/BSE pure-play. Nearest: JSW Steel (JSW-JFE is a 50:50 JV)."
+        },
+        {
+          "id": "semi",
+          "name": "Power Semiconductors (IGBT / SiC)",
+          "level": 3,
+          "aliases": [
+            "IGBT",
+            "SiC",
+            "silicon carbide",
+            "thyristor",
+            "power semiconductor",
+            "HV capacitor",
+            "power module"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": false,
+          "coverage_note": "No listed pure-play in India. Nearest: BHEL / Hitachi as integrators. Context: Hyosung T&D India, TBEA, NR Electric."
+        },
+        {
+          "id": "tap",
+          "name": "Tap Changers, Bushings, Pressboard",
+          "level": 3,
+          "aliases": [
+            "tap changer",
+            "OLTC",
+            "on-load tap changer",
+            "bushing",
+            "pressboard",
+            "kraft paper",
+            "RIP bushing"
+          ],
+          "priority": "medium",
+          "bottleneck": false,
+          "in_universe_coverage": false,
+          "coverage_note": "No listed pure-play in India; largely foreign (MR Reinhausen, Hitachi, ABB)."
+        },
+        {
+          "id": "syncon",
+          "name": "Synchronous Condenser Machines",
+          "level": 3,
+          "aliases": [
+            "synchronous condenser",
+            "rotating machine",
+            "flywheel",
+            "inertia",
+            "salient pole machine",
+            "cylindrical rotor machine"
+          ],
+          "priority": "medium",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "overhead-line",
+          "name": "Overhead Transmission Line",
+          "level": 1,
+          "aliases": [
+            "overhead line",
+            "transmission line",
+            "OH line",
+            "overhead transmission"
+          ],
+          "priority": "high",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "substation",
+          "name": "Substation Equipment",
+          "level": 1,
+          "aliases": [
+            "substation",
+            "switching station",
+            "substation equipment",
+            "pooling station",
+            "switchyard"
+          ],
+          "priority": "high",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "hvdcepe",
+          "name": "HVDC & Power Electronics",
+          "level": 1,
+          "aliases": [
+            "power electronics",
+            "HVDC system",
+            "FACTS system",
+            "converter"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "support-systems",
+          "name": "Support Systems",
+          "level": 1,
+          "aliases": [
+            "earthing",
+            "lightning protection",
+            "station battery",
+            "auxiliary transformer",
+            "fire protection",
+            "DC system"
+          ],
+          "priority": "medium",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "software-control",
+          "name": "Software / Control",
+          "level": 1,
+          "aliases": [
+            "SCADA",
+            "EMS",
+            "substation automation",
+            "IEC 61850",
+            "protection relay",
+            "grid automation",
+            "HVDC control"
+          ],
+          "priority": "medium",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        }
+      ]
+    }
+  ]
+}
