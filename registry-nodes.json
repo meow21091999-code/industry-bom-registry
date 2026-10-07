@@ -1187,6 +1187,252 @@
           "in_universe_coverage": false
         }
       ]
+    },
+    {
+      "slug": "ehv-hv-cables-india",
+      "industry": "EHV / HV Power Cables",
+      "scope": "INDIA",
+      "path": "industries/ehv-hv-cables-india.html",
+      "analysis_date": "2026-10-07",
+      "universe": "NSE/BSE",
+      "sector": "Power & Electrical Infrastructure",
+      "derived_from": null,
+      "drill_downs": [],
+      "nodes": [
+        {
+          "id": "conductor",
+          "name": "Conductor system",
+          "level": 1,
+          "aliases": [
+            "conductor",
+            "copper conductor",
+            "aluminium conductor",
+            "aluminum conductor",
+            "milliken conductor",
+            "segmental conductor"
+          ],
+          "priority": "high",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "cu",
+          "name": "Copper conductor",
+          "level": 2,
+          "aliases": [
+            "copper",
+            "copper rod",
+            "copper cathode",
+            "birla copper",
+            "kutch copper"
+          ],
+          "priority": "medium",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "al",
+          "name": "Aluminium conductor",
+          "level": 2,
+          "aliases": [
+            "aluminium",
+            "aluminum",
+            "aluminium conductor",
+            "NALCO"
+          ],
+          "priority": "medium",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "insulation",
+          "name": "XLPE insulation system",
+          "level": 1,
+          "aliases": [
+            "XLPE",
+            "insulation",
+            "cross-linked polyethylene",
+            "triple extrusion"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": false
+        },
+        {
+          "id": "xlpe",
+          "name": "XLPE compound (HV/EHV grade)",
+          "level": 2,
+          "aliases": [
+            "XLPE compound",
+            "XLPE resin",
+            "Borealis",
+            "Borouge",
+            "Hanwha",
+            "BLS Polymers"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": false
+        },
+        {
+          "id": "semicon",
+          "name": "Semiconductive compound",
+          "level": 2,
+          "aliases": [
+            "semicon",
+            "semiconductive screen",
+            "conductor screen",
+            "insulation screen"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": false
+        },
+        {
+          "id": "screen",
+          "name": "Metallic screen & moisture barrier",
+          "level": 1,
+          "aliases": [
+            "copper screen",
+            "lead sheath",
+            "corrugated aluminium",
+            "moisture barrier",
+            "water blocking"
+          ],
+          "priority": "medium",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "sheath",
+          "name": "Sheath & armour",
+          "level": 1,
+          "aliases": [
+            "HDPE sheath",
+            "PVC sheath",
+            "outer sheath",
+            "armour",
+            "armouring"
+          ],
+          "priority": "medium",
+          "bottleneck": false,
+          "in_universe_coverage": false
+        },
+        {
+          "id": "accessories",
+          "name": "Joints, terminations & accessories",
+          "level": 1,
+          "aliases": [
+            "cable joint",
+            "termination",
+            "stress cone",
+            "sealing end",
+            "Raychem RPG",
+            "pre-moulded joint"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "machinery",
+          "name": "CCV / VCV line & equipment",
+          "level": 1,
+          "aliases": [
+            "CCV",
+            "VCV",
+            "continuous vulcanization",
+            "catenary line",
+            "Troester",
+            "Maillefer",
+            "Sikora",
+            "vertical vulcanization"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": false
+        },
+        {
+          "id": "gases",
+          "name": "Industrial gases (N2)",
+          "level": 1,
+          "aliases": [
+            "nitrogen",
+            "industrial gases",
+            "high-purity nitrogen",
+            "Linde",
+            "INOX"
+          ],
+          "priority": "medium",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "testing",
+          "name": "Testing & certification",
+          "level": 1,
+          "aliases": [
+            "partial discharge",
+            "impulse test",
+            "type test",
+            "CPRI",
+            "NABL",
+            "IEC 60840",
+            "IEC 62067"
+          ],
+          "priority": "medium",
+          "bottleneck": false,
+          "in_universe_coverage": false
+        },
+        {
+          "id": "install",
+          "name": "Installation / cable-laying EPC",
+          "level": 1,
+          "aliases": [
+            "EPC",
+            "cable laying",
+            "trenching",
+            "jointing",
+            "installation",
+            "RDSS"
+          ],
+          "priority": "high",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "subsea",
+          "name": "Submarine cable & lay vessels",
+          "level": 1,
+          "aliases": [
+            "submarine cable",
+            "subsea cable",
+            "offshore cable",
+            "cable laying vessel",
+            "CLV",
+            "dynamic cable"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": false
+        },
+        {
+          "id": "om",
+          "name": "Aftermarket & monitoring",
+          "level": 1,
+          "aliases": [
+            "aftermarket",
+            "DTS",
+            "DAS",
+            "condition monitoring",
+            "repair",
+            "recycling"
+          ],
+          "priority": "medium",
+          "bottleneck": false,
+          "in_universe_coverage": false
+        }
+      ]
     }
   ]
 }
