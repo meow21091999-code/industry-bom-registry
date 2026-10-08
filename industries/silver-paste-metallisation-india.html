@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Solar Cell Fabrication — Industrial BOM & Value Chain (India)</title>
+<title>Silver Paste &amp; Metallisation — Industrial BOM & Value Chain (India)</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -183,13 +183,13 @@
 
   <div style="font-family:var(--font-mono);font-size:11.5px;color:var(--ink-dim);margin-bottom:18px;line-height:1.8;">
     <a href="../index.html" style="color:var(--blue-bright);text-decoration:none;border-bottom:1px solid var(--border);">&larr; Industry BOM Registry</a>
-    <span>&nbsp;/&nbsp;Solar PV &mdash; India&nbsp;/&nbsp;Solar Cell Fabrication</span>
-    <div style="margin-top:8px;color:var(--gold);">Derived from: Solar PV (India) &rarr; node &ldquo;Solar Cell Fabrication&rdquo;</div>
+    <span>&nbsp;/&nbsp;Solar PV &mdash; India&nbsp;/&nbsp;Solar Cell Fabrication&nbsp;/&nbsp;Silver Paste &amp; Metallisation</span>
+    <div style="margin-top:8px;color:var(--gold);">Derived from: Solar Cell Fabrication (India) &rarr; node &ldquo;Metallisation paste (Ag / Al)&rdquo;</div>
   </div>
 
   <header class="an" style="--i:0">
     <div class="eyebrow">Industrial BOM &amp; Value-Chain Dissection</div>
-    <h1>Solar Cell Fabrication</h1>
+    <h1>Silver Paste &amp; Metallisation</h1>
     <div class="sub">India · NSE/BSE company mapping · depth-first · analysis date 2026-10-07</div>
     <div class="badges">
       <span class="badge">Scope: INDIA</span>
@@ -200,26 +200,19 @@
     </div>
   </header>
 
-  <div style="display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;background:var(--gold-dim);border:1px solid var(--gold);border-radius:10px;padding:14px 18px;margin-bottom:24px;">
-    <span style="font-size:13px;line-height:1.5;"><strong style="color:var(--text);">Drill-down available &rarr;</strong> <span style="color:var(--text-dim);">1 deep-dive entry branches from this page.</span></span>
-    <span style="display:flex;gap:10px;flex-wrap:wrap;">
-      <a href="silver-paste-metallisation-india.html" style="font-family:var(--font-mono);font-size:12px;font-weight:600;color:var(--gold);text-decoration:none;border:1px solid var(--gold);border-radius:6px;padding:6px 12px;white-space:nowrap;background:var(--surface);">Silver Paste &amp; Metallisation &rarr;</a>
-    </span>
-  </div>
-
   <div class="kpi an" style="--i:1">
-    <div class="kpi-c"><div class="kpi-v">~36.6 GW</div><div class="kpi-l">India cell manufacturing capacity, Jun-2026</div></div>
-    <div class="kpi-c"><div class="kpi-v">16–18 GW</div><div class="kpi-l">Effective operating cell capacity</div></div>
-    <div class="kpi-c"><div class="kpi-v">&gt;99%</div><div class="kpi-l">Silicon wafers imported — the cell input</div></div>
-    <div class="kpi-c"><div class="kpi-v">~₹600 cr</div><div class="kpi-l">Capex per GW of cell capacity</div></div>
-    <div class="kpi-c"><div class="kpi-v">~24%</div><div class="kpi-l">Metallisation share of cell-conversion cost</div></div>
-    <div class="kpi-c"><div class="kpi-v">33%</div><div class="kpi-l">TOPCon share of India cell capacity</div></div>
+    <div class="kpi-c"><div class="kpi-v">16–17%</div><div class="kpi-l">Silver share of module cost (2026)</div></div>
+    <div class="kpi-c"><div class="kpi-v">~30%</div><div class="kpi-l">Silver paste share of total cell cost</div></div>
+    <div class="kpi-c"><div class="kpi-v">~$84/oz</div><div class="kpi-l">Silver price peak, Dec-2025</div></div>
+    <div class="kpi-c"><div class="kpi-v">86 mg</div><div class="kpi-l">TOPCon silver per cell (CPIA 2025)</div></div>
+    <div class="kpi-c"><div class="kpi-v">1.1 mg/Wp</div><div class="kpi-l">Plated TOPCon silver (Fraunhofer ISE)</div></div>
+    <div class="kpi-c"><div class="kpi-v">~19%</div><div class="kpi-l">Forecast drop in PV silver demand, 2026</div></div>
   </div>
 
   <!-- 1. OVERVIEW -->
   <section class="an" style="--i:2">
     <div class="sec-h"><span class="sec-num">01</span><span class="sec-t">System overview</span></div>
-    <p class="sec-d">Cell fabrication turns an imported wafer into a current-producing device through a ~15–20 step sequence of wet chemistry, high-temperature diffusion, deposition and metallisation. Gold-bordered nodes below are the HIGH-priority subsystems carried into the drill-down tree — the wafer input, the deposition and metallisation steps, the cell-line machinery and the silver paste. This is the node where India's import dependence has moved to, not disappeared.</p>
+    <p class="sec-d">Metallisation turns a passivated wafer into a current-delivering cell by printing (or plating) a conductive grid. Gold-bordered nodes below are the HIGH-priority subsystems carried into the drill-down tree — the silver powder, the glass frit, the front-side paste, the printing step, the copper-substitution pathways and the upstream silver metal. This is the node where the module's largest cost line now sits, and where the technology is actively migrating.</p>
     <div class="diagram-shell">
       <p class="hint">Ctrl/Cmd + wheel to zoom · drag to pan · double-click to fit</p>
       <div class="mermaid-wrap">
@@ -235,24 +228,24 @@
       </div>
       <script type="text/plain" class="diagram-source">
 flowchart TD
-  L0["Solar Cell Fabrication<br/>crystalline-silicon cell"]
-  L0 --> A["1 · Incoming wafer"]
-  L0 --> B["2 · Wet chemistry / texturing"]
-  L0 --> C["3 · Emitter diffusion"]
-  L0 --> D["4 · Passivation &amp; ARC"]
-  L0 --> E["5 · Laser / selective emitter"]
-  L0 --> F["6 · Metallisation"]
-  L0 --> G["7 · Co-firing"]
-  L0 --> H["8 · Testing &amp; sorting"]
-  L0 --> I["9 · Plating (silver-free, emerging)"]
-  L0 --> J["10 · Cell-line machinery"]
-  L0 --> K["11 · Process gases &amp; chemicals"]
-  L0 --> L["12 · Silver paste"]
-  L0 --> M["13 · Fab infrastructure (UPW / cleanroom / ZLD)"]
+  L0["Silver Paste &amp; Metallisation<br/>cell conductive grid"]
+  L0 --> A["1 · Silver powder"]
+  L0 --> B["2 · Glass frit (Pb-Te-O)"]
+  L0 --> C["3 · Organic vehicle / solvents"]
+  L0 --> D["4 · Front-side Ag paste"]
+  L0 --> E["5 · Rear Al paste &amp; Ag/Al pads"]
+  L0 --> F["6 · Printing screens"]
+  L0 --> G["7 · Screen printing &amp; drying"]
+  L0 --> H["8 · Co-firing"]
+  L0 --> I["9 · Laser (LECO / selective emitter)"]
+  L0 --> J["10 · Silver-coated copper paste"]
+  L0 --> K["11 · Pure copper paste"]
+  L0 --> L["12 · Ni/Cu/Ag electroplating"]
+  L0 --> M["13 · Silver metal (upstream)"]
   classDef high fill:#b8860b22,stroke:#b8860b,stroke-width:2px,color:#8a6508
   classDef med fill:#2563eb18,stroke:#2563eb,stroke-width:1.5px
-  class A,C,D,F,J,L high
-  class B,E,G,H,I,K,M med
+  class A,B,D,G,J,L,M high
+  class C,E,F,H,I,K med
       </script>
     </div>
   </section>
@@ -260,31 +253,31 @@ flowchart TD
   <!-- 2. VALUE CHAIN LADDER -->
   <section class="an" style="--i:3">
     <div class="sec-h"><span class="sec-num">02</span><span class="sec-t">Value-chain ladder</span></div>
-    <p class="sec-d">Raw material → aftermarket, with the Tier-4 → OEM supplier bands. The value inversion is sharp: the wafer dominates cell cost and is imported, while the highest domestic value-add sits at the cell-conversion step itself — which is exactly what ALMM List-II has tried to localise.</p>
+    <p class="sec-d">Raw material → aftermarket, with the Tier-4 → OEM supplier bands. The value and the IP sit in the paste formulation (glass frit + silver powder + vehicle) and now increasingly in the copper-substitution and plating pathways — almost entirely outside India.</p>
     <div class="ladder">
       <div class="rung rung--1">
         <div class="rung__label">Tier 4 · Raw</div>
-        <div class="rung__body"><b>Polysilicon</b> · silicon metal · quartz · silver · aluminium · copper <span class="mini">China ~93% polysilicon · ~97% wafers</span></div>
+        <div class="rung__body"><b>Silver metal</b> · aluminium · copper · tellurium / lead (frit) · organic solvents <span class="mini">Hindustan Zinc (silver, by-product)</span></div>
       </div>
       <div class="rung rung--2">
         <div class="rung__label">Tier 3 · Specialty</div>
-        <div class="rung__body"><b>Silicon wafers</b> · silver / aluminium paste · fine-mesh screens · POCl₃ / BBr₃ dopants · silane &amp; ammonia · high-purity silver powder</div>
+        <div class="rung__body"><b>Silver powder</b> · glass frit (Pb-Te-O) · organic vehicle · paste formulation · fine-mesh screens</div>
       </div>
       <div class="rung rung--3">
         <div class="rung__label">Tier 2 · Component</div>
-        <div class="rung__body"><b>The solar cell</b> — wafer-to-cell conversion (texture → diffusion → passivation → metallisation → test)</div>
+        <div class="rung__body"><b>The printed / plated metallisation stack</b> — Ag fingers &amp; busbars, Al rear, Ag/Al pads</div>
       </div>
       <div class="rung rung--4">
-        <div class="rung__label">Tier 1 · Cell OEMs</div>
-        <div class="rung__body"><b>Premier</b> · <b>Waaree</b> · Websol · Emmvee · Tata Power (TP Solar) · Reliance · Avaada (unlisted) · ReNew (Nasdaq)</div>
+        <div class="rung__label">Tier 1 · Paste makers</div>
+        <div class="rung__body"><b>DKEM</b> · Fusion · Solamet · DuPont · Heraeus · Samsung SDI <span class="mini">all foreign-listed / unlisted in India</span></div>
       </div>
       <div class="rung rung--4">
         <div class="rung__label">OEM / Downstream</div>
-        <div class="rung__body"><b>Module makers</b> and <b>IPP / developers</b> — the demand layer that ALMM-II channels toward domestic cells <span class="mini">ALMM-II in force 1-Jun-2026</span></div>
+        <div class="rung__body"><b>Cell makers</b> — Premier · Waaree · Websol · Emmvee — the cost-bearers of the silver spike</div>
       </div>
       <div class="rung rung--1">
         <div class="rung__label">Aftermarket</div>
-        <div class="rung__body">Repowering · module / cell recycling · silver recovery <span class="mini">emerging, largely informal</span></div>
+        <div class="rung__body">Module / cell recycling · silver recovery from end-of-life panels <span class="mini">emerging, largely informal</span></div>
       </div>
     </div>
   </section>
@@ -306,7 +299,7 @@ flowchart TD
   </section>
 
   <footer class="an" style="--i:5">
-    <strong>Sources.</strong> Compiled from public disclosures and reporting dated to 2026-10-07: MNRE (ALMM List-II revisions, Office Memoranda 2024–26); Mercom India (State of Solar PV Manufacturing in India H1 2026; Market Leaderboard 2026); CSE, India's Solar Manufacturing Ecosystem (Aug-2026); NITI Aayog (2026); TERI (2026); ICRA (2025); CRU and ITRPV (17th edition) on PERC→TOPCon transition and silver thrifting; NREL cell-conversion cost benchmark; TOPCon total-cost-of-ownership studies; TaiyangNews / pv-magazine / PV Tech on silver paste, plating and equipment; Reuters, Mint, Economic Times, Financial Express (2026); BSE/NSE filings and investor materials — Waaree Energies, Premier Energies, Websol Energy System, Emmvee, Tata Power, Reliance Industries, Linde India. Figures carry their own as-of dates; market-share and capacity numbers are as reported by the named source and are not independently audited here. Materiality attributions for conglomerate segments are marked [INFERENCE] in the node panels. This is an analytical map, not investment advice.
+    <strong>Sources.</strong> Compiled from public disclosures and reporting dated to 2026-10-07: OPIS via pv magazine (silver share of module / cell cost, price pass-through, CPIA silver-per-cell data); Reuters (silver shift, ~$15bn savings estimate, Feb-2026); The Silver Institute, World Silver Survey 2026 (silver price and PV demand); InfoLink (silver price sensitivity of module cost); ITRPV 17th edition and TaiyangNews (silver mg/cell roadmap, paste portfolio); Fraunhofer ISE / RENA Technologies and IEEE Journal of Photovoltaics (Ni/Cu/Ag electroplating, 1.1 mg/Wp); UNSW / Solar Energy Materials and Solar Cells (silver-lean dash printing); DKEM, Solamet and pv magazine / PV Tech (paste products, patent litigation, copper-metallisation commercialisation); MNRE and DGFT (silver-import restriction, 16 May 2026); BSE/NSE filings — Hindustan Zinc, Vedanta, and cell makers (Premier Energies, Waaree, Websol). Figures carry their own as-of dates; market-share and capacity numbers are as reported by the named source and are not independently audited here. Materiality attributions for conglomerate segments are marked [INFERENCE] in the node panels. This is an analytical map, not investment advice.
   </footer>
 
 </div>
@@ -390,56 +383,51 @@ function initDiagram(shell){
 document.querySelectorAll('.diagram-shell').forEach(initDiagram);
 
 const NODES = {
-  cell:{n:'Solar Cell Fabrication',lvl:0,pri:'',imp:'imported',btn:true,vc:'high',cos:[
-    {c:'Premier Energies',x:'NSE: PREMIERENE',e:'DIRECT',m:'10.6 GW cell capacity (7 GW TOPCon at Naidupeta, AP); targeting ~25.8% cell efficiency; India largest cell plant'},
-    {c:'Waaree Energies',x:'NSE: WAAREEENER',e:'DIRECT',m:'5.4 GW cell capacity, scaling toward 15.4 GW; 10 GW cell plant at Unn, Gujarat; ingot-wafer at Nagpur'},
-    {c:'Websol Energy System',x:'NSE: WEBELSOLAR',e:'DIRECT',m:'1.2 GW → 1.35 GW; brownfield PERC→TOPCon upgrade at Falta SEZ, West Bengal'},
-    {c:'Emmvee Photovoltaic Power',x:'NSE: EMMVEE',e:'DIRECT',m:'2,153 MW TOPCon cell listed on ALMM List-II'},
-    {c:'Tata Power (TP Solar)',x:'NSE: TATAPOWER',e:'CONGLOMERATE',m:'4,480 MW cell at Tirunelveli (ALMM-II); small share of consolidated revenue [INFERENCE]'},
-    {c:'Reliance Industries',x:'NSE: RELIANCE',e:'CONGLOMERATE',m:'1,238 MW HJT cell at Jamnagar (ALMM-II); New Energy segment, minor to group [INFERENCE]'}
-  ]},
+  metal:{n:'Silver Paste & Metallisation',lvl:0,pri:'',imp:'imported',btn:true,vc:'high',cos:[
+    {c:'Hindustan Zinc',x:'NSE: HINDZINC',e:'SUPPLIER',m:'India largest silver producer (by-product of zinc smelting) — upstream metal, not paste [INFERENCE]'},
+    {c:'Vedanta',x:'NSE: VEDL',e:'SUPPLIER',m:'Parent of Hindustan Zinc — indirect upstream silver exposure [INFERENCE]'}
+  ],gap:'Paste formulation itself — the technology and IP — sits with foreign suppliers (DKEM, Fusion, Solamet, DuPont, Heraeus, Samsung SDI). The only listed NSE/BSE exposure is the upstream silver metal.'},
 
-  wafer:{n:'Incoming wafer',lvl:1,pri:'HIGH',imp:'imported',btn:true,vc:'high',cos:[
-    {c:'Tata Power',x:'NSE: TATAPOWER',e:'INDIRECT',m:'10 GW ingot-wafer plan announced Dec-2025 (~Rs 6,500 cr)'},
-    {c:'Waaree Energies',x:'NSE: WAAREEENER',e:'INDIRECT',m:'10 GW integrated ingot-wafer facility under construction at Nagpur'},
-    {c:'Reliance Industries',x:'NSE: RELIANCE',e:'CONGLOMERATE',m:'Integrated upstream plans'}
-  ],gap:'>99% of India silicon wafers are imported (China ~97% of global supply). Domestic wafer capacity is ~2 GW and is the binding input constraint — the reason ALMM-III (2028) targets this stage.'},
+  silvermetal:{n:'Silver metal & silver powder',lvl:1,pri:'HIGH',imp:'imported',btn:true,vc:'high',cos:[
+    {c:'Hindustan Zinc',x:'NSE: HINDZINC',e:'SUPPLIER',m:'India largest silver producer; silver is a by-product, small share of revenue [INFERENCE]'},
+    {c:'Vedanta',x:'NSE: VEDL',e:'SUPPLIER',m:'Indirect via Hindustan Zinc [INFERENCE]'}
+  ],gap:'High-purity silver powder is imported; high-purity silver bars (≥99.9%) were moved to the Restricted import category by DGFT from 16 May 2026.'},
 
-  ingot:{n:'Ingot & polysilicon',lvl:2,pri:'HIGH',imp:'imported',btn:true,vc:'high',cos:[],gap:'NO COVERAGE IN SELECTED UNIVERSE as a pure-play. India has ~2 GW of ingot-wafer and no commercial polysilicon production. Nearest listed: Reliance, Tata Power, Waaree — integrated plans only.'},
+  frit:{n:'Glass frit (Pb-Te-O)',lvl:2,pri:'HIGH',imp:'imported',btn:true,vc:'high',cos:[],gap:'NO COVERAGE. The Pb-Te-O glass-frit formulation is the core IP moat of the paste — patented by the DuPont/Solamet line and now litigated by DKEM. No NSE/BSE pure-play.'},
 
-  pastes:{n:'Metallisation paste (Ag / Al)',lvl:1,pri:'HIGH',imp:'imported',btn:true,vc:'high',cos:[],gap:'NO COVERAGE IN SELECTED UNIVERSE. Silver and aluminium pastes are largely imported; metallisation is the single largest direct cost after the wafer (~24% of cell-conversion cost).'},
+  vehicle:{n:'Organic vehicle & solvents',lvl:2,pri:'MED',imp:'imported',btn:false,vc:'medium',cos:[],gap:'NO COVERAGE — specialty organic systems, no listed Indian pure-play.'},
 
-  silverpowder:{n:'Silver powder & high-purity silver',lvl:2,pri:'HIGH',imp:'imported',btn:true,vc:'high',cos:[],gap:'NO COVERAGE. High-purity silver bars (≥99.9%) were moved to the Restricted import category by DGFT from 16 May 2026; paste / silver-powder suppliers are foreign (DKEM, Fusion, Solamet, DuPont, Heraeus).'},
+  frontpaste:{n:'Front-side Ag paste',lvl:1,pri:'HIGH',imp:'imported',btn:true,vc:'high',cos:[],gap:'NO COVERAGE IN SELECTED UNIVERSE. Supplied by DKEM (300842.SZ), Fusion, Solamet, DuPont, Heraeus, Samsung SDI. This is the largest single cost line in the cell.'},
 
-  gases:{n:'Process gases (silane, NH₃, POCl₃, BBr₃)',lvl:1,pri:'MED',imp:'imported',btn:true,vc:'medium',cos:[
-    {c:'Linde India',x:'NSE: LINDEINDIA',e:'SUPPLIER',m:'Industrial and specialty gases; cell-grade silane / dopant gases partly imported [INFERENCE]'}
-  ],gap:'Specialty cell process gases are substantially imported. Linde India is a listed supplier of industrial / specialty gases but not a cell-gas pure-play.'},
+  alpads:{n:'Rear Al paste & Ag/Al pads',lvl:1,pri:'MED',imp:'imported',btn:false,vc:'medium',cos:[],gap:'NO COVERAGE — imported / commodity paste; no listed Indian pure-play.'},
 
-  chem:{n:'Wet chemicals (KOH, HF, HNO₃)',lvl:1,pri:'MED',imp:'partial',btn:false,vc:'low',cos:[],gap:'Commodity and fragmented; no cell-specific listed pure-play.'},
+  screens:{n:'Printing screens & stencils',lvl:1,pri:'MED',imp:'imported',btn:false,vc:'medium',cos:[],gap:'NO COVERAGE — fine-mesh screens (down to ~9–13 µm openings) are imported; no NSE/BSE pure-play.'},
 
-  screens:{n:'Printing screens & consumables',lvl:1,pri:'MED',imp:'imported',btn:false,vc:'medium',cos:[],gap:'NO COVERAGE — fine-mesh screens are imported; no NSE/BSE pure-play.'},
+  printing:{n:'Screen printing & drying',lvl:1,pri:'HIGH',imp:'imported',btn:true,vc:'medium',cos:[],gap:'NO COVERAGE. Screen printers, dryers and the metallisation line are foreign-supplied; no listed Indian equipment maker.'},
 
-  equipment:{n:'Cell-line machinery',lvl:1,pri:'HIGH',imp:'imported',btn:true,vc:'medium',cos:[],gap:'NO COVERAGE. Turnkey cell lines come from Jinchen (SSE: 603396, China), Singulus (Germany, via the Jinchen JV), Linton (China, for Websol) and SVCS; >90% of cell-line capex is foreign.'},
+  firing:{n:'Co-firing',lvl:1,pri:'MED',imp:'imported',btn:false,vc:'medium',cos:[],gap:'NO COVERAGE — fast-firing furnaces are foreign OEM equipment.'},
 
-  pecvd:{n:'Diffusion / PECVD / ALD tools',lvl:2,pri:'HIGH',imp:'imported',btn:true,vc:'medium',cos:[],gap:'NO COVERAGE. Deposition and diffusion tools are foreign; PVD-based TOPCon (e.g. VON ARDENNE) is a rising, tandem-upgradable alternative.'},
+  laser:{n:'Laser (LECO / selective emitter)',lvl:1,pri:'MED',imp:'imported',btn:false,vc:'medium',cos:[],gap:'NO COVERAGE — laser contact-optimisation tools are foreign.'},
 
-  metallise_equip:{n:'Screen printers & firing furnaces',lvl:2,pri:'HIGH',imp:'imported',btn:true,vc:'medium',cos:[],gap:'NO COVERAGE. Metallisation tools (printers, dryers, fast-firing furnaces) are dominated by foreign OEMs.'},
+  agcu:{n:'Silver-coated copper paste',lvl:1,pri:'HIGH',imp:'imported',btn:true,vc:'high',cos:[],gap:'NO COVERAGE. The main near-term de-silvering route; led by DKEM (high-copper paste at GW scale in 2026) and Solamet (PV43T). No NSE/BSE pure-play.'},
 
-  testing:{n:'Testing, sorting & ALMM qualification',lvl:1,pri:'MED',imp:'partial',btn:false,vc:'medium',cos:[],gap:'IV testers / EL / sorters are foreign; ALMM List-II enlistment is the market gate. No listed pure-play.'},
+  cupaste:{n:'Pure copper paste',lvl:1,pri:'MED',imp:'imported',btn:true,vc:'high',cos:[],gap:'NO COVERAGE — early-commercial; oxidation and copper-diffusion unsolved. Solamet PV46 series, DKEM hybrid preservation. No listed Indian pure-play.'},
 
-  infra:{n:'Fab infrastructure (UPW, cleanroom, ZLD)',lvl:1,pri:'MED',imp:'domestic',btn:false,vc:'medium',cos:[],gap:'Ultra-pure water, cleanrooms and zero-liquid-discharge systems — built by unlisted engineering firms; no listed pure-play.'}
+  plating:{n:'Ni/Cu/Ag electroplating',lvl:1,pri:'HIGH',imp:'imported',btn:true,vc:'high',cos:[],gap:'NO COVERAGE. Fraunhofer ISE / RENA pilot lines cut silver to 1.1 mg/Wp; equipment and chemicals come from European / American suppliers (RENA, Atotech). No listed Indian pure-play.'}
 };
 
 const TREE = {
-  id:'cell', children:[
-    {id:'wafer', children:[{id:'ingot'}]},
-    {id:'pastes', children:[{id:'silverpowder'}]},
-    {id:'gases'},
-    {id:'chem'},
+  id:'metal', children:[
+    {id:'silvermetal'},
+    {id:'frontpaste', children:[{id:'frit'},{id:'vehicle'}]},
+    {id:'alpads'},
     {id:'screens'},
-    {id:'equipment', children:[{id:'pecvd'},{id:'metallise_equip'}]},
-    {id:'testing'},
-    {id:'infra'}
+    {id:'printing'},
+    {id:'firing'},
+    {id:'laser'},
+    {id:'agcu'},
+    {id:'cupaste'},
+    {id:'plating'}
   ]
 };
 
@@ -495,7 +483,7 @@ function select(id){
     `<div class="tagrow">${tags}</div>`+(d.drillTo?`<a href="${d.drillTo}" style="display:block;margin:0 0 12px;padding:10px 12px;border:1px solid var(--gold);border-radius:8px;background:var(--gold-dim);color:var(--gold);font-family:var(--font-mono);font-size:11.5px;font-weight:600;text-decoration:none;">Drill-down &rarr; ${d.drillLabel}</a>`:'')+body;
 }
 renderTree();
-select('cell');
+select('metal');
 </script>
 </body>
 </html>

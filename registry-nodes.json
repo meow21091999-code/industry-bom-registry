@@ -1667,7 +1667,9 @@
         "slug": "solar-pv-india",
         "node": "Solar Cell Fabrication"
       },
-      "drill_downs": [],
+      "drill_downs": [
+        "silver-paste-metallisation-india"
+      ],
       "nodes": [
         {
           "id": "wafer",
@@ -1845,6 +1847,194 @@
           ],
           "priority": "medium",
           "bottleneck": false,
+          "in_universe_coverage": false
+        }
+      ]
+    },
+    {
+      "slug": "silver-paste-metallisation-india",
+      "industry": "Silver Paste & Metallisation",
+      "scope": "INDIA",
+      "path": "industries/silver-paste-metallisation-india.html",
+      "analysis_date": "2026-10-07",
+      "universe": "NSE/BSE",
+      "sector": "Renewable Energy",
+      "derived_from": {
+        "industry": "Solar Cell Fabrication",
+        "slug": "solar-cells-india",
+        "node": "Metallisation paste (Ag / Al)"
+      },
+      "drill_downs": [],
+      "nodes": [
+        {
+          "id": "silvermetal",
+          "name": "Silver metal & silver powder",
+          "level": 1,
+          "aliases": [
+            "silver",
+            "silver metal",
+            "silver powder",
+            "high purity silver"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "frontpaste",
+          "name": "Front-side Ag paste",
+          "level": 1,
+          "aliases": [
+            "silver paste",
+            "ag paste",
+            "front side paste",
+            "front paste",
+            "dkem",
+            "fusion",
+            "solamet"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": false
+        },
+        {
+          "id": "frit",
+          "name": "Glass frit (Pb-Te-O)",
+          "level": 2,
+          "aliases": [
+            "glass frit",
+            "frit",
+            "pb-te-o",
+            "lead tellurium oxide",
+            "tellurium"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": false
+        },
+        {
+          "id": "vehicle",
+          "name": "Organic vehicle & solvents",
+          "level": 2,
+          "aliases": [
+            "organic vehicle",
+            "binder",
+            "solvent"
+          ],
+          "priority": "medium",
+          "bottleneck": false,
+          "in_universe_coverage": false
+        },
+        {
+          "id": "alpads",
+          "name": "Rear Al paste & Ag/Al pads",
+          "level": 1,
+          "aliases": [
+            "aluminium paste",
+            "al paste",
+            "ag/al",
+            "pad paste"
+          ],
+          "priority": "medium",
+          "bottleneck": false,
+          "in_universe_coverage": false
+        },
+        {
+          "id": "screens",
+          "name": "Printing screens & stencils",
+          "level": 1,
+          "aliases": [
+            "printing screen",
+            "screens",
+            "stencil",
+            "fine mesh screen"
+          ],
+          "priority": "medium",
+          "bottleneck": false,
+          "in_universe_coverage": false
+        },
+        {
+          "id": "printing",
+          "name": "Screen printing & drying",
+          "level": 1,
+          "aliases": [
+            "screen printing",
+            "printer",
+            "dryer",
+            "metallisation line"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": false
+        },
+        {
+          "id": "firing",
+          "name": "Co-firing",
+          "level": 1,
+          "aliases": [
+            "co-firing",
+            "firing furnace",
+            "fast firing"
+          ],
+          "priority": "medium",
+          "bottleneck": false,
+          "in_universe_coverage": false
+        },
+        {
+          "id": "laser",
+          "name": "Laser (LECO / selective emitter)",
+          "level": 1,
+          "aliases": [
+            "leco",
+            "laser",
+            "selective emitter",
+            "laser contact opening"
+          ],
+          "priority": "medium",
+          "bottleneck": false,
+          "in_universe_coverage": false
+        },
+        {
+          "id": "agcu",
+          "name": "Silver-coated copper paste",
+          "level": 1,
+          "aliases": [
+            "silver coated copper",
+            "ag-coated cu",
+            "high copper paste",
+            "copper paste"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": false
+        },
+        {
+          "id": "cupaste",
+          "name": "Pure copper paste",
+          "level": 1,
+          "aliases": [
+            "pure copper paste",
+            "copper paste",
+            "cu paste"
+          ],
+          "priority": "medium",
+          "bottleneck": true,
+          "in_universe_coverage": false
+        },
+        {
+          "id": "plating",
+          "name": "Ni/Cu/Ag electroplating",
+          "level": 1,
+          "aliases": [
+            "electroplating",
+            "ni/cu/ag",
+            "plated contacts",
+            "rena",
+            "atotech",
+            "copper plating"
+          ],
+          "priority": "high",
+          "bottleneck": true,
           "in_universe_coverage": false
         }
       ]
