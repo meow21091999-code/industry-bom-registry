@@ -3801,7 +3801,17 @@
       "universe": "NSE/BSE",
       "sector": "Telecom & Networking",
       "derived_from": null,
-      "drill_downs": [],
+      "drill_downs": [
+        "optical-fibre-preform-india",
+        "optical-fibre-india",
+        "optical-fibre-cable-india",
+        "optical-transceivers-india",
+        "telecom-chipsets-india",
+        "5g-ran-india",
+        "telecom-transport-equipment-india",
+        "telecom-towers-india",
+        "telecom-operators-india"
+      ],
       "nodes": [
         {
           "id": "ran",
@@ -4075,6 +4085,1948 @@
           "bottleneck": true,
           "in_universe_coverage": false,
           "coverage_note": "No NSE/BSE pure-play. Context (foreign): Keysight, Anritsu, Rohde & Schwarz, Viavi; domestic testing largely a service via TEC-accredited and C-DOT-linked labs."
+        }
+      ]
+    },
+    {
+      "slug": "optical-fibre-preform-india",
+      "industry": "Optical Fibre Preform",
+      "scope": "INDIA",
+      "path": "industries/optical-fibre-preform-india.html",
+      "analysis_date": "2026-10-08",
+      "universe": "NSE/BSE",
+      "sector": "Telecom & Networking",
+      "derived_from": {
+        "industry": "Telecom",
+        "slug": "telecom-india",
+        "node": "Optical Fibre Preform"
+      },
+      "drill_downs": [],
+      "nodes": [
+        {
+          "id": "preform",
+          "name": "Optical Fibre Preform (glass rod)",
+          "level": 1,
+          "aliases": [
+            "optical fibre preform",
+            "glass preform",
+            "silica preform",
+            "preform rod",
+            "optical glass preform"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "silica",
+          "name": "High-Purity Silica / Glass Feedstock",
+          "level": 2,
+          "aliases": [
+            "refined silica",
+            "ultra-pure silica",
+            "silicon tetrachloride",
+            "SiCl4",
+            "glass feedstock"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": false,
+          "coverage_note": "No listed Indian pure-play. STL refines silica captively; high-purity SiCl4 imported (CN/DE)."
+        },
+        {
+          "id": "dopants",
+          "name": "Germanium & Dopant Chemicals (GeCl4 / SiCl4)",
+          "level": 2,
+          "aliases": [
+            "germanium tetrachloride",
+            "GeCl4",
+            "dopant chemicals",
+            "POCl3",
+            "fluorine dopant"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": false,
+          "coverage_note": "No listed Indian pure-play. GeCl4 ~100% imported; China >60% of global supply under export-licence regime since Aug-2023."
+        },
+        {
+          "id": "equipment",
+          "name": "Preform Deposition Equipment & Lathes",
+          "level": 2,
+          "aliases": [
+            "MCVD lathe",
+            "OVD equipment",
+            "VAD equipment",
+            "PCVD equipment",
+            "deposition lathe",
+            "preform furnace"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": false,
+          "coverage_note": "No listed Indian pure-play. Sourced from a few Japanese/European suppliers; export-controlled."
+        },
+        {
+          "id": "deposition",
+          "name": "Preform Deposition (MCVD / OVD / VAD / PCVD)",
+          "level": 2,
+          "aliases": [
+            "MCVD",
+            "OVD",
+            "VAD",
+            "PCVD",
+            "vapour deposition",
+            "soot deposition",
+            "core deposition"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "draw",
+          "name": "Glassworking, Lathe & Draw Tower",
+          "level": 2,
+          "aliases": [
+            "fibre drawing",
+            "draw tower",
+            "glassworking",
+            "sintering",
+            "fibre draw"
+          ],
+          "priority": "med",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "cleanroom",
+          "name": "Cleanroom-Grade Manufacturing",
+          "level": 2,
+          "aliases": [
+            "clean-room manufacturing",
+            "semiconductor-grade glass",
+            "cleanroom glass"
+          ],
+          "priority": "med",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "specialty",
+          "name": "Specialty Fibre Grades",
+          "level": 2,
+          "aliases": [
+            "G.654.E",
+            "multi-core fibre",
+            "hollow-core fibre",
+            "specialty optical fibre"
+          ],
+          "priority": "med",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "ferrule",
+          "name": "Ceramic Ferrules (Zirconia)",
+          "level": 2,
+          "aliases": [
+            "zirconia ferrule",
+            "ceramic ferrule",
+            "3Y-TZP ferrule",
+            "fibre connector ferrule"
+          ],
+          "priority": "med",
+          "bottleneck": true,
+          "in_universe_coverage": false,
+          "coverage_note": "No listed Indian pure-play for the ferrule body. Vindhya Telelinks (listed) supplies ferrule-based connectors; ceramic bodies imported (CN/JP)."
+        },
+        {
+          "id": "ofc",
+          "name": "Optical Fibre Cable (OFC) — downstream",
+          "level": 3,
+          "aliases": [
+            "optical fibre cable",
+            "OFC",
+            "fibre cable",
+            "telecom cable"
+          ],
+          "priority": "med",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "connectivity",
+          "name": "Optical Connectivity & Pre-terminated Assemblies",
+          "level": 3,
+          "aliases": [
+            "optical connectivity",
+            "pre-terminated assemblies",
+            "patch panels",
+            "high-density connectivity"
+          ],
+          "priority": "med",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "sand",
+          "name": "Silica Sand & Silicon Metal — raw input",
+          "level": 3,
+          "aliases": [
+            "silica sand",
+            "silicon metal",
+            "metallurgical silicon",
+            "quartz sand"
+          ],
+          "priority": "low",
+          "bottleneck": false,
+          "in_universe_coverage": false,
+          "coverage_note": "No listed fibre-grade-silica pure-play. Silica sand abundant in India; Vedanta (listed, conglomerate) makes silicon metal."
+        }
+      ]
+    },
+    {
+      "slug": "optical-fibre-india",
+      "industry": "Optical Fibre (Drawing)",
+      "scope": "INDIA",
+      "path": "industries/optical-fibre-india.html",
+      "analysis_date": "2026-10-08",
+      "universe": "NSE/BSE",
+      "sector": "Telecom & Networking",
+      "derived_from": {
+        "industry": "Telecom",
+        "slug": "telecom-india",
+        "node": "Optical Fibre (Drawing)"
+      },
+      "drill_downs": [],
+      "nodes": [
+        {
+          "id": "preform",
+          "name": "Optical Fibre Preform (Glass)",
+          "level": 1,
+          "aliases": [
+            "preform",
+            "glass preform",
+            "core rod",
+            "cladding",
+            "MCVD",
+            "OVD",
+            "VAD"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "bare-fibre",
+          "name": "Bare Fibre Drawing (125 µm)",
+          "level": 1,
+          "aliases": [
+            "fibre drawing",
+            "fiber draw",
+            "draw tower output",
+            "125 micron"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "drawtower",
+          "name": "Draw-Tower Equipment & Furnace",
+          "level": 1,
+          "aliases": [
+            "draw tower",
+            "induction furnace",
+            "capstan",
+            "dual winder",
+            "take-up"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": false,
+          "coverage_note": "Draw-tower lines imported (Nextrom, SG Controls) or assembled by unlisted local firms; no NSE/BSE pure-play."
+        },
+        {
+          "id": "coating",
+          "name": "Coating — Dual-Layer Acrylate",
+          "level": 2,
+          "aliases": [
+            "acrylate coating",
+            "UV curing",
+            "primary coating",
+            "secondary coating"
+          ],
+          "priority": "med",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "prooftest",
+          "name": "Proof Testing & Certification",
+          "level": 2,
+          "aliases": [
+            "proof test",
+            "screening test",
+            "attenuation test",
+            "TEC approval",
+            "CACT"
+          ],
+          "priority": "med",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "colouring",
+          "name": "Colouring & Ribbonising",
+          "level": 2,
+          "aliases": [
+            "colouring",
+            "coloring",
+            "ribbonising",
+            "ribbonizing",
+            "ink",
+            "UV-LED"
+          ],
+          "priority": "med",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "specialty",
+          "name": "Specialty / Bend-Insensitive Fibre (G.657)",
+          "level": 2,
+          "aliases": [
+            "G.657",
+            "bend-insensitive",
+            "bend insensitive",
+            "specialty fibre",
+            "low bend"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "ferrules",
+          "name": "Precision Ceramic Ferrules",
+          "level": 2,
+          "aliases": [
+            "ceramic ferrule",
+            "zirconia ferrule",
+            "Y-TZP",
+            "connector ferrule"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": false,
+          "coverage_note": "Dominated by China/Japan; India mostly grinds imported blanks. No NSE/BSE pure-play."
+        },
+        {
+          "id": "processgas",
+          "name": "Process Gases & Helium",
+          "level": 3,
+          "aliases": [
+            "helium",
+            "process gas",
+            "SiCl4",
+            "nitrogen",
+            "UHP gas"
+          ],
+          "priority": "med",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "uresin",
+          "name": "Coating Resin & Inks (UV-curable)",
+          "level": 3,
+          "aliases": [
+            "UV resin",
+            "acrylate resin",
+            "colouring ink",
+            "PhiChem",
+            "DSM"
+          ],
+          "priority": "med",
+          "bottleneck": false,
+          "in_universe_coverage": false,
+          "coverage_note": "Foreign suppliers (PhiChem, DSM); no Indian listed pure-play."
+        },
+        {
+          "id": "testequip",
+          "name": "Fibre Test & Measurement Equipment",
+          "level": 2,
+          "aliases": [
+            "OTDR",
+            "PMD test",
+            "attenuation test set",
+            "EXFO",
+            "VIAVI"
+          ],
+          "priority": "low",
+          "bottleneck": false,
+          "in_universe_coverage": false,
+          "coverage_note": "Foreign vendors (EXFO, VIAVI, Anritsu, Yokogawa); no listed Indian pure-play."
+        },
+        {
+          "id": "ofc",
+          "name": "Optical Fibre Cable (Downstream Buyer)",
+          "level": 1,
+          "aliases": [
+            "OFC",
+            "optical fibre cable",
+            "loose tube",
+            "ribbon cable",
+            "drop cable"
+          ],
+          "priority": "med",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        }
+      ]
+    },
+    {
+      "slug": "optical-fibre-cable-india",
+      "industry": "Optical Fibre Cable (OFC)",
+      "scope": "INDIA",
+      "path": "industries/optical-fibre-cable-india.html",
+      "analysis_date": "2026-10-08",
+      "universe": "NSE/BSE",
+      "sector": "Telecom & Networking",
+      "derived_from": {
+        "industry": "Telecom",
+        "slug": "telecom-india",
+        "node": "Optical Fibre Cable (OFC)"
+      },
+      "drill_downs": [],
+      "nodes": [
+        {
+          "id": "ofc",
+          "name": "Optical Fibre Cable (Finished)",
+          "level": 1,
+          "aliases": [
+            "OFC",
+            "Fibre Optic Cable",
+            "FOC",
+            "Finished OFC",
+            "Land/Duct cable",
+            "ADSS",
+            "OPGW",
+            "FTTH"
+          ],
+          "priority": "high",
+          "bottleneck": false,
+          "in_universe_coverage": true,
+          "coverage_note": "8 listed makers mapped; India a net exporter (~100 mn fkm/yr capability vs ~46 mn consumed)."
+        },
+        {
+          "id": "demand",
+          "name": "Demand & Deployment (BharatNet / FTTH / 5G / Data Centre)",
+          "level": 1,
+          "aliases": [
+            "BharatNet",
+            "FTTH",
+            "5G backhaul",
+            "Data Centre interconnect",
+            "Deployment"
+          ],
+          "priority": "high",
+          "bottleneck": false,
+          "in_universe_coverage": true,
+          "coverage_note": "BharatNet Phase-III, FTTH, 5G and AI data-centre demand; 5 listed deployers/EPC mapped."
+        },
+        {
+          "id": "aftermarket",
+          "name": "Network O&M / Monitoring & Dark Fibre",
+          "level": 1,
+          "aliases": [
+            "O&M",
+            "RFMS",
+            "Remote fibre monitoring",
+            "Dark fibre leasing",
+            "IP-1"
+          ],
+          "priority": "low",
+          "bottleneck": false,
+          "in_universe_coverage": true,
+          "coverage_note": "Only indirect exposure (STL, Vindhya via IP-1 O&M); fragmented, government-linked."
+        },
+        {
+          "id": "fibre",
+          "name": "Bare Optical Fibre (Drawing)",
+          "level": 2,
+          "aliases": [
+            "Bare Fibre",
+            "Optical Fibre",
+            "G.652D",
+            "G.657A",
+            "Single-mode fibre"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true,
+          "coverage_note": "4 listed exposures; domestic fibre capacity exceeds demand."
+        },
+        {
+          "id": "frp",
+          "name": "FRP / ARP Rods & IGFR",
+          "level": 2,
+          "aliases": [
+            "FRP Rod",
+            "ARP Rod",
+            "Fibre Reinforced Plastic",
+            "Aramid Reinforced Plastic",
+            "Strength Member"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true,
+          "coverage_note": "3 listed makers; India a global FRP-rod hub (Aksh largest single facility)."
+        },
+        {
+          "id": "wb",
+          "name": "Water-Blocking Yarn & Gel",
+          "level": 2,
+          "aliases": [
+            "Water Blocking Yarn",
+            "WB Yarn",
+            "NWB Yarn",
+            "Cable Jelly",
+            "Thixotropic Jelly"
+          ],
+          "priority": "med",
+          "bottleneck": false,
+          "in_universe_coverage": true,
+          "coverage_note": "Aksh (Teleglass yarn) listed; jelly largely imported."
+        },
+        {
+          "id": "sheath",
+          "name": "PE / PVC / HDPE Sheath & Compounds",
+          "level": 2,
+          "aliases": [
+            "Sheath",
+            "Jacket",
+            "Outer Sheath",
+            "HDPE",
+            "LSZH",
+            "PBT",
+            "Nylon PA-12"
+          ],
+          "priority": "med",
+          "bottleneck": false,
+          "in_universe_coverage": false,
+          "coverage_note": "No OFC-sheath pure-play; HDPE/compound feedstock from listed conglomerates (Reliance Industries, GAIL); OFC-grade compounds largely non-specialist or imported."
+        },
+        {
+          "id": "cabletypes",
+          "name": "Cable Types: Duct / ADSS / OPGW / FTTH / IBR",
+          "level": 2,
+          "aliases": [
+            "ADSS",
+            "OPGW",
+            "FTTH drop",
+            "IBR",
+            "Ribbon cable",
+            "Micro cable",
+            "Duct cable",
+            "Armoured cable"
+          ],
+          "priority": "high",
+          "bottleneck": false,
+          "in_universe_coverage": true,
+          "coverage_note": "4 listed exposures; high-fibre-count IBR/ribbon is the premium, consolidating segment."
+        },
+        {
+          "id": "machinery",
+          "name": "Cabling & SZ-Stranding Machinery",
+          "level": 2,
+          "aliases": [
+            "SZ stranding",
+            "Cabling line",
+            "Secondary coating line",
+            "Extrusion line",
+            "Ribbon line"
+          ],
+          "priority": "med",
+          "bottleneck": true,
+          "in_universe_coverage": false,
+          "coverage_note": "No listed pure-play; cabling/SZ-stranding lines imported from foreign OEMs (Rosendahl, AFA, Gauder, Medek & Schorner, CAB)."
+        },
+        {
+          "id": "test",
+          "name": "Test & Measurement (OTDR / PMD / CD)",
+          "level": 2,
+          "aliases": [
+            "OTDR",
+            "PMD analyser",
+            "CD analyser",
+            "Ribbon geometry system",
+            "Fibre test"
+          ],
+          "priority": "med",
+          "bottleneck": true,
+          "in_universe_coverage": false,
+          "coverage_note": "No listed pure-play; OTDR/PMD gear imported from foreign OEMs (EXFO, Anritsu, VIAVI)."
+        },
+        {
+          "id": "preform",
+          "name": "Glass Preform",
+          "level": 3,
+          "aliases": [
+            "Glass Preform",
+            "Silica Preform",
+            "Optical Fibre Preform",
+            "Core rod"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true,
+          "coverage_note": "3 listed exposures (STL integrated from sand; Finolex Phase-1 commissioned; HFCL building); expansion cycle 18-24 months."
+        },
+        {
+          "id": "aramid",
+          "name": "Aramid Yarn / Strength Members",
+          "level": 3,
+          "aliases": [
+            "Aramid Yarn",
+            "Kevlar Yarn",
+            "Strength Yarn",
+            "Rip cord"
+          ],
+          "priority": "med",
+          "bottleneck": true,
+          "in_universe_coverage": false,
+          "coverage_note": "No listed pure-play in India; aramid yarn imported from Teijin (Japan) and DuPont Kevlar (US)."
+        },
+        {
+          "id": "armour",
+          "name": "Steel / Glass Armour & Tape",
+          "level": 3,
+          "aliases": [
+            "Armour",
+            "Armouring",
+            "Steel Tape",
+            "ECCS Tape",
+            "Glass Yarn",
+            "Binder Tape"
+          ],
+          "priority": "low",
+          "bottleneck": false,
+          "in_universe_coverage": false,
+          "coverage_note": "No OFC-armour pure-play; steel tape from listed conglomerates (Tata Steel, JSW Steel) but not as OFC-armour pure-plays."
+        }
+      ]
+    },
+    {
+      "slug": "optical-transceivers-india",
+      "industry": "Optical Transceivers & Modules",
+      "scope": "INDIA",
+      "path": "industries/optical-transceivers-india.html",
+      "analysis_date": "2026-10-08",
+      "universe": "NSE/BSE",
+      "sector": "Telecom & Networking",
+      "derived_from": {
+        "industry": "Telecom",
+        "slug": "telecom-india",
+        "node": "Optical Transceivers & Modules"
+      },
+      "drill_downs": [],
+      "nodes": [
+        {
+          "id": "pluggable",
+          "name": "Pluggable Module Integration & Assembly",
+          "level": 1,
+          "aliases": [
+            "Module assembly",
+            "Pluggable optics",
+            "Transceiver assembly",
+            "OSFP/QSFP integration"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true,
+          "coverage_note": "Listed coverage via Tejas Networks (TEJASNET) and HFCL; both are system/assembly-led, not pure-play transceiver OEMs."
+        },
+        {
+          "id": "optical-dsp",
+          "name": "Optical DSP & Retimer ASICs (PAM4)",
+          "level": 2,
+          "aliases": [
+            "PAM4 DSP",
+            "Retimer",
+            "CDR",
+            "Gearbox IC"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": false,
+          "coverage_note": "No listed pure-play in India. Foreign: Broadcom, Marvell, Cisco (Acacia), Credo."
+        },
+        {
+          "id": "lasers",
+          "name": "Light Sources: EML / VCSEL / DFB Lasers",
+          "level": 2,
+          "aliases": [
+            "EML",
+            "VCSEL",
+            "DFB",
+            "laser diode",
+            "InP die"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": false,
+          "coverage_note": "No listed pure-play in India. Foreign: Coherent, Lumentum, Broadcom, Sumitomo, Accelink."
+        },
+        {
+          "id": "silicon-photonics",
+          "name": "Silicon Photonics / PIC Engines",
+          "level": 2,
+          "aliases": [
+            "SiPh",
+            "PIC",
+            "photonic integrated circuit",
+            "co-packaged optics"
+          ],
+          "priority": "med",
+          "bottleneck": true,
+          "in_universe_coverage": false,
+          "coverage_note": "No listed pure-play in India. Foreign: Intel, Cisco, Broadcom, Innolight, Sicoya."
+        },
+        {
+          "id": "coherent",
+          "name": "Coherent Optics (400ZR / 800ZR DCO)",
+          "level": 2,
+          "aliases": [
+            "ZR/ZR+",
+            "DCO",
+            "coherent pluggable",
+            "DWDM module"
+          ],
+          "priority": "med",
+          "bottleneck": true,
+          "in_universe_coverage": false,
+          "coverage_note": "No listed pure-play in India. Foreign: Marvell, Cisco (Acacia), Ciena, Lumentum."
+        },
+        {
+          "id": "photodetectors",
+          "name": "Photodetectors & ROSA (PIN / APD)",
+          "level": 2,
+          "aliases": [
+            "PIN",
+            "APD",
+            "ROSA",
+            "photodiode"
+          ],
+          "priority": "med",
+          "bottleneck": false,
+          "in_universe_coverage": false,
+          "coverage_note": "No listed pure-play in India. Foreign: Coherent, Lumentum, Accelink, Source Photonics."
+        },
+        {
+          "id": "osa-align",
+          "name": "Optical Sub-Assembly, TO-can & Active Alignment",
+          "level": 2,
+          "aliases": [
+            "TOSA",
+            "ROSA",
+            "OSA",
+            "TO-can",
+            "active alignment"
+          ],
+          "priority": "med",
+          "bottleneck": false,
+          "in_universe_coverage": true,
+          "coverage_note": "Indirect coverage via HFCL (optical assemblies, subsidiary HTL)."
+        },
+        {
+          "id": "connectors",
+          "name": "Connectors, Ferrules & Passive Optical Components",
+          "level": 2,
+          "aliases": [
+            "MPO",
+            "LC connector",
+            "ferrule",
+            "patch cord",
+            "passive optics"
+          ],
+          "priority": "med",
+          "bottleneck": false,
+          "in_universe_coverage": true,
+          "coverage_note": "Listed coverage via STL (STLTECH) and HFCL."
+        },
+        {
+          "id": "fiber-cable",
+          "name": "Optical Fibre & High-Count Ribbon Cable (DCI)",
+          "level": 1,
+          "aliases": [
+            "optical fibre",
+            "OFC",
+            "ribbon cable",
+            "IBR",
+            "DCI cable"
+          ],
+          "priority": "med",
+          "bottleneck": false,
+          "in_universe_coverage": true,
+          "coverage_note": "Broad listed coverage: STL, HFCL, Polycab (indirect), Birla Cable, Aksh Optifibre."
+        },
+        {
+          "id": "fttx-access",
+          "name": "FTTx / Access Pluggables (10G/25G PON & Fronthaul)",
+          "level": 1,
+          "aliases": [
+            "PON",
+            "GPON",
+            "xPON",
+            "fronthaul",
+            "access optics"
+          ],
+          "priority": "med",
+          "bottleneck": false,
+          "in_universe_coverage": true,
+          "coverage_note": "Listed coverage via Tejas Networks and HFCL."
+        },
+        {
+          "id": "network-oem",
+          "name": "Network Equipment OEM / Switch Line-Cards",
+          "level": 1,
+          "aliases": [
+            "DWDM/OTN",
+            "switch line card",
+            "router",
+            "transport platform"
+          ],
+          "priority": "high",
+          "bottleneck": false,
+          "in_universe_coverage": true,
+          "coverage_note": "Listed coverage via Tejas Networks (direct), HFCL, ITI, BEL (conglomerate)."
+        },
+        {
+          "id": "test-burnin",
+          "name": "Test, Burn-in & Qualification",
+          "level": 3,
+          "aliases": [
+            "burn-in",
+            "qualification",
+            "optical test",
+            "ATE"
+          ],
+          "priority": "med",
+          "bottleneck": true,
+          "in_universe_coverage": true,
+          "coverage_note": "Only indirect, captive coverage via Tejas Networks; no merchant listed test house for 800G/coherent."
+        },
+        {
+          "id": "distribution",
+          "name": "Import, Distribution & System Integration",
+          "level": 3,
+          "aliases": [
+            "distribution",
+            "channel",
+            "system integration",
+            "stocking"
+          ],
+          "priority": "low",
+          "bottleneck": false,
+          "in_universe_coverage": false,
+          "coverage_note": "No listed pure-play in India; largely unlisted distributors and global OEM channels."
+        }
+      ]
+    },
+    {
+      "slug": "telecom-chipsets-india",
+      "industry": "Telecom Chipsets — Baseband & RF Front-End",
+      "scope": "INDIA",
+      "path": "industries/telecom-chipsets-india.html",
+      "analysis_date": "2026-10-08",
+      "universe": "NSE/BSE",
+      "sector": "Telecom & Networking",
+      "derived_from": {
+        "industry": "Telecom",
+        "slug": "telecom-india",
+        "node": "Telecom Chipsets — Baseband & RF Front-End"
+      },
+      "drill_downs": [],
+      "nodes": [
+        {
+          "id": "baseband",
+          "name": "Baseband SoC & Modem",
+          "level": 2,
+          "aliases": [
+            "baseband processor",
+            "5G modem SoC",
+            "application+modem SoC",
+            "handset SoC"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": false,
+          "coverage_note": "No NSE/BSE listed pure-play; global Qualcomm/MediaTek/Unisoc; India design (Saankhya/Signalchip/WiSig) unlisted."
+        },
+        {
+          "id": "rfic",
+          "name": "RF Transceiver / RFIC",
+          "level": 3,
+          "aliases": [
+            "RFIC",
+            "transceiver",
+            "radio transceiver"
+          ],
+          "priority": "med",
+          "bottleneck": false,
+          "in_universe_coverage": false,
+          "coverage_note": "No NSE/BSE pure-play; global Qualcomm/Broadcom/Marvell/NXP."
+        },
+        {
+          "id": "dsp",
+          "name": "DSP / Baseband Processing IP",
+          "level": 3,
+          "aliases": [
+            "baseband DSP",
+            "vector DSP",
+            "baseband IP"
+          ],
+          "priority": "med",
+          "bottleneck": false,
+          "in_universe_coverage": true,
+          "coverage_note": "Indirect via Tejas Networks (Saankhya Labs SDR DSP)."
+        },
+        {
+          "id": "rffe",
+          "name": "RF Front-End Module (FEM)",
+          "level": 2,
+          "aliases": [
+            "RFFE",
+            "front-end module",
+            "FEM"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true,
+          "coverage_note": "Indirect via CG Power (Axiro Semiconductor RF/mmWave)."
+        },
+        {
+          "id": "pa",
+          "name": "Power Amplifier (GaAs / GaN)",
+          "level": 3,
+          "aliases": [
+            "PA",
+            "RF power amplifier",
+            "GaN PA"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true,
+          "coverage_note": "Indirect via CG Power (Axiro GaN RF amplifiers)."
+        },
+        {
+          "id": "lna",
+          "name": "Low-Noise Amplifier (LNA)",
+          "level": 3,
+          "aliases": [
+            "LNA",
+            "low noise amplifier"
+          ],
+          "priority": "med",
+          "bottleneck": false,
+          "in_universe_coverage": false,
+          "coverage_note": "No NSE/BSE pure-play; Silizium Circuits unlisted."
+        },
+        {
+          "id": "rffilter",
+          "name": "RF Filter (SAW / BAW)",
+          "level": 3,
+          "aliases": [
+            "SAW filter",
+            "BAW filter",
+            "acoustic filter"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": false,
+          "coverage_note": "No NSE/BSE pure-play; global Broadcom/Qorvo/Murata/Skyworks."
+        },
+        {
+          "id": "substrate",
+          "name": "Compound-Semiconductor Substrate (GaAs / GaN)",
+          "level": 2,
+          "aliases": [
+            "GaAs substrate",
+            "GaN substrate",
+            "compound semiconductor wafer"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": false,
+          "coverage_note": "No NSE/BSE pure-play; substrates largely imported (IQE/Sumitomo/AXT)."
+        },
+        {
+          "id": "osat",
+          "name": "OSAT / Advanced Packaging",
+          "level": 2,
+          "aliases": [
+            "OSAT",
+            "ATMP",
+            "advanced packaging",
+            "chip assembly and test"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true,
+          "coverage_note": "Direct via SPEL Semiconductor; indirect via Kaynes Technology; conglomerate via CG Power."
+        },
+        {
+          "id": "test",
+          "name": "Test, Marking & Certification",
+          "level": 3,
+          "aliases": [
+            "IC test",
+            "wafer sort",
+            "final test",
+            "certification"
+          ],
+          "priority": "med",
+          "bottleneck": false,
+          "in_universe_coverage": true,
+          "coverage_note": "Direct via SPEL Semiconductor; indirect via Kaynes Technology."
+        },
+        {
+          "id": "eda",
+          "name": "EDA Tools, IP & Design Services",
+          "level": 2,
+          "aliases": [
+            "EDA",
+            "semiconductor IP",
+            "design services",
+            "chip design"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true,
+          "coverage_note": "Indirect via MosChip Technologies; core EDA/IP (Synopsys/Cadence/Arm) outside universe."
+        },
+        {
+          "id": "ran",
+          "name": "Base-Station & RAN Silicon",
+          "level": 2,
+          "aliases": [
+            "RAN silicon",
+            "BBU/RU chipsets",
+            "base station silicon"
+          ],
+          "priority": "med",
+          "bottleneck": false,
+          "in_universe_coverage": true,
+          "coverage_note": "Indirect via Tejas Networks; conglomerate via Reliance Industries (Jio Platforms)."
+        }
+      ]
+    },
+    {
+      "slug": "5g-ran-india",
+      "industry": "5G / 4G RAN — Base Stations & Radios",
+      "scope": "INDIA",
+      "path": "industries/5g-ran-india.html",
+      "analysis_date": "2026-10-08",
+      "universe": "NSE/BSE",
+      "sector": "Telecom & Networking",
+      "derived_from": {
+        "industry": "Telecom",
+        "slug": "telecom-india",
+        "node": "5G / 4G RAN — Base Stations & Radios"
+      },
+      "drill_downs": [],
+      "nodes": [
+        {
+          "id": "5g-4g-ran",
+          "name": "5G / 4G RAN — Base Stations & Radios",
+          "level": 1,
+          "aliases": [
+            "RAN",
+            "Radio Access Network",
+            "gNodeB",
+            "eNodeB",
+            "Base Station",
+            "Base Stations & Radios"
+          ],
+          "priority": "high",
+          "bottleneck": false,
+          "in_universe_coverage": true,
+          "coverage_note": "Listed Indian exposure exists at the RAN OEM layer (Tejas Networks, ITI, HFCL) and via EMS/PLI players (Dixon); below the OEM layer there is almost no listed Indian pure-play and foreign vendors (Nokia, Ericsson, Samsung) fill the gap."
+        },
+        {
+          "id": "rru",
+          "name": "Radio Unit (RRU / RRH)",
+          "level": 2,
+          "aliases": [
+            "RRU",
+            "RRH",
+            "Remote Radio Head",
+            "Radio Unit"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true,
+          "coverage_note": "Covered by Tejas Networks (direct), ITI Limited (contract manufacture) and HFCL (indirect)."
+        },
+        {
+          "id": "aau",
+          "name": "Massive-MIMO Active Antenna Unit (AAU)",
+          "level": 2,
+          "aliases": [
+            "AAU",
+            "Massive MIMO",
+            "Active Antenna Unit",
+            "32T32R",
+            "64T64R"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true,
+          "coverage_note": "Covered by Tejas Networks and HFCL; unlisted Indian AAU players (WiSig) and foreign OEMs (Nokia, Ericsson, Samsung) also active."
+        },
+        {
+          "id": "bbu",
+          "name": "Baseband Unit (BBU / O-DU + O-CU)",
+          "level": 2,
+          "aliases": [
+            "BBU",
+            "Baseband",
+            "O-DU",
+            "O-CU",
+            "Distributed Unit",
+            "Centralised Unit"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true,
+          "coverage_note": "Covered by Tejas Networks (direct), ITI (contract manufacture), Dixon (PLI Open-RAN) and Reliance/Jio (conglomerate)."
+        },
+        {
+          "id": "rfpa",
+          "name": "RF Front-End and Power Amplifier",
+          "level": 2,
+          "aliases": [
+            "RF front-end",
+            "Power Amplifier",
+            "PA",
+            "LNA",
+            "Transceiver"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": false,
+          "coverage_note": "No listed Indian pure-play. RF front-end and power-amplifier devices are imported (Qorvo, Skyworks, Analog Devices, NXP, Murata)."
+        },
+        {
+          "id": "filter",
+          "name": "RF Filters and Duplexers",
+          "level": 2,
+          "aliases": [
+            "RF filter",
+            "Duplexer",
+            "SAW",
+            "BAW",
+            "Cavity filter"
+          ],
+          "priority": "med",
+          "bottleneck": true,
+          "in_universe_coverage": false,
+          "coverage_note": "No listed Indian pure-play. Cavity / SAW / BAW filters imported (Murata, TDK, Qorvo); a named PLI localisation gap."
+        },
+        {
+          "id": "antenna",
+          "name": "Antenna Array and Passive Antennas",
+          "level": 2,
+          "aliases": [
+            "Antenna array",
+            "Passive antenna",
+            "Radiating element"
+          ],
+          "priority": "med",
+          "bottleneck": false,
+          "in_universe_coverage": true,
+          "coverage_note": "Covered indirectly by HFCL; unlisted (VVDN, CommScope India) players also active. Antennas are ~69% Chinese by import value."
+        },
+        {
+          "id": "semi",
+          "name": "RAN Silicon (FPGA / SoC / ASIC)",
+          "level": 2,
+          "aliases": [
+            "FPGA",
+            "SoC",
+            "ASIC",
+            "Baseband silicon",
+            "L1 PHY"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": false,
+          "coverage_note": "No listed Indian pure-play. FPGAs/SoCs/ASICs imported (AMD/Xilinx, Altera, Marvell, Qualcomm); domestic fabs not yet at scale."
+        },
+        {
+          "id": "powersupply",
+          "name": "Power Supply, DC-DC and Rectifiers",
+          "level": 2,
+          "aliases": [
+            "Power supply",
+            "DC-DC",
+            "Rectifier",
+            "PSU"
+          ],
+          "priority": "med",
+          "bottleneck": false,
+          "in_universe_coverage": false,
+          "coverage_note": "No dedicated listed RAN power-supply pure-play; supply is largely imported / EMS (Delta Electronics India, TDK-Lambda, Vertiv)."
+        },
+        {
+          "id": "enclosure",
+          "name": "Enclosure, Outdoor Cabinet (ODC) and Thermal",
+          "level": 2,
+          "aliases": [
+            "Enclosure",
+            "ODC",
+            "Outdoor cabinet",
+            "Thermal management"
+          ],
+          "priority": "med",
+          "bottleneck": false,
+          "in_universe_coverage": true,
+          "coverage_note": "Covered by ITI Limited (direct) — 10,500+ ODC supplied for the BSNL 4G rollout."
+        },
+        {
+          "id": "cable",
+          "name": "CPRI / eCPRI and Fronthaul Cable",
+          "level": 2,
+          "aliases": [
+            "CPRI",
+            "eCPRI",
+            "Fronthaul cable",
+            "Jumper cable"
+          ],
+          "priority": "low",
+          "bottleneck": false,
+          "in_universe_coverage": true,
+          "coverage_note": "Covered by ITI Limited (direct), HFCL and Sterlite Technologies (indirect)."
+        },
+        {
+          "id": "oransw",
+          "name": "O-RAN Software (RIC / SMO / vRAN)",
+          "level": 2,
+          "aliases": [
+            "O-RAN",
+            "Open RAN",
+            "RIC",
+            "SMO",
+            "vRAN",
+            "xApp",
+            "rApp"
+          ],
+          "priority": "med",
+          "bottleneck": true,
+          "in_universe_coverage": true,
+          "coverage_note": "Covered by Dixon (PLI Open-RAN), Reliance/Jio (conglomerate), TCS and Tejas (indirect); foreign/unlisted players include Mavenir and Juniper."
+        },
+        {
+          "id": "integration",
+          "name": "RAN Integration and Managed Services",
+          "level": 2,
+          "aliases": [
+            "RAN integration",
+            "Managed services",
+            "AMC",
+            "Network rollout"
+          ],
+          "priority": "med",
+          "bottleneck": false,
+          "in_universe_coverage": true,
+          "coverage_note": "Covered by TCS (direct), ITI Limited (direct) and Tejas Networks (indirect)."
+        },
+        {
+          "id": "pa",
+          "name": "Power Amplifier",
+          "level": 3,
+          "aliases": [
+            "PA",
+            "RF power amplifier",
+            "GaN PA",
+            "LDMOS PA"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": false,
+          "coverage_note": "No listed Indian pure-play; imported (Qorvo, Skyworks, NXP, Sumitomo)."
+        },
+        {
+          "id": "gan",
+          "name": "GaN / LDMOS RF Devices",
+          "level": 3,
+          "aliases": [
+            "GaN",
+            "LDMOS",
+            "RF transistor",
+            "RF semiconductor"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": false,
+          "coverage_note": "No listed Indian pure-play; the device layer is imported and there is no domestic RF device fab."
+        },
+        {
+          "id": "fpga",
+          "name": "FPGA / SoC for L1 PHY",
+          "level": 3,
+          "aliases": [
+            "FPGA",
+            "SoC",
+            "Baseband processor",
+            "L1 accelerator"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": false,
+          "coverage_note": "No listed Indian pure-play; imported (AMD/Xilinx, Altera, Marvell). Jio virtualised L1 on general-purpose processors."
+        },
+        {
+          "id": "sawbaw",
+          "name": "SAW / BAW Filters",
+          "level": 3,
+          "aliases": [
+            "SAW filter",
+            "BAW filter",
+            "Acoustic filter"
+          ],
+          "priority": "med",
+          "bottleneck": true,
+          "in_universe_coverage": false,
+          "coverage_note": "No listed Indian pure-play; imported (Murata, TDK, Taiyo Yuden)."
+        },
+        {
+          "id": "cavity",
+          "name": "Cavity Filters / Duplexers",
+          "level": 3,
+          "aliases": [
+            "Cavity filter",
+            "Duplexer",
+            "Combiner"
+          ],
+          "priority": "med",
+          "bottleneck": true,
+          "in_universe_coverage": false,
+          "coverage_note": "No listed Indian pure-play; largely imported. PLI localisation targets RF filters and connectors only by year five."
+        }
+      ]
+    },
+    {
+      "slug": "telecom-transport-equipment-india",
+      "industry": "Routers, Switches & Optical Transport",
+      "scope": "INDIA",
+      "path": "industries/telecom-transport-equipment-india.html",
+      "analysis_date": "2026-10-08",
+      "universe": "NSE/BSE",
+      "sector": "Telecom & Networking",
+      "derived_from": {
+        "industry": "Telecom",
+        "slug": "telecom-india",
+        "node": "Routers, Switches & Optical Transport"
+      },
+      "drill_downs": [],
+      "nodes": [
+        {
+          "id": "dwdm",
+          "name": "DWDM / OTN Optical Transport",
+          "level": 1,
+          "aliases": [
+            "DWDM",
+            "OTN",
+            "Dense Wavelength Division Multiplexing",
+            "Optical Transport Network",
+            "Coherent Optical Transport"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true,
+          "coverage_note": "Covered via Tejas Networks (TEJASNET) and HFCL; foreign OEMs (Ciena, Nokia, Cisco) outside NSE/BSE universe."
+        },
+        {
+          "id": "ptn",
+          "name": "PTN / Packet Transport (MPLS-TP)",
+          "level": 1,
+          "aliases": [
+            "PTN",
+            "Packet Transport Network",
+            "MPLS-TP",
+            "Mobile Backhaul Transport"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true,
+          "coverage_note": "Covered via Tejas Networks, HFCL and ITI Limited."
+        },
+        {
+          "id": "ipmpls",
+          "name": "IP / MPLS Routers",
+          "level": 1,
+          "aliases": [
+            "IP Routers",
+            "MPLS Routers",
+            "Core Routers",
+            "Carrier Routers",
+            "Edge Routers"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true,
+          "coverage_note": "Covered via HFCL, Tejas Networks, ITI Limited and Netweb Technologies; Cisco/Juniper/Nokia outside NSE/BSE universe."
+        },
+        {
+          "id": "ethsw",
+          "name": "Ethernet Switches (L2/L3)",
+          "level": 1,
+          "aliases": [
+            "Ethernet Switches",
+            "L2 Switches",
+            "Data-centre Switches",
+            "Enterprise Switching"
+          ],
+          "priority": "med",
+          "bottleneck": false,
+          "in_universe_coverage": true,
+          "coverage_note": "Covered via Netweb Technologies and HFCL."
+        },
+        {
+          "id": "sdh",
+          "name": "SDH / Legacy TDM Transport",
+          "level": 1,
+          "aliases": [
+            "SDH",
+            "Synchronous Digital Hierarchy",
+            "TDM Transport",
+            "Legacy Transport"
+          ],
+          "priority": "low",
+          "bottleneck": false,
+          "in_universe_coverage": true,
+          "coverage_note": "Covered via ITI Limited and Tejas Networks; declining node as networks migrate TDM to IP."
+        },
+        {
+          "id": "transceiver",
+          "name": "Optical Transceivers (SFP / QSFP / 400G)",
+          "level": 2,
+          "aliases": [
+            "Optical Transceivers",
+            "SFP",
+            "QSFP",
+            "400G Modules",
+            "800G Modules",
+            "Optical Modules",
+            "TOSA",
+            "ROSA"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": false,
+          "coverage_note": "NO LISTED PURE-PLAY IN INDIA. ~85-90% of high-speed modules imported by value. Nearest listed: Dixon Technologies (DIXON) 60% JV with Gemtek (SFP/BOSA, Jun-2026) — diversified EMS, not a pure-play. Unlisted: GX Group photonics plant."
+        },
+        {
+          "id": "asic",
+          "name": "Switch / Router ASIC & Coherent DSP",
+          "level": 3,
+          "aliases": [
+            "Switch ASIC",
+            "Router ASIC",
+            "Coherent DSP",
+            "OTN Switching ASIC",
+            "Network Silicon"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": false,
+          "coverage_note": "NO LISTED PURE-PLAY IN INDIA. Carrier switching ASICs and coherent DSPs are ~100% imported, US-designed. No Indian design house or fab."
+        },
+        {
+          "id": "pcb",
+          "name": "PCB / Backplane & PCBA",
+          "level": 2,
+          "aliases": [
+            "PCB",
+            "PCBA",
+            "Backplane",
+            "Printed Circuit Board",
+            "Printed Circuit Board Assembly"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": false,
+          "coverage_note": "NO LISTED PURE-PLAY IN INDIA dedicated to transport gear. ~80% of network-gear PCBAs imported; telecom PCBA BCD raised to 15% (2024). Nearest listed exposure is diversified EMS (Kaynes, Syrma SGS, Dixon) — inference, not a pure-play."
+        },
+        {
+          "id": "power",
+          "name": "Telecom DC Power & Enclosure",
+          "level": 2,
+          "aliases": [
+            "DC Power Systems",
+            "Telecom Power",
+            "Rectifiers",
+            "Li-ion Backup",
+            "Racks",
+            "Enclosure"
+          ],
+          "priority": "med",
+          "bottleneck": false,
+          "in_universe_coverage": true,
+          "coverage_note": "Covered via Exicom Tele-Systems (EXICOM), which supplied racks and power into BharatNet-3."
+        },
+        {
+          "id": "nos",
+          "name": "Network OS / Software & Automation",
+          "level": 2,
+          "aliases": [
+            "Network OS",
+            "NOS",
+            "SDN",
+            "Network Automation",
+            "SONiC"
+          ],
+          "priority": "med",
+          "bottleneck": false,
+          "in_universe_coverage": true,
+          "coverage_note": "Covered indirectly via Tejas Networks (in-house network OS) and Netweb Technologies (SONiC-based switches)."
+        },
+        {
+          "id": "timing",
+          "name": "Timing & Synchronisation",
+          "level": 3,
+          "aliases": [
+            "Timing",
+            "Synchronisation",
+            "IEEE 1588",
+            "PTP",
+            "OCXO",
+            "Clock Synchronisation"
+          ],
+          "priority": "med",
+          "bottleneck": true,
+          "in_universe_coverage": false,
+          "coverage_note": "NO LISTED PURE-PLAY IN INDIA. Timing/synchronisation ASICs are imported (dependency index ~59, US-sourced). Context (foreign): Microchip, ADVA, Nokia, Juniper."
+        },
+        {
+          "id": "oem",
+          "name": "Transport System OEM / Integrator",
+          "level": 1,
+          "aliases": [
+            "System OEM",
+            "Transport OEM",
+            "Network Integrator",
+            "System Integrator"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true,
+          "coverage_note": "Covered via Tejas Networks, HFCL, ITI Limited, Netweb Technologies and TCS (BSNL integrator)."
+        }
+      ]
+    },
+    {
+      "slug": "telecom-towers-india",
+      "industry": "Telecom Towers & Passive Infrastructure",
+      "scope": "INDIA",
+      "path": "industries/telecom-towers-india.html",
+      "analysis_date": "2026-10-08",
+      "universe": "NSE/BSE",
+      "sector": "Telecom & Networking",
+      "derived_from": {
+        "industry": "Telecom",
+        "slug": "telecom-india",
+        "node": "Telecom Towers & Passive Infrastructure"
+      },
+      "drill_downs": [],
+      "nodes": [
+        {
+          "id": "telecom-towers-passive-infra",
+          "name": "Telecom Towers & Passive Infrastructure",
+          "level": 1,
+          "aliases": [
+            "Passive infrastructure",
+            "Passive infra",
+            "Towerco",
+            "Tower infrastructure",
+            "Telecom towers"
+          ],
+          "priority": "high",
+          "bottleneck": false,
+          "in_universe_coverage": true,
+          "coverage_note": "Anchor listed plays: Indus Towers (INDUSTOWER), Altius Telecom Infrastructure Trust (BSE: 543225 InvIT), Bharti Hexacom (BHARTIHEXA), GTL Infrastructure (GTLINFRA); Bharti Airtel (BHARTIARTL) as majority owner of Indus."
+        },
+        {
+          "id": "towerco-operator",
+          "name": "TowerCo Operation, Sharing & Tenancy",
+          "level": 2,
+          "aliases": [
+            "TowerCo",
+            "Tower sharing",
+            "Tenancy",
+            "Passive infra operator"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "macro-tower-structure",
+          "name": "Macro Tower Structure (Lattice & Monopole)",
+          "level": 2,
+          "aliases": [
+            "Lattice tower",
+            "Monopole",
+            "GBT",
+            "RTT",
+            "Ground-based tower"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "foundation-civil",
+          "name": "Foundation, Civil Works & Tower Erection",
+          "level": 2,
+          "aliases": [
+            "Foundation",
+            "Civil works",
+            "Tower erection",
+            "Plinth"
+          ],
+          "priority": "med",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "site-power-smps",
+          "name": "Site Power System (SMPS / DC Power Plant)",
+          "level": 2,
+          "aliases": [
+            "SMPS",
+            "DC power plant",
+            "Rectifier",
+            "Power system"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "batteries",
+          "name": "Batteries (VRLA Lead-Acid & Li-ion)",
+          "level": 2,
+          "aliases": [
+            "VRLA",
+            "Lead-acid battery",
+            "Li-ion battery",
+            "Battery bank",
+            "LFP"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "diesel-genset",
+          "name": "Diesel Genset & Fuel Management",
+          "level": 2,
+          "aliases": [
+            "DG set",
+            "Diesel generator",
+            "Genset",
+            "Fuel"
+          ],
+          "priority": "med",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "solar-energy",
+          "name": "Solar & Green Energy (ESCo Model)",
+          "level": 2,
+          "aliases": [
+            "Solar",
+            "ESCo",
+            "Green energy",
+            "Solar-hybrid"
+          ],
+          "priority": "med",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "shelter-enclosure",
+          "name": "Shelter & Outdoor Enclosure",
+          "level": 2,
+          "aliases": [
+            "Shelter",
+            "BTS shelter",
+            "Outdoor cabinet",
+            "Enclosure"
+          ],
+          "priority": "low",
+          "bottleneck": false,
+          "in_universe_coverage": false,
+          "coverage_note": "No listed pure-play in India; context players unlisted (Eterna Global Solutions, Akash Prefabs, BSMC Power Systems, Indo East Corporation)."
+        },
+        {
+          "id": "cooling",
+          "name": "Cooling / Thermal Management (DC Air-Cons)",
+          "level": 2,
+          "aliases": [
+            "DC air-conditioner",
+            "Thermal management",
+            "Free cooling",
+            "Heat exchanger"
+          ],
+          "priority": "low",
+          "bottleneck": false,
+          "in_universe_coverage": false,
+          "coverage_note": "No listed pure-play in India; context players unlisted (Advance Cooling Systems, FlexSol, BSMC Power Systems)."
+        },
+        {
+          "id": "ibs-smallcell",
+          "name": "In-Building Solutions / Small Cells / DAS",
+          "level": 2,
+          "aliases": [
+            "IBS",
+            "Small cell",
+            "DAS",
+            "In-building",
+            "Densification"
+          ],
+          "priority": "med",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "monitoring-iot",
+          "name": "Remote Monitoring, IoT & Energy Management",
+          "level": 2,
+          "aliases": [
+            "Remote monitoring",
+            "NOC",
+            "IoT",
+            "NMS",
+            "Energy management"
+          ],
+          "priority": "low",
+          "bottleneck": false,
+          "in_universe_coverage": false,
+          "coverage_note": "No listed pure-play in India; controllers/NMS embedded in DC power systems (Exicom), NOC software in-house or unlisted."
+        },
+        {
+          "id": "lean-towers-cow",
+          "name": "Lean / Ultra-Lean Towers & Cell-on-Wheels",
+          "level": 2,
+          "aliases": [
+            "Lean tower",
+            "Ultra-lean tower",
+            "COW",
+            "Cell on Wheels"
+          ],
+          "priority": "low",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        }
+      ]
+    },
+    {
+      "slug": "telecom-operators-india",
+      "industry": "Telecom Operators & Service Providers",
+      "scope": "INDIA",
+      "path": "industries/telecom-operators-india.html",
+      "analysis_date": "2026-10-08",
+      "universe": "NSE/BSE",
+      "sector": "Telecom & Networking",
+      "derived_from": {
+        "industry": "Telecom",
+        "slug": "telecom-india",
+        "node": "Telecom Operators & Service Providers"
+      },
+      "drill_downs": [],
+      "nodes": [
+        {
+          "id": "mno",
+          "name": "Mobile Network Operators (MNO)",
+          "level": 1,
+          "aliases": [
+            "MNO",
+            "telco",
+            "operators",
+            "mobile operators"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "spectrum",
+          "name": "Licensed Spectrum (Radio Waves)",
+          "level": 2,
+          "aliases": [
+            "radio spectrum",
+            "licensed bands",
+            "DoT auctions"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": false,
+          "coverage_note": "No listed pure-play; allocated by DoT and held by Jio/Airtel/Vi."
+        },
+        {
+          "id": "network-capex",
+          "name": "Network Capex — RAN, Core & Transport",
+          "level": 2,
+          "aliases": [
+            "RAN",
+            "5G core",
+            "transport equipment",
+            "telecom equipment"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "optical-fibre",
+          "name": "Optical Fibre & Cable",
+          "level": 3,
+          "aliases": [
+            "OFC",
+            "fibre",
+            "optical cable"
+          ],
+          "priority": "med",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "it-oss-bss",
+          "name": "IT / OSS-BSS & Revenue Assurance",
+          "level": 2,
+          "aliases": [
+            "OSS",
+            "BSS",
+            "revenue assurance",
+            "billing"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "towers",
+          "name": "Passive Tower Infrastructure (TowerCos)",
+          "level": 2,
+          "aliases": [
+            "towerco",
+            "passive infrastructure",
+            "macro towers"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "retail-distribution",
+          "name": "Retail, Distribution & SIM Logistics",
+          "level": 2,
+          "aliases": [
+            "retail",
+            "distribution",
+            "SIM logistics",
+            "recharge"
+          ],
+          "priority": "med",
+          "bottleneck": false,
+          "in_universe_coverage": false,
+          "coverage_note": "No listed pure-play; operator-run and unlisted channel."
+        },
+        {
+          "id": "undersea",
+          "name": "International & Undersea Bandwidth",
+          "level": 2,
+          "aliases": [
+            "submarine cable",
+            "international bandwidth",
+            "backbone"
+          ],
+          "priority": "med",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "enterprise",
+          "name": "Enterprise & Cloud Connectivity",
+          "level": 3,
+          "aliases": [
+            "enterprise connectivity",
+            "cloud",
+            "SD-WAN"
+          ],
+          "priority": "med",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "fwa",
+          "name": "Fixed Wireless Access (FWA)",
+          "level": 3,
+          "aliases": [
+            "fixed wireless access",
+            "5G FWA",
+            "AirFiber"
+          ],
+          "priority": "med",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "iot",
+          "name": "IoT / M2M Connectivity",
+          "level": 3,
+          "aliases": [
+            "M2M",
+            "IoT",
+            "connected devices"
+          ],
+          "priority": "med",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "content-vas",
+          "name": "Content, VAS & CPaaS",
+          "level": 3,
+          "aliases": [
+            "VAS",
+            "CPaaS",
+            "A2P messaging"
+          ],
+          "priority": "med",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "talent",
+          "name": "Telecom Talent & Managed Services",
+          "level": 2,
+          "aliases": [
+            "manpower",
+            "managed services",
+            "field operations"
+          ],
+          "priority": "med",
+          "bottleneck": true,
+          "in_universe_coverage": false,
+          "coverage_note": "No listed pure-play; in-house at operators/OEMs."
         }
       ]
     }
