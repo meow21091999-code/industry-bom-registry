@@ -291,6 +291,21 @@
     </div>
   </header>
 
+  <div style="display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;background:var(--gold-dim);border:1px solid var(--gold);border-radius:10px;padding:14px 18px;margin-bottom:24px;">
+    <span style="font-size:13px;line-height:1.5;"><strong style="color:var(--text);">Drill-down available &rarr;</strong> <span style="color:var(--text-dim);">nine deep-dive entries branch from this page.</span></span>
+    <span style="display:flex;gap:10px;flex-wrap:wrap;">
+      <a href="optical-fibre-preform-india.html" style="font-family:var(--font-mono);font-size:12px;font-weight:600;color:var(--gold);text-decoration:none;border:1px solid var(--gold);border-radius:6px;padding:6px 12px;white-space:nowrap;background:var(--surface);">Optical Fibre Preform &rarr;</a>
+      <a href="optical-fibre-india.html" style="font-family:var(--font-mono);font-size:12px;font-weight:600;color:var(--gold);text-decoration:none;border:1px solid var(--gold);border-radius:6px;padding:6px 12px;white-space:nowrap;background:var(--surface);">Optical Fibre (Drawing) &rarr;</a>
+      <a href="optical-fibre-cable-india.html" style="font-family:var(--font-mono);font-size:12px;font-weight:600;color:var(--gold);text-decoration:none;border:1px solid var(--gold);border-radius:6px;padding:6px 12px;white-space:nowrap;background:var(--surface);">Optical Fibre Cable &rarr;</a>
+      <a href="optical-transceivers-india.html" style="font-family:var(--font-mono);font-size:12px;font-weight:600;color:var(--gold);text-decoration:none;border:1px solid var(--gold);border-radius:6px;padding:6px 12px;white-space:nowrap;background:var(--surface);">Optical Transceivers &rarr;</a>
+      <a href="telecom-chipsets-india.html" style="font-family:var(--font-mono);font-size:12px;font-weight:600;color:var(--gold);text-decoration:none;border:1px solid var(--gold);border-radius:6px;padding:6px 12px;white-space:nowrap;background:var(--surface);">Telecom Chipsets &rarr;</a>
+      <a href="5g-ran-india.html" style="font-family:var(--font-mono);font-size:12px;font-weight:600;color:var(--gold);text-decoration:none;border:1px solid var(--gold);border-radius:6px;padding:6px 12px;white-space:nowrap;background:var(--surface);">5G / 4G RAN &rarr;</a>
+      <a href="telecom-transport-equipment-india.html" style="font-family:var(--font-mono);font-size:12px;font-weight:600;color:var(--gold);text-decoration:none;border:1px solid var(--gold);border-radius:6px;padding:6px 12px;white-space:nowrap;background:var(--surface);">Routers, Switches &amp; Optical Transport &rarr;</a>
+      <a href="telecom-towers-india.html" style="font-family:var(--font-mono);font-size:12px;font-weight:600;color:var(--gold);text-decoration:none;border:1px solid var(--gold);border-radius:6px;padding:6px 12px;white-space:nowrap;background:var(--surface);">Telecom Towers &rarr;</a>
+      <a href="telecom-operators-india.html" style="font-family:var(--font-mono);font-size:12px;font-weight:600;color:var(--gold);text-decoration:none;border:1px solid var(--gold);border-radius:6px;padding:6px 12px;white-space:nowrap;background:var(--surface);">Telecom Operators &rarr;</a>
+    </span>
+  </div>
+
   <!-- KPI -->
   <section class="animate" style="--i:1">
     <div class="kpi-row">
@@ -688,7 +703,7 @@ graph TD
 <script>
 /* ===== CLICK-THROUGH COMPANY MAP ===== */
 const NODES = [
-  { id:'ran', name:'5G / 4G RAN — Base Stations & Radios', pri:'high', bott:true,
+  { id:'ran', drill:true, drillTo:'5g-ran-india.html', drillLabel:'5G / 4G RAN', name:'5G / 4G RAN — Base Stations & Radios', pri:'high', bott:true,
     fn:'Radios (RRU/RRH), baseband units and Massive-MIMO active antenna units — the access layer of the network.',
     importDep:'Imported core (chipsets); ~4% localised BOM', conc:'Oligopoly (Nokia/Ericsson/Samsung) + emerging Indian',
     companies:[
@@ -697,7 +712,7 @@ const NODES = [
       {n:'ITI Limited', t:'NSE/BSE: ITI', e:'indirect', m:'Contract-manufactured ~8,633 BSNL 4G eNodeB sites for Tejas', ev:'ITI FY25 annual report'},
       {n:'Dixon Technologies', t:'NSE/BSE: DIXON', e:'indirect', m:'PLI-approved for Open-RAN (RU/DU/CU) and GPON ONT', ev:'DoT PLI list, 2025'}
     ] },
-  { id:'transport', name:'Routers, Switches & Optical Transport', pri:'high',
+  { id:'transport', drill:true, drillTo:'telecom-transport-equipment-india.html', drillLabel:'Routers, Switches & Optical Transport', name:'Routers, Switches & Optical Transport', pri:'high',
     fn:'Backhaul and core transport — packet switching, DWDM/OTN optical transport and IP routing.',
     importDep:'Partial — high-speed optics imported', conc:'Oligopoly',
     companies:[
@@ -713,7 +728,7 @@ const NODES = [
       {n:'HFCL', t:'NSE/BSE: HFCL', e:'direct', m:'Telecom antennas under PLI; passive connectivity', ev:'Company / DoT PLI list'},
       {n:'Astra Microwave Products', t:'NSE/BSE: ASTRAMICRO', e:'indirect', m:'RF/microwave modules and antennas (largely defence)', ev:'Company FY25'}
     ] },
-  { id:'chipset', name:'Telecom Chipsets — Baseband & RF Front-End', pri:'high', bott:true,
+  { id:'chipset', drill:true, drillTo:'telecom-chipsets-india.html', drillLabel:'Telecom Chipsets', name:'Telecom Chipsets — Baseband & RF Front-End', pri:'high', bott:true,
     fn:'The silicon inside every radio, router and handset — baseband SoCs, RF front-end modules, DSPs.',
     importDep:'Almost fully imported (~$4 bn/yr)', conc:'Global oligopoly',
     companies:[],
@@ -727,7 +742,7 @@ const NODES = [
       {n:'Data Patterns (India)', t:'NSE/BSE: DATAPATTNS', e:'indirect', m:'Defence/telecom electronics and RF subsystems', ev:'Company'},
       {n:'Paras Defence & Space Tech', t:'NSE/BSE: PARAS', e:'indirect', m:'Optics and RF/space electronics', ev:'Company'}
     ] },
-  { id:'preform', name:'Optical Fibre Preform', pri:'high', bott:true,
+  { id:'preform', drill:true, drillTo:'optical-fibre-preform-india.html', drillLabel:'Optical Fibre Preform', name:'Optical Fibre Preform', pri:'high', bott:true,
     fn:'The ultra-pure silica glass rod from which all optical fibre is drawn — the value pool of the industry.',
     importDep:'~65–75% imported (CN/JP/KR)', conc:'Global oligopoly (6–10 cos); 1 Indian',
     companies:[
@@ -736,7 +751,7 @@ const NODES = [
       {n:'Finolex Cables', t:'NSE/BSE: FINCABLES', e:'direct', m:'Preform Phase-1 (~4 mn fkm) commissioned; Phase-2 ~₹100 cr to ~8 mn fkm', ev:'Company annual report FY26'},
       {n:'Polycab India', t:'NSE/BSE: POLYCAB', e:'indirect', m:'Preform in pilot phase', ev:'Trade press'}
     ] },
-  { id:'fibre', name:'Optical Fibre (Drawing)', pri:'high',
+  { id:'fibre', drill:true, drillTo:'optical-fibre-india.html', drillLabel:'Optical Fibre (Drawing)', name:'Optical Fibre (Drawing)', pri:'high',
     fn:'Drawing fibre from preform — India has large draw capacity but thin preform backing.',
     importDep:'Partial — depends on imported preform', conc:'Consolidating',
     companies:[
@@ -745,7 +760,7 @@ const NODES = [
       {n:'Finolex Cables', t:'NSE/BSE: FINCABLES', e:'direct', m:'Fibre draw capacity scaling toward 8 mn fkm', ev:'Company'},
       {n:'Birla Furukawa Fibre Optics', t:'Unlisted (MP Birla group JV)', e:'indirect', m:'Imports preform from Furukawa Japan; group parents Vindhya Telelinks / Birla Cable are listed', ev:'Trade press'}
     ] },
-  { id:'ofc', name:'Optical Fibre Cable (OFC)', pri:'high',
+  { id:'ofc', drill:true, drillTo:'optical-fibre-cable-india.html', drillLabel:'Optical Fibre Cable', name:'Optical Fibre Cable (OFC)', pri:'high',
     fn:'Cabling fibre into land, FTTH and duct cables — India is a large OFC maker and net exporter.',
     importDep:'Domestic; net exporter', conc:'Fragmented',
     companies:[
@@ -766,14 +781,14 @@ const NODES = [
       {n:'Aksh Optifibre', t:'NSE/BSE: AKSHOPTFBR', e:'direct', m:"World's largest single FRP-rod facility (~2 mn km/yr)", ev:'Company'},
       {n:'HFCL (HTL Ltd)', t:'NSE/BSE: HFCL', e:'direct', m:'ARP/FRP rods and IGFR via subsidiary HTL', ev:'Company'}
     ] },
-  { id:'transceiver', name:'Optical Transceivers & Modules', pri:'high', bott:true,
+  { id:'transceiver', drill:true, drillTo:'optical-transceivers-india.html', drillLabel:'Optical Transceivers', name:'Optical Transceivers & Modules', pri:'high', bott:true,
     fn:'The pluggable optics (100G/400G/800G) in every transport port — a rising data-centre bottleneck.',
     importDep:'>90% imported (CN/TW); >$500 mn/yr', conc:'Global concentrated',
     companies:[
       {n:'Tejas Networks', t:'NSE/BSE: TEJASNET', e:'direct', m:'Metro/access optical modules; data-centre interconnect focus', ev:'Company'},
       {n:'HFCL', t:'NSE/BSE: HFCL', e:'direct', m:'Optical modules and connectivity', ev:'Company'}
     ] },
-  { id:'tower', name:'Telecom Towers (Macro & In-Building)', pri:'high',
+  { id:'tower', drill:true, drillTo:'telecom-towers-india.html', drillLabel:'Telecom Towers', name:'Telecom Towers (Macro & In-Building)', pri:'high',
     fn:'Passive infrastructure — towers, poles and in-building solutions that host operator radios.',
     importDep:'Domestic', conc:'Consolidated (Indus + Bharti)',
     companies:[
@@ -789,7 +804,7 @@ const NODES = [
       {n:'Exide Industries', t:'NSE/BSE: EXIDEIND', e:'supplier', m:'Lead-acid and lithium batteries for telecom sites', ev:'Company'},
       {n:'Amara Raja Energy & Mobility', t:'NSE/BSE: ARE&M', e:'supplier', m:'Telecom batteries', ev:'Company'}
     ] },
-  { id:'operator', name:'Telecom Operators / Service Providers', pri:'high',
+  { id:'operator', drill:true, drillTo:'telecom-operators-india.html', drillLabel:'Telecom Operators', name:'Telecom Operators / Service Providers', pri:'high',
     fn:'The demand layer and the annuity — buys the equipment and earns subscription revenue.',
     importDep:'n/a', conc:'Consolidated (Jio + Airtel + Vi)',
     companies:[
