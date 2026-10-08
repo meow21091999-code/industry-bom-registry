@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>India 5G / 4G RAN — BOM, Value Chain &amp; Company Map</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --font-body: 'IBM Plex Sans', system-ui, sans-serif;
+    --font-mono: 'IBM Plex Mono', 'SF Mono', Consolas, monospace;
+
+    --bg: #eef2f7;
+    --surface: #ffffff;
+    --surface-elevated: #ffffff;
+    --surface-recessed: #e6ecf3;
+    --border: rgba(15, 37, 64, 0.10);
+    --border-bright: rgba(15, 37, 64, 0.22);
+    --text: #0f2540;
+    --text-dim: #5a7290;
+
+    --blue: #1e4e8c;
+    --blue-dim: rgba(30, 78, 140, 0.09);
+    --gold: #b8860b;
+    --gold-dim: rgba(184, 134, 11, 0.12);
+    --high: #c0392b;
+    --high-dim: rgba(192, 57, 43, 0.10);
+    --med: #d4a73a;
+    --med-dim: rgba(212, 167, 58, 0.14);
+    --low: #7f8c8d;
+    --low-dim: rgba(127, 140, 141, 0.12);
+    --green: #1a7f5a;
+    --green-dim: rgba(26, 127, 90, 0.11);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0a1626;
+      --surface: #10233b;
+      --surface-elevated: #16304f;
+      --surface-recessed: #0c1c30;
+      --border: rgba(255, 255, 255, 0.09);
+      --border-bright: rgba(255, 255, 255, 0.20);
+      --text: #dbe6f3;
+      --text-dim: #8ba3c0;
+
+      --blue: #5b9bd5;
+      --blue-dim: rgba(91, 155, 213, 0.16);
+      --gold: #e0b84c;
+      --gold-dim: rgba(224, 184, 76, 0.16);
+      --high: #ef6a5b;
+      --high-dim: rgba(239, 106, 91, 0.16);
+      --med: #e0b84c;
+      --med-dim: rgba(224, 184, 76, 0.16);
+      --low: #93a3b5;
+      --low-dim: rgba(147, 163, 181, 0.14);
+      --green: #4cc79a;
+      --green-dim: rgba(76, 199, 154, 0.16);
+    }
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  .grid > *, .flex > *, [style*="display: grid"] > *, [style*="display: flex"] > * { min-width: 0; }
+
+  body {
+    background-color: var(--bg);
+    background-image:
+      linear-gradient(var(--border) 1px, transparent 1px),
+      linear-gradient(90deg, var(--border) 1px, transparent 1px);
+    background-size: 28px 28px;
+    color: var(--text);
+    font-family: var(--font-body);
+    padding: 40px 32px 64px;
+    min-height: 100vh;
+    overflow-wrap: break-word;
+    line-height: 1.55;
+  }
+
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+  .animate { animation: fadeUp 0.45s ease-out both; animation-delay: calc(var(--i, 0) * 0.05s); }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation-duration: 0.01ms !important; animation-delay: 0ms !important; transition-duration: 0.01ms !important; }
+  }
+
+  .container { max-width: 1180px; margin: 0 auto; }
+
+  /* ===== HEADER ===== */
+  .masthead { border-bottom: 2px solid var(--blue); padding-bottom: 20px; margin-bottom: 28px; }
+  .eyebrow {
+    font-family: var(--font-mono); font-size: 11px; font-weight: 600; letter-spacing: 2px;
+    text-transform: uppercase; color: var(--gold); margin-bottom: 10px;
+  }
+  h1 { font-size: clamp(26px, 4vw, 40px); font-weight: 700; letter-spacing: -0.8px; line-height: 1.1; text-wrap: balance; }
+  h1 span { color: var(--blue); }
+  .subtitle { font-family: var(--font-mono); font-size: 12px; color: var(--text-dim); margin-top: 10px; }
+
+  .scope-bar { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
+  .chip {
+    font-family: var(--font-mono); font-size: 10.5px; font-weight: 500; letter-spacing: 0.4px;
+    padding: 4px 10px; border-radius: 4px; background: var(--blue-dim); color: var(--blue);
+    border: 1px solid var(--border);
+  }
+  .chip--gold { background: var(--gold-dim); color: var(--gold); }
+  .chip--high { background: var(--high-dim); color: var(--high); }
+
+  /* ===== SECTION ===== */
+  section { margin-bottom: 44px; }
+  .sec-head { display: flex; align-items: baseline; gap: 14px; margin-bottom: 16px; border-bottom: 1px solid var(--border-bright); padding-bottom: 10px; }
+  .sec-num {
+    font-family: var(--font-mono); font-size: 12px; font-weight: 600; color: var(--gold);
+    border: 1px solid var(--gold); border-radius: 4px; padding: 2px 8px; flex-shrink: 0;
+  }
+  .sec-title { font-size: 20px; font-weight: 600; letter-spacing: -0.3px; }
+  .sec-note { font-family: var(--font-mono); font-size: 11px; color: var(--text-dim); margin-left: auto; text-align: right; }
+
+  /* ===== KPI ===== */
+  .kpi-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(165px, 1fr)); gap: 14px; }
+  .kpi {
+    background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 16px 18px;
+    border-top: 3px solid var(--blue);
+  }
+  .kpi--gold { border-top-color: var(--gold); }
+  .kpi--high { border-top-color: var(--high); }
+  .kpi__val { font-size: clamp(20px, 2.4vw, 27px); font-weight: 700; letter-spacing: -0.8px; font-variant-numeric: tabular-nums; line-height: 1.1; }
+  .kpi__label { font-family: var(--font-mono); font-size: 9.5px; font-weight: 600; text-transform: uppercase; letter-spacing: 1.2px; color: var(--text-dim); margin-top: 7px; }
+  .kpi__sub { font-size: 11px; color: var(--text-dim); margin-top: 3px; }
+
+  /* ===== MERMAID ===== */
+  .diagram-shell { position: relative; }
+  .diagram-shell__hint { font-family: var(--font-mono); font-size: 11px; color: var(--text-dim); margin-bottom: 8px; opacity: 0.8; }
+  .mermaid-wrap {
+    position: relative; background: var(--surface); border: 1px solid var(--border); border-radius: 12px;
+    padding: 28px 20px; overflow: auto; margin-bottom: 8px; display: flex; justify-content: center; align-items: center;
+    min-height: 360px; cursor: grab;
+    padding: 20px 16px;
+  }
+  .mermaid-wrap.is-panning { cursor: grabbing; user-select: none; }
+  .zoom-controls {
+    position: absolute; top: 8px; right: 8px; display: flex; gap: 2px; z-index: 10;
+    background: var(--surface); border: 1px solid var(--border); border-radius: 6px; padding: 2px;
+  }
+  .zoom-controls button {
+    width: 28px; height: 28px; border: none; background: transparent; color: var(--text-dim);
+    font-family: var(--font-mono); font-size: 14px; cursor: pointer; border-radius: 4px;
+    display: flex; align-items: center; justify-content: center; transition: background 0.15s ease, color 0.15s ease;
+  }
+  .zoom-controls button:hover { background: var(--border); color: var(--text); }
+  .mermaid-viewport { position: relative; overflow: hidden; width: 100%; height: 100%; min-height: 220px; }
+  .mermaid-canvas { position: absolute; top: 0; left: 0; }
+  .zoom-label { font-family: var(--font-mono); font-size: 10px; color: var(--text-dim); padding: 0 6px; white-space: nowrap; }
+  .mermaid .nodeLabel { font-family: var(--font-body) !important; font-size: 15px !important; }
+  .mermaid .edgeLabel { font-family: var(--font-mono) !important; font-size: 12px !important; }
+  .mermaid .node rect, .mermaid .node polygon { stroke-width: 1.6px !important; }
+
+  .legend { display: flex; gap: 18px; flex-wrap: wrap; margin-top: 12px; }
+  .legend-item { display: flex; align-items: center; gap: 6px; font-family: var(--font-mono); font-size: 11px; color: var(--text-dim); }
+  .legend-swatch { width: 12px; height: 12px; border-radius: 3px; }
+
+  /* ===== VALUE LADDER ===== */
+  .ladder { display: flex; flex-direction: column; gap: 0; }
+  .rung {
+    display: grid; grid-template-columns: 150px 1fr; gap: 16px; align-items: center;
+    padding: 12px 16px; border: 1px solid var(--border); border-bottom: none; background: var(--surface);
+  }
+  .rung:first-child { border-radius: 10px 10px 0 0; }
+  .rung:last-child { border-radius: 0 0 10px 10px; border-bottom: 1px solid var(--border); }
+  .rung > * { min-width: 0; overflow-wrap: break-word; }
+  .rung__label { font-family: var(--font-mono); font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; }
+  .rung__body { font-size: 13px; color: var(--text-dim); }
+  .rung__body b { color: var(--text); font-weight: 600; }
+  .rung--1 .rung__label { color: var(--low); }
+  .rung--2 .rung__label { color: var(--blue); }
+  .rung--3 .rung__label { color: var(--gold); }
+  .rung--4 .rung__label { color: var(--high); }
+
+  /* ===== INTERACTIVE MAP ===== */
+  .map-layout { display: grid; grid-template-columns: 1fr 380px; gap: 18px; align-items: start; }
+  .map-layout > *, .kpi-row > *, .map-nodes > *, .bn > * { min-width: 0; overflow-wrap: break-word; }
+  .map-nodes { display: grid; grid-template-columns: repeat(auto-fill, minmax(215px, 1fr)); gap: 10px; }
+  .node-btn {
+    text-align: left; background: var(--surface); border: 1px solid var(--border); border-radius: 9px;
+    padding: 12px 14px; cursor: pointer; font-family: var(--font-body); color: var(--text);
+    transition: border-color 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease; position: relative;
+  }
+  .node-btn:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(15,37,64,0.10); border-color: var(--border-bright); }
+  .node-btn.is-active { border-color: var(--blue); box-shadow: 0 0 0 1px var(--blue) inset; }
+  .node-btn__name { font-size: 13px; font-weight: 600; line-height: 1.3; display: flex; align-items: center; gap: 7px; }
+  .node-btn__meta { font-family: var(--font-mono); font-size: 10px; color: var(--text-dim); margin-top: 5px; display: flex; gap: 8px; flex-wrap: wrap; }
+  .dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; display: inline-block; }
+  .dot--high { background: var(--high); }
+  .dot--med { background: var(--med); }
+  .dot--low { background: var(--low); }
+  .dot--none { background: transparent; border: 1.5px dashed var(--text-dim); }
+  .flag { font-family: var(--font-mono); font-size: 9px; padding: 1px 5px; border-radius: 3px; }
+  .flag--gap { background: var(--high-dim); color: var(--high); }
+  .flag--bott { background: var(--med-dim); color: var(--gold); }
+
+  .map-panel {
+    background: var(--surface); border: 1px solid var(--border-bright); border-radius: 12px;
+    padding: 20px; position: sticky; top: 20px; min-height: 260px;
+  }
+  .map-panel__kicker { font-family: var(--font-mono); font-size: 10px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: var(--gold); margin-bottom: 8px; }
+  .map-panel__title { font-size: 17px; font-weight: 700; line-height: 1.25; margin-bottom: 6px; }
+  .map-panel__fn { font-size: 12.5px; color: var(--text-dim); margin-bottom: 14px; line-height: 1.55; }
+  .map-panel__row { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 14px; }
+  .mini { font-family: var(--font-mono); font-size: 10px; padding: 2px 7px; border-radius: 4px; background: var(--surface-recessed); color: var(--text-dim); border: 1px solid var(--border); }
+
+  .co { border-top: 1px solid var(--border); padding: 11px 0; }
+  .co:first-of-type { border-top: none; }
+  .co__name { font-size: 13.5px; font-weight: 600; }
+  .co__ticker { font-family: var(--font-mono); font-size: 10.5px; color: var(--blue); margin-left: 6px; }
+  .co__tags { display: flex; gap: 6px; margin: 5px 0; flex-wrap: wrap; }
+  .tag { font-family: var(--font-mono); font-size: 9.5px; font-weight: 500; padding: 2px 7px; border-radius: 4px; }
+  .tag--direct { background: var(--green-dim); color: var(--green); }
+  .tag--indirect { background: var(--blue-dim); color: var(--blue); }
+  .tag--supplier { background: var(--gold-dim); color: var(--gold); }
+  .tag--conglomerate { background: var(--low-dim); color: var(--low); }
+  .co__mat { font-size: 11.5px; color: var(--text-dim); line-height: 1.5; }
+  .co__ev { font-size: 10.5px; color: var(--text-dim); font-style: italic; margin-top: 3px; }
+
+  .nocov { background: var(--high-dim); border: 1px dashed var(--high); border-radius: 8px; padding: 12px 14px; font-size: 12.5px; line-height: 1.55; }
+  .nocov b { color: var(--high); }
+  .nocov .near { color: var(--text-dim); margin-top: 6px; display: block; font-size: 11.5px; }
+
+  /* ===== TABLE ===== */
+  .table-wrap { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; }
+  .table-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  table.data { width: 100%; border-collapse: collapse; font-size: 12.5px; }
+  table.data th {
+    background: var(--surface-recessed); font-family: var(--font-mono); font-size: 10px; font-weight: 600;
+    text-transform: uppercase; letter-spacing: 0.8px; color: var(--text-dim); text-align: left; padding: 10px 12px;
+    border-bottom: 2px solid var(--border-bright); white-space: nowrap;
+  }
+  table.data td { padding: 9px 12px; border-bottom: 1px solid var(--border); vertical-align: middle; }
+  table.data tbody tr:nth-child(even) { background: var(--blue-dim); }
+  table.data tbody tr:hover { background: var(--border); }
+  table.data td.c { text-align: center; font-family: var(--font-mono); font-weight: 600; }
+  .cell-d { color: var(--green); }
+  .cell-i { color: var(--blue); }
+  .cell-s { color: var(--gold); }
+  .cell-c { color: var(--low); }
+  .cell-x { color: var(--text-dim); opacity: 0.4; }
+
+  /* ===== BOTTLENECK PAIRS ===== */
+  .bn { display: grid; grid-template-columns: 1fr 1fr; gap: 0; border: 1px solid var(--border); border-radius: 10px; overflow: hidden; margin-bottom: 12px; }
+  .bn__risk { background: var(--high-dim); padding: 13px 16px; border-right: 1px solid var(--border); }
+  .bn__opp { background: var(--green-dim); padding: 13px 16px; }
+  .bn__h { font-family: var(--font-mono); font-size: 9.5px; font-weight: 600; letter-spacing: 1.2px; text-transform: uppercase; margin-bottom: 6px; }
+  .bn__risk .bn__h { color: var(--high); }
+  .bn__opp .bn__h { color: var(--green); }
+  .bn p { font-size: 12.5px; line-height: 1.55; }
+  .bn__title { font-weight: 600; color: var(--text); display: block; margin-bottom: 4px; font-size: 13px; }
+
+  .footnote { font-family: var(--font-mono); font-size: 10.5px; color: var(--text-dim); line-height: 1.7; margin-top: 8px; }
+  .callout { background: var(--surface); border: 1px solid var(--border); border-left: 3px solid var(--gold); border-radius: 0 10px 10px 0; padding: 15px 20px; font-size: 13px; line-height: 1.6; color: var(--text-dim); }
+  .callout strong { color: var(--text); }
+
+  @media (max-width: 900px) {
+    .map-layout { grid-template-columns: 1fr; }
+    .map-panel { position: static; }
+    .bn { grid-template-columns: 1fr; }
+    .bn__risk { border-right: none; border-bottom: 1px solid var(--border); }
+  }
+  @media (max-width: 600px) {
+    body { padding: 20px 14px 48px; }
+    .rung { grid-template-columns: 1fr; gap: 4px; }
+  }
+</style>
+</head>
+<body>
+<div style="max-width:1180px;margin:0 auto 18px;font-family:'IBM Plex Mono',monospace;font-size:12px;">
+  <a href="../index.html" style="color:var(--blue);text-decoration:none;border-bottom:1px solid var(--border);">&larr; Industry BOM Registry</a>
+  <span style="color:var(--text-dim);">&nbsp;/&nbsp;Telecom &mdash; India&nbsp;/&nbsp;5G / 4G RAN</span>
+</div>
+<div class="container">
+
+  <header class="masthead animate" style="--i:0">
+    <div class="eyebrow">Industrial BOM &amp; Value-Chain Dissection</div>
+    <h1>India <span>5G / 4G RAN</span></h1>
+    <div class="subtitle">Base stations &amp; radios &mdash; RRU / AAU, baseband, RF front-end &amp; O-RAN &middot; BOM tree &middot; value-chain ladder &middot; NSE/BSE company map</div>
+    <div class="scope-bar">
+      <span class="chip chip--gold">Analysis date: 2026-10-08</span>
+      <span class="chip">Scope: INDIA</span>
+      <span class="chip">Interest: investment research</span>
+      <span class="chip">Universe: NSE / BSE</span>
+      <span class="chip chip--high">India lens: ON</span>
+      <span class="chip">Materiality: all exposures</span>
+      <span class="chip">Depth: depth-first</span>
+      <span class="chip">Derived from: Telecom &rarr; 5G / 4G RAN</span>
+    </div>
+  </header>
+
+  <div style="display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;background:var(--gold-dim);border:1px solid var(--gold);border-radius:10px;padding:14px 18px;margin-bottom:24px;">
+    <span style="font-size:13px;line-height:1.5;"><strong style="color:var(--text);">Outside-universe context &rarr;</strong> <span style="color:var(--text-dim);">the base-station BOM has almost no listed Indian pure-plays below the OEM layer; foreign vendors manufacturing in India fill the gap.</span></span>
+    <span style="display:flex;gap:10px;flex-wrap:wrap;">
+      <span style="font-family:var(--font-mono);font-size:12px;font-weight:600;color:var(--gold);border:1px solid var(--gold);border-radius:6px;padding:6px 12px;white-space:nowrap;background:var(--surface);">Nokia &middot; FI</span>
+      <span style="font-family:var(--font-mono);font-size:12px;font-weight:600;color:var(--gold);border:1px solid var(--gold);border-radius:6px;padding:6px 12px;white-space:nowrap;background:var(--surface);">Ericsson &middot; SE</span>
+      <span style="font-family:var(--font-mono);font-size:12px;font-weight:600;color:var(--gold);border:1px solid var(--gold);border-radius:6px;padding:6px 12px;white-space:nowrap;background:var(--surface);">Samsung &middot; KR</span>
+    </span>
+  </div>
+
+  <!-- KPI -->
+  <section class="animate" style="--i:1">
+    <div class="kpi-row">
+      <div class="kpi kpi--gold">
+        <div class="kpi__val">5.08 L</div>
+        <div class="kpi__label">5G BTS installed in India</div>
+        <div class="kpi__sub">As of 31 Oct 2025; 5.15 L by Nov 2025</div>
+      </div>
+      <div class="kpi kpi--high">
+        <div class="kpi__val">~4%</div>
+        <div class="kpi__label">RAN BOM localised</div>
+        <div class="kpi__sub">Switches 3% &middot; GPON ONT 12%</div>
+      </div>
+      <div class="kpi">
+        <div class="kpi__val">1,00,000+</div>
+        <div class="kpi__label">BSNL 4G/5G sites shipped</div>
+        <div class="kpi__sub">Tejas RAN, completed FY25</div>
+      </div>
+      <div class="kpi">
+        <div class="kpi__val">&#8377;8,923 cr</div>
+        <div class="kpi__label">Tejas Networks FY25 revenue</div>
+        <div class="kpi__sub">3.6&times; YoY; PAT &#8377;447 cr</div>
+      </div>
+      <div class="kpi">
+        <div class="kpi__val">&#8377;7,492 cr</div>
+        <div class="kpi__label">BSNL RAN order (Aug 2023)</div>
+        <div class="kpi__sub">Tejas &asymp; US$900 m, ~1 L sites</div>
+      </div>
+      <div class="kpi kpi--high">
+        <div class="kpi__val">&lt;20%</div>
+        <div class="kpi__label">Domestic value addition</div>
+        <div class="kpi__sub">NITI Aayog; &gt;80% of parts from China</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 1. BOM TREE -->
+  <section class="animate" style="--i:2">
+    <div class="sec-head">
+      <span class="sec-num">01</span>
+      <span class="sec-title">System Overview</span>
+      <span class="sec-note">Level 0 &rarr; seven subsystems<br>clickable BOM tree in section 03</span>
+    </div>
+    <section class="diagram-shell">
+      <p class="diagram-shell__hint">Ctrl/Cmd + wheel to zoom. Drag to pan when zoomed. Double-click to fit.</p>
+      <div class="mermaid-wrap">
+        <div class="zoom-controls">
+          <button type="button" data-action="zoom-in" title="Zoom in">+</button>
+          <button type="button" data-action="zoom-out" title="Zoom out">&minus;</button>
+          <button type="button" data-action="zoom-fit" title="Smart fit">&#8634;</button>
+          <button type="button" data-action="zoom-one" title="1:1 zoom">1:1</button>
+          <button type="button" data-action="zoom-expand" title="Open full size">&#x26F6;</button>
+          <span class="zoom-label">Loading...</span>
+        </div>
+        <div class="mermaid-viewport">
+          <div class="mermaid mermaid-canvas"></div>
+        </div>
+      </div>
+      <script type="text/plain" class="diagram-source">
+graph TD
+  L0["<b>Level 0</b><br/>5G / 4G RAN<br/>Base Stations &amp; Radios (India)"]
+  L0 --> A["A &middot; Radio Unit (RRU / RRH)"]
+  L0 --> B["B &middot; Massive-MIMO AAU"]
+  L0 --> C["C &middot; Baseband Unit (BBU / DU-CU)"]
+  L0 --> D["D &middot; RF Front-End &amp; Power Amp"]
+  L0 --> E["E &middot; Antenna Array"]
+  L0 --> F["F &middot; Power Supply &amp; Enclosure/Thermal"]
+  L0 --> G["G &middot; O-RAN Software (RIC / SMO)"]
+  classDef high fill:#c0392b,stroke:#8e2b20,color:#fff,stroke-width:2px;
+  classDef med fill:#d4a73a,stroke:#a37f22,color:#241a05,stroke-width:1.5px;
+  classDef root fill:#1e4e8c,stroke:#12335c,color:#fff,stroke-width:2px;
+  class L0 root;
+  class A,B,C,D high;
+  class E,F,G med;
+      </script>
+    </section>
+    <div class="legend">
+      <div class="legend-item"><div class="legend-swatch" style="background:var(--high)"></div> HIGH priority — bottleneck / import-critical</div>
+      <div class="legend-item"><div class="legend-swatch" style="background:var(--med)"></div> MEDIUM priority</div>
+      <div class="legend-item"><div class="legend-swatch" style="background:var(--blue)"></div> Root node</div>
+    </div>
+  </section>
+
+  <!-- 2. VALUE LADDER -->
+  <section class="animate" style="--i:3">
+    <div class="sec-head">
+      <span class="sec-num">02</span>
+      <span class="sec-title">Value-Chain Ladder &amp; Supplier Tiers</span>
+      <span class="sec-note">raw material &rarr; aftermarket &middot; Tier-4 &rarr; OEM</span>
+    </div>
+    <div class="ladder">
+      <div class="rung rung--1">
+        <div class="rung__label">Tier 4 &middot; Raw</div>
+        <div class="rung__body"><b>Semiconductor wafers</b> (GaN / LDMOS / RF-CMOS) &middot; copper &middot; aluminium &middot; FR-4 / PCB laminate &middot; engineering plastics &middot; steel &middot; optical fibre preform <span class="mini">Qorvo &middot; Skyworks &middot; Sumitomo &middot; global mills</span></div>
+      </div>
+      <div class="rung rung--2">
+        <div class="rung__label">Tier 3 &middot; Specialty</div>
+        <div class="rung__body"><b>RF power amplifiers</b> &middot; SAW / BAW &amp; cavity filters &middot; LNA &amp; transceivers &middot; FPGAs / ASICs &middot; high-layer PCB &middot; optical transceiver modules &middot; CPRI / eCPRI PHY <span class="mini">almost fully imported</span></div>
+      </div>
+      <div class="rung rung--3">
+        <div class="rung__label">Tier 2 &middot; Component</div>
+        <div class="rung__body"><b>RRU / RRH radio modules</b> &middot; Massive-MIMO AAU &middot; BBU boards &middot; antenna arrays &middot; power supplies / DC-DC &middot; outdoor cabinets (ODC) &middot; fronthaul cable <span class="mini">ITI (ODC, RRU/BBU) &middot; HFCL &middot; Dixon</span></div>
+      </div>
+      <div class="rung rung--4">
+        <div class="rung__label">Tier 1 &middot; Subsystem / OEM</div>
+        <div class="rung__body"><b>RAN OEMs &amp; design houses</b> — Tejas Networks &middot; Nokia &middot; Ericsson &middot; Samsung &middot; HFCL &middot; VVDN &middot; Dixon (Open-RAN) &middot; WiSig</div>
+      </div>
+      <div class="rung rung--4">
+        <div class="rung__label">OEM / Integrator</div>
+        <div class="rung__body"><b>Stack integrators &amp; operators</b> — TCS + C-DoT + Tejas (BSNL indigenous stack) &middot; Jio Platforms (own stack) &middot; Airtel / Vi buy from global OEMs <span class="mini">~98% of demand is private operators</span></div>
+      </div>
+      <div class="rung rung--1">
+        <div class="rung__label">Aftermarket</div>
+        <div class="rung__body">AMC &amp; managed services &middot; 4G &rarr; 5G software upgrades &middot; O-RAN RIC apps &middot; spares &amp; site O&amp;M <span class="mini">TCS CNOPS &middot; Tejas support</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. BOM TREE & COMPANY MAP -->
+  <section class="animate" style="--i:4">
+    <div class="sec-head">
+      <span class="sec-num">03</span>
+      <span class="sec-title">BOM Tree &amp; Company Map</span>
+      <span class="sec-note">click a node &rarr; its NSE/BSE companies<br>gaps shown explicitly</span>
+    </div>
+    <div class="map-layout">
+      <div class="map-nodes" id="mapNodes"></div>
+      <aside class="map-panel" id="mapPanel" aria-live="polite"></aside>
+    </div>
+  </section>
+
+  <!-- 4. COMPANY x NODE MATRIX -->
+  <section class="animate" style="--i:5">
+    <div class="sec-head">
+      <span class="sec-num">04</span>
+      <span class="sec-title">Company &times; Node Matrix</span>
+      <span class="sec-note">D direct &middot; I indirect &middot; S supplier &middot; C conglomerate &middot; &mdash; none</span>
+    </div>
+    <div class="table-wrap">
+      <div class="table-scroll">
+        <table class="data">
+          <thead>
+            <tr>
+              <th>Company</th><th>RRU</th><th>AAU</th><th>BBU</th><th>RF-PA</th><th>Filters</th>
+              <th>Antenna</th><th>Silicon</th><th>Power</th><th>Encl.</th><th>Cable</th><th>O-RAN</th><th>Integr.</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Tejas Networks <small>TEJASNET</small></td><td class="c cell-d">D</td><td class="c cell-d">D</td><td class="c cell-d">D</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-i">I</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-i">I</td><td class="c cell-i">I</td></tr>
+            <tr><td>ITI Limited <small>ITI</small></td><td class="c cell-s">S</td><td class="c cell-x">&mdash;</td><td class="c cell-s">S</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-d">D</td><td class="c cell-d">D</td><td class="c cell-x">&mdash;</td><td class="c cell-d">D</td></tr>
+            <tr><td>HFCL <small>HFCL</small></td><td class="c cell-i">I</td><td class="c cell-i">I</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-i">I</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-i">I</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td></tr>
+            <tr><td>Dixon Technologies <small>DIXON</small></td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-s">S</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-s">S</td><td class="c cell-x">&mdash;</td></tr>
+            <tr><td>Reliance Industries <small>RELIANCE</small></td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-c">C</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-c">C</td><td class="c cell-x">&mdash;</td></tr>
+            <tr><td>Tata Consultancy Services <small>TCS</small></td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-i">I</td><td class="c cell-d">D</td></tr>
+            <tr><td>Sterlite Technologies <small>STLTECH</small></td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-i">I</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td></tr>
+            <tr><td>Nokia <small>outside universe</small></td><td class="c cell-d">D</td><td class="c cell-d">D</td><td class="c cell-d">D</td><td class="c cell-i">I</td><td class="c cell-i">I</td><td class="c cell-d">D</td><td class="c cell-i">I</td><td class="c cell-i">I</td><td class="c cell-d">D</td><td class="c cell-x">&mdash;</td><td class="c cell-d">D</td><td class="c cell-d">D</td></tr>
+            <tr><td>Ericsson <small>outside universe</small></td><td class="c cell-d">D</td><td class="c cell-d">D</td><td class="c cell-d">D</td><td class="c cell-i">I</td><td class="c cell-i">I</td><td class="c cell-d">D</td><td class="c cell-i">I</td><td class="c cell-i">I</td><td class="c cell-d">D</td><td class="c cell-x">&mdash;</td><td class="c cell-d">D</td><td class="c cell-i">I</td></tr>
+            <tr><td>Samsung <small>outside universe</small></td><td class="c cell-d">D</td><td class="c cell-d">D</td><td class="c cell-d">D</td><td class="c cell-i">I</td><td class="c cell-i">I</td><td class="c cell-d">D</td><td class="c cell-i">I</td><td class="c cell-i">I</td><td class="c cell-d">D</td><td class="c cell-x">&mdash;</td><td class="c cell-i">I</td><td class="c cell-i">I</td></tr>
+            <tr><td>VVDN Technologies <small>unlisted</small></td><td class="c cell-s">S</td><td class="c cell-s">S</td><td class="c cell-s">S</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-s">S</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-s">S</td><td class="c cell-x">&mdash;</td></tr>
+            <tr><td>C-DoT <small>unlisted &middot; Govt</small></td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-i">I</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-d">D</td><td class="c cell-i">I</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <p class="footnote">D direct &middot; I indirect &middot; S supplier &middot; C conglomerate/minor segment &middot; &mdash; no exposure. Rows marked &ldquo;outside universe&rdquo; are foreign vendors that manufacture in India (Nokia Chennai, Ericsson&ndash;Jabil Pune, Samsung) and are shown for context only. &ldquo;Unlisted&rdquo; rows (VVDN, C-DoT) are Indian but not NSE/BSE-listed. Listing status current as of analysis date.</p>
+  </section>
+
+  <!-- 5. BOTTLENECKS -->
+  <section class="animate" style="--i:6">
+    <div class="sec-head">
+      <span class="sec-num">05</span>
+      <span class="sec-title">Bottlenecks &mdash; Risk &amp; Opportunity</span>
+      <span class="sec-note">dual-readable: every risk is a substitution play</span>
+    </div>
+    <div class="bn">
+      <div class="bn__risk"><div class="bn__h">Risk</div><p><span class="bn__title">RF and component import dependence</span>Only ~4% of a RAN BOM is localised; more than 80% of critical components such as 4G/5G antennas and signal processors come from China, and India imports US$4&ndash;5 bn of telecom gear a year.</p></div>
+      <div class="bn__opp"><div class="bn__h">Opportunity</div><p><span class="bn__title">PLI localisation roadmap</span>DoT has defined staged targets for RAN radios — plastics year 2, metal parts year 3, antennas year 4, RF filters and connectors year 5 — plus a design-led manufacturing incentive.</p></div>
+    </div>
+    <div class="bn">
+      <div class="bn__risk"><div class="bn__h">Risk</div><p><span class="bn__title">RAN silicon dependency</span>L1-PHY FPGAs, SoCs and ASICs are almost fully imported (AMD/Xilinx, Altera, Marvell, Qualcomm); there is no listed Indian pure-play and domestic fabs are not yet at scale.</p></div>
+      <div class="bn__opp"><div class="bn__h">Opportunity</div><p><span class="bn__title">Disaggregation lowers the silicon lock-in</span>Jio virtualised L1 on general-purpose processors; indigenous O-RAN 32T32R radios (WiSig, COMET) show an India-built path around custom silicon.</p></div>
+    </div>
+    <div class="bn">
+      <div class="bn__risk"><div class="bn__h">Risk</div><p><span class="bn__title">RAN OEM concentration</span>Private operators — nearly 98% of demand — still buy Nokia, Ericsson and Samsung, while Indian OEMs are concentrated on a single BSNL order that has now run its course.</p></div>
+      <div class="bn__opp"><div class="bn__h">Opportunity</div><p><span class="bn__title">A proven Indian OEM and an export door</span>Tejas delivered 100,000+ sites (a world-scale proof point) and its NEC partnership opens advanced RAN and global go-to-market; Dixon, HFCL and VVDN hold PLI Open-RAN approvals.</p></div>
+    </div>
+    <div class="bn">
+      <div class="bn__risk"><div class="bn__h">Risk</div><p><span class="bn__title">Antennas and populated boards</span>Antennas are ~69% Chinese and populated PCBs ~55% Chinese, and Indian manufacturers face costs 10&ndash;15% higher than global OEMs on imported inputs.</p></div>
+      <div class="bn__opp"><div class="bn__h">Opportunity</div><p><span class="bn__title">The narrow, under-capitalised seam</span>Antennas, RF front-ends and populated boards are the physical components where a domestic substitute is most plausible and the incumbent Indian firms are visibly under-capitalised.</p></div>
+    </div>
+    <div class="bn">
+      <div class="bn__risk"><div class="bn__h">Risk</div><p><span class="bn__title">Trusted-source gatekeeping</span>NSCS trusted-source clearance and NCCS ITSAR certification (now covering disaggregated gNB and O-RAN RIC) gate every vendor; Huawei and ZTE remain excluded, adding compliance cost and time.</p></div>
+      <div class="bn__opp"><div class="bn__h">Opportunity</div><p><span class="bn__title">A certification moat in India's favour</span>Approved Indian vendors — Tejas, HFCL, Dixon — and foreign OEMs that manufacture locally clear the gate first, raising entry barriers in their favour.</p></div>
+    </div>
+    <div class="bn">
+      <div class="bn__risk"><div class="bn__h">Risk</div><p><span class="bn__title">PLI under-disbursal and lumpy capex</span>Only about 15% of the &#8377;12,195 cr telecom PLI outlay was disbursed and Samsung exited the scheme; the BSNL RAN order that powered FY25 will not repeat at the same scale.</p></div>
+      <div class="bn__opp"><div class="bn__h">Opportunity</div><p><span class="bn__title">Annuitising the installed base</span>AMC, managed services and 4G&rarr;5G software upgrades convert 100,000+ installed sites into a recurring stream — Tejas guides to &ldquo;several hundred crore&rdquo; from BSNL 5G upgrades.</p></div>
+    </div>
+    <div class="callout animate" style="--i:7">
+      <strong>Deepest hidden import dependency:</strong> the RF front-end and RAN silicon — power amplifiers, filters/duplexers and the L1-PHY FPGAs/SoCs that do the baseband maths. These sit below the OEM assembly layer India has localised, are almost entirely imported, and remain majority-Chinese even as the trusted-source wall keeps Chinese finished gear out.
+    </div>
+  </section>
+
+  <p class="footnote animate" style="--i:8">
+    Sources (plain): Tejas Networks Q4 FY25 results, investor presentation, earnings call and press releases (2023&ndash;2025) &middot; ITI Limited Director&rsquo;s Report and Annual Report FY24&ndash;25 &middot; HFCL FY25 results and earnings call &middot; DoT PLI scheme lists and PPP-MII notifications &middot; DoT / NCCS ITSAR documents (5G disaggregated gNB; Open RAN RIC) &middot; PIB, TCS and C-DoT releases on the BSNL indigenous 4G stack &middot; Nokia India and Ericsson India manufacturing statements &middot; NITI Aayog report on telecom and network equipment manufacturing &middot; DoT 5G BTS data &middot; reporting by ET Telecom, Business Standard, Communications Today, Moneycontrol, The Financial Express, TelecomTalk and Light Reading. All figures are date-stamped to the analysis date; time-sensitive facts are cyclical and should be re-checked before use. Company mappings are evidence-based; impacts are inference unless reported.
+  </p>
+
+</div>
+
+
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+
+  const config = {
+    fitPadding: 24, minHeight: 300, maxHeightPx: 900, maxHeightVh: 0.85,
+    maxInitialZoom: 1.7, minZoom: 0.08, maxZoom: 6.5, zoomStep: 0.14, readabilityFloor: 0.55
+  };
+  const clamp = (n, lo, hi) => Math.max(lo, Math.min(hi, n));
+  let activeDrag = null;
+  addEventListener('mousemove', (e) => activeDrag?.onMove(e));
+  addEventListener('mouseup', () => { activeDrag?.onEnd(); activeDrag = null; });
+
+  const isDark = matchMedia('(prefers-color-scheme: dark)').matches;
+  mermaid.initialize({
+    startOnLoad: false, theme: 'base', look: 'classic', layout: 'dagre',
+    themeVariables: {
+      fontFamily: "'IBM Plex Sans', system-ui, sans-serif", fontSize: '15px',
+      lineColor: isDark ? '#5b9bd5' : '#9db4cc',
+    }
+  });
+
+  function initDiagram(shell) {
+    const wrap = shell.querySelector('.mermaid-wrap');
+    const viewport = shell.querySelector('.mermaid-viewport');
+    const canvas = shell.querySelector('.mermaid-canvas');
+    const source = shell.querySelector('.diagram-source');
+    const label = shell.querySelector('.zoom-label');
+    if (!wrap || !viewport || !canvas || !source || !label) return;
+
+    let zoom = 1, fitMode = 'contain', panX = 0, panY = 0, svgW = 0, svgH = 0;
+    let sx = 0, sy = 0, spx = 0, spy = 0, touchDist = 0, touchCx = 0, touchCy = 0;
+
+    function constrainPan() {
+      const vpW = viewport.clientWidth, vpH = viewport.clientHeight;
+      const rW = svgW * zoom, rH = svgH * zoom, pad = config.fitPadding;
+      panX = (rW + pad * 2 <= vpW) ? (vpW - rW) / 2 : clamp(panX, vpW - rW - pad, pad);
+      panY = (rH + pad * 2 <= vpH) ? (vpH - rH) / 2 : clamp(panY, vpH - rH - pad, pad);
+    }
+    function applyTransform() {
+      const svg = canvas.querySelector('svg');
+      if (!svg || !svgW) return;
+      constrainPan();
+      svg.style.width = (svgW * zoom) + 'px';
+      svg.style.height = (svgH * zoom) + 'px';
+      canvas.style.transform = `translate(${panX}px, ${panY}px)`;
+      label.textContent = Math.round(zoom * 100) + '%';
+    }
+    function canPan() {
+      return svgW * zoom + config.fitPadding * 2 > viewport.clientWidth
+          || svgH * zoom + config.fitPadding * 2 > viewport.clientHeight;
+    }
+    function computeSmartFit() {
+      const vpW = viewport.clientWidth, vpH = viewport.clientHeight;
+      const aW = Math.max(80, vpW - config.fitPadding * 2);
+      const aH = Math.max(80, vpH - config.fitPadding * 2);
+      const contain = Math.min(aW / svgW, aH / svgH);
+      let z = contain, mode = 'contain';
+      if (contain < config.readabilityFloor) {
+        // For wide BOM trees, fitting width keeps the whole width visible and
+        // scrolls vertically — far more readable than a height-fit that clips columns.
+        z = aW / svgW; mode = 'width';
+      }
+      return { zoom: clamp(z, config.minZoom, config.maxInitialZoom), mode };
+    }
+    function fitDiagram() {
+      if (!svgW) return;
+      const fit = computeSmartFit();
+      zoom = fit.zoom; fitMode = fit.mode;
+      panX = (viewport.clientWidth - svgW * zoom) / 2;
+      panY = (viewport.clientHeight - svgH * zoom) / 2;
+      applyTransform();
+    }
+    function setOneToOne() {
+      zoom = 1; fitMode = '1:1';
+      panX = (viewport.clientWidth - svgW * zoom) / 2;
+      panY = (viewport.clientHeight - svgH * zoom) / 2;
+      applyTransform();
+    }
+    function zoomAround(factor, cx, cy) {
+      const next = clamp(zoom * factor, config.minZoom, config.maxZoom);
+      const ratio = next / zoom;
+      panX = cx - ratio * (cx - panX);
+      panY = cy - ratio * (cy - panY);
+      zoom = next; applyTransform();
+    }
+    function readSvgNaturalSize(svg) {
+      let w = 0, h = 0;
+      if (svg.viewBox?.baseVal?.width > 0) { w = svg.viewBox.baseVal.width; h = svg.viewBox.baseVal.height; }
+      if (!w) { w = parseFloat(svg.getAttribute('width')) || 0; h = parseFloat(svg.getAttribute('height')) || 0; }
+      if (!w) { const b = svg.getBBox(); w = b.width; h = b.height; }
+      if (!w) { const r = svg.getBoundingClientRect(); w = r.width || 1000; h = r.height || 700; }
+      if (!svg.getAttribute('viewBox')) svg.setAttribute('viewBox', `0 0 ${w} ${h}`);
+      return { w, h };
+    }
+    function setAdaptiveHeight() {
+      if (!svgW) return;
+      const usableW = Math.max(280, wrap.getBoundingClientRect().width - 2);
+      const idealH = (svgH / svgW) * usableW + config.fitPadding * 2;
+      const maxVp = Math.floor(innerHeight * config.maxHeightVh);
+      const hardMax = Math.min(config.maxHeightPx, Math.max(config.minHeight + 40, maxVp));
+      wrap.style.height = Math.round(clamp(idealH, config.minHeight, hardMax)) + 'px';
+    }
+    function openInNewTab() {
+      const svg = canvas.querySelector('svg');
+      if (!svg) return;
+      const clone = svg.cloneNode(true);
+      clone.style.width = ''; clone.style.height = '';
+      const bg = isDark ? '#0a1626' : '#eef2f7';
+      const html = `<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>BOM Tree</title><style>body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;background:${bg};padding:40px;box-sizing:border-box}svg{max-width:100%;max-height:90vh;height:auto}</style></head><body>${clone.outerHTML}</body></html>`;
+      open(URL.createObjectURL(new Blob([html], { type: 'text/html' })), '_blank');
+    }
+    async function render() {
+      try {
+        const code = source.textContent.trim();
+        const id = 'dgm-' + Math.random().toString(36).slice(2, 9);
+        const { svg } = await mermaid.render(id, code);
+        canvas.innerHTML = svg;
+        const svgNode = canvas.querySelector('svg');
+        if (!svgNode) { label.textContent = 'Error'; return; }
+        const size = readSvgNaturalSize(svgNode);
+        svgW = size.w; svgH = size.h;
+        svgNode.removeAttribute('width'); svgNode.removeAttribute('height');
+        svgNode.style.maxWidth = 'none'; svgNode.style.display = 'block';
+        setAdaptiveHeight(); fitDiagram();
+      } catch (err) {
+        console.error(err); label.textContent = 'Error';
+      }
+    }
+    const actions = {
+      'zoom-in': () => zoomAround(1 + config.zoomStep, viewport.clientWidth / 2, viewport.clientHeight / 2),
+      'zoom-out': () => zoomAround(1 / (1 + config.zoomStep), viewport.clientWidth / 2, viewport.clientHeight / 2),
+      'zoom-fit': fitDiagram, 'zoom-one': setOneToOne, 'zoom-expand': openInNewTab
+    };
+    Object.entries(actions).forEach(([a, h]) => wrap.querySelector(`[data-action="${a}"]`)?.addEventListener('click', h));
+    viewport.addEventListener('dblclick', fitDiagram);
+    viewport.addEventListener('wheel', (e) => {
+      if (e.ctrlKey || e.metaKey) {
+        e.preventDefault();
+        const rect = viewport.getBoundingClientRect();
+        const factor = e.deltaY < 0 ? 1 + config.zoomStep : 1 / (1 + config.zoomStep);
+        zoomAround(factor, e.clientX - rect.left, e.clientY - rect.top); return;
+      }
+      if (canPan()) { e.preventDefault(); panX -= e.deltaX; panY -= e.deltaY; applyTransform(); }
+    }, { passive: false });
+    viewport.addEventListener('mousedown', (e) => {
+      if (e.target.closest('.zoom-controls') || !canPan()) return;
+      wrap.classList.add('is-panning');
+      sx = e.clientX; sy = e.clientY; spx = panX; spy = panY; e.preventDefault();
+      activeDrag = {
+        onMove: (ev) => { panX = spx + (ev.clientX - sx); panY = spy + (ev.clientY - sy); applyTransform(); },
+        onEnd: () => wrap.classList.remove('is-panning')
+      };
+    });
+    viewport.addEventListener('touchstart', (e) => {
+      if (e.touches.length === 1) { sx = e.touches[0].clientX; sy = e.touches[0].clientY; spx = panX; spy = panY; }
+      else if (e.touches.length === 2) {
+        const dx = e.touches[0].clientX - e.touches[1].clientX, dy = e.touches[0].clientY - e.touches[1].clientY;
+        touchDist = Math.sqrt(dx * dx + dy * dy);
+        const r = viewport.getBoundingClientRect();
+        touchCx = (e.touches[0].clientX + e.touches[1].clientX) / 2 - r.left;
+        touchCy = (e.touches[0].clientY + e.touches[1].clientY) / 2 - r.top;
+      }
+    }, { passive: true });
+    viewport.addEventListener('touchmove', (e) => {
+      if (e.touches.length === 1 && canPan()) {
+        e.preventDefault();
+        panX = spx + (e.touches[0].clientX - sx); panY = spy + (e.touches[0].clientY - sy); applyTransform();
+      } else if (e.touches.length === 2 && touchDist > 0) {
+        e.preventDefault();
+        const dx = e.touches[0].clientX - e.touches[1].clientX, dy = e.touches[0].clientY - e.touches[1].clientY;
+        const d = Math.sqrt(dx * dx + dy * dy);
+        zoomAround(d / touchDist, touchCx, touchCy); touchDist = d;
+      }
+    }, { passive: false });
+    new ResizeObserver(() => { if (svgW) { setAdaptiveHeight(); fitDiagram(); } }).observe(wrap);
+    render();
+  }
+  document.querySelectorAll('.diagram-shell').forEach(initDiagram);
+</script>
+
+<script>
+/* ===== CLICK-THROUGH COMPANY MAP ===== */
+const NODES = [
+  { id:'rru', name:'Radio Unit (RRU / RRH)', pri:'high', bott:true,
+    fn:'Remote radio head that converts digital baseband to RF and drives the antenna — the single largest slice of a base-station BOM.',
+    importDep:'High — RF chain and silicon imported', conc:'Oligopoly — outside universe: Nokia, Ericsson, Samsung',
+    companies:[
+      {n:'Tejas Networks', t:'NSE/BSE: TEJASNET', e:'direct', m:'Sole RAN supplier for BSNL 100,000+ sites; ships radios and baseband [REPORTED]', ev:'Tejas Q4FY25 investor presentation / earnings call'},
+      {n:'ITI Limited', t:'NSE/BSE: ITI', e:'supplier', m:'Contract-manufactured 4G eNodeB / RRH for Tejas — 9,879 RRHs, 8,633 eNodeB sites [REPORTED]', ev:"ITI Director's Report / Annual Report FY24-25"},
+      {n:'HFCL', t:'NSE/BSE: HFCL', e:'indirect', m:'Develops 5G RAN products; telecom-products segment revenue Rs 2,474 cr in FY25 [REPORTED]', ev:'HFCL press release / FY25 earnings call'},
+      {n:'Nokia', t:'Unlisted (Nokia — Finland)', e:'direct', m:'Manufactures 4G/5G radios at Chennai (Sriperumbudur); 5G NR production since 2018, >40% exported [REPORTED]', ev:'Nokia India statements'},
+      {n:'Ericsson', t:'Unlisted (Ericsson — Sweden)', e:'direct', m:'4G/5G radios and RAN Compute made with Jabil in Pune; AIR 3219 / 3268 Massive-MIMO [REPORTED]', ev:'Ericsson press release (Dec-2022)'},
+      {n:'Samsung', t:'Unlisted (Samsung — South Korea)', e:'direct', m:'NSCS trusted-source approved; supplies 5G radios to Airtel/Jio [REPORTED]', ev:'ET Telecom'}
+    ] },
+  { id:'bbu', name:'Baseband Unit (BBU / O-DU + O-CU)', pri:'high', bott:true,
+    fn:'Digital baseband — L1 PHY, MAC, RLC, PDCP/RRC. In Open-RAN this splits into cloud-native O-DU and O-CU.',
+    importDep:'Chips (FPGA / SoC) imported', conc:'Few credible players',
+    companies:[
+      {n:'Tejas Networks', t:'NSE/BSE: TEJASNET', e:'direct', m:'Supplied baseband for all 100,000 BSNL sites; acquired a field-proven 4G/5G core via the NEC partnership [REPORTED]', ev:'Tejas Q4FY25 earnings call'},
+      {n:'ITI Limited', t:'NSE/BSE: ITI', e:'supplier', m:'733 BBUs supplied to Tejas under BSNL 4G contract manufacturing [REPORTED]', ev:'ITI Annual Report'},
+      {n:'Dixon Technologies (Dixon Electro Appliances)', t:'NSE/BSE: DIXON', e:'supplier', m:'PLI-approved for Open-RAN Equipment (Radio Unit, Distributed Unit, Centralised Unit and RIC) [REPORTED]', ev:'DoT PLI deemed Class-II list'},
+      {n:'Reliance Industries (Jio Platforms / Radisys)', t:'NSE/BSE: RELIANCE', e:'conglomerate', m:'Jio built an in-house 5G stack; Radisys (Jio subsidiary) licenses L2/L3 RAN software [REPORTED]', ev:'Jio / Radisys; Light Reading (Mar-2025)'},
+      {n:'VVDN Technologies', t:'Unlisted (VVDN — India)', e:'supplier', m:'PLI-approved EMS for Open-RAN Equipment (RU, DU, CU and RIC) [REPORTED]', ev:'DoT PLI list'}
+    ] },
+  { id:'aau', name:'Massive-MIMO Active Antenna Unit (AAU)', pri:'high', bott:true,
+    fn:'Integrated radio plus antenna array (32T32R / 64T64R) — the 5G-specific node and the beamforming engine of the site.',
+    importDep:'Very high — RFICs, arrays, GaN', conc:'Global OEMs plus emerging India — outside universe: Nokia, Ericsson, Samsung',
+    companies:[
+      {n:'Tejas Networks', t:'NSE/BSE: TEJASNET', e:'direct', m:'Portfolio enhanced with advanced 5G Massive-MIMO radios; NEC partnership adds beamforming IP [REPORTED]', ev:'Tejas Q4FY25 earnings call'},
+      {n:'HFCL', t:'NSE/BSE: HFCL', e:'indirect', m:'5G RAN product portfolio including radios and active antenna [REPORTED]', ev:'HFCL press release'},
+      {n:'Nokia', t:'Unlisted (Nokia — Finland)', e:'direct', m:'Produces 5G Massive-MIMO products at Chennai for domestic and export markets [REPORTED]', ev:'Nokia India statements'},
+      {n:'Ericsson', t:'Unlisted (Ericsson — Sweden)', e:'direct', m:'AIR 3219 / 3268 ultra-light Massive-MIMO antenna-integrated radios made in Pune [REPORTED]', ev:'Ericsson press release (Dec-2022)'},
+      {n:'Samsung', t:'Unlisted (Samsung — South Korea)', e:'direct', m:'Supplies Massive-MIMO 5G radios to Indian operators [REPORTED]', ev:'ET Telecom'},
+      {n:'WiSig Networks', t:'Unlisted (WiSig — IIT-H incubated)', e:'direct', m:'Indigenous O-RAN 32T32R Massive-MIMO ULPI radio; in advanced pre-commercial validation [REPORTED]', ev:'WiSig Networks'}
+    ] },
+  { id:'rfpa', name:'RF Front-End and Power Amplifier', pri:'high', bott:true,
+    fn:'Power amplifiers, LNAs, transceivers and the RF signal chain — GaN / LDMOS devices that set radio efficiency and range.',
+    importDep:'Nearly fully imported (US / JP / EU)', conc:'Global oligopoly',
+    companies:[],
+    gap:'NO LISTED PURE-PLAY IN INDIA.',
+    near:'Global suppliers: Qorvo, Skyworks, Analog Devices, NXP, Murata, Sumitomo. There is no NSE/BSE pure-play; the PLI localisation roadmap targets RF filters and connectors only by year five.' },
+  { id:'filter', name:'RF Filters and Duplexers', pri:'med', bott:true,
+    fn:'Band selection and interference rejection — cavity, SAW and BAW filters in the radio front-end.',
+    importDep:'Imported', conc:'Global concentrated',
+    companies:[],
+    gap:'NO LISTED PURE-PLAY IN INDIA.',
+    near:'Global suppliers: Murata, TDK, Qorvo, Taiyo Yuden. Cavity / SAW / BAW filters are almost entirely imported — a named PLI localisation gap.' },
+  { id:'antenna', name:'Antenna Array and Passive Antennas', pri:'med', bott:false,
+    fn:'Radiating elements for the array and passive antenna panels — a high-import, under-capitalised component line.',
+    importDep:'Partly local; radiating elements imported', conc:'Fragmented — outside universe: CommScope India, VVDN',
+    companies:[
+      {n:'HFCL', t:'NSE/BSE: HFCL', e:'indirect', m:'PLI-approved telecom manufacturer with antenna and RF product lines [REPORTED]', ev:'DoT PLI list / company'},
+      {n:'CommScope India', t:'Unlisted (CommScope — US)', e:'indirect', m:'PLI-approved for 4G/LTE RAN base-station and antenna products in India [REPORTED]', ev:'DoT PLI list'},
+      {n:'VVDN Technologies', t:'Unlisted (VVDN — India)', e:'supplier', m:'Antenna production with Ericsson to expand local manufacturing [REPORTED]', ev:'Ericsson India'}
+    ] },
+  { id:'semi', name:'RAN Silicon (FPGA / SoC / ASIC)', pri:'high', bott:true,
+    fn:'FPGAs, SoCs and ASICs that run L1-PHY baseband maths and radio control — the deepest layer of the BOM.',
+    importDep:'Nearly fully imported', conc:'Global duopoly',
+    companies:[],
+    gap:'NO LISTED PURE-PLAY IN INDIA.',
+    near:'Global suppliers: AMD/Xilinx, Altera (Intel), Marvell, Qualcomm. India has no listed RAN-silicon pure-play and domestic fabs are not yet at scale; Jio virtualised L1 on general-purpose processors to sidestep custom silicon.' },
+  { id:'powersupply', name:'Power Supply, DC-DC and Rectifiers', pri:'med', bott:false,
+    fn:'AC/DC rectifiers and DC-DC converters feeding the radio and baseband — often bundled into the outdoor cabinet.',
+    importDep:'Partly imported / EMS', conc:'Fragmented',
+    companies:[],
+    gap:'NO DEDICATED LISTED RAN PURE-PLAY IN INDIA.',
+    near:'Global / EMS suppliers: Delta Electronics India, TDK-Lambda, Vertiv (largely imported). No NSE/BSE power-supply pure-play specific to RAN.' },
+  { id:'enclosure', name:'Enclosure, Outdoor Cabinet (ODC) and Thermal', pri:'med', bott:false,
+    fn:'Outdoor cabinets, heat sinks and thermal management that house and cool the site electronics.',
+    importDep:'Domestic (ODC)', conc:'Domestic',
+    companies:[
+      {n:'ITI Limited', t:'NSE/BSE: ITI', e:'direct', m:'Manufactured and supplied 10,500+ outdoor cabinets (ODC) for the BSNL 4G rollout; Rs 34 cr in FY25 [REPORTED]', ev:"ITI Director's Report / Annual Report"}
+    ] },
+  { id:'cable', name:'CPRI / eCPRI and Fronthaul Cable', pri:'low', bott:false,
+    fn:'Fronthaul cable connecting baseband to radio, plus optical and jumper cabling across the site.',
+    importDep:'Partly imported', conc:'Fragmented',
+    companies:[
+      {n:'ITI Limited', t:'NSE/BSE: ITI', e:'direct', m:'CPRI cable manufacturing being set up at the Raebareli unit for the BSNL 4G rollout [REPORTED]', ev:'ITI Annual Report'},
+      {n:'HFCL', t:'NSE/BSE: HFCL', e:'indirect', m:'Optical fibre and cables, including backhaul and access cabling [REPORTED]', ev:'HFCL FY25 results'},
+      {n:'Sterlite Technologies', t:'NSE/BSE: STLTECH', e:'indirect', m:'Optical fibre, cables and connectivity products [REPORTED]', ev:'Company'}
+    ] },
+  { id:'oransw', name:'O-RAN Software (RIC / SMO / vRAN)', pri:'med', bott:true,
+    fn:'Disaggregated RAN software — O-DU / O-CU, the RAN Intelligent Controller with xApps / rApps, and service management and orchestration.',
+    importDep:'Software — few vendors', conc:'Emerging — outside universe: Mavenir, Juniper',
+    companies:[
+      {n:'Dixon Technologies (Dixon Electro Appliances)', t:'NSE/BSE: DIXON', e:'supplier', m:'PLI-approved for Open-RAN Equipment (RU, DU, CU and RIC) [REPORTED]', ev:'DoT PLI deemed Class-II list'},
+      {n:'Reliance Industries (Jio Platforms)', t:'NSE/BSE: RELIANCE', e:'conglomerate', m:'O-RAN-compliant stack with full disaggregation of O-RU, O-DU and O-CU; JioBrain AI platform [REPORTED]', ev:'Jio Platforms'},
+      {n:'Tata Consultancy Services', t:'NSE/BSE: TCS', e:'indirect', m:'Software and network-automation layer of the BSNL indigenous stack (TCS CNOPS) [INFERENCE]', ev:'TCS press release (Sep-2025)'},
+      {n:'Tejas Networks', t:'NSE/BSE: TEJASNET', e:'indirect', m:'Technology collaboration with NEC for advanced RAN and core software [REPORTED]', ev:'Tejas Q4FY25 earnings call'},
+      {n:'Mavenir', t:'Unlisted (Mavenir — US)', e:'supplier', m:'Open-RAN software vendor; NSCS trusted-source approved [REPORTED]', ev:'ET Telecom'},
+      {n:'C-DoT', t:'Unlisted (C-DoT — Govt of India)', e:'supplier', m:'Developed indigenous 4G/5G core and RAN with partners under the India 5G Alliance [REPORTED]', ev:'C-DoT'}
+    ] },
+  { id:'integration', name:'RAN Integration and Managed Services', pri:'med', bott:false,
+    fn:'RF planning, installation, integration, commissioning and AMC — the services layer of a base-station rollout.',
+    importDep:'n/a', conc:'Few large system integrators',
+    companies:[
+      {n:'Tata Consultancy Services', t:'NSE/BSE: TCS', e:'direct', m:'Mission-mode lead of the BSNL rollout — 100,000 sites integrated with 24/7 network operations [REPORTED]', ev:'TCS press release (Sep-2025)'},
+      {n:'ITI Limited', t:'NSE/BSE: ITI', e:'direct', m:'Turnkey BSNL 4G West Zone: 23,633 sites, approx Rs 2,685 cr; 7,613-site expansion Rs 856 cr [REPORTED]', ev:"ITI Director's Report / BSE filing"},
+      {n:'Tejas Networks', t:'NSE/BSE: TEJASNET', e:'indirect', m:'RAN supply plus support and annual maintenance for 100,000+ sites [REPORTED]', ev:'Tejas press release'}
+    ] }
+];
+
+const nodesEl = document.getElementById('mapNodes');
+const panelEl = document.getElementById('mapPanel');
+const PRI_LABEL = { high:'HIGH', med:'MEDIUM', low:'LOW' };
+
+function renderPanel(node) {
+  if (!node) { panelEl.innerHTML = '<div class="map-panel__kicker">Company map</div><div class="map-panel__title">Select a node</div><p class="map-panel__fn">Click any node on the left to see its NSE/BSE companies, exposure type, materiality and evidence.</p>'; return; }
+  let html = '';
+  html += `<div class="map-panel__kicker">${PRI_LABEL[node.pri] || ''} priority node</div>`;
+  html += `<div class="map-panel__title">${node.name}</div>`;
+  html += `<p class="map-panel__fn">${node.fn}</p>`;
+  html += `<div class="map-panel__row">`;
+  if (node.importDep && node.importDep !== 'n/a') html += `<span class="mini">Import: ${node.importDep}</span>`;
+  if (node.conc) html += `<span class="mini">Concentration: ${node.conc}</span>`;
+  if (node.bott) html += `<span class="mini" style="color:var(--gold)">Bottleneck</span>`;
+  html += `</div>`;
+  if (node.drillTo) html += `<a href="${node.drillTo}" style="display:block;margin:12px 0;padding:10px 12px;border:1px solid var(--gold);border-radius:8px;background:var(--gold-dim);color:var(--gold);font-family:var(--font-mono);font-size:11.5px;font-weight:600;text-decoration:none;">Drill-down &rarr; ${node.drillLabel}</a>`;
+
+  if (!node.companies || node.companies.length === 0) {
+    html += `<div class="nocov"><b>${node.gap}</b><span class="near">${node.near}</span></div>`;
+    panelEl.innerHTML = html;
+    return;
+  }
+  node.companies.forEach(c => {
+    html += `<div class="co">`;
+    html += `<div class="co__name">${c.n}<span class="co__ticker">${c.t}</span></div>`;
+    html += `<div class="co__tags"><span class="tag tag--${c.e}">${c.e.toUpperCase()}</span></div>`;
+    html += `<div class="co__mat">${c.m}</div>`;
+    html += `<div class="co__ev">Evidence: ${c.ev}</div>`;
+    html += `</div>`;
+  });
+  panelEl.innerHTML = html;
+}
+
+const PTREE = [
+  { icon:'A', group:'Radio & Antenna', ids:['rru','aau','antenna'] },
+  { icon:'B', group:'Baseband & Software', ids:['bbu','oransw'] },
+  { icon:'C', group:'RF & Silicon', ids:['rfpa','filter','semi'] },
+  { icon:'D', group:'Power, Enclosure & Cable', ids:['powersupply','enclosure','cable'] },
+  { icon:'E', group:'Integration & Services', ids:['integration'] }
+];
+let firstBtn = null;
+PTREE.forEach((grp) => {
+  const wrap = document.createElement('div');
+  const head = document.createElement('button');
+  head.type = 'button';
+  head.style.cssText = 'display:flex;align-items:center;gap:8px;width:100%;text-align:left;background:transparent;border:none;cursor:pointer;padding:8px 6px;font-family:var(--font-mono);font-size:11px;font-weight:600;letter-spacing:.6px;color:var(--text-dim);text-transform:uppercase;';
+  head.innerHTML = '<span class="tgl" style="width:12px;display:inline-block;">&#9662;</span><span>' + grp.icon + ' &middot; ' + grp.group + '</span>';
+  const body = document.createElement('div');
+  body.style.cssText = 'margin-left:14px;border-left:1px dashed var(--border-bright);padding-left:8px;';
+  grp.ids.forEach((id) => {
+    const node = NODES.find((n) => n.id === id);
+    if (!node) return;
+    const btn = document.createElement('button');
+    btn.className = 'node-btn';
+    btn.type = 'button';
+    const dotClass = (!node.companies || node.companies.length === 0) ? 'dot--none' : ('dot--' + node.pri);
+    let flags = '';
+    if (!node.companies || node.companies.length === 0) flags += '<span class="flag flag--gap">GAP</span>';
+    else if (node.bott) flags += '<span class="flag flag--bott">BOTTLENECK</span>';
+    btn.innerHTML = '<div class="node-btn__name"><span class="dot ' + dotClass + '"></span>' + node.name + '</div><div class="node-btn__meta"><span>' + (node.companies || []).length + ' listed</span>' + flags + '</div>';
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.node-btn').forEach((b) => b.classList.remove('is-active'));
+      btn.classList.add('is-active');
+      renderPanel(node);
+    });
+    body.appendChild(btn);
+    if (!firstBtn) firstBtn = btn;
+  });
+  head.addEventListener('click', () => {
+    const hidden = body.style.display === 'none';
+    body.style.display = hidden ? '' : 'none';
+    head.querySelector('.tgl').innerHTML = hidden ? '&#9662;' : '&#9656;';
+  });
+  wrap.appendChild(head);
+  wrap.appendChild(body);
+  nodesEl.appendChild(wrap);
+});
+if (firstBtn) { firstBtn.classList.add('is-active'); renderPanel(NODES.find((n) => n.id === 'rru')); }
+</script>
+</body>
+</html>
