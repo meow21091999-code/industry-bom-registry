@@ -1448,7 +1448,9 @@
       "universe": "NSE/BSE",
       "sector": "Renewable Energy",
       "derived_from": null,
-      "drill_downs": [],
+      "drill_downs": [
+        "solar-cells-india"
+      ],
       "nodes": [
         {
           "id": "polysilicon",
@@ -1649,6 +1651,201 @@
           "priority": "medium",
           "bottleneck": false,
           "in_universe_coverage": true
+        }
+      ]
+    },
+    {
+      "slug": "solar-cells-india",
+      "industry": "Solar Cell Fabrication",
+      "scope": "INDIA",
+      "path": "industries/solar-cells-india.html",
+      "analysis_date": "2026-10-07",
+      "universe": "NSE/BSE",
+      "sector": "Renewable Energy",
+      "derived_from": {
+        "industry": "Solar PV",
+        "slug": "solar-pv-india",
+        "node": "Solar Cell Fabrication"
+      },
+      "drill_downs": [],
+      "nodes": [
+        {
+          "id": "wafer",
+          "name": "Incoming wafer",
+          "level": 1,
+          "aliases": [
+            "wafer",
+            "wafers",
+            "silicon wafer",
+            "solar wafer",
+            "incoming wafer"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "ingot",
+          "name": "Ingot & polysilicon",
+          "level": 2,
+          "aliases": [
+            "ingot",
+            "ingots",
+            "polysilicon",
+            "silicon ingot"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": false
+        },
+        {
+          "id": "pastes",
+          "name": "Metallisation paste (Ag / Al)",
+          "level": 1,
+          "aliases": [
+            "silver paste",
+            "ag paste",
+            "aluminium paste",
+            "al paste",
+            "metallisation paste",
+            "metallization paste"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": false
+        },
+        {
+          "id": "silverpowder",
+          "name": "Silver powder & high-purity silver",
+          "level": 2,
+          "aliases": [
+            "silver powder",
+            "high purity silver",
+            "silver bar"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": false
+        },
+        {
+          "id": "gases",
+          "name": "Process gases",
+          "level": 1,
+          "aliases": [
+            "silane",
+            "ammonia",
+            "POCl3",
+            "BBr3",
+            "process gases",
+            "specialty gases",
+            "dopant gas"
+          ],
+          "priority": "medium",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "chem",
+          "name": "Wet chemicals",
+          "level": 1,
+          "aliases": [
+            "wet chemicals",
+            "KOH",
+            "HF",
+            "HNO3",
+            "texturing chemicals"
+          ],
+          "priority": "medium",
+          "bottleneck": false,
+          "in_universe_coverage": false
+        },
+        {
+          "id": "screens",
+          "name": "Printing screens & consumables",
+          "level": 1,
+          "aliases": [
+            "printing screen",
+            "screens",
+            "screen printing"
+          ],
+          "priority": "medium",
+          "bottleneck": false,
+          "in_universe_coverage": false
+        },
+        {
+          "id": "equipment",
+          "name": "Cell-line machinery",
+          "level": 1,
+          "aliases": [
+            "cell line",
+            "turnkey line",
+            "jinchen",
+            "singulus",
+            "linton",
+            "svcs",
+            "cell equipment"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": false
+        },
+        {
+          "id": "pecvd",
+          "name": "Diffusion / PECVD / ALD tools",
+          "level": 2,
+          "aliases": [
+            "diffusion furnace",
+            "PECVD",
+            "LPCVD",
+            "ALD",
+            "deposition tool"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": false
+        },
+        {
+          "id": "metallise_equip",
+          "name": "Screen printers & firing furnaces",
+          "level": 2,
+          "aliases": [
+            "screen printer",
+            "firing furnace",
+            "metallisation equipment",
+            "dryer"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": false
+        },
+        {
+          "id": "testing",
+          "name": "Testing, sorting & ALMM qualification",
+          "level": 1,
+          "aliases": [
+            "IV tester",
+            "EL tester",
+            "cell sorter",
+            "ALMM List-II qualification"
+          ],
+          "priority": "medium",
+          "bottleneck": false,
+          "in_universe_coverage": false
+        },
+        {
+          "id": "infra",
+          "name": "Fab infrastructure (UPW, cleanroom, ZLD)",
+          "level": 1,
+          "aliases": [
+            "ultra pure water",
+            "cleanroom",
+            "zero liquid discharge",
+            "ZLD",
+            "UPW"
+          ],
+          "priority": "medium",
+          "bottleneck": false,
+          "in_universe_coverage": false
         }
       ]
     }
