@@ -2049,7 +2049,8 @@
       "sector": "Nuclear Energy",
       "derived_from": null,
       "drill_downs": [
-        "nuclear-pwr-steam-generator-india"
+        "nuclear-pwr-steam-generator-india",
+        "reactor-coolant-pumps-primary-loop-india"
       ],
       "nodes": [
         {
@@ -2530,6 +2531,259 @@
             "recycling",
             "material recovery",
             "radioactive waste"
+          ],
+          "priority": "low",
+          "bottleneck": false,
+          "in_universe_coverage": false
+        }
+      ]
+    },
+    {
+      "slug": "reactor-coolant-pumps-primary-loop-india",
+      "industry": "Reactor Coolant Pumps & Primary Loop",
+      "scope": "INDIA",
+      "path": "industries/reactor-coolant-pumps-primary-loop-india.html",
+      "analysis_date": "2026-10-08",
+      "universe": "NSE/BSE",
+      "sector": "Nuclear Energy",
+      "derived_from": {
+        "industry": "Small Modular Reactor",
+        "slug": "smr-india",
+        "node": "Reactor Coolant Pumps & Primary Loop"
+      },
+      "drill_downs": [],
+      "nodes": [
+        {
+          "id": "pcp",
+          "name": "Reactor Coolant Pump (PCP / RCP)",
+          "level": 2,
+          "aliases": [
+            "reactor coolant pump",
+            "primary coolant pump",
+            "PCP",
+            "RCP",
+            "main coolant pump"
+          ],
+          "priority": "high",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "casing",
+          "name": "Casing, Impeller & Pressure Boundary",
+          "level": 3,
+          "aliases": [
+            "pump casing",
+            "impeller",
+            "pressure boundary"
+          ],
+          "priority": "high",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "motor",
+          "name": "PCP Motor, Flywheel & Drive",
+          "level": 3,
+          "aliases": [
+            "reactor coolant pump motor",
+            "primary circulating pump motor",
+            "flywheel"
+          ],
+          "priority": "med",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "seals",
+          "name": "Shaft Seal System (Class-1 Mechanical Seals)",
+          "level": 3,
+          "aliases": [
+            "mechanical seal",
+            "shaft seal",
+            "RCP seal"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": false
+        },
+        {
+          "id": "bearings",
+          "name": "Bearings & Wear Surfaces",
+          "level": 3,
+          "aliases": [
+            "water lubricated bearing",
+            "WLB",
+            "thrust bearing",
+            "hydrostatic bearing"
+          ],
+          "priority": "med",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "loop",
+          "name": "Primary Loop Piping, Headers & Valves",
+          "level": 2,
+          "aliases": [
+            "primary loop",
+            "primary piping",
+            "reactor header",
+            "feeder",
+            "primary heat transport"
+          ],
+          "priority": "high",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "pressuriser",
+          "name": "Pressuriser, Feed/Bleed & Bleed Condenser",
+          "level": 2,
+          "aliases": [
+            "pressuriser",
+            "surge tank",
+            "bleed condenser",
+            "feed and bleed"
+          ],
+          "priority": "med",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "auxpumps",
+          "name": "Auxiliary, SDCP & Moderator Pumps",
+          "level": 2,
+          "aliases": [
+            "shutdown cooling pump",
+            "SDCP",
+            "ECCS pump",
+            "moderator pump",
+            "auxiliary pump"
+          ],
+          "priority": "med",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "forgings",
+          "name": "Heavy Forgings & Special Steels",
+          "level": 2,
+          "aliases": [
+            "heavy forging",
+            "forging",
+            "special steel"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "machinery",
+          "name": "Fabrication Machinery, CNC & Test Beds",
+          "level": 2,
+          "aliases": [
+            "machine tool",
+            "CNC",
+            "EDM",
+            "test bed",
+            "dynamic test facility"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": false
+        },
+        {
+          "id": "consumables",
+          "name": "Welding, Hardfacing & Seal Consumables",
+          "level": 3,
+          "aliases": [
+            "welding consumable",
+            "hardfacing",
+            "seal face",
+            "consumables"
+          ],
+          "priority": "med",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "ndt",
+          "name": "NDT, Hydro, Coastdown & Certification QA",
+          "level": 2,
+          "aliases": [
+            "NDT",
+            "hydro test",
+            "coastdown",
+            "qualification",
+            "AERB"
+          ],
+          "priority": "high",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "ic",
+          "name": "Pump Instrumentation & Protection",
+          "level": 2,
+          "aliases": [
+            "instrumentation",
+            "vibration monitoring",
+            "condition monitoring"
+          ],
+          "priority": "med",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "newpcp",
+          "name": "PCP Localisation - New Entrants",
+          "level": 2,
+          "aliases": [
+            "Flowserve",
+            "CORE Energy",
+            "Part 810",
+            "second source"
+          ],
+          "priority": "med",
+          "bottleneck": false,
+          "in_universe_coverage": false
+        },
+        {
+          "id": "epc",
+          "name": "Erection, Integration & Commissioning",
+          "level": 2,
+          "aliases": [
+            "erection",
+            "commissioning",
+            "installation"
+          ],
+          "priority": "med",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "aftermkt",
+          "name": "Aftermarket - Seals, Bearings, Spares & Refurb",
+          "level": 2,
+          "aliases": [
+            "aftermarket",
+            "spares",
+            "refurbishment",
+            "service"
+          ],
+          "priority": "high",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "recycle",
+          "name": "Decommissioning & Material Recovery",
+          "level": 2,
+          "aliases": [
+            "decommissioning",
+            "radioactive waste",
+            "material recovery"
           ],
           "priority": "low",
           "bottleneck": false,
