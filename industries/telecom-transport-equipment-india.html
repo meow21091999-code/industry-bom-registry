@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>India Routers, Switches &amp; Optical Transport — BOM, Value Chain &amp; Company Map</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --font-body: 'IBM Plex Sans', system-ui, sans-serif;
+    --font-mono: 'IBM Plex Mono', 'SF Mono', Consolas, monospace;
+
+    --bg: #eef2f7;
+    --surface: #ffffff;
+    --surface-elevated: #ffffff;
+    --surface-recessed: #e6ecf3;
+    --border: rgba(15, 37, 64, 0.10);
+    --border-bright: rgba(15, 37, 64, 0.22);
+    --text: #0f2540;
+    --text-dim: #5a7290;
+
+    --blue: #1e4e8c;
+    --blue-dim: rgba(30, 78, 140, 0.09);
+    --gold: #b8860b;
+    --gold-dim: rgba(184, 134, 11, 0.12);
+    --high: #c0392b;
+    --high-dim: rgba(192, 57, 43, 0.10);
+    --med: #d4a73a;
+    --med-dim: rgba(212, 167, 58, 0.14);
+    --low: #7f8c8d;
+    --low-dim: rgba(127, 140, 141, 0.12);
+    --green: #1a7f5a;
+    --green-dim: rgba(26, 127, 90, 0.11);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0a1626;
+      --surface: #10233b;
+      --surface-elevated: #16304f;
+      --surface-recessed: #0c1c30;
+      --border: rgba(255, 255, 255, 0.09);
+      --border-bright: rgba(255, 255, 255, 0.20);
+      --text: #dbe6f3;
+      --text-dim: #8ba3c0;
+
+      --blue: #5b9bd5;
+      --blue-dim: rgba(91, 155, 213, 0.16);
+      --gold: #e0b84c;
+      --gold-dim: rgba(224, 184, 76, 0.16);
+      --high: #ef6a5b;
+      --high-dim: rgba(239, 106, 91, 0.16);
+      --med: #e0b84c;
+      --med-dim: rgba(224, 184, 76, 0.16);
+      --low: #93a3b5;
+      --low-dim: rgba(147, 163, 181, 0.14);
+      --green: #4cc79a;
+      --green-dim: rgba(76, 199, 154, 0.16);
+    }
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  .grid > *, .flex > *, [style*="display: grid"] > *, [style*="display: flex"] > * { min-width: 0; }
+
+  body {
+    background-color: var(--bg);
+    background-image:
+      linear-gradient(var(--border) 1px, transparent 1px),
+      linear-gradient(90deg, var(--border) 1px, transparent 1px);
+    background-size: 28px 28px;
+    color: var(--text);
+    font-family: var(--font-body);
+    padding: 40px 32px 64px;
+    min-height: 100vh;
+    overflow-wrap: break-word;
+    line-height: 1.55;
+  }
+
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+  .animate { animation: fadeUp 0.45s ease-out both; animation-delay: calc(var(--i, 0) * 0.05s); }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation-duration: 0.01ms !important; animation-delay: 0ms !important; transition-duration: 0.01ms !important; }
+  }
+
+  .container { max-width: 1180px; margin: 0 auto; }
+
+  /* ===== HEADER ===== */
+  .masthead { border-bottom: 2px solid var(--blue); padding-bottom: 20px; margin-bottom: 28px; }
+  .eyebrow {
+    font-family: var(--font-mono); font-size: 11px; font-weight: 600; letter-spacing: 2px;
+    text-transform: uppercase; color: var(--gold); margin-bottom: 10px;
+  }
+  h1 { font-size: clamp(26px, 4vw, 40px); font-weight: 700; letter-spacing: -0.8px; line-height: 1.1; text-wrap: balance; }
+  h1 span { color: var(--blue); }
+  .subtitle { font-family: var(--font-mono); font-size: 12px; color: var(--text-dim); margin-top: 10px; }
+
+  .scope-bar { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
+  .chip {
+    font-family: var(--font-mono); font-size: 10.5px; font-weight: 500; letter-spacing: 0.4px;
+    padding: 4px 10px; border-radius: 4px; background: var(--blue-dim); color: var(--blue);
+    border: 1px solid var(--border);
+  }
+  .chip--gold { background: var(--gold-dim); color: var(--gold); }
+  .chip--high { background: var(--high-dim); color: var(--high); }
+
+  /* ===== SECTION ===== */
+  section { margin-bottom: 44px; }
+  .sec-head { display: flex; align-items: baseline; gap: 14px; margin-bottom: 16px; border-bottom: 1px solid var(--border-bright); padding-bottom: 10px; }
+  .sec-num {
+    font-family: var(--font-mono); font-size: 12px; font-weight: 600; color: var(--gold);
+    border: 1px solid var(--gold); border-radius: 4px; padding: 2px 8px; flex-shrink: 0;
+  }
+  .sec-title { font-size: 20px; font-weight: 600; letter-spacing: -0.3px; }
+  .sec-note { font-family: var(--font-mono); font-size: 11px; color: var(--text-dim); margin-left: auto; text-align: right; }
+
+  /* ===== KPI ===== */
+  .kpi-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(165px, 1fr)); gap: 14px; }
+  .kpi {
+    background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 16px 18px;
+    border-top: 3px solid var(--blue);
+  }
+  .kpi--gold { border-top-color: var(--gold); }
+  .kpi--high { border-top-color: var(--high); }
+  .kpi__val { font-size: clamp(20px, 2.4vw, 27px); font-weight: 700; letter-spacing: -0.8px; font-variant-numeric: tabular-nums; line-height: 1.1; }
+  .kpi__label { font-family: var(--font-mono); font-size: 9.5px; font-weight: 600; text-transform: uppercase; letter-spacing: 1.2px; color: var(--text-dim); margin-top: 7px; }
+  .kpi__sub { font-size: 11px; color: var(--text-dim); margin-top: 3px; }
+
+  /* ===== MERMAID ===== */
+  .diagram-shell { position: relative; }
+  .diagram-shell__hint { font-family: var(--font-mono); font-size: 11px; color: var(--text-dim); margin-bottom: 8px; opacity: 0.8; }
+  .mermaid-wrap {
+    position: relative; background: var(--surface); border: 1px solid var(--border); border-radius: 12px;
+    padding: 28px 20px; overflow: auto; margin-bottom: 8px; display: flex; justify-content: center; align-items: center;
+    min-height: 360px; cursor: grab;
+    padding: 20px 16px;
+  }
+  .mermaid-wrap.is-panning { cursor: grabbing; user-select: none; }
+  .zoom-controls {
+    position: absolute; top: 8px; right: 8px; display: flex; gap: 2px; z-index: 10;
+    background: var(--surface); border: 1px solid var(--border); border-radius: 6px; padding: 2px;
+  }
+  .zoom-controls button {
+    width: 28px; height: 28px; border: none; background: transparent; color: var(--text-dim);
+    font-family: var(--font-mono); font-size: 14px; cursor: pointer; border-radius: 4px;
+    display: flex; align-items: center; justify-content: center; transition: background 0.15s ease, color 0.15s ease;
+  }
+  .zoom-controls button:hover { background: var(--border); color: var(--text); }
+  .mermaid-viewport { position: relative; overflow: hidden; width: 100%; height: 100%; min-height: 220px; }
+  .mermaid-canvas { position: absolute; top: 0; left: 0; }
+  .zoom-label { font-family: var(--font-mono); font-size: 10px; color: var(--text-dim); padding: 0 6px; white-space: nowrap; }
+  .mermaid .nodeLabel { font-family: var(--font-body) !important; font-size: 15px !important; }
+  .mermaid .edgeLabel { font-family: var(--font-mono) !important; font-size: 12px !important; }
+  .mermaid .node rect, .mermaid .node polygon { stroke-width: 1.6px !important; }
+
+  .legend { display: flex; gap: 18px; flex-wrap: wrap; margin-top: 12px; }
+  .legend-item { display: flex; align-items: center; gap: 6px; font-family: var(--font-mono); font-size: 11px; color: var(--text-dim); }
+  .legend-swatch { width: 12px; height: 12px; border-radius: 3px; }
+
+  /* ===== VALUE LADDER ===== */
+  .ladder { display: flex; flex-direction: column; gap: 0; }
+  .rung {
+    display: grid; grid-template-columns: 150px 1fr; gap: 16px; align-items: center;
+    padding: 12px 16px; border: 1px solid var(--border); border-bottom: none; background: var(--surface);
+  }
+  .rung:first-child { border-radius: 10px 10px 0 0; }
+  .rung:last-child { border-radius: 0 0 10px 10px; border-bottom: 1px solid var(--border); }
+  .rung > * { min-width: 0; overflow-wrap: break-word; }
+  .rung__label { font-family: var(--font-mono); font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; }
+  .rung__body { font-size: 13px; color: var(--text-dim); }
+  .rung__body b { color: var(--text); font-weight: 600; }
+  .rung--1 .rung__label { color: var(--low); }
+  .rung--2 .rung__label { color: var(--blue); }
+  .rung--3 .rung__label { color: var(--gold); }
+  .rung--4 .rung__label { color: var(--high); }
+
+  /* ===== INTERACTIVE MAP ===== */
+  .map-layout { display: grid; grid-template-columns: 1fr 380px; gap: 18px; align-items: start; }
+  .map-layout > *, .kpi-row > *, .map-nodes > *, .bn > * { min-width: 0; overflow-wrap: break-word; }
+  .map-nodes { display: grid; grid-template-columns: repeat(auto-fill, minmax(215px, 1fr)); gap: 10px; }
+  .node-btn {
+    text-align: left; background: var(--surface); border: 1px solid var(--border); border-radius: 9px;
+    padding: 12px 14px; cursor: pointer; font-family: var(--font-body); color: var(--text);
+    transition: border-color 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease; position: relative;
+  }
+  .node-btn:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(15,37,64,0.10); border-color: var(--border-bright); }
+  .node-btn.is-active { border-color: var(--blue); box-shadow: 0 0 0 1px var(--blue) inset; }
+  .node-btn__name { font-size: 13px; font-weight: 600; line-height: 1.3; display: flex; align-items: center; gap: 7px; }
+  .node-btn__meta { font-family: var(--font-mono); font-size: 10px; color: var(--text-dim); margin-top: 5px; display: flex; gap: 8px; flex-wrap: wrap; }
+  .dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; display: inline-block; }
+  .dot--high { background: var(--high); }
+  .dot--med { background: var(--med); }
+  .dot--low { background: var(--low); }
+  .dot--none { background: transparent; border: 1.5px dashed var(--text-dim); }
+  .flag { font-family: var(--font-mono); font-size: 9px; padding: 1px 5px; border-radius: 3px; }
+  .flag--gap { background: var(--high-dim); color: var(--high); }
+  .flag--bott { background: var(--med-dim); color: var(--gold); }
+
+  .map-panel {
+    background: var(--surface); border: 1px solid var(--border-bright); border-radius: 12px;
+    padding: 20px; position: sticky; top: 20px; min-height: 260px;
+  }
+  .map-panel__kicker { font-family: var(--font-mono); font-size: 10px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: var(--gold); margin-bottom: 8px; }
+  .map-panel__title { font-size: 17px; font-weight: 700; line-height: 1.25; margin-bottom: 6px; }
+  .map-panel__fn { font-size: 12.5px; color: var(--text-dim); margin-bottom: 14px; line-height: 1.55; }
+  .map-panel__row { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 14px; }
+  .mini { font-family: var(--font-mono); font-size: 10px; padding: 2px 7px; border-radius: 4px; background: var(--surface-recessed); color: var(--text-dim); border: 1px solid var(--border); }
+
+  .co { border-top: 1px solid var(--border); padding: 11px 0; }
+  .co:first-of-type { border-top: none; }
+  .co__name { font-size: 13.5px; font-weight: 600; }
+  .co__ticker { font-family: var(--font-mono); font-size: 10.5px; color: var(--blue); margin-left: 6px; }
+  .co__tags { display: flex; gap: 6px; margin: 5px 0; flex-wrap: wrap; }
+  .tag { font-family: var(--font-mono); font-size: 9.5px; font-weight: 500; padding: 2px 7px; border-radius: 4px; }
+  .tag--direct { background: var(--green-dim); color: var(--green); }
+  .tag--indirect { background: var(--blue-dim); color: var(--blue); }
+  .tag--supplier { background: var(--gold-dim); color: var(--gold); }
+  .tag--conglomerate { background: var(--low-dim); color: var(--low); }
+  .co__mat { font-size: 11.5px; color: var(--text-dim); line-height: 1.5; }
+  .co__ev { font-size: 10.5px; color: var(--text-dim); font-style: italic; margin-top: 3px; }
+
+  .nocov { background: var(--high-dim); border: 1px dashed var(--high); border-radius: 8px; padding: 12px 14px; font-size: 12.5px; line-height: 1.55; }
+  .nocov b { color: var(--high); }
+  .nocov .near { color: var(--text-dim); margin-top: 6px; display: block; font-size: 11.5px; }
+
+  /* ===== TABLE ===== */
+  .table-wrap { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; }
+  .table-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  table.data { width: 100%; border-collapse: collapse; font-size: 12.5px; }
+  table.data th {
+    background: var(--surface-recessed); font-family: var(--font-mono); font-size: 10px; font-weight: 600;
+    text-transform: uppercase; letter-spacing: 0.8px; color: var(--text-dim); text-align: left; padding: 10px 12px;
+    border-bottom: 2px solid var(--border-bright); white-space: nowrap;
+  }
+  table.data td { padding: 9px 12px; border-bottom: 1px solid var(--border); vertical-align: middle; }
+  table.data tbody tr:nth-child(even) { background: var(--blue-dim); }
+  table.data tbody tr:hover { background: var(--border); }
+  table.data td.c { text-align: center; font-family: var(--font-mono); font-weight: 600; }
+  .cell-d { color: var(--green); }
+  .cell-i { color: var(--blue); }
+  .cell-s { color: var(--gold); }
+  .cell-c { color: var(--low); }
+  .cell-x { color: var(--text-dim); opacity: 0.4; }
+
+  /* ===== BOTTLENECK PAIRS ===== */
+  .bn { display: grid; grid-template-columns: 1fr 1fr; gap: 0; border: 1px solid var(--border); border-radius: 10px; overflow: hidden; margin-bottom: 12px; }
+  .bn__risk { background: var(--high-dim); padding: 13px 16px; border-right: 1px solid var(--border); }
+  .bn__opp { background: var(--green-dim); padding: 13px 16px; }
+  .bn__h { font-family: var(--font-mono); font-size: 9.5px; font-weight: 600; letter-spacing: 1.2px; text-transform: uppercase; margin-bottom: 6px; }
+  .bn__risk .bn__h { color: var(--high); }
+  .bn__opp .bn__h { color: var(--green); }
+  .bn p { font-size: 12.5px; line-height: 1.55; }
+  .bn__title { font-weight: 600; color: var(--text); display: block; margin-bottom: 4px; font-size: 13px; }
+
+  .footnote { font-family: var(--font-mono); font-size: 10.5px; color: var(--text-dim); line-height: 1.7; margin-top: 8px; }
+  .callout { background: var(--surface); border: 1px solid var(--border); border-left: 3px solid var(--gold); border-radius: 0 10px 10px 0; padding: 15px 20px; font-size: 13px; line-height: 1.6; color: var(--text-dim); }
+  .callout strong { color: var(--text); }
+
+  @media (max-width: 900px) {
+    .map-layout { grid-template-columns: 1fr; }
+    .map-panel { position: static; }
+    .bn { grid-template-columns: 1fr; }
+    .bn__risk { border-right: none; border-bottom: 1px solid var(--border); }
+  }
+  @media (max-width: 600px) {
+    body { padding: 20px 14px 48px; }
+    .rung { grid-template-columns: 1fr; gap: 4px; }
+  }
+</style>
+</head>
+<body>
+<div style="max-width:1180px;margin:0 auto 18px;font-family:'IBM Plex Mono',monospace;font-size:12px;">
+  <a href="../index.html" style="color:var(--blue);text-decoration:none;border-bottom:1px solid var(--border);">&larr; Industry BOM Registry</a>
+  <span style="color:var(--text-dim);">&nbsp;/&nbsp;Telecom &mdash; India&nbsp;/&nbsp;Transport Equipment</span>
+</div>
+<div class="container">
+
+  <header class="masthead animate" style="--i:0">
+    <div class="eyebrow">Industrial BOM &amp; Value-Chain Dissection</div>
+    <h1>India <span>Transport Equipment</span></h1>
+    <div class="subtitle">Backhaul &amp; core transport (DWDM &middot; OTN &middot; PTN/MPLS &middot; SDH &middot; Ethernet switches &middot; IP routers) &middot; BOM tree &middot; value-chain ladder &middot; NSE/BSE company map</div>
+    <div class="scope-bar">
+      <span class="chip chip--gold">Analysis date: 2026-10-08</span>
+      <span class="chip">Scope: INDIA</span>
+      <span class="chip">Interest: investment research</span>
+      <span class="chip">Universe: NSE / BSE</span>
+      <span class="chip chip--high">India lens: ON</span>
+      <span class="chip">Materiality: all exposures</span>
+      <span class="chip">Depth: depth-first</span>
+      <span class="chip">Derived from: Telecom &rarr; Routers, Switches &amp; Optical Transport</span>
+    </div>
+  </header>
+
+  <div style="display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;background:var(--gold-dim);border:1px solid var(--gold);border-radius:10px;padding:14px 18px;margin-bottom:24px;">
+    <span style="font-size:13px;line-height:1.5;"><strong style="color:var(--text);">Drill-down available &rarr;</strong> <span style="color:var(--text-dim);">two component-level entries branch from this node.</span></span>
+    <span style="display:flex;gap:10px;flex-wrap:wrap;">
+      <a href="optical-transceivers-india.html" style="font-family:var(--font-mono);font-size:12px;font-weight:600;color:var(--gold);text-decoration:none;border:1px solid var(--gold);border-radius:6px;padding:6px 12px;white-space:nowrap;background:var(--surface);">Optical Transceivers &rarr;</a>
+      <a href="switch-router-silicon-india.html" style="font-family:var(--font-mono);font-size:12px;font-weight:600;color:var(--gold);text-decoration:none;border:1px solid var(--gold);border-radius:6px;padding:6px 12px;white-space:nowrap;background:var(--surface);">Switch / Router Silicon &rarr;</a>
+    </span>
+  </div>
+
+  <!-- KPI -->
+  <section class="animate" style="--i:1">
+    <div class="kpi-row">
+      <div class="kpi kpi--gold">
+        <div class="kpi__val">~$25 bn</div>
+        <div class="kpi__label">India TANE market</div>
+        <div class="kpi__sub">FY25 &rarr; ~$50 bn by FY32 (~10% CAGR)</div>
+      </div>
+      <div class="kpi">
+        <div class="kpi__val">$1.78 bn</div>
+        <div class="kpi__label">India OTN market 2025</div>
+        <div class="kpi__sub">DWDM 57% share &middot; 7.9% CAGR to $2.81 bn by 2031</div>
+      </div>
+      <div class="kpi">
+        <div class="kpi__val">&#8377;8,923 cr</div>
+        <div class="kpi__label">Tejas Networks FY25 revenue</div>
+        <div class="kpi__sub">3.6&times; YoY &middot; PAT &#8377;447 cr</div>
+      </div>
+      <div class="kpi">
+        <div class="kpi__val">&#8377;9,967 cr</div>
+        <div class="kpi__label">HFCL order book</div>
+        <div class="kpi__sub">31 Mar 2025 &middot; ~&#8377;800 cr routers</div>
+      </div>
+      <div class="kpi kpi--high">
+        <div class="kpi__val">~85&ndash;90%</div>
+        <div class="kpi__label">High-speed optical modules imported</div>
+        <div class="kpi__sub">By value &middot; &gt;95% of 100G+ components</div>
+      </div>
+      <div class="kpi kpi--high">
+        <div class="kpi__val">&#8377;65,000 cr</div>
+        <div class="kpi__label">BharatNet Phase-3 outlay</div>
+        <div class="kpi__sub">IP-MPLS middle-mile &middot; router/switch demand</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 1. BOM TREE -->
+  <section class="animate" style="--i:2">
+    <div class="sec-head">
+      <span class="sec-num">01</span>
+      <span class="sec-title">System Overview</span>
+      <span class="sec-note">Level 0 &rarr; seven major subsystems<br>clickable BOM tree in section 03</span>
+    </div>
+    <section class="diagram-shell">
+      <p class="diagram-shell__hint">Ctrl/Cmd + wheel to zoom. Drag to pan when zoomed. Double-click to fit.</p>
+      <div class="mermaid-wrap">
+        <div class="zoom-controls">
+          <button type="button" data-action="zoom-in" title="Zoom in">+</button>
+          <button type="button" data-action="zoom-out" title="Zoom out">&minus;</button>
+          <button type="button" data-action="zoom-fit" title="Smart fit">&#8634;</button>
+          <button type="button" data-action="zoom-one" title="1:1 zoom">1:1</button>
+          <button type="button" data-action="zoom-expand" title="Open full size">&#x26F6;</button>
+          <span class="zoom-label">Loading...</span>
+        </div>
+        <div class="mermaid-viewport">
+          <div class="mermaid mermaid-canvas"></div>
+        </div>
+      </div>
+      <script type="text/plain" class="diagram-source">
+graph TD
+  L0["<b>Level 0</b><br/>Routers, Switches &amp; Optical Transport<br/>(India)"]
+  L0 --> A["A · Optical Transport<br/>(DWDM / OTN)"]
+  L0 --> B["B · Packet Transport<br/>(PTN / MPLS)"]
+  L0 --> C["C · IP / Ethernet<br/>Routing &amp; Switching"]
+  L0 --> D["D · Optical Transceivers<br/>&amp; Line Cards"]
+  L0 --> E["E · Switch/Router ASIC<br/>&amp; PCB"]
+  L0 --> F["F · Timing &amp;<br/>Synchronisation"]
+  L0 --> G["G · Power, Chassis<br/>&amp; Network OS"]
+  classDef high fill:#c0392b,stroke:#8e2b20,color:#fff,stroke-width:2px;
+  classDef med fill:#d4a73a,stroke:#a37f22,color:#241a05,stroke-width:1.5px;
+  classDef root fill:#1e4e8c,stroke:#12335c,color:#fff,stroke-width:2px;
+  class L0 root;
+  class A,B,C,D,E high;
+  class F,G med;
+      </script>
+    </section>
+    <div class="legend">
+      <div class="legend-item"><div class="legend-swatch" style="background:var(--high)"></div> HIGH priority — bottleneck / import-critical</div>
+      <div class="legend-item"><div class="legend-swatch" style="background:var(--med)"></div> MEDIUM priority</div>
+      <div class="legend-item"><div class="legend-swatch" style="background:var(--blue)"></div> Root node</div>
+    </div>
+  </section>
+
+  <!-- 2. VALUE LADDER -->
+  <section class="animate" style="--i:3">
+    <div class="sec-head">
+      <span class="sec-num">02</span>
+      <span class="sec-title">Value-Chain Ladder &amp; Supplier Tiers</span>
+      <span class="sec-note">raw material &rarr; aftermarket &middot; Tier-4 &rarr; OEM</span>
+    </div>
+    <div class="ladder">
+      <div class="rung rung--1">
+        <div class="rung__label">Tier 4 · Raw</div>
+        <div class="rung__body"><b>optical fibre preform</b> · indium-phosphide wafers · laser chips · high-speed driver ICs · FR4/copper laminate · aluminium &amp; steel sheet <span class="mini">imported: CN / JP / TW / US</span></div>
+      </div>
+      <div class="rung rung--2">
+        <div class="rung__label">Tier 3 · Specialty</div>
+        <div class="rung__body"><b>optical engines (TOSA/ROSA)</b> · coherent DSPs · switch/router ASIC · FPGA · timing ASIC &amp; OCXO · high-speed connectors <span class="mini">almost entirely imported</span></div>
+      </div>
+      <div class="rung rung--3">
+        <div class="rung__label">Tier 2 · Component</div>
+        <div class="rung__body"><b>optical transceivers</b> (SFP/QSFP/400G) · DWDM/OTN line cards · switch/router chassis &amp; PCBAs · DC power systems · network OS/software</div>
+      </div>
+      <div class="rung rung--4">
+        <div class="rung__label">Tier 1 · System/OEM</div>
+        <div class="rung__body"><b>PTN · DWDM/OTN · IP/MPLS routers · Ethernet switches · SDH</b> — Tejas Networks · HFCL · ITI · Netweb <span class="mini">foreign OEMs (Cisco · Nokia · Juniper · Ciena) India-made via Flex</span></div>
+      </div>
+      <div class="rung rung--4">
+        <div class="rung__label">OEM / Operator</div>
+        <div class="rung__body"><b>BSNL / BharatNet</b> · Reliance Jio · Airtel · Vodafone Idea · data centres · system integrators <span class="mini">TCS &middot; RVNL &middot; consortium EPС</span></div>
+      </div>
+      <div class="rung rung--1">
+        <div class="rung__label">Aftermarket</div>
+        <div class="rung__body">O&amp;M (BharatNet 10-yr O&amp;M) · 400G&rarr;800G/1.2T upgrades · spares &amp; line cards · managed/automation services <span class="mini">annuity-like, sticky</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. INTERACTIVE COMPANY MAP -->
+  <section class="animate" style="--i:4">
+    <div class="sec-head">
+      <span class="sec-num">03</span>
+      <span class="sec-title">BOM Tree &amp; Company Map</span>
+      <span class="sec-note">click a node &rarr; its NSE/BSE companies<br>gaps shown explicitly</span>
+    </div>
+    <div class="map-layout">
+      <div class="map-nodes" id="mapNodes"></div>
+      <aside class="map-panel" id="mapPanel" aria-live="polite"></aside>
+    </div>
+  </section>
+
+  <!-- 4. MATRIX -->
+  <section class="animate" style="--i:5">
+    <div class="sec-head">
+      <span class="sec-num">04</span>
+      <span class="sec-title">Company &times; Node Matrix</span>
+      <span class="sec-note">D direct · I indirect · S supplier · C conglomerate · — none</span>
+    </div>
+    <div class="table-wrap">
+      <div class="table-scroll">
+        <table class="data">
+          <thead>
+            <tr>
+              <th>Company</th><th>PTN</th><th>DWDM/OTN</th><th>IP/MPLS</th><th>Eth Sw</th><th>SDH</th>
+              <th>Transceiver</th><th>ASIC</th><th>PCB</th><th>Power</th><th>NOS</th><th>OEM</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Tejas Networks <small>TEJASNET</small></td><td class="c cell-d">D</td><td class="c cell-d">D</td><td class="c cell-d">D</td><td class="c cell-i">I</td><td class="c cell-i">I</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-i">I</td><td class="c cell-d">D</td></tr>
+            <tr><td>HFCL <small>HFCL</small></td><td class="c cell-d">D</td><td class="c cell-i">I</td><td class="c cell-d">D</td><td class="c cell-d">D</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-d">D</td></tr>
+            <tr><td>ITI Limited <small>ITI</small></td><td class="c cell-i">I</td><td class="c cell-x">—</td><td class="c cell-i">I</td><td class="c cell-x">—</td><td class="c cell-d">D</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-d">D</td></tr>
+            <tr><td>Netweb Technologies <small>NETWEB</small></td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-i">I</td><td class="c cell-d">D</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-i">I</td><td class="c cell-i">I</td></tr>
+            <tr><td>Exicom Tele-Systems <small>EXICOM</small></td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-d">D</td><td class="c cell-x">—</td><td class="c cell-i">I</td></tr>
+            <tr><td>Dixon Technologies <small>DIXON</small></td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-i">I</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-i">I</td></tr>
+            <tr><td>Tata Consultancy Services <small>TCS</small></td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-i">I</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <p class="footnote">D direct · I indirect · S supplier · C conglomerate/minor segment · — no exposure. Listing status current as of analysis date. Every mapping is evidence-based; materiality detail is in the click-through panel above. Foreign OEMs (Cisco, Nokia, Juniper, Ciena) are outside the NSE/BSE universe — India-made output is via contract manufacturer Flex and is not a listed Indian pure-play.</p>
+  </section>
+
+  <!-- 5. BOTTLENECKS -->
+  <section class="animate" style="--i:6">
+    <div class="sec-head">
+      <span class="sec-num">05</span>
+      <span class="sec-title">Bottlenecks — Risk &amp; Opportunity</span>
+      <span class="sec-note">dual-readable: every risk is a substitution play</span>
+    </div>
+    <div class="bn">
+      <div class="bn__risk"><div class="bn__h">Risk</div><p><span class="bn__title">High-speed optical transceivers</span>400G/800G modules are ~85&ndash;90% imported by value and &gt;95% of 100G+ components are imported; active transceivers are classed as duty-free "parts", undercutting nascent domestic assembly. [REPORTED]</p></div>
+      <div class="bn__opp"><div class="bn__h">Opportunity</div><p><span class="bn__title">First domestic moves</span>Dixon&ndash;Gemtek JV (SFP/BOSA, Dixon 60%, ECMS beneficiary) and GX Group's photonics plant (SFP, TOSA/ROSA; ~&#8377;500 cr, production from Dec-2026) are the beachhead. [REPORTED]</p></div>
+    </div>
+    <div class="bn">
+      <div class="bn__risk"><div class="bn__h">Risk</div><p><span class="bn__title">Switch/router &amp; OTN silicon</span>Core routers, OTN switching ASICs and coherent DSPs are US-designed and imported (dependency index ~72); no Indian fab or design depth. [REPORTED]</p></div>
+      <div class="bn__opp"><div class="bn__h">Opportunity</div><p><span class="bn__title">Design-led manufacturing</span>PLI 4&ndash;7% + 1% design-led incentive rewards genuine IP; Tejas&ndash;NEC collaboration and semiconductor-design ambitions are the entry points. [REPORTED]</p></div>
+    </div>
+    <div class="bn">
+      <div class="bn__risk"><div class="bn__h">Risk</div><p><span class="bn__title">PCBA import duty &amp; supply chain</span>~80% of PCBAs in network gear (and &gt;50% in OFC gear, MSCs, routers) are imported; the 2024 BCD hike on telecom PCBAs to 15% raised landed costs. [REPORTED]</p></div>
+      <div class="bn__opp"><div class="bn__h">Opportunity</div><p><span class="bn__title">Local PCBA &amp; assembly</span>Cisco&ndash;Flex Chennai phase-2 targets multi-layer PCBA locally; PLI-driven assembly is shifting value into India. [REPORTED]</p></div>
+    </div>
+    <div class="bn">
+      <div class="bn__risk"><div class="bn__h">Risk</div><p><span class="bn__title">Chinese import dependence</span>&gt;80% of critical telecom components (incl. 4G/5G antennas, signal processors) are sourced from China; Chinese goods are ~40% of India's telecom imports. [REPORTED]</p></div>
+      <div class="bn__opp"><div class="bn__h">Opportunity</div><p><span class="bn__title">Trusted-source procurement</span>BharatNet PMA/Make-in-India orders are flowing to HFCL (&#8377;8,100 cr consortium), ITI (&#8377;6,956 cr) and Tejas. [REPORTED]</p></div>
+    </div>
+    <div class="bn">
+      <div class="bn__risk"><div class="bn__h">Risk</div><p><span class="bn__title">Shallow local value addition</span>Localisation is below 15% for some telecom equipment; generic equipment makers face up to 26% fiscal disability vs global peers. [REPORTED]</p></div>
+      <div class="bn__opp"><div class="bn__h">Opportunity</div><p><span class="bn__title">Protected demand pool</span>The &#8377;65,000 cr BharatNet Phase-3 middle-mile and 5G backhaul build create a policy-backed domestic order book. [REPORTED]</p></div>
+    </div>
+    <div class="callout animate" style="--i:7">
+      <strong>Deepest hidden import dependency:</strong> the coherent DSPs and switch/router ASICs sitting inside every DWDM line card and IP/MPLS router — designed in the US (Broadcom/Marvell-class silicon), with no Indian design house or fab. India assembles boxes around imported silicon; the control-plane chip is the true chokepoint. [INFERENCE]
+    </div>
+  </section>
+
+  <p class="footnote animate" style="--i:8">
+    Sources (plain): NITI Aayog — Telecom &amp; Network Equipment (TANE) report (Aug-2026) · TRAI NATEM recommendations (Sep-2023) · DoT PLI scheme list for telecom &amp; networking products (Jul-2025) · IMARC / GII / Mordor market estimates (2025&ndash;26) · company results &amp; investor presentations (Tejas Networks Q4FY25 &amp; Q1FY26, HFCL Q4FY25 &amp; Q3FY25, ITI Limited press releases Jun-2025, Netweb Annual Report FY25, Exicom product &amp; press) · ETTelecom, Economic Times, The Hindu BusinessLine, CableCommunity, Moneycontrol (BharatNet Phase-3 awards; Cisco&ndash;Flex Chennai; Ciena; HFCL router orders; GX Group photonics; Dixon&ndash;Gemtek JV) · IndexBox &amp; Techadyant Labs import-dependency analyses (2026) · CAAR ruling on SFP transceiver classification (2024). All figures date-stamped to the analysis date; time-sensitive facts are cyclical or live and should be re-checked before use. Company mappings are evidence-based; materiality impacts are labelled [REPORTED] or [INFERENCE] and nothing is fabricated — where a figure was unavailable it is marked as such.
+  </p>
+
+</div>
+
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+
+  const config = {
+    fitPadding: 24, minHeight: 300, maxHeightPx: 900, maxHeightVh: 0.85,
+    maxInitialZoom: 1.7, minZoom: 0.08, maxZoom: 6.5, zoomStep: 0.14, readabilityFloor: 0.55
+  };
+  const clamp = (n, lo, hi) => Math.max(lo, Math.min(hi, n));
+  let activeDrag = null;
+  addEventListener('mousemove', (e) => activeDrag?.onMove(e));
+  addEventListener('mouseup', () => { activeDrag?.onEnd(); activeDrag = null; });
+
+  const isDark = matchMedia('(prefers-color-scheme: dark)').matches;
+  mermaid.initialize({
+    startOnLoad: false, theme: 'base', look: 'classic', layout: 'dagre',
+    themeVariables: {
+      fontFamily: "'IBM Plex Sans', system-ui, sans-serif", fontSize: '15px',
+      lineColor: isDark ? '#5b9bd5' : '#9db4cc',
+    }
+  });
+
+  function initDiagram(shell) {
+    const wrap = shell.querySelector('.mermaid-wrap');
+    const viewport = shell.querySelector('.mermaid-viewport');
+    const canvas = shell.querySelector('.mermaid-canvas');
+    const source = shell.querySelector('.diagram-source');
+    const label = shell.querySelector('.zoom-label');
+    if (!wrap || !viewport || !canvas || !source || !label) return;
+
+    let zoom = 1, fitMode = 'contain', panX = 0, panY = 0, svgW = 0, svgH = 0;
+    let sx = 0, sy = 0, spx = 0, spy = 0, touchDist = 0, touchCx = 0, touchCy = 0;
+
+    function constrainPan() {
+      const vpW = viewport.clientWidth, vpH = viewport.clientHeight;
+      const rW = svgW * zoom, rH = svgH * zoom, pad = config.fitPadding;
+      panX = (rW + pad * 2 <= vpW) ? (vpW - rW) / 2 : clamp(panX, vpW - rW - pad, pad);
+      panY = (rH + pad * 2 <= vpH) ? (vpH - rH) / 2 : clamp(panY, vpH - rH - pad, pad);
+    }
+    function applyTransform() {
+      const svg = canvas.querySelector('svg');
+      if (!svg || !svgW) return;
+      constrainPan();
+      svg.style.width = (svgW * zoom) + 'px';
+      svg.style.height = (svgH * zoom) + 'px';
+      canvas.style.transform = `translate(${panX}px, ${panY}px)`;
+      label.textContent = Math.round(zoom * 100) + '%';
+    }
+    function canPan() {
+      return svgW * zoom + config.fitPadding * 2 > viewport.clientWidth
+          || svgH * zoom + config.fitPadding * 2 > viewport.clientHeight;
+    }
+    function computeSmartFit() {
+      const vpW = viewport.clientWidth, vpH = viewport.clientHeight;
+      const aW = Math.max(80, vpW - config.fitPadding * 2);
+      const aH = Math.max(80, vpH - config.fitPadding * 2);
+      const contain = Math.min(aW / svgW, aH / svgH);
+      let z = contain, mode = 'contain';
+      if (contain < config.readabilityFloor) {
+        // For wide BOM trees, fitting width keeps the whole width visible and
+        // scrolls vertically — far more readable than a height-fit that clips columns.
+        z = aW / svgW; mode = 'width';
+      }
+      return { zoom: clamp(z, config.minZoom, config.maxInitialZoom), mode };
+    }
+    function fitDiagram() {
+      if (!svgW) return;
+      const fit = computeSmartFit();
+      zoom = fit.zoom; fitMode = fit.mode;
+      panX = (viewport.clientWidth - svgW * zoom) / 2;
+      panY = (viewport.clientHeight - svgH * zoom) / 2;
+      applyTransform();
+    }
+    function setOneToOne() {
+      zoom = 1; fitMode = '1:1';
+      panX = (viewport.clientWidth - svgW * zoom) / 2;
+      panY = (viewport.clientHeight - svgH * zoom) / 2;
+      applyTransform();
+    }
+    function zoomAround(factor, cx, cy) {
+      const next = clamp(zoom * factor, config.minZoom, config.maxZoom);
+      const ratio = next / zoom;
+      panX = cx - ratio * (cx - panX);
+      panY = cy - ratio * (cy - panY);
+      zoom = next; applyTransform();
+    }
+    function readSvgNaturalSize(svg) {
+      let w = 0, h = 0;
+      if (svg.viewBox?.baseVal?.width > 0) { w = svg.viewBox.baseVal.width; h = svg.viewBox.baseVal.height; }
+      if (!w) { w = parseFloat(svg.getAttribute('width')) || 0; h = parseFloat(svg.getAttribute('height')) || 0; }
+      if (!w) { const b = svg.getBBox(); w = b.width; h = b.height; }
+      if (!w) { const r = svg.getBoundingClientRect(); w = r.width || 1000; h = r.height || 700; }
+      if (!svg.getAttribute('viewBox')) svg.setAttribute('viewBox', `0 0 ${w} ${h}`);
+      return { w, h };
+    }
+    function setAdaptiveHeight() {
+      if (!svgW) return;
+      const usableW = Math.max(280, wrap.getBoundingClientRect().width - 2);
+      const idealH = (svgH / svgW) * usableW + config.fitPadding * 2;
+      const maxVp = Math.floor(innerHeight * config.maxHeightVh);
+      const hardMax = Math.min(config.maxHeightPx, Math.max(config.minHeight + 40, maxVp));
+      wrap.style.height = Math.round(clamp(idealH, config.minHeight, hardMax)) + 'px';
+    }
+    function openInNewTab() {
+      const svg = canvas.querySelector('svg');
+      if (!svg) return;
+      const clone = svg.cloneNode(true);
+      clone.style.width = ''; clone.style.height = '';
+      const bg = isDark ? '#0a1626' : '#eef2f7';
+      const html = `<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>BOM Tree</title><style>body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;background:${bg};padding:40px;box-sizing:border-box}svg{max-width:100%;max-height:90vh;height:auto}</style></head><body>${clone.outerHTML}</body></html>`;
+      open(URL.createObjectURL(new Blob([html], { type: 'text/html' })), '_blank');
+    }
+    async function render() {
+      try {
+        const code = source.textContent.trim();
+        const id = 'dgm-' + Math.random().toString(36).slice(2, 9);
+        const { svg } = await mermaid.render(id, code);
+        canvas.innerHTML = svg;
+        const svgNode = canvas.querySelector('svg');
+        if (!svgNode) { label.textContent = 'Error'; return; }
+        const size = readSvgNaturalSize(svgNode);
+        svgW = size.w; svgH = size.h;
+        svgNode.removeAttribute('width'); svgNode.removeAttribute('height');
+        svgNode.style.maxWidth = 'none'; svgNode.style.display = 'block';
+        setAdaptiveHeight(); fitDiagram();
+      } catch (err) {
+        console.error(err); label.textContent = 'Error';
+      }
+    }
+    const actions = {
+      'zoom-in': () => zoomAround(1 + config.zoomStep, viewport.clientWidth / 2, viewport.clientHeight / 2),
+      'zoom-out': () => zoomAround(1 / (1 + config.zoomStep), viewport.clientWidth / 2, viewport.clientHeight / 2),
+      'zoom-fit': fitDiagram, 'zoom-one': setOneToOne, 'zoom-expand': openInNewTab
+    };
+    Object.entries(actions).forEach(([a, h]) => wrap.querySelector(`[data-action="${a}"]`)?.addEventListener('click', h));
+    viewport.addEventListener('dblclick', fitDiagram);
+    viewport.addEventListener('wheel', (e) => {
+      if (e.ctrlKey || e.metaKey) {
+        e.preventDefault();
+        const rect = viewport.getBoundingClientRect();
+        const factor = e.deltaY < 0 ? 1 + config.zoomStep : 1 / (1 + config.zoomStep);
+        zoomAround(factor, e.clientX - rect.left, e.clientY - rect.top); return;
+      }
+      if (canPan()) { e.preventDefault(); panX -= e.deltaX; panY -= e.deltaY; applyTransform(); }
+    }, { passive: false });
+    viewport.addEventListener('mousedown', (e) => {
+      if (e.target.closest('.zoom-controls') || !canPan()) return;
+      wrap.classList.add('is-panning');
+      sx = e.clientX; sy = e.clientY; spx = panX; spy = panY; e.preventDefault();
+      activeDrag = {
+        onMove: (ev) => { panX = spx + (ev.clientX - sx); panY = spy + (ev.clientY - sy); applyTransform(); },
+        onEnd: () => wrap.classList.remove('is-panning')
+      };
+    });
+    viewport.addEventListener('touchstart', (e) => {
+      if (e.touches.length === 1) { sx = e.touches[0].clientX; sy = e.touches[0].clientY; spx = panX; spy = panY; }
+      else if (e.touches.length === 2) {
+        const dx = e.touches[0].clientX - e.touches[1].clientX, dy = e.touches[0].clientY - e.touches[1].clientY;
+        touchDist = Math.sqrt(dx * dx + dy * dy);
+        const r = viewport.getBoundingClientRect();
+        touchCx = (e.touches[0].clientX + e.touches[1].clientX) / 2 - r.left;
+        touchCy = (e.touches[0].clientY + e.touches[1].clientY) / 2 - r.top;
+      }
+    }, { passive: true });
+    viewport.addEventListener('touchmove', (e) => {
+      if (e.touches.length === 1 && canPan()) {
+        e.preventDefault();
+        panX = spx + (e.touches[0].clientX - sx); panY = spy + (e.touches[0].clientY - sy); applyTransform();
+      } else if (e.touches.length === 2 && touchDist > 0) {
+        e.preventDefault();
+        const dx = e.touches[0].clientX - e.touches[1].clientX, dy = e.touches[0].clientY - e.touches[1].clientY;
+        const d = Math.sqrt(dx * dx + dy * dy);
+        zoomAround(d / touchDist, touchCx, touchCy); touchDist = d;
+      }
+    }, { passive: false });
+    new ResizeObserver(() => { if (svgW) { setAdaptiveHeight(); fitDiagram(); } }).observe(wrap);
+    render();
+  }
+  document.querySelectorAll('.diagram-shell').forEach(initDiagram);
+</script>
+
+<script>
+/* ===== CLICK-THROUGH COMPANY MAP ===== */
+const NODES = [
+  { id:'dwdm', name:'DWDM / OTN Optical Transport', pri:'high', bott:true,
+    fn:'Wavelength-division multiplexing and optical transport switching — the long-haul and metro core backbone. DWDM holds ~57% of India OTN revenue.',
+    importDep:'Mixed — line cards domestic, optics/ASIC imported', conc:'Consolidating (domestic) / foreign OEMs large',
+    companies:[
+      {n:'Tejas Networks', t:'NSE/BSE: TEJASNET', e:'direct', m:'TJ1600 DWDM/OTN platform, 400G→800G/1.2T per channel; utility & carrier backbones; VIL multi-year optical contract', ev:'Annual report / Q4FY25 call [REPORTED]'},
+      {n:'HFCL', t:'NSE/BSE: HFCL', e:'indirect', m:'Optical transport network (OTN) products inside its ~₹2,500 cr telecom product order book', ev:'Q4FY25 earnings call [REPORTED]'}
+    ] },
+  { id:'ptn', name:'PTN / Packet Transport (MPLS-TP)', pri:'high', bott:true,
+    fn:'Packet transport network for mobile backhaul — aggregates 4G/5G traffic onto carrier-grade MPLS-TP rings.',
+    importDep:'Mixed — system domestic, silicon imported', conc:'Oligopoly (domestic)',
+    companies:[
+      {n:'Tejas Networks', t:'NSE/BSE: TEJASNET', e:'direct', m:'TJ1400 PTN for mobile backhaul; deployed across BSNL 4G/5G backhaul and VIL circles', ev:'Annual report / earnings call [REPORTED]'},
+      {n:'HFCL', t:'NSE/BSE: HFCL', e:'direct', m:'5G transport / PTN products; telecom product revenue ₹2,227 cr order book', ev:'Q4FY25 earnings call [REPORTED]'},
+      {n:'ITI Limited', t:'NSE/BSE: ITI', e:'indirect', m:'Transmission & switching portfolio; BharatNet middle-mile execution (DBOM)', ev:'Company / press release Jun-2025 [REPORTED]'}
+    ] },
+  { id:'ipmpls', name:'IP / MPLS Routers', pri:'high', bott:true,
+    fn:'Carrier-grade IP/MPLS routing for the core and aggregation layer — the highest-value node in transport capex.',
+    importDep:'System domestic, ASIC imported', conc:'Oligopoly (domestic emerging)',
+    companies:[
+      {n:'HFCL', t:'NSE/BSE: HFCL', e:'direct', m:'Indigenous IP/MPLS routers; ~₹800 cr router orders; supplied as L1 in BharatNet Phase-3', ev:'Earnings call / ETTelecom [REPORTED]'},
+      {n:'Tejas Networks', t:'NSE/BSE: TEJASNET', e:'direct', m:'Expanded IP/MPLS router family; large BSNL 4G/5G backhaul IP/MPLS network; BharatNet-3 router orders', ev:'Q1FY26 press release [REPORTED]'},
+      {n:'ITI Limited', t:'NSE/BSE: ITI', e:'indirect', m:'IP/MPLS via technology partnership; BharatNet Phase-3 PIA (₹6,956 cr across three packages)', ev:'Press release 30-Jun-2025 [REPORTED]'},
+      {n:'Netweb Technologies', t:'NSE/BSE: NETWEB', e:'indirect', m:'Routers under Telecom & Networking PLI; enterprise routing portfolio', ev:'Annual report FY25 [REPORTED]'}
+    ] },
+  { id:'ethsw', name:'Ethernet Switches (L2/L3)', pri:'med',
+    fn:'Data-centre and enterprise Ethernet switching — increasingly a domestic-manufacturing target as data centres scale.',
+    importDep:'Mixed — assembly domestic, silicon imported', conc:'Fragmented',
+    companies:[
+      {n:'Netweb Technologies', t:'NSE/BSE: NETWEB', e:'direct', m:'"Make in India" network switches 10G–400G, SONiC-based; Telecom & Networking PLI approved', ev:'Annual report FY25 [REPORTED]'},
+      {n:'HFCL', t:'NSE/BSE: HFCL', e:'direct', m:'Ethernet L2 switches within its telecom products portfolio', ev:'Q2FY25 results / company [REPORTED]'}
+    ] },
+  { id:'sdh', name:'SDH / Legacy TDM Transport', pri:'low',
+    fn:'Legacy synchronous transport still serving utility and rail networks pending TDM→IP migration.',
+    importDep:'Largely domestic', conc:'Concentrated (declining)',
+    companies:[
+      {n:'ITI Limited', t:'NSE/BSE: ITI', e:'direct', m:'Legacy SDH / transmission manufacturing; utility & defence networks', ev:'Company [INFERENCE]'},
+      {n:'Tejas Networks', t:'NSE/BSE: TEJASNET', e:'indirect', m:'Legacy TDM/SDH support for utility network modernisation', ev:'Annual report [REPORTED]'}
+    ] },
+  { id:'transceiver', name:'Optical Transceivers (SFP / QSFP / 400G)', pri:'high', bott:true,
+    fn:'The electro-optical interface in every line card and router port — converting electrical to optical signals. The most import-critical component in the stack.',
+    importDep:'~85–90% imported by value', conc:'Foreign-dominated',
+    companies:[],
+    gap:'NO LISTED PURE-PLAY IN INDIA.',
+    near:'Nearest listed: Dixon Technologies (NSE/BSE: DIXON) — 60% JV with Taiwan\'s Gemtek for SFP transceivers/BOSA modules (Jun-2026, ECMS beneficiary), but a diversified EMS, not a pure-play. Unlisted: GX Group (₹500 cr photonics plant, SFP + TOSA/ROSA, production from Dec-2026). Context (foreign): Cisco, Nokia, Juniper, Ciena source optics from China/Taiwan/Japan.' },
+  { id:'asic', name:'Switch / Router ASIC & Coherent DSP', pri:'high', bott:true,
+    fn:'The control-plane silicon — high-capacity switching ASICs, OTN switching ASICs and coherent DSPs that define box performance and capacity.',
+    importDep:'~100% imported (US-designed)', conc:'Global duopoly/oligopoly',
+    companies:[],
+    gap:'NO LISTED PURE-PLAY IN INDIA.',
+    near:'No Indian design house or fab for carrier switching ASICs or coherent DSPs. Context (foreign): Broadcom, Marvell, Cisco Silicon One, Nokia (PSE), Ciena (WaveLogic). India\'s entry is design-led PLI, not fabrication.' },
+  { id:'pcb', name:'PCB / Backplane & PCBA', pri:'high', bott:true,
+    fn:'Multi-layer printed-circuit boards and assembled boards that carry the silicon — a named localisation gap with a live import-duty dimension.',
+    importDep:'~80% of network-gear PCBAs imported', conc:'Fragmented (EMS)',
+    companies:[],
+    gap:'NO LISTED PURE-PLAY IN INDIA.',
+    near:'No listed PCB/backplane pure-play dedicated to transport gear. Nearest listed: diversified EMS (Kaynes, Syrma SGS, Dixon) — exposure is inference, not a pure-play. Context: Cisco–Flex Chennai phase-2 targets multi-layer PCBA locally.' },
+  { id:'power', name:'Telecom DC Power & Enclosure', pri:'med',
+    fn:'High-availability DC power systems, rectifiers and battery backup that keep transport nodes and BharatNet GPs energised.',
+    importDep:'Largely domestic', conc:'Concentrated (few domestic players)',
+    companies:[
+      {n:'Exicom Tele-Systems', t:'NSE/BSE: EXICOM', e:'direct', m:'Integrated modular DC power systems (EXTS), Li-ion backup; supplied racks & power into BharatNet-3 via the HFCL consortium', ev:'Company / ETTelecom [REPORTED]'}
+    ] },
+  { id:'nos', name:'Network OS / Software & Automation', pri:'med',
+    fn:'The network operating system, SDN control and automation layer — where software-defined differentiation and recurring value sit.',
+    importDep:'Mixed — largely domestic', conc:'Fragmented',
+    companies:[
+      {n:'Tejas Networks', t:'NSE/BSE: TEJASNET', e:'indirect', m:'In-house network OS / management software across its optical, packet and routing platforms', ev:'Annual report [INFERENCE]'},
+      {n:'Netweb Technologies', t:'NSE/BSE: NETWEB', e:'indirect', m:'SONiC-based network OS on its switch portfolio', ev:'Annual report FY25 [REPORTED]'}
+    ] },
+  { id:'timing', name:'Timing & Synchronisation', pri:'med', bott:true,
+    fn:'Precision time/frequency (IEEE 1588 PTP, OCXO) that keeps 5G backhaul and packet networks synchronised.',
+    importDep:'Largely imported', conc:'Foreign-dominated',
+    companies:[],
+    gap:'NO LISTED PURE-PLAY IN INDIA.',
+    near:'Timing/synchronisation ASICs are imported (dependency index ~59, US-sourced). No NSE/BSE pure-play. Context (foreign): Microchip, ADVA, Nokia, Juniper.' },
+  { id:'oem', name:'Transport System OEM / Integrator', pri:'high', bott:true,
+    fn:'The systems integrator that assembles, tests and commissions the transport network for operators and government programmes.',
+    importDep:'n/a', conc:'Oligopoly (domestic) + foreign OEMs',
+    companies:[
+      {n:'Tejas Networks', t:'NSE/BSE: TEJASNET', e:'direct', m:'Full wireline + wireless OEM; FY25 revenue ₹8,923 cr (3.6× YoY), PAT ₹447 cr; order book ₹1,019 cr (Mar-2025)', ev:'Q4FY25 press release [REPORTED]'},
+      {n:'HFCL', t:'NSE/BSE: HFCL', e:'direct', m:'Telecom products + EPC/O&M; order book ₹9,967 cr (31 Mar 2025); BharatNet-3 L1', ev:'Q4FY25 press release [REPORTED]'},
+      {n:'ITI Limited', t:'NSE/BSE: ITI', e:'direct', m:'PSU telecom manufacturer; BharatNet Phase-3 PIA, ₹6,956 cr across three packages', ev:'Press release Jun-2025 [REPORTED]'},
+      {n:'Netweb Technologies', t:'NSE/BSE: NETWEB', e:'indirect', m:'PLI-approved telecom & networking OEM (switches, 5G ORAN appliances)', ev:'Annual report FY25 [REPORTED]'},
+      {n:'Tata Consultancy Services', t:'NSE/BSE: TCS', e:'indirect', m:'BSNL 4G/5G network integrator; procures Tejas RAN/transport; BSNL expansion order of 18,685 sites', ev:'Tejas press / ETTelecom [REPORTED]'}
+    ] }
+];
+
+const nodesEl = document.getElementById('mapNodes');
+const panelEl = document.getElementById('mapPanel');
+const PRI_LABEL = { high:'HIGH', med:'MEDIUM', low:'LOW' };
+
+function renderPanel(node) {
+  if (!node) { panelEl.innerHTML = '<div class="map-panel__kicker">Company map</div><div class="map-panel__title">Select a node</div><p class="map-panel__fn">Click any node on the left to see its NSE/BSE companies, exposure type, materiality and evidence.</p>'; return; }
+  let html = '';
+  html += `<div class="map-panel__kicker">${PRI_LABEL[node.pri] || ''} priority node</div>`;
+  html += `<div class="map-panel__title">${node.name}</div>`;
+  html += `<p class="map-panel__fn">${node.fn}</p>`;
+  html += `<div class="map-panel__row">`;
+  if (node.importDep && node.importDep !== 'n/a') html += `<span class="mini">Import: ${node.importDep}</span>`;
+  if (node.conc) html += `<span class="mini">Concentration: ${node.conc}</span>`;
+  if (node.bott) html += `<span class="mini" style="color:var(--gold)">Bottleneck</span>`;
+  html += `</div>`;
+
+  if (!node.companies || node.companies.length === 0) {
+    html += `<div class="nocov"><b>${node.gap}</b><span class="near">${node.near}</span></div>`;
+    panelEl.innerHTML = html;
+    return;
+  }
+  node.companies.forEach(c => {
+    html += `<div class="co">`;
+    html += `<div class="co__name">${c.n}<span class="co__ticker">${c.t}</span></div>`;
+    html += `<div class="co__tags"><span class="tag tag--${c.e}">${c.e.toUpperCase()}</span></div>`;
+    html += `<div class="co__mat">${c.m}</div>`;
+    html += `<div class="co__ev">Evidence: ${c.ev}</div>`;
+    html += `</div>`;
+  });
+  panelEl.innerHTML = html;
+}
+
+const PTREE = [
+  { icon:'A', group:'Optical Transport', ids:['dwdm','transceiver'] },
+  { icon:'B', group:'Packet Transport & Routing', ids:['ptn','ipmpls','ethsw','sdh'] },
+  { icon:'C', group:'Silicon, Boards & Power', ids:['asic','pcb','power'] },
+  { icon:'D', group:'Software & Timing', ids:['nos','timing'] },
+  { icon:'E', group:'System OEM / Integrator', ids:['oem'] }
+];
+let firstBtn = null;
+PTREE.forEach((grp) => {
+  const wrap = document.createElement('div');
+  const head = document.createElement('button');
+  head.type = 'button';
+  head.style.cssText = 'display:flex;align-items:center;gap:8px;width:100%;text-align:left;background:transparent;border:none;cursor:pointer;padding:8px 6px;font-family:var(--font-mono);font-size:11px;font-weight:600;letter-spacing:.6px;color:var(--text-dim);text-transform:uppercase;';
+  head.innerHTML = '<span class="tgl" style="width:12px;display:inline-block;">&#9662;</span><span>' + grp.icon + ' &middot; ' + grp.group + '</span>';
+  const body = document.createElement('div');
+  body.style.cssText = 'margin-left:14px;border-left:1px dashed var(--border-bright);padding-left:8px;';
+  grp.ids.forEach((id) => {
+    const node = NODES.find((n) => n.id === id);
+    if (!node) return;
+    const btn = document.createElement('button');
+    btn.className = 'node-btn';
+    btn.type = 'button';
+    const dotClass = (!node.companies || node.companies.length === 0) ? 'dot--none' : ('dot--' + node.pri);
+    let flags = '';
+    if (!node.companies || node.companies.length === 0) flags += '<span class="flag flag--gap">GAP</span>';
+    else if (node.bott) flags += '<span class="flag flag--bott">BOTTLENECK</span>';
+    btn.innerHTML = '<div class="node-btn__name"><span class="dot ' + dotClass + '"></span>' + node.name + '</div><div class="node-btn__meta"><span>' + (node.companies || []).length + ' listed</span>' + flags + '</div>';
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.node-btn').forEach((b) => b.classList.remove('is-active'));
+      btn.classList.add('is-active');
+      renderPanel(node);
+    });
+    body.appendChild(btn);
+    if (!firstBtn) firstBtn = btn;
+  });
+  head.addEventListener('click', () => {
+    const hidden = body.style.display === 'none';
+    body.style.display = hidden ? '' : 'none';
+    head.querySelector('.tgl').innerHTML = hidden ? '&#9662;' : '&#9656;';
+  });
+  wrap.appendChild(head);
+  wrap.appendChild(body);
+  nodesEl.appendChild(wrap);
+});
+if (firstBtn) { firstBtn.classList.add('is-active'); renderPanel(NODES.find((n) => n.id === 'ipmpls')); }
+</script>
+</body>
+</html>
