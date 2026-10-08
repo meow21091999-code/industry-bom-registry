@@ -2805,7 +2805,12 @@
     "slug": "smr-india",
     "node": "Turbomachinery (Turbine Island)"
    },
-   "drill_downs": [],
+   "drill_downs": [
+    "steam-turbine-india",
+    "turbine-generator-india",
+    "condenser-heat-rejection-india",
+    "turbine-auxiliaries-india"
+   ],
    "nodes": [
     {
      "id": "rotor",
@@ -3165,6 +3170,625 @@
      "priority": "low",
      "bottleneck": false,
      "in_universe_coverage": false
+    }
+   ]
+  },
+  {
+   "slug": "steam-turbine-india",
+   "industry": "Steam Turbine (Turbine Proper)",
+   "scope": "INDIA",
+   "path": "industries/steam-turbine-india.html",
+   "analysis_date": "2026-10-08",
+   "universe": "NSE/BSE",
+   "sector": "Power Generation Equipment",
+   "derived_from": {
+    "industry": "Turbine Island (Turbomachinery)",
+    "slug": "turbine-island-india",
+    "node": "Steam turbine proper"
+   },
+   "drill_downs": [],
+   "nodes": [
+    {
+     "id": "rotor",
+     "name": "Turbine Rotor & Shaft",
+     "level": 2,
+     "aliases": [
+      "turbine rotor",
+      "rotor forging",
+      "HP rotor",
+      "IP rotor",
+      "rotor",
+      "shaft forging",
+      "CrMoV rotor",
+      "12Cr rotor",
+      "AUSC rotor"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "blading",
+     "name": "Turbine Blading",
+     "level": 2,
+     "aliases": [
+      "blade",
+      "blading",
+      "turbine blade",
+      "stationary blade",
+      "moving blade",
+      "superalloy blade"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "casing",
+     "name": "Cylinders, Casings & Steam Chest",
+     "level": 2,
+     "aliases": [
+      "cylinder",
+      "casing",
+      "turbine casing",
+      "steam chest"
+     ],
+     "priority": "medium",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "valves",
+     "name": "Main Stop & Control Valves",
+     "level": 2,
+     "aliases": [
+      "main stop valve",
+      "control valve",
+      "intercept valve",
+      "valve body"
+     ],
+     "priority": "medium",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "seals",
+     "name": "Seals, Bearings & Glands",
+     "level": 2,
+     "aliases": [
+      "seal",
+      "labyrinth seal",
+      "brush seal",
+      "bearing",
+      "journal bearing",
+      "thrust bearing",
+      "gland"
+     ],
+     "priority": "medium",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "materials",
+     "name": "Special Steels & Superalloys",
+     "level": 2,
+     "aliases": [
+      "special steel",
+      "superalloy",
+      "Alloy 617",
+      "Alloy 625",
+      "CrMoV steel",
+      "9-12Cr steel",
+      "forging ingot"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "machine",
+     "name": "Heavy Machinery: Forging Press, CNC & Furnaces",
+     "level": 2,
+     "aliases": [
+      "forging press",
+      "machine tool",
+      "CNC",
+      "balancing rig",
+      "overspeed rig",
+      "heat treatment furnace"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": false
+    },
+    {
+     "id": "balancing",
+     "name": "Balancing, Overspeed & NDT",
+     "level": 2,
+     "aliases": [
+      "balancing",
+      "rotor balancing",
+      "overspeed test",
+      "NDT"
+     ],
+     "priority": "medium",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "aftermkt",
+     "name": "Aftermarket: Blade & Rotor Replacement",
+     "level": 2,
+     "aliases": [
+      "aftermarket",
+      "blade replacement",
+      "rotor replacement",
+      "overhaul"
+     ],
+     "priority": "high",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "recycle",
+     "name": "Decommissioning & Scrap Recovery",
+     "level": 2,
+     "aliases": [
+      "decommissioning",
+      "scrap recovery",
+      "recycling"
+     ],
+     "priority": "low",
+     "bottleneck": false,
+     "in_universe_coverage": false
+    }
+   ]
+  },
+  {
+   "slug": "turbine-generator-india",
+   "industry": "Turbine Generator & Electrical Train",
+   "scope": "INDIA",
+   "path": "industries/turbine-generator-india.html",
+   "analysis_date": "2026-10-08",
+   "universe": "NSE/BSE",
+   "sector": "Power Generation Equipment",
+   "derived_from": {
+    "industry": "Turbine Island (Turbomachinery)",
+    "slug": "turbine-island-india",
+    "node": "Generator & electrical train"
+   },
+   "drill_downs": [],
+   "nodes": [
+    {
+     "id": "stator",
+     "name": "Generator Stator & Winding",
+     "level": 2,
+     "aliases": [
+      "stator",
+      "stator winding",
+      "stator bar",
+      "armature"
+     ],
+     "priority": "medium",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "genrotor",
+     "name": "Generator Rotor & Retaining Rings",
+     "level": 2,
+     "aliases": [
+      "generator rotor",
+      "retaining ring",
+      "field winding",
+      "generator forging"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "exciter",
+     "name": "Exciter & AVR",
+     "level": 2,
+     "aliases": [
+      "exciter",
+      "AVR",
+      "excitation",
+      "voltage regulator"
+     ],
+     "priority": "medium",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "gencooling",
+     "name": "Generator Cooling (H2 / Water)",
+     "level": 2,
+     "aliases": [
+      "generator cooling",
+      "hydrogen cooling",
+      "seal oil",
+      "gas cooler"
+     ],
+     "priority": "medium",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "gcb",
+     "name": "Generator Circuit Breaker & Bus Ducts",
+     "level": 2,
+     "aliases": [
+      "generator circuit breaker",
+      "GCB",
+      "bus duct",
+      "isolated phase bus"
+     ],
+     "priority": "medium",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "gentransformer",
+     "name": "Generator Transformer",
+     "level": 2,
+     "aliases": [
+      "generator transformer",
+      "GT transformer",
+      "step-up transformer",
+      "OLTC",
+      "bushing"
+     ],
+     "priority": "medium",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "switchgear",
+     "name": "Switchgear & Switchyard",
+     "level": 2,
+     "aliases": [
+      "switchgear",
+      "switchyard",
+      "circuit breaker",
+      "isolator"
+     ],
+     "priority": "medium",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "protection",
+     "name": "Protection & Synchronising",
+     "level": 2,
+     "aliases": [
+      "protection relay",
+      "synchronising",
+      "metering"
+     ],
+     "priority": "medium",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "testing",
+     "name": "Generator Testing & Commissioning",
+     "level": 2,
+     "aliases": [
+      "generator testing",
+      "short circuit test",
+      "commissioning"
+     ],
+     "priority": "medium",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "aftermkt",
+     "name": "Aftermarket: Rewinds, Spares & Retrofits",
+     "level": 2,
+     "aliases": [
+      "rewind",
+      "aftermarket",
+      "spares",
+      "retrofit"
+     ],
+     "priority": "medium",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    }
+   ]
+  },
+  {
+   "slug": "condenser-heat-rejection-india",
+   "industry": "Condenser & Heat Rejection",
+   "scope": "INDIA",
+   "path": "industries/condenser-heat-rejection-india.html",
+   "analysis_date": "2026-10-08",
+   "universe": "NSE/BSE",
+   "sector": "Power Generation Equipment",
+   "derived_from": {
+    "industry": "Turbine Island (Turbomachinery)",
+    "slug": "turbine-island-india",
+    "node": "Condenser & heat rejection"
+   },
+   "drill_downs": [],
+   "nodes": [
+    {
+     "id": "condshell",
+     "name": "Condenser Shell, Water Boxes & Hotwell",
+     "level": 2,
+     "aliases": [
+      "condenser",
+      "surface condenser",
+      "shell",
+      "water box",
+      "hotwell"
+     ],
+     "priority": "medium",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "tubes",
+     "name": "Titanium / Stainless Tube Bundle",
+     "level": 2,
+     "aliases": [
+      "condenser tube",
+      "titanium tube",
+      "tube bundle",
+      "cooling tube"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": false
+    },
+    {
+     "id": "tubesheet",
+     "name": "Tubesheets & Tube-to-Tubesheet Joints",
+     "level": 2,
+     "aliases": [
+      "tubesheet",
+      "tube to tubesheet",
+      "seal weld"
+     ],
+     "priority": "medium",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "acc",
+     "name": "Air-Cooled Condenser (ACC)",
+     "level": 2,
+     "aliases": [
+      "air cooled condenser",
+      "ACC",
+      "dry cooling"
+     ],
+     "priority": "medium",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "cwp",
+     "name": "Circulating / Cooling-Water Pumps",
+     "level": 2,
+     "aliases": [
+      "circulating water pump",
+      "CW pump",
+      "cooling water pump"
+     ],
+     "priority": "medium",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "cooling",
+     "name": "Cooling System & Cooling Tower",
+     "level": 2,
+     "aliases": [
+      "cooling tower",
+      "cooling system",
+      "intake"
+     ],
+     "priority": "low",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "vacuum",
+     "name": "Vacuum & Air-Extraction System",
+     "level": 2,
+     "aliases": [
+      "vacuum pump",
+      "ejector",
+      "air extraction",
+      "air ingress"
+     ],
+     "priority": "medium",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "instrum",
+     "name": "Condenser Instrumentation",
+     "level": 2,
+     "aliases": [
+      "condenser instrumentation",
+      "fouling",
+      "salinity",
+      "ASME PTC 12.2"
+     ],
+     "priority": "medium",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "aftermkt",
+     "name": "Condenser Aftermarket: Inspection & Retubing",
+     "level": 2,
+     "aliases": [
+      "retubing",
+      "tube inspection",
+      "condenser overhaul"
+     ],
+     "priority": "medium",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    }
+   ]
+  },
+  {
+   "slug": "turbine-auxiliaries-india",
+   "industry": "Turbine Island Auxiliaries",
+   "scope": "INDIA",
+   "path": "industries/turbine-auxiliaries-india.html",
+   "analysis_date": "2026-10-08",
+   "universe": "NSE/BSE",
+   "sector": "Power Generation Equipment",
+   "derived_from": {
+    "industry": "Turbine Island (Turbomachinery)",
+    "slug": "turbine-island-india",
+    "node": "Feedwater & condensate / Turbine auxiliaries & control"
+   },
+   "drill_downs": [],
+   "nodes": [
+    {
+     "id": "condensate",
+     "name": "Condensate Extraction Pumps",
+     "level": 2,
+     "aliases": [
+      "condensate pump",
+      "condensate extraction pump"
+     ],
+     "priority": "medium",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "heaters",
+     "name": "LP / HP Feedwater Heaters",
+     "level": 2,
+     "aliases": [
+      "feedwater heater",
+      "LP heater",
+      "HP heater",
+      "feed heating"
+     ],
+     "priority": "medium",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "deaerator",
+     "name": "Deaerator",
+     "level": 2,
+     "aliases": [
+      "deaerator",
+      "de-aerator"
+     ],
+     "priority": "medium",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "bfp",
+     "name": "Boiler Feed Pumps",
+     "level": 2,
+     "aliases": [
+      "boiler feed pump",
+      "BFP",
+      "booster pump",
+      "feed pump"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "msr",
+     "name": "Moisture Separator Reheater (Nuclear)",
+     "level": 2,
+     "aliases": [
+      "moisture separator reheater",
+      "MSR",
+      "steam separator",
+      "steam dryer"
+     ],
+     "priority": "medium",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "lubeoil",
+     "name": "Lube & Control Oil System",
+     "level": 2,
+     "aliases": [
+      "lube oil",
+      "control oil",
+      "lubrication",
+      "oil cooler"
+     ],
+     "priority": "low",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "turninggear",
+     "name": "Turning Gear & Jacking Oil",
+     "level": 2,
+     "aliases": [
+      "turning gear",
+      "barring gear",
+      "jacking oil"
+     ],
+     "priority": "low",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "gov",
+     "name": "Turbine Governing, EHC & Protection",
+     "level": 2,
+     "aliases": [
+      "governing",
+      "electro-hydraulic control",
+      "EHC",
+      "overspeed trip",
+      "turbine control"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "dcs",
+     "name": "DCS / Plant Control & Instrumentation",
+     "level": 2,
+     "aliases": [
+      "DCS",
+      "distributed control system",
+      "instrumentation",
+      "plant automation"
+     ],
+     "priority": "medium",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "aftermkt",
+     "name": "Auxiliaries Aftermarket: Overhaul & Upgrades",
+     "level": 2,
+     "aliases": [
+      "aftermarket",
+      "overhaul",
+      "spares",
+      "control upgrade"
+     ],
+     "priority": "medium",
+     "bottleneck": false,
+     "in_universe_coverage": true
     }
    ]
   }
