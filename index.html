@@ -64,6 +64,21 @@
   .note { background: var(--surface); border:1px solid var(--border); border-left:3px solid var(--gold); border-radius:0 10px 10px 0; padding: 16px 20px; font-size: 13px; line-height:1.65; color: var(--text-dim); margin-top: 36px; }
   .note strong { color: var(--text); }
   .foot { font-family: var(--font-mono); font-size: 10.5px; color: var(--text-dim); margin-top: 28px; line-height:1.7; }
+
+  /* collapsible industry groups (registry index standard) */
+  .group { margin-bottom: 4px; }
+  .group-body { display: block; }
+  .group[data-collapsed="true"] .group-body { display: none; }
+  button.group-label { background: none; border: 0; padding: 0; width: 100%; text-align: left; cursor: pointer; }
+  button.group-label:hover { color: var(--text); }
+  button.group-label:focus-visible { outline: 2px solid var(--blue); outline-offset: 3px; border-radius: 3px; }
+  .gl-count { order: 1; font-family: var(--font-mono); font-size: 10px; font-weight: 600; letter-spacing: 0; color: var(--blue); background: var(--blue-dim); border: 1px solid var(--border); border-radius: 999px; padding: 1px 8px; }
+  .gl-chevron { order: 1; display: inline-block; width: 0; height: 0; margin-left: 4px; border-left: 4px solid transparent; border-right: 4px solid transparent; border-top: 5px solid var(--text-dim); transition: transform 0.15s ease; }
+  .group[data-collapsed="true"] .gl-chevron { transform: rotate(-90deg); }
+  .controls { display: flex; gap: 8px; margin-bottom: 6px; }
+  .ctrl-btn { font-family: var(--font-mono); font-size: 10.5px; font-weight: 600; letter-spacing: 0.5px; text-transform: uppercase; color: var(--text-dim); background: var(--surface); border: 1px solid var(--border); border-radius: 6px; padding: 5px 12px; cursor: pointer; transition: color 0.15s ease, border-color 0.15s ease; }
+  .ctrl-btn:hover { color: var(--blue); border-color: var(--border-bright); }
+  .ctrl-btn:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; }
 </style>
 </head>
 <body>
@@ -74,8 +89,15 @@
     <div class="subtitle">One page per industry analysed &middot; BOM tree + value-chain flowchart + click-through company map</div>
   </header>
 
+  <div class="controls animate" style="--i:1">
+    <button class="ctrl-btn" id="expand-all" type="button">Expand all</button>
+    <button class="ctrl-btn" id="collapse-all" type="button">Collapse all</button>
+  </div>
+
   <div class="animate" style="--i:1">
-    <div class="group-label">Power &amp; Electrical Infrastructure</div>
+    <section class="group" data-collapsed="true">
+      <button class="group-label" type="button" aria-expanded="false"><span class="gl-name">Power &amp; Electrical Infrastructure</span><span class="gl-count">5</span><span class="gl-chevron" aria-hidden="true"></span></button>
+      <div class="group-body">
 
     <a class="entry" href="industries/power-transmission-india.html">
       <div class="entry__name">Power Transmission <span class="entry__scope">INDIA</span></div>
@@ -142,7 +164,12 @@
       </div>
     </a>
 
-    <div class="group-label">Renewable Energy</div>
+    </div>
+    </section>
+
+    <section class="group" data-collapsed="true">
+      <button class="group-label" type="button" aria-expanded="false"><span class="gl-name">Renewable Energy</span><span class="gl-count">3</span><span class="gl-chevron" aria-hidden="true"></span></button>
+      <div class="group-body">
 
     <a class="entry" href="industries/solar-pv-india.html">
       <div class="entry__name">Solar PV <span class="entry__scope">INDIA</span></div>
@@ -183,7 +210,12 @@
       </div>
     </a>
 
-    <div class="group-label">Nuclear Energy</div>
+    </div>
+    </section>
+
+    <section class="group" data-collapsed="true">
+      <button class="group-label" type="button" aria-expanded="false"><span class="gl-name">Nuclear Energy</span><span class="gl-count">3</span><span class="gl-chevron" aria-hidden="true"></span></button>
+      <div class="group-body">
 
     <a class="entry" href="industries/smr-india.html">
       <div class="entry__name">Small Modular Reactor <span class="entry__scope">INDIA</span></div>
@@ -226,7 +258,12 @@
       </div>
     </a>
 
-    <div class="group-label">Power Generation Equipment</div>
+    </div>
+    </section>
+
+    <section class="group" data-collapsed="true">
+      <button class="group-label" type="button" aria-expanded="false"><span class="gl-name">Power Generation Equipment</span><span class="gl-count">5</span><span class="gl-chevron" aria-hidden="true"></span></button>
+      <div class="group-body">
 
     <a class="entry" href="industries/turbine-island-india.html">
       <div class="entry__name">Turbine Island (Turbomachinery) <span class="entry__scope">INDIA</span></div>
@@ -298,7 +335,12 @@
       </div>
     </a>
 
-    <div class="group-label">Telecom</div>
+    </div>
+    </section>
+
+    <section class="group" data-collapsed="true">
+      <button class="group-label" type="button" aria-expanded="false"><span class="gl-name">Telecom</span><span class="gl-count">10</span><span class="gl-chevron" aria-hidden="true"></span></button>
+      <div class="group-body">
 
     <a class="entry" href="industries/telecom-india.html">
       <div class="entry__name">Telecom <span class="entry__scope">INDIA</span></div>
@@ -431,6 +473,8 @@
     </a>
 
   </div>
+    </section>
+</div>
 
   <div class="note animate" style="--i:2">
     <strong>How to read an entry.</strong> Each page opens with a KPI strip, then a hierarchical <strong>BOM tree</strong> (Level 0 → systems → components, HIGH-priority nodes emphasised), a linear <strong>value-chain ladder</strong> (raw material → aftermarket, with supplier tiers), a <strong>click-through company map</strong> (click any node to see its listed companies, exposure type and evidence), and a company × node matrix. Entry identity is <strong>industry + geographic scope</strong>; the same industry analysed for a different scope gets its own page rather than overwriting this one.
@@ -440,5 +484,27 @@
     Self-contained pages &middot; no build step &middot; served via GitHub Pages. Numbers inside each entry are date-stamped to that entry's analysis date; time-sensitive facts should be re-checked before use.
   </p>
 </div>
+
+<script>
+  (function () {
+    var groups = Array.prototype.slice.call(document.querySelectorAll('.group'));
+    function setGroup(g, collapsed) {
+      g.setAttribute('data-collapsed', collapsed ? 'true' : 'false');
+      var b = g.querySelector('.group-label');
+      if (b) { b.setAttribute('aria-expanded', collapsed ? 'false' : 'true'); }
+    }
+    groups.forEach(function (g) {
+      var b = g.querySelector('.group-label');
+      if (!b) { return; }
+      b.addEventListener('click', function () {
+        setGroup(g, g.getAttribute('data-collapsed') !== 'true');
+      });
+    });
+    var ea = document.getElementById('expand-all');
+    var ca = document.getElementById('collapse-all');
+    if (ea) { ea.addEventListener('click', function () { groups.forEach(function (g) { setGroup(g, false); }); }); }
+    if (ca) { ca.addEventListener('click', function () { groups.forEach(function (g) { setGroup(g, true); }); }); }
+  })();
+</script>
 </body>
 </html>
