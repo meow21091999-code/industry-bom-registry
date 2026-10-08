@@ -497,7 +497,10 @@
       var b = g.querySelector('.group-label');
       if (!b) { return; }
       b.addEventListener('click', function () {
-        setGroup(g, g.getAttribute('data-collapsed') !== 'true');
+        // accordion: the clicked group becomes the only open one; every other
+        // group closes. "Collapse all" is the only way to end with nothing open.
+        groups.forEach(function (other) { setGroup(other, true); });
+        setGroup(g, false);
       });
     });
     var ea = document.getElementById('expand-all');
