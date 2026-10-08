@@ -1,2043 +1,2279 @@
 {
-  "registry": "Industry BOM Registry",
-  "description": "Machine-readable node index. For every entry, the node names it contains plus the owning entry slug. Used for DEDUP (industry+scope already analysed) and LINEAGE (auto-linking a new industry to a parent when its name matches a node name). Update on every publish.",
-  "generated": "2026-10-07",
-  "entries": [
+ "registry": "Industry BOM Registry",
+ "description": "Machine-readable node index. For every entry, the node names it contains plus the owning entry slug. Used for DEDUP (industry+scope already analysed) and LINEAGE (auto-linking a new industry to a parent when its name matches a node name). Update on every publish.",
+ "generated": "2026-10-08",
+ "entries": [
+  {
+   "slug": "power-transmission-india",
+   "industry": "Power Transmission",
+   "scope": "INDIA",
+   "path": "industries/power-transmission-india.html",
+   "analysis_date": "2026-10-07",
+   "universe": "NSE/BSE",
+   "sector": "Power & Electrical Infrastructure",
+   "derived_from": null,
+   "drill_downs": [
+    "overhead-transmission-line-india",
+    "substation-equipment-india",
+    "hvdc-power-electronics-india",
+    "ehv-hv-cables-india"
+   ],
+   "nodes": [
     {
-      "slug": "power-transmission-india",
-      "industry": "Power Transmission",
-      "scope": "INDIA",
-      "path": "industries/power-transmission-india.html",
-      "analysis_date": "2026-10-07",
-      "universe": "NSE/BSE",
-      "sector": "Power & Electrical Infrastructure",
-      "derived_from": null,
-      "drill_downs": [
-        "overhead-transmission-line-india",
-        "substation-equipment-india",
-        "hvdc-power-electronics-india",
-        "ehv-hv-cables-india"
-      ],
-      "nodes": [
-        {
-          "id": "ehv",
-          "name": "EHV Power Transformers & Reactors",
-          "level": 2,
-          "aliases": [
-            "power transformer",
-            "power transformers",
-            "EHV transformer",
-            "ICT",
-            "ICTs",
-            "interconnecting transformer",
-            "auto-transformer",
-            "autotransformer",
-            "shunt reactor",
-            "series reactor",
-            "transformer"
-          ],
-          "priority": "high",
-          "bottleneck": true,
-          "in_universe_coverage": true
-        },
-        {
-          "id": "hvdc",
-          "name": "HVDC Converter Stations & Control",
-          "level": 2,
-          "aliases": [
-            "HVDC",
-            "converter station",
-            "LCC",
-            "VSC",
-            "converter valve",
-            "thyristor valve",
-            "IGBT valve",
-            "converter transformer",
-            "HVDC control"
-          ],
-          "priority": "high",
-          "bottleneck": true,
-          "in_universe_coverage": true
-        },
-        {
-          "id": "statcom",
-          "name": "STATCOM / Synchronous Condensers / FACTS",
-          "level": 2,
-          "aliases": [
-            "STATCOM",
-            "synchronous condenser",
-            "SynCon",
-            "FACTS",
-            "SVC",
-            "reactive compensation",
-            "series compensation",
-            "static synchronous compensator"
-          ],
-          "priority": "high",
-          "bottleneck": true,
-          "in_universe_coverage": true
-        },
-        {
-          "id": "gis",
-          "name": "GIS / AIS Switchgear",
-          "level": 2,
-          "aliases": [
-            "gas insulated switchgear",
-            "GIS",
-            "air insulated switchgear",
-            "AIS",
-            "circuit breaker",
-            "disconnector",
-            "isolator",
-            "gas insulated bus duct",
-            "switchgear"
-          ],
-          "priority": "high",
-          "bottleneck": true,
-          "in_universe_coverage": true
-        },
-        {
-          "id": "conductor",
-          "name": "Conductors",
-          "level": 2,
-          "aliases": [
-            "conductor",
-            "ACSR",
-            "AAAC",
-            "HTLS",
-            "ACCC",
-            "aluminium conductor",
-            "aluminum conductor",
-            "copper conductor",
-            "all aluminium alloy conductor"
-          ],
-          "priority": "high",
-          "bottleneck": false,
-          "in_universe_coverage": true
-        },
-        {
-          "id": "insulator",
-          "name": "Insulators",
-          "level": 2,
-          "aliases": [
-            "insulator",
-            "porcelain insulator",
-            "composite insulator",
-            "disc insulator",
-            "hollow core insulator",
-            "long rod insulator"
-          ],
-          "priority": "medium",
-          "bottleneck": false,
-          "in_universe_coverage": true
-        },
-        {
-          "id": "towers",
-          "name": "Towers & Transmission EPC",
-          "level": 2,
-          "aliases": [
-            "lattice tower",
-            "transmission tower",
-            "monopole",
-            "transmission line EPC",
-            "T&D EPC",
-            "tower",
-            "line construction"
-          ],
-          "priority": "high",
-          "bottleneck": false,
-          "in_universe_coverage": true
-        },
-        {
-          "id": "cable",
-          "name": "Cables (EHV / HV)",
-          "level": 2,
-          "aliases": [
-            "power cable",
-            "EHV cable",
-            "HV cable",
-            "XLPE cable",
-            "submarine cable",
-            "underground cable",
-            "OPGW",
-            "cable"
-          ],
-          "priority": "medium",
-          "bottleneck": false,
-          "in_universe_coverage": true
-        },
-        {
-          "id": "developer",
-          "name": "Transmission Developer / Owner",
-          "level": 1,
-          "aliases": [
-            "transmission developer",
-            "transmission utility",
-            "TBCB developer",
-            "BOOT",
-            "transmission SPV",
-            "transmission InvIT",
-            "central transmission utility",
-            "transmission asset owner"
-          ],
-          "priority": "high",
-          "bottleneck": false,
-          "in_universe_coverage": true
-        },
-        {
-          "id": "txfroil",
-          "name": "Transformer Oil",
-          "level": 2,
-          "aliases": [
-            "transformer oil",
-            "insulating oil",
-            "ester fluid",
-            "naphthenic oil",
-            "specialty oil"
-          ],
-          "priority": "medium",
-          "bottleneck": false,
-          "in_universe_coverage": true
-        },
-        {
-          "id": "crgo",
-          "name": "CRGO Electrical Steel",
-          "level": 4,
-          "aliases": [
-            "CRGO",
-            "grain oriented electrical steel",
-            "GOES",
-            "electrical steel",
-            "core steel",
-            "cold rolled grain oriented steel"
-          ],
-          "priority": "high",
-          "bottleneck": true,
-          "in_universe_coverage": false,
-          "coverage_note": "No NSE/BSE pure-play. Nearest: JSW Steel (JSW-JFE is a 50:50 JV)."
-        },
-        {
-          "id": "semi",
-          "name": "Power Semiconductors (IGBT / SiC)",
-          "level": 3,
-          "aliases": [
-            "IGBT",
-            "SiC",
-            "silicon carbide",
-            "thyristor",
-            "power semiconductor",
-            "HV capacitor",
-            "power module"
-          ],
-          "priority": "high",
-          "bottleneck": true,
-          "in_universe_coverage": false,
-          "coverage_note": "No listed pure-play in India. Nearest: BHEL / Hitachi as integrators. Context: Hyosung T&D India, TBEA, NR Electric."
-        },
-        {
-          "id": "tap",
-          "name": "Tap Changers, Bushings, Pressboard",
-          "level": 3,
-          "aliases": [
-            "tap changer",
-            "OLTC",
-            "on-load tap changer",
-            "bushing",
-            "pressboard",
-            "kraft paper",
-            "RIP bushing"
-          ],
-          "priority": "medium",
-          "bottleneck": false,
-          "in_universe_coverage": false,
-          "coverage_note": "No listed pure-play in India; largely foreign (MR Reinhausen, Hitachi, ABB)."
-        },
-        {
-          "id": "syncon",
-          "name": "Synchronous Condenser Machines",
-          "level": 3,
-          "aliases": [
-            "synchronous condenser",
-            "rotating machine",
-            "flywheel",
-            "inertia",
-            "salient pole machine",
-            "cylindrical rotor machine"
-          ],
-          "priority": "medium",
-          "bottleneck": false,
-          "in_universe_coverage": true
-        },
-        {
-          "id": "overhead-line",
-          "name": "Overhead Transmission Line",
-          "level": 1,
-          "aliases": [
-            "overhead line",
-            "transmission line",
-            "OH line",
-            "overhead transmission"
-          ],
-          "priority": "high",
-          "bottleneck": false,
-          "in_universe_coverage": true,
-          "promoted_to": "overhead-transmission-line-india"
-        },
-        {
-          "id": "substation",
-          "name": "Substation Equipment",
-          "level": 1,
-          "aliases": [
-            "substation",
-            "switching station",
-            "substation equipment",
-            "pooling station",
-            "switchyard"
-          ],
-          "priority": "high",
-          "bottleneck": false,
-          "in_universe_coverage": true
-        },
-        {
-          "id": "hvdcepe",
-          "name": "HVDC & Power Electronics",
-          "level": 1,
-          "aliases": [
-            "power electronics",
-            "HVDC system",
-            "FACTS system",
-            "converter"
-          ],
-          "priority": "high",
-          "bottleneck": true,
-          "in_universe_coverage": true
-        },
-        {
-          "id": "support-systems",
-          "name": "Support Systems",
-          "level": 1,
-          "aliases": [
-            "earthing",
-            "lightning protection",
-            "station battery",
-            "auxiliary transformer",
-            "fire protection",
-            "DC system"
-          ],
-          "priority": "medium",
-          "bottleneck": false,
-          "in_universe_coverage": true
-        },
-        {
-          "id": "software-control",
-          "name": "Software / Control",
-          "level": 1,
-          "aliases": [
-            "SCADA",
-            "EMS",
-            "substation automation",
-            "IEC 61850",
-            "protection relay",
-            "grid automation",
-            "HVDC control"
-          ],
-          "priority": "medium",
-          "bottleneck": false,
-          "in_universe_coverage": true
-        }
-      ]
+     "id": "ehv",
+     "name": "EHV Power Transformers & Reactors",
+     "level": 2,
+     "aliases": [
+      "power transformer",
+      "power transformers",
+      "EHV transformer",
+      "ICT",
+      "ICTs",
+      "interconnecting transformer",
+      "auto-transformer",
+      "autotransformer",
+      "shunt reactor",
+      "series reactor",
+      "transformer"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": true
     },
     {
-      "slug": "overhead-transmission-line-india",
-      "industry": "Overhead Transmission Line",
-      "scope": "INDIA",
-      "path": "industries/overhead-transmission-line-india.html",
-      "analysis_date": "2026-10-07",
-      "universe": "NSE/BSE",
-      "sector": "Power & Electrical Infrastructure",
-      "derived_from": {
-        "industry": "Power Transmission",
-        "slug": "power-transmission-india",
-        "node": "Overhead Transmission Line"
-      },
-      "drill_downs": [],
-      "nodes": [
-        {
-          "id": "conductor",
-          "name": "Conductors",
-          "level": 1,
-          "aliases": [
-            "conductor",
-            "ACSR",
-            "AAAC",
-            "AL-59",
-            "HTLS",
-            "ACCC",
-            "ACSS",
-            "aluminium conductor"
-          ],
-          "priority": "high",
-          "bottleneck": false,
-          "in_universe_coverage": true
-        },
-        {
-          "id": "tower",
-          "name": "Transmission Towers / Structures",
-          "level": 1,
-          "aliases": [
-            "transmission tower",
-            "lattice tower",
-            "monopole",
-            "guyed tower",
-            "tower"
-          ],
-          "priority": "high",
-          "bottleneck": false,
-          "in_universe_coverage": true
-        },
-        {
-          "id": "insulator",
-          "name": "Insulators",
-          "level": 1,
-          "aliases": [
-            "insulator",
-            "disc insulator",
-            "porcelain insulator",
-            "composite insulator",
-            "long rod",
-            "hollow insulator"
-          ],
-          "priority": "high",
-          "bottleneck": false,
-          "in_universe_coverage": true
-        },
-        {
-          "id": "hardware",
-          "name": "Hardware Fittings & Stringing Accessories",
-          "level": 1,
-          "aliases": [
-            "hardware fittings",
-            "clamps",
-            "spacers",
-            "dampers",
-            "stringing",
-            "tension string",
-            "suspension string"
-          ],
-          "priority": "high",
-          "bottleneck": false,
-          "in_universe_coverage": false,
-          "coverage_note": "No NSE/BSE pure-play; TAG, IAC, Asbesco, Ventura, MMPT all unlisted."
-        },
-        {
-          "id": "opgw",
-          "name": "Earth Wire / OPGW",
-          "level": 1,
-          "aliases": [
-            "OPGW",
-            "optical ground wire",
-            "earth wire",
-            "GSW",
-            "ADSS"
-          ],
-          "priority": "high",
-          "bottleneck": false,
-          "in_universe_coverage": true
-        },
-        {
-          "id": "foundation",
-          "name": "Foundations & Civil Works",
-          "level": 1,
-          "aliases": [
-            "foundation",
-            "civil works",
-            "concrete",
-            "stub",
-            "earthing"
-          ],
-          "priority": "medium",
-          "bottleneck": false,
-          "in_universe_coverage": false,
-          "coverage_note": "No line-specific listed player; proxy = cement / steel majors."
-        },
-        {
-          "id": "row",
-          "name": "Right-of-Way & Clearances",
-          "level": 1,
-          "aliases": [
-            "right of way",
-            "ROW",
-            "forest clearance",
-            "land compensation",
-            "clearance"
-          ],
-          "priority": "high",
-          "bottleneck": true,
-          "in_universe_coverage": false,
-          "coverage_note": "Regulatory / non-physical — not investable. The binding execution constraint."
-        },
-        {
-          "id": "erection",
-          "name": "Erection & Stringing (EPC)",
-          "level": 1,
-          "aliases": [
-            "EPC",
-            "transmission line EPC",
-            "stringing",
-            "line construction",
-            "erection"
-          ],
-          "priority": "high",
-          "bottleneck": false,
-          "in_universe_coverage": true
-        },
-        {
-          "id": "testing",
-          "name": "Testing, Protection & Communication",
-          "level": 1,
-          "aliases": [
-            "type test",
-            "tower load test",
-            "RIV",
-            "SCADA",
-            "teleprotection",
-            "testing"
-          ],
-          "priority": "medium",
-          "bottleneck": false,
-          "in_universe_coverage": false,
-          "coverage_note": "Accredited type-test labs mostly unlisted (TAG lab; Skipper load-test station)."
-        },
-        {
-          "id": "om",
-          "name": "O&M / End-of-Life",
-          "level": 1,
-          "aliases": [
-            "O&M",
-            "maintenance",
-            "reconductoring",
-            "replacement",
-            "recycling",
-            "aftermarket"
-          ],
-          "priority": "medium",
-          "bottleneck": false,
-          "in_universe_coverage": true
-        },
-        {
-          "id": "reconductoring",
-          "name": "Reconductoring (asset-light growth)",
-          "level": 2,
-          "aliases": [
-            "reconductoring",
-            "HTLS upgrade",
-            "re-conductoring",
-            "capacity uprating"
-          ],
-          "priority": "high",
-          "bottleneck": false,
-          "in_universe_coverage": true
-        },
-        {
-          "id": "composite-core",
-          "name": "Composite / Invar Conductor Core",
-          "level": 3,
-          "aliases": [
-            "composite core",
-            "carbon core",
-            "Invar",
-            "ACCC core",
-            "HVCRC"
-          ],
-          "priority": "high",
-          "bottleneck": false,
-          "in_universe_coverage": false,
-          "coverage_note": "Imported (CTC Global / Epsilon Composite). No NSE/BSE pure-play."
-        }
-      ]
+     "id": "hvdc",
+     "name": "HVDC Converter Stations & Control",
+     "level": 2,
+     "aliases": [
+      "HVDC",
+      "converter station",
+      "LCC",
+      "VSC",
+      "converter valve",
+      "thyristor valve",
+      "IGBT valve",
+      "converter transformer",
+      "HVDC control"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": true
     },
     {
-      "slug": "substation-equipment-india",
-      "industry": "Substation Equipment",
-      "scope": "INDIA",
-      "path": "industries/substation-equipment-india.html",
-      "analysis_date": "2026-10-07",
-      "universe": "NSE/BSE",
-      "sector": "Power & Electrical Infrastructure",
-      "derived_from": {
-        "industry": "Power Transmission",
-        "slug": "power-transmission-india",
-        "node": "Substation Equipment"
-      },
-      "drill_downs": [
-        "hvdc-power-electronics-india"
-      ],
-      "nodes": [
-        {
-          "id": "xfmr",
-          "name": "Power Transformers & Reactors",
-          "level": 1,
-          "aliases": [
-            "power transformer",
-            "power transformers",
-            "ICT",
-            "auto-transformer",
-            "autotransformer",
-            "shunt reactor",
-            "reactor",
-            "transformer"
-          ],
-          "priority": "high",
-          "bottleneck": true,
-          "in_universe_coverage": true
-        },
-        {
-          "id": "crgo",
-          "name": "CRGO Electrical Steel",
-          "level": 2,
-          "aliases": [
-            "CRGO",
-            "grain oriented electrical steel",
-            "GOES",
-            "electrical steel",
-            "core steel"
-          ],
-          "priority": "high",
-          "bottleneck": true,
-          "in_universe_coverage": false,
-          "coverage_note": "No NSE/BSE pure-play. Nearest: JSW Steel (JSW-JFE is a 50:50 JV, Nashik) and SAIL (Bokaro announced). PLI 1.1 threshold cut to Rs 3,000 cr / 50,000 t."
-        },
-        {
-          "id": "oltc",
-          "name": "OLTC / Tap Changers",
-          "level": 2,
-          "aliases": [
-            "OLTC",
-            "on-load tap changer",
-            "tap changer",
-            "DETC",
-            "off-circuit tap changer"
-          ],
-          "priority": "high",
-          "bottleneck": true,
-          "in_universe_coverage": false,
-          "coverage_note": "No listed pure-play. EMR (Easun-MR JV) and CTR unlisted; >80% of advanced vacuum OLTCs imported (Reinhausen ~35-40%)."
-        },
-        {
-          "id": "bushing",
-          "name": "EHV Bushings",
-          "level": 2,
-          "aliases": [
-            "bushing",
-            "RIP bushing",
-            "porcelain bushing",
-            "condenser bushing"
-          ],
-          "priority": "high",
-          "bottleneck": false,
-          "in_universe_coverage": false,
-          "coverage_note": "Largely imported (Trench, Modern/HSP). CG Power has partial in-house capability. No listed pure-play."
-        },
-        {
-          "id": "txfroil",
-          "name": "Transformer Oil",
-          "level": 2,
-          "aliases": [
-            "transformer oil",
-            "insulating oil",
-            "ester fluid",
-            "naphthenic oil",
-            "specialty oil"
-          ],
-          "priority": "medium",
-          "bottleneck": false,
-          "in_universe_coverage": true
-        },
-        {
-          "id": "swgr",
-          "name": "GIS / AIS Switchgear",
-          "level": 1,
-          "aliases": [
-            "gas insulated switchgear",
-            "GIS",
-            "air insulated switchgear",
-            "AIS",
-            "circuit breaker",
-            "disconnector",
-            "isolator",
-            "switchgear"
-          ],
-          "priority": "high",
-          "bottleneck": true,
-          "in_universe_coverage": true
-        },
-        {
-          "id": "sf6",
-          "name": "SF6-free / Eco-efficient Switchgear",
-          "level": 2,
-          "aliases": [
-            "SF6",
-            "SF6-free",
-            "EconiQ",
-            "Blue GIS",
-            "eco-efficient switchgear",
-            "fluoronitrile"
-          ],
-          "priority": "high",
-          "bottleneck": true,
-          "in_universe_coverage": true
-        },
-        {
-          "id": "vcb",
-          "name": "Vacuum Interrupters",
-          "level": 2,
-          "aliases": [
-            "vacuum interrupter",
-            "vacuum bottle",
-            "VI"
-          ],
-          "priority": "medium",
-          "bottleneck": false,
-          "in_universe_coverage": false,
-          "coverage_note": "Largely imported; demonstrated but not scaled in India. No listed pure-play."
-        },
-        {
-          "id": "instr",
-          "name": "Instrument Transformers (CT / PT)",
-          "level": 1,
-          "aliases": [
-            "instrument transformer",
-            "current transformer",
-            "CT",
-            "potential transformer",
-            "PT",
-            "voltage transformer",
-            "CVT"
-          ],
-          "priority": "medium",
-          "bottleneck": false,
-          "in_universe_coverage": true
-        },
-        {
-          "id": "prot",
-          "name": "Protection, Control & Automation",
-          "level": 1,
-          "aliases": [
-            "protection relay",
-            "IED",
-            "SCADA",
-            "substation automation",
-            "IEC 61850",
-            "grid automation",
-            "control and relay panel",
-            "CRP"
-          ],
-          "priority": "high",
-          "bottleneck": false,
-          "in_universe_coverage": true
-        },
-        {
-          "id": "relay",
-          "name": "Numerical Relays / IEDs",
-          "level": 2,
-          "aliases": [
-            "numerical relay",
-            "IED",
-            "intelligent electronic device",
-            "protection relay"
-          ],
-          "priority": "high",
-          "bottleneck": true,
-          "in_universe_coverage": false,
-          "coverage_note": "Core technology foreign (ABB/Hitachi/Siemens/GE/Schneider). India exposure via MNC subsidiaries, not indigenous design."
-        },
-        {
-          "id": "hvdc",
-          "name": "HVDC Converter Stations",
-          "level": 1,
-          "aliases": [
-            "HVDC",
-            "converter station",
-            "LCC",
-            "VSC",
-            "converter valve",
-            "thyristor valve",
-            "IGBT valve"
-          ],
-          "priority": "high",
-          "bottleneck": true,
-          "in_universe_coverage": true
-        },
-        {
-          "id": "valve",
-          "name": "HVDC Converter Valves",
-          "level": 2,
-          "aliases": [
-            "converter valve",
-            "thyristor valve",
-            "IGBT valve",
-            "HVDC valve"
-          ],
-          "priority": "high",
-          "bottleneck": true,
-          "in_universe_coverage": false,
-          "coverage_note": "Supplied inside HVDC consortia (Hitachi/GE/Siemens/BHEL). No listed pure-play."
-        },
-        {
-          "id": "cxfmr",
-          "name": "Converter Transformers",
-          "level": 2,
-          "aliases": [
-            "converter transformer",
-            "HVDC transformer"
-          ],
-          "priority": "high",
-          "bottleneck": false,
-          "in_universe_coverage": true
-        },
-        {
-          "id": "statcom",
-          "name": "STATCOM / SVC / FACTS",
-          "level": 2,
-          "aliases": [
-            "STATCOM",
-            "SVC",
-            "FACTS",
-            "reactive compensation",
-            "synchronous condenser"
-          ],
-          "priority": "medium",
-          "bottleneck": false,
-          "in_universe_coverage": true
-        },
-        {
-          "id": "conductor",
-          "name": "Busbars & Conductors",
-          "level": 1,
-          "aliases": [
-            "busbar",
-            "conductor",
-            "ACSR",
-            "CTC",
-            "PICC",
-            "aluminium conductor",
-            "bus duct"
-          ],
-          "priority": "medium",
-          "bottleneck": false,
-          "in_universe_coverage": true
-        },
-        {
-          "id": "aux",
-          "name": "Auxiliary & DC Systems",
-          "level": 1,
-          "aliases": [
-            "auxiliary transformer",
-            "station battery",
-            "DC system",
-            "LT panel",
-            "charger",
-            "DG set"
-          ],
-          "priority": "medium",
-          "bottleneck": false,
-          "in_universe_coverage": true
-        },
-        {
-          "id": "cable",
-          "name": "Cables & Wiring",
-          "level": 1,
-          "aliases": [
-            "power cable",
-            "control cable",
-            "XLPE cable",
-            "cable",
-            "wiring"
-          ],
-          "priority": "medium",
-          "bottleneck": false,
-          "in_universe_coverage": true
-        },
-        {
-          "id": "civil",
-          "name": "Civil, Structures & Grounding",
-          "level": 1,
-          "aliases": [
-            "gantry",
-            "foundation",
-            "earthing",
-            "grounding",
-            "control building",
-            "civil works",
-            "structure"
-          ],
-          "priority": "medium",
-          "bottleneck": false,
-          "in_universe_coverage": false,
-          "coverage_note": "No station-specific listed player; proxy = cement/steel majors and EPC firms."
-        },
-        {
-          "id": "om",
-          "name": "Aftermarket / Service",
-          "level": 1,
-          "aliases": [
-            "service",
-            "retrofit",
-            "spares",
-            "O&M",
-            "maintenance",
-            "refurbishment",
-            "GIS upgrade"
-          ],
-          "priority": "medium",
-          "bottleneck": false,
-          "in_universe_coverage": true
-        },
-        {
-          "id": "recycle",
-          "name": "End-of-life / Recycling",
-          "level": 2,
-          "aliases": [
-            "recycling",
-            "end of life",
-            "scrap",
-            "copper recovery",
-            "oil recovery"
-          ],
-          "priority": "medium",
-          "bottleneck": false,
-          "in_universe_coverage": false,
-          "coverage_note": "Copper/steel/oil recovery real but unsized; no listed pure-play."
-        }
-      ]
+     "id": "statcom",
+     "name": "STATCOM / Synchronous Condensers / FACTS",
+     "level": 2,
+     "aliases": [
+      "STATCOM",
+      "synchronous condenser",
+      "SynCon",
+      "FACTS",
+      "SVC",
+      "reactive compensation",
+      "series compensation",
+      "static synchronous compensator"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": true
     },
     {
-      "slug": "hvdc-power-electronics-india",
-      "industry": "HVDC & Power Electronics",
-      "scope": "INDIA",
-      "path": "industries/hvdc-power-electronics-india.html",
-      "analysis_date": "2026-10-07",
-      "universe": "NSE/BSE",
-      "sector": "Power & Electrical Infrastructure",
-      "derived_from": [
-        {
-          "industry": "Power Transmission",
-          "slug": "power-transmission-india",
-          "node": "HVDC & Power Electronics"
-        },
-        {
-          "industry": "Substation Equipment",
-          "slug": "substation-equipment-india",
-          "node": "HVDC Converter Stations / HVDC Converter Valves"
-        }
-      ],
-      "drill_downs": [],
-      "nodes": [
-        {
-          "id": "conv",
-          "name": "HVDC Converter Stations",
-          "level": 1,
-          "aliases": [
-            "HVDC",
-            "converter station",
-            "converter terminal",
-            "HVDC terminal",
-            "LCC",
-            "VSC",
-            "converter valve",
-            "thyristor valve",
-            "IGBT valve",
-            "MMC",
-            "HVDC control"
-          ],
-          "priority": "high",
-          "bottleneck": true,
-          "in_universe_coverage": true
-        },
-        {
-          "id": "valve",
-          "name": "Converter Valves (Thyristor / IGBT / MMC)",
-          "level": 2,
-          "aliases": [
-            "converter valve",
-            "thyristor valve",
-            "IGBT valve",
-            "HVDC valve",
-            "MMC submodule",
-            "valve assembly"
-          ],
-          "priority": "high",
-          "bottleneck": true,
-          "in_universe_coverage": false
-        },
-        {
-          "id": "semi",
-          "name": "Power Semiconductors (Thyristor / IGBT / SiC)",
-          "level": 3,
-          "aliases": [
-            "IGBT",
-            "thyristor",
-            "SiC",
-            "silicon carbide",
-            "power semiconductor",
-            "power module",
-            "power electronics semiconductor"
-          ],
-          "priority": "high",
-          "bottleneck": true,
-          "in_universe_coverage": false
-        },
-        {
-          "id": "cxfmr",
-          "name": "Converter Transformers & Reactors",
-          "level": 2,
-          "aliases": [
-            "converter transformer",
-            "HVDC transformer",
-            "smoothing reactor",
-            "valve reactor",
-            "HVDC reactor"
-          ],
-          "priority": "high",
-          "bottleneck": true,
-          "in_universe_coverage": true
-        },
-        {
-          "id": "reactor",
-          "name": "Smoothing & Valve Reactors",
-          "level": 2,
-          "aliases": [
-            "smoothing reactor",
-            "valve reactor",
-            "DC reactor",
-            "HVDC reactor"
-          ],
-          "priority": "medium",
-          "bottleneck": false,
-          "in_universe_coverage": true
-        },
-        {
-          "id": "ctrl",
-          "name": "Control & Protection Systems",
-          "level": 2,
-          "aliases": [
-            "HVDC control",
-            "MACH",
-            "converter control",
-            "pole control",
-            "HVDC protection",
-            "SCADA",
-            "control and protection"
-          ],
-          "priority": "high",
-          "bottleneck": true,
-          "in_universe_coverage": true
-        },
-        {
-          "id": "ied",
-          "name": "Numerical Relays / IEDs",
-          "level": 3,
-          "aliases": [
-            "IED",
-            "numerical relay",
-            "protection relay",
-            "grid automation"
-          ],
-          "priority": "medium",
-          "bottleneck": false,
-          "in_universe_coverage": false
-        },
-        {
-          "id": "cable",
-          "name": "HVDC Cables (MI / XLPE DC)",
-          "level": 2,
-          "aliases": [
-            "HVDC cable",
-            "XLPE DC cable",
-            "MI cable",
-            "mass impregnated cable",
-            "submarine cable",
-            "DC cable",
-            "offshore cable"
-          ],
-          "priority": "high",
-          "bottleneck": true,
-          "in_universe_coverage": true
-        },
-        {
-          "id": "xlpe",
-          "name": "HVDC-grade XLPE DC Compound & Accessories",
-          "level": 3,
-          "aliases": [
-            "XLPE compound",
-            "DC insulation compound",
-            "cable joint",
-            "cable termination",
-            "HVDC accessory"
-          ],
-          "priority": "high",
-          "bottleneck": true,
-          "in_universe_coverage": false
-        },
-        {
-          "id": "acsub",
-          "name": "AC Substation Interface (Switchgear / ICTs / Filters)",
-          "level": 2,
-          "aliases": [
-            "GIS",
-            "AIS",
-            "switchgear",
-            "interconnecting transformer",
-            "ICT",
-            "harmonic filter",
-            "instrument transformer"
-          ],
-          "priority": "medium",
-          "bottleneck": false,
-          "in_universe_coverage": true
-        },
-        {
-          "id": "filter",
-          "name": "Harmonic Filters & HV Capacitors",
-          "level": 3,
-          "aliases": [
-            "harmonic filter",
-            "HV capacitor",
-            "capacitor bank",
-            "AC filter",
-            "DC filter"
-          ],
-          "priority": "medium",
-          "bottleneck": false,
-          "in_universe_coverage": false
-        },
-        {
-          "id": "cooling",
-          "name": "Valve Cooling (Deionised-water skids)",
-          "level": 3,
-          "aliases": [
-            "valve cooling",
-            "deionised water cooling",
-            "cooling skid",
-            "HVDC cooling"
-          ],
-          "priority": "medium",
-          "bottleneck": false,
-          "in_universe_coverage": false
-        },
-        {
-          "id": "epe",
-          "name": "HVDC EPC, Line & Civil",
-          "level": 2,
-          "aliases": [
-            "HVDC EPC",
-            "transmission line EPC",
-            "T&D EPC",
-            "civil works",
-            "tower",
-            "line construction"
-          ],
-          "priority": "medium",
-          "bottleneck": false,
-          "in_universe_coverage": true
-        },
-        {
-          "id": "developer",
-          "name": "Transmission Developer / Owner",
-          "level": 1,
-          "aliases": [
-            "transmission developer",
-            "transmission utility",
-            "TBCB developer",
-            "transmission SPV",
-            "transmission InvIT",
-            "asset owner"
-          ],
-          "priority": "high",
-          "bottleneck": false,
-          "in_universe_coverage": true
-        },
-        {
-          "id": "om",
-          "name": "Aftermarket / Refurbishment / Recycling",
-          "level": 2,
-          "aliases": [
-            "HVDC service",
-            "converter station O&M",
-            "valve refurbishment",
-            "HVDC refurb",
-            "spares"
-          ],
-          "priority": "medium",
-          "bottleneck": false,
-          "in_universe_coverage": true
-        },
-        {
-          "id": "test",
-          "name": "HV Testing / Type-test Facilities",
-          "level": 3,
-          "aliases": [
-            "HV testing",
-            "type test",
-            "DC test lab",
-            "high voltage lab",
-            "CPRI"
-          ],
-          "priority": "medium",
-          "bottleneck": false,
-          "in_universe_coverage": false
-        }
-      ]
+     "id": "gis",
+     "name": "GIS / AIS Switchgear",
+     "level": 2,
+     "aliases": [
+      "gas insulated switchgear",
+      "GIS",
+      "air insulated switchgear",
+      "AIS",
+      "circuit breaker",
+      "disconnector",
+      "isolator",
+      "gas insulated bus duct",
+      "switchgear"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": true
     },
     {
-      "slug": "ehv-hv-cables-india",
-      "industry": "EHV / HV Power Cables",
-      "scope": "INDIA",
-      "path": "industries/ehv-hv-cables-india.html",
-      "analysis_date": "2026-10-07",
-      "universe": "NSE/BSE",
-      "sector": "Power & Electrical Infrastructure",
-      "derived_from": {
-        "industry": "Power Transmission",
-        "slug": "power-transmission-india",
-        "node": "Cables (EHV / HV)"
-      },
-      "drill_downs": [],
-      "nodes": [
-        {
-          "id": "conductor",
-          "name": "Conductor system",
-          "level": 1,
-          "aliases": [
-            "conductor",
-            "copper conductor",
-            "aluminium conductor",
-            "aluminum conductor",
-            "milliken conductor",
-            "segmental conductor"
-          ],
-          "priority": "high",
-          "bottleneck": false,
-          "in_universe_coverage": true
-        },
-        {
-          "id": "cu",
-          "name": "Copper conductor",
-          "level": 2,
-          "aliases": [
-            "copper",
-            "copper rod",
-            "copper cathode",
-            "birla copper",
-            "kutch copper"
-          ],
-          "priority": "medium",
-          "bottleneck": false,
-          "in_universe_coverage": true
-        },
-        {
-          "id": "al",
-          "name": "Aluminium conductor",
-          "level": 2,
-          "aliases": [
-            "aluminium",
-            "aluminum",
-            "aluminium conductor",
-            "NALCO"
-          ],
-          "priority": "medium",
-          "bottleneck": false,
-          "in_universe_coverage": true
-        },
-        {
-          "id": "insulation",
-          "name": "XLPE insulation system",
-          "level": 1,
-          "aliases": [
-            "XLPE",
-            "insulation",
-            "cross-linked polyethylene",
-            "triple extrusion"
-          ],
-          "priority": "high",
-          "bottleneck": true,
-          "in_universe_coverage": false
-        },
-        {
-          "id": "xlpe",
-          "name": "XLPE compound (HV/EHV grade)",
-          "level": 2,
-          "aliases": [
-            "XLPE compound",
-            "XLPE resin",
-            "Borealis",
-            "Borouge",
-            "Hanwha",
-            "BLS Polymers"
-          ],
-          "priority": "high",
-          "bottleneck": true,
-          "in_universe_coverage": false
-        },
-        {
-          "id": "semicon",
-          "name": "Semiconductive compound",
-          "level": 2,
-          "aliases": [
-            "semicon",
-            "semiconductive screen",
-            "conductor screen",
-            "insulation screen"
-          ],
-          "priority": "high",
-          "bottleneck": true,
-          "in_universe_coverage": false
-        },
-        {
-          "id": "screen",
-          "name": "Metallic screen & moisture barrier",
-          "level": 1,
-          "aliases": [
-            "copper screen",
-            "lead sheath",
-            "corrugated aluminium",
-            "moisture barrier",
-            "water blocking"
-          ],
-          "priority": "medium",
-          "bottleneck": false,
-          "in_universe_coverage": true
-        },
-        {
-          "id": "sheath",
-          "name": "Sheath & armour",
-          "level": 1,
-          "aliases": [
-            "HDPE sheath",
-            "PVC sheath",
-            "outer sheath",
-            "armour",
-            "armouring"
-          ],
-          "priority": "medium",
-          "bottleneck": false,
-          "in_universe_coverage": false
-        },
-        {
-          "id": "accessories",
-          "name": "Joints, terminations & accessories",
-          "level": 1,
-          "aliases": [
-            "cable joint",
-            "termination",
-            "stress cone",
-            "sealing end",
-            "Raychem RPG",
-            "pre-moulded joint"
-          ],
-          "priority": "high",
-          "bottleneck": true,
-          "in_universe_coverage": true
-        },
-        {
-          "id": "machinery",
-          "name": "CCV / VCV line & equipment",
-          "level": 1,
-          "aliases": [
-            "CCV",
-            "VCV",
-            "continuous vulcanization",
-            "catenary line",
-            "Troester",
-            "Maillefer",
-            "Sikora",
-            "vertical vulcanization"
-          ],
-          "priority": "high",
-          "bottleneck": true,
-          "in_universe_coverage": false
-        },
-        {
-          "id": "gases",
-          "name": "Industrial gases (N2)",
-          "level": 1,
-          "aliases": [
-            "nitrogen",
-            "industrial gases",
-            "high-purity nitrogen",
-            "Linde",
-            "INOX"
-          ],
-          "priority": "medium",
-          "bottleneck": false,
-          "in_universe_coverage": true
-        },
-        {
-          "id": "testing",
-          "name": "Testing & certification",
-          "level": 1,
-          "aliases": [
-            "partial discharge",
-            "impulse test",
-            "type test",
-            "CPRI",
-            "NABL",
-            "IEC 60840",
-            "IEC 62067"
-          ],
-          "priority": "medium",
-          "bottleneck": false,
-          "in_universe_coverage": false
-        },
-        {
-          "id": "install",
-          "name": "Installation / cable-laying EPC",
-          "level": 1,
-          "aliases": [
-            "EPC",
-            "cable laying",
-            "trenching",
-            "jointing",
-            "installation",
-            "RDSS"
-          ],
-          "priority": "high",
-          "bottleneck": false,
-          "in_universe_coverage": true
-        },
-        {
-          "id": "subsea",
-          "name": "Submarine cable & lay vessels",
-          "level": 1,
-          "aliases": [
-            "submarine cable",
-            "subsea cable",
-            "offshore cable",
-            "cable laying vessel",
-            "CLV",
-            "dynamic cable"
-          ],
-          "priority": "high",
-          "bottleneck": true,
-          "in_universe_coverage": false
-        },
-        {
-          "id": "om",
-          "name": "Aftermarket & monitoring",
-          "level": 1,
-          "aliases": [
-            "aftermarket",
-            "DTS",
-            "DAS",
-            "condition monitoring",
-            "repair",
-            "recycling"
-          ],
-          "priority": "medium",
-          "bottleneck": false,
-          "in_universe_coverage": false
-        }
-      ]
+     "id": "conductor",
+     "name": "Conductors",
+     "level": 2,
+     "aliases": [
+      "conductor",
+      "ACSR",
+      "AAAC",
+      "HTLS",
+      "ACCC",
+      "aluminium conductor",
+      "aluminum conductor",
+      "copper conductor",
+      "all aluminium alloy conductor"
+     ],
+     "priority": "high",
+     "bottleneck": false,
+     "in_universe_coverage": true
     },
     {
-      "slug": "solar-pv-india",
-      "industry": "Solar PV",
-      "scope": "INDIA",
-      "path": "industries/solar-pv-india.html",
-      "analysis_date": "2026-10-07",
-      "universe": "NSE/BSE",
-      "sector": "Renewable Energy",
-      "derived_from": null,
-      "drill_downs": [
-        "solar-cells-india"
-      ],
-      "nodes": [
-        {
-          "id": "polysilicon",
-          "name": "Polysilicon",
-          "level": 2,
-          "aliases": [
-            "polysilicon",
-            "solar grade silicon",
-            "silicon feedstock",
-            "solar polysilicon"
-          ],
-          "priority": "high",
-          "bottleneck": true,
-          "in_universe_coverage": false
-        },
-        {
-          "id": "wafer",
-          "name": "Ingots & Wafers",
-          "level": 2,
-          "aliases": [
-            "wafer",
-            "wafers",
-            "ingot",
-            "ingots",
-            "solar wafer",
-            "silicon wafer",
-            "mono wafer"
-          ],
-          "priority": "high",
-          "bottleneck": true,
-          "in_universe_coverage": true
-        },
-        {
-          "id": "cell",
-          "name": "Solar Cell Fabrication",
-          "level": 2,
-          "aliases": [
-            "solar cell",
-            "solar cells",
-            "cell",
-            "cells",
-            "cell manufacturing",
-            "photovoltaic cell",
-            "PV cell",
-            "TOPCon cell",
-            "PERC cell"
-          ],
-          "priority": "high",
-          "bottleneck": true,
-          "in_universe_coverage": true
-        },
-        {
-          "id": "module",
-          "name": "Module Assembly",
-          "level": 2,
-          "aliases": [
-            "solar module",
-            "solar modules",
-            "module",
-            "modules",
-            "panel",
-            "solar panel",
-            "solar panels",
-            "pv module"
-          ],
-          "priority": "high",
-          "bottleneck": false,
-          "in_universe_coverage": true
-        },
-        {
-          "id": "glass",
-          "name": "Solar Glass",
-          "level": 2,
-          "aliases": [
-            "solar glass",
-            "pv glass",
-            "low iron glass",
-            "textured glass"
-          ],
-          "priority": "high",
-          "bottleneck": true,
-          "in_universe_coverage": true
-        },
-        {
-          "id": "encapsulant",
-          "name": "Encapsulant",
-          "level": 3,
-          "aliases": [
-            "encapsulant",
-            "EVA",
-            "POE",
-            "EPE",
-            "encapsulation film"
-          ],
-          "priority": "medium",
-          "bottleneck": true,
-          "in_universe_coverage": false
-        },
-        {
-          "id": "backsheet",
-          "name": "Backsheet",
-          "level": 3,
-          "aliases": [
-            "backsheet",
-            "back sheet",
-            "backfilm"
-          ],
-          "priority": "medium",
-          "bottleneck": false,
-          "in_universe_coverage": false
-        },
-        {
-          "id": "frame",
-          "name": "Aluminium Frame",
-          "level": 3,
-          "aliases": [
-            "frame",
-            "aluminium frame",
-            "module frame"
-          ],
-          "priority": "medium",
-          "bottleneck": false,
-          "in_universe_coverage": false
-        },
-        {
-          "id": "silverpaste",
-          "name": "Silver Paste & Ribbon",
-          "level": 3,
-          "aliases": [
-            "silver paste",
-            "ribbon",
-            "solder ribbon",
-            "metallisation paste"
-          ],
-          "priority": "medium",
-          "bottleneck": true,
-          "in_universe_coverage": false
-        },
-        {
-          "id": "inverter",
-          "name": "Inverters",
-          "level": 2,
-          "aliases": [
-            "inverter",
-            "inverters",
-            "string inverter",
-            "central inverter",
-            "solar inverter",
-            "hybrid inverter"
-          ],
-          "priority": "high",
-          "bottleneck": true,
-          "in_universe_coverage": true
-        },
-        {
-          "id": "moduleequip",
-          "name": "Cell / Module Production Equipment",
-          "level": 2,
-          "aliases": [
-            "solar manufacturing equipment",
-            "cell line",
-            "module line",
-            "turnkey line",
-            "jinchen",
-            "pecvd",
-            "stringer",
-            "laminator"
-          ],
-          "priority": "medium",
-          "bottleneck": true,
-          "in_universe_coverage": false
-        },
-        {
-          "id": "epc",
-          "name": "Solar EPC",
-          "level": 2,
-          "aliases": [
-            "solar epc",
-            "epc",
-            "solar construction",
-            "solar installer"
-          ],
-          "priority": "medium",
-          "bottleneck": false,
-          "in_universe_coverage": true
-        },
-        {
-          "id": "developer",
-          "name": "Solar Developer / IPP",
-          "level": 2,
-          "aliases": [
-            "solar developer",
-            "ipp",
-            "solar ipp",
-            "renewable developer",
-            "solar park"
-          ],
-          "priority": "medium",
-          "bottleneck": false,
-          "in_universe_coverage": true
-        }
-      ]
+     "id": "insulator",
+     "name": "Insulators",
+     "level": 2,
+     "aliases": [
+      "insulator",
+      "porcelain insulator",
+      "composite insulator",
+      "disc insulator",
+      "hollow core insulator",
+      "long rod insulator"
+     ],
+     "priority": "medium",
+     "bottleneck": false,
+     "in_universe_coverage": true
     },
     {
-      "slug": "solar-cells-india",
-      "industry": "Solar Cell Fabrication",
-      "scope": "INDIA",
-      "path": "industries/solar-cells-india.html",
-      "analysis_date": "2026-10-07",
-      "universe": "NSE/BSE",
-      "sector": "Renewable Energy",
-      "derived_from": {
-        "industry": "Solar PV",
-        "slug": "solar-pv-india",
-        "node": "Solar Cell Fabrication"
-      },
-      "drill_downs": [
-        "silver-paste-metallisation-india"
-      ],
-      "nodes": [
-        {
-          "id": "wafer",
-          "name": "Incoming wafer",
-          "level": 1,
-          "aliases": [
-            "wafer",
-            "wafers",
-            "silicon wafer",
-            "solar wafer",
-            "incoming wafer"
-          ],
-          "priority": "high",
-          "bottleneck": true,
-          "in_universe_coverage": true
-        },
-        {
-          "id": "ingot",
-          "name": "Ingot & polysilicon",
-          "level": 2,
-          "aliases": [
-            "ingot",
-            "ingots",
-            "polysilicon",
-            "silicon ingot"
-          ],
-          "priority": "high",
-          "bottleneck": true,
-          "in_universe_coverage": false
-        },
-        {
-          "id": "pastes",
-          "name": "Metallisation paste (Ag / Al)",
-          "level": 1,
-          "aliases": [
-            "silver paste",
-            "ag paste",
-            "aluminium paste",
-            "al paste",
-            "metallisation paste",
-            "metallization paste"
-          ],
-          "priority": "high",
-          "bottleneck": true,
-          "in_universe_coverage": false
-        },
-        {
-          "id": "silverpowder",
-          "name": "Silver powder & high-purity silver",
-          "level": 2,
-          "aliases": [
-            "silver powder",
-            "high purity silver",
-            "silver bar"
-          ],
-          "priority": "high",
-          "bottleneck": true,
-          "in_universe_coverage": false
-        },
-        {
-          "id": "gases",
-          "name": "Process gases",
-          "level": 1,
-          "aliases": [
-            "silane",
-            "ammonia",
-            "POCl3",
-            "BBr3",
-            "process gases",
-            "specialty gases",
-            "dopant gas"
-          ],
-          "priority": "medium",
-          "bottleneck": true,
-          "in_universe_coverage": true
-        },
-        {
-          "id": "chem",
-          "name": "Wet chemicals",
-          "level": 1,
-          "aliases": [
-            "wet chemicals",
-            "KOH",
-            "HF",
-            "HNO3",
-            "texturing chemicals"
-          ],
-          "priority": "medium",
-          "bottleneck": false,
-          "in_universe_coverage": false
-        },
-        {
-          "id": "screens",
-          "name": "Printing screens & consumables",
-          "level": 1,
-          "aliases": [
-            "printing screen",
-            "screens",
-            "screen printing"
-          ],
-          "priority": "medium",
-          "bottleneck": false,
-          "in_universe_coverage": false
-        },
-        {
-          "id": "equipment",
-          "name": "Cell-line machinery",
-          "level": 1,
-          "aliases": [
-            "cell line",
-            "turnkey line",
-            "jinchen",
-            "singulus",
-            "linton",
-            "svcs",
-            "cell equipment"
-          ],
-          "priority": "high",
-          "bottleneck": true,
-          "in_universe_coverage": false
-        },
-        {
-          "id": "pecvd",
-          "name": "Diffusion / PECVD / ALD tools",
-          "level": 2,
-          "aliases": [
-            "diffusion furnace",
-            "PECVD",
-            "LPCVD",
-            "ALD",
-            "deposition tool"
-          ],
-          "priority": "high",
-          "bottleneck": true,
-          "in_universe_coverage": false
-        },
-        {
-          "id": "metallise_equip",
-          "name": "Screen printers & firing furnaces",
-          "level": 2,
-          "aliases": [
-            "screen printer",
-            "firing furnace",
-            "metallisation equipment",
-            "dryer"
-          ],
-          "priority": "high",
-          "bottleneck": true,
-          "in_universe_coverage": false
-        },
-        {
-          "id": "testing",
-          "name": "Testing, sorting & ALMM qualification",
-          "level": 1,
-          "aliases": [
-            "IV tester",
-            "EL tester",
-            "cell sorter",
-            "ALMM List-II qualification"
-          ],
-          "priority": "medium",
-          "bottleneck": false,
-          "in_universe_coverage": false
-        },
-        {
-          "id": "infra",
-          "name": "Fab infrastructure (UPW, cleanroom, ZLD)",
-          "level": 1,
-          "aliases": [
-            "ultra pure water",
-            "cleanroom",
-            "zero liquid discharge",
-            "ZLD",
-            "UPW"
-          ],
-          "priority": "medium",
-          "bottleneck": false,
-          "in_universe_coverage": false
-        }
-      ]
+     "id": "towers",
+     "name": "Towers & Transmission EPC",
+     "level": 2,
+     "aliases": [
+      "lattice tower",
+      "transmission tower",
+      "monopole",
+      "transmission line EPC",
+      "T&D EPC",
+      "tower",
+      "line construction"
+     ],
+     "priority": "high",
+     "bottleneck": false,
+     "in_universe_coverage": true
     },
     {
-      "slug": "silver-paste-metallisation-india",
-      "industry": "Silver Paste & Metallisation",
-      "scope": "INDIA",
-      "path": "industries/silver-paste-metallisation-india.html",
-      "analysis_date": "2026-10-07",
-      "universe": "NSE/BSE",
-      "sector": "Renewable Energy",
-      "derived_from": {
-        "industry": "Solar Cell Fabrication",
-        "slug": "solar-cells-india",
-        "node": "Metallisation paste (Ag / Al)"
-      },
-      "drill_downs": [],
-      "nodes": [
-        {
-          "id": "silvermetal",
-          "name": "Silver metal & silver powder",
-          "level": 1,
-          "aliases": [
-            "silver",
-            "silver metal",
-            "silver powder",
-            "high purity silver"
-          ],
-          "priority": "high",
-          "bottleneck": true,
-          "in_universe_coverage": true
-        },
-        {
-          "id": "frontpaste",
-          "name": "Front-side Ag paste",
-          "level": 1,
-          "aliases": [
-            "silver paste",
-            "ag paste",
-            "front side paste",
-            "front paste",
-            "dkem",
-            "fusion",
-            "solamet"
-          ],
-          "priority": "high",
-          "bottleneck": true,
-          "in_universe_coverage": false
-        },
-        {
-          "id": "frit",
-          "name": "Glass frit (Pb-Te-O)",
-          "level": 2,
-          "aliases": [
-            "glass frit",
-            "frit",
-            "pb-te-o",
-            "lead tellurium oxide",
-            "tellurium"
-          ],
-          "priority": "high",
-          "bottleneck": true,
-          "in_universe_coverage": false
-        },
-        {
-          "id": "vehicle",
-          "name": "Organic vehicle & solvents",
-          "level": 2,
-          "aliases": [
-            "organic vehicle",
-            "binder",
-            "solvent"
-          ],
-          "priority": "medium",
-          "bottleneck": false,
-          "in_universe_coverage": false
-        },
-        {
-          "id": "alpads",
-          "name": "Rear Al paste & Ag/Al pads",
-          "level": 1,
-          "aliases": [
-            "aluminium paste",
-            "al paste",
-            "ag/al",
-            "pad paste"
-          ],
-          "priority": "medium",
-          "bottleneck": false,
-          "in_universe_coverage": false
-        },
-        {
-          "id": "screens",
-          "name": "Printing screens & stencils",
-          "level": 1,
-          "aliases": [
-            "printing screen",
-            "screens",
-            "stencil",
-            "fine mesh screen"
-          ],
-          "priority": "medium",
-          "bottleneck": false,
-          "in_universe_coverage": false
-        },
-        {
-          "id": "printing",
-          "name": "Screen printing & drying",
-          "level": 1,
-          "aliases": [
-            "screen printing",
-            "printer",
-            "dryer",
-            "metallisation line"
-          ],
-          "priority": "high",
-          "bottleneck": true,
-          "in_universe_coverage": false
-        },
-        {
-          "id": "firing",
-          "name": "Co-firing",
-          "level": 1,
-          "aliases": [
-            "co-firing",
-            "firing furnace",
-            "fast firing"
-          ],
-          "priority": "medium",
-          "bottleneck": false,
-          "in_universe_coverage": false
-        },
-        {
-          "id": "laser",
-          "name": "Laser (LECO / selective emitter)",
-          "level": 1,
-          "aliases": [
-            "leco",
-            "laser",
-            "selective emitter",
-            "laser contact opening"
-          ],
-          "priority": "medium",
-          "bottleneck": false,
-          "in_universe_coverage": false
-        },
-        {
-          "id": "agcu",
-          "name": "Silver-coated copper paste",
-          "level": 1,
-          "aliases": [
-            "silver coated copper",
-            "ag-coated cu",
-            "high copper paste",
-            "copper paste"
-          ],
-          "priority": "high",
-          "bottleneck": true,
-          "in_universe_coverage": false
-        },
-        {
-          "id": "cupaste",
-          "name": "Pure copper paste",
-          "level": 1,
-          "aliases": [
-            "pure copper paste",
-            "copper paste",
-            "cu paste"
-          ],
-          "priority": "medium",
-          "bottleneck": true,
-          "in_universe_coverage": false
-        },
-        {
-          "id": "plating",
-          "name": "Ni/Cu/Ag electroplating",
-          "level": 1,
-          "aliases": [
-            "electroplating",
-            "ni/cu/ag",
-            "plated contacts",
-            "rena",
-            "atotech",
-            "copper plating"
-          ],
-          "priority": "high",
-          "bottleneck": true,
-          "in_universe_coverage": false
-        }
-      ]
+     "id": "cable",
+     "name": "Cables (EHV / HV)",
+     "level": 2,
+     "aliases": [
+      "power cable",
+      "EHV cable",
+      "HV cable",
+      "XLPE cable",
+      "submarine cable",
+      "underground cable",
+      "OPGW",
+      "cable"
+     ],
+     "priority": "medium",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "developer",
+     "name": "Transmission Developer / Owner",
+     "level": 1,
+     "aliases": [
+      "transmission developer",
+      "transmission utility",
+      "TBCB developer",
+      "BOOT",
+      "transmission SPV",
+      "transmission InvIT",
+      "central transmission utility",
+      "transmission asset owner"
+     ],
+     "priority": "high",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "txfroil",
+     "name": "Transformer Oil",
+     "level": 2,
+     "aliases": [
+      "transformer oil",
+      "insulating oil",
+      "ester fluid",
+      "naphthenic oil",
+      "specialty oil"
+     ],
+     "priority": "medium",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "crgo",
+     "name": "CRGO Electrical Steel",
+     "level": 4,
+     "aliases": [
+      "CRGO",
+      "grain oriented electrical steel",
+      "GOES",
+      "electrical steel",
+      "core steel",
+      "cold rolled grain oriented steel"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": false,
+     "coverage_note": "No NSE/BSE pure-play. Nearest: JSW Steel (JSW-JFE is a 50:50 JV)."
+    },
+    {
+     "id": "semi",
+     "name": "Power Semiconductors (IGBT / SiC)",
+     "level": 3,
+     "aliases": [
+      "IGBT",
+      "SiC",
+      "silicon carbide",
+      "thyristor",
+      "power semiconductor",
+      "HV capacitor",
+      "power module"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": false,
+     "coverage_note": "No listed pure-play in India. Nearest: BHEL / Hitachi as integrators. Context: Hyosung T&D India, TBEA, NR Electric."
+    },
+    {
+     "id": "tap",
+     "name": "Tap Changers, Bushings, Pressboard",
+     "level": 3,
+     "aliases": [
+      "tap changer",
+      "OLTC",
+      "on-load tap changer",
+      "bushing",
+      "pressboard",
+      "kraft paper",
+      "RIP bushing"
+     ],
+     "priority": "medium",
+     "bottleneck": false,
+     "in_universe_coverage": false,
+     "coverage_note": "No listed pure-play in India; largely foreign (MR Reinhausen, Hitachi, ABB)."
+    },
+    {
+     "id": "syncon",
+     "name": "Synchronous Condenser Machines",
+     "level": 3,
+     "aliases": [
+      "synchronous condenser",
+      "rotating machine",
+      "flywheel",
+      "inertia",
+      "salient pole machine",
+      "cylindrical rotor machine"
+     ],
+     "priority": "medium",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "overhead-line",
+     "name": "Overhead Transmission Line",
+     "level": 1,
+     "aliases": [
+      "overhead line",
+      "transmission line",
+      "OH line",
+      "overhead transmission"
+     ],
+     "priority": "high",
+     "bottleneck": false,
+     "in_universe_coverage": true,
+     "promoted_to": "overhead-transmission-line-india"
+    },
+    {
+     "id": "substation",
+     "name": "Substation Equipment",
+     "level": 1,
+     "aliases": [
+      "substation",
+      "switching station",
+      "substation equipment",
+      "pooling station",
+      "switchyard"
+     ],
+     "priority": "high",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "hvdcepe",
+     "name": "HVDC & Power Electronics",
+     "level": 1,
+     "aliases": [
+      "power electronics",
+      "HVDC system",
+      "FACTS system",
+      "converter"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "support-systems",
+     "name": "Support Systems",
+     "level": 1,
+     "aliases": [
+      "earthing",
+      "lightning protection",
+      "station battery",
+      "auxiliary transformer",
+      "fire protection",
+      "DC system"
+     ],
+     "priority": "medium",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "software-control",
+     "name": "Software / Control",
+     "level": 1,
+     "aliases": [
+      "SCADA",
+      "EMS",
+      "substation automation",
+      "IEC 61850",
+      "protection relay",
+      "grid automation",
+      "HVDC control"
+     ],
+     "priority": "medium",
+     "bottleneck": false,
+     "in_universe_coverage": true
     }
-  ]
+   ]
+  },
+  {
+   "slug": "overhead-transmission-line-india",
+   "industry": "Overhead Transmission Line",
+   "scope": "INDIA",
+   "path": "industries/overhead-transmission-line-india.html",
+   "analysis_date": "2026-10-07",
+   "universe": "NSE/BSE",
+   "sector": "Power & Electrical Infrastructure",
+   "derived_from": {
+    "industry": "Power Transmission",
+    "slug": "power-transmission-india",
+    "node": "Overhead Transmission Line"
+   },
+   "drill_downs": [],
+   "nodes": [
+    {
+     "id": "conductor",
+     "name": "Conductors",
+     "level": 1,
+     "aliases": [
+      "conductor",
+      "ACSR",
+      "AAAC",
+      "AL-59",
+      "HTLS",
+      "ACCC",
+      "ACSS",
+      "aluminium conductor"
+     ],
+     "priority": "high",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "tower",
+     "name": "Transmission Towers / Structures",
+     "level": 1,
+     "aliases": [
+      "transmission tower",
+      "lattice tower",
+      "monopole",
+      "guyed tower",
+      "tower"
+     ],
+     "priority": "high",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "insulator",
+     "name": "Insulators",
+     "level": 1,
+     "aliases": [
+      "insulator",
+      "disc insulator",
+      "porcelain insulator",
+      "composite insulator",
+      "long rod",
+      "hollow insulator"
+     ],
+     "priority": "high",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "hardware",
+     "name": "Hardware Fittings & Stringing Accessories",
+     "level": 1,
+     "aliases": [
+      "hardware fittings",
+      "clamps",
+      "spacers",
+      "dampers",
+      "stringing",
+      "tension string",
+      "suspension string"
+     ],
+     "priority": "high",
+     "bottleneck": false,
+     "in_universe_coverage": false,
+     "coverage_note": "No NSE/BSE pure-play; TAG, IAC, Asbesco, Ventura, MMPT all unlisted."
+    },
+    {
+     "id": "opgw",
+     "name": "Earth Wire / OPGW",
+     "level": 1,
+     "aliases": [
+      "OPGW",
+      "optical ground wire",
+      "earth wire",
+      "GSW",
+      "ADSS"
+     ],
+     "priority": "high",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "foundation",
+     "name": "Foundations & Civil Works",
+     "level": 1,
+     "aliases": [
+      "foundation",
+      "civil works",
+      "concrete",
+      "stub",
+      "earthing"
+     ],
+     "priority": "medium",
+     "bottleneck": false,
+     "in_universe_coverage": false,
+     "coverage_note": "No line-specific listed player; proxy = cement / steel majors."
+    },
+    {
+     "id": "row",
+     "name": "Right-of-Way & Clearances",
+     "level": 1,
+     "aliases": [
+      "right of way",
+      "ROW",
+      "forest clearance",
+      "land compensation",
+      "clearance"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": false,
+     "coverage_note": "Regulatory / non-physical — not investable. The binding execution constraint."
+    },
+    {
+     "id": "erection",
+     "name": "Erection & Stringing (EPC)",
+     "level": 1,
+     "aliases": [
+      "EPC",
+      "transmission line EPC",
+      "stringing",
+      "line construction",
+      "erection"
+     ],
+     "priority": "high",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "testing",
+     "name": "Testing, Protection & Communication",
+     "level": 1,
+     "aliases": [
+      "type test",
+      "tower load test",
+      "RIV",
+      "SCADA",
+      "teleprotection",
+      "testing"
+     ],
+     "priority": "medium",
+     "bottleneck": false,
+     "in_universe_coverage": false,
+     "coverage_note": "Accredited type-test labs mostly unlisted (TAG lab; Skipper load-test station)."
+    },
+    {
+     "id": "om",
+     "name": "O&M / End-of-Life",
+     "level": 1,
+     "aliases": [
+      "O&M",
+      "maintenance",
+      "reconductoring",
+      "replacement",
+      "recycling",
+      "aftermarket"
+     ],
+     "priority": "medium",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "reconductoring",
+     "name": "Reconductoring (asset-light growth)",
+     "level": 2,
+     "aliases": [
+      "reconductoring",
+      "HTLS upgrade",
+      "re-conductoring",
+      "capacity uprating"
+     ],
+     "priority": "high",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "composite-core",
+     "name": "Composite / Invar Conductor Core",
+     "level": 3,
+     "aliases": [
+      "composite core",
+      "carbon core",
+      "Invar",
+      "ACCC core",
+      "HVCRC"
+     ],
+     "priority": "high",
+     "bottleneck": false,
+     "in_universe_coverage": false,
+     "coverage_note": "Imported (CTC Global / Epsilon Composite). No NSE/BSE pure-play."
+    }
+   ]
+  },
+  {
+   "slug": "substation-equipment-india",
+   "industry": "Substation Equipment",
+   "scope": "INDIA",
+   "path": "industries/substation-equipment-india.html",
+   "analysis_date": "2026-10-07",
+   "universe": "NSE/BSE",
+   "sector": "Power & Electrical Infrastructure",
+   "derived_from": {
+    "industry": "Power Transmission",
+    "slug": "power-transmission-india",
+    "node": "Substation Equipment"
+   },
+   "drill_downs": [
+    "hvdc-power-electronics-india"
+   ],
+   "nodes": [
+    {
+     "id": "xfmr",
+     "name": "Power Transformers & Reactors",
+     "level": 1,
+     "aliases": [
+      "power transformer",
+      "power transformers",
+      "ICT",
+      "auto-transformer",
+      "autotransformer",
+      "shunt reactor",
+      "reactor",
+      "transformer"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "crgo",
+     "name": "CRGO Electrical Steel",
+     "level": 2,
+     "aliases": [
+      "CRGO",
+      "grain oriented electrical steel",
+      "GOES",
+      "electrical steel",
+      "core steel"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": false,
+     "coverage_note": "No NSE/BSE pure-play. Nearest: JSW Steel (JSW-JFE is a 50:50 JV, Nashik) and SAIL (Bokaro announced). PLI 1.1 threshold cut to Rs 3,000 cr / 50,000 t."
+    },
+    {
+     "id": "oltc",
+     "name": "OLTC / Tap Changers",
+     "level": 2,
+     "aliases": [
+      "OLTC",
+      "on-load tap changer",
+      "tap changer",
+      "DETC",
+      "off-circuit tap changer"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": false,
+     "coverage_note": "No listed pure-play. EMR (Easun-MR JV) and CTR unlisted; >80% of advanced vacuum OLTCs imported (Reinhausen ~35-40%)."
+    },
+    {
+     "id": "bushing",
+     "name": "EHV Bushings",
+     "level": 2,
+     "aliases": [
+      "bushing",
+      "RIP bushing",
+      "porcelain bushing",
+      "condenser bushing"
+     ],
+     "priority": "high",
+     "bottleneck": false,
+     "in_universe_coverage": false,
+     "coverage_note": "Largely imported (Trench, Modern/HSP). CG Power has partial in-house capability. No listed pure-play."
+    },
+    {
+     "id": "txfroil",
+     "name": "Transformer Oil",
+     "level": 2,
+     "aliases": [
+      "transformer oil",
+      "insulating oil",
+      "ester fluid",
+      "naphthenic oil",
+      "specialty oil"
+     ],
+     "priority": "medium",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "swgr",
+     "name": "GIS / AIS Switchgear",
+     "level": 1,
+     "aliases": [
+      "gas insulated switchgear",
+      "GIS",
+      "air insulated switchgear",
+      "AIS",
+      "circuit breaker",
+      "disconnector",
+      "isolator",
+      "switchgear"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "sf6",
+     "name": "SF6-free / Eco-efficient Switchgear",
+     "level": 2,
+     "aliases": [
+      "SF6",
+      "SF6-free",
+      "EconiQ",
+      "Blue GIS",
+      "eco-efficient switchgear",
+      "fluoronitrile"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "vcb",
+     "name": "Vacuum Interrupters",
+     "level": 2,
+     "aliases": [
+      "vacuum interrupter",
+      "vacuum bottle",
+      "VI"
+     ],
+     "priority": "medium",
+     "bottleneck": false,
+     "in_universe_coverage": false,
+     "coverage_note": "Largely imported; demonstrated but not scaled in India. No listed pure-play."
+    },
+    {
+     "id": "instr",
+     "name": "Instrument Transformers (CT / PT)",
+     "level": 1,
+     "aliases": [
+      "instrument transformer",
+      "current transformer",
+      "CT",
+      "potential transformer",
+      "PT",
+      "voltage transformer",
+      "CVT"
+     ],
+     "priority": "medium",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "prot",
+     "name": "Protection, Control & Automation",
+     "level": 1,
+     "aliases": [
+      "protection relay",
+      "IED",
+      "SCADA",
+      "substation automation",
+      "IEC 61850",
+      "grid automation",
+      "control and relay panel",
+      "CRP"
+     ],
+     "priority": "high",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "relay",
+     "name": "Numerical Relays / IEDs",
+     "level": 2,
+     "aliases": [
+      "numerical relay",
+      "IED",
+      "intelligent electronic device",
+      "protection relay"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": false,
+     "coverage_note": "Core technology foreign (ABB/Hitachi/Siemens/GE/Schneider). India exposure via MNC subsidiaries, not indigenous design."
+    },
+    {
+     "id": "hvdc",
+     "name": "HVDC Converter Stations",
+     "level": 1,
+     "aliases": [
+      "HVDC",
+      "converter station",
+      "LCC",
+      "VSC",
+      "converter valve",
+      "thyristor valve",
+      "IGBT valve"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "valve",
+     "name": "HVDC Converter Valves",
+     "level": 2,
+     "aliases": [
+      "converter valve",
+      "thyristor valve",
+      "IGBT valve",
+      "HVDC valve"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": false,
+     "coverage_note": "Supplied inside HVDC consortia (Hitachi/GE/Siemens/BHEL). No listed pure-play."
+    },
+    {
+     "id": "cxfmr",
+     "name": "Converter Transformers",
+     "level": 2,
+     "aliases": [
+      "converter transformer",
+      "HVDC transformer"
+     ],
+     "priority": "high",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "statcom",
+     "name": "STATCOM / SVC / FACTS",
+     "level": 2,
+     "aliases": [
+      "STATCOM",
+      "SVC",
+      "FACTS",
+      "reactive compensation",
+      "synchronous condenser"
+     ],
+     "priority": "medium",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "conductor",
+     "name": "Busbars & Conductors",
+     "level": 1,
+     "aliases": [
+      "busbar",
+      "conductor",
+      "ACSR",
+      "CTC",
+      "PICC",
+      "aluminium conductor",
+      "bus duct"
+     ],
+     "priority": "medium",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "aux",
+     "name": "Auxiliary & DC Systems",
+     "level": 1,
+     "aliases": [
+      "auxiliary transformer",
+      "station battery",
+      "DC system",
+      "LT panel",
+      "charger",
+      "DG set"
+     ],
+     "priority": "medium",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "cable",
+     "name": "Cables & Wiring",
+     "level": 1,
+     "aliases": [
+      "power cable",
+      "control cable",
+      "XLPE cable",
+      "cable",
+      "wiring"
+     ],
+     "priority": "medium",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "civil",
+     "name": "Civil, Structures & Grounding",
+     "level": 1,
+     "aliases": [
+      "gantry",
+      "foundation",
+      "earthing",
+      "grounding",
+      "control building",
+      "civil works",
+      "structure"
+     ],
+     "priority": "medium",
+     "bottleneck": false,
+     "in_universe_coverage": false,
+     "coverage_note": "No station-specific listed player; proxy = cement/steel majors and EPC firms."
+    },
+    {
+     "id": "om",
+     "name": "Aftermarket / Service",
+     "level": 1,
+     "aliases": [
+      "service",
+      "retrofit",
+      "spares",
+      "O&M",
+      "maintenance",
+      "refurbishment",
+      "GIS upgrade"
+     ],
+     "priority": "medium",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "recycle",
+     "name": "End-of-life / Recycling",
+     "level": 2,
+     "aliases": [
+      "recycling",
+      "end of life",
+      "scrap",
+      "copper recovery",
+      "oil recovery"
+     ],
+     "priority": "medium",
+     "bottleneck": false,
+     "in_universe_coverage": false,
+     "coverage_note": "Copper/steel/oil recovery real but unsized; no listed pure-play."
+    }
+   ]
+  },
+  {
+   "slug": "hvdc-power-electronics-india",
+   "industry": "HVDC & Power Electronics",
+   "scope": "INDIA",
+   "path": "industries/hvdc-power-electronics-india.html",
+   "analysis_date": "2026-10-07",
+   "universe": "NSE/BSE",
+   "sector": "Power & Electrical Infrastructure",
+   "derived_from": [
+    {
+     "industry": "Power Transmission",
+     "slug": "power-transmission-india",
+     "node": "HVDC & Power Electronics"
+    },
+    {
+     "industry": "Substation Equipment",
+     "slug": "substation-equipment-india",
+     "node": "HVDC Converter Stations / HVDC Converter Valves"
+    }
+   ],
+   "drill_downs": [],
+   "nodes": [
+    {
+     "id": "conv",
+     "name": "HVDC Converter Stations",
+     "level": 1,
+     "aliases": [
+      "HVDC",
+      "converter station",
+      "converter terminal",
+      "HVDC terminal",
+      "LCC",
+      "VSC",
+      "converter valve",
+      "thyristor valve",
+      "IGBT valve",
+      "MMC",
+      "HVDC control"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "valve",
+     "name": "Converter Valves (Thyristor / IGBT / MMC)",
+     "level": 2,
+     "aliases": [
+      "converter valve",
+      "thyristor valve",
+      "IGBT valve",
+      "HVDC valve",
+      "MMC submodule",
+      "valve assembly"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": false
+    },
+    {
+     "id": "semi",
+     "name": "Power Semiconductors (Thyristor / IGBT / SiC)",
+     "level": 3,
+     "aliases": [
+      "IGBT",
+      "thyristor",
+      "SiC",
+      "silicon carbide",
+      "power semiconductor",
+      "power module",
+      "power electronics semiconductor"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": false
+    },
+    {
+     "id": "cxfmr",
+     "name": "Converter Transformers & Reactors",
+     "level": 2,
+     "aliases": [
+      "converter transformer",
+      "HVDC transformer",
+      "smoothing reactor",
+      "valve reactor",
+      "HVDC reactor"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "reactor",
+     "name": "Smoothing & Valve Reactors",
+     "level": 2,
+     "aliases": [
+      "smoothing reactor",
+      "valve reactor",
+      "DC reactor",
+      "HVDC reactor"
+     ],
+     "priority": "medium",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "ctrl",
+     "name": "Control & Protection Systems",
+     "level": 2,
+     "aliases": [
+      "HVDC control",
+      "MACH",
+      "converter control",
+      "pole control",
+      "HVDC protection",
+      "SCADA",
+      "control and protection"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "ied",
+     "name": "Numerical Relays / IEDs",
+     "level": 3,
+     "aliases": [
+      "IED",
+      "numerical relay",
+      "protection relay",
+      "grid automation"
+     ],
+     "priority": "medium",
+     "bottleneck": false,
+     "in_universe_coverage": false
+    },
+    {
+     "id": "cable",
+     "name": "HVDC Cables (MI / XLPE DC)",
+     "level": 2,
+     "aliases": [
+      "HVDC cable",
+      "XLPE DC cable",
+      "MI cable",
+      "mass impregnated cable",
+      "submarine cable",
+      "DC cable",
+      "offshore cable"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "xlpe",
+     "name": "HVDC-grade XLPE DC Compound & Accessories",
+     "level": 3,
+     "aliases": [
+      "XLPE compound",
+      "DC insulation compound",
+      "cable joint",
+      "cable termination",
+      "HVDC accessory"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": false
+    },
+    {
+     "id": "acsub",
+     "name": "AC Substation Interface (Switchgear / ICTs / Filters)",
+     "level": 2,
+     "aliases": [
+      "GIS",
+      "AIS",
+      "switchgear",
+      "interconnecting transformer",
+      "ICT",
+      "harmonic filter",
+      "instrument transformer"
+     ],
+     "priority": "medium",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "filter",
+     "name": "Harmonic Filters & HV Capacitors",
+     "level": 3,
+     "aliases": [
+      "harmonic filter",
+      "HV capacitor",
+      "capacitor bank",
+      "AC filter",
+      "DC filter"
+     ],
+     "priority": "medium",
+     "bottleneck": false,
+     "in_universe_coverage": false
+    },
+    {
+     "id": "cooling",
+     "name": "Valve Cooling (Deionised-water skids)",
+     "level": 3,
+     "aliases": [
+      "valve cooling",
+      "deionised water cooling",
+      "cooling skid",
+      "HVDC cooling"
+     ],
+     "priority": "medium",
+     "bottleneck": false,
+     "in_universe_coverage": false
+    },
+    {
+     "id": "epe",
+     "name": "HVDC EPC, Line & Civil",
+     "level": 2,
+     "aliases": [
+      "HVDC EPC",
+      "transmission line EPC",
+      "T&D EPC",
+      "civil works",
+      "tower",
+      "line construction"
+     ],
+     "priority": "medium",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "developer",
+     "name": "Transmission Developer / Owner",
+     "level": 1,
+     "aliases": [
+      "transmission developer",
+      "transmission utility",
+      "TBCB developer",
+      "transmission SPV",
+      "transmission InvIT",
+      "asset owner"
+     ],
+     "priority": "high",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "om",
+     "name": "Aftermarket / Refurbishment / Recycling",
+     "level": 2,
+     "aliases": [
+      "HVDC service",
+      "converter station O&M",
+      "valve refurbishment",
+      "HVDC refurb",
+      "spares"
+     ],
+     "priority": "medium",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "test",
+     "name": "HV Testing / Type-test Facilities",
+     "level": 3,
+     "aliases": [
+      "HV testing",
+      "type test",
+      "DC test lab",
+      "high voltage lab",
+      "CPRI"
+     ],
+     "priority": "medium",
+     "bottleneck": false,
+     "in_universe_coverage": false
+    }
+   ]
+  },
+  {
+   "slug": "ehv-hv-cables-india",
+   "industry": "EHV / HV Power Cables",
+   "scope": "INDIA",
+   "path": "industries/ehv-hv-cables-india.html",
+   "analysis_date": "2026-10-07",
+   "universe": "NSE/BSE",
+   "sector": "Power & Electrical Infrastructure",
+   "derived_from": {
+    "industry": "Power Transmission",
+    "slug": "power-transmission-india",
+    "node": "Cables (EHV / HV)"
+   },
+   "drill_downs": [],
+   "nodes": [
+    {
+     "id": "conductor",
+     "name": "Conductor system",
+     "level": 1,
+     "aliases": [
+      "conductor",
+      "copper conductor",
+      "aluminium conductor",
+      "aluminum conductor",
+      "milliken conductor",
+      "segmental conductor"
+     ],
+     "priority": "high",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "cu",
+     "name": "Copper conductor",
+     "level": 2,
+     "aliases": [
+      "copper",
+      "copper rod",
+      "copper cathode",
+      "birla copper",
+      "kutch copper"
+     ],
+     "priority": "medium",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "al",
+     "name": "Aluminium conductor",
+     "level": 2,
+     "aliases": [
+      "aluminium",
+      "aluminum",
+      "aluminium conductor",
+      "NALCO"
+     ],
+     "priority": "medium",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "insulation",
+     "name": "XLPE insulation system",
+     "level": 1,
+     "aliases": [
+      "XLPE",
+      "insulation",
+      "cross-linked polyethylene",
+      "triple extrusion"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": false
+    },
+    {
+     "id": "xlpe",
+     "name": "XLPE compound (HV/EHV grade)",
+     "level": 2,
+     "aliases": [
+      "XLPE compound",
+      "XLPE resin",
+      "Borealis",
+      "Borouge",
+      "Hanwha",
+      "BLS Polymers"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": false
+    },
+    {
+     "id": "semicon",
+     "name": "Semiconductive compound",
+     "level": 2,
+     "aliases": [
+      "semicon",
+      "semiconductive screen",
+      "conductor screen",
+      "insulation screen"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": false
+    },
+    {
+     "id": "screen",
+     "name": "Metallic screen & moisture barrier",
+     "level": 1,
+     "aliases": [
+      "copper screen",
+      "lead sheath",
+      "corrugated aluminium",
+      "moisture barrier",
+      "water blocking"
+     ],
+     "priority": "medium",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "sheath",
+     "name": "Sheath & armour",
+     "level": 1,
+     "aliases": [
+      "HDPE sheath",
+      "PVC sheath",
+      "outer sheath",
+      "armour",
+      "armouring"
+     ],
+     "priority": "medium",
+     "bottleneck": false,
+     "in_universe_coverage": false
+    },
+    {
+     "id": "accessories",
+     "name": "Joints, terminations & accessories",
+     "level": 1,
+     "aliases": [
+      "cable joint",
+      "termination",
+      "stress cone",
+      "sealing end",
+      "Raychem RPG",
+      "pre-moulded joint"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "machinery",
+     "name": "CCV / VCV line & equipment",
+     "level": 1,
+     "aliases": [
+      "CCV",
+      "VCV",
+      "continuous vulcanization",
+      "catenary line",
+      "Troester",
+      "Maillefer",
+      "Sikora",
+      "vertical vulcanization"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": false
+    },
+    {
+     "id": "gases",
+     "name": "Industrial gases (N2)",
+     "level": 1,
+     "aliases": [
+      "nitrogen",
+      "industrial gases",
+      "high-purity nitrogen",
+      "Linde",
+      "INOX"
+     ],
+     "priority": "medium",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "testing",
+     "name": "Testing & certification",
+     "level": 1,
+     "aliases": [
+      "partial discharge",
+      "impulse test",
+      "type test",
+      "CPRI",
+      "NABL",
+      "IEC 60840",
+      "IEC 62067"
+     ],
+     "priority": "medium",
+     "bottleneck": false,
+     "in_universe_coverage": false
+    },
+    {
+     "id": "install",
+     "name": "Installation / cable-laying EPC",
+     "level": 1,
+     "aliases": [
+      "EPC",
+      "cable laying",
+      "trenching",
+      "jointing",
+      "installation",
+      "RDSS"
+     ],
+     "priority": "high",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "subsea",
+     "name": "Submarine cable & lay vessels",
+     "level": 1,
+     "aliases": [
+      "submarine cable",
+      "subsea cable",
+      "offshore cable",
+      "cable laying vessel",
+      "CLV",
+      "dynamic cable"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": false
+    },
+    {
+     "id": "om",
+     "name": "Aftermarket & monitoring",
+     "level": 1,
+     "aliases": [
+      "aftermarket",
+      "DTS",
+      "DAS",
+      "condition monitoring",
+      "repair",
+      "recycling"
+     ],
+     "priority": "medium",
+     "bottleneck": false,
+     "in_universe_coverage": false
+    }
+   ]
+  },
+  {
+   "slug": "solar-pv-india",
+   "industry": "Solar PV",
+   "scope": "INDIA",
+   "path": "industries/solar-pv-india.html",
+   "analysis_date": "2026-10-07",
+   "universe": "NSE/BSE",
+   "sector": "Renewable Energy",
+   "derived_from": null,
+   "drill_downs": [
+    "solar-cells-india"
+   ],
+   "nodes": [
+    {
+     "id": "polysilicon",
+     "name": "Polysilicon",
+     "level": 2,
+     "aliases": [
+      "polysilicon",
+      "solar grade silicon",
+      "silicon feedstock",
+      "solar polysilicon"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": false
+    },
+    {
+     "id": "wafer",
+     "name": "Ingots & Wafers",
+     "level": 2,
+     "aliases": [
+      "wafer",
+      "wafers",
+      "ingot",
+      "ingots",
+      "solar wafer",
+      "silicon wafer",
+      "mono wafer"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "cell",
+     "name": "Solar Cell Fabrication",
+     "level": 2,
+     "aliases": [
+      "solar cell",
+      "solar cells",
+      "cell",
+      "cells",
+      "cell manufacturing",
+      "photovoltaic cell",
+      "PV cell",
+      "TOPCon cell",
+      "PERC cell"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "module",
+     "name": "Module Assembly",
+     "level": 2,
+     "aliases": [
+      "solar module",
+      "solar modules",
+      "module",
+      "modules",
+      "panel",
+      "solar panel",
+      "solar panels",
+      "pv module"
+     ],
+     "priority": "high",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "glass",
+     "name": "Solar Glass",
+     "level": 2,
+     "aliases": [
+      "solar glass",
+      "pv glass",
+      "low iron glass",
+      "textured glass"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "encapsulant",
+     "name": "Encapsulant",
+     "level": 3,
+     "aliases": [
+      "encapsulant",
+      "EVA",
+      "POE",
+      "EPE",
+      "encapsulation film"
+     ],
+     "priority": "medium",
+     "bottleneck": true,
+     "in_universe_coverage": false
+    },
+    {
+     "id": "backsheet",
+     "name": "Backsheet",
+     "level": 3,
+     "aliases": [
+      "backsheet",
+      "back sheet",
+      "backfilm"
+     ],
+     "priority": "medium",
+     "bottleneck": false,
+     "in_universe_coverage": false
+    },
+    {
+     "id": "frame",
+     "name": "Aluminium Frame",
+     "level": 3,
+     "aliases": [
+      "frame",
+      "aluminium frame",
+      "module frame"
+     ],
+     "priority": "medium",
+     "bottleneck": false,
+     "in_universe_coverage": false
+    },
+    {
+     "id": "silverpaste",
+     "name": "Silver Paste & Ribbon",
+     "level": 3,
+     "aliases": [
+      "silver paste",
+      "ribbon",
+      "solder ribbon",
+      "metallisation paste"
+     ],
+     "priority": "medium",
+     "bottleneck": true,
+     "in_universe_coverage": false
+    },
+    {
+     "id": "inverter",
+     "name": "Inverters",
+     "level": 2,
+     "aliases": [
+      "inverter",
+      "inverters",
+      "string inverter",
+      "central inverter",
+      "solar inverter",
+      "hybrid inverter"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "moduleequip",
+     "name": "Cell / Module Production Equipment",
+     "level": 2,
+     "aliases": [
+      "solar manufacturing equipment",
+      "cell line",
+      "module line",
+      "turnkey line",
+      "jinchen",
+      "pecvd",
+      "stringer",
+      "laminator"
+     ],
+     "priority": "medium",
+     "bottleneck": true,
+     "in_universe_coverage": false
+    },
+    {
+     "id": "epc",
+     "name": "Solar EPC",
+     "level": 2,
+     "aliases": [
+      "solar epc",
+      "epc",
+      "solar construction",
+      "solar installer"
+     ],
+     "priority": "medium",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "developer",
+     "name": "Solar Developer / IPP",
+     "level": 2,
+     "aliases": [
+      "solar developer",
+      "ipp",
+      "solar ipp",
+      "renewable developer",
+      "solar park"
+     ],
+     "priority": "medium",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    }
+   ]
+  },
+  {
+   "slug": "solar-cells-india",
+   "industry": "Solar Cell Fabrication",
+   "scope": "INDIA",
+   "path": "industries/solar-cells-india.html",
+   "analysis_date": "2026-10-07",
+   "universe": "NSE/BSE",
+   "sector": "Renewable Energy",
+   "derived_from": {
+    "industry": "Solar PV",
+    "slug": "solar-pv-india",
+    "node": "Solar Cell Fabrication"
+   },
+   "drill_downs": [
+    "silver-paste-metallisation-india"
+   ],
+   "nodes": [
+    {
+     "id": "wafer",
+     "name": "Incoming wafer",
+     "level": 1,
+     "aliases": [
+      "wafer",
+      "wafers",
+      "silicon wafer",
+      "solar wafer",
+      "incoming wafer"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "ingot",
+     "name": "Ingot & polysilicon",
+     "level": 2,
+     "aliases": [
+      "ingot",
+      "ingots",
+      "polysilicon",
+      "silicon ingot"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": false
+    },
+    {
+     "id": "pastes",
+     "name": "Metallisation paste (Ag / Al)",
+     "level": 1,
+     "aliases": [
+      "silver paste",
+      "ag paste",
+      "aluminium paste",
+      "al paste",
+      "metallisation paste",
+      "metallization paste"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": false
+    },
+    {
+     "id": "silverpowder",
+     "name": "Silver powder & high-purity silver",
+     "level": 2,
+     "aliases": [
+      "silver powder",
+      "high purity silver",
+      "silver bar"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": false
+    },
+    {
+     "id": "gases",
+     "name": "Process gases",
+     "level": 1,
+     "aliases": [
+      "silane",
+      "ammonia",
+      "POCl3",
+      "BBr3",
+      "process gases",
+      "specialty gases",
+      "dopant gas"
+     ],
+     "priority": "medium",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "chem",
+     "name": "Wet chemicals",
+     "level": 1,
+     "aliases": [
+      "wet chemicals",
+      "KOH",
+      "HF",
+      "HNO3",
+      "texturing chemicals"
+     ],
+     "priority": "medium",
+     "bottleneck": false,
+     "in_universe_coverage": false
+    },
+    {
+     "id": "screens",
+     "name": "Printing screens & consumables",
+     "level": 1,
+     "aliases": [
+      "printing screen",
+      "screens",
+      "screen printing"
+     ],
+     "priority": "medium",
+     "bottleneck": false,
+     "in_universe_coverage": false
+    },
+    {
+     "id": "equipment",
+     "name": "Cell-line machinery",
+     "level": 1,
+     "aliases": [
+      "cell line",
+      "turnkey line",
+      "jinchen",
+      "singulus",
+      "linton",
+      "svcs",
+      "cell equipment"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": false
+    },
+    {
+     "id": "pecvd",
+     "name": "Diffusion / PECVD / ALD tools",
+     "level": 2,
+     "aliases": [
+      "diffusion furnace",
+      "PECVD",
+      "LPCVD",
+      "ALD",
+      "deposition tool"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": false
+    },
+    {
+     "id": "metallise_equip",
+     "name": "Screen printers & firing furnaces",
+     "level": 2,
+     "aliases": [
+      "screen printer",
+      "firing furnace",
+      "metallisation equipment",
+      "dryer"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": false
+    },
+    {
+     "id": "testing",
+     "name": "Testing, sorting & ALMM qualification",
+     "level": 1,
+     "aliases": [
+      "IV tester",
+      "EL tester",
+      "cell sorter",
+      "ALMM List-II qualification"
+     ],
+     "priority": "medium",
+     "bottleneck": false,
+     "in_universe_coverage": false
+    },
+    {
+     "id": "infra",
+     "name": "Fab infrastructure (UPW, cleanroom, ZLD)",
+     "level": 1,
+     "aliases": [
+      "ultra pure water",
+      "cleanroom",
+      "zero liquid discharge",
+      "ZLD",
+      "UPW"
+     ],
+     "priority": "medium",
+     "bottleneck": false,
+     "in_universe_coverage": false
+    }
+   ]
+  },
+  {
+   "slug": "silver-paste-metallisation-india",
+   "industry": "Silver Paste & Metallisation",
+   "scope": "INDIA",
+   "path": "industries/silver-paste-metallisation-india.html",
+   "analysis_date": "2026-10-07",
+   "universe": "NSE/BSE",
+   "sector": "Renewable Energy",
+   "derived_from": {
+    "industry": "Solar Cell Fabrication",
+    "slug": "solar-cells-india",
+    "node": "Metallisation paste (Ag / Al)"
+   },
+   "drill_downs": [],
+   "nodes": [
+    {
+     "id": "silvermetal",
+     "name": "Silver metal & silver powder",
+     "level": 1,
+     "aliases": [
+      "silver",
+      "silver metal",
+      "silver powder",
+      "high purity silver"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "frontpaste",
+     "name": "Front-side Ag paste",
+     "level": 1,
+     "aliases": [
+      "silver paste",
+      "ag paste",
+      "front side paste",
+      "front paste",
+      "dkem",
+      "fusion",
+      "solamet"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": false
+    },
+    {
+     "id": "frit",
+     "name": "Glass frit (Pb-Te-O)",
+     "level": 2,
+     "aliases": [
+      "glass frit",
+      "frit",
+      "pb-te-o",
+      "lead tellurium oxide",
+      "tellurium"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": false
+    },
+    {
+     "id": "vehicle",
+     "name": "Organic vehicle & solvents",
+     "level": 2,
+     "aliases": [
+      "organic vehicle",
+      "binder",
+      "solvent"
+     ],
+     "priority": "medium",
+     "bottleneck": false,
+     "in_universe_coverage": false
+    },
+    {
+     "id": "alpads",
+     "name": "Rear Al paste & Ag/Al pads",
+     "level": 1,
+     "aliases": [
+      "aluminium paste",
+      "al paste",
+      "ag/al",
+      "pad paste"
+     ],
+     "priority": "medium",
+     "bottleneck": false,
+     "in_universe_coverage": false
+    },
+    {
+     "id": "screens",
+     "name": "Printing screens & stencils",
+     "level": 1,
+     "aliases": [
+      "printing screen",
+      "screens",
+      "stencil",
+      "fine mesh screen"
+     ],
+     "priority": "medium",
+     "bottleneck": false,
+     "in_universe_coverage": false
+    },
+    {
+     "id": "printing",
+     "name": "Screen printing & drying",
+     "level": 1,
+     "aliases": [
+      "screen printing",
+      "printer",
+      "dryer",
+      "metallisation line"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": false
+    },
+    {
+     "id": "firing",
+     "name": "Co-firing",
+     "level": 1,
+     "aliases": [
+      "co-firing",
+      "firing furnace",
+      "fast firing"
+     ],
+     "priority": "medium",
+     "bottleneck": false,
+     "in_universe_coverage": false
+    },
+    {
+     "id": "laser",
+     "name": "Laser (LECO / selective emitter)",
+     "level": 1,
+     "aliases": [
+      "leco",
+      "laser",
+      "selective emitter",
+      "laser contact opening"
+     ],
+     "priority": "medium",
+     "bottleneck": false,
+     "in_universe_coverage": false
+    },
+    {
+     "id": "agcu",
+     "name": "Silver-coated copper paste",
+     "level": 1,
+     "aliases": [
+      "silver coated copper",
+      "ag-coated cu",
+      "high copper paste",
+      "copper paste"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": false
+    },
+    {
+     "id": "cupaste",
+     "name": "Pure copper paste",
+     "level": 1,
+     "aliases": [
+      "pure copper paste",
+      "copper paste",
+      "cu paste"
+     ],
+     "priority": "medium",
+     "bottleneck": true,
+     "in_universe_coverage": false
+    },
+    {
+     "id": "plating",
+     "name": "Ni/Cu/Ag electroplating",
+     "level": 1,
+     "aliases": [
+      "electroplating",
+      "ni/cu/ag",
+      "plated contacts",
+      "rena",
+      "atotech",
+      "copper plating"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": false
+    }
+   ]
+  },
+  {
+   "slug": "smr-india",
+   "industry": "Small Modular Reactor",
+   "scope": "INDIA",
+   "path": "industries/smr-india.html",
+   "analysis_date": "2026-10-08",
+   "universe": "NSE/BSE",
+   "sector": "Nuclear Energy",
+   "derived_from": null,
+   "drill_downs": [],
+   "nodes": [
+    {
+     "id": "core",
+     "name": "Reactor Core & Fuel",
+     "level": 2,
+     "aliases": [
+      "reactor core",
+      "fuel assembly",
+      "fuel bundle",
+      "zircaloy cladding",
+      "fuel cladding",
+      "control rod drive mechanism",
+      "CRDM",
+      "reactivity control",
+      "calandria",
+      "end shield"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "fuelcycle",
+     "name": "Fuel Cycle Front-End",
+     "level": 2,
+     "aliases": [
+      "nuclear fuel",
+      "fuel fabrication",
+      "uranium mining",
+      "uranium milling",
+      "UOC",
+      "UO2 pellets",
+      "zirconium",
+      "zircaloy",
+      "heavy water",
+      "D2O",
+      "enrichment"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": false
+    },
+    {
+     "id": "sg",
+     "name": "Steam Generator / Heat Exchanger",
+     "level": 2,
+     "aliases": [
+      "steam generator",
+      "heat exchanger",
+      "pressuriser",
+      "moderator heat exchanger",
+      "SG",
+      "decay heat exchanger"
+     ],
+     "priority": "high",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "cont",
+     "name": "Containment & Pressure Boundary",
+     "level": 2,
+     "aliases": [
+      "pressure vessel",
+      "reactor pressure vessel",
+      "RPV",
+      "containment",
+      "calandria",
+      "safety vessel",
+      "ApuRVA",
+      "primary piping",
+      "reactor header"
+     ],
+     "priority": "high",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "pumps",
+     "name": "Reactor Coolant Pumps & Primary Loop",
+     "level": 2,
+     "aliases": [
+      "reactor coolant pump",
+      "primary coolant pump",
+      "PCP",
+      "shutdown cooling pump",
+      "SDCP",
+      "emergency core cooling",
+      "ECCS",
+      "moderator pump"
+     ],
+     "priority": "high",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "forging",
+     "name": "Heavy Forgings & Special Materials",
+     "level": 2,
+     "aliases": [
+      "heavy forging",
+      "forging",
+      "special steel",
+      "superalloy",
+      "titanium",
+      "ApuRVA alloy",
+      "ingot",
+      "nuclear-grade forging"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "turb",
+     "name": "Turbomachinery (Turbine Island)",
+     "level": 2,
+     "aliases": [
+      "steam turbine",
+      "nuclear steam turbine",
+      "generator",
+      "condenser",
+      "turbine island",
+      "feed heating"
+     ],
+     "priority": "high",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "ic",
+     "name": "Instrumentation & Control",
+     "level": 2,
+     "aliases": [
+      "instrumentation and control",
+      "I&C",
+      "C&I",
+      "reactor control",
+      "reactor protection",
+      "neutron flux monitoring",
+      "radiation monitoring",
+      "NUCON"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "elec",
+     "name": "Electrical Power & Switchgear",
+     "level": 2,
+     "aliases": [
+      "switchgear",
+      "generator transformer",
+      "switchyard",
+      "power cables",
+      "electrical"
+     ],
+     "priority": "med",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "bop",
+     "name": "Balance of Plant & Cooling",
+     "level": 2,
+     "aliases": [
+      "balance of plant",
+      "cooling water",
+      "cooling tower",
+      "HVAC",
+      "circulating water pump"
+     ],
+     "priority": "med",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "epc",
+     "name": "EPC, Civil & Construction",
+     "level": 2,
+     "aliases": [
+      "EPC",
+      "civil construction",
+      "nuclear island EPC",
+      "site integration",
+      "construction"
+     ],
+     "priority": "med",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "waste",
+     "name": "Waste Management & Spent Fuel",
+     "level": 2,
+     "aliases": [
+      "spent fuel",
+      "nuclear waste",
+      "waste management",
+      "reprocessing",
+      "fuel storage",
+      "cask"
+     ],
+     "priority": "med",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "am",
+     "name": "Aftermarket / O&M / Life Extension",
+     "level": 2,
+     "aliases": [
+      "aftermarket",
+      "O&M",
+      "refurbishment",
+      "life extension",
+      "in-service inspection",
+      "spares"
+     ],
+     "priority": "med",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    }
+   ]
+  }
+ ]
 }
