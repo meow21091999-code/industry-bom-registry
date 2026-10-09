@@ -116,16 +116,16 @@
   .sec-note { font-family: var(--font-mono); font-size: 11px; color: var(--text-dim); margin-left: auto; text-align: right; }
 
   /* ===== KPI ===== */
-  .kpi-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(165px, 1fr)); gap: 14px; }
-  .kpi {
+  .metric-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(165px, 1fr)); gap: 14px; }
+  .metric-card {
     background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 16px 18px;
     border-top: 3px solid var(--blue);
   }
-  .kpi--gold { border-top-color: var(--gold); }
-  .kpi--high { border-top-color: var(--high); }
-  .kpi__val { font-size: clamp(20px, 2.4vw, 27px); font-weight: 700; letter-spacing: -0.8px; font-variant-numeric: tabular-nums; line-height: 1.1; }
-  .kpi__label { font-family: var(--font-mono); font-size: 9.5px; font-weight: 600; text-transform: uppercase; letter-spacing: 1.2px; color: var(--text-dim); margin-top: 7px; }
-  .kpi__sub { font-size: 11px; color: var(--text-dim); margin-top: 3px; }
+  .metric-card--gold { border-top-color: var(--gold); }
+  .metric-card--high { border-top-color: var(--high); }
+  .metric-card__val { font-size: clamp(20px, 2.4vw, 27px); font-weight: 700; letter-spacing: -0.8px; font-variant-numeric: tabular-nums; line-height: 1.1; }
+  .metric-card__label { font-family: var(--font-mono); font-size: 9.5px; font-weight: 600; text-transform: uppercase; letter-spacing: 1.2px; color: var(--text-dim); margin-top: 7px; }
+  .metric-card__sub { font-size: 11px; color: var(--text-dim); margin-top: 3px; }
 
   /* ===== DIGEST ===== */
   .digest { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px; }
@@ -138,6 +138,26 @@
   .digest__item li:last-child { margin-bottom: 0; }
   .digest__item li::before { content: ''; position: absolute; left: 0; top: 7px; width: 4px; height: 4px; border-radius: 50%; background: var(--text-dim); opacity: 0.6; }
   .digest__item b { color: var(--text); font-weight: 600; }
+
+
+  /* ===== METRIC DETAIL POPUP ===== */
+  .metric-card { position: relative; cursor: pointer; transition: box-shadow .15s ease, transform .15s ease; }
+  .metric-card:hover { transform: translateY(-2px); box-shadow: 0 6px 16px rgba(15,37,64,0.12); }
+  .metric-card:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; }
+  .metric-card::after { content: 'i'; position: absolute; top: 10px; right: 12px; width: 15px; height: 15px; border: 1px solid var(--border-bright); border-radius: 50%; font-family: var(--font-mono); font-size: 9px; color: var(--text-dim); display: flex; align-items: center; justify-content: center; opacity: .55; }
+  .metric-modal { position: fixed; inset: 0; z-index: 60; display: flex; align-items: center; justify-content: center; padding: 20px; }
+  .metric-modal[hidden] { display: none; }
+  .metric-modal__backdrop { position: absolute; inset: 0; background: rgba(6,16,30,0.55); }
+  .metric-modal__panel { position: relative; background: var(--surface); border: 1px solid var(--border-bright); border-radius: 12px; padding: 22px 24px; max-width: 470px; width: 100%; box-shadow: 0 18px 50px rgba(0,0,0,0.35); }
+  .metric-modal__close { position: absolute; top: 8px; right: 12px; border: none; background: transparent; color: var(--text-dim); font-size: 22px; line-height: 1; cursor: pointer; }
+  .metric-modal__close:hover { color: var(--text); }
+  .metric-modal__kicker { font-family: var(--font-mono); font-size: 10px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: var(--gold); margin-bottom: 8px; }
+  .metric-modal__val { font-size: 26px; font-weight: 700; letter-spacing: -0.8px; font-variant-numeric: tabular-nums; }
+  .metric-modal__label { font-family: var(--font-mono); font-size: 11px; color: var(--text-dim); margin: 4px 0 14px; }
+  .metric-modal__bullets { list-style: none; margin: 0; padding: 0; }
+  .metric-modal__bullets li { position: relative; padding-left: 15px; font-size: 13px; color: var(--text-dim); line-height: 1.55; margin-bottom: 8px; }
+  .metric-modal__bullets li:last-child { margin-bottom: 0; }
+  .metric-modal__bullets li::before { content: ''; position: absolute; left: 0; top: 8px; width: 5px; height: 5px; border-radius: 50%; background: var(--gold); opacity: .7; }
 
   /* ===== MERMAID ===== */
   .diagram-shell { position: relative; }
@@ -189,7 +209,7 @@
 
   /* ===== INTERACTIVE MAP ===== */
   .map-layout { display: grid; grid-template-columns: 1fr 380px; gap: 18px; align-items: start; }
-  .map-layout > *, .kpi-row > *, .map-nodes > *, .bn > * { min-width: 0; overflow-wrap: break-word; }
+  .map-layout > *, .metric-cards > *, .map-nodes > *, .bn > * { min-width: 0; overflow-wrap: break-word; }
   .map-nodes { display: grid; grid-template-columns: repeat(auto-fill, minmax(215px, 1fr)); gap: 10px; }
   .node-btn {
     text-align: left; background: var(--surface); border: 1px solid var(--border); border-radius: 9px;
@@ -303,38 +323,38 @@
     </div>
   </header>
 
-  <!-- KPI -->
+  <!-- METRIC CARDS -->
   <section class="animate" style="--i:1">
-    <div class="kpi-row">
-      <div class="kpi kpi--gold">
-        <div class="kpi__val">$8.4 bn</div>
-        <div class="kpi__label">India space economy</div>
-        <div class="kpi__sub">Target $44 bn by 2033 (8% of global)</div>
+    <div class="metric-cards">
+      <div class="metric-card metric-card--gold">
+        <div class="metric-card__val">$8.4 bn</div>
+        <div class="metric-card__label">India space economy</div>
+        <div class="metric-card__sub">Target $44 bn by 2033 (8% of global)</div>
       </div>
-      <div class="kpi">
-        <div class="kpi__val">400+</div>
-        <div class="kpi__label">Space startups</div>
-        <div class="kpi__sub">Up from 1 in 2014</div>
+      <div class="metric-card">
+        <div class="metric-card__val">400+</div>
+        <div class="metric-card__label">Space startups</div>
+        <div class="metric-card__sub">Up from 1 in 2014</div>
       </div>
-      <div class="kpi">
-        <div class="kpi__val">$618.5 mn</div>
-        <div class="kpi__label">Cumulative private funding</div>
-        <div class="kpi__sub">To 31 Mar 2026</div>
+      <div class="metric-card">
+        <div class="metric-card__val">$618.5 mn</div>
+        <div class="metric-card__label">Cumulative private funding</div>
+        <div class="metric-card__sub">To 31 Mar 2026</div>
       </div>
-      <div class="kpi kpi--high">
-        <div class="kpi__val">50&ndash;55%</div>
-        <div class="kpi__label">Satellite import content</div>
-        <div class="kpi__sub">Launch vehicles ~5&ndash;10%</div>
+      <div class="metric-card metric-card--high">
+        <div class="metric-card__val">50&ndash;55%</div>
+        <div class="metric-card__label">Satellite import content</div>
+        <div class="metric-card__sub">Launch vehicles ~5&ndash;10%</div>
       </div>
-      <div class="kpi kpi--high">
-        <div class="kpi__val">70&ndash;80%</div>
-        <div class="kpi__label">Space-grade solar cells imported</div>
-        <div class="kpi__sub">Gallium / germanium refining: nil</div>
+      <div class="metric-card metric-card--high">
+        <div class="metric-card__val">70&ndash;80%</div>
+        <div class="metric-card__label">Space-grade solar cells imported</div>
+        <div class="metric-card__sub">Gallium / germanium refining: nil</div>
       </div>
-      <div class="kpi">
-        <div class="kpi__val">133</div>
-        <div class="kpi__label">IN-SPACe authorisations</div>
-        <div class="kpi__sub">As of Jun 2026</div>
+      <div class="metric-card">
+        <div class="metric-card__val">133</div>
+        <div class="metric-card__label">IN-SPACe authorisations</div>
+        <div class="metric-card__sub">As of Jun 2026</div>
       </div>
     </div>
   </section>
@@ -588,6 +608,18 @@ graph TD
   </p>
 
 </div>
+  <!-- METRIC DETAIL POPUP -->
+  <div class="metric-modal" id="metricModal" hidden>
+    <div class="metric-modal__backdrop" data-close></div>
+    <div class="metric-modal__panel" role="dialog" aria-modal="true" aria-labelledby="metricModalTitle">
+      <button class="metric-modal__close" type="button" data-close aria-label="Close">&times;</button>
+      <div class="metric-modal__kicker">Metric detail</div>
+      <div class="metric-modal__val" id="metricModalVal"></div>
+      <div class="metric-modal__label" id="metricModalTitle"></div>
+      <ul class="metric-modal__bullets" id="metricModalBullets"></ul>
+    </div>
+  </div>
+
 <script type="module">
   import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
 
@@ -1093,6 +1125,30 @@ PTREE.forEach((grp) => {
   nodesEl.appendChild(wrap);
 });
 if (firstBtn) { firstBtn.classList.add('is-active'); renderPanel(NODES.find((n) => n.id === 'lv')); }
+
+/* ===== METRIC DETAIL POPUP ===== */
+(function () {
+  var METRICS = [{"v": "$8.4 bn", "l": "India space economy", "b": ["Size of India’s whole space economy — upstream (satellites, launch) plus downstream (services, data).", "Scope: India, 2026. Official target: $44 bn by 2033, about 8% of the global space economy.", "Source: PIB / Department of Space (2026). Some sources cite ~$8–9 bn depending on what is counted."]}, {"v": "400+", "l": "Space startups", "b": ["Active private space companies in India, up from just one in 2014.", "Scope: India, 2026; roughly 440 are registered on the DPIIT Start-up India portal.", "Source: IN-SPACe / PIB (2026). The count moves quickly, and “active” vs “registered” differ."]}, {"v": "$618.5 mn", "l": "Cumulative private funding", "b": ["Total private investment into Indian space startups, to 31 March 2026.", "Scope: private / startup funding only — excludes government space spending.", "Source: PIB / IN-SPACe (2026); ~$187 mn was reported in 2026 alone, with the mix shifting to growth-stage rounds."]}, {"v": "50–55%", "l": "Satellite import content", "b": ["Share of a satellite’s content (components and electronics) that is imported.", "Scope: satellites — launch vehicles are far less import-dependent (~5–10%).", "Source: ISRO / Department of Space statements. Concentrated in high-end electronics — the deepest structural dependency."]}, {"v": "70–80%", "l": "Space-grade solar cells imported", "b": ["Share of space-grade solar-cell material sourced abroad, by value.", "Scope: India, 2026; imports mainly from the US, EU and Japan.", "Source: IndexBox (2026). India has zero gallium / germanium refining capacity; ITAR / ECCN licensing can delay procurement 6–12 months."]}, {"v": "133", "l": "IN-SPACe authorisations", "b": ["Authorisations granted by IN-SPACe to non-government entities to carry out space activities.", "Scope: since inception, to June 2026.", "Source: PIB / IN-SPACe (2026). Fast-moving — the same source reports 4,500+ registered organisations and 118 technology-transfer agreements."]}];
+  var modal = document.getElementById('metricModal');
+  if (!modal) return;
+  var valEl = document.getElementById('metricModalVal');
+  var labEl = document.getElementById('metricModalTitle');
+  var ulEl  = document.getElementById('metricModalBullets');
+  function open(i) {
+    var m = METRICS[i]; if (!m) return;
+    valEl.textContent = m.v; labEl.textContent = m.l;
+    ulEl.innerHTML = m.b.map(function (x) { return '<li>' + x + '</li>'; }).join('');
+    modal.hidden = false; document.body.style.overflow = 'hidden';
+  }
+  function close() { modal.hidden = true; document.body.style.overflow = ''; }
+  Array.prototype.forEach.call(document.querySelectorAll('.metric-card'), function (card, i) {
+    card.setAttribute('role', 'button'); card.setAttribute('tabindex', '0');
+    card.addEventListener('click', function () { open(i); });
+    card.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(i); } });
+  });
+  Array.prototype.forEach.call(modal.querySelectorAll('[data-close]'), function (el) { el.addEventListener('click', close); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !modal.hidden) close(); });
+})();
 </script>
 </body>
 </html>
