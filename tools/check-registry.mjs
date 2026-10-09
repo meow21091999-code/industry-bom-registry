@@ -10,6 +10,7 @@
  *   - uses a DEPRECATED alias class (registry-design-language.md §0)
  *   - contains leaked [cite:...] markers
  *   - is an entry page with no canonical component classes at all (the index is exempt)
+ *   - the register index carrying metric-card components (it is a plain listing)
  *   - is an entry page that carries a component's MARKUP but not its CSS — i.e. a
  *     canonical component selector that is missing from both the page and the
  *     shared stylesheet (the "sections render unstyled" bug)
@@ -101,6 +102,12 @@ for (const file of files) {
 
   if (isEntryPage && !CANONICAL_SAMPLES.some(c => cls.has(c))) {
     problems.push('no canonical component classes found (metric-card / digest / metric-modal)');
+  }
+
+  if (!isEntryPage) {
+    // The register index is a plain listing — it must not carry metric cards.
+    const banned = ['metric-card', 'metric-cards', 'metric-modal'].filter(c => cls.has(c));
+    if (banned.length) problems.push('the register index must not carry metric-card components (found: ' + banned.join(', ') + ')');
   }
 
   if (isEntryPage) {
