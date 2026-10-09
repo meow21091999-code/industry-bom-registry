@@ -127,6 +127,18 @@
   .kpi__label { font-family: var(--font-mono); font-size: 9.5px; font-weight: 600; text-transform: uppercase; letter-spacing: 1.2px; color: var(--text-dim); margin-top: 7px; }
   .kpi__sub { font-size: 11px; color: var(--text-dim); margin-top: 3px; }
 
+  /* ===== DIGEST ===== */
+  .digest { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px; }
+  .digest__item { background: var(--surface); border: 1px solid var(--border); border-left: 3px solid var(--blue); border-radius: 8px; padding: 13px 16px; }
+  .digest__item--gold { border-left-color: var(--gold); }
+  .digest__item--high { border-left-color: var(--high); }
+  .digest__h { font-family: var(--font-mono); font-size: 10px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; color: var(--gold); margin-bottom: 7px; }
+  .digest__item ul { list-style: none; margin: 0; padding: 0; }
+  .digest__item li { position: relative; padding-left: 13px; font-size: 12.5px; color: var(--text-dim); line-height: 1.5; margin-bottom: 5px; }
+  .digest__item li:last-child { margin-bottom: 0; }
+  .digest__item li::before { content: ''; position: absolute; left: 0; top: 7px; width: 4px; height: 4px; border-radius: 50%; background: var(--text-dim); opacity: 0.6; }
+  .digest__item b { color: var(--text); font-weight: 600; }
+
   /* ===== MERMAID ===== */
   .diagram-shell { position: relative; }
   .diagram-shell__hint { font-family: var(--font-mono); font-size: 11px; color: var(--text-dim); margin-bottom: 8px; opacity: 0.8; }
@@ -323,6 +335,64 @@
         <div class="kpi__val">133</div>
         <div class="kpi__label">IN-SPACe authorisations</div>
         <div class="kpi__sub">As of Jun 2026</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIGEST -->
+  <section class="animate" style="--i:2">
+    <div class="sec-head">
+      <span class="sec-num">D</span>
+      <span class="sec-title">Digest</span>
+      <span class="sec-note">short summary &middot; full detail in the sections below</span>
+    </div>
+    <div class="digest">
+      <div class="digest__item">
+        <div class="digest__h">Snapshot</div>
+        <ul>
+          <li>Four segments: <b>space</b> (bus &amp; payload) &middot; <b>launch</b> &middot; <b>ground</b> &middot; <b>downstream</b> services.</li>
+          <li><b>~$8.4 bn</b> economy, targeted <b>$44 bn by 2033</b>; 400+ startups and $618.5 mn private funding since the 2020 reforms.</li>
+        </ul>
+      </div>
+      <div class="digest__item digest__item--gold">
+        <div class="digest__h">Process &amp; equipment</div>
+        <ul>
+          <li>Satellite build is assembly-and-test &mdash; cleanroom AIT and environmental testing (TVAC, vibration); most qualification facilities stay with ISRO.</li>
+          <li>Launch vehicles serial-produced by HAL and L&amp;T (SSLV ToT &#8377;511 cr; PSLV consortium &#8377;860 cr).</li>
+          <li>Equipment base is precision machining, composites, cryogenic-engine assembly and RF/electronics build.</li>
+        </ul>
+      </div>
+      <div class="digest__item digest__item--high">
+        <div class="digest__h">Bottlenecks</div>
+        <ul>
+          <li>Space-grade solar cells &mdash; 70&ndash;80% imported; zero domestic Ga/Ge refining (<b>years</b>).</li>
+          <li>ADCS, star trackers, rad-hard electronics &mdash; imported (<b>years</b>).</li>
+          <li>Atomic clocks &mdash; failed on 5 of 11 NavIC satellites (<b>structural</b>).</li>
+          <li>Launch cadence &mdash; ~12/yr vs 50&ndash;60 needed (<b>months&ndash;years</b>).</li>
+          <li>Ground-segment indigenisation &mdash; 20% mandated in 5 years.</li>
+        </ul>
+      </div>
+      <div class="digest__item">
+        <div class="digest__h">Value pools</div>
+        <ul>
+          <li>Value leaks upstream to imported solar cells, ADCS, atomic clocks and rad-hard electronics.</li>
+          <li>Domestic capture: launch production (HAL, L&amp;T); satellite electronics &amp; payloads (Data Patterns, Astra Microwave, Centum, BEL); materials (MIDHANI).</li>
+          <li>Demand-side pools: EO data &amp; geospatial (MapmyIndia, Genesys, Ceinsys) and satcom subscription (Jio, Bharti); NSIL holds transponder leasing.</li>
+        </ul>
+      </div>
+      <div class="digest__item digest__item--gold">
+        <div class="digest__h">Watch items</div>
+        <ul>
+          <li>Satcom spectrum pricing and commercial rollout (DoT / DCC).</li>
+          <li>The 5-year ground-segment indigenisation clock.</li>
+          <li>Vikram-1 orbital launch; IN-SPACe authorisation and investment counts (fast-moving).</li>
+        </ul>
+      </div>
+      <div class="digest__item digest__item--high">
+        <div class="digest__h">Coverage gaps</div>
+        <ul>
+          <li>No NSE/BSE pure-play for space-grade solar cells, ADCS, atomic clocks, private small launch vehicles, GSaaS, navigation services or transponder leasing.</li>
+        </ul>
       </div>
     </div>
   </section>
