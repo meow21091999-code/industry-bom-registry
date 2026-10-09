@@ -1,7 +1,7 @@
 {
   "registry": "Industry BOM Registry",
   "description": "Machine-readable node index. For every entry, the node names it contains plus the owning entry slug. Used for DEDUP (industry+scope already analysed) and LINEAGE (auto-linking a new industry to a parent when its name matches a node name). Update on every publish.",
-  "generated": "2026-10-08",
+  "generated": "2026-10-09",
   "entries": [
     {
       "slug": "power-transmission-india",
@@ -6027,6 +6027,620 @@
           "bottleneck": true,
           "in_universe_coverage": false,
           "coverage_note": "No listed pure-play; in-house at operators/OEMs."
+        }
+      ]
+    },
+    {
+      "slug": "satellite-india",
+      "industry": "Satellite",
+      "scope": "INDIA",
+      "path": "industries/satellite-india.html",
+      "analysis_date": "2026-10-09",
+      "universe": "NSE/BSE",
+      "sector": "Space & Satellites",
+      "derived_from": null,
+      "drill_downs": [],
+      "nodes": [
+        {
+          "id": "space-segment",
+          "name": "Space Segment — Satellite Bus & Payload",
+          "level": 1,
+          "aliases": [
+            "space segment",
+            "satellite bus",
+            "spacecraft",
+            "satellite manufacturing",
+            "satellite platform",
+            "payload"
+          ],
+          "priority": "high",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "launch-segment",
+          "name": "Launch Segment — Launch Vehicles & Services",
+          "level": 1,
+          "aliases": [
+            "launch vehicle",
+            "launcher",
+            "PSLV",
+            "GSLV",
+            "LVM3",
+            "SSLV",
+            "rocket",
+            "launch services"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "ground-segment",
+          "name": "Ground Segment — Terminals, Gateways, Stations",
+          "level": 1,
+          "aliases": [
+            "ground segment",
+            "ground station",
+            "earth station",
+            "gateway",
+            "hub station",
+            "VSAT",
+            "user terminal"
+          ],
+          "priority": "high",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "downstream",
+          "name": "Downstream — Satellite Services & Data",
+          "level": 1,
+          "aliases": [
+            "satcom",
+            "satellite internet",
+            "satellite broadband",
+            "DTH",
+            "earth observation",
+            "geospatial",
+            "navigation services"
+          ],
+          "priority": "high",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "satbus",
+          "name": "Satellite Bus / Platform",
+          "level": 2,
+          "aliases": [
+            "satellite bus",
+            "spacecraft bus",
+            "platform",
+            "satellite platform"
+          ],
+          "priority": "high",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "structure",
+          "name": "Structure, Mechanisms & Thermal",
+          "level": 2,
+          "aliases": [
+            "structure",
+            "mechanisms",
+            "thermal control",
+            "deployable",
+            "radiator",
+            "panels"
+          ],
+          "priority": "med",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "power",
+          "name": "Power System (Solar Arrays & Batteries)",
+          "level": 2,
+          "aliases": [
+            "power system",
+            "solar array",
+            "battery",
+            "power conditioning",
+            "EPS",
+            "solar panel"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "solarcell",
+          "name": "Space-grade Solar Cells (III-V)",
+          "level": 2,
+          "aliases": [
+            "space solar cell",
+            "III-V cell",
+            "multi-junction cell",
+            "epitaxial wafer",
+            "solar cell"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": false
+        },
+        {
+          "id": "adcs",
+          "name": "ADCS — Star Trackers, Reaction Wheels, Gyros",
+          "level": 2,
+          "aliases": [
+            "ADCS",
+            "attitude control",
+            "star tracker",
+            "reaction wheel",
+            "gyroscope",
+            "gyro",
+            "momentum wheel"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": false
+        },
+        {
+          "id": "obc",
+          "name": "On-board Computer & Avionics",
+          "level": 2,
+          "aliases": [
+            "onboard computer",
+            "OBC",
+            "avionics",
+            "rad-hard processor",
+            "FPGA",
+            "data handling"
+          ],
+          "priority": "high",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "ttctrans",
+          "name": "TT&C, Transponders & TWTA",
+          "level": 2,
+          "aliases": [
+            "TT&C",
+            "telemetry",
+            "transponder",
+            "TWTA",
+            "travelling wave tube amplifier",
+            "SSPA",
+            "command"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "compayload",
+          "name": "Communication Payload (Antennas / Transponders)",
+          "level": 2,
+          "aliases": [
+            "communication payload",
+            "comms payload",
+            "transponder",
+            "antenna",
+            "reflector",
+            "phased array"
+          ],
+          "priority": "high",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "eopayload",
+          "name": "EO Payload (Optical / SAR / Hyperspectral)",
+          "level": 2,
+          "aliases": [
+            "earth observation payload",
+            "optical payload",
+            "SAR",
+            "synthetic aperture radar",
+            "hyperspectral",
+            "imaging payload",
+            "remote sensing payload"
+          ],
+          "priority": "high",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "navpayload",
+          "name": "Navigation Payload (NavIC / Atomic Clocks)",
+          "level": 2,
+          "aliases": [
+            "navigation payload",
+            "NavIC",
+            "atomic clock",
+            "rubidium clock",
+            "IRNSS",
+            "PNT"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": false
+        },
+        {
+          "id": "propulsion",
+          "name": "Satellite Propulsion (Chemical / Electric)",
+          "level": 2,
+          "aliases": [
+            "satellite propulsion",
+            "thruster",
+            "electric propulsion",
+            "green propulsion",
+            "ion thruster",
+            "station keeping"
+          ],
+          "priority": "high",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "ait",
+          "name": "Satellite AIT — Integration & Testing",
+          "level": 2,
+          "aliases": [
+            "AIT",
+            "assembly integration testing",
+            "spacecraft integration",
+            "environmental testing",
+            "TVAC",
+            "qualification"
+          ],
+          "priority": "high",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "materials",
+          "name": "Space-grade Materials (Superalloys, Ti, Composites)",
+          "level": 2,
+          "aliases": [
+            "superalloy",
+            "titanium",
+            "composite",
+            "carbon fibre",
+            "specialty metals",
+            "space materials"
+          ],
+          "priority": "med",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "lv",
+          "name": "Launch Vehicle Systems (PSLV / GSLV / LVM3 / SSLV)",
+          "level": 2,
+          "aliases": [
+            "launch vehicle",
+            "PSLV",
+            "GSLV",
+            "LVM3",
+            "SSLV",
+            "rocket",
+            "launcher"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "solidprop",
+          "name": "Solid Propulsion — Motor Casings & Nozzles",
+          "level": 2,
+          "aliases": [
+            "solid propulsion",
+            "motor casing",
+            "nozzle",
+            "solid booster",
+            "S200",
+            "HTPB"
+          ],
+          "priority": "med",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "cryoeng",
+          "name": "Liquid & Cryogenic Engines",
+          "level": 2,
+          "aliases": [
+            "cryogenic engine",
+            "liquid engine",
+            "CE-20",
+            "Vikas engine",
+            "cryo stage",
+            "liquid propulsion"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "lvavionics",
+          "name": "Launch-Vehicle Avionics & Guidance",
+          "level": 2,
+          "aliases": [
+            "launch vehicle avionics",
+            "guidance",
+            "navigation and control",
+            "launcher avionics"
+          ],
+          "priority": "high",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "lvstruct",
+          "name": "LV Structures & Propellant Tanks",
+          "level": 2,
+          "aliases": [
+            "propellant tank",
+            "launch vehicle structure",
+            "interstage",
+            "core stage"
+          ],
+          "priority": "med",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "composites",
+          "name": "Composite Structures (Carbon Fibre)",
+          "level": 2,
+          "aliases": [
+            "composite structure",
+            "carbon fibre",
+            "composite motor case",
+            "filament winding"
+          ],
+          "priority": "med",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "smalllaunch",
+          "name": "Private Small Launch Vehicles",
+          "level": 2,
+          "aliases": [
+            "private launch vehicle",
+            "small launcher",
+            "Vikram-1",
+            "Agnibaan",
+            "small satellite launch"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": false
+        },
+        {
+          "id": "launchsvc",
+          "name": "Launch Services & Spaceport",
+          "level": 2,
+          "aliases": [
+            "launch services",
+            "spaceport",
+            "launch pad",
+            "mission support",
+            "range"
+          ],
+          "priority": "med",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "groundstation",
+          "name": "Ground Station / Earth Station Antennas",
+          "level": 2,
+          "aliases": [
+            "ground station",
+            "earth station",
+            "antenna",
+            "feed system",
+            "tracking pedestal"
+          ],
+          "priority": "high",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "gateway",
+          "name": "Gateway / Hub Stations",
+          "level": 2,
+          "aliases": [
+            "gateway",
+            "hub station",
+            "feeder station",
+            "teleport"
+          ],
+          "priority": "high",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "vsat",
+          "name": "VSAT Terminals (C / Ku / Ka)",
+          "level": 2,
+          "aliases": [
+            "VSAT",
+            "very small aperture terminal",
+            "user terminal",
+            "satellite terminal"
+          ],
+          "priority": "high",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "groundrf",
+          "name": "Ground RF Chains, Baseband & Modems",
+          "level": 2,
+          "aliases": [
+            "RF chain",
+            "baseband",
+            "modem",
+            "up converter",
+            "down converter",
+            "BUC",
+            "LNB"
+          ],
+          "priority": "med",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "ttcg",
+          "name": "TT&C Ground Systems & Mission Ops",
+          "level": 2,
+          "aliases": [
+            "TT&C ground",
+            "mission control",
+            "LEOP",
+            "in-orbit test",
+            "mission operations"
+          ],
+          "priority": "med",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "gsaas",
+          "name": "Ground-Station-as-a-Service (GSaaS)",
+          "level": 2,
+          "aliases": [
+            "GSaaS",
+            "ground station as a service",
+            "shared ground station"
+          ],
+          "priority": "med",
+          "bottleneck": false,
+          "in_universe_coverage": false
+        },
+        {
+          "id": "broadband",
+          "name": "Satellite Broadband (GMPCS)",
+          "level": 2,
+          "aliases": [
+            "satellite broadband",
+            "satellite internet",
+            "GMPCS",
+            "LEO broadband",
+            "satcom internet"
+          ],
+          "priority": "high",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "dth",
+          "name": "DTH Services",
+          "level": 2,
+          "aliases": [
+            "DTH",
+            "direct to home",
+            "direct-to-home",
+            "satellite TV"
+          ],
+          "priority": "med",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "vsatsvc",
+          "name": "VSAT & Enterprise Satcom Services",
+          "level": 2,
+          "aliases": [
+            "VSAT services",
+            "enterprise satcom",
+            "CUG",
+            "closed user group"
+          ],
+          "priority": "med",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "eodata",
+          "name": "EO Data & Geospatial Analytics",
+          "level": 2,
+          "aliases": [
+            "earth observation data",
+            "geospatial",
+            "GIS",
+            "remote sensing analytics",
+            "imagery analytics",
+            "digital twin"
+          ],
+          "priority": "high",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "navsvc",
+          "name": "Navigation Services (NavIC)",
+          "level": 2,
+          "aliases": [
+            "navigation services",
+            "NavIC services",
+            "positioning",
+            "PNT services"
+          ],
+          "priority": "med",
+          "bottleneck": false,
+          "in_universe_coverage": false
+        },
+        {
+          "id": "transponder",
+          "name": "Transponder / Capacity Leasing",
+          "level": 2,
+          "aliases": [
+            "transponder lease",
+            "satellite capacity",
+            "bandwidth lease",
+            "space segment capacity"
+          ],
+          "priority": "med",
+          "bottleneck": false,
+          "in_universe_coverage": false
+        },
+        {
+          "id": "software",
+          "name": "Space Software & Mission Analytics",
+          "level": 2,
+          "aliases": [
+            "space software",
+            "mission planning",
+            "onboard autonomy",
+            "ground data system"
+          ],
+          "priority": "low",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "test",
+          "name": "Space Qualification & Test Infrastructure",
+          "level": 2,
+          "aliases": [
+            "qualification test",
+            "thermal vacuum",
+            "vibration test",
+            "radiation test",
+            "test facility"
+          ],
+          "priority": "med",
+          "bottleneck": true,
+          "in_universe_coverage": false
         }
       ]
     }
