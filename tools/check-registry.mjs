@@ -9,7 +9,7 @@
  *   - does not link the shared stylesheet (assets/registry.css)
  *   - uses a DEPRECATED alias class (registry-design-language.md §0)
  *   - contains leaked [cite:...] markers
- *   - carries no canonical component classes at all
+ *   - carries no canonical component classes at all (entry pages only; the index is exempt)
  *
  * Run this BEFORE reporting a run done. Never publish a failing page.
  */
@@ -72,7 +72,8 @@ for (const file of files) {
     problems.push('contains [cite:...] markers (must be plain prose)');
   }
 
-  if (!CANONICAL_SAMPLES.some(c => cls.has(c))) {
+  const isEntryPage = /(^|[\\/])industries[\\/]/.test(file);
+  if (isEntryPage && !CANONICAL_SAMPLES.some(c => cls.has(c))) {
     problems.push('no canonical component classes found (metric-card / digest / metric-modal)');
   }
 

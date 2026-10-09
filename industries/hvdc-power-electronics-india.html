@@ -829,44 +829,40 @@ renderPanel(NODES[0]);
 
 <script>window.__MBULLETS=[["India's installed HVDC line base, carrying 33,500 MW of transfer capacity.", "Source: CEA."], ["Planned HVDC additions FY28&ndash;32, adding +32,250 MW of transfer capacity.", "Source: CEA / NEP."], ["Share of converter-station content imported &mdash; the core valves and control code are foreign.", "A bottleneck.", "Source: industry."], ["Lead time for converter transformers, which are custom-built per project.", "Source: industry."], ["Local-content mandate on HVDC projects &mdash; 30% baseline in 2026 rising to 60% by Mar-2035.", "Scope: policy.", "Source: government."]];</script>
 
-<div id="mdov" onclick="__mdClose()"></div>
-<aside id="mdp" aria-live="polite" aria-hidden="true">
-  <button class="metric-modal__close" onclick="__mdClose()">close &#10005;</button>
-  <div class="metric-modal__kicker">Metric detail</div>
-  <div class="metric-modal__val" id="mdpV"></div>
-  <div class="metric-modal__label" id="mdpL"></div>
-  <div class="metric-modal__label" id="mdpS"></div>
-  <ul id="mdpB"></ul>
-</aside>
+<div class="metric-modal" id="regMetricModal" hidden>
+  <div class="metric-modal__backdrop" data-close></div>
+  <div class="metric-modal__panel">
+    <button class="metric-modal__close" data-close aria-label="Close">&#10005;</button>
+    <div class="metric-modal__kicker">Metric detail</div>
+    <div class="metric-modal__val" id="rmVal"></div>
+    <div class="metric-modal__label" id="rmLabel"></div>
+    <ul class="metric-modal__bullets" id="rmBullets"></ul>
+  </div>
+</div>
 
 <script>
 (function(){
   var B = window.__MBULLETS || [];
-  function val(el,s){var n=el.querySelector(s);return n?n.textContent.trim():'';}
-  var cards=[].slice.call(document.querySelectorAll('.metric-card'));
-  cards.forEach(function(el,i){
-    el.setAttribute('data-metric', i);
+  var modal = document.getElementById('regMetricModal');
+  if (!modal) return;
+  var v = document.getElementById('rmVal'), l = document.getElementById('rmLabel'), ul = document.getElementById('rmBullets');
+  function val(el,s){ var n = el.querySelector(s); return n ? n.textContent.trim() : ''; }
+  function close(){ modal.hidden = true; }
+  function open(card, i){
+    v.textContent = val(card, '.metric-card__val');
+    var sub = val(card, '.metric-card__sub');
+    l.textContent = val(card, '.metric-card__label') + (sub ? ' — ' + sub : '');
+    ul.innerHTML = (B[i] || []).map(function(x){ return '<li>' + x + '</li>'; }).join('');
+    modal.hidden = false;
+  }
+  [].slice.call(document.querySelectorAll('.metric-card')).forEach(function(el, i){
     el.setAttribute('role','button');
     el.setAttribute('tabindex','0');
-    function open(){
-      var b=B[i]||[];
-      document.getElementById('mdpV').textContent = val(el,'.metric-card__val,.metric-card__val');
-      document.getElementById('mdpL').textContent = val(el,'.metric-card__label,.metric-card__label');
-      var s=val(el,'.metric-card__sub'); var sn=document.getElementById('mdpS');
-      sn.textContent=s; sn.style.display=s?'block':'none';
-      document.getElementById('mdpB').innerHTML = b.map(function(x){return '<li>'+x+'</li>';}).join('');
-      document.getElementById('mdov').classList.add('on');
-      document.getElementById('mdp').classList.add('on');
-      document.getElementById('mdp').setAttribute('aria-hidden','false');
-    }
-    el.addEventListener('click',open);
-    el.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();open();}});
+    el.addEventListener('click', function(){ open(el, i); });
+    el.addEventListener('keydown', function(e){ if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(el, i); } });
   });
-  window.__mdClose=function(){
-    document.getElementById('mdov').classList.remove('on');
-    document.getElementById('mdp').classList.remove('on');
-    document.getElementById('mdp').setAttribute('aria-hidden','true');
-  };
+  [].slice.call(modal.querySelectorAll('[data-close]')).forEach(function(el){ el.addEventListener('click', close); });
+  document.addEventListener('keydown', function(e){ if (e.key === 'Escape') close(); });
 })();
 </script>
 </body>

@@ -81,27 +81,10 @@
 .digest__item b { color:var(--text); font-weight:600; }
 
 /* ===== REGISTRY STANDARD — METRIC DETAIL POPUP (centred modal) ===== */
-#mdov, .metric-modal__backdrop { background:rgba(6,16,30,.55); }
-#mdov { position:fixed; inset:0; z-index:80; opacity:0; pointer-events:none; transition:opacity .2s ease; }
-#mdov.on { opacity:1; pointer-events:auto; }
-#mdp {
-  position:fixed; top:50%; left:50%; right:auto; height:auto; width:470px; max-width:92vw; max-height:82vh;
-  transform:translate(-50%,-50%); background:var(--surface); border:1px solid var(--border-bright);
-  border-radius:12px; padding:22px 24px; box-shadow:0 18px 50px rgba(0,0,0,.35); overflow-y:auto; z-index:81;
-  opacity:0; visibility:hidden; pointer-events:none; transition:opacity .2s ease, visibility .2s ease;
-}
-#mdp.on { opacity:1; visibility:visible; pointer-events:auto; }
-#mdp .metric-modal__val { font-size:26px; font-weight:700; letter-spacing:-.8px; font-variant-numeric:tabular-nums; }
-#mdp .metric-modal__kicker { font-family:var(--font-mono); font-size:10px; font-weight:600; letter-spacing:1.5px; text-transform:uppercase; color:var(--gold); margin-bottom:8px; }
-#mdp .metric-modal__label { font-family:var(--font-mono); font-size:11px; color:var(--text-dim); margin:4px 0 14px; }
-#mdp ul { list-style:none; margin:0; padding:0; }
-#mdp li { position:relative; padding-left:15px; font-size:13px; color:var(--text-dim); line-height:1.55; margin-bottom:8px; }
-#mdp li::before { content:''; position:absolute; left:0; top:8px; width:5px; height:5px; border-radius:50%; background:var(--gold); opacity:.7; }
-#mdp .metric-modal__close { position:absolute; top:8px; right:12px; border:none; background:transparent; color:var(--text-dim); font-size:20px; cursor:pointer; }
 
 .metric-modal { position:fixed; inset:0; z-index:60; display:flex; align-items:center; justify-content:center; padding:20px; }
 .metric-modal[hidden] { display:none; }
-.metric-modal__backdrop { position:absolute; inset:0; }
+.metric-modal__backdrop { position:absolute; inset:0; background:rgba(6,16,30,.55); }
 .metric-modal__panel { position:relative; background:var(--surface); border:1px solid var(--border-bright); border-radius:12px; padding:22px 24px; max-width:470px; width:100%; max-height:82vh; overflow:auto; box-shadow:0 18px 50px rgba(0,0,0,0.35); }
 .metric-modal__close { position:absolute; top:8px; right:12px; border:none; background:transparent; color:var(--text-dim); font-size:22px; line-height:1; cursor:pointer; }
 .metric-modal__kicker { font-family:var(--font-mono); font-size:10px; font-weight:600; letter-spacing:1.5px; text-transform:uppercase; color:var(--gold); margin-bottom:8px; }
