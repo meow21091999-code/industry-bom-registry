@@ -7790,6 +7790,453 @@
           "in_universe_coverage": true
         }
       ]
+    },
+    {
+      "slug": "optical-medical-surgical-apparatus-india",
+      "industry": "Optical, Medical & Surgical Apparatus",
+      "scope": "INDIA",
+      "path": "industries/optical-medical-surgical-apparatus-india.html",
+      "analysis_date": "2026-10-09",
+      "universe": "NSE/BSE",
+      "sector": "Healthcare & Medical Devices",
+      "derived_from": null,
+      "drill_downs": [],
+      "nodes": [
+        {
+          "id": "spectacle-lenses",
+          "name": "Spectacle Lenses (Semi-finished & Rx)",
+          "level": 2,
+          "aliases": [
+            "spectacle lens",
+            "ophthalmic lens",
+            "CR-39",
+            "high-index lens",
+            "Rx lens",
+            "eyeglass lens",
+            "lens coating",
+            "progressive lens"
+          ],
+          "priority": "medium",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "contact-lenses",
+          "name": "Contact Lenses",
+          "level": 2,
+          "aliases": [
+            "contact lens",
+            "silicone hydrogel",
+            "lens care"
+          ],
+          "priority": "medium",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "iol",
+          "name": "Intraocular Lenses (IOL)",
+          "level": 2,
+          "aliases": [
+            "IOL",
+            "intraocular lens",
+            "cataract lens",
+            "acrylic IOL",
+            "phakic lens"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "ophth-diag",
+          "name": "Ophthalmic Diagnostic & Surgical Equipment",
+          "level": 2,
+          "aliases": [
+            "slit lamp",
+            "fundus camera",
+            "retinal camera",
+            "autorefractor",
+            "OCT",
+            "phoropter",
+            "ophthalmic equipment"
+          ],
+          "priority": "high",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "xray-dr",
+          "name": "X-ray & Digital Radiography Systems",
+          "level": 2,
+          "aliases": [
+            "X-ray",
+            "DR",
+            "digital radiography",
+            "radiography system",
+            "C-arm",
+            "mammography"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "ct",
+          "name": "CT Scanners",
+          "level": 2,
+          "aliases": [
+            "CT",
+            "computed tomography",
+            "CT scanner"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "mri",
+          "name": "MRI Systems",
+          "level": 2,
+          "aliases": [
+            "MRI",
+            "magnetic resonance",
+            "MR scanner"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "ultrasound",
+          "name": "Ultrasound Systems",
+          "level": 2,
+          "aliases": [
+            "ultrasound",
+            "ultrasonography",
+            "colour doppler",
+            "sonography"
+          ],
+          "priority": "high",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "cathlab",
+          "name": "Cath Lab / Interventional Imaging",
+          "level": 2,
+          "aliases": [
+            "cath lab",
+            "catheterisation lab",
+            "angiography system",
+            "interventional imaging"
+          ],
+          "priority": "high",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "xray-tube-detector",
+          "name": "X-ray Tubes & Flat-Panel Detectors",
+          "level": 2,
+          "aliases": [
+            "X-ray tube",
+            "flat panel detector",
+            "FPD",
+            "detector array",
+            "CsI",
+            "medical glass tube",
+            "CT tube"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "magnet-cryo",
+          "name": "Superconducting Magnets & Cryogenics",
+          "level": 2,
+          "aliases": [
+            "superconducting magnet",
+            "cryogenics",
+            "liquid helium",
+            "magnet winding",
+            "niobium titanium"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "surg-instruments",
+          "name": "Surgical Instruments (Reusable)",
+          "level": 2,
+          "aliases": [
+            "surgical instrument",
+            "forceps",
+            "retractor",
+            "scalpel",
+            "dental instrument",
+            "stainless steel instrument"
+          ],
+          "priority": "medium",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "sutures",
+          "name": "Sutures, Staples & Staplers",
+          "level": 2,
+          "aliases": [
+            "suture",
+            "staple",
+            "stapler",
+            "ligature",
+            "skin stapler"
+          ],
+          "priority": "medium",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "endoscopy",
+          "name": "Endoscopy & Laparoscopy",
+          "level": 2,
+          "aliases": [
+            "endoscope",
+            "laparoscopy",
+            "bronchoscopy",
+            "gastroscopy",
+            "laparoscope"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "energy-devices",
+          "name": "Electrosurgical / Energy Devices",
+          "level": 2,
+          "aliases": [
+            "electrosurgical",
+            "diathermy",
+            "cautery",
+            "vessel sealing",
+            "energy device"
+          ],
+          "priority": "medium",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "ot-infra",
+          "name": "OT Tables, Lights & Sterilizers",
+          "level": 2,
+          "aliases": [
+            "operation theatre",
+            "operating table",
+            "surgical light",
+            "sterilizer",
+            "modular OT",
+            "ICU setup"
+          ],
+          "priority": "medium",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "robotic-surgery",
+          "name": "Robotic & Powered Surgery",
+          "level": 2,
+          "aliases": [
+            "surgical robot",
+            "robotic surgery",
+            "powered instrument"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "stents",
+          "name": "Coronary Stents & Interventional Consumables",
+          "level": 2,
+          "aliases": [
+            "stent",
+            "DES",
+            "drug eluting stent",
+            "balloon catheter",
+            "guiding catheter",
+            "structural heart",
+            "TAVI"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "monitoring",
+          "name": "Patient Monitoring",
+          "level": 2,
+          "aliases": [
+            "patient monitor",
+            "multipara monitor",
+            "bedside monitor",
+            "vital signs monitor",
+            "central monitor"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "ventilation",
+          "name": "Ventilators & Anaesthesia",
+          "level": 2,
+          "aliases": [
+            "ventilator",
+            "anaesthesia workstation",
+            "anaesthesia machine",
+            "ICU ventilator"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "infusion",
+          "name": "Infusion & Syringe Pumps",
+          "level": 2,
+          "aliases": [
+            "infusion pump",
+            "syringe pump",
+            "IV cannula",
+            "infusion set",
+            "IV set"
+          ],
+          "priority": "medium",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "dialysis",
+          "name": "Dialysis Machines & Consumables",
+          "level": 2,
+          "aliases": [
+            "dialysis",
+            "dialyser",
+            "dialyzer",
+            "hemodialysis",
+            "renal care",
+            "bloodline"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "disposables",
+          "name": "Disposables & Consumables",
+          "level": 2,
+          "aliases": [
+            "disposables",
+            "consumables",
+            "blood bag",
+            "catheter",
+            "syringe",
+            "wound care",
+            "surgical disposables"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "ortho-implants",
+          "name": "Orthopaedic Implants",
+          "level": 2,
+          "aliases": [
+            "orthopaedic implant",
+            "orthopedic implant",
+            "trauma implant",
+            "joint replacement",
+            "bone plate",
+            "nail"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "home-health",
+          "name": "Home Health Devices",
+          "level": 2,
+          "aliases": [
+            "home health",
+            "BP monitor",
+            "blood pressure monitor",
+            "pulse oximeter",
+            "glucometer",
+            "nebulizer"
+          ],
+          "priority": "medium",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "materials",
+          "name": "Medical-Grade Polymers & Specialty Materials",
+          "level": 2,
+          "aliases": [
+            "medical grade polymer",
+            "PEEK",
+            "medical PVC",
+            "silicone",
+            "cobalt chromium",
+            "nitinol",
+            "piezo ceramic",
+            "L605"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "sterilisation",
+          "name": "Sterilisation & Cleanroom Infrastructure",
+          "level": 2,
+          "aliases": [
+            "sterilisation",
+            "sterilization",
+            "cleanroom",
+            "gamma irradiation",
+            "EtO",
+            "EMC test",
+            "biomaterial test"
+          ],
+          "priority": "medium",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "regulatory",
+          "name": "CDSCO / BIS / AERB Regulatory & Testing",
+          "level": 2,
+          "aliases": [
+            "CDSCO",
+            "MDR 2017",
+            "BIS",
+            "AERB",
+            "ISO 13485",
+            "NABL",
+            "medical device regulation",
+            "licensing"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        }
+      ]
     }
   ]
 }
