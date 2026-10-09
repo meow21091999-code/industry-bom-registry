@@ -352,10 +352,22 @@
       <script type="text/plain" class="diagram-source">
 graph TD
   L0["<b>Level 0</b><br/>Satellite Value Chain<br/>(India)"]
-  L0 --> A["A · Space<br/>Bus &amp; Payload"]
-  L0 --> B["B · Launch<br/>Vehicles"]
-  L0 --> C["C · Ground<br/>Segment"]
-  L0 --> D["D · Downstream<br/>Services"]
+  L0 --> A["A · Space Segment"]
+  L0 --> B["B · Launch Segment"]
+  L0 --> C["C · Ground Segment"]
+  L0 --> D["D · Downstream"]
+  A --> A1["Bus · structure · power"]
+  A --> A2["Payloads — comms, EO, nav"]
+  A --> A3["Propulsion · AIT · materials"]
+  B --> B1["PSLV · GSLV · LVM3 · SSLV"]
+  B --> B2["Private small launchers"]
+  B --> B3["Spaceport &amp; launch services"]
+  C --> C1["Earth stations &amp; gateways"]
+  C --> C2["VSAT &amp; user terminals"]
+  C --> C3["TT&amp;C ground · GSaaS"]
+  D --> D1["Broadband / DTH"]
+  D --> D2["EO data &amp; geospatial"]
+  D --> D3["Navigation (NavIC)"]
   classDef high fill:#c0392b,stroke:#8e2b20,color:#fff,stroke-width:2px;
   classDef med fill:#d4a73a,stroke:#a37f22,color:#241a05,stroke-width:1.5px;
   classDef root fill:#1e4e8c,stroke:#12335c,color:#fff,stroke-width:2px;
