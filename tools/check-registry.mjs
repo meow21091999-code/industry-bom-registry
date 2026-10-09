@@ -9,7 +9,10 @@
  *   - does not link the shared stylesheet (assets/registry.css)
  *   - uses a DEPRECATED alias class (registry-design-language.md §0)
  *   - contains leaked [cite:...] markers
- *   - carries no canonical component classes at all (entry pages only; the index is exempt)
+ *   - is an entry page with no canonical component classes at all (the index is exempt)
+ *   - is an entry page that carries a component's MARKUP but not its CSS — i.e. a
+ *     canonical component selector that is missing from both the page and the
+ *     shared stylesheet (the "sections render unstyled" bug)
  *
  * Run this BEFORE reporting a run done. Never publish a failing page.
  */
@@ -26,6 +29,22 @@ const ALIASES = new Set([
 ]);
 
 const CANONICAL_SAMPLES = ['metric-card', 'metric-cards', 'digest', 'digest__item', 'metric-modal'];
+
+// Component selectors every ENTRY page must define — in its own <style> OR in the
+// shared stylesheet. A page that renders a component without its CSS fails here.
+const REQUIRED_CSS = [
+  '.sec-head', '.sec-title', '.sec-note',
+  '.mermaid-wrap', '.legend',
+  '.ladder', '.rung',
+  '.map-layout', '.map-nodes', '.map-panel', '.node-btn',
+  'table.data', '.table-wrap', '.table-scroll',
+  '.cell-d', '.cell-i', '.cell-s', '.cell-c', '.cell-x',
+  '.bn', '.bn__risk', '.bn__opp', '.bn__h', '.bn__title',
+  '.callout', '.footnote'
+];
+
+const SHARED_CSS_PATH = 'assets/registry.css';
+const sharedCss = existsSync(SHARED_CSS_PATH) ? readFileSync(SHARED_CSS_PATH, 'utf8') : '';
 
 function collectFiles(args) {
   const out = [];
@@ -49,6 +68,13 @@ function classesIn(html) {
   return set;
 }
 
+function inlineCss(html) {
+  const re = /<style[^>]*>([\s\S]*?)<\/style>/g;
+  let m, out = '';
+  while ((m = re.exec(html))) out += '\n' + m[1];
+  return out;
+}
+
 const files = collectFiles(process.argv.slice(2));
 if (!files.length) {
   console.log('No HTML files found to check (looked for index.html and industries/*.html).');
@@ -59,6 +85,7 @@ let failures = 0;
 for (const file of files) {
   const html = readFileSync(file, 'utf8');
   const problems = [];
+  const isEntryPage = /(^|[\\/])industries[\\/]/.test(file);
 
   if (!/registry\.css/.test(html)) {
     problems.push('does not link the shared stylesheet (assets/registry.css)');
@@ -72,9 +99,16 @@ for (const file of files) {
     problems.push('contains [cite:...] markers (must be plain prose)');
   }
 
-  const isEntryPage = /(^|[\\/])industries[\\/]/.test(file);
   if (isEntryPage && !CANONICAL_SAMPLES.some(c => cls.has(c))) {
     problems.push('no canonical component classes found (metric-card / digest / metric-modal)');
+  }
+
+  if (isEntryPage) {
+    const css = inlineCss(html) + '\n' + sharedCss;
+    const missing = REQUIRED_CSS.filter(sel => !css.includes(sel));
+    if (missing.length) {
+      problems.push('missing component CSS (markup present but no rule, in page or shared stylesheet): ' + missing.join(', '));
+    }
   }
 
   if (problems.length) {
