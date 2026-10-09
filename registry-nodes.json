@@ -2,6 +2,8 @@
   "registry": "Industry BOM Registry",
   "description": "Machine-readable node index. For every entry, the node names it contains plus the owning entry slug. Used for DEDUP (industry+scope already analysed) and LINEAGE (auto-linking a new industry to a parent when its name matches a node name). Update on every publish.",
   "generated": "2026-10-09",
+  "last_delta_pass": "2026-10-09",
+  "delta_note": "Weekly delta pass 2026-10-09: India-US interim trade deal still unfinalised and tariff risk re-escalated (vehicles-auto-components-india, ems-electronics-manufacturing-india); RDSS installed-meter count refreshed 24.1mn->57.3mn (electrical-electronic-equipment-india). All other open [LIVE] facts and dated regulatory-calendar items re-validated with no change.",
   "entries": [
     {
       "slug": "power-transmission-india",
