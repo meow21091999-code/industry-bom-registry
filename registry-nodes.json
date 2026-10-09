@@ -8237,6 +8237,294 @@
           "in_universe_coverage": true
         }
       ]
+    },
+    {
+      "slug": "electrical-electronic-equipment-india",
+      "industry": "Electrical & Electronic Equipment",
+      "scope": "INDIA",
+      "path": "industries/electrical-electronic-equipment-india.html",
+      "analysis_date": "2026-10-09",
+      "universe": "NSE/BSE",
+      "sector": "Electrical & Electronic Equipment",
+      "derived_from": null,
+      "drill_downs": [],
+      "nodes": [
+        {
+          "id": "transformers",
+          "name": "Power & Distribution Transformers",
+          "level": 2,
+          "aliases": [
+            "transformer",
+            "power transformer",
+            "distribution transformer",
+            "EHV transformer",
+            "reactor",
+            "furnace transformer"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "switchgear",
+          "name": "Switchgear (LV / MV / HV, GIS, AIS)",
+          "level": 2,
+          "aliases": [
+            "switchgear",
+            "GIS",
+            "AIS",
+            "circuit breaker",
+            "RMU",
+            "panel",
+            "bus duct"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "cables",
+          "name": "Cables & Wires",
+          "level": 2,
+          "aliases": [
+            "cable",
+            "wires",
+            "power cable",
+            "control cable",
+            "XLPE cable",
+            "house wire",
+            "optical fibre cable"
+          ],
+          "priority": "high",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "conductors",
+          "name": "Conductors & Transmission Towers",
+          "level": 2,
+          "aliases": [
+            "conductor",
+            "ACSR",
+            "HTLS",
+            "transmission tower",
+            "tower",
+            "monopole"
+          ],
+          "priority": "medium",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "insulators",
+          "name": "Insulators & Bushings",
+          "level": 2,
+          "aliases": [
+            "insulator",
+            "bushing",
+            "porcelain insulator",
+            "composite insulator",
+            "hollow core insulator"
+          ],
+          "priority": "medium",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "meters",
+          "name": "Energy Meters / Smart Meters",
+          "level": 2,
+          "aliases": [
+            "energy meter",
+            "smart meter",
+            "meter",
+            "AMI",
+            "AMISP",
+            "RDSS metering"
+          ],
+          "priority": "high",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "motors",
+          "name": "Motors, Drives & Generators",
+          "level": 2,
+          "aliases": [
+            "motor",
+            "generator",
+            "alternator",
+            "drives",
+            "LT motor",
+            "HT motor",
+            "pump"
+          ],
+          "priority": "medium",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "capacitors",
+          "name": "Capacitors, Reactors & Power Quality",
+          "level": 2,
+          "aliases": [
+            "capacitor",
+            "reactor",
+            "STATCOM",
+            "power quality",
+            "FACTS",
+            "SVC"
+          ],
+          "priority": "medium",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "ems",
+          "name": "Electronics Manufacturing Services (EMS/ODM)",
+          "level": 2,
+          "aliases": [
+            "EMS",
+            "ODM",
+            "contract manufacturing",
+            "PCBA",
+            "box build",
+            "electronics manufacturing services"
+          ],
+          "priority": "high",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "pcb",
+          "name": "PCBs (Multi-layer, HDI, Flex)",
+          "level": 2,
+          "aliases": [
+            "PCB",
+            "printed circuit board",
+            "HDI",
+            "flex PCB",
+            "multi-layer PCB",
+            "laminate"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "powersemi",
+          "name": "Power Electronics & Semiconductors (OSAT)",
+          "level": 2,
+          "aliases": [
+            "power semiconductor",
+            "IGBT",
+            "MOSFET",
+            "SiC",
+            "thyristor",
+            "OSAT",
+            "ATMP",
+            "power electronics"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "passives",
+          "name": "Passive Components, Connectors & Electro-mechanicals",
+          "level": 2,
+          "aliases": [
+            "passive component",
+            "capacitor (passive)",
+            "resistor",
+            "inductor",
+            "connector",
+            "electro-mechanical",
+            "ferrite"
+          ],
+          "priority": "high",
+          "bottleneck": false,
+          "in_universe_coverage": false
+        },
+        {
+          "id": "consumer-electronics",
+          "name": "Consumer Electronics & White Goods",
+          "level": 2,
+          "aliases": [
+            "consumer electronics",
+            "white goods",
+            "air conditioner",
+            "refrigerator",
+            "television",
+            "appliance"
+          ],
+          "priority": "medium",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "lighting",
+          "name": "Lighting & LED Luminaires",
+          "level": 2,
+          "aliases": [
+            "lighting",
+            "LED",
+            "luminaire",
+            "LED lamp",
+            "LED driver",
+            "LED chip"
+          ],
+          "priority": "medium",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "batteries",
+          "name": "Energy Storage & Batteries",
+          "level": 2,
+          "aliases": [
+            "battery",
+            "Li-ion",
+            "cell",
+            "BESS",
+            "lead-acid",
+            "battery pack"
+          ],
+          "priority": "high",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "crgo",
+          "name": "CRGO Electrical Steel",
+          "level": 2,
+          "aliases": [
+            "CRGO",
+            "GOES",
+            "grain oriented electrical steel",
+            "electrical steel",
+            "core steel"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "copper",
+          "name": "Copper, Aluminium & Industrial Gases",
+          "level": 2,
+          "aliases": [
+            "copper",
+            "aluminium",
+            "copper rod",
+            "industrial gas",
+            "transformer oil"
+          ],
+          "priority": "medium",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        }
+      ]
     }
   ]
 }
