@@ -176,6 +176,33 @@
   @media (max-width:768px){.rung{grid-template-columns:1fr;gap:4px}}
   footer{margin-top:56px;border-top:1px solid var(--border);padding-top:20px;font-size:11.5px;color:var(--ink-dim);line-height:1.8;font-family:var(--font-mono)}
   footer strong{color:var(--ink);font-family:var(--font-body)}
+
+  /* ===== DIGEST + METRIC CARDS (registry-wide component) ===== */
+  .dg{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:4px}
+  @media(max-width:820px){.dg{grid-template-columns:1fr}}
+  .dg__b{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:13px 15px}
+  .dg__h{font-family:var(--font-mono);font-size:10px;font-weight:600;letter-spacing:1.2px;text-transform:uppercase;color:var(--gold);margin-bottom:7px}
+  .dg__b p{font-size:12.5px;line-height:1.55;color:var(--text-dim)}
+  .dg__b ul{margin:0;padding-left:16px;display:flex;flex-direction:column;gap:5px}
+  .dg__b li{font-size:12.5px;line-height:1.55;color:var(--text-dim)}
+  .dg__b li::marker{color:var(--gold)}
+  .dg__b b{color:var(--text);font-weight:600}
+  .mc{cursor:pointer;position:relative}
+  .mc:hover{border-color:var(--border-bright);box-shadow:0 4px 12px rgba(15,37,64,.10);transform:translateY(-2px)}
+  .mc::after{content:'i';position:absolute;top:7px;right:9px;font-family:var(--font-mono);font-size:9px;font-style:italic;color:var(--text-dim);opacity:.6}
+  #mdov{position:fixed;inset:0;background:rgba(10,20,35,.5);opacity:0;pointer-events:none;transition:opacity .25s;z-index:80}
+  #mdov.on{opacity:1;pointer-events:auto}
+  #mdp{position:fixed;top:0;right:0;height:100%;width:420px;max-width:94vw;background:var(--surface);border-left:1px solid var(--border-bright);z-index:81;transform:translateX(100%);transition:transform .28s cubic-bezier(.4,0,.2,1);overflow-y:auto;padding:28px 24px;box-shadow:-18px 0 46px rgba(0,0,0,.28)}
+  #mdp.on{transform:translateX(0)}
+  #mdp .mdp__x{position:absolute;top:16px;right:18px;background:transparent;border:1px solid var(--border);color:var(--text-dim);border-radius:6px;padding:4px 10px;cursor:pointer;font-family:var(--font-mono);font-size:12px}
+  #mdp .mdp__k{font-family:var(--font-mono);font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold);margin-bottom:12px}
+  #mdp .mdp__v{font-size:27px;font-weight:700;letter-spacing:-.6px;font-variant-numeric:tabular-nums;line-height:1.1}
+  #mdp .mdp__l{font-family:var(--font-mono);font-size:10.5px;text-transform:uppercase;letter-spacing:1px;color:var(--text-dim);margin-top:8px;line-height:1.5}
+  #mdp .mdp__s{font-size:12.5px;color:var(--text-dim);margin-top:6px}
+  #mdp ul{margin:18px 0 0;padding-left:18px;display:flex;flex-direction:column;gap:9px}
+  #mdp li{font-size:13px;line-height:1.55;color:var(--text-dim)}
+  #mdp li::marker{color:var(--gold)}
+  #mdp li b{color:var(--text)}
 </style>
 </head>
 <body>
@@ -201,16 +228,22 @@
   </header>
 
   <div class="kpi an" style="--i:1">
-    <div class="kpi-c"><div class="kpi-v">16–17%</div><div class="kpi-l">Silver share of module cost (2026)</div></div>
-    <div class="kpi-c"><div class="kpi-v">~30%</div><div class="kpi-l">Silver paste share of total cell cost</div></div>
-    <div class="kpi-c"><div class="kpi-v">~$84/oz</div><div class="kpi-l">Silver price peak, Dec-2025</div></div>
-    <div class="kpi-c"><div class="kpi-v">86 mg</div><div class="kpi-l">TOPCon silver per cell (CPIA 2025)</div></div>
-    <div class="kpi-c"><div class="kpi-v">1.1 mg/Wp</div><div class="kpi-l">Plated TOPCon silver (Fraunhofer ISE)</div></div>
-    <div class="kpi-c"><div class="kpi-v">~19%</div><div class="kpi-l">Forecast drop in PV silver demand, 2026</div></div>
+    <div class="kpi-c mc"><div class="kpi-v">16–17%</div><div class="kpi-l">Silver share of module cost (2026)</div></div>
+    <div class="kpi-c mc"><div class="kpi-v">~30%</div><div class="kpi-l">Silver paste share of total cell cost</div></div>
+    <div class="kpi-c mc"><div class="kpi-v">~$84/oz</div><div class="kpi-l">Silver price peak, Dec-2025</div></div>
+    <div class="kpi-c mc"><div class="kpi-v">86 mg</div><div class="kpi-l">TOPCon silver per cell (CPIA 2025)</div></div>
+    <div class="kpi-c mc"><div class="kpi-v">1.1 mg/Wp</div><div class="kpi-l">Plated TOPCon silver (Fraunhofer ISE)</div></div>
+    <div class="kpi-c mc"><div class="kpi-v">~19%</div><div class="kpi-l">Forecast drop in PV silver demand, 2026</div></div>
   </div>
 
   <!-- 1. OVERVIEW -->
-  <section class="an" style="--i:2">
+  
+  <section class="an" style="--i:1">
+    <div class="sec-h"><span class="sec-num">DG</span><span class="sec-t">Digest &mdash; at a glance</span></div>
+    <p class="sec-d">A short summary of the analysis. Structure and inputs are on the tree; process, value pools and watch items are summarised here.</p>
+    <div class="dg"><div class="dg__b"><div class="dg__h">Snapshot</div><p>The cell metallisation step &mdash; silver and aluminium pastes, glass frit, printing and co-firing. Silver is 16&ndash;17% of module cost (2026) and ~30% of total cell cost; silver peaked at ~$84/oz in Dec-2025; a TOPCon cell uses 86 mg of silver.</p></div><div class="dg__b"><div class="dg__h">Process &amp; equipment</div><ul><li>Silver powder, glass frit (Pb-Te-O), organic vehicle and paste formulation, plus fine-mesh screens.</li><li>Screen printing and co-firing turn paste into the Ag fingers, busbars and Al rear.</li></ul></div><div class="dg__b"><div class="dg__h">Bottlenecks</div><ul><li>Silver paste &mdash; DKEM, Fusion, Solamet, DuPont, Heraeus, Samsung SDI, all foreign.</li><li>Silver powder, glass frit and screens; silver-price volatility.</li></ul></div><div class="dg__b"><div class="dg__h">Value pools</div><ul><li>Paste makers are foreign/unlisted; cell makers (Premier, Waaree, Websol, Emmvee) bear the cost.</li><li>Silver recovery from end-of-life panels is emerging.</li></ul></div><div class="dg__b"><div class="dg__h">Watch items</div><ul><li>Silver price; plated-TOPCon silver reduction (Fraunhofer, 1.1 mg/Wp); the copper-substitution race.</li></ul></div><div class="dg__b"><div class="dg__h">Coverage gaps</div><ul><li>All paste makers are foreign/unlisted; only Hindustan Zinc (silver by-product) is listed.</li></ul></div></div>
+  </section>
+<section class="an" style="--i:2">
     <div class="sec-h"><span class="sec-num">01</span><span class="sec-t">System overview</span></div>
     <p class="sec-d">Metallisation turns a passivated wafer into a current-delivering cell by printing (or plating) a conductive grid. Gold-bordered nodes below are the HIGH-priority subsystems carried into the drill-down tree — the silver powder, the glass frit, the front-side paste, the printing step, the copper-substitution pathways and the upstream silver metal. This is the node where the module's largest cost line now sits, and where the technology is actively migrating.</p>
     <div class="diagram-shell">
@@ -484,6 +517,49 @@ function select(id){
 }
 renderTree();
 select('metal');
+</script>
+
+<script>window.__MBULLETS=[["Silver share of module cost (2026).", "Source: industry."], ["Silver paste share of total cell cost.", "Source: industry."], ["Silver price peak, Dec-2025 &mdash; a cyclical input.", "Source: market data."], ["Silver per TOPCon cell (CPIA 2025).", "Source: CPIA."], ["Plated-TOPCon silver consumption (Fraunhofer ISE).", "Source: Fraunhofer ISE."], ["Forecast drop in PV silver demand, 2026.", "Source: industry."]];</script>
+
+<div id="mdov" onclick="__mdClose()"></div>
+<aside id="mdp" aria-live="polite" aria-hidden="true">
+  <button class="mdp__x" onclick="__mdClose()">close &#10005;</button>
+  <div class="mdp__k">Metric detail</div>
+  <div class="mdp__v" id="mdpV"></div>
+  <div class="mdp__l" id="mdpL"></div>
+  <div class="mdp__s" id="mdpS"></div>
+  <ul id="mdpB"></ul>
+</aside>
+
+<script>
+(function(){
+  var B = window.__MBULLETS || [];
+  function val(el,s){var n=el.querySelector(s);return n?n.textContent.trim():'';}
+  var cards=[].slice.call(document.querySelectorAll('.mc'));
+  cards.forEach(function(el,i){
+    el.setAttribute('data-metric', i);
+    el.setAttribute('role','button');
+    el.setAttribute('tabindex','0');
+    function open(){
+      var b=B[i]||[];
+      document.getElementById('mdpV').textContent = val(el,'.kpi__val,.kpi-v');
+      document.getElementById('mdpL').textContent = val(el,'.kpi__label,.kpi-l');
+      var s=val(el,'.kpi__sub'); var sn=document.getElementById('mdpS');
+      sn.textContent=s; sn.style.display=s?'block':'none';
+      document.getElementById('mdpB').innerHTML = b.map(function(x){return '<li>'+x+'</li>';}).join('');
+      document.getElementById('mdov').classList.add('on');
+      document.getElementById('mdp').classList.add('on');
+      document.getElementById('mdp').setAttribute('aria-hidden','false');
+    }
+    el.addEventListener('click',open);
+    el.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();open();}});
+  });
+  window.__mdClose=function(){
+    document.getElementById('mdov').classList.remove('on');
+    document.getElementById('mdp').classList.remove('on');
+    document.getElementById('mdp').setAttribute('aria-hidden','true');
+  };
+})();
 </script>
 </body>
 </html>
