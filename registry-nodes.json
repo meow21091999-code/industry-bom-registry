@@ -8247,7 +8247,12 @@
       "universe": "NSE/BSE",
       "sector": "Electrical & Electronic Equipment",
       "derived_from": null,
-      "drill_downs": [],
+      "drill_downs": [
+        "power-transformers-india",
+        "smart-meters-india",
+        "ems-electronics-manufacturing-india",
+        "power-semiconductor-osat-india"
+      ],
       "nodes": [
         {
           "id": "transformers",
@@ -8519,6 +8524,605 @@
             "copper rod",
             "industrial gas",
             "transformer oil"
+          ],
+          "priority": "medium",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        }
+      ]
+    },
+    {
+      "slug": "power-transformers-india",
+      "industry": "Power & Distribution Transformers",
+      "scope": "INDIA",
+      "path": "industries/power-transformers-india.html",
+      "analysis_date": "2026-10-09",
+      "universe": "NSE/BSE",
+      "sector": "Electrical & Electronic Equipment",
+      "derived_from": "electrical-electronic-equipment-india",
+      "drill_downs": [],
+      "nodes": [
+        {
+          "id": "crgo",
+          "name": "CRGO electrical-steel core",
+          "level": 2,
+          "aliases": [
+            "CRGO",
+            "GOES",
+            "grain oriented electrical steel",
+            "core"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "windings",
+          "name": "Windings - copper/aluminium CTC/PICC",
+          "level": 2,
+          "aliases": [
+            "CTC",
+            "PICC",
+            "winding conductor",
+            "copper winding"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "insulation",
+          "name": "Insulation - pressboard, kraft paper",
+          "level": 2,
+          "aliases": [
+            "pressboard",
+            "kraft paper",
+            "pressphan"
+          ],
+          "priority": "medium",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "oil",
+          "name": "Transformer oil / insulating fluid",
+          "level": 2,
+          "aliases": [
+            "transformer oil",
+            "ester fluid",
+            "insulating fluid"
+          ],
+          "priority": "medium",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "tank",
+          "name": "Steel tank, radiators & cooling",
+          "level": 2,
+          "aliases": [
+            "tank",
+            "radiator",
+            "cooling"
+          ],
+          "priority": "medium",
+          "bottleneck": false,
+          "in_universe_coverage": false
+        },
+        {
+          "id": "bushings",
+          "name": "HV bushings (OIP/RIP condenser)",
+          "level": 2,
+          "aliases": [
+            "bushing",
+            "OIP bushing",
+            "RIP bushing"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "oltc",
+          "name": "On-load tap changer (OLTC)",
+          "level": 2,
+          "aliases": [
+            "OLTC",
+            "tap changer",
+            "on-load tap changer"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": false
+        },
+        {
+          "id": "assembly",
+          "name": "Core-coil assembly & winding process",
+          "level": 2,
+          "aliases": [
+            "core-coil assembly",
+            "winding process"
+          ],
+          "priority": "medium",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "testing",
+          "name": "Testing - routine, impulse, short-circuit",
+          "level": 2,
+          "aliases": [
+            "impulse test",
+            "short circuit test",
+            "routine test"
+          ],
+          "priority": "medium",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "powerxfmr",
+          "name": "Finished transformer - power (incl. EHV/765 kV)",
+          "level": 2,
+          "aliases": [
+            "power transformer",
+            "EHV transformer",
+            "ICT",
+            "auto-transformer"
+          ],
+          "priority": "high",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "distxfmr",
+          "name": "Finished transformer - distribution & specialty",
+          "level": 2,
+          "aliases": [
+            "distribution transformer",
+            "furnace transformer",
+            "rectifier transformer"
+          ],
+          "priority": "medium",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        }
+      ]
+    },
+    {
+      "slug": "smart-meters-india",
+      "industry": "Smart Meters",
+      "scope": "INDIA",
+      "path": "industries/smart-meters-india.html",
+      "analysis_date": "2026-10-09",
+      "universe": "NSE/BSE",
+      "sector": "Electrical & Electronic Equipment",
+      "derived_from": "electrical-electronic-equipment-india",
+      "drill_downs": [],
+      "nodes": [
+        {
+          "id": "oem",
+          "name": "Meter OEM / smart-meter manufacturing",
+          "level": 2,
+          "aliases": [
+            "smart meter",
+            "energy meter",
+            "meter OEM"
+          ],
+          "priority": "high",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "amisp",
+          "name": "AMISP / AMI service (TOTEX / DBFOOT)",
+          "level": 2,
+          "aliases": [
+            "AMISP",
+            "AMI service",
+            "TOTEX",
+            "DBFOOT"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "metic",
+          "name": "Metering IC / analog front end (metrology)",
+          "level": 2,
+          "aliases": [
+            "metering IC",
+            "AFE",
+            "metrology IC"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "mcu",
+          "name": "MCU / metering SoC",
+          "level": 2,
+          "aliases": [
+            "metering SoC",
+            "MCU"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "comm",
+          "name": "Communication module / NIC (RF mesh / NB-IoT / PLC)",
+          "level": 2,
+          "aliases": [
+            "NIC",
+            "RF mesh",
+            "NB-IoT",
+            "PLC modem"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "relay",
+          "name": "Latching relay",
+          "level": 2,
+          "aliases": [
+            "latching relay",
+            "relay"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "pcb",
+          "name": "PCB / PCBA / EMS",
+          "level": 2,
+          "aliases": [
+            "PCB",
+            "PCBA",
+            "EMS"
+          ],
+          "priority": "medium",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "hes",
+          "name": "HES / MDMS software layer",
+          "level": 2,
+          "aliases": [
+            "HES",
+            "MDMS",
+            "head end system",
+            "meter data management"
+          ],
+          "priority": "high",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "gateway",
+          "name": "RF gateway / DCU",
+          "level": 2,
+          "aliases": [
+            "gateway",
+            "DCU",
+            "data concentrator"
+          ],
+          "priority": "medium",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "smps",
+          "name": "SMPS power supply",
+          "level": 2,
+          "aliases": [
+            "SMPS",
+            "power supply"
+          ],
+          "priority": "medium",
+          "bottleneck": true,
+          "in_universe_coverage": false
+        },
+        {
+          "id": "display",
+          "name": "Display (LCD / segment)",
+          "level": 2,
+          "aliases": [
+            "display",
+            "LCD"
+          ],
+          "priority": "low",
+          "bottleneck": false,
+          "in_universe_coverage": false
+        },
+        {
+          "id": "tamper",
+          "name": "Tamper sensors",
+          "level": 2,
+          "aliases": [
+            "tamper sensor"
+          ],
+          "priority": "medium",
+          "bottleneck": false,
+          "in_universe_coverage": false
+        },
+        {
+          "id": "test",
+          "name": "Testing & certification (BIS / IS 16444 / IS 15884)",
+          "level": 2,
+          "aliases": [
+            "BIS",
+            "IS 16444",
+            "IS 15884",
+            "certification"
+          ],
+          "priority": "medium",
+          "bottleneck": true,
+          "in_universe_coverage": false
+        }
+      ]
+    },
+    {
+      "slug": "ems-electronics-manufacturing-india",
+      "industry": "EMS / ODM - Electronics Manufacturing Services",
+      "scope": "INDIA",
+      "path": "industries/ems-electronics-manufacturing-india.html",
+      "analysis_date": "2026-10-09",
+      "universe": "NSE/BSE",
+      "sector": "Electrical & Electronic Equipment",
+      "derived_from": "electrical-electronic-equipment-india",
+      "drill_downs": [],
+      "nodes": [
+        {
+          "id": "ems",
+          "name": "EMS / ODM system assembly & box-build",
+          "level": 2,
+          "aliases": [
+            "EMS",
+            "ODM",
+            "box build",
+            "contract manufacturing"
+          ],
+          "priority": "high",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "pcba",
+          "name": "PCBA / SMT assembly",
+          "level": 2,
+          "aliases": [
+            "PCBA",
+            "SMT",
+            "surface mount"
+          ],
+          "priority": "high",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "pcb",
+          "name": "Bare PCB (multi-layer / HDI)",
+          "level": 2,
+          "aliases": [
+            "PCB",
+            "HDI",
+            "multilayer PCB"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "display",
+          "name": "Display modules",
+          "level": 2,
+          "aliases": [
+            "display module",
+            "panel",
+            "touchscreen"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "camera",
+          "name": "Camera modules",
+          "level": 2,
+          "aliases": [
+            "camera module",
+            "image sensor"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": false
+        },
+        {
+          "id": "components",
+          "name": "Components (passives, semiconductors)",
+          "level": 2,
+          "aliases": [
+            "passives",
+            "components",
+            "semiconductors"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": false
+        },
+        {
+          "id": "battery",
+          "name": "Battery packs & chargers",
+          "level": 2,
+          "aliases": [
+            "battery pack",
+            "charger"
+          ],
+          "priority": "medium",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "enclosures",
+          "name": "Enclosures & mechanicals",
+          "level": 2,
+          "aliases": [
+            "enclosure",
+            "mechanicals",
+            "plastics",
+            "sheet metal"
+          ],
+          "priority": "medium",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "connectors",
+          "name": "Connectors & wire harness",
+          "level": 2,
+          "aliases": [
+            "connector",
+            "wire harness"
+          ],
+          "priority": "medium",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "ithw",
+          "name": "IT hardware (laptops / servers)",
+          "level": 2,
+          "aliases": [
+            "IT hardware",
+            "laptop",
+            "server"
+          ],
+          "priority": "medium",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        }
+      ]
+    },
+    {
+      "slug": "power-semiconductor-osat-india",
+      "industry": "Power Semiconductors & OSAT",
+      "scope": "INDIA",
+      "path": "industries/power-semiconductor-osat-india.html",
+      "analysis_date": "2026-10-09",
+      "universe": "NSE/BSE",
+      "sector": "Electrical & Electronic Equipment",
+      "derived_from": "electrical-electronic-equipment-india",
+      "drill_downs": [],
+      "nodes": [
+        {
+          "id": "fefab",
+          "name": "Front-end device fab (IGBT / MOSFET / SiC / thyristor dies)",
+          "level": 2,
+          "aliases": [
+            "power semiconductor fab",
+            "IGBT fab",
+            "SiC fab"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "fematerials",
+          "name": "Wafer & epi materials (SiC epi, silicon wafer)",
+          "level": 2,
+          "aliases": [
+            "SiC wafer",
+            "epi wafer",
+            "silicon wafer"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "osat",
+          "name": "Back-end OSAT / ATMP (assembly, packaging, test)",
+          "level": 2,
+          "aliases": [
+            "OSAT",
+            "ATMP",
+            "assembly test packaging"
+          ],
+          "priority": "high",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "module",
+          "name": "Power module assembly",
+          "level": 2,
+          "aliases": [
+            "power module",
+            "IGBT module",
+            "intelligent power module"
+          ],
+          "priority": "high",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "pkgmat",
+          "name": "Packaging materials (leadframe, bond wire, EMC, substrate)",
+          "level": 2,
+          "aliases": [
+            "leadframe",
+            "bond wire",
+            "moulding compound",
+            "EMC",
+            "DCB substrate"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "substrate",
+          "name": "Substrate / PCB",
+          "level": 2,
+          "aliases": [
+            "substrate",
+            "ABF substrate",
+            "organic laminate"
+          ],
+          "priority": "medium",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "equip",
+          "name": "Equipment & machinery",
+          "level": 2,
+          "aliases": [
+            "fab equipment",
+            "assembly equipment",
+            "test equipment"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "test",
+          "name": "Test & qualification (AEC-Q, IATF)",
+          "level": 2,
+          "aliases": [
+            "AEC-Q",
+            "IATF",
+            "qualification"
           ],
           "priority": "medium",
           "bottleneck": false,
