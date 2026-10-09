@@ -265,7 +265,42 @@ graph TD
     </div>
   </section>
 
-  <p class="footnote animate" style="--i:8">
+    <!-- 06 VALUE POOLS & COST WATERFALL -->
+  <section class="animate" style="--i:8">
+    <div class="sec-head">
+      <span class="sec-num">06</span>
+      <span class="sec-title">Value pools &amp; cost waterfall</span>
+      <span class="sec-note">where value is captured &middot; and which pool leaks to imports</span>
+    </div>
+    <div class="digest">
+      <div class="digest__item"><div class="digest__h">Where value is captured</div><ul><li>Value sits in imported silicon and foreign OEMs.</li><li>Indian RAN value-add is assembly and integration.</li><li>The BSNL order proved capability but is lumpy.</li><li>Offset play: AMC / software-upgrade annuitisation.</li></ul></div>
+      <div class="digest__item"><div class="digest__h">Who captures it (India-listed)</div><ul><li><b>Tejas Networks</b> <small>NSE/BSE: TEJASNET</small> — Sole RAN supplier for BSNL 100,000+ sites; ships radios and baseband [REPORTED]</li><li><b>ITI Limited</b> <small>NSE/BSE: ITI</small> — Contract-manufactured 4G eNodeB / RRH for Tejas — 9,879 RRHs, 8,633 eNodeB sites [REPORTED]</li><li><b>HFCL</b> <small>NSE/BSE: HFCL</small> — Develops 5G RAN products; telecom-products segment revenue Rs 2,474 cr in FY25 [REPORTED]</li><li><b>Dixon Technologies (Dixon Electro Appliances)</b> <small>NSE/BSE: DIXON</small> — PLI-approved for Open-RAN Equipment (Radio Unit, Distributed Unit, Centralised Unit and RIC)…</li><li><b>Reliance Industries (Jio Platforms / Radisys)</b> <small>NSE/BSE: RELIANCE</small> — Jio built an in-house 5G stack; Radisys (Jio subsidiary) licenses L2/L3 RAN software [REPORTED]</li><li><b>Sterlite Technologies</b> <small>NSE/BSE: STLTECH</small> — Optical fibre, cables and connectivity products [REPORTED]</li><li><b>Reliance Industries (Jio Platforms)</b> <small>NSE/BSE: RELIANCE</small> — O-RAN-compliant stack with full disaggregation of O-RU, O-DU and O-CU; JioBrain AI platform…</li></ul></div>
+      <div class="digest__item"><div class="digest__h">Pools that leak to imports</div><ul><li>No listed RAN-silicon pure-play; RAN OEM exposure is indirect (Tejas, HFCL, ITI, Dixon) — nearest proxies noted on the tree.</li><li>Bottleneck nodes: Radio Unit (RRU / RRH), Baseband Unit (BBU / O-DU + O-CU), Massive-MIMO Active Antenna Unit (AAU), RF Front-End and Power Amplifier, RF Filters and Duplexers, RAN Silicon (FPGA / SoC / ASIC), O-RAN Software (RIC / SMO / vRAN).</li></ul></div>
+    </div>
+    <div class="sec-head" style="margin-top:22px"><span class="sec-num">&#8377;</span><span class="sec-title" style="font-size:15px">Cost waterfall &mdash; ranked, directional</span><span class="sec-note">[DERIVED] ordering only</span></div>
+    <div class="ladder"><div class="rung rung--1"><div class="rung__label">1</div><div class="rung__body"><b>Radio Unit (RRU / RRH)</b> &mdash; High — RF chain and silicon imported</div></div><div class="rung rung--2"><div class="rung__label">2</div><div class="rung__body"><b>Baseband Unit (BBU / O-DU + O-CU)</b> &mdash; Chips (FPGA / SoC) imported</div></div><div class="rung rung--3"><div class="rung__label">3</div><div class="rung__body"><b>Massive-MIMO Active Antenna Unit (AAU)</b> &mdash; Very high — RFICs, arrays, GaN</div></div><div class="rung rung--4"><div class="rung__label">4</div><div class="rung__body"><b>RF Front-End and Power Amplifier</b> &mdash; Nearly fully imported (US / JP / EU)</div></div><div class="rung rung--1"><div class="rung__label">&#8734;</div><div class="rung__body">Assembly / integration &mdash; margin <span class="mini">thinnest</span></div></div></div>
+    <p class="footnote">Cost waterfall is a directional [DERIVED] ordering of this entry&rsquo;s bottleneck nodes, not measured percentages &mdash; exact cost shares are [UNAVAILABLE] in this pass.</p>
+  </section>
+
+  <!-- 07 REGULATORY CALENDAR -->
+  <section class="animate" style="--i:9">
+    <div class="sec-head">
+      <span class="sec-num">07</span>
+      <span class="sec-title">Regulatory calendar</span>
+      <span class="sec-note">standing, dated decision windows that move this industry</span>
+    </div>
+    <div class="table-wrap">
+      <div class="table-scroll">
+        <table class="data">
+          <thead><tr><th>Date / window</th><th>Item</th><th>What it does</th><th>Label</th></tr></thead>
+          <tbody><tr><td>Rolling</td><td>PLI disbursal.</td><td>PLI disbursal.</td><td>[DERIVED]</td></tr><tr><td>Rolling</td><td>5G densification and 5G-Advanced.</td><td>5G densification and 5G-Advanced.</td><td>[DERIVED]</td></tr><tr><td>Rolling</td><td>Open-RAN adoption.</td><td>Open-RAN adoption.</td><td>[DERIVED]</td></tr><tr><td>Rolling</td><td>Nokia / Ericsson localisation.</td><td>Nokia / Ericsson localisation.</td><td>[DERIVED]</td></tr></tbody>
+        </table>
+      </div>
+    </div>
+    <p class="footnote">Rows re-derived from this entry&rsquo;s watch-list and labelled [DERIVED]; re-verify source tiers before use. [LIVE] items should be re-checked each run.</p>
+  </section>
+
+<p class="footnote animate" style="--i:10">
     Sources (plain): Tejas Networks Q4 FY25 results, investor presentation, earnings call and press releases (2023&ndash;2025) &middot; ITI Limited Director&rsquo;s Report and Annual Report FY24&ndash;25 &middot; HFCL FY25 results and earnings call &middot; DoT PLI scheme lists and PPP-MII notifications &middot; DoT / NCCS ITSAR documents (5G disaggregated gNB; Open RAN RIC) &middot; PIB, TCS and C-DoT releases on the BSNL indigenous 4G stack &middot; Nokia India and Ericsson India manufacturing statements &middot; NITI Aayog report on telecom and network equipment manufacturing &middot; DoT 5G BTS data &middot; reporting by ET Telecom, Business Standard, Communications Today, Moneycontrol, The Financial Express, TelecomTalk and Light Reading. All figures are date-stamped to the analysis date; time-sensitive facts are cyclical and should be re-checked before use. Company mappings are evidence-based; impacts are inference unless reported.
   </p>
 
