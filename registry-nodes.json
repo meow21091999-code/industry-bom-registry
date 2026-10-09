@@ -7119,6 +7119,285 @@
           "in_universe_coverage": true
         }
       ]
+    },
+    {
+      "slug": "battery-energy-storage-india",
+      "industry": "Battery Energy Storage System (BESS)",
+      "scope": "INDIA",
+      "path": "industries/battery-energy-storage-india.html",
+      "analysis_date": "2026-10-09",
+      "universe": "NSE/BSE",
+      "sector": "Energy Storage",
+      "derived_from": null,
+      "drill_downs": [],
+      "nodes": [
+        {
+          "id": "cell",
+          "name": "Li-ion Cells (LFP / NMC)",
+          "level": 2,
+          "aliases": [
+            "cell",
+            "cells",
+            "battery cell",
+            "lithium cell",
+            "li-ion cell",
+            "lfp cell",
+            "nmc cell",
+            "gigafactory",
+            "cell manufacturing",
+            "battery cells"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "mat",
+          "name": "Cell Materials (CAM / Anode / Separator / Electrolyte)",
+          "level": 3,
+          "aliases": [
+            "cathode",
+            "anode",
+            "separator",
+            "electrolyte",
+            "cathode active material",
+            "cam",
+            "graphite",
+            "lifepo4",
+            "lfp powder",
+            "lithium carbonate",
+            "pf6",
+            "battery materials",
+            "cell materials"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": false
+        },
+        {
+          "id": "pack",
+          "name": "Modules / Packs / Racks",
+          "level": 2,
+          "aliases": [
+            "module",
+            "modules",
+            "pack",
+            "packs",
+            "rack",
+            "racks",
+            "battery pack",
+            "battery module",
+            "dc block",
+            "battery rack"
+          ],
+          "priority": "med",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "bms",
+          "name": "Battery Management System (BMS)",
+          "level": 2,
+          "aliases": [
+            "bms",
+            "battery management system",
+            "battery management",
+            "cell balancing",
+            "bmu",
+            "bms board"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": false
+        },
+        {
+          "id": "pcs",
+          "name": "Power Conversion System (PCS)",
+          "level": 2,
+          "aliases": [
+            "pcs",
+            "power conversion system",
+            "inverter",
+            "bidirectional inverter",
+            "power conditioning system",
+            "dc-ac converter",
+            "power electronics"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "semi",
+          "name": "Power Semiconductors (IGBT / SiC)",
+          "level": 3,
+          "aliases": [
+            "igbt",
+            "sic",
+            "power semiconductor",
+            "power device",
+            "mosfet",
+            "thyristor",
+            "power electronics silicon"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": false
+        },
+        {
+          "id": "ems",
+          "name": "EMS / SCADA / Control Software",
+          "level": 2,
+          "aliases": [
+            "ems",
+            "energy management system",
+            "scada",
+            "ppc",
+            "control software",
+            "dispatch software",
+            "energy management"
+          ],
+          "priority": "med",
+          "bottleneck": true,
+          "in_universe_coverage": false
+        },
+        {
+          "id": "tms",
+          "name": "Thermal Management (Liquid Cooling / HVAC)",
+          "level": 2,
+          "aliases": [
+            "thermal management",
+            "tms",
+            "liquid cooling",
+            "hvac",
+            "cooling",
+            "cold plate",
+            "chiller"
+          ],
+          "priority": "med",
+          "bottleneck": false,
+          "in_universe_coverage": false
+        },
+        {
+          "id": "fire",
+          "name": "Fire Detection & Suppression",
+          "level": 2,
+          "aliases": [
+            "fire suppression",
+            "fire detection",
+            "novec",
+            "aerosol suppression",
+            "gas detection",
+            "safety system"
+          ],
+          "priority": "med",
+          "bottleneck": false,
+          "in_universe_coverage": false
+        },
+        {
+          "id": "container",
+          "name": "Container / Enclosure & Structural BOS",
+          "level": 2,
+          "aliases": [
+            "container",
+            "enclosure",
+            "bess container",
+            "containerised",
+            "structural bos",
+            "cabinet"
+          ],
+          "priority": "med",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "grid",
+          "name": "MV/HV Transformer, Switchgear & Cabling",
+          "level": 2,
+          "aliases": [
+            "transformer",
+            "switchgear",
+            "cable",
+            "cabling",
+            "mv transformer",
+            "hv transformer",
+            "gis",
+            "ais",
+            "grid interface"
+          ],
+          "priority": "med",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "epc",
+          "name": "EPC, Civil & Grid Integration",
+          "level": 1,
+          "aliases": [
+            "epc",
+            "integration",
+            "civil works",
+            "grid connection",
+            "balance of plant",
+            "bop",
+            "commissioning"
+          ],
+          "priority": "med",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "dev",
+          "name": "Developer / IPP / Owner (BOO)",
+          "level": 0,
+          "aliases": [
+            "developer",
+            "ipp",
+            "boo",
+            "bespa",
+            "asset owner",
+            "storage developer",
+            "merchant bess"
+          ],
+          "priority": "high",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "om",
+          "name": "O&M, Augmentation & Service",
+          "level": 1,
+          "aliases": [
+            "o&m",
+            "om",
+            "operations and maintenance",
+            "augmentation",
+            "service",
+            "amc",
+            "camc"
+          ],
+          "priority": "med",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "recycle",
+          "name": "Recycling & Second-life",
+          "level": 1,
+          "aliases": [
+            "recycling",
+            "recycle",
+            "second life",
+            "second-life",
+            "black mass",
+            "end of life",
+            "battery recycling"
+          ],
+          "priority": "med",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        }
+      ]
     }
   ]
 }
