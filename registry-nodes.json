@@ -3,14 +3,14 @@
   "description": "Machine-readable node index. For every entry, the node names it contains plus the owning entry slug. Used for DEDUP (industry+scope already analysed) and LINEAGE (auto-linking a new industry to a parent when its name matches a node name). Update on every publish.",
   "generated": "2026-10-09",
   "last_delta_pass": "2026-10-09",
-  "delta_note": "Weekly delta pass 2026-10-09: India-US interim trade deal still unfinalised and tariff risk re-escalated (vehicles-auto-components-india, ems-electronics-manufacturing-india); RDSS installed-meter count refreshed 24.1mn->57.3mn (electrical-electronic-equipment-india). All other open [LIVE] facts and dated regulatory-calendar items re-validated with no change.",
+  "delta_note": "Daily full-analysis rotation 2026-10-09: power-transmission-india re-analysed end-to-end (full Phase 1). Material updates: CRGO anti-dumping probe now dated (DGTR, 22-Jun-2026, CN/JP/KR/RU; applicant JSW JFE Nashik); PGCIL project pipeline refreshed to Rs 1.75 lakh cr (Jun-2026 qtr) with bidding pipeline Rs 1.19 lakh cr; four Chinese OEMs allowed to bid for critical transmission projects under 50-60pct localisation (Jul-2026); Barmer HVDC (~Rs 24,974 cr) awarded to PGCIL (Aug-2026); Ladakh GEC-II HVDC ruled out, EHVAC-only, under review; domestic transformer capacity path 375 GVA (FY25) -> ~690 GVA (FY28E); HV short-circuit testing capacity added as a bottleneck. Weekly delta pass 2026-10-09 earlier: India-US interim trade deal still unfinalised and tariff risk re-escalated (vehicles-auto-components-india, ems-electronics-manufacturing-india); RDSS installed-meter count refreshed 24.1mn->57.3mn (electrical-electronic-equipment-india). All other open [LIVE] facts and dated regulatory-calendar items re-validated with no change.",
   "entries": [
     {
       "slug": "power-transmission-india",
       "industry": "Power Transmission",
       "scope": "INDIA",
       "path": "industries/power-transmission-india.html",
-      "analysis_date": "2026-10-07",
+      "analysis_date": "2026-10-09",
       "universe": "NSE/BSE",
       "sector": "Power & Electrical Infrastructure",
       "derived_from": null,
