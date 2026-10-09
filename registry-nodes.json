@@ -7129,7 +7129,11 @@
       "universe": "NSE/BSE",
       "sector": "Energy Storage",
       "derived_from": null,
-      "drill_downs": [],
+      "drill_downs": [
+        "li-ion-cell-manufacturing-india",
+        "battery-management-system-india",
+        "power-conversion-system-india"
+      ],
       "nodes": [
         {
           "id": "cell",
@@ -7395,6 +7399,394 @@
           ],
           "priority": "med",
           "bottleneck": false,
+          "in_universe_coverage": true
+        }
+      ]
+    },
+    {
+      "slug": "li-ion-cell-manufacturing-india",
+      "industry": "Li-ion Cell Manufacturing",
+      "scope": "INDIA",
+      "path": "industries/li-ion-cell-manufacturing-india.html",
+      "analysis_date": "2026-10-09",
+      "universe": "NSE/BSE",
+      "sector": "Energy Storage",
+      "derived_from": {
+        "industry": "Battery Energy Storage System (BESS)",
+        "slug": "battery-energy-storage-india",
+        "node": "Li-ion Cells (LFP / NMC)"
+      },
+      "drill_downs": [],
+      "nodes": [
+        {
+          "id": "cam",
+          "name": "Cathode Active Material (LFP / NMC)",
+          "level": 3,
+          "aliases": [
+            "cathode active material",
+            "cam",
+            "lfp cam",
+            "cathode"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "aam",
+          "name": "Anode Active Material (Graphite)",
+          "level": 3,
+          "aliases": [
+            "anode active material",
+            "aam",
+            "graphite anode",
+            "anode"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "sep",
+          "name": "Separator Film",
+          "level": 3,
+          "aliases": [
+            "separator",
+            "separator film",
+            "pe separator",
+            "pp separator"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "elec",
+          "name": "Electrolyte & LiPF6 Salt",
+          "level": 3,
+          "aliases": [
+            "electrolyte",
+            "lipf6",
+            "lithium salt",
+            "electrolyte salt"
+          ],
+          "priority": "high",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "foil",
+          "name": "Foils & Cell Casing",
+          "level": 3,
+          "aliases": [
+            "foil",
+            "copper foil",
+            "aluminium foil",
+            "cell casing",
+            "current collector"
+          ],
+          "priority": "med",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "cell",
+          "name": "Cell Manufacturing (LFP / NMC)",
+          "level": 2,
+          "aliases": [
+            "cell manufacturing",
+            "cell making",
+            "gigafactory",
+            "li-ion cell"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "mach",
+          "name": "Cell-line Machinery & Equipment",
+          "level": 3,
+          "aliases": [
+            "cell line",
+            "coater",
+            "stacker",
+            "winding machine",
+            "formation equipment",
+            "cell machinery"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": false
+        },
+        {
+          "id": "test",
+          "name": "Testing & Certification",
+          "level": 2,
+          "aliases": [
+            "cell testing",
+            "battery certification",
+            "bis cell",
+            "ais-156"
+          ],
+          "priority": "med",
+          "bottleneck": false,
+          "in_universe_coverage": false
+        },
+        {
+          "id": "recyc",
+          "name": "Recycling & Second-life",
+          "level": 1,
+          "aliases": [
+            "recycling",
+            "second life",
+            "battery recycling",
+            "black mass"
+          ],
+          "priority": "med",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        }
+      ]
+    },
+    {
+      "slug": "battery-management-system-india",
+      "industry": "Battery Management System (BMS)",
+      "scope": "INDIA",
+      "path": "industries/battery-management-system-india.html",
+      "analysis_date": "2026-10-09",
+      "universe": "NSE/BSE",
+      "sector": "Energy Storage",
+      "derived_from": {
+        "industry": "Battery Energy Storage System (BESS)",
+        "slug": "battery-energy-storage-india",
+        "node": "Battery Management System (BMS)"
+      },
+      "drill_downs": [],
+      "nodes": [
+        {
+          "id": "afe",
+          "name": "AFE / Cell-monitoring ICs",
+          "level": 3,
+          "aliases": [
+            "afe",
+            "analog front end",
+            "cell monitoring ic",
+            "bq79616"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": false
+        },
+        {
+          "id": "mcu",
+          "name": "BMS MCU, Isolation & Transceivers",
+          "level": 3,
+          "aliases": [
+            "bms mcu",
+            "isolated can",
+            "isospi",
+            "bms ic"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": false
+        },
+        {
+          "id": "board",
+          "name": "BMS Design, Firmware & Assembly",
+          "level": 2,
+          "aliases": [
+            "bms",
+            "battery management system",
+            "bms board",
+            "bmu",
+            "bcu",
+            "bau"
+          ],
+          "priority": "med",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "fw",
+          "name": "BMS Firmware & EMS Software",
+          "level": 2,
+          "aliases": [
+            "bms firmware",
+            "ems software",
+            "bms software"
+          ],
+          "priority": "med",
+          "bottleneck": true,
+          "in_universe_coverage": false
+        },
+        {
+          "id": "pcb",
+          "name": "PCB, Laminate & SMT Assembly",
+          "level": 3,
+          "aliases": [
+            "pcb",
+            "smt",
+            "laminate",
+            "pcba"
+          ],
+          "priority": "med",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "test",
+          "name": "Testing & Certification",
+          "level": 2,
+          "aliases": [
+            "bms testing",
+            "is 17387",
+            "ul 1973",
+            "bms certification"
+          ],
+          "priority": "med",
+          "bottleneck": true,
+          "in_universe_coverage": false
+        },
+        {
+          "id": "integ",
+          "name": "BMS-bundled Integrated BESS",
+          "level": 1,
+          "aliases": [
+            "integrated bess",
+            "bms integration"
+          ],
+          "priority": "med",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        }
+      ]
+    },
+    {
+      "slug": "power-conversion-system-india",
+      "industry": "PCS & Power Semiconductors",
+      "scope": "INDIA",
+      "path": "industries/power-conversion-system-india.html",
+      "analysis_date": "2026-10-09",
+      "universe": "NSE/BSE",
+      "sector": "Energy Storage",
+      "derived_from": {
+        "industry": "Battery Energy Storage System (BESS)",
+        "slug": "battery-energy-storage-india",
+        "node": "Power Conversion System (PCS)"
+      },
+      "drill_downs": [],
+      "nodes": [
+        {
+          "id": "igbt",
+          "name": "IGBT / SiC Power Modules",
+          "level": 3,
+          "aliases": [
+            "igbt",
+            "sic",
+            "power module",
+            "power semiconductor"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": false
+        },
+        {
+          "id": "gate",
+          "name": "Gate Drivers & Control ICs",
+          "level": 3,
+          "aliases": [
+            "gate driver",
+            "dsp",
+            "mcu",
+            "control ic"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": false
+        },
+        {
+          "id": "magn",
+          "name": "Magnetics, Inductors & Chokes",
+          "level": 3,
+          "aliases": [
+            "magnetics",
+            "inductor",
+            "choke",
+            "filter inductor"
+          ],
+          "priority": "med",
+          "bottleneck": false,
+          "in_universe_coverage": false
+        },
+        {
+          "id": "cap",
+          "name": "DC-link Film Capacitors",
+          "level": 3,
+          "aliases": [
+            "dc-link",
+            "film capacitor",
+            "dc link capacitor"
+          ],
+          "priority": "med",
+          "bottleneck": false,
+          "in_universe_coverage": false
+        },
+        {
+          "id": "ctrl",
+          "name": "Control & Grid-forming Firmware",
+          "level": 3,
+          "aliases": [
+            "grid-forming",
+            "grid forming",
+            "vsm",
+            "black start",
+            "pcs control"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": false
+        },
+        {
+          "id": "make",
+          "name": "PCS Manufacturing & Integration",
+          "level": 2,
+          "aliases": [
+            "pcs",
+            "power conversion system",
+            "inverter",
+            "bidirectional inverter"
+          ],
+          "priority": "med",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "acint",
+          "name": "Inverter-duty Transformer & Switchgear",
+          "level": 2,
+          "aliases": [
+            "inverter transformer",
+            "step-up transformer",
+            "switchgear"
+          ],
+          "priority": "med",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "osat",
+          "name": "Power-semiconductor OSAT / Fab",
+          "level": 3,
+          "aliases": [
+            "osat",
+            "power semiconductor fab",
+            "igbt fab",
+            "sic fab"
+          ],
+          "priority": "high",
+          "bottleneck": true,
           "in_universe_coverage": true
         }
       ]

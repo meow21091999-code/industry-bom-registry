@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>India Battery Management Systems (BMS) &mdash; BOM, Value Chain &amp; Company Map</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/registry.css">
+</head>
+<body>
+<div style="max-width:1180px;margin:0 auto 18px;font-family:'IBM Plex Mono',monospace;font-size:12px;">
+  <a href="../index.html" style="color:var(--blue);text-decoration:none;border-bottom:1px solid var(--border);">&larr; Industry BOM Registry</a>
+  <span style="color:var(--text-dim);">&nbsp;/&nbsp;Energy Storage &mdash; India&nbsp;/&nbsp;Battery Management System (BMS)</span>
+  <div style="margin-top:8px;color:var(--gold);">Derived from: Battery Energy Storage (BESS) (India) &rarr; node &ldquo;Battery Management System (BMS)&rdquo;</div>
+</div>
+<div class="container">
+  <div style="display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;background:var(--gold-dim);border:1px solid var(--gold);border-radius:10px;padding:12px 16px;margin-bottom:18px;">
+    <span style="font-size:12.5px;line-height:1.5;"><strong style="color:var(--text);">Derived from &rarr;</strong> <span style="color:var(--text-dim);">Battery Energy Storage (BESS) (India) &middot; node &ldquo;Battery Management System (BMS)&rdquo;</span></span>
+    <a href="battery-energy-storage-india.html" style="font-family:var(--font-mono);font-size:11.5px;font-weight:600;color:var(--gold);text-decoration:none;border:1px solid var(--gold);border-radius:6px;padding:6px 12px;white-space:nowrap;background:var(--surface);">Battery Energy Storage (BESS) &rarr;</a>
+  </div>
+
+  <header class="masthead animate" style="--i:0">
+    <div class="eyebrow">Industrial BOM &amp; Value-Chain Dissection &middot; Phase 2 deep-dive</div>
+    <h1>India <span>Battery Management Systems (BMS)</span></h1>
+    <div class="subtitle">The safety-critical control electronics of a battery &middot; architecture &middot; semiconductors &middot; NSE/BSE company map</div>
+    <div class="scope-bar">
+      <span class="chip chip--gold">Analysis date: 2026-10-09</span>
+      <span class="chip">Scope: INDIA</span>
+      <span class="chip">Interest: investment research</span>
+      <span class="chip">Universe: NSE / BSE</span>
+      <span class="chip chip--high">India lens: ON</span>
+      <span class="chip">Depth: depth-first</span>
+    </div>
+  </header>
+
+  <section class="animate" style="--i:1">
+    <div class="metric-cards">
+      <div class="metric-card metric-card--high">
+        <div class="metric-card__val">~90%</div>
+        <div class="metric-card__label">BMS units imported</div>
+        <div class="metric-card__sub">China the largest supplier</div>
+      </div>
+      <div class="metric-card metric-card--gold">
+        <div class="metric-card__val">30&ndash;40%</div>
+        <div class="metric-card__label">ICs share of BMS BOM</div>
+        <div class="metric-card__sub">AFE/MCU near-totally imported</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-card__val">~5%</div>
+        <div class="metric-card__label">BMS share of BESS capex</div>
+        <div class="metric-card__sub">small cost, safety-critical</div>
+      </div>
+      <div class="metric-card metric-card--high">
+        <div class="metric-card__val">1 Sep 2026</div>
+        <div class="metric-card__label">UL 1973 Ed.3 + ISO 15118-20</div>
+        <div class="metric-card__sub">MNRE import gate for BMS/EMS</div>
+      </div>
+      <div class="metric-card metric-card--gold">
+        <div class="metric-card__val">No listed pure-play</div>
+        <div class="metric-card__label">nearest proxy Endurance/Maxwell</div>
+        <div class="metric-card__sub">via 100%-owned subsidiary</div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="animate" style="--i:1">
+    <div class="sec-head"><span class="sec-num">DG</span><span class="sec-title">Digest &mdash; at a glance</span><span class="sec-note">short summary; full report in chat</span></div>
+    
+<div class="digest">
+<div class="digest__item"><div class="digest__h">Snapshot</div><p>The BMS monitors and protects every cell in a pack — a small share of cost (~5% of BESS capex, 8–12% of container cost) but safety- and cyber-critical. India imports ~90% of BMS units, and the ICs inside are near-totally imported.</p></div>
+<div class="digest__item"><div class="digest__h">Process &amp; equipment</div><ul>
+<li>Three-tier architecture: BMU (module) &rarr; BCU (rack) &rarr; BAU (container/system); a 5 MWh container is ~1 BAU + 12 BCUs + 48 BMUs over ~5,000 cells.</li>
+<li>Boards are SMT-assembled in India (Napino, Dixon, Syrma, Kaynes) using imported silicon.</li>
+<li>1500 V designs need reinforced isolation and isolated daisy-chain comms.</li></ul></div>
+<div class="digest__item"><div class="digest__h">Bottlenecks</div><ul>
+<li>AFE/MCU/isolation ICs &mdash; a four-supplier global oligopoly (TI, ADI, NXP, ST); no Indian fab.</li>
+<li>Firmware &amp; cybersecurity &mdash; safety-critical talent thin; BMS security flaws documented.</li>
+<li>Container-scale propagation testing not available in India.</li>
+<li>Chinese BMS price competition undercuts indigenous R&amp;D.</li></ul></div>
+<div class="digest__item"><div class="digest__h">Value pools</div><ul>
+<li>ICs are 30&ndash;40% of BMS BOM cost — the pool that leaks abroad.</li>
+<li>Design, firmware and assembly stay domestic — Endurance/Maxwell, HBL, Amara Raja (Nuvation MoU).</li>
+<li>EMS software is mandated domestic (Kalkitech, Statiq, Tuva) — 5&ndash;7% of project value.</li>
+<li>PCB/laminates are ~85% imported — an ECMS-backed localisation target.</li></ul></div>
+<div class="digest__item"><div class="digest__h">Watch items</div><ul>
+<li>1 Sep 2026 &mdash; imported BMS/EMS must hold UL 1973 Ed.3 + ISO 15118-20.</li>
+<li>15 Aug 2026 &mdash; source-code-level BMS security audit (IS/IEC 62443-4-2) for BIS ESS applications.</li>
+<li>CEA BESS safety rules (Chapter XA) effective 1 Apr 2027 — cell/module/rack-level BMS monitoring.</li>
+<li>PM E-DRIVE: BMS must be made in India for e-trucks from 1 Sep 2026.</li></ul></div>
+<div class="digest__item"><div class="digest__h">Coverage gaps</div><ul>
+<li>No NSE/BSE-listed BMS pure-play; the closest listed exposure is Endurance Technologies (via Maxwell Energy).</li>
+</ul></div>
+</div>
+  </section>
+
+  <section class="animate" style="--i:2">
+    <div class="sec-head">
+      <span class="sec-num">01</span>
+      <span class="sec-title">System Overview</span>
+      <span class="sec-note">node decomposed into sub-systems<br>clickable BOM tree in section 03</span>
+    </div>
+    <section class="diagram-shell">
+      <p class="diagram-shell__hint">Ctrl/Cmd + wheel to zoom. Drag to pan when zoomed. Double-click to fit.</p>
+      <div class="mermaid-wrap">
+        <div class="zoom-controls">
+          <button type="button" data-action="zoom-in" title="Zoom in">+</button>
+          <button type="button" data-action="zoom-out" title="Zoom out">&minus;</button>
+          <button type="button" data-action="zoom-fit" title="Smart fit">&#8634;</button>
+          <button type="button" data-action="zoom-one" title="1:1 zoom">1:1</button>
+          <button type="button" data-action="zoom-expand" title="Open full size">&#x26F6;</button>
+          <span class="zoom-label">Loading...</span>
+        </div>
+        <div class="mermaid-viewport">
+          <div class="mermaid mermaid-canvas"></div>
+        </div>
+      </div>
+      <script type="text/plain" class="diagram-source">
+graph TD
+  L0["<b>Level 0</b><br/>Battery Management System (BMS)<br/>(India)"]
+  L0 --> A["A &middot; Cell-level Sensing<br/>(AFE / BMU)"]
+  L0 --> B["B &middot; Module BMS"]
+  L0 --> C["C &middot; Rack / String<br/>Master (BCU)"]
+  L0 --> D["D &middot; System BMS (BAU)<br/>&amp; Firmware"]
+  L0 --> E["E &middot; Semiconductor<br/>Content"]
+  L0 --> F["F &middot; BMS PCB &amp;<br/>SMT Assembly"]
+  L0 --> G["G &middot; Testing &amp;<br/>Certification"]
+  classDef high fill:#c0392b,stroke:#8e2b20,color:#fff,stroke-width:2px;
+  classDef med fill:#d4a73a,stroke:#a37f22,color:#241a05,stroke-width:1.5px;
+  classDef root fill:#1e4e8c,stroke:#12335c,color:#fff,stroke-width:2px;
+  class L0 root;
+  class A,E high;
+  class B,C,D,F,G med;
+      </script>
+    </section>
+    <div class="legend">
+      <div class="legend-item"><div class="legend-swatch" style="background:var(--high)"></div> HIGH priority &mdash; bottleneck / import-critical</div>
+      <div class="legend-item"><div class="legend-swatch" style="background:var(--med)"></div> MEDIUM priority</div>
+      <div class="legend-item"><div class="legend-swatch" style="background:var(--blue)"></div> Root node</div>
+    </div>
+  </section>
+
+  <section class="animate" style="--i:3">
+    <div class="sec-head">
+      <span class="sec-num">02</span>
+      <span class="sec-title">Value-Chain Ladder &amp; Supplier Tiers</span>
+      <span class="sec-note">raw material &rarr; aftermarket &middot; Tier-4 &rarr; OEM</span>
+    </div>
+    <div class="ladder">
+      <div class="rung rung--1">
+        <div class="rung__label">Tier 4 &middot; Raw</div>
+        <div class="rung__body"><b>Semiconductor wafers</b> &middot; PCB laminate &amp; copper foil &middot; connector metals &middot; NTC thermistor materials <span class="mini">imported</span></div>
+      </div>
+      <div class="rung rung--2">
+        <div class="rung__label">Tier 3 &middot; Specialty</div>
+        <div class="rung__body"><b>AFE ICs</b> &middot; MCUs &middot; isolated transceivers &middot; current sensors &middot; multi-layer PCB <span class="mini">TI &middot; ADI &middot; NXP &middot; ST &middot; Infineon (all foreign)</span></div>
+      </div>
+      <div class="rung rung--3">
+        <div class="rung__label">Tier 2 &middot; Component</div>
+        <div class="rung__body"><b>BMU / BCU / BAU boards</b> &middot; BMS firmware &middot; contactors, fuses, harness <span class="mini">Endurance/Maxwell &middot; HBL &middot; Napino (unlisted)</span></div>
+      </div>
+      <div class="rung rung--4">
+        <div class="rung__label">Tier 1 &middot; System</div>
+        <div class="rung__body"><b>BMS integrated into packs and containers</b> &mdash; BESS integrators and cell/pack makers <span class="mini">Amara Raja &middot; Exide &middot; Waaree &middot; Tata AutoComp Gotion</span></div>
+      </div>
+      <div class="rung rung--4">
+        <div class="rung__label">OEM / Developer</div>
+        <div class="rung__body"><b>BESS developers and EV OEMs</b> as the demand layer <span class="mini">NTPC Green &middot; Tata Power &middot; JSW &middot; Ola</span></div>
+      </div>
+      <div class="rung rung--1">
+        <div class="rung__label">Aftermarket</div>
+        <div class="rung__body">BMS firmware updates &middot; cybersecurity &middot; diagnostics &middot; second-life re-BMS <span class="mini">service layer</span></div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="animate" style="--i:4">
+    <div class="sec-head">
+      <span class="sec-num">03</span>
+      <span class="sec-title">BOM Tree &amp; Company Map</span>
+      <span class="sec-note">click a node &rarr; its NSE/BSE companies<br>gaps shown explicitly</span>
+    </div>
+    <div class="map-layout">
+      <div class="map-nodes" id="mapNodes"></div>
+      <aside class="map-panel" id="mapPanel" aria-live="polite"></aside>
+    </div>
+  </section>
+
+  <section class="animate" style="--i:5">
+    <div class="sec-head">
+      <span class="sec-num">04</span>
+      <span class="sec-title">Company &times; Node Matrix</span>
+      <span class="sec-note">D direct &middot; I indirect &middot; S supplier &middot; C conglomerate &middot; &mdash; none</span>
+    </div>
+    <div class="table-wrap">
+      <div class="table-scroll">
+        <table class="data">
+          <thead>
+            <tr><th>Company</th><th>AFE/MCU</th><th>BMS Design</th><th>Firmware</th><th>PCB/EMS</th><th>Integrated BESS</th></tr>
+          </thead>
+          <tbody>
+<tr><td>Endurance Technologies <small>ENDURANCE</small></td><td class="c cell-x">&mdash;</td><td class="c cell-d">D</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td></tr>
+<tr><td>HBL Engineering <small>HBLENGINE</small></td><td class="c cell-x">&mdash;</td><td class="c cell-d">D</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td></tr>
+<tr><td>Amara Raja Energy & Mobility <small>ARE&M</small></td><td class="c cell-x">&mdash;</td><td class="c cell-d">D</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-d">D</td></tr>
+<tr><td>Exide Industries <small>EXIDEIND</small></td><td class="c cell-x">&mdash;</td><td class="c cell-i">I</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-d">D</td></tr>
+<tr><td>Syrma SGS Technology <small>SYRMA</small></td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-d">D</td><td class="c cell-x">&mdash;</td></tr>
+<tr><td>Kaynes Technology <small>KAYNES</small></td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-d">D</td><td class="c cell-x">&mdash;</td></tr>
+<tr><td>Dixon Technologies <small>DIXON</small></td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-i">I</td><td class="c cell-x">&mdash;</td></tr>
+<tr><td>Waaree Energies <small>WAAREEENER</small></td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-d">D</td></tr>
+<tr><td>CLN Energy <small>544347 (SME)</small></td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-d">D</td></tr>
+<tr><td>Tata Power <small>TATAPOWER</small></td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-i">I</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <p class="footnote">D direct &middot; I indirect &middot; S supplier &middot; C conglomerate/minor segment &middot; &mdash; no exposure. Listing status current as of the analysis date. Every mapping is evidence-based; materiality detail is in the click-through panel above.</p>
+  </section>
+
+  <section class="animate" style="--i:6">
+    <div class="sec-head">
+      <span class="sec-num">05</span>
+      <span class="sec-title">Bottlenecks &mdash; Risk &amp; Opportunity</span>
+      <span class="sec-note">dual-readable: every risk is a substitution play</span>
+    </div>
+    <div class="bn">
+      <div class="bn__risk"><div class="bn__h">Risk</div><p><span class="bn__title">AFE/MCU/isolation import dependence</span>AFE ICs, MCUs and isolated transceivers are almost entirely imported; no Indian fab; a Taiwan/Korea disruption hits BMS availability in ~8–12 weeks. Resilience: critical.</p></div>
+      <div class="bn__opp"><div class="bn__h">Opportunity</div><p><span class="bn__title">Indigenous BMS & software</span>MNRE mandates India-developed EMS software; Xbattery, Maxwell and others are building indigenous high-voltage BMS; PM E-DRIVE forces domestic BMS for e-trucks.</p></div>
+    </div>
+    <div class="bn">
+      <div class="bn__risk"><div class="bn__h">Risk</div><p><span class="bn__title">Firmware & cybersecurity</span>Safety-critical firmware talent is thin; documented BMS flaws (Nuvation CVE, BlueShock) expose safety commands; closed foreign platforms create lock-in. Resilience: low.</p></div>
+      <div class="bn__opp"><div class="bn__h">Opportunity</div><p><span class="bn__title">Security-as-moat</span>IS/IEC 62443-4-2 source-code audits (Aug-2026) and IEC 62443 certification create a compliance moat for firms that invest in secure firmware.</p></div>
+    </div>
+    <div class="bn">
+      <div class="bn__risk"><div class="bn__h">Risk</div><p><span class="bn__title">Certification & test capacity</span>India lacks full-scale container thermal-runaway propagation testing; IS 17387 certification runs 6–12 weeks; the UL 1973 Ed.3 + ISO 15118-20 gate bites imported BMS from Sep-2026. Resilience: low-to-medium.</p></div>
+      <div class="bn__opp"><div class="bn__h">Opportunity</div><p><span class="bn__title">Local qualification</span>A domestic test ecosystem and the mandated UL/ISO gate favour compliant Indian BMS makers over cheap uncertified imports.</p></div>
+    </div>
+    <div class="bn">
+      <div class="bn__risk"><div class="bn__h">Risk</div><p><span class="bn__title">PCB & Chinese price competition</span>~85% of PCBs are imported; cheap Chinese BMS undercuts indigenous R&D. Resilience: low-to-medium.</p></div>
+      <div class="bn__opp"><div class="bn__h">Opportunity</div><p><span class="bn__title">ECMS & value-addition</span>ECMS is funding domestic PCB/laminate plants, and local-content rules (VGF 20%) pull indigenous BMS/EMS into tenders.</p></div>
+    </div>
+
+    <div class="callout animate" style="--i:7">
+      <strong>Deepest hidden dependency:</strong> the analog front-end and safety MCU silicon — a four-supplier global oligopoly — sits under every Indian BMS, so localising the board and firmware without the chips leaves the most safety-critical layer imported.
+    </div>
+  </section>
+
+  <p class="footnote animate" style="--i:8">
+    Sources (plain): MNRE Grid-Connected BESS Import Compliance Framework (Jul-2026) &middot; Ministry of Power VGF guidelines &amp; EMS-software mandate (2025–26) &middot; BIS / CEA safety rules and IS 17387 &middot; Ministry of Heavy Industries PM E-DRIVE (Apr-2026) &middot; Endurance Technologies and HBL filings &middot; Amara Raja–Nuvation MoU (Jul-2026) &middot; company profiles (Maxwell, Xbattery, Napino) &middot; trade press: The Battery Magazine, Global Indu Brief, Energy-Storage.News, SMM (2026). All figures date-stamped to the analysis date; time-sensitive facts are cyclical or live and should be re-checked before use. Company mappings are evidence-based; impacts are inference unless reported.
+  </p>
+</div>
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+  const config = { fitPadding: 24, minHeight: 300, maxHeightPx: 900, maxHeightVh: 0.85, maxInitialZoom: 1.7, minZoom: 0.08, maxZoom: 6.5, zoomStep: 0.14, readabilityFloor: 0.55 };
+  const clamp = (n, lo, hi) => Math.max(lo, Math.min(hi, n));
+  let activeDrag = null;
+  addEventListener('mousemove', (e) => activeDrag?.onMove(e));
+  addEventListener('mouseup', () => { activeDrag?.onEnd(); activeDrag = null; });
+  const isDark = matchMedia('(prefers-color-scheme: dark)').matches;
+  mermaid.initialize({ startOnLoad: false, theme: 'base', look: 'classic', layout: 'dagre', themeVariables: { fontFamily: "'IBM Plex Sans', system-ui, sans-serif", fontSize: '15px', lineColor: isDark ? '#5b9bd5' : '#9db4cc' } });
+  function initDiagram(shell) {
+    const wrap = shell.querySelector('.mermaid-wrap'), viewport = shell.querySelector('.mermaid-viewport'), canvas = shell.querySelector('.mermaid-canvas'), source = shell.querySelector('.diagram-source'), label = shell.querySelector('.zoom-label');
+    if (!wrap || !viewport || !canvas || !source || !label) return;
+    let zoom = 1, panX = 0, panY = 0, svgW = 0, svgH = 0, sx = 0, sy = 0, spx = 0, spy = 0, touchDist = 0, touchCx = 0, touchCy = 0;
+    function constrainPan() { const vpW = viewport.clientWidth, vpH = viewport.clientHeight, rW = svgW * zoom, rH = svgH * zoom, pad = config.fitPadding;
+      panX = (rW + pad * 2 <= vpW) ? (vpW - rW) / 2 : clamp(panX, vpW - rW - pad, pad);
+      panY = (rH + pad * 2 <= vpH) ? (vpH - rH) / 2 : clamp(panY, vpH - rH - pad, pad); }
+    function applyTransform() { const svg = canvas.querySelector('svg'); if (!svg || !svgW) return; constrainPan(); svg.style.width = (svgW * zoom) + 'px'; svg.style.height = (svgH * zoom) + 'px'; canvas.style.transform = `translate(${panX}px, ${panY}px)`; label.textContent = Math.round(zoom * 100) + '%'; }
+    function canPan() { return svgW * zoom + config.fitPadding * 2 > viewport.clientWidth || svgH * zoom + config.fitPadding * 2 > viewport.clientHeight; }
+    function computeSmartFit() { const vpW = viewport.clientWidth, vpH = viewport.clientHeight, aW = Math.max(80, vpW - config.fitPadding * 2), aH = Math.max(80, vpH - config.fitPadding * 2); const contain = Math.min(aW / svgW, aH / svgH); let z = contain; if (contain < config.readabilityFloor) { z = aW / svgW; } return { zoom: clamp(z, config.minZoom, config.maxInitialZoom) }; }
+    function fitDiagram() { if (!svgW) return; const fit = computeSmartFit(); zoom = fit.zoom; panX = (viewport.clientWidth - svgW * zoom) / 2; panY = (viewport.clientHeight - svgH * zoom) / 2; applyTransform(); }
+    function setOneToOne() { zoom = 1; panX = (viewport.clientWidth - svgW * zoom) / 2; panY = (viewport.clientHeight - svgH * zoom) / 2; applyTransform(); }
+    function zoomAround(factor, cx, cy) { const next = clamp(zoom * factor, config.minZoom, config.maxZoom); const ratio = next / zoom; panX = cx - ratio * (cx - panX); panY = cy - ratio * (cy - panY); zoom = next; applyTransform(); }
+    function readSvgNaturalSize(svg) { let w = 0, h = 0; if (svg.viewBox?.baseVal?.width > 0) { w = svg.viewBox.baseVal.width; h = svg.viewBox.baseVal.height; } if (!w) { w = parseFloat(svg.getAttribute('width')) || 0; h = parseFloat(svg.getAttribute('height')) || 0; } if (!w) { const b = svg.getBBox(); w = b.width; h = b.height; } if (!w) { const r = svg.getBoundingClientRect(); w = r.width || 1000; h = r.height || 700; } if (!svg.getAttribute('viewBox')) svg.setAttribute('viewBox', `0 0 ${w} ${h}`); return { w, h }; }
+    function setAdaptiveHeight() { if (!svgW) return; const usableW = Math.max(280, wrap.getBoundingClientRect().width - 2); const idealH = (svgH / svgW) * usableW + config.fitPadding * 2; const maxVp = Math.floor(innerHeight * config.maxHeightVh); const hardMax = Math.min(config.maxHeightPx, Math.max(config.minHeight + 40, maxVp)); wrap.style.height = Math.round(clamp(idealH, config.minHeight, hardMax)) + 'px'; }
+    function openInNewTab() { const svg = canvas.querySelector('svg'); if (!svg) return; const clone = svg.cloneNode(true); clone.style.width = ''; clone.style.height = ''; const bg = isDark ? '#0a1626' : '#eef2f7'; const html = `<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>BOM Tree</title><style>body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;background:${bg};padding:40px;box-sizing:border-box}svg{max-width:100%;max-height:90vh;height:auto}</style></head><body>${clone.outerHTML}</body></html>`; open(URL.createObjectURL(new Blob([html], { type: 'text/html' })), '_blank'); }
+    async function render() { try { const code = source.textContent.trim(); const id = 'dgm-' + Math.random().toString(36).slice(2, 9); const { svg } = await mermaid.render(id, code); canvas.innerHTML = svg; const svgNode = canvas.querySelector('svg'); if (!svgNode) { label.textContent = 'Error'; return; } const size = readSvgNaturalSize(svgNode); svgW = size.w; svgH = size.h; svgNode.removeAttribute('width'); svgNode.removeAttribute('height'); svgNode.style.maxWidth = 'none'; svgNode.style.display = 'block'; setAdaptiveHeight(); fitDiagram(); } catch (err) { console.error(err); label.textContent = 'Error'; } }
+    const actions = { 'zoom-in': () => zoomAround(1 + config.zoomStep, viewport.clientWidth / 2, viewport.clientHeight / 2), 'zoom-out': () => zoomAround(1 / (1 + config.zoomStep), viewport.clientWidth / 2, viewport.clientHeight / 2), 'zoom-fit': fitDiagram, 'zoom-one': setOneToOne, 'zoom-expand': openInNewTab };
+    Object.entries(actions).forEach(([a, h]) => wrap.querySelector(`[data-action="${a}"]`)?.addEventListener('click', h));
+    viewport.addEventListener('dblclick', fitDiagram);
+    viewport.addEventListener('wheel', (e) => { if (e.ctrlKey || e.metaKey) { e.preventDefault(); const rect = viewport.getBoundingClientRect(); const factor = e.deltaY < 0 ? 1 + config.zoomStep : 1 / (1 + config.zoomStep); zoomAround(factor, e.clientX - rect.left, e.clientY - rect.top); return; } if (canPan()) { e.preventDefault(); panX -= e.deltaX; panY -= e.deltaY; applyTransform(); } }, { passive: false });
+    viewport.addEventListener('mousedown', (e) => { if (e.target.closest('.zoom-controls') || !canPan()) return; wrap.classList.add('is-panning'); sx = e.clientX; sy = e.clientY; spx = panX; spy = panY; e.preventDefault(); activeDrag = { onMove: (ev) => { panX = spx + (ev.clientX - sx); panY = spy + (ev.clientY - sy); applyTransform(); }, onEnd: () => wrap.classList.remove('is-panning') }; });
+    viewport.addEventListener('touchstart', (e) => { if (e.touches.length === 1) { sx = e.touches[0].clientX; sy = e.touches[0].clientY; spx = panX; spy = panY; } else if (e.touches.length === 2) { const dx = e.touches[0].clientX - e.touches[1].clientX, dy = e.touches[0].clientY - e.touches[1].clientY; touchDist = Math.sqrt(dx * dx + dy * dy); const r = viewport.getBoundingClientRect(); touchCx = (e.touches[0].clientX + e.touches[1].clientX) / 2 - r.left; touchCy = (e.touches[0].clientY + e.touches[1].clientY) / 2 - r.top; } }, { passive: true });
+    viewport.addEventListener('touchmove', (e) => { if (e.touches.length === 1 && canPan()) { e.preventDefault(); panX = spx + (e.touches[0].clientX - sx); panY = spy + (e.touches[0].clientY - sy); applyTransform(); } else if (e.touches.length === 2 && touchDist > 0) { e.preventDefault(); const dx = e.touches[0].clientX - e.touches[1].clientX, dy = e.touches[0].clientY - e.touches[1].clientY; const d = Math.sqrt(dx * dx + dy * dy); zoomAround(d / touchDist, touchCx, touchCy); touchDist = d; } }, { passive: false });
+    new ResizeObserver(() => { if (svgW) { setAdaptiveHeight(); fitDiagram(); } }).observe(wrap);
+    render();
+  }
+  document.querySelectorAll('.diagram-shell').forEach(initDiagram);
+</script>
+
+<script>
+const NODES = [
+  {"id": "afe", "name": "AFE / Cell-monitoring ICs", "pri": "high", "bott": true, "fn": "The analog front-end that measures every cell voltage/temperature and drives balancing — the core of the BMS.", "importDep": "Near-total import", "conc": "Four-supplier oligopoly (TI, ADI, NXP, ST)", "companies": [], "gap": "NO LISTED PURE-PLAY IN INDIA (no domestic BMS-IC fab).", "near": "Supplied by Texas Instruments, Analog Devices, NXP, STMicroelectronics, Infineon, Renesas. Indian BMS makers buy these chipsets; no listed Indian semiconductor exposure."},
+  {"id": "mcu", "name": "BMS MCU, Isolation & Transceivers", "pri": "high", "bott": true, "fn": "Safety-capable MCU plus isolated CAN/isoSPI transceivers and isolated DC-DC for 1500 V operation.", "importDep": "Near-total import", "conc": "Foreign oligopoly", "companies": [], "gap": "NO LISTED PURE-PLAY IN INDIA.", "near": "NXP S32K3, TI, Infineon AURIX, Renesas; isolation from TI/ADI/Infineon. Automotive-qualified BMS silicon lead times ran 26–40 weeks (Q2 2026)."},
+  {"id": "board", "name": "BMS Design, Firmware & Assembly", "pri": "med", "bott": false, "fn": "Board design, embedded firmware (SOC/SOH, protection) and SMT assembly of the BMS — India's main value-add in the layer.", "importDep": "Assembly domestic; silicon imported", "conc": "Fragmented", "companies": [{"n": "Endurance Technologies", "t": "NSE/BSE: ENDURANCE", "e": "direct", "m": "Owns 100% of Maxwell Energy — India's leading BMS maker; closest listed BMS exposure [REPORTED-T1]", "ev": "Company disclosure"}, {"n": "HBL Engineering", "t": "NSE/BSE: HBLENGINE", "e": "direct", "m": "Manufactures BMS & battery monitoring systems in-house within a diversified battery/electronics business [REPORTED-T2]", "ev": "Annual report"}, {"n": "Amara Raja Energy & Mobility", "t": "NSE/BSE: ARE&M", "e": "direct", "m": "MoU with Nuvation Energy (US) to localise 1500 V high-voltage BMS in India [REPORTED-T2]", "ev": "Company / press"}, {"n": "Exide Industries", "t": "NSE/BSE: EXIDEIND", "e": "indirect", "m": "BMS within Li-ion packs via EESL / Nexcharge [REPORTED-T2]", "ev": "Annual report"}], "near": "Maxwell (Endurance), Xbattery, Napino, Vecmocon and others are the active Indian BMS designers; most are unlisted."},
+  {"id": "fw", "name": "BMS Firmware & EMS Software", "pri": "med", "bott": true, "fn": "Safety-critical firmware and the EMS application software that dispatches the asset — now mandated to be developed in India.", "importDep": "Mandated domestic", "conc": "Emerging", "companies": [], "gap": "NO LISTED PURE-PLAY IN INDIA.", "near": "Private players: Xbattery (BharatBMS), Maxwell, Kalkitech, Statiq, Tuva. MoP mandates India-developed EMS software under VGF BESS guidelines."},
+  {"id": "pcb", "name": "PCB, Laminate & SMT Assembly", "pri": "med", "bott": false, "fn": "The bare PCB, laminate and the SMT line that builds BMS boards — ~85% of PCBs are imported.", "importDep": "~85% PCB imported", "conc": "Concentrated (imports)", "companies": [{"n": "Syrma SGS Technology", "t": "NSE/BSE: SYRMA", "e": "direct", "m": "EMS with PCB/ECMS-backed expansion [REPORTED-T2]", "ev": "Company"}, {"n": "Kaynes Technology", "t": "NSE/BSE: KAYNES", "e": "direct", "m": "Electronics manufacturing incl. automotive/industrial boards [REPORTED-T2]", "ev": "Company"}, {"n": "Dixon Technologies", "t": "NSE/BSE: DIXON", "e": "indirect", "m": "EMS scale; broad electronics [REPORTED-T2]", "ev": "Company"}], "near": "Napino (13 SMT lines) and other EMS players are unlisted; ECMS targets ~50% domestic PCB demand."},
+  {"id": "test", "name": "Testing & Certification", "pri": "med", "bott": true, "fn": "BMS safety/performance testing (IS 17387, IEC 62619, UL 1973) and container-scale propagation testing.", "importDep": "Domestic (thin)", "conc": "Government-led", "companies": [], "gap": "NO LISTED PURE-PLAY IN INDIA.", "near": "BIS-recognised/NABL labs, TUV, UL, ARAI. India lacks full-scale UL 9540A-style container propagation testing, forcing reliance on international evidence."},
+  {"id": "integ", "name": "BMS-bundled Integrated BESS", "pri": "med", "bott": false, "fn": "Integrated systems that bundle BMS with cells, PCS and EMS — where most buyers actually acquire a BMS.", "importDep": "Mixed", "conc": "Fragmented", "companies": [{"n": "Waaree Energies", "t": "NSE/BSE: WAAREEENER", "e": "direct", "m": "Integrated BESS with BMS/EMS within Waaree ESS [REPORTED-T2]", "ev": "Company / press"}, {"n": "Amara Raja Energy & Mobility", "t": "NSE/BSE: ARE&M", "e": "direct", "m": "BESS integration with in-house BMS packs [REPORTED-T2]", "ev": "Company"}, {"n": "CLN Energy", "t": "BSE SME: 544347", "e": "direct", "m": "Turnkey all-in-one BESS with smart BMS + cloud EMS [REPORTED-T3]", "ev": "Company ranking page"}]}
+];
+const nodesEl = document.getElementById('mapNodes');
+const panelEl = document.getElementById('mapPanel');
+const PRI_LABEL = { high:'HIGH', med:'MEDIUM', low:'LOW' };
+function renderPanel(node) {
+  if (!node) { panelEl.innerHTML = '<div class="map-panel__kicker">Company map</div><div class="map-panel__title">Select a node</div><p class="map-panel__fn">Click any node on the left to see its NSE/BSE companies, exposure type, materiality and evidence.</p>'; return; }
+  let html = '';
+  html += `<div class="map-panel__kicker">${PRI_LABEL[node.pri] || ''} priority node</div>`;
+  html += `<div class="map-panel__title">${node.name}</div>`;
+  html += `<p class="map-panel__fn">${node.fn}</p>`;
+  html += `<div class="map-panel__row">`;
+  if (node.importDep && node.importDep !== 'n/a') html += `<span class="mini">Import: ${node.importDep}</span>`;
+  if (node.conc) html += `<span class="mini">Concentration: ${node.conc}</span>`;
+  if (node.bott) html += `<span class="mini" style="color:var(--gold)">Bottleneck</span>`;
+  html += `</div>`;
+  if (!node.companies || node.companies.length === 0) {
+    html += `<div class="nocov"><b>${node.gap}</b><span class="near">${node.near}</span></div>`;
+    panelEl.innerHTML = html; return;
+  }
+  node.companies.forEach(c => {
+    html += `<div class="co">`;
+    html += `<div class="co__name">${c.n}<span class="co__ticker">${c.t}</span></div>`;
+    html += `<div class="co__tags"><span class="tag tag--${c.e}">${c.e.toUpperCase()}</span></div>`;
+    html += `<div class="co__mat">${c.m}</div>`;
+    html += `<div class="co__ev">Evidence: ${c.ev}</div>`;
+    html += `</div>`;
+  });
+  if (node.near) html += `<div class="co__ev" style="margin-top:10px;">${node.near}</div>`;
+  panelEl.innerHTML = html;
+}
+const PTREE = [
+  { icon:'A', group:'Sensing & Semiconductors', ids:['afe','mcu'] },
+  { icon:'B', group:'Design & Software', ids:['board','fw'] },
+  { icon:'C', group:'Electronics Build', ids:['pcb','test'] },
+  { icon:'D', group:'Integrated Systems', ids:['integ'] }
+];
+let firstBtn = null;
+PTREE.forEach((grp) => {
+  const wrap = document.createElement('div');
+  const head = document.createElement('button');
+  head.type = 'button';
+  head.style.cssText = 'display:flex;align-items:center;gap:8px;width:100%;text-align:left;background:transparent;border:none;cursor:pointer;padding:8px 6px;font-family:var(--font-mono);font-size:11px;font-weight:600;letter-spacing:.6px;color:var(--text-dim);text-transform:uppercase;';
+  head.innerHTML = '<span class="tgl" style="width:12px;display:inline-block;">&#9662;</span><span>' + grp.icon + ' &middot; ' + grp.group + '</span>';
+  const body = document.createElement('div');
+  body.style.cssText = 'margin-left:14px;border-left:1px dashed var(--border-bright);padding-left:8px;';
+  grp.ids.forEach((id) => {
+    const node = NODES.find((n) => n.id === id);
+    if (!node) return;
+    const btn = document.createElement('button');
+    btn.type = 'button'; btn.className = 'node-btn'; btn.style.margin = '6px 0'; btn.dataset.id = id;
+    const hasCov = node.companies && node.companies.length > 0;
+    const dotClass = node.bott ? 'dot--high' : (node.pri === 'med' ? 'dot--med' : 'dot--low');
+    let meta = `<span>${PRI_LABEL[node.pri]}</span>`;
+    if (node.bott) meta += `<span class="flag flag--bott">bottleneck</span>`;
+    if (!hasCov) meta += `<span class="flag flag--gap">no coverage</span>`;
+    btn.innerHTML = `<div class="node-btn__name"><span class="dot ${dotClass}"></span>${node.name}</div><div class="node-btn__meta">${meta}</div>`;
+    btn.addEventListener('click', () => { document.querySelectorAll('.node-btn').forEach((b) => b.classList.toggle('is-active', b.dataset.id === id)); renderPanel(node); });
+    if (!firstBtn) firstBtn = btn;
+    body.appendChild(btn);
+  });
+  head.addEventListener('click', () => { const open = body.style.display !== 'none'; body.style.display = open ? 'none' : 'block'; head.querySelector('.tgl').innerHTML = open ? '&#9656;' : '&#9662;'; });
+  wrap.appendChild(head); wrap.appendChild(body); nodesEl.appendChild(wrap);
+});
+renderPanel(NODES[0]);
+</script>
+
+<script>window.__MBULLETS=[["Share of BMS units imported into India — China the largest supplier.", "Source: Xbattery / industry (2026)."], ["Share of BMS BOM cost represented by the ICs and microcontroller — the imported core.", "Source: IndexBox India BMS report (2026)."], ["BMS and control electronics' share of BESS capex.", "Source: PL Capital / BESS cost studies (2026)."], ["Date imported BMS/EMS must hold both UL 1973 Edition 3 and ISO 15118-20 under MNRE's framework.", "Source: MNRE (Jul-2026)."], ["There is no NSE/BSE-listed BMS pure-play; Endurance Technologies (via 100%-owned Maxwell Energy) is the closest listed exposure.", "Source: Endurance disclosure (2025)."]];</script>
+
+<div class="metric-modal" id="regMetricModal" hidden>
+  <div class="metric-modal__backdrop" data-close></div>
+  <div class="metric-modal__panel">
+    <button class="metric-modal__close" data-close aria-label="Close">&#10005;</button>
+    <div class="metric-modal__kicker">Metric detail</div>
+    <div class="metric-modal__val" id="rmVal"></div>
+    <div class="metric-modal__label" id="rmLabel"></div>
+    <ul class="metric-modal__bullets" id="rmBullets"></ul>
+  </div>
+</div>
+
+<script>
+(function(){
+  var B = window.__MBULLETS || [];
+  var modal = document.getElementById('regMetricModal');
+  if (!modal) return;
+  var v = document.getElementById('rmVal'), l = document.getElementById('rmLabel'), ul = document.getElementById('rmBullets');
+  function val(el,s){ var n = el.querySelector(s); return n ? n.textContent.trim() : ''; }
+  function close(){ modal.hidden = true; }
+  function open(card, i){ v.textContent = val(card, '.metric-card__val'); var sub = val(card, '.metric-card__sub'); l.textContent = val(card, '.metric-card__label') + (sub ? ' — ' + sub : ''); ul.innerHTML = (B[i] || []).map(function(x){ return '<li>' + x + '</li>'; }).join(''); modal.hidden = false; }
+  [].slice.call(document.querySelectorAll('.metric-card')).forEach(function(el, i){ el.setAttribute('role','button'); el.setAttribute('tabindex','0'); el.addEventListener('click', function(){ open(el, i); }); el.addEventListener('keydown', function(e){ if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(el, i); } }); });
+  [].slice.call(modal.querySelectorAll('[data-close]')).forEach(function(el){ el.addEventListener('click', close); });
+  document.addEventListener('keydown', function(e){ if (e.key === 'Escape') close(); });
+})();
+</script>
+</body>
+</html>
