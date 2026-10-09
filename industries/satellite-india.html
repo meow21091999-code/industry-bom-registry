@@ -352,22 +352,10 @@
       <script type="text/plain" class="diagram-source">
 graph TD
   L0["<b>Level 0</b><br/>Satellite Value Chain<br/>(India)"]
-  L0 --> A["A · Space Segment<br/>Satellite Bus &amp; Payload"]
-  L0 --> B["B · Launch Segment<br/>Launch Vehicles &amp; Services"]
-  L0 --> C["C · Ground Segment<br/>Terminals, Gateways, Stations"]
-  L0 --> D["D · Downstream<br/>Services &amp; Data"]
-  A --> A1["Bus / structure / power"]
-  A --> A2["Payloads — comms, EO, nav"]
-  A --> A3["Propulsion · AIT · materials"]
-  B --> B1["PSLV · GSLV · LVM3 · SSLV"]
-  B --> B2["Private small launchers"]
-  B --> B3["Spaceport &amp; launch services"]
-  C --> C1["Earth stations &amp; gateways"]
-  C --> C2["VSAT &amp; user terminals"]
-  C --> C3["TT&amp;C ground · GSaaS"]
-  D --> D1["Satellite broadband / DTH"]
-  D --> D2["EO data &amp; geospatial analytics"]
-  D --> D3["Navigation (NavIC) services"]
+  L0 --> A["A · Space<br/>Bus &amp; Payload"]
+  L0 --> B["B · Launch<br/>Vehicles"]
+  L0 --> C["C · Ground<br/>Segment"]
+  L0 --> D["D · Downstream<br/>Services"]
   classDef high fill:#c0392b,stroke:#8e2b20,color:#fff,stroke-width:2px;
   classDef med fill:#d4a73a,stroke:#a37f22,color:#241a05,stroke-width:1.5px;
   classDef root fill:#1e4e8c,stroke:#12335c,color:#fff,stroke-width:2px;
@@ -518,8 +506,8 @@ graph TD
   import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
 
   const config = {
-    fitPadding: 24, minHeight: 300, maxHeightPx: 900, maxHeightVh: 0.85,
-    maxInitialZoom: 1.7, minZoom: 0.08, maxZoom: 6.5, zoomStep: 0.14, readabilityFloor: 0.55
+    fitPadding: 24, minHeight: 340, maxHeightPx: 900, maxHeightVh: 0.85,
+    maxInitialZoom: 1.7, minZoom: 0.08, maxZoom: 6.5, zoomStep: 0.14, readableMin: 0.85
   };
   const clamp = (n, lo, hi) => Math.max(lo, Math.min(hi, n));
   let activeDrag = null;
@@ -570,18 +558,16 @@ graph TD
       const aW = Math.max(80, vpW - config.fitPadding * 2);
       const aH = Math.max(80, vpH - config.fitPadding * 2);
       const contain = Math.min(aW / svgW, aH / svgH);
-      let z = contain, mode = 'contain';
-      if (contain < config.readabilityFloor) {
-        z = aW / svgW; mode = 'width';
-      }
-      return { zoom: clamp(z, config.minZoom, config.maxInitialZoom), mode };
+      const z = Math.max(contain, config.readableMin);
+      return { zoom: clamp(z, config.minZoom, config.maxInitialZoom), mode: z > contain ? 'readable' : 'contain' };
     }
     function fitDiagram() {
       if (!svgW) return;
       const fit = computeSmartFit();
       zoom = fit.zoom; fitMode = fit.mode;
-      panX = (viewport.clientWidth - svgW * zoom) / 2;
-      panY = (viewport.clientHeight - svgH * zoom) / 2;
+      const rW = svgW * zoom, rH = svgH * zoom;
+      panX = rW + config.fitPadding * 2 <= viewport.clientWidth ? (viewport.clientWidth - rW) / 2 : config.fitPadding;
+      panY = rH + config.fitPadding * 2 <= viewport.clientHeight ? (viewport.clientHeight - rH) / 2 : config.fitPadding;
       applyTransform();
     }
     function setOneToOne() {
