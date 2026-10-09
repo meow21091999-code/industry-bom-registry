@@ -6039,7 +6039,13 @@
       "universe": "NSE/BSE",
       "sector": "Space & Satellites",
       "derived_from": null,
-      "drill_downs": [],
+      "drill_downs": [
+        "satellite-bus-subsystems-india",
+        "satellite-payloads-india",
+        "launch-vehicles-propulsion-india",
+        "satellite-ground-segment-india",
+        "satellite-services-data-india"
+      ],
       "nodes": [
         {
           "id": "space-segment",
@@ -6641,6 +6647,476 @@
           "priority": "med",
           "bottleneck": true,
           "in_universe_coverage": false
+        }
+      ]
+    },
+    {
+      "slug": "satellite-bus-subsystems-india",
+      "industry": "Satellite Bus & Subsystems",
+      "scope": "INDIA",
+      "path": "industries/satellite-bus-subsystems-india.html",
+      "analysis_date": "2026-10-09",
+      "universe": "NSE/BSE",
+      "sector": "Space & Satellites",
+      "derived_from": {
+        "industry": "Satellite",
+        "slug": "satellite-india",
+        "node": "Bus & Subsystems"
+      },
+      "drill_downs": [],
+      "nodes": [
+        {
+          "id": "satbus",
+          "name": "Satellite Bus / Platform",
+          "level": 1,
+          "aliases": [
+            "satellite bus / platform"
+          ],
+          "priority": "high",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "structure",
+          "name": "Structure, Mechanisms & Thermal",
+          "level": 1,
+          "aliases": [
+            "structure, mechanisms & thermal"
+          ],
+          "priority": "med",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "power",
+          "name": "Power System (Solar Arrays & Batteries)",
+          "level": 1,
+          "aliases": [
+            "power system (solar arrays & batteries)"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "solarcell",
+          "name": "Space-grade Solar Cells (III-V)",
+          "level": 1,
+          "aliases": [
+            "space-grade solar cells (iii-v)"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": false
+        },
+        {
+          "id": "adcs",
+          "name": "ADCS — Star Trackers, Reaction Wheels, Gyros",
+          "level": 1,
+          "aliases": [
+            "adcs — star trackers, reaction wheels, gyros"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": false
+        },
+        {
+          "id": "obc",
+          "name": "On-board Computer & Avionics",
+          "level": 1,
+          "aliases": [
+            "on-board computer & avionics"
+          ],
+          "priority": "high",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "propulsion",
+          "name": "Satellite Propulsion (Chemical / Electric)",
+          "level": 1,
+          "aliases": [
+            "satellite propulsion (chemical / electric)"
+          ],
+          "priority": "high",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "ait",
+          "name": "Satellite AIT — Integration & Testing",
+          "level": 1,
+          "aliases": [
+            "satellite ait — integration & testing"
+          ],
+          "priority": "high",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "materials",
+          "name": "Space-grade Materials (Superalloys, Ti, Composites)",
+          "level": 1,
+          "aliases": [
+            "space-grade materials (superalloys, ti, composites)"
+          ],
+          "priority": "med",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "test",
+          "name": "Space Qualification & Test Infrastructure",
+          "level": 1,
+          "aliases": [
+            "space qualification & test infrastructure"
+          ],
+          "priority": "med",
+          "bottleneck": true,
+          "in_universe_coverage": false
+        }
+      ]
+    },
+    {
+      "slug": "satellite-payloads-india",
+      "industry": "Satellite Payloads",
+      "scope": "INDIA",
+      "path": "industries/satellite-payloads-india.html",
+      "analysis_date": "2026-10-09",
+      "universe": "NSE/BSE",
+      "sector": "Space & Satellites",
+      "derived_from": {
+        "industry": "Satellite",
+        "slug": "satellite-india",
+        "node": "Payloads"
+      },
+      "drill_downs": [],
+      "nodes": [
+        {
+          "id": "compayload",
+          "name": "Communication Payload (Antennas / Transponders)",
+          "level": 1,
+          "aliases": [
+            "communication payload (antennas / transponders)"
+          ],
+          "priority": "high",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "ttctrans",
+          "name": "TT&C, Transponders & TWTA",
+          "level": 1,
+          "aliases": [
+            "tt&c, transponders & twta"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "eopayload",
+          "name": "EO Payload (Optical / SAR / Hyperspectral)",
+          "level": 1,
+          "aliases": [
+            "eo payload (optical / sar / hyperspectral)"
+          ],
+          "priority": "high",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "navpayload",
+          "name": "Navigation Payload (NavIC / Atomic Clocks)",
+          "level": 1,
+          "aliases": [
+            "navigation payload (navic / atomic clocks)"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": false
+        }
+      ]
+    },
+    {
+      "slug": "launch-vehicles-propulsion-india",
+      "industry": "Launch Vehicles & Propulsion",
+      "scope": "INDIA",
+      "path": "industries/launch-vehicles-propulsion-india.html",
+      "analysis_date": "2026-10-09",
+      "universe": "NSE/BSE",
+      "sector": "Space & Satellites",
+      "derived_from": {
+        "industry": "Satellite",
+        "slug": "satellite-india",
+        "node": "Launch Vehicles & Propulsion"
+      },
+      "drill_downs": [],
+      "nodes": [
+        {
+          "id": "lv",
+          "name": "Launch Vehicle Systems (PSLV / GSLV / LVM3 / SSLV)",
+          "level": 1,
+          "aliases": [
+            "launch vehicle systems (pslv / gslv / lvm3 / sslv)"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "solidprop",
+          "name": "Solid Propulsion — Motor Casings & Nozzles",
+          "level": 1,
+          "aliases": [
+            "solid propulsion — motor casings & nozzles"
+          ],
+          "priority": "med",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "cryoeng",
+          "name": "Liquid & Cryogenic Engines",
+          "level": 1,
+          "aliases": [
+            "liquid & cryogenic engines"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "lvavionics",
+          "name": "Launch-Vehicle Avionics & Guidance",
+          "level": 1,
+          "aliases": [
+            "launch-vehicle avionics & guidance"
+          ],
+          "priority": "high",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "lvstruct",
+          "name": "LV Structures & Propellant Tanks",
+          "level": 1,
+          "aliases": [
+            "lv structures & propellant tanks"
+          ],
+          "priority": "med",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "composites",
+          "name": "Composite Structures (Carbon Fibre)",
+          "level": 1,
+          "aliases": [
+            "composite structures (carbon fibre)"
+          ],
+          "priority": "med",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "smalllaunch",
+          "name": "Private Small Launch Vehicles",
+          "level": 1,
+          "aliases": [
+            "private small launch vehicles"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": false
+        },
+        {
+          "id": "launchsvc",
+          "name": "Launch Services & Spaceport",
+          "level": 1,
+          "aliases": [
+            "launch services & spaceport"
+          ],
+          "priority": "med",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        }
+      ]
+    },
+    {
+      "slug": "satellite-ground-segment-india",
+      "industry": "Satellite Ground Segment",
+      "scope": "INDIA",
+      "path": "industries/satellite-ground-segment-india.html",
+      "analysis_date": "2026-10-09",
+      "universe": "NSE/BSE",
+      "sector": "Space & Satellites",
+      "derived_from": {
+        "industry": "Satellite",
+        "slug": "satellite-india",
+        "node": "Ground Segment"
+      },
+      "drill_downs": [],
+      "nodes": [
+        {
+          "id": "groundstation",
+          "name": "Ground Station / Earth Station Antennas",
+          "level": 1,
+          "aliases": [
+            "ground station / earth station antennas"
+          ],
+          "priority": "high",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "gateway",
+          "name": "Gateway / Hub Stations",
+          "level": 1,
+          "aliases": [
+            "gateway / hub stations"
+          ],
+          "priority": "high",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "vsat",
+          "name": "VSAT Terminals (C / Ku / Ka)",
+          "level": 1,
+          "aliases": [
+            "vsat terminals (c / ku / ka)"
+          ],
+          "priority": "high",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "groundrf",
+          "name": "Ground RF Chains, Baseband & Modems",
+          "level": 1,
+          "aliases": [
+            "ground rf chains, baseband & modems"
+          ],
+          "priority": "med",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "ttcg",
+          "name": "TT&C Ground Systems & Mission Ops",
+          "level": 1,
+          "aliases": [
+            "tt&c ground systems & mission ops"
+          ],
+          "priority": "med",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "gsaas",
+          "name": "Ground-Station-as-a-Service (GSaaS)",
+          "level": 1,
+          "aliases": [
+            "ground-station-as-a-service (gsaas)"
+          ],
+          "priority": "med",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        }
+      ]
+    },
+    {
+      "slug": "satellite-services-data-india",
+      "industry": "Satellite Services & Data",
+      "scope": "INDIA",
+      "path": "industries/satellite-services-data-india.html",
+      "analysis_date": "2026-10-09",
+      "universe": "NSE/BSE",
+      "sector": "Space & Satellites",
+      "derived_from": {
+        "industry": "Satellite",
+        "slug": "satellite-india",
+        "node": "Services & Data"
+      },
+      "drill_downs": [],
+      "nodes": [
+        {
+          "id": "broadband",
+          "name": "Satellite Broadband (GMPCS)",
+          "level": 1,
+          "aliases": [
+            "satellite broadband (gmpcs)"
+          ],
+          "priority": "high",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "dth",
+          "name": "DTH Services",
+          "level": 1,
+          "aliases": [
+            "dth services"
+          ],
+          "priority": "med",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "vsatsvc",
+          "name": "VSAT & Enterprise Satcom Services",
+          "level": 1,
+          "aliases": [
+            "vsat & enterprise satcom services"
+          ],
+          "priority": "med",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "eodata",
+          "name": "EO Data & Geospatial Analytics",
+          "level": 1,
+          "aliases": [
+            "eo data & geospatial analytics"
+          ],
+          "priority": "high",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "navsvc",
+          "name": "Navigation Services (NavIC)",
+          "level": 1,
+          "aliases": [
+            "navigation services (navic)"
+          ],
+          "priority": "med",
+          "bottleneck": false,
+          "in_universe_coverage": false
+        },
+        {
+          "id": "transponder",
+          "name": "Transponder / Capacity Leasing",
+          "level": 1,
+          "aliases": [
+            "transponder / capacity leasing"
+          ],
+          "priority": "med",
+          "bottleneck": false,
+          "in_universe_coverage": false
+        },
+        {
+          "id": "software",
+          "name": "Space Software & Mission Analytics",
+          "level": 1,
+          "aliases": [
+            "space software & mission analytics"
+          ],
+          "priority": "low",
+          "bottleneck": false,
+          "in_universe_coverage": true
         }
       ]
     }
