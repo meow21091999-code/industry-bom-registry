@@ -8,161 +8,6 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/registry.css">
-<style>
-  *{margin:0;padding:0;box-sizing:border-box}
-  html{scroll-behavior:smooth}
-  body{
-    background-color:var(--bg);
-    background-image:linear-gradient(var(--border) 1px,transparent 1px),linear-gradient(90deg,var(--border) 1px,transparent 1px);
-    background-size:26px 26px;
-    color:var(--text);
-    font-family:var(--font-body);
-    padding:34px 30px 80px;
-    overflow-wrap:break-word;
-  }
-  .container{max-width:1180px;margin:0 auto}
-  @keyframes fadeUp{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
-  .an{animation:fadeUp .45s ease-out both;animation-delay:calc(var(--i,0)*.06s)}
-  @media (prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;transition-duration:.01ms!important}}
-
-  /* header */
-  .eyebrow{font-family:var(--font-mono);font-size:11px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:var(--gold);margin-bottom:10px}
-  h1{font-size:clamp(26px,4vw,42px);font-weight:700;letter-spacing:-1px;line-height:1.05;text-wrap:balance}
-  .subtitle{color:var(--text-dim);font-family:var(--font-mono);font-size:12px;margin-top:10px;line-height:1.7}
-  .scope-bar{display:flex;flex-wrap:wrap;gap:7px;margin-top:18px}
-  .chip{font-family:var(--font-mono);font-size:10.5px;font-weight:500;padding:4px 10px;border-radius:5px;border:1px solid var(--border-bright);color:var(--text-dim);background:var(--surface)}
-  .chip--gold{background:var(--gold-dim);border-color:var(--gold);color:var(--gold)}
-
-  /* metric-card */
-  .metric-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(165px,1fr));gap:14px;margin:26px 0}
-
-  /* section */
-  section{margin-top:44px}
-  .sec-head{display:flex;align-items:baseline;gap:14px;margin-bottom:16px;border-bottom:1px solid var(--border-bright);padding-bottom:10px;flex-wrap:wrap}
-  .sec-num{font-family:var(--font-mono);font-size:12px;font-weight:600;color:var(--gold);border:1px solid var(--border-bright);border-radius:5px;padding:3px 8px}
-  .sec-title{font-size:20px;font-weight:600;letter-spacing:-.3px}
-  .sec-note{font-family:var(--font-mono);font-size:11px;color:var(--text-dim);margin-left:auto;text-align:right}
-
-  /* mermaid */
-  .mermaid-wrap{position:relative;background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:26px 20px;overflow:auto;margin-bottom:16px;display:flex;justify-content:center;align-items:center;min-height:380px}
-  .zoom-controls{position:absolute;top:8px;right:8px;display:flex;gap:2px;z-index:10;background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:2px}
-  .zoom-controls button{width:28px;height:28px;border:none;background:transparent;color:var(--text-dim);font-family:var(--font-mono);font-size:13px;cursor:pointer;border-radius:4px;display:flex;align-items:center;justify-content:center;transition:background .15s,color .15s}
-  .zoom-controls button:hover{background:var(--border);color:var(--text)}
-  .mermaid-wrap{cursor:grab}
-  .mermaid-wrap.is-panning{cursor:grabbing;user-select:none}
-  .diagram-shell{position:relative}
-  .diagram-shell__hint{font-family:var(--font-mono);font-size:10.5px;color:var(--text-dim);margin-bottom:8px;opacity:.75}
-  .mermaid-viewport{position:relative;overflow:hidden;width:100%;height:100%;min-height:280px}
-  .mermaid-canvas{position:absolute;top:0;left:0}
-  .zoom-label{font-family:var(--font-mono);font-size:10px;color:var(--text-dim);padding:0 6px;white-space:nowrap}
-  .mermaid .nodeLabel{font-family:var(--font-body)!important;font-size:15px!important}
-  .mermaid .edgeLabel{font-family:var(--font-mono)!important;font-size:12px!important}
-  .mermaid .node rect,.mermaid .node polygon,.mermaid .node circle{stroke-width:1.5px!important}
-  .mermaid .edge-pattern-solid{stroke-width:1.5px!important}
-
-  /* explorer layout */
-  .map-layout{display:grid;grid-template-columns:1fr 400px;gap:18px;align-items:start}
-  @media (max-width:900px){.map-layout{grid-template-columns:1fr}}
-  .map-nodes{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:14px 16px;max-height:74vh;overflow:auto}
-  .map-panel{background:var(--surface-elevated);border:1px solid var(--border-bright);border-radius:12px;padding:18px;position:sticky;top:20px;max-height:74vh;overflow:auto}
-  @media (max-width:900px){.map-panel{position:static;max-height:none}}
-
-  .tgroup{margin:4px 0 4px 0}
-  .node-btn{display:flex;align-items:center;gap:8px;padding:7px 9px;border-radius:7px;border:1px solid transparent;cursor:pointer;transition:background .13s,border-color .13s}
-  .node-btn:hover{background:var(--blue-dim);border-color:var(--border)}
-  .node-btn.is-active{background:var(--blue-dim);border-color:var(--blue)}
-  .node-btn.l0{font-weight:700}
-  .node-btn.l1{font-weight:600}
-  .node-btn__meta{font-family:var(--font-mono);font-size:9px;color:var(--text-dim);flex-shrink:0}
-  .node-btn__name{flex:1;min-width:0;font-size:13.5px}
-  .node-btn.l2 .node-btn__name,.node-btn.l3 .node-btn__name{font-size:12.5px;color:var(--text-dim)}
-  .node-btn.high{border-left:3px solid var(--gold);padding-left:11px}
-  .dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
-  .dot--cov{background:var(--green)}
-  .dot--gap{background:var(--high)}
-  .kids{margin-left:20px;border-left:1px dashed var(--border-bright);padding-left:8px}
-  .toggle{font-family:var(--font-mono);font-size:11px;color:var(--text-dim);width:14px;text-align:center;flex-shrink:0;user-select:none}
-  .collapsed>.kids{display:none}
-
-  .map-panel h3{font-size:15px;font-weight:600;margin-bottom:4px}
-  .map-panel__kicker{font-family:var(--font-mono);font-size:10px;color:var(--text-dim);letter-spacing:1px;text-transform:uppercase;margin-bottom:14px}
-  .map-panel__row{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px}
-  .tag{font-family:var(--font-mono);font-size:10px;font-weight:500;padding:3px 8px;border-radius:5px}
-  .tag--high{background:var(--gold-dim);color:var(--gold)}
-  .tag--med{background:var(--blue-dim);color:var(--blue)}
-  .tag--dom{background:var(--green-dim);color:var(--green)}
-  .tag--part{background:var(--gold-dim);color:var(--gold)}
-  .tag--imp{background:var(--high-dim);color:var(--high)}
-  .tag--btn{background:var(--high-dim);color:var(--high);border:1px solid var(--high)}
-  .co{border:1px solid var(--border);border-radius:8px;padding:10px 12px;margin-bottom:8px;background:var(--surface)}
-  .co__top{display:flex;justify-content:space-between;gap:8px;align-items:baseline;flex-wrap:wrap}
-  .co__name{font-weight:600;font-size:13px}
-  .co__list{font-family:var(--font-mono);font-size:10px;color:var(--blue)}
-  .co__ex{font-family:var(--font-mono);font-size:10px;font-weight:600;padding:2px 6px;border-radius:4px;background:var(--blue-dim);color:var(--blue)}
-  .co__mat{font-size:11.5px;color:var(--text-dim);line-height:1.5;margin-top:6px}
-  .nocov{border:1px dashed var(--high);border-radius:8px;padding:12px;background:var(--high-dim);font-size:12px;line-height:1.55;color:var(--text)}
-  .nocov strong{color:var(--high)}
-  .phint{font-size:12px;color:var(--text-dim);line-height:1.6}
-
-  .legend{display:flex;flex-wrap:wrap;gap:16px;margin-top:14px;font-family:var(--font-mono);font-size:10.5px;color:var(--text-dim)}
-  .legend-item{display:flex;align-items:center;gap:6px}
-  .legend-swatch{width:11px;height:11px;border-radius:3px;flex-shrink:0}
-
-  .ladder{display:flex;flex-direction:column;gap:0}
-  .rung{display:grid;grid-template-columns:150px 1fr;gap:16px;align-items:center;padding:12px 16px;border:1px solid var(--border);border-bottom:none;background:var(--surface)}
-  .rung:first-child{border-radius:10px 10px 0 0}
-  .rung:last-child{border-radius:0 0 10px 10px;border-bottom:1px solid var(--border)}
-  .rung > *{min-width:0;overflow-wrap:break-word}
-  .rung__label{font-family:var(--font-mono);font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:1px}
-  .rung__body{font-size:13px;color:var(--text-dim)}
-  .rung__body b{color:var(--text);font-weight:600}
-  .rung--1 .rung__label{color:var(--text-dim)}
-  .rung--2 .rung__label{color:var(--blue)}
-  .rung--3 .rung__label{color:var(--gold)}
-  .rung--4 .rung__label{color:var(--high)}
-  .mini{font-family:var(--font-mono);font-size:10.5px;color:var(--text-dim);opacity:.85}
-  @media (max-width:768px){.rung{grid-template-columns:1fr;gap:4px}}
-  footer{margin-top:56px;border-top:1px solid var(--border);padding-top:20px;font-size:11.5px;color:var(--text-dim);line-height:1.8;font-family:var(--font-mono)}
-  footer strong{color:var(--text);font-family:var(--font-body)}
-
-  
-  /* ===== TABLE ===== */
-  .table-wrap { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; }
-  .table-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
-  table.data { width: 100%; border-collapse: collapse; font-size: 12.5px; }
-  table.data th {
-    background: var(--surface-recessed); font-family: var(--font-mono); font-size: 10px; font-weight: 600;
-    text-transform: uppercase; letter-spacing: 0.8px; color: var(--text-dim); text-align: left; padding: 10px 12px;
-    border-bottom: 2px solid var(--border-bright); white-space: nowrap;
-  }
-  table.data td { padding: 9px 12px; border-bottom: 1px solid var(--border); vertical-align: middle; }
-  table.data tbody tr:nth-child(even) { background: var(--blue-dim); }
-  table.data tbody tr:hover { background: var(--border); }
-  table.data td.c { text-align: center; font-family: var(--font-mono); font-weight: 600; }
-  .cell-d { color: var(--green); }
-  .cell-i { color: var(--blue); }
-  .cell-s { color: var(--gold); }
-  .cell-c { color: var(--low); }
-  .cell-x { color: var(--text-dim); opacity: 0.4; }
-
-  /* ===== BOTTLENECK PAIRS ===== */
-  .bn { display: grid; grid-template-columns: 1fr 1fr; gap: 0; border: 1px solid var(--border); border-radius: 10px; overflow: hidden; margin-bottom: 12px; }
-  .bn__risk { background: var(--high-dim); padding: 13px 16px; border-right: 1px solid var(--border); }
-  .bn__opp { background: var(--green-dim); padding: 13px 16px; }
-  .bn__h { font-family: var(--font-mono); font-size: 9.5px; font-weight: 600; letter-spacing: 1.2px; text-transform: uppercase; margin-bottom: 6px; }
-  .bn__risk .bn__h { color: var(--high); }
-  .bn__opp .bn__h { color: var(--green); }
-  .bn p { font-size: 12.5px; line-height: 1.55; }
-  .bn__title { font-weight: 600; color: var(--text); display: block; margin-bottom: 4px; font-size: 13px; }
-
-  .footnote { font-family: var(--font-mono); font-size: 10.5px; color: var(--text-dim); line-height: 1.7; margin-top: 8px; }
-  .callout { background: var(--surface); border: 1px solid var(--border); border-left: 3px solid var(--gold); border-radius: 0 10px 10px 0; padding: 15px 20px; font-size: 13px; line-height: 1.6; color: var(--text-dim); }
-  .callout strong { color: var(--text); }
-  @media (max-width: 900px) {
-    .bn { grid-template-columns: 1fr; }
-    .bn__risk { border-right: none; border-bottom: 1px solid var(--border); }
-  }
-</style>
 </head>
 <body>
 <div class="container">
@@ -173,7 +18,7 @@
     <div style="margin-top:8px;color:var(--gold);">Derived from: Power Transmission (India) &rarr; node &ldquo;Cables (EHV / HV)&rdquo;</div>
   </div>
 
-  <header class="an" style="--i:0">
+  <header class="masthead animate" style="--i:0">
     <div class="eyebrow">Industrial BOM &amp; Value-Chain Dissection</div>
     <h1>EHV / HV Power Cables</h1>
     <div class="subtitle">India · NSE/BSE company mapping · depth-first · analysis date 2026-10-07</div>
@@ -186,7 +31,7 @@
     </div>
   </header>
 
-  <div class="metric-cards an" style="--i:1">
+  <div class="metric-cards animate" style="--i:1">
     <div class="metric-card"><div class="metric-card__val">₹90,000 cr</div><div class="metric-card__label">India wires &amp; cables market, FY25</div></div>
     <div class="metric-card"><div class="metric-card__val">17–19%</div><div class="metric-card__label">EHV/HV (&gt;33 kV) share of India power-transmission cables, FY24</div></div>
     <div class="metric-card"><div class="metric-card__val">2–3 yrs</div><div class="metric-card__label">Global HV cable procurement lead time</div></div>
@@ -196,11 +41,11 @@
 
   <!-- 1. OVERVIEW -->
   
-  <section class="an" style="--i:1">
+  <section class="animate" style="--i:1">
     <div class="sec-head"><span class="sec-num">DG</span><span class="sec-title">Digest &mdash; at a glance</span><span class="sec-note">A short summary of the analysis. Structure and inputs are on the tree; process, value pools and watch items are summarised here.</span></div>
     <div class="digest"><div class="digest__item"><div class="digest__h">Snapshot</div><p>High- and extra-high-voltage power cables above 33 kV (XLPE, land and submarine). India's wires &amp; cables market is &#8377;90,000 cr (FY25); EHV/HV is 17&ndash;19% of power-transmission cables. The highest EHV grade now made in India is 500 kV; there are zero submarine-cable plants.</p></div><div class="digest__item"><div class="digest__h">Process &amp; equipment</div><ul><li>Continuous vulcanisation (CCV/VCV) lines extrude the XLPE insulation; the conductor is Milliken-segmented; joints and terminations are mostly made in-house.</li><li>Submarine-cable capability is entirely absent.</li></ul></div><div class="digest__item"><div class="digest__h">Bottlenecks</div><ul><li>HV/EHV XLPE compound and semiconductive compound &mdash; foreign (Borealis/Borouge).</li><li>Pre-moulded joints and terminations; global HV procurement lead times of 2&ndash;3 years.</li><li>The submarine-cable gap is the single largest hole.</li></ul></div><div class="digest__item"><div class="digest__h">Value pools</div><ul><li>Cable OEMs &mdash; Polycab, KEI, Universal, Apar, Finolex, RR Kabel, Havells.</li><li>EPC &mdash; KEC, L&amp;T, Kalpataru.</li><li>Copper/aluminium recovery; submarine cables are the open prize.</li></ul></div><div class="digest__item"><div class="digest__h">Watch items</div><ul><li>Sterlite Electric greenfield (Vadodara, up to 400&ndash;550 kV).</li><li>KEI full-spectrum HVDC by FY27; Polycab EHV by 2027.</li></ul></div><div class="digest__item"><div class="digest__h">Coverage gaps</div><ul><li>No submarine-cable plants; HV XLPE compound is foreign.</li></ul></div></div>
   </section>
-<section class="an" style="--i:2">
+<section class="animate" style="--i:2">
     <div class="sec-head"><span class="sec-num">01</span><span class="sec-title">System Overview</span><span class="sec-note">An EHV/HV cable is a discrete assembly whose economics are set by the grid-capex cycle around it, but whose core — the extruded XLPE insulation — behaves like a process industry. Gold-bordered nodes below are the HIGH-priority subsystems carried into the drill-down tree.</span></div>
     <div class="diagram-shell">
       <p class="diagram-shell__hint">Ctrl/Cmd + wheel to zoom · drag to pan · double-click to fit</p>
@@ -238,7 +83,7 @@ flowchart TD
   </section>
 
   <!-- 2. VALUE CHAIN LADDER -->
-  <section class="an" style="--i:3">
+  <section class="animate" style="--i:3">
     <div class="sec-head"><span class="sec-num">02</span><span class="sec-title">Value-Chain Ladder &amp; Supplier Tiers</span><span class="sec-note">Raw material → aftermarket, with the Tier-4 → OEM supplier bands. Note the inversion: value capture sits upstream in the XLPE/semicon compound, the accessories and the VCV/CCV line — not in Indian cable assembly, which is competitive and thin-margin.</span></div>
     <div class="ladder">
       <div class="rung rung--1">
@@ -269,11 +114,11 @@ flowchart TD
   </section>
 
   <!-- 3. INTERACTIVE TREE -->
-  <section class="an" style="--i:4">
+  <section class="animate" style="--i:4">
     <div class="sec-head"><span class="sec-num">03</span><span class="sec-title">BOM Tree &amp; Company Map</span><span class="sec-note">Click any node to open its data — import dependency, bottleneck status, value capture, and the mapped NSE/BSE companies. Green dot = mapped company; red dot = no coverage in the selected universe.</span></div>
     <div class="map-layout">
-      <div class="map-nodes" id="treePane"></div>
-      <aside class="map-panel" id="panel"></aside>
+      <div class="map-nodes" id="mapNodes"></div>
+      <aside class="map-panel" id="mapPanel"></aside>
     </div>
     <div class="legend">
       <span class="legend-item"><span class="legend-swatch" style="background:var(--gold)"></span> HIGH-priority node</span>
@@ -284,21 +129,21 @@ flowchart TD
   </section>
 
 
-  <section class="an" style="--i:6">
+  <section class="animate" style="--i:6">
     <div class="sec-head"><span class="sec-num">04</span><span class="sec-title">Company &times; Node Matrix</span><span class="sec-note">D direct &middot; I indirect &middot; S supplier &middot; C conglomerate &middot; &mdash; none</span></div>
     <div class="table-wrap"><div class="table-scroll"><table class="data"><thead><tr><th>Company</th><th>Conductor system</th><th>XLPE insulation system</th><th>Metallic screen & moisture barrier</th><th>Sheath & armour</th><th>Joints, terminations & accessories</th><th>CCV / VCV line & equipment</th><th>Industrial gases (N₂)</th><th>Testing & certification</th><th>Installation / cable-laying EPC</th><th>Submarine cable & lay vessels</th><th>Aftermarket & monitoring</th></tr></thead><tbody><tr><td>Hindalco Industries <small>HINDALCO</small></td><td class="c cell-s">S</td><td class="c cell-x">&mdash;</td><td class="c cell-s">S</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td></tr><tr><td>Vedanta <small>VEDL</small></td><td class="c cell-s">S</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td></tr><tr><td>NALCO <small>NATIONALUM</small></td><td class="c cell-s">S</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td></tr><tr><td>Hindustan Copper <small>HINDCOPPER</small></td><td class="c cell-s">S</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td></tr><tr><td>Universal Cables <small>UNIVCABLES</small></td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-i">I</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-d">D</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td></tr><tr><td>Linde India <small>LINDEINDIA</small></td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-s">S</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td></tr><tr><td>INOX India <small>INOXINDIA</small></td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-s">S</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td></tr><tr><td>KEC International <small>KEC</small></td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-d">D</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td></tr><tr><td>Polycab India <small>POLYCAB</small></td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-d">D</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td></tr></tbody></table></div></div>
     <p class="footnote">Listing status current as of the analysis date. Cells read from the page&rsquo;s node-by-node company map; &mdash; means no exposure at that node.</p>
   </section>
 
-  <section class="an" style="--i:7">
+  <section class="animate" style="--i:7">
     <div class="sec-head"><span class="sec-num">05</span><span class="sec-title">Bottlenecks &mdash; Risk &amp; Opportunity</span><span class="sec-note">dual-readable: every risk is a substitution play</span></div>
     <div class="bn"><div class="bn__risk"><div class="bn__h">Risk</div><p><span class="bn__title">XLPE insulation system</span>The technology core of the cable. HV/EHV-grade XLPE and semiconductive compounds are a genuine material bottleneck — super-clean grades come from a handful of global producers, not from India. No NSE/BSE pure-play.</p></div><div class="bn__opp"><div class="bn__h">Opportunity</div><p><span class="bn__title">XLPE insulation system &mdash; localisation play</span>No NSE/BSE pure-play; domestic qualification of this node is the substitution play. [DERIVED]</p></div></div><div class="bn"><div class="bn__risk"><div class="bn__h">Risk</div><p><span class="bn__title">XLPE compound (HV/EHV grade)</span>NO COVERAGE IN SELECTED UNIVERSE. Borealis/Borouge, Hanwha (foreign); BLS Polymers and Ankit Polymers are unlisted. Nearest listed proxy: none.</p></div><div class="bn__opp"><div class="bn__h">Opportunity</div><p><span class="bn__title">XLPE compound (HV/EHV grade) &mdash; localisation play</span>No NSE/BSE pure-play; domestic qualification of this node is the substitution play. [DERIVED]</p></div></div><div class="bn"><div class="bn__risk"><div class="bn__h">Risk</div><p><span class="bn__title">Semiconductive compound</span>NO COVERAGE. Supplied by the same global compound majors (e.g. Borealis/Borouge Antwerp). No listed Indian pure-play.</p></div><div class="bn__opp"><div class="bn__h">Opportunity</div><p><span class="bn__title">Semiconductive compound &mdash; localisation play</span>No NSE/BSE pure-play; domestic qualification of this node is the substitution play. [DERIVED]</p></div></div><div class="bn"><div class="bn__risk"><div class="bn__h">Risk</div><p><span class="bn__title">Joints, terminations & accessories</span>Pre-moulded joints and terminations are a certification-heavy, historically imported layer. Raychem RPG (private) is the localiser (CPRI-approved 245 kV). No listed pure-play.</p></div><div class="bn__opp"><div class="bn__h">Opportunity</div><p><span class="bn__title">Joints, terminations & accessories &mdash; localisation play</span>Listed incumbents &mdash; Universal Cables &mdash; can deepen local capability at this node.</p></div></div><div class="bn"><div class="bn__risk"><div class="bn__h">Risk</div><p><span class="bn__title">CCV / VCV line & equipment</span>NO COVERAGE. Catenary / vertical continuous vulcanisation lines come from Troester, Maillefer, Scholz (Europe) and Chinese OEMs; X-ray gauges from Sikora. No listed Indian equipment maker.</p></div><div class="bn__opp"><div class="bn__h">Opportunity</div><p><span class="bn__title">CCV / VCV line & equipment &mdash; localisation play</span>No NSE/BSE pure-play; domestic qualification of this node is the substitution play. [DERIVED]</p></div></div><div class="bn"><div class="bn__risk"><div class="bn__h">Risk</div><p><span class="bn__title">Submarine cable & lay vessels</span>NO COVERAGE IN SELECTED UNIVERSE — and no Indian manufacturer at all. Global supply is concentrated (Prysmian, Nexans, NKT, Sumitomo, LS, Taihan) and only ~20 cable-lay vessels exist worldwide. The single largest localisation gap in the chain.</p></div><div class="bn__opp"><div class="bn__h">Opportunity</div><p><span class="bn__title">Submarine cable & lay vessels &mdash; localisation play</span>No NSE/BSE pure-play; domestic qualification of this node is the substitution play. [DERIVED]</p></div></div>
     <div class="callout animate" style="--i:8"><strong>Where value sits:</strong> Cable OEMs &mdash; Polycab, KEI, Universal, Apar, Finolex, RR Kabel, Havells. EPC &mdash; KEC, L&amp;T, Kalpataru. Copper/aluminium recovery; submarine cables are the open prize.</div>
   </section>
 
-  <footer class="an" style="--i:5">
+  <p class="footnote animate" style="--i:5">
     <strong>Sources.</strong> Compiled from public disclosures and reporting dated to 2026-10-07: IEA, <em>Building the Future Transmission Grid</em> (2025 — cable lead times, price inflation, skills gap); Central Electricity Authority transmission data; BSE/NSE filings and investor materials — Polycab India, KEI Industries, Universal Cables, Apar Industries, Finolex Cables, RR Kabel, Havells India, KEC International, Hindalco Industries, Linde India, INOX India; company releases — Borealis (Stenungsund XLPE expansion), Taihan, LS Marine Solution, Jan De Nul; SEBI DRHP for Sterlite Electric; trade press (T&amp;D India, Wire &amp; Cable India, EPR Magazine, CableCommunity) and broker coverage for market sizing. Figures carry their own as-of dates; market-share and revenue numbers are as reported by the named source and are not independently audited here. Materiality attributions for conglomerate segments are marked [INFERENCE] in the node panels. This is an analytical map, not investment advice.
-  </footer>
+  </p>
 
 </div>
 
@@ -380,137 +225,185 @@ function initDiagram(shell){
 }
 document.querySelectorAll('.diagram-shell').forEach(initDiagram);
 
-const NODES = {
-  cbl:{n:'EHV / HV Power Cables',lvl:0,pri:'',imp:'partial',btn:false,vc:'—',cos:[
-    {c:'Polycab India',x:'NSE: POLYCAB',e:'DIRECT',m:'EHV 66–220 kV from Halol; EHV is a small sub-segment of the 84%-of-revenue W&C business (FY25 W&C ₹18,888 cr)'},
-    {c:'KEI Industries',x:'NSE: KEI',e:'DIRECT',m:'EHV up to 400 kV; EHV segment ~₹659 cr FY24 [REPORTED-T3]; HVDC cables planned at Sanand'},
-    {c:'Universal Cables (UNISTAR)',x:'NSE: UNIVCABLES',e:'DIRECT',m:'EHV XLPE up to 500 kV on VCV at Satna (Furukawa tech); closest listed EHV pure-play'},
-    {c:'Apar Industries',x:'NSE: APARINDS',e:'INDIRECT',m:'HV/MV XLPE up to 66 kV; world’s largest aluminium/alloy conductor maker'},
-    {c:'KEC International',x:'NSE: KEC',e:'INDIRECT',m:'Cables via KEC Asian Cables (up to 220 kV); cables ₹2,217 cr FY26'},
-    {c:'Finolex Cables',x:'NSE: FINCABLES',e:'INDIRECT',m:'EHV via 49% JV Finolex J-Power Systems (Sumitomo 51%); JV ~₹450 cr rev, ₹21 cr PAT FY26'},
-    {c:'RR Kabel',x:'NSE: RRKABEL',e:'INDIRECT',m:'HV/EHV small; MV 11–66 kV focus'},
-    {c:'Havells India',x:'NSE: HAVELLS',e:'CONGLOMERATE',m:'Cable segment ₹7,184 cr FY25 but largely LT/MV — minor EHV exposure'}
-  ]},
+</script>
+<script>
+/* ===== CLICK-THROUGH COMPANY MAP ===== */
+const NODES = [
+  { id:'cbl', name:'EHV / HV Power Cables', pri:'med', bott:false,
+    importDep:'Partially imported',
+    companies:[
+      {n:'Polycab India', t:'NSE: POLYCAB', e:'direct', m:'EHV 66–220 kV from Halol; EHV is a small sub-segment of the 84%-of-revenue W&C business (FY25 W&C ₹18,888 cr)', ev:''},
+      {n:'KEI Industries', t:'NSE: KEI', e:'direct', m:'EHV up to 400 kV; EHV segment ~₹659 cr FY24 [REPORTED-T3]; HVDC cables planned at Sanand', ev:''},
+      {n:'Universal Cables (UNISTAR)', t:'NSE: UNIVCABLES', e:'direct', m:'EHV XLPE up to 500 kV on VCV at Satna (Furukawa tech); closest listed EHV pure-play', ev:''},
+      {n:'Apar Industries', t:'NSE: APARINDS', e:'indirect', m:'HV/MV XLPE up to 66 kV; world’s largest aluminium/alloy conductor maker', ev:''},
+      {n:'KEC International', t:'NSE: KEC', e:'indirect', m:'Cables via KEC Asian Cables (up to 220 kV); cables ₹2,217 cr FY26', ev:''},
+      {n:'Finolex Cables', t:'NSE: FINCABLES', e:'indirect', m:'EHV via 49% JV Finolex J-Power Systems (Sumitomo 51%); JV ~₹450 cr rev, ₹21 cr PAT FY26', ev:''},
+      {n:'RR Kabel', t:'NSE: RRKABEL', e:'indirect', m:'HV/EHV small; MV 11–66 kV focus', ev:''},
+      {n:'Havells India', t:'NSE: HAVELLS', e:'conglomerate', m:'Cable segment ₹7,184 cr FY25 but largely LT/MV — minor EHV exposure', ev:''}
+    ] },
+  { id:'conductor', name:'Conductor system', pri:'high', bott:false,
+    importDep:'Domestic',
+    vc:'low',
+    companies:[
+      {n:'Hindalco Industries', t:'NSE: HINDALCO', e:'supplier', m:'Birla Copper (Dahej) + Asoj rod; India’s largest copper producer; also aluminium wire rod', ev:''},
+      {n:'Vedanta', t:'NSE: VEDL', e:'supplier', m:'Aluminium conductor metal', ev:''},
+      {n:'NALCO', t:'NSE: NATIONALUM', e:'supplier', m:'Aluminium pure-play', ev:''},
+      {n:'Hindustan Copper', t:'NSE: HINDCOPPER', e:'supplier', m:'Copper mining / smelting (upstream)', ev:''}
+    ] },
+  { id:'cu', name:'Copper conductor', pri:'low', bott:false,
+    importDep:'Partially imported',
+    vc:'low',
+    companies:[
+      {n:'Hindalco Industries', t:'NSE: HINDALCO', e:'supplier', m:'Continuous-cast copper rod — cable / wire grade', ev:''},
+      {n:'Adani Enterprises', t:'NSE: ADANIENT', e:'supplier', m:'Kutch Copper — minor segment of a diversified conglomerate [INFERENCE]', ev:''},
+      {n:'Hindustan Copper', t:'NSE: HINDCOPPER', e:'supplier', m:'Upstream copper mining / smelting [INFERENCE]', ev:''}
+    ] },
+  { id:'al', name:'Aluminium conductor', pri:'low', bott:false,
+    importDep:'Domestic',
+    vc:'low',
+    companies:[
+      {n:'Hindalco Industries', t:'NSE: HINDALCO', e:'supplier', m:'Conductor-grade aluminium wire rod', ev:''},
+      {n:'Vedanta', t:'NSE: VEDL', e:'supplier', m:'Aluminium', ev:''},
+      {n:'NALCO', t:'NSE: NATIONALUM', e:'supplier', m:'Aluminium', ev:''}
+    ] },
+  { id:'insulation', name:'XLPE insulation system', pri:'high', bott:true,
+    importDep:'Imported',
+    vc:'high',
+    companies:[],
+    gap:'The technology core of the cable. HV/EHV-grade XLPE and semiconductive compounds are a genuine material bottleneck — super-clean grades come from a handful of global producers, not from India. No NSE/BSE pure-play.' },
+  { id:'xlpe', name:'XLPE compound (HV/EHV grade)', pri:'high', bott:true,
+    importDep:'Imported',
+    vc:'high',
+    companies:[],
+    gap:'NO COVERAGE IN SELECTED UNIVERSE. Borealis/Borouge, Hanwha (foreign); BLS Polymers and Ankit Polymers are unlisted. Nearest listed proxy: none.' },
+  { id:'semicon', name:'Semiconductive compound', pri:'high', bott:true,
+    importDep:'Imported',
+    vc:'high',
+    companies:[],
+    gap:'NO COVERAGE. Supplied by the same global compound majors (e.g. Borealis/Borouge Antwerp). No listed Indian pure-play.' },
+  { id:'screen', name:'Metallic screen & moisture barrier', pri:'med', bott:false,
+    importDep:'Partially imported',
+    vc:'medium',
+    companies:[
+      {n:'Hindalco Industries', t:'NSE: HINDALCO', e:'supplier', m:'Copper wire / foil for screens; lead and aluminium sheath metal', ev:''}
+    ] },
+  { id:'sheath', name:'Sheath & armour', pri:'med', bott:false,
+    importDep:'Domestic',
+    vc:'low',
+    companies:[],
+    gap:'HDPE / PVC and steel armour — commodity and fragmented; no clean listed pure-play specific to EHV cable.' },
+  { id:'accessories', name:'Joints, terminations & accessories', pri:'high', bott:true,
+    importDep:'Imported',
+    vc:'high',
+    companies:[
+      {n:'Universal Cables', t:'NSE: UNIVCABLES', e:'indirect', m:'Sourcing tie-up with Viscas (Japan) for 220 kV+ cable jointing accessories', ev:''}
+    ] },
+  { id:'machinery', name:'CCV / VCV line & equipment', pri:'high', bott:true,
+    importDep:'Imported',
+    vc:'medium',
+    companies:[],
+    gap:'NO COVERAGE. Catenary / vertical continuous vulcanisation lines come from Troester, Maillefer, Scholz (Europe) and Chinese OEMs; X-ray gauges from Sikora. No listed Indian equipment maker.' },
+  { id:'gases', name:'Industrial gases (N₂)', pri:'med', bott:false,
+    importDep:'Domestic',
+    vc:'medium',
+    companies:[
+      {n:'Linde India', t:'NSE: LINDEINDIA', e:'supplier', m:'High-purity nitrogen and specialty gases for the CV tube', ev:''},
+      {n:'INOX India', t:'NSE: INOXINDIA', e:'supplier', m:'Cryogenic storage / transport equipment (not gas molecules)', ev:''}
+    ] },
+  { id:'testing', name:'Testing & certification', pri:'med', bott:false,
+    importDep:'Partially imported',
+    vc:'medium',
+    companies:[],
+    gap:'Type / routine testing (partial discharge, impulse, ageing) via CPRI and NABL-accredited labs; no listed pure-play.' },
+  { id:'install', name:'Installation / cable-laying EPC', pri:'high', bott:false,
+    importDep:'Domestic',
+    vc:'medium',
+    companies:[
+      {n:'KEC International', t:'NSE: KEC', e:'direct', m:'T&D EPC = 68% of ₹23,506 cr FY26 revenue; turnkey up to 1,200 kV, incl. EHV cabling', ev:''},
+      {n:'Polycab India', t:'NSE: POLYCAB', e:'direct', m:'EPC division — underground cabling / RDSS turnkey', ev:''},
+      {n:'Universal Cables', t:'NSE: UNIVCABLES', e:'direct', m:'Full EPC for underground EHV transmission up to 500 kV', ev:''}
+    ] },
+  { id:'subsea', name:'Submarine cable & lay vessels', pri:'high', bott:true,
+    importDep:'Imported',
+    vc:'high',
+    companies:[],
+    gap:'NO COVERAGE IN SELECTED UNIVERSE — and no Indian manufacturer at all. Global supply is concentrated (Prysmian, Nexans, NKT, Sumitomo, LS, Taihan) and only ~20 cable-lay vessels exist worldwide. The single largest localisation gap in the chain.' },
+  { id:'om', name:'Aftermarket & monitoring', pri:'med', bott:false,
+    importDep:'Domestic',
+    vc:'medium',
+    companies:[],
+    gap:'Jointing, DTS/DAS fibre monitoring, fault location and repair, and copper / aluminium recovery — real but unsized; no listed pure-play.' }
+];;
 
-  conductor:{n:'Conductor system',lvl:1,pri:'HIGH',imp:'domestic',btn:false,vc:'low',cos:[
-    {c:'Hindalco Industries',x:'NSE: HINDALCO',e:'SUPPLIER',m:'Birla Copper (Dahej) + Asoj rod; India’s largest copper producer; also aluminium wire rod'},
-    {c:'Vedanta',x:'NSE: VEDL',e:'SUPPLIER',m:'Aluminium conductor metal'},
-    {c:'NALCO',x:'NSE: NATIONALUM',e:'SUPPLIER',m:'Aluminium pure-play'},
-    {c:'Hindustan Copper',x:'NSE: HINDCOPPER',e:'SUPPLIER',m:'Copper mining / smelting (upstream)'}
-  ]},
-  cu:{n:'Copper conductor',lvl:2,pri:'',imp:'partial',btn:false,vc:'low',cos:[
-    {c:'Hindalco Industries',x:'NSE: HINDALCO',e:'SUPPLIER',m:'Continuous-cast copper rod — cable / wire grade'},
-    {c:'Adani Enterprises',x:'NSE: ADANIENT',e:'SUPPLIER',m:'Kutch Copper — minor segment of a diversified conglomerate [INFERENCE]'},
-    {c:'Hindustan Copper',x:'NSE: HINDCOPPER',e:'SUPPLIER',m:'Upstream copper mining / smelting [INFERENCE]'}
-  ]},
-  al:{n:'Aluminium conductor',lvl:2,pri:'',imp:'domestic',btn:false,vc:'low',cos:[
-    {c:'Hindalco Industries',x:'NSE: HINDALCO',e:'SUPPLIER',m:'Conductor-grade aluminium wire rod'},
-    {c:'Vedanta',x:'NSE: VEDL',e:'SUPPLIER',m:'Aluminium'},
-    {c:'NALCO',x:'NSE: NATIONALUM',e:'SUPPLIER',m:'Aluminium'}
-  ]},
+const nodesEl = document.getElementById('mapNodes');
+const panelEl = document.getElementById('mapPanel');
+const PRI_LABEL = { high:'HIGH', med:'MEDIUM', low:'LOW' };
 
-  insulation:{n:'XLPE insulation system',lvl:1,pri:'HIGH',imp:'imported',btn:true,vc:'high',cos:[],gap:'The technology core of the cable. HV/EHV-grade XLPE and semiconductive compounds are a genuine material bottleneck — super-clean grades come from a handful of global producers, not from India. No NSE/BSE pure-play.'},
-  xlpe:{n:'XLPE compound (HV/EHV grade)',lvl:2,pri:'HIGH',imp:'imported',btn:true,vc:'high',cos:[],gap:'NO COVERAGE IN SELECTED UNIVERSE. Borealis/Borouge, Hanwha (foreign); BLS Polymers and Ankit Polymers are unlisted. Nearest listed proxy: none.'},
-  semicon:{n:'Semiconductive compound',lvl:2,pri:'HIGH',imp:'imported',btn:true,vc:'high',cos:[],gap:'NO COVERAGE. Supplied by the same global compound majors (e.g. Borealis/Borouge Antwerp). No listed Indian pure-play.'},
-
-  screen:{n:'Metallic screen & moisture barrier',lvl:1,pri:'MED',imp:'partial',btn:false,vc:'medium',cos:[
-    {c:'Hindalco Industries',x:'NSE: HINDALCO',e:'SUPPLIER',m:'Copper wire / foil for screens; lead and aluminium sheath metal'}
-  ]},
-  sheath:{n:'Sheath & armour',lvl:1,pri:'MED',imp:'domestic',btn:false,vc:'low',cos:[],gap:'HDPE / PVC and steel armour — commodity and fragmented; no clean listed pure-play specific to EHV cable.'},
-
-  accessories:{n:'Joints, terminations & accessories',lvl:1,pri:'HIGH',imp:'imported',btn:true,vc:'high',cos:[
-    {c:'Universal Cables',x:'NSE: UNIVCABLES',e:'INDIRECT',m:'Sourcing tie-up with Viscas (Japan) for 220 kV+ cable jointing accessories'}
-  ],gap:'Pre-moulded joints and terminations are a certification-heavy, historically imported layer. Raychem RPG (private) is the localiser (CPRI-approved 245 kV). No listed pure-play.'},
-
-  machinery:{n:'CCV / VCV line & equipment',lvl:1,pri:'HIGH',imp:'imported',btn:true,vc:'medium',cos:[],gap:'NO COVERAGE. Catenary / vertical continuous vulcanisation lines come from Troester, Maillefer, Scholz (Europe) and Chinese OEMs; X-ray gauges from Sikora. No listed Indian equipment maker.'},
-
-  gases:{n:'Industrial gases (N₂)',lvl:1,pri:'MED',imp:'domestic',btn:false,vc:'medium',cos:[
-    {c:'Linde India',x:'NSE: LINDEINDIA',e:'SUPPLIER',m:'High-purity nitrogen and specialty gases for the CV tube'},
-    {c:'INOX India',x:'NSE: INOXINDIA',e:'SUPPLIER',m:'Cryogenic storage / transport equipment (not gas molecules)'}
-  ]},
-
-  testing:{n:'Testing & certification',lvl:1,pri:'MED',imp:'partial',btn:false,vc:'medium',cos:[],gap:'Type / routine testing (partial discharge, impulse, ageing) via CPRI and NABL-accredited labs; no listed pure-play.'},
-
-  install:{n:'Installation / cable-laying EPC',lvl:1,pri:'HIGH',imp:'domestic',btn:false,vc:'medium',cos:[
-    {c:'KEC International',x:'NSE: KEC',e:'DIRECT',m:'T&D EPC = 68% of ₹23,506 cr FY26 revenue; turnkey up to 1,200 kV, incl. EHV cabling'},
-    {c:'Polycab India',x:'NSE: POLYCAB',e:'DIRECT',m:'EPC division — underground cabling / RDSS turnkey'},
-    {c:'Universal Cables',x:'NSE: UNIVCABLES',e:'DIRECT',m:'Full EPC for underground EHV transmission up to 500 kV'}
-  ]},
-
-  subsea:{n:'Submarine cable & lay vessels',lvl:1,pri:'HIGH',imp:'imported',btn:true,vc:'high',cos:[],gap:'NO COVERAGE IN SELECTED UNIVERSE — and no Indian manufacturer at all. Global supply is concentrated (Prysmian, Nexans, NKT, Sumitomo, LS, Taihan) and only ~20 cable-lay vessels exist worldwide. The single largest localisation gap in the chain.'},
-
-  om:{n:'Aftermarket & monitoring',lvl:1,pri:'MED',imp:'domestic',btn:false,vc:'medium',cos:[],gap:'Jointing, DTS/DAS fibre monitoring, fault location and repair, and copper / aluminium recovery — real but unsized; no listed pure-play.'}
-};
-
-const TREE = {
-  id:'cbl', children:[
-    {id:'conductor', children:[{id:'cu'},{id:'al'}]},
-    {id:'insulation', children:[{id:'xlpe'},{id:'semicon'}]},
-    {id:'screen'},
-    {id:'sheath'},
-    {id:'accessories'},
-    {id:'machinery'},
-    {id:'gases'},
-    {id:'testing'},
-    {id:'install'},
-    {id:'subsea'},
-    {id:'om'}
-  ]
-};
-
-const pane=document.getElementById('treePane');
-const panel=document.getElementById('panel');
-function renderTree(){
-  pane.innerHTML='';
-  function build(node){
-    const d=NODES[node.id]; if(!d)return null;
-    const grp=document.createElement('div'); grp.className='tgroup';
-    const el=document.createElement('div');
-    el.className='node-btn l'+d.lvl+(d.pri==='HIGH'?' high':'');
-    el.dataset.id=node.id;
-    const hasKids=node.children&&node.children.length;
-    el.innerHTML=`<span class="toggle">${hasKids?'▾':'·'}</span>`+
-      `<span class="dot ${d.cos&&d.cos.length?'dot--cov':'dot--gap'}"></span>`+
-      `<span class="node-btn__name">${d.n}</span>`+
-      `<span class="node-btn__meta">L${d.lvl}</span>`;
-    el.addEventListener('click',ev=>{ev.stopPropagation();select(node.id);});
-    grp.appendChild(el);
-    if(hasKids){
-      const kids=document.createElement('div'); kids.className='kids';
-      node.children.forEach(ch=>{const k=build(ch);if(k)kids.appendChild(k);});
-      grp.appendChild(kids);
-      el.querySelector('.toggle').addEventListener('click',ev=>{ev.stopPropagation();grp.classList.toggle('collapsed');
-        el.querySelector('.toggle').textContent=grp.classList.contains('collapsed')?'▸':'▾';});
-    }
-    return grp;
+function renderPanel(node) {
+  if (!node) { panelEl.innerHTML = '<div class="map-panel__kicker">Company map</div><div class="map-panel__title">Select a node</div><p class="map-panel__fn">Click any node on the left to see its NSE/BSE companies, exposure type, materiality and evidence.</p>'; return; }
+  let html = '';
+  html += `<div class="map-panel__kicker">${PRI_LABEL[node.pri] || ''} priority node</div>`;
+  html += `<div class="map-panel__title">${node.name}</div>`;
+  if (node.fn) html += `<p class="map-panel__fn">${node.fn}</p>`;
+  html += `<div class="map-panel__row">`;
+  if (node.importDep && node.importDep !== 'n/a') html += `<span class="mini">Import: ${node.importDep}</span>`;
+  if (node.vc) html += `<span class="mini">Value capture: ${node.vc}</span>`;
+  if (node.bott) html += `<span class="mini" style="color:var(--gold)">Bottleneck</span>`;
+  html += `</div>`;
+  if (node.drillTo) html += `<a href="${node.drillTo}" style="display:block;margin:12px 0;padding:10px 12px;border:1px solid var(--gold);border-radius:8px;background:var(--gold-dim);color:var(--gold);font-family:var(--font-mono);font-size:11.5px;font-weight:600;text-decoration:none;">Drill-down &rarr; ${node.drillLabel}</a>`;
+  if (!node.companies || node.companies.length === 0) {
+    html += `<div class="nocov"><b>${node.gap}</b><span class="near">${node.near}</span></div>`;
+    panelEl.innerHTML = html; return;
   }
-  const root=build(TREE); pane.appendChild(root);
+  node.companies.forEach(c => {
+    html += `<div class="co">`;
+    html += `<div class="co__name">${c.n}<span class="co__ticker">${c.t}</span></div>`;
+    html += `<div class="co__tags"><span class="tag tag--${c.e}">${c.e.toUpperCase()}</span></div>`;
+    html += `<div class="co__mat">${c.m}</div>`;
+    html += `<div class="co__ev">Evidence: ${c.ev}</div>`;
+    html += `</div>`;
+  });
+  panelEl.innerHTML = html;
 }
 
-function tag(text,cls){return `<span class="tag ${cls}">${text}</span>`;}
-function select(id){
-  document.querySelectorAll('.node-btn').forEach(n=>n.classList.toggle('is-active',n.dataset.id===id));
-  const d=NODES[id];
-  const impMap={domestic:['Domestic','tag--dom'],partial:['Partially imported','tag--part'],imported:['Imported','tag--imp']};
-  let tags='';
-  if(d.pri==='HIGH')tags+=tag('HIGH priority','tag--high');
-  else if(d.pri==='MED-HIGH'||d.pri==='MED')tags+=tag(d.pri+' priority','tag--med');
-  if(impMap[d.imp])tags+=tag(impMap[d.imp][0],impMap[d.imp][1]);
-  if(d.btn)tags+=tag('Bottleneck','tag--btn');
-  tags+=tag('Value capture: '+d.vc,'tag--med');
-  let body='';
-  if(d.cos&&d.cos.length){
-    body=d.cos.map(co=>`<div class="co"><div class="co__top"><span class="co__name">${co.c}</span><span class="co__ex">${co.e}</span></div>`+
-      `<div class="co__list">${co.x}</div><div class="co__mat">${co.m}</div></div>`).join('');
-    if(d.gap)body+=`<div class="nocov" style="margin-top:8px;"><strong>Partial coverage.</strong> ${d.gap}</div>`;
-  } else {
-    body=`<div class="nocov"><strong>NO COVERAGE IN SELECTED UNIVERSE.</strong><br>${d.gap||'No NSE/BSE company maps to this node.'}</div>`;
-  }
-  panel.innerHTML=`<h3>${d.n}</h3><div class="map-panel__kicker">Level ${d.lvl} · node detail</div>`+
-    `<div class="map-panel__row">${tags}</div>`+(d.drillTo?`<a href="${d.drillTo}" style="display:block;margin:0 0 12px;padding:10px 12px;border:1px solid var(--gold);border-radius:8px;background:var(--gold-dim);color:var(--gold);font-family:var(--font-mono);font-size:11.5px;font-weight:600;text-decoration:none;">Drill-down &rarr; ${d.drillLabel}</a>`:'')+body;
-}
-renderTree();
-select('insulation');
+const PTREE = [
+  { icon:'A', group:'Subsystems &amp; components', ids:['cbl','conductor','cu','al','insulation','xlpe','semicon','screen','sheath','accessories','machinery','gases','testing','install','subsea','om'] }
+];;
+let firstBtn = null;
+PTREE.forEach((grp) => {
+  const wrap = document.createElement('div');
+  const head = document.createElement('button');
+  head.type = 'button';
+  head.style.cssText = 'display:flex;align-items:center;gap:8px;width:100%;text-align:left;background:transparent;border:none;cursor:pointer;padding:8px 6px;font-family:var(--font-mono);font-size:11px;font-weight:600;letter-spacing:.6px;color:var(--text-dim);text-transform:uppercase;';
+  head.innerHTML = '<span class="tgl" style="width:12px;display:inline-block;">&#9662;</span><span>' + grp.icon + ' &middot; ' + grp.group + '</span>';
+  const body = document.createElement('div');
+  body.style.cssText = 'margin-left:14px;border-left:1px dashed var(--border-bright);padding-left:8px;';
+  grp.ids.forEach((id) => {
+    const node = NODES.find((n) => n.id === id);
+    if (!node) return;
+    const btn = document.createElement('button');
+    btn.className = 'node-btn'; btn.type = 'button';
+    const dotClass = (!node.companies || node.companies.length === 0) ? 'dot--none' : ('dot--' + node.pri);
+    let flags = '';
+    if (!node.companies || node.companies.length === 0) flags += '<span class="flag flag--gap">GAP</span>';
+    else if (node.bott) flags += '<span class="flag flag--bott">BOTTLENECK</span>';
+    btn.innerHTML = '<div class="node-btn__name"><span class="dot ' + dotClass + '"></span>' + node.name + '</div><div class="node-btn__meta"><span>' + (node.companies || []).length + ' listed</span>' + flags + '</div>';
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.node-btn').forEach((b) => b.classList.remove('is-active'));
+      btn.classList.add('is-active'); renderPanel(node);
+    });
+    body.appendChild(btn);
+    if (!firstBtn) firstBtn = btn;
+  });
+  head.addEventListener('click', () => {
+    const hidden = body.style.display === 'none';
+    body.style.display = hidden ? '' : 'none';
+    head.querySelector('.tgl').innerHTML = hidden ? '&#9662;' : '&#9656;';
+  });
+  wrap.appendChild(head); wrap.appendChild(body); nodesEl.appendChild(wrap);
+});
+if (firstBtn) { firstBtn.classList.add('is-active'); renderPanel(NODES[0]); }
+
 </script>
 
 <script>window.__MBULLETS=[["India's wires &amp; cables market, FY25.", "Scope: all wires &amp; cables, not only power.", "Source: industry [REPORTED-T2]."], ["EHV/HV (&gt;33 kV) share of India's power-transmission cables, FY24.", "Source: industry."], ["Global HV cable procurement lead time &mdash; a capacity bottleneck.", "Source: IEA, Building the Future Transmission Grid (2025)."], ["Highest EHV grade now made in India.", "Source: industry."], ["Number of Indian submarine-cable plants &mdash; the largest gap in the chain.", "Source: industry."]];</script>

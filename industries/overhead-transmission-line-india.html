@@ -8,161 +8,6 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/registry.css">
-<style>
-  *{margin:0;padding:0;box-sizing:border-box}
-  html{scroll-behavior:smooth}
-  body{
-    background-color:var(--bg);
-    background-image:linear-gradient(var(--border) 1px,transparent 1px),linear-gradient(90deg,var(--border) 1px,transparent 1px);
-    background-size:26px 26px;
-    color:var(--text);
-    font-family:var(--font-body);
-    padding:34px 30px 80px;
-    overflow-wrap:break-word;
-  }
-  .container{max-width:1180px;margin:0 auto}
-  @keyframes fadeUp{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
-  .an{animation:fadeUp .45s ease-out both;animation-delay:calc(var(--i,0)*.06s)}
-  @media (prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;transition-duration:.01ms!important}}
-
-  /* header */
-  .eyebrow{font-family:var(--font-mono);font-size:11px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:var(--gold);margin-bottom:10px}
-  h1{font-size:clamp(26px,4vw,42px);font-weight:700;letter-spacing:-1px;line-height:1.05;text-wrap:balance}
-  .subtitle{color:var(--text-dim);font-family:var(--font-mono);font-size:12px;margin-top:10px;line-height:1.7}
-  .scope-bar{display:flex;flex-wrap:wrap;gap:7px;margin-top:18px}
-  .chip{font-family:var(--font-mono);font-size:10.5px;font-weight:500;padding:4px 10px;border-radius:5px;border:1px solid var(--border-bright);color:var(--text-dim);background:var(--surface)}
-  .chip--gold{background:var(--gold-dim);border-color:var(--gold);color:var(--gold)}
-
-  /* metric-card */
-  .metric-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(165px,1fr));gap:14px;margin:26px 0}
-
-  /* section */
-  section{margin-top:44px}
-  .sec-head{display:flex;align-items:baseline;gap:14px;margin-bottom:16px;border-bottom:1px solid var(--border-bright);padding-bottom:10px;flex-wrap:wrap}
-  .sec-num{font-family:var(--font-mono);font-size:12px;font-weight:600;color:var(--gold);border:1px solid var(--border-bright);border-radius:5px;padding:3px 8px}
-  .sec-title{font-size:20px;font-weight:600;letter-spacing:-.3px}
-  .sec-note{font-family:var(--font-mono);font-size:11px;color:var(--text-dim);margin-left:auto;text-align:right}
-
-  /* mermaid */
-  .mermaid-wrap{position:relative;background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:26px 20px;overflow:auto;margin-bottom:16px;display:flex;justify-content:center;align-items:center;min-height:380px}
-  .zoom-controls{position:absolute;top:8px;right:8px;display:flex;gap:2px;z-index:10;background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:2px}
-  .zoom-controls button{width:28px;height:28px;border:none;background:transparent;color:var(--text-dim);font-family:var(--font-mono);font-size:13px;cursor:pointer;border-radius:4px;display:flex;align-items:center;justify-content:center;transition:background .15s,color .15s}
-  .zoom-controls button:hover{background:var(--border);color:var(--text)}
-  .mermaid-wrap{cursor:grab}
-  .mermaid-wrap.is-panning{cursor:grabbing;user-select:none}
-  .diagram-shell{position:relative}
-  .diagram-shell__hint{font-family:var(--font-mono);font-size:10.5px;color:var(--text-dim);margin-bottom:8px;opacity:.75}
-  .mermaid-viewport{position:relative;overflow:hidden;width:100%;height:100%;min-height:280px}
-  .mermaid-canvas{position:absolute;top:0;left:0}
-  .zoom-label{font-family:var(--font-mono);font-size:10px;color:var(--text-dim);padding:0 6px;white-space:nowrap}
-  .mermaid .nodeLabel{font-family:var(--font-body)!important;font-size:15px!important}
-  .mermaid .edgeLabel{font-family:var(--font-mono)!important;font-size:12px!important}
-  .mermaid .node rect,.mermaid .node polygon,.mermaid .node circle{stroke-width:1.5px!important}
-  .mermaid .edge-pattern-solid{stroke-width:1.5px!important}
-
-  /* explorer layout */
-  .map-layout{display:grid;grid-template-columns:1fr 400px;gap:18px;align-items:start}
-  @media (max-width:900px){.map-layout{grid-template-columns:1fr}}
-  .map-nodes{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:14px 16px;max-height:74vh;overflow:auto}
-  .map-panel{background:var(--surface-elevated);border:1px solid var(--border-bright);border-radius:12px;padding:18px;position:sticky;top:20px;max-height:74vh;overflow:auto}
-  @media (max-width:900px){.map-panel{position:static;max-height:none}}
-
-  .tgroup{margin:4px 0 4px 0}
-  .node-btn{display:flex;align-items:center;gap:8px;padding:7px 9px;border-radius:7px;border:1px solid transparent;cursor:pointer;transition:background .13s,border-color .13s}
-  .node-btn:hover{background:var(--blue-dim);border-color:var(--border)}
-  .node-btn.is-active{background:var(--blue-dim);border-color:var(--blue)}
-  .node-btn.l0{font-weight:700}
-  .node-btn.l1{font-weight:600}
-  .node-btn__meta{font-family:var(--font-mono);font-size:9px;color:var(--text-dim);flex-shrink:0}
-  .node-btn__name{flex:1;min-width:0;font-size:13.5px}
-  .node-btn.l2 .node-btn__name,.node-btn.l3 .node-btn__name{font-size:12.5px;color:var(--text-dim)}
-  .node-btn.high{border-left:3px solid var(--gold);padding-left:11px}
-  .dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
-  .dot--cov{background:var(--green)}
-  .dot--gap{background:var(--high)}
-  .kids{margin-left:20px;border-left:1px dashed var(--border-bright);padding-left:8px}
-  .toggle{font-family:var(--font-mono);font-size:11px;color:var(--text-dim);width:14px;text-align:center;flex-shrink:0;user-select:none}
-  .collapsed>.kids{display:none}
-
-  .map-panel h3{font-size:15px;font-weight:600;margin-bottom:4px}
-  .map-panel__kicker{font-family:var(--font-mono);font-size:10px;color:var(--text-dim);letter-spacing:1px;text-transform:uppercase;margin-bottom:14px}
-  .map-panel__row{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px}
-  .tag{font-family:var(--font-mono);font-size:10px;font-weight:500;padding:3px 8px;border-radius:5px}
-  .tag--high{background:var(--gold-dim);color:var(--gold)}
-  .tag--med{background:var(--blue-dim);color:var(--blue)}
-  .tag--dom{background:var(--green-dim);color:var(--green)}
-  .tag--part{background:var(--gold-dim);color:var(--gold)}
-  .tag--imp{background:var(--high-dim);color:var(--high)}
-  .tag--btn{background:var(--high-dim);color:var(--high);border:1px solid var(--high)}
-  .co{border:1px solid var(--border);border-radius:8px;padding:10px 12px;margin-bottom:8px;background:var(--surface)}
-  .co__top{display:flex;justify-content:space-between;gap:8px;align-items:baseline;flex-wrap:wrap}
-  .co__name{font-weight:600;font-size:13px}
-  .co__list{font-family:var(--font-mono);font-size:10px;color:var(--blue)}
-  .co__ex{font-family:var(--font-mono);font-size:10px;font-weight:600;padding:2px 6px;border-radius:4px;background:var(--blue-dim);color:var(--blue)}
-  .co__mat{font-size:11.5px;color:var(--text-dim);line-height:1.5;margin-top:6px}
-  .nocov{border:1px dashed var(--high);border-radius:8px;padding:12px;background:var(--high-dim);font-size:12px;line-height:1.55;color:var(--text)}
-  .nocov strong{color:var(--high)}
-  .phint{font-size:12px;color:var(--text-dim);line-height:1.6}
-
-  .legend{display:flex;flex-wrap:wrap;gap:16px;margin-top:14px;font-family:var(--font-mono);font-size:10.5px;color:var(--text-dim)}
-  .legend-item{display:flex;align-items:center;gap:6px}
-  .legend-swatch{width:11px;height:11px;border-radius:3px;flex-shrink:0}
-
-  .ladder{display:flex;flex-direction:column;gap:0}
-  .rung{display:grid;grid-template-columns:150px 1fr;gap:16px;align-items:center;padding:12px 16px;border:1px solid var(--border);border-bottom:none;background:var(--surface)}
-  .rung:first-child{border-radius:10px 10px 0 0}
-  .rung:last-child{border-radius:0 0 10px 10px;border-bottom:1px solid var(--border)}
-  .rung > *{min-width:0;overflow-wrap:break-word}
-  .rung__label{font-family:var(--font-mono);font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:1px}
-  .rung__body{font-size:13px;color:var(--text-dim)}
-  .rung__body b{color:var(--text);font-weight:600}
-  .rung--1 .rung__label{color:var(--text-dim)}
-  .rung--2 .rung__label{color:var(--blue)}
-  .rung--3 .rung__label{color:var(--gold)}
-  .rung--4 .rung__label{color:var(--high)}
-  .mini{font-family:var(--font-mono);font-size:10.5px;color:var(--text-dim);opacity:.85}
-  @media (max-width:768px){.rung{grid-template-columns:1fr;gap:4px}}
-  footer{margin-top:56px;border-top:1px solid var(--border);padding-top:20px;font-size:11.5px;color:var(--text-dim);line-height:1.8;font-family:var(--font-mono)}
-  footer strong{color:var(--text);font-family:var(--font-body)}
-
-  
-  /* ===== TABLE ===== */
-  .table-wrap { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; }
-  .table-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
-  table.data { width: 100%; border-collapse: collapse; font-size: 12.5px; }
-  table.data th {
-    background: var(--surface-recessed); font-family: var(--font-mono); font-size: 10px; font-weight: 600;
-    text-transform: uppercase; letter-spacing: 0.8px; color: var(--text-dim); text-align: left; padding: 10px 12px;
-    border-bottom: 2px solid var(--border-bright); white-space: nowrap;
-  }
-  table.data td { padding: 9px 12px; border-bottom: 1px solid var(--border); vertical-align: middle; }
-  table.data tbody tr:nth-child(even) { background: var(--blue-dim); }
-  table.data tbody tr:hover { background: var(--border); }
-  table.data td.c { text-align: center; font-family: var(--font-mono); font-weight: 600; }
-  .cell-d { color: var(--green); }
-  .cell-i { color: var(--blue); }
-  .cell-s { color: var(--gold); }
-  .cell-c { color: var(--low); }
-  .cell-x { color: var(--text-dim); opacity: 0.4; }
-
-  /* ===== BOTTLENECK PAIRS ===== */
-  .bn { display: grid; grid-template-columns: 1fr 1fr; gap: 0; border: 1px solid var(--border); border-radius: 10px; overflow: hidden; margin-bottom: 12px; }
-  .bn__risk { background: var(--high-dim); padding: 13px 16px; border-right: 1px solid var(--border); }
-  .bn__opp { background: var(--green-dim); padding: 13px 16px; }
-  .bn__h { font-family: var(--font-mono); font-size: 9.5px; font-weight: 600; letter-spacing: 1.2px; text-transform: uppercase; margin-bottom: 6px; }
-  .bn__risk .bn__h { color: var(--high); }
-  .bn__opp .bn__h { color: var(--green); }
-  .bn p { font-size: 12.5px; line-height: 1.55; }
-  .bn__title { font-weight: 600; color: var(--text); display: block; margin-bottom: 4px; font-size: 13px; }
-
-  .footnote { font-family: var(--font-mono); font-size: 10.5px; color: var(--text-dim); line-height: 1.7; margin-top: 8px; }
-  .callout { background: var(--surface); border: 1px solid var(--border); border-left: 3px solid var(--gold); border-radius: 0 10px 10px 0; padding: 15px 20px; font-size: 13px; line-height: 1.6; color: var(--text-dim); }
-  .callout strong { color: var(--text); }
-  @media (max-width: 900px) {
-    .bn { grid-template-columns: 1fr; }
-    .bn__risk { border-right: none; border-bottom: 1px solid var(--border); }
-  }
-</style>
 </head>
 <body>
 <div class="container">
@@ -173,7 +18,7 @@
     <div style="margin-top:8px;color:var(--gold);">Derived from: Power Transmission (India) &rarr; node &ldquo;Overhead Transmission Line&rdquo;</div>
   </div>
 
-  <header class="an" style="--i:0">
+  <header class="masthead animate" style="--i:0">
     <div class="eyebrow">Industrial BOM &amp; Value-Chain Dissection</div>
     <h1>Overhead Transmission Line</h1>
     <div class="subtitle">India · NSE/BSE company mapping · depth-first · analysis date 2026-10-07</div>
@@ -186,7 +31,7 @@
     </div>
   </header>
 
-  <div class="metric-cards an" style="--i:1">
+  <div class="metric-cards animate" style="--i:1">
     <div class="metric-card"><div class="metric-card__val">₹9.16 L cr</div><div class="metric-card__label">NEP 2022–32 outlay</div></div>
     <div class="metric-card"><div class="metric-card__val">67,263 ckm</div><div class="metric-card__label">ISTS lines to FY31</div></div>
     <div class="metric-card"><div class="metric-card__val">42%</div><div class="metric-card__label">FY25 line-add shortfall</div></div>
@@ -196,11 +41,11 @@
 
   <!-- 1. OVERVIEW -->
   
-  <section class="an" style="--i:1">
+  <section class="animate" style="--i:1">
     <div class="sec-head"><span class="sec-num">DG</span><span class="sec-title">Digest &mdash; at a glance</span><span class="sec-note">A short summary of the analysis. Structure and inputs are on the tree; process, value pools and watch items are summarised here.</span></div>
     <div class="digest"><div class="digest__item"><div class="digest__h">Snapshot</div><p>The physical transmission line itself &mdash; conductors, towers, insulators, hardware and OPGW, foundations, right-of-way and erection. The NEP 2022&ndash;32 outlay is &#8377;9.16 L cr; the &ge;220 kV network is 4,96,372 ckm (Aug-2025), against a 42% FY25 line-add shortfall.</p></div><div class="digest__item"><div class="digest__h">Process &amp; equipment</div><ul><li>Stranded conductor drawing, tower fabrication and galvanising, insulator firing, hardware fittings and OPGW, then stringing and erection EPC.</li><li>Conductor-grade rod and some tower inputs are import-linked.</li></ul></div><div class="digest__item"><div class="digest__h">Bottlenecks</div><ul><li>Aluminium / EC-grade wire-rod supply and tower fabrication capacity.</li><li>Insulator and OPGW imports; right-of-way and erection labour.</li><li>FY25 line-add fell 42% short of target.</li></ul></div><div class="digest__item"><div class="digest__h">Value pools</div><ul><li>Line-materials integrators and turnkey EPC &mdash; KEC, KPIL, L&amp;T, Transrail.</li><li>Asset owners &mdash; PGCIL, Adani Energy Solutions, IndiGrid &mdash; earn a 35-yr TSA / TBCB annuity.</li><li>Aftermarket reconductoring (APAR).</li></ul></div><div class="digest__item"><div class="digest__h">Watch items</div><ul><li>ISTS capex of ~&#8377;1 L cr for FY26&ndash;27.</li><li>FY25 line-add shortfall of 42%.</li><li>TBCB pipeline.</li></ul></div><div class="digest__item"><div class="digest__h">Coverage gaps</div><ul><li>Insulators and OPGW fibre are import-linked; no listed pure-play insulator maker.</li></ul></div></div>
   </section>
-<section class="an" style="--i:2">
+<section class="animate" style="--i:2">
     <div class="sec-head"><span class="sec-num">01</span><span class="sec-title">System Overview</span><span class="sec-note">The line is discrete-assembly at the asset level but process-heavy at the input level. Gold-bordered nodes below are the HIGH-priority subsystems carried into the drill-down tree.</span></div>
     <div class="diagram-shell">
       <p class="diagram-shell__hint">Ctrl/Cmd + wheel to zoom · drag to pan · double-click to fit</p>
@@ -237,7 +82,7 @@ flowchart TD
   </section>
 
   <!-- 2. VALUE CHAIN LADDER -->
-  <section class="an" style="--i:3">
+  <section class="animate" style="--i:3">
     <div class="sec-head"><span class="sec-num">02</span><span class="sec-title">Value-Chain Ladder &amp; Supplier Tiers</span><span class="sec-note">Raw material → aftermarket, with the Tier-4 → OEM supplier bands. Note the inversion: the largest physical block (steel) does not capture the most value — the regulated asset layer and the EPC layer do.</span></div>
     <div class="ladder">
       <div class="rung rung--1">
@@ -268,11 +113,11 @@ flowchart TD
   </section>
 
   <!-- 3. INTERACTIVE TREE -->
-  <section class="an" style="--i:4">
+  <section class="animate" style="--i:4">
     <div class="sec-head"><span class="sec-num">03</span><span class="sec-title">BOM Tree &amp; Company Map</span><span class="sec-note">Click any node to open its data — import dependency, bottleneck status, value capture, and the mapped NSE/BSE companies. Green dot = mapped company; red dot = no coverage in the selected universe.</span></div>
     <div class="map-layout">
-      <div class="map-nodes" id="treePane"></div>
-      <aside class="map-panel" id="panel"></aside>
+      <div class="map-nodes" id="mapNodes"></div>
+      <aside class="map-panel" id="mapPanel"></aside>
     </div>
     <div class="legend">
       <span class="legend-item"><span class="legend-swatch" style="background:var(--gold)"></span> HIGH-priority node</span>
@@ -283,21 +128,21 @@ flowchart TD
   </section>
 
 
-  <section class="an" style="--i:6">
+  <section class="animate" style="--i:6">
     <div class="sec-head"><span class="sec-num">04</span><span class="sec-title">Company &times; Node Matrix</span><span class="sec-note">D direct &middot; I indirect &middot; S supplier &middot; C conglomerate &middot; &mdash; none</span></div>
     <div class="table-wrap"><div class="table-scroll"><table class="data"><thead><tr><th>Company</th><th>Conductor system</th><th>Transmission towers / structures</th><th>Insulators</th><th>Hardware fittings & stringing</th><th>Earth wire / OPGW</th><th>Foundations & civil works</th><th>Right-of-way & clearances</th><th>Erection & stringing (EPC)</th><th>Testing & protection</th><th>O&M / end-of-life</th></tr></thead><tbody><tr><td>APAR Industries <small>APARINDS</small></td><td class="c cell-d">D</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td></tr><tr><td>Transrail Lighting <small>TRANSRAIL</small></td><td class="c cell-d">D</td><td class="c cell-d">D</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-d">D</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td></tr><tr><td>KEC International <small>KEC</small></td><td class="c cell-d">D</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-d">D</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td></tr><tr><td>Sterlite Electric <small>Unlisted (context)</small></td><td class="c cell-d">D</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-d">D</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td></tr><tr><td>Skipper Ltd <small>SKIPPER</small></td><td class="c cell-x">&mdash;</td><td class="c cell-d">D</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td></tr><tr><td>Karamtara Engineering <small>Recently listed / IPO-stage [verify]</small></td><td class="c cell-x">&mdash;</td><td class="c cell-d">D</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td></tr><tr><td>KEC International (SAE Towers) <small>KEC</small></td><td class="c cell-x">&mdash;</td><td class="c cell-d">D</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td></tr><tr><td>Grasim Industries (Aditya Birla Insulators) <small>GRASIM</small></td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-c">C</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td></tr><tr><td>BHEL <small>BHEL</small></td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-c">C</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td></tr><tr><td>Modern Insulators <small>BSE [verify listing]</small></td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-d">D</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td></tr><tr><td>Advait Energy Transitions <small>ADVAIT</small></td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-d">D</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td></tr><tr><td>Polycab India <small>POLYCAB</small></td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-i">I</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td></tr><tr><td>Kalpataru Projects <small>KPIL</small></td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-d">D</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td></tr><tr><td>Larsen & Toubro <small>LT</small></td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-c">C</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td></tr><tr><td>IndiGrid <small>INDIGRID</small></td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-d">D</td></tr><tr><td>Adani Energy Solutions <small>ADANIENSOL</small></td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-d">D</td></tr></tbody></table></div></div>
     <p class="footnote">Listing status current as of the analysis date. Cells read from the page&rsquo;s node-by-node company map; &mdash; means no exposure at that node.</p>
   </section>
 
-  <section class="an" style="--i:7">
+  <section class="animate" style="--i:7">
     <div class="sec-head"><span class="sec-num">05</span><span class="sec-title">Bottlenecks &mdash; Risk &amp; Opportunity</span><span class="sec-note">dual-readable: every risk is a substitution play</span></div>
     <div class="bn"><div class="bn__risk"><div class="bn__h">Risk</div><p><span class="bn__title">Hollow / apparatus insulators</span>Imported / supply-concentrated node — domestic.</p></div><div class="bn__opp"><div class="bn__h">Opportunity</div><p><span class="bn__title">Hollow / apparatus insulators &mdash; localisation play</span>Listed incumbents &mdash; Grasim (ABI) &mdash; can deepen local capability at this node.</p></div></div><div class="bn"><div class="bn__risk"><div class="bn__h">Risk</div><p><span class="bn__title">OPGW fibre cable</span>Imported / supply-concentrated node — imported.</p></div><div class="bn__opp"><div class="bn__h">Opportunity</div><p><span class="bn__title">OPGW fibre cable &mdash; localisation play</span>Listed incumbents &mdash; Polycab India, ZTT India &mdash; can deepen local capability at this node.</p></div></div><div class="bn"><div class="bn__risk"><div class="bn__h">Risk</div><p><span class="bn__title">Right-of-way & clearances</span>Regulatory/non-physical — not investable. THE binding constraint.</p></div><div class="bn__opp"><div class="bn__h">Opportunity</div><p><span class="bn__title">Right-of-way & clearances &mdash; localisation play</span>No NSE/BSE pure-play; domestic qualification of this node is the substitution play. [DERIVED]</p></div></div><div class="bn"><div class="bn__risk"><div class="bn__h">Risk</div><p><span class="bn__title">Certified stringing crews</span>Skills bottleneck — cannot be bought quickly. Not a listed exposure.</p></div><div class="bn__opp"><div class="bn__h">Opportunity</div><p><span class="bn__title">Certified stringing crews &mdash; localisation play</span>No NSE/BSE pure-play; domestic qualification of this node is the substitution play. [DERIVED]</p></div></div>
     <div class="callout animate" style="--i:8"><strong>Where value sits:</strong> Line-materials integrators and turnkey EPC &mdash; KEC, KPIL, L&amp;T, Transrail. Asset owners &mdash; PGCIL, Adani Energy Solutions, IndiGrid &mdash; earn a 35-yr TSA / TBCB annuity. Aftermarket reconductoring (APAR).</div>
   </section>
 
-  <footer class="an" style="--i:5">
+  <p class="footnote animate" style="--i:5">
     <strong>Sources.</strong> Compiled from public disclosures and reporting dated to 2026-10-07: Ministry of Power public-procurement order (Make in India, 66 kV+ transmission); CEA indigenisation notice (Apr 2025) and CEA/CTUIL transmission statistics; CareEdge Ratings — Indian Power Transmission Sector; CRISIL Ratings ISTS capex note (Feb 2025); IEEFA/JMK Research — Green Power Transmission Development in India (Sep 2025); company investor materials — PGCIL, KEC International, Kalpataru Projects International, Transrail Lighting, Skipper Ltd, APAR Industries, Sterlite Electric, Polycab, Adani Energy Solutions, IndiGrid, Grasim/Aditya Birla Insulators, BHEL; IndexBox — India Electrical Insulators and India Overhead Cables market reports; T&amp;D India sector coverage; Reuters (Feb 2026) on Chinese-equipment easing. Figures carry their own as-of dates; market-share and revenue numbers are as reported by the named source and are not independently audited here. This is an analytical map, not investment advice.
-  </footer>
+  </p>
 
 </div>
 
@@ -380,157 +225,279 @@ function initDiagram(shell){
 document.querySelectorAll('.diagram-shell').forEach(initDiagram);
 
 /* ================= INTERACTIVE BOM TREE ================= */
-const NODES = {
-  line:{n:'Overhead Transmission Line',lvl:0,pri:'',imp:'',btn:false,vc:'—',cos:[
-    {c:'Power Grid Corp of India',x:'NSE: POWERGRID',e:'DIRECT',m:'Pure-play transmission asset owner; 53.4% ISTS-TBCB share, FY25 capex ₹26,255 cr'},
-    {c:'Adani Energy Solutions',x:'NSE: ADANIENSOL',e:'DIRECT',m:'Largest private; 27,000+ ckm, 1,23,000 MVA'},
-    {c:'IndiGrid',x:'NSE: INDIGRID',e:'DIRECT',m:'Listed InvIT; 22 projects, 9,000+ ckm, 22,550 MVA'},
-    {c:'Tata Power',x:'NSE: TATAPOWER',e:'INDIRECT',m:'TBCB participation'}]},
-  conductor:{n:'Conductor system',lvl:1,pri:'HIGH',imp:'domestic',btn:false,vc:'high',cos:[
-    {c:'APAR Industries',x:'NSE: APARINDS',e:'DIRECT',m:"World's largest OHC maker; ~50% reconductoring share; ACCC licence from CTC Global"},
-    {c:'Transrail Lighting',x:'NSE: TRANSRAIL',e:'DIRECT',m:'3 conductor lines; exports 45+ countries'},
-    {c:'KEC International',x:'NSE: KEC',e:'DIRECT',m:'Cables & conductors vertical'},
-    {c:'Sterlite Electric',x:'Unlisted (context)',e:'DIRECT',m:"~20% of India's grid runs on Sterlite conductors"}]},
-  acsr:{n:'ACSR (55–60% of volume)',lvl:2,pri:'',imp:'domestic',btn:false,vc:'medium',cos:[
-    {c:'APAR Industries',x:'NSE: APARINDS',e:'DIRECT',m:'Full conventional range'},
-    {c:'Galaxy Transmissions',x:'Unlisted (context)',e:'DIRECT',m:'60,000 TPA conductor + backward wire-rod'}]},
-  al59:{n:'AL-59 high-conductivity alloy',lvl:2,pri:'',imp:'domestic',btn:false,vc:'medium',cos:[
-    {c:'APAR Industries',x:'NSE: APARINDS',e:'DIRECT',m:'AL59 Plus proposed to CEA for greenfield RE'}]},
-  htls:{n:'HTLS (ACCC / ACSS / GAP)',lvl:2,pri:'HIGH',imp:'partial',btn:false,vc:'high',cos:[
-    {c:'APAR Industries',x:'NSE: APARINDS',e:'DIRECT',m:'ACCC under CTC Global licence; first Indian GAP maker'},
-    {c:'Transrail Lighting',x:'NSE: TRANSRAIL',e:'DIRECT',m:'HVCRC, ACSS, gap-type conductors'}]},
-  core:{n:'Steel / composite core (Invar, carbon)',lvl:3,pri:'',imp:'imported',btn:false,vc:'high',cos:[],
-    gap:'Composite carbon core is imported (CTC Global / Epsilon Composite). No NSE/BSE pure-play.'},
-  joints:{n:'Compression joints & repair sleeves',lvl:3,pri:'',imp:'domestic',btn:false,vc:'low',cos:[],gap:'Active players unlisted (TAG, IAC). No clean listed proxy.'},
+</script>
+<script>
+/* ===== CLICK-THROUGH COMPANY MAP ===== */
+const NODES = [
+  { id:'line', name:'Overhead Transmission Line', pri:'med', bott:false,
+    companies:[
+      {n:'Power Grid Corp of India', t:'NSE: POWERGRID', e:'direct', m:'Pure-play transmission asset owner; 53.4% ISTS-TBCB share, FY25 capex ₹26,255 cr', ev:''},
+      {n:'Adani Energy Solutions', t:'NSE: ADANIENSOL', e:'direct', m:'Largest private; 27,000+ ckm, 1,23,000 MVA', ev:''},
+      {n:'IndiGrid', t:'NSE: INDIGRID', e:'direct', m:'Listed InvIT; 22 projects, 9,000+ ckm, 22,550 MVA', ev:''},
+      {n:'Tata Power', t:'NSE: TATAPOWER', e:'indirect', m:'TBCB participation', ev:''}
+    ] },
+  { id:'conductor', name:'Conductor system', pri:'high', bott:false,
+    importDep:'Domestic',
+    vc:'high',
+    companies:[
+      {n:'APAR Industries', t:'NSE: APARINDS', e:'direct', m:'World\'s largest OHC maker; ~50% reconductoring share; ACCC licence from CTC Global', ev:''},
+      {n:'Transrail Lighting', t:'NSE: TRANSRAIL', e:'direct', m:'3 conductor lines; exports 45+ countries', ev:''},
+      {n:'KEC International', t:'NSE: KEC', e:'direct', m:'Cables & conductors vertical', ev:''},
+      {n:'Sterlite Electric', t:'Unlisted (context)', e:'direct', m:'~20% of India\'s grid runs on Sterlite conductors', ev:''}
+    ] },
+  { id:'acsr', name:'ACSR (55–60% of volume)', pri:'low', bott:false,
+    importDep:'Domestic',
+    vc:'medium',
+    companies:[
+      {n:'APAR Industries', t:'NSE: APARINDS', e:'direct', m:'Full conventional range', ev:''},
+      {n:'Galaxy Transmissions', t:'Unlisted (context)', e:'direct', m:'60,000 TPA conductor + backward wire-rod', ev:''}
+    ] },
+  { id:'al59', name:'AL-59 high-conductivity alloy', pri:'low', bott:false,
+    importDep:'Domestic',
+    vc:'medium',
+    companies:[
+      {n:'APAR Industries', t:'NSE: APARINDS', e:'direct', m:'AL59 Plus proposed to CEA for greenfield RE', ev:''}
+    ] },
+  { id:'htls', name:'HTLS (ACCC / ACSS / GAP)', pri:'high', bott:false,
+    importDep:'Partially imported',
+    vc:'high',
+    companies:[
+      {n:'APAR Industries', t:'NSE: APARINDS', e:'direct', m:'ACCC under CTC Global licence; first Indian GAP maker', ev:''},
+      {n:'Transrail Lighting', t:'NSE: TRANSRAIL', e:'direct', m:'HVCRC, ACSS, gap-type conductors', ev:''}
+    ] },
+  { id:'core', name:'Steel / composite core (Invar, carbon)', pri:'low', bott:false,
+    importDep:'Imported',
+    vc:'high',
+    companies:[],
+    gap:'Composite carbon core is imported (CTC Global / Epsilon Composite). No NSE/BSE pure-play.' },
+  { id:'joints', name:'Compression joints & repair sleeves', pri:'low', bott:false,
+    importDep:'Domestic',
+    vc:'low',
+    companies:[],
+    gap:'Active players unlisted (TAG, IAC). No clean listed proxy.' },
+  { id:'tower', name:'Transmission towers / structures', pri:'high', bott:false,
+    importDep:'Domestic',
+    vc:'medium-high',
+    companies:[
+      {n:'Skipper Ltd', t:'NSE: SKIPPER', e:'direct', m:'India\'s largest tower maker, top-5 global; 300,000+ MT/yr, 7 galvanising plants', ev:''},
+      {n:'Transrail Lighting', t:'NSE: TRANSRAIL', e:'direct', m:'66–800 kV towers + monopoles', ev:''},
+      {n:'Karamtara Engineering', t:'Recently listed / IPO-stage [verify]', e:'direct', m:'Up to 1,200 kV; 276,800 MTPA galvanising', ev:''},
+      {n:'KEC International (SAE Towers)', t:'NSE: KEC', e:'direct', m:'US tower subsidiary, ₹1,800 cr revenue FY26', ev:''}
+    ] },
+  { id:'lattice', name:'Lattice tower (suspension/tension/angle)', pri:'low', bott:false,
+    importDep:'Domestic',
+    vc:'medium',
+    companies:[
+      {n:'Skipper Ltd', t:'NSE: SKIPPER', e:'direct', m:'Guyed, lattice, monopole range', ev:''},
+      {n:'Shirke Group', t:'Unlisted (context)', e:'direct', m:'30,000 MT/yr fabrication + galvanising', ev:''}
+    ] },
+  { id:'monopole', name:'Monopole / tubular', pri:'low', bott:false,
+    importDep:'Domestic',
+    vc:'medium',
+    companies:[
+      {n:'Transrail Lighting', t:'NSE: TRANSRAIL', e:'direct', m:'Monopoles to 400 kV', ev:''}
+    ] },
+  { id:'members', name:'MS / HT angles & plates', pri:'high', bott:false,
+    importDep:'Domestic',
+    vc:'medium',
+    companies:[
+      {n:'Jindal Steel & Power', t:'NSE: JINDALSTEL', e:'supplier', m:'Angles 50×50 to 250×250, PGCIL-approved', ev:''},
+      {n:'SAIL', t:'NSE: SAIL', e:'supplier', m:'Primary BF-BOF tower steel', ev:''},
+      {n:'JSW Steel', t:'NSE: JSWSTEEL', e:'supplier', m:'Primary BF-BOF tower steel', ev:''}
+    ] },
+  { id:'galv', name:'Hot-dip galvanising', pri:'low', bott:false,
+    importDep:'Domestic',
+    vc:'low',
+    companies:[],
+    gap:'Mostly in-house at tower makers; no standalone listed galvaniser.' },
+  { id:'insulator', name:'Insulators', pri:'high', bott:false,
+    importDep:'Partially imported',
+    vc:'low-medium',
+    companies:[
+      {n:'Grasim Industries (Aditya Birla Insulators)', t:'NSE: GRASIM', e:'conglomerate', m:'India\'s largest insulator maker, world #4 — minor to Grasim consolidated; attribution inside unlisted ABG entity [INFERENCE]', ev:''},
+      {n:'BHEL', t:'NSE: BHEL', e:'conglomerate', m:'World sole ±800 kV HVDC disc supplier; immaterial to BHEL consolidated', ev:''},
+      {n:'Modern Insulators', t:'BSE [verify listing]', e:'direct', m:'Porcelain 11–800 kV, Siemens heritage', ev:''}
+    ] },
+  { id:'disc', name:'Disc (cap-and-pin) porcelain / glass', pri:'low', bott:false,
+    importDep:'Partially imported',
+    vc:'low',
+    companies:[
+      {n:'Grasim (ABI)', t:'NSE: GRASIM', e:'conglomerate', m:'Most commoditised segment; gross margin ~12–18%', ev:''}
+    ] },
+  { id:'composite', name:'Composite silicone long-rod', pri:'low', bott:false,
+    importDep:'Imported',
+    vc:'medium',
+    companies:[],
+    gap:'China-heavy imports; domestic makers unlisted. NO listed pure-play.' },
+  { id:'hollow', name:'Hollow / apparatus insulators', pri:'high', bott:true,
+    importDep:'Domestic',
+    vc:'medium',
+    companies:[
+      {n:'Grasim (ABI)', t:'NSE: GRASIM', e:'conglomerate', m:'Single most NEP-leveraged product; 12–16 month industry lead times', ev:''}
+    ] },
+  { id:'hardware', name:'Hardware fittings & stringing', pri:'high', bott:false,
+    importDep:'Domestic',
+    vc:'medium',
+    companies:[
+      {n:'Advait Energy Transitions', t:'NSE: ADVAIT', e:'direct', m:'Stringing tools + OPGW/OFC; India-made', ev:''}
+    ] },
+  { id:'strings', name:'Suspension & tension strings / clamps', pri:'low', bott:false,
+    importDep:'Domestic',
+    vc:'medium',
+    companies:[],
+    gap:'TAG, IAC, Asbesco, Ventura, MMPT — all unlisted. NO listed pure-play.' },
+  { id:'spacers', name:'Spacers, spacer dampers, vibration dampers', pri:'low', bott:false,
+    importDep:'Domestic',
+    vc:'medium',
+    companies:[],
+    gap:'Unlisted specialists only.' },
+  { id:'corona', name:'Corona / grading rings, armour rods', pri:'low', bott:false,
+    importDep:'Domestic',
+    vc:'low',
+    companies:[],
+    gap:'Unlisted.' },
+  { id:'opgw', name:'Earth wire / OPGW', pri:'med', bott:false,
+    importDep:'Partially imported',
+    vc:'medium',
+    companies:[
+      {n:'Polycab India', t:'NSE: POLYCAB', e:'indirect', m:'OPGW entry; minor vs cables core', ev:''},
+      {n:'Sterlite Electric', t:'Unlisted (context)', e:'direct', m:'100,000 km OPGW laid', ev:''}
+    ] },
+  { id:'gsw', name:'Galvanised steel earth wire', pri:'low', bott:false,
+    importDep:'Domestic',
+    vc:'low',
+    companies:[
+      {n:'APAR Industries', t:'NSE: APARINDS', e:'direct', m:'GSW core wire in-house', ev:''}
+    ] },
+  { id:'opgwf', name:'OPGW fibre cable', pri:'high', bott:true,
+    importDep:'Imported',
+    vc:'medium',
+    companies:[
+      {n:'Polycab India', t:'NSE: POLYCAB', e:'indirect', m:'Al-tube / SS-tube OPGW designs', ev:''},
+      {n:'ZTT India', t:'Foreign (context)', e:'direct', m:'Leading India OPGW share, 24,000 km capacity', ev:''}
+    ] },
+  { id:'foundation', name:'Foundations & civil works', pri:'med', bott:false,
+    importDep:'Domestic',
+    vc:'medium',
+    companies:[],
+    gap:'No line-specific listed player; proxy = cement/steel majors.' },
+  { id:'row', name:'Right-of-way & clearances', pri:'high', bott:true,
+    importDep:'Domestic',
+    companies:[],
+    gap:'Regulatory/non-physical — not investable. THE binding constraint.' },
+  { id:'erection', name:'Erection & stringing (EPC)', pri:'high', bott:false,
+    importDep:'Domestic',
+    vc:'medium',
+    companies:[
+      {n:'KEC International', t:'NSE: KEC', e:'direct', m:'T&D 68% of revenue, ₹15,883 cr; order book ₹36,267 cr', ev:''},
+      {n:'Kalpataru Projects', t:'NSE: KPIL', e:'direct', m:'T&D order book ₹28,572 cr', ev:''},
+      {n:'Larsen & Toubro', t:'NSE: LT', e:'conglomerate', m:'PT&D segment; ₹10,000–15,000 cr order wins Oct 2026', ev:''},
+      {n:'Transrail Lighting', t:'NSE: TRANSRAIL', e:'direct', m:'Order book ₹16,361 cr', ev:''}
+    ] },
+  { id:'stringeq', name:'Stringing equipment & winches', pri:'low', bott:false,
+    importDep:'Domestic',
+    vc:'low',
+    companies:[
+      {n:'Advait Energy Transitions', t:'NSE: ADVAIT', e:'direct', m:'Winches, compressors, stringing tooling', ev:''}
+    ] },
+  { id:'crews', name:'Certified stringing crews', pri:'low', bott:true,
+    importDep:'Domestic',
+    companies:[],
+    gap:'Skills bottleneck — cannot be bought quickly. Not a listed exposure.' },
+  { id:'testing', name:'Testing & protection', pri:'med', bott:false,
+    importDep:'Domestic',
+    vc:'low',
+    companies:[],
+    gap:'Accredited type-test labs mostly unlisted (TAG lab; Skipper load-test station).' },
+  { id:'om', name:'O&M / end-of-life', pri:'med', bott:false,
+    importDep:'Domestic',
+    vc:'medium',
+    companies:[
+      {n:'IndiGrid', t:'NSE: INDIGRID', e:'direct', m:'O&M via project manager across portfolio', ev:''},
+      {n:'Adani Energy Solutions', t:'NSE: ADANIENSOL', e:'direct', m:'O&M of 27,000+ ckm', ev:''}
+    ] },
+  { id:'recond', name:'Reconductoring (asset-light growth)', pri:'high', bott:false,
+    importDep:'Domestic',
+    vc:'high',
+    companies:[
+      {n:'APAR Industries', t:'NSE: APARINDS', e:'direct', m:'~50% of domestic reconductoring; 165+ turnkey projects', ev:''}
+    ] },
+  { id:'recycle', name:'End-of-life steel / Al recovery', pri:'low', bott:false,
+    importDep:'Domestic',
+    vc:'low',
+    companies:[],
+    gap:'Scrap-stream economics real but unsized; no listed pure-play.' }
+];;
 
-  tower:{n:'Transmission towers / structures',lvl:1,pri:'HIGH',imp:'domestic',btn:false,vc:'medium-high',cos:[
-    {c:'Skipper Ltd',x:'NSE: SKIPPER',e:'DIRECT',m:"India's largest tower maker, top-5 global; 300,000+ MT/yr, 7 galvanising plants"},
-    {c:'Transrail Lighting',x:'NSE: TRANSRAIL',e:'DIRECT',m:'66–800 kV towers + monopoles'},
-    {c:'Karamtara Engineering',x:'Recently listed / IPO-stage [verify]',e:'DIRECT',m:'Up to 1,200 kV; 276,800 MTPA galvanising'},
-    {c:'KEC International (SAE Towers)',x:'NSE: KEC',e:'DIRECT',m:'US tower subsidiary, ₹1,800 cr revenue FY26'}]},
-  lattice:{n:'Lattice tower (suspension/tension/angle)',lvl:2,pri:'',imp:'domestic',btn:false,vc:'medium',cos:[
-    {c:'Skipper Ltd',x:'NSE: SKIPPER',e:'DIRECT',m:'Guyed, lattice, monopole range'},
-    {c:'Shirke Group',x:'Unlisted (context)',e:'DIRECT',m:'30,000 MT/yr fabrication + galvanising'}]},
-  monopole:{n:'Monopole / tubular',lvl:2,pri:'',imp:'domestic',btn:false,vc:'medium',cos:[
-    {c:'Transrail Lighting',x:'NSE: TRANSRAIL',e:'DIRECT',m:'Monopoles to 400 kV'}]},
-  members:{n:'MS / HT angles & plates',lvl:2,pri:'HIGH',imp:'domestic',btn:false,vc:'medium',cos:[
-    {c:'Jindal Steel & Power',x:'NSE: JINDALSTEL',e:'SUPPLIER',m:'Angles 50×50 to 250×250, PGCIL-approved'},
-    {c:'SAIL',x:'NSE: SAIL',e:'SUPPLIER',m:'Primary BF-BOF tower steel'},
-    {c:'JSW Steel',x:'NSE: JSWSTEEL',e:'SUPPLIER',m:'Primary BF-BOF tower steel'}]},
-  galv:{n:'Hot-dip galvanising',lvl:2,pri:'',imp:'domestic',btn:false,vc:'low',cos:[],gap:'Mostly in-house at tower makers; no standalone listed galvaniser.'},
+const nodesEl = document.getElementById('mapNodes');
+const panelEl = document.getElementById('mapPanel');
+const PRI_LABEL = { high:'HIGH', med:'MEDIUM', low:'LOW' };
 
-  insulator:{n:'Insulators',lvl:1,pri:'HIGH',imp:'partial',btn:false,vc:'low-medium',cos:[
-    {c:'Grasim Industries (Aditya Birla Insulators)',x:'NSE: GRASIM',e:'CONGLOMERATE',m:"India's largest insulator maker, world #4 — minor to Grasim consolidated; attribution inside unlisted ABG entity [INFERENCE]"},
-    {c:'BHEL',x:'NSE: BHEL',e:'CONGLOMERATE',m:'World sole ±800 kV HVDC disc supplier; immaterial to BHEL consolidated'},
-    {c:'Modern Insulators',x:'BSE [verify listing]',e:'DIRECT',m:'Porcelain 11–800 kV, Siemens heritage'}]},
-  disc:{n:'Disc (cap-and-pin) porcelain / glass',lvl:2,pri:'',imp:'partial',btn:false,vc:'low',cos:[
-    {c:'Grasim (ABI)',x:'NSE: GRASIM',e:'CONGLOMERATE',m:'Most commoditised segment; gross margin ~12–18%'}]},
-  composite:{n:'Composite silicone long-rod',lvl:2,pri:'',imp:'imported',btn:false,vc:'medium',cos:[],gap:'China-heavy imports; domestic makers unlisted. NO listed pure-play.'},
-  hollow:{n:'Hollow / apparatus insulators',lvl:2,pri:'HIGH',imp:'domestic',btn:true,vc:'medium',cos:[
-    {c:'Grasim (ABI)',x:'NSE: GRASIM',e:'CONGLOMERATE',m:'Single most NEP-leveraged product; 12–16 month industry lead times'}]},
-
-  hardware:{n:'Hardware fittings & stringing',lvl:1,pri:'HIGH',imp:'domestic',btn:false,vc:'medium',cos:[
-    {c:'Advait Energy Transitions',x:'NSE: ADVAIT',e:'DIRECT',m:'Stringing tools + OPGW/OFC; India-made'}]},
-  strings:{n:'Suspension & tension strings / clamps',lvl:2,pri:'',imp:'domestic',btn:false,vc:'medium',cos:[],gap:'TAG, IAC, Asbesco, Ventura, MMPT — all unlisted. NO listed pure-play.'},
-  spacers:{n:'Spacers, spacer dampers, vibration dampers',lvl:2,pri:'',imp:'domestic',btn:false,vc:'medium',cos:[],gap:'Unlisted specialists only.'},
-  corona:{n:'Corona / grading rings, armour rods',lvl:2,pri:'',imp:'domestic',btn:false,vc:'low',cos:[],gap:'Unlisted.'},
-
-  opgw:{n:'Earth wire / OPGW',lvl:1,pri:'MED-HIGH',imp:'partial',btn:false,vc:'medium',cos:[
-    {c:'Polycab India',x:'NSE: POLYCAB',e:'INDIRECT',m:'OPGW entry; minor vs cables core'},
-    {c:'Sterlite Electric',x:'Unlisted (context)',e:'DIRECT',m:'100,000 km OPGW laid'}]},
-  gsw:{n:'Galvanised steel earth wire',lvl:2,pri:'',imp:'domestic',btn:false,vc:'low',cos:[
-    {c:'APAR Industries',x:'NSE: APARINDS',e:'DIRECT',m:'GSW core wire in-house'}]},
-  opgwf:{n:'OPGW fibre cable',lvl:2,pri:'HIGH',imp:'imported',btn:true,vc:'medium',cos:[
-    {c:'Polycab India',x:'NSE: POLYCAB',e:'INDIRECT',m:'Al-tube / SS-tube OPGW designs'},
-    {c:'ZTT India',x:'Foreign (context)',e:'DIRECT',m:'Leading India OPGW share, 24,000 km capacity'}]},
-
-  foundation:{n:'Foundations & civil works',lvl:1,pri:'MED',imp:'domestic',btn:false,vc:'medium',cos:[],gap:'No line-specific listed player; proxy = cement/steel majors.'},
-  row:{n:'Right-of-way & clearances',lvl:1,pri:'HIGH',imp:'domestic',btn:true,vc:'—',cos:[],gap:'Regulatory/non-physical — not investable. THE binding constraint.'},
-  erection:{n:'Erection & stringing (EPC)',lvl:1,pri:'HIGH',imp:'domestic',btn:false,vc:'medium',cos:[
-    {c:'KEC International',x:'NSE: KEC',e:'DIRECT',m:'T&D 68% of revenue, ₹15,883 cr; order book ₹36,267 cr'},
-    {c:'Kalpataru Projects',x:'NSE: KPIL',e:'DIRECT',m:'T&D order book ₹28,572 cr'},
-    {c:'Larsen & Toubro',x:'NSE: LT',e:'CONGLOMERATE',m:'PT&D segment; ₹10,000–15,000 cr order wins Oct 2026'},
-    {c:'Transrail Lighting',x:'NSE: TRANSRAIL',e:'DIRECT',m:'Order book ₹16,361 cr'}]},
-  stringeq:{n:'Stringing equipment & winches',lvl:2,pri:'',imp:'domestic',btn:false,vc:'low',cos:[
-    {c:'Advait Energy Transitions',x:'NSE: ADVAIT',e:'DIRECT',m:'Winches, compressors, stringing tooling'}]},
-  crews:{n:'Certified stringing crews',lvl:2,pri:'',imp:'domestic',btn:true,vc:'—',cos:[],gap:'Skills bottleneck — cannot be bought quickly. Not a listed exposure.'},
-
-  testing:{n:'Testing & protection',lvl:1,pri:'MED',imp:'domestic',btn:false,vc:'low',cos:[],gap:'Accredited type-test labs mostly unlisted (TAG lab; Skipper load-test station).'},
-  om:{n:'O&M / end-of-life',lvl:1,pri:'MED',imp:'domestic',btn:false,vc:'medium',cos:[
-    {c:'IndiGrid',x:'NSE: INDIGRID',e:'DIRECT',m:'O&M via project manager across portfolio'},
-    {c:'Adani Energy Solutions',x:'NSE: ADANIENSOL',e:'DIRECT',m:'O&M of 27,000+ ckm'}]},
-  recond:{n:'Reconductoring (asset-light growth)',lvl:2,pri:'HIGH',imp:'domestic',btn:false,vc:'high',cos:[
-    {c:'APAR Industries',x:'NSE: APARINDS',e:'DIRECT',m:'~50% of domestic reconductoring; 165+ turnkey projects'}]},
-  recycle:{n:'End-of-life steel / Al recovery',lvl:2,pri:'',imp:'domestic',btn:false,vc:'low',cos:[],gap:'Scrap-stream economics real but unsized; no listed pure-play.'}
-};
-
-const TREE = {
-  id:'line', children:[
-    {id:'conductor', children:[{id:'acsr'},{id:'al59'},{id:'htls',children:[{id:'core'},{id:'joints'}]}]},
-    {id:'tower', children:[{id:'lattice'},{id:'monopole'},{id:'members'},{id:'galv'}]},
-    {id:'insulator', children:[{id:'disc'},{id:'composite'},{id:'hollow'}]},
-    {id:'hardware', children:[{id:'strings'},{id:'spacers'},{id:'corona'}]},
-    {id:'opgw', children:[{id:'gsw'},{id:'opgwf'}]},
-    {id:'foundation'},
-    {id:'row'},
-    {id:'erection', children:[{id:'stringeq'},{id:'crews'}]},
-    {id:'testing'},
-    {id:'om', children:[{id:'recond'},{id:'recycle'}]}
-  ]
-};
-
-const pane=document.getElementById('treePane');
-const panel=document.getElementById('panel');
-function renderTree(){
-  pane.innerHTML='';
-  function build(node){
-    const d=NODES[node.id]; if(!d)return null;
-    const grp=document.createElement('div'); grp.className='tgroup';
-    const el=document.createElement('div');
-    el.className='node-btn l'+d.lvl+(d.pri==='HIGH'?' high':'');
-    el.dataset.id=node.id;
-    const hasKids=node.children&&node.children.length;
-    el.innerHTML=`<span class="toggle">${hasKids?'▾':'·'}</span>`+
-      `<span class="dot ${d.cos&&d.cos.length?'dot--cov':'dot--gap'}"></span>`+
-      `<span class="node-btn__name">${d.n}</span>`+
-      `<span class="node-btn__meta">L${d.lvl}</span>`;
-    el.addEventListener('click',ev=>{ev.stopPropagation();select(node.id);});
-    grp.appendChild(el);
-    if(hasKids){
-      const kids=document.createElement('div'); kids.className='kids';
-      node.children.forEach(ch=>{const k=build(ch);if(k)kids.appendChild(k);});
-      grp.appendChild(kids);
-      el.querySelector('.toggle').addEventListener('click',ev=>{ev.stopPropagation();grp.classList.toggle('collapsed');
-        el.querySelector('.toggle').textContent=grp.classList.contains('collapsed')?'▸':'▾';});
-    }
-    return grp;
+function renderPanel(node) {
+  if (!node) { panelEl.innerHTML = '<div class="map-panel__kicker">Company map</div><div class="map-panel__title">Select a node</div><p class="map-panel__fn">Click any node on the left to see its NSE/BSE companies, exposure type, materiality and evidence.</p>'; return; }
+  let html = '';
+  html += `<div class="map-panel__kicker">${PRI_LABEL[node.pri] || ''} priority node</div>`;
+  html += `<div class="map-panel__title">${node.name}</div>`;
+  if (node.fn) html += `<p class="map-panel__fn">${node.fn}</p>`;
+  html += `<div class="map-panel__row">`;
+  if (node.importDep && node.importDep !== 'n/a') html += `<span class="mini">Import: ${node.importDep}</span>`;
+  if (node.vc) html += `<span class="mini">Value capture: ${node.vc}</span>`;
+  if (node.bott) html += `<span class="mini" style="color:var(--gold)">Bottleneck</span>`;
+  html += `</div>`;
+  if (node.drillTo) html += `<a href="${node.drillTo}" style="display:block;margin:12px 0;padding:10px 12px;border:1px solid var(--gold);border-radius:8px;background:var(--gold-dim);color:var(--gold);font-family:var(--font-mono);font-size:11.5px;font-weight:600;text-decoration:none;">Drill-down &rarr; ${node.drillLabel}</a>`;
+  if (!node.companies || node.companies.length === 0) {
+    html += `<div class="nocov"><b>${node.gap}</b><span class="near">${node.near}</span></div>`;
+    panelEl.innerHTML = html; return;
   }
-  const root=build(TREE); pane.appendChild(root);
+  node.companies.forEach(c => {
+    html += `<div class="co">`;
+    html += `<div class="co__name">${c.n}<span class="co__ticker">${c.t}</span></div>`;
+    html += `<div class="co__tags"><span class="tag tag--${c.e}">${c.e.toUpperCase()}</span></div>`;
+    html += `<div class="co__mat">${c.m}</div>`;
+    html += `<div class="co__ev">Evidence: ${c.ev}</div>`;
+    html += `</div>`;
+  });
+  panelEl.innerHTML = html;
 }
 
-function tag(text,cls){return `<span class="tag ${cls}">${text}</span>`;}
-function select(id){
-  document.querySelectorAll('.node-btn').forEach(n=>n.classList.toggle('is-active',n.dataset.id===id));
-  const d=NODES[id];
-  const impMap={domestic:['Domestic','tag--dom'],partial:['Partially imported','tag--part'],imported:['Imported','tag--imp']};
-  let tags='';
-  if(d.pri==='HIGH')tags+=tag('HIGH priority','tag--high');
-  else if(d.pri==='MED-HIGH'||d.pri==='MED')tags+=tag(d.pri+' priority','tag--med');
-  if(impMap[d.imp])tags+=tag(impMap[d.imp][0],impMap[d.imp][1]);
-  if(d.btn)tags+=tag('Bottleneck','tag--btn');
-  tags+=tag('Value capture: '+d.vc,'tag--med');
-  let body='';
-  if(d.cos&&d.cos.length){
-    body=d.cos.map(co=>`<div class="co"><div class="co__top"><span class="co__name">${co.c}</span><span class="co__ex">${co.e}</span></div>`+
-      `<div class="co__list">${co.x}</div><div class="co__mat">${co.m}</div></div>`).join('');
-  } else {
-    body=`<div class="nocov"><strong>NO COVERAGE IN SELECTED UNIVERSE.</strong><br>${d.gap||'No NSE/BSE company maps to this node.'}</div>`;
-  }
-  panel.innerHTML=`<h3>${d.n}</h3><div class="map-panel__kicker">Level ${d.lvl} · node detail</div>`+
-    `<div class="map-panel__row">${tags}</div>`+body;
-}
-renderTree();
-select('conductor');
+const PTREE = [
+  { icon:'A', group:'Subsystems &amp; components', ids:['line','conductor','acsr','al59','htls','core','joints','tower','lattice','monopole','members','galv','insulator','disc','composite','hollow','hardware','strings','spacers','corona','opgw','gsw','opgwf','foundation','row','erection','stringeq','crews','testing','om','recond','recycle'] }
+];;
+let firstBtn = null;
+PTREE.forEach((grp) => {
+  const wrap = document.createElement('div');
+  const head = document.createElement('button');
+  head.type = 'button';
+  head.style.cssText = 'display:flex;align-items:center;gap:8px;width:100%;text-align:left;background:transparent;border:none;cursor:pointer;padding:8px 6px;font-family:var(--font-mono);font-size:11px;font-weight:600;letter-spacing:.6px;color:var(--text-dim);text-transform:uppercase;';
+  head.innerHTML = '<span class="tgl" style="width:12px;display:inline-block;">&#9662;</span><span>' + grp.icon + ' &middot; ' + grp.group + '</span>';
+  const body = document.createElement('div');
+  body.style.cssText = 'margin-left:14px;border-left:1px dashed var(--border-bright);padding-left:8px;';
+  grp.ids.forEach((id) => {
+    const node = NODES.find((n) => n.id === id);
+    if (!node) return;
+    const btn = document.createElement('button');
+    btn.className = 'node-btn'; btn.type = 'button';
+    const dotClass = (!node.companies || node.companies.length === 0) ? 'dot--none' : ('dot--' + node.pri);
+    let flags = '';
+    if (!node.companies || node.companies.length === 0) flags += '<span class="flag flag--gap">GAP</span>';
+    else if (node.bott) flags += '<span class="flag flag--bott">BOTTLENECK</span>';
+    btn.innerHTML = '<div class="node-btn__name"><span class="dot ' + dotClass + '"></span>' + node.name + '</div><div class="node-btn__meta"><span>' + (node.companies || []).length + ' listed</span>' + flags + '</div>';
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.node-btn').forEach((b) => b.classList.remove('is-active'));
+      btn.classList.add('is-active'); renderPanel(node);
+    });
+    body.appendChild(btn);
+    if (!firstBtn) firstBtn = btn;
+  });
+  head.addEventListener('click', () => {
+    const hidden = body.style.display === 'none';
+    body.style.display = hidden ? '' : 'none';
+    head.querySelector('.tgl').innerHTML = hidden ? '&#9662;' : '&#9656;';
+  });
+  wrap.appendChild(head); wrap.appendChild(body); nodesEl.appendChild(wrap);
+});
+if (firstBtn) { firstBtn.classList.add('is-active'); renderPanel(NODES[0]); }
+
 </script>
 
 <script>window.__MBULLETS=[["National Electricity Plan 2022&ndash;32 outlay.", "Source: CEA / NEP."], ["ISTS line kilometres targeted to FY31.", "Source: CEA."], ["FY25 line-add shortfall against target &mdash; an execution bottleneck.", "Source: CEA."], ["ISTS capex for FY26&ndash;27.", "Source: CEA."], ["Network length at 220 kV and above (Aug-2025).", "Source: CEA."]];</script>
