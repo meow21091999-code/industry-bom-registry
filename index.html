@@ -7,27 +7,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/registry.css">
 <style>
-  :root {
-    --font-body: 'IBM Plex Sans', system-ui, sans-serif;
-    --font-mono: 'IBM Plex Mono', 'SF Mono', Consolas, monospace;
-    --bg: #eef2f7; --surface: #ffffff; --surface-recessed: #e6ecf3;
-    --border: rgba(15,37,64,0.10); --border-bright: rgba(15,37,64,0.22);
-    --text: #0f2540; --text-dim: #5a7290;
-    --blue: #1e4e8c; --blue-dim: rgba(30,78,140,0.09);
-    --gold: #b8860b; --gold-dim: rgba(184,134,11,0.12);
-    --high: #c0392b; --high-dim: rgba(192,57,43,0.10);
-  }
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --bg: #0a1626; --surface: #10233b; --surface-recessed: #0c1c30;
-      --border: rgba(255,255,255,0.09); --border-bright: rgba(255,255,255,0.20);
-      --text: #dbe6f3; --text-dim: #8ba3c0;
-      --blue: #5b9bd5; --blue-dim: rgba(91,155,213,0.16);
-      --gold: #e0b84c; --gold-dim: rgba(224,184,76,0.16);
-      --high: #ef6a5b; --high-dim: rgba(239,106,91,0.16);
-    }
-  }
   * { margin:0; padding:0; box-sizing:border-box; }
   body {
     background-color: var(--bg);
@@ -88,6 +69,29 @@
     <h1>Industry BOM Registry</h1>
     <div class="subtitle">One page per industry analysed &middot; BOM tree + value-chain flowchart + click-through company map</div>
   </header>
+
+  <div class="metric-cards animate" style="--i:1">
+    <div class="metric-card metric-card--gold" data-metric="0" role="button" tabindex="0">
+      <div class="metric-card__val">27</div>
+      <div class="metric-card__label">Industry entries</div>
+      <div class="metric-card__sub">one page per industry + scope</div>
+    </div>
+    <div class="metric-card" data-metric="1" role="button" tabindex="0">
+      <div class="metric-card__val">6</div>
+      <div class="metric-card__label">Sectors covered</div>
+      <div class="metric-card__sub">power, renewables, nuclear, telecom, space</div>
+    </div>
+    <div class="metric-card" data-metric="2" role="button" tabindex="0">
+      <div class="metric-card__val">22</div>
+      <div class="metric-card__label">Drill-down entries</div>
+      <div class="metric-card__sub">nodes promoted to their own page</div>
+    </div>
+    <div class="metric-card" data-metric="3" role="button" tabindex="0">
+      <div class="metric-card__val">2026-10-09</div>
+      <div class="metric-card__label">Registry updated</div>
+      <div class="metric-card__sub">latest publish date</div>
+    </div>
+  </div>
 
   <div class="controls animate" style="--i:1">
     <button class="ctrl-btn" id="expand-all" type="button">Expand all</button>
@@ -497,7 +501,7 @@
 </div>
 
   <div class="note animate" style="--i:2">
-    <strong>How to read an entry.</strong> Each page opens with a KPI strip, then a hierarchical <strong>BOM tree</strong> (Level 0 → systems → components, HIGH-priority nodes emphasised), a linear <strong>value-chain ladder</strong> (raw material → aftermarket, with supplier tiers), a <strong>click-through company map</strong> (click any node to see its listed companies, exposure type and evidence), and a company × node matrix. Entry identity is <strong>industry + geographic scope</strong>; the same industry analysed for a different scope gets its own page rather than overwriting this one.
+    <strong>How to read an entry.</strong> Each page opens with a metric-card strip, then a hierarchical <strong>BOM tree</strong> (Level 0 → systems → components, HIGH-priority nodes emphasised), a linear <strong>value-chain ladder</strong> (raw material → aftermarket, with supplier tiers), a <strong>click-through company map</strong> (click any node to see its listed companies, exposure type and evidence), and a company × node matrix. Entry identity is <strong>industry + geographic scope</strong>; the same industry analysed for a different scope gets its own page rather than overwriting this one.
   </div>
 
   <p class="foot animate" style="--i:3">
@@ -528,6 +532,45 @@
     if (ea) { ea.addEventListener('click', function () { groups.forEach(function (g) { setGroup(g, false); }); }); }
     if (ca) { ca.addEventListener('click', function () { groups.forEach(function (g) { setGroup(g, true); }); }); }
   })();
+</script>
+
+<div class="metric-modal" id="regMetricModal" hidden>
+  <div class="metric-modal__backdrop" data-close></div>
+  <div class="metric-modal__panel">
+    <button class="metric-modal__close" data-close aria-label="Close">&#10005;</button>
+    <div class="metric-modal__kicker">Metric detail</div>
+    <div class="metric-modal__val" id="rmVal"></div>
+    <div class="metric-modal__label" id="rmLabel"></div>
+    <ul class="metric-modal__bullets" id="rmBullets"></ul>
+  </div>
+</div>
+<script>
+window.__MBULLETS = [
+  ["Industry entries in the registry.", "Each entry is identified by industry + geographic scope; the same industry at a different scope gets its own page.", "Scope: all published entries."],
+  ["Distinct sectors represented across the register.", "Power &amp; Electrical Infrastructure, Power Generation Equipment, Renewable Energy, Nuclear Energy, Telecom &amp; Networking, Space &amp; Satellites.", "Source: entry metadata."],
+  ["Entries that are drill-downs of a parent industry.", "A promoted node is a fresh Level-0 industry with its own page and a two-way lineage link to its parent.", "Source: entry metadata."],
+  ["Date the registry was last re-rendered to the current design standard.", "Every page links one shared stylesheet and uses the canonical component set.", "Source: this publish."]
+];
+(function(){
+  var modal = document.getElementById('regMetricModal');
+  if (!modal) return;
+  var v = document.getElementById('rmVal'), l = document.getElementById('rmLabel'), b = document.getElementById('rmBullets');
+  function close(){ modal.hidden = true; }
+  function open(card){
+    var i = parseInt(card.getAttribute('data-metric'), 10);
+    v.textContent = (card.querySelector('.metric-card__val')||{}).textContent || '';
+    l.textContent = (card.querySelector('.metric-card__label')||{}).textContent || '';
+    var items = window.__MBULLETS[i] || [];
+    b.innerHTML = items.map(function(x){ return '<li>' + x + '</li>'; }).join('');
+    modal.hidden = false;
+  }
+  [].slice.call(document.querySelectorAll('.metric-card')).forEach(function(card){
+    card.addEventListener('click', function(){ open(card); });
+    card.addEventListener('keydown', function(e){ if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(card); } });
+  });
+  [].slice.call(modal.querySelectorAll('[data-close]')).forEach(function(el){ el.addEventListener('click', close); });
+  document.addEventListener('keydown', function(e){ if (e.key === 'Escape') close(); });
+})();
 </script>
 </body>
 </html>
