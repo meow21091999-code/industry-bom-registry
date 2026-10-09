@@ -267,6 +267,25 @@
     body { padding: 20px 14px 48px; }
     .rung { grid-template-columns: 1fr; gap: 4px; }
   }
+
+  /* ===== DIGEST ===== */
+  .digest { display:grid; grid-template-columns:repeat(auto-fit,minmax(270px,1fr)); gap:14px; }
+  .digest__block { background:var(--surface); border:1px solid var(--border); border-radius:10px; padding:14px 16px; }
+  .digest__h { font-family:var(--font-mono); font-size:10px; font-weight:600; letter-spacing:1.2px; text-transform:uppercase; color:var(--gold); margin-bottom:8px; }
+  .digest__block p { font-size:12.5px; line-height:1.55; color:var(--text-dim); }
+  .digest__block ul { margin:0; padding-left:16px; }
+  .digest__block li { font-size:12.5px; line-height:1.5; color:var(--text-dim); margin-bottom:5px; }
+  /* ===== METRIC CARDS (clickable) ===== */
+  .kpi { cursor:pointer; transition:border-color .15s ease, transform .15s ease, box-shadow .15s ease; }
+  .kpi:hover { transform:translateY(-2px); box-shadow:0 4px 12px rgba(15,37,64,.10); border-color:var(--border-bright); }
+  .kpi__hint { font-family:var(--font-mono); font-size:8.5px; letter-spacing:.8px; text-transform:uppercase; color:var(--gold); margin-top:8px; opacity:.85; }
+  .metric-modal { position:fixed; inset:0; z-index:120; display:flex; align-items:center; justify-content:center; padding:20px; }
+  .metric-modal[hidden] { display:none; }
+  .metric-modal__backdrop { position:absolute; inset:0; background:rgba(15,37,64,.55); }
+  .metric-modal__card { position:relative; max-width:470px; width:100%; max-height:82vh; overflow:auto; box-shadow:0 24px 64px rgba(0,0,0,.32); }
+  .metric-modal__close { position:absolute; top:10px; right:12px; border:none; background:transparent; color:var(--text-dim); font-family:var(--font-mono); font-size:16px; cursor:pointer; }
+  .metric-modal__card ul { margin:8px 0 0; padding-left:18px; }
+  .metric-modal__card li { font-size:12.5px; line-height:1.55; color:var(--text-dim); margin-bottom:7px; }
 </style>
 </head>
 <body>
@@ -344,7 +363,23 @@
 
   <!-- 1. SYSTEM OVERVIEW -->
   <section class="animate" style="--i:2">
+      <section class="animate" style="--i:1">
     <div class="sec-head">
+      <span class="sec-num">00</span>
+      <span class="sec-title">Digest</span>
+      <span class="sec-note">short summary &middot; full detail in the sections below</span>
+    </div>
+    <div class="digest">
+      <div class="digest__block"><div class="digest__h">Snapshot</div><p>India's telecom network-infrastructure stack — the equipment, fibre, silicon, towers and services behind the world's second-largest subscriber base (~1.26 bn wireless, Dec-2025). Scope: India, NSE/BSE.</p></div>
+      <div class="digest__block"><div class="digest__h">Process & equipment</div><ul><li>Equipment is assembled in India (SMT/pick-and-place, RF test) but built around imported chipsets and optics.</li><li>Optical fibre runs preform → draw → cable; draw towers, preform lathes and cabling lines are the key machinery.</li><li>Towers are erected on site; site power (SMPS, batteries, DG, solar) is the largest operating cost.</li></ul></div>
+      <div class="digest__block"><div class="digest__h">Bottlenecks</div><ul><li>Fibre preform ~70% imported (only STL integrated) — resilience: years.</li><li>Telecom chipsets / baseband + RF almost fully imported — structural.</li><li>RAN BOM only ~4% localised; optical transceivers >$500 mn/yr imported.</li><li>TEC/MTCTE certification and trusted-source (NSCS) gating; test gear imported.</li></ul></div>
+      <div class="digest__block"><div class="digest__h">Value pools</div><ul><li>Preform captures ~70% of the optical-fibre chain's profit — largely leaks to imports.</li><li>Indian RAN/OFC assembly value is thin and competitive; equipment margin sits upstream in silicon.</li><li>Towers and services are domestic and annuity-like (Indus, Airtel) — value stays home.</li><li>Localisation opportunity: preform (HFCL/Finolex), RF front-end design, transceiver modules.</li></ul></div>
+      <div class="digest__block"><div class="digest__h">Watch items</div><ul><li>Proposed second telecom PLI on non-electronic components (pending notification).</li><li>Anti-dumping duty on single-mode fibre (5 yrs from Aug-2023).</li><li>MTCTE Phase III/IV mandates; Right-of-Way Rules 2024 in force.</li><li>PLI tenure to FY27; Nokia/Ericsson seeking a five-year extension.</li></ul></div>
+      <div class="digest__block"><div class="digest__h">Coverage gaps</div><p>No listed pure-play: telecom chipsets (baseband/RF) and test & measurement/certification — nearest: domestic fabless + OSAT, and foreign T&M vendors.</p></div>
+    </div>
+  </section>
+
+<div class="sec-head">
       <span class="sec-num">01</span>
       <span class="sec-title">System Overview</span>
       <span class="sec-note">Level 0 &rarr; five major systems<br>clickable BOM tree in section 03</span>
@@ -914,6 +949,41 @@ PTREE.forEach((grp) => {
   nodesEl.appendChild(wrap);
 });
 if (firstBtn) { firstBtn.classList.add('is-active'); renderPanel(NODES.find((n) => n.id === 'preform')); }
+</script>
+
+<div class="metric-modal" id="metricModal" hidden>
+  <div class="metric-modal__backdrop" data-close></div>
+  <div class="map-panel metric-modal__card" role="dialog" aria-modal="true" aria-label="Metric detail">
+    <button class="metric-modal__close" data-close aria-label="Close">&times;</button>
+    <div class="map-panel__kicker">Metric detail</div>
+    <div class="map-panel__title" id="mmTitle"></div>
+    <p class="map-panel__fn" id="mmFn"></p>
+    <ul id="mmList"></ul>
+  </div>
+</div>
+<script>
+(function(){
+  var METRICS = [["Total outlay of the DoT PLI scheme for telecom & networking products (notified Feb-2021, extended to FY27).", "42 approved firms; ₹4,516 cr invested and ₹1,586 cr disbursed to 31 Jul 2025.", "Cumulative PLI sales ₹91,125 cr, exports ₹17,809 cr."], ["Industry 5G BTS crossed 500,000 in Q2 FY26 (518,854 by 31-Dec-2025 per TRAI).", "The pace of 5G macro rollout has tapered; 5G loading still drives tower revenue.", "Deployment dominated by Jio and Airtel; BSNL's 4G is 5G-upgradable via firmware."], ["India imports ~65–75% of optical-fibre preform; domestic capacity meets only ~25–35%.", "Only STL is fully backward-integrated (own preform); others import preform.", "Preform holds ~70% of the optical-fibre chain's profit pool."], ["Localised bill-of-materials is ~4% for 4G/5G RAN, 3% for switches and 12% for GPON ONT.", "Most of a 'made in India' radio is still imported content.", "A new PLI targets non-electronic component localisation."], ["Cumulative sales under the telecom PLI to 31 Jul 2025.", "Exports ₹17,809 cr; investment ₹4,516 cr; employment 29,117.", "Only about half of approved firms have claimed incentives so far."], ["Wireless subscribers 1,258.77 mn (mobile + FWA) at Dec-2025.", "Monthly wireless ARPU ₹194.57; wireless data 73,324 PB per quarter.", "Private operators ~92.6% share; BSNL/MTNL ~7.4%."]];
+  var modal=document.getElementById('metricModal');
+  var title=document.getElementById('mmTitle'), fn=document.getElementById('mmFn'), list=document.getElementById('mmList');
+  function open(card,i){
+    var v=card.querySelector('.kpi__val'), l=card.querySelector('.kpi__label'), s=card.querySelector('.kpi__sub');
+    title.innerHTML=(v?v.textContent:'')+(l?' <span style="font-weight:400;font-size:13px;color:var(--text-dim)">'+l.textContent+'</span>':'');
+    fn.textContent=s?s.textContent:'';
+    list.innerHTML='';
+    (METRICS[i]||[]).forEach(function(b){var li=document.createElement('li');li.textContent=b;list.appendChild(li);});
+    modal.hidden=false;
+  }
+  function close(){modal.hidden=true;}
+  document.querySelectorAll('.kpi').forEach(function(card,i){
+    card.setAttribute('role','button'); card.setAttribute('tabindex','0');
+    if(!card.querySelector('.kpi__hint')){var h=document.createElement('div');h.className='kpi__hint';h.textContent='Tap for detail';card.appendChild(h);}
+    card.addEventListener('click',function(){open(card,i);});
+    card.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();open(card,i);}});
+  });
+  modal.querySelectorAll('[data-close]').forEach(function(el){el.addEventListener('click',close);});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')close();});
+})();
 </script>
 </body>
 </html>
