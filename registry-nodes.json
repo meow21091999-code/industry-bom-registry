@@ -3,7 +3,7 @@
   "description": "Machine-readable node index. For every entry, the node names it contains plus the owning entry slug. Used for DEDUP (industry+scope already analysed) and LINEAGE (auto-linking a new industry to a parent when its name matches a node name). Update on every publish.",
   "generated": "2026-10-10",
   "last_delta_pass": "2026-10-10",
-  "delta_note": "New entry added 2026-10-10: missile-india (Missiles, INDIA, NSE/BSE, Defence & Aerospace group). First analysis of India's guided-missile ecosystem, depth-first across four subsystem groups (propulsion & rocket motors; guidance/seekers & avionics; airframe/materials & thermal; warhead/fuzing & launch) plus test-range infrastructure. Key dated facts: DRDO conventional-missile ToT opened to industry 25-Aug-2026; BDL order book Rs 26,176 cr (31-Mar-2026); Solar Industries order book Rs 21,300 cr (~Rs 18,000 cr defence); defence exports Rs 38,424 cr FY26 (+62.66%); ~Rs 8,000 cr missile-grade metals/alloys imported (Parliamentary panel, 2026); SCOMET list revision in force (23-Sep-2025); revised proof-range SOP 07-Oct-2026. No lineage link: no existing registry node name matches 'missile' (nearest adjacency is launch-vehicles-propulsion-india, left unlinked per the name-match rule).",
+  "delta_note": "New entry added 2026-10-10: guns-india (Guns, INDIA, NSE/BSE, Defence & Aerospace group). First analysis of India's whole gun-making ecosystem, depth-first across five subsystems (small arms; artillery & large-calibre; ammunition/energetics; components & materials; manufacturing machinery & proof/test). Key dated facts: defence exports Rs 38,424 cr FY26 (+62.66%); AK-203 IRRPL Rs 5,200 cr / 601,427 rifles, ~50%->100% indigenised (end-2025); propellant capacity ~5-6x short of demand (Army, Jul-2025); Adani Kanpur 300 mn small-calibre rounds/yr; Army ammunition 91% indigenised (159/175, Dec-2025); ATAGS Rs 6,900 cr (Bharat Forge 60%/Tata 40%). No lineage link: no existing registry node name matches 'guns' (nearest adjacency is missile-india / launch-vehicles-propulsion-india, left unlinked per the name-match rule).",
   "entries": [
     {
       "slug": "power-transmission-india",
@@ -10396,6 +10396,219 @@
           "priority": "medium",
           "bottleneck": true,
           "in_universe_coverage": false
+        }
+      ]
+    },
+    {
+      "slug": "guns-india",
+      "industry": "Guns",
+      "scope": "INDIA",
+      "path": "industries/guns-india.html",
+      "analysis_date": "2026-10-10",
+      "universe": "NSE/BSE",
+      "sector": "Defence & Aerospace",
+      "derived_from": null,
+      "drill_downs": [],
+      "nodes": [
+        {
+          "id": "smallarms",
+          "name": "Small Arms (Rifles/LMG/Pistols)",
+          "level": 2,
+          "aliases": [
+            "small arms",
+            "gun",
+            "guns",
+            "firearm",
+            "firearms",
+            "rifle",
+            "rifles",
+            "pistol",
+            "revolver",
+            "carbine",
+            "LMG",
+            "machine gun",
+            "sniper rifle"
+          ],
+          "priority": "high",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "artillery",
+          "name": "Artillery & Large-Calibre Guns",
+          "level": 2,
+          "aliases": [
+            "artillery",
+            "howitzer",
+            "gun",
+            "guns",
+            "field gun",
+            "tank gun",
+            "mortar",
+            "ATAGS",
+            "Dhanush",
+            "K9 Vajra"
+          ],
+          "priority": "high",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "ammunition",
+          "name": "Ammunition & Cartridges",
+          "level": 2,
+          "aliases": [
+            "ammunition",
+            "cartridge",
+            "cartridges",
+            "rounds",
+            "shells",
+            "ordnance",
+            "bullets"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "propellant",
+          "name": "Propellants, Explosives & Primers",
+          "level": 2,
+          "aliases": [
+            "propellant",
+            "propellants",
+            "explosive",
+            "explosives",
+            "primer",
+            "primers",
+            "nitrocellulose",
+            "cordite",
+            "ball powder",
+            "energetics",
+            "TNT",
+            "RDX",
+            "HMX"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "barrels",
+          "name": "Barrels, Breech & Forgings",
+          "level": 2,
+          "aliases": [
+            "barrel",
+            "barrels",
+            "gun barrel",
+            "breech",
+            "forging",
+            "forgings"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "materials",
+          "name": "Special Steels & Alloys",
+          "level": 2,
+          "aliases": [
+            "special steel",
+            "alloy steel",
+            "superalloy",
+            "ordnance steel"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "brass",
+          "name": "Brass Cases, Cups & Projectiles",
+          "level": 2,
+          "aliases": [
+            "brass",
+            "cartridge case",
+            "brass case",
+            "bullet jacket",
+            "case cups"
+          ],
+          "priority": "med",
+          "bottleneck": true,
+          "in_universe_coverage": false
+        },
+        {
+          "id": "optics",
+          "name": "Sights, Optics & Fuzes",
+          "level": 2,
+          "aliases": [
+            "sights",
+            "optics",
+            "fuze",
+            "fuzes",
+            "fire control"
+          ],
+          "priority": "med",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "machinery",
+          "name": "Manufacturing Machinery (CNC / Forging)",
+          "level": 2,
+          "aliases": [
+            "cold hammer forging",
+            "mandrel",
+            "CNC",
+            "VMC",
+            "machine tool"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": false
+        },
+        {
+          "id": "proof",
+          "name": "Proof & Test Infrastructure",
+          "level": 2,
+          "aliases": [
+            "proof test",
+            "proof testing",
+            "DGQA",
+            "firing range",
+            "ballistics"
+          ],
+          "priority": "med",
+          "bottleneck": true,
+          "in_universe_coverage": false
+        },
+        {
+          "id": "civilian",
+          "name": "Civilian Firearms & Dealer Channel",
+          "level": 2,
+          "aliases": [
+            "civilian firearms",
+            "civil trade",
+            "gun dealer",
+            "arms licence"
+          ],
+          "priority": "low",
+          "bottleneck": false,
+          "in_universe_coverage": false
+        },
+        {
+          "id": "integration",
+          "name": "Systems Integration / OEM",
+          "level": 2,
+          "aliases": [
+            "systems integration",
+            "OEM",
+            "prime integrator"
+          ],
+          "priority": "high",
+          "bottleneck": false,
+          "in_universe_coverage": true
         }
       ]
     }
