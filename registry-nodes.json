@@ -3,7 +3,7 @@
   "description": "Machine-readable node index. For every entry, the node names it contains plus the owning entry slug. Used for DEDUP (industry+scope already analysed) and LINEAGE (auto-linking a new industry to a parent when its name matches a node name). Update on every publish.",
   "generated": "2026-10-10",
   "last_delta_pass": "2026-10-10",
-  "delta_note": "Daily full-analysis rotation 2026-10-10 (run 6 of the day): solar-cells-india re-analysed end-to-end (full Phase 1 refresh). Material updates since its last analysis (2026-10-07): (1) ALMM List-II cell capacity now ~37.8 GW (12th revision, 8-Oct-2026; Gopin Semicon +402 MW N-type TOPCon, Surat) - was 37.39 GW at the 11th rev (7-Oct-2026) and ~36.6 GW at the prior page's cut. (2) Premier Energies commissioned its 7 GW N-type TOPCon G12R cell plant at Naidupeta, AP on 21-Sep-2026 (capex Rs 3,293 cr), taking total cell capacity to 10.6 GW - India's largest cell maker; targeting ~25.8% efficiency. (3) BCD correction carried from the Solar PV re-run: BCD was cut to 20% for BOTH modules and cells (Union Budget 2025, eff. 2-Feb-2025); effective duty is BCD+AIDC = 40% modules / 27.5% cells, plus ADD 23-30% on Chinese cells. (4) DGFT silver-bar import restriction (17/2026-27 dated 16-May-2026): silver bars >=99.9% (HS 71069221/29) moved Free->Restricted; further tightened by Notification 19/2026-27 (2-Jun-2026) requiring a valid DGFT Import Authorisation. (5) Silver-paste imports FY2025-26 US$184.33m, +64.51% YoY, ~65% from China (CSE, Aug-2026); silver paste ~90% import-dependent. (6) Waaree cell capacity 5.4 GW, scaling to 15.4 GW (10 GW Unn plant); Emmvee 2,153 MW TOPCon on ALMM-II (1.4 GW line ramped with RENA/centrotherm). (7) ALMM-III (ingots/wafers) mandate targeted 1-Jun-2028 (contingent on >=3 units / >=15 GW); net-metering/open-access ALMM-II exemption ends 31-Dec-2026. (8) US preliminary AD ~123% / CVD ~126% on Indian cells/modules (final order 26-Oct-2026); China WTO challenge ongoing. (9) Capex benchmark revised to ~Rs 470 cr/GW (from ~Rs 600 cr/GW) on Premier's disclosed 7 GW / Rs 3,293 cr. Page refreshed (digest, metric cards + detail popups, bottlenecks, value pools, regulatory calendar, company map, sources). Previous daily rotations: ehv-hv-cables-india, hvdc-power-electronics-india, substation-equipment-india, overhead-transmission-line-india, solar-pv-india (all 2026-10-10), power-transmission-india (2026-10-09). Next in rotation: silver-paste-metallisation-india. All other open [LIVE] facts re-validated with no change.",
+  "delta_note": "New entry added 2026-10-10: missile-india (Missiles, INDIA, NSE/BSE, Defence & Aerospace group). First analysis of India's guided-missile ecosystem, depth-first across four subsystem groups (propulsion & rocket motors; guidance/seekers & avionics; airframe/materials & thermal; warhead/fuzing & launch) plus test-range infrastructure. Key dated facts: DRDO conventional-missile ToT opened to industry 25-Aug-2026; BDL order book Rs 26,176 cr (31-Mar-2026); Solar Industries order book Rs 21,300 cr (~Rs 18,000 cr defence); defence exports Rs 38,424 cr FY26 (+62.66%); ~Rs 8,000 cr missile-grade metals/alloys imported (Parliamentary panel, 2026); SCOMET list revision in force (23-Sep-2025); revised proof-range SOP 07-Oct-2026. No lineage link: no existing registry node name matches 'missile' (nearest adjacency is launch-vehicles-propulsion-india, left unlinked per the name-match rule).",
   "entries": [
     {
       "slug": "power-transmission-india",
@@ -10160,6 +10160,241 @@
           ],
           "priority": "med",
           "bottleneck": false,
+          "in_universe_coverage": false
+        }
+      ]
+    },
+    {
+      "slug": "missile-india",
+      "industry": "Missiles",
+      "scope": "INDIA",
+      "path": "industries/missile-india.html",
+      "analysis_date": "2026-10-10",
+      "universe": "NSE/BSE",
+      "sector": "Defence & Aerospace",
+      "derived_from": null,
+      "drill_downs": [],
+      "nodes": [
+        {
+          "id": "systems",
+          "name": "Missile Systems (Prime Integration)",
+          "level": 2,
+          "aliases": [
+            "missile",
+            "missiles",
+            "guided missile",
+            "guided weapon",
+            "Akash",
+            "Astra",
+            "QRSAM",
+            "Pralay",
+            "Nag",
+            "ATGM",
+            "VSHORADS",
+            "Rudram",
+            "NASM-SR",
+            "air defence missile",
+            "surface to air missile",
+            "air to air missile",
+            "anti-tank guided missile"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "propulsion",
+          "name": "Propulsion & Rocket Motors",
+          "level": 2,
+          "aliases": [
+            "propulsion",
+            "rocket motor",
+            "rocket motors",
+            "solid rocket motor",
+            "solid motor",
+            "ramjet",
+            "SFDR",
+            "solid fuel ducted ramjet",
+            "scramjet",
+            "turbojet",
+            "missile engine"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "propellant",
+          "name": "Propellants & Energetic Materials",
+          "level": 3,
+          "aliases": [
+            "propellant",
+            "propellants",
+            "solid propellant",
+            "composite propellant",
+            "HTPB",
+            "ammonium perchlorate",
+            "boron",
+            "energetic materials",
+            "high energy materials",
+            "HMX",
+            "RDX",
+            "CL-20",
+            "explosive"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "casings",
+          "name": "Motor Casings & Special Materials",
+          "level": 3,
+          "aliases": [
+            "motor casing",
+            "rocket motor casing",
+            "maraging steel",
+            "composite casing",
+            "filament wound",
+            "superalloy",
+            "superalloys",
+            "titanium alloy",
+            "special steel",
+            "special metals",
+            "tungsten",
+            "nickel alloy"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "seekers",
+          "name": "Seekers (RF / IIR) & RF Front-End",
+          "level": 2,
+          "aliases": [
+            "seeker",
+            "seekers",
+            "RF seeker",
+            "radar seeker",
+            "IIR seeker",
+            "imaging infrared",
+            "infrared seeker",
+            "AESA seeker",
+            "GaN seeker",
+            "terminal guidance",
+            "RF front-end"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "guidance",
+          "name": "Guidance, Navigation & Avionics",
+          "level": 2,
+          "aliases": [
+            "guidance",
+            "navigation",
+            "avionics",
+            "INS",
+            "IMU",
+            "inertial navigation",
+            "ring laser gyro",
+            "fiber optic gyro",
+            "MEMS gyro",
+            "flight control computer",
+            "onboard computer",
+            "data link",
+            "actuation",
+            "actuator"
+          ],
+          "priority": "high",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "airframe",
+          "name": "Airframe, Structures & Thermal Protection",
+          "level": 2,
+          "aliases": [
+            "airframe",
+            "missile structure",
+            "nose cone",
+            "radome",
+            "fins",
+            "canards",
+            "thermal protection",
+            "thermal barrier",
+            "carbon-carbon",
+            "ablative",
+            "carbon composite"
+          ],
+          "priority": "medium",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "warhead",
+          "name": "Warheads, Explosives & Fuzing",
+          "level": 2,
+          "aliases": [
+            "warhead",
+            "warheads",
+            "explosive",
+            "explosives",
+            "fuze",
+            "fuse",
+            "fuzing",
+            "proximity fuze",
+            "shaped charge",
+            "pre-fragmented warhead",
+            "PBX"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "launch",
+          "name": "Launchers, Canisters & Fire Control",
+          "level": 2,
+          "aliases": [
+            "launcher",
+            "launchers",
+            "canister",
+            "canisters",
+            "VLS",
+            "vertical launch",
+            "fire control",
+            "fire control system",
+            "unified launcher",
+            "missile launcher"
+          ],
+          "priority": "medium",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "testing",
+          "name": "Test & Evaluation / Range Infrastructure",
+          "level": 1,
+          "aliases": [
+            "test range",
+            "missile testing",
+            "flight test",
+            "ITR",
+            "Integrated Test Range",
+            "Chandipur",
+            "Abdul Kalam Island",
+            "Junput",
+            "Nagayalanka",
+            "proof range",
+            "telemetry",
+            "range tracking"
+          ],
+          "priority": "medium",
+          "bottleneck": true,
           "in_universe_coverage": false
         }
       ]
