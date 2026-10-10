@@ -3,7 +3,7 @@
  "description": "Machine-readable node index. For every entry, the node names it contains plus the owning entry slug. Used for DEDUP (industry+scope already analysed) and LINEAGE (auto-linking a new industry to a parent when its name matches a node name). Update on every publish.",
  "generated": "2026-10-10",
  "last_delta_pass": "2026-10-10",
- "delta_note": "Daily full-analysis rotation 2026-10-10: overhead-transmission-line-india re-analysed end-to-end (full Phase 1). Material updates since 2026-10-07: Power Ministry issued ISTS RoW compensation guidelines (market-rate/MRC committee, 7-Oct-2026) — the unlock for the binding right-of-way constraint; MoEFCC revised forest RoW norms (Advisory Committee, 10-Jun-2026) — HTLS conductors cut RoW 1–12 m (up to 26%), pole structures cut tower footing up to 96%; FY26 transmission line addition 12,139 ckm vs the downward-revised 15,382 ckm target (Axis Securities, Jun-2026); FY27 ISTS line target 25,146 ckm (Ember); PGCIL FY26 capex ₹39,967 cr (guidance ₹35,000 cr), FY27 guidance ₹37,000 cr; tower capacity refreshed (Skipper 3.75→4.5 lakh t/yr; Transrail 1,84,400 MTPA, Sep-2026; KEC ~4.8 lakh t/yr); APAR conductor FY26 revenue ₹12,712 cr, order book ₹7,671 cr; four China-owned plants exempt to bid until 2028 (3-Jul-2026). Previous daily rotation 2026-10-09: power-transmission-india. All other open [LIVE] facts and dated regulatory-calendar items re-validated with no change.",
+ "delta_note": "Daily full-analysis rotation 2026-10-10 (run 2 of the day): substation-equipment-india re-analysed end-to-end (full Phase 1 refresh). Material updates since its last analysis (2026-10-07): Cabinet approved GEC-III / PM Dhara on 30-Sep-2026 — Rs 1,86,405 cr (Rs 1.36 L cr intra-state transmission + Rs 50,000 cr BESS), evacuating 135 GW RE by FY2032-33 (Cabinet/PIB, 30-Sep-2026) — a second multi-year order pipeline alongside ISTS; Voltamp Unit-III (Jarod, Vadodara) began commercial production 7-Oct-2026 (6,000 MVA first phase, 220 kV class); FY26 AC transformation capacity added 113,013 MVA = 90% of the 126,007 MVA CEA target, with ~1,486 GVA at 220 kV+ as of Jul-2026 (Sep-2026); transformer lead times 220 kV 11-15 mo / 400 kV ~15 mo / 765 kV 20-24 mo (Ministry of Power, 23-Mar-2026); CEA now mandates SF6-free GIS for new substations above 220 kV (bids after 1-Jul-2026); CRGO anti-dumping probe live (DGTR, 22-Jun-2026) with consumption ~4.0-4.5 lakh t vs ~40,000-50,000 t domestic output; global EHV bushing shortage flagged as a live delivery bottleneck (APAR Q3 FY26 call); PGCIL bulk 765 kV awards — transformer package 7TR-21 L1 BHEL Rs 514.6 cr (24-Aug-2026), reactor package 7RT-28 L1 CG Power Rs 166.7 cr (25-Aug-2026), TRIL not qualified; order flow in the window: TARIL DVC (8-Oct-2026) & GETCO (2-Oct-2026), Bajel Projects Tata Power Mumbai 220 kV GIS (9-Oct-2026), Ashoka Buildcon NER traction substation (9-Oct-2026); capex — Hitachi Energy Rs 2,000 cr Large Power Transformer plant (Karjan, FY28), Indo Tech to 50,000 MVA by FY29, CG Power Nashik MV GIS/RMU plant. Page refreshed (digest, metric cards + detail popups, bottlenecks, value pools, regulatory calendar, company map); added an EPC / substation-integration node and Bajel Projects / Ashoka Buildcon rows. Previous daily rotations: overhead-transmission-line-india (2026-10-10, earlier run), power-transmission-india (2026-10-09). All other open [LIVE] facts and dated regulatory-calendar items re-validated with no change.",
  "entries": [
   {
    "slug": "power-transmission-india",
@@ -563,7 +563,7 @@
    "industry": "Substation Equipment",
    "scope": "INDIA",
    "path": "industries/substation-equipment-india.html",
-   "analysis_date": "2026-10-07",
+   "analysis_date": "2026-10-10",
    "universe": "NSE/BSE",
    "sector": "Power & Electrical Infrastructure",
    "derived_from": {
@@ -636,7 +636,7 @@
       "condenser bushing"
      ],
      "priority": "high",
-     "bottleneck": false,
+     "bottleneck": true,
      "in_universe_coverage": false,
      "coverage_note": "Largely imported (Trench, Modern/HSP). CG Power has partial in-house capability. No listed pure-play."
     },
@@ -910,6 +910,22 @@
      "bottleneck": false,
      "in_universe_coverage": false,
      "coverage_note": "Copper/steel/oil recovery real but unsized; no listed pure-play."
+    },
+    {
+     "id": "epc",
+     "name": "EPC / Substation Integration",
+     "level": 1,
+     "aliases": [
+      "substation EPC",
+      "substation integration",
+      "EPC",
+      "balance of plant",
+      "BoP",
+      "substation contractor"
+     ],
+     "priority": "medium",
+     "bottleneck": false,
+     "in_universe_coverage": true
     }
    ]
   },
