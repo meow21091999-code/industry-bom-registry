@@ -673,7 +673,6 @@ if (firstBtn) { firstBtn.classList.add('is-active'); renderPanel(NODES.find((n) 
   function close(){modal.hidden=true;}
   document.querySelectorAll('.metric-card').forEach(function(card,i){
     card.setAttribute('role','button'); card.setAttribute('tabindex','0');
-    if(!card.querySelector('.metric-card__hint')){var h=document.createElement('div');h.className='metric-card__hint';h.textContent='Tap for detail';card.appendChild(h);}
     card.addEventListener('click',function(){open(card,i);});
     card.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();open(card,i);}});
   });

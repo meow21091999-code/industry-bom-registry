@@ -9,26 +9,35 @@
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/registry.css">
 <style>
-  * { margin:0; padding:0; box-sizing:border-box; }
-  body {
-    background-color: var(--bg);
-    background-image: linear-gradient(var(--border) 1px, transparent 1px), linear-gradient(90deg, var(--border) 1px, transparent 1px);
-    background-size: 28px 28px;
-    color: var(--text); font-family: var(--font-body); padding: 48px 32px 72px; min-height:100vh;
-    overflow-wrap: break-word; line-height: 1.55;
+  /* Register index — page-specific layout ONLY.
+     No design tokens and no canonical component CSS live here: the shared
+     stylesheet (assets/registry.css) owns the tokens and every shared
+     component (header, section, chip, metric cards, digest, diagram,
+     ladder, company map, matrix, bottlenecks, popup, footer).
+     Body background is FLAT — no grid pattern. */
+
+  /* collapsible industry groups (registry index standard) */
+  .group { margin-bottom: 4px; }
+  .group-body { display: block; }
+  .group[data-collapsed="true"] .group-body { display: none; }
+  button.group-label {
+    background: none; border: 0; padding: 0; width: 100%; text-align: left; cursor: pointer;
+    font-family: var(--font-mono); font-size: 11px; font-weight: 600; letter-spacing: 1.5px;
+    text-transform: uppercase; color: var(--text-dim); margin: 30px 0 12px;
+    display: flex; align-items: center; gap: 10px;
   }
-  @keyframes fadeUp { from { opacity:0; transform:translateY(12px);} to {opacity:1; transform:translateY(0);} }
-  .animate { animation: fadeUp 0.45s ease-out both; animation-delay: calc(var(--i,0)*0.06s); }
-  @media (prefers-reduced-motion: reduce){ *{animation-duration:0.01ms!important;animation-delay:0ms!important;} }
-  .container { max-width: 940px; margin: 0 auto; }
-  .eyebrow { font-family: var(--font-mono); font-size: 11px; font-weight:600; letter-spacing:2px; text-transform:uppercase; color: var(--gold); margin-bottom: 12px; }
-  h1 { font-size: clamp(28px,4vw,40px); font-weight:700; letter-spacing:-0.8px; line-height:1.1; }
-  .subtitle { font-family: var(--font-mono); font-size: 12px; color: var(--text-dim); margin-top: 10px; }
-  .masthead { border-bottom: 2px solid var(--blue); padding-bottom: 22px; margin-bottom: 32px; }
+  button.group-label::after { content: ''; flex: 1; height: 1px; background: var(--border-bright); }
+  button.group-label:hover { color: var(--text); }
+  button.group-label:focus-visible { outline: 2px solid var(--blue); outline-offset: 3px; border-radius: 3px; }
+  .gl-count { order: 1; font-family: var(--font-mono); font-size: 10px; font-weight: 600; letter-spacing: 0; color: var(--blue); background: var(--blue-dim); border: 1px solid var(--border); border-radius: 999px; padding: 1px 8px; }
+  .gl-chevron { order: 1; display: inline-block; width: 0; height: 0; margin-left: 4px; border-left: 4px solid transparent; border-right: 4px solid transparent; border-top: 5px solid var(--text-dim); transition: transform 0.15s ease; }
+  .group[data-collapsed="true"] .gl-chevron { transform: rotate(-90deg); }
+  .controls { display: flex; gap: 8px; margin-bottom: 6px; }
+  .ctrl-btn { font-family: var(--font-mono); font-size: 10.5px; font-weight: 600; letter-spacing: 0.5px; text-transform: uppercase; color: var(--text-dim); background: var(--surface); border: 1px solid var(--border); border-radius: 6px; padding: 5px 12px; cursor: pointer; transition: color 0.15s ease, border-color 0.15s ease; }
+  .ctrl-btn:hover { color: var(--blue); border-color: var(--border-bright); }
+  .ctrl-btn:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; }
 
-  .group-label { font-family: var(--font-mono); font-size: 11px; font-weight:600; letter-spacing:1.5px; text-transform:uppercase; color: var(--text-dim); margin: 30px 0 12px; display:flex; align-items:center; gap:10px; }
-  .group-label::after { content:''; flex:1; height:1px; background: var(--border-bright); }
-
+  /* entry rows */
   a.entry {
     display: block; text-decoration: none; color: inherit; background: var(--surface);
     border: 1px solid var(--border); border-left: 3px solid var(--blue); border-radius: 10px;
@@ -39,27 +48,10 @@
   .entry__scope { font-family: var(--font-mono); font-size: 11px; color: var(--gold); margin-left: 10px; font-weight:600; }
   .entry__desc { font-size: 13px; color: var(--text-dim); margin-top: 6px; }
   .entry__meta { display:flex; flex-wrap:wrap; gap:7px; margin-top: 12px; }
-  .chip { font-family: var(--font-mono); font-size: 10px; padding: 3px 9px; border-radius: 4px; background: var(--blue-dim); color: var(--blue); border:1px solid var(--border); }
-  .chip--gold { background: var(--gold-dim); color: var(--gold); }
 
   .note { background: var(--surface); border:1px solid var(--border); border-left:3px solid var(--gold); border-radius:0 10px 10px 0; padding: 16px 20px; font-size: 13px; line-height:1.65; color: var(--text-dim); margin-top: 36px; }
   .note strong { color: var(--text); }
   .foot { font-family: var(--font-mono); font-size: 10.5px; color: var(--text-dim); margin-top: 28px; line-height:1.7; }
-
-  /* collapsible industry groups (registry index standard) */
-  .group { margin-bottom: 4px; }
-  .group-body { display: block; }
-  .group[data-collapsed="true"] .group-body { display: none; }
-  button.group-label { background: none; border: 0; padding: 0; width: 100%; text-align: left; cursor: pointer; }
-  button.group-label:hover { color: var(--text); }
-  button.group-label:focus-visible { outline: 2px solid var(--blue); outline-offset: 3px; border-radius: 3px; }
-  .gl-count { order: 1; font-family: var(--font-mono); font-size: 10px; font-weight: 600; letter-spacing: 0; color: var(--blue); background: var(--blue-dim); border: 1px solid var(--border); border-radius: 999px; padding: 1px 8px; }
-  .gl-chevron { order: 1; display: inline-block; width: 0; height: 0; margin-left: 4px; border-left: 4px solid transparent; border-right: 4px solid transparent; border-top: 5px solid var(--text-dim); transition: transform 0.15s ease; }
-  .group[data-collapsed="true"] .gl-chevron { transform: rotate(-90deg); }
-  .controls { display: flex; gap: 8px; margin-bottom: 6px; }
-  .ctrl-btn { font-family: var(--font-mono); font-size: 10.5px; font-weight: 600; letter-spacing: 0.5px; text-transform: uppercase; color: var(--text-dim); background: var(--surface); border: 1px solid var(--border); border-radius: 6px; padding: 5px 12px; cursor: pointer; transition: color 0.15s ease, border-color 0.15s ease; }
-  .ctrl-btn:hover { color: var(--blue); border-color: var(--border-bright); }
-  .ctrl-btn:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; }
 </style>
 </head>
 <body>

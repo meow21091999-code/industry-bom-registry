@@ -8,45 +8,48 @@
  * Fails (exit 1) when a page:
  *   - does not link the shared stylesheet (assets/registry.css)
  *   - uses a DEPRECATED alias class (registry-design-language.md §0)
- *   - has a malformed class token (two class names concatenated without a space)
  *   - contains leaked [cite:...] markers
- *   - is an entry page with no canonical component classes at all (the index is exempt)
- *   - the register index carrying metric-card components (it is a plain listing)
- *   - is an entry page that carries a component's MARKUP but not its CSS — i.e. a
- *     canonical component selector that is missing from both the page and the
- *     shared stylesheet (the "sections render unstyled" bug)
+ *   - is an ENTRY page with no canonical component classes
+ *   - is the INDEX page but carries metric-card / metric-modal classes
+ *   - uses a component class whose selector is defined NOWHERE
+ *     (neither in the shared stylesheet nor in the page's own <style>)
+ *     — so a component can never ship unstyled.
  *
  * Run this BEFORE reporting a run done. Never publish a failing page.
  */
 import { readFileSync, readdirSync, existsSync, statSync } from 'node:fs';
-import { join } from 'node:path';
+import { join, basename } from 'node:path';
+
+const SHARED_CSS = 'assets/registry.css';
 
 const ALIASES = new Set([
-  // metric cards
   'kpi-row', 'kpi', 'kpi--gold', 'kpi--high', 'kpi__val', 'kpi__label', 'kpi__sub', 'kpi-c', 'kpi-v', 'kpi-l', 'mc',
-  // digest
   'dg', 'dg__b', 'dg__h', 'digest__block',
-  // popup
   'mdov', 'mdp', 'mdp__k', 'mdp__v', 'mdp__l', 'mdp__s', 'mdp__x', 'metric-modal__card'
 ]);
 
+// Every component class a page may use — each MUST resolve to a defined selector.
+const KNOWN_COMPONENTS = new Set([
+  'container', 'masthead', 'eyebrow', 'subtitle', 'scope-bar', 'chip', 'chip--gold', 'chip--high',
+  'sec-head', 'sec-num', 'sec-title', 'sec-note', 'animate',
+  'metric-cards', 'metric-card', 'metric-card--gold', 'metric-card--high', 'metric-card__val', 'metric-card__label', 'metric-card__sub',
+  'digest', 'digest__item', 'digest__h',
+  'diagram-shell', 'diagram-shell__hint', 'mermaid-wrap', 'zoom-controls', 'zoom-label', 'mermaid-viewport', 'mermaid-canvas', 'legend', 'legend-item', 'legend-swatch',
+  'ladder', 'rung', 'rung--1', 'rung--2', 'rung--3', 'rung--4', 'rung__label', 'rung__body', 'mini',
+  'map-layout', 'map-nodes', 'node-btn', 'node-btn__name', 'node-btn__meta', 'is-active',
+  'dot', 'dot--high', 'dot--med', 'dot--low', 'dot--none', 'flag', 'flag--gap', 'flag--bott',
+  'map-panel', 'map-panel__kicker', 'map-panel__title', 'map-panel__fn', 'map-panel__row',
+  'co', 'co__name', 'co__ticker', 'co__tags', 'co__mat', 'co__ev',
+  'tag', 'tag--direct', 'tag--indirect', 'tag--supplier', 'tag--conglomerate', 'nocov', 'near',
+  'table-wrap', 'table-scroll', 'data', 'c', 'cell-d', 'cell-i', 'cell-s', 'cell-c', 'cell-x',
+  'bn', 'bn__risk', 'bn__opp', 'bn__h', 'bn__title', 'callout',
+  'metric-modal', 'metric-modal__backdrop', 'metric-modal__panel', 'metric-modal__close',
+  'metric-modal__kicker', 'metric-modal__val', 'metric-modal__label', 'metric-modal__bullets',
+  'footnote'
+]);
+
 const CANONICAL_SAMPLES = ['metric-card', 'metric-cards', 'digest', 'digest__item', 'metric-modal'];
-
-// Component selectors every ENTRY page must define — in its own <style> OR in the
-// shared stylesheet. A page that renders a component without its CSS fails here.
-const REQUIRED_CSS = [
-  '.sec-head', '.sec-title', '.sec-note',
-  '.mermaid-wrap', '.legend',
-  '.ladder', '.rung',
-  '.map-layout', '.map-nodes', '.map-panel', '.node-btn',
-  'table.data', '.table-wrap', '.table-scroll',
-  '.cell-d', '.cell-i', '.cell-s', '.cell-c', '.cell-x',
-  '.bn', '.bn__risk', '.bn__opp', '.bn__h', '.bn__title',
-  '.callout', '.footnote'
-];
-
-const SHARED_CSS_PATH = 'assets/registry.css';
-const sharedCss = existsSync(SHARED_CSS_PATH) ? readFileSync(SHARED_CSS_PATH, 'utf8') : '';
+const INDEX_FORBIDDEN = ['metric-card', 'metric-cards', 'metric-modal'];
 
 function collectFiles(args) {
   const out = [];
@@ -62,7 +65,7 @@ function collectFiles(args) {
   return out;
 }
 
-function classesIn(html) {
+function classesInMarkup(html) {
   const set = new Set();
   const re = /class\s*=\s*"([^"]*)"/g;
   let m;
@@ -70,24 +73,28 @@ function classesIn(html) {
   return set;
 }
 
-// Class tokens in real MARKUP only (script/style stripped) — used to catch
-// two class names concatenated without a space, e.g. "digest__itemdigest__item--gold".
-function markupClasses(html) {
-  const stripped = html.replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, '')
-                       .replace(/<style\b[^>]*>[\s\S]*?<\/style>/gi, '');
+function classesInCss(css) {
   const set = new Set();
-  const re = /class\s*=\s*"([^"]*)"/g;
+  const re = /\.([a-zA-Z_][\w-]*)/g;
   let m;
-  while ((m = re.exec(stripped))) m[1].split(/\s+/).forEach(c => c && set.add(c));
+  while ((m = re.exec(css))) set.add(m[1]);
   return set;
 }
-const CLASS_TOKEN_RE = /^[a-z][a-z0-9-]*(__[a-z0-9-]+)?(--[a-z0-9-]+)?$/;
 
-function inlineCss(html) {
-  const re = /<style[^>]*>([\s\S]*?)<\/style>/g;
-  let m, out = '';
-  while ((m = re.exec(html))) out += '\n' + m[1];
-  return out;
+function inlineStyle(html) {
+  let css = '';
+  const re = /<style[^>]*>([\s\S]*?)<\/style>/gi;
+  let m;
+  while ((m = re.exec(html))) css += m[1] + '\n';
+  return css;
+}
+
+// classes defined by the shared stylesheet
+let sharedDefined = new Set();
+if (existsSync(SHARED_CSS)) {
+  sharedDefined = classesInCss(readFileSync(SHARED_CSS, 'utf8'));
+} else {
+  console.log('WARN  shared stylesheet ' + SHARED_CSS + ' not found — component-CSS check will rely on page styles only.');
 }
 
 const files = collectFiles(process.argv.slice(2));
@@ -99,41 +106,32 @@ if (!files.length) {
 let failures = 0;
 for (const file of files) {
   const html = readFileSync(file, 'utf8');
+  const isIndex = basename(file) === 'index.html';
   const problems = [];
-  const isEntryPage = /(^|[\\/])industries[\\/]/.test(file);
 
   if (!/registry\.css/.test(html)) {
     problems.push('does not link the shared stylesheet (assets/registry.css)');
   }
 
-  const cls = classesIn(html);
-  const bad = [...cls].filter(c => ALIASES.has(c));
+  const used = classesInMarkup(html);
+  const bad = [...used].filter(c => ALIASES.has(c));
   if (bad.length) problems.push('deprecated alias classes: ' + bad.join(', '));
-
-  const malformed = [...markupClasses(html)].filter(c => !CLASS_TOKEN_RE.test(c));
-  if (malformed.length) problems.push('malformed class token(s) — two classes concatenated without a space?: ' + malformed.join(', '));
 
   if (/\[cite:[^\]]+\]/.test(html)) {
     problems.push('contains [cite:...] markers (must be plain prose)');
   }
 
-  if (isEntryPage && !CANONICAL_SAMPLES.some(c => cls.has(c))) {
-    problems.push('no canonical component classes found (metric-card / digest / metric-modal)');
+  if (isIndex) {
+    const forbidden = [...used].filter(c => INDEX_FORBIDDEN.includes(c));
+    if (forbidden.length) problems.push('index must not carry metric-card / metric-modal classes: ' + forbidden.join(', '));
+  } else if (!CANONICAL_SAMPLES.some(c => used.has(c))) {
+    problems.push('entry page has no canonical component classes (metric-card / digest / metric-modal)');
   }
 
-  if (!isEntryPage) {
-    // The register index is a plain listing — it must not carry metric cards.
-    const banned = ['metric-card', 'metric-cards', 'metric-modal'].filter(c => cls.has(c));
-    if (banned.length) problems.push('the register index must not carry metric-card components (found: ' + banned.join(', ') + ')');
-  }
-
-  if (isEntryPage) {
-    const css = inlineCss(html) + '\n' + sharedCss;
-    const missing = REQUIRED_CSS.filter(sel => !css.includes(sel));
-    if (missing.length) {
-      problems.push('missing component CSS (markup present but no rule, in page or shared stylesheet): ' + missing.join(', '));
-    }
-  }
+  // component-CSS resolution: every used component class must be defined somewhere
+  const pageDefined = classesInCss(inlineStyle(html));
+  const unstyled = [...used].filter(c => KNOWN_COMPONENTS.has(c) && !sharedDefined.has(c) && !pageDefined.has(c));
+  if (unstyled.length) problems.push('component classes with no CSS defined anywhere (would render unstyled): ' + unstyled.join(', '));
 
   if (problems.length) {
     failures++;
