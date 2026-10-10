@@ -218,3 +218,22 @@ table.data tbody tr:hover { background: var(--blue-dim); }
 
 /* ===== footer ===== */
 .footnote { font-family: var(--font-mono); font-size: 10.5px; line-height: 1.7; color: var(--text-dim); margin-top: 26px; border-top: 1px solid var(--border); padding-top: 16px; }
+
+/* ===== responsive — stack two-column layouts on narrow screens ===== */
+/* The BOM tree + company map must NOT sit side by side on a phone: the map
+   collapses to one column and the company panel stops being sticky, so it
+   scrolls with the page instead of pinning/hiding. */
+@media (max-width: 900px) {
+  .map-layout { grid-template-columns: 1fr; }
+  .map-panel { position: static; top: auto; }
+  .bn { grid-template-columns: 1fr; }
+}
+@media (max-width: 640px) {
+  .container { padding: 24px 16px 48px; }
+  .map-nodes { grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); }
+  .rung { grid-template-columns: 1fr; gap: 6px; }
+  .sec-head { flex-wrap: wrap; }
+  .sec-note { margin-left: 0; width: 100%; text-align: left; }
+  .metric-cards { grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); }
+  .digest { grid-template-columns: 1fr; }
+}
