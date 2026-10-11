@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>India Robotics — BOM, Value Chain &amp; Company Map</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/registry.css">
+</head>
+<body>
+<div style="max-width:1180px;margin:0 auto 18px;font-family:'IBM Plex Mono',monospace;font-size:12px;">
+  <a href="../index.html" style="color:var(--blue);text-decoration:none;border-bottom:1px solid var(--border);">&larr; Industry BOM Registry</a>
+  <span style="color:var(--text-dim);">&nbsp;/&nbsp;Robotics &mdash; India</span>
+</div>
+<div class="container">
+
+  <header class="masthead animate" style="--i:0">
+    <div class="eyebrow">Industrial BOM &amp; Value-Chain Dissection</div>
+    <h1>India <span>Robotics</span></h1>
+    <div class="subtitle">Industrial robots &middot; AMR/AGV &middot; drones/UAV &middot; humanoid &amp; service robots &middot; the shared actuator-drive-sensor core &middot; NSE/BSE company map</div>
+    <div class="scope-bar">
+      <span class="chip chip--gold">Analysis date: 2026-10-11</span>
+      <span class="chip">Scope: INDIA</span>
+      <span class="chip">Interest: investment research</span>
+      <span class="chip">Universe: NSE / BSE</span>
+      <span class="chip chip--high">India lens: ON</span>
+      <span class="chip">Materiality: all exposures</span>
+      <span class="chip">Depth-first &mdash; 4 subsystems</span>
+    </div>
+  </header>
+
+  <!-- KPI -->
+  <section class="animate" style="--i:1">
+    <div class="metric-cards">
+      <div class="metric-card metric-card--gold metric-card">
+        <div class="metric-card__val">9,120</div>
+        <div class="metric-card__label">Industrial robots installed</div>
+        <div class="metric-card__sub">India 2024, +7% YoY &middot; 6th worldwide (IFR)</div>
+      </div>
+      <div class="metric-card metric-card">
+        <div class="metric-card__val">~52,600</div>
+        <div class="metric-card__label">Operational robot stock</div>
+        <div class="metric-card__sub">India 2024 &middot; 10th worldwide; top-5 stock 0.3&ndash;2 mn</div>
+      </div>
+      <div class="metric-card metric-card--high metric-card">
+        <div class="metric-card__val">~100%</div>
+        <div class="metric-card__label">Harmonic reducers imported</div>
+        <div class="metric-card__sub">no large-scale domestic production</div>
+      </div>
+      <div class="metric-card metric-card--high metric-card">
+        <div class="metric-card__val">~95%</div>
+        <div class="metric-card__label">NdFeB magnets imported</div>
+        <div class="metric-card__sub">China ~94% of sintered output</div>
+      </div>
+      <div class="metric-card metric-card">
+        <div class="metric-card__val">38,575</div>
+        <div class="metric-card__label">Drones registered</div>
+        <div class="metric-card__sub">UIN, Feb-2026 &middot; 244 RPTOs</div>
+      </div>
+      <div class="metric-card metric-card">
+        <div class="metric-card__val">&#8377;120 cr</div>
+        <div class="metric-card__label">Drone PLI outlay</div>
+        <div class="metric-card__sub">no dedicated robotics PLI; NSR still draft</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="animate" style="--i:1">
+    <div class="sec-head"><span class="sec-num">DG</span><span class="sec-title">Digest &mdash; at a glance</span><span class="sec-note">short summary; full detail below</span></div>
+    <div class="digest">
+      <div class="digest__item"><div class="digest__h">Snapshot</div><p>India&rsquo;s robotics ecosystem spans four families &mdash; industrial robots, AMR/AGV, drones/UAV and humanoid &amp; service robots &mdash; over a shared core of actuators, drives, sensors, power and software. India is the world&rsquo;s <b>6th-largest robot installer</b> (9,120 units, 2024) with a stock of ~52,600, but imports the core: reducers, magnets, encoders and power semiconductors. No dedicated robotics PLI exists; the National Strategy on Robotics is still a draft.</p></div>
+      <div class="digest__item"><div class="digest__h">Process &amp; equipment</div><ul><li>Robot build = cast/forge/machine housings &rarr; wind stators &rarr; assemble actuator (motor + reducer + encoder + brake) &rarr; fit controller &rarr; integrate cell (fixtures, EOAT, vision) &rarr; EOL test.</li><li>Core process equipment is imported: 5-axis CNC, gear/thread grinding (Klingelnberg, Gleason, Nidec, H&ouml;fler), vacuum/atmosphere heat-treat furnaces, magnet presses and CMMs (ZEISS, Mitutoyo).</li><li>Drone and cobot assembly is lighter &mdash; PCB SMT, composite lay-up and DGCA/ISO test rigs.</li></ul></div>
+      <div class="digest__item"><div class="digest__h">Bottlenecks</div><ul><li>Reducers (harmonic/RV) &mdash; effectively 100% imported; no robotics-grade domestic maker.</li><li>Rare-earth NdFeB magnets &mdash; ~95% imported; first Indian plant targeted Q1 2028.</li><li>Power electronics (IGBT/MOSFET/MCU) and encoders/torque sensors &mdash; no Indian capability.</li><li>Precision machine tools &amp; metrology &mdash; fully imported; they make the reducers.</li></ul></div>
+      <div class="digest__item"><div class="digest__h">Value pools</div><ul><li>Value sits upstream in reducers, motors, sensors, magnets and control silicon &mdash; the pools India imports.</li><li>Indian assembly/integration is competitive and thin-margin; ARAPL is the only listed robotics pure-play.</li><li>Software/autonomy and service (RaaS, AMC, retrofits) are the fastest-growing domestic capture layer.</li><li>Drones: four listed players; ~50&ndash;60% of subsystem value still imported.</li></ul></div>
+      <div class="digest__item"><div class="digest__h">Watch items</div><ul><li>Drone PLI 2.0 finalised early 2026; Mission Drone Shakti (&#8377;10,000 cr) proposed in Budget 2026.</li><li>National Strategy on Robotics still un-adopted; TAG review Feb-2026.</li><li>Electronics PLI lapses 2026 &mdash; IFR flags a possible 2026 robot-installation pause.</li></ul></div>
+      <div class="digest__item"><div class="digest__h">Coverage gaps</div><p>No NSE/BSE pure-play in reducers, NdFeB magnets, encoders/torque sensors, power semiconductors, LiDAR, precision machine tools or drone flight-controllers. Best proxies are emerging suppliers (Sona Comstar, Bharat Bijlee, MTAR, Schaeffler, KSH) and unlisted specialists (context tier).</p></div>
+    </div>
+  </section>
+
+  <!-- 1. SYSTEM OVERVIEW -->
+  <section class="animate" style="--i:2">
+    <div class="sec-head">
+      <span class="sec-num">01</span>
+      <span class="sec-title">System Overview</span>
+      <span class="sec-note">Level 0 &rarr; eight shared systems<br>clickable BOM tree in section 03</span>
+    </div>
+    <section class="diagram-shell">
+      <p class="diagram-shell__hint">Ctrl/Cmd + wheel to zoom. Drag to pan when zoomed. Double-click to fit.</p>
+      <div class="mermaid-wrap">
+        <div class="zoom-controls">
+          <button type="button" data-action="zoom-in" title="Zoom in">+</button>
+          <button type="button" data-action="zoom-out" title="Zoom out">&minus;</button>
+          <button type="button" data-action="zoom-fit" title="Smart fit">&#8634;</button>
+          <button type="button" data-action="zoom-one" title="1:1 zoom">1:1</button>
+          <button type="button" data-action="zoom-expand" title="Open full size">&#x26F6;</button>
+          <span class="zoom-label">Loading...</span>
+        </div>
+        <div class="mermaid-viewport">
+          <div class="mermaid mermaid-canvas"></div>
+        </div>
+      </div>
+      <script type="text/plain" class="diagram-source">
+graph TD
+  L0["<b>Level 0</b><br/>Robotics<br/>(India)"]
+  L0 --> A["A · Robot platforms<br/>arms · cobots · AMR · drones · humanoids"]
+  L0 --> B["B · Actuation &amp; drive<br/>motors · reducers · drives"]
+  L0 --> C["C · Control &amp; compute<br/>controllers · PLC · edge AI"]
+  L0 --> D["D · Perception &amp; sensing<br/>encoders · LiDAR · vision"]
+  L0 --> E["E · Power &amp; energy<br/>cells · BMS · power electronics"]
+  L0 --> F["F · Structure &amp; materials<br/>chassis · magnets · bearings"]
+  L0 --> G["G · Software &amp; autonomy<br/>SLAM · fleet · digital twin"]
+  L0 --> H["H · Integration, tooling &amp; service"]
+  classDef high fill:#c0392b,stroke:#8e2b20,color:#fff,stroke-width:2px;
+  classDef med fill:#d4a73a,stroke:#a37f22,color:#241a05,stroke-width:1.5px;
+  classDef low fill:#7f8c8d,stroke:#5c6b6c,color:#fff,stroke-width:1.2px;
+  classDef root fill:#1e4e8c,stroke:#12335c,color:#fff,stroke-width:2px;
+  class L0 root;
+  class B,D,E,F high;
+  class A,C,G med;
+  class H low;
+      </script>
+    </section>
+    <div class="legend">
+      <div class="legend-item"><div class="legend-swatch" style="background:var(--high)"></div> HIGH priority — bottleneck / import-critical</div>
+      <div class="legend-item"><div class="legend-swatch" style="background:var(--med)"></div> MEDIUM priority</div>
+      <div class="legend-item"><div class="legend-swatch" style="background:var(--low)"></div> LOW priority</div>
+      <div class="legend-item"><div class="legend-swatch" style="background:var(--blue)"></div> Root node</div>
+    </div>
+  </section>
+
+  <!-- 2. VALUE LADDER -->
+  <section class="animate" style="--i:3">
+    <div class="sec-head">
+      <span class="sec-num">02</span>
+      <span class="sec-title">Value-Chain Ladder &amp; Supplier Tiers</span>
+      <span class="sec-note">raw material &rarr; aftermarket &middot; Tier-4 &rarr; OEM</span>
+    </div>
+    <div class="ladder">
+      <div class="rung rung--1">
+        <div class="rung__label">Tier 4 · Raw</div>
+        <div class="rung__body">Rare-earth oxides &amp; NdFeB magnet alloy powder &middot; electrical steel (laminations) &middot; copper &middot; aluminium &middot; bearing &amp; gear steels &middot; carbon fibre &middot; silicon / GaN wafers &middot; Li-ion cell materials <span class="mini">China ~94% sintered magnets</span></div>
+      </div>
+      <div class="rung rung--2">
+        <div class="rung__label">Tier 3 · Specialty</div>
+        <div class="rung__body"><b>Harmonic / RV / cycloidal reducers</b> &middot; precision bearings &amp; ball/roller screws &middot; encoders &amp; torque sensors &middot; power semiconductors (IGBT/MOSFET) &middot; sintered magnets &middot; Li-ion cells <span class="mini">the imported core</span></div>
+      </div>
+      <div class="rung rung--3">
+        <div class="rung__label">Tier 2 · Component</div>
+        <div class="rung__body"><b>Servo motors &amp; frameless torque motors</b> &middot; servo drives &amp; motion controllers &middot; actuator modules &middot; LiDAR / depth sensors &middot; drone flight controllers &amp; ESCs &middot; batteries &amp; BMS &middot; EOAT / grippers</div>
+      </div>
+      <div class="rung rung--4">
+        <div class="rung__label">Tier 1 · System/OEM</div>
+        <div class="rung__body"><b>Robot OEMs &amp; integrators</b> — ARAPL &middot; global arms (ABB, Fanuc, Yaskawa, KUKA, Kawasaki, Mitsubishi) &middot; drone OEMs (ideaForge, Zen, Paras, DroneAcharya) &middot; AMR makers <span class="mini">arms largely imported</span></div>
+      </div>
+      <div class="rung rung--4">
+        <div class="rung__label">Deployment</div>
+        <div class="rung__body"><b>Cell integration &amp; application engineering</b> — fixtures, vision, PLC, safety, commissioning (integrators and OEM service arms)</div>
+      </div>
+      <div class="rung rung--1">
+        <div class="rung__label">Aftermarket</div>
+        <div class="rung__body">Spares (reducers, motors, drives) &middot; AMC &amp; retrofit &middot; RaaS / leasing &middot; pilot training &amp; RPTOs &middot; e-waste / battery recycling <span class="mini">growing annuity layer</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. INTERACTIVE COMPANY MAP -->
+  <section class="animate" style="--i:4">
+    <div class="sec-head">
+      <span class="sec-num">03</span>
+      <span class="sec-title">BOM Tree &amp; Company Map</span>
+      <span class="sec-note">click a node → its NSE/BSE companies<br>gaps shown explicitly</span>
+    </div>
+    <div class="map-layout">
+      <div class="map-nodes" id="mapNodes"></div>
+      <aside class="map-panel" id="mapPanel" aria-live="polite"></aside>
+    </div>
+  </section>
+
+  <!-- 4. MATRIX -->
+  <section class="animate" style="--i:5">
+    <div class="sec-head">
+      <span class="sec-num">04</span>
+      <span class="sec-title">Company × Node Matrix</span>
+      <span class="sec-note">D direct · I indirect · S supplier · C conglomerate · — none</span>
+    </div>
+    <div class="table-wrap">
+      <div class="table-scroll">
+        <table class="data">
+          <thead>
+            <tr>
+              <th>Company</th><th>OEM / Int</th><th>Arms</th><th>AMR</th><th>Drones</th><th>Reducers</th>
+              <th>ServoMtr</th><th>Drives</th><th>PwrSemi</th><th>Sensors</th><th>Magnets</th><th>Bearings</th><th>Cells</th><th>Software</th><th>Tooling</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>ARAPL <small>AFFORDABLE</small></td><td class="c cell-d">D</td><td class="c cell-x">—</td><td class="c cell-d">D</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-d">D</td><td class="c cell-d">D</td></tr>
+            <tr><td>ABB India <small>ABB</small></td><td class="c cell-i">I</td><td class="c cell-i">I</td><td class="c cell-i">I</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-d">D</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-i">I</td><td class="c cell-x">—</td></tr>
+            <tr><td>Siemens <small>SIEMENS</small></td><td class="c cell-i">I</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-d">D</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-i">I</td><td class="c cell-x">—</td></tr>
+            <tr><td>Honeywell Automation <small>HONAUT</small></td><td class="c cell-c">C</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-i">I</td><td class="c cell-x">—</td><td class="c cell-i">I</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-i">I</td><td class="c cell-x">—</td></tr>
+            <tr><td>Tata Elxsi <small>TATAELXSI</small></td><td class="c cell-i">I</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-i">I</td><td class="c cell-x">—</td></tr>
+            <tr><td>Cyient <small>CYIENT</small></td><td class="c cell-i">I</td><td class="c cell-x">—</td><td class="c cell-i">I</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-i">I</td><td class="c cell-x">—</td></tr>
+            <tr><td>KPIT Technologies <small>KPITTECH</small></td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-i">I</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-i">I</td><td class="c cell-x">—</td></tr>
+            <tr><td>Schaeffler India <small>SCHAEFFLER</small></td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-d">D</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td></tr>
+            <tr><td>Bharat Bijlee <small>BBL</small></td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-d">D</td><td class="c cell-d">D</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td></tr>
+            <tr><td>CG Power <small>CGPOWER</small></td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-s">S</td><td class="c cell-s">S</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td></tr>
+            <tr><td>Sona Comstar <small>SONACOMS</small></td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-s">S</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-s">S</td><td class="c cell-s">S</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td></tr>
+            <tr><td>KSH International <small>KSHINTL</small></td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-s">S</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td></tr>
+            <tr><td>Pitti Engineering <small>PITTIENG</small></td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-s">S</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td></tr>
+            <tr><td>MTAR Technologies <small>MTAR</small></td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-i">I</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-i">I</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td></tr>
+            <tr><td>Bharat Electronics <small>BEL</small></td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-c">C</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-c">C</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-c">C</td><td class="c cell-x">—</td></tr>
+            <tr><td>Bharat Forge <small>BHARATFORG</small></td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-c">C</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td></tr>
+            <tr><td>Larsen &amp; Toubro <small>LT</small></td><td class="c cell-c">C</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-c">C</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td></tr>
+            <tr><td>Hindustan Aeronautics <small>HAL</small></td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-c">C</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td></tr>
+            <tr><td>ideaForge <small>IDEAFORGE</small></td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-d">D</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-i">I</td><td class="c cell-x">—</td></tr>
+            <tr><td>Zen Technologies <small>ZENTEC</small></td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-i">I</td><td class="c cell-d">D</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-s">S</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-i">I</td><td class="c cell-x">—</td></tr>
+            <tr><td>Paras Defence <small>PARAS</small></td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-i">I</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-s">S</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td></tr>
+            <tr><td>DroneAcharya <small>BSE 543713</small></td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-d">D</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td></tr>
+            <tr><td>Exide Industries <small>EXIDEIND</small></td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-i">I</td><td class="c cell-x">—</td><td class="c cell-x">—</td></tr>
+            <tr><td>Amara Raja <small>ARE&amp;M</small></td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-x">—</td><td class="c cell-i">I</td><td class="c cell-x">—</td><td class="c cell-x">—</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <p class="footnote">D direct · I indirect · S supplier · C conglomerate/minor segment · — no exposure. Listing status current as of analysis date. Every mapping is evidence-based; materiality detail is in the click-through panel above. ABB India is shown as exiting the robotics node (slump sale to ABB Robotics India effective 1-Mar-2026); its D exposures are in drives, not arms.</p>
+  </section>
+
+  <!-- 5. BOTTLENECKS -->
+  <section class="animate" style="--i:6">
+    <div class="sec-head">
+      <span class="sec-num">05</span>
+      <span class="sec-title">Bottlenecks — Risk &amp; Opportunity</span>
+      <span class="sec-note">dual-readable: every risk is a substitution play</span>
+    </div>
+    <div class="bn">
+      <div class="bn__risk"><div class="bn__h">Risk</div><p><span class="bn__title">Harmonic / strain-wave reducers</span>Effectively 100% imported &mdash; no large-scale domestic robotics-grade producer. A 50&ndash;100 Nm unit lands at &#8377;35,000&ndash;&#8377;1,20,000 (2026); lead times 12&ndash;24 weeks. Every robot joint needs one. Resilience: years / structural.</p></div>
+      <div class="bn__opp"><div class="bn__h">Opportunity</div><p><span class="bn__title">Domestic reducer industry from zero</span>China&rsquo;s Leaderdrive scale (206k units 2023 &rarr; 1.59 mn planned 2027) shows the shape; India&rsquo;s humanoid programme would need reducer volumes exceeding any single Chinese supplier &mdash; a first-mover prize.</p></div>
+    </div>
+    <div class="bn">
+      <div class="bn__risk"><div class="bn__h">Risk</div><p><span class="bn__title">Rare-earth NdFeB magnets</span>~95% imported; China holds ~94% of sintered output and 87&ndash;91% of rare-earth processing. Every servo motor needs magnets. First Indian plant targeted Q1 2028. Resilience: years / structural.</p></div>
+      <div class="bn__opp"><div class="bn__h">Opportunity</div><p><span class="bn__title">Domestic magnet capacity</span>National rare-earth/magnet scheme + motor makers (Bharat Bijlee, CG Power, Sona Comstar) create a captive domestic demand base; the magnet plant is the missing link.</p></div>
+    </div>
+    <div class="bn">
+      <div class="bn__risk"><div class="bn__h">Risk</div><p><span class="bn__title">Servo motors, drives &amp; power silicon</span>&gt;60% of AC servo systems imported; ~34% domestic motor capability; power electronics (IGBT/MOSFET) and control MCU/DSP have no Indian capability. India does licensed assembly, not indigenous design. Resilience: months&ndash;years.</p></div>
+      <div class="bn__opp"><div class="bn__h">Opportunity</div><p><span class="bn__title">Servo &amp; power-electronics localisation</span>Bharat Bijlee (SynchroTorq PM servo, 4,000+ packages) and CG Power (motors + Emotron drives) are scaling; India Semiconductor Mission could anchor power-semi. The design, not the assembly, is the gap.</p></div>
+    </div>
+    <div class="bn">
+      <div class="bn__risk"><div class="bn__h">Risk</div><p><span class="bn__title">Encoders, torque sensors &amp; LiDAR</span>No Indian manufacturer of robotics-grade encoders or joint torque sensors disclosed; the dominant encoder chip is made in Austria. LiDAR and depth sensors are imported. Resilience: years.</p></div>
+      <div class="bn__opp"><div class="bn__h">Opportunity</div><p><span class="bn__title">Precision sensing entry</span>High-value, low-volume, qualification-gated &mdash; a natural niche for Indian precision-electronics firms once machine-tool and metrology capability matures.</p></div>
+    </div>
+    <div class="bn">
+      <div class="bn__risk"><div class="bn__h">Risk</div><p><span class="bn__title">Precision machine tools &amp; metrology</span>The gear/thread grinders (Klingelnberg, Gleason, Nidec, H&ouml;fler) and CMMs (ZEISS, Mitutoyo) that make reducers, screws and gears are fully imported &mdash; the deepest hidden dependency in a &ldquo;localised&rdquo; robot. Resilience: years / structural.</p></div>
+      <div class="bn__opp"><div class="bn__h">Opportunity</div><p><span class="bn__title">Machine-tool &amp; metrology build-out</span>Without domestic gear grinding and metrology, no reducer plan can qualify. MTAR&rsquo;s defence/space-grade screws are a beachhead; volume is unproven.</p></div>
+    </div>
+    <div class="bn">
+      <div class="bn__risk"><div class="bn__h">Risk</div><p><span class="bn__title">Drones &mdash; subsystem imports</span>~50&ndash;60% of drone subsystem value is imported (flight controllers, ESCs, BLDC motors, optics); complete-drone imports are banned, so much &ldquo;domestic&rdquo; output is assembly. Resilience: months&ndash;years.</p></div>
+      <div class="bn__opp"><div class="bn__h">Opportunity</div><p><span class="bn__title">Component indigenisation cascade</span>PLI 2.0, Mission Drone Shakti (&#8377;10,000 cr proposed) and ANRF MAHA Drones (component R&amp;D) target exactly these subsystems; Zen&rsquo;s Vector Technics (51%) is an early listed step.</p></div>
+    </div>
+    <div class="bn">
+      <div class="bn__risk"><div class="bn__h">Risk</div><p><span class="bn__title">Skills &amp; standards</span>Scarce engineers in AI, actuators, control and integration; no unified testing/standards framework (a non-tariff export barrier). Capacity can be bought; qualified process engineers cannot.</p></div>
+      <div class="bn__opp"><div class="bn__h">Opportunity</div><p><span class="bn__title">Training &amp; accredited labs</span>RPTO/robotics training and BIS/ISO-aligned test labs carry durable scarcity value; a National Robotics Mission would fund both.</p></div>
+    </div>
+    <div class="callout animate" style="--i:7">
+      <strong>Deepest hidden import dependency:</strong> the precision machine tools and metrology that make the reducers, screws and gears &mdash; and the magnet and power-semiconductor supply behind the motors. India&rsquo;s robotics position is &ldquo;strong at the edges, empty at the core&rdquo;: integration, software and assembly are real, but every high-value joint, magnet and encoder is imported.
+    </div>
+  </section>
+
+  <!-- 06 VALUE POOLS & COST WATERFALL -->
+  <section class="animate" style="--i:8">
+    <div class="sec-head">
+      <span class="sec-num">06</span>
+      <span class="sec-title">Value pools &amp; cost waterfall</span>
+      <span class="sec-note">where value is captured &middot; and which pool leaks to imports</span>
+    </div>
+    <div class="digest">
+      <div class="digest__item"><div class="digest__h">Where value is captured</div><ul><li>Upstream: reducers, motors, encoders/sensors, magnets and control silicon &mdash; the pools India imports.</li><li>Downstream: application engineering, vision, software and service (RaaS, AMC, retrofit) &mdash; the domestic capture layer.</li><li>Assembly of arms/cells is competitive and thin-margin.</li><li>Drones: airframe/assembly domestic, subsystems imported.</li></ul></div>
+      <div class="digest__item"><div class="digest__h">Who captures it (India-listed)</div><ul><li><b>ARAPL</b> <small>NSE: AFFORDABLE</small> &mdash; India&rsquo;s first listed robotics co; order book &gt;&#8377;140 cr (Nov-2025); AMR brand Humro (RaaS, leasing).</li><li><b>Bharat Bijlee</b> <small>NSE: BBL</small> &mdash; indigenously developed SynchroTorq PM servo motors (4,000+ packages).</li><li><b>CG Power</b> <small>NSE: CGPOWER</small> &mdash; motors, drives (Emotron), automation.</li><li><b>Sona Comstar</b> <small>NSE: SONACOMS</small> &mdash; &#8377;62.6 cr robotics-components capex; NEURA Robotics partnership.</li><li><b>Zen / ideaForge / Paras / DroneAcharya</b> &mdash; the four listed drone-sector names.</li></ul></div>
+      <div class="digest__item"><div class="digest__h">Pools that leak to imports</div><ul><li>Reducers, NdFeB magnets, encoders/torque sensors, power semiconductors, LiDAR and precision machine tools have no listed Indian pure-play.</li><li>Bottleneck nodes: harmonic/RV reducers, servo motors, drives, power electronics, encoders, magnets, LiDAR, drone flight-controllers, machine tools.</li></ul></div>
+    </div>
+    <div class="sec-head" style="margin-top:22px"><span class="sec-num">&#8377;</span><span class="sec-title" style="font-size:15px">Cost waterfall &mdash; ranked, directional</span><span class="sec-note">[DERIVED] ordering only</span></div>
+    <div class="ladder">
+      <div class="rung rung--1"><div class="rung__label">1</div><div class="rung__body"><b>Reducers (harmonic/RV)</b> &mdash; ~100% imported; the single largest domestic gap and a top cost item per joint</div></div>
+      <div class="rung rung--2"><div class="rung__label">2</div><div class="rung__body"><b>Servo motors &amp; drives</b> &mdash; &gt;60% imported; ~34% domestic motor capability</div></div>
+      <div class="rung rung--3"><div class="rung__label">3</div><div class="rung__body"><b>Encoders, sensors &amp; LiDAR</b> &mdash; no domestic maker; imported</div></div>
+      <div class="rung rung--4"><div class="rung__label">4</div><div class="rung__body"><b>Structure, EOAT &amp; power</b> &mdash; partial domestic (frames, cells, packs)</div></div>
+      <div class="rung rung--1"><div class="rung__label">&#8734;</div><div class="rung__body">Integration &amp; assembly margin <span class="mini">thinnest</span></div></div>
+    </div>
+    <p class="footnote">Cost waterfall is a directional [DERIVED] ordering of this entry&rsquo;s bottleneck nodes, not measured percentages &mdash; exact cost shares per robot are [UNAVAILABLE] in this pass.</p>
+  </section>
+
+  <!-- 07 REGULATORY CALENDAR -->
+  <section class="animate" style="--i:9">
+    <div class="sec-head">
+      <span class="sec-num">07</span>
+      <span class="sec-title">Regulatory calendar</span>
+      <span class="sec-note">standing, dated decision windows that move this industry</span>
+    </div>
+    <div class="table-wrap">
+      <div class="table-scroll">
+        <table class="data">
+          <thead><tr><th>Date / window</th><th>Item</th><th>What it does</th><th>Label</th></tr></thead>
+          <tbody>
+            <tr><td>Sept-2023 &rarr; (draft, un-adopted)</td><td>National Strategy on Robotics</td><td>MeitY draft (revised Feb-2024; comments closed Jul-2024) proposes a National Robotics Mission + Robotics Innovation Unit under IndiaAI; not yet adopted as of the Feb-2026 TAG review.</td><td>[REPORTED-T1]</td></tr>
+            <tr><td>2021-22 to 2024-25 (lapsed)</td><td>Drone PLI 1.0</td><td>&#8377;120 cr outlay; 23 beneficiaries (14 + 9); required 40% domestic value addition &mdash; incentivised assembly, not subsystems.</td><td>[REPORTED-T1]</td></tr>
+            <tr><td>Early-2026 (finalised)</td><td>Drone PLI 2.0</td><td>Revised framework; reported allocation could exceed &#8377;1,000 cr; expands eligibility to software and leasing; shifts domestic-content measurement to total drone value.</td><td>[REPORTED-T2]</td></tr>
+            <tr><td>Budget 2026 (proposed)</td><td>Mission Drone Shakti</td><td>~&#8377;10,000 cr, five-year capital support for drone manufacturing; domestic-content thresholds 50&ndash;60%.</td><td>[REPORTED-T2]</td></tr>
+            <tr><td>May-2026 (call issued)</td><td>ANRF MAHA Drones</td><td>Component R&amp;D call (flight controllers, motors, batteries, propulsion, sensors, comms); TRL-7 demonstrators within three years.</td><td>[REPORTED-T2]</td></tr>
+            <tr><td>In force</td><td>Drone Rules 2021 / Bharatiya Vayuyan Adhiniyam 2024</td><td>Liberalised regime (forms 25&rarr;5, approvals 72&rarr;4, ~90% airspace green); DGCA type certification and remote-pilot certificates; complete-drone imports banned; GST reduced on drones.</td><td>[REPORTED-T1]</td></tr>
+            <tr><td>2026 (lapsing)</td><td>Electronics PLI runway</td><td>IFR notes the PLI programme supporting domestic capacity runs out in 2026, with a possible robot-installation pause in 2026 before commissioning-led recovery.</td><td>[REPORTED-T2]</td></tr>
+            <tr><td>Pending</td><td>Dedicated robotics PLI / mission</td><td>No dedicated robotics PLI today; IndiaAI Mission, India Semiconductor Mission and the electronics ecosystem are the proposed foundations for a future Robotics Mission.</td><td>[REPORTED-T2]</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <p class="footnote">Rows re-derived from this entry&rsquo;s watch-list and labelled [DERIVED]; re-verify source tiers before use. [LIVE] items should be re-checked each run.</p>
+  </section>
+
+  <p class="footnote animate" style="--i:10">
+    Sources (plain): IFR World Robotics 2025 press release (25-Sep-2025) and contents &middot; Ken Research India Industrial Robotics Market &middot; Grand View Research / Horizon India industrial robotics &middot; IMARC India robotics &middot; Maximize Market Research &middot; IndiaBUILD capability pages (harmonic/cycloidal gearing; servo drive; harmonic drives) &middot; Techadyant Labs (industrial servo motors import-dependency) &middot; Cofacto (India humanoid actuator supply chain) &middot; IndexBox (Southern Asia harmonic-drive gearboxes) &middot; Ministry of Civil Aviation PLI Drone guidelines (29-Nov-2022) &middot; PIB drone-ecosystem release (Feb-2026) &middot; Kodainya (India drone manufacturing / 23-firm PLI cohort) &middot; YourStory / TechSparks 2025 (PLI extension) &middot; MeitY Draft National Strategy on Robotics &middot; Office of the PSA / KNN / Goa Chronicle (Feb-2026 TAG robotics roadmap) &middot; BSE/NSE filings: ARAPL (541402 / AFFORDABLE), ABB India robotics slump sale (BTA 1-Mar-2026), Sona Comstar robotics capex (Jun-2026), DroneAcharya (543713) &middot; company disclosures: Bharat Bijlee, CG Power, Schaeffler, MTAR, KSH, Pitti &middot; univest drone-stock note (24-Sep-2026). All figures date-stamped to the analysis date; time-sensitive facts are cyclical or live and should be re-checked before use. Company mappings are evidence-based; impacts are inference unless reported.
+  </p>
+
+</div>
+
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+
+  const config = {
+    fitPadding: 24, minHeight: 300, maxHeightPx: 900, maxHeightVh: 0.85,
+    maxInitialZoom: 1.7, minZoom: 0.08, maxZoom: 6.5, zoomStep: 0.14, readabilityFloor: 0.55
+  };
+  const clamp = (n, lo, hi) => Math.max(lo, Math.min(hi, n));
+  let activeDrag = null;
+  addEventListener('mousemove', (e) => activeDrag?.onMove(e));
+  addEventListener('mouseup', () => { activeDrag?.onEnd(); activeDrag = null; });
+
+  const isDark = matchMedia('(prefers-color-scheme: dark)').matches;
+  mermaid.initialize({
+    startOnLoad: false, theme: 'base', look: 'classic', layout: 'dagre',
+    themeVariables: {
+      fontFamily: "'IBM Plex Sans', system-ui, sans-serif", fontSize: '15px',
+      lineColor: isDark ? '#5b9bd5' : '#9db4cc',
+    }
+  });
+
+  function initDiagram(shell) {
+    const wrap = shell.querySelector('.mermaid-wrap');
+    const viewport = shell.querySelector('.mermaid-viewport');
+    const canvas = shell.querySelector('.mermaid-canvas');
+    const source = shell.querySelector('.diagram-source');
+    const label = shell.querySelector('.zoom-label');
+    if (!wrap || !viewport || !canvas || !source || !label) return;
+
+    let zoom = 1, fitMode = 'contain', panX = 0, panY = 0, svgW = 0, svgH = 0;
+    let sx = 0, sy = 0, spx = 0, spy = 0, touchDist = 0, touchCx = 0, touchCy = 0;
+
+    function constrainPan() {
+      const vpW = viewport.clientWidth, vpH = viewport.clientHeight;
+      const rW = svgW * zoom, rH = svgH * zoom, pad = config.fitPadding;
+      panX = (rW + pad * 2 <= vpW) ? (vpW - rW) / 2 : clamp(panX, vpW - rW - pad, pad);
+      panY = (rH + pad * 2 <= vpH) ? (vpH - rH) / 2 : clamp(panY, vpH - rH - pad, pad);
+    }
+    function applyTransform() {
+      const svg = canvas.querySelector('svg');
+      if (!svg || !svgW) return;
+      constrainPan();
+      svg.style.width = (svgW * zoom) + 'px';
+      svg.style.height = (svgH * zoom) + 'px';
+      canvas.style.transform = `translate(${panX}px, ${panY}px)`;
+      label.textContent = Math.round(zoom * 100) + '%';
+    }
+    function canPan() {
+      return svgW * zoom + config.fitPadding * 2 > viewport.clientWidth
+          || svgH * zoom + config.fitPadding * 2 > viewport.clientHeight;
+    }
+    function computeSmartFit() {
+      const vpW = viewport.clientWidth, vpH = viewport.clientHeight;
+      const aW = Math.max(80, vpW - config.fitPadding * 2);
+      const aH = Math.max(80, vpH - config.fitPadding * 2);
+      const contain = Math.min(aW / svgW, aH / svgH);
+      let z = contain, mode = 'contain';
+      if (contain < config.readabilityFloor) {
+        z = aW / svgW; mode = 'width';
+      }
+      return { zoom: clamp(z, config.minZoom, config.maxInitialZoom), mode };
+    }
+    function fitDiagram() {
+      if (!svgW) return;
+      const fit = computeSmartFit();
+      zoom = fit.zoom; fitMode = fit.mode;
+      panX = (viewport.clientWidth - svgW * zoom) / 2;
+      panY = (viewport.clientHeight - svgH * zoom) / 2;
+      applyTransform();
+    }
+    function setOneToOne() {
+      zoom = 1; fitMode = '1:1';
+      panX = (viewport.clientWidth - svgW * zoom) / 2;
+      panY = (viewport.clientHeight - svgH * zoom) / 2;
+      applyTransform();
+    }
+    function zoomAround(factor, cx, cy) {
+      const next = clamp(zoom * factor, config.minZoom, config.maxZoom);
+      const ratio = next / zoom;
+      panX = cx - ratio * (cx - panX);
+      panY = cy - ratio * (cy - panY);
+      zoom = next; applyTransform();
+    }
+    function readSvgNaturalSize(svg) {
+      let w = 0, h = 0;
+      if (svg.viewBox?.baseVal?.width > 0) { w = svg.viewBox.baseVal.width; h = svg.viewBox.baseVal.height; }
+      if (!w) { w = parseFloat(svg.getAttribute('width')) || 0; h = parseFloat(svg.getAttribute('height')) || 0; }
+      if (!w) { const b = svg.getBBox(); w = b.width; h = b.height; }
+      if (!w) { const r = svg.getBoundingClientRect(); w = r.width || 1000; h = r.height || 700; }
+      if (!svg.getAttribute('viewBox')) svg.setAttribute('viewBox', `0 0 ${w} ${h}`);
+      return { w, h };
+    }
+    function setAdaptiveHeight() {
+      if (!svgW) return;
+      const usableW = Math.max(280, wrap.getBoundingClientRect().width - 2);
+      const idealH = (svgH / svgW) * usableW + config.fitPadding * 2;
+      const maxVp = Math.floor(innerHeight * config.maxHeightVh);
+      const hardMax = Math.min(config.maxHeightPx, Math.max(config.minHeight + 40, maxVp));
+      wrap.style.height = Math.round(clamp(idealH, config.minHeight, hardMax)) + 'px';
+    }
+    function openInNewTab() {
+      const svg = canvas.querySelector('svg');
+      if (!svg) return;
+      const clone = svg.cloneNode(true);
+      clone.style.width = ''; clone.style.height = '';
+      const bg = isDark ? '#0a1626' : '#eef2f7';
+      const html = `<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>BOM Tree</title><style>body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;background:${bg};padding:40px;box-sizing:border-box}svg{max-width:100%;max-height:90vh;height:auto}</style></head><body>${clone.outerHTML}</body></html>`;
+      open(URL.createObjectURL(new Blob([html], { type: 'text/html' })), '_blank');
+    }
+    async function render() {
+      try {
+        const code = source.textContent.trim();
+        const id = 'dgm-' + Math.random().toString(36).slice(2, 9);
+        const { svg } = await mermaid.render(id, code);
+        canvas.innerHTML = svg;
+        const svgNode = canvas.querySelector('svg');
+        if (!svgNode) { label.textContent = 'Error'; return; }
+        const size = readSvgNaturalSize(svgNode);
+        svgW = size.w; svgH = size.h;
+        svgNode.removeAttribute('width'); svgNode.removeAttribute('height');
+        svgNode.style.maxWidth = 'none'; svgNode.style.display = 'block';
+        setAdaptiveHeight(); fitDiagram();
+      } catch (err) {
+        console.error(err); label.textContent = 'Error';
+      }
+    }
+    const actions = {
+      'zoom-in': () => zoomAround(1 + config.zoomStep, viewport.clientWidth / 2, viewport.clientHeight / 2),
+      'zoom-out': () => zoomAround(1 / (1 + config.zoomStep), viewport.clientWidth / 2, viewport.clientHeight / 2),
+      'zoom-fit': fitDiagram, 'zoom-one': setOneToOne, 'zoom-expand': openInNewTab
+    };
+    Object.entries(actions).forEach(([a, h]) => wrap.querySelector(`[data-action="${a}"]`)?.addEventListener('click', h));
+    viewport.addEventListener('dblclick', fitDiagram);
+    viewport.addEventListener('wheel', (e) => {
+      if (e.ctrlKey || e.metaKey) {
+        e.preventDefault();
+        const rect = viewport.getBoundingClientRect();
+        const factor = e.deltaY < 0 ? 1 + config.zoomStep : 1 / (1 + config.zoomStep);
+        zoomAround(factor, e.clientX - rect.left, e.clientY - rect.top); return;
+      }
+      if (canPan()) { e.preventDefault(); panX -= e.deltaX; panY -= e.deltaY; applyTransform(); }
+    }, { passive: false });
+    viewport.addEventListener('mousedown', (e) => {
+      if (e.target.closest('.zoom-controls') || !canPan()) return;
+      wrap.classList.add('is-panning');
+      sx = e.clientX; sy = e.clientY; spx = panX; spy = panY; e.preventDefault();
+      activeDrag = {
+        onMove: (ev) => { panX = spx + (ev.clientX - sx); panY = spy + (ev.clientY - sy); applyTransform(); },
+        onEnd: () => wrap.classList.remove('is-panning')
+      };
+    });
+    viewport.addEventListener('touchstart', (e) => {
+      if (e.touches.length === 1) { sx = e.touches[0].clientX; sy = e.touches[0].clientY; spx = panX; spy = panY; }
+      else if (e.touches.length === 2) {
+        const dx = e.touches[0].clientX - e.touches[1].clientX, dy = e.touches[0].clientY - e.touches[1].clientY;
+        touchDist = Math.sqrt(dx * dx + dy * dy);
+        const r = viewport.getBoundingClientRect();
+        touchCx = (e.touches[0].clientX + e.touches[1].clientX) / 2 - r.left;
+        touchCy = (e.touches[0].clientY + e.touches[1].clientY) / 2 - r.top;
+      }
+    }, { passive: true });
+    viewport.addEventListener('touchmove', (e) => {
+      if (e.touches.length === 1 && canPan()) {
+        e.preventDefault();
+        panX = spx + (e.touches[0].clientX - sx); panY = spy + (e.touches[0].clientY - sy); applyTransform();
+      } else if (e.touches.length === 2 && touchDist > 0) {
+        e.preventDefault();
+        const dx = e.touches[0].clientX - e.touches[1].clientX, dy = e.touches[0].clientY - e.touches[1].clientY;
+        const d = Math.sqrt(dx * dx + dy * dy);
+        zoomAround(d / touchDist, touchCx, touchCy); touchDist = d;
+      }
+    }, { passive: false });
+    new ResizeObserver(() => { if (svgW) { setAdaptiveHeight(); fitDiagram(); } }).observe(wrap);
+    render();
+  }
+  document.querySelectorAll('.diagram-shell').forEach(initDiagram);
+</script>
+
+<script>
+/* ===== CLICK-THROUGH COMPANY MAP ===== */
+const NODES = [
+  { id:'robot-oem', name:'Robot OEMs &amp; Integration', pri:'high',
+    fn:'Indian robot OEMs and system integrators — welding cells, palletising, machine tending, assembly. Value sits in application engineering, fixtures, vision and service, not the imported arm.',
+    importDep:'Arms imported; integration domestic', conc:'Fragmented integrators; arms concentrated',
+    companies:[
+      {n:'Affordable Robotic &amp; Automation', t:'NSE: AFFORDABLE', e:'direct', m:'India&rsquo;s first listed robotics company; order book &gt;&#8377;140 cr (25-Nov-2025); industrial automation, welding cells, robotic parking', ev:'BSE/NSE filings (2025)'},
+      {n:'ABB India', t:'NSE: ABB', e:'indirect', m:'Transferring its robotics business to ABB Robotics India by slump sale (&#8377;1,568.2 cr, effective 1-Mar-2026); robotics was ~3.6% of FY24 revenue', ev:'ABB India BSE filing / ET Manufacturing (Jan-2026)'},
+      {n:'Siemens', t:'NSE: SIEMENS', e:'indirect', m:'Factory automation, drives and motion; robotics delivered through automation projects, not arm manufacturing', ev:'Company'},
+      {n:'Honeywell Automation India', t:'NSE: HONAUT', e:'conglomerate', m:'Process/building automation; robotics is a minor segment of a diversified portfolio', ev:'Company [INFERENCE]'},
+      {n:'Tata Elxsi', t:'NSE: TATAELXSI', e:'indirect', m:'Engineering & design services incl. robotics/automation software for OEMs', ev:'Company'},
+      {n:'Cyient', t:'NSE: CYIENT', e:'indirect', m:'Engineering services with AGV/automation design exposure', ev:'Company'}
+    ] },
+  { id:'industrial-arms', name:'Industrial Robot Arms', pri:'high', bott:true,
+    fn:'6-axis articulated and SCARA arms for welding, handling and painting. Global OEMs (Fanuc, ABB, Yaskawa, KUKA, Kawasaki, Mitsubishi, Denso) dominate India; a few domestic entrants (Systemantics cobots, RL Robotics, Ace Robotics) are emerging.',
+    importDep:'High — global OEMs; most arms imported', conc:'Oligopoly (global OEMs)',
+    companies:[
+      {n:'ABB India', t:'NSE: ABB', e:'indirect', m:'Arms historically via ABB Robotics India; the listed entity is exiting robotics, leaving only drives/automation', ev:'ABB India BSE filing (Jan/Mar-2026)'}
+    ],
+    near:'Context (unlisted): Systemantics (ASYSTR made-in-India cobots), RL Robotics (Rishi Laser), Ace Robotics, Autobot Systems, Suprak, Itech. Global OEMs are foreign-listed.' },
+  { id:'cobots', name:'Collaborative Robots (cobots)', pri:'med',
+    fn:'Lightweight, fence-free 6-axis cobots (ISO 10218 / ISO/TS 15066). Fast-growing for SMEs. Global: Universal Robots, Doosan, Techman; Indian: Systemantics ASYSTR (fully designed &amp; made in India).',
+    importDep:'High — mostly imported; Systemantics domestic', conc:'Global concentrated',
+    companies:[], gap:'NO LISTED PURE-PLAY IN SELECTED UNIVERSE.', near:'Systemantics (unlisted) builds ASYSTR cobots in India; global cobot makers are foreign-listed.' },
+  { id:'amr', name:'Autonomous Mobile Robots / AGV', pri:'high',
+    fn:'AMRs/AGVs for intralogistics — SLAM navigation, fleet software, chargers. India has a strong startup cluster; ARAPL&rsquo;s Humro is the listed play.',
+    importDep:'Partial — platforms domestic; sensors/drives imported', conc:'Fragmented (startups)',
+    companies:[
+      {n:'Affordable Robotic &amp; Automation (Humro)', t:'NSE: AFFORDABLE', e:'direct', m:'Humro AMR brand; Atlas AC2000 autonomous forklift (first US order Oct-2025); RaaS (&#8377;7.3 cr / 8 robots) and lease (&#8377;4.13 cr / 6 robots) models', ev:'BSE/NSE filings (Oct/Nov-2025)'}
+    ],
+    near:'Context (unlisted): Ati Motors (Sherpa, ~$37 mn raised), Addverb (Reliance-backed), GreyOrange, Hachidori, Loop Robotics.' },
+  { id:'drones', name:'Drones / UAV Systems', pri:'high', bott:true,
+    fn:'UAV platforms — surveillance/mapping, agri-spraying, logistics, loitering munitions and FPV. DGCA type certification; complete-drone imports banned; ~50–60% of subsystem value still imported.',
+    importDep:'Partial — airframe/assembly domestic, subsystems imported', conc:'Fragmented; four listed players',
+    companies:[
+      {n:'ideaForge Technology', t:'NSE: IDEAFORGE', e:'direct', m:'Pure-play surveillance/mapping drone manufacturer; the largest listed drone name', ev:'Company / univest drone note (Sep-2026)'},
+      {n:'Zen Technologies', t:'NSE: ZENTEC', e:'direct', m:'Anti-drone/counter-drone systems and simulators; acquired 51% Vector Technics (drone core components), 45.33% Bhairav Robotics, TISA Aerospace (loitering munitions)', ev:'ICICIdirect company profile'},
+      {n:'Paras Defence &amp; Space Tech', t:'NSE: PARAS', e:'indirect', m:'60% Paras Aerospace (drones) and 55% Paras Anti-Drone; optics and defence electronics', ev:'Upstox company profile'},
+      {n:'DroneAcharya Aerial Innovations', t:'BSE SME: 543713', e:'direct', m:'DGCA-certified drone solutions, training (RPTO) and AgriVeer agri-drone; FY25 revenue &#8377;36.7 cr', ev:'BSE filing (Nov-2025)'}
+    ] },
+  { id:'humanoid', name:'Humanoid &amp; Service Robots', pri:'med',
+    fn:'Humanoids and service robots — early-commercial/research. Ati Motors (Sherpa Mecha), Addverb (dual-arm), Asimov (Zoho), Kamarta. Sona Comstar–NEURA partnership targets humanoid components.',
+    importDep:'High — core actuators imported', conc:'Nascent',
+    companies:[
+      {n:'Sona Comstar', t:'NSE: SONACOMS', e:'indirect', m:'&#8377;62.6 cr capex into robotics components &amp; systems (Jun-2026); NEURA Robotics partnership (Oct-2025) for humanoid/robotics', ev:'ETAuto / company filing (Jun-2026)'}
+    ],
+    near:'Context (unlisted): Ati Motors (Sherpa Mecha), Addverb, Asimov Robotics (Zoho), Kamarta, Vividobots.' },
+  { id:'harmonic', name:'Harmonic / Strain-Wave Reducers', pri:'high', bott:true,
+    fn:'Zero-backlash flexspline/wave-generator/circular-spline gearsets inside almost every robot joint — the single largest domestic gap. Effectively 100% imported.',
+    importDep:'Effectively 100% imported (no large-scale domestic production)', conc:'Oligopoly (Harmonic Drive Systems Japan; Leaderdrive/Shuanghuan/Laifual China)',
+    companies:[], gap:'NO LISTED PURE-PLAY IN INDIA — no large-scale domestic production of robotics-grade units.', near:'Global: Harmonic Drive Systems (Japan), Nabtesco, Leaderdrive/Shuanghuan/Laifual (China). Context (unlisted): Indian industrial-grade makers (Mohindra, Cyclo Transmissions, Mukund Trans-Gears, Sumi-Cyclo Pune assembly) are not robotics-grade; several &ldquo;manufacturers&rdquo; are traders.' },
+  { id:'rv', name:'RV / Cycloidal Reducers', pri:'high', bott:true,
+    fn:'Cycloidal/RV reducers for heavy base axes. Industrial-grade units are made in India (unlisted); robotics-grade precision is still imported.',
+    importDep:'Partial — industrial-grade domestic; precision imported', conc:'Global concentrated (Nabtesco, China)',
+    companies:[], gap:'NO LISTED PURE-PLAY IN SELECTED UNIVERSE.', near:'Context (unlisted): Cyclo Transmissions, Mukund Trans-Gears, SMD Gearbox, Sumi-Cyclo Drive India.' },
+  { id:'servo-motors', name:'Servo Motors &amp; Frameless Torque Motors', pri:'high', bott:true,
+    fn:'AC servo motors and the frameless torque motors used in robot joints. India&rsquo;s servo import bill is ~$0.34 bn/yr with ~34% domestic capability; frameless torque motors are development-stage.',
+    importDep:'Partial — ~34% domestic capability; imports Japan 58% / Taiwan 25% / China 17%', conc:'Oligopoly (Yaskawa, Fanuc, Mitsubishi, Siemens, Beckhoff)',
+    companies:[
+      {n:'Bharat Bijlee', t:'NSE: BBL', e:'direct', m:'Indigenously developed SynchroTorq PM AC servo motors; 4,000+ packages with KEB drives, 17,000+ servo packages over 17 years', ev:'Company (bharatbijlee.com)'},
+      {n:'CG Power', t:'NSE: CGPOWER', e:'supplier', m:'LV/MV industrial motors and drives (Emotron); large motors to 20 MW; component supplier to automation OEMs', ev:'Company (cgglobal.com)'},
+      {n:'Sona Comstar', t:'NSE: SONACOMS', e:'supplier', m:'Traction and precision motors; frameless torque motors development-stage; entering robotics components', ev:'Company / ETAuto (Jun-2026)'},
+      {n:'KSH International', t:'NSE: KSHINTL', e:'supplier', m:'~75.3% of revenue from magnet winding wires (motor windings) — upstream input to servo/traction motors', ev:'Cofacto (Sep-2026) [INFERENCE on robotics relevance]'},
+      {n:'Pitti Engineering', t:'NSE: PITTIENG', e:'supplier', m:'Stator/rotor cores and die-cast rotors supplied into motors made by ABB, CG and Siemens', ev:'Cofacto (Sep-2026)'}
+    ] },
+  { id:'drives', name:'Servo Drives &amp; Motion Controllers', pri:'high', bott:true,
+    fn:'Servo drives/controllers translating control signals into precise motion. &gt;60% of AC servo systems are imported; India does licensed assembly, not indigenous design.',
+    importDep:'High — &gt;60% imported (Japan, Germany, China)', conc:'Concentrated (global OEMs)',
+    companies:[
+      {n:'Bharat Bijlee', t:'NSE: BBL', e:'direct', m:'Assembles and distributes KEB servo/VFD drives and multi-axis motion controllers; 17,000+ servo packages', ev:'Company'},
+      {n:'CG Power', t:'NSE: CGPOWER', e:'supplier', m:'Drives &amp; automation (Emotron acquisition); motors + drives portfolio', ev:'Company'},
+      {n:'ABB India', t:'NSE: ABB', e:'direct', m:'Low-voltage drives and motion (a core business area after the robotics divestment)', ev:'Company / ABB India filings'},
+      {n:'Siemens', t:'NSE: SIEMENS', e:'direct', m:'SINAMICS drives and motion control marketed as Made in India', ev:'Company / IndiaBUILD'}
+    ] },
+  { id:'power-semi', name:'Power Electronics — IGBT / MOSFET / MCU', pri:'high', bott:true,
+    fn:'Power semiconductors and control silicon (MCU/DSP) inside every drive. India has no power-electronics semiconductor capability; these are imported.',
+    importDep:'Effectively imported (no domestic power-semi capability)', conc:'Global concentrated (Infineon, Mitsubishi, Fuji, ST, TI)',
+    companies:[], gap:'NO LISTED PURE-PLAY IN INDIA.', near:'Imported. Context: India Semiconductor Mission targets power-semi fabs (OSAT/packaging ramping), but drive-grade devices are not made domestically yet.' },
+  { id:'encoders', name:'Encoders &amp; Force/Torque Sensors', pri:'high', bott:true,
+    fn:'High-precision encoders and joint torque sensors that close the motion loop. No Indian manufacturer disclosed; the dominant encoder chip is made in Austria.',
+    importDep:'Effectively imported (no Indian maker disclosed)', conc:'Concentrated (Heidenhain, Renishaw; encoder chip Austria)',
+    companies:[], gap:'NO LISTED PURE-PLAY IN INDIA.', near:'Imported from Heidenhain/Renishaw-class suppliers. No NSE/BSE exposure.' },
+  { id:'magnets', name:'Rare-Earth Magnets (NdFeB / SmCo)', pri:'high', bott:true,
+    fn:'Sintered NdFeB magnets in every servo motor. ~95% imported; China holds ~94% of sintered output and 87–91% of rare-earth processing. First Indian plant targeted Q1 2028.',
+    importDep:'~95% imported', conc:'Near-monopoly (China)',
+    companies:[], gap:'NO LISTED PURE-PLAY IN INDIA — no domestic sintered NdFeB producer today.', near:'First Indian plant targeted Q1 2028. Sona Comstar and other motor makers are exploring; the magnet plant is the missing link.' },
+  { id:'bearings', name:'Precision Bearings, Ball &amp; Roller Screws', pri:'high',
+    fn:'Robot-joint bearings and planetary roller/ball screws (critical for humanoid linear actuators). Industrial bearings are established in India; robotics-grade bearings and roller screws are not.',
+    importDep:'Partial — industrial domestic; robotics-grade imported', conc:'Global concentrated (Rollvis, GSA, Ewellix, Rexroth, Nanjing)',
+    companies:[
+      {n:'Schaeffler India', t:'NSE: SCHAEFFLER', e:'direct', m:'Motion technology, bearings and linear systems; supplier to machine-tool and automation OEMs', ev:'Company / Share.Market'},
+      {n:'MTAR Technologies', t:'NSE: MTAR', e:'indirect', m:'Developed defence/space-grade ball/roller screws; robotics volume unproven', ev:'Cofacto (Sep-2026) [INFERENCE]'}
+    ] },
+  { id:'cells', name:'Li-ion Cells &amp; Battery Packs', pri:'med',
+    fn:'Cells for AMRs, AGVs, drones and service robots; packs are assembled in India but cells are imported (mostly from China).',
+    importDep:'High — cells imported; packs domestic', conc:'Global concentrated (CATL, BYD, LG, Samsung SDI)',
+    companies:[
+      {n:'Exide Industries', t:'NSE: EXIDEIND', e:'indirect', m:'Battery maker with Li-ion cell plans; robotics packs a minor segment', ev:'Company [INFERENCE]'},
+      {n:'Amara Raja', t:'NSE: ARE&amp;M', e:'indirect', m:'Battery maker expanding Li-ion; robotics exposure indirect', ev:'Company [INFERENCE]'}
+    ] },
+  { id:'lidar', name:'LiDAR / Vision / Depth Sensors', pri:'high', bott:true,
+    fn:'3D LiDAR, depth cameras and machine-vision sensors for navigation, bin-picking and inspection. Largely imported.',
+    importDep:'High — largely imported', conc:'Global concentrated',
+    companies:[], gap:'NO LISTED PURE-PLAY IN INDIA.', near:'Imported. Context (unlisted): several Indian machine-vision startups; no listed pure-play.' },
+  { id:'software', name:'Robot Software &amp; Autonomy (SLAM / fleet / AI)', pri:'med',
+    fn:'SLAM, fleet management, motion planning, AI vision and digital twin — increasingly where robot value and margin sit, and India&rsquo;s strongest layer.',
+    importDep:'Domestic capability strong', conc:'Fragmented (services + product)',
+    companies:[
+      {n:'Tata Elxsi', t:'NSE: TATAELXSI', e:'indirect', m:'Engineering/design services incl. robotics and autonomous-systems software', ev:'Company / Share.Market'},
+      {n:'Cyient', t:'NSE: CYIENT', e:'indirect', m:'Engineering services; AGV/autonomous design and predictive-maintenance tools', ev:'Company / Share.Market'},
+      {n:'KPIT Technologies', t:'NSE: KPITTECH', e:'indirect', m:'Automotive software and autonomous-systems engineering (adjacent to robotics)', ev:'Company [INFERENCE]'},
+      {n:'Affordable Robotic &amp; Automation', t:'NSE: AFFORDABLE', e:'direct', m:'Proprietary FleetOps AMR software and iWare integration; nine patents, three software platforms', ev:'BSE filing (2025)'}
+    ] },
+  { id:'drone-fc', name:'Drone Flight Controllers, ESCs &amp; Avionics', pri:'high', bott:true,
+    fn:'Flight controllers, ESCs, IMUs and RF datalinks — the imported core of an otherwise &ldquo;Indian&rdquo; drone. Zen&rsquo;s Vector Technics (51%) makes core drone components.',
+    importDep:'High — ~50–60% of subsystem value imported', conc:'Global concentrated',
+    companies:[
+      {n:'Zen Technologies (Vector Technics)', t:'NSE: ZENTEC', e:'supplier', m:'51% stake in Vector Technics — core drone components (motors, controllers)', ev:'ICICIdirect company profile'}
+    ] },
+  { id:'drone-prop', name:'Drone Propulsion — BLDC Motors &amp; Propellers', pri:'high',
+    fn:'Brushless motors, ESCs and propellers. Largely imported; domestic entrants emerging under the drone component R&amp;D push.',
+    importDep:'High — largely imported', conc:'Global concentrated (China)',
+    companies:[
+      {n:'Zen Technologies (Vector Technics)', t:'NSE: ZENTEC', e:'supplier', m:'Drone core components incl. propulsion via Vector Technics', ev:'ICICIdirect company profile [INFERENCE on scope]'}
+    ] },
+  { id:'eoat', name:'End-of-Arm Tooling &amp; Application Package', pri:'med',
+    fn:'Grippers, welding torches, sprayers, fixtures, vision packages — the application layer integrators own and where domestic value is real.',
+    importDep:'Partial — domestic integration; some tools imported', conc:'Fragmented',
+    companies:[
+      {n:'Affordable Robotic &amp; Automation', t:'NSE: AFFORDABLE', e:'direct', m:'Robotic welding cells, inspection stations and automated assembly with in-house EOAT/fixtures', ev:'BSE filing (2025)'}
+    ] },
+  { id:'machine-tools', name:'Precision Machine Tools &amp; Metrology', pri:'high', bott:true,
+    fn:'The gear/thread grinding machines and CMMs that make reducers, screws and gears — fully imported (Klingelnberg, Gleason, Nidec, H&ouml;fler; ZEISS, Mitutoyo). The deepest hidden dependency.',
+    importDep:'Effectively fully imported', conc:'Global concentrated',
+    companies:[], gap:'NO LISTED PURE-PLAY IN SELECTED UNIVERSE.', near:'Imported. Context (unlisted): no Indian gear-grinding or precision-CMM maker at robotics grade.' }
+];
+
+const nodesEl = document.getElementById('mapNodes');
+const panelEl = document.getElementById('mapPanel');
+const PRI_LABEL = { high:'HIGH', med:'MEDIUM', low:'LOW' };
+
+function renderPanel(node) {
+  if (!node) { panelEl.innerHTML = '<div class="map-panel__kicker">Company map</div><div class="map-panel__title">Select a node</div><p class="map-panel__fn">Click any node on the left to see its NSE/BSE companies, exposure type, materiality and evidence.</p>'; return; }
+  let html = '';
+  html += `<div class="map-panel__kicker">${PRI_LABEL[node.pri] || ''} priority node</div>`;
+  html += `<div class="map-panel__title">${node.name}</div>`;
+  html += `<p class="map-panel__fn">${node.fn}</p>`;
+  html += `<div class="map-panel__row">`;
+  if (node.importDep && node.importDep !== 'n/a') html += `<span class="mini">Import: ${node.importDep}</span>`;
+  if (node.conc) html += `<span class="mini">Concentration: ${node.conc}</span>`;
+  if (node.bott) html += `<span class="mini" style="color:var(--gold)">Bottleneck</span>`;
+  html += `</div>`;
+
+  if (!node.companies || node.companies.length === 0) {
+    html += `<div class="nocov"><b>${node.gap}</b><span class="near">${node.near}</span></div>`;
+    panelEl.innerHTML = html;
+    return;
+  }
+  node.companies.forEach(c => {
+    html += `<div class="co">`;
+    html += `<div class="co__name">${c.n}<span class="co__ticker">${c.t}</span></div>`;
+    html += `<div class="co__tags"><span class="tag tag--${c.e}">${c.e.toUpperCase()}</span></div>`;
+    html += `<div class="co__mat">${c.m}</div>`;
+    html += `<div class="co__ev">Evidence: ${c.ev}</div>`;
+    html += `</div>`;
+  });
+  if (node.near) html += `<div class="near">${node.near}</div>`;
+  panelEl.innerHTML = html;
+}
+
+const PTREE = [
+  { icon:'A', group:'Robot platforms', ids:['robot-oem','industrial-arms','cobots','amr','drones','humanoid'] },
+  { icon:'B', group:'Core actuation &amp; drive', ids:['harmonic','rv','servo-motors','drives','power-semi','encoders'] },
+  { icon:'C', group:'Materials, energy &amp; sensing', ids:['magnets','bearings','cells','lidar'] },
+  { icon:'D', group:'Drone subsystems', ids:['drone-fc','drone-prop'] },
+  { icon:'E', group:'Tooling, software &amp; equipment', ids:['eoat','software','machine-tools'] }
+];
+let firstBtn = null;
+PTREE.forEach((grp) => {
+  const wrap = document.createElement('div');
+  const head = document.createElement('button');
+  head.type = 'button';
+  head.style.cssText = 'display:flex;align-items:center;gap:8px;width:100%;text-align:left;background:transparent;border:none;cursor:pointer;padding:8px 6px;font-family:var(--font-mono);font-size:11px;font-weight:600;letter-spacing:.6px;color:var(--text-dim);text-transform:uppercase;';
+  head.innerHTML = '<span class="tgl" style="width:12px;display:inline-block;">&#9662;</span><span>' + grp.icon + ' &middot; ' + grp.group + '</span>';
+  const body = document.createElement('div');
+  body.style.cssText = 'margin-left:14px;border-left:1px dashed var(--border-bright);padding-left:8px;';
+  grp.ids.forEach((id) => {
+    const node = NODES.find((n) => n.id === id);
+    if (!node) return;
+    const btn = document.createElement('button');
+    btn.className = 'node-btn';
+    btn.type = 'button';
+    const dotClass = (!node.companies || node.companies.length === 0) ? 'dot--none' : ('dot--' + node.pri);
+    let flags = '';
+    if (!node.companies || node.companies.length === 0) flags += '<span class="flag flag--gap">GAP</span>';
+    else if (node.bott) flags += '<span class="flag flag--bott">BOTTLENECK</span>';
+    btn.innerHTML = '<div class="node-btn__name"><span class="dot ' + dotClass + '"></span>' + node.name + '</div><div class="node-btn__meta"><span>' + (node.companies || []).length + ' listed</span>' + flags + '</div>';
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.node-btn').forEach((b) => b.classList.remove('is-active'));
+      btn.classList.add('is-active');
+      renderPanel(node);
+    });
+    body.appendChild(btn);
+    if (!firstBtn) firstBtn = btn;
+  });
+  head.addEventListener('click', () => {
+    const hidden = body.style.display === 'none';
+    body.style.display = hidden ? '' : 'none';
+    head.querySelector('.tgl').innerHTML = hidden ? '&#9662;' : '&#9656;';
+  });
+  wrap.appendChild(head);
+  wrap.appendChild(body);
+  nodesEl.appendChild(wrap);
+});
+if (firstBtn) { firstBtn.classList.add('is-active'); renderPanel(NODES.find((n) => n.id === 'robot-oem')); }
+</script>
+
+<script>window.__MBULLETS=[["India installed a record <b>9,120 industrial robots</b> in 2024 (+7% YoY), ranking <b>6th worldwide</b>; operational stock ~52,600 (10th).", "Automotive is the anchor — 4,070 units (45% share), with parts suppliers up 40% to 2,100 units.", "Source: IFR World Robotics 2025 (25-Sep-2025) [REPORTED-T2]."], ["India&rsquo;s industrial-robotics market is ~US$1.24 bn (2025, Ken Research) to ~US$1.62 bn (2024, Grand View); IMARC puts the wider robotics market (incl. service) at ~US$1.98 bn (2025).", "Scope differs by source (hardware+integration vs total incl. service) — not directly comparable.", "Sources: Ken Research; Grand View/Horizon; IMARC [CONFLICTING DATA / scope]."], ["India has <b>no large-scale domestic production</b> of robotics-grade harmonic/strain-wave reducers — effectively 100% imported.", "A 50&ndash;100 Nm unit lands at &#8377;35,000&ndash;&#8377;1,20,000 (2026), with 12&ndash;24 week lead times.", "Sources: IndiaBUILD; IndexBox [REPORTED-T3]."], ["~<b>95%</b> of sintered NdFeB magnets are imported; China holds ~94% of sintered output and 87&ndash;91% of rare-earth processing.", "The first Indian NdFeB plant is targeted for Q1 2028.", "Source: Cofacto (Sep-2026) [REPORTED-T3]."], ["India has <b>38,575 registered drones</b> (UIN), 39,890 DGCA-certified remote pilots and 244 RPTOs as of Feb-2026.", "Complete-drone imports are banned; ~50&ndash;60% of drone subsystem value is still imported.", "Source: PIB (Feb-2026); Kodainya [REPORTED-T1/T2]."], ["Drone PLI outlay is &#8377;120 cr (2021-22 to 2024-25); PLI 2.0 was finalised in early 2026 and Mission Drone Shakti (&#8377;10,000 cr) is proposed.", "There is <b>no dedicated robotics PLI</b>; the National Strategy on Robotics remains a draft.", "Sources: MoCA PLI guidelines; PIB; MeitY draft NSR [REPORTED-T1/T2]."]];</script>
+
+<div class="metric-modal" id="regMetricModal" hidden>
+  <div class="metric-modal__backdrop" data-close></div>
+  <div class="metric-modal__panel">
+    <button class="metric-modal__close" data-close aria-label="Close">&#10005;</button>
+    <div class="metric-modal__kicker">Metric detail</div>
+    <div class="metric-modal__val" id="rmVal"></div>
+    <div class="metric-modal__label" id="rmLabel"></div>
+    <ul class="metric-modal__bullets" id="rmBullets"></ul>
+  </div>
+</div>
+
+<script>
+(function(){
+  var B = window.__MBULLETS || [];
+  var modal = document.getElementById('regMetricModal');
+  if (!modal) return;
+  var v = document.getElementById('rmVal'), l = document.getElementById('rmLabel'), ul = document.getElementById('rmBullets');
+  function val(el,s){ var n = el.querySelector(s); return n ? n.textContent.trim() : ''; }
+  function close(){ modal.hidden = true; }
+  function open(card, i){
+    v.textContent = val(card, '.metric-card__val');
+    var sub = val(card, '.metric-card__sub');
+    l.textContent = val(card, '.metric-card__label') + (sub ? ' — ' + sub : '');
+    ul.innerHTML = (B[i] || []).map(function(x){ return '<li>' + x + '</li>'; }).join('');
+    modal.hidden = false;
+  }
+  [].slice.call(document.querySelectorAll('.metric-card')).forEach(function(el, i){
+    el.setAttribute('role','button');
+    el.setAttribute('tabindex','0');
+    el.addEventListener('click', function(){ open(el, i); });
+    el.addEventListener('keydown', function(e){ if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(el, i); } });
+  });
+  [].slice.call(modal.querySelectorAll('[data-close]')).forEach(function(el){ el.addEventListener('click', close); });
+  document.addEventListener('keydown', function(e){ if (e.key === 'Escape') close(); });
+})();
+</script>
+</body>
+</html>

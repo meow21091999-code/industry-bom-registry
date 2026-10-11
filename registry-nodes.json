@@ -1,9 +1,9 @@
 {
  "registry": "Industry BOM Registry",
  "description": "Machine-readable node index. For every entry, the node names it contains plus the owning entry slug. Used for DEDUP (industry+scope already analysed) and LINEAGE (auto-linking a new industry to a parent when its name matches a node name). Update on every publish.",
- "generated": "2026-10-10",
+ "generated": "2026-10-11",
  "last_delta_pass": "2026-10-11",
- "delta_note": "Delta pass + full re-run 2026-10-11: silver-paste-metallisation-india (Silver Paste & Metallisation, INDIA, NSE/BSE, Renewable Energy) — the oldest entry (2026-10-07), re-analysed end to end. Material changes since 2026-10-07: (1) silver price corrected — record $121.64/oz Jan-2026 (prior page said '~$84 peak Dec-2025'), now ~$61/oz Oct-2026; (2) silver share of module cost ~14% (Oct-2026), down from a >30% peak earlier in 2026 (prior page said 16-17%); (3) DGFT tightened further — Notif 19/2026-27 (2 Jun 2026) restricted silver powder/grains, after Notif 17/2026-27 (16 May 2026) restricted silver bars; import duty raised to 15%; (4) paste majors consolidated into Chinese hands — DKEM now owns 60% of Solamet (2025), Haitian acquired the former Heraeus PV paste business (2025); (5) India silver-paste imports $184.33 mn FY2025-26, +64.5% YoY, 65% from China (CSE); (6) AnyD Materials (IIT-Bombay NCPRE spin-off) establishing a pilot silver-paste facility — first domestic entrant; (7) copper metallisation scaled — DKEM two-step paste supports ~40 GW TOPCon, Solamet PV46 pure-Cu series; Fraunhofer plating 1.1 mg/Wp. No lineage change (derived_from unchanged).",
+ "delta_note": "New entry 2026-10-11: robotics-india (Robotics, INDIA, NSE/BSE, Robotics & Automation) — first robotics analysis; covers all four subsystem families (industrial robots, AMR/AGV, drones/UAV, humanoid & service robots) over the shared actuator-drive-sensor core. Key [LIVE] facts: ABB India robotics business transferred to ABB Robotics India by slump sale (BSE filing; BTA 1-Mar-2026); National Strategy on Robotics still a draft (MeitY; TAG review Feb-2026); drone PLI 2.0 finalised early-2026 and Mission Drone Shakti (~Rs 10,000 cr) proposed; IFR flags a possible 2026 robot-installation pause as the electronics PLI runway lapses. No lineage (derived_from null).  | prior: Delta pass + full re-run 2026-10-11: silver-paste-metallisation-india (Silver Paste & Metallisation, INDIA, NSE/BSE, Renewable Energy) — the oldest entry (2026-10-07), re-analysed end to end. Material",
  "entries": [
   {
    "slug": "power-transmission-india",
@@ -10609,6 +10609,327 @@
      "priority": "high",
      "bottleneck": false,
      "in_universe_coverage": true
+    }
+   ]
+  },
+  {
+   "slug": "robotics-india",
+   "industry": "Robotics",
+   "scope": "INDIA",
+   "path": "industries/robotics-india.html",
+   "analysis_date": "2026-10-11",
+   "universe": "NSE/BSE",
+   "sector": "Robotics & Automation",
+   "derived_from": null,
+   "drill_downs": [],
+   "nodes": [
+    {
+     "id": "robot-oem",
+     "name": "Robot OEMs & System Integration",
+     "level": 1,
+     "aliases": [
+      "robot oem",
+      "system integration",
+      "robotic integration",
+      "robot integrator",
+      "robotic welding cell",
+      "automation integrator"
+     ],
+     "priority": "high",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "industrial-arms",
+     "name": "Industrial Robot Arms",
+     "level": 2,
+     "aliases": [
+      "industrial robot",
+      "articulated robot",
+      "robot arm",
+      "6-axis robot",
+      "SCARA",
+      "robotic arm"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "cobots",
+     "name": "Collaborative Robots",
+     "level": 2,
+     "aliases": [
+      "cobot",
+      "collaborative robot"
+     ],
+     "priority": "med",
+     "bottleneck": false,
+     "in_universe_coverage": false
+    },
+    {
+     "id": "amr",
+     "name": "Autonomous Mobile Robots",
+     "level": 2,
+     "aliases": [
+      "AMR",
+      "AGV",
+      "autonomous mobile robot",
+      "mobile robot",
+      "intralogistics robot",
+      "autonomous forklift"
+     ],
+     "priority": "high",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "drones",
+     "name": "Drones / UAV Systems",
+     "level": 2,
+     "aliases": [
+      "drone",
+      "UAV",
+      "unmanned aerial vehicle",
+      "FPV drone",
+      "loitering munition"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "humanoid",
+     "name": "Humanoid & Service Robots",
+     "level": 2,
+     "aliases": [
+      "humanoid",
+      "service robot",
+      "humanoid robot"
+     ],
+     "priority": "med",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "harmonic",
+     "name": "Harmonic / Strain-Wave Reducers",
+     "level": 3,
+     "aliases": [
+      "harmonic reducer",
+      "harmonic drive",
+      "strain wave gear",
+      "strain-wave reducer",
+      "flexspline",
+      "wave generator"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": false
+    },
+    {
+     "id": "rv",
+     "name": "RV / Cycloidal Reducers",
+     "level": 3,
+     "aliases": [
+      "RV reducer",
+      "cycloidal reducer",
+      "cycloidal drive",
+      "precision reducer"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": false
+    },
+    {
+     "id": "servo-motors",
+     "name": "Servo Motors & Frameless Torque Motors",
+     "level": 3,
+     "aliases": [
+      "servo motor",
+      "frameless torque motor",
+      "PM servo motor",
+      "traction motor",
+      "BLDC motor"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "drives",
+     "name": "Servo Drives & Motion Controllers",
+     "level": 3,
+     "aliases": [
+      "servo drive",
+      "motion controller",
+      "AC servo system",
+      "drive controller"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "power-semi",
+     "name": "Power Electronics (IGBT/MOSFET/MCU)",
+     "level": 3,
+     "aliases": [
+      "power semiconductor",
+      "IGBT",
+      "MOSFET",
+      "power module",
+      "gate driver"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": false
+    },
+    {
+     "id": "encoders",
+     "name": "Encoders & Force/Torque Sensors",
+     "level": 3,
+     "aliases": [
+      "encoder",
+      "torque sensor",
+      "force sensor",
+      "rotary encoder"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": false
+    },
+    {
+     "id": "magnets",
+     "name": "Rare-Earth Magnets (NdFeB/SmCo)",
+     "level": 4,
+     "aliases": [
+      "NdFeB magnet",
+      "rare earth magnet",
+      "permanent magnet",
+      "SmCo magnet",
+      "sintered magnet"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": false
+    },
+    {
+     "id": "bearings",
+     "name": "Precision Bearings, Ball & Roller Screws",
+     "level": 4,
+     "aliases": [
+      "precision bearing",
+      "roller screw",
+      "ball screw",
+      "planetary roller screw",
+      "robot bearing"
+     ],
+     "priority": "high",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "cells",
+     "name": "Li-ion Cells & Battery Packs",
+     "level": 4,
+     "aliases": [
+      "li-ion cell",
+      "battery pack",
+      "BMS",
+      "lithium cell"
+     ],
+     "priority": "med",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "lidar",
+     "name": "LiDAR / Vision / Depth Sensors",
+     "level": 3,
+     "aliases": [
+      "LiDAR",
+      "depth camera",
+      "machine vision",
+      "3D vision sensor"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": false
+    },
+    {
+     "id": "software",
+     "name": "Robot Software & Autonomy",
+     "level": 1,
+     "aliases": [
+      "robot software",
+      "SLAM",
+      "fleet management",
+      "autonomy software",
+      "digital twin",
+      "robot operating system"
+     ],
+     "priority": "med",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "drone-fc",
+     "name": "Drone Flight Controllers, ESCs & Avionics",
+     "level": 3,
+     "aliases": [
+      "flight controller",
+      "ESC",
+      "drone avionics",
+      "drone autopilot",
+      "datalink"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "drone-prop",
+     "name": "Drone Propulsion (BLDC Motors & Propellers)",
+     "level": 3,
+     "aliases": [
+      "drone motor",
+      "drone propeller",
+      "drone propulsion"
+     ],
+     "priority": "high",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "eoat",
+     "name": "End-of-Arm Tooling",
+     "level": 2,
+     "aliases": [
+      "end-of-arm tooling",
+      "EOAT",
+      "gripper",
+      "robot tooling",
+      "welding torch"
+     ],
+     "priority": "med",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "machine-tools",
+     "name": "Precision Machine Tools & Metrology",
+     "level": 4,
+     "aliases": [
+      "gear grinding machine",
+      "CMM",
+      "metrology",
+      "thread grinding",
+      "precision machine tool"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": false
     }
    ]
   }
