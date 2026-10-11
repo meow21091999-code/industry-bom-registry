@@ -26,6 +26,8 @@
       <span class="chip">Universe: NSE / BSE</span>
       <span class="chip chip--high">India lens: ON</span>
       <span class="chip">Depth: depth-first (4 subsystems)</span>
+      <span class="chip">Related: : Rare-Earth Magnets &rarr; Sintered NdFeB Magnets</span>
+      <span class="chip">Related: : Precision Machine Tools &amp; Metrology &rarr; CNC Machines</span>
     </div>
   </header>
 
@@ -400,6 +402,8 @@ const NODES = [
   {"id": "semis", "name": "Automotive Semiconductors", "pri": "high", "bott": true, "fn": "MCU, power (SiC/IGBT), analog, memory and MEMS devices across the vehicle.", "importDep": "Imported", "conc": "Foreign (NXP, Infineon, TI, Renesas, ST)", "companies": [{"n": "CG Power", "t": "NSE/BSE: CGPOWER", "e": "indirect", "m": "Semiconductor ATMP [INFERENCE]", "ev": "Company"}], "near": "No listed automotive-semi pure-play; Tata Electronics (unlisted) is building fab and OSAT capacity in Gujarat and Assam."},
   {"id": "software", "name": "Software / SDV", "pri": "med", "bott": false, "fn": "Embedded and AUTOSAR software, SDV architecture, OTA, cybersecurity and HMI.", "importDep": "Domestic capability strong", "conc": "Fragmented", "companies": [{"n": "KPIT Technologies", "t": "NSE/BSE: KPITTECH", "e": "direct", "m": "SDV software; ~&#8377;1,345 cr Q1FY26 [REPORTED-T2]", "ev": "Results"}, {"n": "Tata Elxsi", "t": "NSE/BSE: TATAELXSI", "e": "direct", "m": "Automotive design and EV software [REPORTED-T2]", "ev": "Press release"}, {"n": "Tata Technologies", "t": "NSE/BSE: TATATECH", "e": "direct", "m": "Engineering and software services [INFERENCE]", "ev": "Company"}]}
 ];
+const RELATED = {"motor": [["rare-earth-magnets-india.html", "Rare-Earth Magnets &rarr; Sintered NdFeB Magnets"]], "capeq": [["machine-tools-metrology-india.html", "Precision Machine Tools &amp; Metrology &rarr; CNC Machines"]]};
+NODES.forEach(n => { if (RELATED[n.id]) n.links = RELATED[n.id]; });
 const nodesEl = document.getElementById('mapNodes');
 const panelEl = document.getElementById('mapPanel');
 const PRI_LABEL = { high:'HIGH', med:'MEDIUM', low:'LOW' };
@@ -413,6 +417,7 @@ function renderPanel(node) {
   if (node.importDep && node.importDep !== 'n/a') html += `<span class="mini">Import: ${node.importDep}</span>`;
   if (node.conc) html += `<span class="mini">Concentration: ${node.conc}</span>`;
   if (node.bott) html += `<span class="mini" style="color:var(--gold)">Bottleneck</span>`;
+  (node.links || []).forEach(l => { html += `<a href="${l[0]}" style="display:block;margin:12px 0;padding:10px 12px;border:1px solid var(--gold);border-radius:8px;background:var(--gold-dim);color:var(--gold);font-family:var(--font-mono);font-size:11.5px;font-weight:600;text-decoration:none;">Related entry &rarr; ${l[1]}</a>`; });
   html += `</div>`;
   if (!node.companies || node.companies.length === 0) {
     html += `<div class="nocov"><b>${node.gap}</b><span class="near">${node.near}</span></div>`;

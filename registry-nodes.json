@@ -3,7 +3,7 @@
  "description": "Machine-readable node index. For every entry, the node names it contains plus the owning entry slug. Used for DEDUP (industry+scope already analysed) and LINEAGE (auto-linking a new industry to a parent when its name matches a node name). Update on every publish.",
  "generated": "2026-10-11",
  "last_delta_pass": "2026-10-11",
- "delta_note": "2026-10-11: promoted six Robotics nodes to their own entries — harmonic-rv-reducers-india, servo-motors-drives-india, rare-earth-magnets-india, drone-subsystems-india, robot-software-autonomy-india, machine-tools-metrology-india (all INDIA, NSE/BSE, derived_from robotics-india). Registry now 55 entries. Key [LIVE]: REPM magnet scheme beneficiary award pending (20 bids, technical opened 13-Aug-2026); ABB India robotics slump-sale complete 1-Mar-2026; drone PLI 2.0 finalised early-2026, Mission Drone Shakti proposed.  | prior: New entry 2026-10-11: robotics-india (Robotics, INDIA, NSE/BSE, Robotics & Automation) — first robotics analysis; covers all four subsystem families (industrial",
+ "delta_note": "2026-10-11: cross-entry 'related' links added between Robotics drill-downs and existing entries sharing a node — rare-earth-magnets-india <-> vehicles-auto-components-india; servo-motors-drives-india <-> electrical-electronic-equipment-india and <-> power-semiconductor-osat-india; machine-tools-metrology-india <-> vehicles-auto-components-india and <-> guns-india.  | prior: 2026-10-11: promoted six Robotics nodes to their own entries — harmonic-rv-reducers-india, servo-motors-drives-india, rare-earth-magnets-ind",
  "entries": [
   {
    "slug": "power-transmission-india",
@@ -8554,6 +8554,13 @@
      "bottleneck": false,
      "in_universe_coverage": true
     }
+   ],
+   "related": [
+    {
+     "slug": "servo-motors-drives-india",
+     "node": "Servo Motors & Frameless Torque Motors",
+     "note": "Industrial motors/drives."
+    }
    ]
   },
   {
@@ -9153,6 +9160,13 @@
      "bottleneck": false,
      "in_universe_coverage": true
     }
+   ],
+   "related": [
+    {
+     "slug": "servo-motors-drives-india",
+     "node": "Power Semiconductors (IGBT/MOSFET)",
+     "note": "Drive-grade power devices."
+    }
    ]
   },
   {
@@ -9522,6 +9536,18 @@
      "priority": "med",
      "bottleneck": false,
      "in_universe_coverage": true
+    }
+   ],
+   "related": [
+    {
+     "slug": "rare-earth-magnets-india",
+     "node": "Sintered NdFeB Magnets",
+     "note": "Traction-motor magnets."
+    },
+    {
+     "slug": "machine-tools-metrology-india",
+     "node": "CNC Machines",
+     "note": "Process equipment & machine tools."
     }
    ]
   },
@@ -10610,6 +10636,13 @@
      "bottleneck": false,
      "in_universe_coverage": true
     }
+   ],
+   "related": [
+    {
+     "slug": "machine-tools-metrology-india",
+     "node": "CNC Machines",
+     "note": "Manufacturing machinery."
+    }
    ]
   },
   {
@@ -11117,6 +11150,18 @@
      "bottleneck": true,
      "in_universe_coverage": false
     }
+   ],
+   "related": [
+    {
+     "slug": "electrical-electronic-equipment-india",
+     "node": "Motors, Drives & Generators",
+     "note": "Industrial motors/drives share the servo core."
+    },
+    {
+     "slug": "power-semiconductor-osat-india",
+     "node": "Front-end device fab (IGBT / MOSFET / SiC)",
+     "note": "Drive-grade power devices."
+    }
    ]
   },
   {
@@ -11206,6 +11251,13 @@
      "priority": "med",
      "bottleneck": false,
      "in_universe_coverage": true
+    }
+   ],
+   "related": [
+    {
+     "slug": "vehicles-auto-components-india",
+     "node": "Traction Motor & Magnets",
+     "note": "EV traction motors use the same sintered NdFeB magnets."
     }
    ]
   },
@@ -11490,6 +11542,18 @@
      "priority": "high",
      "bottleneck": true,
      "in_universe_coverage": true
+    }
+   ],
+   "related": [
+    {
+     "slug": "vehicles-auto-components-india",
+     "node": "Process Equipment & Machine Tools",
+     "note": "Same machine-tool layer."
+    },
+    {
+     "slug": "guns-india",
+     "node": "Manufacturing Machinery (CNC / Forging)",
+     "note": "Same CNC/forging machinery layer."
     }
    ]
   }

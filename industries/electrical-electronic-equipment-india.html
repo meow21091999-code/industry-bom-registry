@@ -28,6 +28,7 @@
       <span class="chip chip--high">India lens: ON</span>
       <span class="chip">Materiality: pure-plays &amp; meaningful exposures (&ge;5% rev/EBITDA or committed capacity)</span>
       <span class="chip">Phase 1 &mdash; breadth-first</span>
+      <span class="chip">Related: Servo Motors &amp; Drives &rarr; Servo Motors &amp; Frameless Torque Motors</span>
     </div>
   </header>
 
@@ -718,6 +719,8 @@ const NODES = [
     ] }
 ];
 
+const RELATED = {"motors": [["servo-motors-drives-india.html", "Servo Motors &amp; Drives &rarr; Servo Motors &amp; Frameless Torque Motors"]]};
+NODES.forEach(n => { if (RELATED[n.id]) n.links = RELATED[n.id]; });
 const nodesEl = document.getElementById('mapNodes');
 const panelEl = document.getElementById('mapPanel');
 const PRI_LABEL = { high:'HIGH', med:'MEDIUM', low:'LOW' };
@@ -738,6 +741,7 @@ function renderPanel(node) {
   if (node.bott) html += `<span class="mini">Bottleneck</span>`;
   html += `</div>`;
 
+  (node.links || []).forEach(l => { html += `<a href="${l[0]}" style="display:block;margin:12px 0;padding:10px 12px;border:1px solid var(--gold);border-radius:8px;background:var(--gold-dim);color:var(--gold);font-family:var(--font-mono);font-size:11.5px;font-weight:600;text-decoration:none;">Related entry &rarr; ${l[1]}</a>`; });
   if (!node.companies || node.companies.length === 0) {
     html += `<div class="nocov"><b>${node.gap}</b><span class="near">${node.near}</span></div>`;
     panelEl.innerHTML = html;
