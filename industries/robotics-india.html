@@ -31,6 +31,18 @@
     </div>
   </header>
 
+  <div style="display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;background:var(--gold-dim);border:1px solid var(--gold);border-radius:10px;padding:14px 18px;margin-bottom:24px;">
+    <span style="font-size:13px;line-height:1.5;"><strong style="color:var(--text);">Drill-down available &rarr;</strong> <span style="color:var(--text-dim);">6 deep-dive entries branch from this page.</span></span>
+    <span style="display:flex;gap:10px;flex-wrap:wrap;">
+      <a href="harmonic-rv-reducers-india.html" style="font-family:var(--font-mono);font-size:12px;font-weight:600;color:var(--gold);text-decoration:none;border:1px solid var(--gold);border-radius:6px;padding:6px 12px;white-space:nowrap;background:var(--surface);">Harmonic &amp; RV Reducers &rarr;</a>
+      <a href="servo-motors-drives-india.html" style="font-family:var(--font-mono);font-size:12px;font-weight:600;color:var(--gold);text-decoration:none;border:1px solid var(--gold);border-radius:6px;padding:6px 12px;white-space:nowrap;background:var(--surface);">Servo Motors &amp; Drives &rarr;</a>
+      <a href="rare-earth-magnets-india.html" style="font-family:var(--font-mono);font-size:12px;font-weight:600;color:var(--gold);text-decoration:none;border:1px solid var(--gold);border-radius:6px;padding:6px 12px;white-space:nowrap;background:var(--surface);">Rare-Earth Magnets &rarr;</a>
+      <a href="drone-subsystems-india.html" style="font-family:var(--font-mono);font-size:12px;font-weight:600;color:var(--gold);text-decoration:none;border:1px solid var(--gold);border-radius:6px;padding:6px 12px;white-space:nowrap;background:var(--surface);">Drone Subsystems &rarr;</a>
+      <a href="robot-software-autonomy-india.html" style="font-family:var(--font-mono);font-size:12px;font-weight:600;color:var(--gold);text-decoration:none;border:1px solid var(--gold);border-radius:6px;padding:6px 12px;white-space:nowrap;background:var(--surface);">Robot Software &amp; Autonomy &rarr;</a>
+      <a href="machine-tools-metrology-india.html" style="font-family:var(--font-mono);font-size:12px;font-weight:600;color:var(--gold);text-decoration:none;border:1px solid var(--gold);border-radius:6px;padding:6px 12px;white-space:nowrap;background:var(--surface);">Precision Machine Tools &amp; Metrology &rarr;</a>
+    </span>
+  </div>
+
   <!-- KPI -->
   <section class="animate" style="--i:1">
     <div class="metric-cards">
@@ -638,6 +650,8 @@ const NODES = [
     companies:[], gap:'NO LISTED PURE-PLAY IN SELECTED UNIVERSE.', near:'Imported. Context (unlisted): no Indian gear-grinding or precision-CMM maker at robotics grade.' }
 ];
 
+const DRILL = {"harmonic": ["harmonic-rv-reducers-india.html", "Harmonic & RV Reducers"], "rv": ["harmonic-rv-reducers-india.html", "Harmonic & RV Reducers"], "servo-motors": ["servo-motors-drives-india.html", "Servo Motors & Drives"], "drives": ["servo-motors-drives-india.html", "Servo Motors & Drives"], "magnets": ["rare-earth-magnets-india.html", "Rare-Earth Magnets"], "drones": ["drone-subsystems-india.html", "Drone Subsystems"], "drone-fc": ["drone-subsystems-india.html", "Drone Subsystems"], "drone-prop": ["drone-subsystems-india.html", "Drone Subsystems"], "software": ["robot-software-autonomy-india.html", "Robot Software & Autonomy"], "machine-tools": ["machine-tools-metrology-india.html", "Precision Machine Tools & Metrology"]};
+NODES.forEach(n => { if (DRILL[n.id]) { n.link = DRILL[n.id][0]; n.linkLabel = DRILL[n.id][1]; } });
 const nodesEl = document.getElementById('mapNodes');
 const panelEl = document.getElementById('mapPanel');
 const PRI_LABEL = { high:'HIGH', med:'MEDIUM', low:'LOW' };
@@ -653,6 +667,7 @@ function renderPanel(node) {
   if (node.conc) html += `<span class="mini">Concentration: ${node.conc}</span>`;
   if (node.bott) html += `<span class="mini" style="color:var(--gold)">Bottleneck</span>`;
   html += `</div>`;
+  if (node.link) html += `<a href="${node.link}" style="display:block;margin:12px 0;padding:10px 12px;border:1px solid var(--gold);border-radius:8px;background:var(--gold-dim);color:var(--gold);font-family:var(--font-mono);font-size:11.5px;font-weight:600;text-decoration:none;">Related entry &rarr; ${node.linkLabel}</a>`;
 
   if (!node.companies || node.companies.length === 0) {
     html += `<div class="nocov"><b>${node.gap}</b><span class="near">${node.near}</span></div>`;

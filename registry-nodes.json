@@ -3,7 +3,7 @@
  "description": "Machine-readable node index. For every entry, the node names it contains plus the owning entry slug. Used for DEDUP (industry+scope already analysed) and LINEAGE (auto-linking a new industry to a parent when its name matches a node name). Update on every publish.",
  "generated": "2026-10-11",
  "last_delta_pass": "2026-10-11",
- "delta_note": "New entry 2026-10-11: robotics-india (Robotics, INDIA, NSE/BSE, Robotics & Automation) — first robotics analysis; covers all four subsystem families (industrial robots, AMR/AGV, drones/UAV, humanoid & service robots) over the shared actuator-drive-sensor core. Key [LIVE] facts: ABB India robotics business transferred to ABB Robotics India by slump sale (BSE filing; BTA 1-Mar-2026); National Strategy on Robotics still a draft (MeitY; TAG review Feb-2026); drone PLI 2.0 finalised early-2026 and Mission Drone Shakti (~Rs 10,000 cr) proposed; IFR flags a possible 2026 robot-installation pause as the electronics PLI runway lapses. No lineage (derived_from null).  | prior: Delta pass + full re-run 2026-10-11: silver-paste-metallisation-india (Silver Paste & Metallisation, INDIA, NSE/BSE, Renewable Energy) — the oldest entry (2026-10-07), re-analysed end to end. Material",
+ "delta_note": "2026-10-11: promoted six Robotics nodes to their own entries — harmonic-rv-reducers-india, servo-motors-drives-india, rare-earth-magnets-india, drone-subsystems-india, robot-software-autonomy-india, machine-tools-metrology-india (all INDIA, NSE/BSE, derived_from robotics-india). Registry now 55 entries. Key [LIVE]: REPM magnet scheme beneficiary award pending (20 bids, technical opened 13-Aug-2026); ABB India robotics slump-sale complete 1-Mar-2026; drone PLI 2.0 finalised early-2026, Mission Drone Shakti proposed.  | prior: New entry 2026-10-11: robotics-india (Robotics, INDIA, NSE/BSE, Robotics & Automation) — first robotics analysis; covers all four subsystem families (industrial",
  "entries": [
   {
    "slug": "power-transmission-india",
@@ -10621,7 +10621,14 @@
    "universe": "NSE/BSE",
    "sector": "Robotics & Automation",
    "derived_from": null,
-   "drill_downs": [],
+   "drill_downs": [
+    "harmonic-rv-reducers-india",
+    "servo-motors-drives-india",
+    "rare-earth-magnets-india",
+    "drone-subsystems-india",
+    "robot-software-autonomy-india",
+    "machine-tools-metrology-india"
+   ],
    "nodes": [
     {
      "id": "robot-oem",
@@ -10930,6 +10937,559 @@
      "priority": "high",
      "bottleneck": true,
      "in_universe_coverage": false
+    }
+   ]
+  },
+  {
+   "slug": "harmonic-rv-reducers-india",
+   "industry": "Harmonic & RV Reducers",
+   "scope": "INDIA",
+   "path": "industries/harmonic-rv-reducers-india.html",
+   "analysis_date": "2026-10-11",
+   "universe": "NSE/BSE",
+   "sector": "Robotics & Automation",
+   "derived_from": "robotics-india",
+   "drill_downs": [],
+   "nodes": [
+    {
+     "id": "harmonic",
+     "name": "Harmonic / Strain-Wave Reducers",
+     "level": 3,
+     "aliases": [
+      "harmonic reducer",
+      "harmonic drive",
+      "strain wave gear",
+      "flexspline",
+      "wave generator"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": false
+    },
+    {
+     "id": "rv",
+     "name": "RV / Cycloidal Reducers",
+     "level": 3,
+     "aliases": [
+      "RV reducer",
+      "cycloidal reducer",
+      "precision reducer"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": false
+    },
+    {
+     "id": "flexspline",
+     "name": "Flexspline & Wave Generator",
+     "level": 4,
+     "aliases": [
+      "flexspline",
+      "wave generator",
+      "circular spline"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": false
+    },
+    {
+     "id": "actmodule",
+     "name": "Integrated Actuator Modules",
+     "level": 3,
+     "aliases": [
+      "actuator module",
+      "joint actuator"
+     ],
+     "priority": "med",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "gearmachine",
+     "name": "Gear Grinding & Metrology",
+     "level": 4,
+     "aliases": [
+      "gear grinding",
+      "gear cutting machine",
+      "CMM"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": false
+    },
+    {
+     "id": "robot-oem",
+     "name": "Robot OEMs (customer)",
+     "level": 1,
+     "aliases": [
+      "robot oem",
+      "robot integrator"
+     ],
+     "priority": "med",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    }
+   ]
+  },
+  {
+   "slug": "servo-motors-drives-india",
+   "industry": "Servo Motors & Drives",
+   "scope": "INDIA",
+   "path": "industries/servo-motors-drives-india.html",
+   "analysis_date": "2026-10-11",
+   "universe": "NSE/BSE",
+   "sector": "Robotics & Automation",
+   "derived_from": "robotics-india",
+   "drill_downs": [],
+   "nodes": [
+    {
+     "id": "servo-motors",
+     "name": "Servo Motors & Frameless Torque Motors",
+     "level": 3,
+     "aliases": [
+      "servo motor",
+      "frameless torque motor",
+      "PM servo motor"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "drives",
+     "name": "Servo Drives",
+     "level": 3,
+     "aliases": [
+      "servo drive",
+      "AC servo system"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "motionctrl",
+     "name": "Motion Controllers",
+     "level": 3,
+     "aliases": [
+      "motion controller",
+      "multi-axis controller"
+     ],
+     "priority": "med",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "power-semi",
+     "name": "Power Semiconductors (IGBT/MOSFET)",
+     "level": 3,
+     "aliases": [
+      "IGBT",
+      "MOSFET",
+      "power module"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": false
+    },
+    {
+     "id": "encoder",
+     "name": "Encoders & Feedback",
+     "level": 3,
+     "aliases": [
+      "encoder",
+      "resolver"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": false
+    },
+    {
+     "id": "magnets",
+     "name": "Rare-Earth Magnets",
+     "level": 4,
+     "aliases": [
+      "NdFeB magnet",
+      "rare earth magnet",
+      "permanent magnet"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": false
+    }
+   ]
+  },
+  {
+   "slug": "rare-earth-magnets-india",
+   "industry": "Rare-Earth Magnets",
+   "scope": "INDIA",
+   "path": "industries/rare-earth-magnets-india.html",
+   "analysis_date": "2026-10-11",
+   "universe": "NSE/BSE",
+   "sector": "Robotics & Automation",
+   "derived_from": "robotics-india",
+   "drill_downs": [],
+   "nodes": [
+    {
+     "id": "ndfeb",
+     "name": "Sintered NdFeB Magnets",
+     "level": 4,
+     "aliases": [
+      "NdFeB",
+      "sintered magnet",
+      "rare earth magnet"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": false
+    },
+    {
+     "id": "oxide",
+     "name": "NdPr Oxide",
+     "level": 4,
+     "aliases": [
+      "NdPr oxide",
+      "rare earth oxide",
+      "IREL"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": false
+    },
+    {
+     "id": "alloy",
+     "name": "Strip-Cast Alloy & Powder",
+     "level": 4,
+     "aliases": [
+      "strip cast alloy",
+      "magnet powder",
+      "jet mill"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": false
+    },
+    {
+     "id": "bidders",
+     "name": "REPM Scheme Bidders",
+     "level": 3,
+     "aliases": [
+      "REPM scheme",
+      "rare earth magnet scheme",
+      "beneficiary"
+     ],
+     "priority": "high",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "recycling",
+     "name": "Magnet & Rare-Earth Recycling",
+     "level": 4,
+     "aliases": [
+      "magnet recycling",
+      "rare earth recycling"
+     ],
+     "priority": "med",
+     "bottleneck": false,
+     "in_universe_coverage": false
+    },
+    {
+     "id": "motors",
+     "name": "Motor Integration (demand)",
+     "level": 3,
+     "aliases": [
+      "motor",
+      "servo motor",
+      "traction motor"
+     ],
+     "priority": "med",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    }
+   ]
+  },
+  {
+   "slug": "drone-subsystems-india",
+   "industry": "Drone Subsystems",
+   "scope": "INDIA",
+   "path": "industries/drone-subsystems-india.html",
+   "analysis_date": "2026-10-11",
+   "universe": "NSE/BSE",
+   "sector": "Robotics & Automation",
+   "derived_from": "robotics-india",
+   "drill_downs": [],
+   "nodes": [
+    {
+     "id": "flightctrl",
+     "name": "Flight Controllers & Autopilot",
+     "level": 3,
+     "aliases": [
+      "flight controller",
+      "autopilot",
+      "drone avionics"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "esc",
+     "name": "Electronic Speed Controllers (ESC)",
+     "level": 3,
+     "aliases": [
+      "ESC",
+      "speed controller"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "motor",
+     "name": "BLDC Motors & Propellers",
+     "level": 3,
+     "aliases": [
+      "drone motor",
+      "BLDC motor",
+      "propeller"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "avionics",
+     "name": "Avionics, RF Datalink & Telemetry",
+     "level": 3,
+     "aliases": [
+      "datalink",
+      "telemetry",
+      "RF module"
+     ],
+     "priority": "med",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "optics",
+     "name": "Optics, Gimbals & Payload",
+     "level": 3,
+     "aliases": [
+      "gimbal",
+      "drone camera",
+      "EO payload"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "airframe",
+     "name": "Airframe & Composites",
+     "level": 2,
+     "aliases": [
+      "airframe",
+      "drone frame",
+      "composite structure"
+     ],
+     "priority": "med",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    }
+   ]
+  },
+  {
+   "slug": "robot-software-autonomy-india",
+   "industry": "Robot Software & Autonomy",
+   "scope": "INDIA",
+   "path": "industries/robot-software-autonomy-india.html",
+   "analysis_date": "2026-10-11",
+   "universe": "NSE/BSE",
+   "sector": "Robotics & Automation",
+   "derived_from": "robotics-india",
+   "drill_downs": [],
+   "nodes": [
+    {
+     "id": "slam",
+     "name": "SLAM & Navigation Software",
+     "level": 1,
+     "aliases": [
+      "SLAM",
+      "navigation software",
+      "localization"
+     ],
+     "priority": "high",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "fleet",
+     "name": "Fleet Management",
+     "level": 1,
+     "aliases": [
+      "fleet management",
+      "fleet control",
+      "VDA5050"
+     ],
+     "priority": "high",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "visionai",
+     "name": "AI Vision & Perception",
+     "level": 2,
+     "aliases": [
+      "machine vision",
+      "computer vision",
+      "perception"
+     ],
+     "priority": "med",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "digitaltwin",
+     "name": "Digital Twin & Simulation",
+     "level": 2,
+     "aliases": [
+      "digital twin",
+      "simulation"
+     ],
+     "priority": "med",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "ot",
+     "name": "OT Integration (PLC/MES/WMS)",
+     "level": 2,
+     "aliases": [
+      "PLC",
+      "MES",
+      "WMS",
+      "OT integration"
+     ],
+     "priority": "med",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "edge",
+     "name": "Edge & Cloud Compute",
+     "level": 3,
+     "aliases": [
+      "edge AI",
+      "Jetson",
+      "embedded compute"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": false
+    }
+   ]
+  },
+  {
+   "slug": "machine-tools-metrology-india",
+   "industry": "Precision Machine Tools & Metrology",
+   "scope": "INDIA",
+   "path": "industries/machine-tools-metrology-india.html",
+   "analysis_date": "2026-10-11",
+   "universe": "NSE/BSE",
+   "sector": "Robotics & Automation",
+   "derived_from": "robotics-india",
+   "drill_downs": [],
+   "nodes": [
+    {
+     "id": "cnc",
+     "name": "CNC Machines (lathes/VMCs/5-axis)",
+     "level": 2,
+     "aliases": [
+      "CNC machine",
+      "VMC",
+      "lathe",
+      "five-axis"
+     ],
+     "priority": "med",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "controller",
+     "name": "CNC Controllers",
+     "level": 3,
+     "aliases": [
+      "CNC controller",
+      "machine controller"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": false
+    },
+    {
+     "id": "geargrind",
+     "name": "Gear & Thread Grinding Machines",
+     "level": 4,
+     "aliases": [
+      "gear grinding",
+      "gear cutting machine",
+      "thread grinding"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": false
+    },
+    {
+     "id": "metrology",
+     "name": "Metrology (CMMs & Gear Testers)",
+     "level": 4,
+     "aliases": [
+      "CMM",
+      "metrology",
+      "gear tester"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": false
+    },
+    {
+     "id": "bearings",
+     "name": "Precision Bearings & Cages",
+     "level": 4,
+     "aliases": [
+      "precision bearing",
+      "bearing cage"
+     ],
+     "priority": "med",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "tools",
+     "name": "Cutting Tools & Abrasives",
+     "level": 3,
+     "aliases": [
+      "cutting tool",
+      "abrasive",
+      "grinding wheel"
+     ],
+     "priority": "med",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "spindles",
+     "name": "Spindles & Precision Linear Motion",
+     "level": 4,
+     "aliases": [
+      "spindle",
+      "ball screw",
+      "linear guide"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": true
     }
    ]
   }
