@@ -3,7 +3,7 @@
  "description": "Machine-readable node index. For every entry, the node names it contains plus the owning entry slug. Used for DEDUP (industry+scope already analysed) and LINEAGE (auto-linking a new industry to a parent when its name matches a node name). Update on every publish.",
  "generated": "2026-10-12",
  "last_delta_pass": "2026-10-12",
- "delta_note": "2026-10-12: NEW ENTRY published — Shakti EW System (India), Defence & Aerospace. Shipborne naval electronic-warfare suite (DRDO/DLRL-designed, BEL-built): wideband ESM (0.175-40 GHz), DRFM ECM (6-40 GHz), RF front-end, software, materials, test. Phase 1, NSE/BSE universe. Cross-entry 'related' links written to missile-india (RF front-end), telecom-chipsets-india (GaN/GaAs substrate) and satellite-payloads-india (payload electronics); no parent lineage (no node-name match). Node index adds a Level-0 'Shakti EW System' root node with EW aliases for future dedup/lineage. | prior: 2026-10-12: whole-registry WEEKLY DELTA PASS (refresh, not re-analysis) — every open [LIVE] fact and dated regulatory-calendar item re-validated against live sources. MOVED: (1) India–US interim trade deal — commerce minister Goyal said 10-Oct-2026 the deal is 'concluded' in substance with only legal fine print pending, after FM Sitharaman's 5-Oct-2026 'plateau' remark (still unsigned; 10% US tariff on Indian exports persists) — corrected on ems-electronics-manufacturing-india and vehicles-auto-components-india. (2) Sahajanand Medical Technologies IPO — RHP filed 9-Oct-2026; issue 15–19 Oct-2026, tentative listing 23-Oct-2026 (was 'listing pending') — corrected on optical-medical-surgical-apparatus-india. (3) Satcom spectrum — DoT Cabinet note ready, approval expected in the coming days (11-Oct-2026) — corrected on satellite-india and satellite-services-data-india. (4) US solar AD/CVD — ITC final injury vote now 14-Oct-2026 (was 19-Oct) and orders 2-Nov-2026 (was 26-Oct) — corrected on solar-pv-india and solar-cells-india. UNCHANGED (re-validated): ACC-PLI 10 GWh bid due 13-Oct-2026; China battery/graphite export-control suspension expiry 10-Nov-2026 and US-specific Announcement 72 expiry 27-Nov-2026; DGTR CRGO anti-dumping probe (preliminary finding expected Nov–Dec 2026); Adani–IntelliSmart CCI review still 'information incomplete'; REPM beneficiary award still pending (Q4 2026); BHAVYA Rasayan park proposals due 30-Nov-2026; PM E-DRIVE e-2W to 31-Mar-2028; ALMM List-II net-metering exemption to 31-Dec-2026; Semicon 2.0 / ECMS outlays; Tata Jagiroad OSAT pilot; SMR-55 DPR.  | prior: 2026-10-12: daily-rotation re-run of Small Modular Reactor (India) — re-validated open [LIVE] facts. New since 2026-10-08: SMR-55 DPR released 01-Oct-2026 (NPCIL/BARC); AEC chairman (11-Oct-2026) guided ₹7.5 lakh cr private nuclear investment and 30 GW private share by 2047; NPCIL BSR RFP drew a single firm proposal (Hindalco); ASHVINI ₹28,000 cr Mahi Banswara nuclear-island EPC (NIMEP) tender closed 30-Sep-2026 and technical bids opened 06-Oct-2026; PFBR first criticality Apr-2026 and world-first nuclear-hydrogen demonstration 26-Jun-2026. Node index: added demand-layer node 'Private BSR / Captive-Power Developers'; EPC raised to high priority.  | prior: 2026-10-11: cross-entry 'related' links added between Robotics drill-downs and existing entries sharing a node — rare-earth-magnets-india <-> vehicles-auto-components-india; servo-motors-drives-india <-> electrical-electronic-equipment-india and <-> power-semiconductor-osat-india; machine-tools-metrology-india <-> vehicles-auto-components-india and <-> guns-india.  | prior: 2026-10-11: promoted six Robotics nodes to their own entries — harmonic-rv-reducers-india, servo-motors-drives-india, rare-earth-magnets-ind",
+ "delta_note": "2026-10-12 (b): reciprocal cross-entry 'related' links recorded on missile-india, telecom-chipsets-india and satellite-payloads-india back to shakti-ew-india (node index). | prior: 2026-10-12: NEW ENTRY published — Shakti EW System (India), Defence & Aerospace. Shipborne naval electronic-warfare suite (DRDO/DLRL-designed, BEL-built): wideband ESM (0.175-40 GHz), DRFM ECM (6-40 GHz), RF front-end, software, materials, test. Phase 1, NSE/BSE universe. Cross-entry 'related' links written to missile-india (RF front-end), telecom-chipsets-india (GaN/GaAs substrate) and satellite-payloads-india (payload electronics); no parent lineage (no node-name match). Node index adds a Level-0 'Shakti EW System' root node with EW aliases for future dedup/lineage. | prior: 2026-10-12: whole-registry WEEKLY DELTA PASS (refresh, not re-analysis) — every open [LIVE] fact and dated regulatory-calendar item re-validated against live sources. MOVED: (1) India–US interim trade deal — commerce minister Goyal said 10-Oct-2026 the deal is 'concluded' in substance with only legal fine print pending, after FM Sitharaman's 5-Oct-2026 'plateau' remark (still unsigned; 10% US tariff on Indian exports persists) — corrected on ems-electronics-manufacturing-india and vehicles-auto-components-india. (2) Sahajanand Medical Technologies IPO — RHP filed 9-Oct-2026; issue 15–19 Oct-2026, tentative listing 23-Oct-2026 (was 'listing pending') — corrected on optical-medical-surgical-apparatus-india. (3) Satcom spectrum — DoT Cabinet note ready, approval expected in the coming days (11-Oct-2026) — corrected on satellite-india and satellite-services-data-india. (4) US solar AD/CVD — ITC final injury vote now 14-Oct-2026 (was 19-Oct) and orders 2-Nov-2026 (was 26-Oct) — corrected on solar-pv-india and solar-cells-india. UNCHANGED (re-validated): ACC-PLI 10 GWh bid due 13-Oct-2026; China battery/graphite export-control suspension expiry 10-Nov-2026 and US-specific Announcement 72 expiry 27-Nov-2026; DGTR CRGO anti-dumping probe (preliminary finding expected Nov–Dec 2026); Adani–IntelliSmart CCI review still 'information incomplete'; REPM beneficiary award still pending (Q4 2026); BHAVYA Rasayan park proposals due 30-Nov-2026; PM E-DRIVE e-2W to 31-Mar-2028; ALMM List-II net-metering exemption to 31-Dec-2026; Semicon 2.0 / ECMS outlays; Tata Jagiroad OSAT pilot; SMR-55 DPR.  | prior: 2026-10-12: daily-rotation re-run of Small Modular Reactor (India) — re-validated open [LIVE] facts. New since 2026-10-08: SMR-55 DPR released 01-Oct-2026 (NPCIL/BARC); AEC chairman (11-Oct-2026) guided ₹7.5 lakh cr private nuclear investment and 30 GW private share by 2047; NPCIL BSR RFP drew a single firm proposal (Hindalco); ASHVINI ₹28,000 cr Mahi Banswara nuclear-island EPC (NIMEP) tender closed 30-Sep-2026 and technical bids opened 06-Oct-2026; PFBR first criticality Apr-2026 and world-first nuclear-hydrogen demonstration 26-Jun-2026. Node index: added demand-layer node 'Private BSR / Captive-Power Developers'; EPC raised to high priority.  | prior: 2026-10-11: cross-entry 'related' links added between Robotics drill-downs and existing entries sharing a node — rare-earth-magnets-india <-> vehicles-auto-components-india; servo-motors-drives-india <-> electrical-electronic-equipment-india and <-> power-semiconductor-osat-india; machine-tools-metrology-india <-> vehicles-auto-components-india and <-> guns-india.  | prior: 2026-10-11: promoted six Robotics nodes to their own entries — harmonic-rv-reducers-india, servo-motors-drives-india, rare-earth-magnets-ind",
  "entries": [
   {
    "slug": "power-transmission-india",
@@ -5163,6 +5163,13 @@
      "in_universe_coverage": true,
      "coverage_note": "Indirect via Tejas Networks; conglomerate via Reliance Industries (Jio Platforms)."
     }
+   ],
+   "related": [
+    {
+     "slug": "shakti-ew-india",
+     "node": "Compound-Semiconductor Substrate (GaAs / GaN)",
+     "note": "Shared GaN/GaAs compound-semiconductor layer."
+    }
    ]
   },
   {
@@ -6876,6 +6883,13 @@
      "priority": "high",
      "bottleneck": true,
      "in_universe_coverage": false
+    }
+   ],
+   "related": [
+    {
+     "slug": "shakti-ew-india",
+     "node": "Communication Payload (Antennas / Transponders)",
+     "note": "Shared RF/EW payload electronics."
     }
    ]
   },
@@ -10438,6 +10452,13 @@
      "priority": "medium",
      "bottleneck": true,
      "in_universe_coverage": false
+    }
+   ],
+   "related": [
+    {
+     "slug": "shakti-ew-india",
+     "node": "Seekers (RF / IIR) & RF Front-End",
+     "note": "Shared RF front-end / microwave chain."
     }
    ]
   },
