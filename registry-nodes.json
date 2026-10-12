@@ -1,9 +1,9 @@
 {
  "registry": "Industry BOM Registry",
  "description": "Machine-readable node index. For every entry, the node names it contains plus the owning entry slug. Used for DEDUP (industry+scope already analysed) and LINEAGE (auto-linking a new industry to a parent when its name matches a node name). Update on every publish.",
- "generated": "2026-10-11",
- "last_delta_pass": "2026-10-11",
- "delta_note": "2026-10-11: cross-entry 'related' links added between Robotics drill-downs and existing entries sharing a node — rare-earth-magnets-india <-> vehicles-auto-components-india; servo-motors-drives-india <-> electrical-electronic-equipment-india and <-> power-semiconductor-osat-india; machine-tools-metrology-india <-> vehicles-auto-components-india and <-> guns-india.  | prior: 2026-10-11: promoted six Robotics nodes to their own entries — harmonic-rv-reducers-india, servo-motors-drives-india, rare-earth-magnets-ind",
+ "generated": "2026-10-12",
+ "last_delta_pass": "2026-10-12",
+ "delta_note": "2026-10-12: daily-rotation re-run of Small Modular Reactor (India) — re-validated open [LIVE] facts. New since 2026-10-08: SMR-55 DPR released 01-Oct-2026 (NPCIL/BARC); AEC chairman (11-Oct-2026) guided ₹7.5 lakh cr private nuclear investment and 30 GW private share by 2047; NPCIL BSR RFP drew a single firm proposal (Hindalco); ASHVINI ₹28,000 cr Mahi Banswara nuclear-island EPC (NIMEP) tender closed 30-Sep-2026 and technical bids opened 06-Oct-2026; PFBR first criticality Apr-2026 and world-first nuclear-hydrogen demonstration 26-Jun-2026. Node index: added demand-layer node 'Private BSR / Captive-Power Developers'; EPC raised to high priority.  | prior: 2026-10-11: cross-entry 'related' links added between Robotics drill-downs and existing entries sharing a node — rare-earth-magnets-india <-> vehicles-auto-components-india; servo-motors-drives-india <-> electrical-electronic-equipment-india and <-> power-semiconductor-osat-india; machine-tools-metrology-india <-> vehicles-auto-components-india and <-> guns-india.  | prior: 2026-10-11: promoted six Robotics nodes to their own entries — harmonic-rv-reducers-india, servo-motors-drives-india, rare-earth-magnets-ind",
  "entries": [
   {
    "slug": "power-transmission-india",
@@ -2069,7 +2069,7 @@
    "industry": "Small Modular Reactor",
    "scope": "INDIA",
    "path": "industries/smr-india.html",
-   "analysis_date": "2026-10-08",
+   "analysis_date": "2026-10-12",
    "universe": "NSE/BSE",
    "sector": "Nuclear Energy",
    "derived_from": null,
@@ -2266,7 +2266,7 @@
       "site integration",
       "construction"
      ],
-     "priority": "med",
+     "priority": "high",
      "bottleneck": false,
      "in_universe_coverage": true
     },
@@ -2297,6 +2297,22 @@
       "life extension",
       "in-service inspection",
       "spares"
+     ],
+     "priority": "med",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "private",
+     "name": "Private BSR / Captive-Power Developers (demand layer)",
+     "level": 2,
+     "aliases": [
+      "private participation",
+      "BSR developers",
+      "captive power",
+      "BSR RFP",
+      "Hindalco BSR",
+      "private nuclear"
      ],
      "priority": "med",
      "bottleneck": false,
