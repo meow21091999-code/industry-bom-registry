@@ -3,7 +3,7 @@
  "description": "Machine-readable node index. For every entry, the node names it contains plus the owning entry slug. Used for DEDUP (industry+scope already analysed) and LINEAGE (auto-linking a new industry to a parent when its name matches a node name). Update on every publish.",
  "generated": "2026-10-12",
  "last_delta_pass": "2026-10-12",
- "delta_note": "2026-10-12 (d): reciprocal cross-entry 'related' links written for defence-electro-optics-india <-> missile-india (Seekers RF/IIR), guns-india (Sights/Optics), satellite-payloads-india (EO Payload) and drone-subsystems-india (Optics/Gimbals/Payload) — user-confirmed, both in the page panels and the node index. NOTE (defect found, not fixed): shakti-ew-india's page-level RELATED uses a single [href,label] pair instead of an array of pairs, so its 'Related entry' links render malformed; flag for a fix. | prior: 2026-10-12 (c): NEW ENTRY published — Defence Electro-Optics & Thermal Imaging (India), Defence & Aerospace. EO/IR ecosystem: IR detectors/FPAs, IR optics, night-vision image-intensifier tubes, cryocoolers, readout & software, gimbals, test. Phase 1, NSE/BSE universe. No parent lineage (industry name matched no existing node name); cross-entry 'related' links NOT yet written (pending user confirmation — candidate parents: missile-india (IIR seekers), guns-india (sights/optics), satellite-payloads-india (EO payload), drone-subsystems-india (optics/gimbals/payload)). Node index adds a Level-0 'Defence Electro-Optics & Thermal Imaging' root node with EO/IR aliases for future dedup/lineage. | prior: 2026-10-12 (b): reciprocal cross-entry 'related' links recorded on missile-india, telecom-chipsets-india and satellite-payloads-india back to shakti-ew-india (node index). | prior: 2026-10-12: NEW ENTRY published — Shakti EW System (India), Defence & Aerospace. Shipborne naval electronic-warfare suite (DRDO/DLRL-designed, BEL-built): wideband ESM (0.175-40 GHz), DRFM ECM (6-40 GHz), RF front-end, software, materials, test. Phase 1, NSE/BSE universe. Cross-entry 'related' links written to missile-india (RF front-end), telecom-chipsets-india (GaN/GaAs substrate) and satellite-payloads-india (payload electronics); no parent lineage (no node-name match). Node index adds a Level-0 'Shakti EW System' root node with EW aliases for future dedup/lineage. | prior: 2026-10-12: whole-registry WEEKLY DELTA PASS (refresh, not re-analysis) — every open [LIVE] fact and dated regulatory-calendar item re-validated against live sources. MOVED: (1) India–US interim trade deal — commerce minister Goyal said 10-Oct-2026 the deal is 'concluded' in substance with only legal fine print pending, after FM Sitharaman's 5-Oct-2026 'plateau' remark (still unsigned; 10% US tariff on Indian exports persists) — corrected on ems-electronics-manufacturing-india and vehicles-auto-components-india. (2) Sahajanand Medical Technologies IPO — RHP filed 9-Oct-2026; issue 15–19 Oct-2026, tentative listing 23-Oct-2026 (was 'listing pending') — corrected on optical-medical-surgical-apparatus-india. (3) Satcom spectrum — DoT Cabinet note ready, approval expected in the coming days (11-Oct-2026) — corrected on satellite-india and satellite-services-data-india. (4) US solar AD/CVD — ITC final injury vote now 14-Oct-2026 (was 19-Oct) and orders 2-Nov-2026 (was 26-Oct) — corrected on solar-pv-india and solar-cells-india. UNCHANGED (re-validated): ACC-PLI 10 GWh bid due 13-Oct-2026; China battery/graphite export-control suspension expiry 10-Nov-2026 and US-specific Announcement 72 expiry 27-Nov-2026; DGTR CRGO anti-dumping probe (preliminary finding expected Nov–Dec 2026); Adani–IntelliSmart CCI review still 'information incomplete'; REPM beneficiary award still pending (Q4 2026); BHAVYA Rasayan park proposals due 30-Nov-2026; PM E-DRIVE e-2W to 31-Mar-2028; ALMM List-II net-metering exemption to 31-Dec-2026; Semicon 2.0 / ECMS outlays; Tata Jagiroad OSAT pilot; SMR-55 DPR.  | prior: 2026-10-12: daily-rotation re-run of Small Modular Reactor (India) — re-validated open [LIVE] facts. New since 2026-10-08: SMR-55 DPR released 01-Oct-2026 (NPCIL/BARC); AEC chairman (11-Oct-2026) guided ₹7.5 lakh cr private nuclear investment and 30 GW private share by 2047; NPCIL BSR RFP drew a single firm proposal (Hindalco); ASHVINI ₹28,000 cr Mahi Banswara nuclear-island EPC (NIMEP) tender closed 30-Sep-2026 and technical bids opened 06-Oct-2026; PFBR first criticality Apr-2026 and world-first nuclear-hydrogen demonstration 26-Jun-2026. Node index: added demand-layer node 'Private BSR / Captive-Power Developers'; EPC raised to high priority.  | prior: 2026-10-11: cross-entry 'related' links added between Robotics drill-downs and existing entries sharing a node — rare-earth-magnets-india <-> vehicles-auto-components-india; servo-motors-drives-india <-> electrical-electronic-equipment-india and <-> power-semiconductor-osat-india; machine-tools-metrology-india <-> vehicles-auto-components-india and <-> guns-india.  | prior: 2026-10-11: promoted six Robotics nodes to their own entries — harmonic-rv-reducers-india, servo-motors-drives-india, rare-earth-magnets-ind",
+ "delta_note": "2026-10-12 (e): NEW ENTRY published — Cryocooler (India), Defence & Aerospace. Closed-cycle cryogenic refrigeration (Stirling/pulse-tube/GM/JT + dilution refrigerators): cold head & rare-earth regenerator, linear compressor & drive electronics, helium working gas, cryostat, test, downstream IR/IDDCA, JT and dilution-refrigerator nodes. Depth-first, NSE/BSE universe. Lineage: user-confirmed RELATED (sibling, NOT derived_from) to defence-electro-optics-india — bidirectional 'Related entry' links written on both pages (cryocooler page -> defence-EO on IR-integration & JT nodes; defence-EO page -> cryocooler on its cryocooler node). Node index adds a Level-0 'Cryocooler' root with aliases. | prior: 2026-10-12 (d): reciprocal cross-entry 'related' links written for defence-electro-optics-india <-> missile-india (Seekers RF/IIR), guns-india (Sights/Optics), satellite-payloads-india (EO Payload) and drone-subsystems-india (Optics/Gimbals/Payload) — user-confirmed, both in the page panels and the node index. NOTE (defect found, not fixed): shakti-ew-india's page-level RELATED uses a single [href,label] pair instead of an array of pairs, so its 'Related entry' links render malformed; flag for a fix. | prior: 2026-10-12 (c): NEW ENTRY published — Defence Electro-Optics & Thermal Imaging (India), Defence & Aerospace. EO/IR ecosystem: IR detectors/FPAs, IR optics, night-vision image-intensifier tubes, cryocoolers, readout & software, gimbals, test. Phase 1, NSE/BSE universe. No parent lineage (industry name matched no existing node name); cross-entry 'related' links NOT yet written (pending user confirmation — candidate parents: missile-india (IIR seekers), guns-india (sights/optics), satellite-payloads-india (EO payload), drone-subsystems-india (optics/gimbals/payload)). Node index adds a Level-0 'Defence Electro-Optics & Thermal Imaging' root node with EO/IR aliases for future dedup/lineage. | prior: 2026-10-12 (b): reciprocal cross-entry 'related' links recorded on missile-india, telecom-chipsets-india and satellite-payloads-india back to shakti-ew-india (node index). | prior: 2026-10-12: NEW ENTRY published — Shakti EW System (India), Defence & Aerospace. Shipborne naval electronic-warfare suite (DRDO/DLRL-designed, BEL-built): wideband ESM (0.175-40 GHz), DRFM ECM (6-40 GHz), RF front-end, software, materials, test. Phase 1, NSE/BSE universe. Cross-entry 'related' links written to missile-india (RF front-end), telecom-chipsets-india (GaN/GaAs substrate) and satellite-payloads-india (payload electronics); no parent lineage (no node-name match). Node index adds a Level-0 'Shakti EW System' root node with EW aliases for future dedup/lineage. | prior: 2026-10-12: whole-registry WEEKLY DELTA PASS (refresh, not re-analysis) — every open [LIVE] fact and dated regulatory-calendar item re-validated against live sources. MOVED: (1) India–US interim trade deal — commerce minister Goyal said 10-Oct-2026 the deal is 'concluded' in substance with only legal fine print pending, after FM Sitharaman's 5-Oct-2026 'plateau' remark (still unsigned; 10% US tariff on Indian exports persists) — corrected on ems-electronics-manufacturing-india and vehicles-auto-components-india. (2) Sahajanand Medical Technologies IPO — RHP filed 9-Oct-2026; issue 15–19 Oct-2026, tentative listing 23-Oct-2026 (was 'listing pending') — corrected on optical-medical-surgical-apparatus-india. (3) Satcom spectrum — DoT Cabinet note ready, approval expected in the coming days (11-Oct-2026) — corrected on satellite-india and satellite-services-data-india. (4) US solar AD/CVD — ITC final injury vote now 14-Oct-2026 (was 19-Oct) and orders 2-Nov-2026 (was 26-Oct) — corrected on solar-pv-india and solar-cells-india. UNCHANGED (re-validated): ACC-PLI 10 GWh bid due 13-Oct-2026; China battery/graphite export-control suspension expiry 10-Nov-2026 and US-specific Announcement 72 expiry 27-Nov-2026; DGTR CRGO anti-dumping probe (preliminary finding expected Nov–Dec 2026); Adani–IntelliSmart CCI review still 'information incomplete'; REPM beneficiary award still pending (Q4 2026); BHAVYA Rasayan park proposals due 30-Nov-2026; PM E-DRIVE e-2W to 31-Mar-2028; ALMM List-II net-metering exemption to 31-Dec-2026; Semicon 2.0 / ECMS outlays; Tata Jagiroad OSAT pilot; SMR-55 DPR.  | prior: 2026-10-12: daily-rotation re-run of Small Modular Reactor (India) — re-validated open [LIVE] facts. New since 2026-10-08: SMR-55 DPR released 01-Oct-2026 (NPCIL/BARC); AEC chairman (11-Oct-2026) guided ₹7.5 lakh cr private nuclear investment and 30 GW private share by 2047; NPCIL BSR RFP drew a single firm proposal (Hindalco); ASHVINI ₹28,000 cr Mahi Banswara nuclear-island EPC (NIMEP) tender closed 30-Sep-2026 and technical bids opened 06-Oct-2026; PFBR first criticality Apr-2026 and world-first nuclear-hydrogen demonstration 26-Jun-2026. Node index: added demand-layer node 'Private BSR / Captive-Power Developers'; EPC raised to high priority.  | prior: 2026-10-11: cross-entry 'related' links added between Robotics drill-downs and existing entries sharing a node — rare-earth-magnets-india <-> vehicles-auto-components-india; servo-motors-drives-india <-> electrical-electronic-equipment-india and <-> power-semiconductor-osat-india; machine-tools-metrology-india <-> vehicles-auto-components-india and <-> guns-india.  | prior: 2026-10-11: promoted six Robotics nodes to their own entries — harmonic-rv-reducers-india, servo-motors-drives-india, rare-earth-magnets-ind",
  "entries": [
   {
    "slug": "power-transmission-india",
@@ -12459,6 +12459,190 @@
      "slug": "drone-subsystems-india",
      "node": "Optics, Gimbals & Payload",
      "note": "Shared EO/IR payload & gimbal layer."
+    }
+   ]
+  },
+  {
+   "slug": "cryocooler-india",
+   "industry": "Cryocooler",
+   "scope": "INDIA",
+   "path": "industries/cryocooler-india.html",
+   "analysis_date": "2026-10-12",
+   "universe": "NSE/BSE",
+   "sector": "Defence & Aerospace",
+   "derived_from": null,
+   "related": [
+    "defence-electro-optics-india"
+   ],
+   "drill_downs": [],
+   "nodes": [
+    {
+     "id": "coldhead",
+     "name": "Cold head / Expander",
+     "level": 1,
+     "aliases": [
+      "cold head",
+      "cold finger",
+      "expander",
+      "stirling cold head",
+      "pulse tube cold head",
+      "cold tip"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": false
+    },
+    {
+     "id": "regenerator",
+     "name": "Regenerator Matrix (rare-earth)",
+     "level": 2,
+     "aliases": [
+      "regenerator",
+      "regenerator material",
+      "HoCu2",
+      "Er3Ni",
+      "GOS",
+      "gadolinium oxysulfate",
+      "rare earth regenerator"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": false
+    },
+    {
+     "id": "compressor",
+     "name": "Compressor / Linear Motor",
+     "level": 1,
+     "aliases": [
+      "compressor",
+      "linear compressor",
+      "helium compressor",
+      "linear motor",
+      "flexure bearing",
+      "clearance seal"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": false
+    },
+    {
+     "id": "drive",
+     "name": "Drive & Control Electronics",
+     "level": 1,
+     "aliases": [
+      "drive electronics",
+      "cryocooler controller",
+      "motor drive",
+      "temperature controller"
+     ],
+     "priority": "med",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "helium",
+     "name": "Helium (He-4 / He-3)",
+     "level": 1,
+     "aliases": [
+      "helium",
+      "helium-3",
+      "helium-4",
+      "He-3",
+      "He-4",
+      "helium gas",
+      "dilution medium"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "cryostat",
+     "name": "Cryostat / Vacuum Vessel",
+     "level": 1,
+     "aliases": [
+      "cryostat",
+      "dewar",
+      "vacuum vessel",
+      "MLI",
+      "KOVAR",
+      "cryogenic vessel"
+     ],
+     "priority": "med",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "test",
+     "name": "Test, Calibration & Qualification",
+     "level": 1,
+     "aliases": [
+      "cryocooler test",
+      "thermal vacuum",
+      "heat lift",
+      "exported vibration",
+      "cryogenic qualification"
+     ],
+     "priority": "med",
+     "bottleneck": false,
+     "in_universe_coverage": false
+    },
+    {
+     "id": "irintegr",
+     "name": "IR Detector / IDDCA Integration",
+     "level": 1,
+     "aliases": [
+      "IDDCA",
+      "detector dewar cooler assembly",
+      "cooled IR",
+      "integral stirling rotary cryocooler"
+     ],
+     "priority": "high",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "jt",
+     "name": "JT Cooler (missile seekers)",
+     "level": 1,
+     "aliases": [
+      "JT cooler",
+      "joule-thomson cooler",
+      "joule thomson",
+      "micro-cooler",
+      "seeker cooler"
+     ],
+     "priority": "med",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "dilution",
+     "name": "Dilution Refrigerator (sub-K)",
+     "level": 1,
+     "aliases": [
+      "dilution refrigerator",
+      "dilution fridge",
+      "sub-kelvin cooler",
+      "millikelvin refrigerator",
+      "quantum cryostat"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": false
+    },
+    {
+     "id": "precision",
+     "name": "Precision Machining & EMS",
+     "level": 1,
+     "aliases": [
+      "precision machining",
+      "EMS",
+      "contract manufacturing"
+     ],
+     "priority": "low",
+     "bottleneck": false,
+     "in_universe_coverage": true
     }
    ]
   }
