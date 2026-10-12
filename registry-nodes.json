@@ -12459,6 +12459,11 @@
      "slug": "drone-subsystems-india",
      "node": "Optics, Gimbals & Payload",
      "note": "Shared EO/IR payload & gimbal layer."
+    },
+    {
+     "slug": "cryocooler-india",
+     "node": "Cryocooler & Detector-Dewar-Cooler Assembly",
+     "note": "Shared cryocooler / IDDCA cooling chain."
     }
    ]
   },
@@ -12472,7 +12477,11 @@
    "sector": "Defence & Aerospace",
    "derived_from": null,
    "related": [
-    "defence-electro-optics-india"
+    {
+     "slug": "defence-electro-optics-india",
+     "node": "Cryocooler & Detector-Dewar-Cooler Assembly",
+     "note": "Shared cryocooler / IDDCA cooling chain (sibling, not derived_from)."
+    }
    ],
    "drill_downs": [],
    "nodes": [
