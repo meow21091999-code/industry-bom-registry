@@ -3,7 +3,7 @@
   "description": "Machine-readable node index. For every entry, the node names it contains plus the owning entry slug. Used for DEDUP (industry+scope already analysed) and LINEAGE (auto-linking a new industry to a parent when its name matches a node name). Update on every publish.",
   "generated": "2026-10-20",
   "last_delta_pass": "2026-10-20",
-  "delta_note": "2026-10-20: New entry added — Aircraft MRO & Civil Aerospace Components (India). Grounding: PIB (uniform 5% IGST, MRO reforms, Budget 2026-27), NITI Aayog MRO report, Alton Aviation, Airbus India, Crisil, ICF, Ken Research, The Hindu/Hindu BusinessLine/Mint/The Core/SP's Aviation, Safran & CFM releases, Thales, Boeing India, MoD/DOMW, and company filings (HAL/CARE, Dynamatic, Aequs, PTC, Azad, Bharat Forge, MTAR, Rossell, Data Patterns, Unimech, GMR). Lineage: created standalone (no parent); related node names (avionics, airframe, composites) appear in drone-subsystems-india, missile-india, satellite-india and launch-vehicles-propulsion-india — link pending user confirmation. Materiality: pure-plays & meaningful exposures (>=5% rev).",
+  "delta_note": "2026-10-20: Two drill-downs promoted to their own entries — Engine MRO (India) and Component MRO (India) — both derived from Aircraft MRO & Civil Aerospace Components (India). Grounding: IATA/Emerton single-aisle engines MRO; CFM/GE Aerospace open MRO ecosystem; Safran SAESI; Aircraft Monitor; SAFE FLY Aviation shop-visit costs; DGCA CAR-145 Issue 3 Rev 1 & approved-MRO list; NITI Aayog MRO report; ICF white-paper; SP's Aviation; Indian Infrastructure; Thales; Lufthansa Technik; Haveus Aerotech; AIESL; IATA/MARPA PMA-DER guidance.",
   "entries": [
     {
       "slug": "power-transmission-india",
@@ -13210,7 +13210,10 @@
           "node": "Composite Structures (Carbon Fibre) / Launch-Vehicle Avionics & Guidance"
         }
       ],
-      "drill_downs": [],
+      "drill_downs": [
+        "engine-mro-india",
+        "component-mro-india"
+      ],
       "nodes": [
         {
           "id": "airframe-mro",
@@ -13423,6 +13426,309 @@
             "CEMILAC",
             "regulator",
             "skills"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": false
+        }
+      ]
+    },
+    {
+      "slug": "engine-mro-india",
+      "industry": "Engine MRO",
+      "scope": "INDIA",
+      "path": "industries/engine-mro-india.html",
+      "analysis_date": "2026-10-20",
+      "universe": "NSE/BSE",
+      "sector": "Aerospace & Aviation",
+      "derived_from": [
+        {
+          "slug": "aircraft-mro-civil-aerospace-india",
+          "industry": "Aircraft MRO & Civil Aerospace Components",
+          "node": "Engine MRO"
+        }
+      ],
+      "drill_downs": [],
+      "nodes": [
+        {
+          "id": "engine-shop",
+          "name": "Engine Shop & Overhaul Capability",
+          "level": 1,
+          "aliases": [
+            "engine shop",
+            "engine overhaul",
+            "engine MRO",
+            "LEAP shop",
+            "CFM56 overhaul"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "modules",
+          "name": "Engine Modules",
+          "level": 1,
+          "aliases": [
+            "engine module",
+            "fan module",
+            "HPC",
+            "combustor",
+            "HPT",
+            "LPT",
+            "accessory gearbox"
+          ],
+          "priority": "medium",
+          "bottleneck": false,
+          "in_universe_coverage": false
+        },
+        {
+          "id": "llp",
+          "name": "Life-Limited Parts (LLPs)",
+          "level": 1,
+          "aliases": [
+            "LLP",
+            "life limited parts",
+            "disks",
+            "spools",
+            "shafts",
+            "life-limited"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "airfoils",
+          "name": "HPT / HPC Airfoils & Coatings",
+          "level": 1,
+          "aliases": [
+            "airfoil",
+            "blade",
+            "vane",
+            "HPT blade",
+            "HPC blade",
+            "thermal barrier coating"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "test-cell",
+          "name": "Test Cells & Equipment",
+          "level": 1,
+          "aliases": [
+            "test cell",
+            "test bench",
+            "balancing rig",
+            "vacuum furnace",
+            "plasma spray"
+          ],
+          "priority": "medium",
+          "bottleneck": false,
+          "in_universe_coverage": false
+        },
+        {
+          "id": "access",
+          "name": "OEM Access (ESM, Licences, Data)",
+          "level": 1,
+          "aliases": [
+            "engine shop manual",
+            "ESM",
+            "CBSA",
+            "Premier MRO",
+            "GSLA",
+            "PLA",
+            "OEM licence"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": false
+        },
+        {
+          "id": "parts-econ",
+          "name": "USM / PMA / DER Parts Economy",
+          "level": 1,
+          "aliases": [
+            "USM",
+            "used serviceable material",
+            "PMA",
+            "DER repair",
+            "part-out"
+          ],
+          "priority": "high",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "cert",
+          "name": "Certification & Licensed Manpower",
+          "level": 1,
+          "aliases": [
+            "CAR-145",
+            "CAR-66",
+            "Part-66",
+            "AME",
+            "certifying staff",
+            "engine CRS"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": false
+        }
+      ]
+    },
+    {
+      "slug": "component-mro-india",
+      "industry": "Component MRO",
+      "scope": "INDIA",
+      "path": "industries/component-mro-india.html",
+      "analysis_date": "2026-10-20",
+      "universe": "NSE/BSE",
+      "sector": "Aerospace & Aviation",
+      "derived_from": [
+        {
+          "slug": "aircraft-mro-civil-aerospace-india",
+          "industry": "Aircraft MRO & Civil Aerospace Components",
+          "node": "Component MRO"
+        }
+      ],
+      "drill_downs": [],
+      "nodes": [
+        {
+          "id": "wheels-brakes",
+          "name": "Wheels & Brakes (C14)",
+          "level": 1,
+          "aliases": [
+            "wheels and brakes",
+            "wheel overhaul",
+            "brake overhaul",
+            "C14",
+            "carbon brake"
+          ],
+          "priority": "high",
+          "bottleneck": false,
+          "in_universe_coverage": false
+        },
+        {
+          "id": "landing-gear",
+          "name": "Landing Gear (C14)",
+          "level": 1,
+          "aliases": [
+            "landing gear",
+            "landing gear overhaul",
+            "actuator",
+            "bushing",
+            "chrome plating"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "avionics",
+          "name": "Avionics LRUs (C3/C13)",
+          "level": 1,
+          "aliases": [
+            "avionics",
+            "LRU",
+            "ADIRU",
+            "transponder",
+            "ELT",
+            "FADEC",
+            "radio"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "apu",
+          "name": "APU Overhaul (C7)",
+          "level": 1,
+          "aliases": [
+            "APU",
+            "auxiliary power unit",
+            "GTCP",
+            "APS5000",
+            "HGT1700"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": false
+        },
+        {
+          "id": "hydraulics",
+          "name": "Hydraulics / Pneumatics / ECS (C12/C17/C1)",
+          "level": 1,
+          "aliases": [
+            "hydraulics",
+            "pneumatics",
+            "heat exchanger",
+            "ECS",
+            "air conditioning",
+            "pressurisation"
+          ],
+          "priority": "medium",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "cabin-safety",
+          "name": "Cabin, Galley, Oxygen & Fire (C6/C15/C18)",
+          "level": 1,
+          "aliases": [
+            "galley",
+            "cabin",
+            "seats",
+            "oxygen",
+            "fire protection",
+            "C6",
+            "C15"
+          ],
+          "priority": "medium",
+          "bottleneck": false,
+          "in_universe_coverage": false
+        },
+        {
+          "id": "structural",
+          "name": "Structural & Composite Repair (C20)",
+          "level": 1,
+          "aliases": [
+            "structural repair",
+            "composite repair",
+            "nacelle repair",
+            "C20"
+          ],
+          "priority": "medium",
+          "bottleneck": false,
+          "in_universe_coverage": false
+        },
+        {
+          "id": "parts-econ",
+          "name": "PMA / DER Parts & USM",
+          "level": 1,
+          "aliases": [
+            "PMA",
+            "DER repair",
+            "USM",
+            "alternate parts",
+            "non-OEM repair"
+          ],
+          "priority": "high",
+          "bottleneck": false,
+          "in_universe_coverage": false
+        },
+        {
+          "id": "cert",
+          "name": "Certification & CAR-145 C-Ratings",
+          "level": 1,
+          "aliases": [
+            "CAR-145",
+            "C rating",
+            "component rating",
+            "Part-145"
           ],
           "priority": "high",
           "bottleneck": true,
