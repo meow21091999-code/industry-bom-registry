@@ -3,7 +3,7 @@
   "description": "Machine-readable node index. For every entry, the node names it contains plus the owning entry slug. Used for DEDUP (industry+scope already analysed) and LINEAGE (auto-linking a new industry to a parent when its name matches a node name). Update on every publish.",
   "generated": "2026-10-20",
   "last_delta_pass": "2026-10-20",
-  "delta_note": "2026-10-20: New entry added — Data Centres & AI-Compute Infrastructure (India). First-pass grounding (KPMG, Cushman & Wakefield, Knight Frank, JLL, CBRE, CRISIL, Axis Capital, PL Capital, Mint, MeitY, PIB, Reuters, Adani/Google/Microsoft, Netweb FY26). Standalone entry: no parent-node match in registry-nodes.json. Key [LIVE] facts to re-check next run: DPDP compliance deadline (13-May-2027), IndiaAI Mission GPU rounds and global-resale terms, data-centre IPO status (Sify Infinit on hold; Yotta/Nxtra planned), and the Union Budget (Feb-2027) cloud tax-holiday review.\n\n2026-10-20: daily-rotation re-run of Telecom (India) — full Phase 1 refreshed; page re-rendered to the current standard (added the mandatory Market & growth digest block + a new headline CAGR metric card, ~10% India telecom-equipment (TANE) market FY25→FY32 CAGR, value (nominal), with its metric detail popup; metric modal now uses the canonical metric-modal component and closes on Escape). MATERIAL CHANGES since 2026-10-08: (1) NEW Jio Platforms IPO (RHP 14-Oct-2026): price band ₹1,065–1,119, issue ₹30,213 cr (India's largest), opens 21-Oct, lists 28-Oct; entirely a fresh issue to make JPL net debt-free; peak telecom capex behind Jio. (2) NEW Telecom PLI 2.0: successor to the ₹12,195 cr scheme (ends Mar-2027) at a proposed ₹6,000–7,000 cr, focused on component/design-led manufacturing, targeting a Q1 FY28 launch (DoT/EFC, Oct-2026); TTDF 2.0 also announced. (3) NEW Telecom Manufacturing Zone (TMZ), Gwalior — Asia's first telecom-manufacturing cluster, ~₹5,500 cr, 24 companies, 170 acres (phase 1); DoT proposed a ~₹500 cr common testing lab. (4) NEW China anti-dumping duty on Indian single-mode optical fibre extended 5 yrs from 14-Aug-2026 (7.4–30.6%) — a new export barrier; India's own ADD on SMOF from China/Indonesia/Korea (5 yrs from Aug-2023) stands. (5) UPDATED demand: TRAI Yearly Indicators 2025-26 (5-Oct-2026) — 1,330.58 mn telephone subscribers at 31-Mar-2026, wireless ARPU ₹180.73; TRAI Q1 FY27 (12-Oct-2026) — 1,348.08 mn, ARPU ₹187.12, AGR ₹88,796 cr (+9.19%); 5G BTS 562,971 at 30-Jun-2026 (from 531,000); 653 mn 5G subscriptions (Omdia). (6) UPDATED fibre/preform: HFCL board approved a further ₹820 cr (14-Sep-2026), taking total planned preform/fibre/cable capex to ~₹1,800 cr (600 MT preform, 43.10 mn fkm OF, 62.00 mn fkm OFC by 2028); Finolex commissioned 100 MT preform (Mar-2026) and is adding another 100 MT (to 200 MT); STL ~₹500 cr FY27 capex. (7) UPDATED transceivers: Dixon–Gemtek 60:40 JV for SFP/BOSA modules (Jun–Sep-2026); GX Quantum Photonics ~₹500 cr Bhiwadi photonics facility (production from late-2026); CloudPhotonix 800G (Noida). (8) UPDATED towers: Indus FY26 revenue ₹32,493 cr (+7.9%), 264,514 macro towers / 428,014 co-locations (Mar-2026); ~46,000 solar sites; diesel −13% YoY in Q1 FY27. (9) UPDATED chipsets/OSAT: Kaynes Semicon Sanand OSAT in commercial production from Mar-2026 (India's second chip unit); ISM 12 projects approved, 3 in production; MeitY DLI 23 design projects approved. (10) NEW market layer: India TANE $25 bn (FY25) → $50 bn (FY32), ~10% CAGR [NITI Aayog/KPMG, Oct-2026]; mobile traffic ~17% vs revenue ~2.7%; [CONFLICTING DATA] with IMARC (3.66%) and MarketsandData (10.41%). Node index: unchanged (16 nodes). Company map: Tejas updated (Q2 FY27 ₹1,537 cr TCS LOI for 18,685 BSNL sites); HFCL preform moved to DIRECT (600 MT programme); Dixon added to the transceiver node (Gemtek JV); operator ARPUs refreshed. | prior: 2026-10-19 (WEEKLY WHOLE-REGISTRY DELTA PASS): re-validated every open [LIVE] fact and dated regulatory-calendar item across the 58 entries. MOVED — corrections written on the affected pages: (1) India–US interim trade deal — Goyal said 15-Oct-2026 the first tranche is finalised, legal drafting under way (was 'concluded in substance', 10-Oct-2026) [ems-electronics, vehicles-auto-components]. (2) US solar AD/CVD — US ITC voted 14-Oct-2026 AFFIRMATIVE (material injury); AD/CVD orders to issue 2-Nov-2026 [solar-pv, solar-cells]. (3) ACC-PLI 10 GWh grid-scale tender — closed 13-Oct-2026, bids opened 14-Oct-2026 [li-ion-cell-manufacturing]. (4) GST on green H2/electrolysers — the 18%→5% cut is already in force (56th GST Council, w.e.f. 22-Sep-2025), not pending [green-hydrogen-electrolyser]. (5) Soda-ash MIP ₹20,108/t — lapsed 31-Dec-2025, not renewed; live instrument is the safeguard QR probe (16-Mar-2026) [inorganic-chemicals]. UNCHANGED (re-checked, no correction): CRGO/amorphous ADD probe (open, no preliminary finding); SHANTI Act rules (still draft); BHAVYA Rasayan (proposals due 30-Nov-2026); REPM beneficiary award (pending, 20 bids); Adani–IntelliSmart CCI (pending); China graphite/anode export-control suspension (expires 10-Nov-2026; US-specific 27-Nov-2026); AUSC 800 MW (awaiting approval); Mahi Banswara NIMEP (bids opened 06-Oct-2026, award pending); SMR-55/BSMR-200 (awaiting Cabinet A&F); BHEL ACC tender (deadline 30-Oct-2026); ALMM List-II (in force 1-Jun-2026; exemption to 31-Dec-2026); DGFT silver import (16-May / 02-Jun-2026); satcom spectrum (Cabinet pending); Sahajanand IPO (open 15–19 Oct, listing 23-Oct). NOT SETTLED: GHAVP PCP test-bed resumption (guided Sep-2026; no confirmation found). | prior: 2026-10-19: daily-rotation re-run of Turbine Island Auxiliaries (India) — full Phase 1 refreshed; page re-rendered to the current standard (added the mandatory Market & growth digest block + a new headline CAGR metric card, ~6.9% India power-generation DCS 2025→2030 CAGR, value (nominal), with its metric detail popup; modal now also closes on Escape). MATERIAL CHANGES since 2026-10-08: (1) NEW BHEL Q2 FY27 (14-Oct-2026): revenue ₹9,300 cr (+23.8%), standalone PAT ₹810 cr (+120% YoY), power segment ₹6,637.9 cr (+17%), outstanding OB ₹2,57,571 cr at 30-Sep-2026 (+17.3% YoY), nuclear OB ~₹12,800 cr; 2,260 MW added in H1 FY27 vs 4,790 MW target. (2) NEW BHEL board decision (14-Oct-2026): ~₹500 cr capex for additional thermal + nuclear set manufacturing at HEEP Haridwar; EMRP (Mumbai) + EDN (Bengaluru) merged into a single unit w.e.f. 01-Nov-2026. (3) NEW KSB nuclear detail: first fully indigenous Primary Coolant Pump under testing at the NPCIL test bed in 2026; nuclear OB ₹1,235 cr at Jun-2026 (GHAVP, Kaiga 5&6, Kudankulam safety package); nuclear revenue ~₹30–50 cr in CY25 guided to ~₹100–200 cr in CY26; Shirwal ~+20% capacity (7,000 sqm shed on 15,000 sqm land); KSB supplied 15 main BFP sets for NTPC Gadarwara-II / Nabinagar-II supercritical (Jun-2025). (4) NEW Kirloskar Brothers nuclear progress: PCP prototype passed hydraulic + mechanical testing in Q3 FY26 (exceeded NPCIL expectations); ~₹70 cr primary + ~₹40 cr secondary circuit pump orders in Q1 FY27; standalone pending OB ₹2,375 cr / ₹2,557.7 cr (Jun-2026), power incl. nuclear ~₹600 cr; Kalpakkam FBR sodium pumps ran through criticality (06-Apr-2026). (5) NEW bottleneck surfaced: high-spec (large tray-type / membrane) deaerator internals are import-dependent (~55–65% of Indian consumption) even though BHEL/L&T build the vessels domestically [T3, IndexBox]. (6) NEW market layer: India DCS market $1,044.4 mn (2025)→$1,460.5 mn (2030), 6.9% CAGR; power-generation segment $252.9 mn→$352.9 mn [T3, MarketsandMarkets]; India industrial deaerator market 6–8% CAGR 2026–2035 [T3, IndexBox]; global boiler feed pumps $0.8 bn (2026)→$1.1 bn (2033), 4.9% CAGR, Asia-Pacific 5.6% [T3, Persistence]; [CONFLICTING DATA] India DCS (6.9% / 6.5% MRFR / 9.1% NextMSC, scope-driven). (7) UPDATED thermal pipeline: 47,545 MW under construction at 30-Jun-2026 (44,020 MW supercritical, 34,500 MW USC); 120 SC/USC units (83,710 MW) commissioned [T1, CEA 195th Quarterly Review]. Node index: unchanged (10 nodes). Company map: unchanged set (BHEL, KSB, Kirloskar Brothers, WPIL, L&T, ISGEC, Thermax, Honeywell Automation India, ABB India, Siemens Energy India, Triveni Turbine); deaerator node import-dep updated to 'Domestic (high-spec internals partly imported)'. | prior: 2026-10-18: daily-rotation re-run of Condenser & Heat Rejection (India) — full Phase 1 refreshed; page re-rendered to the current standard (added the mandatory Market & growth digest block + a new headline CAGR metric card, ~6.4% India steam-condenser 2025→2034 CAGR, value (nominal), with its metric detail popup). MATERIAL CHANGES since 2026-10-08: (1) NEW BHEL global ACC tender (Enquiry B/4222/6/0669V1, 04-Aug-2026) for the Air Cooled Condenser package of 1×800 MW Darlipali STPP + 3×800 MW Telangana STPP (3.2 GW); bid deadline extended to 30-Oct-2026, EMD ₹3 cr — an international competitive-bid tender, signalling the 800 MW-class ACC node is not fully in-house. (2) NEW L&T Energy CarbonLite LNTP from NTPC for 2×800 MW Lara-III (Chhattisgarh), ~₹10,000–15,000 cr, with Air Cooled Condensers inside the EPC scope (30-Jul-2026). (3) NEW regulatory: Environment (Protection) Third Amendment Rules, 2025 (G.S.R. 446(E), 03-Jul-2025) empower MoEF&CC to exempt thermal plants from mandatory cooling-tower installation — a drag on forced wet-cooling retrofits. (4) NEW CEA advisory (02-Sep-2026) for annual thermal water audits. (5) NEW BHEL Q2 FY27 (14-Oct-2026): revenue ₹9,300 cr (+23.8%), consolidated PAT ₹821 cr (+119%), outstanding OB ₹2,57,571 cr (+17.3% YoY); ₹500 cr HEEP Haridwar capex for thermal + nuclear sets. (6) NEW Thermax: TBWES ₹1,600 cr boiler package (1×800 MW USC, Anuppur MP, 27-Mar-2026); Thermax L1 for NTPC Vindhyachal BMS retrofit (₹212.29 cr, Sep-2026). (7) UPDATED KSB: nuclear OB ₹1,235 cr (Jun-2026), total OB ₹2,745 cr, Kaiga-5&6 shutdown cooling pumps, LUV pumps for Gadarwara, Shirwal +20% capacity. (8) UPDATED Kirloskar Brothers: indigenous coolant-pump prototype completed hydraulic + mechanical testing Q3 FY26; standalone pending OB ₹2,375 cr (Jun-2026). (9) NEW market layer: India steam condensers for thermal power ~6.4% CAGR 2025→2034 (India fastest-growing APAC market) [T3, HTF Market Intelligence]; India air-cooled heat exchanger market $271.5 mn (2024) → $450.8 mn (2029), 10.7% CAGR [T3, MarketsandMarkets]; [CONFLICTING DATA] wider condenser space (global 4.8%, APAC 5.3%, global surface condensers 5.7%) — scope-driven. (10) CORRECTED the titanium-tube finding: NEOTISS India (Hyderabad) does make welded titanium condenser tubes domestically but is unlisted; no NSE/BSE-listed maker; MIDHANI (titanium alloys/mill forms, ~700 MT titanium FY26) remains the nearest listed proxy, not condenser tube. Node index: unchanged (9 nodes). Company map: R.P.P. Infra Projects (NSE: RPPINFRA) added to the ACC node as an INDIRECT erection/commissioning contractor (Patratu Unit-2). | prior: 2026-10-17: daily-rotation re-run of Turbine Generator & Electrical Train (India) — full Phase 1 refreshed, page re-rendered to the current standard (added the mandatory Market & growth digest block + a new headline CAGR metric card, ~4.6% India turbo-generator CAGR, value (nominal), with its metric detail popup; metric modal now also closes on Escape). MATERIAL CHANGES since 2026-10-08: (1) NEW BHEL Q2 FY27 (14-Oct-2026): revenue ₹9,300 cr (+23.8% YoY), consolidated PAT ₹821 cr (+119%), EBITDA ₹1,026 cr (11% margin, highest Q2 in 13 yrs); outstanding OB ₹2,57,571 cr at 30-Sep-2026 (+17.3% YoY); Q2 order inflow ~₹4,000 cr (H1 FY27 ~₹30,000 cr); board approved ₹500 cr capex for thermal + nuclear sets at HEEP Haridwar. (2) NEW TD Power Systems Q1 FY27 (Jun-2026): revenue ₹640 cr (+72% YoY), PAT ₹86 cr (+72%), order inflow ₹734 cr (+87%, 93% export), order book ₹2,207 cr (30-Jun-2026); FY27 revenue guidance raised to ₹2,600 cr. (3) NEW TD Power × Siemens Energy 10-yr build-to-print framework (13-Aug-2026) for 2-pole generators; ~₹500 cr QIP for a >150 MW generator plant (~Jun-Jul 2028); large-generator (>100 MW) programme. (4) NEW BHEL–E2S (South Korea) excitation-system TCA (Apr-2026) — localises static/brushless exciter + AVR. (5) NEW CRGO layer: India CRGO demand ~4–4.5 lakh t/yr vs ~40–50 kt domestic production, ~90% imported; DGTR anti-dumping probe initiated 22-Jun-2026 (JSW JFE complaint), preliminary finding expected Nov–Dec 2026. (6) CONFIRMED retaining-ring bottleneck: cold-expanded non-magnetic 18Mn-5Cr forgings (ASTM A289), few mills worldwide, none in India. (7) NEW market layer: India turbo-generators ~$340 mn (2023)→~$462 mn (2030), ~4.6% CAGR [T3, BlueWeave]; [CONFLICTING DATA] wider India generator-set market (different scope) 6.8–11.2%. (8) BHEL nuclear: ~₹12,000 cr nuclear OB (Q1 FY27); 100 GW by 2047 target (from 8.78 GW). Node index: unchanged (10 nodes). | prior: 2026-10-16: daily-rotation re-run of Steam Turbine (Turbine Proper) (India) — full Phase 1 refreshed, page re-rendered to the current standard (added the mandatory Market & growth digest block + a new headline CAGR metric card, ~3.5% India steam-turbine 5-yr CAGR, value (nominal), with its metric detail popup). MATERIAL CHANGES since 2026-10-08: (1) NEW BHEL Q2 FY27 (14-Oct-2026): revenue ₹9,300 cr (+23.8% YoY), PAT ₹810 cr standalone / ₹821 cr consolidated (+~120%), EBITDA margin 11%; outstanding order book ₹2,57,571 cr at 30-Sep-2026 (+17.3% YoY); Q2 order inflow slowed to ~₹4,000 cr (H1 FY27 ~₹30,000 cr). (2) NEW BHEL FY26 baseline: outstanding OB ₹2,39,057 cr (31-Mar-2026), inflow ₹75,916 cr, revenue ₹33,782 cr (+19%), PAT ₹1,578 cr; power segment ₹1,92,298 cr (~81%). (3) NEW track-record data: BHEL has contracted 46 supercritical steam generators and 39 supercritical turbine-generators — the highest in India. (4) NEW domestic large-STG sources surfaced: Toshiba JSW Power Systems (Chennai, 500–1,000 MW supercritical/USC STGs) — JSW Energy raised its stake to ~20.7% and placed 4×800 MW Salboni TG orders; and L&T-MHI (LMTG, Hazira, 4,000 MW/yr) — added as a second large-STG OEM line (L&T exposure). (5) CONFIRMED rotor-forging import gap: NTPC's approved HP/IP/LP shaft-forging vendors are all foreign (JCFC, Saarschmiede, JSW Pacific, Schmiedewerke Gröditz, Buderus, Creusot, Kobe, Energomash, Doosan, AST); BHEL HEEP re-tendered an imported HP rotor forging (rough-machined) 24-Mar-2026. (6) UPDATED Triveni FY26: revenue ₹2,181 cr (+9%), closing order book ₹2,039 cr (+8%), order booking ₹2,326 cr, aftermarket 38% of order booking (+41% YoY). (7) NEW market layer: India steam turbine ~$3.33 bn (2022)→~$4.38 bn (2030), ~3.5% CAGR [T3, Grand View]; [CONFLICTING DATA] with IMARC (~$0.97 bn 2025, 4.15%), TechSci (~$0.83 bn 2025, 7.61%) and Arizton (~$1.57 bn 2024). (8) UPDATED demand volume: 47,545 MW thermal under construction at 30-Jun-2026 (44,020 MW supercritical; 34,500 MW USC); 120 SC/USC units (83,710 MW) commissioned [T1, CEA]. (9) AUSC 800 MW demo still awaiting final approval (unchanged). Company map: JSW Energy (JSWENERGY) added to the rotor/blading/casing nodes (INDIRECT, via Toshiba JSW); L&T-MHI added to the blading node. Node index: unchanged (10 nodes). | prior: 2026-10-15: daily-rotation re-run of Turbine Island (Turbomachinery) (India) — full Phase 1 refreshed, page re-rendered to the current standard (added the mandatory Market & growth digest block + a new headline CAGR metric card, ~3.5% India steam-turbine 5-yr CAGR, value (nominal), with its metric detail popup; metric modal now also closes on Escape). MATERIAL CHANGES since 2026-10-08: (1) NEW BHEL record order book — outstanding ₹2.57 lakh cr at 30-Sep-2026, +17.3% YoY (power segment ₹1,92,298 cr / ~81% at Mar-2026); Q2 FY27 revenue ₹9,300 cr (+23.8%), PAT ₹810 cr. (2) NEW BHEL board-approved ₹500 cr capex for thermal + nuclear TG manufacturing at Haridwar HEEP (14-Oct-2026) — expands indigenous nuclear-turbine capacity. (3) NEW second-source signal: L&T-MHI (LMTG) is developing 700 MW / 220 MW nuclear turbine-generator technology under the Make-in-India BSR scheme (L&T subsidiary report 2026); Hazira plant 4,000 MW/yr — L&T Generator matrix cell now S. (4) NEW supercritical orders: BHEL 3×800 MW Telangana-II ₹13,500 cr NOA (29-Mar-2026); 3×800 MW Meja-II ₹21,000 cr (Jun-2026); 1×800 MW Durgapur LNTP (10-Jun-2026). (5) AUSC 800 MW demo STILL awaiting final approval (VGF ~₹6,000 cr mooted; Korba ~₹15,000 cr considered; no progress since the Mar-2025 PIB note) — previously 'R&D complete, not commercial'. (6) CORRECTED Siemens Energy India scope — it does NOT manufacture large steam turbines in India (industrial range only, 1–250 MW); ~55% of India's large-ST installed base is served via services. (7) Company data refresh: Triveni FY26 revenue ₹2,181 cr / closing OB ₹2,055 cr / aftermarket 38%; TD Power FY26 revenue ₹1,878 cr / OB ₹1,973 cr, planning large generators incl. nuclear-SMR; KSB nuclear OB ₹1,235 cr (Jun-2026); MIDHANI OB ₹2,329 cr (Jul-2026). (8) NEW market layer: India steam turbine ~$3.33 bn (2022)→~$4.38 bn (2030), ~3.5% CAGR [T3, Grand View]; India turbo-generator ~$340 mn (2023)→~$462 mn (2030), ~4.6% [T3, BlueWeave]; [CONFLICTING DATA] across Arizton/TechSci (scope-driven). (9) NEW demand volume: 44,020 MW supercritical thermal capacity under construction (34,500 MW ultra-supercritical); 120 SC/USC units (83,710 MW) commissioned as of Jun-2026 [T1, CEA]. (10) Rotor forging still imported — NTPC's approved HP/IP/LP shaft-forging vendors are all foreign; BHEL continues tendering rotor-shaft / HP-rotor forgings (2026). Node index: unchanged (21 nodes); L&T-MHI added to the Generator & Exciter node; MIDHANI note updated. | prior: 2026-10-14: daily-rotation re-run of Reactor Coolant Pumps & Primary Loop (India) — full Phase 1 refreshed, page re-rendered to the current standard (added the mandatory Market & growth digest block + a new headline CAGR metric card, 16.3% India nuclear-grade pumps 5-yr CAGR, with its metric detail popup; metric modal now also closes on Escape). MATERIAL CHANGES since 2026-10-08: (1) CORRECTED the LTSSHF claim — no longer 'weak credit profile'; now a 100% L&T subsidiary after NPCIL exited its 26% (Feb-2025), rated AA-/Stable (May-2026) — corrected on this page and consistent with the nuclear-SG page. (2) UPDATED KSB nuclear order book: ₹1,235 cr at Jun-2026, DOWN from ₹1,313 cr at Dec-2025 (was shown only as ₹1,235 cr). (3) NEW execution detail: GHAVP PCP testing (started Apr–May 2026) was paused on third-party test-bed equipment, resumption guided Sep-2026; KSB CY25 nuclear revenue only ~₹30–50 cr, guided to ~₹100–200 cr in CY26. (4) NEW capacity: KSB ₹40 cr Shirwal expansion (~1,200→~1,450 pumps/yr, 2027); first European nuclear export order (8 Critical Safety Class-2 pumps). (5) NEW second-source status: Kirloskar Brothers' prototype PCP completed hydraulic + mechanical testing in Q3 FY26, exceeding NPCIL expectations — mapped as a listed emerging PCP supplier on the 'newpcp' node (in-universe coverage now true). (6) NEW market layer: India nuclear-grade pump market ~$460 mn (2025)→>$980 mn (2030), ~16.3% CAGR [T3]; wider India nuclear-equipment 11.4%; global nuclear-pump [CONFLICTING DATA] 4.2–5.8%. (7) NEW fleet context: PFBR first criticality 06-Apr-2026, RAPP-8 IFL 19-Sep-2026, 8,780→22,480 MW by 2031/32. Node index: 'newpcp' in_universe_coverage set true (KBL). | prior: 2026-10-13: daily-rotation re-run of Nuclear PWR Steam Generator (India) — full Phase 1 refreshed, page re-rendered to the current standard (digest now carries the mandatory Market &amp; growth block; new 11.4% India nuclear-equipment CAGR metric card + metric detail popup). MATERIAL CHANGES since 2026-10-08: (1) CORRECTED LTSSHF credit claim — no longer 'CRISIL D'; upgraded to AA-/Stable May-2026 and now a 100% L&amp;T subsidiary after NPCIL exited its 26% (Feb-2025). (2) CORRECTED the SG-tube bottleneck to be grade-specific — India HAS indigenised PHWR SG tubing (Alloy-800, NFC/MIDHANI; NFC shipped its 12th set in a record 81 days on 28-Sep-2026, ~58,000 tubes/23 SGs); the import gap now applies only to the Inconel-690 PWR/VVER tube. (3) NEW fleet progress: RAPP-8 IFL 19-Sep-2026, Kaiga-5&amp;6 FPC 01-Mar-2026 + 2 SGs delivered, GHAVP-3&amp;4 and KKNPP-6 SG deliveries. (4) NEW regulatory: SHANTI Act 2025 rules still in draft (AERB SHANTI Regulations 2026, Aug-2026); AEC cleared a nuclear FDI policy (Apr-2026); AEC chairman guided ₹7.5 lakh cr private investment and 30 GW private share by 2047 (11-Oct-2026). (5) NEW demand: ASHVINI ₹28,000 cr Mahi Banswara NIMEP nuclear-island EPC tender (technical bids opened 06-Oct-2026). (6) NEW company data: L&amp;T 3–3.5× nuclear-revenue target (Apr-2026), 7 of 12 fleet SGs delivered, 8-SG RAPP order, FY26 Hi-Tech Mfg revenue ₹14,489 cr; BHEL nuclear order book ~₹12,000 cr (Q1 FY27). (7) NEW market: India nuclear-equipment market ~$2.8 bn (2026)→$7.4 bn (2035), 11.4% CAGR [T3]; global SG market [CONFLICTING DATA]. Node index: tube node aliases extended with Alloy-800 / Incoloy 800 / N08800. | prior: 2026-10-12 (e): NEW ENTRY published — Cryocooler (India), Defence & Aerospace. Closed-cycle cryogenic refrigeration (Stirling/pulse-tube/GM/JT + dilution refrigerators): cold head & rare-earth regenerator, linear compressor & drive electronics, helium working gas, cryostat, test, downstream IR/IDDCA, JT and dilution-refrigerator nodes. Depth-first, NSE/BSE universe. Lineage: user-confirmed RELATED (sibling, NOT derived_from) to defence-electro-optics-india — bidirectional 'Related entry' links written on both pages (cryocooler page -> defence-EO on IR-integration & JT nodes; defence-EO page -> cryocooler on its cryocooler node). Node index adds a Level-0 'Cryocooler' root with aliases. | prior: 2026-10-12 (d): reciprocal cross-entry 'related' links written for defence-electro-optics-india <-> missile-india (Seekers RF/IIR), guns-india (Sights/Optics), satellite-payloads-india (EO Payload) and drone-subsystems-india (Optics/Gimbals/Payload) — user-confirmed, both in the page panels and the node index. NOTE (defect found, not fixed): shakti-ew-india's page-level RELATED uses a single [href,label] pair instead of an array of pairs, so its 'Related entry' links render malformed; flag for a fix. | prior: 2026-10-12 (c): NEW ENTRY published — Defence Electro-Optics & Thermal Imaging (India), Defence & Aerospace. EO/IR ecosystem: IR detectors/FPAs, IR optics, night-vision image-intensifier tubes, cryocoolers, readout & software, gimbals, test. Phase 1, NSE/BSE universe. No parent lineage (industry name matched no existing node name); cross-entry 'related' links NOT yet written (pending user confirmation — candidate parents: missile-india (IIR seekers), guns-india (sights/optics), satellite-payloads-india (EO payload), drone-subsystems-india (optics/gimbals/payload)). Node index adds a Level-0 'Defence Electro-Optics & Thermal Imaging' root node with EO/IR aliases for future dedup/lineage. | prior: 2026-10-12 (b): reciprocal cross-entry 'related' links recorded on missile-india, telecom-chipsets-india and satellite-payloads-india back to shakti-ew-india (node index). | prior: 2026-10-12: NEW ENTRY published — Shakti EW System (India), Defence & Aerospace. Shipborne naval electronic-warfare suite (DRDO/DLRL-designed, BEL-built): wideband ESM (0.175-40 GHz), DRFM ECM (6-40 GHz), RF front-end, software, materials, test. Phase 1, NSE/BSE universe. Cross-entry 'related' links written to missile-india (RF front-end), telecom-chipsets-india (GaN/GaAs substrate) and satellite-payloads-india (payload electronics); no parent lineage (no node-name match). Node index adds a Level-0 'Shakti EW System' root node with EW aliases for future dedup/lineage. | prior: 2026-10-12: whole-registry WEEKLY DELTA PASS (refresh, not re-analysis) — every open [LIVE] fact and dated regulatory-calendar item re-validated against live sources. MOVED: (1) India–US interim trade deal — commerce minister Goyal said 10-Oct-2026 the deal is 'concluded' in substance with only legal fine print pending, after FM Sitharaman's 5-Oct-2026 'plateau' remark (still unsigned; 10% US tariff on Indian exports persists) — corrected on ems-electronics-manufacturing-india and vehicles-auto-components-india. (2) Sahajanand Medical Technologies IPO — RHP filed 9-Oct-2026; issue 15–19 Oct-2026, tentative listing 23-Oct-2026 (was 'listing pending') — corrected on optical-medical-surgical-apparatus-india. (3) Satcom spectrum — DoT Cabinet note ready, approval expected in the coming days (11-Oct-2026) — corrected on satellite-india and satellite-services-data-india. (4) US solar AD/CVD — ITC final injury vote now 14-Oct-2026 (was 19-Oct) and orders 2-Nov-2026 (was 26-Oct) — corrected on solar-pv-india and solar-cells-india. UNCHANGED (re-validated): ACC-PLI 10 GWh bid due 13-Oct-2026; China battery/graphite export-control suspension expiry 10-Nov-2026 and US-specific Announcement 72 expiry 27-Nov-2026; DGTR CRGO anti-dumping probe (preliminary finding expected Nov–Dec 2026); Adani–IntelliSmart CCI review still 'information incomplete'; REPM beneficiary award still pending (Q4 2026); BHAVYA Rasayan park proposals due 30-Nov-2026; PM E-DRIVE e-2W to 31-Mar-2028; ALMM List-II net-metering exemption to 31-Dec-2026; Semicon 2.0 / ECMS outlays; Tata Jagiroad OSAT pilot; SMR-55 DPR.  | prior: 2026-10-12: daily-rotation re-run of Small Modular Reactor (India) — re-validated open [LIVE] facts. New since 2026-10-08: SMR-55 DPR released 01-Oct-2026 (NPCIL/BARC); AEC chairman (11-Oct-2026) guided ₹7.5 lakh cr private nuclear investment and 30 GW private share by 2047; NPCIL BSR RFP drew a single firm proposal (Hindalco); ASHVINI ₹28,000 cr Mahi Banswara nuclear-island EPC (NIMEP) tender closed 30-Sep-2026 and technical bids opened 06-Oct-2026; PFBR first criticality Apr-2026 and world-first nuclear-hydrogen demonstration 26-Jun-2026. Node index: added demand-layer node 'Private BSR / Captive-Power Developers'; EPC raised to high priority.  | prior: 2026-10-11: cross-entry 'related' links added between Robotics drill-downs and existing entries sharing a node — rare-earth-magnets-india <-> vehicles-auto-components-india; servo-motors-drives-india <-> electrical-electronic-equipment-india and <-> power-semiconductor-osat-india; machine-tools-metrology-india <-> vehicles-auto-components-india and <-> guns-india.  | prior: 2026-10-11: promoted six Robotics nodes to their own entries — harmonic-rv-reducers-india, servo-motors-drives-india, rare-earth-magnets-ind",
+  "delta_note": "2026-10-20: New entry added — PCB & Electronic Components Manufacturing (India). Grounding: ELCINA-Feedback, India Ratings, Avendus, Jefferies, PIB/MeitY (ECMS tranches), ET/Financial Express/Businessworld/CNBC, DGTR, company annual reports. Lineage: linked to six parent nodes (electrical-electronic-equipment, ems-electronics-manufacturing, telecom-transport-equipment, smart-meters, power-semiconductor-osat, battery-management-system). Materiality: all exposures.",
   "entries": [
     {
       "slug": "power-transmission-india",
@@ -5488,7 +5488,9 @@
         "slug": "telecom-india",
         "node": "Routers, Switches & Optical Transport"
       },
-      "drill_downs": [],
+      "drill_downs": [
+        "pcb-electronic-components-india"
+      ],
       "nodes": [
         {
           "id": "dwdm",
@@ -7630,7 +7632,9 @@
         "slug": "battery-energy-storage-india",
         "node": "Battery Management System (BMS)"
       },
-      "drill_downs": [],
+      "drill_downs": [
+        "pcb-electronic-components-india"
+      ],
       "nodes": [
         {
           "id": "afe",
@@ -8319,7 +8323,8 @@
         "power-transformers-india",
         "smart-meters-india",
         "ems-electronics-manufacturing-india",
-        "power-semiconductor-osat-india"
+        "power-semiconductor-osat-india",
+        "pcb-electronic-components-india"
       ],
       "nodes": [
         {
@@ -8773,7 +8778,9 @@
       "universe": "NSE/BSE",
       "sector": "Electrical & Electronic Equipment",
       "derived_from": "electrical-electronic-equipment-india",
-      "drill_downs": [],
+      "drill_downs": [
+        "pcb-electronic-components-india"
+      ],
       "nodes": [
         {
           "id": "oem",
@@ -8953,7 +8960,9 @@
       "universe": "NSE/BSE",
       "sector": "Electrical & Electronic Equipment",
       "derived_from": "electrical-electronic-equipment-india",
-      "drill_downs": [],
+      "drill_downs": [
+        "pcb-electronic-components-india"
+      ],
       "nodes": [
         {
           "id": "ems",
@@ -9095,7 +9104,9 @@
       "universe": "NSE/BSE",
       "sector": "Electrical & Electronic Equipment",
       "derived_from": "electrical-electronic-equipment-india",
-      "drill_downs": [],
+      "drill_downs": [
+        "pcb-electronic-components-india"
+      ],
       "nodes": [
         {
           "id": "fefab",
@@ -12995,6 +13006,170 @@
           "priority": "high",
           "bottleneck": false,
           "in_universe_coverage": true
+        }
+      ]
+    },
+    {
+      "slug": "pcb-electronic-components-india",
+      "industry": "PCB & Electronic Components Manufacturing",
+      "scope": "INDIA",
+      "path": "industries/pcb-electronic-components-india.html",
+      "analysis_date": "2026-10-20",
+      "universe": "NSE/BSE",
+      "sector": "Electrical & Electronic Equipment",
+      "derived_from": [
+        {
+          "industry": "Electrical &amp; Electronic Equipment",
+          "slug": "electrical-electronic-equipment-india",
+          "node": "PCBs (Multi-layer, HDI, Flex)"
+        },
+        {
+          "industry": "EMS / ODM &mdash; Electronics Manufacturing Services",
+          "slug": "ems-electronics-manufacturing-india",
+          "node": "Bare PCB (multi-layer / HDI)"
+        },
+        {
+          "industry": "Telecom &mdash; Transport Equipment",
+          "slug": "telecom-transport-equipment-india",
+          "node": "PCB / Backplane & PCBA"
+        },
+        {
+          "industry": "Smart Meters",
+          "slug": "smart-meters-india",
+          "node": "PCB / PCBA / EMS"
+        },
+        {
+          "industry": "Power Semiconductors &amp; OSAT",
+          "slug": "power-semiconductor-osat-india",
+          "node": "Substrate / PCB"
+        },
+        {
+          "industry": "Battery Management System (BMS)",
+          "slug": "battery-management-system-india",
+          "node": "PCB, Laminate & SMT Assembly"
+        }
+      ],
+      "drill_downs": [],
+      "nodes": [
+        {
+          "id": "bare",
+          "name": "Bare PCB - single / double-sided",
+          "level": 2,
+          "priority": "low",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "multilayer",
+          "name": "Multi-layer PCB (>=6 layers)",
+          "level": 2,
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "hdi",
+          "name": "HDI / MSAP PCB",
+          "level": 2,
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": false
+        },
+        {
+          "id": "flex",
+          "name": "Flexible / rigid-flex PCB",
+          "level": 2,
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": false
+        },
+        {
+          "id": "ccl",
+          "name": "Copper-clad laminate (CCL) & prepreg",
+          "level": 2,
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": false
+        },
+        {
+          "id": "foil",
+          "name": "Copper foil & glass fabric",
+          "level": 2,
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "resin",
+          "name": "Epoxy resin & PCB specialty chemicals",
+          "level": 2,
+          "priority": "med",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "caps",
+          "name": "Capacitors - MLCC / electrolytic / film",
+          "level": 2,
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "passives",
+          "name": "Resistors, inductors & ferrites",
+          "level": 2,
+          "priority": "med",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "connectors",
+          "name": "Connectors & electro-mechanicals",
+          "level": 2,
+          "priority": "med",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "equip",
+          "name": "PCB manufacturing equipment",
+          "level": 2,
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "tools",
+          "name": "PCB tools - drills & routers",
+          "level": 2,
+          "priority": "med",
+          "bottleneck": true,
+          "in_universe_coverage": false
+        },
+        {
+          "id": "testsw",
+          "name": "CAM / EDA software & test equipment",
+          "level": 2,
+          "priority": "med",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "pcba",
+          "name": "PCBA / SMT assembly (adjacent)",
+          "level": 2,
+          "priority": "med",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "recycling",
+          "name": "PCB / e-waste recycling",
+          "level": 2,
+          "priority": "low",
+          "bottleneck": false,
+          "in_universe_coverage": false
         }
       ]
     }
