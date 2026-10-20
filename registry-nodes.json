@@ -3,7 +3,7 @@
   "description": "Machine-readable node index. For every entry, the node names it contains plus the owning entry slug. Used for DEDUP (industry+scope already analysed) and LINEAGE (auto-linking a new industry to a parent when its name matches a node name). Update on every publish.",
   "generated": "2026-10-20",
   "last_delta_pass": "2026-10-20",
-  "delta_note": "2026-10-20: New entry added — PCB & Electronic Components Manufacturing (India). Grounding: ELCINA-Feedback, India Ratings, Avendus, Jefferies, PIB/MeitY (ECMS tranches), ET/Financial Express/Businessworld/CNBC, DGTR, company annual reports. Lineage: linked to six parent nodes (electrical-electronic-equipment, ems-electronics-manufacturing, telecom-transport-equipment, smart-meters, power-semiconductor-osat, battery-management-system). Materiality: all exposures.",
+  "delta_note": "2026-10-20: New entry added — Aircraft MRO & Civil Aerospace Components (India). Grounding: PIB (uniform 5% IGST, MRO reforms, Budget 2026-27), NITI Aayog MRO report, Alton Aviation, Airbus India, Crisil, ICF, Ken Research, The Hindu/Hindu BusinessLine/Mint/The Core/SP's Aviation, Safran & CFM releases, Thales, Boeing India, MoD/DOMW, and company filings (HAL/CARE, Dynamatic, Aequs, PTC, Azad, Bharat Forge, MTAR, Rossell, Data Patterns, Unimech, GMR). Lineage: created standalone (no parent); related node names (avionics, airframe, composites) appear in drone-subsystems-india, missile-india, satellite-india and launch-vehicles-propulsion-india — link pending user confirmation. Materiality: pure-plays & meaningful exposures (>=5% rev).",
   "entries": [
     {
       "slug": "power-transmission-india",
@@ -6102,7 +6102,8 @@
         "satellite-payloads-india",
         "launch-vehicles-propulsion-india",
         "satellite-ground-segment-india",
-        "satellite-services-data-india"
+        "satellite-services-data-india",
+        "aircraft-mro-civil-aerospace-india"
       ],
       "nodes": [
         {
@@ -6921,7 +6922,9 @@
         "slug": "satellite-india",
         "node": "Launch Vehicles & Propulsion"
       },
-      "drill_downs": [],
+      "drill_downs": [
+        "aircraft-mro-civil-aerospace-india"
+      ],
       "nodes": [
         {
           "id": "lv",
@@ -10253,7 +10256,9 @@
       "universe": "NSE/BSE",
       "sector": "Defence & Aerospace",
       "derived_from": null,
-      "drill_downs": [],
+      "drill_downs": [
+        "aircraft-mro-civil-aerospace-india"
+      ],
       "nodes": [
         {
           "id": "systems",
@@ -11621,7 +11626,9 @@
       "universe": "NSE/BSE",
       "sector": "Robotics & Automation",
       "derived_from": "robotics-india",
-      "drill_downs": [],
+      "drill_downs": [
+        "aircraft-mro-civil-aerospace-india"
+      ],
       "nodes": [
         {
           "id": "flightctrl",
@@ -13169,6 +13176,256 @@
           "level": 2,
           "priority": "low",
           "bottleneck": false,
+          "in_universe_coverage": false
+        }
+      ]
+    },
+    {
+      "slug": "aircraft-mro-civil-aerospace-india",
+      "industry": "Aircraft MRO & Civil Aerospace Components",
+      "scope": "INDIA",
+      "path": "industries/aircraft-mro-civil-aerospace-india.html",
+      "analysis_date": "2026-10-20",
+      "universe": "NSE/BSE",
+      "sector": "Aerospace & Aviation",
+      "derived_from": [
+        {
+          "slug": "missile-india",
+          "industry": "Missiles",
+          "node": "Airframe, Structures & Thermal Protection / Guidance, Navigation & Avionics"
+        },
+        {
+          "slug": "drone-subsystems-india",
+          "industry": "Drone Subsystems",
+          "node": "Airframe & Composites / Avionics, RF Datalink & Telemetry"
+        },
+        {
+          "slug": "satellite-india",
+          "industry": "Satellite",
+          "node": "Composite Structures (Carbon Fibre) / On-board Computer & Avionics"
+        },
+        {
+          "slug": "launch-vehicles-propulsion-india",
+          "industry": "Launch Vehicles & Propulsion",
+          "node": "Composite Structures (Carbon Fibre) / Launch-Vehicle Avionics & Guidance"
+        }
+      ],
+      "drill_downs": [],
+      "nodes": [
+        {
+          "id": "airframe-mro",
+          "name": "Airframe & Heavy Maintenance",
+          "level": 1,
+          "aliases": [
+            "airframe MRO",
+            "base maintenance",
+            "heavy maintenance",
+            "C check",
+            "D check",
+            "line maintenance",
+            "redelivery check",
+            "hangar MRO",
+            "airframe"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "engine-mro",
+          "name": "Engine MRO",
+          "level": 1,
+          "aliases": [
+            "engine MRO",
+            "engine overhaul",
+            "engine shop",
+            "LEAP MRO",
+            "CFM56 overhaul",
+            "aero-engine MRO",
+            "shop visit",
+            "test cell"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "component-mro",
+          "name": "Component MRO",
+          "level": 1,
+          "aliases": [
+            "component MRO",
+            "LRU MRO",
+            "wheels and brakes",
+            "landing gear MRO",
+            "avionics repair",
+            "accessory MRO",
+            "heat exchanger MRO"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "aerostructures",
+          "name": "Aerostructures & Assemblies",
+          "level": 1,
+          "aliases": [
+            "aerostructures",
+            "fuselage",
+            "wing",
+            "doors",
+            "flap track beam",
+            "airframe structures",
+            "aerostructure",
+            "wing assemblies"
+          ],
+          "priority": "high",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "engine-components",
+          "name": "Aeroengine Components",
+          "level": 1,
+          "aliases": [
+            "aeroengine components",
+            "turbine blades",
+            "airfoils",
+            "forgings",
+            "castings",
+            "titanium castings",
+            "superalloy",
+            "Inconel",
+            "rotating parts",
+            "ring mill"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "precision-parts",
+          "name": "Precision Machined Parts & Sub-assemblies",
+          "level": 1,
+          "aliases": [
+            "precision machined parts",
+            "sub-assemblies",
+            "structural assemblies",
+            "actuator assemblies",
+            "build to print",
+            "precision components"
+          ],
+          "priority": "medium",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "avionics-ewis",
+          "name": "Avionics, EWIS & Electronics",
+          "level": 1,
+          "aliases": [
+            "avionics",
+            "EWIS",
+            "wire harness",
+            "electrical wiring",
+            "LRU",
+            "avionics repair",
+            "cable assemblies",
+            "electronic panels"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "materials",
+          "name": "Materials — Titanium, Superalloys, Aluminium, Composites",
+          "level": 1,
+          "aliases": [
+            "titanium",
+            "superalloy",
+            "Inconel",
+            "aluminium",
+            "carbon fibre",
+            "composite prepreg",
+            "aerospace materials",
+            "nickel alloy"
+          ],
+          "priority": "high",
+          "bottleneck": true,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "cabin",
+          "name": "Cabin Interiors, Seats & Foam",
+          "level": 1,
+          "aliases": [
+            "cabin interiors",
+            "aircraft seats",
+            "aviation foam",
+            "seat cushions",
+            "seat textiles",
+            "cabin",
+            "interiors"
+          ],
+          "priority": "medium",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "tooling-gse",
+          "name": "Tooling & Ground Support Equipment",
+          "level": 1,
+          "aliases": [
+            "tooling",
+            "ground support equipment",
+            "GSE",
+            "assembly jigs",
+            "aero tooling",
+            "engine tooling",
+            "fixtures"
+          ],
+          "priority": "medium",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "mro-infra",
+          "name": "MRO Facilities, Hangars & Airports",
+          "level": 1,
+          "aliases": [
+            "MRO facility",
+            "hangar",
+            "test cell",
+            "SEZ",
+            "airport MRO",
+            "aero park",
+            "MRO infrastructure"
+          ],
+          "priority": "high",
+          "bottleneck": false,
+          "in_universe_coverage": true
+        },
+        {
+          "id": "cert-skills",
+          "name": "Certification, Regulators & Skilled Labour",
+          "level": 1,
+          "aliases": [
+            "certification",
+            "DGCA",
+            "EASA",
+            "FAA",
+            "Part 145",
+            "CAR-66",
+            "AME",
+            "aircraft maintenance engineer",
+            "CEMILAC",
+            "regulator",
+            "skills"
+          ],
+          "priority": "high",
+          "bottleneck": true,
           "in_universe_coverage": false
         }
       ]
