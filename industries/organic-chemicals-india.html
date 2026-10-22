@@ -32,6 +32,13 @@
     </div>
   </header>
 
+  <div style="display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;background:var(--gold-dim);border:1px solid var(--gold);border-radius:10px;padding:14px 18px;margin-bottom:24px;">
+    <span style="font-size:13px;line-height:1.5;"><strong style="color:var(--text);">Drill-down available &rarr;</strong> <span style="color:var(--text-dim);">one deep-dive entry branches from this page.</span></span>
+    <span style="display:flex;gap:10px;flex-wrap:wrap;">
+      <a href="pharma-api-bulk-drugs-india.html" style="font-family:var(--font-mono);font-size:12px;font-weight:600;color:var(--gold);text-decoration:none;border:1px solid var(--gold);border-radius:6px;padding:6px 12px;white-space:nowrap;background:var(--surface);">Pharma APIs &amp; Bulk Drugs &rarr;</a>
+    </span>
+  </div>
+
   <!-- METRIC CARDS -->
   <section class="animate" style="--i:1">
     <div class="metric-cards">
@@ -558,7 +565,7 @@ const NODES = [
       {n:'Anupam Rasayan', t:'NSE: ANURAS', e:'direct', m:'specialty agro &amp; pharma intermediates', ev:'Company reports'},
       {n:'Sumitomo Chemical India', t:'NSE: SUMICHEM', e:'direct', m:'agrochemical formulations &amp; actives', ev:'Company reports'}
     ]},
-  { id:'pharma', name:'Pharma Intermediates (API / CDMO)', pri:'high', bott:false,
+  { id:'pharma', name:'Pharma Intermediates (API / CDMO)', pri:'high', bott:false, drill:true, drillTo:'pharma-api-bulk-drugs-india.html', drillLabel:'Pharma APIs & Bulk Drugs',
     fn:'High-value, certification-gated (USFDA) intermediates and contract development \u2014 a durable export engine.',
     importDep:'Export-led', conc:'Fragmented',
     companies:[
@@ -673,6 +680,7 @@ function renderPanel(node) {
   if (node.conc) html += `<span class="mini">Concentration: ${node.conc}</span>`;
   if (node.bott) html += `<span class="mini" style="color:var(--gold)">Bottleneck</span>`;
   html += `</div>`;
+  if (node.drillTo) html += `<a href="${node.drillTo}" style="display:block;margin:12px 0;padding:10px 12px;border:1px solid var(--gold);border-radius:8px;background:var(--gold-dim);color:var(--gold);font-family:var(--font-mono);font-size:11.5px;font-weight:600;text-decoration:none;">Drill-down &rarr; ${node.drillLabel}</a>`;
 
   if (!node.companies || node.companies.length === 0) {
     html += `<div class="nocov"><b>${node.gap}</b><span class="near">${node.near || ''}</span></div>`;
