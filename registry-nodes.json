@@ -1,9 +1,9 @@
 {
  "registry": "Industry BOM Registry",
  "description": "Machine-readable node index. For every entry, the node names it contains plus the owning entry slug. Used for DEDUP (industry+scope already analysed) and LINEAGE (auto-linking a new industry to a parent when its name matches a node name). Update on every publish.",
- "generated": "2026-10-21",
- "last_delta_pass": "2026-10-21",
- "delta_note": "2026-10-21: Daily rotation re-ran Optical Fibre Preform (India), the entry with the oldest analysis date (2026-10-08) and next in the registry order after Telecom (India). Delta since 2026-10-08: HFCL raised total OF/OFC/preform capex to ~Rs 1,800 cr (14-Sep-2026), doubling preform to 600 MT/yr with commissioning advanced to Oct-2028 (was Rs 580 cr / 300-310 MT / Jul-2029); STL announced Rs 3,000 cr capex FY27-29 (+50% preform/fibre/cable, Rs 20,000 cr FY29 revenue target) and drew a Nomura Buy; Finolex commissioned its 100 MT preform Phase-1 (Mar-2026) and is adding 100 MT to 200 MT; the India preform market was sized at ~$320-380 mn in 2026 (~12-15% CAGR to 2035, IndexBox); China's germanium export ban to the US/Japan is suspended only through Nov-2026; India fibre exports rose 158% YoY to $483 mn (Apr-Aug FY27). Grounding: HFCL BSE/NSE filings (14-Sep-2026) and Q2 FY27 call (19-Oct-2026); STL Q3FY26 call/Lakshya deck/FY26 AR; Finolex earnings calls and FY26 AR; IndexBox India preform market (May-2026); S&P Global Germanium Market Report (May-2026); Moneycontrol (Jan-2026); Nomura (5-Oct-2026); Ministry of Commerce export data (Oct-2026); CBIC ADD Notification 07/2023; MOFCOM Notice 2026 No.35.",
+ "generated": "2026-10-22",
+ "last_delta_pass": "2026-10-22",
+ "delta_note": "2026-10-22: Daily rotation re-ran Optical Fibre (Drawing) (India), the entry with the oldest analysis date (2026-10-08) and next in the registry order after Optical Fibre Preform (India). Delta since 2026-10-08: HFCL board approved a further Rs 820 cr on 14-Sep-2026, taking total OF/OFC/preform capex to ~Rs 1,800 cr (capacity to 43.10 mn fkm OF and 62.00 mn fkm OFC by Jul-2028; 600 MT/yr preform by Oct-2028) with a Rs 28,911 cr Q2FY27 order book and >=80% FY27 revenue-growth guidance; STL approved Rs 3,000 cr capex on 3-Sep-2026 (capacity +50% by end-FY29, Rs 20,000 cr / >27% EBITDA FY29 target, ~70% utilisation, $2 bn order book); Finolex commissioned 100 MT captive preform and is doubling fibre draw 4->8 mn fkm; fibre spot prices are 2.8-5x 2025 levels (CRU index 263.0 in Mar-2026; ~180 mn fkm global deficit in 2026, to persist to ~2028); China extended its ADD on Indian SMOF to Aug-2031 while India's ADD on SMOF runs to Aug-2028; China imposed a helium export ban in Jul-2026 and its germanium ban to the US/Japan is suspended only to Nov-2026; India's optical-fibre exports rose 158% YoY to $483 mn in Apr-Aug FY27 (US >half); Aksh Optifibre was admitted to CIRP on 19-Jun-2026 (NCLT Jaipur). Grounding: HFCL BSE/NSE filing 14-Sep-2026 and Q2FY27 presentation/call 19-Oct-2026; STL board filing and Lakshya FY27-29 deck (Sep-2026); Finolex Q1FY27/FY26 calls; TrendForce (19-Oct-2026); CRU Group (May-2026); Ministry of Commerce export data via Financial Express (20-Oct-2026); tele.net OFC outlook (Aug-2026); S&P Global Germanium Market Report (May-2026); CBIC ADD Notification 07/2023; MOFCOM Notice 2026 No.35; IBBI CIRP announcement (Jun-2026).",
  "entries": [
   {
    "slug": "power-transmission-india",
@@ -4341,7 +4341,7 @@
    "industry": "Optical Fibre (Drawing)",
    "scope": "INDIA",
    "path": "industries/optical-fibre-india.html",
-   "analysis_date": "2026-10-08",
+   "analysis_date": "2026-10-22",
    "universe": "NSE/BSE",
    "sector": "Telecom & Networking",
    "derived_from": {
