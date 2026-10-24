@@ -1,9 +1,9 @@
 {
   "registry": "Industry BOM Registry",
   "description": "Machine-readable node index. For every entry, the node names it contains plus the owning entry slug. Used for DEDUP (industry+scope already analysed) and LINEAGE (auto-linking a new industry to a parent when its name matches a node name). Update on every publish.",
-  "generated": "2026-10-23",
-  "last_delta_pass": "2026-10-23",
-  "delta_note": "2026-10-23: new entries added — Display Manufacturing (India) and Agrochemicals & Crop Protection (India).",
+  "generated": "2026-10-24",
+  "last_delta_pass": "2026-10-24",
+  "delta_note": "2026-10-24: full re-analysis of Optical Transceivers & Modules (India) — delta pass over the 2026-10-08 entry. Material changes: India data-centre capacity 1.8 GW (H1-2026) vs the stale 950 MW; Dixon–Gemtek 60:40 JV for SFP/BOSA assembly (Oct-2026); GX Quantum Photonics ₹500 cr plant (Dec-2026); global top-5 vendor share ~72% (was ~50%); LightCounting Ethernet optics $16.5→$26 bn (2025→26); US FCC China-module review; IIT-M silicon-photonics PDK.",
   "entries": [
     {
       "slug": "power-transmission-india",
@@ -4774,7 +4774,7 @@
       "industry": "Optical Transceivers & Modules",
       "scope": "INDIA",
       "path": "industries/optical-transceivers-india.html",
-      "analysis_date": "2026-10-08",
+      "analysis_date": "2026-10-24",
       "universe": "NSE/BSE",
       "sector": "Telecom & Networking",
       "derived_from": {
