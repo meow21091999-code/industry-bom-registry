@@ -1,9 +1,9 @@
 {
   "registry": "Industry BOM Registry",
   "description": "Machine-readable node index. For every entry, the node names it contains plus the owning entry slug. Used for DEDUP (industry+scope already analysed) and LINEAGE (auto-linking a new industry to a parent when its name matches a node name). Update on every publish.",
-  "generated": "2026-10-24",
-  "last_delta_pass": "2026-10-24",
-  "delta_note": "2026-10-24: NEW entry — Mobile Handsets & Accessories (India), Phase 1 breadth-first, NSE/BSE. Added under Electrical & Electronic Equipment. Key facts: mobile-phone production Rs 6.27 lakh cr FY26 and exports Rs 2.60 lakh cr; DVA ~23% vs ~38% China; PLI-LSEM ended 31-Mar-2026; MPMS notified Aug-2026 (Rs 62,500 cr, FY27-31); ECMS raised to Rs 40,000 cr, 106 projects; Q3 CY2026 smartphone shipments -26% YoY (decade low) on 40-50% memory-price inflation. Cross-links (node -> existing entry, not parent/child): display-touch -> display-manufacturing-india; pcb-pcba -> pcb-electronic-components-india; cell -> li-ion-cell-manufacturing-india; final-assembly -> ems-electronics-manufacturing-india. No parent (no node-name match at intake).",
+  "generated": "2026-10-25",
+  "last_delta_pass": "2026-10-25",
+  "delta_note": "2026-10-25: Daily-rotation re-run — Telecom Chipsets — Baseband & RF Front-End (India), 2026-10-08 -> 2026-10-25. Full Phase 1 refresh to current standard (Market & growth digest block + 20% 5-year CAGR metric card + metric detail popups on all 8 cards; canonical metric-modal). Key facts: India semiconductor market ~US$62 bn (2026) -> US$155 bn (2031), ~20% CAGR nominal [Kotak]; telecom is 2nd-largest end-segment, ~US$13.2 bn demand by FY30 [IDTA]; ~20% of world chip-design engineers, ~3 lakh designers [MeitY]. Delta corrections: ISM now 12 approved projects / Rs 1.64 lakh cr with FIVE in commercial production (Micron Feb-2026, Kaynes 31-Mar-2026, CG Semi 4-Jul-2026, CDIL + Suchi 17-Sep-2026) — all back-end ATMP/OSAT; Semicon 2.0 approved Jul-2026, Rs 1,27,500 cr (US$13.5 bn), design IP must be state-co-owned; Tata-PSMC Dholera fab due 2028; Tata Jagiroad OSAT pilot output reported 3-Oct-2026; IMC 2026 (Oct) target of indigenous alternatives for 10-20 imported network technologies + 136 TTDF projects (~Rs 500 cr); WiSig opened commercial orders for a made-in-India O-RAN 32TR Massive-MIMO radio; DLI at 24 projects / 25 tape-outs / 140+ IP cores; MediaTek ~45% of India smartphone SoCs (Q3 2026), India smartphone shipments -20% YoY on memory prices. No new drill-downs; parent remains telecom-india.",
   "entries": [
     {
       "slug": "power-transmission-india",
@@ -4991,7 +4991,7 @@
       "industry": "Telecom Chipsets — Baseband & RF Front-End",
       "scope": "INDIA",
       "path": "industries/telecom-chipsets-india.html",
-      "analysis_date": "2026-10-08",
+      "analysis_date": "2026-10-25",
       "universe": "NSE/BSE",
       "sector": "Telecom & Networking",
       "derived_from": {
