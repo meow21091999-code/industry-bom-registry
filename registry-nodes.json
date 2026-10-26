@@ -1,9 +1,9 @@
 {
  "registry": "Industry BOM Registry",
  "description": "Machine-readable node index. For every entry, the node names it contains plus the owning entry slug. Used for DEDUP (industry+scope already analysed) and LINEAGE (auto-linking a new industry to a parent when its name matches a node name). Update on every publish.",
- "generated": "2026-10-25",
- "last_delta_pass": "2026-10-25",
- "delta_note": "2026-10-25: NEW ENTRY — Semiconductor Equipment & Materials (India). Depth-first, all subsystems; NSE/BSE universe, all exposures, India lens ON. Key facts: global equipment $165.9bn 2026F (+23.2%) and materials $73.2bn 2025 (+6.8%) per SEMI; Semicon 2.0 approved 15 Jul 2026 with a dedicated machines & materials pillar; India makes 12 of 50+ specialty gases (INOX Air Products, +10 in build); packaging materials 90-100% imported; no NSE/BSE-listed pure-play exists in process tools, wet chemicals, wafers or SiC substrates. No lineage link made — near-matches in power-semiconductor-osat-india and display-manufacturing-india await user confirmation.",
+ "generated": "2026-10-26",
+ "last_delta_pass": "2026-10-26",
+ "delta_note": "2026-10-26: RE-RUN (update in place) — 5G / 4G RAN (India), rotation entry, NSE/BSE universe, India lens ON. Material changes since 2026-10-08: 5G BTS 5.08 lakh (31 Oct 2025) -> 5,62,971 (30 Jun 2026, PIB); Tejas FY25 Rs 8,923 cr / PAT Rs 447 cr -> FY26 Rs 1,103 cr / PAT -Rs 909 cr, Q2FY27 order book Rs 2,315 cr; BSNL add-on Rs 1,526 cr 'pending' -> Rs 1,537 cr LoI dated 27 Aug 2026 with supplies started Q2FY27, plus Rs 3,033 cr Phase IX.2 add-on for 26,238 sites; localisation restated as 4% (4G RAN) / 5% (5G RAN) per NITI Aayog Aug 2026 against <20% DVA, with parts-level China share 52.3% vs 13.4% of finished equipment; telecom PLI Rs 1.1 lakh cr cumulative sales, FY26 utilisation Rs 1,597.93 cr, successor Rs 6,000-7,000 cr targeted Q1 FY28 after 31 Mar 2027 expiry; ECMS doubled to Rs 40,000 cr. Added drill_downs: 6g-india (page already carried the lineage; machine index was missing it). NOTE: 6g-india.html still has no index.html row or registry-nodes entry — flag for the user.",
  "entries": [
   {
    "slug": "power-transmission-india",
@@ -5186,7 +5186,7 @@
    "industry": "5G / 4G RAN — Base Stations & Radios",
    "scope": "INDIA",
    "path": "industries/5g-ran-india.html",
-   "analysis_date": "2026-10-08",
+   "analysis_date": "2026-10-26",
    "universe": "NSE/BSE",
    "sector": "Telecom & Networking",
    "derived_from": {
@@ -5194,7 +5194,9 @@
     "slug": "telecom-india",
     "node": "5G / 4G RAN — Base Stations & Radios"
    },
-   "drill_downs": [],
+   "drill_downs": [
+    "6g-india"
+   ],
    "nodes": [
     {
      "id": "5g-4g-ran",
@@ -5211,7 +5213,7 @@
      "priority": "high",
      "bottleneck": false,
      "in_universe_coverage": true,
-     "coverage_note": "Listed Indian exposure exists at the RAN OEM layer (Tejas Networks, ITI, HFCL) and via EMS/PLI players (Dixon); below the OEM layer there is almost no listed Indian pure-play and foreign vendors (Nokia, Ericsson, Samsung) fill the gap."
+     "coverage_note": "Listed Indian exposure exists at the RAN OEM layer (Tejas Networks, ITI, HFCL) and via EMS/PLI players (Dixon); below the OEM layer there is almost no listed Indian pure-play and foreign vendors (Nokia, Ericsson, Samsung) fill the gap. 98% of demand is private operators."
     },
     {
      "id": "rru",
@@ -5242,7 +5244,7 @@
      "priority": "high",
      "bottleneck": true,
      "in_universe_coverage": true,
-     "coverage_note": "Covered by Tejas Networks and HFCL; unlisted Indian AAU players (WiSig) and foreign OEMs (Nokia, Ericsson, Samsung) also active."
+     "coverage_note": "Covered by Tejas Networks (64T64R launched at IMC) and HFCL; unlisted Indian AAU players (WiSig with C-DoT and VVDN) and foreign OEMs (Nokia, Ericsson, Samsung) also active."
     },
     {
      "id": "bbu",
@@ -5275,7 +5277,7 @@
      "priority": "high",
      "bottleneck": true,
      "in_universe_coverage": false,
-     "coverage_note": "No listed Indian pure-play. RF front-end and power-amplifier devices are imported (Qorvo, Skyworks, Analog Devices, NXP, Murata)."
+     "coverage_note": "No listed Indian pure-play. RF front-end and power-amplifier devices imported (Qorvo, Skyworks, Analog Devices, NXP, Murata). The proposed PLI successor and ECMS target components, but neither yet funds an RF device fab."
     },
     {
      "id": "filter",
@@ -5291,7 +5293,7 @@
      "priority": "med",
      "bottleneck": true,
      "in_universe_coverage": false,
-     "coverage_note": "No listed Indian pure-play. Cavity / SAW / BAW filters imported (Murata, TDK, Qorvo); a named PLI localisation gap."
+     "coverage_note": "No listed Indian pure-play. Cavity / SAW / BAW filters imported (Murata, TDK, Qorvo). ECMS approvals now include antennas, filters and coils — filters and coils to be made in India for the first time (KPMG, Oct 2026)."
     },
     {
      "id": "antenna",
@@ -5305,7 +5307,7 @@
      "priority": "med",
      "bottleneck": false,
      "in_universe_coverage": true,
-     "coverage_note": "Covered indirectly by HFCL; unlisted (VVDN, CommScope India) players also active. Antennas are ~69% Chinese by import value."
+     "coverage_note": "Covered indirectly by HFCL; unlisted (VVDN, CommScope India) also active. Antennas are ~69% Chinese by import value, but Ericsson makes 15,000+ antennas in India with >50% local content and exports to Europe (Oct 2026)."
     },
     {
      "id": "semi",
@@ -5474,6 +5476,10 @@
      "in_universe_coverage": false,
      "coverage_note": "No listed Indian pure-play; largely imported. PLI localisation targets RF filters and connectors only by year five."
     }
+   ],
+   "related": [
+    "telecom-india",
+    "telecom-chipsets-india"
    ]
   },
   {
