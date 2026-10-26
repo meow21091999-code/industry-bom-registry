@@ -12,17 +12,22 @@
   /* Register index — page-specific layout ONLY.
      Design tokens and every shared component (including the collapsible
      industry groups and the entry rows) live in assets/registry.css. */
-  .masthead { position: relative; }
-  .masthead-btn { position: absolute; top: 0; right: 0; text-decoration: none; }
+  .masthead-btn {
+    display: inline-flex; align-items: center; gap: 8px;
+    font-size: 13.5px; padding: 12px 22px; border-radius: 8px;
+    margin-bottom: 20px; color: var(--text); border-color: var(--border-bright);
+    text-decoration: none;
+  }
+  .masthead-btn:hover { color: var(--blue); border-color: var(--blue); }
 </style>
 </head>
 <body>
 <div class="container">
   <header class="masthead animate" style="--i:0">
+    <a class="ctrl-btn masthead-btn" href="views/companies-master-list.html">Company master list &rarr;</a>
     <div class="eyebrow">Sarvam &middot; Industrial BOM &amp; Value-Chain Dissection Engine</div>
     <h1>Industry BOM Registry</h1>
     <div class="subtitle">One page per industry analysed &middot; BOM tree + value-chain flowchart + click-through company map</div>
-    <a class="ctrl-btn masthead-btn" href="views/companies-master-list.html">Company master list &rarr;</a>
   </header>
 
 
