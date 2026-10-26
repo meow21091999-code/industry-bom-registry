@@ -3,7 +3,7 @@
  "description": "Machine-readable node index. For every entry, the node names it contains plus the owning entry slug. Used for DEDUP (industry+scope already analysed) and LINEAGE (auto-linking a new industry to a parent when its name matches a node name). Update on every publish.",
  "generated": "2026-10-26",
  "last_delta_pass": "2026-10-26",
- "delta_note": "2026-10-26: RE-RUN (update in place) — 5G / 4G RAN (India), rotation entry, NSE/BSE universe, India lens ON. Material changes since 2026-10-08: 5G BTS 5.08 lakh (31 Oct 2025) -> 5,62,971 (30 Jun 2026, PIB); Tejas FY25 Rs 8,923 cr / PAT Rs 447 cr -> FY26 Rs 1,103 cr / PAT -Rs 909 cr, Q2FY27 order book Rs 2,315 cr; BSNL add-on Rs 1,526 cr 'pending' -> Rs 1,537 cr LoI dated 27 Aug 2026 with supplies started Q2FY27, plus Rs 3,033 cr Phase IX.2 add-on for 26,238 sites; localisation restated as 4% (4G RAN) / 5% (5G RAN) per NITI Aayog Aug 2026 against <20% DVA, with parts-level China share 52.3% vs 13.4% of finished equipment; telecom PLI Rs 1.1 lakh cr cumulative sales, FY26 utilisation Rs 1,597.93 cr, successor Rs 6,000-7,000 cr targeted Q1 FY28 after 31 Mar 2027 expiry; ECMS doubled to Rs 40,000 cr. Added drill_downs: 6g-india (page already carried the lineage; machine index was missing it). NOTE: 6g-india.html still has no index.html row or registry-nodes entry — flag for the user.",
+ "delta_note": "2026-10-26: WHOLE-REGISTRY WEEKLY DELTA PASS (71 pages; 165 open [LIVE] facts re-validated in clusters, 24 targeted searches). MOVED/RESOLVED: (1) STL Q2 FY27 reported 23-Oct-2026 — revenue Rs 2,529 cr, op. EBITDA 27.1%, PAT Rs 517 cr, order book Rs 35,274 cr (optical-fibre-cable); (2) US Section 232 pharma final phase effective 29-Sep-2026, generics still exempt, India eligible for 0% on designated specialty products (pharma-api-bulk-drugs); (3) C-DAC IndiaAI RFE C-DAC/GPU/01/2026 published 07-Oct-2026 for 10,000 AICUs, bids close 29-Oct-2026 — the \"global resale allowed\" line is unconfirmed (data-centre-ai-compute); (4) Yotta IPO restated to up to US$1.5 bn targeting Jan-Mar 2027, was Rs 6,000-8,000 cr (data-centre-ai-compute); (5) Navin Fluorine-Chemours immersion-fluid plant slipped from 1QFY27 to Jul-Aug 2026 (data-centre-liquid-cooling); (6) Adani-IntelliSmart Rs 3,050 cr SPSA executed, CCI filing \"information incomplete\" (smart-meters); (7) FCC 26-50 in force 13-Oct-2026 — transceivers not named, narrower than the Aug-2026 draft (optical-transceivers); (8) China germanium suspension expiry restated to 27-Nov-2026, 10-Jan-2027 Kuala Lumpur extension unconfirmed (optical-fibre, optical-fibre-cable, optical-fibre-preform, defence-electro-optics); (9) BEL thermal-imager GeM bid closed 22-Oct-2026, award pending (defence-electro-optics); (10) SHANTI Rules consultation closed 04-Sep-2026, still not notified (nuclear-pwr-steam-generator, reactor-coolant-pumps); (11) Pesticides Management Bill still not introduced as of 22-Oct-2026 (agrochemicals); (12) DGTR PVC CVD widened to 13 Chinese exporter groups, MIP lapses ~23-Jan-2027 (organic-chemicals); (13) telecom PLI 2.0 still awaiting Cabinet (telecom, 5g-ran). UNCHANGED: Jio Platforms IPO on schedule (allotment 26-Oct, listing 28-Oct); BHEL 3.2 GW ACC bid deadline 30-Oct-2026; DGTR CRGO/AM probe (preliminary finding Nov-Dec 2026); Aksh Optifibre CIRP; SIGHT electrolyser commissioning; REPM beneficiary award; Sify IPO on hold; AUSC 800 MW approval; GHAVP PCP test-bed resumption; China helium export ban; ECMS/Semicon 2.0 display-fab status; genome corpus at EFC. REGISTRY INTEGRITY: added the missing index rows and node-index entries for pharma-api-bulk-drugs-india and 6g-india (both pages existed without register entries); reciprocal drill_downs set on organic-chemicals and 5g-ran.",
  "entries": [
   {
    "slug": "power-transmission-india",
@@ -9628,7 +9628,9 @@
    "universe": "NSE/BSE",
    "sector": "Chemicals & Petrochemicals",
    "derived_from": null,
-   "drill_downs": [],
+   "drill_downs": [
+    "pharma-api-bulk-drugs-india"
+   ],
    "nodes": [
     {
      "id": "olefins",
@@ -15399,6 +15401,312 @@
      "priority": "low",
      "bottleneck": false,
      "in_universe_coverage": false
+    }
+   ]
+  },
+  {
+   "slug": "pharma-api-bulk-drugs-india",
+   "industry": "Pharma APIs & Bulk Drugs",
+   "scope": "INDIA",
+   "path": "industries/pharma-api-bulk-drugs-india.html",
+   "analysis_date": "2026-10-22",
+   "universe": "NSE/BSE",
+   "sector": "Chemicals & Petrochemicals",
+   "derived_from": "organic-chemicals-india",
+   "drill_downs": [],
+   "nodes": [
+    {
+     "id": "peng",
+     "name": "Penicillin G / 6-APA / 7-ACA",
+     "level": 2,
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "clav",
+     "name": "Clavulanic Acid",
+     "level": 2,
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "macrolides",
+     "name": "Macrolides & Aminoglycosides",
+     "level": 2,
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "tetra",
+     "name": "Tetracyclines & Vitamins",
+     "level": 2,
+     "priority": "medium",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "para",
+     "name": "Paracetamol / PAP",
+     "level": 2,
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "nsaid",
+     "name": "NSAIDs (Ibuprofen / Aspirin / Diclofenac)",
+     "level": 2,
+     "priority": "high",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "statin",
+     "name": "Statins & Sartans",
+     "level": 2,
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "antidiab",
+     "name": "Antidiabetics (Metformin)",
+     "level": 2,
+     "priority": "high",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "arv",
+     "name": "ARV / Antiretrovirals",
+     "level": 2,
+     "priority": "high",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "ceph",
+     "name": "Cephalosporins & Fluoroquinolones",
+     "level": 2,
+     "priority": "medium",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "steroid",
+     "name": "Steroids & CNS APIs",
+     "level": 2,
+     "priority": "medium",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "hpapi",
+     "name": "HPAPI / Oncology",
+     "level": 2,
+     "priority": "high",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "ksm",
+     "name": "Key Starting Materials (KSM)",
+     "level": 2,
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "di",
+     "name": "Advanced Drug Intermediates",
+     "level": 2,
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "solv",
+     "name": "Solvents & Reagents",
+     "level": 2,
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "gases",
+     "name": "Industrial & Specialty Gases",
+     "level": 2,
+     "priority": "medium",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "cdmo",
+     "name": "CRDMO Services",
+     "level": 2,
+     "priority": "high",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "biologics",
+     "name": "Biologics, Peptides & Enzymes",
+     "level": 2,
+     "priority": "medium",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "fdf",
+     "name": "Finished Formulations (FDF)",
+     "level": 2,
+     "priority": "high",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "equip",
+     "name": "Fermenters, Reactors & Process Equipment",
+     "level": 2,
+     "priority": "medium",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "etp",
+     "name": "ETP / ZLD & Solvent Recovery",
+     "level": 2,
+     "priority": "medium",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    }
+   ]
+  },
+  {
+   "slug": "6g-india",
+   "industry": "6G (IMT-2030)",
+   "scope": "INDIA",
+   "path": "industries/6g-india.html",
+   "analysis_date": "2026-10-23",
+   "universe": "NSE/BSE",
+   "sector": "Telecom & Networking",
+   "derived_from": "5g-ran-india",
+   "drill_downs": [],
+   "nodes": [
+    {
+     "id": "ru",
+     "name": "6G Radio Unit (RU / AAU)",
+     "level": 2,
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "antenna",
+     "name": "Antenna Array, RIS & Metasurface",
+     "level": 2,
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "rfpa",
+     "name": "RF Front-End & Power Amplifier (GaN / GaAs)",
+     "level": 2,
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "thz",
+     "name": "Sub-THz / THz Front-End & Devices",
+     "level": 2,
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "semi",
+     "name": "RAN & Modem Silicon (RFIC / SoC / FPGA)",
+     "level": 2,
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "bbu",
+     "name": "Baseband DU / CU & AI-Native RIC",
+     "level": 2,
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "core",
+     "name": "AI-Native Core & Edge Compute",
+     "level": 2,
+     "priority": "medium",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "phy",
+     "name": "Spectrum & Air Interface (FR3 / mmWave / sub-THz)",
+     "level": 2,
+     "priority": "medium",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "isac",
+     "name": "ISAC — Integrated Sensing & Communication",
+     "level": 2,
+     "priority": "medium",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "ntn",
+     "name": "NTN — Satellite Direct-to-Device / HAPS",
+     "level": 2,
+     "priority": "medium",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "optical",
+     "name": "Optical Transport, Fronthaul & Fibre",
+     "level": 2,
+     "priority": "medium",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "test",
+     "name": "Test & Measurement (sub-THz VNA / OTA)",
+     "level": 2,
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "ems",
+     "name": "EMS, PCB & Enclosure / Power",
+     "level": 2,
+     "priority": "medium",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "services",
+     "name": "R&D, Integration & Managed Services",
+     "level": 2,
+     "priority": "medium",
+     "bottleneck": false,
+     "in_universe_coverage": true
     }
    ]
   }
