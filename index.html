@@ -19,7 +19,7 @@
   /* collapsible industry groups (registry index standard) */
   .group { margin-bottom: 4px; }
   .group__panel { display: block; }
-  .group[data-collapsed="true"] .group__panel { display: none; }
+  .group:not(.open) .group__panel { display: none; }
   button.group__head {
     background: none; border: 0; padding: 0; width: 100%; text-align: left; cursor: pointer;
     font-family: var(--font-mono); font-size: 11px; font-weight: 600; letter-spacing: 1.5px;
@@ -31,7 +31,7 @@
   button.group__head:focus-visible { outline: 2px solid var(--blue); outline-offset: 3px; border-radius: 3px; }
   .group__count { order: 1; font-family: var(--font-mono); font-size: 10px; font-weight: 600; letter-spacing: 0; color: var(--blue); background: var(--blue-dim); border: 1px solid var(--border); border-radius: 999px; padding: 1px 8px; }
   .chev { order: 1; display: inline-block; width: 0; height: 0; margin-left: 4px; border-left: 4px solid transparent; border-right: 4px solid transparent; border-top: 5px solid var(--text-dim); transition: transform 0.15s ease; }
-  .group[data-collapsed="true"] .chev { transform: rotate(-90deg); }
+  .group:not(.open) .chev { transform: rotate(-90deg); }
   .controls { display: flex; gap: 8px; margin-bottom: 6px; }
   .ctrl-btn { font-family: var(--font-mono); font-size: 10.5px; font-weight: 600; letter-spacing: 0.5px; text-transform: uppercase; color: var(--text-dim); background: var(--surface); border: 1px solid var(--border); border-radius: 6px; padding: 5px 12px; cursor: pointer; transition: color 0.15s ease, border-color 0.15s ease; }
   .ctrl-btn:hover { color: var(--blue); border-color: var(--border-bright); }
@@ -40,16 +40,16 @@
   .masthead-btn { position: absolute; top: 0; right: 0; text-decoration: none; }
 
   /* entry rows */
-  a.entry {
+  a.row {
     display: block; text-decoration: none; color: inherit; background: var(--surface);
     border: 1px solid var(--border); border-left: 3px solid var(--blue); border-radius: 10px;
     padding: 18px 20px; margin-bottom: 12px; transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
   }
-  a.entry:hover { transform: translateY(-2px); box-shadow: 0 6px 18px rgba(15,37,64,0.10); border-color: var(--border-bright); border-left-color: var(--gold); }
-  .entry__name { font-size: 18px; font-weight: 700; letter-spacing:-0.3px; }
-  .entry__scope { font-family: var(--font-mono); font-size: 11px; color: var(--gold); margin-left: 10px; font-weight:600; }
-  .entry__desc { font-size: 13px; color: var(--text-dim); margin-top: 6px; }
-  .entry__meta { display:flex; flex-wrap:wrap; gap:7px; margin-top: 12px; }
+  a.row:hover { transform: translateY(-2px); box-shadow: 0 6px 18px rgba(15,37,64,0.10); border-color: var(--border-bright); border-left-color: var(--gold); }
+  .row__title { font-size: 18px; font-weight: 700; letter-spacing:-0.3px; }
+  .row__scope { font-family: var(--font-mono); font-size: 11px; color: var(--gold); margin-left: 10px; font-weight:600; }
+  .row__desc { font-size: 13px; color: var(--text-dim); margin-top: 6px; }
+  .row__meta { display:flex; flex-wrap:wrap; gap:7px; margin-top: 12px; }
 
   .note { background: var(--surface); border:1px solid var(--border); border-left:3px solid var(--gold); border-radius:0 10px 10px 0; padding: 16px 20px; font-size: 13px; line-height:1.65; color: var(--text-dim); margin-top: 36px; }
   .note strong { color: var(--text); }
@@ -72,14 +72,14 @@
   </div>
 
   <div class="animate" style="--i:1">
-    <section class="group" data-collapsed="true">
+    <section class="group">
       <button class="group__head" type="button" aria-expanded="false"><span class="group__name">Power &amp; Electrical Infrastructure</span><span class="group__count">5</span><span class="chev" aria-hidden="true"></span></button>
       <div class="group__panel">
 
-    <a class="entry" href="industries/power-transmission-india.html">
-      <div class="entry__name">Power Transmission <span class="entry__scope">INDIA</span></div>
-      <div class="entry__desc">Bulk electricity transmission (220&nbsp;kV and above) — overhead lines, substation equipment, HVDC and power electronics, cables, EPC and the regulated-return developer layer.</div>
-      <div class="entry__meta">
+    <a class="row" href="industries/power-transmission-india.html">
+      <div class="row__title">Power Transmission <span class="row__scope">INDIA</span></div>
+      <div class="row__desc">Bulk electricity transmission (220&nbsp;kV and above) — overhead lines, substation equipment, HVDC and power electronics, cables, EPC and the regulated-return developer layer.</div>
+      <div class="row__meta">
         <span class="chip chip--gold">Analysis date: 2026-10-09</span>
         <span class="chip">Sector: Power &amp; Electrical Infrastructure</span>
         <span class="chip">Scope: India</span>
@@ -89,10 +89,10 @@
       </div>
     </a>
 
-    <a class="entry" href="industries/overhead-transmission-line-india.html">
-      <div class="entry__name">Overhead Transmission Line <span class="entry__scope">INDIA</span></div>
-      <div class="entry__desc">Drill-down of Power Transmission. The physical line itself — conductors, towers, insulators, hardware and OPGW, foundations, right-of-way, erection, and the EPC and asset-owner layers.</div>
-      <div class="entry__meta">
+    <a class="row" href="industries/overhead-transmission-line-india.html">
+      <div class="row__title">Overhead Transmission Line <span class="row__scope">INDIA</span></div>
+      <div class="row__desc">Drill-down of Power Transmission. The physical line itself — conductors, towers, insulators, hardware and OPGW, foundations, right-of-way, erection, and the EPC and asset-owner layers.</div>
+      <div class="row__meta">
         <span class="chip chip--gold">Analysis date: 2026-10-10</span>
         <span class="chip">Derived from: Power Transmission &rarr; Overhead Transmission Line</span>
         <span class="chip">Sector: Power &amp; Electrical Infrastructure</span>
@@ -101,10 +101,10 @@
         <span class="chip">Depth: depth-first</span>
       </div>
     </a>
-    <a class="entry" href="industries/substation-equipment-india.html">
-      <div class="entry__name">Substation Equipment <span class="entry__scope">INDIA</span></div>
-      <div class="entry__desc">Drill-down of Power Transmission. Transformers, GIS/AIS switchgear, protection &amp; automation, HVDC terminals and instrument transformers &mdash; the CRGO / bushing / OLTC import bottlenecks behind them, and the GEC-III (PM Dhara) order cycle cleared by Cabinet on 30-Sep-2026.</div>
-      <div class="entry__meta">
+    <a class="row" href="industries/substation-equipment-india.html">
+      <div class="row__title">Substation Equipment <span class="row__scope">INDIA</span></div>
+      <div class="row__desc">Drill-down of Power Transmission. Transformers, GIS/AIS switchgear, protection &amp; automation, HVDC terminals and instrument transformers &mdash; the CRGO / bushing / OLTC import bottlenecks behind them, and the GEC-III (PM Dhara) order cycle cleared by Cabinet on 30-Sep-2026.</div>
+      <div class="row__meta">
         <span class="chip chip--gold">Analysis date: 2026-10-10</span>
         <span class="chip">Derived from: Power Transmission &rarr; Substation Equipment</span>
         <span class="chip">Sector: Power &amp; Electrical Infrastructure</span>
@@ -114,10 +114,10 @@
       </div>
     </a>
 
-    <a class="entry" href="industries/hvdc-power-electronics-india.html">
-      <div class="entry__name">HVDC &amp; Power Electronics <span class="entry__scope">INDIA</span></div>
-      <div class="entry__desc">Drill-down of Power Transmission &amp; Substation Equipment. Converter stations and valves, converter transformers, HVDC cables, control &amp; protection &mdash; and the power-semiconductor / XLPE-DC import bottlenecks behind them.</div>
-      <div class="entry__meta">
+    <a class="row" href="industries/hvdc-power-electronics-india.html">
+      <div class="row__title">HVDC &amp; Power Electronics <span class="row__scope">INDIA</span></div>
+      <div class="row__desc">Drill-down of Power Transmission &amp; Substation Equipment. Converter stations and valves, converter transformers, HVDC cables, control &amp; protection &mdash; and the power-semiconductor / XLPE-DC import bottlenecks behind them.</div>
+      <div class="row__meta">
         <span class="chip chip--gold">Analysis date: 2026-10-10</span>
         <span class="chip">Derived from: Power Transmission &rarr; HVDC &amp; Power Electronics</span>
         <span class="chip">Sector: Power &amp; Electrical Infrastructure</span>
@@ -127,10 +127,10 @@
       </div>
     </a>
 
-    <a class="entry" href="industries/ehv-hv-cables-india.html">
-      <div class="entry__name">EHV / HV Power Cables <span class="entry__scope">INDIA</span></div>
-      <div class="entry__desc">High- and extra-high-voltage power cables (66&ndash;500 kV XLPE, land and submarine) &mdash; conductor, XLPE insulation system, accessories, CCV/VCV machinery, installation &amp; EPC, and the submarine-cable gap.</div>
-      <div class="entry__meta">
+    <a class="row" href="industries/ehv-hv-cables-india.html">
+      <div class="row__title">EHV / HV Power Cables <span class="row__scope">INDIA</span></div>
+      <div class="row__desc">High- and extra-high-voltage power cables (66&ndash;500 kV XLPE, land and submarine) &mdash; conductor, XLPE insulation system, accessories, CCV/VCV machinery, installation &amp; EPC, and the submarine-cable gap.</div>
+      <div class="row__meta">
         <span class="chip chip--gold">Analysis date: 2026-10-10</span>
         <span class="chip">Derived from: Power Transmission &rarr; Cables (EHV / HV)</span>
         <span class="chip">Sector: Power &amp; Electrical Infrastructure</span>
@@ -144,14 +144,14 @@
     </div>
     </section>
 
-    <section class="group" data-collapsed="true">
+    <section class="group">
       <button class="group__head" type="button" aria-expanded="false"><span class="group__name">Renewable Energy</span><span class="group__count">3</span><span class="chev" aria-hidden="true"></span></button>
       <div class="group__panel">
 
-    <a class="entry" href="industries/solar-pv-india.html">
-      <div class="entry__name">Solar PV <span class="entry__scope">INDIA</span></div>
-      <div class="entry__desc">Crystalline-silicon &amp; thin-film solar PV manufacturing and deployment &mdash; polysilicon, wafers, cells, modules, BoM ancillaries, inverters, EPC and the developer layer, and the ALMM (List I&ndash;III) / BCD / PLI / polysilicon-VGF policy stack behind them.</div>
-      <div class="entry__meta">
+    <a class="row" href="industries/solar-pv-india.html">
+      <div class="row__title">Solar PV <span class="row__scope">INDIA</span></div>
+      <div class="row__desc">Crystalline-silicon &amp; thin-film solar PV manufacturing and deployment &mdash; polysilicon, wafers, cells, modules, BoM ancillaries, inverters, EPC and the developer layer, and the ALMM (List I&ndash;III) / BCD / PLI / polysilicon-VGF policy stack behind them.</div>
+      <div class="row__meta">
         <span class="chip chip--gold">Analysis date: 2026-10-12</span>
         <span class="chip">Sector: Renewable Energy</span>
         <span class="chip">Scope: India</span>
@@ -161,10 +161,10 @@
       </div>
     </a>
 
-    <a class="entry" href="industries/solar-cells-india.html">
-      <div class="entry__name">Solar Cell Fabrication <span class="entry__scope">INDIA</span></div>
-      <div class="entry__desc">Drill-down of Solar PV. The wafer-to-cell conversion step &mdash; texturing, diffusion, passivation, metallisation and test &mdash; across 37.8 GW of ALMM-listed cell capacity, and the wafer, silver-paste, process-gas and cell-line-machinery import bottlenecks behind it.</div>
-      <div class="entry__meta">
+    <a class="row" href="industries/solar-cells-india.html">
+      <div class="row__title">Solar Cell Fabrication <span class="row__scope">INDIA</span></div>
+      <div class="row__desc">Drill-down of Solar PV. The wafer-to-cell conversion step &mdash; texturing, diffusion, passivation, metallisation and test &mdash; across 37.8 GW of ALMM-listed cell capacity, and the wafer, silver-paste, process-gas and cell-line-machinery import bottlenecks behind it.</div>
+      <div class="row__meta">
         <span class="chip chip--gold">Analysis date: 2026-10-12</span>
         <span class="chip">Derived from: Solar PV &rarr; Solar Cell Fabrication</span>
         <span class="chip">Sector: Renewable Energy</span>
@@ -174,10 +174,10 @@
       </div>
     </a>
 
-    <a class="entry" href="industries/silver-paste-metallisation-india.html">
-      <div class="entry__name">Silver Paste &amp; Metallisation <span class="entry__scope">INDIA</span></div>
-      <div class="entry__desc">Drill-down of Solar Cell Fabrication. The cell metallisation step &mdash; silver and aluminium pastes, glass frit, printing and co-firing &mdash; the 2026 silver price spike and retreat, the DGFT silver-import restrictions, and the copper-substitution race.</div>
-      <div class="entry__meta">
+    <a class="row" href="industries/silver-paste-metallisation-india.html">
+      <div class="row__title">Silver Paste &amp; Metallisation <span class="row__scope">INDIA</span></div>
+      <div class="row__desc">Drill-down of Solar Cell Fabrication. The cell metallisation step &mdash; silver and aluminium pastes, glass frit, printing and co-firing &mdash; the 2026 silver price spike and retreat, the DGFT silver-import restrictions, and the copper-substitution race.</div>
+      <div class="row__meta">
         <span class="chip chip--gold">Analysis date: 2026-10-11</span>
         <span class="chip">Derived from: Solar Cell Fabrication &rarr; Metallisation paste (Ag / Al)</span>
         <span class="chip">Sector: Renewable Energy</span>
@@ -190,14 +190,14 @@
     </div>
     </section>
 
-    <section class="group" data-collapsed="true">
+    <section class="group">
       <button class="group__head" type="button" aria-expanded="false"><span class="group__name">Green Hydrogen &amp; Clean Fuels</span><span class="group__count">1</span><span class="chev" aria-hidden="true"></span></button>
       <div class="group__panel">
 
-    <a class="entry" href="industries/green-hydrogen-electrolyser-india.html">
-      <div class="entry__name">Green Hydrogen &amp; Electrolyser Manufacturing <span class="entry__scope">INDIA</span></div>
-      <div class="entry__desc">Renewable-powered water electrolysis and the domestic electrolyser industry &mdash; the alkaline / PEM stack, membranes and iridium / platinum catalysts, balance of plant, critical minerals, renewable power, storage and green-ammonia offtake, and the SIGHT (&#8377;17,490 cr) policy stack behind them.</div>
-      <div class="entry__meta">
+    <a class="row" href="industries/green-hydrogen-electrolyser-india.html">
+      <div class="row__title">Green Hydrogen &amp; Electrolyser Manufacturing <span class="row__scope">INDIA</span></div>
+      <div class="row__desc">Renewable-powered water electrolysis and the domestic electrolyser industry &mdash; the alkaline / PEM stack, membranes and iridium / platinum catalysts, balance of plant, critical minerals, renewable power, storage and green-ammonia offtake, and the SIGHT (&#8377;17,490 cr) policy stack behind them.</div>
+      <div class="row__meta">
         <span class="chip chip--gold">Analysis date: 2026-10-12</span>
         <span class="chip">Sector: Green Hydrogen &amp; Clean Fuels</span>
         <span class="chip">Scope: India</span>
@@ -210,14 +210,14 @@
     </div>
     </section>
 
-    <section class="group" data-collapsed="true">
+    <section class="group">
       <button class="group__head" type="button" aria-expanded="false"><span class="group__name">Nuclear Energy</span><span class="group__count">3</span><span class="chev" aria-hidden="true"></span></button>
       <div class="group__panel">
 
-    <a class="entry" href="industries/smr-india.html">
-      <div class="entry__name">Small Modular Reactor <span class="entry__scope">INDIA</span></div>
-      <div class="entry__desc">India's indigenous SMR programme (BSMR-200 &middot; SMR-55 &middot; BSMR-300) &mdash; reactor core and fuel cycle, nuclear island (steam generators, containment, coolant pumps, heavy forgings), turbine island, instrumentation &amp; control, and the NSE/BSE equipment-supply chain and coverage gaps behind them.</div>
-      <div class="entry__meta">
+    <a class="row" href="industries/smr-india.html">
+      <div class="row__title">Small Modular Reactor <span class="row__scope">INDIA</span></div>
+      <div class="row__desc">India's indigenous SMR programme (BSMR-200 &middot; SMR-55 &middot; BSMR-300) &mdash; reactor core and fuel cycle, nuclear island (steam generators, containment, coolant pumps, heavy forgings), turbine island, instrumentation &amp; control, and the NSE/BSE equipment-supply chain and coverage gaps behind them.</div>
+      <div class="row__meta">
         <span class="chip chip--gold">Analysis date: 2026-10-12</span>
         <span class="chip">Sector: Nuclear Energy</span>
         <span class="chip">Scope: India</span>
@@ -227,10 +227,10 @@
       </div>
     </a>
 
-    <a class="entry" href="industries/nuclear-pwr-steam-generator-india.html">
-      <div class="entry__name">Nuclear PWR Steam Generator <span class="entry__scope">INDIA</span></div>
-      <div class="entry__desc">Drill-down of Small Modular Reactor. The shell-and-tube heat-exchanger vessel (PWR / VVER / PHWR) &mdash; shell, tubesheet and heavy forgings, the Inconel 690 tube bundle, moisture separators, fabrication machinery, NDT and the aftermarket &mdash; and the Inconel-tube and machinery import gaps behind them.</div>
-      <div class="entry__meta">
+    <a class="row" href="industries/nuclear-pwr-steam-generator-india.html">
+      <div class="row__title">Nuclear PWR Steam Generator <span class="row__scope">INDIA</span></div>
+      <div class="row__desc">Drill-down of Small Modular Reactor. The shell-and-tube heat-exchanger vessel (PWR / VVER / PHWR) &mdash; shell, tubesheet and heavy forgings, the Inconel 690 tube bundle, moisture separators, fabrication machinery, NDT and the aftermarket &mdash; and the Inconel-tube and machinery import gaps behind them.</div>
+      <div class="row__meta">
         <span class="chip chip--gold">Analysis date: 2026-10-13</span>
         <span class="chip">Derived from: Small Modular Reactor &rarr; Steam Generator / Heat Exchanger</span>
         <span class="chip">Sector: Nuclear Energy</span>
@@ -241,10 +241,10 @@
       </div>
     </a>
 
-    <a class="entry" href="industries/reactor-coolant-pumps-primary-loop-india.html">
-      <div class="entry__name">Reactor Coolant Pumps &amp; Primary Loop <span class="entry__scope">INDIA</span></div>
-      <div class="entry__desc">Drill-down of Small Modular Reactor. The pump that circulates primary coolant past the core &mdash; PCP/RCP internals, the Class-1 shaft-seal system, motors, the primary-loop pressure boundary, heavy forgings, fabrication machinery, NDT and the aftermarket &mdash; and the seal-IP, test-bed and machinery import gaps behind them.</div>
-      <div class="entry__meta">
+    <a class="row" href="industries/reactor-coolant-pumps-primary-loop-india.html">
+      <div class="row__title">Reactor Coolant Pumps &amp; Primary Loop <span class="row__scope">INDIA</span></div>
+      <div class="row__desc">Drill-down of Small Modular Reactor. The pump that circulates primary coolant past the core &mdash; PCP/RCP internals, the Class-1 shaft-seal system, motors, the primary-loop pressure boundary, heavy forgings, fabrication machinery, NDT and the aftermarket &mdash; and the seal-IP, test-bed and machinery import gaps behind them.</div>
+      <div class="row__meta">
         <span class="chip chip--gold">Analysis date: 2026-10-14</span>
         <span class="chip">Derived from: Small Modular Reactor &rarr; Reactor Coolant Pumps &amp; Primary Loop</span>
         <span class="chip">Sector: Nuclear Energy</span>
@@ -258,14 +258,14 @@
     </div>
     </section>
 
-    <section class="group" data-collapsed="true">
+    <section class="group">
       <button class="group__head" type="button" aria-expanded="false"><span class="group__name">Power Generation Equipment</span><span class="group__count">5</span><span class="chev" aria-hidden="true"></span></button>
       <div class="group__panel">
 
-    <a class="entry" href="industries/turbine-island-india.html">
-      <div class="entry__name">Turbine Island (Turbomachinery) <span class="entry__scope">INDIA</span></div>
-      <div class="entry__desc">Drill-down of Small Modular Reactor. The steam power island of thermal, CSP and nuclear plants &mdash; steam turbine (rotor, blading, cylinders), generator &amp; electrical train, condenser &amp; heat rejection, feedwater/condensate &amp; boiler feed pumps, governing and auxiliaries &mdash; and the rotor-forging and heavy-machinery import gaps behind them.</div>
-      <div class="entry__meta">
+    <a class="row" href="industries/turbine-island-india.html">
+      <div class="row__title">Turbine Island (Turbomachinery) <span class="row__scope">INDIA</span></div>
+      <div class="row__desc">Drill-down of Small Modular Reactor. The steam power island of thermal, CSP and nuclear plants &mdash; steam turbine (rotor, blading, cylinders), generator &amp; electrical train, condenser &amp; heat rejection, feedwater/condensate &amp; boiler feed pumps, governing and auxiliaries &mdash; and the rotor-forging and heavy-machinery import gaps behind them.</div>
+      <div class="row__meta">
         <span class="chip chip--gold">Analysis date: 2026-10-15</span>
         <span class="chip">Derived from: Small Modular Reactor &rarr; Turbomachinery (Turbine Island)</span>
         <span class="chip">Sector: Power Generation Equipment</span>
@@ -276,10 +276,10 @@
       </div>
     </a>
 
-    <a class="entry" href="industries/steam-turbine-india.html">
-      <div class="entry__name">Steam Turbine (Turbine Proper) <span class="entry__scope">INDIA</span></div>
-      <div class="entry__desc">Drill-down of Turbine Island. The steam turbine proper &mdash; rotor and heavy forgings, blading, HP/IP/LP cylinders, main stop and control valves, seals and bearings &mdash; and the imported large-rotor-forging and heavy-machinery gaps behind them.</div>
-      <div class="entry__meta">
+    <a class="row" href="industries/steam-turbine-india.html">
+      <div class="row__title">Steam Turbine (Turbine Proper) <span class="row__scope">INDIA</span></div>
+      <div class="row__desc">Drill-down of Turbine Island. The steam turbine proper &mdash; rotor and heavy forgings, blading, HP/IP/LP cylinders, main stop and control valves, seals and bearings &mdash; and the imported large-rotor-forging and heavy-machinery gaps behind them.</div>
+      <div class="row__meta">
         <span class="chip chip--gold">Analysis date: 2026-10-16</span>
         <span class="chip">Derived from: Turbine Island (Turbomachinery) &rarr; Steam turbine proper</span>
         <span class="chip">Sector: Power Generation Equipment</span>
@@ -290,10 +290,10 @@
       </div>
     </a>
 
-    <a class="entry" href="industries/turbine-generator-india.html">
-      <div class="entry__name">Turbine Generator &amp; Electrical Train <span class="entry__scope">INDIA</span></div>
-      <div class="entry__desc">Drill-down of Turbine Island. The generator and the electrical train &mdash; stator and winding, generator rotor and retaining rings, exciter, generator transformer, GCB and switchgear &mdash; and the retaining-ring, rotor-forging and CRGO import gaps behind them; BHEL&rsquo;s record order book and TD Power&rsquo;s export-led generator boom.</div>
-      <div class="entry__meta">
+    <a class="row" href="industries/turbine-generator-india.html">
+      <div class="row__title">Turbine Generator &amp; Electrical Train <span class="row__scope">INDIA</span></div>
+      <div class="row__desc">Drill-down of Turbine Island. The generator and the electrical train &mdash; stator and winding, generator rotor and retaining rings, exciter, generator transformer, GCB and switchgear &mdash; and the retaining-ring, rotor-forging and CRGO import gaps behind them; BHEL&rsquo;s record order book and TD Power&rsquo;s export-led generator boom.</div>
+      <div class="row__meta">
         <span class="chip chip--gold">Analysis date: 2026-10-17</span>
         <span class="chip">Derived from: Turbine Island (Turbomachinery) &rarr; Generator &amp; electrical train</span>
         <span class="chip">Sector: Power Generation Equipment</span>
@@ -304,10 +304,10 @@
       </div>
     </a>
 
-    <a class="entry" href="industries/condenser-heat-rejection-india.html">
-      <div class="entry__name">Condenser &amp; Heat Rejection <span class="entry__scope">INDIA</span></div>
-      <div class="entry__desc">Drill-down of Turbine Island. The condenser and heat-rejection system &mdash; surface condenser and tube bundle, air-cooled condenser, circulating-water pumps, vacuum and instrumentation &mdash; and the imported titanium-tube gap behind them.</div>
-      <div class="entry__meta">
+    <a class="row" href="industries/condenser-heat-rejection-india.html">
+      <div class="row__title">Condenser &amp; Heat Rejection <span class="row__scope">INDIA</span></div>
+      <div class="row__desc">Drill-down of Turbine Island. The condenser and heat-rejection system &mdash; surface condenser and tube bundle, air-cooled condenser, circulating-water pumps, vacuum and instrumentation &mdash; and the imported titanium-tube gap behind them.</div>
+      <div class="row__meta">
         <span class="chip chip--gold">Analysis date: 2026-10-18</span>
         <span class="chip">Derived from: Turbine Island (Turbomachinery) &rarr; Condenser &amp; heat rejection</span>
         <span class="chip">Sector: Power Generation Equipment</span>
@@ -318,10 +318,10 @@
       </div>
     </a>
 
-    <a class="entry" href="industries/turbine-auxiliaries-india.html">
-      <div class="entry__name">Turbine Island Auxiliaries <span class="entry__scope">INDIA</span></div>
-      <div class="entry__desc">Drill-down of Turbine Island. The feedwater train &mdash; condensate pumps, LP/HP feedwater heaters, deaerator, boiler feed pumps &mdash; plus MSR, lube/control oil, turbine governing and DCS. Largely localised (KSB 700 MWe nuclear BFP, 2021); residual gaps are the high-end DCS/governing platform, high-spec deaerator internals and seal/valve IP.</div>
-      <div class="entry__meta">
+    <a class="row" href="industries/turbine-auxiliaries-india.html">
+      <div class="row__title">Turbine Island Auxiliaries <span class="row__scope">INDIA</span></div>
+      <div class="row__desc">Drill-down of Turbine Island. The feedwater train &mdash; condensate pumps, LP/HP feedwater heaters, deaerator, boiler feed pumps &mdash; plus MSR, lube/control oil, turbine governing and DCS. Largely localised (KSB 700 MWe nuclear BFP, 2021); residual gaps are the high-end DCS/governing platform, high-spec deaerator internals and seal/valve IP.</div>
+      <div class="row__meta">
         <span class="chip chip--gold">Analysis date: 2026-10-19</span>
         <span class="chip">Derived from: Turbine Island (Turbomachinery) &rarr; Feedwater &amp; condensate / Turbine auxiliaries &amp; control</span>
         <span class="chip">Sector: Power Generation Equipment</span>
@@ -335,14 +335,14 @@
     </div>
     </section>
 
-    <section class="group" data-collapsed="true">
+    <section class="group">
       <button class="group__head" type="button" aria-expanded="false"><span class="group__name">Telecom</span><span class="group__count">11</span><span class="chev" aria-hidden="true"></span></button>
       <div class="group__panel">
 
-    <a class="entry" href="industries/telecom-india.html">
-      <div class="entry__name">Telecom <span class="entry__scope">INDIA</span></div>
-      <div class="entry__desc">Telecom network infrastructure &mdash; network equipment &amp; 5G RAN, telecom chipsets &amp; RF, optical fibre &amp; cable (preform to OFC), towers &amp; passive infra, and services/software &mdash; with the preform, chipset and transceiver import bottlenecks and the NSE/BSE company map behind them.</div>
-      <div class="entry__meta">
+    <a class="row" href="industries/telecom-india.html">
+      <div class="row__title">Telecom <span class="row__scope">INDIA</span></div>
+      <div class="row__desc">Telecom network infrastructure &mdash; network equipment &amp; 5G RAN, telecom chipsets &amp; RF, optical fibre &amp; cable (preform to OFC), towers &amp; passive infra, and services/software &mdash; with the preform, chipset and transceiver import bottlenecks and the NSE/BSE company map behind them.</div>
+      <div class="row__meta">
         <span class="chip chip--gold">Analysis date: 2026-10-20</span>
         <span class="chip">Sector: Telecom &amp; Networking</span>
         <span class="chip">Scope: India</span>
@@ -352,10 +352,10 @@
       </div>
     </a>
 
-    <a class="entry" href="industries/optical-fibre-preform-india.html">
-      <div class="entry__name">Optical Fibre Preform <span class="entry__scope">INDIA</span></div>
-      <div class="entry__desc">Drill-down of Telecom. The ultra-pure silica glass rod drawn into fibre — the ~60&ndash;70%-of-value chokepoint, the global 6&ndash;10-firm oligopoly, MCVD/OVD/VAD deposition, germanium dopants, and the Indian capacity build-out (STL &#8377;3,000 cr; HFCL &#8377;1,800 cr to 600 MT by Oct-2028; Finolex 200 MT) against a ~$320&ndash;380 mn 2026 market.</div>
-      <div class="entry__meta">
+    <a class="row" href="industries/optical-fibre-preform-india.html">
+      <div class="row__title">Optical Fibre Preform <span class="row__scope">INDIA</span></div>
+      <div class="row__desc">Drill-down of Telecom. The ultra-pure silica glass rod drawn into fibre — the ~60&ndash;70%-of-value chokepoint, the global 6&ndash;10-firm oligopoly, MCVD/OVD/VAD deposition, germanium dopants, and the Indian capacity build-out (STL &#8377;3,000 cr; HFCL &#8377;1,800 cr to 600 MT by Oct-2028; Finolex 200 MT) against a ~$320&ndash;380 mn 2026 market.</div>
+      <div class="row__meta">
         <span class="chip chip--gold">Analysis date: 2026-10-21</span>
         <span class="chip">Derived from: Telecom &rarr; Optical Fibre Preform</span>
         <span class="chip">Sector: Telecom &amp; Networking</span>
@@ -365,10 +365,10 @@
       </div>
     </a>
 
-    <a class="entry" href="industries/optical-fibre-india.html">
-      <div class="entry__name">Optical Fibre (Drawing) <span class="entry__scope">INDIA</span></div>
-      <div class="entry__desc">Drill-down of Telecom. Drawing 125&nbsp;&micro;m fibre from preform — draw towers, dual-layer coating, proof test, colouring/ribbonising, specialty/bend-insensitive grades and ceramic ferrules, over an imported-glass preform dependency. India draws ~100 mn fkm (2&times; its own use) in a 2.8&ndash;5&times; price up-cycle, with HFCL (43.1 mn fkm by Jul-2028) and STL (&#8377;3,000 cr capex) expanding.</div>
-      <div class="entry__meta">
+    <a class="row" href="industries/optical-fibre-india.html">
+      <div class="row__title">Optical Fibre (Drawing) <span class="row__scope">INDIA</span></div>
+      <div class="row__desc">Drill-down of Telecom. Drawing 125&nbsp;&micro;m fibre from preform — draw towers, dual-layer coating, proof test, colouring/ribbonising, specialty/bend-insensitive grades and ceramic ferrules, over an imported-glass preform dependency. India draws ~100 mn fkm (2&times; its own use) in a 2.8&ndash;5&times; price up-cycle, with HFCL (43.1 mn fkm by Jul-2028) and STL (&#8377;3,000 cr capex) expanding.</div>
+      <div class="row__meta">
         <span class="chip chip--gold">Analysis date: 2026-10-22</span>
         <span class="chip">Derived from: Telecom &rarr; Optical Fibre (Drawing)</span>
         <span class="chip">Sector: Telecom &amp; Networking</span>
@@ -378,10 +378,10 @@
       </div>
     </a>
 
-    <a class="entry" href="industries/optical-fibre-cable-india.html">
-      <div class="entry__name">Optical Fibre Cable (OFC) <span class="entry__scope">INDIA</span></div>
-      <div class="entry__desc">Drill-down of Telecom. Cabling fibre into land, FTTH, ADSS and OPGW cables — the Indian OFC maker set, FRP/aramid strength members, sheath &amp; armour and cabling machinery, and the BharatNet demand wave. Re-analysed 2026-10-23: HFCL Q2 FY27 record (order book &#8377;28,911 cr; OFC 39&rarr;62 mn fkm), STL &#8377;18,618 cr book and net-debt-free, Vindhya absorbing Birla Cable, Aksh in CIRP, fibre exports +158% to $483 mn.</div>
-      <div class="entry__meta">
+    <a class="row" href="industries/optical-fibre-cable-india.html">
+      <div class="row__title">Optical Fibre Cable (OFC) <span class="row__scope">INDIA</span></div>
+      <div class="row__desc">Drill-down of Telecom. Cabling fibre into land, FTTH, ADSS and OPGW cables — the Indian OFC maker set, FRP/aramid strength members, sheath &amp; armour and cabling machinery, and the BharatNet demand wave. Re-analysed 2026-10-23: HFCL Q2 FY27 record (order book &#8377;28,911 cr; OFC 39&rarr;62 mn fkm), STL &#8377;18,618 cr book and net-debt-free, Vindhya absorbing Birla Cable, Aksh in CIRP, fibre exports +158% to $483 mn.</div>
+      <div class="row__meta">
         <span class="chip chip--gold">Analysis date: 2026-10-23</span>
         <span class="chip">Derived from: Telecom &rarr; Optical Fibre Cable (OFC)</span>
         <span class="chip">Sector: Telecom &amp; Networking</span>
@@ -391,10 +391,10 @@
       </div>
     </a>
 
-    <a class="entry" href="industries/optical-transceivers-india.html">
-      <div class="entry__name">Optical Transceivers &amp; Modules <span class="entry__scope">INDIA</span></div>
-      <div class="entry__desc">Drill-down of Telecom. Pluggable 100G/400G/800G/1.6T optics — optical DSPs, laser dies and silicon photonics, the import concentration, and the data-centre interconnect opportunity now drawing Dixon–Gemtek and GX into module assembly.</div>
-      <div class="entry__meta">
+    <a class="row" href="industries/optical-transceivers-india.html">
+      <div class="row__title">Optical Transceivers &amp; Modules <span class="row__scope">INDIA</span></div>
+      <div class="row__desc">Drill-down of Telecom. Pluggable 100G/400G/800G/1.6T optics — optical DSPs, laser dies and silicon photonics, the import concentration, and the data-centre interconnect opportunity now drawing Dixon–Gemtek and GX into module assembly.</div>
+      <div class="row__meta">
         <span class="chip chip--gold">Analysis date: 2026-10-24</span>
         <span class="chip">Derived from: Telecom &rarr; Optical Transceivers &amp; Modules</span>
         <span class="chip">Sector: Telecom &amp; Networking</span>
@@ -404,10 +404,10 @@
       </div>
     </a>
 
-    <a class="entry" href="industries/telecom-chipsets-india.html">
-      <div class="entry__name">Telecom Chipsets &mdash; Baseband &amp; RF <span class="entry__scope">INDIA</span></div>
-      <div class="entry__desc">Drill-down of Telecom. Baseband SoCs and RF front-end modules — the imported silicon inside every radio and handset, the fabless design ecosystem, the OSAT packaging build-out and the chipset mission. Refreshed 2026-10-25 (market &amp; growth, Semicon 2.0, IMC 2026).</div>
-      <div class="entry__meta">
+    <a class="row" href="industries/telecom-chipsets-india.html">
+      <div class="row__title">Telecom Chipsets &mdash; Baseband &amp; RF <span class="row__scope">INDIA</span></div>
+      <div class="row__desc">Drill-down of Telecom. Baseband SoCs and RF front-end modules — the imported silicon inside every radio and handset, the fabless design ecosystem, the OSAT packaging build-out and the chipset mission. Refreshed 2026-10-25 (market &amp; growth, Semicon 2.0, IMC 2026).</div>
+      <div class="row__meta">
         <span class="chip chip--gold">Analysis date: 2026-10-25</span>
         <span class="chip">Derived from: Telecom &rarr; Telecom Chipsets &mdash; Baseband &amp; RF</span>
         <span class="chip">Sector: Telecom &amp; Networking</span>
@@ -417,10 +417,10 @@
       </div>
     </a>
 
-    <a class="entry" href="industries/5g-ran-india.html">
-      <div class="entry__name">5G / 4G RAN &mdash; Base Stations &amp; Radios <span class="entry__scope">INDIA</span></div>
-      <div class="entry__desc">Drill-down of Telecom. Radios, baseband units and Massive-MIMO AAUs &mdash; a 4&ndash;5%-localised RAN BOM, the imported RF front-end and silicon behind it, and the parts-level China dependence that survived the trusted-source wall. Refreshed 2026-10-26 (5.63 lakh 5G BTS, Tejas FY26/Q2FY27, BSNL add-on LoI, PLI 2.0, ECMS).</div>
-      <div class="entry__meta">
+    <a class="row" href="industries/5g-ran-india.html">
+      <div class="row__title">5G / 4G RAN &mdash; Base Stations &amp; Radios <span class="row__scope">INDIA</span></div>
+      <div class="row__desc">Drill-down of Telecom. Radios, baseband units and Massive-MIMO AAUs &mdash; a 4&ndash;5%-localised RAN BOM, the imported RF front-end and silicon behind it, and the parts-level China dependence that survived the trusted-source wall. Refreshed 2026-10-26 (5.63 lakh 5G BTS, Tejas FY26/Q2FY27, BSNL add-on LoI, PLI 2.0, ECMS).</div>
+      <div class="row__meta">
         <span class="chip chip--gold">Analysis date: 2026-10-26</span>
         <span class="chip">Derived from: Telecom &rarr; 5G / 4G RAN &mdash; Base Stations &amp; Radios</span>
         <span class="chip">Sector: Telecom &amp; Networking</span>
@@ -429,10 +429,10 @@
         <span class="chip">Depth: depth-first</span>
       </div>
     </a>
-    <a class="entry" href="industries/6g-india.html">
-      <div class="entry__name">6G (IMT-2030) <span class="entry__scope">INDIA</span></div>
-      <div class="entry__desc">Drill-down of 5G RAN. Pre-commercial 6G &mdash; radio units and antenna arrays, RIS/metasurfaces, sub-THz front-ends, GaN RF power and modem silicon, an AI-native core and the sub-THz test layer, against 3GPP Release&nbsp;21 freezing in Dec-2028. Added to the register 2026-10-26 (page existed; index row was missing).</div>
-      <div class="entry__meta">
+    <a class="row" href="industries/6g-india.html">
+      <div class="row__title">6G (IMT-2030) <span class="row__scope">INDIA</span></div>
+      <div class="row__desc">Drill-down of 5G RAN. Pre-commercial 6G &mdash; radio units and antenna arrays, RIS/metasurfaces, sub-THz front-ends, GaN RF power and modem silicon, an AI-native core and the sub-THz test layer, against 3GPP Release&nbsp;21 freezing in Dec-2028. Added to the register 2026-10-26 (page existed; index row was missing).</div>
+      <div class="row__meta">
         <span class="chip chip--gold">Analysis date: 2026-10-23</span>
         <span class="chip">Derived from: 5G RAN &rarr; 6G</span>
         <span class="chip">Sector: Telecom &amp; Networking</span>
@@ -444,10 +444,10 @@
     </a>
 
 
-    <a class="entry" href="industries/telecom-transport-equipment-india.html">
-      <div class="entry__name">Routers, Switches &amp; Optical Transport <span class="entry__scope">INDIA</span></div>
-      <div class="entry__desc">Drill-down of Telecom. DWDM/OTN/PTN transport, routers and switches — the Indian vendors, and the imported switch/coherent-DSP silicon and transceivers inside.</div>
-      <div class="entry__meta">
+    <a class="row" href="industries/telecom-transport-equipment-india.html">
+      <div class="row__title">Routers, Switches &amp; Optical Transport <span class="row__scope">INDIA</span></div>
+      <div class="row__desc">Drill-down of Telecom. DWDM/OTN/PTN transport, routers and switches — the Indian vendors, and the imported switch/coherent-DSP silicon and transceivers inside.</div>
+      <div class="row__meta">
         <span class="chip chip--gold">Analysis date: 2026-10-08</span>
         <span class="chip">Derived from: Telecom &rarr; Routers, Switches &amp; Optical Transport</span>
         <span class="chip">Sector: Telecom &amp; Networking</span>
@@ -457,10 +457,10 @@
       </div>
     </a>
 
-    <a class="entry" href="industries/telecom-towers-india.html">
-      <div class="entry__name">Telecom Towers &amp; Passive Infrastructure <span class="entry__scope">INDIA</span></div>
-      <div class="entry__desc">Drill-down of Telecom. Macro towers, IBS and site power — the tenancy economics, the energy/battery/solar stack, and the tower-company and battery-supplier map.</div>
-      <div class="entry__meta">
+    <a class="row" href="industries/telecom-towers-india.html">
+      <div class="row__title">Telecom Towers &amp; Passive Infrastructure <span class="row__scope">INDIA</span></div>
+      <div class="row__desc">Drill-down of Telecom. Macro towers, IBS and site power — the tenancy economics, the energy/battery/solar stack, and the tower-company and battery-supplier map.</div>
+      <div class="row__meta">
         <span class="chip chip--gold">Analysis date: 2026-10-08</span>
         <span class="chip">Derived from: Telecom &rarr; Telecom Towers &amp; Passive Infrastructure</span>
         <span class="chip">Sector: Telecom &amp; Networking</span>
@@ -470,10 +470,10 @@
       </div>
     </a>
 
-    <a class="entry" href="industries/telecom-operators-india.html">
-      <div class="entry__name">Telecom Operators &amp; Service Providers <span class="entry__scope">INDIA</span></div>
-      <div class="entry__desc">Drill-down of Telecom. Jio, Airtel, Vi and BSNL as the demand layer — spectrum, capex, ARPU and data economics, and the OSS/BSS and undersea adjacencies.</div>
-      <div class="entry__meta">
+    <a class="row" href="industries/telecom-operators-india.html">
+      <div class="row__title">Telecom Operators &amp; Service Providers <span class="row__scope">INDIA</span></div>
+      <div class="row__desc">Drill-down of Telecom. Jio, Airtel, Vi and BSNL as the demand layer — spectrum, capex, ARPU and data economics, and the OSS/BSS and undersea adjacencies.</div>
+      <div class="row__meta">
         <span class="chip chip--gold">Analysis date: 2026-10-08</span>
         <span class="chip">Derived from: Telecom &rarr; Telecom Operators &amp; Service Providers</span>
         <span class="chip">Sector: Telecom &amp; Networking</span>
@@ -486,14 +486,14 @@
   </div>
     </section>
 
-    <section class="group" data-collapsed="true">
+    <section class="group">
       <button class="group__head" type="button" aria-expanded="false"><span class="group__name">Space &amp; Satellites</span><span class="group__count">6</span><span class="chev" aria-hidden="true"></span></button>
       <div class="group__panel">
 
-    <a class="entry" href="industries/satellite-india.html">
-      <div class="entry__name">Satellite <span class="entry__scope">INDIA</span></div>
-      <div class="entry__desc">The full Indian satellite value chain across four segments &mdash; space segment (satellite bus &amp; payloads), launch (PSLV / GSLV / LVM3 / SSLV and private small launchers), ground segment (earth stations, gateways, VSAT terminals) and downstream services &amp; data (satcom broadband, DTH, Earth-observation analytics). The deepest import dependencies sit in space-grade solar cells, ADCS, atomic clocks and radiation-hardened electronics.</div>
-      <div class="entry__meta">
+    <a class="row" href="industries/satellite-india.html">
+      <div class="row__title">Satellite <span class="row__scope">INDIA</span></div>
+      <div class="row__desc">The full Indian satellite value chain across four segments &mdash; space segment (satellite bus &amp; payloads), launch (PSLV / GSLV / LVM3 / SSLV and private small launchers), ground segment (earth stations, gateways, VSAT terminals) and downstream services &amp; data (satcom broadband, DTH, Earth-observation analytics). The deepest import dependencies sit in space-grade solar cells, ADCS, atomic clocks and radiation-hardened electronics.</div>
+      <div class="row__meta">
         <span class="chip chip--gold">Analysis date: 2026-10-12</span>
         <span class="chip">Sector: Space &amp; Satellites</span>
         <span class="chip">Scope: India</span>
@@ -502,10 +502,10 @@
         <span class="chip">Depth: depth-first (4 segments)</span>
       </div>
     </a>
-    <a class="entry" href="industries/satellite-bus-subsystems-india.html">
-      <div class="entry__name">Satellite Bus &amp; Subsystems <span class="entry__scope">INDIA</span></div>
-      <div class="entry__desc">Spacecraft platform, power &amp; solar cells, ADCS, avionics, propulsion, AIT and materials &mdash; the deepest import-dependency layer of a satellite.</div>
-      <div class="entry__meta">
+    <a class="row" href="industries/satellite-bus-subsystems-india.html">
+      <div class="row__title">Satellite Bus &amp; Subsystems <span class="row__scope">INDIA</span></div>
+      <div class="row__desc">Spacecraft platform, power &amp; solar cells, ADCS, avionics, propulsion, AIT and materials &mdash; the deepest import-dependency layer of a satellite.</div>
+      <div class="row__meta">
         <span class="chip chip--gold">Analysis date: 2026-10-09</span>
         <span class="chip">Derived from: Satellite &rarr; Satellite Bus &amp; Subsystems</span>
         <span class="chip">Sector: Space &amp; Satellites</span>
@@ -515,10 +515,10 @@
       </div>
     </a>
 
-    <a class="entry" href="industries/satellite-payloads-india.html">
-      <div class="entry__name">Satellite Payloads <span class="entry__scope">INDIA</span></div>
-      <div class="entry__desc">Communication, TT&amp;C / transponder, Earth-observation and navigation payloads &mdash; the instruments that give a satellite its function.</div>
-      <div class="entry__meta">
+    <a class="row" href="industries/satellite-payloads-india.html">
+      <div class="row__title">Satellite Payloads <span class="row__scope">INDIA</span></div>
+      <div class="row__desc">Communication, TT&amp;C / transponder, Earth-observation and navigation payloads &mdash; the instruments that give a satellite its function.</div>
+      <div class="row__meta">
         <span class="chip chip--gold">Analysis date: 2026-10-09</span>
         <span class="chip">Derived from: Satellite &rarr; Satellite Payloads</span>
         <span class="chip">Sector: Space &amp; Satellites</span>
@@ -528,10 +528,10 @@
       </div>
     </a>
 
-    <a class="entry" href="industries/launch-vehicles-propulsion-india.html">
-      <div class="entry__name">Launch Vehicles &amp; Propulsion <span class="entry__scope">INDIA</span></div>
-      <div class="entry__desc">PSLV / GSLV / LVM3 / SSLV, solid &amp; cryogenic propulsion, structures, avionics and private small launch &mdash; India's most indigenous space segment.</div>
-      <div class="entry__meta">
+    <a class="row" href="industries/launch-vehicles-propulsion-india.html">
+      <div class="row__title">Launch Vehicles &amp; Propulsion <span class="row__scope">INDIA</span></div>
+      <div class="row__desc">PSLV / GSLV / LVM3 / SSLV, solid &amp; cryogenic propulsion, structures, avionics and private small launch &mdash; India's most indigenous space segment.</div>
+      <div class="row__meta">
         <span class="chip chip--gold">Analysis date: 2026-10-09</span>
         <span class="chip">Derived from: Satellite &rarr; Launch Vehicles &amp; Propulsion</span>
         <span class="chip">Sector: Space &amp; Satellites</span>
@@ -541,10 +541,10 @@
       </div>
     </a>
 
-    <a class="entry" href="industries/satellite-ground-segment-india.html">
-      <div class="entry__name">Satellite Ground Segment <span class="entry__scope">INDIA</span></div>
-      <div class="entry__desc">Earth stations, gateways, VSAT terminals, ground RF &amp; TT&amp;C and GSaaS &mdash; the DoT-mandated localisation frontier.</div>
-      <div class="entry__meta">
+    <a class="row" href="industries/satellite-ground-segment-india.html">
+      <div class="row__title">Satellite Ground Segment <span class="row__scope">INDIA</span></div>
+      <div class="row__desc">Earth stations, gateways, VSAT terminals, ground RF &amp; TT&amp;C and GSaaS &mdash; the DoT-mandated localisation frontier.</div>
+      <div class="row__meta">
         <span class="chip chip--gold">Analysis date: 2026-10-09</span>
         <span class="chip">Derived from: Satellite &rarr; Ground Segment</span>
         <span class="chip">Sector: Space &amp; Satellites</span>
@@ -554,10 +554,10 @@
       </div>
     </a>
 
-    <a class="entry" href="industries/satellite-services-data-india.html">
-      <div class="entry__name">Satellite Services &amp; Data <span class="entry__scope">INDIA</span></div>
-      <div class="entry__desc">Broadband, DTH, enterprise VSAT, EO data &amp; geospatial, navigation and transponder leasing &mdash; the demand-side value pool.</div>
-      <div class="entry__meta">
+    <a class="row" href="industries/satellite-services-data-india.html">
+      <div class="row__title">Satellite Services &amp; Data <span class="row__scope">INDIA</span></div>
+      <div class="row__desc">Broadband, DTH, enterprise VSAT, EO data &amp; geospatial, navigation and transponder leasing &mdash; the demand-side value pool.</div>
+      <div class="row__meta">
         <span class="chip chip--gold">Analysis date: 2026-10-12</span>
         <span class="chip">Derived from: Satellite &rarr; Services &amp; Data</span>
         <span class="chip">Sector: Space &amp; Satellites</span>
@@ -571,14 +571,14 @@
       </div>
     </section>
 
-    <section class="group" data-collapsed="true">
+    <section class="group">
       <button class="group__head" type="button" aria-expanded="false"><span class="group__name">Energy Storage</span><span class="group__count">4</span><span class="chev" aria-hidden="true"></span></button>
       <div class="group__panel">
 
-    <a class="entry" href="industries/battery-energy-storage-india.html">
-      <div class="entry__name">Battery Energy Storage (BESS) <span class="entry__scope">INDIA</span></div>
-      <div class="entry__desc">Grid-scale battery energy storage &mdash; Li-ion cells &amp; cell materials, modules/packs, BMS, PCS, EMS, thermal &amp; fire safety, containers, grid interface, EPC and the developer layer &mdash; and the cell / BMS / PCS import bottlenecks and the NSE/BSE company map behind them.</div>
-      <div class="entry__meta">
+    <a class="row" href="industries/battery-energy-storage-india.html">
+      <div class="row__title">Battery Energy Storage (BESS) <span class="row__scope">INDIA</span></div>
+      <div class="row__desc">Grid-scale battery energy storage &mdash; Li-ion cells &amp; cell materials, modules/packs, BMS, PCS, EMS, thermal &amp; fire safety, containers, grid interface, EPC and the developer layer &mdash; and the cell / BMS / PCS import bottlenecks and the NSE/BSE company map behind them.</div>
+      <div class="row__meta">
         <span class="chip chip--gold">Analysis date: 2026-10-09</span>
         <span class="chip">Sector: Energy Storage</span>
         <span class="chip">Scope: India</span>
@@ -588,10 +588,10 @@
       </div>
     </a>
 
-    <a class="entry" href="industries/li-ion-cell-manufacturing-india.html">
-      <div class="entry__name">Li-ion Cell Manufacturing <span class="entry__scope">INDIA</span></div>
-      <div class="entry__desc">Drill-down of Battery Energy Storage (BESS). The cell-making node &mdash; materials (cathode, anode, separator, electrolyte, foils), the process train, cell-line machinery and the PLI-ACC gigafactory set &mdash; and the machinery / materials import bottlenecks behind it.</div>
-      <div class="entry__meta">
+    <a class="row" href="industries/li-ion-cell-manufacturing-india.html">
+      <div class="row__title">Li-ion Cell Manufacturing <span class="row__scope">INDIA</span></div>
+      <div class="row__desc">Drill-down of Battery Energy Storage (BESS). The cell-making node &mdash; materials (cathode, anode, separator, electrolyte, foils), the process train, cell-line machinery and the PLI-ACC gigafactory set &mdash; and the machinery / materials import bottlenecks behind it.</div>
+      <div class="row__meta">
         <span class="chip chip--gold">Analysis date: 2026-10-09</span>
         <span class="chip">Derived from: Battery Energy Storage (BESS) &rarr; Li-ion Cells (LFP / NMC)</span>
         <span class="chip">Sector: Energy Storage</span>
@@ -601,10 +601,10 @@
       </div>
     </a>
 
-    <a class="entry" href="industries/battery-management-system-india.html">
-      <div class="entry__name">Battery Management System (BMS) <span class="entry__scope">INDIA</span></div>
-      <div class="entry__desc">Drill-down of Battery Energy Storage (BESS). The safety-critical control electronics &mdash; AFE/MCU semiconductors, three-tier BMS architecture, firmware, PCB/EMS and testing &mdash; and the ~90%-import and UL 1973 Ed.3 bottlenecks behind them.</div>
-      <div class="entry__meta">
+    <a class="row" href="industries/battery-management-system-india.html">
+      <div class="row__title">Battery Management System (BMS) <span class="row__scope">INDIA</span></div>
+      <div class="row__desc">Drill-down of Battery Energy Storage (BESS). The safety-critical control electronics &mdash; AFE/MCU semiconductors, three-tier BMS architecture, firmware, PCB/EMS and testing &mdash; and the ~90%-import and UL 1973 Ed.3 bottlenecks behind them.</div>
+      <div class="row__meta">
         <span class="chip chip--gold">Analysis date: 2026-10-09</span>
         <span class="chip">Derived from: Battery Energy Storage (BESS) &rarr; Battery Management System (BMS)</span>
         <span class="chip">Sector: Energy Storage</span>
@@ -614,10 +614,10 @@
       </div>
     </a>
 
-    <a class="entry" href="industries/power-conversion-system-india.html">
-      <div class="entry__name">PCS &amp; Power Semiconductors <span class="entry__scope">INDIA</span></div>
-      <div class="entry__desc">Drill-down of Battery Energy Storage (BESS). The bidirectional inverter and the devices inside it &mdash; IGBT/SiC modules, gate drivers, magnetics, DC-link capacitors, grid-forming firmware and AC interface &mdash; and the no-fab / grid-forming-IP bottlenecks behind them.</div>
-      <div class="entry__meta">
+    <a class="row" href="industries/power-conversion-system-india.html">
+      <div class="row__title">PCS &amp; Power Semiconductors <span class="row__scope">INDIA</span></div>
+      <div class="row__desc">Drill-down of Battery Energy Storage (BESS). The bidirectional inverter and the devices inside it &mdash; IGBT/SiC modules, gate drivers, magnetics, DC-link capacitors, grid-forming firmware and AC interface &mdash; and the no-fab / grid-forming-IP bottlenecks behind them.</div>
+      <div class="row__meta">
         <span class="chip chip--gold">Analysis date: 2026-10-09</span>
         <span class="chip">Derived from: Battery Energy Storage (BESS) &rarr; Power Conversion System (PCS)</span>
         <span class="chip">Sector: Energy Storage</span>
@@ -631,13 +631,13 @@
       </div>
     </section>
 
-    <section class="group" data-collapsed="true">
+    <section class="group">
       <button class="group__head" type="button" aria-expanded="false"><span class="group__name">Healthcare &amp; Medical Devices</span><span class="group__count">2</span><span class="chev" aria-hidden="true"></span></button>
       <div class="group__panel">
-        <a class="entry" href="industries/optical-medical-surgical-apparatus-india.html">
-          <div class="entry__name">Optical, Medical &amp; Surgical Apparatus <span class="entry__scope">INDIA</span></div>
-          <div class="entry__desc">Ophthalmic &amp; optical devices, diagnostic imaging, surgical apparatus and patient-care / monitoring / implants &mdash; the BOM tree, value-chain ladder and NSE/BSE company map, with the imaging-component, optics and medical-grade-material import bottlenecks behind them.</div>
-          <div class="entry__meta">
+        <a class="row" href="industries/optical-medical-surgical-apparatus-india.html">
+          <div class="row__title">Optical, Medical &amp; Surgical Apparatus <span class="row__scope">INDIA</span></div>
+          <div class="row__desc">Ophthalmic &amp; optical devices, diagnostic imaging, surgical apparatus and patient-care / monitoring / implants &mdash; the BOM tree, value-chain ladder and NSE/BSE company map, with the imaging-component, optics and medical-grade-material import bottlenecks behind them.</div>
+          <div class="row__meta">
             <span class="chip chip--gold">Analysis date: 2026-10-12</span>
             <span class="chip">Sector: Healthcare &amp; Medical Devices</span>
             <span class="chip">Scope: India</span>
@@ -647,10 +647,10 @@
           </div>
         </a>
 
-        <a class="entry" href="industries/genomic-sequencing-india.html">
-          <div class="entry__name">Genomic Sequencing <span class="entry__scope">INDIA</span></div>
-          <div class="entry__desc">DNA/RNA sequencing &mdash; the instruments (sequencers, flow cells), reagents &amp; sequencing chemistry, the clinical labs that run the tests, and the upstream synthesis + bioinformatics layer, with the NSE/BSE company map. The core supply (instruments, enzymes, SBS chemistry) is &gt;85% imported while India captures the service layer; GenomeIndia / IndiGen give a sovereign reference-data asset.</div>
-          <div class="entry__meta">
+        <a class="row" href="industries/genomic-sequencing-india.html">
+          <div class="row__title">Genomic Sequencing <span class="row__scope">INDIA</span></div>
+          <div class="row__desc">DNA/RNA sequencing &mdash; the instruments (sequencers, flow cells), reagents &amp; sequencing chemistry, the clinical labs that run the tests, and the upstream synthesis + bioinformatics layer, with the NSE/BSE company map. The core supply (instruments, enzymes, SBS chemistry) is &gt;85% imported while India captures the service layer; GenomeIndia / IndiGen give a sovereign reference-data asset.</div>
+          <div class="row__meta">
             <span class="chip chip--gold">Analysis date: 2026-10-23</span>
             <span class="chip">Sector: Healthcare &amp; Medical Devices</span>
             <span class="chip">Scope: India</span>
@@ -662,14 +662,14 @@
       </div>
     </section>
 
-    <section class="group" data-collapsed="true">
+    <section class="group">
       <button class="group__head" type="button" aria-expanded="false"><span class="group__name">Electrical &amp; Electronic Equipment</span><span class="group__count">8</span><span class="chev" aria-hidden="true"></span></button>
       <div class="group__panel">
 
-    <a class="entry" href="industries/electrical-electronic-equipment-india.html">
-      <div class="entry__name">Electrical &amp; Electronic Equipment <span class="entry__scope">INDIA</span></div>
-      <div class="entry__desc">Two linked chains &mdash; heavy electrical (power T&amp;D, rotating machines, wires) and electronic (EMS, PCB, components, semiconductors) &mdash; the BOM tree, value-chain ladder and NSE/BSE company map, and the CRGO-steel, power-semiconductor and PCB import bottlenecks behind them.</div>
-      <div class="entry__meta">
+    <a class="row" href="industries/electrical-electronic-equipment-india.html">
+      <div class="row__title">Electrical &amp; Electronic Equipment <span class="row__scope">INDIA</span></div>
+      <div class="row__desc">Two linked chains &mdash; heavy electrical (power T&amp;D, rotating machines, wires) and electronic (EMS, PCB, components, semiconductors) &mdash; the BOM tree, value-chain ladder and NSE/BSE company map, and the CRGO-steel, power-semiconductor and PCB import bottlenecks behind them.</div>
+      <div class="row__meta">
         <span class="chip chip--gold">Analysis date: 2026-10-09</span>
         <span class="chip">Sector: Electrical &amp; Electronic Equipment</span>
         <span class="chip">Scope: India</span>
@@ -679,10 +679,10 @@
       </div>
     </a>
 
-    <a class="entry" href="industries/power-transformers-india.html">
-      <div class="entry__name">Power &amp; Distribution Transformers <span class="entry__scope">INDIA</span></div>
-      <div class="entry__desc">Drill-down of Electrical &amp; Electronic Equipment. The transformer proper &mdash; CRGO core, CTC windings, pressboard/oil insulation, bushings, OLTC, cooling and testing &mdash; and the CRGO / OLTC / bushing import bottlenecks behind them.</div>
-      <div class="entry__meta">
+    <a class="row" href="industries/power-transformers-india.html">
+      <div class="row__title">Power &amp; Distribution Transformers <span class="row__scope">INDIA</span></div>
+      <div class="row__desc">Drill-down of Electrical &amp; Electronic Equipment. The transformer proper &mdash; CRGO core, CTC windings, pressboard/oil insulation, bushings, OLTC, cooling and testing &mdash; and the CRGO / OLTC / bushing import bottlenecks behind them.</div>
+      <div class="row__meta">
         <span class="chip chip--gold">Analysis date: 2026-10-09</span>
         <span class="chip">Derived from: Electrical &amp; Electronic Equipment &rarr; Power &amp; Distribution Transformers</span>
         <span class="chip">Sector: Electrical &amp; Electronic Equipment</span>
@@ -692,10 +692,10 @@
       </div>
     </a>
 
-    <a class="entry" href="industries/smart-meters-india.html">
-      <div class="entry__name">Smart Meters <span class="entry__scope">INDIA</span></div>
-      <div class="entry__desc">Drill-down of Electrical &amp; Electronic Equipment. The RDSS metering rollout &mdash; meter BOM (metering IC, MCU, comms module, latching relay, SMPS), the AMISP annuity model, HES/MDMS software &mdash; and the metering-chip and relay import bottlenecks behind them.</div>
-      <div class="entry__meta">
+    <a class="row" href="industries/smart-meters-india.html">
+      <div class="row__title">Smart Meters <span class="row__scope">INDIA</span></div>
+      <div class="row__desc">Drill-down of Electrical &amp; Electronic Equipment. The RDSS metering rollout &mdash; meter BOM (metering IC, MCU, comms module, latching relay, SMPS), the AMISP annuity model, HES/MDMS software &mdash; and the metering-chip and relay import bottlenecks behind them.</div>
+      <div class="row__meta">
         <span class="chip chip--gold">Analysis date: 2026-10-09</span>
         <span class="chip">Derived from: Electrical &amp; Electronic Equipment &rarr; Energy Meters / Smart Meters</span>
         <span class="chip">Sector: Electrical &amp; Electronic Equipment</span>
@@ -705,10 +705,10 @@
       </div>
     </a>
 
-    <a class="entry" href="industries/ems-electronics-manufacturing-india.html">
-      <div class="entry__name">EMS / ODM &mdash; Electronics Manufacturing Services <span class="entry__scope">INDIA</span></div>
-      <div class="entry__desc">Drill-down of Electrical &amp; Electronic Equipment. Electronics assembly &mdash; PCBA/SMT, box-build, enclosures, display/camera modules, battery packs, connectors and bare PCB &mdash; and the component, PCB and module import bottlenecks behind them.</div>
-      <div class="entry__meta">
+    <a class="row" href="industries/ems-electronics-manufacturing-india.html">
+      <div class="row__title">EMS / ODM &mdash; Electronics Manufacturing Services <span class="row__scope">INDIA</span></div>
+      <div class="row__desc">Drill-down of Electrical &amp; Electronic Equipment. Electronics assembly &mdash; PCBA/SMT, box-build, enclosures, display/camera modules, battery packs, connectors and bare PCB &mdash; and the component, PCB and module import bottlenecks behind them.</div>
+      <div class="row__meta">
         <span class="chip chip--gold">Analysis date: 2026-10-12</span>
         <span class="chip">Derived from: Electrical &amp; Electronic Equipment &rarr; Electronics Manufacturing Services (EMS/ODM)</span>
         <span class="chip">Sector: Electrical &amp; Electronic Equipment</span>
@@ -718,10 +718,10 @@
       </div>
     </a>
 
-    <a class="entry" href="industries/pcb-electronic-components-india.html">
-      <div class="entry__name">PCB &amp; Electronic Components <span class="entry__scope">INDIA</span></div>
-      <div class="entry__desc">Drill-down of Electrical &amp; Electronic Equipment (and five other PCB nodes). Bare-board fabrication &mdash; single/double, multi-layer, HDI and flex &mdash; plus the components that populate it and the upstream laminate, copper-foil, glass-fabric and equipment layers. The CCL / copper-foil import bottleneck, the 30% anti-dumping duty, and the ECMS &#8377;40,000 cr build-out behind it.</div>
-      <div class="entry__meta">
+    <a class="row" href="industries/pcb-electronic-components-india.html">
+      <div class="row__title">PCB &amp; Electronic Components <span class="row__scope">INDIA</span></div>
+      <div class="row__desc">Drill-down of Electrical &amp; Electronic Equipment (and five other PCB nodes). Bare-board fabrication &mdash; single/double, multi-layer, HDI and flex &mdash; plus the components that populate it and the upstream laminate, copper-foil, glass-fabric and equipment layers. The CCL / copper-foil import bottleneck, the 30% anti-dumping duty, and the ECMS &#8377;40,000 cr build-out behind it.</div>
+      <div class="row__meta">
         <span class="chip chip--gold">Analysis date: 2026-10-20</span>
         <span class="chip">Derived from: Electrical &amp; Electronic Equipment &rarr; PCBs (Multi-layer, HDI, Flex)</span>
         <span class="chip">Sector: Electrical &amp; Electronic Equipment</span>
@@ -731,10 +731,10 @@
       </div>
     </a>
 
-    <a class="entry" href="industries/power-semiconductor-osat-india.html">
-      <div class="entry__name">Power Semiconductors &amp; OSAT <span class="entry__scope">INDIA</span></div>
-      <div class="entry__desc">Drill-down of Electrical &amp; Electronic Equipment. IGBT / MOSFET / SiC devices and their assembly, packaging and test &mdash; front-end fab, back-end OSAT, power modules, packaging materials and equipment &mdash; and the leadframe / bonding-wire / moulding-compound / equipment import bottlenecks behind them.</div>
-      <div class="entry__meta">
+    <a class="row" href="industries/power-semiconductor-osat-india.html">
+      <div class="row__title">Power Semiconductors &amp; OSAT <span class="row__scope">INDIA</span></div>
+      <div class="row__desc">Drill-down of Electrical &amp; Electronic Equipment. IGBT / MOSFET / SiC devices and their assembly, packaging and test &mdash; front-end fab, back-end OSAT, power modules, packaging materials and equipment &mdash; and the leadframe / bonding-wire / moulding-compound / equipment import bottlenecks behind them.</div>
+      <div class="row__meta">
         <span class="chip chip--gold">Analysis date: 2026-10-09</span>
         <span class="chip">Derived from: Electrical &amp; Electronic Equipment &rarr; Power Electronics &amp; Semiconductors (OSAT)</span>
         <span class="chip">Sector: Electrical &amp; Electronic Equipment</span>
@@ -744,10 +744,10 @@
       </div>
     </a>
 
-    <a class="entry" href="industries/display-manufacturing-india.html">
-      <div class="entry__name">Display Manufacturing <span class="entry__scope">INDIA</span></div>
-      <div class="entry__desc">LCD and OLED/AMOLED panel fabrication, module assembly and the materials, driver ICs, backlight and equipment beneath them. India has no front-end panel fab and imports ~80&ndash;85% of its display demand; the front-end, glass-substrate, polariser, liquid-crystal / OLED-material, driver-IC and display-equipment layers have no NSE/BSE pure-play, so listed capture sits in module assembly (Dixon directly; Minda and SJS via wholly owned subsidiaries).</div>
-      <div class="entry__meta">
+    <a class="row" href="industries/display-manufacturing-india.html">
+      <div class="row__title">Display Manufacturing <span class="row__scope">INDIA</span></div>
+      <div class="row__desc">LCD and OLED/AMOLED panel fabrication, module assembly and the materials, driver ICs, backlight and equipment beneath them. India has no front-end panel fab and imports ~80&ndash;85% of its display demand; the front-end, glass-substrate, polariser, liquid-crystal / OLED-material, driver-IC and display-equipment layers have no NSE/BSE pure-play, so listed capture sits in module assembly (Dixon directly; Minda and SJS via wholly owned subsidiaries).</div>
+      <div class="row__meta">
         <span class="chip chip--gold">Analysis date: 2026-10-23</span>
         <span class="chip">Derived from: EMS / ODM &rarr; Display modules; Smart Meters &rarr; Display (LCD / segment); Auto Components &rarr; Infotainment &amp; Displays</span>
         <span class="chip">Sector: Electrical &amp; Electronic Equipment</span>
@@ -758,10 +758,10 @@
       </div>
     </a>
 
-    <a class="entry" href="industries/mobile-handsets-accessories-india.html">
-      <div class="entry__name">Mobile Handsets &amp; Accessories <span class="entry__scope">INDIA</span></div>
-      <div class="entry__desc">Smartphone &amp; feature-phone manufacturing and the accessory/component layer &mdash; final assembly (EMS/ODM), display and camera modules, battery cells, PCB/PCBA, mechanicals, passives and wearables &mdash; and the MPMS / ECMS / PLI policy stack behind them. India is the world&rsquo;s 2nd-largest maker by volume with &#8377;6.27 lakh cr production in FY26, but domestic value addition is only ~23% (vs ~38% China): chipset, memory, display and camera are ~55&ndash;60% of the BOM and largely imported.</div>
-      <div class="entry__meta">
+    <a class="row" href="industries/mobile-handsets-accessories-india.html">
+      <div class="row__title">Mobile Handsets &amp; Accessories <span class="row__scope">INDIA</span></div>
+      <div class="row__desc">Smartphone &amp; feature-phone manufacturing and the accessory/component layer &mdash; final assembly (EMS/ODM), display and camera modules, battery cells, PCB/PCBA, mechanicals, passives and wearables &mdash; and the MPMS / ECMS / PLI policy stack behind them. India is the world&rsquo;s 2nd-largest maker by volume with &#8377;6.27 lakh cr production in FY26, but domestic value addition is only ~23% (vs ~38% China): chipset, memory, display and camera are ~55&ndash;60% of the BOM and largely imported.</div>
+      <div class="row__meta">
         <span class="chip chip--gold">Analysis date: 2026-10-24</span>
         <span class="chip">Sector: Electrical &amp; Electronic Equipment</span>
         <span class="chip">Scope: India</span>
@@ -774,14 +774,14 @@
       </div>
     </section>
 
-    <section class="group" data-collapsed="true">
+    <section class="group">
       <button class="group__head" type="button" aria-expanded="false"><span class="group__name">Semiconductors &amp; Semiconductor Equipment</span><span class="group__count">1</span><span class="chev" aria-hidden="true"></span></button>
       <div class="group__panel">
 
-    <a class="entry" href="industries/semiconductor-equipment-materials-india.html">
-      <div class="entry__name">Semiconductor Equipment &amp; Materials <span class="entry__scope">INDIA</span></div>
-      <div class="entry__desc">The upstream layer of the chip industry &mdash; wafer-fab and back-end process tools, lithography, metrology, sub-fab and gas delivery, wafers and SiC substrates, photoresist, photomasks, wet chemicals, specialty gases, quartzware and packaging materials &mdash; and the near-total import dependence behind them. Semicon 2.0&rsquo;s machines &amp; materials pillar, the Fujifilm / Sumitomo / Linde / INOX build-out, and the absence of any NSE/BSE-listed pure-play in the core nodes.</div>
-      <div class="entry__meta">
+    <a class="row" href="industries/semiconductor-equipment-materials-india.html">
+      <div class="row__title">Semiconductor Equipment &amp; Materials <span class="row__scope">INDIA</span></div>
+      <div class="row__desc">The upstream layer of the chip industry &mdash; wafer-fab and back-end process tools, lithography, metrology, sub-fab and gas delivery, wafers and SiC substrates, photoresist, photomasks, wet chemicals, specialty gases, quartzware and packaging materials &mdash; and the near-total import dependence behind them. Semicon 2.0&rsquo;s machines &amp; materials pillar, the Fujifilm / Sumitomo / Linde / INOX build-out, and the absence of any NSE/BSE-listed pure-play in the core nodes.</div>
+      <div class="row__meta">
         <span class="chip chip--gold">Analysis date: 2026-10-25</span>
         <span class="chip">Sector: Semiconductors &amp; Semiconductor Equipment</span>
         <span class="chip">Scope: India</span>
@@ -794,14 +794,14 @@
       </div>
     </section>
 
-    <section class="group" data-collapsed="true">
+    <section class="group">
       <button class="group__head" type="button" aria-expanded="false"><span class="group__name">Automotive &amp; Mobility</span><span class="group__count">1</span><span class="chev" aria-hidden="true"></span></button>
       <div class="group__panel">
 
-    <a class="entry" href="industries/vehicles-auto-components-india.html">
-      <div class="entry__name">Vehicles &amp; Auto Components <span class="entry__scope">INDIA</span></div>
-      <div class="entry__desc">The full Indian automotive value chain across four subsystems &mdash; two-wheelers &amp; supply chain, passenger-vehicle EV powertrain &amp; battery, castings / forgings / machining, and auto electronics &amp; software &mdash; with the rare-earth-magnet, cell, semiconductor and capital-equipment import bottlenecks and the NSE/BSE company map behind them.</div>
-      <div class="entry__meta">
+    <a class="row" href="industries/vehicles-auto-components-india.html">
+      <div class="row__title">Vehicles &amp; Auto Components <span class="row__scope">INDIA</span></div>
+      <div class="row__desc">The full Indian automotive value chain across four subsystems &mdash; two-wheelers &amp; supply chain, passenger-vehicle EV powertrain &amp; battery, castings / forgings / machining, and auto electronics &amp; software &mdash; with the rare-earth-magnet, cell, semiconductor and capital-equipment import bottlenecks and the NSE/BSE company map behind them.</div>
+      <div class="row__meta">
         <span class="chip chip--gold">Analysis date: 2026-10-12</span>
         <span class="chip">Sector: Automotive &amp; Mobility</span>
         <span class="chip">Scope: India</span>
@@ -814,14 +814,14 @@
       </div>
     </section>
 
-    <section class="group" data-collapsed="true">
+    <section class="group">
       <button class="group__head" type="button" aria-expanded="false"><span class="group__name">Chemicals &amp; Petrochemicals</span><span class="group__count">3</span><span class="chev" aria-hidden="true"></span></button>
       <div class="group__panel">
 
-    <a class="entry" href="industries/organic-chemicals-india.html">
-      <div class="entry__name">Organic Chemicals <span class="entry__scope">INDIA</span></div>
-      <div class="entry__desc">Petrochemical building blocks, industrial solvents, specialty &amp; fine chemicals and polymers &mdash; the BOM tree, value-chain ladder and NSE/BSE company map, with the ethylene/propylene, methanol, EDC/VCM, fluorspar and Chinese-dumping bottlenecks behind them.</div>
-      <div class="entry__meta">
+    <a class="row" href="industries/organic-chemicals-india.html">
+      <div class="row__title">Organic Chemicals <span class="row__scope">INDIA</span></div>
+      <div class="row__desc">Petrochemical building blocks, industrial solvents, specialty &amp; fine chemicals and polymers &mdash; the BOM tree, value-chain ladder and NSE/BSE company map, with the ethylene/propylene, methanol, EDC/VCM, fluorspar and Chinese-dumping bottlenecks behind them.</div>
+      <div class="row__meta">
         <span class="chip chip--gold">Analysis date: 2026-10-09</span>
         <span class="chip">Sector: Chemicals &amp; Petrochemicals</span>
         <span class="chip">Scope: India</span>
@@ -830,10 +830,10 @@
         <span class="chip">Depth-first (4 subsystems)</span>
       </div>
     </a>
-    <a class="entry" href="industries/pharma-api-bulk-drugs-india.html">
-      <div class="entry__name">Pharma APIs &amp; Bulk Drugs <span class="entry__scope">INDIA</span></div>
-      <div class="entry__desc">Drill-down of Organic Chemicals. Fermentation and chemical-synthesis APIs, key starting materials, solvents and catalysts, the CRDMO layer and formulation integration &mdash; over a China-concentrated KSM base, a PLI scheme whose tenure was not extended, and the US Section&nbsp;232 tariff line. Re-checked 2026-10-26: Section&nbsp;232 final phase live from 29-Sep-2026, generics still outside the tariff.</div>
-      <div class="entry__meta">
+    <a class="row" href="industries/pharma-api-bulk-drugs-india.html">
+      <div class="row__title">Pharma APIs &amp; Bulk Drugs <span class="row__scope">INDIA</span></div>
+      <div class="row__desc">Drill-down of Organic Chemicals. Fermentation and chemical-synthesis APIs, key starting materials, solvents and catalysts, the CRDMO layer and formulation integration &mdash; over a China-concentrated KSM base, a PLI scheme whose tenure was not extended, and the US Section&nbsp;232 tariff line. Re-checked 2026-10-26: Section&nbsp;232 final phase live from 29-Sep-2026, generics still outside the tariff.</div>
+      <div class="row__meta">
         <span class="chip chip--gold">Analysis date: 2026-10-22</span>
         <span class="chip">Derived from: Organic Chemicals &rarr; Pharma Intermediates (API / CDMO)</span>
         <span class="chip">Sector: Chemicals &amp; Petrochemicals</span>
@@ -845,10 +845,10 @@
     </a>
 
 
-    <a class="entry" href="industries/inorganic-chemicals-india.html">
-      <div class="entry__name">Inorganic Chemicals <span class="entry__scope">INDIA</span></div>
-      <div class="entry__desc">The basic inorganic chemical complex &mdash; chlor-alkali (caustic soda, chlorine, hydrogen peroxide), soda ash, industrial &amp; specialty gases, mineral acids (H&#8322;SO&#8324;, H&#8323;PO&#8324;, HNO&#8323;) and phosphate fertilisers &mdash; with the BOM tree, value-chain ladder and NSE/BSE company map, and the rock-phosphate, potash, chlorine-balance, soda-ash-import and turnkey-equipment bottlenecks behind them.</div>
-      <div class="entry__meta">
+    <a class="row" href="industries/inorganic-chemicals-india.html">
+      <div class="row__title">Inorganic Chemicals <span class="row__scope">INDIA</span></div>
+      <div class="row__desc">The basic inorganic chemical complex &mdash; chlor-alkali (caustic soda, chlorine, hydrogen peroxide), soda ash, industrial &amp; specialty gases, mineral acids (H&#8322;SO&#8324;, H&#8323;PO&#8324;, HNO&#8323;) and phosphate fertilisers &mdash; with the BOM tree, value-chain ladder and NSE/BSE company map, and the rock-phosphate, potash, chlorine-balance, soda-ash-import and turnkey-equipment bottlenecks behind them.</div>
+      <div class="row__meta">
         <span class="chip chip--gold">Analysis date: 2026-10-10</span>
         <span class="chip">Sector: Chemicals &amp; Petrochemicals</span>
         <span class="chip">Scope: India</span>
@@ -861,14 +861,14 @@
       </div>
     </section>
 
-    <section class="group" data-collapsed="true">
+    <section class="group">
       <button class="group__head" type="button" aria-expanded="false"><span class="group__name">Agriculture &amp; Crop Inputs</span><span class="group__count">1</span><span class="chev" aria-hidden="true"></span></button>
       <div class="group__panel">
 
-    <a class="entry" href="industries/agrochemicals-crop-protection-india.html">
-      <div class="entry__name">Agrochemicals &amp; Crop Protection <span class="entry__scope">INDIA</span></div>
-      <div class="entry__desc">Crop-protection chemicals &mdash; technical actives, advanced intermediates &amp; KSM, formulation, biologicals and CDMO &mdash; the BOM tree, value-chain ladder and NSE/BSE company map, with the China intermediate dependence, off-patent price collapse, regulatory-reform and biologicals-transition bottlenecks behind them.</div>
-      <div class="entry__meta">
+    <a class="row" href="industries/agrochemicals-crop-protection-india.html">
+      <div class="row__title">Agrochemicals &amp; Crop Protection <span class="row__scope">INDIA</span></div>
+      <div class="row__desc">Crop-protection chemicals &mdash; technical actives, advanced intermediates &amp; KSM, formulation, biologicals and CDMO &mdash; the BOM tree, value-chain ladder and NSE/BSE company map, with the China intermediate dependence, off-patent price collapse, regulatory-reform and biologicals-transition bottlenecks behind them.</div>
+      <div class="row__meta">
         <span class="chip chip--gold">Analysis date: 2026-10-23</span>
         <span class="chip">Sector: Agriculture &amp; Crop Inputs</span>
         <span class="chip">Scope: India</span>
@@ -881,14 +881,14 @@
       </div>
     </section>
 
-    <section class="group" data-collapsed="true">
+    <section class="group">
       <button class="group__head" type="button" aria-expanded="false"><span class="group__name">Aerospace &amp; Aviation</span><span class="group__count">3</span><span class="chev" aria-hidden="true"></span></button>
       <div class="group__panel">
 
-    <a class="entry" href="industries/aircraft-mro-civil-aerospace-india.html">
-      <div class="entry__name">Aircraft MRO &amp; Civil Aerospace Components <span class="entry__scope">INDIA</span></div>
-      <div class="entry__desc">Civil aircraft maintenance (airframe, engine, component MRO) and aerospace component manufacturing &mdash; aerostructures, aeroengine forgings/castings, avionics/EWIS and cabin &mdash; behind the DGCA/EASA/FAA certification gate, with the Boeing / Airbus / Safran sourcing build-out.</div>
-      <div class="entry__meta">
+    <a class="row" href="industries/aircraft-mro-civil-aerospace-india.html">
+      <div class="row__title">Aircraft MRO &amp; Civil Aerospace Components <span class="row__scope">INDIA</span></div>
+      <div class="row__desc">Civil aircraft maintenance (airframe, engine, component MRO) and aerospace component manufacturing &mdash; aerostructures, aeroengine forgings/castings, avionics/EWIS and cabin &mdash; behind the DGCA/EASA/FAA certification gate, with the Boeing / Airbus / Safran sourcing build-out.</div>
+      <div class="row__meta">
         <span class="chip chip--gold">Analysis date: 2026-10-20</span>
         <span class="chip">Sector: Aerospace &amp; Aviation</span>
         <span class="chip">Scope: India</span>
@@ -900,10 +900,10 @@
     </a>
 
 
-    <a class="entry" href="industries/engine-mro-india.html">
-      <div class="entry__name">Engine MRO <span class="entry__scope">INDIA</span></div>
-      <div class="entry__desc">Drill-down of Aircraft MRO &amp; Civil Aerospace Components. The LEAP / CFM56 / V2500 shop-visit business &mdash; modules, life-limited parts, HPT/HPC airfoils and test cells &mdash; behind the OEM-parts gate, with Safran SAESI, AIESL and IndiGo.</div>
-      <div class="entry__meta">
+    <a class="row" href="industries/engine-mro-india.html">
+      <div class="row__title">Engine MRO <span class="row__scope">INDIA</span></div>
+      <div class="row__desc">Drill-down of Aircraft MRO &amp; Civil Aerospace Components. The LEAP / CFM56 / V2500 shop-visit business &mdash; modules, life-limited parts, HPT/HPC airfoils and test cells &mdash; behind the OEM-parts gate, with Safran SAESI, AIESL and IndiGo.</div>
+      <div class="row__meta">
         <span class="chip chip--gold">Analysis date: 2026-10-20</span>
         <span class="chip">Derived from: Aircraft MRO &amp; Civil Aerospace Components &rarr; Engine MRO</span>
         <span class="chip">Sector: Aerospace &amp; Aviation</span>
@@ -913,10 +913,10 @@
       </div>
     </a>
 
-    <a class="entry" href="industries/component-mro-india.html">
-      <div class="entry__name">Component MRO <span class="entry__scope">INDIA</span></div>
-      <div class="entry__desc">Drill-down of Aircraft MRO &amp; Civil Aerospace Components. The 'missing middle' &mdash; wheels &amp; brakes, landing gear, avionics LRUs, APU, hydraulics and cabin &mdash; the CAR-145 C-ratings, the OEM-data gate and the PMA/DER cost lever.</div>
-      <div class="entry__meta">
+    <a class="row" href="industries/component-mro-india.html">
+      <div class="row__title">Component MRO <span class="row__scope">INDIA</span></div>
+      <div class="row__desc">Drill-down of Aircraft MRO &amp; Civil Aerospace Components. The 'missing middle' &mdash; wheels &amp; brakes, landing gear, avionics LRUs, APU, hydraulics and cabin &mdash; the CAR-145 C-ratings, the OEM-data gate and the PMA/DER cost lever.</div>
+      <div class="row__meta">
         <span class="chip chip--gold">Analysis date: 2026-10-20</span>
         <span class="chip">Derived from: Aircraft MRO &amp; Civil Aerospace Components &rarr; Component MRO</span>
         <span class="chip">Sector: Aerospace &amp; Aviation</span>
@@ -928,14 +928,14 @@
       </div>
     </section>
 
-    <section class="group" data-collapsed="true">
+    <section class="group">
       <button class="group__head" type="button" aria-expanded="false"><span class="group__name">Defence &amp; Aerospace</span><span class="group__count">5</span><span class="chev" aria-hidden="true"></span></button>
       <div class="group__panel">
 
-    <a class="entry" href="industries/missile-india.html">
-      <div class="entry__name">Missiles <span class="entry__scope">INDIA</span></div>
-      <div class="entry__desc">India's guided-missile ecosystem &mdash; propulsion &amp; rocket motors, guidance/seekers &amp; avionics, airframe/materials &amp; thermal, warhead/fuzing &amp; launch &mdash; and the DRDO conventional-missile ToT opening, the BDL/Solar/Premier order books and the ~&#8377;8,000 cr metals-import bottleneck behind them.</div>
-      <div class="entry__meta">
+    <a class="row" href="industries/missile-india.html">
+      <div class="row__title">Missiles <span class="row__scope">INDIA</span></div>
+      <div class="row__desc">India's guided-missile ecosystem &mdash; propulsion &amp; rocket motors, guidance/seekers &amp; avionics, airframe/materials &amp; thermal, warhead/fuzing &amp; launch &mdash; and the DRDO conventional-missile ToT opening, the BDL/Solar/Premier order books and the ~&#8377;8,000 cr metals-import bottleneck behind them.</div>
+      <div class="row__meta">
         <span class="chip chip--gold">Analysis date: 2026-10-10</span>
         <span class="chip">Sector: Defence &amp; Aerospace</span>
         <span class="chip">Scope: India</span>
@@ -946,10 +946,10 @@
     </a>
 
 
-    <a class="entry" href="industries/guns-india.html">
-      <div class="entry__name">Guns <span class="entry__scope">INDIA</span></div>
-      <div class="entry__desc">The whole gun-making ecosystem &mdash; small arms, artillery &amp; large-calibre guns, ammunition &amp; energetics, components/materials and the machinery &amp; proof/test behind them &mdash; with the propellant ~5&ndash;6&times; capacity gap, the AK-203/ATAGS programmes and the NSE/BSE company map.</div>
-      <div class="entry__meta">
+    <a class="row" href="industries/guns-india.html">
+      <div class="row__title">Guns <span class="row__scope">INDIA</span></div>
+      <div class="row__desc">The whole gun-making ecosystem &mdash; small arms, artillery &amp; large-calibre guns, ammunition &amp; energetics, components/materials and the machinery &amp; proof/test behind them &mdash; with the propellant ~5&ndash;6&times; capacity gap, the AK-203/ATAGS programmes and the NSE/BSE company map.</div>
+      <div class="row__meta">
         <span class="chip chip--gold">Analysis date: 2026-10-10</span>
         <span class="chip">Sector: Defence &amp; Aerospace</span>
         <span class="chip">Scope: India</span>
@@ -959,10 +959,10 @@
       </div>
     </a>
 
-    <a class="entry" href="industries/shakti-ew-india.html">
-      <div class="entry__name">Shakti EW System <span class="entry__scope">INDIA</span></div>
-      <div class="entry__desc">India's shipborne electronic-warfare suite (DRDO/DLRL-designed, BEL-built) &mdash; wideband ESM, DRFM jamming, the RF front-end, software, materials and test &mdash; with the ~75% GaN-MMIC import chokepoint, the Shakti Phase IV / Pragyashakti pipeline and the NSE/BSE company map.</div>
-      <div class="entry__meta">
+    <a class="row" href="industries/shakti-ew-india.html">
+      <div class="row__title">Shakti EW System <span class="row__scope">INDIA</span></div>
+      <div class="row__desc">India's shipborne electronic-warfare suite (DRDO/DLRL-designed, BEL-built) &mdash; wideband ESM, DRFM jamming, the RF front-end, software, materials and test &mdash; with the ~75% GaN-MMIC import chokepoint, the Shakti Phase IV / Pragyashakti pipeline and the NSE/BSE company map.</div>
+      <div class="row__meta">
         <span class="chip chip--gold">Analysis date: 2026-10-12</span>
         <span class="chip">Sector: Defence &amp; Aerospace</span>
         <span class="chip">Scope: India</span>
@@ -972,10 +972,10 @@
       </div>
     </a>
 
-    <a class="entry" href="industries/defence-electro-optics-india.html">
-      <div class="entry__name">Defence Electro-Optics &amp; Thermal Imaging <span class="entry__scope">INDIA</span></div>
-      <div class="entry__desc">The whole EO/IR ecosystem &mdash; IR detectors &amp; focal-plane arrays, IR optics, night-vision image-intensifier tubes, cryocoolers, readout &amp; software, gimbals, machinery, test &amp; the NSE/BSE company map behind it &mdash; with the ~100% detector/FPA and germanium-optics import chokepoint, the Nimmaluru night-vision factory and the iDEX microbolometer-FPA push.</div>
-      <div class="entry__meta">
+    <a class="row" href="industries/defence-electro-optics-india.html">
+      <div class="row__title">Defence Electro-Optics &amp; Thermal Imaging <span class="row__scope">INDIA</span></div>
+      <div class="row__desc">The whole EO/IR ecosystem &mdash; IR detectors &amp; focal-plane arrays, IR optics, night-vision image-intensifier tubes, cryocoolers, readout &amp; software, gimbals, machinery, test &amp; the NSE/BSE company map behind it &mdash; with the ~100% detector/FPA and germanium-optics import chokepoint, the Nimmaluru night-vision factory and the iDEX microbolometer-FPA push.</div>
+      <div class="row__meta">
         <span class="chip chip--gold">Analysis date: 2026-10-12</span>
         <span class="chip">Sector: Defence &amp; Aerospace</span>
         <span class="chip">Scope: India</span>
@@ -984,10 +984,10 @@
         <span class="chip">Phase 1 (breadth-first)</span>
       </div>
     </a>
-    <a class="entry" href="industries/cryocooler-india.html">
-      <div class="entry__name">Cryocooler <span class="entry__scope">INDIA</span></div>
-      <div class="entry__desc">Closed-cycle cryogenic refrigeration &mdash; cold head &amp; rare-earth regenerator, linear compressor &amp; drive electronics, helium working gas, dilution refrigerators &mdash; and the NSE/BSE company map behind an import-bound stack where no listed Indian cryocooler OEM exists.</div>
-      <div class="entry__meta">
+    <a class="row" href="industries/cryocooler-india.html">
+      <div class="row__title">Cryocooler <span class="row__scope">INDIA</span></div>
+      <div class="row__desc">Closed-cycle cryogenic refrigeration &mdash; cold head &amp; rare-earth regenerator, linear compressor &amp; drive electronics, helium working gas, dilution refrigerators &mdash; and the NSE/BSE company map behind an import-bound stack where no listed Indian cryocooler OEM exists.</div>
+      <div class="row__meta">
         <span class="chip chip--gold">Analysis date: 2026-10-12</span>
         <span class="chip">Sector: Defence &amp; Aerospace</span>
         <span class="chip">Scope: India</span>
@@ -999,14 +999,14 @@
     </div>
     </section>
 
-    <section class="group" data-collapsed="true">
+    <section class="group">
       <button class="group__head" type="button" aria-expanded="false"><span class="group__name">Robotics &amp; Automation</span><span class="group__count">7</span><span class="chev" aria-hidden="true"></span></button>
       <div class="group__panel">
 
-    <a class="entry" href="industries/robotics-india.html">
-      <div class="entry__name">Robotics <span class="entry__scope">INDIA</span></div>
-      <div class="entry__desc">India&rsquo;s robotics ecosystem across all four families &mdash; industrial robots, AMR/AGV, drones/UAV and humanoid &amp; service robots &mdash; over the shared core of actuators, reducers, motors, drives, sensors, magnets and power electronics. India installs 9,120 robots/yr (6th worldwide) but imports the core; the harmonic-reducer, NdFeB-magnet, encoder and power-semiconductor gaps, the drone PLI/policy cascade, and the NSE/BSE company map.</div>
-      <div class="entry__meta">
+    <a class="row" href="industries/robotics-india.html">
+      <div class="row__title">Robotics <span class="row__scope">INDIA</span></div>
+      <div class="row__desc">India&rsquo;s robotics ecosystem across all four families &mdash; industrial robots, AMR/AGV, drones/UAV and humanoid &amp; service robots &mdash; over the shared core of actuators, reducers, motors, drives, sensors, magnets and power electronics. India installs 9,120 robots/yr (6th worldwide) but imports the core; the harmonic-reducer, NdFeB-magnet, encoder and power-semiconductor gaps, the drone PLI/policy cascade, and the NSE/BSE company map.</div>
+      <div class="row__meta">
         <span class="chip chip--gold">Analysis date: 2026-10-11</span>
         <span class="chip">Sector: Robotics &amp; Automation</span>
         <span class="chip">Scope: India</span>
@@ -1016,10 +1016,10 @@
       </div>
     </a>
     
-    <a class="entry" href="industries/harmonic-rv-reducers-india.html">
-      <div class="entry__name">Harmonic &amp; RV Reducers <span class="entry__scope">INDIA</span></div>
-      <div class="entry__desc">Drill-down of Robotics. The zero-backlash gearsets inside every robot joint &mdash; strain-wave and cycloidal/RV, the flexspline and wave generator, the gear-grinding machines behind them, and the ~100% import gap.</div>
-      <div class="entry__meta">
+    <a class="row" href="industries/harmonic-rv-reducers-india.html">
+      <div class="row__title">Harmonic &amp; RV Reducers <span class="row__scope">INDIA</span></div>
+      <div class="row__desc">Drill-down of Robotics. The zero-backlash gearsets inside every robot joint &mdash; strain-wave and cycloidal/RV, the flexspline and wave generator, the gear-grinding machines behind them, and the ~100% import gap.</div>
+      <div class="row__meta">
         <span class="chip chip--gold">Analysis date: 2026-10-11</span>
         <span class="chip">Derived from: Robotics &rarr; Harmonic / RV Reducers</span>
         <span class="chip">Sector: Robotics &amp; Automation</span>
@@ -1029,10 +1029,10 @@
       </div>
     </a>
 
-    <a class="entry" href="industries/servo-motors-drives-india.html">
-      <div class="entry__name">Servo Motors &amp; Drives <span class="entry__scope">INDIA</span></div>
-      <div class="entry__desc">Drill-down of Robotics. The motion core of every robot and CNC &mdash; servo motors, drives, motion controllers and frameless torque motors &mdash; and the magnets, encoder chips and power semiconductors beneath them.</div>
-      <div class="entry__meta">
+    <a class="row" href="industries/servo-motors-drives-india.html">
+      <div class="row__title">Servo Motors &amp; Drives <span class="row__scope">INDIA</span></div>
+      <div class="row__desc">Drill-down of Robotics. The motion core of every robot and CNC &mdash; servo motors, drives, motion controllers and frameless torque motors &mdash; and the magnets, encoder chips and power semiconductors beneath them.</div>
+      <div class="row__meta">
         <span class="chip chip--gold">Analysis date: 2026-10-11</span>
         <span class="chip">Derived from: Robotics &rarr; Servo Motors / Drives</span>
         <span class="chip">Sector: Robotics &amp; Automation</span>
@@ -1042,10 +1042,10 @@
       </div>
     </a>
 
-    <a class="entry" href="industries/rare-earth-magnets-india.html">
-      <div class="entry__name">Rare-Earth Magnets <span class="entry__scope">INDIA</span></div>
-      <div class="entry__desc">Drill-down of Robotics. Sintered NdFeB permanent magnets &mdash; NdPr oxide to strip-cast alloy to sintered magnet &mdash; the REPM scheme (&#8377;7,280 cr, 6,000 MTPA), the 20 bids, and the ~95% import gap.</div>
-      <div class="entry__meta">
+    <a class="row" href="industries/rare-earth-magnets-india.html">
+      <div class="row__title">Rare-Earth Magnets <span class="row__scope">INDIA</span></div>
+      <div class="row__desc">Drill-down of Robotics. Sintered NdFeB permanent magnets &mdash; NdPr oxide to strip-cast alloy to sintered magnet &mdash; the REPM scheme (&#8377;7,280 cr, 6,000 MTPA), the 20 bids, and the ~95% import gap.</div>
+      <div class="row__meta">
         <span class="chip chip--gold">Analysis date: 2026-10-11</span>
         <span class="chip">Derived from: Robotics &rarr; Rare-Earth Magnets (NdFeB/SmCo)</span>
         <span class="chip">Sector: Robotics &amp; Automation</span>
@@ -1055,10 +1055,10 @@
       </div>
     </a>
 
-    <a class="entry" href="industries/drone-subsystems-india.html">
-      <div class="entry__name">Drone Subsystems <span class="entry__scope">INDIA</span></div>
-      <div class="entry__desc">Drill-down of Robotics. The imported core of an Indian drone &mdash; flight controllers, ESCs, BLDC motors, propellers, avionics and optics &mdash; and the PLI 2.0 / Mission Drone Shakti / ANRF push to localise it.</div>
-      <div class="entry__meta">
+    <a class="row" href="industries/drone-subsystems-india.html">
+      <div class="row__title">Drone Subsystems <span class="row__scope">INDIA</span></div>
+      <div class="row__desc">Drill-down of Robotics. The imported core of an Indian drone &mdash; flight controllers, ESCs, BLDC motors, propellers, avionics and optics &mdash; and the PLI 2.0 / Mission Drone Shakti / ANRF push to localise it.</div>
+      <div class="row__meta">
         <span class="chip chip--gold">Analysis date: 2026-10-11</span>
         <span class="chip">Derived from: Robotics &rarr; Drone Flight Controllers / ESCs / Motors</span>
         <span class="chip">Sector: Robotics &amp; Automation</span>
@@ -1068,10 +1068,10 @@
       </div>
     </a>
 
-    <a class="entry" href="industries/robot-software-autonomy-india.html">
-      <div class="entry__name">Robot Software &amp; Autonomy <span class="entry__scope">INDIA</span></div>
-      <div class="entry__desc">Drill-down of Robotics. SLAM, fleet management, motion planning, AI vision and digital twins &mdash; India's strongest robotics layer, a dense fleet-software cluster (87 firms) over imported edge compute.</div>
-      <div class="entry__meta">
+    <a class="row" href="industries/robot-software-autonomy-india.html">
+      <div class="row__title">Robot Software &amp; Autonomy <span class="row__scope">INDIA</span></div>
+      <div class="row__desc">Drill-down of Robotics. SLAM, fleet management, motion planning, AI vision and digital twins &mdash; India's strongest robotics layer, a dense fleet-software cluster (87 firms) over imported edge compute.</div>
+      <div class="row__meta">
         <span class="chip chip--gold">Analysis date: 2026-10-11</span>
         <span class="chip">Derived from: Robotics &rarr; Robot Software / SLAM / Fleet</span>
         <span class="chip">Sector: Robotics &amp; Automation</span>
@@ -1081,10 +1081,10 @@
       </div>
     </a>
 
-    <a class="entry" href="industries/machine-tools-metrology-india.html">
-      <div class="entry__name">Precision Machine Tools &amp; Metrology <span class="entry__scope">INDIA</span></div>
-      <div class="entry__desc">Drill-down of Robotics. The &lsquo;mother industry&rsquo; &mdash; CNC machines, gear/thread grinding, spindles, controllers and CMMs &mdash; that makes the reducers, screws and gears; ~60% import share and the deepest root dependency.</div>
-      <div class="entry__meta">
+    <a class="row" href="industries/machine-tools-metrology-india.html">
+      <div class="row__title">Precision Machine Tools &amp; Metrology <span class="row__scope">INDIA</span></div>
+      <div class="row__desc">Drill-down of Robotics. The &lsquo;mother industry&rsquo; &mdash; CNC machines, gear/thread grinding, spindles, controllers and CMMs &mdash; that makes the reducers, screws and gears; ~60% import share and the deepest root dependency.</div>
+      <div class="row__meta">
         <span class="chip chip--gold">Analysis date: 2026-10-11</span>
         <span class="chip">Derived from: Robotics &rarr; Precision Machine Tools / Metrology</span>
         <span class="chip">Sector: Robotics &amp; Automation</span>
@@ -1096,14 +1096,14 @@
 </div>
     </section>
 
-    <section class="group" data-collapsed="true">
+    <section class="group">
       <button class="group__head" type="button" aria-expanded="false"><span class="group__name">Data Centres &amp; AI Infrastructure</span><span class="group__count">2</span><span class="chev" aria-hidden="true"></span></button>
       <div class="group__panel">
 
-    <a class="entry" href="industries/data-centre-ai-compute-india.html">
-      <div class="entry__name">Data Centres &amp; AI-Compute Infrastructure <span class="entry__scope">INDIA</span></div>
-      <div class="entry__desc">Data-centre and AI-compute infrastructure &mdash; land, power and the electrical train, cooling (air and liquid), AI servers and GPU systems, subsea/fibre connectivity, EPC, DCIM and the operator layer. Electrical systems are ~40&ndash;45% of capex; GPUs, HBM memory and liquid cooling are the deep import dependencies.</div>
-      <div class="entry__meta">
+    <a class="row" href="industries/data-centre-ai-compute-india.html">
+      <div class="row__title">Data Centres &amp; AI-Compute Infrastructure <span class="row__scope">INDIA</span></div>
+      <div class="row__desc">Data-centre and AI-compute infrastructure &mdash; land, power and the electrical train, cooling (air and liquid), AI servers and GPU systems, subsea/fibre connectivity, EPC, DCIM and the operator layer. Electrical systems are ~40&ndash;45% of capex; GPUs, HBM memory and liquid cooling are the deep import dependencies.</div>
+      <div class="row__meta">
         <span class="chip chip--gold">Analysis date: 2026-10-20</span>
         <span class="chip">Sector: Data Centres &amp; AI Infrastructure</span>
         <span class="chip">Scope: India</span>
@@ -1113,10 +1113,10 @@
       </div>
     </a>
 
-    <a class="entry" href="industries/data-centre-liquid-cooling-india.html">
-      <div class="entry__name">Data-Centre Liquid Cooling <span class="entry__scope">INDIA</span></div>
-      <div class="entry__desc">Drill-down of Data Centres &amp; AI-Compute Infrastructure. Direct-to-chip cold plates and manifolds, coolant distribution units, dielectric and water-glycol fluids, quick-disconnects and the heat-rejection loop for AI racks above ~25&ndash;40 kW &mdash; the fluid-chemistry, cold-plate and CDU import bottlenecks behind them, and the NSE/BSE exposure via Navin Fluorine, Castrol India, Gulf Oil, Voltas, Blue Star, Thermax, KRN and Aeroflex.</div>
-      <div class="entry__meta">
+    <a class="row" href="industries/data-centre-liquid-cooling-india.html">
+      <div class="row__title">Data-Centre Liquid Cooling <span class="row__scope">INDIA</span></div>
+      <div class="row__desc">Drill-down of Data Centres &amp; AI-Compute Infrastructure. Direct-to-chip cold plates and manifolds, coolant distribution units, dielectric and water-glycol fluids, quick-disconnects and the heat-rejection loop for AI racks above ~25&ndash;40 kW &mdash; the fluid-chemistry, cold-plate and CDU import bottlenecks behind them, and the NSE/BSE exposure via Navin Fluorine, Castrol India, Gulf Oil, Voltas, Blue Star, Thermax, KRN and Aeroflex.</div>
+      <div class="row__meta">
         <span class="chip chip--gold">Analysis date: 2026-10-22</span>
         <span class="chip">Derived from: Data Centres &amp; AI-Compute &rarr; Liquid Cooling &mdash; DLC, Immersion, CDU</span>
         <span class="chip">Sector: Data Centres &amp; AI Infrastructure</span>
@@ -1143,7 +1143,7 @@
   (function () {
     var groups = Array.prototype.slice.call(document.querySelectorAll('.group'));
     function setGroup(g, collapsed) {
-      g.setAttribute('data-collapsed', collapsed ? 'true' : 'false');
+      g.classList.toggle('open', !collapsed);
       var b = g.querySelector('.group__head');
       if (b) { b.setAttribute('aria-expanded', collapsed ? 'false' : 'true'); }
     }
