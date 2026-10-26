@@ -18,20 +18,20 @@
 
   /* collapsible industry groups (registry index standard) */
   .group { margin-bottom: 4px; }
-  .group-body { display: block; }
-  .group[data-collapsed="true"] .group-body { display: none; }
-  button.group-label {
+  .group__panel { display: block; }
+  .group[data-collapsed="true"] .group__panel { display: none; }
+  button.group__head {
     background: none; border: 0; padding: 0; width: 100%; text-align: left; cursor: pointer;
     font-family: var(--font-mono); font-size: 11px; font-weight: 600; letter-spacing: 1.5px;
     text-transform: uppercase; color: var(--text-dim); margin: 30px 0 12px;
     display: flex; align-items: center; gap: 10px;
   }
-  button.group-label::after { content: ''; flex: 1; height: 1px; background: var(--border-bright); }
-  button.group-label:hover { color: var(--text); }
-  button.group-label:focus-visible { outline: 2px solid var(--blue); outline-offset: 3px; border-radius: 3px; }
-  .gl-count { order: 1; font-family: var(--font-mono); font-size: 10px; font-weight: 600; letter-spacing: 0; color: var(--blue); background: var(--blue-dim); border: 1px solid var(--border); border-radius: 999px; padding: 1px 8px; }
-  .gl-chevron { order: 1; display: inline-block; width: 0; height: 0; margin-left: 4px; border-left: 4px solid transparent; border-right: 4px solid transparent; border-top: 5px solid var(--text-dim); transition: transform 0.15s ease; }
-  .group[data-collapsed="true"] .gl-chevron { transform: rotate(-90deg); }
+  button.group__head::after { content: ''; flex: 1; height: 1px; background: var(--border-bright); }
+  button.group__head:hover { color: var(--text); }
+  button.group__head:focus-visible { outline: 2px solid var(--blue); outline-offset: 3px; border-radius: 3px; }
+  .group__count { order: 1; font-family: var(--font-mono); font-size: 10px; font-weight: 600; letter-spacing: 0; color: var(--blue); background: var(--blue-dim); border: 1px solid var(--border); border-radius: 999px; padding: 1px 8px; }
+  .chev { order: 1; display: inline-block; width: 0; height: 0; margin-left: 4px; border-left: 4px solid transparent; border-right: 4px solid transparent; border-top: 5px solid var(--text-dim); transition: transform 0.15s ease; }
+  .group[data-collapsed="true"] .chev { transform: rotate(-90deg); }
   .controls { display: flex; gap: 8px; margin-bottom: 6px; }
   .ctrl-btn { font-family: var(--font-mono); font-size: 10.5px; font-weight: 600; letter-spacing: 0.5px; text-transform: uppercase; color: var(--text-dim); background: var(--surface); border: 1px solid var(--border); border-radius: 6px; padding: 5px 12px; cursor: pointer; transition: color 0.15s ease, border-color 0.15s ease; }
   .ctrl-btn:hover { color: var(--blue); border-color: var(--border-bright); }
@@ -73,8 +73,8 @@
 
   <div class="animate" style="--i:1">
     <section class="group" data-collapsed="true">
-      <button class="group-label" type="button" aria-expanded="false"><span class="gl-name">Power &amp; Electrical Infrastructure</span><span class="gl-count">5</span><span class="gl-chevron" aria-hidden="true"></span></button>
-      <div class="group-body">
+      <button class="group__head" type="button" aria-expanded="false"><span class="group__name">Power &amp; Electrical Infrastructure</span><span class="group__count">5</span><span class="chev" aria-hidden="true"></span></button>
+      <div class="group__panel">
 
     <a class="entry" href="industries/power-transmission-india.html">
       <div class="entry__name">Power Transmission <span class="entry__scope">INDIA</span></div>
@@ -145,8 +145,8 @@
     </section>
 
     <section class="group" data-collapsed="true">
-      <button class="group-label" type="button" aria-expanded="false"><span class="gl-name">Renewable Energy</span><span class="gl-count">3</span><span class="gl-chevron" aria-hidden="true"></span></button>
-      <div class="group-body">
+      <button class="group__head" type="button" aria-expanded="false"><span class="group__name">Renewable Energy</span><span class="group__count">3</span><span class="chev" aria-hidden="true"></span></button>
+      <div class="group__panel">
 
     <a class="entry" href="industries/solar-pv-india.html">
       <div class="entry__name">Solar PV <span class="entry__scope">INDIA</span></div>
@@ -191,8 +191,8 @@
     </section>
 
     <section class="group" data-collapsed="true">
-      <button class="group-label" type="button" aria-expanded="false"><span class="gl-name">Green Hydrogen &amp; Clean Fuels</span><span class="gl-count">1</span><span class="gl-chevron" aria-hidden="true"></span></button>
-      <div class="group-body">
+      <button class="group__head" type="button" aria-expanded="false"><span class="group__name">Green Hydrogen &amp; Clean Fuels</span><span class="group__count">1</span><span class="chev" aria-hidden="true"></span></button>
+      <div class="group__panel">
 
     <a class="entry" href="industries/green-hydrogen-electrolyser-india.html">
       <div class="entry__name">Green Hydrogen &amp; Electrolyser Manufacturing <span class="entry__scope">INDIA</span></div>
@@ -211,8 +211,8 @@
     </section>
 
     <section class="group" data-collapsed="true">
-      <button class="group-label" type="button" aria-expanded="false"><span class="gl-name">Nuclear Energy</span><span class="gl-count">3</span><span class="gl-chevron" aria-hidden="true"></span></button>
-      <div class="group-body">
+      <button class="group__head" type="button" aria-expanded="false"><span class="group__name">Nuclear Energy</span><span class="group__count">3</span><span class="chev" aria-hidden="true"></span></button>
+      <div class="group__panel">
 
     <a class="entry" href="industries/smr-india.html">
       <div class="entry__name">Small Modular Reactor <span class="entry__scope">INDIA</span></div>
@@ -259,8 +259,8 @@
     </section>
 
     <section class="group" data-collapsed="true">
-      <button class="group-label" type="button" aria-expanded="false"><span class="gl-name">Power Generation Equipment</span><span class="gl-count">5</span><span class="gl-chevron" aria-hidden="true"></span></button>
-      <div class="group-body">
+      <button class="group__head" type="button" aria-expanded="false"><span class="group__name">Power Generation Equipment</span><span class="group__count">5</span><span class="chev" aria-hidden="true"></span></button>
+      <div class="group__panel">
 
     <a class="entry" href="industries/turbine-island-india.html">
       <div class="entry__name">Turbine Island (Turbomachinery) <span class="entry__scope">INDIA</span></div>
@@ -336,8 +336,8 @@
     </section>
 
     <section class="group" data-collapsed="true">
-      <button class="group-label" type="button" aria-expanded="false"><span class="gl-name">Telecom</span><span class="gl-count">11</span><span class="gl-chevron" aria-hidden="true"></span></button>
-      <div class="group-body">
+      <button class="group__head" type="button" aria-expanded="false"><span class="group__name">Telecom</span><span class="group__count">11</span><span class="chev" aria-hidden="true"></span></button>
+      <div class="group__panel">
 
     <a class="entry" href="industries/telecom-india.html">
       <div class="entry__name">Telecom <span class="entry__scope">INDIA</span></div>
@@ -487,8 +487,8 @@
     </section>
 
     <section class="group" data-collapsed="true">
-      <button class="group-label" type="button" aria-expanded="false"><span class="gl-name">Space &amp; Satellites</span><span class="gl-count">6</span><span class="gl-chevron" aria-hidden="true"></span></button>
-      <div class="group-body">
+      <button class="group__head" type="button" aria-expanded="false"><span class="group__name">Space &amp; Satellites</span><span class="group__count">6</span><span class="chev" aria-hidden="true"></span></button>
+      <div class="group__panel">
 
     <a class="entry" href="industries/satellite-india.html">
       <div class="entry__name">Satellite <span class="entry__scope">INDIA</span></div>
@@ -572,8 +572,8 @@
     </section>
 
     <section class="group" data-collapsed="true">
-      <button class="group-label" type="button" aria-expanded="false"><span class="gl-name">Energy Storage</span><span class="gl-count">4</span><span class="gl-chevron" aria-hidden="true"></span></button>
-      <div class="group-body">
+      <button class="group__head" type="button" aria-expanded="false"><span class="group__name">Energy Storage</span><span class="group__count">4</span><span class="chev" aria-hidden="true"></span></button>
+      <div class="group__panel">
 
     <a class="entry" href="industries/battery-energy-storage-india.html">
       <div class="entry__name">Battery Energy Storage (BESS) <span class="entry__scope">INDIA</span></div>
@@ -632,8 +632,8 @@
     </section>
 
     <section class="group" data-collapsed="true">
-      <button class="group-label" type="button" aria-expanded="false"><span class="gl-name">Healthcare &amp; Medical Devices</span><span class="gl-count">2</span><span class="gl-chevron" aria-hidden="true"></span></button>
-      <div class="group-body">
+      <button class="group__head" type="button" aria-expanded="false"><span class="group__name">Healthcare &amp; Medical Devices</span><span class="group__count">2</span><span class="chev" aria-hidden="true"></span></button>
+      <div class="group__panel">
         <a class="entry" href="industries/optical-medical-surgical-apparatus-india.html">
           <div class="entry__name">Optical, Medical &amp; Surgical Apparatus <span class="entry__scope">INDIA</span></div>
           <div class="entry__desc">Ophthalmic &amp; optical devices, diagnostic imaging, surgical apparatus and patient-care / monitoring / implants &mdash; the BOM tree, value-chain ladder and NSE/BSE company map, with the imaging-component, optics and medical-grade-material import bottlenecks behind them.</div>
@@ -663,8 +663,8 @@
     </section>
 
     <section class="group" data-collapsed="true">
-      <button class="group-label" type="button" aria-expanded="false"><span class="gl-name">Electrical &amp; Electronic Equipment</span><span class="gl-count">8</span><span class="gl-chevron" aria-hidden="true"></span></button>
-      <div class="group-body">
+      <button class="group__head" type="button" aria-expanded="false"><span class="group__name">Electrical &amp; Electronic Equipment</span><span class="group__count">8</span><span class="chev" aria-hidden="true"></span></button>
+      <div class="group__panel">
 
     <a class="entry" href="industries/electrical-electronic-equipment-india.html">
       <div class="entry__name">Electrical &amp; Electronic Equipment <span class="entry__scope">INDIA</span></div>
@@ -775,8 +775,8 @@
     </section>
 
     <section class="group" data-collapsed="true">
-      <button class="group-label" type="button" aria-expanded="false"><span class="gl-name">Semiconductors &amp; Semiconductor Equipment</span><span class="gl-count">1</span><span class="gl-chevron" aria-hidden="true"></span></button>
-      <div class="group-body">
+      <button class="group__head" type="button" aria-expanded="false"><span class="group__name">Semiconductors &amp; Semiconductor Equipment</span><span class="group__count">1</span><span class="chev" aria-hidden="true"></span></button>
+      <div class="group__panel">
 
     <a class="entry" href="industries/semiconductor-equipment-materials-india.html">
       <div class="entry__name">Semiconductor Equipment &amp; Materials <span class="entry__scope">INDIA</span></div>
@@ -795,8 +795,8 @@
     </section>
 
     <section class="group" data-collapsed="true">
-      <button class="group-label" type="button" aria-expanded="false"><span class="gl-name">Automotive &amp; Mobility</span><span class="gl-count">1</span><span class="gl-chevron" aria-hidden="true"></span></button>
-      <div class="group-body">
+      <button class="group__head" type="button" aria-expanded="false"><span class="group__name">Automotive &amp; Mobility</span><span class="group__count">1</span><span class="chev" aria-hidden="true"></span></button>
+      <div class="group__panel">
 
     <a class="entry" href="industries/vehicles-auto-components-india.html">
       <div class="entry__name">Vehicles &amp; Auto Components <span class="entry__scope">INDIA</span></div>
@@ -815,8 +815,8 @@
     </section>
 
     <section class="group" data-collapsed="true">
-      <button class="group-label" type="button" aria-expanded="false"><span class="gl-name">Chemicals &amp; Petrochemicals</span><span class="gl-count">3</span><span class="gl-chevron" aria-hidden="true"></span></button>
-      <div class="group-body">
+      <button class="group__head" type="button" aria-expanded="false"><span class="group__name">Chemicals &amp; Petrochemicals</span><span class="group__count">3</span><span class="chev" aria-hidden="true"></span></button>
+      <div class="group__panel">
 
     <a class="entry" href="industries/organic-chemicals-india.html">
       <div class="entry__name">Organic Chemicals <span class="entry__scope">INDIA</span></div>
@@ -862,8 +862,8 @@
     </section>
 
     <section class="group" data-collapsed="true">
-      <button class="group-label" type="button" aria-expanded="false"><span class="gl-name">Agriculture &amp; Crop Inputs</span><span class="gl-count">1</span><span class="gl-chevron" aria-hidden="true"></span></button>
-      <div class="group-body">
+      <button class="group__head" type="button" aria-expanded="false"><span class="group__name">Agriculture &amp; Crop Inputs</span><span class="group__count">1</span><span class="chev" aria-hidden="true"></span></button>
+      <div class="group__panel">
 
     <a class="entry" href="industries/agrochemicals-crop-protection-india.html">
       <div class="entry__name">Agrochemicals &amp; Crop Protection <span class="entry__scope">INDIA</span></div>
@@ -882,8 +882,8 @@
     </section>
 
     <section class="group" data-collapsed="true">
-      <button class="group-label" type="button" aria-expanded="false"><span class="gl-name">Aerospace &amp; Aviation</span><span class="gl-count">3</span><span class="gl-chevron" aria-hidden="true"></span></button>
-      <div class="group-body">
+      <button class="group__head" type="button" aria-expanded="false"><span class="group__name">Aerospace &amp; Aviation</span><span class="group__count">3</span><span class="chev" aria-hidden="true"></span></button>
+      <div class="group__panel">
 
     <a class="entry" href="industries/aircraft-mro-civil-aerospace-india.html">
       <div class="entry__name">Aircraft MRO &amp; Civil Aerospace Components <span class="entry__scope">INDIA</span></div>
@@ -929,8 +929,8 @@
     </section>
 
     <section class="group" data-collapsed="true">
-      <button class="group-label" type="button" aria-expanded="false"><span class="gl-name">Defence &amp; Aerospace</span><span class="gl-count">5</span><span class="gl-chevron" aria-hidden="true"></span></button>
-      <div class="group-body">
+      <button class="group__head" type="button" aria-expanded="false"><span class="group__name">Defence &amp; Aerospace</span><span class="group__count">5</span><span class="chev" aria-hidden="true"></span></button>
+      <div class="group__panel">
 
     <a class="entry" href="industries/missile-india.html">
       <div class="entry__name">Missiles <span class="entry__scope">INDIA</span></div>
@@ -1000,8 +1000,8 @@
     </section>
 
     <section class="group" data-collapsed="true">
-      <button class="group-label" type="button" aria-expanded="false"><span class="gl-name">Robotics &amp; Automation</span><span class="gl-count">7</span><span class="gl-chevron" aria-hidden="true"></span></button>
-      <div class="group-body">
+      <button class="group__head" type="button" aria-expanded="false"><span class="group__name">Robotics &amp; Automation</span><span class="group__count">7</span><span class="chev" aria-hidden="true"></span></button>
+      <div class="group__panel">
 
     <a class="entry" href="industries/robotics-india.html">
       <div class="entry__name">Robotics <span class="entry__scope">INDIA</span></div>
@@ -1097,8 +1097,8 @@
     </section>
 
     <section class="group" data-collapsed="true">
-      <button class="group-label" type="button" aria-expanded="false"><span class="gl-name">Data Centres &amp; AI Infrastructure</span><span class="gl-count">2</span><span class="gl-chevron" aria-hidden="true"></span></button>
-      <div class="group-body">
+      <button class="group__head" type="button" aria-expanded="false"><span class="group__name">Data Centres &amp; AI Infrastructure</span><span class="group__count">2</span><span class="chev" aria-hidden="true"></span></button>
+      <div class="group__panel">
 
     <a class="entry" href="industries/data-centre-ai-compute-india.html">
       <div class="entry__name">Data Centres &amp; AI-Compute Infrastructure <span class="entry__scope">INDIA</span></div>
@@ -1144,11 +1144,11 @@
     var groups = Array.prototype.slice.call(document.querySelectorAll('.group'));
     function setGroup(g, collapsed) {
       g.setAttribute('data-collapsed', collapsed ? 'true' : 'false');
-      var b = g.querySelector('.group-label');
+      var b = g.querySelector('.group__head');
       if (b) { b.setAttribute('aria-expanded', collapsed ? 'false' : 'true'); }
     }
     groups.forEach(function (g) {
-      var b = g.querySelector('.group-label');
+      var b = g.querySelector('.group__head');
       if (!b) { return; }
       b.addEventListener('click', function () {
         // accordion: the clicked group becomes the only open one; every other
