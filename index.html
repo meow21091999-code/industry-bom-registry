@@ -36,6 +36,8 @@
   .ctrl-btn { font-family: var(--font-mono); font-size: 10.5px; font-weight: 600; letter-spacing: 0.5px; text-transform: uppercase; color: var(--text-dim); background: var(--surface); border: 1px solid var(--border); border-radius: 6px; padding: 5px 12px; cursor: pointer; transition: color 0.15s ease, border-color 0.15s ease; }
   .ctrl-btn:hover { color: var(--blue); border-color: var(--border-bright); }
   .ctrl-btn:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; }
+  .masthead { position: relative; }
+  .masthead-btn { position: absolute; top: 0; right: 0; text-decoration: none; }
 
   /* entry rows */
   a.entry {
@@ -60,6 +62,7 @@
     <div class="eyebrow">Sarvam &middot; Industrial BOM &amp; Value-Chain Dissection Engine</div>
     <h1>Industry BOM Registry</h1>
     <div class="subtitle">One page per industry analysed &middot; BOM tree + value-chain flowchart + click-through company map</div>
+    <a class="ctrl-btn masthead-btn" href="views/companies-master-list.html">Company master list &rarr;</a>
   </header>
 
 
@@ -1134,9 +1137,6 @@
     Self-contained pages &middot; no build step &middot; served via GitHub Pages. Numbers inside each entry are date-stamped to that entry's analysis date; time-sensitive facts should be re-checked before use. Registry updated 2026-10-23: new entries added &mdash; Display Manufacturing (India) and Agrochemicals &amp; Crop Protection (India). [LIVE] facts and dated regulatory-calendar items should be re-checked before use.
   </p>
 
-  <p class="foot animate" style="--i:4">
-    Derived view: <a href="views/companies-master-list.html">Company master list</a> &mdash; every company across the registry, ranked by breadth and position.
-  </p>
 </div>
 
 <script>
