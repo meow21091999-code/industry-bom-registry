@@ -1265,8 +1265,7 @@ graph TD
     } else {
       n.companies.forEach(function(c){
         html += '<div class="co">' +
-                  '<div class="co__name">' + esc(c.n) + '</div>' +
-                  '<div class="co__ticker">' + esc(c.t) + '</div>' +
+                  '<div class="co__name">' + esc(c.n) + '<span class="co__ticker">' + esc(c.t) + '</span></div>' +
                   '<div class="co__tags"><span class="' + expClass(c.e) + '">' + esc(c.e) + '</span></div>' +
                   '<div class="co__mat">' + esc(c.mat) + '</div>' +
                 '</div>';
