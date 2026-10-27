@@ -1,9 +1,9 @@
 {
  "registry": "Industry BOM Registry",
  "description": "Machine-readable node index. For every entry, the node names it contains plus the owning entry slug. Used for DEDUP (industry+scope already analysed) and LINEAGE (auto-linking a new industry to a parent when its name matches a node name). Update on every publish.",
- "generated": "2026-10-26",
- "last_delta_pass": "2026-10-26",
- "delta_note": "2026-10-26: WHOLE-REGISTRY WEEKLY DELTA PASS (71 pages; 165 open [LIVE] facts re-validated in clusters, 24 targeted searches). MOVED/RESOLVED: (1) STL Q2 FY27 reported 23-Oct-2026 — revenue Rs 2,529 cr, op. EBITDA 27.1%, PAT Rs 517 cr, order book Rs 35,274 cr (optical-fibre-cable); (2) US Section 232 pharma final phase effective 29-Sep-2026, generics still exempt, India eligible for 0% on designated specialty products (pharma-api-bulk-drugs); (3) C-DAC IndiaAI RFE C-DAC/GPU/01/2026 published 07-Oct-2026 for 10,000 AICUs, bids close 29-Oct-2026 — the \"global resale allowed\" line is unconfirmed (data-centre-ai-compute); (4) Yotta IPO restated to up to US$1.5 bn targeting Jan-Mar 2027, was Rs 6,000-8,000 cr (data-centre-ai-compute); (5) Navin Fluorine-Chemours immersion-fluid plant slipped from 1QFY27 to Jul-Aug 2026 (data-centre-liquid-cooling); (6) Adani-IntelliSmart Rs 3,050 cr SPSA executed, CCI filing \"information incomplete\" (smart-meters); (7) FCC 26-50 in force 13-Oct-2026 — transceivers not named, narrower than the Aug-2026 draft (optical-transceivers); (8) China germanium suspension expiry restated to 27-Nov-2026, 10-Jan-2027 Kuala Lumpur extension unconfirmed (optical-fibre, optical-fibre-cable, optical-fibre-preform, defence-electro-optics); (9) BEL thermal-imager GeM bid closed 22-Oct-2026, award pending (defence-electro-optics); (10) SHANTI Rules consultation closed 04-Sep-2026, still not notified (nuclear-pwr-steam-generator, reactor-coolant-pumps); (11) Pesticides Management Bill still not introduced as of 22-Oct-2026 (agrochemicals); (12) DGTR PVC CVD widened to 13 Chinese exporter groups, MIP lapses ~23-Jan-2027 (organic-chemicals); (13) telecom PLI 2.0 still awaiting Cabinet (telecom, 5g-ran). UNCHANGED: Jio Platforms IPO on schedule (allotment 26-Oct, listing 28-Oct); BHEL 3.2 GW ACC bid deadline 30-Oct-2026; DGTR CRGO/AM probe (preliminary finding Nov-Dec 2026); Aksh Optifibre CIRP; SIGHT electrolyser commissioning; REPM beneficiary award; Sify IPO on hold; AUSC 800 MW approval; GHAVP PCP test-bed resumption; China helium export ban; ECMS/Semicon 2.0 display-fab status; genome corpus at EFC. REGISTRY INTEGRITY: added the missing index rows and node-index entries for pharma-api-bulk-drugs-india and 6g-india (both pages existed without register entries); reciprocal drill_downs set on organic-chemicals and 5g-ran. 2026-10-26 (incremental): new entry industrial-gases-india added — standalone Level-0, no lineage links (confirmed with user: the matching 'industrial gases' nodes in inorganic-chemicals, organic-chemicals and semiconductor-equipment-materials are demand-side references, not parents).",
+ "generated": "2026-10-27",
+ "last_delta_pass": "2026-10-27",
+ "delta_note": "2026-10-27: DAILY ROTATION FULL RE-RUN — telecom-transport-equipment-india (oldest analysis date in the registry at 2026-10-08, tied with telecom-towers-india and telecom-operators-india; taken first in index order after the entries analysed last on 2026-10-26). MOVED: (1) Tejas Q2 FY27 (16-Oct-2026) revenue Rs 406 cr, PAT -Rs 207 cr, order book Rs 2,315 cr vs Rs 1,019 cr at Mar-2025, net debt Rs 4,384 cr — plus a new L1 position in a pan-India strategic OTN tender and a three-state BharatNet-3 IP-router LoI; (2) HFCL Q2 FY27 (19-Oct-2026) revenue Rs 2,542 cr, PAT Rs 394 cr, order book Rs 28,911 cr vs Rs 9,967 cr at Mar-2025; EPC arm lost Rs 121 cr, board restructuring decision due early Nov-2026; Rs 2,666 cr RVNL BharatNet award (9-Oct-2026); (3) ITI FY26 annual report (13-Oct-2026): turnover Rs 2,465 cr, PAT Rs 293 cr, order book Rs 18,637 cr; Q1 FY27 revenue Rs 425 cr with a net loss of Rs 32 cr and an auditors disclaimer of conclusion; order book Rs 13,883 cr at 30-Jun-2026; (4) Netweb Q2 FY27 (24-Oct-2026) revenue Rs 1,323 cr, +335.7% YoY, AI systems 58.4% of revenue — networking is now a minor line; (5) Dixon-Gemtek definitive JV agreement signed 7-Oct-2026, completion targeted 3-Feb-2027 (was a June-2026 term sheet); GX Quantum Photonics ECMS phase-1 (Rs 100 cr) approved, production from Dec-2026; (6) telecom PLI successor (Rs 6,000-7,000 cr, component-focused) still with the Finance Ministry, PLI 1.0 ends 31-Mar-2027; TTDF 2.0 announced at IMC 2026; (7) Budget 2026 customs rationalisation in force — Chapter 85 exemptions lapsed 31-Mar-2026, radio-trunking parts 5%->15%, telecom PCBA BCD unchanged at 15%; (8) Cisco now runs six product lines in India with over half of output exported and silicon design in-country (14-Oct-2026). REGISTRY INTEGRITY: removed a dangling drill-down link to switch-router-silicon-india (no page, index row or node entry ever existed); companies.json updated surgically for this entry only (Tejas, HFCL, Netweb records) because tools/build-companies.mjs is not present in this repository copy.",
  "entries": [
   {
    "slug": "power-transmission-india",
@@ -5487,7 +5487,7 @@
    "industry": "Routers, Switches & Optical Transport",
    "scope": "INDIA",
    "path": "industries/telecom-transport-equipment-india.html",
-   "analysis_date": "2026-10-08",
+   "analysis_date": "2026-10-27",
    "universe": "NSE/BSE",
    "sector": "Telecom & Networking",
    "derived_from": {
@@ -5548,13 +5548,16 @@
     },
     {
      "id": "ethsw",
-     "name": "Ethernet Switches (L2/L3)",
+     "name": "Ethernet Switches (L2/L3, DC)",
      "level": 1,
      "aliases": [
       "Ethernet Switches",
       "L2 Switches",
       "Data-centre Switches",
-      "Enterprise Switching"
+      "Enterprise Switching",
+      "data centre switch",
+      "DC switch",
+      "L2/L3 switch"
      ],
      "priority": "med",
      "bottleneck": false,
@@ -5578,7 +5581,7 @@
     },
     {
      "id": "transceiver",
-     "name": "Optical Transceivers (SFP / QSFP / 400G)",
+     "name": "Optical Transceivers (SFP / QSFP / 400G-800G)",
      "level": 2,
      "aliases": [
       "Optical Transceivers",
@@ -5588,7 +5591,9 @@
       "800G Modules",
       "Optical Modules",
       "TOSA",
-      "ROSA"
+      "ROSA",
+      "BOSA",
+      "800G module"
      ],
      "priority": "high",
      "bottleneck": true,
