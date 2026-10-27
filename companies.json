@@ -1,13 +1,13 @@
 {
  "registry": "Industry BOM Registry",
  "description": "Company index. Every company mentioned across the registry, the industries it appears in, and its position (exposure) in each. DERIVED from the entry pages by tools/build-companies.mjs — regenerate on every publish, never hand-edit.",
- "generated": "2026-10-26",
+ "generated": "2026-10-27",
  "counts": {
   "companies": 463,
   "industries": 71,
   "mappings": 2134,
   "multi_industry": 201,
-  "rank_changes": 0
+  "rank_changes": 3
  },
  "companies": [
   {
@@ -2174,6 +2174,28 @@
      ]
     },
     {
+     "name": "India Optical Fibre Cable",
+     "slug": "optical-fibre-cable-india",
+     "positions": [
+      {
+       "exposure": "direct",
+       "nodes": [
+        "Bare Optical Fibre (Drawing)",
+        "Cable Types: Duct · ADSS · OPGW · FTTH · IBR",
+        "Demand & Deployment (BharatNet · FTTH · 5G · DC)",
+        "FRP / ARP Rods & IGFR",
+        "Optical Fibre Cable (Finished)"
+       ]
+      },
+      {
+       "exposure": "indirect",
+       "nodes": [
+        "Glass Preform"
+       ]
+      }
+     ]
+    },
+    {
      "name": "India Optical Fibre",
      "slug": "optical-fibre-india",
      "positions": [
@@ -2192,28 +2214,6 @@
        "exposure": "indirect",
        "nodes": [
         "Optical Fibre Preform (Glass)"
-       ]
-      }
-     ]
-    },
-    {
-     "name": "India Optical Fibre Cable",
-     "slug": "optical-fibre-cable-india",
-     "positions": [
-      {
-       "exposure": "direct",
-       "nodes": [
-        "Bare Optical Fibre (Drawing)",
-        "Cable Types: Duct · ADSS · OPGW · FTTH · IBR",
-        "Demand & Deployment (BharatNet · FTTH · 5G · DC)",
-        "FRP / ARP Rods & IGFR",
-        "Optical Fibre Cable (Finished)"
-       ]
-      },
-      {
-       "exposure": "indirect",
-       "nodes": [
-        "Glass Preform"
        ]
       }
      ]
@@ -2316,7 +2316,7 @@
       {
        "exposure": "direct",
        "nodes": [
-        "Ethernet Switches (L2/L3)",
+        "Ethernet Switches (L2/L3, DC)",
         "IP / MPLS Routers",
         "PTN / Packet Transport (MPLS-TP)",
         "Transport System OEM / Integrator"
@@ -4703,6 +4703,19 @@
      ]
     },
     {
+     "name": "India Telecom Chipsets",
+     "slug": "telecom-chipsets-india",
+     "positions": [
+      {
+       "exposure": "indirect",
+       "nodes": [
+        "Base-Station & RAN Silicon",
+        "DSP / Baseband Processing IP"
+       ]
+      }
+     ]
+    },
+    {
      "name": "India Telecom",
      "slug": "telecom-india",
      "positions": [
@@ -4713,19 +4726,6 @@
         "OSS / BSS & Network Software",
         "Optical Transceivers & Modules",
         "Routers, Switches & Optical Transport"
-       ]
-      }
-     ]
-    },
-    {
-     "name": "India Telecom Chipsets",
-     "slug": "telecom-chipsets-india",
-     "positions": [
-      {
-       "exposure": "indirect",
-       "nodes": [
-        "Base-Station & RAN Silicon",
-        "DSP / Baseband Processing IP"
        ]
       }
      ]
@@ -6940,7 +6940,7 @@
       {
        "exposure": "direct",
        "nodes": [
-        "Ethernet Switches (L2/L3)"
+        "Ethernet Switches (L2/L3, DC)"
        ]
       },
       {
