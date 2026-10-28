@@ -1,9 +1,9 @@
 {
  "registry": "Industry BOM Registry",
  "description": "Machine-readable node index. For every entry, the node names it contains plus the owning entry slug. Used for DEDUP (industry+scope already analysed) and LINEAGE (auto-linking a new industry to a parent when its name matches a node name). Update on every publish.",
- "generated": "2026-10-27",
- "last_delta_pass": "2026-10-27",
- "delta_note": "2026-10-27: DAILY ROTATION FULL RE-RUN — telecom-transport-equipment-india (oldest analysis date in the registry at 2026-10-08, tied with telecom-towers-india and telecom-operators-india; taken first in index order after the entries analysed last on 2026-10-26). MOVED: (1) Tejas Q2 FY27 (16-Oct-2026) revenue Rs 406 cr, PAT -Rs 207 cr, order book Rs 2,315 cr vs Rs 1,019 cr at Mar-2025, net debt Rs 4,384 cr — plus a new L1 position in a pan-India strategic OTN tender and a three-state BharatNet-3 IP-router LoI; (2) HFCL Q2 FY27 (19-Oct-2026) revenue Rs 2,542 cr, PAT Rs 394 cr, order book Rs 28,911 cr vs Rs 9,967 cr at Mar-2025; EPC arm lost Rs 121 cr, board restructuring decision due early Nov-2026; Rs 2,666 cr RVNL BharatNet award (9-Oct-2026); (3) ITI FY26 annual report (13-Oct-2026): turnover Rs 2,465 cr, PAT Rs 293 cr, order book Rs 18,637 cr; Q1 FY27 revenue Rs 425 cr with a net loss of Rs 32 cr and an auditors disclaimer of conclusion; order book Rs 13,883 cr at 30-Jun-2026; (4) Netweb Q2 FY27 (24-Oct-2026) revenue Rs 1,323 cr, +335.7% YoY, AI systems 58.4% of revenue — networking is now a minor line; (5) Dixon-Gemtek definitive JV agreement signed 7-Oct-2026, completion targeted 3-Feb-2027 (was a June-2026 term sheet); GX Quantum Photonics ECMS phase-1 (Rs 100 cr) approved, production from Dec-2026; (6) telecom PLI successor (Rs 6,000-7,000 cr, component-focused) still with the Finance Ministry, PLI 1.0 ends 31-Mar-2027; TTDF 2.0 announced at IMC 2026; (7) Budget 2026 customs rationalisation in force — Chapter 85 exemptions lapsed 31-Mar-2026, radio-trunking parts 5%->15%, telecom PCBA BCD unchanged at 15%; (8) Cisco now runs six product lines in India with over half of output exported and silicon design in-country (14-Oct-2026). REGISTRY INTEGRITY: removed a dangling drill-down link to switch-router-silicon-india (no page, index row or node entry ever existed); companies.json updated surgically for this entry only (Tejas, HFCL, Netweb records) because tools/build-companies.mjs is not present in this repository copy.",
+ "generated": "2026-10-28",
+ "last_delta_pass": "2026-10-28",
+ "delta_note": "2026-10-28: DAILY ROTATION FULL RE-RUN — telecom-towers-india (oldest analysis date in the registry at 2026-10-08, tied with telecom-operators-india; taken first in index order after telecom-transport-equipment-india, analysed 2026-10-27). MOVED: (1) Indus Towers Q2 FY27 (27-Oct-2026): revenue Rs 8,516 cr +4.0% YoY, EBITDA Rs 4,633 cr +0.4%, margin 54.4% (-190 bps), PAT Rs 1,793 cr -2.5%, ROCE 19.1% vs 26.3%; towers 270,480 (+5.6%), co-locations 440,153 (+5.9%), tenancy 1.63, sharing revenue per tower Rs 66,532/month (-2.0% YoY); 472 exits. (2) Reliance Jio tenancy renewal is the live overhang — up to 15% of Indus revenue, ~5,000 exits modelled in H2 FY27 (Emkay, Motilal Oswal). (3) NEW REGULATORY REGIME: Telecommunications (Authorisation for Telecommunication Network) Rules, 2026 notified 20-Jul-2026 — IP-I replaced by IP authorisation, new DCIP authorisation covering RAN, complete IBS, WLAN and last-mile transmission; 20-year tenure; IRU arrangements barred. New node active-sharing-dcip added. (4) Indus Africa foray live: approvals in Nigeria, Uganda and Zambia, Airtel Africa anchor tenant, capex <4% of EBITDA, debt-funded. (5) Altius Q1 FY27: revenue Rs 6,025 cr flat, PAT Rs 375 cr +66%, 315,000+ tenancies, distribution Rs 4.02/unit; conversion to public InvIT under way (draft offer document 6-Aug-2026). (6) Market frame added: Crisil Intelligence — 0.86 mn towers FY26 to 1.04-1.09 mn FY31 (4-5% volume CAGR); passive spend Rs 2.0-2.1 tn cumulative FY26-31; tower capex Rs 315 bn FY26 falling to Rs 250-275 bn FY28P; tower O&M Rs 50 bn to Rs 73-76 bn FY31. (7) Q1 FY27 tower fabrication was constrained by West Asia gas supply, and battery supply stayed affected after tower supply recovered. (8) Salasar: FY26 revenue Rs 1,511.9 cr, order book ~Rs 2,500 cr, FY27 target Rs 1,800 cr, EMC merged Jul-2026; quality flags — ED provisional attachment of Rs 98.31 cr (Sep-2026) and Infomerics rating watch negative.",
  "entries": [
   {
    "slug": "power-transmission-india",
@@ -5704,7 +5704,7 @@
    "industry": "Telecom Towers & Passive Infrastructure",
    "scope": "INDIA",
    "path": "industries/telecom-towers-india.html",
-   "analysis_date": "2026-10-08",
+   "analysis_date": "2026-10-28",
    "universe": "NSE/BSE",
    "sector": "Telecom & Networking",
    "derived_from": {
@@ -5742,7 +5742,8 @@
      ],
      "priority": "high",
      "bottleneck": true,
-     "in_universe_coverage": true
+     "in_universe_coverage": true,
+     "coverage_note": "Anchor listed plays: Indus Towers (INDUSTOWER) 270,480 towers at 30-Sep-2026; Altius Telecom Infrastructure Trust (BSE: 543225) ~2.58 lakh sites; Bharti Hexacom (BHARTIHEXA); GTL Infrastructure (GTLINFRA); Bharti Airtel (BHARTIARTL) as parent of Indus."
     },
     {
      "id": "macro-tower-structure",
@@ -5874,6 +5875,23 @@
      "priority": "med",
      "bottleneck": false,
      "in_universe_coverage": true
+    },
+    {
+     "id": "active-sharing-dcip",
+     "name": "Active Sharing & DCIP Layer (new, 2026 rules)",
+     "level": 2,
+     "aliases": [
+      "DCIP",
+      "Digital Connectivity Infrastructure Provider",
+      "Active sharing",
+      "RAN sharing",
+      "Neutral host",
+      "IBS hosting"
+     ],
+     "priority": "med",
+     "bottleneck": false,
+     "in_universe_coverage": true,
+     "coverage_note": "No reported DCIP revenue yet — the authorisation framework was notified 20-Jul-2026. Nearest listed exposures: Indus Towers (INDUSTOWER) and Altius (BSE: 543225) as IP-1 holders that could move to DCIP scope; Crest Digitel (under Altius) already provides IBS. Labelled [INFERENCE]."
     },
     {
      "id": "monitoring-iot",
