@@ -142,18 +142,37 @@ for (const file of readdirSync(DIR).filter((f) => f.endsWith('.html')).sort()) {
 for (const row of rows) {
   row.industries = (row.industries || []).sort((a, b) => a.name.localeCompare(b.name));
   row.industries_count = row.industries.length;
-  let direct = 0, nodesCount = 0;
+  let direct = 0;
+  const nodeSet = new Set();
   for (const ind of row.industries) {
+    let hasDirect = false;
     for (const pos of ind.positions || []) {
-      if (pos.exposure === 'direct') direct += (pos.nodes || []).length;
-      nodesCount += (pos.nodes || []).length;
+      if (pos.exposure === 'direct') hasDirect = true;
+      for (const n of pos.nodes || []) nodeSet.add(n);
     }
+    if (hasDirect) direct += 1;   // industries where it is a direct player
   }
   row.direct_count = direct;
-  row.nodes_count = nodesCount;
+  row.nodes_count = nodeSet.size;  // distinct nodes
 }
 
-rows.sort((a, b) => b.industries_count - a.industries_count || b.nodes_count - a.nodes_count || a.name.localeCompare(b.name));
+rows.sort((a, b) =>
+  b.industries_count - a.industries_count ||
+  b.direct_count - a.direct_count ||
+  b.nodes_count - a.nodes_count ||
+  a.name.localeCompare(b.name));
+
+// rank every company; diff against the previous file so movement is visible
+const keyOf = (c) => c.symbol || String(c.name || '').toLowerCase();
+const prevRank = new Map((base.companies || []).map((c) => [keyOf(c), c.rank]));
+let moved = 0;
+rows.forEach((r, i) => {
+  r.rank = i + 1;
+  const prev = prevRank.get(keyOf(r));
+  r.previous_rank = prev ?? null;
+  r.rank_change = prev ? prev - r.rank : null;   // + moved up, - moved down
+  if (r.rank_change) moved++;
+});
 
 const mappings = rows.reduce((s, c) => s + (c.industries || []).reduce((t, i) => t + (i.positions || []).reduce((u, p) => u + (p.nodes || []).length, 0), 0), 0);
 const multi = rows.filter((c) => c.industries_count > 1).length;
@@ -169,7 +188,7 @@ const out = {
     industries: new Set(rows.flatMap((r) => (r.industries || []).map((i) => i.slug))).size,
     mappings,
     multi_industry: multi,
-    rank_changes: prevCounts.rank_changes || 0,
+    rank_changes: moved,
   },
   companies: rows,
 };
