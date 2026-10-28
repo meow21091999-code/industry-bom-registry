@@ -3,7 +3,7 @@
  "description": "Machine-readable node index. For every entry, the node names it contains plus the owning entry slug. Used for DEDUP (industry+scope already analysed) and LINEAGE (auto-linking a new industry to a parent when its name matches a node name). Update on every publish.",
  "generated": "2026-10-28",
  "last_delta_pass": "2026-10-28",
- "delta_note": "2026-10-28: DAILY ROTATION FULL RE-RUN — telecom-towers-india (oldest analysis date in the registry at 2026-10-08, tied with telecom-operators-india; taken first in index order after telecom-transport-equipment-india, analysed 2026-10-27). MOVED: (1) Indus Towers Q2 FY27 (27-Oct-2026): revenue Rs 8,516 cr +4.0% YoY, EBITDA Rs 4,633 cr +0.4%, margin 54.4% (-190 bps), PAT Rs 1,793 cr -2.5%, ROCE 19.1% vs 26.3%; towers 270,480 (+5.6%), co-locations 440,153 (+5.9%), tenancy 1.63, sharing revenue per tower Rs 66,532/month (-2.0% YoY); 472 exits. (2) Reliance Jio tenancy renewal is the live overhang — up to 15% of Indus revenue, ~5,000 exits modelled in H2 FY27 (Emkay, Motilal Oswal). (3) NEW REGULATORY REGIME: Telecommunications (Authorisation for Telecommunication Network) Rules, 2026 notified 20-Jul-2026 — IP-I replaced by IP authorisation, new DCIP authorisation covering RAN, complete IBS, WLAN and last-mile transmission; 20-year tenure; IRU arrangements barred. New node active-sharing-dcip added. (4) Indus Africa foray live: approvals in Nigeria, Uganda and Zambia, Airtel Africa anchor tenant, capex <4% of EBITDA, debt-funded. (5) Altius Q1 FY27: revenue Rs 6,025 cr flat, PAT Rs 375 cr +66%, 315,000+ tenancies, distribution Rs 4.02/unit; conversion to public InvIT under way (draft offer document 6-Aug-2026). (6) Market frame added: Crisil Intelligence — 0.86 mn towers FY26 to 1.04-1.09 mn FY31 (4-5% volume CAGR); passive spend Rs 2.0-2.1 tn cumulative FY26-31; tower capex Rs 315 bn FY26 falling to Rs 250-275 bn FY28P; tower O&M Rs 50 bn to Rs 73-76 bn FY31. (7) Q1 FY27 tower fabrication was constrained by West Asia gas supply, and battery supply stayed affected after tower supply recovered. (8) Salasar: FY26 revenue Rs 1,511.9 cr, order book ~Rs 2,500 cr, FY27 target Rs 1,800 cr, EMC merged Jul-2026; quality flags — ED provisional attachment of Rs 98.31 cr (Sep-2026) and Infomerics rating watch negative.",
+ "delta_note": "Added Tunnel Boring Machine (India) as a standalone Level-0 entry: no matching node existed in any prior entry, so no lineage link was formed. LIVE facts opened this run: China dual-use export control on TBMs and parts (Announcement 50/2026, in force 18-Nov-2026); the $1.2bn construction-equipment incentive scheme pending Cabinet; BEML TBM technology tie-up award outstanding.",
  "entries": [
   {
    "slug": "power-transmission-india",
@@ -16256,6 +16256,316 @@
      ],
      "priority": "high",
      "bottleneck": true,
+     "in_universe_coverage": false
+    }
+   ]
+  },
+  {
+   "slug": "tunnel-boring-machine-india",
+   "industry": "Tunnel Boring Machine",
+   "scope": "INDIA",
+   "path": "industries/tunnel-boring-machine-india.html",
+   "analysis_date": "2026-10-28",
+   "universe": "NSE/BSE",
+   "sector": "Construction & Tunnelling Equipment",
+   "derived_from": null,
+   "drill_downs": [],
+   "nodes": [
+    {
+     "id": "epc",
+     "name": "TBM Ownership, Tunnelling EPC & Operation",
+     "level": 1,
+     "aliases": [
+      "tunnelling EPC",
+      "TBM contractor",
+      "TBM owner",
+      "metro tunnelling",
+      "tunnel contractor",
+      "Afcons",
+      "Afcons Infrastructure",
+      "L&T tunnelling",
+      "J Kumar",
+      "Cemindia",
+      "NCC tunnelling",
+      "Patel Engineering",
+      "HCC",
+      "Dilip Buildcon"
+     ],
+     "priority": "high",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "oem",
+     "name": "TBM Design, Integration & Assembly (OEM)",
+     "level": 2,
+     "aliases": [
+      "TBM OEM",
+      "tunnel boring machine manufacturer",
+      "TBM assembly",
+      "Herrenknecht",
+      "Robbins",
+      "Terratec",
+      "CRCHI",
+      "STEC",
+      "Komatsu",
+      "BEML TBM"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "cutters",
+     "name": "Cutterhead, Disc Cutters & Cutting Tools",
+     "level": 2,
+     "aliases": [
+      "cutterhead",
+      "disc cutter",
+      "cutter ring",
+      "roller cutter",
+      "cutting tools",
+      "scraper",
+      "ripper",
+      "wear plate",
+      "tungsten carbide cutter",
+      "AIA Engineering",
+      "Kennametal"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "maindrive",
+     "name": "Main Bearing, Main Drive & Gearboxes",
+     "level": 2,
+     "aliases": [
+      "main bearing",
+      "slewing bearing",
+      "cutter head bearing",
+      "three-row cylindrical roller bearing",
+      "main drive",
+      "planetary gearbox",
+      "erector bearing",
+      "Liebherr",
+      "Rothe Erde",
+      "SKF",
+      "Timken",
+      "Schaeffler",
+      "Elecon"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "shield",
+     "name": "Shield, Thrust Rams, Articulation & Tail Seal",
+     "level": 2,
+     "aliases": [
+      "shield",
+      "shield can",
+      "thrust ram",
+      "thrust jack",
+      "articulation",
+      "tail seal",
+      "wire brush seal",
+      "abrasion resistant plate",
+      "AR plate"
+     ],
+     "priority": "med",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "muck",
+     "name": "Muck Removal — Screw Conveyor / Slurry Circuit & Separation Plant",
+     "level": 2,
+     "aliases": [
+      "screw conveyor",
+      "slurry TBM",
+      "slurry circuit",
+      "slurry pump",
+      "separation plant",
+      "muck removal",
+      "muck haulage",
+      "bentonite",
+      "Kirloskar Brothers",
+      "WPIL"
+     ],
+     "priority": "med",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "lining",
+     "name": "Segment Erector & Precast Tunnel Lining",
+     "level": 2,
+     "aliases": [
+      "segment erector",
+      "erector",
+      "precast segment",
+      "tunnel lining",
+      "tubbing",
+      "segment ring",
+      "casting yard",
+      "segment mould",
+      "UltraTech",
+      "Ambuja",
+      "Dalmia",
+      "SAIL"
+     ],
+     "priority": "high",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "hydraulics",
+     "name": "Hydraulic Power Pack, Cylinders & Valves",
+     "level": 2,
+     "aliases": [
+      "hydraulic power pack",
+      "hydraulic cylinder",
+      "proportional valve",
+      "hydraulics",
+      "Yuken",
+      "Dynamatic"
+     ],
+     "priority": "med",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "drives",
+     "name": "Electrical Power, VFD Drives, Motors & Cables",
+     "level": 2,
+     "aliases": [
+      "VFD",
+      "variable frequency drive",
+      "main drive motor",
+      "trailing cable",
+      "switchgear",
+      "ABB",
+      "Siemens",
+      "CG Power",
+      "Polycab",
+      "KEI"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "guidance",
+     "name": "Guidance, Control & Telemetry",
+     "level": 2,
+     "aliases": [
+      "tunnel guidance",
+      "guidance system",
+      "VMT",
+      "PLC",
+      "SCADA",
+      "TBM telemetry",
+      "automated steering",
+      "TBM software"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "backup",
+     "name": "Backup Gantries, Ventilation, Compressed Air & Site Logistics",
+     "level": 2,
+     "aliases": [
+      "backup gantry",
+      "gantry",
+      "ventilation",
+      "compressed air",
+      "dewatering pump",
+      "locomotive",
+      "multi service vehicle",
+      "Elgi",
+      "Kirloskar Pneumatic"
+     ],
+     "priority": "low",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "consumables",
+     "name": "Ground Conditioning, Bentonite, Foam & Lubricants",
+     "level": 2,
+     "aliases": [
+      "foam agent",
+      "soil conditioning",
+      "bentonite",
+      "polymer",
+      "grease",
+      "hydraulic oil",
+      "lubricant",
+      "Ashapura",
+      "Castrol",
+      "Gulf Oil",
+      "BASF"
+     ],
+     "priority": "med",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "metals",
+     "name": "Heavy Forgings, Castings & Wear Steel",
+     "level": 3,
+     "aliases": [
+      "forging",
+      "casting",
+      "wear steel",
+      "high chrome",
+      "cutter hub",
+      "cutter shaft",
+      "bearing ring",
+      "42CrMo4",
+      "Bharat Forge",
+      "JSW Steel",
+      "Tata Steel"
+     ],
+     "priority": "med",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "refurb",
+     "name": "Refurbishment, Remanufacture & Cutter Rebuild",
+     "level": 3,
+     "aliases": [
+      "remanufacture",
+      "refurbishment",
+      "TBM rebuild",
+      "cutter rebuild",
+      "remanufacturing technology",
+      "second-hand TBM"
+     ],
+     "priority": "med",
+     "bottleneck": true,
+     "in_universe_coverage": false
+    },
+    {
+     "id": "moulds",
+     "name": "Segment Moulds & Precast Plants",
+     "level": 3,
+     "aliases": [
+      "segment mould",
+      "precast plant",
+      "carousel",
+      "short line mould",
+      "CBE",
+      "Unicrane",
+      "Winsteel"
+     ],
+     "priority": "low",
+     "bottleneck": false,
      "in_universe_coverage": false
     }
    ]
