@@ -3,7 +3,7 @@
  "description": "Machine-readable node index. For every entry, the node names it contains plus the owning entry slug. Used for DEDUP (industry+scope already analysed) and LINEAGE (auto-linking a new industry to a parent when its name matches a node name). Update on every publish.",
  "generated": "2026-10-28",
  "last_delta_pass": "2026-10-28",
- "delta_note": "2026-10-28: DAILY ROTATION FULL RE-RUN — telecom-towers-india (oldest analysis date in the registry at 2026-10-08, tied with telecom-operators-india; taken first in index order after telecom-transport-equipment-india, analysed 2026-10-27). MOVED: (1) Indus Towers Q2 FY27 (27-Oct-2026): revenue Rs 8,516 cr +4.0% YoY, EBITDA Rs 4,633 cr +0.4%, margin 54.4% (-190 bps), PAT Rs 1,793 cr -2.5%, ROCE 19.1% vs 26.3%; towers 270,480 (+5.6%), co-locations 440,153 (+5.9%), tenancy 1.63, sharing revenue per tower Rs 66,532/month (-2.0% YoY); 472 exits. (2) Reliance Jio tenancy renewal is the live overhang — up to 15% of Indus revenue, ~5,000 exits modelled in H2 FY27 (Emkay, Motilal Oswal). (3) NEW REGULATORY REGIME: Telecommunications (Authorisation for Telecommunication Network) Rules, 2026 notified 20-Jul-2026 — IP-I replaced by IP authorisation, new DCIP authorisation covering RAN, complete IBS, WLAN and last-mile transmission; 20-year tenure; IRU arrangements barred. New node active-sharing-dcip added. (4) Indus Africa foray live: approvals in Nigeria, Uganda and Zambia, Airtel Africa anchor tenant, capex <4% of EBITDA, debt-funded. (5) Altius Q1 FY27: revenue Rs 6,025 cr flat, PAT Rs 375 cr +66%, 315,000+ tenancies, distribution Rs 4.02/unit; conversion to public InvIT under way (draft offer document 6-Aug-2026). (6) Market frame added: Crisil Intelligence — 0.86 mn towers FY26 to 1.04-1.09 mn FY31 (4-5% volume CAGR); passive spend Rs 2.0-2.1 tn cumulative FY26-31; tower capex Rs 315 bn FY26 falling to Rs 250-275 bn FY28P; tower O&M Rs 50 bn to Rs 73-76 bn FY31. (7) Q1 FY27 tower fabrication was constrained by West Asia gas supply, and battery supply stayed affected after tower supply recovered. (8) Salasar: FY26 revenue Rs 1,511.9 cr, order book ~Rs 2,500 cr, FY27 target Rs 1,800 cr, EMC merged Jul-2026; quality flags — ED provisional attachment of Rs 98.31 cr (Sep-2026) and Infomerics rating watch negative.",
+ "delta_note": "2026-10-28: NEW ENTRY — ev-powertrain-traction-india (India, NSE/BSE, depth-first). Derived from vehicles-auto-components-india (Traction Motor & Magnets, Power Electronics / Inverter, Thermal, Charging & E-Axle) and battery-management-system-india (BMS Design, Firmware & Assembly). LIVE facts as of this run: China has granted no rare-earth magnet import licences to Indian automakers, so MHI deferred the PM E-DRIVE PMP traction-motor/controller milestone for e-buses and e-trucks a third time — from 1-Sep-2026 to 1-Apr-2027 (S.O. 4871(E), 3-Sep-2026). REPM scheme (Rs 7,280 crore, 6,000 MTPA) RFP issued 20-Mar-2026, pre-bid 7-Apr-2026, no capacity yet. PLI-Auto under 10% of outlay disbursed. FY26 market frame: 2.45 mn EVs retailed (+24.6%), e-2W 1.40 mn (+21.8%, 6.54% penetration), e-3W 830,818 (+19.0%, 61%), e-PV 199,590 (+83.6%, 4.2%), e-CV 19,648 (+122%). Company frame: Sona Comstar FY26 revenue Rs 4,475 crore (+26%), BEV Rs 1,154 crore = 35% of automotive product revenue, 67 EV programmes; Uno Minda Green Mobility Rs 1,388 crore = ~7% of Rs 19,589 crore; Bosch–Tata AutoComp e-axle/traction-motor JV announced 18-Mar-2026.",
  "entries": [
   {
    "slug": "power-transmission-india",
@@ -7666,7 +7666,8 @@
     "node": "Battery Management System (BMS)"
    },
    "drill_downs": [
-    "pcb-electronic-components-india"
+    "pcb-electronic-components-india",
+    "ev-powertrain-traction-india"
    ],
    "nodes": [
     {
@@ -9268,7 +9269,8 @@
    "sector": "Automotive & Mobility",
    "derived_from": null,
    "drill_downs": [
-    "display-manufacturing-india"
+    "display-manufacturing-india",
+    "ev-powertrain-traction-india"
    ],
    "nodes": [
     {
@@ -16001,6 +16003,192 @@
       "semiconductor gas demand"
      ],
      "priority": "high",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    }
+   ]
+  },
+  {
+   "slug": "ev-powertrain-traction-india",
+   "industry": "EV Powertrain & Traction Systems",
+   "scope": "INDIA",
+   "path": "industries/ev-powertrain-traction-india.html",
+   "analysis_date": "2026-10-28",
+   "universe": "NSE/BSE",
+   "sector": "Automotive & Mobility",
+   "derived_from": {
+    "industry": "Vehicles & Auto Components",
+    "slug": "vehicles-auto-components-india",
+    "node": "Traction Motor & Magnets"
+   },
+   "derived_from_all": [
+    {
+     "industry": "Vehicles & Auto Components",
+     "slug": "vehicles-auto-components-india",
+     "node": "Traction Motor & Magnets / Power Electronics / Inverter / Thermal, Charging & E-Axle"
+    },
+    {
+     "industry": "Battery Management System (BMS)",
+     "slug": "battery-management-system-india",
+     "node": "BMS Design, Firmware & Assembly"
+    }
+   ],
+   "drill_downs": [],
+   "related": [
+    {
+     "slug": "rare-earth-magnets-india",
+     "node": "Sintered NdFeB Magnets",
+     "note": "The magnet bottleneck node."
+    },
+    {
+     "slug": "power-semiconductor-osat-india",
+     "node": "Power module packaging",
+     "note": "OSAT / module assembly route."
+    },
+    {
+     "slug": "li-ion-cell-manufacturing-india",
+     "node": "Cells",
+     "note": "The battery side of the EV BOM."
+    },
+    {
+     "slug": "machine-tools-metrology-india",
+     "node": "Machine tools",
+     "note": "Motor and inverter production equipment."
+    }
+   ],
+   "nodes": [
+    {
+     "id": "motor",
+     "name": "Traction Motor Assembly (PMSM / BLDC)",
+     "level": 1,
+     "aliases": [],
+     "priority": "high",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "magnets",
+     "name": "Sintered NdFeB Magnets (REPM)",
+     "level": 2,
+     "aliases": [],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "lamination",
+     "name": "Laminations & CRNO Electrical Steel",
+     "level": 2,
+     "aliases": [],
+     "priority": "high",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "winding",
+     "name": "Windings — Enamelled Copper Wire",
+     "level": 2,
+     "aliases": [],
+     "priority": "med",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "mech",
+     "name": "Shaft, Bearings, Housing & Resolver",
+     "level": 2,
+     "aliases": [],
+     "priority": "med",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "powermodule",
+     "name": "Power Module (IGBT / SiC)",
+     "level": 2,
+     "aliases": [],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "controlic",
+     "name": "Gate Driver, MCU & Control ICs",
+     "level": 2,
+     "aliases": [],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": false
+    },
+    {
+     "id": "dclink",
+     "name": "DC-Link Capacitor, Busbar & Current Sensing",
+     "level": 2,
+     "aliases": [],
+     "priority": "med",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "pcba",
+     "name": "Inverter PCBA, SMT & Firmware Flashing",
+     "level": 2,
+     "aliases": [],
+     "priority": "med",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "gearbox",
+     "name": "Reduction Gear, Differential & E-Axle",
+     "level": 2,
+     "aliases": [],
+     "priority": "high",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "software",
+     "name": "Motor Control Software, VCU & Functional Safety",
+     "level": 2,
+     "aliases": [],
+     "priority": "med",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "thermal",
+     "name": "Powertrain Thermal & Cooling",
+     "level": 2,
+     "aliases": [],
+     "priority": "med",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "test",
+     "name": "Test, Validation & Homologation",
+     "level": 2,
+     "aliases": [],
+     "priority": "med",
+     "bottleneck": true,
+     "in_universe_coverage": false
+    },
+    {
+     "id": "equipment",
+     "name": "Motor & Inverter Manufacturing Equipment",
+     "level": 2,
+     "aliases": [],
+     "priority": "med",
+     "bottleneck": true,
+     "in_universe_coverage": false
+    },
+    {
+     "id": "oem",
+     "name": "OEM Integration & Demand",
+     "level": 1,
+     "aliases": [],
+     "priority": "med",
      "bottleneck": false,
      "in_universe_coverage": true
     }
