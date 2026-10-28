@@ -3,7 +3,7 @@
  "description": "Machine-readable node index. For every entry, the node names it contains plus the owning entry slug. Used for DEDUP (industry+scope already analysed) and LINEAGE (auto-linking a new industry to a parent when its name matches a node name). Update on every publish.",
  "generated": "2026-10-28",
  "last_delta_pass": "2026-10-28",
- "delta_note": "Added Tunnel Boring Machine (India) as a standalone Level-0 entry: no matching node existed in any prior entry, so no lineage link was formed. LIVE facts opened this run: China dual-use export control on TBMs and parts (Announcement 50/2026, in force 18-Nov-2026); the $1.2bn construction-equipment incentive scheme pending Cabinet; BEML TBM technology tie-up award outstanding.",
+ "delta_note": "Added Room AC & White-Goods Components (India) as a Level-0 entry, linked bidirectionally to Electrical & Electronic Equipment -> node 'Consumer Electronics & White Goods' (user-confirmed). LIVE facts: PLI White Goods extension request pending with DPIIT; compressor QCO import relief to 31-Mar-2027; copper IGT QCO exemption to 30-Nov-2026; wrought-aluminium QCOs from 1-Dec-2026.",
  "entries": [
   {
    "slug": "power-transmission-india",
@@ -8357,7 +8357,8 @@
     "smart-meters-india",
     "ems-electronics-manufacturing-india",
     "power-semiconductor-osat-india",
-    "pcb-electronic-components-india"
+    "pcb-electronic-components-india",
+    "room-ac-white-goods-components-india"
    ],
    "nodes": [
     {
@@ -16563,6 +16564,342 @@
       "CBE",
       "Unicrane",
       "Winsteel"
+     ],
+     "priority": "low",
+     "bottleneck": false,
+     "in_universe_coverage": false
+    }
+   ]
+  },
+  {
+   "slug": "room-ac-white-goods-components-india",
+   "industry": "Room AC & White-Goods Components",
+   "scope": "INDIA",
+   "path": "industries/room-ac-white-goods-components-india.html",
+   "analysis_date": "2026-10-28",
+   "universe": "NSE/BSE",
+   "sector": "Consumer Durables & Components",
+   "derived_from": "electrical-electronic-equipment-india",
+   "drill_downs": [],
+   "related": [],
+   "nodes": [
+    {
+     "id": "comp",
+     "name": "Hermetic & Rotary Compressors",
+     "level": 2,
+     "aliases": [
+      "compressor",
+      "rotary compressor",
+      "hermetic compressor",
+      "AC compressor",
+      "inverter compressor"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "refrig",
+     "name": "Refrigerant Gases (R-32 / R-410A / R-290)",
+     "level": 2,
+     "aliases": [
+      "refrigerant",
+      "R-32",
+      "R32",
+      "HFC-32",
+      "R-410A",
+      "R-290",
+      "refrigerant gas"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "hx",
+     "name": "Heat Exchangers (Coil&ndash;Fin)",
+     "level": 2,
+     "aliases": [
+      "heat exchanger",
+      "evaporator",
+      "condenser coil",
+      "coil",
+      "fin and tube",
+      "microchannel"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "valves",
+     "name": "Expansion Valves, Brass & Solenoids",
+     "level": 2,
+     "aliases": [
+      "expansion valve",
+      "EEV",
+      "brass",
+      "solenoid",
+      "service valve"
+     ],
+     "priority": "med",
+     "bottleneck": false,
+     "in_universe_coverage": false
+    },
+    {
+     "id": "motors",
+     "name": "Fan, Blower & Compressor Motors (BLDC)",
+     "level": 2,
+     "aliases": [
+      "BLDC motor",
+      "fan motor",
+      "blower motor",
+      "compressor motor"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "fans",
+     "name": "Cross-Flow & Axial Fans",
+     "level": 2,
+     "aliases": [
+      "cross flow fan",
+      "CFF",
+      "axial fan",
+      "blower"
+     ],
+     "priority": "med",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "ctrl",
+     "name": "PCBA, Control Assemblies & Remotes",
+     "level": 2,
+     "aliases": [
+      "PCBA",
+      "control assembly",
+      "inverter board",
+      "remote",
+      "controller"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "display",
+     "name": "Displays, Sensors & Remotes",
+     "level": 2,
+     "aliases": [
+      "display",
+      "sensor",
+      "thermistor",
+      "Wi-Fi module"
+     ],
+     "priority": "med",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "copper",
+     "name": "Inner-Grooved Copper Tube (IGT)",
+     "level": 2,
+     "aliases": [
+      "copper tube",
+      "IGT",
+      "inner grooved copper tube",
+      "ACR tube"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "alu",
+     "name": "Aluminium Fin Stock, Foil & Sheet",
+     "level": 2,
+     "aliases": [
+      "aluminium fin",
+      "fin stock",
+      "aluminium foil",
+      "hydrophilic fin"
+     ],
+     "priority": "high",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "steel",
+     "name": "Steel Sheet, CRCA & Sheet-Metal Parts",
+     "level": 2,
+     "aliases": [
+      "CRCA",
+      "sheet metal",
+      "press parts",
+      "steel sheet"
+     ],
+     "priority": "med",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "plastics",
+     "name": "Injection Moulding, EPS & Packaging",
+     "level": 2,
+     "aliases": [
+      "injection moulding",
+      "plastic moulding",
+      "EPS",
+      "cabinet"
+     ],
+     "priority": "med",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "fridgecomp",
+     "name": "Refrigerator Compressors",
+     "level": 2,
+     "aliases": [
+      "refrigerator compressor",
+      "reciprocating compressor"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "wm",
+     "name": "Washing-Machine Drums, Motors & Assemblies",
+     "level": 2,
+     "aliases": [
+      "washing machine",
+      "drum",
+      "gearbox",
+      "universal motor"
+     ],
+     "priority": "med",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "insul",
+     "name": "PU Foam, Insulation & Gaskets",
+     "level": 2,
+     "aliases": [
+      "PU foam",
+      "polyurethane",
+      "insulation",
+      "gasket"
+     ],
+     "priority": "low",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "pcb",
+     "name": "Bare PCB & PCB Assembly",
+     "level": 2,
+     "aliases": [
+      "PCB",
+      "bare PCB",
+      "PCBA",
+      "multilayer PCB",
+      "HDI"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "semis",
+     "name": "Semiconductors (IPM, MCU, Gate Drivers)",
+     "level": 2,
+     "aliases": [
+      "semiconductor",
+      "IPM",
+      "MCU",
+      "IGBT",
+      "gate driver",
+      "power module"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "tooling",
+     "name": "Dies, Moulds & Tooling",
+     "level": 2,
+     "aliases": [
+      "die",
+      "mould",
+      "tooling",
+      "toolroom"
+     ],
+     "priority": "med",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "equipment",
+     "name": "Coil Lines, Presses & Process Equipment",
+     "level": 2,
+     "aliases": [
+      "fin press",
+      "SMT line",
+      "injection moulding machine",
+      "leak detector",
+      "process equipment",
+      "capital equipment"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": false
+    },
+    {
+     "id": "test",
+     "name": "Test Labs, BEE/BIS Certification",
+     "level": 2,
+     "aliases": [
+      "test lab",
+      "BEE",
+      "BIS",
+      "calorimeter",
+      "ISEER",
+      "NABL",
+      "QCO"
+     ],
+     "priority": "med",
+     "bottleneck": true,
+     "in_universe_coverage": false
+    },
+    {
+     "id": "service",
+     "name": "Service, Spares & Refrigerant Recovery",
+     "level": 2,
+     "aliases": [
+      "service",
+      "spares",
+      "aftermarket",
+      "repair"
+     ],
+     "priority": "med",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "recycle",
+     "name": "E-Waste, EPR & Scrap Recovery",
+     "level": 2,
+     "aliases": [
+      "recycling",
+      "e-waste",
+      "EPR",
+      "scrap"
      ],
      "priority": "low",
      "bottleneck": false,
