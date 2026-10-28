@@ -33,13 +33,14 @@
   </header>
 
   <div style="display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;background:var(--gold-dim);border:1px solid var(--gold);border-radius:10px;padding:14px 18px;margin-bottom:24px;">
-    <span style="font-size:13px;line-height:1.5;"><strong style="color:var(--text);">Drill-down available &rarr;</strong> <span style="color:var(--text-dim);">5 deep-dive entries branch from this page.</span></span>
+    <span style="font-size:13px;line-height:1.5;"><strong style="color:var(--text);">Drill-down available &rarr;</strong> <span style="color:var(--text-dim);">6 deep-dive entries branch from this page.</span></span>
     <span style="display:flex;gap:10px;flex-wrap:wrap;">
       <a href="power-transformers-india.html" style="font-family:var(--font-mono);font-size:12px;font-weight:600;color:var(--gold);text-decoration:none;border:1px solid var(--gold);border-radius:6px;padding:6px 12px;white-space:nowrap;background:var(--surface);">Power &amp; Distribution Transformers &rarr;</a>
       <a href="smart-meters-india.html" style="font-family:var(--font-mono);font-size:12px;font-weight:600;color:var(--gold);text-decoration:none;border:1px solid var(--gold);border-radius:6px;padding:6px 12px;white-space:nowrap;background:var(--surface);">Smart Meters &rarr;</a>
       <a href="ems-electronics-manufacturing-india.html" style="font-family:var(--font-mono);font-size:12px;font-weight:600;color:var(--gold);text-decoration:none;border:1px solid var(--gold);border-radius:6px;padding:6px 12px;white-space:nowrap;background:var(--surface);">EMS / ODM &rarr;</a>
       <a href="power-semiconductor-osat-india.html" style="font-family:var(--font-mono);font-size:12px;font-weight:600;color:var(--gold);text-decoration:none;border:1px solid var(--gold);border-radius:6px;padding:6px 12px;white-space:nowrap;background:var(--surface);">Power Semiconductors &amp; OSAT &rarr;</a>
       <a href="pcb-electronic-components-india.html" style="font-family:var(--font-mono);font-size:12px;font-weight:600;color:var(--gold);text-decoration:none;border:1px solid var(--gold);border-radius:6px;padding:6px 12px;white-space:nowrap;background:var(--surface);">PCB &amp; Electronic Components &rarr;</a>
+      <a href="room-ac-white-goods-components-india.html" style="font-family:var(--font-mono);font-size:12px;font-weight:600;color:var(--gold);text-decoration:none;border:1px solid var(--gold);border-radius:6px;padding:6px 12px;white-space:nowrap;background:var(--surface);">Room AC &amp; White-Goods Components &rarr;</a>
     </span>
   </div>
 
@@ -720,7 +721,7 @@ const NODES = [
     ] }
 ];
 
-const RELATED = {"motors": [["servo-motors-drives-india.html", "Servo Motors &amp; Drives &rarr; Servo Motors &amp; Frameless Torque Motors"]]};
+const RELATED = {"motors": [["servo-motors-drives-india.html", "Servo Motors &amp; Drives &rarr; Servo Motors &amp; Frameless Torque Motors"]], "consumer": [["room-ac-white-goods-components-india.html", "Room AC &amp; White-Goods Components &rarr; the component ecosystem behind room ACs, refrigerators and washing machines"]]};
 NODES.forEach(n => { if (RELATED[n.id]) n.links = RELATED[n.id]; });
 const nodesEl = document.getElementById('mapNodes');
 const panelEl = document.getElementById('mapPanel');
