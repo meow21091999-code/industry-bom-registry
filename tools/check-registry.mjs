@@ -141,6 +141,10 @@ for (const file of files) {
     problems.push('contains [cite:...] markers (must be plain prose)');
   }
 
+  if (/<div class="co__ticker"/.test(html)) {
+    problems.push('company ticker must be a <span> inside .co__name, not a separate <div>');
+  }
+
   // data-script integrity: NODES must be declared once and parse.
   // A duplicated or malformed NODES kills the page's whole company-map script,
   // and the page then silently contributes nothing to companies.json.
@@ -170,8 +174,12 @@ for (const file of files) {
   if (isIndex) {
     const forbidden = [...used].filter(c => INDEX_FORBIDDEN.includes(c));
     if (forbidden.length) problems.push('index must not carry metric-card / metric-modal classes: ' + forbidden.join(', '));
-  } else if (!CANONICAL_SAMPLES.some(c => used.has(c))) {
+  } else if (!isView && !CANONICAL_SAMPLES.some(c => used.has(c))) {
     problems.push('entry page has no canonical component classes (metric-card / digest / metric-modal)');
+  }
+
+  if (!isIndex && !isView && !/Market\s*&(?:amp;)?\s*growth/i.test(html)) {
+    problems.push('missing the MANDATORY Market & growth digest block');
   }
 
   // component-CSS resolution: every used component class must be defined somewhere
