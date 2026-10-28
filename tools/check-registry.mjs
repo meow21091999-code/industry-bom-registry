@@ -19,6 +19,7 @@
  */
 import { readFileSync, readdirSync, existsSync, statSync } from 'node:fs';
 import { join, basename } from 'node:path';
+import vm from 'node:vm';
 
 const SHARED_CSS = 'assets/registry.css';
 
@@ -103,10 +104,29 @@ if (!files.length) {
   process.exit(0);
 }
 
+// Bracket-matched slice of a JS array literal, string-aware.
+function extractArray(s, startIdx) {
+  let depth = 0, inStr = null, esc = false;
+  for (let i = startIdx; i < s.length; i++) {
+    const ch = s[i];
+    if (inStr) {
+      if (esc) esc = false;
+      else if (ch === '\\') esc = true;
+      else if (ch === inStr) inStr = null;
+      continue;
+    }
+    if (ch === "'" || ch === '"' || ch === '`') { inStr = ch; continue; }
+    if (ch === '[') depth++;
+    else if (ch === ']') { depth--; if (depth === 0) return s.slice(startIdx, i + 1); }
+  }
+  return null;
+}
+
 let failures = 0;
 for (const file of files) {
   const html = readFileSync(file, 'utf8');
   const isIndex = basename(file) === 'index.html';
+  const isView = file.includes('views/');
   const problems = [];
 
   if (!/registry\.css/.test(html)) {
@@ -119,6 +139,32 @@ for (const file of files) {
 
   if (/\[cite:[^\]]+\]/.test(html)) {
     problems.push('contains [cite:...] markers (must be plain prose)');
+  }
+
+  // data-script integrity: NODES must be declared once and parse.
+  // A duplicated or malformed NODES kills the page's whole company-map script,
+  // and the page then silently contributes nothing to companies.json.
+  if (!isIndex && !isView) {
+    const decls = (html.match(/(?:const|let|var)\s+NODES\s*=/g) || []).length;
+    if (decls === 0) {
+      problems.push('no NODES declaration - the company map has no data');
+    } else if (decls > 1) {
+      problems.push('NODES is declared ' + decls + ' times - a duplicate declaration breaks the page script');
+    } else {
+      const m = html.match(/(?:const|let|var)\s+NODES\s*=\s*/);
+      const b = html.indexOf('[', m.index + m[0].length - 1);
+      const arr = b >= 0 ? extractArray(html, b) : null;
+      if (!arr) {
+        problems.push('NODES array is unterminated (unbalanced brackets) - the company map cannot parse');
+      } else {
+        try {
+          const nodes = vm.runInNewContext('(' + arr + ')', {}, { timeout: 2000 });
+          if (!Array.isArray(nodes)) problems.push('NODES is not an array');
+        } catch (e) {
+          problems.push('NODES does not parse: ' + String((e && e.message) || e).slice(0, 90));
+        }
+      }
+    }
   }
 
   if (isIndex) {
