@@ -1,9 +1,9 @@
 {
  "registry": "Industry BOM Registry",
  "description": "Machine-readable node index. For every entry, the node names it contains plus the owning entry slug. Used for DEDUP (industry+scope already analysed) and LINEAGE (auto-linking a new industry to a parent when its name matches a node name). Update on every publish.",
- "generated": "2026-10-28",
- "last_delta_pass": "2026-10-28",
- "delta_note": "Added Room AC & White-Goods Components (India) as a Level-0 entry, linked bidirectionally to Electrical & Electronic Equipment -> node 'Consumer Electronics & White Goods' (user-confirmed). LIVE facts: PLI White Goods extension request pending with DPIIT; compressor QCO import relief to 31-Mar-2027; copper IGT QCO exemption to 30-Nov-2026; wrought-aluminium QCOs from 1-Dec-2026.",
+ "generated": "2026-10-29",
+ "last_delta_pass": "2026-10-29",
+ "delta_note": "Daily rotation re-run of Telecom Operators (India). Delta pass refreshed every [LIVE] fact: TRAI subscribers to Aug-2026 (1,360.70 mn total; wireless 1,312.25 mn); TRAI QPIR QE Jun-2026 (ARPU Rs 187.12, 84,424 PB data, Rs 7.13/GB); TRAI yearly FY26 (AGR Rs 3,34,659 cr, +10.44%); DoT 5G BTS 593,244 at 30-Sep-2026. Regime changes: no spectrum auction in FY26 or FY27 (TRAI recs of 24-Feb-2026 still with DoT); Vi AGR finalised at Rs 64,046 cr on 30-Apr-2026 and GoI stake ~49%; Jio Platforms listed on NSE (JPL) and BSE (545004) on 28-Oct-2026, converting the largest operator from a conglomerate segment to a direct listed exposure; DCC approved a 5% AGR satellite spectrum charge on 3-Sep-2026, Cabinet approval pending. Corrections to the 2026-10-08 pass: ARPU Rs 194.57 replaced by Rs 187.12; Vi government stake ~23% replaced by ~49%.",
  "entries": [
   {
    "slug": "power-transmission-india",
@@ -5930,7 +5930,7 @@
    "industry": "Telecom Operators & Service Providers",
    "scope": "INDIA",
    "path": "industries/telecom-operators-india.html",
-   "analysis_date": "2026-10-08",
+   "analysis_date": "2026-10-29",
    "universe": "NSE/BSE",
    "sector": "Telecom & Networking",
    "derived_from": {
@@ -5948,7 +5948,11 @@
       "MNO",
       "telco",
       "operators",
-      "mobile operators"
+      "mobile operators",
+      "Jio Platforms",
+      "Jio",
+      "JPL",
+      "Reliance Jio"
      ],
      "priority": "high",
      "bottleneck": true,
@@ -6100,6 +6104,23 @@
      ],
      "priority": "med",
      "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "satcom",
+     "name": "Satellite Broadband (Satcom)",
+     "level": 3,
+     "aliases": [
+      "satcom",
+      "satellite broadband",
+      "GMPCS",
+      "Starlink",
+      "OneWeb",
+      "Jio Satellite",
+      "LEO broadband"
+     ],
+     "priority": "med",
+     "bottleneck": true,
      "in_universe_coverage": true
     },
     {
