@@ -3,7 +3,7 @@
  "description": "Machine-readable node index. For every entry, the node names it contains plus the owning entry slug. Used for DEDUP (industry+scope already analysed) and LINEAGE (auto-linking a new industry to a parent when its name matches a node name). Update on every publish.",
  "generated": "2026-10-29",
  "last_delta_pass": "2026-10-29",
- "delta_note": "Daily rotation re-run of Telecom Operators (India). Delta pass refreshed every [LIVE] fact: TRAI subscribers to Aug-2026 (1,360.70 mn total; wireless 1,312.25 mn); TRAI QPIR QE Jun-2026 (ARPU Rs 187.12, 84,424 PB data, Rs 7.13/GB); TRAI yearly FY26 (AGR Rs 3,34,659 cr, +10.44%); DoT 5G BTS 593,244 at 30-Sep-2026. Regime changes: no spectrum auction in FY26 or FY27 (TRAI recs of 24-Feb-2026 still with DoT); Vi AGR finalised at Rs 64,046 cr on 30-Apr-2026 and GoI stake ~49%; Jio Platforms listed on NSE (JPL) and BSE (545004) on 28-Oct-2026, converting the largest operator from a conglomerate segment to a direct listed exposure; DCC approved a 5% AGR satellite spectrum charge on 3-Sep-2026, Cabinet approval pending. Corrections to the 2026-10-08 pass: ARPU Rs 194.57 replaced by Rs 187.12; Vi government stake ~23% replaced by ~49%.",
+ "delta_note": "New entry: Shipbuilding & Ship Repair (India), depth-first, NSE/BSE universe, 16 nodes, 16 companies. Grounding pass dated 2026-10-29: BIMCO/Clarksons order-book shares at 1-Sep-2026 (India 1.1 mn CGT, 0.5%, rank 12; global 203.2 mn CGT; China 64%, Korea 19%, Japan 6%); India GT output 40,923 GT (2024) -> 57,637 GT (2025) per UNCTAD via MoPSW; SBFAS/SbDS guidelines 26-Dec-2025 and SBFAP amendment 14-May-2026; MDF guidelines 20-Feb-2026 with SBI Ventures as MIF manager from 26-May-2026; Vadinar repair cluster CCEA approval 05-May-2026; SbDS pipeline status to 01-Oct-2026 (5 greenfield clusters with conditional IPA; 10 brownfield applications, 4 IPA). No prior node in this registry matched 'shipbuilding' or 'ship repair', so the entry is standalone with no derived_from link.",
  "entries": [
   {
    "slug": "power-transmission-india",
@@ -16925,6 +16925,294 @@
      "priority": "low",
      "bottleneck": false,
      "in_universe_coverage": false
+    }
+   ]
+  },
+  {
+   "slug": "shipbuilding-ship-repair-india",
+   "industry": "Shipbuilding & Ship Repair",
+   "scope": "INDIA",
+   "path": "industries/shipbuilding-ship-repair-india.html",
+   "analysis_date": "2026-10-29",
+   "universe": "NSE/BSE",
+   "sector": "Marine & Shipbuilding",
+   "derived_from": null,
+   "drill_downs": [],
+   "nodes": [
+    {
+     "id": "hull-fabrication",
+     "name": "Hull & Steel Fabrication",
+     "level": 2,
+     "aliases": [
+      "hull",
+      "hull fabrication",
+      "block fabrication",
+      "steel fabrication",
+      "shipbuilding",
+      "newbuild",
+      "slipway",
+      "erection"
+     ],
+     "priority": "high",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "steel-materials",
+     "name": "Shipbuilding-Grade Steel & Special Steels",
+     "level": 3,
+     "aliases": [
+      "shipbuilding steel",
+      "ship plate",
+      "DMR 249",
+      "warship grade steel",
+      "armour steel",
+      "special steel",
+      "pressure hull steel"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "outfitting",
+     "name": "Outfitting, Piping & HVAC",
+     "level": 2,
+     "aliases": [
+      "outfitting",
+      "piping",
+      "HVAC",
+      "marine valve",
+      "accommodation",
+      "joinery"
+     ],
+     "priority": "medium",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "coatings",
+     "name": "Surface Preparation & Marine Coatings",
+     "level": 2,
+     "aliases": [
+      "marine coatings",
+      "antifouling",
+      "paint",
+      "blasting",
+      "cathodic protection",
+      "corrosion protection"
+     ],
+     "priority": "medium",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "propulsion",
+     "name": "Propulsion — Engines, Gearboxes, Shafts, Propellers",
+     "level": 2,
+     "aliases": [
+      "marine engine",
+      "main engine",
+      "propulsion",
+      "gearbox",
+      "propeller",
+      "shaft",
+      "diesel engine",
+      "gas turbine",
+      "waterjet"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "deck-machinery",
+     "name": "Deck Machinery & Cargo Handling",
+     "level": 2,
+     "aliases": [
+      "deck machinery",
+      "winch",
+      "capstan",
+      "davit",
+      "helicopter handling",
+      "cargo gear",
+      "crane on ship"
+     ],
+     "priority": "medium",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "electrical-automation",
+     "name": "Marine Electrical, IPMS & Navigation",
+     "level": 2,
+     "aliases": [
+      "marine electrical",
+      "switchboard",
+      "IPMS",
+      "integrated platform management",
+      "navigation",
+      "integrated bridge",
+      "marine cable",
+      "submarine battery"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "combat-sensors",
+     "name": "Combat Systems, Weapons & Sensors",
+     "level": 2,
+     "aliases": [
+      "combat system",
+      "naval radar",
+      "sonar",
+      "EW suite",
+      "naval gun",
+      "weapon",
+      "sensor",
+      "combat management"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "design-classification",
+     "name": "Design, Naval Architecture & Classification",
+     "level": 2,
+     "aliases": [
+      "naval architecture",
+      "ship design",
+      "classification society",
+      "IRS",
+      "DNV",
+      "warship design"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "docks-cranes",
+     "name": "Shipyard Infrastructure — Dry Docks, Cranes, Shiplifts",
+     "level": 1,
+     "aliases": [
+      "dry dock",
+      "drydock",
+      "goliath crane",
+      "shiplift",
+      "slipway",
+      "shipyard infrastructure",
+      "floating dock"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "ship-repair",
+     "name": "Ship Repair, Refit & Dry-Docking (MRO)",
+     "level": 1,
+     "aliases": [
+      "ship repair",
+      "shiprepair",
+      "refit",
+      "MRO",
+      "dry docking",
+      "vessel repair",
+      "submarine refit",
+      "MRLC"
+     ],
+     "priority": "high",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "repair-spares",
+     "name": "Repair Spares, Re-engining & Retrofits",
+     "level": 2,
+     "aliases": [
+      "spares",
+      "re-engining",
+      "retrofit",
+      "ballast water treatment",
+      "scrubber",
+      "overhaul"
+     ],
+     "priority": "medium",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "recycling",
+     "name": "Ship Recycling & Circularity (Alang)",
+     "level": 1,
+     "aliases": [
+      "ship recycling",
+      "shipbreaking",
+      "ship breaking",
+      "Alang",
+      "scrap",
+      "circularity"
+     ],
+     "priority": "medium",
+     "bottleneck": false,
+     "in_universe_coverage": false
+    },
+    {
+     "id": "skills-cert",
+     "name": "Skilled Trades, Class Certification & Regulatory Gate",
+     "level": 1,
+     "aliases": [
+      "welder",
+      "NDT",
+      "marine engineer",
+      "naval architect training",
+      "DG Shipping",
+      "skilling",
+      "certification"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": false
+    },
+    {
+     "id": "finance-policy",
+     "name": "Ship Finance, SBFAS & Maritime Development Fund",
+     "level": 1,
+     "aliases": [
+      "SBFAS",
+      "SBFAP",
+      "maritime development fund",
+      "MDF",
+      "SbDS",
+      "shipbuilding subsidy",
+      "ship finance",
+      "Maritime Investment Fund"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "green-propulsion",
+     "name": "Green Fuels, Dual-Fuel & Electric Propulsion",
+     "level": 2,
+     "aliases": [
+      "green vessel",
+      "dual fuel",
+      "ammonia",
+      "methanol",
+      "electric propulsion",
+      "hybrid ferry",
+      "hydrogen fuel cell",
+      "green shipping"
+     ],
+     "priority": "medium",
+     "bottleneck": false,
+     "in_universe_coverage": true
     }
    ]
   }
