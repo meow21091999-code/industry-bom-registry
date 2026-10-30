@@ -228,6 +228,47 @@ ${cols.map(c => `<td class="c">${c.f(r)}</td>`).join('')}
 
 const covCell = r => `${r.coverage}%${r.provisional ? '<span class="scale c4">provisional</span>' : ''}`;
 
+const STRUCT_COLS = CATS.filter(c => c.lens === 'structural');
+const CURRENT_COLS = CATS.filter(c => c.lens === 'current');
+const sc = v => (v == null ? '<span class="dim">-</span>' : String(v));
+
+function detailedTable(list) {
+  const head1 = `<tr>
+    <th rowspan="2">#</th>
+    <th rowspan="2">Industry</th>
+    <th colspan="${STRUCT_COLS.length}" class="grp grp-struct">Structural attractiveness</th>
+    <th rowspan="2">Structural score</th>
+    <th colspan="${CURRENT_COLS.length}" class="grp grp-current">Current opportunity</th>
+    <th rowspan="2">Current score</th>
+    <th rowspan="2">Risk</th>
+    <th rowspan="2">Risk-adj</th>
+    <th rowspan="2">Overall</th>
+    <th rowspan="2">Coverage</th>
+  </tr>
+  <tr>
+    ${STRUCT_COLS.map(c => `<th class="cat">${c.id}<div class="wt">${Math.round(c.weight * 100)}%</div></th>`).join('')}
+    ${CURRENT_COLS.map(c => `<th class="cat">${c.id}<div class="wt">${Math.round(c.weight * 100)}%</div></th>`).join('')}
+  </tr>`;
+
+  const body = list.map((r, i) => `<tr>
+    <td class="c">${i + 1}</td>
+    <td><b>${esc(r.title)}</b><div class="slug">${esc(r.group || '')}</div></td>
+    ${STRUCT_COLS.map(c => `<td class="c">${sc(r.categories[c.id] ? r.categories[c.id].score : null)}</td>`).join('')}
+    <td class="c tot">${num(r.structural_score)}</td>
+    ${CURRENT_COLS.map(c => `<td class="c">${sc(r.categories[c.id] ? r.categories[c.id].score : null)}</td>`).join('')}
+    <td class="c tot">${num(r.current_score)}</td>
+    <td class="c">${num(r.risk, 0)}</td>
+    <td class="c">${num(r.risk_adjusted)}</td>
+    <td class="c tot">${num(r.overall)}</td>
+    <td class="c">${covCell(r)}</td>
+  </tr>`).join('\n');
+
+  return `<div class="table-wrap"><div class="table-scroll"><table class="data detail">
+  <thead>${head1}</thead><tbody>
+  ${body}
+  </tbody></table></div></div>`;
+}
+
 const html = `<!DOCTYPE html>
 <html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Industries ranked — Industry BOM Registry</title>
@@ -248,6 +289,13 @@ const html = `<!DOCTYPE html>
 .legend-table .lvnum { display: inline-block; font-family: var(--font-mono); font-size: 9.5px; font-weight: 700; margin-right: 5px; padding: 0 5px; border-radius: 3px; border: 1px solid currentColor; }
 .legend-table .lv1 { color: var(--high); } .legend-table .lv2 { color: var(--gold); }
 .legend-table .lv3 { color: var(--blue); } .legend-table .lv4 { color: var(--green); } .legend-table .lv5 { color: var(--green); }
+table.data.detail th.grp { text-align: center; font-size: 9.5px; letter-spacing: .8px; border-bottom: 1px solid var(--border-bright); }
+table.data.detail th.grp-struct { background: var(--blue-dim); color: var(--blue); }
+table.data.detail th.grp-current { background: var(--gold-dim); color: var(--gold); }
+table.data.detail th.cat { text-align: center; font-size: 9px; font-weight: 600; }
+table.data.detail .wt { font-weight: 400; opacity: .65; font-size: 8.5px; }
+table.data.detail td.tot { font-weight: 700; color: var(--text); border-left: 1px solid var(--border-bright); }
+table.data.detail td { padding: 6px 7px; }
 </style></head><body><div class="container">
 <header class="masthead">
   <div class="eyebrow">Industry BOM Registry &middot; derived view</div>
@@ -270,14 +318,8 @@ ${Object.entries(P.scale || {}).map(([k, v]) => `<tr><td class="c"><span class="
 </tbody></table></div></div>
 
 <div class="sec-head"><span class="sec-num">01</span><span class="sec-title">Overall industry score</span>
-<span class="sec-note">${CATS.map(c => `${Math.round(c.weight * 100)}% ${c.id}`).join(' &middot; ')}</span></div>
-${table(ranked, [
-  { h: 'Overall', f: r => num(r.overall) },
-  { h: 'Structural', f: r => num(r.structural_score) },
-  { h: 'Current', f: r => num(r.current_score) },
-  { h: 'Risk (1–5)', f: r => num(r.risk, 1) },
-  { h: 'Coverage', f: covCell },
-])}
+<span class="sec-note">every category score shown, grouped under its lens</span></div>
+${detailedTable(ranked)}
 
 <div class="sec-head"><span class="sec-num">02</span><span class="sec-title">Structural attractiveness</span>
 <span class="sec-note">durable 5&ndash;10 year economics &middot; opportunity, economics, competitive, value chain, capital, technology</span></div>
