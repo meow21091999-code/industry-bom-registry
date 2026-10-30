@@ -11,6 +11,9 @@
  *   - contains leaked [cite:...] markers
  *   - is an ENTRY page with no canonical component classes
  *   - is the INDEX page but carries metric-card / metric-modal classes
+ *   - carries a Regulatory calendar section (removed from the registry)
+ *   - has an industry-score block with no rendered .scorecard, or two scorecards
+ *   - puts a section after the sources footer, or a score block inside the diagram template
  *   - uses a component class whose selector is defined NOWHERE
  *     (neither in the shared stylesheet nor in the page's own <style>)
  *     — so a component can never ship unstyled.
@@ -46,7 +49,10 @@ const KNOWN_COMPONENTS = new Set([
   'bn', 'bn__risk', 'bn__opp', 'bn__h', 'bn__title', 'callout',
   'metric-modal', 'metric-modal__backdrop', 'metric-modal__panel', 'metric-modal__close',
   'metric-modal__kicker', 'metric-modal__val', 'metric-modal__label', 'metric-modal__bullets',
-  'footnote'
+  'footnote',
+  'scorecard', 'scorecard__group', 'scorecard__group--structural', 'scorecard__group--current',
+  'scorecard__group--risk', 'scorecard__h', 'sc-total', 'sc-row', 'sc-name', 'sc-wt',
+  'sc-basis', 'sc-val', 'sc-val--null', 'scorecard__foot'
 ]);
 
 const CANONICAL_SAMPLES = ['metric-card', 'metric-cards', 'digest', 'digest__item', 'metric-modal'];
@@ -173,6 +179,16 @@ for (const file of files) {
     problems.push('has an industry-score block but no .scorecard section — the scores are never shown');
   }
 
+  // the Regulatory calendar section was REMOVED from the registry — it must not come back
+  if (/sec-title\s*"[^>]*>\s*Regulatory calendar/i.test(html)) {
+    problems.push('carries a Regulatory calendar section — that section is REMOVED from the registry');
+  }
+
+  // every entry page should be scored; unscored pages are a warning until the backfill clears them
+  if (!isIndex && !isView && !/class="industry-score"/.test(html)) {
+    warnings.push('no industry-score block — the industry scorecard is not scored yet (backfill pending)');
+  }
+
   // data-script integrity: NODES must be declared once and parse.
   // A duplicated or malformed NODES kills the page's whole company-map script,
   // and the page then silently contributes nothing to companies.json.
@@ -225,6 +241,42 @@ for (const file of files) {
     warnings.forEach(w => console.log('        ~ ' + w));
   } else {
     console.log('PASS  ' + file);
+  }
+}
+
+// ---- repo-level checks: derived artefacts must match the pages on disk ----
+const industryPages = files.filter(f => f.includes('industries/') && !basename(f).startsWith('index'));
+const repoProblems = [];
+if (industryPages.length) {
+  const n = industryPages.length;
+  const checkDerived = (path, label) => {
+    if (!existsSync(path)) { repoProblems.push(label + ' is missing — run its builder'); return; }
+    try {
+      const d = JSON.parse(readFileSync(path, 'utf8'));
+      const c = d.counts || {};
+      const declared = c.industries != null ? c.industries : (Array.isArray(d.industries) ? d.industries.length : null);
+      if (declared != null && declared !== n) {
+        repoProblems.push(label + ' is STALE: it lists ' + declared + ' industries, the registry has ' + n + ' — regenerate');
+      }
+    } catch (e) {
+      repoProblems.push(label + ' is not valid JSON: ' + String(e.message).slice(0, 70));
+    }
+  };
+  checkDerived('industry-ranking.json', 'industry-ranking.json');
+  checkDerived('companies.json', 'companies.json');
+  if (existsSync('index.html')) {
+    const idx = readFileSync('index.html', 'utf8');
+    if (!idx.includes('views/industries-ranked.html')) {
+      repoProblems.push('index.html does not link views/industries-ranked.html — the industry ranking is unreachable');
+    }
+    if (!idx.includes('views/companies-master-list.html')) {
+      repoProblems.push('index.html does not link views/companies-master-list.html — the company list is unreachable');
+    }
+  }
+  if (repoProblems.length) {
+    failures++;
+    console.log('FAIL  repo (derived artefacts)');
+    repoProblems.forEach(p => console.log('        - ' + p));
   }
 }
 
