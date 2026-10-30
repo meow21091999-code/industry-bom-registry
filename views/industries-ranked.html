@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Industries ranked — Industry BOM Registry</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/registry.css">
+<style>
+/* page-specific layout only */
+.dim { color: var(--text-dim); opacity: .6; }
+.slug { font-family: var(--font-mono); font-size: 10px; color: var(--text-dim); margin-top: 2px; }
+.scorebar { display: inline-block; width: 54px; height: 5px; background: var(--surface-recessed); border-radius: 3px; margin-left: 8px; vertical-align: middle; }
+.scorebar > span { display: block; height: 100%; background: var(--gold); border-radius: 3px; }
+.table-scroll { overflow: auto; max-height: 70vh; }
+</style></head><body><div class="container">
+<header class="masthead">
+  <div class="eyebrow">Industry BOM Registry &middot; derived view</div>
+  <h1>Industries <span>ranked</span></h1>
+  <div class="subtitle">5 scored &middot; 0 partial &middot; 68 not yet scored &middot; growth-led composite</div>
+</header>
+
+<div class="metric-cards">
+  <div class="metric-card"><div class="metric-card__val">73</div><div class="metric-card__label">Industries</div><div class="metric-card__sub">in the registry</div></div>
+  <div class="metric-card metric-card--gold"><div class="metric-card__val">5</div><div class="metric-card__label">Scored</div><div class="metric-card__sub">have a score block</div></div>
+  <div class="metric-card"><div class="metric-card__val">0</div><div class="metric-card__label">Partial</div><div class="metric-card__sub">missing one or more fields</div></div>
+  <div class="metric-card"><div class="metric-card__val">68</div><div class="metric-card__label">Not yet scored</div><div class="metric-card__sub">backfill pending</div></div>
+</div>
+
+<div class="sec-head"><span class="sec-num">01</span><span class="sec-title">Ranked on the growth-led composite</span>
+<span class="sec-note">growth 50% &middot; capex 20% &middot; R&amp;D 15% &middot; cyclicity 15% (inverted)</span></div>
+
+<div class="table-wrap"><div class="table-scroll"><table class="data">
+<thead><tr><th>#</th><th>Industry</th><th>Growth</th><th>Capex</th><th>R&amp;D</th><th>Cyclicity</th><th>Score</th><th>Coverage</th></tr></thead>
+<tbody>
+<tr>
+<td class="c">1</td>
+<td><b>India Optical, Medical &amp; Surgical Apparatus</b><div class="slug">Healthcare &amp; Medical Devices</div></td>
+<td class="c">26%</td>
+<td class="c">3</td>
+<td class="c">4</td>
+<td class="c">2</td>
+<td class="c">0.825<span class="scorebar"><span style="width:83%"></span></span></td>
+<td class="c"><span class="chip chip--gold">full</span></td>
+</tr>
+<tr>
+<td class="c">2</td>
+<td><b>India EMS / ODM</b><div class="slug">Electrical &amp; Electronic Equipment</div></td>
+<td class="c">28%</td>
+<td class="c">3</td>
+<td class="c">2</td>
+<td class="c">3</td>
+<td class="c">0.712<span class="scorebar"><span style="width:71%"></span></span></td>
+<td class="c"><span class="chip chip--gold">full</span></td>
+</tr>
+<tr>
+<td class="c">3</td>
+<td><b>India Power Semiconductors &amp; OSAT</b><div class="slug">Electrical &amp; Electronic Equipment</div></td>
+<td class="c">12%</td>
+<td class="c">4</td>
+<td class="c">2</td>
+<td class="c">3</td>
+<td class="c">0.502<span class="scorebar"><span style="width:50%"></span></span></td>
+<td class="c"><span class="chip chip--gold">full</span></td>
+</tr>
+<tr>
+<td class="c">4</td>
+<td><b>India Inorganic Chemicals</b><div class="slug">Chemicals &amp; Petrochemicals</div></td>
+<td class="c">6.75%</td>
+<td class="c">4</td>
+<td class="c">2</td>
+<td class="c">4</td>
+<td class="c">0.360<span class="scorebar"><span style="width:36%"></span></span></td>
+<td class="c"><span class="chip chip--gold">full</span></td>
+</tr>
+<tr>
+<td class="c">5</td>
+<td><b>India Servo Motors &amp; Drives</b><div class="slug">Robotics &amp; Automation</div></td>
+<td class="c">3.8%</td>
+<td class="c">3</td>
+<td class="c">3</td>
+<td class="c">4</td>
+<td class="c">0.289<span class="scorebar"><span style="width:29%"></span></span></td>
+<td class="c"><span class="chip chip--gold">full</span></td>
+</tr>
+<tr>
+<td class="c">—</td>
+<td><b>Cryocooler (India)</b><div class="slug">Defence &amp; Aerospace</div></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="chip">not scored</span></td>
+</tr>
+<tr>
+<td class="c">—</td>
+<td><b>Defence Electro-Optics &amp; Thermal Imaging (India)</b><div class="slug">Defence &amp; Aerospace</div></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="chip">not scored</span></td>
+</tr>
+<tr>
+<td class="c">—</td>
+<td><b>Genomic Sequencing</b><div class="slug">Healthcare &amp; Medical Devices</div></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="chip">not scored</span></td>
+</tr>
+<tr>
+<td class="c">—</td>
+<td><b>India 5G / 4G RAN</b><div class="slug">Telecom</div></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="chip">not scored</span></td>
+</tr>
+<tr>
+<td class="c">—</td>
+<td><b>India 6G (IMT-2030)</b><div class="slug">Telecom</div></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="chip">not scored</span></td>
+</tr>
+<tr>
+<td class="c">—</td>
+<td><b>India Agrochemicals &amp; Crop Protection</b><div class="slug">Agriculture &amp; Crop Inputs</div></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="chip">not scored</span></td>
+</tr>
+<tr>
+<td class="c">—</td>
+<td><b>India Aircraft MRO &amp; Civil Aerospace Components</b><div class="slug">Aerospace &amp; Aviation</div></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="chip">not scored</span></td>
+</tr>
+<tr>
+<td class="c">—</td>
+<td><b>India Battery Energy Storage (BESS)</b><div class="slug">Energy Storage</div></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="chip">not scored</span></td>
+</tr>
+<tr>
+<td class="c">—</td>
+<td><b>India Battery Management Systems (BMS)</b><div class="slug">Energy Storage</div></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="chip">not scored</span></td>
+</tr>
+<tr>
+<td class="c">—</td>
+<td><b>India Component MRO</b><div class="slug">Aerospace &amp; Aviation</div></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="chip">not scored</span></td>
+</tr>
+<tr>
+<td class="c">—</td>
+<td><b>India Condenser &amp; Heat Rejection</b><div class="slug">Power Generation Equipment</div></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="chip">not scored</span></td>
+</tr>
+<tr>
+<td class="c">—</td>
+<td><b>India Data Centres &amp; AI-Compute</b><div class="slug">Data Centres &amp; AI Infrastructure</div></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="chip">not scored</span></td>
+</tr>
+<tr>
+<td class="c">—</td>
+<td><b>India Data-Centre Liquid Cooling</b><div class="slug">Data Centres &amp; AI Infrastructure</div></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="chip">not scored</span></td>
+</tr>
+<tr>
+<td class="c">—</td>
+<td><b>India Display Manufacturing</b><div class="slug">Electrical &amp; Electronic Equipment</div></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="chip">not scored</span></td>
+</tr>
+<tr>
+<td class="c">—</td>
+<td><b>India Drone Subsystems</b><div class="slug">Robotics &amp; Automation</div></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="chip">not scored</span></td>
+</tr>
+<tr>
+<td class="c">—</td>
+<td><b>India EHV / HV Power Cables</b><div class="slug">Power &amp; Electrical Infrastructure</div></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="chip">not scored</span></td>
+</tr>
+<tr>
+<td class="c">—</td>
+<td><b>India Electrical &amp; Electronic Equipment</b><div class="slug">Electrical &amp; Electronic Equipment</div></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="chip">not scored</span></td>
+</tr>
+<tr>
+<td class="c">—</td>
+<td><b>India Engine MRO</b><div class="slug">Aerospace &amp; Aviation</div></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="chip">not scored</span></td>
+</tr>
+<tr>
+<td class="c">—</td>
+<td><b>India EV Powertrain &amp; Traction Systems</b><div class="slug">Automotive &amp; Mobility</div></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="chip">not scored</span></td>
+</tr>
+<tr>
+<td class="c">—</td>
+<td><b>India Green Hydrogen &amp; Electrolyser Manufacturing</b><div class="slug">Green Hydrogen &amp; Clean Fuels</div></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="chip">not scored</span></td>
+</tr>
+<tr>
+<td class="c">—</td>
+<td><b>India Guns</b><div class="slug">Defence &amp; Aerospace</div></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="chip">not scored</span></td>
+</tr>
+<tr>
+<td class="c">—</td>
+<td><b>India Harmonic &amp; RV Reducers</b><div class="slug">Robotics &amp; Automation</div></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="chip">not scored</span></td>
+</tr>
+<tr>
+<td class="c">—</td>
+<td><b>India HVDC &amp; Power Electronics</b><div class="slug">Power &amp; Electrical Infrastructure</div></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="chip">not scored</span></td>
+</tr>
+<tr>
+<td class="c">—</td>
+<td><b>India Industrial Gases</b><div class="slug">Chemicals &amp; Petrochemicals</div></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="chip">not scored</span></td>
+</tr>
+<tr>
+<td class="c">—</td>
+<td><b>India Launch Vehicles &amp; Propulsion</b><div class="slug">Space &amp; Satellites</div></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="chip">not scored</span></td>
+</tr>
+<tr>
+<td class="c">—</td>
+<td><b>India Li-ion Cell Manufacturing</b><div class="slug">Energy Storage</div></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="chip">not scored</span></td>
+</tr>
+<tr>
+<td class="c">—</td>
+<td><b>India Missiles</b><div class="slug">Defence &amp; Aerospace</div></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="chip">not scored</span></td>
+</tr>
+<tr>
+<td class="c">—</td>
+<td><b>India Mobile Handsets &amp; Accessories</b><div class="slug">Electrical &amp; Electronic Equipment</div></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="chip">not scored</span></td>
+</tr>
+<tr>
+<td class="c">—</td>
+<td><b>India Nuclear PWR Steam Generator</b><div class="slug">Nuclear Energy</div></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="chip">not scored</span></td>
+</tr>
+<tr>
+<td class="c">—</td>
+<td><b>India Optical Fibre</b><div class="slug">Telecom</div></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="chip">not scored</span></td>
+</tr>
+<tr>
+<td class="c">—</td>
+<td><b>India Optical Fibre Cable</b><div class="slug">Telecom</div></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="chip">not scored</span></td>
+</tr>
+<tr>
+<td class="c">—</td>
+<td><b>India Optical Fibre Preform</b><div class="slug">Telecom</div></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="chip">not scored</span></td>
+</tr>
+<tr>
+<td class="c">—</td>
+<td><b>India Optical Transceivers</b><div class="slug">Telecom</div></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="chip">not scored</span></td>
+</tr>
+<tr>
+<td class="c">—</td>
+<td><b>India Organic Chemicals</b><div class="slug">Chemicals &amp; Petrochemicals</div></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="chip">not scored</span></td>
+</tr>
+<tr>
+<td class="c">—</td>
+<td><b>India PCB &amp; Electronic Components</b><div class="slug">Electrical &amp; Electronic Equipment</div></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="chip">not scored</span></td>
+</tr>
+<tr>
+<td class="c">—</td>
+<td><b>India PCS &amp; Power Semiconductors</b><div class="slug">Energy Storage</div></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="chip">not scored</span></td>
+</tr>
+<tr>
+<td class="c">—</td>
+<td><b>India Pharma APIs &amp; Bulk Drugs</b><div class="slug">Chemicals &amp; Petrochemicals</div></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="chip">not scored</span></td>
+</tr>
+<tr>
+<td class="c">—</td>
+<td><b>India Power &amp; Distribution Transformers</b><div class="slug">Electrical &amp; Electronic Equipment</div></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="chip">not scored</span></td>
+</tr>
+<tr>
+<td class="c">—</td>
+<td><b>India Power Transmission</b><div class="slug">Power &amp; Electrical Infrastructure</div></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="chip">not scored</span></td>
+</tr>
+<tr>
+<td class="c">—</td>
+<td><b>India Precision Machine Tools &amp; Metrology</b><div class="slug">Robotics &amp; Automation</div></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="chip">not scored</span></td>
+</tr>
+<tr>
+<td class="c">—</td>
+<td><b>India Rare-Earth Magnets</b><div class="slug">Robotics &amp; Automation</div></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="chip">not scored</span></td>
+</tr>
+<tr>
+<td class="c">—</td>
+<td><b>India Reactor Coolant Pumps &amp; Primary Loop</b><div class="slug">Nuclear Energy</div></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="chip">not scored</span></td>
+</tr>
+<tr>
+<td class="c">—</td>
+<td><b>India Robot Software &amp; Autonomy</b><div class="slug">Robotics &amp; Automation</div></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="chip">not scored</span></td>
+</tr>
+<tr>
+<td class="c">—</td>
+<td><b>India Robotics</b><div class="slug">Robotics &amp; Automation</div></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="chip">not scored</span></td>
+</tr>
+<tr>
+<td class="c">—</td>
+<td><b>India Satellite</b><div class="slug">Space &amp; Satellites</div></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="chip">not scored</span></td>
+</tr>
+<tr>
+<td class="c">—</td>
+<td><b>India Satellite Bus &amp; Subsystems</b><div class="slug">Space &amp; Satellites</div></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="chip">not scored</span></td>
+</tr>
+<tr>
+<td class="c">—</td>
+<td><b>India Satellite Ground Segment</b><div class="slug">Space &amp; Satellites</div></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="chip">not scored</span></td>
+</tr>
+<tr>
+<td class="c">—</td>
+<td><b>India Satellite Payloads</b><div class="slug">Space &amp; Satellites</div></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="chip">not scored</span></td>
+</tr>
+<tr>
+<td class="c">—</td>
+<td><b>India Satellite Services &amp; Data</b><div class="slug">Space &amp; Satellites</div></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="chip">not scored</span></td>
+</tr>
+<tr>
+<td class="c">—</td>
+<td><b>India Small Modular Reactor</b><div class="slug">Nuclear Energy</div></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="chip">not scored</span></td>
+</tr>
+<tr>
+<td class="c">—</td>
+<td><b>India Smart Meters</b><div class="slug">Electrical &amp; Electronic Equipment</div></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="chip">not scored</span></td>
+</tr>
+<tr>
+<td class="c">—</td>
+<td><b>India Solar PV</b><div class="slug">Renewable Energy</div></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="chip">not scored</span></td>
+</tr>
+<tr>
+<td class="c">—</td>
+<td><b>India Steam Turbine (Turbine Proper)</b><div class="slug">Power Generation Equipment</div></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="chip">not scored</span></td>
+</tr>
+<tr>
+<td class="c">—</td>
+<td><b>India Telecom</b><div class="slug">Telecom</div></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="chip">not scored</span></td>
+</tr>
+<tr>
+<td class="c">—</td>
+<td><b>India Telecom Chipsets</b><div class="slug">Telecom</div></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="chip">not scored</span></td>
+</tr>
+<tr>
+<td class="c">—</td>
+<td><b>India Telecom Operators</b><div class="slug">Telecom</div></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="chip">not scored</span></td>
+</tr>
+<tr>
+<td class="c">—</td>
+<td><b>India Telecom Towers</b><div class="slug">Telecom</div></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="chip">not scored</span></td>
+</tr>
+<tr>
+<td class="c">—</td>
+<td><b>India Transport Equipment</b><div class="slug">Telecom</div></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="chip">not scored</span></td>
+</tr>
+<tr>
+<td class="c">—</td>
+<td><b>India Turbine Generator &amp; Electrical Train</b><div class="slug">Power Generation Equipment</div></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="chip">not scored</span></td>
+</tr>
+<tr>
+<td class="c">—</td>
+<td><b>India Turbine Island (Turbomachinery)</b><div class="slug">Power Generation Equipment</div></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="chip">not scored</span></td>
+</tr>
+<tr>
+<td class="c">—</td>
+<td><b>India Turbine Island Auxiliaries</b><div class="slug">Power Generation Equipment</div></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="chip">not scored</span></td>
+</tr>
+<tr>
+<td class="c">—</td>
+<td><b>India Vehicles &amp; Auto Components</b><div class="slug">Automotive &amp; Mobility</div></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="chip">not scored</span></td>
+</tr>
+<tr>
+<td class="c">—</td>
+<td><b>Overhead Transmission Line</b><div class="slug">Power &amp; Electrical Infrastructure</div></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="chip">not scored</span></td>
+</tr>
+<tr>
+<td class="c">—</td>
+<td><b>Semiconductor Equipment &amp; Materials &amp;middot; India</b><div class="slug">Semiconductors &amp; Semiconductor Equipment</div></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="chip">not scored</span></td>
+</tr>
+<tr>
+<td class="c">—</td>
+<td><b>Shakti EW System (India)</b><div class="slug">Defence &amp; Aerospace</div></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="chip">not scored</span></td>
+</tr>
+<tr>
+<td class="c">—</td>
+<td><b>Silver Paste &amp; Metallisation</b><div class="slug">Renewable Energy</div></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="chip">not scored</span></td>
+</tr>
+<tr>
+<td class="c">—</td>
+<td><b>Solar Cell Fabrication</b><div class="slug">Renewable Energy</div></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="chip">not scored</span></td>
+</tr>
+<tr>
+<td class="c">—</td>
+<td><b>Substation Equipment</b><div class="slug">Power &amp; Electrical Infrastructure</div></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="dim">—</span></td>
+<td class="c"><span class="chip">not scored</span></td>
+</tr>
+</tbody></table></div></div>
+
+<div class="footnote">
+  Score = 0.50&middot;growth + 0.20&middot;capex + 0.15&middot;R&amp;D + 0.15&middot;cyclicity, over the fields a page actually carries.
+  Growth is normalised 0%&rarr;0, 25%+&rarr;1; capex and R&amp;D are 1&ndash;5 &rarr; (x&minus;1)/4; cyclicity is inverted (5&minus;x)/4, so steadier industries score higher.
+  A missing field is excluded, never imputed &mdash; pages carrying only some fields are marked <b>partial</b> and their score reflects only what is known.
+  Values come from each entry page&rsquo;s own score block; every figure keeps its label. Generated 2026-10-30.
+</div>
+</div></body></html>
