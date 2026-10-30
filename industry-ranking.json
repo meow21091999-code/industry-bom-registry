@@ -74,10 +74,10 @@
  },
  "counts": {
   "industries": 77,
-  "scored": 20,
+  "scored": 25,
   "legacy": 0,
-  "unscored": 57,
-  "ranked": 20
+  "unscored": 52,
+  "ranked": 25
  },
  "industries": [
   {
@@ -362,10 +362,10 @@
    "coverage": 70,
    "provisional": false,
    "notes": "Scored against 'Industry-Level Investment Parameters & Scoring Architecture'. Cycle position and valuation left UNAVAILABLE — the registry carries no cycle or valuation data for these industries.",
-   "overall_rank": 5,
-   "risk_adjusted_rank": 5,
+   "overall_rank": 6,
+   "risk_adjusted_rank": 6,
    "structural_score": 67.1,
-   "structural_score_rank": 5
+   "structural_score_rank": 6
   },
   {
    "slug": "engine-mro-india",
@@ -479,12 +479,12 @@
    "coverage": 85,
    "provisional": false,
    "notes": "This run REPLACES the prior Market & growth block, which rested on a tier-3 source and reported 3-year and last-year splits as UNAVAILABLE. Opportunity now uses the IMARC series (USD 1.95 bn 2025 to USD 9.75 bn 2030, 38.0% CAGR) and the conflicting NITI Aayog / third-house estimates are shown as a range rather than averaged. Valuation left UNAVAILABLE — no industry valuation series.",
-   "overall_rank": 15,
-   "risk_adjusted_rank": 15,
+   "overall_rank": 18,
+   "risk_adjusted_rank": 18,
    "structural_score": 57.1,
    "current_score": 40,
-   "structural_score_rank": 14,
-   "current_score_rank": 11
+   "structural_score_rank": 17,
+   "current_score_rank": 15
   },
   {
    "slug": "guns-india",
@@ -580,11 +580,11 @@
    "coverage": 85,
    "provisional": false,
    "notes": "Opportunity uses the same series as the Market & growth digest block (KPMG ammunition market of Rs 7,057 cr in 2023 rising to Rs 11,981 cr by 2032 at 4.93%, inside FY26 defence production of Rs 1.78 lakh cr). Valuation left UNAVAILABLE — the registry carries no industry valuation data.",
-   "overall_rank": 9,
-   "risk_adjusted_rank": 14,
+   "overall_rank": 12,
+   "risk_adjusted_rank": 17,
    "structural_score": 58.6,
    "current_score": 80,
-   "structural_score_rank": 13,
+   "structural_score_rank": 16,
    "current_score_rank": 2
   },
   {
@@ -681,12 +681,12 @@
    "coverage": 85,
    "provisional": false,
    "notes": "Opportunity uses the same series as the Market & growth digest block (IFR installations of 9,120 units in 2024 and ~10,500 in 2025, 27% average annual growth 2020–2025, with imports at 85–90% of component value). No rupee market size exists at Level 1 or 2, so none is stated. Valuation left UNAVAILABLE.",
-   "overall_rank": 20,
-   "risk_adjusted_rank": 20,
+   "overall_rank": 25,
+   "risk_adjusted_rank": 24,
    "structural_score": 45.7,
    "current_score": 60,
-   "structural_score_rank": 20,
-   "current_score_rank": 5
+   "structural_score_rank": 25,
+   "current_score_rank": 8
   },
   {
    "slug": "hvdc-power-electronics-india",
@@ -782,12 +782,12 @@
    "coverage": 85,
    "provisional": false,
    "notes": "Scored against 'Industry-Level Investment Parameters & Scoring Architecture'. Opportunity uses the same HVDC series as the Market & growth digest block, with the conflicting second series disclosed rather than averaged. Valuation left UNAVAILABLE.",
-   "overall_rank": 13,
-   "risk_adjusted_rank": 16,
+   "overall_rank": 16,
+   "risk_adjusted_rank": 19,
    "structural_score": 57.1,
    "current_score": 60,
-   "structural_score_rank": 15,
-   "current_score_rank": 6
+   "structural_score_rank": 18,
+   "current_score_rank": 9
   },
   {
    "slug": "industrial-gases-india",
@@ -886,10 +886,10 @@
    "coverage": 70,
    "provisional": false,
    "notes": "Scored against 'Industry-Level Investment Parameters & Scoring Architecture'. Cycle position and valuation left UNAVAILABLE — the registry carries no cycle or valuation data for these industries.",
-   "overall_rank": 16,
-   "risk_adjusted_rank": 17,
+   "overall_rank": 19,
+   "risk_adjusted_rank": 20,
    "structural_score": 52.9,
-   "structural_score_rank": 16
+   "structural_score_rank": 19
   },
   {
    "slug": "launch-vehicles-propulsion-india",
@@ -985,12 +985,12 @@
    "coverage": 85,
    "provisional": false,
    "notes": "Opportunity uses the same series as the Market & growth digest block (IN-SPACe launch segment of US$720 mn in 2022 rising to a US$3.5 bn potential by 2033, ~15.4% CAGR). Valuation left UNAVAILABLE — the registry carries no industry valuation data.",
-   "overall_rank": 6,
-   "risk_adjusted_rank": 6,
+   "overall_rank": 7,
+   "risk_adjusted_rank": 7,
    "structural_score": 67.1,
    "current_score": 60,
-   "structural_score_rank": 6,
-   "current_score_rank": 7
+   "structural_score_rank": 7,
+   "current_score_rank": 10
   },
   {
    "slug": "li-ion-cell-manufacturing-india",
@@ -1086,12 +1086,12 @@
    "coverage": 85,
    "provisional": false,
    "notes": "Opportunity uses the same series as the Market & growth digest block (IESA demand of 28 GWh in 2025 rising to ~272 GWh by FY2030 at a 36.5% CAGR, against ~2 GWh installed capacity). The two value forecasts disagree (17.65% vs 22.0% CAGR) and are shown as conflicting data rather than reconciled. Valuation left UNAVAILABLE.",
-   "overall_rank": 17,
-   "risk_adjusted_rank": 19,
+   "overall_rank": 20,
+   "risk_adjusted_rank": 22,
    "structural_score": 51.4,
    "current_score": 60,
-   "structural_score_rank": 18,
-   "current_score_rank": 8
+   "structural_score_rank": 21,
+   "current_score_rank": 11
   },
   {
    "slug": "machine-tools-metrology-india",
@@ -1187,18 +1187,113 @@
    "coverage": 85,
    "provisional": false,
    "notes": "Opportunity uses the same series as the Market & growth digest block (IMTMA FY26 consumption of Rs 36,419 cr, imports of Rs 21,628 cr, and the 13.7% eleven-year production CAGR). Valuation left UNAVAILABLE because the registry carries no industry valuation data.",
-   "overall_rank": 8,
-   "risk_adjusted_rank": 9,
+   "overall_rank": 11,
+   "risk_adjusted_rank": 10,
    "structural_score": 60,
    "current_score": 80,
-   "structural_score_rank": 11,
-   "current_score_rank": 3
+   "structural_score_rank": 14,
+   "current_score_rank": 5
   },
   {
    "slug": "missile-india",
    "title": "India Missiles",
    "group": "Defence & Aerospace",
-   "scored": false
+   "scored": true,
+   "as_of": "2026-10-30",
+   "categories": {
+    "economics": {
+     "name": "Industry economics & value creation",
+     "weight": 0.2,
+     "lens": "structural",
+     "score": 3,
+     "from": "category",
+     "basis": "Integrator economics are thin and volatile: BDL’s FY26 EBITDA margin fell to 9.1%, its lowest on record, as revenue dropped 27% on a higher share of bought-out components, while electronics-side BEL earned a 30% EBITDA margin in FY26 — value sits in electronics and energetics, not in airframe integration."
+    },
+    "opportunity": {
+     "name": "Market opportunity & structural growth",
+     "weight": 0.15,
+     "lens": "structural",
+     "score": 4,
+     "from": "category",
+     "basis": "The missile pool grows 39.9% a year on the narrow procurement estimate (US$468.6 mn in 2025 to US$2,512.7 mn in 2030) or 6.7% on the wider precision-guided-munitions estimate (US$2,350.6 mn in 2022 to US$3,958.6 mn in 2030); either way it sits inside FY26 defence production of Rs 1.78 lakh crore growing 15.6%, with BDL’s order book at 10.6x revenue giving unusually visible forward demand."
+    },
+    "competitive": {
+     "name": "Competitive structure & moat",
+     "weight": 0.15,
+     "lens": "structural",
+     "score": 3,
+     "from": "category",
+     "basis": "Design IP stays with DRDO and integration is a BDL/BEL duopoly, with private entry now opening through the Aug-2026 ToT; barriers are high and durable, but the single buyer (MoD) sets price and timing, so incumbency protects volume rather than margin."
+    },
+    "cycle": {
+     "name": "Current opportunity & cycle position",
+     "weight": 0.15,
+     "lens": "current",
+     "score": 4,
+     "from": "category",
+     "basis": "Demand is at a record and inflecting: FY26 defence production +15.6%, exports +62.7% to Rs 38,424 crore, BDL’s order book at Rs 26,176 crore, and FY27 guided back to ~Rs 4,500 crore revenue as delayed Akash and Astra deliveries clear."
+    },
+    "valuation": {
+     "name": "Valuation & market expectations",
+     "weight": 0.15,
+     "lens": "current",
+     "score": null,
+     "from": null,
+     "basis": "No industry-level valuation series is carried in the registry; company multiples are reported (BDL at 70.5x FY27E EPS on Motilal Oswal’s estimates) but one company cannot define an industry multiple."
+    },
+    "value_chain": {
+     "name": "Value-chain position & bottlenecks",
+     "weight": 0.1,
+     "lens": "structural",
+     "score": 3,
+     "from": "category",
+     "basis": "Around 65% of defence equipment is now produced domestically and ~91% of ammunition variants are indigenised, but seekers (Astra Mk-1), radars and specialty metals (nickel, cobalt, molybdenum, tungsten, ~Rs 8,000 crore imported) remain the imported nodes, and solid propellant is a near-duopoly."
+    },
+    "capital": {
+     "name": "Capital intensity & financial quality",
+     "weight": 0.05,
+     "lens": "structural",
+     "score": 2,
+     "from": "category",
+     "basis": "Capital-heavy and slow: BDL is committing Rs 5 bn to a 160-acre naval systems plant plus the Ibrahimpatnam and Jhansi facilities, on receivables that took 109 days even after a 38% improvement; DPSU advances soften it, private entrants carry it alone."
+    },
+    "technology": {
+     "name": "Technology & innovation",
+     "weight": 0.05,
+     "lens": "structural",
+     "score": 3,
+     "from": "category",
+     "basis": "DRDO design capability is real and deep, but the GaN AESA seeker is still in development, scramjet/hypersonic propulsion is aspirational, and much of the precision manufacturing equipment is bought in."
+    },
+    "risk": {
+     "name": "Risk & resilience",
+     "weight": null,
+     "lens": "risk",
+     "score": 2,
+     "from": "category",
+     "basis": "A single buyer sets price and schedule, the seeker and radar supply chain has already proven a delivery single point of failure, and the licensing and export-control regime constrains both entry and exit."
+    }
+   },
+   "structural": {
+    "score": 62.9,
+    "coverage": 100
+   },
+   "current": {
+    "score": 80,
+    "coverage": 50
+   },
+   "risk": 2,
+   "risk_adjusted": 25.2,
+   "overall": 65.9,
+   "coverage": 85,
+   "provisional": false,
+   "notes": "Opportunity uses the same series as the Market & growth digest block (MarketsandMarkets India missile market US$468.6 mn 2025 to US$2,512.7 mn 2030 at 39.9%, and Grand View India PGM US$2,350.6 mn 2022 to US$3,958.6 mn 2030 at 6.7%, both inside FY26 defence production of Rs 1.78 lakh crore). Valuation left UNAVAILABLE — the registry carries no industry valuation series.",
+   "overall_rank": 8,
+   "risk_adjusted_rank": 13,
+   "structural_score": 62.9,
+   "current_score": 80,
+   "structural_score_rank": 10,
+   "current_score_rank": 3
   },
   {
    "slug": "mobile-handsets-accessories-india",
@@ -1336,7 +1431,102 @@
    "slug": "organic-chemicals-india",
    "title": "India Organic Chemicals",
    "group": "Chemicals & Petrochemicals",
-   "scored": false
+   "scored": true,
+   "as_of": "2026-10-30",
+   "categories": {
+    "economics": {
+     "name": "Industry economics & value creation",
+     "weight": 0.2,
+     "lens": "structural",
+     "score": 2,
+     "from": "category",
+     "basis": "Commodity spreads have compressed hard under Chinese overcapacity: Chemplast Sanmar’s FY26 EBITDA margin was 4.7% (from 5.0%) and DCW’s specialty margin fell to 29.7% from 35.3% even as volumes rose, with CPVC realisations down more than 20% — value of output grew 11.6% a year but the rupee of output earns less."
+    },
+    "opportunity": {
+     "name": "Market opportunity & structural growth",
+     "weight": 0.15,
+     "lens": "structural",
+     "score": 3,
+     "from": "category",
+     "basis": "Chemical industry value of output grew 11.6% a year from Rs 9.62 lakh crore in FY2018-19 to Rs 15.14 lakh crore in FY2023-24, inside a Rs 26 lakh crore chemicals-and-petrochemicals market in FY25, with a Rs 65,383 crore net organic-chemicals import gap to substitute — but organic-chemical utilisation is falling (64.3% in FY24 toward 57.7% by FY30), so the growth is arriving into surplus capacity."
+    },
+    "competitive": {
+     "name": "Competitive structure & moat",
+     "weight": 0.15,
+     "lens": "structural",
+     "score": 3,
+     "from": "category",
+     "basis": "Structurally fragmented — over 80,000 products across large, medium and small firms — so commodity grades are price-takers against Chinese imports, while specialty and fine chemistry carries real switching costs and customer qualification; the moat exists but only in the specialty layer."
+    },
+    "cycle": {
+     "name": "Current opportunity & cycle position",
+     "weight": 0.15,
+     "lens": "current",
+     "score": 2,
+     "from": "category",
+     "basis": "Clearly mid-downcycle: China added 9 mmtpa of ethylene in CY25, pushing its surplus to 11.5 mmtpa (+121%), propylene oversupply is forecast at 20.3 mmtpa, and consensus FY26 estimates for listed specialty names were cut by up to 67% since FY24-end."
+    },
+    "valuation": {
+     "name": "Valuation & market expectations",
+     "weight": 0.15,
+     "lens": "current",
+     "score": null,
+     "from": null,
+     "basis": "No industry-level valuation series is carried in the registry; the sector-wide de-rating is reported but no industry multiple series is available to score."
+    },
+    "value_chain": {
+     "name": "Value-chain position & bottlenecks",
+     "weight": 0.1,
+     "lens": "structural",
+     "score": 3,
+     "from": "category",
+     "basis": "Integrated upstream (RIL, IOCL, GAIL, OPaL) and a competitive specialty export base are genuinely domestic, but ~45% of petrochemical intermediates, nearly all catalysts, and cracker/reformer process technology are imported, and the solvent layer is the largest value leak."
+    },
+    "capital": {
+     "name": "Capital intensity & financial quality",
+     "weight": 0.05,
+     "lens": "structural",
+     "score": 2,
+     "from": "category",
+     "basis": "Very capital-intensive with long gestation — the IOCL Paradip petrochemical complex alone is Rs 61,077 crore and commissions in 2029 — and the downcycle means new capacity is being added into 60% utilisation."
+    },
+    "technology": {
+     "name": "Technology & innovation",
+     "weight": 0.05,
+     "lens": "structural",
+     "score": 2,
+     "from": "category",
+     "basis": "Cracker and reformer technology is licensed from Linde, Lummus, KBR and Technip, catalysts are almost entirely imported, and R&amp;D intensity is structurally low; process-chemistry skills are scarce."
+    },
+    "risk": {
+     "name": "Risk & resilience",
+     "weight": null,
+     "lens": "risk",
+     "score": 2,
+     "from": "category",
+     "basis": "Chinese dumping drives both price and policy risk — an S-PVC minimum import price running to ~23-Jan-2027, a CVD probe widened to 13 producer groups, feedstock volatility from the Middle East war, and QCOs that have been rescinded and could return."
+    }
+   },
+   "structural": {
+    "score": 51.4,
+    "coverage": 100
+   },
+   "current": {
+    "score": 40,
+    "coverage": 50
+   },
+   "risk": 2,
+   "risk_adjusted": 20.6,
+   "overall": 49.4,
+   "coverage": 85,
+   "provisional": false,
+   "notes": "Opportunity uses the same series as the Market & growth digest block (DCPC value of output Rs 9.62 lakh crore FY2018-19 to Rs 15.14 lakh crore FY2023-24, 11.6% CAGR at current prices, inside a Rs 26 lakh crore FY25 chemicals-and-petrochemicals market, against a Rs 65,383 crore FY26 net organic-chemicals import gap). Valuation left UNAVAILABLE — the registry carries no industry valuation series.",
+   "overall_rank": 24,
+   "risk_adjusted_rank": 23,
+   "structural_score": 51.4,
+   "current_score": 40,
+   "structural_score_rank": 22,
+   "current_score_rank": 16
   },
   {
    "slug": "overhead-transmission-line-india",
@@ -1432,12 +1622,12 @@
    "coverage": 85,
    "provisional": false,
    "notes": "Scored against 'Industry-Level Investment Parameters & Scoring Architecture'. Opportunity uses the same T&D EPC series as the Market & growth digest block (Astute Analytica), cross-checked against Transrail's 2029 waypoint. Valuation left UNAVAILABLE.",
-   "overall_rank": 10,
-   "risk_adjusted_rank": 8,
+   "overall_rank": 13,
+   "risk_adjusted_rank": 9,
    "structural_score": 61.4,
    "current_score": 60,
-   "structural_score_rank": 10,
-   "current_score_rank": 10
+   "structural_score_rank": 13,
+   "current_score_rank": 14
   },
   {
    "slug": "pcb-electronic-components-india",
@@ -1455,7 +1645,102 @@
    "slug": "power-conversion-system-india",
    "title": "India PCS & Power Semiconductors",
    "group": "Energy Storage",
-   "scored": false
+   "scored": true,
+   "as_of": "2026-10-30",
+   "categories": {
+    "economics": {
+     "name": "Industry economics & value creation",
+     "weight": 0.2,
+     "lens": "structural",
+     "score": 3,
+     "from": "category",
+     "basis": "Value growth (33% a year) trails capacity growth (~95%) because per-kWh pricing falls 8–12% annually, so volume players earn and pure-play hardware vendors face margin compression; domestic assembly is viable but not a margin pool."
+    },
+    "opportunity": {
+     "name": "Market opportunity & structural growth",
+     "weight": 0.15,
+     "lens": "structural",
+     "score": 4,
+     "from": "category",
+     "basis": "India BESS grows from US$1.5 bn in 2025 to US$7.5 bn by 2030 at a 33% value CAGR, inside a CEA requirement of 208 GWh of storage by 2030 with 35.8 GWh already under construction; the PCS slice is 15–25% of utility-scale hardware capex, and a draft MNRE rule would reserve 60% localisation of PCS/EMS for domestic makers from 2027."
+    },
+    "competitive": {
+     "name": "Competitive structure & moat",
+     "weight": 0.15,
+     "lens": "structural",
+     "score": 3,
+     "from": "category",
+     "basis": "PCS assembly is contested by listed majors (Hitachi Energy India, ABB India, CG Power) and unlisted specialists (Delta-India, Statcon, Ador, Wattpower), while the device layer is a foreign oligopoly (Infineon, onsemi, Mitsubishi, Fuji, TI); grid-forming firmware is held abroad, so domestic competition is real but sits below the value."
+    },
+    "cycle": {
+     "name": "Current opportunity & cycle position",
+     "weight": 0.15,
+     "lens": "current",
+     "score": 4,
+     "from": "category",
+     "basis": "At a clear inflection: the contracted pipeline multiplied fivefold to 92 GWh in 2025, 102 GWh of fresh tenders were issued, tariffs reached commercially viable levels, and commissioning rather than policy is now the binding constraint."
+    },
+    "valuation": {
+     "name": "Valuation & market expectations",
+     "weight": 0.15,
+     "lens": "current",
+     "score": null,
+     "from": null,
+     "basis": "No industry-level valuation series is carried in the registry for the PCS or BESS-equipment layer; company multiples are not an industry multiple."
+    },
+    "value_chain": {
+     "name": "Value-chain position & bottlenecks",
+     "weight": 0.1,
+     "lens": "structural",
+     "score": 2,
+     "from": "category",
+     "basis": "India assembles string PCS but has no IGBT or SiC power-device fab (CG Semi is OSAT only), and magnetics cores, DC-link film capacitors, gate-driver ICs, DSP/MCU and grid-forming control IP are all imported — the value leaks almost entirely at the silicon and firmware layers."
+    },
+    "capital": {
+     "name": "Capital intensity & financial quality",
+     "weight": 0.05,
+     "lens": "structural",
+     "score": 3,
+     "from": "category",
+     "basis": "PCS assembly is far less capital-intensive than cell manufacturing, but grid-forming firmware development, certification and utility-scale test capability require sustained R&amp;D, and central PCS above 1 MW remains an import until local platforms mature."
+    },
+    "technology": {
+     "name": "Technology & innovation",
+     "weight": 0.05,
+     "lens": "structural",
+     "score": 3,
+     "from": "category",
+     "basis": "The transition from silicon IGBT to SiC MOSFET and from grid-following to grid-forming control is the defining technology axis, and India is a follower on both — localisation is a component-by-component process expected to take two to three years."
+    },
+    "risk": {
+     "name": "Risk & resilience",
+     "weight": null,
+     "lens": "risk",
+     "score": 2,
+     "from": "category",
+     "basis": "Demand depends on two unfinalised instruments (the CEA grid-forming mandate and the MNRE localisation draft), the device layer is import-gated, and pre-approved Chinese JV partners add execution and policy risk."
+    }
+   },
+   "structural": {
+    "score": 61.4,
+    "coverage": 100
+   },
+   "current": {
+    "score": 80,
+    "coverage": 50
+   },
+   "risk": 2,
+   "risk_adjusted": 24.6,
+   "overall": 64.7,
+   "coverage": 85,
+   "provisional": false,
+   "notes": "Opportunity uses the same series as the Market & growth digest block (India BESS US$1.5 bn in 2025 to US$7.5 bn in 2030 at 33% value CAGR, with the PCS slice derived at 15–25% of utility-scale hardware capex, against a CEA 208 GWh by 2030 requirement). Valuation left UNAVAILABLE — the registry carries no industry valuation series.",
+   "overall_rank": 9,
+   "risk_adjusted_rank": 15,
+   "structural_score": 61.4,
+   "current_score": 80,
+   "structural_score_rank": 12,
+   "current_score_rank": 4
   },
   {
    "slug": "power-semiconductor-osat-india",
@@ -1548,10 +1833,10 @@
    "coverage": 70,
    "provisional": false,
    "notes": "Scored against 'Industry-Level Investment Parameters & Scoring Architecture'. Cycle position and valuation left UNAVAILABLE — the registry carries no cycle or valuation data for these industries.",
-   "overall_rank": 7,
-   "risk_adjusted_rank": 7,
+   "overall_rank": 10,
+   "risk_adjusted_rank": 8,
    "structural_score": 64.3,
-   "structural_score_rank": 7
+   "structural_score_rank": 8
   },
   {
    "slug": "power-transformers-india",
@@ -1658,7 +1943,7 @@
    "structural_score": 81.4,
    "current_score": 60,
    "structural_score_rank": 1,
-   "current_score_rank": 9
+   "current_score_rank": 12
   },
   {
    "slug": "railway-india",
@@ -1670,7 +1955,102 @@
    "slug": "rare-earth-magnets-india",
    "title": "India Rare-Earth Magnets",
    "group": "Robotics & Automation",
-   "scored": false
+   "scored": true,
+   "as_of": "2026-10-30",
+   "categories": {
+    "economics": {
+     "name": "Industry economics & value creation",
+     "weight": 0.2,
+     "lens": "structural",
+     "score": 2,
+     "from": "category",
+     "basis": "The economics are hostile at entry: Chinese price cuts took unit import value down ~44% in one year (value +5% on tonnage +87%), and finished magnets are ~43% costlier to make in India than to import, so a domestic plant starts behind on cost before it starts."
+    },
+    "opportunity": {
+     "name": "Market opportunity & structural growth",
+     "weight": 0.15,
+     "lens": "structural",
+     "score": 4,
+     "from": "category",
+     "basis": "Magnet imports were Rs 1,744 crore in FY25 on 53,748 tonnes with government projecting consumption doubling by 2030 from 2025 (~15% volume CAGR), against a Rs 7,280 crore scheme targeting 6,000 MTPA from a near-zero integrated base and import dependence of 59.6–81.3% by value — a large substitution runway, on a small rupee base."
+    },
+    "competitive": {
+     "name": "Competitive structure & moat",
+     "weight": 0.15,
+     "lens": "structural",
+     "score": 3,
+     "from": "category",
+     "basis": "Today the market is a 93%-China import monopoly with IREL the sole domestic oxide supplier; the scheme deliberately creates a five-player domestic structure capped at 1,200 MTPA each, so concentration is being designed in rather than competed away."
+    },
+    "cycle": {
+     "name": "Current opportunity & cycle position",
+     "weight": 0.15,
+     "lens": "current",
+     "score": 3,
+     "from": "category",
+     "basis": "Demand is inflecting on EV, wind and robotics volumes, but the price cycle is against producers — China resumed magnet shipments to India in October 2025 under a no-re-export condition, capping the scarcity premium."
+    },
+    "valuation": {
+     "name": "Valuation & market expectations",
+     "weight": 0.15,
+     "lens": "current",
+     "score": null,
+     "from": null,
+     "basis": "No industry-level valuation series exists for the magnet layer in the registry, and there is no listed domestic pure-play to derive one from."
+    },
+    "value_chain": {
+     "name": "Value-chain position & bottlenecks",
+     "weight": 0.1,
+     "lens": "structural",
+     "score": 1,
+     "from": "category",
+     "basis": "There is no integrated domestic plant until roughly Q1-2028; NdPr oxide supply is concentrated in IREL, heavy rare earths (Dy/Tb) for high-temperature grades are imported, and the strip caster, jet mill, vacuum sintering furnace and grain-boundary diffusion equipment are all imported — almost every link is missing."
+    },
+    "capital": {
+     "name": "Capital intensity & financial quality",
+     "weight": 0.05,
+     "lens": "structural",
+     "score": 2,
+     "from": "category",
+     "basis": "A Rs 750 crore capital subsidy against 6,000 MTPA implies heavy capex per tonne, with a two-year gestation before first sale and a five-year incentive window that must be earned back against a falling price."
+    },
+    "technology": {
+     "name": "Technology & innovation",
+     "weight": 0.05,
+     "lens": "structural",
+     "score": 2,
+     "from": "category",
+     "basis": "Strip-casting, jet-milling to powder, field pressing, vacuum sintering and heavy-rare-earth grain-boundary diffusion are not established in India; the government states plainly that India lacks the technology and infrastructure for the oxide-to-metal-to-alloy-to-magnet steps."
+    },
+    "risk": {
+     "name": "Risk & resilience",
+     "weight": null,
+     "lens": "risk",
+     "score": 1,
+     "from": "category",
+     "basis": "China’s April-2025 export controls already stopped Indian production lines with two to three weeks of stock, price undercutting is documented, the beneficiary award is still pending, and the whole case rests on one scheme that has not yet delivered a tonne."
+    }
+   },
+   "structural": {
+    "score": 50,
+    "coverage": 100
+   },
+   "current": {
+    "score": 60,
+    "coverage": 50
+   },
+   "risk": 1,
+   "risk_adjusted": 10,
+   "overall": 51.8,
+   "coverage": 85,
+   "provisional": false,
+   "notes": "Opportunity uses the same series as the Market & growth digest block (FY25 permanent-magnet imports of Rs 1,744 crore on 53,748 tonnes, government projection of consumption doubling by 2030 from 2025, and import dependence of 59.6–81.3% by value). Valuation left UNAVAILABLE — no industry valuation series and no listed domestic pure-play.",
+   "overall_rank": 21,
+   "risk_adjusted_rank": 25,
+   "structural_score": 50,
+   "current_score": 60,
+   "structural_score_rank": 24,
+   "current_score_rank": 13
   },
   {
    "slug": "reactor-coolant-pumps-primary-loop-india",
@@ -1682,7 +2062,102 @@
    "slug": "robot-software-autonomy-india",
    "title": "India Robot Software & Autonomy",
    "group": "Robotics & Automation",
-   "scored": false
+   "scored": true,
+   "as_of": "2026-10-30",
+   "categories": {
+    "economics": {
+     "name": "Industry economics & value creation",
+     "weight": 0.2,
+     "lens": "structural",
+     "score": 3,
+     "from": "category",
+     "basis": "Software is the highest-margin layer available to India here, but most realised value is still services-led engineering rather than product licence, and hardware import dependence of 85–90% of component value keeps the blended economics of the systems Indian firms sell thin."
+    },
+    "opportunity": {
+     "name": "Market opportunity & structural growth",
+     "weight": 0.15,
+     "lens": "structural",
+     "score": 4,
+     "from": "category",
+     "basis": "India robot software grows from US$223.4 mn in 2023 to US$1,312.3 mn by 2030 at a 27.7% value CAGR, inside a robotics market going from US$1.1 bn in 2025 to US$4.6 bn by 2030 (~33% CAGR), with software the fastest-growing offering segment and payback down to 1.5–2 years."
+    },
+    "competitive": {
+     "name": "Competitive structure & moat",
+     "weight": 0.15,
+     "lens": "structural",
+     "score": 3,
+     "from": "category",
+     "basis": "The field is fragmented — large engineering-services firms (Tata Elxsi, Cyient, KPIT) alongside a cluster of small product companies — with low switching costs on ROS2 and open-source stacks, and the differentiating platform IP (edge-AI runtimes, simulation) largely foreign."
+    },
+    "cycle": {
+     "name": "Current opportunity & cycle position",
+     "weight": 0.15,
+     "lens": "current",
+     "score": 4,
+     "from": "category",
+     "basis": "Demand pull is strong and recent: warehouse and quick-commerce automation is compounding, payback periods have shortened to 1.5–2 years, and Indian platforms are already being deployed overseas."
+    },
+    "valuation": {
+     "name": "Valuation & market expectations",
+     "weight": 0.15,
+     "lens": "current",
+     "score": null,
+     "from": null,
+     "basis": "No industry-level valuation series is carried in the registry for the robot-software layer; the listed comparables are diversified engineering-services firms whose multiples are not an industry multiple."
+    },
+    "value_chain": {
+     "name": "Value-chain position & bottlenecks",
+     "weight": 0.1,
+     "lens": "structural",
+     "score": 4,
+     "from": "category",
+     "basis": "This is India’s strongest position in the robotics chain — the deliberate counterweight to the hardware import gap — with a deep fleet-software and autonomy cluster and strong integration capability; the gap is edge-AI compute hardware, which is imported."
+    },
+    "capital": {
+     "name": "Capital intensity & financial quality",
+     "weight": 0.05,
+     "lens": "structural",
+     "score": 4,
+     "from": "category",
+     "basis": "Asset-light: the binding inputs are engineers and compute, not plant, so incremental capacity needs little capex and working capital is short-cycle relative to hardware manufacturing."
+    },
+    "technology": {
+     "name": "Technology & innovation",
+     "weight": 0.05,
+     "lens": "structural",
+     "score": 3,
+     "from": "category",
+     "basis": "Talent in SLAM, perception, motion planning and fleet orchestration is real and exportable, but edge-AI boards (Jetson-class) are imported and there is no unified Indian safety or interoperability standard, which slows productisation."
+    },
+    "risk": {
+     "name": "Risk & resilience",
+     "weight": null,
+     "lens": "risk",
+     "score": 3,
+     "from": "category",
+     "basis": "Talent scarcity in AI, control and integration engineering, the absence of a safety-standards framework, and dependence on imported compute and robot hardware all constrain scaling; software carries less regulatory and capital risk than the hardware layers."
+    }
+   },
+   "structural": {
+    "score": 68.6,
+    "coverage": 100
+   },
+   "current": {
+    "score": 80,
+    "coverage": 50
+   },
+   "risk": 3,
+   "risk_adjusted": 41.2,
+   "overall": 70.6,
+   "coverage": 85,
+   "provisional": false,
+   "notes": "Opportunity uses the same series as the Market & growth digest block (India robot software US$223.4 mn in 2023 to US$1,312.3 mn by 2030 at 27.7% value CAGR, inside a robotics market of US$1.1 bn in 2025 rising to US$4.6 bn by 2030 at ~33%). Valuation left UNAVAILABLE — the registry carries no industry valuation series.",
+   "overall_rank": 4,
+   "risk_adjusted_rank": 4,
+   "structural_score": 68.6,
+   "current_score": 80,
+   "structural_score_rank": 4,
+   "current_score_rank": 6
   },
   {
    "slug": "robotics-india",
@@ -1823,10 +2298,10 @@
    "coverage": 70,
    "provisional": false,
    "notes": "Scored against 'Industry-Level Investment Parameters & Scoring Architecture'. Cycle position and valuation left UNAVAILABLE — the registry carries no cycle or valuation data for these industries.",
-   "overall_rank": 18,
-   "risk_adjusted_rank": 10,
+   "overall_rank": 22,
+   "risk_adjusted_rank": 11,
    "structural_score": 51.4,
-   "structural_score_rank": 19
+   "structural_score_rank": 23
   },
   {
    "slug": "shakti-ew-india",
@@ -1934,12 +2409,12 @@
    "coverage": 85,
    "provisional": false,
    "notes": "Opportunity uses the same series as the Market & growth digest block (DGFT silver HS-category imports: US$184.33 mn FY26 vs an implied US$112.05 mn FY25, +64.51%). Valuation left UNAVAILABLE — no industry valuation series, and the pure-plays are foreign-listed. The CSE import line is an HS proxy, so it overstates paste narrowly and understates it if paste enters under a different code.",
-   "overall_rank": 12,
-   "risk_adjusted_rank": 12,
+   "overall_rank": 15,
+   "risk_adjusted_rank": 14,
    "structural_score": 62.9,
    "current_score": 40,
-   "structural_score_rank": 9,
-   "current_score_rank": 14
+   "structural_score_rank": 11,
+   "current_score_rank": 19
   },
   {
    "slug": "smart-meters-india",
@@ -2041,12 +2516,12 @@
    "coverage": 85,
    "provisional": false,
    "notes": "SMR-specific revenue is UNAVAILABLE — no unit is under construction and no commercial price exists, so opportunity is scored on the nuclear build-out frame and the three sanctioned demonstration projects rather than on an invented SMR market size. Valuation left UNAVAILABLE — no industry valuation series and the core participants are unlisted.",
-   "overall_rank": 19,
-   "risk_adjusted_rank": 18,
+   "overall_rank": 23,
+   "risk_adjusted_rank": 21,
    "structural_score": 52.9,
    "current_score": 40,
-   "structural_score_rank": 17,
-   "current_score_rank": 12
+   "structural_score_rank": 20,
+   "current_score_rank": 17
   },
   {
    "slug": "solar-cells-india",
@@ -2142,12 +2617,12 @@
    "coverage": 85,
    "provisional": false,
    "notes": "Opportunity uses the same series as the Market & growth digest block (CRISIL demand of 60-65 GW FY27; Commerce/TradeStat imported-cell value US$3.06 bn FY26 with a 28.6% two-year CAGR). Valuation left UNAVAILABLE — the registry carries no industry valuation data.",
-   "overall_rank": 11,
-   "risk_adjusted_rank": 11,
+   "overall_rank": 14,
+   "risk_adjusted_rank": 12,
    "structural_score": 64.3,
    "current_score": 40,
-   "structural_score_rank": 8,
-   "current_score_rank": 15
+   "structural_score_rank": 9,
+   "current_score_rank": 20
   },
   {
    "slug": "solar-pv-india",
@@ -2243,12 +2718,12 @@
    "coverage": 85,
    "provisional": false,
    "notes": "Opportunity uses the same series as the Market & growth digest block (PS Market Research, base 2023, 13.4% nominal CAGR 2024-2030). Valuation left UNAVAILABLE — the registry carries no industry valuation data. The panels-only Grand View series (9.4%) is a different scope and is not blended into the score.",
-   "overall_rank": 14,
-   "risk_adjusted_rank": 13,
+   "overall_rank": 17,
+   "risk_adjusted_rank": 16,
    "structural_score": 60,
    "current_score": 40,
-   "structural_score_rank": 12,
-   "current_score_rank": 13
+   "structural_score_rank": 15,
+   "current_score_rank": 18
   },
   {
    "slug": "steam-turbine-india",
@@ -2350,12 +2825,12 @@
    "coverage": 85,
    "provisional": false,
    "notes": "Scored against 'Industry-Level Investment Parameters & Scoring Architecture'. Opportunity uses the same CRISIL transformer series as the Market & growth digest block; the switchgear series is reported separately and never added to it. Valuation left UNAVAILABLE.",
-   "overall_rank": 4,
-   "risk_adjusted_rank": 4,
+   "overall_rank": 5,
+   "risk_adjusted_rank": 5,
    "structural_score": 68.6,
    "current_score": 80,
-   "structural_score_rank": 4,
-   "current_score_rank": 4
+   "structural_score_rank": 5,
+   "current_score_rank": 7
   },
   {
    "slug": "telecom-chipsets-india",
