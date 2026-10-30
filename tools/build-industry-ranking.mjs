@@ -22,15 +22,48 @@ const DIR = 'industries';
 const OUT_JSON = 'industry-ranking.json';
 const OUT_VIEW = 'views/industries-ranked.html';
 
-const W = { growth: 0.50, capex: 0.20, rd: 0.15, cyclicity: 0.15 };
+const DEFAULTS = {
+  weights: { growth: 0.50, capex: 0.20, rd: 0.15, cyclicity: 0.15 },
+  anchors: { growth_max_pct: 25, capex_max_pct: 30, rd_max_pct: 10 },
+  directions: { capex: 'barrier', cyclicity: 'inverted' },
+  coverage_threshold: null,
+};
+
+let P = DEFAULTS;
+if (fs.existsSync('ranking.config.json')) {
+  try {
+    const raw = JSON.parse(fs.readFileSync('ranking.config.json', 'utf8'));
+    P = {
+      weights: { ...DEFAULTS.weights, ...(raw.weights || {}) },
+      anchors: { ...DEFAULTS.anchors, ...(raw.anchors || {}) },
+      directions: { ...DEFAULTS.directions, ...(raw.directions || {}) },
+      coverage_threshold: raw.coverage_threshold ?? null,
+    };
+  } catch (e) {
+    console.log('WARN ranking.config.json is not valid JSON — using defaults: ' + e.message);
+  }
+}
+
+const W = P.weights;
+const sumW = Object.values(W).reduce((a, b) => a + b, 0);
+if (Math.abs(sumW - 1) > 0.01) console.log(`WARN weights sum to ${sumW.toFixed(2)}, not 1.00 — the composite renormalises, so it still works, but the weights no longer read as shares.`);
 
 const clamp01 = x => Math.max(0, Math.min(1, x));
-const sGrowth = v => (v == null || isNaN(v) ? null : clamp01(Number(v) / 25));
+const sGrowth = v => (v == null || isNaN(v) ? null : clamp01(Number(v) / P.anchors.growth_max_pct));
 const sBand = v => (v == null || isNaN(v) ? null : clamp01((Number(v) - 1) / 4));
 const sCyc = v => (v == null || isNaN(v) ? null : clamp01((5 - Number(v)) / 4));
 // ratios are preferred; the 1–5 rating is the fallback
-const sCapexPct = v => (v == null || isNaN(v) ? null : clamp01(Number(v) / 30));   // 0%→0, 30%+→1
-const sRdPct = v => (v == null || isNaN(v) ? null : clamp01(Number(v) / 10));       // 0%→0, 10%+→1
+const sCapexPctRaw = v => (v == null || isNaN(v) ? null : clamp01(Number(v) / P.anchors.capex_max_pct));
+const sRdPct = v => (v == null || isNaN(v) ? null : clamp01(Number(v) / P.anchors.rd_max_pct));
+// capex reads as a moat by default ("barrier"); "drag" inverts it so heavy capital scores lower
+const sCapexPct = v => {
+  const x = sCapexPctRaw(v);
+  return x == null ? null : (P.directions.capex === 'drag' ? 1 - x : x);
+};
+const sBandDir = (v, field) => {
+  const x = sBand(v);
+  return x == null ? null : (P.directions[field] === 'drag' ? 1 - x : x);
+};
 
 const clean = s => String(s ?? '').replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
 
@@ -70,7 +103,7 @@ for (const f of fs.readdirSync(DIR).filter(x => x.endsWith('.html')).sort()) {
     continue;
   }
 
-  const capexScore = sCapexPct(score.capex_pct) ?? sBand(score.capex_intensity);
+  const capexScore = sCapexPct(score.capex_pct) ?? sBandDir(score.capex_intensity, 'capex');
   const rdScore = sRdPct(score.rd_pct) ?? sBand(score.rd_intensity);
 
   const parts = [
@@ -135,8 +168,14 @@ const out = {
   description:
     'Industry ranking. Growth-led composite over growth, capex intensity, R&D intensity and cyclicity, read from each entry page\'s industry-score block. DERIVED — regenerate with node tools/build-industry-ranking.mjs.',
   generated: new Date().toISOString().slice(0, 10),
-  weights: W,
-  anchors: { growth: '0%→0, 25%+→1 linear', bands: '1–5 → (x−1)/4', cyclicity: '1–5 → (5−x)/4 (inverted)' },
+  parameters: P,
+  anchors: {
+    growth: `0%→0, ${P.anchors.growth_max_pct}%+→1 linear`,
+    capex_pct: `0%→0, ${P.anchors.capex_max_pct}%+→1 (${P.directions.capex === 'drag' ? 'heavier capital scores lower' : 'barrier reading, heavier scores higher'})`,
+    rd_pct: `0%→0, ${P.anchors.rd_max_pct}%+→1`,
+    bands: '1–5 → (x−1)/4',
+    cyclicity: '1–5 → (5−x)/4 (inverted)',
+  },
   counts: {
     industries: rows.length,
     scored: rows.filter(r => r.scored).length,
@@ -214,8 +253,8 @@ const html = `<!DOCTYPE html>
 ${sections}
 
 <div class="footnote">
-  Score = 0.50&middot;growth + 0.20&middot;capex + 0.15&middot;R&amp;D + 0.15&middot;cyclicity, over the fields a page actually carries, then renormalised by their weight.
-  Growth is normalised 0%&rarr;0, 25%+&rarr;1; capex/revenue 0%&rarr;0, 30%+&rarr;1; R&amp;D/revenue 0%&rarr;0, 10%+&rarr;1; the 1&ndash;5 ratings &rarr; (x&minus;1)/4; cyclicity is inverted (5&minus;x)/4.
+  <b>Parameters in force</b> (${'ranking.config.json'}): ${Math.round(W.growth*100)}% growth &middot; ${Math.round(W.capex*100)}% capex &middot; ${Math.round(W.rd*100)}% R&amp;D &middot; ${Math.round(W.cyclicity*100)}% cyclicity, over the fields a page actually carries, then renormalised by their weight.
+  Anchors: growth 0%&rarr;0 and ${P.anchors.growth_max_pct}%+&rarr;1; capex/revenue 0%&rarr;0 and ${P.anchors.capex_max_pct}%+&rarr;1 (${P.directions.capex === 'drag' ? 'read as a capital drag &mdash; heavier scores lower' : 'barrier reading &mdash; heavier scores higher'}); R&amp;D/revenue 0%&rarr;0 and ${P.anchors.rd_max_pct}%+&rarr;1; the 1&ndash;5 ratings &rarr; (x&minus;1)/4; cyclicity inverted (5&minus;x)/4.
   Where both a ratio and a rating exist the ratio is used. A missing field is excluded, never imputed.
   Values come from each entry page&rsquo;s own score block; every figure keeps its label. Generated ${out.generated}.
 </div>
