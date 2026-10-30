@@ -36,14 +36,14 @@ table.data.detail td { padding: 6px 7px; }
 <header class="masthead">
   <div class="eyebrow">Industry BOM Registry &middot; derived view</div>
   <h1>Industries <span>ranked</span></h1>
-  <div class="subtitle">30 ranked &middot; 47 not yet scored &middot; hierarchical category scoring, overall 0&ndash;100</div>
+  <div class="subtitle">5 ranked &middot; 72 not yet scored &middot; hierarchical category scoring, overall 0&ndash;100</div>
 </header>
 
 <div class="metric-cards">
   <div class="metric-card"><div class="metric-card__val">77</div><div class="metric-card__label">Industries</div><div class="metric-card__sub">in the registry</div></div>
-  <div class="metric-card metric-card--gold"><div class="metric-card__val">30</div><div class="metric-card__label">Ranked</div><div class="metric-card__sub">have a category score</div></div>
+  <div class="metric-card metric-card--gold"><div class="metric-card__val">5</div><div class="metric-card__label">Ranked</div><div class="metric-card__sub">have a category score</div></div>
   <div class="metric-card"><div class="metric-card__val">0</div><div class="metric-card__label">Legacy blocks</div><div class="metric-card__sub">need rescoring</div></div>
-  <div class="metric-card"><div class="metric-card__val">47</div><div class="metric-card__label">Not yet scored</div><div class="metric-card__sub">backfill pending</div></div>
+  <div class="metric-card"><div class="metric-card__val">72</div><div class="metric-card__label">Not yet scored</div><div class="metric-card__sub">backfill pending</div></div>
 </div>
 
 <div class="sec-head"><span class="sec-num">00</span><span class="sec-title">How to read the scores</span>
@@ -65,10 +65,12 @@ table.data.detail td { padding: 6px 7px; }
     <th rowspan="2">Industry</th>
     <th colspan="7" class="grp grp-struct">Structural attractiveness</th>
     <th colspan="3" class="grp grp-current">Current opportunity</th>
-    <th rowspan="2" class="grp-start">Risk</th>
+    <th rowspan="2" class="grp-start">Resilience<div class="wt">5 = lowest risk</div></th>
     <th rowspan="2">Risk-adj</th>
     <th rowspan="2">Overall</th>
     <th rowspan="2">Coverage</th>
+    <th rowspan="2">Evidence<div class="wt">1-5</div></th>
+    <th rowspan="2">Primary src</th>
   </tr>
   <tr>
     <th class="cat">economics<div class="wt">20%</div></th><th class="cat">opportunity<div class="wt">15%</div></th><th class="cat">competitive<div class="wt">15%</div></th><th class="cat">value_chain<div class="wt">10%</div></th><th class="cat">capital<div class="wt">5%</div></th><th class="cat">technology<div class="wt">5%</div></th>
@@ -78,18 +80,6 @@ table.data.detail td { padding: 6px 7px; }
   </tr></thead><tbody>
   <tr>
     <td class="c">1</td>
-    <td><b>India Power Transmission</b><div class="slug">Power &amp; Electrical Infrastructure</div></td>
-    <td class="c">4</td><td class="c">5</td><td class="c">4</td><td class="c">4</td><td class="c">3</td><td class="c">3</td>
-    <td class="c tot">81.4</td>
-    <td class="c grp-start">3</td><td class="c"><span class="dim">-</span></td>
-    <td class="c tot">60.0</td>
-    <td class="c grp-start">3</td>
-    <td class="c">48.8</td>
-    <td class="c tot">77.6</td>
-    <td class="c">85%</td>
-  </tr>
-<tr>
-    <td class="c">2</td>
     <td><b>India Optical, Medical &amp; Surgical Apparatus</b><div class="slug">Healthcare &amp; Medical Devices</div></td>
     <td class="c">4</td><td class="c">5</td><td class="c">3</td><td class="c">3</td><td class="c">3</td><td class="c">4</td>
     <td class="c tot">75.7</td>
@@ -99,57 +89,11 @@ table.data.detail td { padding: 6px 7px; }
     <td class="c">60.6</td>
     <td class="c tot">75.7</td>
     <td class="c">70%</td>
-  </tr>
-<tr>
     <td class="c">3</td>
-    <td><b>India EHV / HV Power Cables</b><div class="slug">Power &amp; Electrical Infrastructure</div></td>
-    <td class="c">4</td><td class="c">4</td><td class="c">3</td><td class="c">3</td><td class="c">3</td><td class="c">2</td>
-    <td class="c tot">68.6</td>
-    <td class="c grp-start">4</td><td class="c"><span class="dim">-</span></td>
-    <td class="c tot">80.0</td>
-    <td class="c grp-start">3</td>
-    <td class="c">41.2</td>
-    <td class="c tot">70.6</td>
-    <td class="c">85%</td>
+    <td class="c">50%</td>
   </tr>
 <tr>
-    <td class="c">4</td>
-    <td><b>India Robot Software &amp; Autonomy</b><div class="slug">Robotics &amp; Automation</div></td>
-    <td class="c">3</td><td class="c">4</td><td class="c">3</td><td class="c">4</td><td class="c">4</td><td class="c">3</td>
-    <td class="c tot">68.6</td>
-    <td class="c grp-start">4</td><td class="c"><span class="dim">-</span></td>
-    <td class="c tot">80.0</td>
-    <td class="c grp-start">3</td>
-    <td class="c">41.2</td>
-    <td class="c tot">70.6</td>
-    <td class="c">85%</td>
-  </tr>
-<tr>
-    <td class="c">5</td>
-    <td><b>Substation Equipment</b><div class="slug">Power &amp; Electrical Infrastructure</div></td>
-    <td class="c">4</td><td class="c">4</td><td class="c">3</td><td class="c">3</td><td class="c">3</td><td class="c">2</td>
-    <td class="c tot">68.6</td>
-    <td class="c grp-start">4</td><td class="c"><span class="dim">-</span></td>
-    <td class="c tot">80.0</td>
-    <td class="c grp-start">3</td>
-    <td class="c">41.2</td>
-    <td class="c tot">70.6</td>
-    <td class="c">85%</td>
-  </tr>
-<tr>
-    <td class="c">6</td>
-    <td><b>India Power &amp; Distribution Transformers</b><div class="slug">Electrical &amp; Electronic Equipment</div></td>
-    <td class="c">4</td><td class="c">4</td><td class="c">4</td><td class="c">4</td><td class="c">3</td><td class="c">3</td>
-    <td class="c tot">77.1</td>
-    <td class="c grp-start">3</td><td class="c">2</td>
-    <td class="c tot">50.0</td>
-    <td class="c grp-start">3</td>
-    <td class="c">46.3</td>
-    <td class="c tot">69.0</td>
-    <td class="c">100%</td>
-  </tr>
-<tr>
-    <td class="c">7</td>
+    <td class="c">2</td>
     <td><b>India EMS / ODM</b><div class="slug">Electrical &amp; Electronic Equipment</div></td>
     <td class="c">3</td><td class="c">5</td><td class="c">3</td><td class="c">3</td><td class="c">3</td><td class="c">2</td>
     <td class="c tot">67.1</td>
@@ -159,45 +103,11 @@ table.data.detail td { padding: 6px 7px; }
     <td class="c">40.3</td>
     <td class="c tot">67.1</td>
     <td class="c">70%</td>
+    <td class="c">4</td>
+    <td class="c">55%</td>
   </tr>
 <tr>
-    <td class="c">8</td>
-    <td><b>India Launch Vehicles &amp; Propulsion</b><div class="slug">Space &amp; Satellites</div></td>
-    <td class="c">3</td><td class="c">3</td><td class="c">4</td><td class="c">4</td><td class="c">2</td><td class="c">4</td>
-    <td class="c tot">67.1</td>
-    <td class="c grp-start">3</td><td class="c"><span class="dim">-</span></td>
-    <td class="c tot">60.0</td>
-    <td class="c grp-start">3</td>
-    <td class="c">40.3</td>
-    <td class="c tot">65.9</td>
-    <td class="c">85%</td>
-  </tr>
-<tr>
-    <td class="c">9</td>
-    <td><b>India Missiles</b><div class="slug">Defence &amp; Aerospace</div></td>
-    <td class="c">3</td><td class="c">4</td><td class="c">3</td><td class="c">3</td><td class="c">2</td><td class="c">3</td>
-    <td class="c tot">62.9</td>
-    <td class="c grp-start">4</td><td class="c"><span class="dim">-</span></td>
-    <td class="c tot">80.0</td>
-    <td class="c grp-start">2</td>
-    <td class="c">25.2</td>
-    <td class="c tot">65.9</td>
-    <td class="c">85%</td>
-  </tr>
-<tr>
-    <td class="c">10</td>
-    <td><b>India PCS &amp; Power Semiconductors</b><div class="slug">Energy Storage</div></td>
-    <td class="c">3</td><td class="c">4</td><td class="c">3</td><td class="c">2</td><td class="c">3</td><td class="c">3</td>
-    <td class="c tot">61.4</td>
-    <td class="c grp-start">4</td><td class="c"><span class="dim">-</span></td>
-    <td class="c tot">80.0</td>
-    <td class="c grp-start">2</td>
-    <td class="c">24.6</td>
-    <td class="c tot">64.7</td>
-    <td class="c">85%</td>
-  </tr>
-<tr>
-    <td class="c">11</td>
+    <td class="c">3</td>
     <td><b>India Power Semiconductors &amp; OSAT</b><div class="slug">Electrical &amp; Electronic Equipment</div></td>
     <td class="c">3</td><td class="c">4</td><td class="c">3</td><td class="c">4</td><td class="c">2</td><td class="c">2</td>
     <td class="c tot">64.3</td>
@@ -207,117 +117,11 @@ table.data.detail td { padding: 6px 7px; }
     <td class="c">38.6</td>
     <td class="c tot">64.3</td>
     <td class="c">70%</td>
+    <td class="c">3</td>
+    <td class="c">40%</td>
   </tr>
 <tr>
-    <td class="c">12</td>
-    <td><b>India Precision Machine Tools &amp; Metrology</b><div class="slug">Robotics &amp; Automation</div></td>
-    <td class="c">3</td><td class="c">4</td><td class="c">3</td><td class="c">2</td><td class="c">3</td><td class="c">2</td>
-    <td class="c tot">60.0</td>
-    <td class="c grp-start">4</td><td class="c"><span class="dim">-</span></td>
-    <td class="c tot">80.0</td>
-    <td class="c grp-start">3</td>
-    <td class="c">36.0</td>
-    <td class="c tot">63.5</td>
-    <td class="c">85%</td>
-  </tr>
-<tr>
-    <td class="c">13</td>
-    <td><b>India Telecom Towers</b><div class="slug">Telecom</div></td>
-    <td class="c">4</td><td class="c">3</td><td class="c">3</td><td class="c">3</td><td class="c">3</td><td class="c">2</td>
-    <td class="c tot">64.3</td>
-    <td class="c grp-start">3</td><td class="c">3</td>
-    <td class="c tot">60.0</td>
-    <td class="c grp-start">2</td>
-    <td class="c">25.7</td>
-    <td class="c tot">63.0</td>
-    <td class="c">100%</td>
-  </tr>
-<tr>
-    <td class="c">14</td>
-    <td><b>India Guns</b><div class="slug">Defence &amp; Aerospace</div></td>
-    <td class="c">3</td><td class="c">3</td><td class="c">3</td><td class="c">3</td><td class="c">2</td><td class="c">3</td>
-    <td class="c tot">58.6</td>
-    <td class="c grp-start">4</td><td class="c"><span class="dim">-</span></td>
-    <td class="c tot">80.0</td>
-    <td class="c grp-start">2</td>
-    <td class="c">23.4</td>
-    <td class="c tot">62.4</td>
-    <td class="c">85%</td>
-  </tr>
-<tr>
-    <td class="c">15</td>
-    <td><b>Overhead Transmission Line</b><div class="slug">Power &amp; Electrical Infrastructure</div></td>
-    <td class="c">3</td><td class="c">4</td><td class="c">3</td><td class="c">3</td><td class="c">2</td><td class="c">2</td>
-    <td class="c tot">61.4</td>
-    <td class="c grp-start">3</td><td class="c"><span class="dim">-</span></td>
-    <td class="c tot">60.0</td>
-    <td class="c grp-start">3</td>
-    <td class="c">36.8</td>
-    <td class="c tot">61.2</td>
-    <td class="c">85%</td>
-  </tr>
-<tr>
-    <td class="c">16</td>
-    <td><b>Solar Cell Fabrication</b><div class="slug">Renewable Energy</div></td>
-    <td class="c">3</td><td class="c">4</td><td class="c">3</td><td class="c">3</td><td class="c">2</td><td class="c">4</td>
-    <td class="c tot">64.3</td>
-    <td class="c grp-start">2</td><td class="c"><span class="dim">-</span></td>
-    <td class="c tot">40.0</td>
-    <td class="c grp-start">2</td>
-    <td class="c">25.7</td>
-    <td class="c tot">60.0</td>
-    <td class="c">85%</td>
-  </tr>
-<tr>
-    <td class="c">17</td>
-    <td><b>Silver Paste &amp; Metallisation</b><div class="slug">Renewable Energy</div></td>
-    <td class="c">4</td><td class="c">3</td><td class="c">3</td><td class="c">2</td><td class="c">4</td><td class="c">2</td>
-    <td class="c tot">62.9</td>
-    <td class="c grp-start">2</td><td class="c"><span class="dim">-</span></td>
-    <td class="c tot">40.0</td>
-    <td class="c grp-start">2</td>
-    <td class="c">25.2</td>
-    <td class="c tot">58.8</td>
-    <td class="c">85%</td>
-  </tr>
-<tr>
-    <td class="c">18</td>
-    <td><b>India HVDC &amp; Power Electronics</b><div class="slug">Power &amp; Electrical Infrastructure</div></td>
-    <td class="c">3</td><td class="c">4</td><td class="c">2</td><td class="c">2</td><td class="c">4</td><td class="c">2</td>
-    <td class="c tot">57.1</td>
-    <td class="c grp-start">3</td><td class="c"><span class="dim">-</span></td>
-    <td class="c tot">60.0</td>
-    <td class="c grp-start">2</td>
-    <td class="c">22.8</td>
-    <td class="c tot">57.6</td>
-    <td class="c">85%</td>
-  </tr>
-<tr>
-    <td class="c">19</td>
-    <td><b>India Solar PV</b><div class="slug">Renewable Energy</div></td>
-    <td class="c">3</td><td class="c">4</td><td class="c">2</td><td class="c">3</td><td class="c">3</td><td class="c">3</td>
-    <td class="c tot">60.0</td>
-    <td class="c grp-start">2</td><td class="c"><span class="dim">-</span></td>
-    <td class="c tot">40.0</td>
-    <td class="c grp-start">2</td>
-    <td class="c">24.0</td>
-    <td class="c tot">56.5</td>
-    <td class="c">85%</td>
-  </tr>
-<tr>
-    <td class="c">20</td>
-    <td><b>India Green Hydrogen &amp; Electrolyser Manufacturing</b><div class="slug">Green Hydrogen &amp; Clean Fuels</div></td>
-    <td class="c">2</td><td class="c">4</td><td class="c">3</td><td class="c">3</td><td class="c">2</td><td class="c">3</td>
-    <td class="c tot">57.1</td>
-    <td class="c grp-start">2</td><td class="c"><span class="dim">-</span></td>
-    <td class="c tot">40.0</td>
-    <td class="c grp-start">2</td>
-    <td class="c">22.8</td>
-    <td class="c tot">54.1</td>
-    <td class="c">85%</td>
-  </tr>
-<tr>
-    <td class="c">21</td>
+    <td class="c">4</td>
     <td><b>India Inorganic Chemicals</b><div class="slug">Chemicals &amp; Petrochemicals</div></td>
     <td class="c">3</td><td class="c">3</td><td class="c">2</td><td class="c">3</td><td class="c">2</td><td class="c">2</td>
     <td class="c tot">52.9</td>
@@ -327,33 +131,11 @@ table.data.detail td { padding: 6px 7px; }
     <td class="c">21.2</td>
     <td class="c tot">52.9</td>
     <td class="c">70%</td>
+    <td class="c">3</td>
+    <td class="c">40%</td>
   </tr>
 <tr>
-    <td class="c">22</td>
-    <td><b>India Li-ion Cell Manufacturing</b><div class="slug">Energy Storage</div></td>
-    <td class="c">2</td><td class="c">5</td><td class="c">2</td><td class="c">2</td><td class="c">1</td><td class="c">2</td>
-    <td class="c tot">51.4</td>
-    <td class="c grp-start">3</td><td class="c"><span class="dim">-</span></td>
-    <td class="c tot">60.0</td>
-    <td class="c grp-start">2</td>
-    <td class="c">20.6</td>
-    <td class="c tot">52.9</td>
-    <td class="c">85%</td>
-  </tr>
-<tr>
-    <td class="c">23</td>
-    <td><b>India Rare-Earth Magnets</b><div class="slug">Robotics &amp; Automation</div></td>
-    <td class="c">2</td><td class="c">4</td><td class="c">3</td><td class="c">1</td><td class="c">2</td><td class="c">2</td>
-    <td class="c tot">50.0</td>
-    <td class="c grp-start">3</td><td class="c"><span class="dim">-</span></td>
-    <td class="c tot">60.0</td>
-    <td class="c grp-start">1</td>
-    <td class="c">10.0</td>
-    <td class="c tot">51.8</td>
-    <td class="c">85%</td>
-  </tr>
-<tr>
-    <td class="c">24</td>
+    <td class="c">5</td>
     <td><b>India Servo Motors &amp; Drives</b><div class="slug">Robotics &amp; Automation</div></td>
     <td class="c">3</td><td class="c">2</td><td class="c">2</td><td class="c">3</td><td class="c">3</td><td class="c">3</td>
     <td class="c tot">51.4</td>
@@ -363,78 +145,8 @@ table.data.detail td { padding: 6px 7px; }
     <td class="c">30.8</td>
     <td class="c tot">51.4</td>
     <td class="c">70%</td>
-  </tr>
-<tr>
-    <td class="c">25</td>
-    <td><b>India Small Modular Reactor</b><div class="slug">Nuclear Energy</div></td>
-    <td class="c">2</td><td class="c">3</td><td class="c">3</td><td class="c">3</td><td class="c">2</td><td class="c">3</td>
-    <td class="c tot">52.9</td>
-    <td class="c grp-start">2</td><td class="c"><span class="dim">-</span></td>
-    <td class="c tot">40.0</td>
-    <td class="c grp-start">2</td>
-    <td class="c">21.2</td>
-    <td class="c tot">50.6</td>
-    <td class="c">85%</td>
-  </tr>
-<tr>
-    <td class="c">26</td>
-    <td><b>India Organic Chemicals</b><div class="slug">Chemicals &amp; Petrochemicals</div></td>
-    <td class="c">2</td><td class="c">3</td><td class="c">3</td><td class="c">3</td><td class="c">2</td><td class="c">2</td>
-    <td class="c tot">51.4</td>
-    <td class="c grp-start">2</td><td class="c"><span class="dim">-</span></td>
-    <td class="c tot">40.0</td>
-    <td class="c grp-start">2</td>
-    <td class="c">20.6</td>
-    <td class="c tot">49.4</td>
-    <td class="c">85%</td>
-  </tr>
-<tr>
-    <td class="c">27</td>
-    <td><b>India Harmonic &amp; RV Reducers</b><div class="slug">Robotics &amp; Automation</div></td>
-    <td class="c">2</td><td class="c">3</td><td class="c">3</td><td class="c">1</td><td class="c">2</td><td class="c">2</td>
-    <td class="c tot">45.7</td>
-    <td class="c grp-start">3</td><td class="c"><span class="dim">-</span></td>
-    <td class="c tot">60.0</td>
-    <td class="c grp-start">2</td>
-    <td class="c">18.3</td>
-    <td class="c tot">48.2</td>
-    <td class="c">85%</td>
-  </tr>
-<tr>
-    <td class="c">28</td>
-    <td><b>India Battery Energy Storage (BESS)</b><div class="slug">Energy Storage</div></td>
-    <td class="c">2</td><td class="c">4</td><td class="c">2</td><td class="c">2</td><td class="c">2</td><td class="c">2</td>
-    <td class="c tot">48.6</td>
-    <td class="c grp-start">2</td><td class="c"><span class="dim">-</span></td>
-    <td class="c tot">40.0</td>
-    <td class="c grp-start">2</td>
-    <td class="c">19.4</td>
-    <td class="c tot">47.1</td>
-    <td class="c">85%</td>
-  </tr>
-<tr>
-    <td class="c">29</td>
-    <td><b>India Pharma APIs &amp; Bulk Drugs</b><div class="slug">Chemicals &amp; Petrochemicals</div></td>
-    <td class="c">2</td><td class="c">3</td><td class="c">2</td><td class="c">3</td><td class="c">2</td><td class="c">3</td>
-    <td class="c tot">48.6</td>
-    <td class="c grp-start">2</td><td class="c"><span class="dim">-</span></td>
-    <td class="c tot">40.0</td>
-    <td class="c grp-start">2</td>
-    <td class="c">19.4</td>
-    <td class="c tot">47.1</td>
-    <td class="c">85%</td>
-  </tr>
-<tr>
-    <td class="c">30</td>
-    <td><b>India Mobile Handsets &amp; Accessories</b><div class="slug">Electrical &amp; Electronic Equipment</div></td>
-    <td class="c">2</td><td class="c">2</td><td class="c">2</td><td class="c">2</td><td class="c">3</td><td class="c">2</td>
-    <td class="c tot">41.4</td>
-    <td class="c grp-start">2</td><td class="c"><span class="dim">-</span></td>
-    <td class="c tot">40.0</td>
-    <td class="c grp-start">2</td>
-    <td class="c">16.6</td>
-    <td class="c tot">41.2</td>
-    <td class="c">85%</td>
+    <td class="c">3</td>
+    <td class="c">45%</td>
   </tr>
   </tbody></table></div></div>
 
@@ -445,153 +157,28 @@ table.data.detail td { padding: 6px 7px; }
 <tbody>
 <tr>
 <td class="c">1</td>
-<td><b>India Power Transmission</b><div class="slug">Power &amp; Electrical Infrastructure</div></td>
-<td class="c">81.4</td><td class="c">100%</td>
-</tr>
-<tr>
-<td class="c">2</td>
-<td><b>India Power &amp; Distribution Transformers</b><div class="slug">Electrical &amp; Electronic Equipment</div></td>
-<td class="c">77.1</td><td class="c">100%</td>
-</tr>
-<tr>
-<td class="c">3</td>
 <td><b>India Optical, Medical &amp; Surgical Apparatus</b><div class="slug">Healthcare &amp; Medical Devices</div></td>
 <td class="c">75.7</td><td class="c">100%</td>
 </tr>
 <tr>
-<td class="c">4</td>
-<td><b>India EHV / HV Power Cables</b><div class="slug">Power &amp; Electrical Infrastructure</div></td>
-<td class="c">68.6</td><td class="c">100%</td>
-</tr>
-<tr>
-<td class="c">5</td>
-<td><b>India Robot Software &amp; Autonomy</b><div class="slug">Robotics &amp; Automation</div></td>
-<td class="c">68.6</td><td class="c">100%</td>
-</tr>
-<tr>
-<td class="c">6</td>
-<td><b>Substation Equipment</b><div class="slug">Power &amp; Electrical Infrastructure</div></td>
-<td class="c">68.6</td><td class="c">100%</td>
-</tr>
-<tr>
-<td class="c">7</td>
+<td class="c">2</td>
 <td><b>India EMS / ODM</b><div class="slug">Electrical &amp; Electronic Equipment</div></td>
 <td class="c">67.1</td><td class="c">100%</td>
 </tr>
 <tr>
-<td class="c">8</td>
-<td><b>India Launch Vehicles &amp; Propulsion</b><div class="slug">Space &amp; Satellites</div></td>
-<td class="c">67.1</td><td class="c">100%</td>
-</tr>
-<tr>
-<td class="c">9</td>
+<td class="c">3</td>
 <td><b>India Power Semiconductors &amp; OSAT</b><div class="slug">Electrical &amp; Electronic Equipment</div></td>
 <td class="c">64.3</td><td class="c">100%</td>
 </tr>
 <tr>
-<td class="c">10</td>
-<td><b>Solar Cell Fabrication</b><div class="slug">Renewable Energy</div></td>
-<td class="c">64.3</td><td class="c">100%</td>
-</tr>
-<tr>
-<td class="c">11</td>
-<td><b>India Telecom Towers</b><div class="slug">Telecom</div></td>
-<td class="c">64.3</td><td class="c">100%</td>
-</tr>
-<tr>
-<td class="c">12</td>
-<td><b>India Missiles</b><div class="slug">Defence &amp; Aerospace</div></td>
-<td class="c">62.9</td><td class="c">100%</td>
-</tr>
-<tr>
-<td class="c">13</td>
-<td><b>Silver Paste &amp; Metallisation</b><div class="slug">Renewable Energy</div></td>
-<td class="c">62.9</td><td class="c">100%</td>
-</tr>
-<tr>
-<td class="c">14</td>
-<td><b>Overhead Transmission Line</b><div class="slug">Power &amp; Electrical Infrastructure</div></td>
-<td class="c">61.4</td><td class="c">100%</td>
-</tr>
-<tr>
-<td class="c">15</td>
-<td><b>India PCS &amp; Power Semiconductors</b><div class="slug">Energy Storage</div></td>
-<td class="c">61.4</td><td class="c">100%</td>
-</tr>
-<tr>
-<td class="c">16</td>
-<td><b>India Precision Machine Tools &amp; Metrology</b><div class="slug">Robotics &amp; Automation</div></td>
-<td class="c">60.0</td><td class="c">100%</td>
-</tr>
-<tr>
-<td class="c">17</td>
-<td><b>India Solar PV</b><div class="slug">Renewable Energy</div></td>
-<td class="c">60.0</td><td class="c">100%</td>
-</tr>
-<tr>
-<td class="c">18</td>
-<td><b>India Guns</b><div class="slug">Defence &amp; Aerospace</div></td>
-<td class="c">58.6</td><td class="c">100%</td>
-</tr>
-<tr>
-<td class="c">19</td>
-<td><b>India Green Hydrogen &amp; Electrolyser Manufacturing</b><div class="slug">Green Hydrogen &amp; Clean Fuels</div></td>
-<td class="c">57.1</td><td class="c">100%</td>
-</tr>
-<tr>
-<td class="c">20</td>
-<td><b>India HVDC &amp; Power Electronics</b><div class="slug">Power &amp; Electrical Infrastructure</div></td>
-<td class="c">57.1</td><td class="c">100%</td>
-</tr>
-<tr>
-<td class="c">21</td>
+<td class="c">4</td>
 <td><b>India Inorganic Chemicals</b><div class="slug">Chemicals &amp; Petrochemicals</div></td>
 <td class="c">52.9</td><td class="c">100%</td>
 </tr>
 <tr>
-<td class="c">22</td>
-<td><b>India Small Modular Reactor</b><div class="slug">Nuclear Energy</div></td>
-<td class="c">52.9</td><td class="c">100%</td>
-</tr>
-<tr>
-<td class="c">23</td>
-<td><b>India Li-ion Cell Manufacturing</b><div class="slug">Energy Storage</div></td>
-<td class="c">51.4</td><td class="c">100%</td>
-</tr>
-<tr>
-<td class="c">24</td>
-<td><b>India Organic Chemicals</b><div class="slug">Chemicals &amp; Petrochemicals</div></td>
-<td class="c">51.4</td><td class="c">100%</td>
-</tr>
-<tr>
-<td class="c">25</td>
+<td class="c">5</td>
 <td><b>India Servo Motors &amp; Drives</b><div class="slug">Robotics &amp; Automation</div></td>
 <td class="c">51.4</td><td class="c">100%</td>
-</tr>
-<tr>
-<td class="c">26</td>
-<td><b>India Rare-Earth Magnets</b><div class="slug">Robotics &amp; Automation</div></td>
-<td class="c">50.0</td><td class="c">100%</td>
-</tr>
-<tr>
-<td class="c">27</td>
-<td><b>India Battery Energy Storage (BESS)</b><div class="slug">Energy Storage</div></td>
-<td class="c">48.6</td><td class="c">100%</td>
-</tr>
-<tr>
-<td class="c">28</td>
-<td><b>India Pharma APIs &amp; Bulk Drugs</b><div class="slug">Chemicals &amp; Petrochemicals</div></td>
-<td class="c">48.6</td><td class="c">100%</td>
-</tr>
-<tr>
-<td class="c">29</td>
-<td><b>India Harmonic &amp; RV Reducers</b><div class="slug">Robotics &amp; Automation</div></td>
-<td class="c">45.7</td><td class="c">100%</td>
-</tr>
-<tr>
-<td class="c">30</td>
-<td><b>India Mobile Handsets &amp; Accessories</b><div class="slug">Electrical &amp; Electronic Equipment</div></td>
-<td class="c">41.4</td><td class="c">100%</td>
 </tr>
 </tbody></table></div></div>
 
@@ -600,131 +187,7 @@ table.data.detail td { padding: 6px 7px; }
 <div class="table-wrap"><div class="table-scroll"><table class="data">
 <thead><tr><th>#</th><th>Industry</th><th>Current</th><th>Coverage</th></tr></thead>
 <tbody>
-<tr>
-<td class="c">1</td>
-<td><b>India EHV / HV Power Cables</b><div class="slug">Power &amp; Electrical Infrastructure</div></td>
-<td class="c">80.0</td><td class="c">50%</td>
-</tr>
-<tr>
-<td class="c">2</td>
-<td><b>India Guns</b><div class="slug">Defence &amp; Aerospace</div></td>
-<td class="c">80.0</td><td class="c">50%</td>
-</tr>
-<tr>
-<td class="c">3</td>
-<td><b>India Precision Machine Tools &amp; Metrology</b><div class="slug">Robotics &amp; Automation</div></td>
-<td class="c">80.0</td><td class="c">50%</td>
-</tr>
-<tr>
-<td class="c">4</td>
-<td><b>India Missiles</b><div class="slug">Defence &amp; Aerospace</div></td>
-<td class="c">80.0</td><td class="c">50%</td>
-</tr>
-<tr>
-<td class="c">5</td>
-<td><b>India PCS &amp; Power Semiconductors</b><div class="slug">Energy Storage</div></td>
-<td class="c">80.0</td><td class="c">50%</td>
-</tr>
-<tr>
-<td class="c">6</td>
-<td><b>India Robot Software &amp; Autonomy</b><div class="slug">Robotics &amp; Automation</div></td>
-<td class="c">80.0</td><td class="c">50%</td>
-</tr>
-<tr>
-<td class="c">7</td>
-<td><b>Substation Equipment</b><div class="slug">Power &amp; Electrical Infrastructure</div></td>
-<td class="c">80.0</td><td class="c">50%</td>
-</tr>
-<tr>
-<td class="c">8</td>
-<td><b>India Harmonic &amp; RV Reducers</b><div class="slug">Robotics &amp; Automation</div></td>
-<td class="c">60.0</td><td class="c">50%</td>
-</tr>
-<tr>
-<td class="c">9</td>
-<td><b>India HVDC &amp; Power Electronics</b><div class="slug">Power &amp; Electrical Infrastructure</div></td>
-<td class="c">60.0</td><td class="c">50%</td>
-</tr>
-<tr>
-<td class="c">10</td>
-<td><b>India Launch Vehicles &amp; Propulsion</b><div class="slug">Space &amp; Satellites</div></td>
-<td class="c">60.0</td><td class="c">50%</td>
-</tr>
-<tr>
-<td class="c">11</td>
-<td><b>India Li-ion Cell Manufacturing</b><div class="slug">Energy Storage</div></td>
-<td class="c">60.0</td><td class="c">50%</td>
-</tr>
-<tr>
-<td class="c">12</td>
-<td><b>Overhead Transmission Line</b><div class="slug">Power &amp; Electrical Infrastructure</div></td>
-<td class="c">60.0</td><td class="c">50%</td>
-</tr>
-<tr>
-<td class="c">13</td>
-<td><b>India Power Transmission</b><div class="slug">Power &amp; Electrical Infrastructure</div></td>
-<td class="c">60.0</td><td class="c">50%</td>
-</tr>
-<tr>
-<td class="c">14</td>
-<td><b>India Rare-Earth Magnets</b><div class="slug">Robotics &amp; Automation</div></td>
-<td class="c">60.0</td><td class="c">50%</td>
-</tr>
-<tr>
-<td class="c">15</td>
-<td><b>India Telecom Towers</b><div class="slug">Telecom</div></td>
-<td class="c">60.0</td><td class="c">100%</td>
-</tr>
-<tr>
-<td class="c">16</td>
-<td><b>India Power &amp; Distribution Transformers</b><div class="slug">Electrical &amp; Electronic Equipment</div></td>
-<td class="c">50.0</td><td class="c">100%</td>
-</tr>
-<tr>
-<td class="c">17</td>
-<td><b>India Battery Energy Storage (BESS)</b><div class="slug">Energy Storage</div></td>
-<td class="c">40.0</td><td class="c">50%</td>
-</tr>
-<tr>
-<td class="c">18</td>
-<td><b>India Green Hydrogen &amp; Electrolyser Manufacturing</b><div class="slug">Green Hydrogen &amp; Clean Fuels</div></td>
-<td class="c">40.0</td><td class="c">50%</td>
-</tr>
-<tr>
-<td class="c">19</td>
-<td><b>India Mobile Handsets &amp; Accessories</b><div class="slug">Electrical &amp; Electronic Equipment</div></td>
-<td class="c">40.0</td><td class="c">50%</td>
-</tr>
-<tr>
-<td class="c">20</td>
-<td><b>India Organic Chemicals</b><div class="slug">Chemicals &amp; Petrochemicals</div></td>
-<td class="c">40.0</td><td class="c">50%</td>
-</tr>
-<tr>
-<td class="c">21</td>
-<td><b>India Pharma APIs &amp; Bulk Drugs</b><div class="slug">Chemicals &amp; Petrochemicals</div></td>
-<td class="c">40.0</td><td class="c">50%</td>
-</tr>
-<tr>
-<td class="c">22</td>
-<td><b>Silver Paste &amp; Metallisation</b><div class="slug">Renewable Energy</div></td>
-<td class="c">40.0</td><td class="c">50%</td>
-</tr>
-<tr>
-<td class="c">23</td>
-<td><b>India Small Modular Reactor</b><div class="slug">Nuclear Energy</div></td>
-<td class="c">40.0</td><td class="c">50%</td>
-</tr>
-<tr>
-<td class="c">24</td>
-<td><b>Solar Cell Fabrication</b><div class="slug">Renewable Energy</div></td>
-<td class="c">40.0</td><td class="c">50%</td>
-</tr>
-<tr>
-<td class="c">25</td>
-<td><b>India Solar PV</b><div class="slug">Renewable Energy</div></td>
-<td class="c">40.0</td><td class="c">50%</td>
-</tr>
+
 </tbody></table></div></div>
 
 <div class="sec-head"><span class="sec-num">04</span><span class="sec-title">Risk-adjusted opportunity</span>
@@ -739,159 +202,91 @@ table.data.detail td { padding: 6px 7px; }
 </tr>
 <tr>
 <td class="c">2</td>
-<td><b>India Power Transmission</b><div class="slug">Power &amp; Electrical Infrastructure</div></td>
-<td class="c">48.8</td><td class="c">3.0</td>
-</tr>
-<tr>
-<td class="c">3</td>
-<td><b>India Power &amp; Distribution Transformers</b><div class="slug">Electrical &amp; Electronic Equipment</div></td>
-<td class="c">46.3</td><td class="c">3.0</td>
-</tr>
-<tr>
-<td class="c">4</td>
-<td><b>India EHV / HV Power Cables</b><div class="slug">Power &amp; Electrical Infrastructure</div></td>
-<td class="c">41.2</td><td class="c">3.0</td>
-</tr>
-<tr>
-<td class="c">5</td>
-<td><b>India Robot Software &amp; Autonomy</b><div class="slug">Robotics &amp; Automation</div></td>
-<td class="c">41.2</td><td class="c">3.0</td>
-</tr>
-<tr>
-<td class="c">6</td>
-<td><b>Substation Equipment</b><div class="slug">Power &amp; Electrical Infrastructure</div></td>
-<td class="c">41.2</td><td class="c">3.0</td>
-</tr>
-<tr>
-<td class="c">7</td>
 <td><b>India EMS / ODM</b><div class="slug">Electrical &amp; Electronic Equipment</div></td>
 <td class="c">40.3</td><td class="c">3.0</td>
 </tr>
 <tr>
-<td class="c">8</td>
-<td><b>India Launch Vehicles &amp; Propulsion</b><div class="slug">Space &amp; Satellites</div></td>
-<td class="c">40.3</td><td class="c">3.0</td>
-</tr>
-<tr>
-<td class="c">9</td>
+<td class="c">3</td>
 <td><b>India Power Semiconductors &amp; OSAT</b><div class="slug">Electrical &amp; Electronic Equipment</div></td>
 <td class="c">38.6</td><td class="c">3.0</td>
 </tr>
 <tr>
-<td class="c">10</td>
-<td><b>Overhead Transmission Line</b><div class="slug">Power &amp; Electrical Infrastructure</div></td>
-<td class="c">36.8</td><td class="c">3.0</td>
-</tr>
-<tr>
-<td class="c">11</td>
-<td><b>India Precision Machine Tools &amp; Metrology</b><div class="slug">Robotics &amp; Automation</div></td>
-<td class="c">36.0</td><td class="c">3.0</td>
-</tr>
-<tr>
-<td class="c">12</td>
+<td class="c">4</td>
 <td><b>India Servo Motors &amp; Drives</b><div class="slug">Robotics &amp; Automation</div></td>
 <td class="c">30.8</td><td class="c">3.0</td>
 </tr>
 <tr>
-<td class="c">13</td>
-<td><b>Solar Cell Fabrication</b><div class="slug">Renewable Energy</div></td>
-<td class="c">25.7</td><td class="c">2.0</td>
-</tr>
-<tr>
-<td class="c">14</td>
-<td><b>India Telecom Towers</b><div class="slug">Telecom</div></td>
-<td class="c">25.7</td><td class="c">2.0</td>
-</tr>
-<tr>
-<td class="c">15</td>
-<td><b>India Missiles</b><div class="slug">Defence &amp; Aerospace</div></td>
-<td class="c">25.2</td><td class="c">2.0</td>
-</tr>
-<tr>
-<td class="c">16</td>
-<td><b>Silver Paste &amp; Metallisation</b><div class="slug">Renewable Energy</div></td>
-<td class="c">25.2</td><td class="c">2.0</td>
-</tr>
-<tr>
-<td class="c">17</td>
-<td><b>India PCS &amp; Power Semiconductors</b><div class="slug">Energy Storage</div></td>
-<td class="c">24.6</td><td class="c">2.0</td>
-</tr>
-<tr>
-<td class="c">18</td>
-<td><b>India Solar PV</b><div class="slug">Renewable Energy</div></td>
-<td class="c">24.0</td><td class="c">2.0</td>
-</tr>
-<tr>
-<td class="c">19</td>
-<td><b>India Guns</b><div class="slug">Defence &amp; Aerospace</div></td>
-<td class="c">23.4</td><td class="c">2.0</td>
-</tr>
-<tr>
-<td class="c">20</td>
-<td><b>India Green Hydrogen &amp; Electrolyser Manufacturing</b><div class="slug">Green Hydrogen &amp; Clean Fuels</div></td>
-<td class="c">22.8</td><td class="c">2.0</td>
-</tr>
-<tr>
-<td class="c">21</td>
-<td><b>India HVDC &amp; Power Electronics</b><div class="slug">Power &amp; Electrical Infrastructure</div></td>
-<td class="c">22.8</td><td class="c">2.0</td>
-</tr>
-<tr>
-<td class="c">22</td>
+<td class="c">5</td>
 <td><b>India Inorganic Chemicals</b><div class="slug">Chemicals &amp; Petrochemicals</div></td>
 <td class="c">21.2</td><td class="c">2.0</td>
 </tr>
-<tr>
-<td class="c">23</td>
-<td><b>India Small Modular Reactor</b><div class="slug">Nuclear Energy</div></td>
-<td class="c">21.2</td><td class="c">2.0</td>
-</tr>
-<tr>
-<td class="c">24</td>
-<td><b>India Li-ion Cell Manufacturing</b><div class="slug">Energy Storage</div></td>
-<td class="c">20.6</td><td class="c">2.0</td>
-</tr>
-<tr>
-<td class="c">25</td>
-<td><b>India Organic Chemicals</b><div class="slug">Chemicals &amp; Petrochemicals</div></td>
-<td class="c">20.6</td><td class="c">2.0</td>
-</tr>
-<tr>
-<td class="c">26</td>
-<td><b>India Battery Energy Storage (BESS)</b><div class="slug">Energy Storage</div></td>
-<td class="c">19.4</td><td class="c">2.0</td>
-</tr>
-<tr>
-<td class="c">27</td>
-<td><b>India Pharma APIs &amp; Bulk Drugs</b><div class="slug">Chemicals &amp; Petrochemicals</div></td>
-<td class="c">19.4</td><td class="c">2.0</td>
-</tr>
-<tr>
-<td class="c">28</td>
-<td><b>India Harmonic &amp; RV Reducers</b><div class="slug">Robotics &amp; Automation</div></td>
-<td class="c">18.3</td><td class="c">2.0</td>
-</tr>
-<tr>
-<td class="c">29</td>
-<td><b>India Mobile Handsets &amp; Accessories</b><div class="slug">Electrical &amp; Electronic Equipment</div></td>
-<td class="c">16.6</td><td class="c">2.0</td>
-</tr>
-<tr>
-<td class="c">30</td>
-<td><b>India Rare-Earth Magnets</b><div class="slug">Robotics &amp; Automation</div></td>
-<td class="c">10.0</td><td class="c">1.0</td>
-</tr>
 </tbody></table></div></div>
 
-<div class="sec-head"><span class="sec-num">05</span><span class="sec-title">Not yet scored</span>
-<span class="sec-note">47 industries &mdash; backfill pending</span></div>
+<div class="sec-head"><span class="sec-num">05</span><span class="sec-title">Value capture &mdash; which node keeps the money</span>
+<span class="sec-note">component-level score &middot; profit share 20% &middot; pricing power 15% &middot; ROIC 15% &middot; barriers 15% &middot; bottleneck 10% &middot; pool growth 10% &middot; cash conversion 10% &middot; switching 5%</span></div>
+<div class="sec-head" style="border-bottom:none;margin-bottom:6px"><span class="sec-title" style="font-size:13px">India Power Semiconductors &amp; OSAT</span>
+      <span class="sec-note">7 nodes &middot; ranked by value capture</span></div>
+      <div class="table-wrap"><div class="table-scroll"><table class="data">
+      <thead><tr><th>#</th><th>Node</th><th>Score (1-5)</th><th>/100</th><th>Coverage</th></tr></thead>
+      <tbody><tr>
+      <td class="c">1</td>
+      <td><b>Chip design &amp; IP</b><div class="slug">Licensed IP and reference designs carry the highest margins in the chain; switching costs are structural because a design win locks the socket.</div></td>
+      <td class="c">4.55</td>
+      <td class="c tot">91</td>
+      <td class="c">100%</td>
+    </tr>
+<tr>
+      <td class="c">2</td>
+      <td><b>Semiconductor equipment</b><div class="slug">Installed base plus service revenue; qualification takes years, so customers do not switch. Tool supply is the binding constraint on any new fab.</div></td>
+      <td class="c">4.45</td>
+      <td class="c tot">89</td>
+      <td class="c">100%</td>
+    </tr>
+<tr>
+      <td class="c">3</td>
+      <td><b>Wafer fabrication</b><div class="slug">Largest absolute profit pool but the most capital-hungry: enormous fixed assets, heavy depreciation, and returns depend entirely on utilisation.</div></td>
+      <td class="c">3.80</td>
+      <td class="c tot">76</td>
+      <td class="c">100%</td>
+    </tr>
+<tr>
+      <td class="c">4</td>
+      <td><b>Specialty materials</b><div class="slug">Qualification barriers are high and customer concentration is real; pricing holds while the material is specified into a qualified process.</div></td>
+      <td class="c">3.60</td>
+      <td class="c tot">72</td>
+      <td class="c">100%</td>
+    </tr>
+<tr>
+      <td class="c">5</td>
+      <td><b>End-product companies</b><div class="slug">Owns the customer and the brand, so cash conversion is good; but it is not a bottleneck — it can be served by any qualified supplier.</div></td>
+      <td class="c">3.20</td>
+      <td class="c tot">64</td>
+      <td class="c">100%</td>
+    </tr>
+<tr>
+      <td class="c">6</td>
+      <td><b>OSAT / advanced packaging</b><div class="slug">Assembly and test is where India's capacity is being built, but it is the thin-margin end of the chain: pricing power is weak and capital is heavy.</div></td>
+      <td class="c">2.45</td>
+      <td class="c tot">49</td>
+      <td class="c">100%</td>
+    </tr>
+<tr>
+      <td class="c">7</td>
+      <td><b>Electronic manufacturing</b><div class="slug">Build-to-print. Lowest profit share and lowest pricing power in the chain; value accrues to whoever owns the design.</div></td>
+      <td class="c">1.70</td>
+      <td class="c tot">34</td>
+      <td class="c">100%</td>
+    </tr></tbody></table></div></div>
+
+<div class="sec-head"><span class="sec-num">06</span><span class="sec-title">Not yet scored</span>
+<span class="sec-note">72 industries &mdash; backfill pending</span></div>
 <div class="table-wrap"><div class="table-scroll"><table class="data">
 <thead><tr><th>Industry</th><th>Status</th></tr></thead><tbody>
 <tr><td><b>India 5G / 4G RAN</b><div class="slug">Telecom</div></td><td><span class="dim">no score block</span></td></tr>
 <tr><td><b>India 6G (IMT-2030)</b><div class="slug">Telecom</div></td><td><span class="dim">no score block</span></td></tr>
 <tr><td><b>India Agrochemicals &amp; Crop Protection</b><div class="slug">Agriculture &amp; Crop Inputs</div></td><td><span class="dim">no score block</span></td></tr>
 <tr><td><b>India Aircraft MRO &amp; Civil Aerospace Components</b><div class="slug">Aerospace &amp; Aviation</div></td><td><span class="dim">no score block</span></td></tr>
+<tr><td><b>India Battery Energy Storage (BESS)</b><div class="slug">Energy Storage</div></td><td><span class="dim">no score block</span></td></tr>
 <tr><td><b>India Battery Management Systems (BMS)</b><div class="slug">Energy Storage</div></td><td><span class="dim">no score block</span></td></tr>
 <tr><td><b>India Component MRO</b><div class="slug">Aerospace &amp; Aviation</div></td><td><span class="dim">no score block</span></td></tr>
 <tr><td><b>India Condenser &amp; Heat Rejection</b><div class="slug">Power Generation Equipment</div></td><td><span class="dim">no score block</span></td></tr>
@@ -901,19 +296,37 @@ table.data.detail td { padding: 6px 7px; }
 <tr><td><b>Defence Electro-Optics &amp; Thermal Imaging (India)</b><div class="slug">Defence &amp; Aerospace</div></td><td><span class="dim">no score block</span></td></tr>
 <tr><td><b>India Display Manufacturing</b><div class="slug">Electrical &amp; Electronic Equipment</div></td><td><span class="dim">no score block</span></td></tr>
 <tr><td><b>India Drone Subsystems</b><div class="slug">Robotics &amp; Automation</div></td><td><span class="dim">no score block</span></td></tr>
+<tr><td><b>India EHV / HV Power Cables</b><div class="slug">Power &amp; Electrical Infrastructure</div></td><td><span class="dim">no score block</span></td></tr>
 <tr><td><b>India Electrical &amp; Electronic Equipment</b><div class="slug">Electrical &amp; Electronic Equipment</div></td><td><span class="dim">no score block</span></td></tr>
 <tr><td><b>India Engine MRO</b><div class="slug">Aerospace &amp; Aviation</div></td><td><span class="dim">no score block</span></td></tr>
 <tr><td><b>India EV Powertrain &amp; Traction Systems</b><div class="slug">Automotive &amp; Mobility</div></td><td><span class="dim">no score block</span></td></tr>
 <tr><td><b>Genomic Sequencing</b><div class="slug">Healthcare &amp; Medical Devices</div></td><td><span class="dim">no score block</span></td></tr>
+<tr><td><b>India Green Hydrogen &amp; Electrolyser Manufacturing</b><div class="slug">Green Hydrogen &amp; Clean Fuels</div></td><td><span class="dim">no score block</span></td></tr>
+<tr><td><b>India Guns</b><div class="slug">Defence &amp; Aerospace</div></td><td><span class="dim">no score block</span></td></tr>
+<tr><td><b>India Harmonic &amp; RV Reducers</b><div class="slug">Robotics &amp; Automation</div></td><td><span class="dim">no score block</span></td></tr>
+<tr><td><b>India HVDC &amp; Power Electronics</b><div class="slug">Power &amp; Electrical Infrastructure</div></td><td><span class="dim">no score block</span></td></tr>
 <tr><td><b>India Industrial Gases</b><div class="slug">Chemicals &amp; Petrochemicals</div></td><td><span class="dim">no score block</span></td></tr>
+<tr><td><b>India Launch Vehicles &amp; Propulsion</b><div class="slug">Space &amp; Satellites</div></td><td><span class="dim">no score block</span></td></tr>
+<tr><td><b>India Li-ion Cell Manufacturing</b><div class="slug">Energy Storage</div></td><td><span class="dim">no score block</span></td></tr>
+<tr><td><b>India Precision Machine Tools &amp; Metrology</b><div class="slug">Robotics &amp; Automation</div></td><td><span class="dim">no score block</span></td></tr>
+<tr><td><b>India Missiles</b><div class="slug">Defence &amp; Aerospace</div></td><td><span class="dim">no score block</span></td></tr>
+<tr><td><b>India Mobile Handsets &amp; Accessories</b><div class="slug">Electrical &amp; Electronic Equipment</div></td><td><span class="dim">no score block</span></td></tr>
 <tr><td><b>India Nuclear PWR Steam Generator</b><div class="slug">Nuclear Energy</div></td><td><span class="dim">no score block</span></td></tr>
 <tr><td><b>India Optical Fibre Cable</b><div class="slug">Telecom</div></td><td><span class="dim">no score block</span></td></tr>
 <tr><td><b>India Optical Fibre</b><div class="slug">Telecom</div></td><td><span class="dim">no score block</span></td></tr>
 <tr><td><b>India Optical Fibre Preform</b><div class="slug">Telecom</div></td><td><span class="dim">no score block</span></td></tr>
 <tr><td><b>India Optical Transceivers</b><div class="slug">Telecom</div></td><td><span class="dim">no score block</span></td></tr>
+<tr><td><b>India Organic Chemicals</b><div class="slug">Chemicals &amp; Petrochemicals</div></td><td><span class="dim">no score block</span></td></tr>
+<tr><td><b>Overhead Transmission Line</b><div class="slug">Power &amp; Electrical Infrastructure</div></td><td><span class="dim">no score block</span></td></tr>
 <tr><td><b>India PCB &amp; Electronic Components</b><div class="slug">Electrical &amp; Electronic Equipment</div></td><td><span class="dim">no score block</span></td></tr>
+<tr><td><b>India Pharma APIs &amp; Bulk Drugs</b><div class="slug">Chemicals &amp; Petrochemicals</div></td><td><span class="dim">no score block</span></td></tr>
+<tr><td><b>India PCS &amp; Power Semiconductors</b><div class="slug">Energy Storage</div></td><td><span class="dim">no score block</span></td></tr>
+<tr><td><b>India Power &amp; Distribution Transformers</b><div class="slug">Electrical &amp; Electronic Equipment</div></td><td><span class="dim">no score block</span></td></tr>
+<tr><td><b>India Power Transmission</b><div class="slug">Power &amp; Electrical Infrastructure</div></td><td><span class="dim">no score block</span></td></tr>
 <tr><td><b>India Railway</b><div class="slug"></div></td><td><span class="dim">no score block</span></td></tr>
+<tr><td><b>India Rare-Earth Magnets</b><div class="slug">Robotics &amp; Automation</div></td><td><span class="dim">no score block</span></td></tr>
 <tr><td><b>India Reactor Coolant Pumps &amp; Primary Loop</b><div class="slug">Nuclear Energy</div></td><td><span class="dim">no score block</span></td></tr>
+<tr><td><b>India Robot Software &amp; Autonomy</b><div class="slug">Robotics &amp; Automation</div></td><td><span class="dim">no score block</span></td></tr>
 <tr><td><b>India Robotics</b><div class="slug">Robotics &amp; Automation</div></td><td><span class="dim">no score block</span></td></tr>
 <tr><td><b>India Room AC &amp; White-Goods Components</b><div class="slug"></div></td><td><span class="dim">no score block</span></td></tr>
 <tr><td><b>India Satellite Bus &amp; Subsystems</b><div class="slug">Space &amp; Satellites</div></td><td><span class="dim">no score block</span></td></tr>
@@ -924,11 +337,17 @@ table.data.detail td { padding: 6px 7px; }
 <tr><td><b>Semiconductor Equipment &amp; Materials &amp;middot; India</b><div class="slug">Semiconductors &amp; Semiconductor Equipment</div></td><td><span class="dim">no score block</span></td></tr>
 <tr><td><b>Shakti EW System (India)</b><div class="slug">Defence &amp; Aerospace</div></td><td><span class="dim">no score block</span></td></tr>
 <tr><td><b>India Shipbuilding &amp; Ship Repair</b><div class="slug"></div></td><td><span class="dim">no score block</span></td></tr>
+<tr><td><b>Silver Paste &amp; Metallisation</b><div class="slug">Renewable Energy</div></td><td><span class="dim">no score block</span></td></tr>
 <tr><td><b>India Smart Meters</b><div class="slug">Electrical &amp; Electronic Equipment</div></td><td><span class="dim">no score block</span></td></tr>
+<tr><td><b>India Small Modular Reactor</b><div class="slug">Nuclear Energy</div></td><td><span class="dim">no score block</span></td></tr>
+<tr><td><b>Solar Cell Fabrication</b><div class="slug">Renewable Energy</div></td><td><span class="dim">no score block</span></td></tr>
+<tr><td><b>India Solar PV</b><div class="slug">Renewable Energy</div></td><td><span class="dim">no score block</span></td></tr>
 <tr><td><b>India Steam Turbine (Turbine Proper)</b><div class="slug">Power Generation Equipment</div></td><td><span class="dim">no score block</span></td></tr>
+<tr><td><b>Substation Equipment</b><div class="slug">Power &amp; Electrical Infrastructure</div></td><td><span class="dim">no score block</span></td></tr>
 <tr><td><b>India Telecom Chipsets</b><div class="slug">Telecom</div></td><td><span class="dim">no score block</span></td></tr>
 <tr><td><b>India Telecom</b><div class="slug">Telecom</div></td><td><span class="dim">no score block</span></td></tr>
 <tr><td><b>India Telecom Operators</b><div class="slug">Telecom</div></td><td><span class="dim">no score block</span></td></tr>
+<tr><td><b>India Telecom Towers</b><div class="slug">Telecom</div></td><td><span class="dim">no score block</span></td></tr>
 <tr><td><b>India Transport Equipment</b><div class="slug">Telecom</div></td><td><span class="dim">no score block</span></td></tr>
 <tr><td><b>India Tunnel Boring Machine</b><div class="slug"></div></td><td><span class="dim">no score block</span></td></tr>
 <tr><td><b>India Turbine Island Auxiliaries</b><div class="slug">Power Generation Equipment</div></td><td><span class="dim">no score block</span></td></tr>
@@ -943,7 +362,8 @@ table.data.detail td { padding: 6px 7px; }
   Coverage = supported category weight &divide; planned weight. A missing value is shown as UNAVAILABLE and never imputed &mdash; coverage is reported next to the score and is
   neither a bonus nor a penalty. Scores below 60% coverage are marked provisional.
   Structural, current-opportunity and risk-adjusted are separate lenses: an industry can be structurally excellent and currently expensive.
-  Risk-adjusted uses structural &times; (risk &divide; 5), which is our construction, not the framework's.
+  <b>Resilience</b> is scored on the same attractiveness scale, so 5 means the LEAST risk &mdash; risk-adjusted = structural &times; (resilience &divide; 5) therefore raises the score for steadier industries, which is the intended direction. That formula is our construction, not the framework's.
+  <b>Evidence</b> and <b>Primary src</b> report how well-supported a score is, separately from how good it is: a 75 built on tier-1 filings and a 75 built on trade press are not the same claim.
   Generated 2026-10-30.
 </div>
 </div></body></html>
