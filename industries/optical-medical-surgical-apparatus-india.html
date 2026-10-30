@@ -424,7 +424,7 @@ graph TD
       clone.style.width = ''; clone.style.height = '';
       const bg = isDark ? '#0a1626' : '#eef2f7';
       const html = `<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>BOM Tree</title><style>body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;background:${bg};padding:40px;box-sizing:border-box}svg{max-width:100%;max-height:90vh;height:auto}</style></head><body>${clone.outerHTML}
-<script type="application/json" class="industry-score">{"growth_pct": 26, "growth_basis": "India medical-device market US$14-17.5 bn (2025) -> ~US$50 bn by 2030; ~23-29% CAGR [CALCULATED from the page's endpoints]; midpoint used", "capex_intensity": 3, "rd_intensity": 4, "cyclicity": 2, "basis": "PROVISIONAL. Growth computed from the page's endpoints. capex 3: device assembly and cleanrooms. R&D 4: design capability and regulatory approval are the moat. cyclicity 2: healthcare demand is largely non-cyclical."}</script>
+<script type="application/json" class="industry-score">{"growth_pct": 26, "growth_basis": "India medical-device market US$14-17.5 bn (2025) -> ~US$50 bn by 2030; ~23-29% CAGR [CALCULATED from the page's endpoints]; midpoint used", "capex_pct": null, "capex_intensity": 3, "rd_pct": null, "rd_intensity": 4, "cyclicity": 2, "basis": "PROVISIONAL. Growth computed from the page's endpoints. No ratios disclosed, so ratings are the fallback: capex 3 (device assembly and cleanrooms); R&D 4 (design capability and regulatory approval are the moat); cyclicity 2 (healthcare demand is largely non-cyclical)."}</script>
 </body></html>`;
       open(URL.createObjectURL(new Blob([html], { type: 'text/html' })), '_blank');
     }
