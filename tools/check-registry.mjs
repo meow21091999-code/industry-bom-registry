@@ -130,12 +130,15 @@ function extractArray(s, startIdx) {
 
 let failures = 0;
 let warned = 0;
+let scoreBlockPages = 0;   // pages carrying an industry-score block
 for (const file of files) {
   const html = readFileSync(file, 'utf8');
   const isIndex = basename(file) === 'index.html';
   const isView = file.includes('views/');
   const problems = [];
   const warnings = [];   // non-blocking: reported, but does not fail the page
+
+  if (/class="industry-score"/.test(html)) scoreBlockPages++;
 
   if (!/registry\.css/.test(html)) {
     problems.push('does not link the shared stylesheet (assets/registry.css)');
@@ -257,6 +260,12 @@ if (industryPages.length) {
       const declared = c.industries != null ? c.industries : (Array.isArray(d.industries) ? d.industries.length : null);
       if (declared != null && declared !== n) {
         repoProblems.push(label + ' is STALE: it lists ' + declared + ' industries, the registry has ' + n + ' — regenerate');
+      }
+      // the industry count can match while the SCORED count is stale — that is how
+      // 25 newly-scored pages stayed unranked. Compare the scored count too.
+      if (label === 'industry-ranking.json' && c.scored != null && c.scored !== scoreBlockPages) {
+        repoProblems.push('industry-ranking.json is STALE: it reports ' + c.scored + ' scored pages, but ' + scoreBlockPages +
+          ' pages carry a score block — regenerate with node tools/build-industry-ranking.mjs');
       }
     } catch (e) {
       repoProblems.push(label + ' is not valid JSON: ' + String(e.message).slice(0, 70));
