@@ -239,7 +239,7 @@ function detailedTable(list) {
     <th rowspan="2">Industry</th>
     <th colspan="${STRUCT_COLS.length + 1}" class="grp grp-struct">Structural attractiveness</th>
     <th colspan="${CURRENT_COLS.length + 1}" class="grp grp-current">Current opportunity</th>
-    <th rowspan="2">Risk</th>
+    <th rowspan="2" class="grp-start">Risk</th>
     <th rowspan="2">Risk-adj</th>
     <th rowspan="2">Overall</th>
     <th rowspan="2">Coverage</th>
@@ -247,7 +247,7 @@ function detailedTable(list) {
   <tr>
     ${STRUCT_COLS.map(c => `<th class="cat">${c.id}<div class="wt">${Math.round(c.weight * 100)}%</div></th>`).join('')}
     <th class="cat cat-tot grp-struct">structural score</th>
-    ${CURRENT_COLS.map(c => `<th class="cat">${c.id}<div class="wt">${Math.round(c.weight * 100)}%</div></th>`).join('')}
+    ${CURRENT_COLS.map((c, j) => `<th class="cat${j === 0 ? ' grp-start' : ''}">${c.id}<div class="wt">${Math.round(c.weight * 100)}%</div></th>`).join('')}
     <th class="cat cat-tot grp-current">current score</th>
   </tr>`;
 
@@ -256,9 +256,9 @@ function detailedTable(list) {
     <td><b>${esc(r.title)}</b><div class="slug">${esc(r.group || '')}</div></td>
     ${STRUCT_COLS.map(c => `<td class="c">${sc(r.categories[c.id] ? r.categories[c.id].score : null)}</td>`).join('')}
     <td class="c tot">${num(r.structural_score)}</td>
-    ${CURRENT_COLS.map(c => `<td class="c">${sc(r.categories[c.id] ? r.categories[c.id].score : null)}</td>`).join('')}
+    ${CURRENT_COLS.map((c, j) => `<td class="c${j === 0 ? ' grp-start' : ''}">${sc(r.categories[c.id] ? r.categories[c.id].score : null)}</td>`).join('')}
     <td class="c tot">${num(r.current_score)}</td>
-    <td class="c">${num(r.risk, 0)}</td>
+    <td class="c grp-start">${num(r.risk, 0)}</td>
     <td class="c">${num(r.risk_adjusted)}</td>
     <td class="c tot">${num(r.overall)}</td>
     <td class="c">${covCell(r)}</td>
@@ -298,7 +298,11 @@ table.data.detail .wt { font-weight: 400; opacity: .65; font-size: 8.5px; }
 table.data.detail th.cat-tot { font-weight: 700; letter-spacing: .4px; border-left: 1px solid var(--border-bright); }
 table.data.detail th.cat-tot.grp-struct { background: var(--blue-dim); color: var(--blue); }
 table.data.detail th.cat-tot.grp-current { background: var(--gold-dim); color: var(--gold); }
-table.data.detail td.tot { font-weight: 700; color: var(--text); border-left: 1px solid var(--border-bright); }
+table.data.detail td.tot { font-weight: 700; color: var(--text); }
+table.data.detail .grp-start { border-left: 1px solid var(--border-bright); }
+/* two header rows cannot both be sticky at top:0 - the shared rule would stack them on
+   top of each other. This table's header scrolls with the content instead. */
+table.data.detail thead th { position: static; }
 table.data.detail td { padding: 6px 7px; }
 </style></head><body><div class="container">
 <header class="masthead">
