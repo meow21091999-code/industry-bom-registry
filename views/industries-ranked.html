@@ -10,12 +10,12 @@
 .slug { font-family: var(--font-mono); font-size: 10px; color: var(--text-dim); margin-top: 2px; }
 .scorebar { display: inline-block; width: 54px; height: 5px; background: var(--surface-recessed); border-radius: 3px; margin-left: 8px; vertical-align: middle; }
 .scorebar > span { display: block; height: 100%; background: var(--gold); border-radius: 3px; }
-.table-scroll { overflow: auto; max-height: 70vh; }
+.table-scroll { overflow: auto; max-height: 60vh; }
 </style></head><body><div class="container">
 <header class="masthead">
   <div class="eyebrow">Industry BOM Registry &middot; derived view</div>
   <h1>Industries <span>ranked</span></h1>
-  <div class="subtitle">5 scored &middot; 0 partial &middot; 68 not yet scored &middot; growth-led composite</div>
+  <div class="subtitle">5 scored across 1 coverage bands &middot; 68 not yet scored &middot; growth-led composite</div>
 </header>
 
 <div class="metric-cards">
@@ -25,11 +25,12 @@
   <div class="metric-card"><div class="metric-card__val">68</div><div class="metric-card__label">Not yet scored</div><div class="metric-card__sub">backfill pending</div></div>
 </div>
 
-<div class="sec-head"><span class="sec-num">01</span><span class="sec-title">Ranked on the growth-led composite</span>
-<span class="sec-note">growth 50% &middot; capex 20% &middot; R&amp;D 15% &middot; cyclicity 15% (inverted)</span></div>
+<p class="lead">Each coverage band is ranked <b>separately</b>. A page carrying only some of the four fields is never compared against a fully scored one &mdash; its score reflects only what is known, so mixing them in a single table would rank evidence rather than industries.</p>
 
+<div class="sec-head"><span class="sec-num">01</span>
+<span class="sec-title">100% coverage</span><span class="sec-note">5 industries · scored on growth · capex · R&amp;D · cyclicity</span></div>
 <div class="table-wrap"><div class="table-scroll"><table class="data">
-<thead><tr><th>#</th><th>Industry</th><th>Growth</th><th>Capex / rev</th><th>R&amp;D / rev</th><th>Cyclicity</th><th>Score</th><th>Coverage</th></tr></thead>
+<thead><tr><th>#</th><th>Industry</th><th>Growth</th><th>Capex / rev</th><th>R&amp;D / rev</th><th>Cyclicity</th><th>Score</th></tr></thead>
 <tbody>
 <tr>
 <td class="c">1</td>
@@ -39,7 +40,6 @@
 <td class="c">4<span class="dim">/5</span></td>
 <td class="c">2</td>
 <td class="c">0.825<span class="scorebar"><span style="width:83%"></span></span></td>
-<td class="c"><span class="chip chip--gold">full</span></td>
 </tr>
 <tr>
 <td class="c">2</td>
@@ -49,7 +49,6 @@
 <td class="c">2<span class="dim">/5</span></td>
 <td class="c">3</td>
 <td class="c">0.712<span class="scorebar"><span style="width:71%"></span></span></td>
-<td class="c"><span class="chip chip--gold">full</span></td>
 </tr>
 <tr>
 <td class="c">3</td>
@@ -59,7 +58,6 @@
 <td class="c">2<span class="dim">/5</span></td>
 <td class="c">3</td>
 <td class="c">0.502<span class="scorebar"><span style="width:50%"></span></span></td>
-<td class="c"><span class="chip chip--gold">full</span></td>
 </tr>
 <tr>
 <td class="c">4</td>
@@ -69,7 +67,6 @@
 <td class="c">2<span class="dim">/5</span></td>
 <td class="c">4</td>
 <td class="c">0.360<span class="scorebar"><span style="width:36%"></span></span></td>
-<td class="c"><span class="chip chip--gold">full</span></td>
 </tr>
 <tr>
 <td class="c">5</td>
@@ -79,8 +76,14 @@
 <td class="c">3<span class="dim">/5</span></td>
 <td class="c">4</td>
 <td class="c">0.289<span class="scorebar"><span style="width:29%"></span></span></td>
-<td class="c"><span class="chip chip--gold">full</span></td>
 </tr>
+</tbody></table></div></div>
+
+<div class="sec-head"><span class="sec-num">02</span>
+<span class="sec-title">Not yet scored</span><span class="sec-note">68 industries · no score block yet</span></div>
+<div class="table-wrap"><div class="table-scroll"><table class="data">
+<thead><tr><th>#</th><th>Industry</th><th>Growth</th><th>Capex / rev</th><th>R&amp;D / rev</th><th>Cyclicity</th><th>Score</th></tr></thead>
+<tbody>
 <tr>
 <td class="c">—</td>
 <td><b>Cryocooler (India)</b><div class="slug">Defence &amp; Aerospace</div></td>
@@ -89,7 +92,6 @@
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
-<td class="c"><span class="chip">not scored</span></td>
 </tr>
 <tr>
 <td class="c">—</td>
@@ -99,7 +101,6 @@
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
-<td class="c"><span class="chip">not scored</span></td>
 </tr>
 <tr>
 <td class="c">—</td>
@@ -109,7 +110,6 @@
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
-<td class="c"><span class="chip">not scored</span></td>
 </tr>
 <tr>
 <td class="c">—</td>
@@ -119,7 +119,6 @@
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
-<td class="c"><span class="chip">not scored</span></td>
 </tr>
 <tr>
 <td class="c">—</td>
@@ -129,7 +128,6 @@
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
-<td class="c"><span class="chip">not scored</span></td>
 </tr>
 <tr>
 <td class="c">—</td>
@@ -139,7 +137,6 @@
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
-<td class="c"><span class="chip">not scored</span></td>
 </tr>
 <tr>
 <td class="c">—</td>
@@ -149,7 +146,6 @@
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
-<td class="c"><span class="chip">not scored</span></td>
 </tr>
 <tr>
 <td class="c">—</td>
@@ -159,7 +155,6 @@
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
-<td class="c"><span class="chip">not scored</span></td>
 </tr>
 <tr>
 <td class="c">—</td>
@@ -169,7 +164,6 @@
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
-<td class="c"><span class="chip">not scored</span></td>
 </tr>
 <tr>
 <td class="c">—</td>
@@ -179,7 +173,6 @@
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
-<td class="c"><span class="chip">not scored</span></td>
 </tr>
 <tr>
 <td class="c">—</td>
@@ -189,7 +182,6 @@
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
-<td class="c"><span class="chip">not scored</span></td>
 </tr>
 <tr>
 <td class="c">—</td>
@@ -199,7 +191,6 @@
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
-<td class="c"><span class="chip">not scored</span></td>
 </tr>
 <tr>
 <td class="c">—</td>
@@ -209,7 +200,6 @@
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
-<td class="c"><span class="chip">not scored</span></td>
 </tr>
 <tr>
 <td class="c">—</td>
@@ -219,7 +209,6 @@
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
-<td class="c"><span class="chip">not scored</span></td>
 </tr>
 <tr>
 <td class="c">—</td>
@@ -229,7 +218,6 @@
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
-<td class="c"><span class="chip">not scored</span></td>
 </tr>
 <tr>
 <td class="c">—</td>
@@ -239,7 +227,6 @@
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
-<td class="c"><span class="chip">not scored</span></td>
 </tr>
 <tr>
 <td class="c">—</td>
@@ -249,7 +236,6 @@
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
-<td class="c"><span class="chip">not scored</span></td>
 </tr>
 <tr>
 <td class="c">—</td>
@@ -259,7 +245,6 @@
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
-<td class="c"><span class="chip">not scored</span></td>
 </tr>
 <tr>
 <td class="c">—</td>
@@ -269,7 +254,6 @@
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
-<td class="c"><span class="chip">not scored</span></td>
 </tr>
 <tr>
 <td class="c">—</td>
@@ -279,7 +263,6 @@
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
-<td class="c"><span class="chip">not scored</span></td>
 </tr>
 <tr>
 <td class="c">—</td>
@@ -289,7 +272,6 @@
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
-<td class="c"><span class="chip">not scored</span></td>
 </tr>
 <tr>
 <td class="c">—</td>
@@ -299,7 +281,6 @@
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
-<td class="c"><span class="chip">not scored</span></td>
 </tr>
 <tr>
 <td class="c">—</td>
@@ -309,7 +290,6 @@
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
-<td class="c"><span class="chip">not scored</span></td>
 </tr>
 <tr>
 <td class="c">—</td>
@@ -319,7 +299,6 @@
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
-<td class="c"><span class="chip">not scored</span></td>
 </tr>
 <tr>
 <td class="c">—</td>
@@ -329,7 +308,6 @@
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
-<td class="c"><span class="chip">not scored</span></td>
 </tr>
 <tr>
 <td class="c">—</td>
@@ -339,7 +317,6 @@
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
-<td class="c"><span class="chip">not scored</span></td>
 </tr>
 <tr>
 <td class="c">—</td>
@@ -349,7 +326,6 @@
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
-<td class="c"><span class="chip">not scored</span></td>
 </tr>
 <tr>
 <td class="c">—</td>
@@ -359,7 +335,6 @@
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
-<td class="c"><span class="chip">not scored</span></td>
 </tr>
 <tr>
 <td class="c">—</td>
@@ -369,7 +344,6 @@
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
-<td class="c"><span class="chip">not scored</span></td>
 </tr>
 <tr>
 <td class="c">—</td>
@@ -379,7 +353,6 @@
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
-<td class="c"><span class="chip">not scored</span></td>
 </tr>
 <tr>
 <td class="c">—</td>
@@ -389,7 +362,6 @@
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
-<td class="c"><span class="chip">not scored</span></td>
 </tr>
 <tr>
 <td class="c">—</td>
@@ -399,7 +371,6 @@
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
-<td class="c"><span class="chip">not scored</span></td>
 </tr>
 <tr>
 <td class="c">—</td>
@@ -409,7 +380,6 @@
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
-<td class="c"><span class="chip">not scored</span></td>
 </tr>
 <tr>
 <td class="c">—</td>
@@ -419,7 +389,6 @@
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
-<td class="c"><span class="chip">not scored</span></td>
 </tr>
 <tr>
 <td class="c">—</td>
@@ -429,7 +398,6 @@
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
-<td class="c"><span class="chip">not scored</span></td>
 </tr>
 <tr>
 <td class="c">—</td>
@@ -439,7 +407,6 @@
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
-<td class="c"><span class="chip">not scored</span></td>
 </tr>
 <tr>
 <td class="c">—</td>
@@ -449,7 +416,6 @@
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
-<td class="c"><span class="chip">not scored</span></td>
 </tr>
 <tr>
 <td class="c">—</td>
@@ -459,7 +425,6 @@
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
-<td class="c"><span class="chip">not scored</span></td>
 </tr>
 <tr>
 <td class="c">—</td>
@@ -469,7 +434,6 @@
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
-<td class="c"><span class="chip">not scored</span></td>
 </tr>
 <tr>
 <td class="c">—</td>
@@ -479,7 +443,6 @@
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
-<td class="c"><span class="chip">not scored</span></td>
 </tr>
 <tr>
 <td class="c">—</td>
@@ -489,7 +452,6 @@
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
-<td class="c"><span class="chip">not scored</span></td>
 </tr>
 <tr>
 <td class="c">—</td>
@@ -499,7 +461,6 @@
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
-<td class="c"><span class="chip">not scored</span></td>
 </tr>
 <tr>
 <td class="c">—</td>
@@ -509,7 +470,6 @@
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
-<td class="c"><span class="chip">not scored</span></td>
 </tr>
 <tr>
 <td class="c">—</td>
@@ -519,7 +479,6 @@
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
-<td class="c"><span class="chip">not scored</span></td>
 </tr>
 <tr>
 <td class="c">—</td>
@@ -529,7 +488,6 @@
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
-<td class="c"><span class="chip">not scored</span></td>
 </tr>
 <tr>
 <td class="c">—</td>
@@ -539,7 +497,6 @@
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
-<td class="c"><span class="chip">not scored</span></td>
 </tr>
 <tr>
 <td class="c">—</td>
@@ -549,7 +506,6 @@
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
-<td class="c"><span class="chip">not scored</span></td>
 </tr>
 <tr>
 <td class="c">—</td>
@@ -559,7 +515,6 @@
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
-<td class="c"><span class="chip">not scored</span></td>
 </tr>
 <tr>
 <td class="c">—</td>
@@ -569,7 +524,6 @@
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
-<td class="c"><span class="chip">not scored</span></td>
 </tr>
 <tr>
 <td class="c">—</td>
@@ -579,7 +533,6 @@
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
-<td class="c"><span class="chip">not scored</span></td>
 </tr>
 <tr>
 <td class="c">—</td>
@@ -589,7 +542,6 @@
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
-<td class="c"><span class="chip">not scored</span></td>
 </tr>
 <tr>
 <td class="c">—</td>
@@ -599,7 +551,6 @@
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
-<td class="c"><span class="chip">not scored</span></td>
 </tr>
 <tr>
 <td class="c">—</td>
@@ -609,7 +560,6 @@
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
-<td class="c"><span class="chip">not scored</span></td>
 </tr>
 <tr>
 <td class="c">—</td>
@@ -619,7 +569,6 @@
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
-<td class="c"><span class="chip">not scored</span></td>
 </tr>
 <tr>
 <td class="c">—</td>
@@ -629,7 +578,6 @@
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
-<td class="c"><span class="chip">not scored</span></td>
 </tr>
 <tr>
 <td class="c">—</td>
@@ -639,7 +587,6 @@
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
-<td class="c"><span class="chip">not scored</span></td>
 </tr>
 <tr>
 <td class="c">—</td>
@@ -649,7 +596,6 @@
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
-<td class="c"><span class="chip">not scored</span></td>
 </tr>
 <tr>
 <td class="c">—</td>
@@ -659,7 +605,6 @@
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
-<td class="c"><span class="chip">not scored</span></td>
 </tr>
 <tr>
 <td class="c">—</td>
@@ -669,7 +614,6 @@
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
-<td class="c"><span class="chip">not scored</span></td>
 </tr>
 <tr>
 <td class="c">—</td>
@@ -679,7 +623,6 @@
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
-<td class="c"><span class="chip">not scored</span></td>
 </tr>
 <tr>
 <td class="c">—</td>
@@ -689,7 +632,6 @@
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
-<td class="c"><span class="chip">not scored</span></td>
 </tr>
 <tr>
 <td class="c">—</td>
@@ -699,7 +641,6 @@
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
-<td class="c"><span class="chip">not scored</span></td>
 </tr>
 <tr>
 <td class="c">—</td>
@@ -709,7 +650,6 @@
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
-<td class="c"><span class="chip">not scored</span></td>
 </tr>
 <tr>
 <td class="c">—</td>
@@ -719,7 +659,6 @@
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
-<td class="c"><span class="chip">not scored</span></td>
 </tr>
 <tr>
 <td class="c">—</td>
@@ -729,7 +668,6 @@
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
-<td class="c"><span class="chip">not scored</span></td>
 </tr>
 <tr>
 <td class="c">—</td>
@@ -739,7 +677,6 @@
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
-<td class="c"><span class="chip">not scored</span></td>
 </tr>
 <tr>
 <td class="c">—</td>
@@ -749,7 +686,6 @@
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
-<td class="c"><span class="chip">not scored</span></td>
 </tr>
 <tr>
 <td class="c">—</td>
@@ -759,14 +695,13 @@
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
 <td class="c"><span class="dim">—</span></td>
-<td class="c"><span class="chip">not scored</span></td>
 </tr>
 </tbody></table></div></div>
 
 <div class="footnote">
-  Score = 0.50&middot;growth + 0.20&middot;capex + 0.15&middot;R&amp;D + 0.15&middot;cyclicity, over the fields a page actually carries.
-  Growth is normalised 0%&rarr;0, 25%+&rarr;1; capex and R&amp;D are 1&ndash;5 &rarr; (x&minus;1)/4; cyclicity is inverted (5&minus;x)/4, so steadier industries score higher.
-  A missing field is excluded, never imputed &mdash; pages carrying only some fields are marked <b>partial</b> and their score reflects only what is known.
+  Score = 0.50&middot;growth + 0.20&middot;capex + 0.15&middot;R&amp;D + 0.15&middot;cyclicity, over the fields a page actually carries, then renormalised by their weight.
+  Growth is normalised 0%&rarr;0, 25%+&rarr;1; capex/revenue 0%&rarr;0, 30%+&rarr;1; R&amp;D/revenue 0%&rarr;0, 10%+&rarr;1; the 1&ndash;5 ratings &rarr; (x&minus;1)/4; cyclicity is inverted (5&minus;x)/4.
+  Where both a ratio and a rating exist the ratio is used. A missing field is excluded, never imputed.
   Values come from each entry page&rsquo;s own score block; every figure keeps its label. Generated 2026-10-30.
 </div>
 </div></body></html>
