@@ -74,10 +74,10 @@
  },
  "counts": {
   "industries": 77,
-  "scored": 15,
+  "scored": 20,
   "legacy": 0,
-  "unscored": 62,
-  "ranked": 15
+  "unscored": 57,
+  "ranked": 20
  },
  "industries": [
   {
@@ -479,24 +479,214 @@
    "coverage": 85,
    "provisional": false,
    "notes": "This run REPLACES the prior Market & growth block, which rested on a tier-3 source and reported 3-year and last-year splits as UNAVAILABLE. Opportunity now uses the IMARC series (USD 1.95 bn 2025 to USD 9.75 bn 2030, 38.0% CAGR) and the conflicting NITI Aayog / third-house estimates are shown as a range rather than averaged. Valuation left UNAVAILABLE — no industry valuation series.",
-   "overall_rank": 12,
-   "risk_adjusted_rank": 12,
+   "overall_rank": 15,
+   "risk_adjusted_rank": 15,
    "structural_score": 57.1,
    "current_score": 40,
-   "structural_score_rank": 11,
-   "current_score_rank": 6
+   "structural_score_rank": 14,
+   "current_score_rank": 11
   },
   {
    "slug": "guns-india",
    "title": "India Guns",
    "group": "Defence & Aerospace",
-   "scored": false
+   "scored": true,
+   "as_of": "2026-10-30",
+   "categories": {
+    "economics": {
+     "name": "Industry economics & value creation",
+     "weight": 0.2,
+     "lens": "structural",
+     "score": 3,
+     "from": "category",
+     "basis": "DPSUs hold 76% of output on cost-plus deemed contracts with modest margins, while private entrants earn better returns but face multi-year qualification; ammunition value growth of ~4.93% a year caps the upside."
+    },
+    "opportunity": {
+     "name": "Market opportunity & structural growth",
+     "weight": 0.15,
+     "lens": "structural",
+     "score": 3,
+     "from": "category",
+     "basis": "The ammunition pool of ₹7,057 cr in 2023 growing to ₹11,981 cr by 2032 (4.93% CAGR) sits inside a defence production base growing 15.6% a year, with propellant capacity 5–6× short of demand — real but not fast-growing substitution."
+    },
+    "competitive": {
+     "name": "Competitive structure & moat",
+     "weight": 0.15,
+     "lens": "structural",
+     "score": 3,
+     "from": "category",
+     "basis": "Concentrated by regulation: 788 industrial licences across 462 companies, DPSUs at 76% of production and a handful of credible private players (Bharat Forge, L&T, Adani, Solar, Reliance) — barriers protect incumbents but the single buyer holds all pricing power."
+    },
+    "cycle": {
+     "name": "Current opportunity & cycle position",
+     "weight": 0.15,
+     "lens": "current",
+     "score": 4,
+     "from": "category",
+     "basis": "Demand is at a record: ₹1.82 lakh cr of contracts concluded in FY26, exports +62.7%, private production at an all-time-high 24% share and ATAGS moving into delivery."
+    },
+    "valuation": {
+     "name": "Valuation & market expectations",
+     "weight": 0.15,
+     "lens": "current",
+     "score": null,
+     "from": null,
+     "basis": "No industry-level valuation data in the registry — the page carries no sector multiple series."
+    },
+    "value_chain": {
+     "name": "Value-chain position & bottlenecks",
+     "weight": 0.1,
+     "lens": "structural",
+     "score": 3,
+     "from": "category",
+     "basis": "Barrels, brass cases, energetics and assembly are substantially domestic and 91% of ammunition variants are indigenised, but propellants and primers, antimony, and barrel-forging and CNC machinery remain imported."
+    },
+    "capital": {
+     "name": "Capital intensity & financial quality",
+     "weight": 0.05,
+     "lens": "structural",
+     "score": 2,
+     "from": "category",
+     "basis": "Capital-intensive filling, forging and proof facilities with long qualification and heavy working capital; DPSU advances soften it, private entrants carry it on their own balance sheets."
+    },
+    "technology": {
+     "name": "Technology & innovation",
+     "weight": 0.05,
+     "lens": "structural",
+     "score": 3,
+     "from": "category",
+     "basis": "DRDO design capability plus Bharat Forge, L&T and Reliance tooling is genuinely indigenous at platform level, but propellant chemistry and much of the production machinery are still bought in."
+    },
+    "risk": {
+     "name": "Risk & resilience",
+     "weight": null,
+     "lens": "risk",
+     "score": 2,
+     "from": "category",
+     "basis": "A single buyer (MoD) sets price and timing, propellant and primer supply is a wartime single point of failure, and the licensing and export-control regime constrains both entry and exit."
+    }
+   },
+   "structural": {
+    "score": 58.6,
+    "coverage": 100
+   },
+   "current": {
+    "score": 80,
+    "coverage": 50
+   },
+   "risk": 2,
+   "risk_adjusted": 23.4,
+   "overall": 62.4,
+   "coverage": 85,
+   "provisional": false,
+   "notes": "Opportunity uses the same series as the Market & growth digest block (KPMG ammunition market of Rs 7,057 cr in 2023 rising to Rs 11,981 cr by 2032 at 4.93%, inside FY26 defence production of Rs 1.78 lakh cr). Valuation left UNAVAILABLE — the registry carries no industry valuation data.",
+   "overall_rank": 9,
+   "risk_adjusted_rank": 14,
+   "structural_score": 58.6,
+   "current_score": 80,
+   "structural_score_rank": 13,
+   "current_score_rank": 2
   },
   {
    "slug": "harmonic-rv-reducers-india",
    "title": "India Harmonic & RV Reducers",
    "group": "Robotics & Automation",
-   "scored": false
+   "scored": true,
+   "as_of": "2026-10-30",
+   "categories": {
+    "economics": {
+     "name": "Industry economics & value creation",
+     "weight": 0.2,
+     "lens": "structural",
+     "score": 2,
+     "from": "category",
+     "basis": "There is no domestic industry to have economics: ~100% of robotics-grade units are imported, and the price a new entrant would face is set by Chinese units landing at roughly half the Japanese cost."
+    },
+    "opportunity": {
+     "name": "Market opportunity & structural growth",
+     "weight": 0.15,
+     "lens": "structural",
+     "score": 3,
+     "from": "category",
+     "basis": "10,500 robot installations in 2025 growing ~15% a year (27% CAGR over 2020–2025), with reducers at 30–40% of robot cost and 85–90% of component value imported — a real pool, but India is ~1/34th of China’s installation volume, so plant scale is hard to reach."
+    },
+    "competitive": {
+     "name": "Competitive structure & moat",
+     "weight": 0.15,
+     "lens": "structural",
+     "score": 3,
+     "from": "category",
+     "basis": "A global oligopoly of Harmonic Drive Systems and Nabtesco (~75% of robot reducers) over an empty domestic field: for an incumbent the moat is exceptional, for an entrant the barrier is the same wall viewed from the other side."
+    },
+    "cycle": {
+     "name": "Current opportunity & cycle position",
+     "weight": 0.15,
+     "lens": "current",
+     "score": 3,
+     "from": "category",
+     "basis": "Robot installations are rising 15% a year on PLI-driven electronics and auto capex, but the IFR flags a possible 2026 contraction when PLI-linked investment runs out, and demand is concentrated in one buyer group."
+    },
+    "valuation": {
+     "name": "Valuation & market expectations",
+     "weight": 0.15,
+     "lens": "current",
+     "score": null,
+     "from": null,
+     "basis": "No industry-level valuation data in the registry, and no listed Indian pure-play exists on which to build a multiple."
+    },
+    "value_chain": {
+     "name": "Value-chain position & bottlenecks",
+     "weight": 0.1,
+     "lens": "structural",
+     "score": 1,
+     "from": "category",
+     "basis": "India has essentially zero presence in the node, and the layers that would make it possible — gear grinding machines, CMMs, flexspline-grade steel — are themselves imported, so there is no domestic chain to position in."
+    },
+    "capital": {
+     "name": "Capital intensity & financial quality",
+     "weight": 0.05,
+     "lens": "structural",
+     "score": 2,
+     "from": "category",
+     "basis": "Capex is moderate but the real cost is time: sub-micron grinding, atmosphere-controlled heat treatment and 12–24 month qualification, with no revenue until a customer re-qualifies a joint."
+    },
+    "technology": {
+     "name": "Technology & innovation",
+     "weight": 0.05,
+     "lens": "structural",
+     "score": 2,
+     "from": "category",
+     "basis": "The 2020 patent expiry on harmonic drives genuinely lowered the legal barrier and Chinese suppliers proved the design can be copied, but the flexspline metallurgy and grinding process remain a decade-long transfer."
+    },
+    "risk": {
+     "name": "Risk & resilience",
+     "weight": null,
+     "lens": "risk",
+     "score": 2,
+     "from": "category",
+     "basis": "Chinese price competition at half the landed cost, rare-earth and export-control exposure on precision gearing, long qualification cycles and the absence of a domestic demand anchor."
+    }
+   },
+   "structural": {
+    "score": 45.7,
+    "coverage": 100
+   },
+   "current": {
+    "score": 60,
+    "coverage": 50
+   },
+   "risk": 2,
+   "risk_adjusted": 18.3,
+   "overall": 48.2,
+   "coverage": 85,
+   "provisional": false,
+   "notes": "Opportunity uses the same series as the Market & growth digest block (IFR installations of 9,120 units in 2024 and ~10,500 in 2025, 27% average annual growth 2020–2025, with imports at 85–90% of component value). No rupee market size exists at Level 1 or 2, so none is stated. Valuation left UNAVAILABLE.",
+   "overall_rank": 20,
+   "risk_adjusted_rank": 20,
+   "structural_score": 45.7,
+   "current_score": 60,
+   "structural_score_rank": 20,
+   "current_score_rank": 5
   },
   {
    "slug": "hvdc-power-electronics-india",
@@ -592,12 +782,12 @@
    "coverage": 85,
    "provisional": false,
    "notes": "Scored against 'Industry-Level Investment Parameters & Scoring Architecture'. Opportunity uses the same HVDC series as the Market & growth digest block, with the conflicting second series disclosed rather than averaged. Valuation left UNAVAILABLE.",
-   "overall_rank": 10,
-   "risk_adjusted_rank": 13,
+   "overall_rank": 13,
+   "risk_adjusted_rank": 16,
    "structural_score": 57.1,
    "current_score": 60,
-   "structural_score_rank": 12,
-   "current_score_rank": 3
+   "structural_score_rank": 15,
+   "current_score_rank": 6
   },
   {
    "slug": "industrial-gases-india",
@@ -696,28 +886,313 @@
    "coverage": 70,
    "provisional": false,
    "notes": "Scored against 'Industry-Level Investment Parameters & Scoring Architecture'. Cycle position and valuation left UNAVAILABLE — the registry carries no cycle or valuation data for these industries.",
-   "overall_rank": 13,
-   "risk_adjusted_rank": 14,
+   "overall_rank": 16,
+   "risk_adjusted_rank": 17,
    "structural_score": 52.9,
-   "structural_score_rank": 13
+   "structural_score_rank": 16
   },
   {
    "slug": "launch-vehicles-propulsion-india",
    "title": "India Launch Vehicles & Propulsion",
    "group": "Space & Satellites",
-   "scored": false
+   "scored": true,
+   "as_of": "2026-10-30",
+   "categories": {
+    "economics": {
+     "name": "Industry economics & value creation",
+     "weight": 0.2,
+     "lens": "structural",
+     "score": 3,
+     "from": "category",
+     "basis": "Value is genuinely migrating from ISRO to industry through ToT and consortium contracts, but launch is a low-cadence, thin-margin business today with a single anchor customer and lumpy, tender-driven revenue."
+    },
+    "opportunity": {
+     "name": "Market opportunity & structural growth",
+     "weight": 0.15,
+     "lens": "structural",
+     "score": 3,
+     "from": "category",
+     "basis": "The launch segment runs from US$720 mn in 2022 to a US$3.5 bn potential by 2033 (~15.4% CAGR) inside a US$44 bn space economy, with a cadence gap of ~12 missions flown against 50–60 needed."
+    },
+    "competitive": {
+     "name": "Competitive structure & moat",
+     "weight": 0.15,
+     "lens": "structural",
+     "score": 4,
+     "from": "category",
+     "basis": "Very few qualified launch-vehicle primes exist anywhere, and domestically only HAL, L&T and two private entrants (Skyroot, Agnikul) — certification and flight heritage make the barrier structural rather than commercial."
+    },
+    "cycle": {
+     "name": "Current opportunity & cycle position",
+     "weight": 0.15,
+     "lens": "current",
+     "score": 3,
+     "from": "category",
+     "basis": "Tempo and awards are at a high — SSLV ToT, the PSLV consortium, and the first private orbital launch in Jul-2026 — but the underlying mission count is still ~12 a year and demand remains programme-driven."
+    },
+    "valuation": {
+     "name": "Valuation & market expectations",
+     "weight": 0.15,
+     "lens": "current",
+     "score": null,
+     "from": null,
+     "basis": "No industry-level valuation data in the registry, and no listed pure-play exists for private launch on which to build a multiple."
+    },
+    "value_chain": {
+     "name": "Value-chain position & bottlenecks",
+     "weight": 0.1,
+     "lens": "structural",
+     "score": 4,
+     "from": "category",
+     "basis": "At ~90–95% domestic content this is the most indigenous node in the space chain — structures, motor casings, engines, avionics and materials are all sourced in-country, with only high-end electronics and some cryogenic hardware narrow-source."
+    },
+    "capital": {
+     "name": "Capital intensity & financial quality",
+     "weight": 0.05,
+     "lens": "structural",
+     "score": 2,
+     "from": "category",
+     "basis": "Development cycles run years before first revenue, test and launch infrastructure is capital-heavy and government-provided, and demand is anchored by one customer — affordable only for large balance sheets or state backing."
+    },
+    "technology": {
+     "name": "Technology & innovation",
+     "weight": 0.05,
+     "lens": "structural",
+     "score": 4,
+     "from": "category",
+     "basis": "Cryogenic and semi-cryogenic propulsion is a capability held by only a handful of nations, and India designs and builds its own stages, engines and avionics; SCE-200 semi-cryo extends it rather than importing it."
+    },
+    "risk": {
+     "name": "Risk & resilience",
+     "weight": null,
+     "lens": "risk",
+     "score": 3,
+     "from": "category",
+     "basis": "Single anchor customer (ISRO/NSIL), execution risk on cadence, unproven commercial scale-up at the private launchers, and long qualification — offset by near-total domestic content and policy commitment."
+    }
+   },
+   "structural": {
+    "score": 67.1,
+    "coverage": 100
+   },
+   "current": {
+    "score": 60,
+    "coverage": 50
+   },
+   "risk": 3,
+   "risk_adjusted": 40.3,
+   "overall": 65.9,
+   "coverage": 85,
+   "provisional": false,
+   "notes": "Opportunity uses the same series as the Market & growth digest block (IN-SPACe launch segment of US$720 mn in 2022 rising to a US$3.5 bn potential by 2033, ~15.4% CAGR). Valuation left UNAVAILABLE — the registry carries no industry valuation data.",
+   "overall_rank": 6,
+   "risk_adjusted_rank": 6,
+   "structural_score": 67.1,
+   "current_score": 60,
+   "structural_score_rank": 6,
+   "current_score_rank": 7
   },
   {
    "slug": "li-ion-cell-manufacturing-india",
    "title": "India Li-ion Cell Manufacturing",
    "group": "Energy Storage",
-   "scored": false
+   "scored": true,
+   "as_of": "2026-10-30",
+   "categories": {
+    "economics": {
+     "name": "Industry economics & value creation",
+     "weight": 0.2,
+     "lens": "structural",
+     "score": 2,
+     "from": "category",
+     "basis": "A 5 GWh plant runs at roughly −10% EBITDA with breakeven near 10 GWh, and domestic cells cost 25–40% more than imports — the economics today are policy-made and sub-scale, not structural."
+    },
+    "opportunity": {
+     "name": "Market opportunity & structural growth",
+     "weight": 0.15,
+     "lens": "structural",
+     "score": 5,
+     "from": "category",
+     "basis": "Cell demand of 28 GWh in 2025 rising to ~272 GWh by FY2030 (36.5% CAGR) against ~2 GWh of installed domestic capacity — the widest substitution gap of any node in the registry."
+    },
+    "competitive": {
+     "name": "Competitive structure & moat",
+     "weight": 0.15,
+     "lens": "structural",
+     "score": 2,
+     "from": "category",
+     "basis": "Dozens of PLI-ACC awardees and pack integrators compete at sub-scale against Chinese incumbents one to two orders of magnitude larger; domestic players are price-takers on equipment, materials and cells."
+    },
+    "cycle": {
+     "name": "Current opportunity & cycle position",
+     "weight": 0.15,
+     "lens": "current",
+     "score": 3,
+     "from": "category",
+     "basis": "Capacity is landing into a demand pool that grows faster than it, and the ~260 GWh tender pipeline gives forward visibility — but current utilisation is close to nil and imported cells still set the price."
+    },
+    "valuation": {
+     "name": "Valuation & market expectations",
+     "weight": 0.15,
+     "lens": "current",
+     "score": null,
+     "from": null,
+     "basis": "No industry-level valuation data in the registry — the page carries no sector multiple series."
+    },
+    "value_chain": {
+     "name": "Value-chain position & bottlenecks",
+     "weight": 0.1,
+     "lens": "structural",
+     "score": 2,
+     "from": "category",
+     "basis": "Cell making is the target node, but cathode and anode material, separator, copper foil and 55–60% of plant cost in machinery are all import-dominated; India’s live value-add remains module, pack and container assembly."
+    },
+    "capital": {
+     "name": "Capital intensity & financial quality",
+     "weight": 0.05,
+     "lens": "structural",
+     "score": 1,
+     "from": "category",
+     "basis": "Cell-line equipment is 55–60% of a 5 GWh plant’s cost, EBITDA is negative below ~10 GWh and PLI disbursements begin only from FY28 — among the most capital-hungry nodes analysed."
+    },
+    "technology": {
+     "name": "Technology & innovation",
+     "weight": 0.05,
+     "lens": "structural",
+     "score": 2,
+     "from": "category",
+     "basis": "LFP chemistry and process recipes are licensed or bought and the equipment is overwhelmingly Chinese; India holds no proprietary cell IP and the 10-Nov-2026 machinery-control cliff sits outside its control."
+    },
+    "risk": {
+     "name": "Risk & resilience",
+     "weight": null,
+     "lens": "risk",
+     "score": 2,
+     "from": "category",
+     "basis": "China’s export controls on LFP technology, graphite anode and cell machinery (suspension expiring 10-Nov-2026), sub-scale unit economics and a policy-dependent demand floor."
+    }
+   },
+   "structural": {
+    "score": 51.4,
+    "coverage": 100
+   },
+   "current": {
+    "score": 60,
+    "coverage": 50
+   },
+   "risk": 2,
+   "risk_adjusted": 20.6,
+   "overall": 52.9,
+   "coverage": 85,
+   "provisional": false,
+   "notes": "Opportunity uses the same series as the Market & growth digest block (IESA demand of 28 GWh in 2025 rising to ~272 GWh by FY2030 at a 36.5% CAGR, against ~2 GWh installed capacity). The two value forecasts disagree (17.65% vs 22.0% CAGR) and are shown as conflicting data rather than reconciled. Valuation left UNAVAILABLE.",
+   "overall_rank": 17,
+   "risk_adjusted_rank": 19,
+   "structural_score": 51.4,
+   "current_score": 60,
+   "structural_score_rank": 18,
+   "current_score_rank": 8
   },
   {
    "slug": "machine-tools-metrology-india",
    "title": "India Precision Machine Tools & Metrology",
    "group": "Robotics & Automation",
-   "scored": false
+   "scored": true,
+   "as_of": "2026-10-30",
+   "categories": {
+    "economics": {
+     "name": "Industry economics & value creation",
+     "weight": 0.2,
+     "lens": "structural",
+     "score": 3,
+     "from": "category",
+     "basis": "Domestic builders address only about two-fifths of their own home market, with imports at ~59% of FY26 consumption, but the pool is growing ~15% a year with order bookings up ~20% — decent throughput economics behind a persistent technology gap."
+    },
+    "opportunity": {
+     "name": "Market opportunity & structural growth",
+     "weight": 0.15,
+     "lens": "structural",
+     "score": 4,
+     "from": "category",
+     "basis": "Consumption of ₹36,419 cr in FY26 against ₹21,628 cr of imports is a ~₹21,600 cr substitution pool, on a 13.7% eleven-year production CAGR, with Q1 FY27 running +26% production and +20% consumption."
+    },
+    "competitive": {
+     "name": "Competitive structure & moat",
+     "weight": 0.15,
+     "lens": "structural",
+     "score": 3,
+     "from": "category",
+     "basis": "A fragmented domestic field (Jyoti CNC plus unlisted BFW and Ace) competes against a controller oligopoly (Fanuc, Siemens, Mitsubishi) and German/Japanese gear-grinding and metrology incumbents; rivalry is price-led in standard machines and closed in the precision tier."
+    },
+    "cycle": {
+     "name": "Current opportunity & cycle position",
+     "weight": 0.15,
+     "lens": "current",
+     "score": 4,
+     "from": "category",
+     "basis": "The industry is in a clear upcycle: FY26 consumption +15%, order bookings +20%, and Q1 FY27 production +26% YoY, with 29 capital-goods projects sanctioned to Mar-2026 feeding forward demand."
+    },
+    "valuation": {
+     "name": "Valuation & market expectations",
+     "weight": 0.15,
+     "lens": "current",
+     "score": null,
+     "from": null,
+     "basis": "No industry-level valuation data in the registry — the page carries no sector multiple series."
+    },
+    "value_chain": {
+     "name": "Value-chain position & bottlenecks",
+     "weight": 0.1,
+     "lens": "structural",
+     "score": 2,
+     "from": "category",
+     "basis": "India machines and assembles the frame, but CNC controllers, spindles, precision bearings, linear guides, ball screws and CMMs — the value-dense layers — are imported, so localisation has stopped one layer short of the moat."
+    },
+    "capital": {
+     "name": "Capital intensity & financial quality",
+     "weight": 0.05,
+     "lens": "structural",
+     "score": 3,
+     "from": "category",
+     "basis": "Moderate capex relative to semiconductors or cells, but castings, grinding capacity and a long working-capital cycle mean entry needs patient capital rather than large cheques."
+    },
+    "technology": {
+     "name": "Technology & innovation",
+     "weight": 0.05,
+     "lens": "structural",
+     "score": 2,
+     "from": "category",
+     "basis": "No domestic CNC controller platform and no robotics-grade ultra-precision gear grinding or metrology; five-axis and hybrid machines are bought in, so the capability is assembly and integration rather than proprietary machine design."
+    },
+    "risk": {
+     "name": "Risk & resilience",
+     "weight": null,
+     "lens": "risk",
+     "score": 3,
+     "from": "category",
+     "basis": "Controller single-sourcing, ~30% of imports from China, exposure to US tariffs on machine-tool exports and a capex-cyclical demand base — mitigated by a large protected domestic pool and a live capital-goods scheme."
+    }
+   },
+   "structural": {
+    "score": 60,
+    "coverage": 100
+   },
+   "current": {
+    "score": 80,
+    "coverage": 50
+   },
+   "risk": 3,
+   "risk_adjusted": 36,
+   "overall": 63.5,
+   "coverage": 85,
+   "provisional": false,
+   "notes": "Opportunity uses the same series as the Market & growth digest block (IMTMA FY26 consumption of Rs 36,419 cr, imports of Rs 21,628 cr, and the 13.7% eleven-year production CAGR). Valuation left UNAVAILABLE because the registry carries no industry valuation data.",
+   "overall_rank": 8,
+   "risk_adjusted_rank": 9,
+   "structural_score": 60,
+   "current_score": 80,
+   "structural_score_rank": 11,
+   "current_score_rank": 3
   },
   {
    "slug": "missile-india",
@@ -957,12 +1432,12 @@
    "coverage": 85,
    "provisional": false,
    "notes": "Scored against 'Industry-Level Investment Parameters & Scoring Architecture'. Opportunity uses the same T&D EPC series as the Market & growth digest block (Astute Analytica), cross-checked against Transrail's 2029 waypoint. Valuation left UNAVAILABLE.",
-   "overall_rank": 7,
-   "risk_adjusted_rank": 7,
+   "overall_rank": 10,
+   "risk_adjusted_rank": 8,
    "structural_score": 61.4,
    "current_score": 60,
-   "structural_score_rank": 9,
-   "current_score_rank": 5
+   "structural_score_rank": 10,
+   "current_score_rank": 10
   },
   {
    "slug": "pcb-electronic-components-india",
@@ -1073,10 +1548,10 @@
    "coverage": 70,
    "provisional": false,
    "notes": "Scored against 'Industry-Level Investment Parameters & Scoring Architecture'. Cycle position and valuation left UNAVAILABLE — the registry carries no cycle or valuation data for these industries.",
-   "overall_rank": 6,
-   "risk_adjusted_rank": 6,
+   "overall_rank": 7,
+   "risk_adjusted_rank": 7,
    "structural_score": 64.3,
-   "structural_score_rank": 6
+   "structural_score_rank": 7
   },
   {
    "slug": "power-transformers-india",
@@ -1183,7 +1658,7 @@
    "structural_score": 81.4,
    "current_score": 60,
    "structural_score_rank": 1,
-   "current_score_rank": 4
+   "current_score_rank": 9
   },
   {
    "slug": "railway-india",
@@ -1348,10 +1823,10 @@
    "coverage": 70,
    "provisional": false,
    "notes": "Scored against 'Industry-Level Investment Parameters & Scoring Architecture'. Cycle position and valuation left UNAVAILABLE — the registry carries no cycle or valuation data for these industries.",
-   "overall_rank": 14,
-   "risk_adjusted_rank": 8,
+   "overall_rank": 18,
+   "risk_adjusted_rank": 10,
    "structural_score": 51.4,
-   "structural_score_rank": 15
+   "structural_score_rank": 19
   },
   {
    "slug": "shakti-ew-india",
@@ -1459,12 +1934,12 @@
    "coverage": 85,
    "provisional": false,
    "notes": "Opportunity uses the same series as the Market & growth digest block (DGFT silver HS-category imports: US$184.33 mn FY26 vs an implied US$112.05 mn FY25, +64.51%). Valuation left UNAVAILABLE — no industry valuation series, and the pure-plays are foreign-listed. The CSE import line is an HS proxy, so it overstates paste narrowly and understates it if paste enters under a different code.",
-   "overall_rank": 9,
-   "risk_adjusted_rank": 10,
+   "overall_rank": 12,
+   "risk_adjusted_rank": 12,
    "structural_score": 62.9,
    "current_score": 40,
-   "structural_score_rank": 8,
-   "current_score_rank": 9
+   "structural_score_rank": 9,
+   "current_score_rank": 14
   },
   {
    "slug": "smart-meters-india",
@@ -1566,12 +2041,12 @@
    "coverage": 85,
    "provisional": false,
    "notes": "SMR-specific revenue is UNAVAILABLE — no unit is under construction and no commercial price exists, so opportunity is scored on the nuclear build-out frame and the three sanctioned demonstration projects rather than on an invented SMR market size. Valuation left UNAVAILABLE — no industry valuation series and the core participants are unlisted.",
-   "overall_rank": 15,
-   "risk_adjusted_rank": 15,
+   "overall_rank": 19,
+   "risk_adjusted_rank": 18,
    "structural_score": 52.9,
    "current_score": 40,
-   "structural_score_rank": 14,
-   "current_score_rank": 7
+   "structural_score_rank": 17,
+   "current_score_rank": 12
   },
   {
    "slug": "solar-cells-india",
@@ -1667,12 +2142,12 @@
    "coverage": 85,
    "provisional": false,
    "notes": "Opportunity uses the same series as the Market & growth digest block (CRISIL demand of 60-65 GW FY27; Commerce/TradeStat imported-cell value US$3.06 bn FY26 with a 28.6% two-year CAGR). Valuation left UNAVAILABLE — the registry carries no industry valuation data.",
-   "overall_rank": 8,
-   "risk_adjusted_rank": 9,
+   "overall_rank": 11,
+   "risk_adjusted_rank": 11,
    "structural_score": 64.3,
    "current_score": 40,
-   "structural_score_rank": 7,
-   "current_score_rank": 10
+   "structural_score_rank": 8,
+   "current_score_rank": 15
   },
   {
    "slug": "solar-pv-india",
@@ -1768,12 +2243,12 @@
    "coverage": 85,
    "provisional": false,
    "notes": "Opportunity uses the same series as the Market & growth digest block (PS Market Research, base 2023, 13.4% nominal CAGR 2024-2030). Valuation left UNAVAILABLE — the registry carries no industry valuation data. The panels-only Grand View series (9.4%) is a different scope and is not blended into the score.",
-   "overall_rank": 11,
-   "risk_adjusted_rank": 11,
+   "overall_rank": 14,
+   "risk_adjusted_rank": 13,
    "structural_score": 60,
    "current_score": 40,
-   "structural_score_rank": 10,
-   "current_score_rank": 8
+   "structural_score_rank": 12,
+   "current_score_rank": 13
   },
   {
    "slug": "steam-turbine-india",
@@ -1880,7 +2355,7 @@
    "structural_score": 68.6,
    "current_score": 80,
    "structural_score_rank": 4,
-   "current_score_rank": 2
+   "current_score_rank": 4
   },
   {
    "slug": "telecom-chipsets-india",
