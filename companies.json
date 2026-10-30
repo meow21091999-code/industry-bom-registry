@@ -7,7 +7,7 @@
   "industries": 77,
   "mappings": 2581,
   "multi_industry": 273,
-  "rank_changes": 94
+  "rank_changes": 1
  },
  "companies": [
   {
@@ -5507,8 +5507,8 @@
     "Amara Raja"
    ],
    "rank": 26,
-   "previous_rank": 222,
-   "rank_change": 196
+   "previous_rank": 223,
+   "rank_change": 197
   },
   {
    "name": "Tata Power (TP Solar)",
@@ -15209,8 +15209,8 @@
    ],
    "also_known_as": [],
    "rank": 152,
-   "previous_rank": 244,
-   "rank_change": 92
+   "previous_rank": 152,
+   "rank_change": 0
   },
   {
    "name": "Birla Furukawa Fibre Optics",
@@ -15261,8 +15261,8 @@
    ],
    "also_known_as": [],
    "rank": 153,
-   "previous_rank": 152,
-   "rank_change": -1
+   "previous_rank": 153,
+   "rank_change": 0
   },
   {
    "name": "Birla Furukawa Fibre Optics",
@@ -15313,8 +15313,8 @@
    ],
    "also_known_as": [],
    "rank": 154,
-   "previous_rank": 153,
-   "rank_change": -1
+   "previous_rank": 154,
+   "rank_change": 0
   },
   {
    "name": "Birla Furukawa Fibre Optics",
@@ -15365,8 +15365,8 @@
    ],
    "also_known_as": [],
    "rank": 155,
-   "previous_rank": 154,
-   "rank_change": -1
+   "previous_rank": 155,
+   "rank_change": 0
   },
   {
    "name": "Hindustan Zinc",
@@ -15417,8 +15417,8 @@
    ],
    "also_known_as": [],
    "rank": 156,
-   "previous_rank": 155,
-   "rank_change": -1
+   "previous_rank": 156,
+   "rank_change": 0
   },
   {
    "name": "Hindustan Zinc",
@@ -15469,8 +15469,8 @@
    ],
    "also_known_as": [],
    "rank": 157,
-   "previous_rank": 156,
-   "rank_change": -1
+   "previous_rank": 157,
+   "rank_change": 0
   },
   {
    "name": "Apollo Micro Systems",
@@ -15525,8 +15525,8 @@
    ],
    "also_known_as": [],
    "rank": 158,
-   "previous_rank": 157,
-   "rank_change": -1
+   "previous_rank": 158,
+   "rank_change": 0
   },
   {
    "name": "Hindustan Copper",
@@ -15576,8 +15576,8 @@
    ],
    "also_known_as": [],
    "rank": 159,
-   "previous_rank": 158,
-   "rank_change": -1
+   "previous_rank": 159,
+   "rank_change": 0
   },
   {
    "name": "Jindal Stainless",
@@ -15627,8 +15627,8 @@
    ],
    "also_known_as": [],
    "rank": 160,
-   "previous_rank": 159,
-   "rank_change": -1
+   "previous_rank": 160,
+   "rank_change": 0
   },
   {
    "name": "National Aluminium (NALCO)",
@@ -15680,8 +15680,8 @@
     "NALCO"
    ],
    "rank": 161,
-   "previous_rank": 160,
-   "rank_change": -1
+   "previous_rank": 161,
+   "rank_change": 0
   },
   {
    "name": "Ador Welding",
@@ -15730,8 +15730,8 @@
    ],
    "also_known_as": [],
    "rank": 162,
-   "previous_rank": 161,
-   "rank_change": -1
+   "previous_rank": 162,
+   "rank_change": 0
   },
   {
    "name": "VA Tech Wabag",
@@ -15780,8 +15780,8 @@
    ],
    "also_known_as": [],
    "rank": 163,
-   "previous_rank": 162,
-   "rank_change": -1
+   "previous_rank": 163,
+   "rank_change": 0
   },
   {
    "name": "KSH International",
@@ -15830,8 +15830,8 @@
    ],
    "also_known_as": [],
    "rank": 164,
-   "previous_rank": 163,
-   "rank_change": -1
+   "previous_rank": 164,
+   "rank_change": 0
   },
   {
    "name": "Coromandel International",
@@ -15881,8 +15881,8 @@
    ],
    "also_known_as": [],
    "rank": 165,
-   "previous_rank": 164,
-   "rank_change": -1
+   "previous_rank": 165,
+   "rank_change": 0
   },
   {
    "name": "EPACK Durable",
@@ -15925,8 +15925,8 @@
    ],
    "also_known_as": [],
    "rank": 166,
-   "previous_rank": 165,
-   "rank_change": -1
+   "previous_rank": 166,
+   "rank_change": 0
   },
   {
    "name": "UPL",
@@ -15969,8 +15969,8 @@
    ],
    "also_known_as": [],
    "rank": 167,
-   "previous_rank": 166,
-   "rank_change": -1
+   "previous_rank": 167,
+   "rank_change": 0
   },
   {
    "name": "DCW",
@@ -16012,8 +16012,8 @@
    ],
    "also_known_as": [],
    "rank": 168,
-   "previous_rank": 167,
-   "rank_change": -1
+   "previous_rank": 168,
+   "rank_change": 0
   },
   {
    "name": "Sumitomo Chemical India",
@@ -16055,8 +16055,8 @@
    ],
    "also_known_as": [],
    "rank": 169,
-   "previous_rank": 168,
-   "rank_change": -1
+   "previous_rank": 169,
+   "rank_change": 0
   },
   {
    "name": "Bosch Ltd",
@@ -16097,8 +16097,8 @@
    ],
    "also_known_as": [],
    "rank": 170,
-   "previous_rank": 169,
-   "rank_change": -1
+   "previous_rank": 170,
+   "rank_change": 0
   },
   {
    "name": "DCM Shriram",
@@ -16139,8 +16139,8 @@
    ],
    "also_known_as": [],
    "rank": 171,
-   "previous_rank": 170,
-   "rank_change": -1
+   "previous_rank": 171,
+   "rank_change": 0
   },
   {
    "name": "Quality Power Electrical Equipments",
@@ -16187,8 +16187,8 @@
     "Voltamp Transformers"
    ],
    "rank": 172,
-   "previous_rank": 171,
-   "rank_change": -1
+   "previous_rank": 172,
+   "rank_change": 0
   },
   {
    "name": "Genus Power Infrastructures",
@@ -16228,8 +16228,8 @@
    ],
    "also_known_as": [],
    "rank": 173,
-   "previous_rank": 172,
-   "rank_change": -1
+   "previous_rank": 173,
+   "rank_change": 0
   },
   {
    "name": "Premier Explosives",
@@ -16269,8 +16269,8 @@
    ],
    "also_known_as": [],
    "rank": 174,
-   "previous_rank": 173,
-   "rank_change": -1
+   "previous_rank": 174,
+   "rank_change": 0
   },
   {
    "name": "Vishal / Vamet / Straton / Newtek",
@@ -16314,8 +16314,8 @@
     "Sterlite Electric"
    ],
    "rank": 175,
-   "previous_rank": 174,
-   "rank_change": -1
+   "previous_rank": 175,
+   "rank_change": 0
   },
   {
    "name": "Atul",
@@ -16354,8 +16354,8 @@
    ],
    "also_known_as": [],
    "rank": 176,
-   "previous_rank": 175,
-   "rank_change": -1
+   "previous_rank": 176,
+   "rank_change": 0
   },
   {
    "name": "Gujarat Alkalies & Chemicals",
@@ -16394,8 +16394,8 @@
    ],
    "also_known_as": [],
    "rank": 177,
-   "previous_rank": 176,
-   "rank_change": -1
+   "previous_rank": 177,
+   "rank_change": 0
   },
   {
    "name": "HPL Electric & Power",
@@ -16434,8 +16434,8 @@
    ],
    "also_known_as": [],
    "rank": 178,
-   "previous_rank": 177,
-   "rank_change": -1
+   "previous_rank": 178,
+   "rank_change": 0
   },
   {
    "name": "Jubilant Ingrevia",
@@ -16479,8 +16479,8 @@
    ],
    "also_known_as": [],
    "rank": 179,
-   "previous_rank": 178,
-   "rank_change": -1
+   "previous_rank": 179,
+   "rank_change": 0
   },
   {
    "name": "PI Industries",
@@ -16519,8 +16519,8 @@
    ],
    "also_known_as": [],
    "rank": 180,
-   "previous_rank": 179,
-   "rank_change": -1
+   "previous_rank": 180,
+   "rank_change": 0
   },
   {
    "name": "Tech Mahindra",
@@ -16564,8 +16564,8 @@
    ],
    "also_known_as": [],
    "rank": 181,
-   "previous_rank": 180,
-   "rank_change": -1
+   "previous_rank": 181,
+   "rank_change": 0
   },
   {
    "name": "Astec Lifesciences",
@@ -16603,8 +16603,8 @@
    ],
    "also_known_as": [],
    "rank": 182,
-   "previous_rank": 181,
-   "rank_change": -1
+   "previous_rank": 182,
+   "rank_change": 0
   },
   {
    "name": "Ather Energy",
@@ -16642,8 +16642,8 @@
    ],
    "also_known_as": [],
    "rank": 183,
-   "previous_rank": 182,
-   "rank_change": -1
+   "previous_rank": 183,
+   "rank_change": 0
   },
   {
    "name": "Bajaj Auto",
@@ -16681,8 +16681,8 @@
    ],
    "also_known_as": [],
    "rank": 184,
-   "previous_rank": 183,
-   "rank_change": -1
+   "previous_rank": 184,
+   "rank_change": 0
   },
   {
    "name": "BPL Limited",
@@ -16725,8 +16725,8 @@
    ],
    "also_known_as": [],
    "rank": 185,
-   "previous_rank": 184,
-   "rank_change": -1
+   "previous_rank": 185,
+   "rank_change": 0
   },
   {
    "name": "Chemplast Sanmar",
@@ -16769,8 +16769,8 @@
    ],
    "also_known_as": [],
    "rank": 186,
-   "previous_rank": 185,
-   "rank_change": -1
+   "previous_rank": 186,
+   "rank_change": 0
   },
   {
    "name": "ICOMM Tele (Megha) + CARACAL",
@@ -16814,8 +16814,8 @@
     "Werywin Defence"
    ],
    "rank": 187,
-   "previous_rank": 186,
-   "rank_change": -1
+   "previous_rank": 187,
+   "rank_change": 0
   },
   {
    "name": "KPI Green Energy",
@@ -16853,8 +16853,8 @@
    ],
    "also_known_as": [],
    "rank": 188,
-   "previous_rank": 187,
-   "rank_change": -1
+   "previous_rank": 188,
+   "rank_change": 0
   },
   {
    "name": "Mahindra & Mahindra",
@@ -16892,8 +16892,8 @@
    ],
    "also_known_as": [],
    "rank": 189,
-   "previous_rank": 188,
-   "rank_change": -1
+   "previous_rank": 189,
+   "rank_change": 0
   },
   {
    "name": "Schneider Electric Infrastructure",
@@ -16931,8 +16931,8 @@
    ],
    "also_known_as": [],
    "rank": 190,
-   "previous_rank": 189,
-   "rank_change": -1
+   "previous_rank": 190,
+   "rank_change": 0
   },
   {
    "name": "Skipper Ltd",
@@ -16972,8 +16972,8 @@
     "Skipper"
    ],
    "rank": 191,
-   "previous_rank": 190,
-   "rank_change": -1
+   "previous_rank": 191,
+   "rank_change": 0
   },
   {
    "name": "TVS Motor",
@@ -17011,8 +17011,8 @@
    ],
    "also_known_as": [],
    "rank": 192,
-   "previous_rank": 191,
-   "rank_change": -1
+   "previous_rank": 192,
+   "rank_change": 0
   },
   {
    "name": "Atlanta Electricals",
@@ -17049,8 +17049,8 @@
    ],
    "also_known_as": [],
    "rank": 193,
-   "previous_rank": 192,
-   "rank_change": -1
+   "previous_rank": 193,
+   "rank_change": 0
   },
   {
    "name": "Azad Engineering",
@@ -17087,8 +17087,8 @@
    ],
    "also_known_as": [],
    "rank": 194,
-   "previous_rank": 193,
-   "rank_change": -1
+   "previous_rank": 194,
+   "rank_change": 0
   },
   {
    "name": "CESC",
@@ -17125,8 +17125,8 @@
    ],
    "also_known_as": [],
    "rank": 195,
-   "previous_rank": 194,
-   "rank_change": -1
+   "previous_rank": 195,
+   "rank_change": 0
   },
   {
    "name": "Cummins India",
@@ -17163,8 +17163,8 @@
    ],
    "also_known_as": [],
    "rank": 196,
-   "previous_rank": 195,
-   "rank_change": -1
+   "previous_rank": 196,
+   "rank_change": 0
   },
   {
    "name": "DRDO — IRDE / CHESS / DEAL / SSPL",
@@ -17203,8 +17203,8 @@
     "DRDO — DLRL, Hyderabad"
    ],
    "rank": 197,
-   "previous_rank": 196,
-   "rank_change": -1
+   "previous_rank": 197,
+   "rank_change": 0
   },
   {
    "name": "DroneAcharya Aerial Innovations",
@@ -17243,8 +17243,8 @@
     "DroneAcharya"
    ],
    "rank": 198,
-   "previous_rank": 197,
-   "rank_change": -1
+   "previous_rank": 198,
+   "rank_change": 0
   },
   {
    "name": "Eicher Motors",
@@ -17281,8 +17281,8 @@
    ],
    "also_known_as": [],
    "rank": 199,
-   "previous_rank": 198,
-   "rank_change": -1
+   "previous_rank": 199,
+   "rank_change": 0
   },
   {
    "name": "Elin Electronics",
@@ -17319,8 +17319,8 @@
    ],
    "also_known_as": [],
    "rank": 200,
-   "previous_rank": 199,
-   "rank_change": -1
+   "previous_rank": 200,
+   "rank_change": 0
   },
   {
    "name": "Emmvee Photovoltaic Power",
@@ -17358,8 +17358,8 @@
    ],
    "also_known_as": [],
    "rank": 201,
-   "previous_rank": 200,
-   "rank_change": -1
+   "previous_rank": 201,
+   "rank_change": 0
   },
   {
    "name": "Exicom Tele-Systems",
@@ -17396,8 +17396,8 @@
    ],
    "also_known_as": [],
    "rank": 202,
-   "previous_rank": 201,
-   "rank_change": -1
+   "previous_rank": 202,
+   "rank_change": 0
   },
   {
    "name": "Fabtech Technologies",
@@ -17437,8 +17437,8 @@
     "Raaj Medisafe India"
    ],
    "rank": 203,
-   "previous_rank": 202,
-   "rank_change": -1
+   "previous_rank": 203,
+   "rank_change": 0
   },
   {
    "name": "Gensol Engineering",
@@ -17475,8 +17475,8 @@
    ],
    "also_known_as": [],
    "rank": 204,
-   "previous_rank": 203,
-   "rank_change": -1
+   "previous_rank": 204,
+   "rank_change": 0
   },
   {
    "name": "MapmyIndia (CE Info Systems)",
@@ -17525,8 +17525,8 @@
    ],
    "also_known_as": [],
    "rank": 205,
-   "previous_rank": 204,
-   "rank_change": -1
+   "previous_rank": 205,
+   "rank_change": 0
   },
   {
    "name": "Sika Interplant Systems",
@@ -17563,8 +17563,8 @@
    ],
    "also_known_as": [],
    "rank": 206,
-   "previous_rank": 205,
-   "rank_change": -1
+   "previous_rank": 206,
+   "rank_change": 0
   },
   {
    "name": "Sterlite Electric (ex-Sterlite Power Transmission)",
@@ -17603,8 +17603,8 @@
     "Sterlite Electric"
    ],
    "rank": 207,
-   "previous_rank": 206,
-   "rank_change": -1
+   "previous_rank": 207,
+   "rank_change": 0
   },
   {
    "name": "Subex",
@@ -17641,8 +17641,8 @@
    ],
    "also_known_as": [],
    "rank": 208,
-   "previous_rank": 207,
-   "rank_change": -1
+   "previous_rank": 208,
+   "rank_change": 0
   },
   {
    "name": "Subex",
@@ -17679,8 +17679,8 @@
    ],
    "also_known_as": [],
    "rank": 209,
-   "previous_rank": 208,
-   "rank_change": -1
+   "previous_rank": 209,
+   "rank_change": 0
   },
   {
    "name": "Waaree Renewable Technologies",
@@ -17717,8 +17717,8 @@
    ],
    "also_known_as": [],
    "rank": 210,
-   "previous_rank": 209,
-   "rank_change": -1
+   "previous_rank": 210,
+   "rank_change": 0
   },
   {
    "name": "Websol Energy System",
@@ -17756,8 +17756,8 @@
    ],
    "also_known_as": [],
    "rank": 211,
-   "previous_rank": 210,
-   "rank_change": -1
+   "previous_rank": 211,
+   "rank_change": 0
   },
   {
    "name": "WiSig Networks",
@@ -17794,8 +17794,8 @@
    ],
    "also_known_as": [],
    "rank": 212,
-   "previous_rank": 211,
-   "rank_change": -1
+   "previous_rank": 212,
+   "rank_change": 0
   },
   {
    "name": "WiSig Networks",
@@ -17832,8 +17832,8 @@
    ],
    "also_known_as": [],
    "rank": 213,
-   "previous_rank": 212,
-   "rank_change": -1
+   "previous_rank": 213,
+   "rank_change": 0
   },
   {
    "name": "Ceinsys Tech",
@@ -17870,8 +17870,8 @@
    ],
    "also_known_as": [],
    "rank": 214,
-   "previous_rank": 213,
-   "rank_change": -1
+   "previous_rank": 214,
+   "rank_change": 0
   },
   {
    "name": "Dish TV India",
@@ -17908,8 +17908,8 @@
    ],
    "also_known_as": [],
    "rank": 215,
-   "previous_rank": 214,
-   "rank_change": -1
+   "previous_rank": 215,
+   "rank_change": 0
   },
   {
    "name": "Genesys International",
@@ -17946,8 +17946,8 @@
    ],
    "also_known_as": [],
    "rank": 216,
-   "previous_rank": 215,
-   "rank_change": -1
+   "previous_rank": 216,
+   "rank_change": 0
   },
   {
    "name": "Titagarh Rail Systems",
@@ -17994,8 +17994,8 @@
     }
    ],
    "rank": 217,
-   "previous_rank": 216,
-   "rank_change": -1
+   "previous_rank": 217,
+   "rank_change": 0
   },
   {
    "name": "Everest Kanto Cylinder",
@@ -18044,8 +18044,8 @@
    ],
    "also_known_as": [],
    "rank": 218,
-   "previous_rank": 217,
-   "rank_change": -1
+   "previous_rank": 218,
+   "rank_change": 0
   },
   {
    "name": "HBL Power Systems",
@@ -18084,8 +18084,8 @@
    ],
    "also_known_as": [],
    "rank": 219,
-   "previous_rank": 218,
-   "rank_change": -1
+   "previous_rank": 219,
+   "rank_change": 0
   },
   {
    "name": "Pricol",
@@ -18129,8 +18129,8 @@
    ],
    "also_known_as": [],
    "rank": 220,
-   "previous_rank": 219,
-   "rank_change": -1
+   "previous_rank": 220,
+   "rank_change": 0
   },
   {
    "name": "PTC Industries",
@@ -18169,8 +18169,8 @@
    ],
    "also_known_as": [],
    "rank": 221,
-   "previous_rank": 220,
-   "rank_change": -1
+   "previous_rank": 221,
+   "rank_change": 0
   },
   {
    "name": "Sansera Engineering",
@@ -18209,8 +18209,8 @@
    ],
    "also_known_as": [],
    "rank": 222,
-   "previous_rank": 221,
-   "rank_change": -1
+   "previous_rank": 222,
+   "rank_change": 0
   },
   {
    "name": "Amara Raja",
@@ -18247,8 +18247,8 @@
     }
    ],
    "rank": 223,
-   "previous_rank": 222,
-   "rank_change": -1
+   "previous_rank": 223,
+   "rank_change": 0
   },
   {
    "name": "BEML",
@@ -18285,8 +18285,8 @@
     }
    ],
    "rank": 224,
-   "previous_rank": 223,
-   "rank_change": -1
+   "previous_rank": 224,
+   "rank_change": 0
   },
   {
    "name": "Craftsman Automation",
@@ -18324,8 +18324,8 @@
    ],
    "also_known_as": [],
    "rank": 225,
-   "previous_rank": 224,
-   "rank_change": -1
+   "previous_rank": 225,
+   "rank_change": 0
   },
   {
    "name": "GMR Airports",
@@ -18368,8 +18368,8 @@
    ],
    "also_known_as": [],
    "rank": 226,
-   "previous_rank": 225,
-   "rank_change": -1
+   "previous_rank": 226,
+   "rank_change": 0
   },
   {
    "name": "Gujarat Narmada Valley Fertilizers & Chemicals",
@@ -18409,8 +18409,8 @@
     "GNFC"
    ],
    "rank": 227,
-   "previous_rank": 226,
-   "rank_change": -1
+   "previous_rank": 227,
+   "rank_change": 0
   },
   {
    "name": "Happy Forgings",
@@ -18448,8 +18448,8 @@
    ],
    "also_known_as": [],
    "rank": 228,
-   "previous_rank": 227,
-   "rank_change": -1
+   "previous_rank": 228,
+   "rank_change": 0
   },
   {
    "name": "Himadri Speciality Chemical",
@@ -18487,8 +18487,8 @@
    ],
    "also_known_as": [],
    "rank": 229,
-   "previous_rank": 228,
-   "rank_change": -1
+   "previous_rank": 229,
+   "rank_change": 0
   },
   {
    "name": "Jindal Steel & Power",
@@ -18531,8 +18531,8 @@
    ],
    "also_known_as": [],
    "rank": 230,
-   "previous_rank": 229,
-   "rank_change": -1
+   "previous_rank": 230,
+   "rank_change": 0
   },
   {
    "name": "Minda Corporation",
@@ -18570,8 +18570,8 @@
    ],
    "also_known_as": [],
    "rank": 231,
-   "previous_rank": 230,
-   "rank_change": -1
+   "previous_rank": 231,
+   "rank_change": 0
   },
   {
    "name": "Subros",
@@ -18614,8 +18614,8 @@
    ],
    "also_known_as": [],
    "rank": 232,
-   "previous_rank": 231,
-   "rank_change": -1
+   "previous_rank": 232,
+   "rank_change": 0
   },
   {
    "name": "Sundaram Fasteners",
@@ -18655,8 +18655,8 @@
     "Sundram Fasteners"
    ],
    "rank": 233,
-   "previous_rank": 232,
-   "rank_change": -1
+   "previous_rank": 233,
+   "rank_change": 0
   },
   {
    "name": "Time Technoplast",
@@ -18699,8 +18699,8 @@
    ],
    "also_known_as": [],
    "rank": 234,
-   "previous_rank": 233,
-   "rank_change": -1
+   "previous_rank": 234,
+   "rank_change": 0
   },
   {
    "name": "Alicon Castalloy",
@@ -18737,8 +18737,8 @@
    ],
    "also_known_as": [],
    "rank": 235,
-   "previous_rank": 234,
-   "rank_change": -1
+   "previous_rank": 235,
+   "rank_change": 0
   },
   {
    "name": "Ami Organics",
@@ -18775,8 +18775,8 @@
    ],
    "also_known_as": [],
    "rank": 236,
-   "previous_rank": 235,
-   "rank_change": -1
+   "previous_rank": 236,
+   "rank_change": 0
   },
   {
    "name": "Carborundum Universal",
@@ -18813,8 +18813,8 @@
    ],
    "also_known_as": [],
    "rank": 237,
-   "previous_rank": 236,
-   "rank_change": -1
+   "previous_rank": 237,
+   "rank_change": 0
   },
   {
    "name": "Castrol India",
@@ -18851,8 +18851,8 @@
    ],
    "also_known_as": [],
    "rank": 238,
-   "previous_rank": 237,
-   "rank_change": -1
+   "previous_rank": 238,
+   "rank_change": 0
   },
   {
    "name": "DCX Systems",
@@ -18889,8 +18889,8 @@
    ],
    "also_known_as": [],
    "rank": 239,
-   "previous_rank": 238,
-   "rank_change": -1
+   "previous_rank": 239,
+   "rank_change": 0
   },
   {
    "name": "Dynamatic Technologies",
@@ -18927,8 +18927,8 @@
    ],
    "also_known_as": [],
    "rank": 240,
-   "previous_rank": 239,
-   "rank_change": -1
+   "previous_rank": 240,
+   "rank_change": 0
   },
   {
    "name": "E2E Networks",
@@ -18965,8 +18965,8 @@
    ],
    "also_known_as": [],
    "rank": 241,
-   "previous_rank": 240,
-   "rank_change": -1
+   "previous_rank": 241,
+   "rank_change": 0
   },
   {
    "name": "Grindwell Norton",
@@ -19003,8 +19003,8 @@
    ],
    "also_known_as": [],
    "rank": 242,
-   "previous_rank": 241,
-   "rank_change": -1
+   "previous_rank": 242,
+   "rank_change": 0
   },
   {
    "name": "Gulf Oil Lubricants India",
@@ -19041,8 +19041,8 @@
    ],
    "also_known_as": [],
    "rank": 243,
-   "previous_rank": 242,
-   "rank_change": -1
+   "previous_rank": 243,
+   "rank_change": 0
   },
   {
    "name": "HEG",
@@ -19079,8 +19079,8 @@
    ],
    "also_known_as": [],
    "rank": 244,
-   "previous_rank": 243,
-   "rank_change": -1
+   "previous_rank": 244,
+   "rank_change": 0
   },
   {
    "name": "Hindustan Construction",

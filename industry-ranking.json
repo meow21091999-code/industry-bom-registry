@@ -74,10 +74,10 @@
  },
  "counts": {
   "industries": 77,
-  "scored": 5,
+  "scored": 10,
   "legacy": 0,
-  "unscored": 72,
-  "ranked": 5
+  "unscored": 67,
+  "ranked": 10
  },
  "industries": [
   {
@@ -168,7 +168,102 @@
    "slug": "ehv-hv-cables-india",
    "title": "India EHV / HV Power Cables",
    "group": "Power & Electrical Infrastructure",
-   "scored": false
+   "scored": true,
+   "as_of": "2026-10-30",
+   "categories": {
+    "economics": {
+     "name": "Industry economics & value creation",
+     "weight": 0.2,
+     "lens": "structural",
+     "score": 4,
+     "from": "category",
+     "basis": "Cable makers are earning record margins on a richer EHV and export mix, with branded distribution supporting pricing power in LV/MV."
+    },
+    "opportunity": {
+     "name": "Market opportunity & structural growth",
+     "weight": 0.15,
+     "lens": "structural",
+     "score": 4,
+     "from": "category",
+     "basis": "HV cable (above 33 kV, land) Rs 8,038 cr (CY2024) to Rs 20,344 cr (CY2030F) at 16.7% nominal CAGR — the fastest voltage band — inside a wires-and-cables market going from Rs 1,00,000 cr (FY26) to Rs 1,57,500 cr (FY30)."
+    },
+    "competitive": {
+     "name": "Competitive structure & moat",
+     "weight": 0.15,
+     "lens": "structural",
+     "score": 3,
+     "from": "category",
+     "basis": "Consolidating into six or seven listed majors, but LV and MV remain crowded and price-competitive."
+    },
+    "cycle": {
+     "name": "Current opportunity & cycle position",
+     "weight": 0.15,
+     "lens": "current",
+     "score": 4,
+     "from": "category",
+     "basis": "Capacity is being added into a rising market — Polycab's EHV line by end-CY2026, KEI Sanand Phase-II by Mar-2027 — with HV/EHV output up 10.3% in FY26."
+    },
+    "valuation": {
+     "name": "Valuation & market expectations",
+     "weight": 0.15,
+     "lens": "current",
+     "score": null,
+     "from": null,
+     "basis": "No industry-level valuation data in the registry."
+    },
+    "value_chain": {
+     "name": "Value-chain position & bottlenecks",
+     "weight": 0.1,
+     "lens": "structural",
+     "score": 3,
+     "from": "category",
+     "basis": "Conductor drawing and insulation are domestic; HV/EHV XLPE and semiconductive compounds are foreign, and ~50% of EHV consumption is still imported."
+    },
+    "capital": {
+     "name": "Capital intensity & financial quality",
+     "weight": 0.05,
+     "lens": "structural",
+     "score": 3,
+     "from": "category",
+     "basis": "VCV/CCV lines are capital-heavy with 2-3 year lead times and no Indian equipment OEM — a genuine barrier that also slows capacity response."
+    },
+    "technology": {
+     "name": "Technology & innovation",
+     "weight": 0.05,
+     "lens": "structural",
+     "score": 2,
+     "from": "category",
+     "basis": "550 kV is the domestic frontier and submarine cable is absent entirely — no plant and no repair ship."
+    },
+    "risk": {
+     "name": "Risk & resilience",
+     "weight": null,
+     "lens": "risk",
+     "score": 3,
+     "from": "category",
+     "basis": "Concentrated compound supply (Borouge/Borealis, Hanwha), imported EHV competition, and copper and aluminium price volatility."
+    }
+   },
+   "structural": {
+    "score": 68.6,
+    "coverage": 100
+   },
+   "current": {
+    "score": 80,
+    "coverage": 50
+   },
+   "risk": 3,
+   "risk_adjusted": 41.2,
+   "overall": 70.6,
+   "coverage": 85,
+   "provisional": false,
+   "notes": "Scored against 'Industry-Level Investment Parameters & Scoring Architecture'. Opportunity uses the same Ken Research HV series already carried in this page's Market & growth digest block. Valuation left UNAVAILABLE.",
+   "overall_rank": 3,
+   "risk_adjusted_rank": 3,
+   "structural_score": 68.6,
+   "current_score": 80,
+   "structural_score_rank": 3,
+   "current_score_rank": 1
   },
   {
    "slug": "electrical-electronic-equipment-india",
@@ -267,10 +362,10 @@
    "coverage": 70,
    "provisional": false,
    "notes": "Scored against 'Industry-Level Investment Parameters & Scoring Architecture'. Cycle position and valuation left UNAVAILABLE — the registry carries no cycle or valuation data for these industries.",
-   "overall_rank": 2,
-   "risk_adjusted_rank": 2,
+   "overall_rank": 5,
+   "risk_adjusted_rank": 5,
    "structural_score": 67.1,
-   "structural_score_rank": 2
+   "structural_score_rank": 5
   },
   {
    "slug": "engine-mro-india",
@@ -312,7 +407,102 @@
    "slug": "hvdc-power-electronics-india",
    "title": "India HVDC & Power Electronics",
    "group": "Power & Electrical Infrastructure",
-   "scored": false
+   "scored": true,
+   "as_of": "2026-10-30",
+   "categories": {
+    "economics": {
+     "name": "Industry economics & value creation",
+     "weight": 0.2,
+     "lens": "structural",
+     "score": 3,
+     "from": "category",
+     "basis": "Attractive at project level for the few qualified bidders, but converter-station content is ~100% imported, so Indian participants capture civil works and erection rather than equipment margin."
+    },
+    "opportunity": {
+     "name": "Market opportunity & structural growth",
+     "weight": 0.15,
+     "lens": "structural",
+     "score": 4,
+     "from": "category",
+     "basis": "32.3 GW NEP pipeline implying ~Rs 1.3 L cr of system capex [CALCULATED], with the market series at USD 15.07 bn (2025) to USD 31.06 bn (2035) at 7.5% — large, but the two market series conflict."
+    },
+    "competitive": {
+     "name": "Competitive structure & moat",
+     "weight": 0.15,
+     "lens": "structural",
+     "score": 2,
+     "from": "category",
+     "basis": "Valves and control code are a three-player global oligopoly; Indian participation is via JV and localisation mandate rather than independent capability."
+    },
+    "cycle": {
+     "name": "Current opportunity & cycle position",
+     "weight": 0.15,
+     "lens": "current",
+     "score": 3,
+     "from": "category",
+     "basis": "Awards are lumpy and infrequent rather than cyclical — Barmer in Aug-2026, Khavda poles in 2028-29 — so order timing, not the cycle, drives sentiment."
+    },
+    "valuation": {
+     "name": "Valuation & market expectations",
+     "weight": 0.15,
+     "lens": "current",
+     "score": null,
+     "from": null,
+     "basis": "No industry-level valuation data in the registry."
+    },
+    "value_chain": {
+     "name": "Value-chain position & bottlenecks",
+     "weight": 0.1,
+     "lens": "structural",
+     "score": 2,
+     "from": "category",
+     "basis": "Converter stations, DC XLPE compound and pre-moulded joints are all foreign; the localisation ladder (30% to FY28, 60% by FY35) is the only route in, and the first Indian converter-transformer order only landed in Dec-2025."
+    },
+    "capital": {
+     "name": "Capital intensity & financial quality",
+     "weight": 0.05,
+     "lens": "structural",
+     "score": 4,
+     "from": "category",
+     "basis": "Project capital is enormous (Rs 24,819 cr for one 6 GW link) but borne by TBCB developers on regulated returns; equipment-level capex is modest."
+    },
+    "technology": {
+     "name": "Technology & innovation",
+     "weight": 0.05,
+     "lens": "structural",
+     "score": 2,
+     "from": "category",
+     "basis": "High-power thyristors, IGBT/SiC devices, converter control software and DC cable compound are all offshore — the deepest technology gap in the grid."
+    },
+    "risk": {
+     "name": "Risk & resilience",
+     "weight": null,
+     "lens": "risk",
+     "score": 2,
+     "from": "category",
+     "basis": "The highest single-source concentration in the grid, plus Chinese component import relief running to Jul-2028 that undercuts the localisation case."
+    }
+   },
+   "structural": {
+    "score": 57.1,
+    "coverage": 100
+   },
+   "current": {
+    "score": 60,
+    "coverage": 50
+   },
+   "risk": 2,
+   "risk_adjusted": 22.8,
+   "overall": 57.6,
+   "coverage": 85,
+   "provisional": false,
+   "notes": "Scored against 'Industry-Level Investment Parameters & Scoring Architecture'. Opportunity uses the same HVDC series as the Market & growth digest block, with the conflicting second series disclosed rather than averaged. Valuation left UNAVAILABLE.",
+   "overall_rank": 8,
+   "risk_adjusted_rank": 9,
+   "structural_score": 57.1,
+   "current_score": 60,
+   "structural_score_rank": 8,
+   "current_score_rank": 3
   },
   {
    "slug": "industrial-gases-india",
@@ -411,10 +601,10 @@
    "coverage": 70,
    "provisional": false,
    "notes": "Scored against 'Industry-Level Investment Parameters & Scoring Architecture'. Cycle position and valuation left UNAVAILABLE — the registry carries no cycle or valuation data for these industries.",
-   "overall_rank": 4,
-   "risk_adjusted_rank": 5,
+   "overall_rank": 9,
+   "risk_adjusted_rank": 10,
    "structural_score": 52.9,
-   "structural_score_rank": 4
+   "structural_score_rank": 9
   },
   {
    "slug": "launch-vehicles-propulsion-india",
@@ -561,10 +751,10 @@
    "coverage": 70,
    "provisional": false,
    "notes": "Scored against 'Industry-Level Investment Parameters & Scoring Architecture'. Cycle position and valuation left UNAVAILABLE — the registry carries no cycle or valuation data for these industries.",
-   "overall_rank": 1,
+   "overall_rank": 2,
    "risk_adjusted_rank": 1,
    "structural_score": 75.7,
-   "structural_score_rank": 1
+   "structural_score_rank": 2
   },
   {
    "slug": "optical-transceivers-india",
@@ -582,7 +772,102 @@
    "slug": "overhead-transmission-line-india",
    "title": "Overhead Transmission Line",
    "group": "Power & Electrical Infrastructure",
-   "scored": false
+   "scored": true,
+   "as_of": "2026-10-30",
+   "categories": {
+    "economics": {
+     "name": "Industry economics & value creation",
+     "weight": 0.2,
+     "lens": "structural",
+     "score": 3,
+     "from": "category",
+     "basis": "EPC margins are thin and steel, zinc and aluminium pass through; the annuity economics sit with the asset owner, not the line contractor."
+    },
+    "opportunity": {
+     "name": "Market opportunity & structural growth",
+     "weight": 0.15,
+     "lens": "structural",
+     "score": 4,
+     "from": "category",
+     "basis": "T&D EPC USD 14.68 bn (2025) to USD 35.20 bn (2035) at 9.34%, with overhead lines 81.67% of it; FY27 line target of 25,146 ckm is roughly double FY26 additions."
+    },
+    "competitive": {
+     "name": "Competitive structure & moat",
+     "weight": 0.15,
+     "lens": "structural",
+     "score": 3,
+     "from": "category",
+     "basis": "Fragmented EPC field with five to six scaled players; tower capacity is more concentrated (KEC ~4.8 lakh t/yr, Skipper 3.75-4.5 lakh t/yr)."
+    },
+    "cycle": {
+     "name": "Current opportunity & cycle position",
+     "weight": 0.15,
+     "lens": "current",
+     "score": 3,
+     "from": "category",
+     "basis": "Order books at records and the FY27 target is nearly double FY26, but the 21% FY26 shortfall shows execution, not demand, is the binding constraint."
+    },
+    "valuation": {
+     "name": "Valuation & market expectations",
+     "weight": 0.15,
+     "lens": "current",
+     "score": null,
+     "from": null,
+     "basis": "No industry-level valuation data in the registry."
+    },
+    "value_chain": {
+     "name": "Value-chain position & bottlenecks",
+     "weight": 0.1,
+     "lens": "structural",
+     "score": 3,
+     "from": "category",
+     "basis": "Towers and conductors are domestic and export-competitive; value leaks at OPGW fibre, composite long-rod and hollow insulators and compression hardware."
+    },
+    "capital": {
+     "name": "Capital intensity & financial quality",
+     "weight": 0.05,
+     "lens": "structural",
+     "score": 2,
+     "from": "category",
+     "basis": "Working-capital-heavy contracting with retention and mobilisation funding; tower plants are only a few hundred crore each, so capital is not the barrier."
+    },
+    "technology": {
+     "name": "Technology & innovation",
+     "weight": 0.05,
+     "lens": "structural",
+     "score": 2,
+     "from": "category",
+     "basis": "Mature technology; HTLS conductors and monopoles are the only real steps, and both are already commercial."
+    },
+    "risk": {
+     "name": "Risk & resilience",
+     "weight": null,
+     "lens": "risk",
+     "score": 3,
+     "from": "category",
+     "basis": "Right-of-way and forest clearance is the single binding constraint; steel and zinc price swings hit margins; four China-owned plants hold a bidding exemption to 2028."
+    }
+   },
+   "structural": {
+    "score": 61.4,
+    "coverage": 100
+   },
+   "current": {
+    "score": 60,
+    "coverage": 50
+   },
+   "risk": 3,
+   "risk_adjusted": 36.8,
+   "overall": 61.2,
+   "coverage": 85,
+   "provisional": false,
+   "notes": "Scored against 'Industry-Level Investment Parameters & Scoring Architecture'. Opportunity uses the same T&D EPC series as the Market & growth digest block (Astute Analytica), cross-checked against Transrail's 2029 waypoint. Valuation left UNAVAILABLE.",
+   "overall_rank": 7,
+   "risk_adjusted_rank": 7,
+   "structural_score": 61.4,
+   "current_score": 60,
+   "structural_score_rank": 7,
+   "current_score_rank": 5
   },
   {
    "slug": "pcb-electronic-components-india",
@@ -693,10 +978,10 @@
    "coverage": 70,
    "provisional": false,
    "notes": "Scored against 'Industry-Level Investment Parameters & Scoring Architecture'. Cycle position and valuation left UNAVAILABLE — the registry carries no cycle or valuation data for these industries.",
-   "overall_rank": 3,
-   "risk_adjusted_rank": 3,
+   "overall_rank": 6,
+   "risk_adjusted_rank": 6,
    "structural_score": 64.3,
-   "structural_score_rank": 3
+   "structural_score_rank": 6
   },
   {
    "slug": "power-transformers-india",
@@ -708,7 +993,102 @@
    "slug": "power-transmission-india",
    "title": "India Power Transmission",
    "group": "Power & Electrical Infrastructure",
-   "scored": false
+   "scored": true,
+   "as_of": "2026-10-30",
+   "categories": {
+    "economics": {
+     "name": "Industry economics & value creation",
+     "weight": 0.2,
+     "lens": "structural",
+     "score": 4,
+     "from": "category",
+     "basis": "Regulated returns and 35-year TBCB concessions with transmission charges insulated from energy-volume risk; equipment nodes earn thinner, order-book-driven margins."
+    },
+    "opportunity": {
+     "name": "Market opportunity & structural growth",
+     "weight": 0.15,
+     "lens": "structural",
+     "score": 5,
+     "from": "category",
+     "basis": "T&D market USD 27.8 bn (2024) to USD 37.6 bn (2030) at 5.2% nominal CAGR on a Rs 9.16 L cr NEP capex base — the growth is committed, not forecast."
+    },
+    "competitive": {
+     "name": "Competitive structure & moat",
+     "weight": 0.15,
+     "lens": "structural",
+     "score": 4,
+     "from": "category",
+     "basis": "Developers consolidated behind PGCIL plus ~12 private TBCB players; equipment concentrated in four to five qualified OEMs at EHV."
+    },
+    "cycle": {
+     "name": "Current opportunity & cycle position",
+     "weight": 0.15,
+     "lens": "current",
+     "score": 3,
+     "from": "category",
+     "basis": "Mid-cycle rather than early — transformer utilisation above 80%, order books beyond a year of sales and 9-18 month lead times mean the easy re-rating has happened."
+    },
+    "valuation": {
+     "name": "Valuation & market expectations",
+     "weight": 0.15,
+     "lens": "current",
+     "score": null,
+     "from": null,
+     "basis": "No industry-level valuation data in the registry — the page carries no sector multiple series."
+    },
+    "value_chain": {
+     "name": "Value-chain position & bottlenecks",
+     "weight": 0.1,
+     "lens": "structural",
+     "score": 4,
+     "from": "category",
+     "basis": "Lines, towers and transformers are domestically built; value leaks at CRGO steel (~90% imported), HVDC valves and control code, power semiconductors and HV test bays."
+    },
+    "capital": {
+     "name": "Capital intensity & financial quality",
+     "weight": 0.05,
+     "lens": "structural",
+     "score": 3,
+     "from": "category",
+     "basis": "Very high project capital, but regulated returns plus InvIT recycling keep the developer layer financeable; equipment capex is moderate."
+    },
+    "technology": {
+     "name": "Technology & innovation",
+     "weight": 0.05,
+     "lens": "structural",
+     "score": 3,
+     "from": "category",
+     "basis": "Mature AC technology; migration is at HVDC, SF6-free GIS and SiC devices, where domestic design capability is partial."
+    },
+    "risk": {
+     "name": "Risk & resilience",
+     "weight": null,
+     "lens": "risk",
+     "score": 3,
+     "from": "category",
+     "basis": "Right-of-way and forest clearance, CRGO import dependence with a live anti-dumping probe, Chinese OEM re-entry at 50-60% localisation, and HVDC award timing."
+    }
+   },
+   "structural": {
+    "score": 81.4,
+    "coverage": 100
+   },
+   "current": {
+    "score": 60,
+    "coverage": 50
+   },
+   "risk": 3,
+   "risk_adjusted": 48.8,
+   "overall": 77.6,
+   "coverage": 85,
+   "provisional": false,
+   "notes": "Scored against 'Industry-Level Investment Parameters & Scoring Architecture'. Opportunity uses the same series as the Market & growth digest block (Grand View Research via Kotak Neo, base 2024). Valuation left UNAVAILABLE — the registry carries no industry valuation data.",
+   "overall_rank": 1,
+   "risk_adjusted_rank": 2,
+   "structural_score": 81.4,
+   "current_score": 60,
+   "structural_score_rank": 1,
+   "current_score_rank": 4
   },
   {
    "slug": "railway-india",
@@ -873,10 +1253,10 @@
    "coverage": 70,
    "provisional": false,
    "notes": "Scored against 'Industry-Level Investment Parameters & Scoring Architecture'. Cycle position and valuation left UNAVAILABLE — the registry carries no cycle or valuation data for these industries.",
-   "overall_rank": 5,
-   "risk_adjusted_rank": 4,
+   "overall_rank": 10,
+   "risk_adjusted_rank": 8,
    "structural_score": 51.4,
-   "structural_score_rank": 5
+   "structural_score_rank": 10
   },
   {
    "slug": "shakti-ew-india",
@@ -930,7 +1310,102 @@
    "slug": "substation-equipment-india",
    "title": "Substation Equipment",
    "group": "Power & Electrical Infrastructure",
-   "scored": false
+   "scored": true,
+   "as_of": "2026-10-30",
+   "categories": {
+    "economics": {
+     "name": "Industry economics & value creation",
+     "weight": 0.2,
+     "lens": "structural",
+     "score": 4,
+     "from": "category",
+     "basis": "Order books beyond a year of sales and utilisation above 80% have restored pricing power to transformer OEMs; CRISIL expects healthy cash flows and stable credit."
+    },
+    "opportunity": {
+     "name": "Market opportunity & structural growth",
+     "weight": 0.15,
+     "lens": "structural",
+     "score": 4,
+     "from": "category",
+     "basis": "Transformer market Rs 33,000 cr (FY25) to over Rs 40,000 cr (FY26) at 10-11%, with a Rs 70,000-75,000 cr opportunity across FY26-FY27 and switchgear at 7.7% to 2035."
+    },
+    "competitive": {
+     "name": "Competitive structure & moat",
+     "weight": 0.15,
+     "lens": "structural",
+     "score": 3,
+     "from": "category",
+     "basis": "Concentrated at EHV among four to five qualified OEMs, but new capacity is entering and four Chinese OEMs may bid at 50-60% localisation."
+    },
+    "cycle": {
+     "name": "Current opportunity & cycle position",
+     "weight": 0.15,
+     "lens": "current",
+     "score": 4,
+     "from": "category",
+     "basis": "Clearly in up-cycle: power transformer output +31.6% and HV GIS +41.8% in FY26, against a NEP MVA target only ~30% achieved by FY25 — a multi-year runway remains."
+    },
+    "valuation": {
+     "name": "Valuation & market expectations",
+     "weight": 0.15,
+     "lens": "current",
+     "score": null,
+     "from": null,
+     "basis": "No industry-level valuation data in the registry."
+    },
+    "value_chain": {
+     "name": "Value-chain position & bottlenecks",
+     "weight": 0.1,
+     "lens": "structural",
+     "score": 3,
+     "from": "category",
+     "basis": "Winding, tanks and assembly are domestic; CRGO ~90% imported, EHV bushings short globally, OLTC over 80% imported and IED design IP foreign."
+    },
+    "capital": {
+     "name": "Capital intensity & financial quality",
+     "weight": 0.05,
+     "lens": "structural",
+     "score": 3,
+     "from": "category",
+     "basis": "Moderate to heavy — shed height, crane capacity and HV test bays gate entry, and a new entrant needs two to three years to become bid-eligible."
+    },
+    "technology": {
+     "name": "Technology & innovation",
+     "weight": 0.05,
+     "lens": "structural",
+     "score": 2,
+     "from": "category",
+     "basis": "Design IP sits abroad in IEDs, vacuum interrupters and HVDC valves; the SF6-free GIS mandate is a forced migration rather than an earned capability."
+    },
+    "risk": {
+     "name": "Risk & resilience",
+     "weight": null,
+     "lens": "risk",
+     "score": 3,
+     "from": "category",
+     "basis": "CRGO anti-dumping outcome, the global EHV bushing shortage, Chinese OEM re-entry, and certified winding and test-bay manpower."
+    }
+   },
+   "structural": {
+    "score": 68.6,
+    "coverage": 100
+   },
+   "current": {
+    "score": 80,
+    "coverage": 50
+   },
+   "risk": 3,
+   "risk_adjusted": 41.2,
+   "overall": 70.6,
+   "coverage": 85,
+   "provisional": false,
+   "notes": "Scored against 'Industry-Level Investment Parameters & Scoring Architecture'. Opportunity uses the same CRISIL transformer series as the Market & growth digest block; the switchgear series is reported separately and never added to it. Valuation left UNAVAILABLE.",
+   "overall_rank": 4,
+   "risk_adjusted_rank": 4,
+   "structural_score": 68.6,
+   "current_score": 80,
+   "structural_score_rank": 4,
+   "current_score_rank": 2
   },
   {
    "slug": "telecom-chipsets-india",
