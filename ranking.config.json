@@ -1,19 +1,26 @@
 {
-  "_doc": "Parameters for the industry ranking. Edit this, then run node tools/build-industry-ranking.mjs. Weights must sum to 1.0.",
-  "weights": {
-    "growth": 0.5,
-    "capex": 0.2,
-    "rd": 0.15,
-    "cyclicity": 0.15
+  "_doc": "Industry ranking parameters, from 'Industry-Level Investment Parameters & Scoring Architecture'. Weights are the framework's suggested starter weights. Change them here, then run node tools/build-industry-ranking.mjs. Document any change and why.",
+
+  "categories": [
+    { "id": "economics",   "name": "Industry economics & value creation", "weight": 0.20, "lens": "structural" },
+    { "id": "opportunity", "name": "Market opportunity & structural growth", "weight": 0.15, "lens": "structural" },
+    { "id": "competitive", "name": "Competitive structure & moat", "weight": 0.15, "lens": "structural" },
+    { "id": "cycle",       "name": "Current opportunity & cycle position", "weight": 0.15, "lens": "current" },
+    { "id": "valuation",   "name": "Valuation & market expectations", "weight": 0.15, "lens": "current" },
+    { "id": "value_chain", "name": "Value-chain position & bottlenecks", "weight": 0.10, "lens": "structural" },
+    { "id": "capital",     "name": "Capital intensity & financial quality", "weight": 0.05, "lens": "structural" },
+    { "id": "technology",  "name": "Technology & innovation", "weight": 0.05, "lens": "structural" }
+  ],
+
+  "risk_category": { "id": "risk", "name": "Risk & resilience", "lens": "risk" },
+
+  "scale": {
+    "1": "Very unattractive — materially adverse, structurally weak or unsupported by evidence",
+    "2": "Below average — weak outlook or economics; meaningful disadvantages",
+    "3": "Mixed / average — balanced evidence, average economics or material uncertainty",
+    "4": "Attractive — strong evidence of favourable economics or improving prospects",
+    "5": "Highly attractive — exceptional, durable advantage supported by robust evidence"
   },
-  "anchors": {
-    "growth_max_pct": 25,
-    "capex_max_pct": 30,
-    "rd_max_pct": 10
-  },
-  "directions": {
-    "capex": "barrier",
-    "cyclicity": "inverted"
-  },
-  "coverage_threshold": 0.75
+
+  "provisional_below_coverage_pct": 60
 }
