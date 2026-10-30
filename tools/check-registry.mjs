@@ -147,6 +147,17 @@ for (const file of files) {
     problems.push('company ticker must be a <span> inside .co__name, not a separate <div>');
   }
 
+  // the score block must sit at the real end of the document. Inserting at the first </body>
+  // lands it inside openInNewTab's template literal, where its </script> kills the diagram module.
+  {
+    const t0 = html.indexOf('const html = `<!DOCTYPE html>');
+    const t1 = html.indexOf('</body></html>`;');
+    const sc = html.indexOf('class="industry-score"');
+    if (t0 > 0 && t1 > t0 && sc > t0 && sc < t1) {
+      problems.push('industry-score block is inside the openInNewTab template — it breaks the diagram script');
+    }
+  }
+
   // a page carrying a score block must RENDER it — machine-readable alone is invisible to a reader
   if (/class="industry-score"/.test(html) && !/class="scorecard"/.test(html)) {
     problems.push('has an industry-score block but no .scorecard section — the scores are never shown');
