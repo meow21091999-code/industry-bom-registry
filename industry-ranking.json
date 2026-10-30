@@ -19,6 +19,23 @@
   "partial": 0,
   "unscored": 68
  },
+ "bands": [
+  {
+   "label": "100% coverage",
+   "fields": [
+    "growth",
+    "capex",
+    "rd",
+    "cyclicity"
+   ],
+   "count": 5
+  },
+  {
+   "label": "Not yet scored",
+   "fields": [],
+   "count": 68
+  }
+ ],
  "industries": [
   {
    "slug": "optical-medical-surgical-apparatus-india",
@@ -36,8 +53,15 @@
    "cyclicity": 2,
    "basis": "PROVISIONAL. Growth computed from the page's endpoints. No ratios disclosed, so ratings are the fallback: capex 3 (device assembly and cleanrooms); R&D 4 (design capability and regulatory approval are the moat); cyclicity 2 (healthcare demand is largely non-cyclical).",
    "as_of": "",
+   "fields_present": [
+    "growth",
+    "capex",
+    "rd",
+    "cyclicity"
+   ],
    "composite": 0.825,
    "coverage": 1,
+   "coverage_pct": 100,
    "partial": false,
    "rank": 1
   },
@@ -57,8 +81,15 @@
    "cyclicity": 3,
    "basis": "PROVISIONAL. Growth computed from the page's KPMG endpoints. No industry-level capex/revenue or R&D/revenue disclosed, so ratings are the fallback: capex 3 (SMT lines are moderate capital); R&D 2 (build-to-print, design stays with the customer); cyclicity 3 (consumer-linked industrial cycle).",
    "as_of": "",
+   "fields_present": [
+    "growth",
+    "capex",
+    "rd",
+    "cyclicity"
+   ],
    "composite": 0.712,
    "coverage": 1,
+   "coverage_pct": 100,
    "partial": false,
    "rank": 2
   },
@@ -78,8 +109,15 @@
    "cyclicity": 3,
    "basis": "PROVISIONAL. Growth from the page's cited series. No capex/revenue or R&D/revenue is disclosed for the industry, so the 1-5 ratings are the fallback: capex 4 (OSAT/fab is heavy fixed capital); R&D 2 (licensed process, little indigenous design); cyclicity 3 (normal semis cycle, cushioned by policy).",
    "as_of": "",
+   "fields_present": [
+    "growth",
+    "capex",
+    "rd",
+    "cyclicity"
+   ],
    "composite": 0.502,
    "coverage": 1,
+   "coverage_pct": 100,
    "partial": false,
    "rank": 3
   },
@@ -99,8 +137,15 @@
    "cyclicity": 4,
    "basis": "PROVISIONAL. Growth is the page's industrial-gases series used as a proxy for the wider complex. No ratios disclosed, so ratings are the fallback: capex 4 (chlor-alkali and soda-ash are heavy process capital); R&D 2 (process engineering, little proprietary IP); cyclicity 4 (commodity spreads, anti-dumping exposed).",
    "as_of": "",
+   "fields_present": [
+    "growth",
+    "capex",
+    "rd",
+    "cyclicity"
+   ],
    "composite": 0.36,
    "coverage": 1,
+   "coverage_pct": 100,
    "partial": false,
    "rank": 4
   },
@@ -120,8 +165,15 @@
    "cyclicity": 4,
    "basis": "PROVISIONAL. Growth as stated. No ratios disclosed, so ratings are the fallback: capex 3 (motor and drive manufacturing); R&D 3 (applied engineering, domestic players mostly licensed assembly); cyclicity 4 (capex-led industrial demand, import-fed).",
    "as_of": "",
+   "fields_present": [
+    "growth",
+    "capex",
+    "rd",
+    "cyclicity"
+   ],
    "composite": 0.289,
    "coverage": 1,
+   "coverage_pct": 100,
    "partial": false,
    "rank": 5
   },
