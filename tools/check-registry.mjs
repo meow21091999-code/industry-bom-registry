@@ -158,6 +158,16 @@ for (const file of files) {
     }
   }
 
+  // the sources footer is the last thing on the page — nothing may sit below it
+  {
+    const foot = html.search(/<p class="footnote[^"]*"[^>]*>\s*Sources/);
+    if (foot > 0 && html.indexOf('<section', foot) > 0) {
+      problems.push('a section appears after the sources footer — sources must be the last thing on the page');
+    }
+    const n = (html.match(/class="scorecard"/g) || []).length;
+    if (n > 1) problems.push(`duplicate scorecard sections (${n})`);
+  }
+
   // a page carrying a score block must RENDER it — machine-readable alone is invisible to a reader
   if (/class="industry-score"/.test(html) && !/class="scorecard"/.test(html)) {
     problems.push('has an industry-score block but no .scorecard section — the scores are never shown');
