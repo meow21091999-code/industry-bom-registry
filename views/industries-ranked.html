@@ -26,7 +26,11 @@ table.data.detail .wt { font-weight: 400; opacity: .65; font-size: 8.5px; }
 table.data.detail th.cat-tot { font-weight: 700; letter-spacing: .4px; border-left: 1px solid var(--border-bright); }
 table.data.detail th.cat-tot.grp-struct { background: var(--blue-dim); color: var(--blue); }
 table.data.detail th.cat-tot.grp-current { background: var(--gold-dim); color: var(--gold); }
-table.data.detail td.tot { font-weight: 700; color: var(--text); border-left: 1px solid var(--border-bright); }
+table.data.detail td.tot { font-weight: 700; color: var(--text); }
+table.data.detail .grp-start { border-left: 1px solid var(--border-bright); }
+/* two header rows cannot both be sticky at top:0 - the shared rule would stack them on
+   top of each other. This table's header scrolls with the content instead. */
+table.data.detail thead th { position: static; }
 table.data.detail td { padding: 6px 7px; }
 </style></head><body><div class="container">
 <header class="masthead">
@@ -61,7 +65,7 @@ table.data.detail td { padding: 6px 7px; }
     <th rowspan="2">Industry</th>
     <th colspan="7" class="grp grp-struct">Structural attractiveness</th>
     <th colspan="3" class="grp grp-current">Current opportunity</th>
-    <th rowspan="2">Risk</th>
+    <th rowspan="2" class="grp-start">Risk</th>
     <th rowspan="2">Risk-adj</th>
     <th rowspan="2">Overall</th>
     <th rowspan="2">Coverage</th>
@@ -69,7 +73,7 @@ table.data.detail td { padding: 6px 7px; }
   <tr>
     <th class="cat">economics<div class="wt">20%</div></th><th class="cat">opportunity<div class="wt">15%</div></th><th class="cat">competitive<div class="wt">15%</div></th><th class="cat">value_chain<div class="wt">10%</div></th><th class="cat">capital<div class="wt">5%</div></th><th class="cat">technology<div class="wt">5%</div></th>
     <th class="cat cat-tot grp-struct">structural score</th>
-    <th class="cat">cycle<div class="wt">15%</div></th><th class="cat">valuation<div class="wt">15%</div></th>
+    <th class="cat grp-start">cycle<div class="wt">15%</div></th><th class="cat">valuation<div class="wt">15%</div></th>
     <th class="cat cat-tot grp-current">current score</th>
   </tr></thead><tbody>
   <tr>
@@ -77,9 +81,9 @@ table.data.detail td { padding: 6px 7px; }
     <td><b>India Optical, Medical &amp; Surgical Apparatus</b><div class="slug">Healthcare &amp; Medical Devices</div></td>
     <td class="c">4</td><td class="c">5</td><td class="c">3</td><td class="c">3</td><td class="c">3</td><td class="c">4</td>
     <td class="c tot">75.7</td>
-    <td class="c"><span class="dim">-</span></td><td class="c"><span class="dim">-</span></td>
+    <td class="c grp-start"><span class="dim">-</span></td><td class="c"><span class="dim">-</span></td>
     <td class="c tot"><span class="dim">—</span></td>
-    <td class="c">4</td>
+    <td class="c grp-start">4</td>
     <td class="c">60.6</td>
     <td class="c tot">75.7</td>
     <td class="c">70%</td>
@@ -89,9 +93,9 @@ table.data.detail td { padding: 6px 7px; }
     <td><b>India EMS / ODM</b><div class="slug">Electrical &amp; Electronic Equipment</div></td>
     <td class="c">3</td><td class="c">5</td><td class="c">3</td><td class="c">3</td><td class="c">3</td><td class="c">2</td>
     <td class="c tot">67.1</td>
-    <td class="c"><span class="dim">-</span></td><td class="c"><span class="dim">-</span></td>
+    <td class="c grp-start"><span class="dim">-</span></td><td class="c"><span class="dim">-</span></td>
     <td class="c tot"><span class="dim">—</span></td>
-    <td class="c">3</td>
+    <td class="c grp-start">3</td>
     <td class="c">40.3</td>
     <td class="c tot">67.1</td>
     <td class="c">70%</td>
@@ -101,9 +105,9 @@ table.data.detail td { padding: 6px 7px; }
     <td><b>India Power Semiconductors &amp; OSAT</b><div class="slug">Electrical &amp; Electronic Equipment</div></td>
     <td class="c">3</td><td class="c">4</td><td class="c">3</td><td class="c">4</td><td class="c">2</td><td class="c">2</td>
     <td class="c tot">64.3</td>
-    <td class="c"><span class="dim">-</span></td><td class="c"><span class="dim">-</span></td>
+    <td class="c grp-start"><span class="dim">-</span></td><td class="c"><span class="dim">-</span></td>
     <td class="c tot"><span class="dim">—</span></td>
-    <td class="c">3</td>
+    <td class="c grp-start">3</td>
     <td class="c">38.6</td>
     <td class="c tot">64.3</td>
     <td class="c">70%</td>
@@ -113,9 +117,9 @@ table.data.detail td { padding: 6px 7px; }
     <td><b>India Inorganic Chemicals</b><div class="slug">Chemicals &amp; Petrochemicals</div></td>
     <td class="c">3</td><td class="c">3</td><td class="c">2</td><td class="c">3</td><td class="c">2</td><td class="c">2</td>
     <td class="c tot">52.9</td>
-    <td class="c"><span class="dim">-</span></td><td class="c"><span class="dim">-</span></td>
+    <td class="c grp-start"><span class="dim">-</span></td><td class="c"><span class="dim">-</span></td>
     <td class="c tot"><span class="dim">—</span></td>
-    <td class="c">2</td>
+    <td class="c grp-start">2</td>
     <td class="c">21.2</td>
     <td class="c tot">52.9</td>
     <td class="c">70%</td>
@@ -125,9 +129,9 @@ table.data.detail td { padding: 6px 7px; }
     <td><b>India Servo Motors &amp; Drives</b><div class="slug">Robotics &amp; Automation</div></td>
     <td class="c">3</td><td class="c">2</td><td class="c">2</td><td class="c">3</td><td class="c">3</td><td class="c">3</td>
     <td class="c tot">51.4</td>
-    <td class="c"><span class="dim">-</span></td><td class="c"><span class="dim">-</span></td>
+    <td class="c grp-start"><span class="dim">-</span></td><td class="c"><span class="dim">-</span></td>
     <td class="c tot"><span class="dim">—</span></td>
-    <td class="c">3</td>
+    <td class="c grp-start">3</td>
     <td class="c">30.8</td>
     <td class="c tot">51.4</td>
     <td class="c">70%</td>
