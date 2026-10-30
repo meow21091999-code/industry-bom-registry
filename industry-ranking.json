@@ -1,811 +1,972 @@
 {
  "registry": "Industry BOM Registry",
- "description": "Industry ranking. Growth-led composite over growth, capex intensity, R&D intensity and cyclicity, read from each entry page's industry-score block. DERIVED — regenerate with node tools/build-industry-ranking.mjs.",
+ "description": "Industry ranking per \"Industry-Level Investment Parameters & Scoring Architecture\": hierarchical category scores (1–5), overall 0–100, evidence coverage reported, three lenses kept separate. DERIVED — regenerate with node tools/build-industry-ranking.mjs.",
  "generated": "2026-10-30",
- "parameters": {
-  "weights": {
-   "growth": 0.5,
-   "capex": 0.2,
-   "rd": 0.15,
-   "cyclicity": 0.15
+ "framework": {
+  "category_score": "Σ(parameter weight × parameter score) ÷ Σ(weights of supported parameters)",
+  "overall_score": "Σ(category weight × category score ÷ 5) × 100, renormalised over supported categories",
+  "coverage": "supported category weight ÷ planned weight × 100",
+  "scale": {
+   "1": "Very unattractive — materially adverse, structurally weak or unsupported by evidence",
+   "2": "Below average — weak outlook or economics; meaningful disadvantages",
+   "3": "Mixed / average — balanced evidence, average economics or material uncertainty",
+   "4": "Attractive — strong evidence of favourable economics or improving prospects",
+   "5": "Highly attractive — exceptional, durable advantage supported by robust evidence"
   },
-  "anchors": {
-   "growth_max_pct": 25,
-   "capex_max_pct": 30,
-   "rd_max_pct": 10
-  },
-  "directions": {
-   "capex": "barrier",
-   "cyclicity": "inverted"
-  },
-  "coverage_threshold": 0.75
+  "provisional_below_coverage_pct": 60
  },
- "anchors": {
-  "growth": "0%→0, 25%+→1 linear",
-  "capex_pct": "0%→0, 30%+→1 (barrier reading, heavier scores higher)",
-  "rd_pct": "0%→0, 10%+→1",
-  "bands": "1–5 → (x−1)/4",
-  "cyclicity": "1–5 → (5−x)/4 (inverted)"
+ "parameters": {
+  "categories": [
+   {
+    "id": "economics",
+    "name": "Industry economics & value creation",
+    "weight": 0.2,
+    "lens": "structural"
+   },
+   {
+    "id": "opportunity",
+    "name": "Market opportunity & structural growth",
+    "weight": 0.15,
+    "lens": "structural"
+   },
+   {
+    "id": "competitive",
+    "name": "Competitive structure & moat",
+    "weight": 0.15,
+    "lens": "structural"
+   },
+   {
+    "id": "cycle",
+    "name": "Current opportunity & cycle position",
+    "weight": 0.15,
+    "lens": "current"
+   },
+   {
+    "id": "valuation",
+    "name": "Valuation & market expectations",
+    "weight": 0.15,
+    "lens": "current"
+   },
+   {
+    "id": "value_chain",
+    "name": "Value-chain position & bottlenecks",
+    "weight": 0.1,
+    "lens": "structural"
+   },
+   {
+    "id": "capital",
+    "name": "Capital intensity & financial quality",
+    "weight": 0.05,
+    "lens": "structural"
+   },
+   {
+    "id": "technology",
+    "name": "Technology & innovation",
+    "weight": 0.05,
+    "lens": "structural"
+   }
+  ],
+  "risk_category": {
+   "id": "risk",
+   "name": "Risk & resilience",
+   "lens": "risk"
+  }
  },
  "counts": {
   "industries": 73,
   "scored": 5,
-  "partial": 0,
+  "legacy": 0,
   "unscored": 68,
-  "below_threshold": 0,
   "ranked": 5
  },
- "bands": [
-  {
-   "label": "100% coverage",
-   "fields": [
-    "growth",
-    "capex",
-    "rd",
-    "cyclicity"
-   ],
-   "count": 5,
-   "ranked": true
-  },
-  {
-   "label": "Not yet scored",
-   "fields": [],
-   "count": 68,
-   "ranked": false
-  }
- ],
  "industries": [
   {
-   "slug": "optical-medical-surgical-apparatus-india",
-   "title": "India Optical, Medical & Surgical Apparatus",
-   "group": "Healthcare & Medical Devices",
-   "scored": true,
-   "growth_pct": 26,
-   "growth_basis": "India medical-device market US$14-17.5 bn (2025) -> ~US$50 bn by 2030; ~23-29% CAGR [CALCULATED from the page's endpoints]; midpoint used",
-   "capex_pct": null,
-   "capex_intensity": 3,
-   "capex_basis": "rating",
-   "rd_pct": null,
-   "rd_intensity": 4,
-   "rd_basis": "rating",
-   "cyclicity": 2,
-   "basis": "PROVISIONAL. Growth computed from the page's endpoints. No ratios disclosed, so ratings are the fallback: capex 3 (device assembly and cleanrooms); R&D 4 (design capability and regulatory approval are the moat); cyclicity 2 (healthcare demand is largely non-cyclical).",
-   "as_of": "",
-   "fields_present": [
-    "growth",
-    "capex",
-    "rd",
-    "cyclicity"
-   ],
-   "composite": 0.825,
-   "coverage": 1,
-   "coverage_pct": 100,
-   "partial": false,
-   "rank": 1
+   "slug": "5g-ran-india",
+   "title": "India 5G / 4G RAN",
+   "group": "Telecom",
+   "scored": false
+  },
+  {
+   "slug": "6g-india",
+   "title": "India 6G (IMT-2030)",
+   "group": "Telecom",
+   "scored": false
+  },
+  {
+   "slug": "agrochemicals-crop-protection-india",
+   "title": "India Agrochemicals & Crop Protection",
+   "group": "Agriculture & Crop Inputs",
+   "scored": false
+  },
+  {
+   "slug": "aircraft-mro-civil-aerospace-india",
+   "title": "India Aircraft MRO & Civil Aerospace Components",
+   "group": "Aerospace & Aviation",
+   "scored": false
+  },
+  {
+   "slug": "battery-energy-storage-india",
+   "title": "India Battery Energy Storage (BESS)",
+   "group": "Energy Storage",
+   "scored": false
+  },
+  {
+   "slug": "battery-management-system-india",
+   "title": "India Battery Management Systems (BMS)",
+   "group": "Energy Storage",
+   "scored": false
+  },
+  {
+   "slug": "component-mro-india",
+   "title": "India Component MRO",
+   "group": "Aerospace & Aviation",
+   "scored": false
+  },
+  {
+   "slug": "condenser-heat-rejection-india",
+   "title": "India Condenser & Heat Rejection",
+   "group": "Power Generation Equipment",
+   "scored": false
+  },
+  {
+   "slug": "cryocooler-india",
+   "title": "Cryocooler (India)",
+   "group": "Defence & Aerospace",
+   "scored": false
+  },
+  {
+   "slug": "data-centre-ai-compute-india",
+   "title": "India Data Centres & AI-Compute",
+   "group": "Data Centres & AI Infrastructure",
+   "scored": false
+  },
+  {
+   "slug": "data-centre-liquid-cooling-india",
+   "title": "India Data-Centre Liquid Cooling",
+   "group": "Data Centres & AI Infrastructure",
+   "scored": false
+  },
+  {
+   "slug": "defence-electro-optics-india",
+   "title": "Defence Electro-Optics & Thermal Imaging (India)",
+   "group": "Defence & Aerospace",
+   "scored": false
+  },
+  {
+   "slug": "display-manufacturing-india",
+   "title": "India Display Manufacturing",
+   "group": "Electrical & Electronic Equipment",
+   "scored": false
+  },
+  {
+   "slug": "drone-subsystems-india",
+   "title": "India Drone Subsystems",
+   "group": "Robotics & Automation",
+   "scored": false
+  },
+  {
+   "slug": "ehv-hv-cables-india",
+   "title": "India EHV / HV Power Cables",
+   "group": "Power & Electrical Infrastructure",
+   "scored": false
+  },
+  {
+   "slug": "electrical-electronic-equipment-india",
+   "title": "India Electrical & Electronic Equipment",
+   "group": "Electrical & Electronic Equipment",
+   "scored": false
   },
   {
    "slug": "ems-electronics-manufacturing-india",
    "title": "India EMS / ODM",
    "group": "Electrical & Electronic Equipment",
    "scored": true,
-   "growth_pct": 28,
-   "growth_basis": "India EMS market ~USD 40-45 bn (FY25) -> >USD 150 bn by FY30; ~27-30% CAGR depending on base year [CALCULATED from KPMG, Jun 2026]; midpoint used",
-   "capex_pct": null,
-   "capex_intensity": 3,
-   "capex_basis": "rating",
-   "rd_pct": null,
-   "rd_intensity": 2,
-   "rd_basis": "rating",
-   "cyclicity": 3,
-   "basis": "PROVISIONAL. Growth computed from the page's KPMG endpoints. No industry-level capex/revenue or R&D/revenue disclosed, so ratings are the fallback: capex 3 (SMT lines are moderate capital); R&D 2 (build-to-print, design stays with the customer); cyclicity 3 (consumer-linked industrial cycle).",
-   "as_of": "",
-   "fields_present": [
-    "growth",
-    "capex",
-    "rd",
-    "cyclicity"
-   ],
-   "composite": 0.712,
-   "coverage": 1,
-   "coverage_pct": 100,
-   "partial": false,
-   "rank": 2
+   "as_of": "2026-10-30",
+   "categories": {
+    "economics": {
+     "name": "Industry economics & value creation",
+     "weight": 0.2,
+     "lens": "structural",
+     "score": 3,
+     "from": "category",
+     "basis": "Build-to-print margins are thin; value accrues to the customer's design."
+    },
+    "opportunity": {
+     "name": "Market opportunity & structural growth",
+     "weight": 0.15,
+     "lens": "structural",
+     "score": 5,
+     "from": "category",
+     "basis": "India EMS market ~USD 40-45 bn (FY25) to >USD 150 bn by FY30, ~27-30% CAGR — the strongest growth series in the registry."
+    },
+    "competitive": {
+     "name": "Competitive structure & moat",
+     "weight": 0.15,
+     "lens": "structural",
+     "score": 3,
+     "from": "category",
+     "basis": "Fragmented and competitive; scale and customer relationships decide winners."
+    },
+    "cycle": {
+     "name": "Current opportunity & cycle position",
+     "weight": 0.15,
+     "lens": "current",
+     "score": null,
+     "from": null,
+     "basis": "No cycle-position evidence on the page."
+    },
+    "valuation": {
+     "name": "Valuation & market expectations",
+     "weight": 0.15,
+     "lens": "current",
+     "score": null,
+     "from": null,
+     "basis": "No industry-level valuation data in the registry."
+    },
+    "value_chain": {
+     "name": "Value-chain position & bottlenecks",
+     "weight": 0.1,
+     "lens": "structural",
+     "score": 3,
+     "from": "category",
+     "basis": "Assembly is the value-chain position; PCB demand ~90% imported, so a layer of value stays offshore."
+    },
+    "capital": {
+     "name": "Capital intensity & financial quality",
+     "weight": 0.05,
+     "lens": "structural",
+     "score": 3,
+     "from": "category",
+     "basis": "SMT lines are moderate capital — expandable without mega-project risk."
+    },
+    "technology": {
+     "name": "Technology & innovation",
+     "weight": 0.05,
+     "lens": "structural",
+     "score": 2,
+     "from": "category",
+     "basis": "Build-to-print; design stays with the customer."
+    },
+    "risk": {
+     "name": "Risk & resilience",
+     "weight": null,
+     "lens": "risk",
+     "score": 3,
+     "from": "category",
+     "basis": "Consumer-linked demand and customer concentration; execution risk moderate."
+    }
+   },
+   "structural": {
+    "score": 67.1,
+    "coverage": 100
+   },
+   "current": null,
+   "risk": 3,
+   "risk_adjusted": 40.3,
+   "overall": 67.1,
+   "coverage": 70,
+   "provisional": false,
+   "notes": "Scored against 'Industry-Level Investment Parameters & Scoring Architecture'. Cycle position and valuation left UNAVAILABLE — the registry carries no cycle or valuation data for these industries.",
+   "overall_rank": 2,
+   "risk_adjusted_rank": 2,
+   "structural_score": 67.1,
+   "structural_score_rank": 2
   },
   {
-   "slug": "power-semiconductor-osat-india",
-   "title": "India Power Semiconductors & OSAT",
-   "group": "Electrical & Electronic Equipment",
-   "scored": true,
-   "growth_pct": 12,
-   "growth_basis": "India power-discrete market ~USD 1.86 bn (2025) -> ~USD 4.05 bn by 2032; 12% CAGR [REPORTED: PS Market Research, 2026]",
-   "capex_pct": null,
-   "capex_intensity": 4,
-   "capex_basis": "rating",
-   "rd_pct": null,
-   "rd_intensity": 2,
-   "rd_basis": "rating",
-   "cyclicity": 3,
-   "basis": "PROVISIONAL. Growth from the page's cited series. No capex/revenue or R&D/revenue is disclosed for the industry, so the 1-5 ratings are the fallback: capex 4 (OSAT/fab is heavy fixed capital); R&D 2 (licensed process, little indigenous design); cyclicity 3 (normal semis cycle, cushioned by policy).",
-   "as_of": "",
-   "fields_present": [
-    "growth",
-    "capex",
-    "rd",
-    "cyclicity"
-   ],
-   "composite": 0.502,
-   "coverage": 1,
-   "coverage_pct": 100,
-   "partial": false,
-   "rank": 3
+   "slug": "engine-mro-india",
+   "title": "India Engine MRO",
+   "group": "Aerospace & Aviation",
+   "scored": false
+  },
+  {
+   "slug": "ev-powertrain-traction-india",
+   "title": "India EV Powertrain & Traction Systems",
+   "group": "Automotive & Mobility",
+   "scored": false
+  },
+  {
+   "slug": "genomic-sequencing-india",
+   "title": "Genomic Sequencing",
+   "group": "Healthcare & Medical Devices",
+   "scored": false
+  },
+  {
+   "slug": "green-hydrogen-electrolyser-india",
+   "title": "India Green Hydrogen & Electrolyser Manufacturing",
+   "group": "Green Hydrogen & Clean Fuels",
+   "scored": false
+  },
+  {
+   "slug": "guns-india",
+   "title": "India Guns",
+   "group": "Defence & Aerospace",
+   "scored": false
+  },
+  {
+   "slug": "harmonic-rv-reducers-india",
+   "title": "India Harmonic & RV Reducers",
+   "group": "Robotics & Automation",
+   "scored": false
+  },
+  {
+   "slug": "hvdc-power-electronics-india",
+   "title": "India HVDC & Power Electronics",
+   "group": "Power & Electrical Infrastructure",
+   "scored": false
+  },
+  {
+   "slug": "industrial-gases-india",
+   "title": "India Industrial Gases",
+   "group": "Chemicals & Petrochemicals",
+   "scored": false
   },
   {
    "slug": "inorganic-chemicals-india",
    "title": "India Inorganic Chemicals",
    "group": "Chemicals & Petrochemicals",
    "scored": true,
-   "growth_pct": 6.75,
-   "growth_basis": "Industrial gases market ~$1.4 bn with ~6-7.5% CAGR [REPORTED]; midpoint used as the industry proxy",
-   "capex_pct": null,
-   "capex_intensity": 4,
-   "capex_basis": "rating",
-   "rd_pct": null,
-   "rd_intensity": 2,
-   "rd_basis": "rating",
-   "cyclicity": 4,
-   "basis": "PROVISIONAL. Growth is the page's industrial-gases series used as a proxy for the wider complex. No ratios disclosed, so ratings are the fallback: capex 4 (chlor-alkali and soda-ash are heavy process capital); R&D 2 (process engineering, little proprietary IP); cyclicity 4 (commodity spreads, anti-dumping exposed).",
-   "as_of": "",
-   "fields_present": [
-    "growth",
-    "capex",
-    "rd",
-    "cyclicity"
-   ],
-   "composite": 0.36,
-   "coverage": 1,
-   "coverage_pct": 100,
-   "partial": false,
-   "rank": 4
+   "as_of": "2026-10-30",
+   "categories": {
+    "economics": {
+     "name": "Industry economics & value creation",
+     "weight": 0.2,
+     "lens": "structural",
+     "score": 3,
+     "from": "category",
+     "basis": "Commodity process economics; profitability tracks spreads rather than pricing power."
+    },
+    "opportunity": {
+     "name": "Market opportunity & structural growth",
+     "weight": 0.15,
+     "lens": "structural",
+     "score": 3,
+     "from": "category",
+     "basis": "Industrial gases ~$1.4 bn at ~6-7.5% CAGR, used as the proxy for the wider complex — moderate growth."
+    },
+    "competitive": {
+     "name": "Competitive structure & moat",
+     "weight": 0.15,
+     "lens": "structural",
+     "score": 2,
+     "from": "category",
+     "basis": "Commodity producers exposed to anti-dumping actions and import competition."
+    },
+    "cycle": {
+     "name": "Current opportunity & cycle position",
+     "weight": 0.15,
+     "lens": "current",
+     "score": null,
+     "from": null,
+     "basis": "No cycle-position evidence on the page."
+    },
+    "valuation": {
+     "name": "Valuation & market expectations",
+     "weight": 0.15,
+     "lens": "current",
+     "score": null,
+     "from": null,
+     "basis": "No industry-level valuation data in the registry."
+    },
+    "value_chain": {
+     "name": "Value-chain position & bottlenecks",
+     "weight": 0.1,
+     "lens": "structural",
+     "score": 3,
+     "from": "category",
+     "basis": "Chlor-alkali and soda ash sit mid-chain; value is in energy and feedstock, not in the layer."
+    },
+    "capital": {
+     "name": "Capital intensity & financial quality",
+     "weight": 0.05,
+     "lens": "structural",
+     "score": 2,
+     "from": "category",
+     "basis": "Heavy process capital — chlor-alkali and soda-ash plants are long-lived, capital-hungry assets."
+    },
+    "technology": {
+     "name": "Technology & innovation",
+     "weight": 0.05,
+     "lens": "structural",
+     "score": 2,
+     "from": "category",
+     "basis": "Process engineering, little proprietary IP."
+    },
+    "risk": {
+     "name": "Risk & resilience",
+     "weight": null,
+     "lens": "risk",
+     "score": 2,
+     "from": "category",
+     "basis": "Commodity spreads, trade remedy exposure and energy cost sensitivity."
+    }
+   },
+   "structural": {
+    "score": 52.9,
+    "coverage": 100
+   },
+   "current": null,
+   "risk": 2,
+   "risk_adjusted": 21.2,
+   "overall": 52.9,
+   "coverage": 70,
+   "provisional": false,
+   "notes": "Scored against 'Industry-Level Investment Parameters & Scoring Architecture'. Cycle position and valuation left UNAVAILABLE — the registry carries no cycle or valuation data for these industries.",
+   "overall_rank": 4,
+   "risk_adjusted_rank": 5,
+   "structural_score": 52.9,
+   "structural_score_rank": 4
+  },
+  {
+   "slug": "launch-vehicles-propulsion-india",
+   "title": "India Launch Vehicles & Propulsion",
+   "group": "Space & Satellites",
+   "scored": false
+  },
+  {
+   "slug": "li-ion-cell-manufacturing-india",
+   "title": "India Li-ion Cell Manufacturing",
+   "group": "Energy Storage",
+   "scored": false
+  },
+  {
+   "slug": "machine-tools-metrology-india",
+   "title": "India Precision Machine Tools & Metrology",
+   "group": "Robotics & Automation",
+   "scored": false
+  },
+  {
+   "slug": "missile-india",
+   "title": "India Missiles",
+   "group": "Defence & Aerospace",
+   "scored": false
+  },
+  {
+   "slug": "mobile-handsets-accessories-india",
+   "title": "India Mobile Handsets & Accessories",
+   "group": "Electrical & Electronic Equipment",
+   "scored": false
+  },
+  {
+   "slug": "nuclear-pwr-steam-generator-india",
+   "title": "India Nuclear PWR Steam Generator",
+   "group": "Nuclear Energy",
+   "scored": false
+  },
+  {
+   "slug": "optical-fibre-cable-india",
+   "title": "India Optical Fibre Cable",
+   "group": "Telecom",
+   "scored": false
+  },
+  {
+   "slug": "optical-fibre-india",
+   "title": "India Optical Fibre",
+   "group": "Telecom",
+   "scored": false
+  },
+  {
+   "slug": "optical-fibre-preform-india",
+   "title": "India Optical Fibre Preform",
+   "group": "Telecom",
+   "scored": false
+  },
+  {
+   "slug": "optical-medical-surgical-apparatus-india",
+   "title": "India Optical, Medical & Surgical Apparatus",
+   "group": "Healthcare & Medical Devices",
+   "scored": true,
+   "as_of": "2026-10-30",
+   "categories": {
+    "economics": {
+     "name": "Industry economics & value creation",
+     "weight": 0.2,
+     "lens": "structural",
+     "score": 4,
+     "from": "category",
+     "basis": "Device margins are structurally better than commodity manufacturing; approval and clinical evidence sustain pricing."
+    },
+    "opportunity": {
+     "name": "Market opportunity & structural growth",
+     "weight": 0.15,
+     "lens": "structural",
+     "score": 5,
+     "from": "category",
+     "basis": "India medical-device market US$14-17.5 bn (2025) to ~US$50 bn by 2030, ~23-29% CAGR."
+    },
+    "competitive": {
+     "name": "Competitive structure & moat",
+     "weight": 0.15,
+     "lens": "structural",
+     "score": 3,
+     "from": "category",
+     "basis": "Imports still dominate high-end devices; localisation is underway but uneven."
+    },
+    "cycle": {
+     "name": "Current opportunity & cycle position",
+     "weight": 0.15,
+     "lens": "current",
+     "score": null,
+     "from": null,
+     "basis": "No cycle-position evidence on the page."
+    },
+    "valuation": {
+     "name": "Valuation & market expectations",
+     "weight": 0.15,
+     "lens": "current",
+     "score": null,
+     "from": null,
+     "basis": "No industry-level valuation data in the registry."
+    },
+    "value_chain": {
+     "name": "Value-chain position & bottlenecks",
+     "weight": 0.1,
+     "lens": "structural",
+     "score": 3,
+     "from": "category",
+     "basis": "Assembly and component supply; design and IP sit with global device makers."
+    },
+    "capital": {
+     "name": "Capital intensity & financial quality",
+     "weight": 0.05,
+     "lens": "structural",
+     "score": 3,
+     "from": "category",
+     "basis": "Device assembly and cleanrooms — moderate capital."
+    },
+    "technology": {
+     "name": "Technology & innovation",
+     "weight": 0.05,
+     "lens": "structural",
+     "score": 4,
+     "from": "category",
+     "basis": "Design capability and regulatory approval are the moat."
+    },
+    "risk": {
+     "name": "Risk & resilience",
+     "weight": null,
+     "lens": "risk",
+     "score": 4,
+     "from": "category",
+     "basis": "Healthcare demand is largely non-cyclical; disruption risk low."
+    }
+   },
+   "structural": {
+    "score": 75.7,
+    "coverage": 100
+   },
+   "current": null,
+   "risk": 4,
+   "risk_adjusted": 60.6,
+   "overall": 75.7,
+   "coverage": 70,
+   "provisional": false,
+   "notes": "Scored against 'Industry-Level Investment Parameters & Scoring Architecture'. Cycle position and valuation left UNAVAILABLE — the registry carries no cycle or valuation data for these industries.",
+   "overall_rank": 1,
+   "risk_adjusted_rank": 1,
+   "structural_score": 75.7,
+   "structural_score_rank": 1
+  },
+  {
+   "slug": "optical-transceivers-india",
+   "title": "India Optical Transceivers",
+   "group": "Telecom",
+   "scored": false
+  },
+  {
+   "slug": "organic-chemicals-india",
+   "title": "India Organic Chemicals",
+   "group": "Chemicals & Petrochemicals",
+   "scored": false
+  },
+  {
+   "slug": "overhead-transmission-line-india",
+   "title": "Overhead Transmission Line",
+   "group": "Power & Electrical Infrastructure",
+   "scored": false
+  },
+  {
+   "slug": "pcb-electronic-components-india",
+   "title": "India PCB & Electronic Components",
+   "group": "Electrical & Electronic Equipment",
+   "scored": false
+  },
+  {
+   "slug": "pharma-api-bulk-drugs-india",
+   "title": "India Pharma APIs & Bulk Drugs",
+   "group": "Chemicals & Petrochemicals",
+   "scored": false
+  },
+  {
+   "slug": "power-conversion-system-india",
+   "title": "India PCS & Power Semiconductors",
+   "group": "Energy Storage",
+   "scored": false
+  },
+  {
+   "slug": "power-semiconductor-osat-india",
+   "title": "India Power Semiconductors & OSAT",
+   "group": "Electrical & Electronic Equipment",
+   "scored": true,
+   "as_of": "2026-10-30",
+   "categories": {
+    "economics": {
+     "name": "Industry economics & value creation",
+     "weight": 0.2,
+     "lens": "structural",
+     "score": 3,
+     "from": "category",
+     "basis": "India build capacity ~USD 0.4 bn against ~USD 3-4 bn of demand — the industry earns on assembly today, not on wafer economics."
+    },
+    "opportunity": {
+     "name": "Market opportunity & structural growth",
+     "weight": 0.15,
+     "lens": "structural",
+     "score": 4,
+     "from": "category",
+     "basis": "Power-discrete market ~USD 1.86 bn (2025) to ~USD 4.05 bn by 2032, 12% CAGR; import substitution is the growth engine."
+    },
+    "competitive": {
+     "name": "Competitive structure & moat",
+     "weight": 0.15,
+     "lens": "structural",
+     "score": 3,
+     "from": "category",
+     "basis": "Global majors hold the technology; India's entry point is OSAT/ATMP, 9 of 12 ISM units."
+    },
+    "cycle": {
+     "name": "Current opportunity & cycle position",
+     "weight": 0.15,
+     "lens": "current",
+     "score": null,
+     "from": null,
+     "basis": "No cycle-position evidence on the page — demand-supply balance not established."
+    },
+    "valuation": {
+     "name": "Valuation & market expectations",
+     "weight": 0.15,
+     "lens": "current",
+     "score": null,
+     "from": null,
+     "basis": "No industry-level valuation data in the registry."
+    },
+    "value_chain": {
+     "name": "Value-chain position & bottlenecks",
+     "weight": 0.1,
+     "lens": "structural",
+     "score": 4,
+     "from": "category",
+     "basis": "Clear bottlenecks: no Indian leadframe stamper, moulding compound or bonding wire; ~95% of leadframe material imported."
+    },
+    "capital": {
+     "name": "Capital intensity & financial quality",
+     "weight": 0.05,
+     "lens": "structural",
+     "score": 2,
+     "from": "category",
+     "basis": "Heavy fixed capital (fab/OSAT) with long lead times; capital intensity is a drag on returns, not a moat yet."
+    },
+    "technology": {
+     "name": "Technology & innovation",
+     "weight": 0.05,
+     "lens": "structural",
+     "score": 2,
+     "from": "category",
+     "basis": "Licensed process and assembly; little indigenous design or IP."
+    },
+    "risk": {
+     "name": "Risk & resilience",
+     "weight": null,
+     "lens": "risk",
+     "score": 3,
+     "from": "category",
+     "basis": "Policy-dependent and execution-heavy, but the strategic priority is durable."
+    }
+   },
+   "structural": {
+    "score": 64.3,
+    "coverage": 100
+   },
+   "current": null,
+   "risk": 3,
+   "risk_adjusted": 38.6,
+   "overall": 64.3,
+   "coverage": 70,
+   "provisional": false,
+   "notes": "Scored against 'Industry-Level Investment Parameters & Scoring Architecture'. Cycle position and valuation left UNAVAILABLE — the registry carries no cycle or valuation data for these industries.",
+   "overall_rank": 3,
+   "risk_adjusted_rank": 3,
+   "structural_score": 64.3,
+   "structural_score_rank": 3
+  },
+  {
+   "slug": "power-transformers-india",
+   "title": "India Power & Distribution Transformers",
+   "group": "Electrical & Electronic Equipment",
+   "scored": false
+  },
+  {
+   "slug": "power-transmission-india",
+   "title": "India Power Transmission",
+   "group": "Power & Electrical Infrastructure",
+   "scored": false
+  },
+  {
+   "slug": "rare-earth-magnets-india",
+   "title": "India Rare-Earth Magnets",
+   "group": "Robotics & Automation",
+   "scored": false
+  },
+  {
+   "slug": "reactor-coolant-pumps-primary-loop-india",
+   "title": "India Reactor Coolant Pumps & Primary Loop",
+   "group": "Nuclear Energy",
+   "scored": false
+  },
+  {
+   "slug": "robot-software-autonomy-india",
+   "title": "India Robot Software & Autonomy",
+   "group": "Robotics & Automation",
+   "scored": false
+  },
+  {
+   "slug": "robotics-india",
+   "title": "India Robotics",
+   "group": "Robotics & Automation",
+   "scored": false
+  },
+  {
+   "slug": "satellite-bus-subsystems-india",
+   "title": "India Satellite Bus & Subsystems",
+   "group": "Space & Satellites",
+   "scored": false
+  },
+  {
+   "slug": "satellite-ground-segment-india",
+   "title": "India Satellite Ground Segment",
+   "group": "Space & Satellites",
+   "scored": false
+  },
+  {
+   "slug": "satellite-india",
+   "title": "India Satellite",
+   "group": "Space & Satellites",
+   "scored": false
+  },
+  {
+   "slug": "satellite-payloads-india",
+   "title": "India Satellite Payloads",
+   "group": "Space & Satellites",
+   "scored": false
+  },
+  {
+   "slug": "satellite-services-data-india",
+   "title": "India Satellite Services & Data",
+   "group": "Space & Satellites",
+   "scored": false
+  },
+  {
+   "slug": "semiconductor-equipment-materials-india",
+   "title": "Semiconductor Equipment & Materials &middot; India",
+   "group": "Semiconductors & Semiconductor Equipment",
+   "scored": false
   },
   {
    "slug": "servo-motors-drives-india",
    "title": "India Servo Motors & Drives",
    "group": "Robotics & Automation",
    "scored": true,
-   "growth_pct": 3.8,
-   "growth_basis": "India servo & drives market US$452 mn (2025) -> US$642 mn by 2034; 3.8% CAGR [REPORTED: IMARC]",
-   "capex_pct": null,
-   "capex_intensity": 3,
-   "capex_basis": "rating",
-   "rd_pct": null,
-   "rd_intensity": 3,
-   "rd_basis": "rating",
-   "cyclicity": 4,
-   "basis": "PROVISIONAL. Growth as stated. No ratios disclosed, so ratings are the fallback: capex 3 (motor and drive manufacturing); R&D 3 (applied engineering, domestic players mostly licensed assembly); cyclicity 4 (capex-led industrial demand, import-fed).",
-   "as_of": "",
-   "fields_present": [
-    "growth",
-    "capex",
-    "rd",
-    "cyclicity"
-   ],
-   "composite": 0.289,
-   "coverage": 1,
-   "coverage_pct": 100,
-   "partial": false,
-   "rank": 5
-  },
-  {
-   "slug": "cryocooler-india",
-   "title": "Cryocooler (India)",
-   "group": "Defence & Aerospace",
-   "scored": false,
-   "composite": null,
-   "coverage": 0,
-   "rank": null
-  },
-  {
-   "slug": "defence-electro-optics-india",
-   "title": "Defence Electro-Optics & Thermal Imaging (India)",
-   "group": "Defence & Aerospace",
-   "scored": false,
-   "composite": null,
-   "coverage": 0,
-   "rank": null
-  },
-  {
-   "slug": "genomic-sequencing-india",
-   "title": "Genomic Sequencing",
-   "group": "Healthcare & Medical Devices",
-   "scored": false,
-   "composite": null,
-   "coverage": 0,
-   "rank": null
-  },
-  {
-   "slug": "5g-ran-india",
-   "title": "India 5G / 4G RAN",
-   "group": "Telecom",
-   "scored": false,
-   "composite": null,
-   "coverage": 0,
-   "rank": null
-  },
-  {
-   "slug": "6g-india",
-   "title": "India 6G (IMT-2030)",
-   "group": "Telecom",
-   "scored": false,
-   "composite": null,
-   "coverage": 0,
-   "rank": null
-  },
-  {
-   "slug": "agrochemicals-crop-protection-india",
-   "title": "India Agrochemicals & Crop Protection",
-   "group": "Agriculture & Crop Inputs",
-   "scored": false,
-   "composite": null,
-   "coverage": 0,
-   "rank": null
-  },
-  {
-   "slug": "aircraft-mro-civil-aerospace-india",
-   "title": "India Aircraft MRO & Civil Aerospace Components",
-   "group": "Aerospace & Aviation",
-   "scored": false,
-   "composite": null,
-   "coverage": 0,
-   "rank": null
-  },
-  {
-   "slug": "battery-energy-storage-india",
-   "title": "India Battery Energy Storage (BESS)",
-   "group": "Energy Storage",
-   "scored": false,
-   "composite": null,
-   "coverage": 0,
-   "rank": null
-  },
-  {
-   "slug": "battery-management-system-india",
-   "title": "India Battery Management Systems (BMS)",
-   "group": "Energy Storage",
-   "scored": false,
-   "composite": null,
-   "coverage": 0,
-   "rank": null
-  },
-  {
-   "slug": "component-mro-india",
-   "title": "India Component MRO",
-   "group": "Aerospace & Aviation",
-   "scored": false,
-   "composite": null,
-   "coverage": 0,
-   "rank": null
-  },
-  {
-   "slug": "condenser-heat-rejection-india",
-   "title": "India Condenser & Heat Rejection",
-   "group": "Power Generation Equipment",
-   "scored": false,
-   "composite": null,
-   "coverage": 0,
-   "rank": null
-  },
-  {
-   "slug": "data-centre-ai-compute-india",
-   "title": "India Data Centres & AI-Compute",
-   "group": "Data Centres & AI Infrastructure",
-   "scored": false,
-   "composite": null,
-   "coverage": 0,
-   "rank": null
-  },
-  {
-   "slug": "data-centre-liquid-cooling-india",
-   "title": "India Data-Centre Liquid Cooling",
-   "group": "Data Centres & AI Infrastructure",
-   "scored": false,
-   "composite": null,
-   "coverage": 0,
-   "rank": null
-  },
-  {
-   "slug": "display-manufacturing-india",
-   "title": "India Display Manufacturing",
-   "group": "Electrical & Electronic Equipment",
-   "scored": false,
-   "composite": null,
-   "coverage": 0,
-   "rank": null
-  },
-  {
-   "slug": "drone-subsystems-india",
-   "title": "India Drone Subsystems",
-   "group": "Robotics & Automation",
-   "scored": false,
-   "composite": null,
-   "coverage": 0,
-   "rank": null
-  },
-  {
-   "slug": "ehv-hv-cables-india",
-   "title": "India EHV / HV Power Cables",
-   "group": "Power & Electrical Infrastructure",
-   "scored": false,
-   "composite": null,
-   "coverage": 0,
-   "rank": null
-  },
-  {
-   "slug": "electrical-electronic-equipment-india",
-   "title": "India Electrical & Electronic Equipment",
-   "group": "Electrical & Electronic Equipment",
-   "scored": false,
-   "composite": null,
-   "coverage": 0,
-   "rank": null
-  },
-  {
-   "slug": "engine-mro-india",
-   "title": "India Engine MRO",
-   "group": "Aerospace & Aviation",
-   "scored": false,
-   "composite": null,
-   "coverage": 0,
-   "rank": null
-  },
-  {
-   "slug": "ev-powertrain-traction-india",
-   "title": "India EV Powertrain & Traction Systems",
-   "group": "Automotive & Mobility",
-   "scored": false,
-   "composite": null,
-   "coverage": 0,
-   "rank": null
-  },
-  {
-   "slug": "green-hydrogen-electrolyser-india",
-   "title": "India Green Hydrogen & Electrolyser Manufacturing",
-   "group": "Green Hydrogen & Clean Fuels",
-   "scored": false,
-   "composite": null,
-   "coverage": 0,
-   "rank": null
-  },
-  {
-   "slug": "guns-india",
-   "title": "India Guns",
-   "group": "Defence & Aerospace",
-   "scored": false,
-   "composite": null,
-   "coverage": 0,
-   "rank": null
-  },
-  {
-   "slug": "harmonic-rv-reducers-india",
-   "title": "India Harmonic & RV Reducers",
-   "group": "Robotics & Automation",
-   "scored": false,
-   "composite": null,
-   "coverage": 0,
-   "rank": null
-  },
-  {
-   "slug": "hvdc-power-electronics-india",
-   "title": "India HVDC & Power Electronics",
-   "group": "Power & Electrical Infrastructure",
-   "scored": false,
-   "composite": null,
-   "coverage": 0,
-   "rank": null
-  },
-  {
-   "slug": "industrial-gases-india",
-   "title": "India Industrial Gases",
-   "group": "Chemicals & Petrochemicals",
-   "scored": false,
-   "composite": null,
-   "coverage": 0,
-   "rank": null
-  },
-  {
-   "slug": "launch-vehicles-propulsion-india",
-   "title": "India Launch Vehicles & Propulsion",
-   "group": "Space & Satellites",
-   "scored": false,
-   "composite": null,
-   "coverage": 0,
-   "rank": null
-  },
-  {
-   "slug": "li-ion-cell-manufacturing-india",
-   "title": "India Li-ion Cell Manufacturing",
-   "group": "Energy Storage",
-   "scored": false,
-   "composite": null,
-   "coverage": 0,
-   "rank": null
-  },
-  {
-   "slug": "missile-india",
-   "title": "India Missiles",
-   "group": "Defence & Aerospace",
-   "scored": false,
-   "composite": null,
-   "coverage": 0,
-   "rank": null
-  },
-  {
-   "slug": "mobile-handsets-accessories-india",
-   "title": "India Mobile Handsets & Accessories",
-   "group": "Electrical & Electronic Equipment",
-   "scored": false,
-   "composite": null,
-   "coverage": 0,
-   "rank": null
-  },
-  {
-   "slug": "nuclear-pwr-steam-generator-india",
-   "title": "India Nuclear PWR Steam Generator",
-   "group": "Nuclear Energy",
-   "scored": false,
-   "composite": null,
-   "coverage": 0,
-   "rank": null
-  },
-  {
-   "slug": "optical-fibre-india",
-   "title": "India Optical Fibre",
-   "group": "Telecom",
-   "scored": false,
-   "composite": null,
-   "coverage": 0,
-   "rank": null
-  },
-  {
-   "slug": "optical-fibre-cable-india",
-   "title": "India Optical Fibre Cable",
-   "group": "Telecom",
-   "scored": false,
-   "composite": null,
-   "coverage": 0,
-   "rank": null
-  },
-  {
-   "slug": "optical-fibre-preform-india",
-   "title": "India Optical Fibre Preform",
-   "group": "Telecom",
-   "scored": false,
-   "composite": null,
-   "coverage": 0,
-   "rank": null
-  },
-  {
-   "slug": "optical-transceivers-india",
-   "title": "India Optical Transceivers",
-   "group": "Telecom",
-   "scored": false,
-   "composite": null,
-   "coverage": 0,
-   "rank": null
-  },
-  {
-   "slug": "organic-chemicals-india",
-   "title": "India Organic Chemicals",
-   "group": "Chemicals & Petrochemicals",
-   "scored": false,
-   "composite": null,
-   "coverage": 0,
-   "rank": null
-  },
-  {
-   "slug": "pcb-electronic-components-india",
-   "title": "India PCB & Electronic Components",
-   "group": "Electrical & Electronic Equipment",
-   "scored": false,
-   "composite": null,
-   "coverage": 0,
-   "rank": null
-  },
-  {
-   "slug": "power-conversion-system-india",
-   "title": "India PCS & Power Semiconductors",
-   "group": "Energy Storage",
-   "scored": false,
-   "composite": null,
-   "coverage": 0,
-   "rank": null
-  },
-  {
-   "slug": "pharma-api-bulk-drugs-india",
-   "title": "India Pharma APIs & Bulk Drugs",
-   "group": "Chemicals & Petrochemicals",
-   "scored": false,
-   "composite": null,
-   "coverage": 0,
-   "rank": null
-  },
-  {
-   "slug": "power-transformers-india",
-   "title": "India Power & Distribution Transformers",
-   "group": "Electrical & Electronic Equipment",
-   "scored": false,
-   "composite": null,
-   "coverage": 0,
-   "rank": null
-  },
-  {
-   "slug": "power-transmission-india",
-   "title": "India Power Transmission",
-   "group": "Power & Electrical Infrastructure",
-   "scored": false,
-   "composite": null,
-   "coverage": 0,
-   "rank": null
-  },
-  {
-   "slug": "machine-tools-metrology-india",
-   "title": "India Precision Machine Tools & Metrology",
-   "group": "Robotics & Automation",
-   "scored": false,
-   "composite": null,
-   "coverage": 0,
-   "rank": null
-  },
-  {
-   "slug": "rare-earth-magnets-india",
-   "title": "India Rare-Earth Magnets",
-   "group": "Robotics & Automation",
-   "scored": false,
-   "composite": null,
-   "coverage": 0,
-   "rank": null
-  },
-  {
-   "slug": "reactor-coolant-pumps-primary-loop-india",
-   "title": "India Reactor Coolant Pumps & Primary Loop",
-   "group": "Nuclear Energy",
-   "scored": false,
-   "composite": null,
-   "coverage": 0,
-   "rank": null
-  },
-  {
-   "slug": "robot-software-autonomy-india",
-   "title": "India Robot Software & Autonomy",
-   "group": "Robotics & Automation",
-   "scored": false,
-   "composite": null,
-   "coverage": 0,
-   "rank": null
-  },
-  {
-   "slug": "robotics-india",
-   "title": "India Robotics",
-   "group": "Robotics & Automation",
-   "scored": false,
-   "composite": null,
-   "coverage": 0,
-   "rank": null
-  },
-  {
-   "slug": "satellite-india",
-   "title": "India Satellite",
-   "group": "Space & Satellites",
-   "scored": false,
-   "composite": null,
-   "coverage": 0,
-   "rank": null
-  },
-  {
-   "slug": "satellite-bus-subsystems-india",
-   "title": "India Satellite Bus & Subsystems",
-   "group": "Space & Satellites",
-   "scored": false,
-   "composite": null,
-   "coverage": 0,
-   "rank": null
-  },
-  {
-   "slug": "satellite-ground-segment-india",
-   "title": "India Satellite Ground Segment",
-   "group": "Space & Satellites",
-   "scored": false,
-   "composite": null,
-   "coverage": 0,
-   "rank": null
-  },
-  {
-   "slug": "satellite-payloads-india",
-   "title": "India Satellite Payloads",
-   "group": "Space & Satellites",
-   "scored": false,
-   "composite": null,
-   "coverage": 0,
-   "rank": null
-  },
-  {
-   "slug": "satellite-services-data-india",
-   "title": "India Satellite Services & Data",
-   "group": "Space & Satellites",
-   "scored": false,
-   "composite": null,
-   "coverage": 0,
-   "rank": null
-  },
-  {
-   "slug": "smr-india",
-   "title": "India Small Modular Reactor",
-   "group": "Nuclear Energy",
-   "scored": false,
-   "composite": null,
-   "coverage": 0,
-   "rank": null
-  },
-  {
-   "slug": "smart-meters-india",
-   "title": "India Smart Meters",
-   "group": "Electrical & Electronic Equipment",
-   "scored": false,
-   "composite": null,
-   "coverage": 0,
-   "rank": null
-  },
-  {
-   "slug": "solar-pv-india",
-   "title": "India Solar PV",
-   "group": "Renewable Energy",
-   "scored": false,
-   "composite": null,
-   "coverage": 0,
-   "rank": null
-  },
-  {
-   "slug": "steam-turbine-india",
-   "title": "India Steam Turbine (Turbine Proper)",
-   "group": "Power Generation Equipment",
-   "scored": false,
-   "composite": null,
-   "coverage": 0,
-   "rank": null
-  },
-  {
-   "slug": "telecom-india",
-   "title": "India Telecom",
-   "group": "Telecom",
-   "scored": false,
-   "composite": null,
-   "coverage": 0,
-   "rank": null
-  },
-  {
-   "slug": "telecom-chipsets-india",
-   "title": "India Telecom Chipsets",
-   "group": "Telecom",
-   "scored": false,
-   "composite": null,
-   "coverage": 0,
-   "rank": null
-  },
-  {
-   "slug": "telecom-operators-india",
-   "title": "India Telecom Operators",
-   "group": "Telecom",
-   "scored": false,
-   "composite": null,
-   "coverage": 0,
-   "rank": null
-  },
-  {
-   "slug": "telecom-towers-india",
-   "title": "India Telecom Towers",
-   "group": "Telecom",
-   "scored": false,
-   "composite": null,
-   "coverage": 0,
-   "rank": null
-  },
-  {
-   "slug": "telecom-transport-equipment-india",
-   "title": "India Transport Equipment",
-   "group": "Telecom",
-   "scored": false,
-   "composite": null,
-   "coverage": 0,
-   "rank": null
-  },
-  {
-   "slug": "turbine-generator-india",
-   "title": "India Turbine Generator & Electrical Train",
-   "group": "Power Generation Equipment",
-   "scored": false,
-   "composite": null,
-   "coverage": 0,
-   "rank": null
-  },
-  {
-   "slug": "turbine-island-india",
-   "title": "India Turbine Island (Turbomachinery)",
-   "group": "Power Generation Equipment",
-   "scored": false,
-   "composite": null,
-   "coverage": 0,
-   "rank": null
-  },
-  {
-   "slug": "turbine-auxiliaries-india",
-   "title": "India Turbine Island Auxiliaries",
-   "group": "Power Generation Equipment",
-   "scored": false,
-   "composite": null,
-   "coverage": 0,
-   "rank": null
-  },
-  {
-   "slug": "vehicles-auto-components-india",
-   "title": "India Vehicles & Auto Components",
-   "group": "Automotive & Mobility",
-   "scored": false,
-   "composite": null,
-   "coverage": 0,
-   "rank": null
-  },
-  {
-   "slug": "overhead-transmission-line-india",
-   "title": "Overhead Transmission Line",
-   "group": "Power & Electrical Infrastructure",
-   "scored": false,
-   "composite": null,
-   "coverage": 0,
-   "rank": null
-  },
-  {
-   "slug": "semiconductor-equipment-materials-india",
-   "title": "Semiconductor Equipment & Materials &middot; India",
-   "group": "Semiconductors & Semiconductor Equipment",
-   "scored": false,
-   "composite": null,
-   "coverage": 0,
-   "rank": null
+   "as_of": "2026-10-30",
+   "categories": {
+    "economics": {
+     "name": "Industry economics & value creation",
+     "weight": 0.2,
+     "lens": "structural",
+     "score": 3,
+     "from": "category",
+     "basis": "Small market with global OEMs capturing the margin; domestic players do licensed assembly."
+    },
+    "opportunity": {
+     "name": "Market opportunity & structural growth",
+     "weight": 0.15,
+     "lens": "structural",
+     "score": 2,
+     "from": "category",
+     "basis": "US$452 mn (2025) to US$642 mn by 2034 — 3.8% CAGR, the slowest growth series among the scored industries."
+    },
+    "competitive": {
+     "name": "Competitive structure & moat",
+     "weight": 0.15,
+     "lens": "structural",
+     "score": 2,
+     "from": "category",
+     "basis": "Predominantly served by global OEMs; limited indigenous design."
+    },
+    "cycle": {
+     "name": "Current opportunity & cycle position",
+     "weight": 0.15,
+     "lens": "current",
+     "score": null,
+     "from": null,
+     "basis": "No cycle-position evidence on the page."
+    },
+    "valuation": {
+     "name": "Valuation & market expectations",
+     "weight": 0.15,
+     "lens": "current",
+     "score": null,
+     "from": null,
+     "basis": "No industry-level valuation data in the registry."
+    },
+    "value_chain": {
+     "name": "Value-chain position & bottlenecks",
+     "weight": 0.1,
+     "lens": "structural",
+     "score": 3,
+     "from": "category",
+     "basis": "Import CAGR +16.4% (2020-24) shows the value chain is still offshore-fed — a substitution runway."
+    },
+    "capital": {
+     "name": "Capital intensity & financial quality",
+     "weight": 0.05,
+     "lens": "structural",
+     "score": 3,
+     "from": "category",
+     "basis": "Motor and drive manufacturing — moderate capital."
+    },
+    "technology": {
+     "name": "Technology & innovation",
+     "weight": 0.05,
+     "lens": "structural",
+     "score": 3,
+     "from": "category",
+     "basis": "Applied engineering; some in-house capability."
+    },
+    "risk": {
+     "name": "Risk & resilience",
+     "weight": null,
+     "lens": "risk",
+     "score": 3,
+     "from": "category",
+     "basis": "Capex-led industrial demand; import competition."
+    }
+   },
+   "structural": {
+    "score": 51.4,
+    "coverage": 100
+   },
+   "current": null,
+   "risk": 3,
+   "risk_adjusted": 30.8,
+   "overall": 51.4,
+   "coverage": 70,
+   "provisional": false,
+   "notes": "Scored against 'Industry-Level Investment Parameters & Scoring Architecture'. Cycle position and valuation left UNAVAILABLE — the registry carries no cycle or valuation data for these industries.",
+   "overall_rank": 5,
+   "risk_adjusted_rank": 4,
+   "structural_score": 51.4,
+   "structural_score_rank": 5
   },
   {
    "slug": "shakti-ew-india",
    "title": "Shakti EW System (India)",
    "group": "Defence & Aerospace",
-   "scored": false,
-   "composite": null,
-   "coverage": 0,
-   "rank": null
+   "scored": false
   },
   {
    "slug": "silver-paste-metallisation-india",
    "title": "Silver Paste & Metallisation",
    "group": "Renewable Energy",
-   "scored": false,
-   "composite": null,
-   "coverage": 0,
-   "rank": null
+   "scored": false
+  },
+  {
+   "slug": "smart-meters-india",
+   "title": "India Smart Meters",
+   "group": "Electrical & Electronic Equipment",
+   "scored": false
+  },
+  {
+   "slug": "smr-india",
+   "title": "India Small Modular Reactor",
+   "group": "Nuclear Energy",
+   "scored": false
   },
   {
    "slug": "solar-cells-india",
    "title": "Solar Cell Fabrication",
    "group": "Renewable Energy",
-   "scored": false,
-   "composite": null,
-   "coverage": 0,
-   "rank": null
+   "scored": false
+  },
+  {
+   "slug": "solar-pv-india",
+   "title": "India Solar PV",
+   "group": "Renewable Energy",
+   "scored": false
+  },
+  {
+   "slug": "steam-turbine-india",
+   "title": "India Steam Turbine (Turbine Proper)",
+   "group": "Power Generation Equipment",
+   "scored": false
   },
   {
    "slug": "substation-equipment-india",
    "title": "Substation Equipment",
    "group": "Power & Electrical Infrastructure",
-   "scored": false,
-   "composite": null,
-   "coverage": 0,
-   "rank": null
+   "scored": false
+  },
+  {
+   "slug": "telecom-chipsets-india",
+   "title": "India Telecom Chipsets",
+   "group": "Telecom",
+   "scored": false
+  },
+  {
+   "slug": "telecom-india",
+   "title": "India Telecom",
+   "group": "Telecom",
+   "scored": false
+  },
+  {
+   "slug": "telecom-operators-india",
+   "title": "India Telecom Operators",
+   "group": "Telecom",
+   "scored": false
+  },
+  {
+   "slug": "telecom-towers-india",
+   "title": "India Telecom Towers",
+   "group": "Telecom",
+   "scored": false
+  },
+  {
+   "slug": "telecom-transport-equipment-india",
+   "title": "India Transport Equipment",
+   "group": "Telecom",
+   "scored": false
+  },
+  {
+   "slug": "turbine-auxiliaries-india",
+   "title": "India Turbine Island Auxiliaries",
+   "group": "Power Generation Equipment",
+   "scored": false
+  },
+  {
+   "slug": "turbine-generator-india",
+   "title": "India Turbine Generator & Electrical Train",
+   "group": "Power Generation Equipment",
+   "scored": false
+  },
+  {
+   "slug": "turbine-island-india",
+   "title": "India Turbine Island (Turbomachinery)",
+   "group": "Power Generation Equipment",
+   "scored": false
+  },
+  {
+   "slug": "vehicles-auto-components-india",
+   "title": "India Vehicles & Auto Components",
+   "group": "Automotive & Mobility",
+   "scored": false
   }
  ]
 }
