@@ -203,18 +203,40 @@ fs.writeFileSync(OUT_JSON, JSON.stringify(out, null, 1) + '\n');
 const esc = s => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 const FIELD_LABEL = { growth: 'growth', capex: 'capex', rd: 'R&D', cyclicity: 'cyclicity' };
 
+// short label for the table cell · full plain-English meaning for the legend
 const CYC = {
-  1: ['contracted', 'c1'], 2: ['mildly cyclical', 'c2'], 3: ['normal cycle', 'c3'],
-  4: ['strongly cyclical', 'c4'], 5: ['boom-bust', 'c5'],
+  1: ['always on', 'c1'], 2: ['mostly steady', 'c2'], 3: ['moves with economy', 'c3'],
+  4: ['big swings', 'c4'], 5: ['feast or famine', 'c5'],
 };
 const CAPEX = {
-  1: ['asset-light', 'c1'], 2: ['light assembly', 'c2'], 3: ['moderate plant', 'c3'],
-  4: ['heavy plant', 'c4'], 5: ['mega-capex', 'c5'],
+  1: ['no factory', 'c1'], 2: ['simple assembly', 'c2'], 3: ['a real factory', 'c3'],
+  4: ['a big plant', 'c4'], 5: ['a giant plant', 'c5'],
 };
 const RD = {
-  1: ['none', 'c1'], 2: ['licensed', 'c2'], 3: ['applied', 'c3'],
-  4: ['own IP', 'c4'], 5: ['frontier', 'c5'],
+  1: ['no research', 'c1'], 2: ['licensed design', 'c2'], 3: ['in-house engineering', 'c3'],
+  4: ['own designs', 'c4'], 5: ['invents tech', 'c5'],
 };
+
+const LEGEND = [
+  ['Cyclicity', 'How much demand moves when the economy moves',
+    ['Sold on contract or set by a regulator — a slump delays orders, it doesn\'t cancel them',
+     'People keep buying through a downturn; budgets get trimmed at the edges',
+     'Rises and falls roughly with the wider economy',
+     'Orders swing far more than the economy — spending gets postponed, then rushes back',
+     'Everyone expands at once, then the market clears through a price crash']],
+  ['Capex', 'How much money you must sink into machines and buildings before you can sell anything',
+    ['Desk work — software, design, services',
+     'Simple assembly of parts made elsewhere',
+     'A real factory with equipment',
+     'A big plant, heavy equipment, long lead times',
+     'Enormous plant, years to build, huge money at risk']],
+  ['R&amp;D', 'How much of the thinking is done in-house rather than copied or bought',
+    ['None — you make what you are told to make',
+     'Design is licensed or copied from someone else',
+     'You engineer and improve the process yourself',
+     'You design your own products',
+     'You invent the technology others have to license']],
+];
 
 function scaleCell(value, map) {
   if (value == null) return '<span class="dim">—</span>';
@@ -272,12 +294,11 @@ const html = `<!DOCTYPE html>
 .scale.c3 { color: var(--gold); border-color: var(--gold); background: var(--gold-dim); }
 .scale.c4 { color: var(--high); border-color: var(--high); background: var(--high-dim); }
 .scale.c5 { color: var(--high); border-color: var(--high); background: var(--high-dim); font-weight: 700; }
-.legend-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 12px; margin: 6px 0 18px; }
-.legend-card { background: var(--surface); border: 1px solid var(--border); border-radius: 9px; padding: 12px 14px; }
-.legend-card h4 { margin: 0 0 8px; font-family: var(--font-mono); font-size: 10px; letter-spacing: 1px; text-transform: uppercase; color: var(--gold); font-weight: 600; }
-.legend-card ol { margin: 0; padding-left: 16px; }
-.legend-card li { font-size: 12px; color: var(--text-dim); line-height: 1.5; margin-bottom: 3px; }
-.legend-card b { color: var(--text); }
+.legend-table td { font-size: 11.5px; line-height: 1.45; vertical-align: top; min-width: 130px; }
+.legend-table td.lv { color: var(--text-dim); }
+.legend-table .lvnum { display: inline-block; font-family: var(--font-mono); font-size: 9.5px; font-weight: 700; margin-right: 5px; padding: 0 5px; border-radius: 3px; border: 1px solid currentColor; }
+.legend-table .lv1 { color: var(--green); } .legend-table .lv2 { color: var(--blue); }
+.legend-table .lv3 { color: var(--gold); } .legend-table .lv4, .legend-table .lv5 { color: var(--high); }
 </style></head><body><div class="container">
 <header class="masthead">
   <div class="eyebrow">Industry BOM Registry &middot; derived view</div>
@@ -292,29 +313,16 @@ const html = `<!DOCTYPE html>
   <div class="metric-card"><div class="metric-card__val">${out.counts.unscored}</div><div class="metric-card__label">Not yet scored</div><div class="metric-card__sub">backfill pending</div></div>
 </div>
 
-<div class="legend-grid">
-  <div class="legend-card"><h4>Cyclicity — 1 to 5</h4><ol>
-    <li><b>1 contracted</b> — revenue locked by contract or regulation; a downturn delays, it doesn't remove</li>
-    <li><b>2 mildly cyclical</b> — non-discretionary but funding-dependent</li>
-    <li><b>3 normal cycle</b> — moves roughly with GDP-plus</li>
-    <li><b>4 strongly cyclical</b> — capex-led or commodity-priced; several times GDP's swing</li>
-    <li><b>5 boom-bust</b> — lumpy capacity, overshoots, clears through a price collapse</li>
-  </ol></div>
-  <div class="legend-card"><h4>Capex intensity — 1 to 5</h4><ol>
-    <li><b>1 asset-light</b> — software, design, services</li>
-    <li><b>2 light assembly</b></li>
-    <li><b>3 moderate</b> — component manufacturing</li>
-    <li><b>4 heavy</b> — plant, fab, process</li>
-    <li><b>5 mega-capex</b> — utilities, fabs, refineries</li>
-  </ol></div>
-  <div class="legend-card"><h4>R&amp;D intensity — 1 to 5</h4><ol>
-    <li><b>1 none</b> — no meaningful R&amp;D</li>
-    <li><b>2 licensed</b> — reverse-engineering or licensed assembly</li>
-    <li><b>3 applied</b> — engineering and process R&amp;D</li>
-    <li><b>4 own IP</b> — design capability in parts</li>
-    <li><b>5 frontier</b> — patents are the moat</li>
-  </ol></div>
-</div>
+<div class="sec-head"><span class="sec-num">00</span><span class="sec-title">How to read the scores</span>
+<span class="sec-note">1 = best &rarr; 5 = worst, on every scale</span></div>
+<div class="table-wrap"><div class="table-scroll" style="max-height:none"><table class="data legend-table">
+<thead><tr><th>Scale</th><th>1 &mdash; best</th><th>2</th><th>3</th><th>4</th><th>5 &mdash; worst</th></tr></thead>
+<tbody>
+${LEGEND.map(([name, blurb, levels]) => `<tr>
+<td><b>${name}</b><div class="slug">${blurb}</div></td>
+${levels.map((t, k) => `<td class="lv lv${k + 1}"><span class="lvnum">${k + 1}</span>${t}</td>`).join('')}
+</tr>`).join('\n')}
+</tbody></table></div></div>
 
 <p class="lead">Each coverage band is ranked <b>separately</b>. A page carrying only some of the four fields is never compared against a fully scored one &mdash; its score reflects only what is known, so mixing them in a single table would rank evidence rather than industries.</p>
 
