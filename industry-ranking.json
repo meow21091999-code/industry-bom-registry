@@ -73,10 +73,10 @@
   }
  },
  "counts": {
-  "industries": 73,
+  "industries": 77,
   "scored": 5,
   "legacy": 0,
-  "unscored": 68,
+  "unscored": 72,
   "ranked": 5
  },
  "industries": [
@@ -711,6 +711,12 @@
    "scored": false
   },
   {
+   "slug": "railway-india",
+   "title": "India Railway",
+   "group": "",
+   "scored": false
+  },
+  {
    "slug": "rare-earth-magnets-india",
    "title": "India Rare-Earth Magnets",
    "group": "Robotics & Automation",
@@ -732,6 +738,12 @@
    "slug": "robotics-india",
    "title": "India Robotics",
    "group": "Robotics & Automation",
+   "scored": false
+  },
+  {
+   "slug": "room-ac-white-goods-components-india",
+   "title": "India Room AC & White-Goods Components",
+   "group": "",
    "scored": false
   },
   {
@@ -873,6 +885,12 @@
    "scored": false
   },
   {
+   "slug": "shipbuilding-ship-repair-india",
+   "title": "India Shipbuilding & Ship Repair",
+   "group": "",
+   "scored": false
+  },
+  {
    "slug": "silver-paste-metallisation-india",
    "title": "Silver Paste & Metallisation",
    "group": "Renewable Energy",
@@ -942,6 +960,12 @@
    "slug": "telecom-transport-equipment-india",
    "title": "India Transport Equipment",
    "group": "Telecom",
+   "scored": false
+  },
+  {
+   "slug": "tunnel-boring-machine-india",
+   "title": "India Tunnel Boring Machine",
+   "group": "",
    "scored": false
   },
   {
