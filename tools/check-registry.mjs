@@ -147,6 +147,11 @@ for (const file of files) {
     problems.push('company ticker must be a <span> inside .co__name, not a separate <div>');
   }
 
+  // a page carrying a score block must RENDER it — machine-readable alone is invisible to a reader
+  if (/class="industry-score"/.test(html) && !/class="scorecard"/.test(html)) {
+    problems.push('has an industry-score block but no .scorecard section — the scores are never shown');
+  }
+
   // data-script integrity: NODES must be declared once and parse.
   // A duplicated or malformed NODES kills the page's whole company-map script,
   // and the page then silently contributes nothing to companies.json.
