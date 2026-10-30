@@ -154,12 +154,41 @@ for (const f of fs.readdirSync(DIR).filter(x => x.endsWith('.html')).sort()) {
     : null;
 
   const coverage = Math.round(supportedW * 100);
+
+  // evidence confidence (review §5): how well-supported the score is, separate from how good it is
+  const conf = block.confidence || {};
+  const confidence = {
+    evidence: conf.evidence != null ? clamp(Number(conf.evidence), 1, 5) : null,
+    primary_source_pct: conf.primary_source_pct != null ? Number(conf.primary_source_pct) : null,
+    missing_critical: Array.isArray(conf.missing_critical) ? conf.missing_critical : [],
+  };
+
+  // component-level value capture (review §4): which node in the chain keeps the money
+  const VCW = (P.value_capture && P.value_capture.weights) || {};
+  const valueCapture = (Array.isArray(block.value_capture) ? block.value_capture : []).map(vc => {
+    const params = vc.params || {};
+    const parts = Object.keys(VCW)
+      .filter(k => params[k] != null && !isNaN(params[k]))
+      .map(k => ({ k, w: VCW[k], s: clamp(Number(params[k]), 1, 5) }));
+    const w = parts.reduce((a, x) => a + x.w, 0);
+    const score = w ? parts.reduce((a, x) => a + x.w * x.s, 0) / w : null;
+    return {
+      node: vc.node || '',
+      basis: vc.basis || '',
+      params: Object.fromEntries(parts.map(x => [x.k, x.s])),
+      score: score == null ? null : Math.round(score * 100) / 100,
+      score100: score == null ? null : Math.round((score / 5) * 1000) / 10,
+      coverage: Math.round(w * 100),
+    };
+  }).sort((a, b) => (b.score ?? -1) - (a.score ?? -1));
   rows.push({
     ...row, scored: true,
     as_of: block.as_of || '',
     categories: cats,
     structural, current, risk, risk_adjusted: riskAdjusted,
     overall, coverage,
+    confidence,
+    value_capture: valueCapture,
     provisional: coverage < (P.provisional_below_coverage_pct ?? 60),
     notes: block.notes || '',
   });
@@ -194,7 +223,13 @@ const out = {
     scale: P.scale,
     provisional_below_coverage_pct: P.provisional_below_coverage_pct,
   },
-  parameters: { categories: CATS, risk_category: RISK },
+  parameters: {
+    categories: CATS,
+    risk_category: RISK,
+    risk_label: P.risk_label || 'Resilience (5 = lowest risk)',
+    risk_formula_note: P.risk_formula_note || '',
+    value_capture: P.value_capture || null,
+  },
   counts: {
     industries: rows.length,
     scored: rows.filter(r => r.scored).length,
@@ -239,10 +274,12 @@ function detailedTable(list) {
     <th rowspan="2">Industry</th>
     <th colspan="${STRUCT_COLS.length + 1}" class="grp grp-struct">Structural attractiveness</th>
     <th colspan="${CURRENT_COLS.length + 1}" class="grp grp-current">Current opportunity</th>
-    <th rowspan="2" class="grp-start">Risk</th>
+    <th rowspan="2" class="grp-start">Resilience<div class="wt">5 = lowest risk</div></th>
     <th rowspan="2">Risk-adj</th>
     <th rowspan="2">Overall</th>
     <th rowspan="2">Coverage</th>
+    <th rowspan="2">Evidence<div class="wt">1-5</div></th>
+    <th rowspan="2">Primary src</th>
   </tr>
   <tr>
     ${STRUCT_COLS.map(c => `<th class="cat">${c.id}<div class="wt">${Math.round(c.weight * 100)}%</div></th>`).join('')}
@@ -262,12 +299,35 @@ function detailedTable(list) {
     <td class="c">${num(r.risk_adjusted)}</td>
     <td class="c tot">${num(r.overall)}</td>
     <td class="c">${covCell(r)}</td>
+    <td class="c">${r.confidence && r.confidence.evidence != null ? r.confidence.evidence : '<span class="dim">-</span>'}</td>
+    <td class="c">${r.confidence && r.confidence.primary_source_pct != null ? r.confidence.primary_source_pct + '%' : '<span class="dim">-</span>'}</td>
   </tr>`).join('\n');
 
   return `<div class="table-wrap"><div class="table-scroll"><table class="data detail">
   <thead>${head1}</thead><tbody>
   ${body}
   </tbody></table></div></div>`;
+}
+
+function valueCaptureSection() {
+  const withVC = rows.filter(r => (r.value_capture || []).length);
+  if (!withVC.length) {
+    return `<p class="lead">No industry carries a value-capture score yet. It is scored per node — the point is to see <b>where</b> in the chain profit accumulates, which an industry-level score cannot show. The first worked example is Power Semiconductors &amp; OSAT.</p>`;
+  }
+  return withVC.map(r => {
+    const trs = r.value_capture.map((vc, i) => `<tr>
+      <td class="c">${i + 1}</td>
+      <td><b>${esc(vc.node)}</b><div class="slug">${esc(vc.basis || '')}</div></td>
+      <td class="c">${vc.score != null ? vc.score.toFixed(2) : '-'}</td>
+      <td class="c tot">${vc.score100 != null ? vc.score100 : '-'}</td>
+      <td class="c">${vc.coverage}%</td>
+    </tr>`).join('\n');
+    return `<div class="sec-head" style="border-bottom:none;margin-bottom:6px"><span class="sec-title" style="font-size:13px">${esc(r.title)}</span>
+      <span class="sec-note">${r.value_capture.length} nodes &middot; ranked by value capture</span></div>
+      <div class="table-wrap"><div class="table-scroll"><table class="data">
+      <thead><tr><th>#</th><th>Node</th><th>Score (1-5)</th><th>/100</th><th>Coverage</th></tr></thead>
+      <tbody>${trs}</tbody></table></div></div>`;
+  }).join('\n');
 }
 
 const html = `<!DOCTYPE html>
@@ -341,7 +401,11 @@ ${table(currentRanked, [{ h: 'Current', f: r => num(r.current_score) }, { h: 'Co
 <span class="sec-note">structural score &times; (risk &divide; 5) &mdash; our formula, not the framework's</span></div>
 ${table(riskRanked, [{ h: 'Risk-adj', f: r => num(r.risk_adjusted) }, { h: 'Risk (1–5)', f: r => num(r.risk, 1) }])}
 
-<div class="sec-head"><span class="sec-num">05</span><span class="sec-title">Not yet scored</span>
+<div class="sec-head"><span class="sec-num">05</span><span class="sec-title">Value capture &mdash; which node keeps the money</span>
+<span class="sec-note">component-level score &middot; profit share 20% &middot; pricing power 15% &middot; ROIC 15% &middot; barriers 15% &middot; bottleneck 10% &middot; pool growth 10% &middot; cash conversion 10% &middot; switching 5%</span></div>
+${valueCaptureSection()}
+
+<div class="sec-head"><span class="sec-num">06</span><span class="sec-title">Not yet scored</span>
 <span class="sec-note">${unscored.length} industries &mdash; backfill pending</span></div>
 <div class="table-wrap"><div class="table-scroll"><table class="data">
 <thead><tr><th>Industry</th><th>Status</th></tr></thead><tbody>
@@ -354,7 +418,8 @@ ${unscored.map(r => `<tr><td><b>${esc(r.title)}</b><div class="slug">${esc(r.gro
   Coverage = supported category weight &divide; planned weight. A missing value is shown as UNAVAILABLE and never imputed &mdash; coverage is reported next to the score and is
   neither a bonus nor a penalty. Scores below ${P.provisional_below_coverage_pct}% coverage are marked provisional.
   Structural, current-opportunity and risk-adjusted are separate lenses: an industry can be structurally excellent and currently expensive.
-  Risk-adjusted uses structural &times; (risk &divide; 5), which is our construction, not the framework's.
+  <b>Resilience</b> is scored on the same attractiveness scale, so 5 means the LEAST risk &mdash; risk-adjusted = structural &times; (resilience &divide; 5) therefore raises the score for steadier industries, which is the intended direction. That formula is our construction, not the framework's.
+  <b>Evidence</b> and <b>Primary src</b> report how well-supported a score is, separately from how good it is: a 75 built on tier-1 filings and a 75 built on trade press are not the same claim.
   Generated ${out.generated}.
 </div>
 </div></body></html>`;
