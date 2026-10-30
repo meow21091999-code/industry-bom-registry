@@ -139,23 +139,33 @@ for (const f of fs.readdirSync(DIR).filter(x => x.endsWith('.html')).sort()) {
 }
 
 // group by coverage band: only like-for-like pages are compared
+const TH = P.coverage_threshold == null ? 0 : Number(P.coverage_threshold);
 const bands = new Map();
 for (const r of rows) {
-  const key = r.composite == null ? 'unscored' : r.coverage_pct;
+  let key;
+  if (r.composite == null) key = 'unscored';
+  else if (r.coverage < TH) key = 'below';      // scored, but on too little evidence to be ranked
+  else key = r.coverage_pct;
   if (!bands.has(key)) bands.set(key, []);
   bands.get(key).push(r);
 }
-const bandOrder = [...bands.keys()].sort((a, b) => (a === 'unscored' ? 1 : b === 'unscored' ? -1 : b - a));
+const isTail = k => k === 'unscored' || k === 'below';
+const bandOrder = [...bands.keys()].sort((a, b) =>
+  isTail(a) && isTail(b) ? (a === 'below' ? -1 : 1) : isTail(a) ? 1 : isTail(b) ? -1 : b - a);
 
 const outBands = [];
 for (const key of bandOrder) {
   const group = bands.get(key);
   group.sort((a, b) => (b.composite ?? -1) - (a.composite ?? -1) || a.title.localeCompare(b.title));
-  group.forEach((r, i) => { r.rank = key === 'unscored' ? null : i + 1; });
+  const tail = isTail(key);
+  group.forEach((r, i) => { r.rank = tail ? null : i + 1; });
   outBands.push({
-    coverage_pct: key === 'unscored' ? null : key,
-    label: key === 'unscored' ? 'Not yet scored' : `${key}% coverage`,
+    coverage_pct: tail ? null : key,
+    label: key === 'unscored' ? 'Not yet scored'
+      : key === 'below' ? `Below the ${Math.round(TH * 100)}% coverage threshold — not ranked`
+      : `${key}% coverage`,
     fields: key === 'unscored' ? [] : group[0].fields_present,
+    ranked: !tail,
     count: group.length,
     rows: group,
   });
@@ -181,8 +191,10 @@ const out = {
     scored: rows.filter(r => r.scored).length,
     partial: rows.filter(r => r.partial).length,
     unscored: rows.filter(r => !r.scored).length,
+    below_threshold: rows.filter(r => r.composite != null && r.coverage < TH).length,
+    ranked: rows.filter(r => r.rank != null).length,
   },
-  bands: outBands.map(b => ({ label: b.label, fields: b.fields, count: b.count })),
+  bands: outBands.map(b => ({ label: b.label, fields: b.fields, count: b.count, ranked: b.ranked })),
   industries: rows,
 };
 fs.writeFileSync(OUT_JSON, JSON.stringify(out, null, 1) + '\n');
