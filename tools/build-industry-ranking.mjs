@@ -233,13 +233,12 @@ const CURRENT_COLS = CATS.filter(c => c.lens === 'current');
 const sc = v => (v == null ? '<span class="dim">-</span>' : String(v));
 
 function detailedTable(list) {
+  // each lens heading spans its own parameters AND that lens's score, so the total sits inside its group
   const head1 = `<tr>
     <th rowspan="2">#</th>
     <th rowspan="2">Industry</th>
-    <th colspan="${STRUCT_COLS.length}" class="grp grp-struct">Structural attractiveness</th>
-    <th rowspan="2">Structural score</th>
-    <th colspan="${CURRENT_COLS.length}" class="grp grp-current">Current opportunity</th>
-    <th rowspan="2">Current score</th>
+    <th colspan="${STRUCT_COLS.length + 1}" class="grp grp-struct">Structural attractiveness</th>
+    <th colspan="${CURRENT_COLS.length + 1}" class="grp grp-current">Current opportunity</th>
     <th rowspan="2">Risk</th>
     <th rowspan="2">Risk-adj</th>
     <th rowspan="2">Overall</th>
@@ -247,7 +246,9 @@ function detailedTable(list) {
   </tr>
   <tr>
     ${STRUCT_COLS.map(c => `<th class="cat">${c.id}<div class="wt">${Math.round(c.weight * 100)}%</div></th>`).join('')}
+    <th class="cat cat-tot grp-struct">structural score</th>
     ${CURRENT_COLS.map(c => `<th class="cat">${c.id}<div class="wt">${Math.round(c.weight * 100)}%</div></th>`).join('')}
+    <th class="cat cat-tot grp-current">current score</th>
   </tr>`;
 
   const body = list.map((r, i) => `<tr>
@@ -294,6 +295,9 @@ table.data.detail th.grp-struct { background: var(--blue-dim); color: var(--blue
 table.data.detail th.grp-current { background: var(--gold-dim); color: var(--gold); }
 table.data.detail th.cat { text-align: center; font-size: 9px; font-weight: 600; }
 table.data.detail .wt { font-weight: 400; opacity: .65; font-size: 8.5px; }
+table.data.detail th.cat-tot { font-weight: 700; letter-spacing: .4px; border-left: 1px solid var(--border-bright); }
+table.data.detail th.cat-tot.grp-struct { background: var(--blue-dim); color: var(--blue); }
+table.data.detail th.cat-tot.grp-current { background: var(--gold-dim); color: var(--gold); }
 table.data.detail td.tot { font-weight: 700; color: var(--text); border-left: 1px solid var(--border-bright); }
 table.data.detail td { padding: 6px 7px; }
 </style></head><body><div class="container">
