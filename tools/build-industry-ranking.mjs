@@ -2,18 +2,24 @@
 /**
  * Industry BOM Registry — industry ranking builder
  *
- * Reads the machine-readable score block from every entry page and writes:
- *   industry-ranking.json     (machine-readable, ranked)
- *   views/industries-ranked.html  (the ranked view)
+ * Implements the scoring architecture in
+ * "Industry-Level Investment Parameters & Scoring Architecture":
+ *
+ *   Category score (1–5)   = Σ(parameter weight × parameter score) ÷ Σ(weights of supported parameters)
+ *   Overall score (0–100)  = Σ(category weight × category score ÷ 5)
+ *   Evidence coverage (%)  = supported weight ÷ planned weight × 100
+ *
+ * Rules carried from the framework:
+ *   • hierarchical, never a flat average across parameters
+ *   • higher is better on every score — direction is normalised at scoring time
+ *   • missing values are UNAVAILABLE, never imputed
+ *   • coverage is reported alongside the score and is NOT a bonus or penalty
+ *   • structural / current-opportunity / risk-adjusted are kept as separate lenses
+ *
+ * Reads:  ranking.config.json, industries/*.html (industry-score blocks)
+ * Writes: industry-ranking.json, views/industries-ranked.html
  *
  *   node tools/build-industry-ranking.mjs
- *
- * Growth-led composite, fixed anchors so scores do not drift as entries are added:
- *   growth 50% · capex 20% · R&D 15% · cyclicity 15% (inverted)
- *   growth 0%→0, 25%+→1 linear · 1–5 fields → (x−1)/4 · cyclicity → (5−x)/4
- *
- * A null field is EXCLUDED (never imputed) and the page is marked partial.
- * Never guess a value to complete a score.
  */
 import fs from 'node:fs';
 import path from 'node:path';
@@ -22,48 +28,39 @@ const DIR = 'industries';
 const OUT_JSON = 'industry-ranking.json';
 const OUT_VIEW = 'views/industries-ranked.html';
 
+const clamp = (x, lo, hi) => Math.max(lo, Math.min(hi, x));
+
+// ---------------- parameters ----------------
 const DEFAULTS = {
-  weights: { growth: 0.50, capex: 0.20, rd: 0.15, cyclicity: 0.15 },
-  anchors: { growth_max_pct: 25, capex_max_pct: 30, rd_max_pct: 10 },
-  directions: { capex: 'barrier', cyclicity: 'inverted' },
-  coverage_threshold: null,
+  categories: [
+    { id: 'economics', name: 'Industry economics & value creation', weight: 0.20, lens: 'structural' },
+    { id: 'opportunity', name: 'Market opportunity & structural growth', weight: 0.15, lens: 'structural' },
+    { id: 'competitive', name: 'Competitive structure & moat', weight: 0.15, lens: 'structural' },
+    { id: 'cycle', name: 'Current opportunity & cycle position', weight: 0.15, lens: 'current' },
+    { id: 'valuation', name: 'Valuation & market expectations', weight: 0.15, lens: 'current' },
+    { id: 'value_chain', name: 'Value-chain position & bottlenecks', weight: 0.10, lens: 'structural' },
+    { id: 'capital', name: 'Capital intensity & financial quality', weight: 0.05, lens: 'structural' },
+    { id: 'technology', name: 'Technology & innovation', weight: 0.05, lens: 'structural' },
+  ],
+  risk_category: { id: 'risk', name: 'Risk & resilience', lens: 'risk' },
+  scale: {},
+  provisional_below_coverage_pct: 60,
 };
 
 let P = DEFAULTS;
 if (fs.existsSync('ranking.config.json')) {
   try {
     const raw = JSON.parse(fs.readFileSync('ranking.config.json', 'utf8'));
-    P = {
-      weights: { ...DEFAULTS.weights, ...(raw.weights || {}) },
-      anchors: { ...DEFAULTS.anchors, ...(raw.anchors || {}) },
-      directions: { ...DEFAULTS.directions, ...(raw.directions || {}) },
-      coverage_threshold: raw.coverage_threshold ?? null,
-    };
+    P = { ...DEFAULTS, ...raw };
   } catch (e) {
     console.log('WARN ranking.config.json is not valid JSON — using defaults: ' + e.message);
   }
 }
 
-const W = P.weights;
-const sumW = Object.values(W).reduce((a, b) => a + b, 0);
-if (Math.abs(sumW - 1) > 0.01) console.log(`WARN weights sum to ${sumW.toFixed(2)}, not 1.00 — the composite renormalises, so it still works, but the weights no longer read as shares.`);
-
-const clamp01 = x => Math.max(0, Math.min(1, x));
-const sGrowth = v => (v == null || isNaN(v) ? null : clamp01(Number(v) / P.anchors.growth_max_pct));
-const sBand = v => (v == null || isNaN(v) ? null : clamp01((Number(v) - 1) / 4));
-const sCyc = v => (v == null || isNaN(v) ? null : clamp01((5 - Number(v)) / 4));
-// ratios are preferred; the 1–5 rating is the fallback
-const sCapexPctRaw = v => (v == null || isNaN(v) ? null : clamp01(Number(v) / P.anchors.capex_max_pct));
-const sRdPct = v => (v == null || isNaN(v) ? null : clamp01(Number(v) / P.anchors.rd_max_pct));
-// capex reads as a moat by default ("barrier"); "drag" inverts it so heavy capital scores lower
-const sCapexPct = v => {
-  const x = sCapexPctRaw(v);
-  return x == null ? null : (P.directions.capex === 'drag' ? 1 - x : x);
-};
-const sBandDir = (v, field) => {
-  const x = sBand(v);
-  return x == null ? null : (P.directions[field] === 'drag' ? 1 - x : x);
-};
+const CATS = P.categories;
+const RISK = P.risk_category;
+const WSUM = CATS.reduce((a, c) => a + c.weight, 0);
+if (Math.abs(WSUM - 1) > 0.01) console.log(`WARN category weights sum to ${WSUM.toFixed(2)}, not 1.00.`);
 
 const clean = s => String(s ?? '').replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
 
@@ -72,13 +69,25 @@ function titleOf(html, slug) {
   return m ? clean(m[1].replace(/&amp;/g, '&').replace(/&mdash;/g, '—').replace(/&ndash;/g, '–')) : slug;
 }
 
+let INDEX = '';
+if (fs.existsSync('index.html')) INDEX = fs.readFileSync('index.html', 'utf8');
 function groupOf(slug) {
-  if (!fs.existsSync('index.html')) return '';
-  const idx = fs.readFileSync('index.html', 'utf8');
-  for (const g of idx.matchAll(/<span class="group__name">([\s\S]*?)<\/span>([\s\S]*?)(?=<span class="group__name">|<\/section>)/g)) {
+  for (const g of INDEX.matchAll(/<span class="group__name">([\s\S]*?)<\/span>([\s\S]*?)(?=<span class="group__name">|<\/section>)/g)) {
     if (g[2].includes(`industries/${slug}.html`)) return clean(g[1].replace(/&amp;/g, '&'));
   }
   return '';
+}
+
+/** category score from parameters, else the stated score */
+function categoryScore(cat) {
+  const params = (cat.params || []).filter(p => p && p.score != null && !isNaN(p.score));
+  if (params.length) {
+    const ws = params.reduce((a, p) => a + (p.weight == null ? 1 : p.weight), 0);
+    const s = params.reduce((a, p) => a + (p.weight == null ? 1 : p.weight) * Number(p.score), 0) / ws;
+    return { score: clamp(s, 1, 5), from: 'parameters' };
+  }
+  if (cat.score != null && !isNaN(cat.score)) return { score: clamp(Number(cat.score), 1, 5), from: 'category' };
+  return { score: null, from: null };
 }
 
 const rows = [];
@@ -89,191 +98,135 @@ for (const f of fs.readdirSync(DIR).filter(x => x.endsWith('.html')).sort()) {
   const html = fs.readFileSync(path.join(DIR, f), 'utf8');
   const m = html.match(/<script type="application\/json" class="industry-score">([\s\S]*?)<\/script>/);
 
-  let score = null;
-  if (m) {
-    try { score = JSON.parse(m[1]); }
-    catch (e) { problems.push(`${slug}: score block is not valid JSON — ${e.message}`); }
-  }
-
   const title = titleOf(html, slug);
   const group = groupOf(slug);
+  const row = { slug, title, group };
 
-  if (!score) {
-    rows.push({ slug, title, group, scored: false, composite: null, coverage: 0 });
+  if (!m) { rows.push({ ...row, scored: false }); continue; }
+
+  let block;
+  try { block = JSON.parse(m[1]); }
+  catch (e) { problems.push(`${slug}: score block is not valid JSON — ${e.message}`); rows.push({ ...row, scored: false }); continue; }
+
+  // legacy 4-field block: keep it visible, but it does not fit the framework
+  if (!block.categories) {
+    rows.push({ ...row, scored: false, legacy: true, legacy_block: block });
+    problems.push(`${slug}: legacy score block (growth/capex/R&D/cyclicity) — needs rescoring under the category framework`);
     continue;
   }
 
-  const capexScore = sCapexPct(score.capex_pct) ?? sBandDir(score.capex_intensity, 'capex');
-  const rdScore = sRdPct(score.rd_pct) ?? sBand(score.rd_intensity);
+  const cats = {};
+  let supportedW = 0;
+  for (const c of CATS) {
+    const got = categoryScore(block.categories[c.id] || {});
+    cats[c.id] = { name: c.name, weight: c.weight, lens: c.lens, score: got.score, from: got.from,
+      basis: (block.categories[c.id] || {}).basis || '' };
+    if (got.score != null) supportedW += c.weight;
+  }
+  const riskGot = categoryScore(block.categories[RISK.id] || {});
+  cats[RISK.id] = { name: RISK.name, weight: null, lens: 'risk', score: riskGot.score, from: riskGot.from,
+    basis: (block.categories[RISK.id] || {}).basis || '' };
 
-  const parts = [
-    { key: 'growth', w: W.growth, s: sGrowth(score.growth_pct) },
-    { key: 'capex', w: W.capex, s: capexScore },
-    { key: 'rd', w: W.rd, s: rdScore },
-    { key: 'cyclicity', w: W.cyclicity, s: sCyc(score.cyclicity) },
-  ].filter(p => p.s != null);
+  // weighted score over a lens, renormalised by the weight actually supported
+  const lens = which => {
+    const set = CATS.filter(c => c.lens === which && cats[c.id].score != null);
+    const w = set.reduce((a, c) => a + c.weight, 0);
+    if (!w) return null;
+    const s = set.reduce((a, c) => a + c.weight * cats[c.id].score, 0) / w;
+    return { score: Math.round((s / 5) * 1000) / 10, coverage: Math.round((w / (which === 'structural'
+      ? CATS.filter(c => c.lens === 'structural').reduce((a, c) => a + c.weight, 0)
+      : CATS.filter(c => c.lens === 'current').reduce((a, c) => a + c.weight, 0))) * 100) };
+  };
 
-  const wSum = parts.reduce((a, p) => a + p.w, 0);
-  const composite = wSum ? parts.reduce((a, p) => a + p.w * p.s, 0) / wSum : null;
+  const structural = lens('structural');
+  const current = lens('current');
+  const risk = cats[RISK.id].score;
 
+  // overall = the framework's formula over every supported category, coverage-neutral
+  const supported = CATS.filter(c => cats[c.id].score != null);
+  const overall = supported.length
+    ? Math.round((supported.reduce((a, c) => a + c.weight * cats[c.id].score, 0) / supported.reduce((a, c) => a + c.weight, 0) / 5) * 1000) / 10
+    : null;
+
+  // risk-adjusted: structural discounted by risk — a stated design choice, not from the framework
+  const riskAdjusted = structural && risk != null
+    ? Math.round((structural.score * (risk / 5)) * 10) / 10
+    : null;
+
+  const coverage = Math.round(supportedW * 100);
   rows.push({
-    slug, title, group,
-    scored: true,
-    growth_pct: score.growth_pct ?? null,
-    growth_basis: score.growth_basis || '',
-    capex_pct: score.capex_pct ?? null,
-    capex_intensity: score.capex_intensity ?? null,
-    capex_basis: score.capex_pct != null ? 'ratio' : (score.capex_intensity != null ? 'rating' : null),
-    rd_pct: score.rd_pct ?? null,
-    rd_intensity: score.rd_intensity ?? null,
-    rd_basis: score.rd_pct != null ? 'ratio' : (score.rd_intensity != null ? 'rating' : null),
-    cyclicity: score.cyclicity ?? null,
-    basis: score.basis || '',
-    as_of: score.as_of || '',
-    fields_present: parts.map(p => p.key),
-    composite: composite == null ? null : Math.round(composite * 1000) / 1000,
-    coverage: Math.round(wSum * 100) / 100,
-    coverage_pct: Math.round(wSum * 100),
-    partial: wSum < 0.999,
+    ...row, scored: true,
+    as_of: block.as_of || '',
+    categories: cats,
+    structural, current, risk, risk_adjusted: riskAdjusted,
+    overall, coverage,
+    provisional: coverage < (P.provisional_below_coverage_pct ?? 60),
+    notes: block.notes || '',
   });
 }
 
-// group by coverage band: only like-for-like pages are compared
-const TH = P.coverage_threshold == null ? 0 : Number(P.coverage_threshold);
-const bands = new Map();
+// ---------------- ranks ----------------
+const rankBy = (arr, key) => {
+  const scored = arr.filter(r => r[key] != null).sort((a, b) => b[key] - a[key] || a.title.localeCompare(b.title));
+  scored.forEach((r, i) => { r[key + '_rank'] = i + 1; });
+};
+rankBy(rows, 'overall');
+rankBy(rows, 'structural_score');
+rankBy(rows, 'current_score');
+rankBy(rows, 'risk_adjusted');
+// structural/current live inside objects — flatten for ranking and display
 for (const r of rows) {
-  let key;
-  if (r.composite == null) key = 'unscored';
-  else if (r.coverage < TH) key = 'below';      // scored, but on too little evidence to be ranked
-  else key = r.coverage_pct;
-  if (!bands.has(key)) bands.set(key, []);
-  bands.get(key).push(r);
+  if (r.structural) r.structural_score = r.structural.score;
+  if (r.current) r.current_score = r.current.score;
 }
-const isTail = k => k === 'unscored' || k === 'below';
-const bandOrder = [...bands.keys()].sort((a, b) =>
-  isTail(a) && isTail(b) ? (a === 'below' ? -1 : 1) : isTail(a) ? 1 : isTail(b) ? -1 : b - a);
-
-const outBands = [];
-for (const key of bandOrder) {
-  const group = bands.get(key);
-  group.sort((a, b) => (b.composite ?? -1) - (a.composite ?? -1) || a.title.localeCompare(b.title));
-  const tail = isTail(key);
-  group.forEach((r, i) => { r.rank = tail ? null : i + 1; });
-  outBands.push({
-    coverage_pct: tail ? null : key,
-    label: key === 'unscored' ? 'Not yet scored'
-      : key === 'below' ? `Below the ${Math.round(TH * 100)}% coverage threshold — not ranked`
-      : `${key}% coverage`,
-    fields: key === 'unscored' ? [] : group[0].fields_present,
-    ranked: !tail,
-    count: group.length,
-    rows: group,
-  });
-}
-rows.length = 0;
-for (const b of outBands) rows.push(...b.rows);
+rankBy(rows, 'structural_score');
+rankBy(rows, 'current_score');
+rankBy(rows, 'overall');
 
 const out = {
   registry: 'Industry BOM Registry',
-  description:
-    'Industry ranking. Growth-led composite over growth, capex intensity, R&D intensity and cyclicity, read from each entry page\'s industry-score block. DERIVED — regenerate with node tools/build-industry-ranking.mjs.',
+  description: 'Industry ranking per "Industry-Level Investment Parameters & Scoring Architecture": hierarchical category scores (1–5), overall 0–100, evidence coverage reported, three lenses kept separate. DERIVED — regenerate with node tools/build-industry-ranking.mjs.',
   generated: new Date().toISOString().slice(0, 10),
-  parameters: P,
-  anchors: {
-    growth: `0%→0, ${P.anchors.growth_max_pct}%+→1 linear`,
-    capex_pct: `0%→0, ${P.anchors.capex_max_pct}%+→1 (${P.directions.capex === 'drag' ? 'heavier capital scores lower' : 'barrier reading, heavier scores higher'})`,
-    rd_pct: `0%→0, ${P.anchors.rd_max_pct}%+→1`,
-    bands: '1–5 → (x−1)/4',
-    cyclicity: '1–5 → (5−x)/4 (inverted)',
+  framework: {
+    category_score: 'Σ(parameter weight × parameter score) ÷ Σ(weights of supported parameters)',
+    overall_score: 'Σ(category weight × category score ÷ 5) × 100, renormalised over supported categories',
+    coverage: 'supported category weight ÷ planned weight × 100',
+    scale: P.scale,
+    provisional_below_coverage_pct: P.provisional_below_coverage_pct,
   },
+  parameters: { categories: CATS, risk_category: RISK },
   counts: {
     industries: rows.length,
     scored: rows.filter(r => r.scored).length,
-    partial: rows.filter(r => r.partial).length,
+    legacy: rows.filter(r => r.legacy).length,
     unscored: rows.filter(r => !r.scored).length,
-    below_threshold: rows.filter(r => r.composite != null && r.coverage < TH).length,
-    ranked: rows.filter(r => r.rank != null).length,
+    ranked: rows.filter(r => r.overall != null).length,
   },
-  bands: outBands.map(b => ({ label: b.label, fields: b.fields, count: b.count, ranked: b.ranked })),
   industries: rows,
 };
 fs.writeFileSync(OUT_JSON, JSON.stringify(out, null, 1) + '\n');
 
-// ---------------- ranked view ----------------
+// ---------------- view ----------------
 const esc = s => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-const FIELD_LABEL = { growth: 'growth', capex: 'capex', rd: 'R&D', cyclicity: 'cyclicity' };
+const num = (v, d = 1) => (v == null ? '<span class="dim">—</span>' : v.toFixed(d));
 
-// short label for the table cell · full plain-English meaning for the legend
-const CYC = {
-  1: ['always on', 'c1'], 2: ['mostly steady', 'c2'], 3: ['moves with economy', 'c3'],
-  4: ['big swings', 'c4'], 5: ['feast or famine', 'c5'],
-};
-const CAPEX = {
-  1: ['no factory', 'c1'], 2: ['simple assembly', 'c2'], 3: ['a real factory', 'c3'],
-  4: ['a big plant', 'c4'], 5: ['a giant plant', 'c5'],
-};
-const RD = {
-  1: ['no research', 'c1'], 2: ['licensed design', 'c2'], 3: ['in-house engineering', 'c3'],
-  4: ['own designs', 'c4'], 5: ['invents tech', 'c5'],
-};
+const ranked = rows.filter(r => r.overall != null).sort((a, b) => b.overall - a.overall);
+const structuralRanked = rows.filter(r => r.structural_score != null).sort((a, b) => b.structural_score - a.structural_score);
+const currentRanked = rows.filter(r => r.current_score != null).sort((a, b) => b.current_score - a.current_score);
+const riskRanked = rows.filter(r => r.risk_adjusted != null).sort((a, b) => b.risk_adjusted - a.risk_adjusted);
+const unscored = rows.filter(r => r.overall == null);
 
-const LEGEND = [
-  ['Cyclicity', 'How much demand moves when the economy moves',
-    ['Sold on contract or set by a regulator — a slump delays orders, it doesn\'t cancel them',
-     'People keep buying through a downturn; budgets get trimmed at the edges',
-     'Rises and falls roughly with the wider economy',
-     'Orders swing far more than the economy — spending gets postponed, then rushes back',
-     'Everyone expands at once, then the market clears through a price crash']],
-  ['Capex', 'How much money you must sink into machines and buildings before you can sell anything',
-    ['Desk work — software, design, services',
-     'Simple assembly of parts made elsewhere',
-     'A real factory with equipment',
-     'A big plant, heavy equipment, long lead times',
-     'Enormous plant, years to build, huge money at risk']],
-  ['R&amp;D', 'How much of the thinking is done in-house rather than copied or bought',
-    ['None — you make what you are told to make',
-     'Design is licensed or copied from someone else',
-     'You engineer and improve the process yourself',
-     'You design your own products',
-     'You invent the technology others have to license']],
-];
-
-function scaleCell(value, map) {
-  if (value == null) return '<span class="dim">—</span>';
-  const hit = map[Number(value)];
-  if (!hit) return esc(value);
-  return `${esc(value)}<span class="scale ${hit[1]}">${esc(hit[0])}</span>`;
-}
-
-function rowHtml(r) {
-  const bar = r.composite == null ? '' :
-    `<span class="scorebar"><span style="width:${Math.round(r.composite * 100)}%"></span></span>`;
-  return `<tr>
-<td class="c">${r.rank ?? '—'}</td>
-<td><b>${esc(r.title)}</b><div class="slug">${esc(r.group || '')}</div></td>
-<td class="c">${r.growth_pct == null ? '<span class="dim">—</span>' : esc(r.growth_pct) + '%'}</td>
-<td class="c">${r.capex_pct != null ? esc(r.capex_pct) + '%' : scaleCell(r.capex_intensity, CAPEX)}</td>
-<td class="c">${r.rd_pct != null ? esc(r.rd_pct) + '%' : scaleCell(r.rd_intensity, RD)}</td>
-<td class="c">${scaleCell(r.cyclicity, CYC)}</td>
-<td class="c">${r.composite == null ? '<span class="dim">—</span>' : r.composite.toFixed(3)}${bar}</td>
-</tr>`;
-}
-
-let n = 0;
-const sections = outBands.map(b => {
-  n += 1;
-  const fieldList = b.fields.length ? b.fields.map(f => FIELD_LABEL[f] || f).join(' · ') : 'no score block yet';
-  const note = b.coverage_pct == null
-    ? `${b.count} industries · ${fieldList}`
-    : `${b.count} ${b.count === 1 ? 'industry' : 'industries'} · scored on ${fieldList}`;
-  return `<div class="sec-head"><span class="sec-num">${String(n).padStart(2, '0')}</span>
-<span class="sec-title">${esc(b.label)}</span><span class="sec-note">${esc(note)}</span></div>
-<div class="table-wrap"><div class="table-scroll"><table class="data">
-<thead><tr><th>#</th><th>Industry</th><th>Growth</th><th>Capex / rev</th><th>R&amp;D / rev</th><th>Cyclicity</th><th>Score</th></tr></thead>
+const table = (list, cols) => `<div class="table-wrap"><div class="table-scroll"><table class="data">
+<thead><tr><th>#</th><th>Industry</th>${cols.map(c => `<th>${c.h}</th>`).join('')}</tr></thead>
 <tbody>
-${b.rows.map(rowHtml).join('\n')}
+${list.map((r, i) => `<tr>
+<td class="c">${i + 1}</td>
+<td><b>${esc(r.title)}</b><div class="slug">${esc(r.group || '')}</div></td>
+${cols.map(c => `<td class="c">${c.f(r)}</td>`).join('')}
+</tr>`).join('\n')}
 </tbody></table></div></div>`;
-}).join('\n\n');
+
+const covCell = r => `${r.coverage}%${r.provisional ? '<span class="scale c4">provisional</span>' : ''}`;
 
 const html = `<!DOCTYPE html>
 <html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -285,60 +238,79 @@ const html = `<!DOCTYPE html>
 /* page-specific layout only */
 .dim { color: var(--text-dim); opacity: .6; }
 .slug { font-family: var(--font-mono); font-size: 10px; color: var(--text-dim); margin-top: 2px; }
-.scorebar { display: inline-block; width: 54px; height: 5px; background: var(--surface-recessed); border-radius: 3px; margin-left: 8px; vertical-align: middle; }
-.scorebar > span { display: block; height: 100%; background: var(--gold); border-radius: 3px; }
-.table-scroll { overflow: auto; max-height: 60vh; }
 .scale { display: inline-block; font-family: var(--font-mono); font-size: 9px; letter-spacing: .3px; margin-left: 5px; padding: 0 5px; border-radius: 3px; border: 1px solid; white-space: nowrap; }
 .scale.c1 { color: var(--green); border-color: var(--green); background: var(--green-dim); }
 .scale.c2 { color: var(--blue); border-color: var(--blue); background: var(--blue-dim); }
 .scale.c3 { color: var(--gold); border-color: var(--gold); background: var(--gold-dim); }
-.scale.c4 { color: var(--high); border-color: var(--high); background: var(--high-dim); }
-.scale.c5 { color: var(--high); border-color: var(--high); background: var(--high-dim); font-weight: 700; }
+.scale.c4, .scale.c5 { color: var(--high); border-color: var(--high); background: var(--high-dim); }
+.table-scroll { overflow: auto; max-height: 60vh; }
 .legend-table td { font-size: 11.5px; line-height: 1.45; vertical-align: top; min-width: 130px; }
-.legend-table td.lv { color: var(--text-dim); }
 .legend-table .lvnum { display: inline-block; font-family: var(--font-mono); font-size: 9.5px; font-weight: 700; margin-right: 5px; padding: 0 5px; border-radius: 3px; border: 1px solid currentColor; }
-.legend-table .lv1 { color: var(--green); } .legend-table .lv2 { color: var(--blue); }
-.legend-table .lv3 { color: var(--gold); } .legend-table .lv4, .legend-table .lv5 { color: var(--high); }
+.legend-table .lv1 { color: var(--high); } .legend-table .lv2 { color: var(--gold); }
+.legend-table .lv3 { color: var(--blue); } .legend-table .lv4 { color: var(--green); } .legend-table .lv5 { color: var(--green); }
 </style></head><body><div class="container">
 <header class="masthead">
   <div class="eyebrow">Industry BOM Registry &middot; derived view</div>
   <h1>Industries <span>ranked</span></h1>
-  <div class="subtitle">${out.counts.scored} scored across ${outBands.filter(b => b.coverage_pct != null).length} coverage bands &middot; ${out.counts.unscored} not yet scored &middot; growth-led composite</div>
+  <div class="subtitle">${out.counts.ranked} ranked &middot; ${out.counts.unscored} not yet scored &middot; hierarchical category scoring, overall 0&ndash;100</div>
 </header>
 
 <div class="metric-cards">
   <div class="metric-card"><div class="metric-card__val">${out.counts.industries}</div><div class="metric-card__label">Industries</div><div class="metric-card__sub">in the registry</div></div>
-  <div class="metric-card metric-card--gold"><div class="metric-card__val">${out.counts.scored}</div><div class="metric-card__label">Scored</div><div class="metric-card__sub">have a score block</div></div>
-  <div class="metric-card"><div class="metric-card__val">${out.counts.partial}</div><div class="metric-card__label">Partial</div><div class="metric-card__sub">missing one or more fields</div></div>
+  <div class="metric-card metric-card--gold"><div class="metric-card__val">${out.counts.ranked}</div><div class="metric-card__label">Ranked</div><div class="metric-card__sub">have a category score</div></div>
+  <div class="metric-card"><div class="metric-card__val">${out.counts.legacy}</div><div class="metric-card__label">Legacy blocks</div><div class="metric-card__sub">need rescoring</div></div>
   <div class="metric-card"><div class="metric-card__val">${out.counts.unscored}</div><div class="metric-card__label">Not yet scored</div><div class="metric-card__sub">backfill pending</div></div>
 </div>
 
 <div class="sec-head"><span class="sec-num">00</span><span class="sec-title">How to read the scores</span>
-<span class="sec-note">1 = best &rarr; 5 = worst, on every scale</span></div>
+<span class="sec-note">1 = very unattractive &rarr; 5 = highly attractive, on every parameter</span></div>
 <div class="table-wrap"><div class="table-scroll" style="max-height:none"><table class="data legend-table">
-<thead><tr><th>Scale</th><th>1 &mdash; best</th><th>2</th><th>3</th><th>4</th><th>5 &mdash; worst</th></tr></thead>
-<tbody>
-${LEGEND.map(([name, blurb, levels]) => `<tr>
-<td><b>${name}</b><div class="slug">${blurb}</div></td>
-${levels.map((t, k) => `<td class="lv lv${k + 1}"><span class="lvnum">${k + 1}</span>${t}</td>`).join('')}
-</tr>`).join('\n')}
+<thead><tr><th>Score</th><th>Meaning</th></tr></thead><tbody>
+${Object.entries(P.scale || {}).map(([k, v]) => `<tr><td class="c"><span class="lvnum lv${k}">${k}</span></td><td>${esc(v)}</td></tr>`).join('\n')}
 </tbody></table></div></div>
 
-<p class="lead">Each coverage band is ranked <b>separately</b>. A page carrying only some of the four fields is never compared against a fully scored one &mdash; its score reflects only what is known, so mixing them in a single table would rank evidence rather than industries.</p>
+<div class="sec-head"><span class="sec-num">01</span><span class="sec-title">Overall industry score</span>
+<span class="sec-note">${CATS.map(c => `${Math.round(c.weight * 100)}% ${c.id}`).join(' &middot; ')}</span></div>
+${table(ranked, [
+  { h: 'Overall', f: r => num(r.overall) },
+  { h: 'Structural', f: r => num(r.structural_score) },
+  { h: 'Current', f: r => num(r.current_score) },
+  { h: 'Risk (1–5)', f: r => num(r.risk, 1) },
+  { h: 'Coverage', f: covCell },
+])}
 
-${sections}
+<div class="sec-head"><span class="sec-num">02</span><span class="sec-title">Structural attractiveness</span>
+<span class="sec-note">durable 5&ndash;10 year economics &middot; opportunity, economics, competitive, value chain, capital, technology</span></div>
+${table(structuralRanked, [{ h: 'Structural', f: r => num(r.structural_score) }, { h: 'Coverage', f: r => num(r.structural ? r.structural.coverage : null, 0) + '%' }])}
+
+<div class="sec-head"><span class="sec-num">03</span><span class="sec-title">Current investment opportunity</span>
+<span class="sec-note">cycle position and valuation &mdash; a different question from structural quality</span></div>
+${table(currentRanked, [{ h: 'Current', f: r => num(r.current_score) }, { h: 'Coverage', f: r => num(r.current ? r.current.coverage : null, 0) + '%' }])}
+
+<div class="sec-head"><span class="sec-num">04</span><span class="sec-title">Risk-adjusted opportunity</span>
+<span class="sec-note">structural score &times; (risk &divide; 5) &mdash; our formula, not the framework's</span></div>
+${table(riskRanked, [{ h: 'Risk-adj', f: r => num(r.risk_adjusted) }, { h: 'Risk (1–5)', f: r => num(r.risk, 1) }])}
+
+<div class="sec-head"><span class="sec-num">05</span><span class="sec-title">Not yet scored</span>
+<span class="sec-note">${unscored.length} industries &mdash; backfill pending</span></div>
+<div class="table-wrap"><div class="table-scroll"><table class="data">
+<thead><tr><th>Industry</th><th>Status</th></tr></thead><tbody>
+${unscored.map(r => `<tr><td><b>${esc(r.title)}</b><div class="slug">${esc(r.group || '')}</div></td><td>${r.legacy ? '<span class="scale c4">legacy block — needs rescoring</span>' : '<span class="dim">no score block</span>'}</td></tr>`).join('\n')}
+</tbody></table></div></div>
 
 <div class="footnote">
-  <b>Parameters in force</b> (${'ranking.config.json'}): ${Math.round(W.growth*100)}% growth &middot; ${Math.round(W.capex*100)}% capex &middot; ${Math.round(W.rd*100)}% R&amp;D &middot; ${Math.round(W.cyclicity*100)}% cyclicity, over the fields a page actually carries, then renormalised by their weight.
-  Anchors: growth 0%&rarr;0 and ${P.anchors.growth_max_pct}%+&rarr;1; capex/revenue 0%&rarr;0 and ${P.anchors.capex_max_pct}%+&rarr;1 (${P.directions.capex === 'drag' ? 'read as a capital drag &mdash; heavier scores lower' : 'barrier reading &mdash; heavier scores higher'}); R&amp;D/revenue 0%&rarr;0 and ${P.anchors.rd_max_pct}%+&rarr;1; the 1&ndash;5 ratings &rarr; (x&minus;1)/4; cyclicity inverted (5&minus;x)/4.
-  Where both a ratio and a rating exist the ratio is used. A missing field is excluded, never imputed.
-  Values come from each entry page&rsquo;s own score block; every figure keeps its label. Generated ${out.generated}.
+  <b>Framework</b>: category score = &Sigma;(parameter weight &times; parameter score) &divide; &Sigma;(weights of supported parameters);
+  overall = &Sigma;(category weight &times; category score &divide; 5) &times; 100, renormalised over the categories that are actually supported.
+  Coverage = supported category weight &divide; planned weight. A missing value is shown as UNAVAILABLE and never imputed &mdash; coverage is reported next to the score and is
+  neither a bonus nor a penalty. Scores below ${P.provisional_below_coverage_pct}% coverage are marked provisional.
+  Structural, current-opportunity and risk-adjusted are separate lenses: an industry can be structurally excellent and currently expensive.
+  Risk-adjusted uses structural &times; (risk &divide; 5), which is our construction, not the framework's.
+  Generated ${out.generated}.
 </div>
 </div></body></html>`;
 
 fs.mkdirSync('views', { recursive: true });
 fs.writeFileSync(OUT_VIEW, html);
 
-console.log(`industry-ranking.json — ${out.counts.scored} scored (${out.counts.partial} partial), ${out.counts.unscored} unscored of ${out.counts.industries}`);
-console.log('bands: ' + outBands.map(b => `${b.label} (${b.count})`).join(' · '));
+console.log(`industry-ranking.json — ${out.counts.ranked} ranked, ${out.counts.legacy} legacy, ${out.counts.unscored} unscored of ${out.counts.industries}`);
 if (problems.length) console.log('WARN:\n  ' + problems.join('\n  '));
