@@ -74,10 +74,10 @@
  },
  "counts": {
   "industries": 77,
-  "scored": 10,
+  "scored": 15,
   "legacy": 0,
-  "unscored": 67,
-  "ranked": 10
+  "unscored": 62,
+  "ranked": 15
  },
  "industries": [
   {
@@ -389,7 +389,102 @@
    "slug": "green-hydrogen-electrolyser-india",
    "title": "India Green Hydrogen & Electrolyser Manufacturing",
    "group": "Green Hydrogen & Clean Fuels",
-   "scored": false
+   "scored": true,
+   "as_of": "2026-10-30",
+   "categories": {
+    "economics": {
+     "name": "Industry economics & value creation",
+     "weight": 0.2,
+     "lens": "structural",
+     "score": 2,
+     "from": "category",
+     "basis": "Green hydrogen is still 2-3x grey on delivered cost, so project economics rest on subsidy, the ISTS waiver and offtake contracts rather than on the technology; stack makers and BoP suppliers earn thin, competitive conversion margins."
+    },
+    "opportunity": {
+     "name": "Market opportunity & structural growth",
+     "weight": 0.15,
+     "lens": "structural",
+     "score": 4,
+     "from": "category",
+     "basis": "Green-hydrogen market USD 1.95 bn (2025) to USD 9.75 bn (2030) at 38.0% CAGR on IMARC endpoints, with 862,000 t/yr of demand and 3,000 MW/yr of electrolyser capacity awarded against ~8,000 t/yr and ~2 GW commissioned."
+    },
+    "competitive": {
+     "name": "Competitive structure & moat",
+     "weight": 0.15,
+     "lens": "structural",
+     "score": 3,
+     "from": "category",
+     "basis": "Stack manufacturing is crowded — L&T, Reliance, Adani, Waaree, Advait, BHEL — but almost every one licenses stack IP from Nel, McPhy, thyssenkrupp nucera or HydrogenPro, so rivalry is on balance sheet and land, not on technology."
+    },
+    "cycle": {
+     "name": "Current opportunity & cycle position",
+     "weight": 0.15,
+     "lens": "current",
+     "score": 2,
+     "from": "category",
+     "basis": "Earliest-stage of the three energy transitions on this registry: awards are far ahead of delivery, SIGHT Tranche-I plants slipped into 2027, and no plant was fully commissioned as of Jul-2026."
+    },
+    "valuation": {
+     "name": "Valuation & market expectations",
+     "weight": 0.15,
+     "lens": "current",
+     "score": null,
+     "from": null,
+     "basis": "No industry-level valuation data in the registry — the page carries no sector multiple series, and the pure-play stack makers are unlisted or foreign-listed."
+    },
+    "value_chain": {
+     "name": "Value-chain position & bottlenecks",
+     "weight": 0.1,
+     "lens": "structural",
+     "score": 3,
+     "from": "category",
+     "basis": "Balance of plant is 68-76% of electrolyser cost and already ~45% domestic, which is real Indian value capture; membranes, catalysts, PTL, bipolar plates, critical minerals and stack IP all leak offshore."
+    },
+    "capital": {
+     "name": "Capital intensity & financial quality",
+     "weight": 0.05,
+     "lens": "structural",
+     "score": 2,
+     "from": "category",
+     "basis": "Electrolyser and project capex is heavy and front-loaded against revenue that arrives after commissioning, and viability depends on a 25-year waiver and SIGHT subsidy — a financing structure, not a market one."
+    },
+    "technology": {
+     "name": "Technology & innovation",
+     "weight": 0.05,
+     "lens": "structural",
+     "score": 3,
+     "from": "category",
+     "basis": "Pressurised alkaline is mature and PEM is scaling, with SOEC and AEM at pilot; India can assemble and integrate both but does not own the membrane, catalyst or stack design."
+    },
+    "risk": {
+     "name": "Risk & resilience",
+     "weight": null,
+     "lens": "risk",
+     "score": 2,
+     "from": "category",
+     "basis": "Demand creation is unresolved and named as the key bottleneck by SIGHT itself; iridium (~7.5 t/yr globally) and platinum are structural constraints with no Indian reserves; and SIGHT execution has slipped once already."
+    }
+   },
+   "structural": {
+    "score": 57.1,
+    "coverage": 100
+   },
+   "current": {
+    "score": 40,
+    "coverage": 50
+   },
+   "risk": 2,
+   "risk_adjusted": 22.8,
+   "overall": 54.1,
+   "coverage": 85,
+   "provisional": false,
+   "notes": "This run REPLACES the prior Market & growth block, which rested on a tier-3 source and reported 3-year and last-year splits as UNAVAILABLE. Opportunity now uses the IMARC series (USD 1.95 bn 2025 to USD 9.75 bn 2030, 38.0% CAGR) and the conflicting NITI Aayog / third-house estimates are shown as a range rather than averaged. Valuation left UNAVAILABLE — no industry valuation series.",
+   "overall_rank": 12,
+   "risk_adjusted_rank": 12,
+   "structural_score": 57.1,
+   "current_score": 40,
+   "structural_score_rank": 11,
+   "current_score_rank": 6
   },
   {
    "slug": "guns-india",
@@ -497,11 +592,11 @@
    "coverage": 85,
    "provisional": false,
    "notes": "Scored against 'Industry-Level Investment Parameters & Scoring Architecture'. Opportunity uses the same HVDC series as the Market & growth digest block, with the conflicting second series disclosed rather than averaged. Valuation left UNAVAILABLE.",
-   "overall_rank": 8,
-   "risk_adjusted_rank": 9,
+   "overall_rank": 10,
+   "risk_adjusted_rank": 13,
    "structural_score": 57.1,
    "current_score": 60,
-   "structural_score_rank": 8,
+   "structural_score_rank": 12,
    "current_score_rank": 3
   },
   {
@@ -601,10 +696,10 @@
    "coverage": 70,
    "provisional": false,
    "notes": "Scored against 'Industry-Level Investment Parameters & Scoring Architecture'. Cycle position and valuation left UNAVAILABLE — the registry carries no cycle or valuation data for these industries.",
-   "overall_rank": 9,
-   "risk_adjusted_rank": 10,
+   "overall_rank": 13,
+   "risk_adjusted_rank": 14,
    "structural_score": 52.9,
-   "structural_score_rank": 9
+   "structural_score_rank": 13
   },
   {
    "slug": "launch-vehicles-propulsion-india",
@@ -866,7 +961,7 @@
    "risk_adjusted_rank": 7,
    "structural_score": 61.4,
    "current_score": 60,
-   "structural_score_rank": 7,
+   "structural_score_rank": 9,
    "current_score_rank": 5
   },
   {
@@ -1253,10 +1348,10 @@
    "coverage": 70,
    "provisional": false,
    "notes": "Scored against 'Industry-Level Investment Parameters & Scoring Architecture'. Cycle position and valuation left UNAVAILABLE — the registry carries no cycle or valuation data for these industries.",
-   "overall_rank": 10,
+   "overall_rank": 14,
    "risk_adjusted_rank": 8,
    "structural_score": 51.4,
-   "structural_score_rank": 10
+   "structural_score_rank": 15
   },
   {
    "slug": "shakti-ew-india",
@@ -1274,7 +1369,102 @@
    "slug": "silver-paste-metallisation-india",
    "title": "Silver Paste & Metallisation",
    "group": "Renewable Energy",
-   "scored": false
+   "scored": true,
+   "as_of": "2026-10-30",
+   "categories": {
+    "economics": {
+     "name": "Industry economics & value creation",
+     "weight": 0.2,
+     "lens": "structural",
+     "score": 4,
+     "from": "category",
+     "basis": "Formulation IP and qualification lock-in give the paste makers real pricing power, and the cost base is a pass-through metal price; the economics are strong — but they accrue to Chinese-owned producers, not to any Indian entity."
+    },
+    "opportunity": {
+     "name": "Market opportunity & structural growth",
+     "weight": 0.15,
+     "lens": "structural",
+     "score": 3,
+     "from": "category",
+     "basis": "India silver-paste imports US$184.33 mn in FY26, up 64.51% YoY from an implied US$112.05 mn in FY25, tracking cell capacity toward ~103 GW by Dec-2026 — fast growth on a small pool whose per-watt silver intensity is being thinned by substitution."
+    },
+    "competitive": {
+     "name": "Competitive structure & moat",
+     "weight": 0.15,
+     "lens": "structural",
+     "score": 3,
+     "from": "category",
+     "basis": "An effective duopoly-plus: China is 90-92% of global PV paste output and the top three Chinese-owned producers hold close to 70%, but customers are price-sensitive and subsidy-distorted, and Chinese paste is optimised for Chinese cell lines."
+    },
+    "cycle": {
+     "name": "Current opportunity & cycle position",
+     "weight": 0.15,
+     "lens": "current",
+     "score": 2,
+     "from": "category",
+     "basis": "Per-unit demand is in a substitution down-cycle even as Indian cell volumes rise: PV silver demand fell 6% in 2025 and is forecast down 19% in 2026, and spot silver at ~$61/oz is roughly half its Jan-2026 record, so revenue is volume-led and price-deflating."
+    },
+    "valuation": {
+     "name": "Valuation & market expectations",
+     "weight": 0.15,
+     "lens": "current",
+     "score": null,
+     "from": null,
+     "basis": "No industry-level valuation data in the registry — the page carries no sector multiple series, and the leading paste makers are not NSE/BSE listed."
+    },
+    "value_chain": {
+     "name": "Value-chain position & bottlenecks",
+     "weight": 0.1,
+     "lens": "structural",
+     "score": 2,
+     "from": "category",
+     "basis": "India captures only the upstream metal (Hindustan Zinc, Vedanta); powder, frit, vehicle, formulation, screens and printers are all imported, so domestic value addition at this node is close to zero."
+    },
+    "capital": {
+     "name": "Capital intensity & financial quality",
+     "weight": 0.05,
+     "lens": "structural",
+     "score": 4,
+     "from": "category",
+     "basis": "Paste plants are formulation-led rather than capital-led — modest mixing and milling capex against a high-value product — so capital is not the barrier; IP, qualification and silver access are."
+    },
+    "technology": {
+     "name": "Technology & innovation",
+     "weight": 0.05,
+     "lens": "structural",
+     "score": 2,
+     "from": "category",
+     "basis": "The node is on the wrong side of the transition: LECO, seed-and-plate copper and full copper metallisation all reduce silver per watt, and ITRPV sees HJT silver-based metallisation falling from ~75% of production in 2025 to ~10% by 2036."
+    },
+    "risk": {
+     "name": "Risk & resilience",
+     "weight": null,
+     "lens": "risk",
+     "score": 2,
+     "from": "category",
+     "basis": "DGFT silver-bar restrictions and a 15% duty, 90-92% Chinese concentration, a technology roadmap explicitly designed to remove the product, and no domestic supplier to fall back on."
+    }
+   },
+   "structural": {
+    "score": 62.9,
+    "coverage": 100
+   },
+   "current": {
+    "score": 40,
+    "coverage": 50
+   },
+   "risk": 2,
+   "risk_adjusted": 25.2,
+   "overall": 58.8,
+   "coverage": 85,
+   "provisional": false,
+   "notes": "Opportunity uses the same series as the Market & growth digest block (DGFT silver HS-category imports: US$184.33 mn FY26 vs an implied US$112.05 mn FY25, +64.51%). Valuation left UNAVAILABLE — no industry valuation series, and the pure-plays are foreign-listed. The CSE import line is an HS proxy, so it overstates paste narrowly and understates it if paste enters under a different code.",
+   "overall_rank": 9,
+   "risk_adjusted_rank": 10,
+   "structural_score": 62.9,
+   "current_score": 40,
+   "structural_score_rank": 8,
+   "current_score_rank": 9
   },
   {
    "slug": "smart-meters-india",
@@ -1286,19 +1476,304 @@
    "slug": "smr-india",
    "title": "India Small Modular Reactor",
    "group": "Nuclear Energy",
-   "scored": false
+   "scored": true,
+   "as_of": "2026-10-30",
+   "categories": {
+    "economics": {
+     "name": "Industry economics & value creation",
+     "weight": 0.2,
+     "lens": "structural",
+     "score": 2,
+     "from": "category",
+     "basis": "Nothing is yet earning: the demonstration units are sanctioned projects, not products, and per-MW cost of Rs 27.1 cr for BSMR-200 and Rs 63.6 cr for the twin SMR-55 is well above large-PHWR economics, so viability depends on financing terms rather than on unit margin."
+    },
+    "opportunity": {
+     "name": "Market opportunity & structural growth",
+     "weight": 0.15,
+     "lens": "structural",
+     "score": 3,
+     "from": "category",
+     "basis": "Nuclear capacity 8.78 GW (Oct-2026) to ~22 GW by 2031-32 and 100 GW by 2047 (~16.5% and ~12.3% CAGR) on a Rs 15 lakh cr investment frame, but SMR-specific revenue is limited to three demonstration units worth Rs 13,280 cr by 2033 — a large build-out with a very thin near-term SMR order book."
+    },
+    "competitive": {
+     "name": "Competitive structure & moat",
+     "weight": 0.15,
+     "lens": "structural",
+     "score": 3,
+     "from": "category",
+     "basis": "Design and heavy forging are single-source (BARC/NPCIL; the L&T-NPCIL JV) and reactor C&I is ECIL alone, which is highly concentrated — but with no commercial order book the concentration buys incumbents position, not pricing power."
+    },
+    "cycle": {
+     "name": "Current opportunity & cycle position",
+     "weight": 0.15,
+     "lens": "current",
+     "score": 2,
+     "from": "category",
+     "basis": "The earliest point on any curve in the registry: DPRs released, AEC/ETG clearance obtained, but administrative and financial sanction for BSMR-200 still pending and no construction start."
+    },
+    "valuation": {
+     "name": "Valuation & market expectations",
+     "weight": 0.15,
+     "lens": "current",
+     "score": null,
+     "from": null,
+     "basis": "No industry-level valuation data in the registry — the page carries no sector multiple series, and the core value-chain participants (NPCIL, BARC, NFC, ECIL) are unlisted."
+    },
+    "value_chain": {
+     "name": "Value-chain position & bottlenecks",
+     "weight": 0.1,
+     "lens": "structural",
+     "score": 3,
+     "from": "category",
+     "basis": "The nuclear island and fuel cycle are indigenous and capture the deepest moats; turbine island is BHEL-dominated; reactor C&I is high-margin but unlisted; EPC is thin-margin. Localisation is real, unlike in most of the registry."
+    },
+    "capital": {
+     "name": "Capital intensity & financial quality",
+     "weight": 0.05,
+     "lens": "structural",
+     "score": 2,
+     "from": "category",
+     "basis": "Rs 20,000 cr of mission funding against a Rs 15-25 lakh cr requirement, 60-72 month construction from financial approval, and a liability regime still being amended — capital is the binding constraint, not engineering."
+    },
+    "technology": {
+     "name": "Technology & innovation",
+     "weight": 0.05,
+     "lens": "structural",
+     "score": 3,
+     "from": "category",
+     "basis": "Heavy forging and steam generators are PHWR-proven and ApuRVA alloy is a genuine indigenous material step, but SMR module integration is early-commercial and the 5 MWth HTGCR is a pilot."
+    },
+    "risk": {
+     "name": "Risk & resilience",
+     "weight": null,
+     "lens": "risk",
+     "score": 2,
+     "from": "category",
+     "basis": "Licensing and liability (SHANTI Act implementation), a single nuclear-grade forging shop, Class-1 skilled-trade shortages, public acceptance, and a financing framework that still excludes nuclear from green-finance rules."
+    }
+   },
+   "structural": {
+    "score": 52.9,
+    "coverage": 100
+   },
+   "current": {
+    "score": 40,
+    "coverage": 50
+   },
+   "risk": 2,
+   "risk_adjusted": 21.2,
+   "overall": 50.6,
+   "coverage": 85,
+   "provisional": false,
+   "notes": "SMR-specific revenue is UNAVAILABLE — no unit is under construction and no commercial price exists, so opportunity is scored on the nuclear build-out frame and the three sanctioned demonstration projects rather than on an invented SMR market size. Valuation left UNAVAILABLE — no industry valuation series and the core participants are unlisted.",
+   "overall_rank": 15,
+   "risk_adjusted_rank": 15,
+   "structural_score": 52.9,
+   "current_score": 40,
+   "structural_score_rank": 14,
+   "current_score_rank": 7
   },
   {
    "slug": "solar-cells-india",
    "title": "Solar Cell Fabrication",
    "group": "Renewable Energy",
-   "scored": false
+   "scored": true,
+   "as_of": "2026-10-30",
+   "categories": {
+    "economics": {
+     "name": "Industry economics & value creation",
+     "weight": 0.2,
+     "lens": "structural",
+     "score": 3,
+     "from": "category",
+     "basis": "ALCM/DCR premiums give domestic cells a protected realisation and early movers ran 50-60% utilisation at 4-5 year payback; CRISIL expects payback to stretch 1-2 years as capacity doubles, so the return is policy-made rather than structural."
+    },
+    "opportunity": {
+     "name": "Market opportunity & structural growth",
+     "weight": 0.15,
+     "lens": "structural",
+     "score": 4,
+     "from": "category",
+     "basis": "Cell demand of 60-65 GW in FY27 against 36.6 GW of capacity, with imported cells at US$3.06 bn in FY26 (+86% YoY, 28.6% two-year CAGR) and ALCM shifting ~half of demand to domestic supply — a large, policy-locked substitution pool."
+    },
+    "competitive": {
+     "name": "Competitive structure & moat",
+     "weight": 0.15,
+     "lens": "structural",
+     "score": 3,
+     "from": "category",
+     "basis": "Concentrated in roughly fifteen players with Premier at 10.6 GW, Adani 10 GW and Waaree 5.4 GW, but capacity rising from 26.4 GW in Jan-2026 to ~103 GW by Dec-2026 means rivalry is about to intensify sharply."
+    },
+    "cycle": {
+     "name": "Current opportunity & cycle position",
+     "weight": 0.15,
+     "lens": "current",
+     "score": 2,
+     "from": "category",
+     "basis": "Capacity is being commissioned into a demand pool that is growing slower than capacity, with CRISIL flagging utilisation and realisation pressure and possible ALCM exemptions that would remove protected demand."
+    },
+    "valuation": {
+     "name": "Valuation & market expectations",
+     "weight": 0.15,
+     "lens": "current",
+     "score": null,
+     "from": null,
+     "basis": "No industry-level valuation data in the registry — the page carries no sector multiple series."
+    },
+    "value_chain": {
+     "name": "Value-chain position & bottlenecks",
+     "weight": 0.1,
+     "lens": "structural",
+     "score": 3,
+     "from": "category",
+     "basis": "The conversion step is now genuinely Indian; the wafer (>99% imported), polysilicon, silver paste (~90% imported), screens and >90% of cell-line equipment are not, so the localisation has moved one step up the chain rather than closing it."
+    },
+    "capital": {
+     "name": "Capital intensity & financial quality",
+     "weight": 0.05,
+     "lens": "structural",
+     "score": 2,
+     "from": "category",
+     "basis": "Rs 470 cr/GW of capex, long qualification cycles and rising working capital, with payback stretching as capacity lands; only PLI-backed and backward-integrated balance sheets can carry the next wave."
+    },
+    "technology": {
+     "name": "Technology & innovation",
+     "weight": 0.05,
+     "lens": "structural",
+     "score": 4,
+     "from": "category",
+     "basis": "India executed the PERC-to-TOPCon transition in-country and TOPCon now dominates listed capacity, with HJT lines already qualified — but the process recipes and tools are bought in, so the capability is operational rather than proprietary."
+    },
+    "risk": {
+     "name": "Risk & resilience",
+     "weight": null,
+     "lens": "risk",
+     "score": 2,
+     "from": "category",
+     "basis": "US AD ~123% / CVD ~126% on Indian cells, >99% wafer dependence on China, and a demand floor that rests on ALCM thresholds, the 31-Dec-2026 net-metering cut-off and exemption decisions."
+    }
+   },
+   "structural": {
+    "score": 64.3,
+    "coverage": 100
+   },
+   "current": {
+    "score": 40,
+    "coverage": 50
+   },
+   "risk": 2,
+   "risk_adjusted": 25.7,
+   "overall": 60,
+   "coverage": 85,
+   "provisional": false,
+   "notes": "Opportunity uses the same series as the Market & growth digest block (CRISIL demand of 60-65 GW FY27; Commerce/TradeStat imported-cell value US$3.06 bn FY26 with a 28.6% two-year CAGR). Valuation left UNAVAILABLE — the registry carries no industry valuation data.",
+   "overall_rank": 8,
+   "risk_adjusted_rank": 9,
+   "structural_score": 64.3,
+   "current_score": 40,
+   "structural_score_rank": 7,
+   "current_score_rank": 10
   },
   {
    "slug": "solar-pv-india",
    "title": "India Solar PV",
    "group": "Renewable Energy",
-   "scored": false
+   "scored": true,
+   "as_of": "2026-10-30",
+   "categories": {
+    "economics": {
+     "name": "Industry economics & value creation",
+     "weight": 0.2,
+     "lens": "structural",
+     "score": 3,
+     "from": "category",
+     "basis": "Module assembly is a competitive, thin-margin conversion business; the cell layer earns policy-protected premiums that CRISIL expects to compress as capacity quadruples; the developer annuity is contracted but capital-heavy."
+    },
+    "opportunity": {
+     "name": "Market opportunity & structural growth",
+     "weight": 0.15,
+     "lens": "structural",
+     "score": 4,
+     "from": "category",
+     "basis": "India solar market USD 10.4 bn (2023) to USD 24.9 bn (2030) at 13.4% nominal CAGR, with FY26 installations up 87.2% to 44.61 GW and a 262 GW module base sitting on a 36.6 GW cell base — committed growth with an upstream gap as the prize."
+    },
+    "competitive": {
+     "name": "Competitive structure & moat",
+     "weight": 0.15,
+     "lens": "structural",
+     "score": 2,
+     "from": "category",
+     "basis": "Module capacity of 262 GW against ~40 GW of annual demand implies 35-40% utilisation and commodity pricing; upstream cells, wafers and polysilicon are Chinese-concentrated, so domestic rivalry is destructive at the assembly end and absent at the top."
+    },
+    "cycle": {
+     "name": "Current opportunity & cycle position",
+     "weight": 0.15,
+     "lens": "current",
+     "score": 2,
+     "from": "category",
+     "basis": "Late-expansion, early-glut: module capacity is far ahead of demand, cell capacity is compounding toward ~103 GW by Dec-2026, and the US AD/CVD determinations of Oct-2026 remove an export outlet."
+    },
+    "valuation": {
+     "name": "Valuation & market expectations",
+     "weight": 0.15,
+     "lens": "current",
+     "score": null,
+     "from": null,
+     "basis": "No industry-level valuation data in the registry — the page carries no sector multiple series."
+    },
+    "value_chain": {
+     "name": "Value-chain position & bottlenecks",
+     "weight": 0.1,
+     "lens": "structural",
+     "score": 3,
+     "from": "category",
+     "basis": "Modules, BoS and EPC are domestic; cells are about half domestic and rising; wafers are ~100% and polysilicon ~100% imported, and paste, glass, encapsulant and cell-line equipment leak value offshore."
+    },
+    "capital": {
+     "name": "Capital intensity & financial quality",
+     "weight": 0.05,
+     "lens": "structural",
+     "score": 3,
+     "from": "category",
+     "basis": "Cell capex of ~Rs 470 cr/GW plus heavy working capital and a 4-5 year payback that CRISIL expects to stretch 1-2 years; the Rs 24,000 cr PLI offsets part of it and module assembly remains low-capex."
+    },
+    "technology": {
+     "name": "Technology & innovation",
+     "weight": 0.05,
+     "lens": "structural",
+     "score": 3,
+     "from": "category",
+     "basis": "PERC has been displaced by TOPCon inside India and HJT is next, so the migration is being executed locally — but on imported turnkey lines, so process capability sits with the equipment vendor."
+    },
+    "risk": {
+     "name": "Risk & resilience",
+     "weight": null,
+     "lens": "risk",
+     "score": 2,
+     "from": "category",
+     "basis": "US AD ~123% / CVD ~126% on Indian cells and modules with orders due 2-Nov-2026, Chinese curbs on equipment and wafer technology, and a demand mix that depends on ALMM/ALCM thresholds and net-metering exemptions."
+    }
+   },
+   "structural": {
+    "score": 60,
+    "coverage": 100
+   },
+   "current": {
+    "score": 40,
+    "coverage": 50
+   },
+   "risk": 2,
+   "risk_adjusted": 24,
+   "overall": 56.5,
+   "coverage": 85,
+   "provisional": false,
+   "notes": "Opportunity uses the same series as the Market & growth digest block (PS Market Research, base 2023, 13.4% nominal CAGR 2024-2030). Valuation left UNAVAILABLE — the registry carries no industry valuation data. The panels-only Grand View series (9.4%) is a different scope and is not blended into the score.",
+   "overall_rank": 11,
+   "risk_adjusted_rank": 11,
+   "structural_score": 60,
+   "current_score": 40,
+   "structural_score_rank": 10,
+   "current_score_rank": 8
   },
   {
    "slug": "steam-turbine-india",
