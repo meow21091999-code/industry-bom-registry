@@ -222,9 +222,11 @@
    "overall": 47.1,
    "coverage": 85,
    "confidence": {
-    "evidence": null,
-    "primary_source_pct": null,
-    "missing_critical": []
+    "evidence": 4,
+    "primary_source_pct": 88,
+    "missing_critical": [
+     "valuation"
+    ]
    },
    "value_capture": [],
    "provisional": false,
@@ -383,9 +385,11 @@
    "overall": 70.6,
    "coverage": 85,
    "confidence": {
-    "evidence": null,
-    "primary_source_pct": null,
-    "missing_critical": []
+    "evidence": 4,
+    "primary_source_pct": 67,
+    "missing_critical": [
+     "valuation"
+    ]
    },
    "value_capture": [],
    "provisional": false,
@@ -620,9 +624,11 @@
    "overall": 54.1,
    "coverage": 85,
    "confidence": {
-    "evidence": null,
-    "primary_source_pct": null,
-    "missing_critical": []
+    "evidence": 3,
+    "primary_source_pct": 58,
+    "missing_critical": [
+     "valuation"
+    ]
    },
    "value_capture": [],
    "provisional": false,
@@ -727,9 +733,11 @@
    "overall": 62.4,
    "coverage": 85,
    "confidence": {
-    "evidence": null,
-    "primary_source_pct": null,
-    "missing_critical": []
+    "evidence": 2,
+    "primary_source_pct": 36,
+    "missing_critical": [
+     "valuation"
+    ]
    },
    "value_capture": [],
    "provisional": false,
@@ -834,9 +842,11 @@
    "overall": 48.2,
    "coverage": 85,
    "confidence": {
-    "evidence": null,
-    "primary_source_pct": null,
-    "missing_critical": []
+    "evidence": 2,
+    "primary_source_pct": 33,
+    "missing_critical": [
+     "valuation"
+    ]
    },
    "value_capture": [],
    "provisional": false,
@@ -941,9 +951,11 @@
    "overall": 57.6,
    "coverage": 85,
    "confidence": {
-    "evidence": null,
-    "primary_source_pct": null,
-    "missing_critical": []
+    "evidence": 4,
+    "primary_source_pct": 86,
+    "missing_critical": [
+     "valuation"
+    ]
    },
    "value_capture": [],
    "provisional": false,
@@ -1161,9 +1173,11 @@
    "overall": 65.9,
    "coverage": 85,
    "confidence": {
-    "evidence": null,
-    "primary_source_pct": null,
-    "missing_critical": []
+    "evidence": 3,
+    "primary_source_pct": 50,
+    "missing_critical": [
+     "valuation"
+    ]
    },
    "value_capture": [],
    "provisional": false,
@@ -1268,9 +1282,11 @@
    "overall": 52.9,
    "coverage": 85,
    "confidence": {
-    "evidence": null,
-    "primary_source_pct": null,
-    "missing_critical": []
+    "evidence": 4,
+    "primary_source_pct": 60,
+    "missing_critical": [
+     "valuation"
+    ]
    },
    "value_capture": [],
    "provisional": false,
@@ -1375,9 +1391,11 @@
    "overall": 63.5,
    "coverage": 85,
    "confidence": {
-    "evidence": null,
-    "primary_source_pct": null,
-    "missing_critical": []
+    "evidence": 3,
+    "primary_source_pct": 50,
+    "missing_critical": [
+     "valuation"
+    ]
    },
    "value_capture": [],
    "provisional": false,
@@ -1482,9 +1500,11 @@
    "overall": 65.9,
    "coverage": 85,
    "confidence": {
-    "evidence": null,
-    "primary_source_pct": null,
-    "missing_critical": []
+    "evidence": 3,
+    "primary_source_pct": 42,
+    "missing_critical": [
+     "valuation"
+    ]
    },
    "value_capture": [],
    "provisional": false,
@@ -1589,9 +1609,11 @@
    "overall": 41.2,
    "coverage": 85,
    "confidence": {
-    "evidence": null,
-    "primary_source_pct": null,
-    "missing_critical": []
+    "evidence": 3,
+    "primary_source_pct": 54,
+    "missing_critical": [
+     "valuation"
+    ]
    },
    "value_capture": [],
    "provisional": false,
@@ -1832,9 +1854,11 @@
    "overall": 49.4,
    "coverage": 85,
    "confidence": {
-    "evidence": null,
-    "primary_source_pct": null,
-    "missing_critical": []
+    "evidence": 4,
+    "primary_source_pct": 69,
+    "missing_critical": [
+     "valuation"
+    ]
    },
    "value_capture": [],
    "provisional": false,
@@ -1939,9 +1963,11 @@
    "overall": 61.2,
    "coverage": 85,
    "confidence": {
-    "evidence": null,
-    "primary_source_pct": null,
-    "missing_critical": []
+    "evidence": 4,
+    "primary_source_pct": 75,
+    "missing_critical": [
+     "valuation"
+    ]
    },
    "value_capture": [],
    "provisional": false,
@@ -2052,9 +2078,11 @@
    "overall": 47.1,
    "coverage": 85,
    "confidence": {
-    "evidence": null,
-    "primary_source_pct": null,
-    "missing_critical": []
+    "evidence": 1,
+    "primary_source_pct": 0,
+    "missing_critical": [
+     "valuation"
+    ]
    },
    "value_capture": [],
    "provisional": false,
@@ -2159,9 +2187,11 @@
    "overall": 64.7,
    "coverage": 85,
    "confidence": {
-    "evidence": null,
-    "primary_source_pct": null,
-    "missing_critical": []
+    "evidence": 4,
+    "primary_source_pct": 67,
+    "missing_critical": [
+     "valuation"
+    ]
    },
    "value_capture": [],
    "provisional": false,
@@ -2493,8 +2523,8 @@
    "overall": 69,
    "coverage": 100,
    "confidence": {
-    "evidence": null,
-    "primary_source_pct": null,
+    "evidence": 4,
+    "primary_source_pct": 71,
     "missing_critical": []
    },
    "value_capture": [],
@@ -2600,9 +2630,11 @@
    "overall": 77.6,
    "coverage": 85,
    "confidence": {
-    "evidence": null,
-    "primary_source_pct": null,
-    "missing_critical": []
+    "evidence": 3,
+    "primary_source_pct": 57,
+    "missing_critical": [
+     "valuation"
+    ]
    },
    "value_capture": [],
    "provisional": false,
@@ -2713,9 +2745,11 @@
    "overall": 51.8,
    "coverage": 85,
    "confidence": {
-    "evidence": null,
-    "primary_source_pct": null,
-    "missing_critical": []
+    "evidence": 3,
+    "primary_source_pct": 50,
+    "missing_critical": [
+     "valuation"
+    ]
    },
    "value_capture": [],
    "provisional": false,
@@ -2826,9 +2860,11 @@
    "overall": 70.6,
    "coverage": 85,
    "confidence": {
-    "evidence": null,
-    "primary_source_pct": null,
-    "missing_critical": []
+    "evidence": 4,
+    "primary_source_pct": 60,
+    "missing_critical": [
+     "valuation"
+    ]
    },
    "value_capture": [],
    "provisional": false,
@@ -3100,9 +3136,11 @@
    "overall": 58.8,
    "coverage": 85,
    "confidence": {
-    "evidence": null,
-    "primary_source_pct": null,
-    "missing_critical": []
+    "evidence": 4,
+    "primary_source_pct": 71,
+    "missing_critical": [
+     "valuation"
+    ]
    },
    "value_capture": [],
    "provisional": false,
@@ -3213,9 +3251,11 @@
    "overall": 50.6,
    "coverage": 85,
    "confidence": {
-    "evidence": null,
-    "primary_source_pct": null,
-    "missing_critical": []
+    "evidence": 4,
+    "primary_source_pct": 67,
+    "missing_critical": [
+     "valuation"
+    ]
    },
    "value_capture": [],
    "provisional": false,
@@ -3320,9 +3360,11 @@
    "overall": 60,
    "coverage": 85,
    "confidence": {
-    "evidence": null,
-    "primary_source_pct": null,
-    "missing_critical": []
+    "evidence": 4,
+    "primary_source_pct": 60,
+    "missing_critical": [
+     "valuation"
+    ]
    },
    "value_capture": [],
    "provisional": false,
@@ -3427,9 +3469,11 @@
    "overall": 56.5,
    "coverage": 85,
    "confidence": {
-    "evidence": null,
-    "primary_source_pct": null,
-    "missing_critical": []
+    "evidence": 3,
+    "primary_source_pct": 46,
+    "missing_critical": [
+     "valuation"
+    ]
    },
    "value_capture": [],
    "provisional": false,
@@ -3540,9 +3584,11 @@
    "overall": 70.6,
    "coverage": 85,
    "confidence": {
-    "evidence": null,
-    "primary_source_pct": null,
-    "missing_critical": []
+    "evidence": 4,
+    "primary_source_pct": 62,
+    "missing_critical": [
+     "valuation"
+    ]
    },
    "value_capture": [],
    "provisional": false,
@@ -3665,8 +3711,8 @@
    "overall": 63,
    "coverage": 100,
    "confidence": {
-    "evidence": null,
-    "primary_source_pct": null,
+    "evidence": 4,
+    "primary_source_pct": 62,
     "missing_critical": []
    },
    "value_capture": [],
