@@ -11,6 +11,18 @@
 .scorebar { display: inline-block; width: 54px; height: 5px; background: var(--surface-recessed); border-radius: 3px; margin-left: 8px; vertical-align: middle; }
 .scorebar > span { display: block; height: 100%; background: var(--gold); border-radius: 3px; }
 .table-scroll { overflow: auto; max-height: 60vh; }
+.scale { display: inline-block; font-family: var(--font-mono); font-size: 9px; letter-spacing: .3px; margin-left: 5px; padding: 0 5px; border-radius: 3px; border: 1px solid; white-space: nowrap; }
+.scale.c1 { color: var(--green); border-color: var(--green); background: var(--green-dim); }
+.scale.c2 { color: var(--blue); border-color: var(--blue); background: var(--blue-dim); }
+.scale.c3 { color: var(--gold); border-color: var(--gold); background: var(--gold-dim); }
+.scale.c4 { color: var(--high); border-color: var(--high); background: var(--high-dim); }
+.scale.c5 { color: var(--high); border-color: var(--high); background: var(--high-dim); font-weight: 700; }
+.legend-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 12px; margin: 6px 0 18px; }
+.legend-card { background: var(--surface); border: 1px solid var(--border); border-radius: 9px; padding: 12px 14px; }
+.legend-card h4 { margin: 0 0 8px; font-family: var(--font-mono); font-size: 10px; letter-spacing: 1px; text-transform: uppercase; color: var(--gold); font-weight: 600; }
+.legend-card ol { margin: 0; padding-left: 16px; }
+.legend-card li { font-size: 12px; color: var(--text-dim); line-height: 1.5; margin-bottom: 3px; }
+.legend-card b { color: var(--text); }
 </style></head><body><div class="container">
 <header class="masthead">
   <div class="eyebrow">Industry BOM Registry &middot; derived view</div>
@@ -25,6 +37,30 @@
   <div class="metric-card"><div class="metric-card__val">68</div><div class="metric-card__label">Not yet scored</div><div class="metric-card__sub">backfill pending</div></div>
 </div>
 
+<div class="legend-grid">
+  <div class="legend-card"><h4>Cyclicity — 1 to 5</h4><ol>
+    <li><b>1 contracted</b> — revenue locked by contract or regulation; a downturn delays, it doesn't remove</li>
+    <li><b>2 mildly cyclical</b> — non-discretionary but funding-dependent</li>
+    <li><b>3 normal cycle</b> — moves roughly with GDP-plus</li>
+    <li><b>4 strongly cyclical</b> — capex-led or commodity-priced; several times GDP's swing</li>
+    <li><b>5 boom-bust</b> — lumpy capacity, overshoots, clears through a price collapse</li>
+  </ol></div>
+  <div class="legend-card"><h4>Capex intensity — 1 to 5</h4><ol>
+    <li><b>1 asset-light</b> — software, design, services</li>
+    <li><b>2 light assembly</b></li>
+    <li><b>3 moderate</b> — component manufacturing</li>
+    <li><b>4 heavy</b> — plant, fab, process</li>
+    <li><b>5 mega-capex</b> — utilities, fabs, refineries</li>
+  </ol></div>
+  <div class="legend-card"><h4>R&amp;D intensity — 1 to 5</h4><ol>
+    <li><b>1 none</b> — no meaningful R&amp;D</li>
+    <li><b>2 licensed</b> — reverse-engineering or licensed assembly</li>
+    <li><b>3 applied</b> — engineering and process R&amp;D</li>
+    <li><b>4 own IP</b> — design capability in parts</li>
+    <li><b>5 frontier</b> — patents are the moat</li>
+  </ol></div>
+</div>
+
 <p class="lead">Each coverage band is ranked <b>separately</b>. A page carrying only some of the four fields is never compared against a fully scored one &mdash; its score reflects only what is known, so mixing them in a single table would rank evidence rather than industries.</p>
 
 <div class="sec-head"><span class="sec-num">01</span>
@@ -36,45 +72,45 @@
 <td class="c">1</td>
 <td><b>India Optical, Medical &amp; Surgical Apparatus</b><div class="slug">Healthcare &amp; Medical Devices</div></td>
 <td class="c">26%</td>
-<td class="c">3<span class="dim">/5</span></td>
-<td class="c">4<span class="dim">/5</span></td>
-<td class="c">2</td>
+<td class="c">3<span class="scale c3">moderate plant</span></td>
+<td class="c">4<span class="scale c4">own IP</span></td>
+<td class="c">2<span class="scale c2">mildly cyclical</span></td>
 <td class="c">0.825<span class="scorebar"><span style="width:83%"></span></span></td>
 </tr>
 <tr>
 <td class="c">2</td>
 <td><b>India EMS / ODM</b><div class="slug">Electrical &amp; Electronic Equipment</div></td>
 <td class="c">28%</td>
-<td class="c">3<span class="dim">/5</span></td>
-<td class="c">2<span class="dim">/5</span></td>
-<td class="c">3</td>
+<td class="c">3<span class="scale c3">moderate plant</span></td>
+<td class="c">2<span class="scale c2">licensed</span></td>
+<td class="c">3<span class="scale c3">normal cycle</span></td>
 <td class="c">0.712<span class="scorebar"><span style="width:71%"></span></span></td>
 </tr>
 <tr>
 <td class="c">3</td>
 <td><b>India Power Semiconductors &amp; OSAT</b><div class="slug">Electrical &amp; Electronic Equipment</div></td>
 <td class="c">12%</td>
-<td class="c">4<span class="dim">/5</span></td>
-<td class="c">2<span class="dim">/5</span></td>
-<td class="c">3</td>
+<td class="c">4<span class="scale c4">heavy plant</span></td>
+<td class="c">2<span class="scale c2">licensed</span></td>
+<td class="c">3<span class="scale c3">normal cycle</span></td>
 <td class="c">0.502<span class="scorebar"><span style="width:50%"></span></span></td>
 </tr>
 <tr>
 <td class="c">4</td>
 <td><b>India Inorganic Chemicals</b><div class="slug">Chemicals &amp; Petrochemicals</div></td>
 <td class="c">6.75%</td>
-<td class="c">4<span class="dim">/5</span></td>
-<td class="c">2<span class="dim">/5</span></td>
-<td class="c">4</td>
+<td class="c">4<span class="scale c4">heavy plant</span></td>
+<td class="c">2<span class="scale c2">licensed</span></td>
+<td class="c">4<span class="scale c4">strongly cyclical</span></td>
 <td class="c">0.360<span class="scorebar"><span style="width:36%"></span></span></td>
 </tr>
 <tr>
 <td class="c">5</td>
 <td><b>India Servo Motors &amp; Drives</b><div class="slug">Robotics &amp; Automation</div></td>
 <td class="c">3.8%</td>
-<td class="c">3<span class="dim">/5</span></td>
-<td class="c">3<span class="dim">/5</span></td>
-<td class="c">4</td>
+<td class="c">3<span class="scale c3">moderate plant</span></td>
+<td class="c">3<span class="scale c3">applied</span></td>
+<td class="c">4<span class="scale c4">strongly cyclical</span></td>
 <td class="c">0.289<span class="scorebar"><span style="width:29%"></span></span></td>
 </tr>
 </tbody></table></div></div>
