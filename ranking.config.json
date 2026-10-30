@@ -1,19 +1,60 @@
 {
   "_doc": "Industry ranking parameters, from 'Industry-Level Investment Parameters & Scoring Architecture'. Weights are the framework's suggested starter weights. Change them here, then run node tools/build-industry-ranking.mjs. Document any change and why.",
-
   "categories": [
-    { "id": "economics",   "name": "Industry economics & value creation", "weight": 0.20, "lens": "structural" },
-    { "id": "opportunity", "name": "Market opportunity & structural growth", "weight": 0.15, "lens": "structural" },
-    { "id": "competitive", "name": "Competitive structure & moat", "weight": 0.15, "lens": "structural" },
-    { "id": "cycle",       "name": "Current opportunity & cycle position", "weight": 0.15, "lens": "current" },
-    { "id": "valuation",   "name": "Valuation & market expectations", "weight": 0.15, "lens": "current" },
-    { "id": "value_chain", "name": "Value-chain position & bottlenecks", "weight": 0.10, "lens": "structural" },
-    { "id": "capital",     "name": "Capital intensity & financial quality", "weight": 0.05, "lens": "structural" },
-    { "id": "technology",  "name": "Technology & innovation", "weight": 0.05, "lens": "structural" }
+    {
+      "id": "economics",
+      "name": "Industry economics & value creation",
+      "weight": 0.2,
+      "lens": "structural"
+    },
+    {
+      "id": "opportunity",
+      "name": "Market opportunity & structural growth",
+      "weight": 0.15,
+      "lens": "structural"
+    },
+    {
+      "id": "competitive",
+      "name": "Competitive structure & moat",
+      "weight": 0.15,
+      "lens": "structural"
+    },
+    {
+      "id": "cycle",
+      "name": "Current opportunity & cycle position",
+      "weight": 0.15,
+      "lens": "current"
+    },
+    {
+      "id": "valuation",
+      "name": "Valuation & market expectations",
+      "weight": 0.15,
+      "lens": "current"
+    },
+    {
+      "id": "value_chain",
+      "name": "Value-chain position & bottlenecks",
+      "weight": 0.1,
+      "lens": "structural"
+    },
+    {
+      "id": "capital",
+      "name": "Capital intensity & financial quality",
+      "weight": 0.05,
+      "lens": "structural"
+    },
+    {
+      "id": "technology",
+      "name": "Technology & innovation",
+      "weight": 0.05,
+      "lens": "structural"
+    }
   ],
-
-  "risk_category": { "id": "risk", "name": "Risk & resilience", "lens": "risk" },
-
+  "risk_category": {
+    "id": "risk",
+    "name": "Risk & resilience",
+    "lens": "risk"
+  },
   "scale": {
     "1": "Very unattractive — materially adverse, structurally weak or unsupported by evidence",
     "2": "Below average — weak outlook or economics; meaningful disadvantages",
@@ -21,6 +62,30 @@
     "4": "Attractive — strong evidence of favourable economics or improving prospects",
     "5": "Highly attractive — exceptional, durable advantage supported by robust evidence"
   },
-
-  "provisional_below_coverage_pct": 60
+  "provisional_below_coverage_pct": 60,
+  "value_capture": {
+    "_doc": "Component/node value-capture weights, from the Registry Review & Recommendations §4. A separate score from the industry-attractiveness weights above — it answers 'which part of this chain keeps the money'.",
+    "weights": {
+      "op_share": 0.2,
+      "pricing_power": 0.15,
+      "roic": 0.15,
+      "barriers": 0.15,
+      "bottleneck": 0.1,
+      "pool_growth": 0.1,
+      "cash_conversion": 0.1,
+      "switching": 0.05
+    },
+    "labels": {
+      "op_share": "Share of industry operating profit",
+      "pricing_power": "Pricing power",
+      "roic": "ROIC / incremental ROIC",
+      "barriers": "Entry barriers & competitive moat",
+      "bottleneck": "Bottleneck / strategic importance",
+      "pool_growth": "Growth of the profit pool",
+      "cash_conversion": "Cash conversion & capital intensity",
+      "switching": "Customer switching costs"
+    }
+  },
+  "risk_label": "Resilience (5 = lowest risk)",
+  "risk_formula_note": "Risk-adjusted = structural x (resilience / 5). The risk category is scored on the attractiveness scale, so 5 means MOST resilient / LEAST risk — a higher input raises the adjusted score, which is the correct direction."
 }
