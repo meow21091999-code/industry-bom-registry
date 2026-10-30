@@ -203,6 +203,26 @@ fs.writeFileSync(OUT_JSON, JSON.stringify(out, null, 1) + '\n');
 const esc = s => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 const FIELD_LABEL = { growth: 'growth', capex: 'capex', rd: 'R&D', cyclicity: 'cyclicity' };
 
+const CYC = {
+  1: ['contracted', 'c1'], 2: ['mildly cyclical', 'c2'], 3: ['normal cycle', 'c3'],
+  4: ['strongly cyclical', 'c4'], 5: ['boom-bust', 'c5'],
+};
+const CAPEX = {
+  1: ['asset-light', 'c1'], 2: ['light assembly', 'c2'], 3: ['moderate plant', 'c3'],
+  4: ['heavy plant', 'c4'], 5: ['mega-capex', 'c5'],
+};
+const RD = {
+  1: ['none', 'c1'], 2: ['licensed', 'c2'], 3: ['applied', 'c3'],
+  4: ['own IP', 'c4'], 5: ['frontier', 'c5'],
+};
+
+function scaleCell(value, map) {
+  if (value == null) return '<span class="dim">—</span>';
+  const hit = map[Number(value)];
+  if (!hit) return esc(value);
+  return `${esc(value)}<span class="scale ${hit[1]}">${esc(hit[0])}</span>`;
+}
+
 function rowHtml(r) {
   const bar = r.composite == null ? '' :
     `<span class="scorebar"><span style="width:${Math.round(r.composite * 100)}%"></span></span>`;
@@ -210,9 +230,9 @@ function rowHtml(r) {
 <td class="c">${r.rank ?? '—'}</td>
 <td><b>${esc(r.title)}</b><div class="slug">${esc(r.group || '')}</div></td>
 <td class="c">${r.growth_pct == null ? '<span class="dim">—</span>' : esc(r.growth_pct) + '%'}</td>
-<td class="c">${r.capex_pct != null ? esc(r.capex_pct) + '%' : (r.capex_intensity == null ? '<span class="dim">—</span>' : esc(r.capex_intensity) + '<span class="dim">/5</span>')}</td>
-<td class="c">${r.rd_pct != null ? esc(r.rd_pct) + '%' : (r.rd_intensity == null ? '<span class="dim">—</span>' : esc(r.rd_intensity) + '<span class="dim">/5</span>')}</td>
-<td class="c">${r.cyclicity == null ? '<span class="dim">—</span>' : esc(r.cyclicity)}</td>
+<td class="c">${r.capex_pct != null ? esc(r.capex_pct) + '%' : scaleCell(r.capex_intensity, CAPEX)}</td>
+<td class="c">${r.rd_pct != null ? esc(r.rd_pct) + '%' : scaleCell(r.rd_intensity, RD)}</td>
+<td class="c">${scaleCell(r.cyclicity, CYC)}</td>
 <td class="c">${r.composite == null ? '<span class="dim">—</span>' : r.composite.toFixed(3)}${bar}</td>
 </tr>`;
 }
@@ -246,6 +266,18 @@ const html = `<!DOCTYPE html>
 .scorebar { display: inline-block; width: 54px; height: 5px; background: var(--surface-recessed); border-radius: 3px; margin-left: 8px; vertical-align: middle; }
 .scorebar > span { display: block; height: 100%; background: var(--gold); border-radius: 3px; }
 .table-scroll { overflow: auto; max-height: 60vh; }
+.scale { display: inline-block; font-family: var(--font-mono); font-size: 9px; letter-spacing: .3px; margin-left: 5px; padding: 0 5px; border-radius: 3px; border: 1px solid; white-space: nowrap; }
+.scale.c1 { color: var(--green); border-color: var(--green); background: var(--green-dim); }
+.scale.c2 { color: var(--blue); border-color: var(--blue); background: var(--blue-dim); }
+.scale.c3 { color: var(--gold); border-color: var(--gold); background: var(--gold-dim); }
+.scale.c4 { color: var(--high); border-color: var(--high); background: var(--high-dim); }
+.scale.c5 { color: var(--high); border-color: var(--high); background: var(--high-dim); font-weight: 700; }
+.legend-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 12px; margin: 6px 0 18px; }
+.legend-card { background: var(--surface); border: 1px solid var(--border); border-radius: 9px; padding: 12px 14px; }
+.legend-card h4 { margin: 0 0 8px; font-family: var(--font-mono); font-size: 10px; letter-spacing: 1px; text-transform: uppercase; color: var(--gold); font-weight: 600; }
+.legend-card ol { margin: 0; padding-left: 16px; }
+.legend-card li { font-size: 12px; color: var(--text-dim); line-height: 1.5; margin-bottom: 3px; }
+.legend-card b { color: var(--text); }
 </style></head><body><div class="container">
 <header class="masthead">
   <div class="eyebrow">Industry BOM Registry &middot; derived view</div>
@@ -258,6 +290,30 @@ const html = `<!DOCTYPE html>
   <div class="metric-card metric-card--gold"><div class="metric-card__val">${out.counts.scored}</div><div class="metric-card__label">Scored</div><div class="metric-card__sub">have a score block</div></div>
   <div class="metric-card"><div class="metric-card__val">${out.counts.partial}</div><div class="metric-card__label">Partial</div><div class="metric-card__sub">missing one or more fields</div></div>
   <div class="metric-card"><div class="metric-card__val">${out.counts.unscored}</div><div class="metric-card__label">Not yet scored</div><div class="metric-card__sub">backfill pending</div></div>
+</div>
+
+<div class="legend-grid">
+  <div class="legend-card"><h4>Cyclicity — 1 to 5</h4><ol>
+    <li><b>1 contracted</b> — revenue locked by contract or regulation; a downturn delays, it doesn't remove</li>
+    <li><b>2 mildly cyclical</b> — non-discretionary but funding-dependent</li>
+    <li><b>3 normal cycle</b> — moves roughly with GDP-plus</li>
+    <li><b>4 strongly cyclical</b> — capex-led or commodity-priced; several times GDP's swing</li>
+    <li><b>5 boom-bust</b> — lumpy capacity, overshoots, clears through a price collapse</li>
+  </ol></div>
+  <div class="legend-card"><h4>Capex intensity — 1 to 5</h4><ol>
+    <li><b>1 asset-light</b> — software, design, services</li>
+    <li><b>2 light assembly</b></li>
+    <li><b>3 moderate</b> — component manufacturing</li>
+    <li><b>4 heavy</b> — plant, fab, process</li>
+    <li><b>5 mega-capex</b> — utilities, fabs, refineries</li>
+  </ol></div>
+  <div class="legend-card"><h4>R&amp;D intensity — 1 to 5</h4><ol>
+    <li><b>1 none</b> — no meaningful R&amp;D</li>
+    <li><b>2 licensed</b> — reverse-engineering or licensed assembly</li>
+    <li><b>3 applied</b> — engineering and process R&amp;D</li>
+    <li><b>4 own IP</b> — design capability in parts</li>
+    <li><b>5 frontier</b> — patents are the moat</li>
+  </ol></div>
 </div>
 
 <p class="lead">Each coverage band is ranked <b>separately</b>. A page carrying only some of the four fields is never compared against a fully scored one &mdash; its score reflects only what is known, so mixing them in a single table would rank evidence rather than industries.</p>
