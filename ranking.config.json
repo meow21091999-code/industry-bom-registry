@@ -1,0 +1,23 @@
+{
+  "_doc": "Parameters for the industry ranking. Edit this, then run node tools/build-industry-ranking.mjs. Weights must sum to 1.0.",
+
+  "weights": {
+    "growth": 0.50,
+    "capex": 0.20,
+    "rd": 0.15,
+    "cyclicity": 0.15
+  },
+
+  "anchors": {
+    "growth_max_pct": 25,
+    "capex_max_pct": 30,
+    "rd_max_pct": 10
+  },
+
+  "directions": {
+    "capex": "barrier",
+    "cyclicity": "inverted"
+  },
+
+  "coverage_threshold": null
+}
