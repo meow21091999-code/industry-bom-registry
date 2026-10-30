@@ -32,7 +32,7 @@
     </div>
   </header>
 
-  <div class="sec-head animate" style="--i:0"><span class="sec-num">00</span><span class="sec-title">At a glance</span><span class="sec-note">click a card for detail</span></div>
+  <div class="sec-head animate" style="--i:0"><span class="sec-num">01</span><span class="sec-title">At a glance</span><span class="sec-note">click a card for detail</span></div>
   <div class="metric-cards animate" style="--i:0">
     <div class="metric-card metric-card--gold">
       <div class="metric-card__val">63.8 lakh tpa</div>
@@ -66,7 +66,7 @@
     </div>
   </div>
 
-  <div class="sec-head animate" style="--i:0"><span class="sec-num">01</span><span class="sec-title">Digest</span><span class="sec-note">short summary</span></div>
+  <div class="sec-head animate" style="--i:0"><span class="sec-num">02</span><span class="sec-title">Digest</span><span class="sec-note">short summary</span></div>
   <div class="digest animate" style="--i:0">
     <div class="digest__item">
       <div class="digest__h">Snapshot</div>
@@ -116,7 +116,7 @@
     </div>
   </div>
 
-  <div class="sec-head animate" style="--i:0"><span class="sec-num">02</span><span class="sec-title">System overview</span><span class="sec-note">Level 0 &rarr; systems &rarr; key nodes</span></div>
+  <div class="sec-head animate" style="--i:0"><span class="sec-num">03</span><span class="sec-title">System overview</span><span class="sec-note">Level 0 &rarr; systems &rarr; key nodes</span></div>
   <section class="diagram-shell animate" style="--i:0">
     <p class="diagram-shell__hint">Ctrl/Cmd + wheel to zoom. Drag to pan when zoomed. Double-click to fit. Click &#x26F6; to open full size.</p>
     <div class="mermaid-wrap">
@@ -164,7 +164,7 @@ graph TD
     <div class="legend-item"><span class="legend-swatch" style="background:var(--high)"></span> Import / bottleneck</div>
   </div>
 
-  <div class="sec-head animate" style="--i:0"><span class="sec-num">03</span><span class="sec-title">Value-chain ladder &amp; supplier tiers</span><span class="sec-note">feedstock &rarr; end use</span></div>
+  <div class="sec-head animate" style="--i:0"><span class="sec-num">04</span><span class="sec-title">Value-chain ladder &amp; supplier tiers</span><span class="sec-note">feedstock &rarr; end use</span></div>
   <div class="ladder animate" style="--i:0">
     <div class="rung rung--1">
       <div class="rung__label">Raw material</div>
@@ -197,7 +197,7 @@ graph TD
     </div>
   </div>
 
-  <div class="sec-head animate" style="--i:0"><span class="sec-num">04</span><span class="sec-title">BOM tree &amp; company map</span><span class="sec-note">click a node &rarr; listed companies</span></div>
+  <div class="sec-head animate" style="--i:0"><span class="sec-num">05</span><span class="sec-title">BOM tree &amp; company map</span><span class="sec-note">click a node &rarr; listed companies</span></div>
   <div class="map-layout animate" style="--i:0">
     <div class="map-nodes" id="mapNodes"></div>
     <aside class="map-panel" id="mapPanel">
@@ -207,7 +207,7 @@ graph TD
     </aside>
   </div>
 
-  <div class="sec-head animate" style="--i:0"><span class="sec-num">05</span><span class="sec-title">Company &times; node matrix</span><span class="sec-note">D direct &middot; I indirect &middot; S supplier &middot; C conglomerate &middot; &mdash; none</span></div>
+  <div class="sec-head animate" style="--i:0"><span class="sec-num">06</span><span class="sec-title">Company &times; node matrix</span><span class="sec-note">D direct &middot; I indirect &middot; S supplier &middot; C conglomerate &middot; &mdash; none</span></div>
   <div class="table-wrap animate" style="--i:0">
     <div class="table-scroll">
       <table class="data">
@@ -242,7 +242,7 @@ graph TD
     </div>
   </div>
 
-  <div class="sec-head animate" style="--i:0"><span class="sec-num">06</span><span class="sec-title">Bottlenecks &mdash; risk &amp; opportunity</span><span class="sec-note">dual-readable</span></div>
+  <div class="sec-head animate" style="--i:0"><span class="sec-num">07</span><span class="sec-title">Bottlenecks &mdash; risk &amp; opportunity</span><span class="sec-note">dual-readable</span></div>
 
   <div class="bn animate" style="--i:0">
     <div class="bn__risk">
@@ -300,27 +300,9 @@ graph TD
     <strong>Data labels.</strong> <span class="mini">[REPORTED]</span> from a filing or credible source &middot; <span class="mini">[DERIVED]</span> logically derived &middot; <span class="mini">[INFERENCE]</span> analytical inference &middot; <span class="mini">[LIVE]</span> may move within weeks. <strong>Scope-matching:</strong> the industrial-gases market is quoted at ~$1.4 bn (merchant-only) and ~$3.8 bn (broader, incl. captive / equipment) &mdash; these are not comparable and are not added. Company-level impacts are inference unless a filing was seen. This is a structural decomposition, not investment advice.
   </div>
 
-  <div class="sec-head animate" style="--i:0"><span class="sec-num">07</span><span class="sec-title">Regulatory calendar</span><span class="sec-note">standing, dated</span></div>
-  <div class="table-wrap animate" style="--i:0">
-    <div class="table-scroll">
-      <table class="data">
-        <thead><tr><th>Item</th><th>Date / window</th><th>Status</th><th>Relevance</th></tr></thead>
-        <tbody>
-          <tr><td>Soda-ash minimum import price &#8377;20,108/t</td><td><b>Correction from the prior run:</b> the MIP <b>lapsed on 31-Dec-2025</b> and was not renewed; imports from China rose ~5&times; in Q1 FY26. The live instrument is now the safeguard QR probe below.</td><td class="cell-i">[REPORTED-T2]</td><td>Soda-ash pricing &amp; protection</td></tr>
-          <tr><td>Soda-ash anti-dumping duties (TR / RU / US / IR)</td><td>final findings 29-Sep-2025; $79&ndash;113/t recommended</td><td class="cell-i">[LIVE]</td><td>GHCL / Tata / Nirma / DCW realisations</td></tr>
-          <tr><td>Soda-ash safeguard (QR) investigation</td><td>initiated 16-Mar-2026</td><td class="cell-i">[LIVE]</td><td>Potential quantitative restrictions</td></tr>
-          <tr><td>NBS fertiliser subsidy (rabi 2025-26)</td><td>Oct-2025&ndash;Mar-2026; P &#8377;47.96/kg, S &#8377;2.87/kg</td><td class="cell-i">[LIVE]</td><td>DAP / NPK economics</td></tr>
-          <tr><td>DAP special package / under-recovery cover</td><td>ongoing</td><td class="cell-i">[LIVE]</td><td>Importer margins</td></tr>
-          <tr><td>Rock-phosphate price linkage (IBM formula)</td><td>draft; gazette pending</td><td class="cell-i">[LIVE]</td><td>Domestic rock-phosphate viability</td></tr>
-          <tr><td>Chlor-alkali anti-dumping duties (various origins)</td><td>rolling</td><td class="cell-s">[STRUCTURAL]</td><td>Import competition</td></tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-
-<section class="animate" style="--i:9">
+  <section class="animate" style="--i:9">
     <div class="sec-head">
-      <span class="sec-num">09</span>
+      <span class="sec-num">08</span>
       <span class="sec-title">Industry scorecard</span>
       <span class="sec-note">nine categories &middot; 1 very unattractive &rarr; 5 highly attractive &middot; missing evidence shown as UNAVAILABLE</span>
     </div>
@@ -743,8 +725,6 @@ graph TD
     function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
   })();
 </script>
-
-
 
 <script type="application/json" class="industry-score">{"as_of": "2026-10-30", "categories": {"economics": {"score": 3, "basis": "Commodity process economics; profitability tracks spreads rather than pricing power."}, "opportunity": {"score": 3, "basis": "Industrial gases ~$1.4 bn at ~6-7.5% CAGR, used as the proxy for the wider complex — moderate growth."}, "competitive": {"score": 2, "basis": "Commodity producers exposed to anti-dumping actions and import competition."}, "cycle": {"score": null, "basis": "No cycle-position evidence on the page."}, "valuation": {"score": null, "basis": "No industry-level valuation data in the registry."}, "value_chain": {"score": 3, "basis": "Chlor-alkali and soda ash sit mid-chain; value is in energy and feedstock, not in the layer."}, "capital": {"score": 2, "basis": "Heavy process capital — chlor-alkali and soda-ash plants are long-lived, capital-hungry assets."}, "technology": {"score": 2, "basis": "Process engineering, little proprietary IP."}, "risk": {"score": 2, "basis": "Commodity spreads, trade remedy exposure and energy cost sensitivity."}}, "notes": "Scored against 'Industry-Level Investment Parameters & Scoring Architecture'. Cycle position and valuation left UNAVAILABLE — the registry carries no cycle or valuation data for these industries."}</script>
 </body>
