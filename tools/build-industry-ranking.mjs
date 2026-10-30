@@ -28,6 +28,9 @@ const clamp01 = x => Math.max(0, Math.min(1, x));
 const sGrowth = v => (v == null || isNaN(v) ? null : clamp01(Number(v) / 25));
 const sBand = v => (v == null || isNaN(v) ? null : clamp01((Number(v) - 1) / 4));
 const sCyc = v => (v == null || isNaN(v) ? null : clamp01((5 - Number(v)) / 4));
+// ratios are preferred; the 1–5 rating is the fallback
+const sCapexPct = v => (v == null || isNaN(v) ? null : clamp01(Number(v) / 30));   // 0%→0, 30%+→1
+const sRdPct = v => (v == null || isNaN(v) ? null : clamp01(Number(v) / 10));       // 0%→0, 10%+→1
 
 const clean = s => String(s ?? '').replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
 
@@ -67,10 +70,13 @@ for (const f of fs.readdirSync(DIR).filter(x => x.endsWith('.html')).sort()) {
     continue;
   }
 
+  const capexScore = sCapexPct(score.capex_pct) ?? sBand(score.capex_intensity);
+  const rdScore = sRdPct(score.rd_pct) ?? sBand(score.rd_intensity);
+
   const parts = [
     { key: 'growth', w: W.growth, s: sGrowth(score.growth_pct) },
-    { key: 'capex', w: W.capex, s: sBand(score.capex_intensity) },
-    { key: 'rd', w: W.rd, s: sBand(score.rd_intensity) },
+    { key: 'capex', w: W.capex, s: capexScore },
+    { key: 'rd', w: W.rd, s: rdScore },
     { key: 'cyclicity', w: W.cyclicity, s: sCyc(score.cyclicity) },
   ].filter(p => p.s != null);
 
@@ -82,8 +88,12 @@ for (const f of fs.readdirSync(DIR).filter(x => x.endsWith('.html')).sort()) {
     scored: true,
     growth_pct: score.growth_pct ?? null,
     growth_basis: score.growth_basis || '',
+    capex_pct: score.capex_pct ?? null,
     capex_intensity: score.capex_intensity ?? null,
+    capex_basis: score.capex_pct != null ? 'ratio' : (score.capex_intensity != null ? 'rating' : null),
+    rd_pct: score.rd_pct ?? null,
     rd_intensity: score.rd_intensity ?? null,
+    rd_basis: score.rd_pct != null ? 'ratio' : (score.rd_intensity != null ? 'rating' : null),
     cyclicity: score.cyclicity ?? null,
     basis: score.basis || '',
     as_of: score.as_of || '',
@@ -129,8 +139,8 @@ const trs = rows.map(r => {
 <td class="c">${r.rank ?? '—'}</td>
 <td><b>${esc(r.title)}</b><div class="slug">${esc(r.group || '')}</div></td>
 <td class="c">${r.growth_pct == null ? '<span class="dim">—</span>' : esc(r.growth_pct) + '%'}</td>
-<td class="c">${r.capex_intensity == null ? '<span class="dim">—</span>' : esc(r.capex_intensity)}</td>
-<td class="c">${r.rd_intensity == null ? '<span class="dim">—</span>' : esc(r.rd_intensity)}</td>
+<td class="c">${r.capex_pct != null ? esc(r.capex_pct) + '%' : (r.capex_intensity == null ? '<span class="dim">—</span>' : esc(r.capex_intensity) + '<span class="dim">/5</span>')}</td>
+<td class="c">${r.rd_pct != null ? esc(r.rd_pct) + '%' : (r.rd_intensity == null ? '<span class="dim">—</span>' : esc(r.rd_intensity) + '<span class="dim">/5</span>')}</td>
 <td class="c">${r.cyclicity == null ? '<span class="dim">—</span>' : esc(r.cyclicity)}</td>
 <td class="c">${r.composite == null ? '<span class="dim">—</span>' : r.composite.toFixed(3)}${bar}</td>
 <td class="c">${r.composite == null ? '<span class="chip">not scored</span>' : (r.partial ? `<span class="chip">partial ${Math.round(r.coverage * 100)}%</span>` : '<span class="chip chip--gold">full</span>')}</td>
@@ -168,7 +178,7 @@ const html = `<!DOCTYPE html>
 <span class="sec-note">growth 50% &middot; capex 20% &middot; R&amp;D 15% &middot; cyclicity 15% (inverted)</span></div>
 
 <div class="table-wrap"><div class="table-scroll"><table class="data">
-<thead><tr><th>#</th><th>Industry</th><th>Growth</th><th>Capex</th><th>R&amp;D</th><th>Cyclicity</th><th>Score</th><th>Coverage</th></tr></thead>
+<thead><tr><th>#</th><th>Industry</th><th>Growth</th><th>Capex / rev</th><th>R&amp;D / rev</th><th>Cyclicity</th><th>Score</th><th>Coverage</th></tr></thead>
 <tbody>
 ${trs}
 </tbody></table></div></div>
