@@ -1,9 +1,9 @@
 {
  "registry": "Industry BOM Registry",
  "description": "Machine-readable node index. For every entry, the node names it contains plus the owning entry slug. Used for DEDUP (industry+scope already analysed) and LINEAGE (auto-linking a new industry to a parent when its name matches a node name). Update on every publish.",
- "generated": "2026-10-29",
- "last_delta_pass": "2026-10-29",
- "delta_note": "New entry: Shipbuilding & Ship Repair (India), depth-first, NSE/BSE universe, 16 nodes, 16 companies. Grounding pass dated 2026-10-29: BIMCO/Clarksons order-book shares at 1-Sep-2026 (India 1.1 mn CGT, 0.5%, rank 12; global 203.2 mn CGT; China 64%, Korea 19%, Japan 6%); India GT output 40,923 GT (2024) -> 57,637 GT (2025) per UNCTAD via MoPSW; SBFAS/SbDS guidelines 26-Dec-2025 and SBFAP amendment 14-May-2026; MDF guidelines 20-Feb-2026 with SBI Ventures as MIF manager from 26-May-2026; Vadinar repair cluster CCEA approval 05-May-2026; SbDS pipeline status to 01-Oct-2026 (5 greenfield clusters with conditional IPA; 10 brownfield applications, 4 IPA). No prior node in this registry matched 'shipbuilding' or 'ship repair', so the entry is standalone with no derived_from link.",
+ "generated": "2026-10-30",
+ "last_delta_pass": "2026-10-30",
+ "delta_note": "Delta pass + full re-run: Satellite Bus & Subsystems (India), depth-first, NSE/BSE universe, 11 nodes, 18 company entries. Facts refreshed to 2026-10-30: DoS budget FY27 ₹13,705.63 cr (Demand No. 95), Space Technology ₹10,397.06 cr; IRNSS-1F final atomic clock failed 13-Mar-2026 leaving 3 PNT satellites against a minimum of 4; NVS-03 launch on GSLV-F18 30-Oct-2026 23:51 IST; GSAT-7C whole-bus contract ₹2,563 cr to NSIL signed 15-Oct-2026; URSC multijunction solar-cell tender ₹674.02 cr (15-Jun-2026) and flight solar-panel work package (11-Sep-2026); NSIL–Dhruva solar-panel MoU 26-Mar-2026; IN-SPACe 113 authorisations to 52 NGEs (13-Aug-2026); space economy $9 bn as of Aug-2026 against the $44 bn 2033 target. Corrections from the 2026-10-09 run: the prior '5 of 11 NavIC clocks failed' framing replaced by the constellation-level fact (3 PNT satellites, 6 of 11 unusable); the URSC solar-cell tender is now date-stamped 15-Jun-2026 at ₹674.02 cr; a new Precision Timing node was added; digest Market & growth block and its metric card added under the current page standard.",
  "entries": [
   {
    "slug": "power-transmission-india",
@@ -6765,7 +6765,7 @@
    "industry": "Satellite Bus & Subsystems",
    "scope": "INDIA",
    "path": "industries/satellite-bus-subsystems-india.html",
-   "analysis_date": "2026-10-09",
+   "analysis_date": "2026-10-30",
    "universe": "NSE/BSE",
    "sector": "Space & Satellites",
    "derived_from": {
@@ -6799,10 +6799,10 @@
     },
     {
      "id": "power",
-     "name": "Power System (Solar Arrays & Batteries)",
+     "name": "Power System (Arrays, Batteries, Regulators)",
      "level": 1,
      "aliases": [
-      "power system (solar arrays & batteries)"
+      "power system (arrays, batteries, regulators)"
      ],
      "priority": "high",
      "bottleneck": true,
@@ -6810,10 +6810,10 @@
     },
     {
      "id": "solarcell",
-     "name": "Space-grade Solar Cells (III-V)",
+     "name": "Space-grade Solar Cells (III-V Multijunction)",
      "level": 1,
      "aliases": [
-      "space-grade solar cells (iii-v)"
+      "space-grade solar cells (iii-v multijunction)"
      ],
      "priority": "high",
      "bottleneck": true,
@@ -6842,11 +6842,22 @@
      "in_universe_coverage": true
     },
     {
-     "id": "propulsion",
-     "name": "Satellite Propulsion (Chemical / Electric)",
+     "id": "clocks",
+     "name": "Precision Timing (Atomic Clocks)",
      "level": 1,
      "aliases": [
-      "satellite propulsion (chemical / electric)"
+      "precision timing (atomic clocks)"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": false
+    },
+    {
+     "id": "propulsion",
+     "name": "Satellite Propulsion (Chemical / Electric / Green)",
+     "level": 1,
+     "aliases": [
+      "satellite propulsion (chemical / electric / green)"
      ],
      "priority": "high",
      "bottleneck": false,
