@@ -1,9 +1,9 @@
 {
  "registry": "Industry BOM Registry",
  "description": "Machine-readable node index. For every entry, the node names it contains plus the owning entry slug. Used for DEDUP (industry+scope already analysed) and LINEAGE (auto-linking a new industry to a parent when its name matches a node name). Update on every publish.",
- "generated": "2026-10-30",
- "last_delta_pass": "2026-10-30",
- "delta_note": "Delta pass + full re-run: Satellite Bus & Subsystems (India), depth-first, NSE/BSE universe, 11 nodes, 18 company entries. Facts refreshed to 2026-10-30: DoS budget FY27 ₹13,705.63 cr (Demand No. 95), Space Technology ₹10,397.06 cr; IRNSS-1F final atomic clock failed 13-Mar-2026 leaving 3 PNT satellites against a minimum of 4; NVS-03 launch on GSLV-F18 30-Oct-2026 23:51 IST; GSAT-7C whole-bus contract ₹2,563 cr to NSIL signed 15-Oct-2026; URSC multijunction solar-cell tender ₹674.02 cr (15-Jun-2026) and flight solar-panel work package (11-Sep-2026); NSIL–Dhruva solar-panel MoU 26-Mar-2026; IN-SPACe 113 authorisations to 52 NGEs (13-Aug-2026); space economy $9 bn as of Aug-2026 against the $44 bn 2033 target. Corrections from the 2026-10-09 run: the prior '5 of 11 NavIC clocks failed' framing replaced by the constellation-level fact (3 PNT satellites, 6 of 11 unusable); the URSC solar-cell tender is now date-stamped 15-Jun-2026 at ₹674.02 cr; a new Precision Timing node was added; digest Market & growth block and its metric card added under the current page standard.",
+ "generated": "2026-10-31",
+ "last_delta_pass": "2026-10-31",
+ "delta_note": "Delta pass + full re-run: Satellite Payloads (India), NSE/BSE universe, 9 nodes, 6 listed companies. Facts refreshed to 2026-10-31: NVS-03 launched successfully on GSLV-F18 at 23:51 IST on 30-Oct-2026, carrying an indigenous atomic clock plus procured clocks and the new L1 band; ISRO states the NavIC constellation is restored to its four-satellite minimum (the last clock on IRNSS-1F had failed 13-Mar-2026). Transponder deficit quantified: 196 available (126 leased, 33 public, 37 strategic) against a stated requirement of 500, with 300 more directed [T3]. NSIL raised Ku-band capacity prices 20% from 1-Apr-2026, the first revision since 2016 (36 MHz transponder Rs 6.6 cr to Rs 7.92 cr a year). Company data moved to FY26: Astra Microwave revenue Rs 1,156 cr with space/meteorology/hydrology at Rs 157 cr (13.6%) and a demerger into Astra Space Technologies approved 10-Jun-2026 (appointed date 1-Apr-2027); Centum standalone Rs 973 cr with defence/space/aerospace at 54% and a Rs 518 cr consolidated loss from discontinued overseas operations; Data Patterns Rs 925 cr at 40.1% EBITDA; Paras Rs 476.57 cr consolidated with optics at 42%; BEL Rs 27,610 cr consolidated with a Rs 73,882 cr order book. Corrections from the 2026-10-09 run: the '5 of 11 clocks failed' framing is replaced by the constellation-level fact (restored to four PNT satellites on 30-Oct-2026); the TWTA node is reclassified from a pure import dependency to a domestic productionisation path (BEL-SAC MoU, Sep-2024) with GaN SSPA as the parallel route; atomic clocks are reclassified from STRUCTURAL to partially imported. First scoring of this entry: overall 78.8/100 at 85% coverage, evidence 4, primary-source share 55%; six value-capture nodes scored, TWTA highest at 3.85/5.",
  "entries": [
   {
    "slug": "power-transmission-india",
@@ -6903,7 +6903,7 @@
    "industry": "Satellite Payloads",
    "scope": "INDIA",
    "path": "industries/satellite-payloads-india.html",
-   "analysis_date": "2026-10-09",
+   "analysis_date": "2026-10-31",
    "universe": "NSE/BSE",
    "sector": "Space & Satellites",
    "derived_from": {
@@ -6915,47 +6915,172 @@
    "nodes": [
     {
      "id": "compayload",
-     "name": "Communication Payload (Antennas / Transponders)",
-     "level": 1,
+     "name": "Communication Payload — Transponders & HTS",
+     "level": 2,
      "aliases": [
-      "communication payload (antennas / transponders)"
-     ],
-     "priority": "high",
-     "bottleneck": false,
-     "in_universe_coverage": true
-    },
-    {
-     "id": "ttctrans",
-     "name": "TT&C, Transponders & TWTA",
-     "level": 1,
-     "aliases": [
-      "tt&c, transponders & twta"
+      "communication payload",
+      "comm payload",
+      "transponder",
+      "transponders",
+      "HTS",
+      "high throughput satellite",
+      "Ka-band payload",
+      "GSAT payload"
      ],
      "priority": "high",
      "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "twta",
+     "name": "TWTA / SSPA — RF Power Amplification",
+     "level": 3,
+     "aliases": [
+      "TWTA",
+      "travelling wave tube amplifier",
+      "traveling wave tube",
+      "TWT",
+      "SSPA",
+      "solid state power amplifier",
+      "GaN SSPA",
+      "EPC",
+      "microwave power module"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "ttcrf",
+     "name": "TT&C, Receivers & Up/Down Converters",
+     "level": 2,
+     "aliases": [
+      "TT&C",
+      "telemetry tracking command",
+      "telemetry",
+      "receiver",
+      "up converter",
+      "down converter",
+      "transmitter",
+      "command chain"
+     ],
+     "priority": "high",
+     "bottleneck": false,
      "in_universe_coverage": true
     },
     {
      "id": "eopayload",
-     "name": "EO Payload (Optical / SAR / Hyperspectral)",
-     "level": 1,
+     "name": "EO Payload — Optical, Hyperspectral & SAR",
+     "level": 2,
      "aliases": [
-      "eo payload (optical / sar / hyperspectral)"
+      "earth observation payload",
+      "EO payload",
+      "optical payload",
+      "hyperspectral",
+      "multispectral",
+      "panchromatic",
+      "SAR payload",
+      "camera payload",
+      "imaging payload"
      ],
      "priority": "high",
      "bottleneck": false,
      "in_universe_coverage": true
     },
     {
-     "id": "navpayload",
-     "name": "Navigation Payload (NavIC / Atomic Clocks)",
-     "level": 1,
+     "id": "optics",
+     "name": "Space Optics, Detectors & Focal-Plane Arrays",
+     "level": 3,
      "aliases": [
-      "navigation payload (navic / atomic clocks)"
+      "space optics",
+      "detector",
+      "detectors",
+      "focal plane array",
+      "FPA",
+      "telescope",
+      "mirror",
+      "optical coating",
+      "gratings",
+      "CCD",
+      "CMOS detector"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "navpayload",
+     "name": "Navigation Payload & Atomic Clocks (NavIC)",
+     "level": 2,
+     "aliases": [
+      "navigation payload",
+      "NavIC",
+      "IRNSS",
+      "NVS",
+      "atomic clock",
+      "rubidium clock",
+      "PNT payload",
+      "L1 band",
+      "positioning payload"
      ],
      "priority": "high",
      "bottleneck": true,
      "in_universe_coverage": false
+    },
+    {
+     "id": "mmic",
+     "name": "MMIC, Rad-hard Die & Space-grade Components",
+     "level": 3,
+     "aliases": [
+      "MMIC",
+      "monolithic microwave integrated circuit",
+      "GaAs",
+      "GaN",
+      "rad-hard",
+      "radiation hardened",
+      "FPGA",
+      "space grade component",
+      "RF die"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "antennas",
+     "name": "Antennas, Feeds & Reflectors",
+     "level": 2,
+     "aliases": [
+      "antenna",
+      "antennas",
+      "feed",
+      "reflector",
+      "deployable reflector",
+      "phased array antenna",
+      "diplexer"
+     ],
+     "priority": "medium",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "test",
+     "name": "Payload Test, Screening & Qualification",
+     "level": 2,
+     "aliases": [
+      "payload test",
+      "screening",
+      "qualification",
+      "TVAC",
+      "thermal vacuum",
+      "vibration test",
+      "EMI/EMC",
+      "near field range",
+      "antenna range"
+     ],
+     "priority": "medium",
+     "bottleneck": true,
+     "in_universe_coverage": true
     }
    ],
    "related": [
