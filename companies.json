@@ -1,13 +1,13 @@
 {
  "registry": "Industry BOM Registry",
  "description": "Company index. Every company mentioned across the registry, the industries it appears in, and its position (exposure) in each. DERIVED from the entry pages by tools/build-companies.mjs — regenerate on every publish, never hand-edit.",
- "generated": "2026-10-30",
+ "generated": "2026-10-31",
  "counts": {
   "companies": 529,
   "industries": 77,
-  "mappings": 2581,
+  "mappings": 2592,
   "multi_industry": 273,
-  "rank_changes": 1
+  "rank_changes": 58
  },
  "companies": [
   {
@@ -1381,7 +1381,7 @@
    "symbol": "BEL",
    "industries_count": 17,
    "direct_count": 11,
-   "nodes_count": 52,
+   "nodes_count": 55,
    "industries": [
     {
      "name": "Cryocooler (India)",
@@ -1618,13 +1618,14 @@
       {
        "exposure": "direct",
        "nodes": [
-        "TT&C, Transponders & TWTA"
+        "TWTA / SSPA — RF Power Amplification"
        ]
       },
       {
        "exposure": "supplier",
        "nodes": [
-        "Communication Payload (Antennas / Transponders)"
+        "Antennas, Feeds & Reflectors",
+        "Communication Payload — Transponders & HTS"
        ]
       }
      ]
@@ -2525,7 +2526,7 @@
    "symbol": "DATAPATTNS",
    "industries_count": 14,
    "direct_count": 6,
-   "nodes_count": 27,
+   "nodes_count": 28,
    "industries": [
     {
      "name": "Cryocooler (India)",
@@ -2694,7 +2695,8 @@
       {
        "exposure": "supplier",
        "nodes": [
-        "TT&C, Transponders & TWTA"
+        "Payload Test, Screening & Qualification",
+        "TT&C, Receivers & Up/Down Converters"
        ]
       }
      ]
@@ -4240,7 +4242,7 @@
    "symbol": "PARAS",
    "industries_count": 11,
    "direct_count": 6,
-   "nodes_count": 19,
+   "nodes_count": 21,
    "industries": [
     {
      "name": "Cryocooler (India)",
@@ -4363,7 +4365,8 @@
       {
        "exposure": "direct",
        "nodes": [
-        "EO Payload (Optical / SAR / Hyperspectral)"
+        "EO Payload — Optical, Hyperspectral & SAR",
+        "Space Optics, Detectors & Focal-Plane Arrays"
        ]
       }
      ]
@@ -4413,7 +4416,7 @@
    "symbol": "CENTUM",
    "industries_count": 11,
    "direct_count": 5,
-   "nodes_count": 15,
+   "nodes_count": 21,
    "industries": [
     {
      "name": "Defence Electro-Optics & Thermal Imaging (India)",
@@ -4544,13 +4547,17 @@
       {
        "exposure": "direct",
        "nodes": [
-        "EO Payload (Optical / SAR / Hyperspectral)"
+        "EO Payload — Optical, Hyperspectral & SAR"
        ]
       },
       {
        "exposure": "supplier",
        "nodes": [
-        "TT&C, Transponders & TWTA"
+        "Communication Payload — Transponders & HTS",
+        "MMIC, Rad-hard Die & Space-grade Components",
+        "Space Optics, Detectors & Focal-Plane Arrays",
+        "TT&C, Receivers & Up/Down Converters",
+        "TWTA / SSPA — RF Power Amplification"
        ]
       }
      ]
@@ -6364,7 +6371,7 @@
    "symbol": "ASTRAMICRO",
    "industries_count": 8,
    "direct_count": 7,
-   "nodes_count": 19,
+   "nodes_count": 25,
    "industries": [
     {
      "name": "India 6G (IMT-2030)",
@@ -6457,14 +6464,17 @@
       {
        "exposure": "direct",
        "nodes": [
-        "Communication Payload (Antennas / Transponders)",
-        "TT&C, Transponders & TWTA"
+        "Antennas, Feeds & Reflectors",
+        "Communication Payload — Transponders & HTS",
+        "MMIC, Rad-hard Die & Space-grade Components",
+        "TT&C, Receivers & Up/Down Converters"
        ]
       },
       {
        "exposure": "supplier",
        "nodes": [
-        "EO Payload (Optical / SAR / Hyperspectral)"
+        "EO Payload — Optical, Hyperspectral & SAR",
+        "Payload Test, Screening & Qualification"
        ]
       }
      ]
@@ -12476,6 +12486,74 @@
    "rank_change": 0
   },
   {
+   "name": "Apollo Micro Systems",
+   "ticker": "NSE/BSE: APOLLO",
+   "symbol": "APOLLO",
+   "industries_count": 4,
+   "direct_count": 0,
+   "nodes_count": 5,
+   "industries": [
+    {
+     "name": "Defence Electro-Optics & Thermal Imaging (India)",
+     "slug": "defence-electro-optics-india",
+     "positions": [
+      {
+       "exposure": "indirect",
+       "nodes": [
+        "Handheld & Weapon Sights"
+       ]
+      },
+      {
+       "exposure": "supplier",
+       "nodes": [
+        "Readout Electronics, ROIC & Image Processing"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "India Missiles",
+     "slug": "missile-india",
+     "positions": [
+      {
+       "exposure": "supplier",
+       "nodes": [
+        "Guidance, Navigation & Avionics"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "India Satellite Payloads",
+     "slug": "satellite-payloads-india",
+     "positions": [
+      {
+       "exposure": "supplier",
+       "nodes": [
+        "Antennas, Feeds & Reflectors"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Shakti EW System (India)",
+     "slug": "shakti-ew-india",
+     "positions": [
+      {
+       "exposure": "supplier",
+       "nodes": [
+        "RF/Microwave Subsystems"
+       ]
+      }
+     ]
+    }
+   ],
+   "also_known_as": [],
+   "rank": 102,
+   "previous_rank": 158,
+   "rank_change": 56
+  },
+  {
    "name": "Triveni Turbine",
    "ticker": "NSE: TRITURBINE",
    "symbol": "TRITURBINE",
@@ -12543,9 +12621,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 102,
+   "rank": 103,
    "previous_rank": 102,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Ellenbarrie Industrial Gases",
@@ -12599,9 +12677,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 103,
+   "rank": 104,
    "previous_rank": 103,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Transrail Lighting",
@@ -12654,9 +12732,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 104,
+   "rank": 105,
    "previous_rank": 104,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Indus Towers",
@@ -12712,9 +12790,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 105,
+   "rank": 106,
    "previous_rank": 105,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Advait Energy Transitions",
@@ -12764,9 +12842,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 106,
+   "rank": 107,
    "previous_rank": 106,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Anupam Rasayan",
@@ -12816,9 +12894,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 107,
+   "rank": 108,
    "previous_rank": 107,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Vikram Solar",
@@ -12868,9 +12946,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 108,
+   "rank": 109,
    "previous_rank": 108,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Affordable Robotic & Automation (Humro)",
@@ -12921,9 +12999,9 @@
    "also_known_as": [
     "Affordable Robotic & Automation"
    ],
-   "rank": 109,
+   "rank": 110,
    "previous_rank": 109,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Bharti Hexacom",
@@ -12972,9 +13050,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 110,
+   "rank": 111,
    "previous_rank": 110,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Ideaforge Technology",
@@ -13031,9 +13109,9 @@
     "ideaForge",
     "ideaForge Technology"
    ],
-   "rank": 111,
+   "rank": 112,
    "previous_rank": 111,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Jyoti Structures",
@@ -13082,9 +13160,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 112,
+   "rank": 113,
    "previous_rank": 112,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Paramount Communications",
@@ -13133,9 +13211,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 113,
+   "rank": 114,
    "previous_rank": 113,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Sterlite Electric",
@@ -13183,9 +13261,9 @@
      ]
     }
    ],
-   "rank": 114,
+   "rank": 115,
    "previous_rank": 114,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Torrent Power",
@@ -13239,9 +13317,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 115,
+   "rank": 116,
    "previous_rank": 115,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Vodafone Idea",
@@ -13290,9 +13368,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 116,
+   "rank": 117,
    "previous_rank": 116,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Avalon Technologies",
@@ -13340,9 +13418,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 117,
+   "rank": 118,
    "previous_rank": 117,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Indo Tech Transformers",
@@ -13392,9 +13470,9 @@
    "also_known_as": [
     "Indotech Transformers"
    ],
-   "rank": 118,
+   "rank": 119,
    "previous_rank": 118,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "R R Kabel",
@@ -13442,9 +13520,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 119,
+   "rank": 120,
    "previous_rank": 119,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "R R Kabel",
@@ -13492,9 +13570,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 120,
+   "rank": 121,
    "previous_rank": 120,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Shilchar Technologies",
@@ -13542,9 +13620,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 121,
+   "rank": 122,
    "previous_rank": 121,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Shilchar Technologies",
@@ -13592,9 +13670,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 122,
+   "rank": 123,
    "previous_rank": 122,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Shilchar Technologies",
@@ -13642,9 +13720,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 123,
+   "rank": 124,
    "previous_rank": 123,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Modern Insulators",
@@ -13692,9 +13770,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 124,
+   "rank": 125,
    "previous_rank": 124,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Modern Insulators",
@@ -13742,9 +13820,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 125,
+   "rank": 126,
    "previous_rank": 125,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Nelco",
@@ -13793,9 +13871,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 126,
+   "rank": 127,
    "previous_rank": 126,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Uno Minda",
@@ -13861,9 +13939,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 127,
+   "rank": 128,
    "previous_rank": 127,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "TD Power Systems",
@@ -13927,9 +14005,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 128,
+   "rank": 129,
    "previous_rank": 128,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Endurance Technologies",
@@ -13981,9 +14059,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 129,
+   "rank": 130,
    "previous_rank": 129,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Aarti Industries",
@@ -14039,9 +14117,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 130,
+   "rank": 131,
    "previous_rank": 130,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Havells India",
@@ -14092,9 +14170,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 131,
+   "rank": 132,
    "previous_rank": 131,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Tata Consultancy Services",
@@ -14155,9 +14233,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 132,
+   "rank": 133,
    "previous_rank": 132,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "RIR Power Electronics",
@@ -14207,9 +14285,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 133,
+   "rank": 134,
    "previous_rank": 133,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Tata Motors",
@@ -14259,9 +14337,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 134,
+   "rank": 135,
    "previous_rank": 134,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Deepak Fertilisers & Petrochemicals",
@@ -14312,9 +14390,9 @@
    "also_known_as": [
     "Deepak Fertilisers"
    ],
-   "rank": 135,
+   "rank": 136,
    "previous_rank": 135,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Ericsson",
@@ -14363,9 +14441,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 136,
+   "rank": 137,
    "previous_rank": 136,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Ericsson",
@@ -14414,9 +14492,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 137,
+   "rank": 138,
    "previous_rank": 137,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Fine Line Circuits",
@@ -14465,9 +14543,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 138,
+   "rank": 139,
    "previous_rank": 138,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Fine-Line Circuits",
@@ -14516,9 +14594,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 139,
+   "rank": 140,
    "previous_rank": 139,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Fine-Line Circuits",
@@ -14567,9 +14645,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 140,
+   "rank": 141,
    "previous_rank": 140,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Nokia",
@@ -14618,9 +14696,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 141,
+   "rank": 142,
    "previous_rank": 141,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Nokia",
@@ -14669,9 +14747,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 142,
+   "rank": 143,
    "previous_rank": 142,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Nokia",
@@ -14720,9 +14798,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 143,
+   "rank": 144,
    "previous_rank": 143,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Ramkrishna Forgings",
@@ -14776,9 +14854,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 144,
+   "rank": 145,
    "previous_rank": 144,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Deepak Nitrite",
@@ -14826,9 +14904,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 145,
+   "rank": 146,
    "previous_rank": 145,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Kirloskar Oil Engines",
@@ -14876,9 +14954,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 146,
+   "rank": 147,
    "previous_rank": 146,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Sterling & Wilson Renewable Energy",
@@ -14928,9 +15006,9 @@
    "also_known_as": [
     "Sterling & Wilson"
    ],
-   "rank": 147,
+   "rank": 148,
    "previous_rank": 147,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Grasim Industries (Aditya Birla Insulators div.)",
@@ -14987,9 +15065,9 @@
     "Grasim Industries",
     "Grasim Industries (Aditya Birla Insulators)"
    ],
-   "rank": 148,
+   "rank": 149,
    "previous_rank": 148,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Zen Technologies (Vector Technics)",
@@ -15048,9 +15126,9 @@
    "also_known_as": [
     "Zen Technologies"
    ],
-   "rank": 149,
+   "rank": 150,
    "previous_rank": 149,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Tata Chemicals",
@@ -15106,9 +15184,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 150,
+   "rank": 151,
    "previous_rank": 150,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Hind Rectifiers",
@@ -15157,9 +15235,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 151,
+   "rank": 152,
    "previous_rank": 151,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Hind Rectifiers",
@@ -15208,9 +15286,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 152,
+   "rank": 153,
    "previous_rank": 152,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Birla Furukawa Fibre Optics",
@@ -15260,9 +15338,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 153,
+   "rank": 154,
    "previous_rank": 153,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Birla Furukawa Fibre Optics",
@@ -15312,9 +15390,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 154,
+   "rank": 155,
    "previous_rank": 154,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Birla Furukawa Fibre Optics",
@@ -15364,9 +15442,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 155,
+   "rank": 156,
    "previous_rank": 155,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Hindustan Zinc",
@@ -15416,9 +15494,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 156,
+   "rank": 157,
    "previous_rank": 156,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Hindustan Zinc",
@@ -15468,65 +15546,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 157,
-   "previous_rank": 157,
-   "rank_change": 0
-  },
-  {
-   "name": "Apollo Micro Systems",
-   "ticker": "NSE/BSE: APOLLO",
-   "symbol": "APOLLO",
-   "industries_count": 3,
-   "direct_count": 0,
-   "nodes_count": 4,
-   "industries": [
-    {
-     "name": "Defence Electro-Optics & Thermal Imaging (India)",
-     "slug": "defence-electro-optics-india",
-     "positions": [
-      {
-       "exposure": "indirect",
-       "nodes": [
-        "Handheld & Weapon Sights"
-       ]
-      },
-      {
-       "exposure": "supplier",
-       "nodes": [
-        "Readout Electronics, ROIC & Image Processing"
-       ]
-      }
-     ]
-    },
-    {
-     "name": "India Missiles",
-     "slug": "missile-india",
-     "positions": [
-      {
-       "exposure": "supplier",
-       "nodes": [
-        "Guidance, Navigation & Avionics"
-       ]
-      }
-     ]
-    },
-    {
-     "name": "Shakti EW System (India)",
-     "slug": "shakti-ew-india",
-     "positions": [
-      {
-       "exposure": "supplier",
-       "nodes": [
-        "RF/Microwave Subsystems"
-       ]
-      }
-     ]
-    }
-   ],
-   "also_known_as": [],
    "rank": 158,
-   "previous_rank": 158,
-   "rank_change": 0
+   "previous_rank": 157,
+   "rank_change": -1
   },
   {
    "name": "Hindustan Copper",
