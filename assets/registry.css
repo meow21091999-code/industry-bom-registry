@@ -204,10 +204,19 @@ table.data tbody tr:hover { background: var(--blue-dim); }
 .callout { border-left: 3px solid var(--gold); background: var(--gold-dim); border-radius: 0 8px 8px 0; padding: 12px 15px; font-size: 13px; color: var(--text-dim); line-height: 1.55; }
 
 /* ===== metric detail popup (centred modal) ===== */
-.metric-modal { position: fixed; inset: 0; z-index: 60; display: flex; align-items: center; justify-content: center; padding: 20px; }
+.metric-modal { position: fixed; inset: 0; z-index: 60; display: flex; align-items: center; justify-content: center; padding: 20px; overscroll-behavior: contain; }
 .metric-modal[hidden] { display: none; }
 .metric-modal__backdrop { position: absolute; inset: 0; background: rgba(6,16,30,.55); }
-.metric-modal__panel { position: relative; background: var(--surface); border: 1px solid var(--border-bright); border-radius: 12px; padding: 22px 24px; max-width: 470px; width: 100%; box-shadow: 0 18px 50px rgba(0,0,0,0.35); }
+.metric-modal__panel {
+  position: relative; background: var(--surface); border: 1px solid var(--border-bright); border-radius: 12px;
+  padding: 22px 24px; max-width: 470px; width: 100%; box-shadow: 0 18px 50px rgba(0,0,0,0.35);
+  /* a long list must scroll INSIDE the panel, never overflow the viewport */
+  max-height: calc(100vh - 40px);
+  max-height: calc(100dvh - 40px);
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
+}
 .metric-modal__close { position: absolute; top: 8px; right: 12px; border: none; background: transparent; color: var(--text-dim); font-size: 22px; line-height: 1; cursor: pointer; }
 .metric-modal__kicker { font-family: var(--font-mono); font-size: 10px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: var(--gold); margin-bottom: 8px; }
 .metric-modal__val { font-size: 26px; font-weight: 700; letter-spacing: -0.8px; font-variant-numeric: tabular-nums; }
@@ -290,22 +299,10 @@ a.row:hover { transform: translateY(-2px); box-shadow: 0 6px 18px rgba(15,37,64,
   .digest { grid-template-columns: 1fr; }
 }
 
-
-/* ===== table pagination ===== */
-/* Client-side pager for long tables: a table marked data-paginate="N" shows at
-   most N rows at a time and carries a .pager strip beneath it. Without JS every
-   row stays visible, so the table degrades gracefully. */
-.pager { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; padding: 9px 12px; border-top: 1px solid var(--border); background: var(--surface-recessed); }
-.pager__info { font-family: var(--font-mono); font-size: 10px; letter-spacing: .05em; text-transform: uppercase; color: var(--text-dim); }
-.pager__btns { display: flex; align-items: center; gap: 4px; flex-wrap: wrap; }
-.pager__btn { font-family: var(--font-mono); font-size: 11px; line-height: 1.2; min-width: 26px; padding: 4px 7px; text-align: center; border: 1px solid var(--border); border-radius: 5px; background: var(--surface); color: var(--text-dim); cursor: pointer; }
-.pager__btn:hover:not(:disabled):not(.is-current) { border-color: var(--blue); color: var(--text); }
-.pager__btn.is-current { border-color: var(--gold); background: var(--gold-dim); color: var(--gold); font-weight: 600; }
-.pager__btn:disabled { opacity: .38; cursor: default; }
-.pager__gap { font-family: var(--font-mono); font-size: 11px; color: var(--text-dim); padding: 0 2px; }
-
-/* a paginated table restripes by its VISIBLE rows — nth-child counts hidden ones,
-   so the shared stripe rule is switched off for it and JS applies .stripe instead */
-table.data[data-paged] tbody tr:nth-child(even) { background: transparent; }
-table.data[data-paged] tbody tr.stripe { background: var(--surface-recessed); }
-table.data[data-paged] tbody tr:hover { background: var(--blue-dim); }
+/* narrow screens: the popup needs every pixel of width, and its own scroll */
+@media (max-width: 520px) {
+  .metric-modal { padding: 10px; align-items: flex-start; }
+  .metric-modal__panel { padding: 16px 16px 20px; max-height: calc(100vh - 20px); max-height: calc(100dvh - 20px); }
+  .metric-modal__val { font-size: 21px; }
+  .metric-modal__bullets li { font-size: 12.5px; }
+}
