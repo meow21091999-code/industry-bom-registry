@@ -28,7 +28,7 @@ const DIR = 'industries';
 const OUT_JSON = 'industry-ranking.json';
 const OUT_VIEW = 'views/industries-ranked.html';
 // tables on the ranked view show at most this many rows at a time
-const PAGE_SIZE = 15;
+const PAGE_SIZE = 10;
 
 const clamp = (x, lo, hi) => Math.max(lo, Math.min(hi, x));
 
