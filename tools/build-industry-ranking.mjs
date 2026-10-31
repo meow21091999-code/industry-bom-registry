@@ -27,6 +27,8 @@ import path from 'node:path';
 const DIR = 'industries';
 const OUT_JSON = 'industry-ranking.json';
 const OUT_VIEW = 'views/industries-ranked.html';
+// tables on the ranked view show at most this many rows at a time
+const PAGE_SIZE = 15;
 
 const clamp = (x, lo, hi) => Math.max(lo, Math.min(hi, x));
 
@@ -251,7 +253,7 @@ const currentRanked = rows.filter(r => r.current_score != null).sort((a, b) => b
 const riskRanked = rows.filter(r => r.risk_adjusted != null).sort((a, b) => b.risk_adjusted - a.risk_adjusted);
 const unscored = rows.filter(r => r.overall == null);
 
-const table = (list, cols) => `<div class="table-wrap"><div class="table-scroll"><table class="data">
+const table = (list, cols) => `<div class="table-wrap" data-paginate="${PAGE_SIZE}"><div class="table-scroll"><table class="data">
 <thead><tr><th>#</th><th>Industry</th>${cols.map(c => `<th>${c.h}</th>`).join('')}</tr></thead>
 <tbody>
 ${list.map((r, i) => `<tr>
@@ -303,7 +305,7 @@ function detailedTable(list) {
     <td class="c">${r.confidence && r.confidence.primary_source_pct != null ? r.confidence.primary_source_pct + '%' : '<span class="dim">-</span>'}</td>
   </tr>`).join('\n');
 
-  return `<div class="table-wrap"><div class="table-scroll"><table class="data detail">
+  return `<div class="table-wrap" data-paginate="${PAGE_SIZE}"><div class="table-scroll"><table class="data detail">
   <thead>${head1}</thead><tbody>
   ${body}
   </tbody></table></div></div>`;
@@ -324,7 +326,7 @@ function valueCaptureSection() {
     </tr>`).join('\n');
     return `<div class="sec-head" style="border-bottom:none;margin-bottom:6px"><span class="sec-title" style="font-size:13px">${esc(r.title)}</span>
       <span class="sec-note">${r.value_capture.length} nodes &middot; ranked by value capture</span></div>
-      <div class="table-wrap"><div class="table-scroll"><table class="data">
+      <div class="table-wrap" data-paginate="${PAGE_SIZE}"><div class="table-scroll"><table class="data">
       <thead><tr><th>#</th><th>Node</th><th>Score (1-5)</th><th>/100</th><th>Coverage</th></tr></thead>
       <tbody>${trs}</tbody></table></div></div>`;
   }).join('\n');
@@ -386,7 +388,7 @@ ${Object.entries(P.scale || {}).map(([k, v]) => `<tr><td class="c"><span class="
 </tbody></table></div></div>
 
 <div class="sec-head"><span class="sec-num">01</span><span class="sec-title">Overall industry score</span>
-<span class="sec-note">every category score shown, grouped under its lens</span></div>
+<span class="sec-note">every category score shown, grouped under its lens &middot; ${PAGE_SIZE} per page</span></div>
 ${detailedTable(ranked)}
 
 <div class="sec-head"><span class="sec-num">02</span><span class="sec-title">Structural attractiveness</span>
@@ -407,7 +409,7 @@ ${valueCaptureSection()}
 
 <div class="sec-head"><span class="sec-num">06</span><span class="sec-title">Not yet scored</span>
 <span class="sec-note">${unscored.length} industries &mdash; backfill pending</span></div>
-<div class="table-wrap"><div class="table-scroll"><table class="data">
+<div class="table-wrap" data-paginate="${PAGE_SIZE}"><div class="table-scroll"><table class="data">
 <thead><tr><th>Industry</th><th>Status</th></tr></thead><tbody>
 ${unscored.map(r => `<tr><td><b>${esc(r.title)}</b><div class="slug">${esc(r.group || '')}</div></td><td>${r.legacy ? '<span class="scale c4">legacy block — needs rescoring</span>' : '<span class="dim">no score block</span>'}</td></tr>`).join('\n')}
 </tbody></table></div></div>
@@ -420,8 +422,102 @@ ${unscored.map(r => `<tr><td><b>${esc(r.title)}</b><div class="slug">${esc(r.gro
   Structural, current-opportunity and risk-adjusted are separate lenses: an industry can be structurally excellent and currently expensive.
   <b>Resilience</b> is scored on the same attractiveness scale, so 5 means the LEAST risk &mdash; risk-adjusted = structural &times; (resilience &divide; 5) therefore raises the score for steadier industries, which is the intended direction. That formula is our construction, not the framework's.
   <b>Evidence</b> and <b>Primary src</b> report how well-supported a score is, separately from how good it is: a 75 built on tier-1 filings and a 75 built on trade press are not the same claim.
+  Tables on this view show ${PAGE_SIZE} rows at a time, with a pager beneath each one.
   Generated ${out.generated}.
 </div>
+<script>
+/* table pagination - every table marked data-paginate="N" shows at most N rows at a
+   time. Without JS nothing is hidden, so a no-script reader still gets the whole table. */
+(function () {
+  Array.prototype.forEach.call(document.querySelectorAll('.table-wrap[data-paginate]'), function (wrap) {
+    var table = wrap.querySelector('table.data');
+    var tbody = table && table.querySelector('tbody');
+    if (!tbody) return;
+
+    var rows = Array.prototype.filter.call(tbody.children, function (el) { return el.tagName === 'TR'; });
+    var size = parseInt(wrap.getAttribute('data-paginate'), 10) || 15;
+    if (rows.length <= size) return;
+
+    var pages = Math.ceil(rows.length / size);
+    var page = 1;
+    var scroller = wrap.querySelector('.table-scroll');
+
+    table.setAttribute('data-paged', '1');
+
+    var pager = document.createElement('div');
+    pager.className = 'pager';
+    pager.setAttribute('role', 'group');
+    pager.setAttribute('aria-label', 'Table pages');
+    var info = document.createElement('span');
+    info.className = 'pager__info';
+    var btns = document.createElement('span');
+    btns.className = 'pager__btns';
+    pager.appendChild(info);
+    pager.appendChild(btns);
+    wrap.appendChild(pager);
+
+    function windowOf() {
+      var set = [], i, lo, hi;
+      if (pages <= 9) { for (i = 1; i <= pages; i++) set.push(i); return set; }
+      set.push(1);
+      lo = Math.max(2, page - 1);
+      hi = Math.min(pages - 1, page + 1);
+      if (lo > 2) set.push('gap');
+      for (i = lo; i <= hi; i++) set.push(i);
+      if (hi < pages - 1) set.push('gap');
+      set.push(pages);
+      return set;
+    }
+
+    function go(target) {
+      page = Math.max(1, Math.min(pages, target));
+      render();
+      if (scroller) scroller.scrollTop = 0;
+    }
+
+    function addBtn(label, target, opts) {
+      opts = opts || {};
+      var b = document.createElement('button');
+      b.type = 'button';
+      b.className = 'pager__btn' + (opts.current ? ' is-current' : '');
+      b.textContent = label;
+      if (opts.current) b.setAttribute('aria-current', 'page');
+      if (opts.disabled) b.disabled = true;
+      else b.addEventListener('click', function () { go(target); });
+      btns.appendChild(b);
+    }
+
+    function render() {
+      var start = (page - 1) * size;
+      rows.forEach(function (r, i) {
+        var show = i >= start && i < start + size;
+        r.style.display = show ? '' : 'none';
+        if (show) r.classList.toggle('stripe', (i - start) % 2 === 1);
+        else r.classList.remove('stripe');
+      });
+
+      info.textContent = 'Rows ' + (start + 1) + '\u2013' + Math.min(start + size, rows.length) +
+        ' of ' + rows.length + ' \u00b7 page ' + page + ' of ' + pages;
+
+      btns.innerHTML = '';
+      addBtn('\u2039 Prev', page - 1, { disabled: page === 1 });
+      windowOf().forEach(function (p) {
+        if (p === 'gap') {
+          var g = document.createElement('span');
+          g.className = 'pager__gap';
+          g.textContent = '\u2026';
+          btns.appendChild(g);
+        } else {
+          addBtn(String(p), p, { current: p === page });
+        }
+      });
+      addBtn('Next \u203a', page + 1, { disabled: page === pages });
+    }
+
+    render();
+  });
+})();
+</script>
 </div></body></html>`;
 
 fs.mkdirSync('views', { recursive: true });
