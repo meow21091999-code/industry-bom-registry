@@ -391,7 +391,144 @@
      "valuation"
     ]
    },
-   "value_capture": [],
+   "value_capture": [
+    {
+     "node": "EHV / HV Power Cables",
+     "basis": "The node that keeps the money today: record margins on a richer EHV and export mix, high-teens ROIC at Polycab and KEI, and a 16.7% segment CAGR - though the capability rests on imported lines and compounds.",
+     "params": {
+      "op_share": 5,
+      "pricing_power": 4,
+      "roic": 5,
+      "barriers": 4,
+      "bottleneck": 3,
+      "pool_growth": 5,
+      "cash_conversion": 4,
+      "switching": 3
+     },
+     "score": 4.3,
+     "score100": 86,
+     "coverage": 100
+    },
+    {
+     "node": "XLPE compound (HV/EHV grade)",
+     "basis": "Imported and concentrated, and the single input that decides whether an Indian EHV line can run at all; a qualified domestic compound would be a genuine toll.",
+     "params": {
+      "op_share": 2,
+      "pricing_power": 5,
+      "roic": 4,
+      "barriers": 5,
+      "bottleneck": 5,
+      "pool_growth": 4,
+      "cash_conversion": 4,
+      "switching": 5
+     },
+     "score": 4.05,
+     "score100": 81,
+     "coverage": 100
+    },
+    {
+     "node": "Semiconductive compound",
+     "basis": "A narrower version of the same story: no Indian maker, formulated to the cable OEM's process, requalification measured in years.",
+     "params": {
+      "op_share": 1,
+      "pricing_power": 5,
+      "roic": 4,
+      "barriers": 5,
+      "bottleneck": 4,
+      "pool_growth": 4,
+      "cash_conversion": 4,
+      "switching": 5
+     },
+     "score": 3.75,
+     "score100": 75,
+     "coverage": 100
+    },
+    {
+     "node": "CCV / VCV line & equipment",
+     "basis": "The capital good that gates entry: every new EHV plant in India is an imported CCV or VCV line, so the equipment maker earns the capex cycle rather than the cable cycle.",
+     "params": {
+      "op_share": 1,
+      "pricing_power": 5,
+      "roic": 4,
+      "barriers": 5,
+      "bottleneck": 4,
+      "pool_growth": 4,
+      "cash_conversion": 3,
+      "switching": 5
+     },
+     "score": 3.65,
+     "score100": 73,
+     "coverage": 100
+    },
+    {
+     "node": "Joints, terminations & accessories",
+     "basis": "Accessories carry more margin per unit than the cable and are largely imported at EHV: a small pool with disproportionate pricing power.",
+     "params": {
+      "op_share": 2,
+      "pricing_power": 4,
+      "roic": 4,
+      "barriers": 4,
+      "bottleneck": 4,
+      "pool_growth": 4,
+      "cash_conversion": 3,
+      "switching": 4
+     },
+     "score": 3.5,
+     "score100": 70,
+     "coverage": 100
+    },
+    {
+     "node": "Submarine cable & lay vessels",
+     "basis": "No Indian plant and no Indian lay vessel - the pool exists only as an import, and the barrier is a ship as much as a factory.",
+     "params": {
+      "op_share": 1,
+      "pricing_power": 5,
+      "roic": 3,
+      "barriers": 5,
+      "bottleneck": 4,
+      "pool_growth": 5,
+      "cash_conversion": 2,
+      "switching": 5
+     },
+     "score": 3.5,
+     "score100": 70,
+     "coverage": 100
+    },
+    {
+     "node": "Installation / cable-laying EPC",
+     "basis": "Domestic and competitive, L1-tendered, with route and right-of-way risk: it carries the schedule but not the margin.",
+     "params": {
+      "op_share": 2,
+      "pricing_power": 2,
+      "roic": 2,
+      "barriers": 3,
+      "bottleneck": 3,
+      "pool_growth": 4,
+      "cash_conversion": 2,
+      "switching": 2
+     },
+     "score": 2.45,
+     "score100": 49,
+     "coverage": 100
+    },
+    {
+     "node": "Conductor system",
+     "basis": "Copper and aluminium pass through at metal-indexed prices; Apar's scale wins volume, not pricing power.",
+     "params": {
+      "op_share": 2,
+      "pricing_power": 2,
+      "roic": 3,
+      "barriers": 2,
+      "bottleneck": 2,
+      "pool_growth": 3,
+      "cash_conversion": 3,
+      "switching": 2
+     },
+     "score": 2.35,
+     "score100": 47,
+     "coverage": 100
+    }
+   ],
    "provisional": false,
    "notes": "Scored against 'Industry-Level Investment Parameters & Scoring Architecture'. Opportunity uses the same Ken Research HV series already carried in this page's Market & growth digest block. Valuation left UNAVAILABLE.",
    "overall_rank": 4,
@@ -1670,7 +1807,7 @@
      "lens": "structural",
      "score": 5,
      "from": "category",
-     "basis": "India medical-device market US$14-17.5 bn (2025) to ~US$50 bn by 2030, ~23-29% CAGR."
+     "basis": "India medical-device market USD 15.2 bn (2025) to USD 50.1 bn (2030) at a 26.9% nominal CAGR (base disputed at USD 14-17.5 bn, so the implied range is 23-29%), with 70-80% of demand imported."
     },
     "competitive": {
      "name": "Competitive structure & moat",
@@ -1747,7 +1884,144 @@
      "industry valuation"
     ]
    },
-   "value_capture": [],
+   "value_capture": [
+    {
+     "node": "MRI Systems",
+     "basis": "The highest-ASP node in the basket, 70-80% imported; the money is in the installed base and its service contract, which is why switching costs dominate the score.",
+     "params": {
+      "op_share": 4,
+      "pricing_power": 4,
+      "roic": 3,
+      "barriers": 5,
+      "bottleneck": 4,
+      "pool_growth": 4,
+      "cash_conversion": 3,
+      "switching": 5
+     },
+     "score": 3.95,
+     "score100": 79,
+     "coverage": 100
+    },
+    {
+     "node": "X-ray Tubes & Flat-Panel Detectors",
+     "basis": "The hardest component in Indian imaging: tubes and panels are a foreign oligopoly, the Varex AMTZ line (Jul-2025) is a first local step, and nothing else in the chain gates as much value.",
+     "params": {
+      "op_share": 2,
+      "pricing_power": 5,
+      "roic": 4,
+      "barriers": 5,
+      "bottleneck": 5,
+      "pool_growth": 4,
+      "cash_conversion": 3,
+      "switching": 5
+     },
+     "score": 3.95,
+     "score100": 79,
+     "coverage": 100
+    },
+    {
+     "node": "CT Scanners",
+     "basis": "Import-led economics at a lower price point than MRI, and the node where Indian OEMs (Innvolution) have begun to assemble rather than to make the tube.",
+     "params": {
+      "op_share": 4,
+      "pricing_power": 3,
+      "roic": 3,
+      "barriers": 5,
+      "bottleneck": 4,
+      "pool_growth": 4,
+      "cash_conversion": 3,
+      "switching": 4
+     },
+     "score": 3.75,
+     "score100": 75,
+     "coverage": 100
+    },
+    {
+     "node": "Superconducting Magnets & Cryogenics",
+     "basis": "No Indian maker of the magnet and cryostat; it prices as a monopoly component inside an imported system and cannot be substituted at system level.",
+     "params": {
+      "op_share": 1,
+      "pricing_power": 5,
+      "roic": 3,
+      "barriers": 5,
+      "bottleneck": 4,
+      "pool_growth": 4,
+      "cash_conversion": 2,
+      "switching": 5
+     },
+     "score": 3.4,
+     "score100": 68,
+     "coverage": 100
+    },
+    {
+     "node": "Coronary Stents & Interventional Consumables",
+     "basis": "Large volume and genuine Indian share (Sahajanand, Meril), but NPPA price ceilings cap the pricing power that would otherwise sit in this node.",
+     "params": {
+      "op_share": 3,
+      "pricing_power": 2,
+      "roic": 3,
+      "barriers": 3,
+      "bottleneck": 2,
+      "pool_growth": 4,
+      "cash_conversion": 3,
+      "switching": 3
+     },
+     "score": 2.85,
+     "score100": 57,
+     "coverage": 100
+    },
+    {
+     "node": "Orthopaedic Implants",
+     "basis": "Same ceiling dynamic as stents: domestic manufacturing is real, but the NPPA-capped price and tender-driven hospital buying keep returns ordinary.",
+     "params": {
+      "op_share": 3,
+      "pricing_power": 2,
+      "roic": 3,
+      "barriers": 3,
+      "bottleneck": 2,
+      "pool_growth": 4,
+      "cash_conversion": 3,
+      "switching": 3
+     },
+     "score": 2.85,
+     "score100": 57,
+     "coverage": 100
+    },
+    {
+     "node": "Intraocular Lenses (IOL)",
+     "basis": "Strong Indian private makers (Aurolab, Appasamy) serve the volume, premium optics are imported and the lens is price-capped, so the pool is defensible rather than lucrative.",
+     "params": {
+      "op_share": 2,
+      "pricing_power": 2,
+      "roic": 3,
+      "barriers": 3,
+      "bottleneck": 2,
+      "pool_growth": 4,
+      "cash_conversion": 3,
+      "switching": 2
+     },
+     "score": 2.6,
+     "score100": 52,
+     "coverage": 100
+    },
+    {
+     "node": "Disposables & Consumables",
+     "basis": "The most fragmented node, with low barriers and low switching, but it converts cash quickly and is where the listed Indian base (Poly Medicure) actually earns.",
+     "params": {
+      "op_share": 3,
+      "pricing_power": 2,
+      "roic": 4,
+      "barriers": 1,
+      "bottleneck": 1,
+      "pool_growth": 4,
+      "cash_conversion": 4,
+      "switching": 1
+     },
+     "score": 2.6,
+     "score100": 52,
+     "coverage": 100
+    }
+   ],
    "provisional": false,
    "notes": "Scored against 'Industry-Level Investment Parameters & Scoring Architecture'. Cycle position and valuation left UNAVAILABLE — the registry carries no cycle or valuation data for these industries.",
    "overall_rank": 3,
@@ -2636,7 +2910,144 @@
      "valuation"
     ]
    },
-   "value_capture": [],
+   "value_capture": [
+    {
+     "node": "EHV Power Transformers & Reactors",
+     "basis": "9-18 month lead times and a four-to-five-OEM qualified field at 400-765 kV give the node real pricing power; order-book working capital is what holds cash conversion back.",
+     "params": {
+      "op_share": 4,
+      "pricing_power": 5,
+      "roic": 4,
+      "barriers": 5,
+      "bottleneck": 5,
+      "pool_growth": 4,
+      "cash_conversion": 2,
+      "switching": 4
+     },
+     "score": 4.2,
+     "score100": 84,
+     "coverage": 100
+    },
+    {
+     "node": "Transmission Developer / Owner",
+     "basis": "The largest operating-profit pool in the chain: 35-year TBCB concessions and regulated returns on a PGCIL pipeline of Rs 1.75 L cr (Jun-2026) inside Rs 9.16 L cr of NEP capex, with transmission charges insulated from energy-volume risk; capital intensity and right-of-way risk are what cap the ROIC.",
+     "params": {
+      "op_share": 5,
+      "pricing_power": 3,
+      "roic": 4,
+      "barriers": 5,
+      "bottleneck": 4,
+      "pool_growth": 5,
+      "cash_conversion": 3,
+      "switching": 2
+     },
+     "score": 4.1,
+     "score100": 82,
+     "coverage": 100
+    },
+    {
+     "node": "HVDC Converter Stations & Control",
+     "basis": "Valves and control code come from a three-player global oligopoly while India has four TBCB schemes plus Barmer (Rs 24,974 cr, Aug-2026) to award; the equipment is bought once per corridor and requalification is effectively closed.",
+     "params": {
+      "op_share": 3,
+      "pricing_power": 5,
+      "roic": 3,
+      "barriers": 5,
+      "bottleneck": 5,
+      "pool_growth": 5,
+      "cash_conversion": 3,
+      "switching": 5
+     },
+     "score": 4.1,
+     "score100": 82,
+     "coverage": 100
+    },
+    {
+     "node": "GIS / AIS Switchgear",
+     "basis": "A domestic oligopoly riding the same substation order book as transformers, with a named GIS bus-duct gap that keeps part of the pool abroad.",
+     "params": {
+      "op_share": 3,
+      "pricing_power": 4,
+      "roic": 4,
+      "barriers": 4,
+      "bottleneck": 4,
+      "pool_growth": 4,
+      "cash_conversion": 3,
+      "switching": 4
+     },
+     "score": 3.7,
+     "score100": 74,
+     "coverage": 100
+    },
+    {
+     "node": "Power Semiconductors (IGBT / SiC)",
+     "basis": "STATCOM, HVDC and FACTS devices carry 60-65% imported semiconductor content; the pool is real but sits with foreign fabs, and no domestic line exists.",
+     "params": {
+      "op_share": 1,
+      "pricing_power": 4,
+      "roic": 3,
+      "barriers": 5,
+      "bottleneck": 4,
+      "pool_growth": 4,
+      "cash_conversion": 4,
+      "switching": 5
+     },
+     "score": 3.45,
+     "score100": 69,
+     "coverage": 100
+    },
+    {
+     "node": "CRGO Electrical Steel",
+     "basis": "~90% imported with a live DGTR anti-dumping probe, so the node sets cost and allocation for every transformer builder without leaving a domestic margin; mill qualification is the barrier.",
+     "params": {
+      "op_share": 2,
+      "pricing_power": 4,
+      "roic": 2,
+      "barriers": 5,
+      "bottleneck": 5,
+      "pool_growth": 3,
+      "cash_conversion": 3,
+      "switching": 4
+     },
+     "score": 3.35,
+     "score100": 67,
+     "coverage": 100
+    },
+    {
+     "node": "Towers & Transmission EPC",
+     "basis": "L1-tendered, labour- and steel-indexed, with margins that move with commodity prices and payment cycles: volume grows with capex, the economics do not compound.",
+     "params": {
+      "op_share": 3,
+      "pricing_power": 2,
+      "roic": 3,
+      "barriers": 2,
+      "bottleneck": 2,
+      "pool_growth": 4,
+      "cash_conversion": 2,
+      "switching": 2
+     },
+     "score": 2.55,
+     "score100": 51,
+     "coverage": 100
+    },
+    {
+     "node": "Conductors",
+     "basis": "Aluminium pass-through pricing across several qualified makers; a volume business that captures little of the value created upstream or downstream.",
+     "params": {
+      "op_share": 2,
+      "pricing_power": 2,
+      "roic": 3,
+      "barriers": 2,
+      "bottleneck": 2,
+      "pool_growth": 3,
+      "cash_conversion": 3,
+      "switching": 2
+     },
+     "score": 2.35,
+     "score100": 47,
+     "coverage": 100
+    }
+   ],
    "provisional": false,
    "notes": "Scored against 'Industry-Level Investment Parameters & Scoring Architecture'. Opportunity uses the same series as the Market & growth digest block (Grand View Research via Kotak Neo, base 2024). Valuation left UNAVAILABLE — the registry carries no industry valuation data.",
    "overall_rank": 2,
@@ -2866,7 +3277,110 @@
      "valuation"
     ]
    },
-   "value_capture": [],
+   "value_capture": [
+    {
+     "node": "SLAM & Navigation Software",
+     "basis": "Proprietary navigation engines are the defensible layer in an Indian stack that is otherwise services-like; domestic capability is strong and the pool grows with every deployed AMR.",
+     "params": {
+      "op_share": 4,
+      "pricing_power": 3,
+      "roic": 4,
+      "barriers": 4,
+      "bottleneck": 4,
+      "pool_growth": 5,
+      "cash_conversion": 4,
+      "switching": 3
+     },
+     "score": 3.9,
+     "score100": 78,
+     "coverage": 100
+    },
+    {
+     "node": "Fleet Management",
+     "basis": "Fleet orchestration is where recurring revenue sits - licences per robot, per site - and with 87 firms competing the moat is integration depth, not the algorithm.",
+     "params": {
+      "op_share": 4,
+      "pricing_power": 3,
+      "roic": 4,
+      "barriers": 3,
+      "bottleneck": 4,
+      "pool_growth": 5,
+      "cash_conversion": 4,
+      "switching": 4
+     },
+     "score": 3.8,
+     "score100": 76,
+     "coverage": 100
+    },
+    {
+     "node": "Edge & Cloud Compute",
+     "basis": "The largest absolute pool in the stack, and imported: 85-90% of robotic component value including compute is foreign, so the node sets the customer's cost without leaving margin in India.",
+     "params": {
+      "op_share": 3,
+      "pricing_power": 4,
+      "roic": 3,
+      "barriers": 4,
+      "bottleneck": 5,
+      "pool_growth": 5,
+      "cash_conversion": 2,
+      "switching": 4
+     },
+     "score": 3.65,
+     "score100": 73,
+     "coverage": 100
+    },
+    {
+     "node": "OT Integration (PLC / MES / WMS)",
+     "basis": "Whoever wires the robot into the customer's PLC and WMS holds the account: the highest switching cost in the stack, though the work is services-heavy and less scalable.",
+     "params": {
+      "op_share": 2,
+      "pricing_power": 3,
+      "roic": 3,
+      "barriers": 4,
+      "bottleneck": 3,
+      "pool_growth": 4,
+      "cash_conversion": 3,
+      "switching": 5
+     },
+     "score": 3.15,
+     "score100": 63,
+     "coverage": 100
+    },
+    {
+     "node": "AI Vision & Perception",
+     "basis": "Perception is becoming a commodity model layer; the Indian players here are engineering-services firms (Tata Elxsi, Cyient, KPIT) earning time-and-material rather than product margin.",
+     "params": {
+      "op_share": 2,
+      "pricing_power": 2,
+      "roic": 3,
+      "barriers": 3,
+      "bottleneck": 3,
+      "pool_growth": 5,
+      "cash_conversion": 3,
+      "switching": 3
+     },
+     "score": 2.85,
+     "score100": 57,
+     "coverage": 100
+    },
+    {
+     "node": "Digital Twin & Simulation",
+     "basis": "Sold as a service alongside deployment; low barriers and no lock-in keep it a supporting pool rather than a value pool.",
+     "params": {
+      "op_share": 2,
+      "pricing_power": 3,
+      "roic": 3,
+      "barriers": 2,
+      "bottleneck": 2,
+      "pool_growth": 4,
+      "cash_conversion": 3,
+      "switching": 3
+     },
+     "score": 2.65,
+     "score100": 53,
+     "coverage": 100
+    }
+   ],
    "provisional": false,
    "notes": "Opportunity uses the same series as the Market & growth digest block (India robot software US$223.4 mn in 2023 to US$1,312.3 mn by 2030 at 27.7% value CAGR, inside a robotics market of US$1.1 bn in 2025 rising to US$4.6 bn by 2030 at ~33%). Valuation left UNAVAILABLE — the registry carries no industry valuation series.",
    "overall_rank": 5,
@@ -4654,7 +5168,144 @@
      "valuation"
     ]
    },
-   "value_capture": [],
+   "value_capture": [
+    {
+     "node": "Power Transformers & Reactors",
+     "basis": "The centre of gravity: Rs 33,000 cr (FY25) to over Rs 40,000 cr (FY26) at 10-11%, 9-18 month lead times and a five-OEM qualified field; order-book working capital is what holds ROIC below the margin.",
+     "params": {
+      "op_share": 5,
+      "pricing_power": 5,
+      "roic": 4,
+      "barriers": 5,
+      "bottleneck": 5,
+      "pool_growth": 4,
+      "cash_conversion": 2,
+      "switching": 4
+     },
+     "score": 4.4,
+     "score100": 88,
+     "coverage": 100
+    },
+    {
+     "node": "HVDC Converter Valves",
+     "basis": "A three-player global oligopoly supplying every Indian HVDC scheme; the pool is large per project and effectively closed to new entrants.",
+     "params": {
+      "op_share": 2,
+      "pricing_power": 5,
+      "roic": 3,
+      "barriers": 5,
+      "bottleneck": 5,
+      "pool_growth": 5,
+      "cash_conversion": 3,
+      "switching": 5
+     },
+     "score": 3.9,
+     "score100": 78,
+     "coverage": 100
+    },
+    {
+     "node": "GIS / AIS Switchgear",
+     "basis": "A domestic oligopoly with HV GIS output up 41.8% in FY26 and a bus-duct gap that keeps some value abroad; better cash conversion than transformers.",
+     "params": {
+      "op_share": 4,
+      "pricing_power": 4,
+      "roic": 4,
+      "barriers": 4,
+      "bottleneck": 3,
+      "pool_growth": 4,
+      "cash_conversion": 3,
+      "switching": 4
+     },
+     "score": 3.8,
+     "score100": 76,
+     "coverage": 100
+    },
+    {
+     "node": "Protection, Control & Automation",
+     "basis": "Automation content per bay rises with digital substations, and the system stays with the asset for the life of the substation.",
+     "params": {
+      "op_share": 3,
+      "pricing_power": 4,
+      "roic": 4,
+      "barriers": 4,
+      "bottleneck": 4,
+      "pool_growth": 4,
+      "cash_conversion": 3,
+      "switching": 5
+     },
+     "score": 3.75,
+     "score100": 75,
+     "coverage": 100
+    },
+    {
+     "node": "Numerical Relays / IEDs",
+     "basis": "Imported at the high end and firmware-defined; the qualified-supplier list is short and the device outlives the project.",
+     "params": {
+      "op_share": 2,
+      "pricing_power": 4,
+      "roic": 4,
+      "barriers": 5,
+      "bottleneck": 4,
+      "pool_growth": 4,
+      "cash_conversion": 3,
+      "switching": 5
+     },
+     "score": 3.7,
+     "score100": 74,
+     "coverage": 100
+    },
+    {
+     "node": "OLTC / Tap Changers",
+     "basis": "An imported precision sub-assembly replaced through the transformer's life, giving aftermarket recurrence on top of the OEM fit.",
+     "params": {
+      "op_share": 2,
+      "pricing_power": 4,
+      "roic": 4,
+      "barriers": 4,
+      "bottleneck": 4,
+      "pool_growth": 4,
+      "cash_conversion": 3,
+      "switching": 4
+     },
+     "score": 3.5,
+     "score100": 70,
+     "coverage": 100
+    },
+    {
+     "node": "CRGO Electrical Steel",
+     "basis": "The chain's cost-setting import at ~90% dependence with an anti-dumping probe live; the value is captured abroad and the domestic share is only 10-12%.",
+     "params": {
+      "op_share": 2,
+      "pricing_power": 4,
+      "roic": 2,
+      "barriers": 5,
+      "bottleneck": 5,
+      "pool_growth": 3,
+      "cash_conversion": 3,
+      "switching": 4
+     },
+     "score": 3.35,
+     "score100": 67,
+     "coverage": 100
+    },
+    {
+     "node": "EPC / Substation Integration",
+     "basis": "Domestic, competitive and schedule-bound: it books revenue on every project but earns a thin, tender-set margin.",
+     "params": {
+      "op_share": 2,
+      "pricing_power": 2,
+      "roic": 2,
+      "barriers": 2,
+      "bottleneck": 2,
+      "pool_growth": 4,
+      "cash_conversion": 2,
+      "switching": 2
+     },
+     "score": 2.2,
+     "score100": 44,
+     "coverage": 100
+    }
+   ],
    "provisional": false,
    "notes": "Scored against 'Industry-Level Investment Parameters & Scoring Architecture'. Opportunity uses the same CRISIL transformer series as the Market & growth digest block; the switchgear series is reported separately and never added to it. Valuation left UNAVAILABLE.",
    "overall_rank": 6,
