@@ -99,10 +99,10 @@
  },
  "counts": {
   "industries": 77,
-  "scored": 31,
+  "scored": 36,
   "legacy": 0,
-  "unscored": 46,
-  "ranked": 31
+  "unscored": 41,
+  "ranked": 36
  },
  "industries": [
   {
@@ -231,12 +231,12 @@
    "value_capture": [],
    "provisional": false,
    "notes": "Opportunity uses the same series as the Market &amp; growth digest block (Alora Advisory: ~USD 1.5 bn in 2025 to ~USD 7.5 bn by 2030, ~33% nominal CAGR; Grand View&rsquo;s narrower non-utility scope is shown alongside and is not averaged). Valuation left UNAVAILABLE &mdash; no industry valuation series exists.",
-   "overall_rank": 29,
-   "risk_adjusted_rank": 27,
+   "overall_rank": 34,
+   "risk_adjusted_rank": 32,
    "structural_score": 48.6,
    "current_score": 40,
-   "structural_score_rank": 28,
-   "current_score_rank": 18
+   "structural_score_rank": 33,
+   "current_score_rank": 20
   },
   {
    "slug": "battery-management-system-india",
@@ -633,12 +633,12 @@
    "value_capture": [],
    "provisional": false,
    "notes": "This run REPLACES the prior Market & growth block, which rested on a tier-3 source and reported 3-year and last-year splits as UNAVAILABLE. Opportunity now uses the IMARC series (USD 1.95 bn 2025 to USD 9.75 bn 2030, 38.0% CAGR) and the conflicting NITI Aayog / third-house estimates are shown as a range rather than averaged. Valuation left UNAVAILABLE — no industry valuation series.",
-   "overall_rank": 21,
-   "risk_adjusted_rank": 21,
+   "overall_rank": 26,
+   "risk_adjusted_rank": 25,
    "structural_score": 57.1,
    "current_score": 40,
-   "structural_score_rank": 20,
-   "current_score_rank": 19
+   "structural_score_rank": 24,
+   "current_score_rank": 21
   },
   {
    "slug": "guns-india",
@@ -742,11 +742,11 @@
    "value_capture": [],
    "provisional": false,
    "notes": "Opportunity uses the same series as the Market & growth digest block (KPMG ammunition market of Rs 7,057 cr in 2023 rising to Rs 11,981 cr by 2032 at 4.93%, inside FY26 defence production of Rs 1.78 lakh cr). Valuation left UNAVAILABLE — the registry carries no industry valuation data.",
-   "overall_rank": 15,
-   "risk_adjusted_rank": 20,
+   "overall_rank": 17,
+   "risk_adjusted_rank": 24,
    "structural_score": 58.6,
    "current_score": 80,
-   "structural_score_rank": 19,
+   "structural_score_rank": 23,
    "current_score_rank": 2
   },
   {
@@ -851,11 +851,11 @@
    "value_capture": [],
    "provisional": false,
    "notes": "Opportunity uses the same series as the Market & growth digest block (IFR installations of 9,120 units in 2024 and ~10,500 in 2025, 27% average annual growth 2020–2025, with imports at 85–90% of component value). No rupee market size exists at Level 1 or 2, so none is stated. Valuation left UNAVAILABLE.",
-   "overall_rank": 28,
-   "risk_adjusted_rank": 29,
+   "overall_rank": 33,
+   "risk_adjusted_rank": 34,
    "structural_score": 45.7,
    "current_score": 60,
-   "structural_score_rank": 30,
+   "structural_score_rank": 35,
    "current_score_rank": 9
   },
   {
@@ -960,11 +960,11 @@
    "value_capture": [],
    "provisional": false,
    "notes": "Scored against 'Industry-Level Investment Parameters & Scoring Architecture'. Opportunity uses the same HVDC series as the Market & growth digest block, with the conflicting second series disclosed rather than averaged. Valuation left UNAVAILABLE.",
-   "overall_rank": 19,
-   "risk_adjusted_rank": 22,
+   "overall_rank": 22,
+   "risk_adjusted_rank": 26,
    "structural_score": 57.1,
    "current_score": 60,
-   "structural_score_rank": 21,
+   "structural_score_rank": 25,
    "current_score_rank": 10
   },
   {
@@ -1075,10 +1075,10 @@
    "value_capture": [],
    "provisional": false,
    "notes": "Scored against 'Industry-Level Investment Parameters & Scoring Architecture'. Cycle position and valuation left UNAVAILABLE — the registry carries no cycle or valuation data for these industries.",
-   "overall_rank": 22,
-   "risk_adjusted_rank": 23,
+   "overall_rank": 27,
+   "risk_adjusted_rank": 28,
    "structural_score": 52.9,
-   "structural_score_rank": 22
+   "structural_score_rank": 27
   },
   {
    "slug": "launch-vehicles-propulsion-india",
@@ -1291,11 +1291,11 @@
    "value_capture": [],
    "provisional": false,
    "notes": "Opportunity uses the same series as the Market & growth digest block (IESA demand of 28 GWh in 2025 rising to ~272 GWh by FY2030 at a 36.5% CAGR, against ~2 GWh installed capacity). The two value forecasts disagree (17.65% vs 22.0% CAGR) and are shown as conflicting data rather than reconciled. Valuation left UNAVAILABLE.",
-   "overall_rank": 23,
-   "risk_adjusted_rank": 25,
+   "overall_rank": 28,
+   "risk_adjusted_rank": 30,
    "structural_score": 51.4,
    "current_score": 60,
-   "structural_score_rank": 24,
+   "structural_score_rank": 29,
    "current_score_rank": 12
   },
   {
@@ -1400,11 +1400,11 @@
    "value_capture": [],
    "provisional": false,
    "notes": "Opportunity uses the same series as the Market & growth digest block (IMTMA FY26 consumption of Rs 36,419 cr, imports of Rs 21,628 cr, and the 13.7% eleven-year production CAGR). Valuation left UNAVAILABLE because the registry carries no industry valuation data.",
-   "overall_rank": 13,
-   "risk_adjusted_rank": 12,
+   "overall_rank": 15,
+   "risk_adjusted_rank": 13,
    "structural_score": 60,
    "current_score": 80,
-   "structural_score_rank": 17,
+   "structural_score_rank": 19,
    "current_score_rank": 5
   },
   {
@@ -1510,10 +1510,10 @@
    "provisional": false,
    "notes": "Opportunity uses the same series as the Market & growth digest block (MarketsandMarkets India missile market US$468.6 mn 2025 to US$2,512.7 mn 2030 at 39.9%, and Grand View India PGM US$2,350.6 mn 2022 to US$3,958.6 mn 2030 at 6.7%, both inside FY26 defence production of Rs 1.78 lakh crore). Valuation left UNAVAILABLE — the registry carries no industry valuation series.",
    "overall_rank": 10,
-   "risk_adjusted_rank": 16,
+   "risk_adjusted_rank": 20,
    "structural_score": 62.9,
    "current_score": 80,
-   "structural_score_rank": 13,
+   "structural_score_rank": 15,
    "current_score_rank": 3
   },
   {
@@ -1618,12 +1618,12 @@
    "value_capture": [],
    "provisional": false,
    "notes": "Opportunity uses the same series as the Market &amp; growth digest block (Omdia/IDC: ~153 mn CY2025 to 125&ndash;133 mn CY2026; accessories USD 6.86 bn 2025 to 14.66 bn 2034, ~8.5% five-year CAGR, CALCULATED). Valuation left UNAVAILABLE &mdash; no industry valuation series exists.",
-   "overall_rank": 31,
-   "risk_adjusted_rank": 30,
+   "overall_rank": 36,
+   "risk_adjusted_rank": 35,
    "structural_score": 41.4,
    "current_score": 40,
-   "structural_score_rank": 31,
-   "current_score_rank": 20
+   "structural_score_rank": 36,
+   "current_score_rank": 22
   },
   {
    "slug": "nuclear-pwr-steam-generator-india",
@@ -1863,12 +1863,12 @@
    "value_capture": [],
    "provisional": false,
    "notes": "Opportunity uses the same series as the Market & growth digest block (DCPC value of output Rs 9.62 lakh crore FY2018-19 to Rs 15.14 lakh crore FY2023-24, 11.6% CAGR at current prices, inside a Rs 26 lakh crore FY25 chemicals-and-petrochemicals market, against a Rs 65,383 crore FY26 net organic-chemicals import gap). Valuation left UNAVAILABLE — the registry carries no industry valuation series.",
-   "overall_rank": 27,
-   "risk_adjusted_rank": 26,
+   "overall_rank": 32,
+   "risk_adjusted_rank": 31,
    "structural_score": 51.4,
    "current_score": 40,
-   "structural_score_rank": 25,
-   "current_score_rank": 21
+   "structural_score_rank": 30,
+   "current_score_rank": 23
   },
   {
    "slug": "overhead-transmission-line-india",
@@ -1972,12 +1972,12 @@
    "value_capture": [],
    "provisional": false,
    "notes": "Scored against 'Industry-Level Investment Parameters & Scoring Architecture'. Opportunity uses the same T&D EPC series as the Market & growth digest block (Astute Analytica), cross-checked against Transrail's 2029 waypoint. Valuation left UNAVAILABLE.",
-   "overall_rank": 16,
-   "risk_adjusted_rank": 11,
+   "overall_rank": 18,
+   "risk_adjusted_rank": 12,
    "structural_score": 61.4,
    "current_score": 60,
-   "structural_score_rank": 16,
-   "current_score_rank": 16
+   "structural_score_rank": 18,
+   "current_score_rank": 18
   },
   {
    "slug": "pcb-electronic-components-india",
@@ -2087,12 +2087,12 @@
    "value_capture": [],
    "provisional": false,
    "notes": "Opportunity uses the same series as the Market &amp; growth digest block (~$15&ndash;16 bn growing 5&ndash;7% through FY28, and the broader-scope $14.18 bn 2025 to $22.18 bn 2031 at 7.74% CALCULATED). Valuation left UNAVAILABLE &mdash; no industry valuation series exists.",
-   "overall_rank": 30,
-   "risk_adjusted_rank": 28,
+   "overall_rank": 35,
+   "risk_adjusted_rank": 33,
    "structural_score": 48.6,
    "current_score": 40,
-   "structural_score_rank": 29,
-   "current_score_rank": 22
+   "structural_score_rank": 34,
+   "current_score_rank": 24
   },
   {
    "slug": "power-conversion-system-india",
@@ -2196,11 +2196,11 @@
    "value_capture": [],
    "provisional": false,
    "notes": "Opportunity uses the same series as the Market & growth digest block (India BESS US$1.5 bn in 2025 to US$7.5 bn in 2030 at 33% value CAGR, with the PCS slice derived at 15–25% of utility-scale hardware capex, against a CEA 208 GWh by 2030 requirement). Valuation left UNAVAILABLE — the registry carries no industry valuation series.",
-   "overall_rank": 11,
-   "risk_adjusted_rank": 18,
+   "overall_rank": 12,
+   "risk_adjusted_rank": 22,
    "structural_score": 61.4,
    "current_score": 80,
-   "structural_score_rank": 15,
+   "structural_score_rank": 17,
    "current_score_rank": 4
   },
   {
@@ -2425,10 +2425,10 @@
    ],
    "provisional": false,
    "notes": "Scored against 'Industry-Level Investment Parameters & Scoring Architecture'. Cycle position and valuation left UNAVAILABLE — the registry carries no cycle or valuation data for these industries. Value capture scored per node from the review's §4 model — PROVISIONAL judgement, not yet evidenced with node-level financials.",
-   "overall_rank": 12,
-   "risk_adjusted_rank": 10,
+   "overall_rank": 14,
+   "risk_adjusted_rank": 11,
    "structural_score": 64.3,
-   "structural_score_rank": 10
+   "structural_score_rank": 12
   },
   {
    "slug": "power-transformers-india",
@@ -2535,7 +2535,7 @@
    "structural_score": 77.1,
    "current_score": 50,
    "structural_score_rank": 3,
-   "current_score_rank": 17
+   "current_score_rank": 19
   },
   {
    "slug": "power-transmission-india",
@@ -2754,11 +2754,11 @@
    "value_capture": [],
    "provisional": false,
    "notes": "Opportunity uses the same series as the Market & growth digest block (FY25 permanent-magnet imports of Rs 1,744 crore on 53,748 tonnes, government projection of consumption doubling by 2030 from 2025, and import dependence of 59.6–81.3% by value). Valuation left UNAVAILABLE — no industry valuation series and no listed domestic pure-play.",
-   "overall_rank": 24,
-   "risk_adjusted_rank": 31,
+   "overall_rank": 29,
+   "risk_adjusted_rank": 36,
    "structural_score": 50,
    "current_score": 60,
-   "structural_score_rank": 27,
+   "structural_score_rank": 32,
    "current_score_rank": 14
   },
   {
@@ -2880,7 +2880,232 @@
    "slug": "robotics-india",
    "title": "India Robotics",
    "group": "Robotics & Automation",
-   "scored": false
+   "scored": true,
+   "as_of": "2026-10-31",
+   "categories": {
+    "economics": {
+     "name": "Industry economics & value creation",
+     "weight": 0.2,
+     "lens": "structural",
+     "score": 2,
+     "from": "category",
+     "basis": "Assembly and integration is the domestic activity while 85-90% of robotic component value is imported, so the industry earns an integrator's margin on a foreign bill of materials."
+    },
+    "opportunity": {
+     "name": "Market opportunity & structural growth",
+     "weight": 0.15,
+     "lens": "structural",
+     "score": 4,
+     "from": "category",
+     "basis": "Market ~USD 1.1 bn (2025) to ~USD 4.6 bn (2030), ~33% CAGR [REPORTED-T2: Avendus, Oct-2026]; warehouse automation and import substitution are the two growth engines."
+    },
+    "competitive": {
+     "name": "Competitive structure & moat",
+     "weight": 0.15,
+     "lens": "structural",
+     "score": 2,
+     "from": "category",
+     "basis": "Domestic structure is fragmented integrators against Fanuc/ABB/Yaskawa/KUKA hardware; ARAPL is the only listed robotics pure-play and no robotics-grade reducer, encoder or magnet maker exists."
+    },
+    "cycle": {
+     "name": "Current opportunity & cycle position",
+     "weight": 0.15,
+     "lens": "current",
+     "score": 3,
+     "from": "category",
+     "basis": "Installations grew 7% in 2024, but IFR flags a possible 2026 pause as the electronics PLI lapses - mid-cycle rather than boom or bust."
+    },
+    "valuation": {
+     "name": "Valuation & market expectations",
+     "weight": 0.15,
+     "lens": "current",
+     "score": null,
+     "from": null,
+     "basis": "No industry-level valuation data in the registry."
+    },
+    "value_chain": {
+     "name": "Value-chain position & bottlenecks",
+     "weight": 0.1,
+     "lens": "structural",
+     "score": 4,
+     "from": "category",
+     "basis": "Bottlenecks are explicit and all upstream: reducers ~100% imported, NdFeB magnets ~95%, encoders and power semiconductors absent - each is a named localisation opportunity."
+    },
+    "capital": {
+     "name": "Capital intensity & financial quality",
+     "weight": 0.05,
+     "lens": "structural",
+     "score": 3,
+     "from": "category",
+     "basis": "Integration and software are capital-light; a component plant (reducer grinding, magnet sintering) is heavy and qualification-gated, so capital is a barrier only at the node India wants to enter."
+    },
+    "technology": {
+     "name": "Technology & innovation",
+     "weight": 0.05,
+     "lens": "structural",
+     "score": 2,
+     "from": "category",
+     "basis": "No indigenous core hardware or control IP; the credible capability is software, autonomy and system design layered on imported actuation."
+    },
+    "risk": {
+     "name": "Risk & resilience",
+     "weight": null,
+     "lens": "risk",
+     "score": 2,
+     "from": "category",
+     "basis": "Core inputs are import-dependent with no dedicated robotics PLI and the National Strategy on Robotics still in draft, so the domestic chain is exposed to both supply and policy timing."
+    }
+   },
+   "structural": {
+    "score": 55.7,
+    "coverage": 100
+   },
+   "current": {
+    "score": 60,
+    "coverage": 50
+   },
+   "risk": 2,
+   "risk_adjusted": 22.3,
+   "overall": 56.5,
+   "coverage": 85,
+   "confidence": {
+    "evidence": 3,
+    "primary_source_pct": 35,
+    "missing_critical": [
+     "industry ROIC",
+     "industry valuation",
+     "robot-OEM margin disclosure"
+    ]
+   },
+   "value_capture": [
+    {
+     "node": "Harmonic / RV reducers",
+     "basis": "Robotics-grade reducers are held by two Japanese suppliers and ~100% of India's requirement is imported, so the node sets price and lead time for every domestic robot build; OEM qualification takes years, which is the switching cost.",
+     "params": {
+      "op_share": 4,
+      "pricing_power": 5,
+      "roic": 4,
+      "barriers": 5,
+      "bottleneck": 5,
+      "pool_growth": 4,
+      "cash_conversion": 3,
+      "switching": 5
+     },
+     "score": 4.35,
+     "score100": 87,
+     "coverage": 100
+    },
+    {
+     "node": "Servo motors & drives",
+     "basis": "Frameless and servo motors are largely imported and carry good returns; cash conversion is better than in the reducer node because the product is less customised per customer.",
+     "params": {
+      "op_share": 4,
+      "pricing_power": 4,
+      "roic": 4,
+      "barriers": 4,
+      "bottleneck": 4,
+      "pool_growth": 4,
+      "cash_conversion": 4,
+      "switching": 4
+     },
+     "score": 4,
+     "score100": 80,
+     "coverage": 100
+    },
+    {
+     "node": "Precision machine tools & metrology",
+     "basis": "No Indian maker of the 5-axis grinders and CMMs that cut and verify reducer gears; the node gates reducer and arm production alike, and machine qualification is the classic years-long lock-in.",
+     "params": {
+      "op_share": 3,
+      "pricing_power": 4,
+      "roic": 4,
+      "barriers": 5,
+      "bottleneck": 5,
+      "pool_growth": 3,
+      "cash_conversion": 3,
+      "switching": 5
+     },
+     "score": 3.9,
+     "score100": 78,
+     "coverage": 100
+    },
+    {
+     "node": "Rare-earth NdFeB magnets",
+     "basis": "China holds ~94% of sintered output and India imports ~95% of requirement; a genuine strategic chokepoint, though the magnet itself is closer to a priced commodity than a proprietary product.",
+     "params": {
+      "op_share": 3,
+      "pricing_power": 4,
+      "roic": 4,
+      "barriers": 4,
+      "bottleneck": 5,
+      "pool_growth": 4,
+      "cash_conversion": 3,
+      "switching": 4
+     },
+     "score": 3.8,
+     "score100": 76,
+     "coverage": 100
+    },
+    {
+     "node": "Power semiconductors (IGBT / MOSFET / MCU)",
+     "basis": "Drive and controller silicon is imported wholesale; barriers are the highest in the chain but the node is capital-hungry and cyclical, which caps ROIC.",
+     "params": {
+      "op_share": 3,
+      "pricing_power": 4,
+      "roic": 3,
+      "barriers": 5,
+      "bottleneck": 4,
+      "pool_growth": 4,
+      "cash_conversion": 3,
+      "switching": 4
+     },
+     "score": 3.7,
+     "score100": 74,
+     "coverage": 100
+    },
+    {
+     "node": "Robot OEM / industrial arms",
+     "basis": "The largest absolute profit pool in the chain, but it is not the bottleneck and four global OEMs compete on price, so margins are good rather than exceptional.",
+     "params": {
+      "op_share": 5,
+      "pricing_power": 3,
+      "roic": 3,
+      "barriers": 4,
+      "bottleneck": 2,
+      "pool_growth": 3,
+      "cash_conversion": 3,
+      "switching": 4
+     },
+     "score": 3.5,
+     "score100": 70,
+     "coverage": 100
+    },
+    {
+     "node": "Indian system integration, AMR & RaaS",
+     "basis": "Where India actually earns today: the fastest-growing pool and capital-light, but low barriers, build-to-print scope and weak pricing power keep its share of profit small.",
+     "params": {
+      "op_share": 2,
+      "pricing_power": 2,
+      "roic": 3,
+      "barriers": 2,
+      "bottleneck": 2,
+      "pool_growth": 5,
+      "cash_conversion": 3,
+      "switching": 3
+     },
+     "score": 2.6,
+     "score100": 52,
+     "coverage": 100
+    }
+   ],
+   "provisional": false,
+   "notes": "Scored against 'Industry-Level Investment Parameters & Scoring Architecture'. Valuation left UNAVAILABLE - the registry carries no industry-level valuation data. Cycle scored on IFR installation growth and the 2026 PLI lapse. Value capture is a judgement on node economics from the page's own bottleneck and import-dependency evidence, not from node-level financials.",
+   "overall_rank": 23,
+   "risk_adjusted_rank": 27,
+   "structural_score": 55.7,
+   "current_score": 60,
+   "structural_score_rank": 26,
+   "current_score_rank": 15
   },
   {
    "slug": "room-ac-white-goods-components-india",
@@ -2898,13 +3123,436 @@
    "slug": "satellite-ground-segment-india",
    "title": "India Satellite Ground Segment",
    "group": "Space & Satellites",
-   "scored": false
+   "scored": true,
+   "as_of": "2026-10-31",
+   "categories": {
+    "economics": {
+     "name": "Industry economics & value creation",
+     "weight": 0.2,
+     "lens": "structural",
+     "score": 2,
+     "from": "category",
+     "basis": "Integration and services work on a bill of materials whose RF core - BUC/LNB, modems, baseband - is imported; the domestic share of a gateway is labour and civil works, so margins are thin."
+    },
+    "opportunity": {
+     "name": "Market opportunity & structural growth",
+     "weight": 0.15,
+     "lens": "structural",
+     "score": 4,
+     "from": "category",
+     "basis": "USD 0.14 bn (2022) to USD 2.5 bn potential (2033) at 30% CAGR [REPORTED-T1: IN-SPACe, 2023], and a 20% indigenisation mandate that converts policy into addressable demand."
+    },
+    "competitive": {
+     "name": "Competitive structure & moat",
+     "weight": 0.15,
+     "lens": "structural",
+     "score": 3,
+     "from": "category",
+     "basis": "Fragmented across BEL, L&T Smart World, Avantel, Nelco and Hughes India; no single domestic RF-front-end supplier of scale, and foreign vendors hold the high-performance antenna tier."
+    },
+    "cycle": {
+     "name": "Current opportunity & cycle position",
+     "weight": 0.15,
+     "lens": "current",
+     "score": null,
+     "from": null,
+     "basis": "No cycle-position evidence on the page - demand-supply balance not established."
+    },
+    "valuation": {
+     "name": "Valuation & market expectations",
+     "weight": 0.15,
+     "lens": "current",
+     "score": null,
+     "from": null,
+     "basis": "No industry-level valuation data in the registry."
+    },
+    "value_chain": {
+     "name": "Value-chain position & bottlenecks",
+     "weight": 0.1,
+     "lens": "structural",
+     "score": 4,
+     "from": "category",
+     "basis": "Imports are 55-70% of satellite-antenna value and virtually all phased-array and large-aperture systems - a well-defined substitution pool rather than a diffuse gap."
+    },
+    "capital": {
+     "name": "Capital intensity & financial quality",
+     "weight": 0.05,
+     "lens": "structural",
+     "score": 3,
+     "from": "category",
+     "basis": "Antenna and gateway manufacturing is moderate-capex; test ranges, anechoic chambers and qualification facilities are the heavy items and are the real entry cost."
+    },
+    "technology": {
+     "name": "Technology & innovation",
+     "weight": 0.05,
+     "lens": "structural",
+     "score": 2,
+     "from": "category",
+     "basis": "Antenna and RF design capability is thin above Ku-band; electronically steerable arrays are entirely imported and GaN module fabrication does not exist domestically."
+    },
+    "risk": {
+     "name": "Risk & resilience",
+     "weight": null,
+     "lens": "risk",
+     "score": 3,
+     "from": "category",
+     "basis": "The security mandate supports demand and the customer base is creditworthy, but revenue is government-weighted and the critical RF content is still imported."
+    }
+   },
+   "structural": {
+    "score": 60,
+    "coverage": 100
+   },
+   "current": null,
+   "risk": 3,
+   "risk_adjusted": 36,
+   "overall": 60,
+   "coverage": 70,
+   "confidence": {
+    "evidence": 4,
+    "primary_source_pct": 55,
+    "missing_critical": [
+     "realised segment revenue",
+     "industry ROIC",
+     "domestic value-add per gateway"
+    ]
+   },
+   "value_capture": [
+    {
+     "node": "Ground RF chains, baseband & modems",
+     "basis": "The highest value-add in the ground chain and the part that is imported: modems and RF front-ends carry proprietary margin and are specified into a network for its life.",
+     "params": {
+      "op_share": 4,
+      "pricing_power": 4,
+      "roic": 4,
+      "barriers": 4,
+      "bottleneck": 4,
+      "pool_growth": 3,
+      "cash_conversion": 3,
+      "switching": 4
+     },
+     "score": 3.8,
+     "score100": 76,
+     "coverage": 100
+    },
+    {
+     "node": "TT&C ground systems & mission ops",
+     "basis": "Small pool but sticky: mission operations and TT&C are contracted for a satellite's life and cannot be switched without re-qualifying the ground segment.",
+     "params": {
+      "op_share": 2,
+      "pricing_power": 3,
+      "roic": 3,
+      "barriers": 4,
+      "bottleneck": 4,
+      "pool_growth": 3,
+      "cash_conversion": 4,
+      "switching": 4
+     },
+     "score": 3.2,
+     "score100": 64,
+     "coverage": 100
+    },
+    {
+     "node": "Ground station / earth-station antennas",
+     "basis": "Where L&T, Avantel and BEL actually compete - large-aperture and tracking antennas are partly indigenised, with defence demand favouring domestic content.",
+     "params": {
+      "op_share": 3,
+      "pricing_power": 3,
+      "roic": 3,
+      "barriers": 3,
+      "bottleneck": 3,
+      "pool_growth": 4,
+      "cash_conversion": 3,
+      "switching": 3
+     },
+     "score": 3.1,
+     "score100": 62,
+     "coverage": 100
+    },
+    {
+     "node": "Gateway / hub stations",
+     "basis": "Each gateway is a USD 10-50 mn project and the pool is growing fast with LEO build-out, but it is lumpy project revenue with heavy working capital and modest incremental returns.",
+     "params": {
+      "op_share": 3,
+      "pricing_power": 3,
+      "roic": 2,
+      "barriers": 3,
+      "bottleneck": 4,
+      "pool_growth": 5,
+      "cash_conversion": 2,
+      "switching": 3
+     },
+     "score": 3.05,
+     "score100": 61,
+     "coverage": 100
+    },
+    {
+     "node": "Ground-Station-as-a-Service (GSaaS)",
+     "basis": "Nascent subscription model with the fastest pool growth, but tiny today, low barriers, and dependent on ground assets someone else has to fund.",
+     "params": {
+      "op_share": 1,
+      "pricing_power": 2,
+      "roic": 3,
+      "barriers": 2,
+      "bottleneck": 2,
+      "pool_growth": 5,
+      "cash_conversion": 3,
+      "switching": 3
+     },
+     "score": 2.4,
+     "score100": 48,
+     "coverage": 100
+    },
+    {
+     "node": "VSAT terminals",
+     "basis": "Structurally the weakest node: standard Ku/C-band terminals are commoditising with 2-4% annual real price erosion, low barriers and no switching cost.",
+     "params": {
+      "op_share": 2,
+      "pricing_power": 2,
+      "roic": 2,
+      "barriers": 2,
+      "bottleneck": 2,
+      "pool_growth": 4,
+      "cash_conversion": 2,
+      "switching": 2
+     },
+     "score": 2.2,
+     "score100": 44,
+     "coverage": 100
+    }
+   ],
+   "provisional": false,
+   "notes": "Scored against 'Industry-Level Investment Parameters & Scoring Architecture'. Cycle and valuation left UNAVAILABLE. The 2022 base is IN-SPACe's estimate and the 2033 figure is a market-potential target, not a forecast of realised revenue - the two are not the same claim. Value capture is a judgement on node economics, not node-level financials.",
+   "overall_rank": 19,
+   "risk_adjusted_rank": 14,
+   "structural_score": 60,
+   "structural_score_rank": 20
   },
   {
    "slug": "satellite-india",
    "title": "India Satellite",
    "group": "Space & Satellites",
-   "scored": false
+   "scored": true,
+   "as_of": "2026-10-31",
+   "categories": {
+    "economics": {
+     "name": "Industry economics & value creation",
+     "weight": 0.2,
+     "lens": "structural",
+     "score": 3,
+     "from": "category",
+     "basis": "Upstream earns on ISRO-anchored programmes and private launch contracts, but 50-55% satellite import content means a large share of every build leaks abroad and unit margins at scale are unproven."
+    },
+    "opportunity": {
+     "name": "Market opportunity & structural growth",
+     "weight": 0.15,
+     "lens": "structural",
+     "score": 4,
+     "from": "category",
+     "basis": "USD 8.4 bn (2022) to USD 44 bn (2033) at 16% CAGR [REPORTED-T1: IN-SPACe, 2023], with downstream applications carrying ~73% of the 2033 potential."
+    },
+    "competitive": {
+     "name": "Competitive structure & moat",
+     "weight": 0.15,
+     "lens": "structural",
+     "score": 3,
+     "from": "category",
+     "basis": "ISRO-anchored with 400+ startups and 133 IN-SPACe authorisations, but only a handful at commercial scale and the launch market is contested by foreign reusable providers."
+    },
+    "cycle": {
+     "name": "Current opportunity & cycle position",
+     "weight": 0.15,
+     "lens": "current",
+     "score": null,
+     "from": null,
+     "basis": "No cycle-position evidence on the page - demand-supply balance not established."
+    },
+    "valuation": {
+     "name": "Valuation & market expectations",
+     "weight": 0.15,
+     "lens": "current",
+     "score": null,
+     "from": null,
+     "basis": "No industry-level valuation data in the registry."
+    },
+    "value_chain": {
+     "name": "Value-chain position & bottlenecks",
+     "weight": 0.1,
+     "lens": "structural",
+     "score": 4,
+     "from": "category",
+     "basis": "Import dependence is specific and addressable: 50-55% satellite import content, 70-80% space-grade solar cells imported, no gallium or germanium refining."
+    },
+    "capital": {
+     "name": "Capital intensity & financial quality",
+     "weight": 0.05,
+     "lens": "structural",
+     "score": 2,
+     "from": "category",
+     "basis": "Among the most capital-hungry chains in the registry - ~USD 25 bn of investment is envisaged over the decade, with long gestation and binary mission risk."
+    },
+    "technology": {
+     "name": "Technology & innovation",
+     "weight": 0.05,
+     "lens": "structural",
+     "score": 3,
+     "from": "category",
+     "basis": "Real indigenous capability in satellite buses, small launch and payload integration; gaps in space-grade cells, detectors and high-reliability components."
+    },
+    "risk": {
+     "name": "Risk & resilience",
+     "weight": null,
+     "lens": "risk",
+     "score": 2,
+     "from": "category",
+     "basis": "Critical inputs are imported, programmes are long-cycle and mission failure is binary; the strategic priority is durable but near-term revenue is policy-paced."
+    }
+   },
+   "structural": {
+    "score": 65.7,
+    "coverage": 100
+   },
+   "current": null,
+   "risk": 2,
+   "risk_adjusted": 26.3,
+   "overall": 65.7,
+   "coverage": 70,
+   "confidence": {
+    "evidence": 4,
+    "primary_source_pct": 60,
+    "missing_critical": [
+     "industry ROIC",
+     "cycle position",
+     "industry valuation",
+     "private revenue mix"
+    ]
+   },
+   "value_capture": [
+    {
+     "node": "Space-grade solar cells & specialty materials",
+     "basis": "70-80% of cells are imported and only a few global suppliers are qualified; a small pool but a hard chokepoint with qualification-driven switching costs and good incremental returns.",
+     "params": {
+      "op_share": 2,
+      "pricing_power": 4,
+      "roic": 4,
+      "barriers": 5,
+      "bottleneck": 5,
+      "pool_growth": 4,
+      "cash_conversion": 3,
+      "switching": 4
+     },
+     "score": 3.75,
+     "score100": 75,
+     "coverage": 100
+    },
+    {
+     "node": "Satellite communication services",
+     "basis": "The largest profit pool in the space economy and recurring by nature; pricing power is capped by capacity oversupply and competing terrestrial options, but cash conversion is the best in the chain.",
+     "params": {
+      "op_share": 5,
+      "pricing_power": 3,
+      "roic": 3,
+      "bottleneck": 2,
+      "pool_growth": 4,
+      "cash_conversion": 4,
+      "switching": 4
+     },
+     "score": 3.65,
+     "score100": 72.9,
+     "coverage": 85
+    },
+    {
+     "node": "Earth observation data & analytics",
+     "basis": "Software-like economics - high incremental returns and fast-growing - but the pool is still small and imagery is increasingly substitutable from foreign constellations.",
+     "params": {
+      "op_share": 2,
+      "pricing_power": 3,
+      "roic": 4,
+      "barriers": 3,
+      "bottleneck": 3,
+      "pool_growth": 5,
+      "cash_conversion": 4,
+      "switching": 3
+     },
+     "score": 3.25,
+     "score100": 65,
+     "coverage": 100
+    },
+    {
+     "node": "Launch services",
+     "basis": "Highest technical barrier in the chain and a real bottleneck, but it is the worst cash-conversion business here: heavy fixed assets, long intervals between flights and returns that depend entirely on cadence.",
+     "params": {
+      "op_share": 3,
+      "pricing_power": 3,
+      "roic": 2,
+      "barriers": 5,
+      "bottleneck": 4,
+      "pool_growth": 4,
+      "cash_conversion": 1,
+      "switching": 4
+     },
+     "score": 3.2,
+     "score100": 64,
+     "coverage": 100
+    },
+    {
+     "node": "Satellite manufacturing / bus",
+     "basis": "Real capability and a growing pool, but working capital is consumed by long build cycles and the customer set is narrow and government-weighted.",
+     "params": {
+      "op_share": 3,
+      "pricing_power": 3,
+      "roic": 2,
+      "barriers": 4,
+      "bottleneck": 3,
+      "pool_growth": 4,
+      "cash_conversion": 2,
+      "switching": 4
+     },
+     "score": 3.05,
+     "score100": 61,
+     "coverage": 100
+    },
+    {
+     "node": "Navigation (NavIC) services & user terminals",
+     "basis": "Chipset and terminal value is largely imported and adoption is policy-driven; the pool grows with mandate rather than with customer willingness to pay.",
+     "params": {
+      "op_share": 2,
+      "pricing_power": 3,
+      "roic": 3,
+      "barriers": 3,
+      "bottleneck": 3,
+      "pool_growth": 4,
+      "cash_conversion": 3,
+      "switching": 3
+     },
+     "score": 2.9,
+     "score100": 58,
+     "coverage": 100
+    },
+    {
+     "node": "Ground segment",
+     "basis": "The fastest official CAGR in the plan (30% to 2033) off a tiny base; today it is integration and services work with modest pricing power and imported RF cores.",
+     "params": {
+      "op_share": 2,
+      "pricing_power": 2,
+      "roic": 3,
+      "barriers": 3,
+      "bottleneck": 3,
+      "pool_growth": 5,
+      "cash_conversion": 3,
+      "switching": 3
+     },
+     "score": 2.85,
+     "score100": 57,
+     "coverage": 100
+    }
+   ],
+   "provisional": false,
+   "notes": "Scored against 'Industry-Level Investment Parameters & Scoring Architecture'. Cycle and valuation left UNAVAILABLE - the page carries no demand-supply cycle position or industry valuation data. Market sizes and segment CAGRs are the official IN-SPACe Decadal Vision figures. Value capture is a judgement on node economics, not node-level financials.",
+   "overall_rank": 11,
+   "risk_adjusted_rank": 17,
+   "structural_score": 65.7,
+   "structural_score_rank": 10
   },
   {
    "slug": "satellite-payloads-india",
@@ -3124,7 +3772,215 @@
    "slug": "satellite-services-data-india",
    "title": "India Satellite Services & Data",
    "group": "Space & Satellites",
-   "scored": false
+   "scored": true,
+   "as_of": "2026-10-31",
+   "categories": {
+    "economics": {
+     "name": "Industry economics & value creation",
+     "weight": 0.2,
+     "lens": "structural",
+     "score": 3,
+     "from": "category",
+     "basis": "Services carry ~68% of satcom revenue and are recurring, but spectrum and AGR charges plus leased foreign capacity take a structural rent out of the Indian operator's margin."
+    },
+    "opportunity": {
+     "name": "Market opportunity & structural growth",
+     "weight": 0.15,
+     "lens": "structural",
+     "score": 4,
+     "from": "category",
+     "basis": "Communication USD 4.19 bn (2022) to USD 14.8 bn (2033) at 12% CAGR [REPORTED-T1: IN-SPACe, 2023], with broadband-from-space still pre-revenue and therefore optionality on top."
+    },
+    "competitive": {
+     "name": "Competitive structure & moat",
+     "weight": 0.15,
+     "lens": "structural",
+     "score": 2,
+     "from": "category",
+     "basis": "Three licensed operators plus Starlink and Kuiper entrants competing on price, while the largest legacy pool - DTH - is in structural decline against OTT."
+    },
+    "cycle": {
+     "name": "Current opportunity & cycle position",
+     "weight": 0.15,
+     "lens": "current",
+     "score": 2,
+     "from": "category",
+     "basis": "Current position is adverse: DTH is shrinking, broadband-from-space is not yet monetised and the 5% AGR charge was only settled in Sep-2026, so revenue is pre- rather than mid-cycle."
+    },
+    "valuation": {
+     "name": "Valuation & market expectations",
+     "weight": 0.15,
+     "lens": "current",
+     "score": null,
+     "from": null,
+     "basis": "No industry-level valuation data in the registry."
+    },
+    "value_chain": {
+     "name": "Value-chain position & bottlenecks",
+     "weight": 0.1,
+     "lens": "structural",
+     "score": 3,
+     "from": "category",
+     "basis": "Indian players largely resell foreign capacity; the rent accrues to satellite operators and capacity owners upstream, leaving services with recurring but thin economics."
+    },
+    "capital": {
+     "name": "Capital intensity & financial quality",
+     "weight": 0.05,
+     "lens": "structural",
+     "score": 3,
+     "from": "category",
+     "basis": "Gateways cost USD 10-50 mn each and licences carry fees, but the model is far lighter than owning a constellation - capex is a barrier to entry, not a moat."
+    },
+    "technology": {
+     "name": "Technology & innovation",
+     "weight": 0.05,
+     "lens": "structural",
+     "score": 3,
+     "from": "category",
+     "basis": "Genuine strength in software, analytics and geospatial platforms; no owned constellation, no domestic user-terminal silicon."
+    },
+    "risk": {
+     "name": "Risk & resilience",
+     "weight": null,
+     "lens": "risk",
+     "score": 3,
+     "from": "category",
+     "basis": "Diversified across broadband, DTH, VSAT, EO and navigation, but regulatory timing and dependence on foreign capacity are the binding exposures."
+    }
+   },
+   "structural": {
+    "score": 60,
+    "coverage": 100
+   },
+   "current": {
+    "score": 40,
+    "coverage": 50
+   },
+   "risk": 3,
+   "risk_adjusted": 36,
+   "overall": 56.5,
+   "coverage": 85,
+   "confidence": {
+    "evidence": 3,
+    "primary_source_pct": 45,
+    "missing_critical": [
+     "realised satcom service revenue",
+     "operator ARPU and margins",
+     "industry valuation"
+    ]
+   },
+   "value_capture": [
+    {
+     "node": "Transponder / capacity leasing",
+     "basis": "Capacity owners collect rent before any Indian service provider earns a rupee; strong pricing power and cash conversion, but the pool is not growing and India mostly leases foreign capacity rather than owning it.",
+     "params": {
+      "op_share": 4,
+      "pricing_power": 4,
+      "roic": 3,
+      "barriers": 4,
+      "bottleneck": 3,
+      "pool_growth": 2,
+      "cash_conversion": 4,
+      "switching": 3
+     },
+     "score": 3.5,
+     "score100": 70,
+     "coverage": 100
+    },
+    {
+     "node": "Satellite broadband (GMPCS)",
+     "basis": "The growth pool everyone is positioning for, with licence and spectrum barriers to match - but it is pre-revenue, capital-hungry and returns are unproven at Indian ARPU.",
+     "params": {
+      "op_share": 4,
+      "pricing_power": 3,
+      "roic": 2,
+      "barriers": 4,
+      "bottleneck": 3,
+      "pool_growth": 5,
+      "cash_conversion": 2,
+      "switching": 4
+     },
+     "score": 3.35,
+     "score100": 67,
+     "coverage": 100
+    },
+    {
+     "node": "EO data & geospatial analytics",
+     "basis": "Best incremental economics in the services layer - software margins and fast pool growth - but a small pool and imagery that is substitutable from foreign constellations.",
+     "params": {
+      "op_share": 2,
+      "pricing_power": 3,
+      "roic": 4,
+      "barriers": 3,
+      "bottleneck": 2,
+      "pool_growth": 5,
+      "cash_conversion": 4,
+      "switching": 3
+     },
+     "score": 3.15,
+     "score100": 63,
+     "coverage": 100
+    },
+    {
+     "node": "VSAT & enterprise satcom services",
+     "basis": "The steady, cash-generative core: long enterprise contracts and managed-service stickiness, offset by competitive tendering and dependence on leased capacity.",
+     "params": {
+      "op_share": 3,
+      "pricing_power": 3,
+      "roic": 3,
+      "barriers": 3,
+      "bottleneck": 3,
+      "pool_growth": 3,
+      "cash_conversion": 4,
+      "switching": 3
+     },
+     "score": 3.1,
+     "score100": 62,
+     "coverage": 100
+    },
+    {
+     "node": "DTH services",
+     "basis": "Still cash-generative on a large subscriber base, but the pool is shrinking against OTT and the node is strategically irrelevant to where value is moving.",
+     "params": {
+      "op_share": 3,
+      "pricing_power": 2,
+      "roic": 3,
+      "barriers": 3,
+      "bottleneck": 1,
+      "pool_growth": 1,
+      "cash_conversion": 4,
+      "switching": 3
+     },
+     "score": 2.55,
+     "score100": 51,
+     "coverage": 100
+    },
+    {
+     "node": "Navigation services (NavIC)",
+     "basis": "Smallest pool in the chain; adoption is mandate-driven rather than paid for by customers, and the terminal and chipset value sits with foreign silicon vendors.",
+     "params": {
+      "op_share": 1,
+      "pricing_power": 2,
+      "roic": 3,
+      "barriers": 3,
+      "bottleneck": 3,
+      "pool_growth": 4,
+      "cash_conversion": 3,
+      "switching": 3
+     },
+     "score": 2.55,
+     "score100": 51,
+     "coverage": 100
+    }
+   ],
+   "provisional": false,
+   "notes": "Scored against 'Industry-Level Investment Parameters & Scoring Architecture'. Valuation left UNAVAILABLE. Two market series with different scopes are shown side by side rather than reconciled - the IN-SPACe figure is a market-potential target, the KPMG figure a service-revenue projection. Value capture is a judgement on node economics, not node-level financials.",
+   "overall_rank": 24,
+   "risk_adjusted_rank": 15,
+   "structural_score": 60,
+   "current_score": 40,
+   "structural_score_rank": 21,
+   "current_score_rank": 25
   },
   {
    "slug": "semiconductor-equipment-materials-india",
@@ -3234,10 +4090,10 @@
    "value_capture": [],
    "provisional": false,
    "notes": "Scored against 'Industry-Level Investment Parameters & Scoring Architecture'. Cycle position and valuation left UNAVAILABLE — the registry carries no cycle or valuation data for these industries.",
-   "overall_rank": 25,
-   "risk_adjusted_rank": 13,
+   "overall_rank": 30,
+   "risk_adjusted_rank": 16,
    "structural_score": 51.4,
-   "structural_score_rank": 26
+   "structural_score_rank": 31
   },
   {
    "slug": "shakti-ew-india",
@@ -3353,12 +4209,12 @@
    "value_capture": [],
    "provisional": false,
    "notes": "Opportunity uses the same series as the Market & growth digest block (DGFT silver HS-category imports: US$184.33 mn FY26 vs an implied US$112.05 mn FY25, +64.51%). Valuation left UNAVAILABLE — no industry valuation series, and the pure-plays are foreign-listed. The CSE import line is an HS proxy, so it overstates paste narrowly and understates it if paste enters under a different code.",
-   "overall_rank": 18,
-   "risk_adjusted_rank": 17,
+   "overall_rank": 21,
+   "risk_adjusted_rank": 21,
    "structural_score": 62.9,
    "current_score": 40,
-   "structural_score_rank": 14,
-   "current_score_rank": 25
+   "structural_score_rank": 16,
+   "current_score_rank": 28
   },
   {
    "slug": "smart-meters-india",
@@ -3468,12 +4324,12 @@
    "value_capture": [],
    "provisional": false,
    "notes": "SMR-specific revenue is UNAVAILABLE — no unit is under construction and no commercial price exists, so opportunity is scored on the nuclear build-out frame and the three sanctioned demonstration projects rather than on an invented SMR market size. Valuation left UNAVAILABLE — no industry valuation series and the core participants are unlisted.",
-   "overall_rank": 26,
-   "risk_adjusted_rank": 24,
+   "overall_rank": 31,
+   "risk_adjusted_rank": 29,
    "structural_score": 52.9,
    "current_score": 40,
-   "structural_score_rank": 23,
-   "current_score_rank": 23
+   "structural_score_rank": 28,
+   "current_score_rank": 26
   },
   {
    "slug": "solar-cells-india",
@@ -3577,12 +4433,12 @@
    "value_capture": [],
    "provisional": false,
    "notes": "Opportunity uses the same series as the Market & growth digest block (CRISIL demand of 60-65 GW FY27; Commerce/TradeStat imported-cell value US$3.06 bn FY26 with a 28.6% two-year CAGR). Valuation left UNAVAILABLE — the registry carries no industry valuation data.",
-   "overall_rank": 17,
-   "risk_adjusted_rank": 15,
+   "overall_rank": 20,
+   "risk_adjusted_rank": 19,
    "structural_score": 64.3,
    "current_score": 40,
-   "structural_score_rank": 12,
-   "current_score_rank": 26
+   "structural_score_rank": 14,
+   "current_score_rank": 29
   },
   {
    "slug": "solar-pv-india",
@@ -3686,12 +4542,12 @@
    "value_capture": [],
    "provisional": false,
    "notes": "Opportunity uses the same series as the Market & growth digest block (PS Market Research, base 2023, 13.4% nominal CAGR 2024-2030). Valuation left UNAVAILABLE — the registry carries no industry valuation data. The panels-only Grand View series (9.4%) is a different scope and is not blended into the score.",
-   "overall_rank": 20,
-   "risk_adjusted_rank": 19,
+   "overall_rank": 25,
+   "risk_adjusted_rank": 23,
    "structural_score": 60,
    "current_score": 40,
-   "structural_score_rank": 18,
-   "current_score_rank": 24
+   "structural_score_rank": 22,
+   "current_score_rank": 27
   },
   {
    "slug": "steam-turbine-india",
@@ -3926,12 +4782,12 @@
    "value_capture": [],
    "provisional": false,
    "notes": "Opportunity uses the same series as the Market &amp; growth digest block (0.86 mn towers FY26 to 1.04&ndash;1.09 mn FY31 at 4&ndash;5% CAGR, REPORTED-T2, with the CALCULATED 3.9&ndash;4.9% shown alongside). Valuation is scored from one listed proxy&rsquo;s EV/EBITDA, labelled [REPORTED-T3], not from an industry series.",
-   "overall_rank": 14,
-   "risk_adjusted_rank": 14,
+   "overall_rank": 16,
+   "risk_adjusted_rank": 18,
    "structural_score": 64.3,
    "current_score": 60,
-   "structural_score_rank": 11,
-   "current_score_rank": 15
+   "structural_score_rank": 13,
+   "current_score_rank": 16
   },
   {
    "slug": "telecom-transport-equipment-india",
@@ -3967,7 +4823,232 @@
    "slug": "vehicles-auto-components-india",
    "title": "India Vehicles & Auto Components",
    "group": "Automotive & Mobility",
-   "scored": false
+   "scored": true,
+   "as_of": "2026-10-31",
+   "categories": {
+    "economics": {
+     "name": "Industry economics & value creation",
+     "weight": 0.2,
+     "lens": "structural",
+     "score": 3,
+     "from": "category",
+     "basis": "A ~17% five-year CAGR on a large base, but the industry is structurally a converter of steel, aluminium and imported electronics - value leaks to cells, semiconductors and magnets, and supplier margins sit under OEM bargaining power."
+    },
+    "opportunity": {
+     "name": "Market opportunity & structural growth",
+     "weight": 0.15,
+     "lens": "structural",
+     "score": 4,
+     "from": "category",
+     "basis": "Turnover &#8377;7.60 lakh crore in FY2025-26 at ~17% five-year CAGR [REPORTED-T2: ACMA, Jul-2026], with import substitution in cells, electronics and magnets as the identifiable growth pool."
+    },
+    "competitive": {
+     "name": "Competitive structure & moat",
+     "weight": 0.15,
+     "lens": "structural",
+     "score": 3,
+     "from": "category",
+     "basis": "Highly fragmented across 1,000+ firms with strong OEM countervailing power; consolidation and PLI scale requirements are slowly raising concentration."
+    },
+    "cycle": {
+     "name": "Current opportunity & cycle position",
+     "weight": 0.15,
+     "lens": "current",
+     "score": 3,
+     "from": "category",
+     "basis": "Mid-cycle: FY26 grew 12.7% but H1 FY26 decelerated to 6.8%, and ACMA guides 8-10% for FY27 with a GST cut supporting the second half."
+    },
+    "valuation": {
+     "name": "Valuation & market expectations",
+     "weight": 0.15,
+     "lens": "current",
+     "score": null,
+     "from": null,
+     "basis": "No industry-level valuation data in the registry."
+    },
+    "value_chain": {
+     "name": "Value-chain position & bottlenecks",
+     "weight": 0.1,
+     "lens": "structural",
+     "score": 4,
+     "from": "category",
+     "basis": "Bottlenecks are named and quantified - rare-earth magnets 60-80% of value imported, Li-ion cells and automotive semiconductors largely imported - each a defined substitution pool."
+    },
+    "capital": {
+     "name": "Capital intensity & financial quality",
+     "weight": 0.05,
+     "lens": "structural",
+     "score": 3,
+     "from": "category",
+     "basis": "Working capital is the real burden (receivables from OEMs plus inventory), while fixed capex per node is moderate and PLI-Auto subsidises part of it."
+    },
+    "technology": {
+     "name": "Technology & innovation",
+     "weight": 0.05,
+     "lens": "structural",
+     "score": 2,
+     "from": "category",
+     "basis": "Predominantly build-to-print; R&D and IP are thin, and the EV transition shifts content toward technologies - cells, power electronics, ADAS - that are imported."
+    },
+    "risk": {
+     "name": "Risk & resilience",
+     "weight": null,
+     "lens": "risk",
+     "score": 3,
+     "from": "category",
+     "basis": "Diversified across vehicle segments, exports and a large aftermarket, which cushions cyclicality; magnet supply and tariff exposure are the live vulnerabilities."
+    }
+   },
+   "structural": {
+    "score": 65.7,
+    "coverage": 100
+   },
+   "current": {
+    "score": 60,
+    "coverage": 50
+   },
+   "risk": 3,
+   "risk_adjusted": 39.4,
+   "overall": 64.7,
+   "coverage": 85,
+   "confidence": {
+    "evidence": 4,
+    "primary_source_pct": 50,
+    "missing_critical": [
+     "industry ROIC",
+     "segment-wise margin disclosure",
+     "industry valuation"
+    ]
+   },
+   "value_capture": [
+    {
+     "node": "Automotive semiconductors",
+     "basis": "Content per vehicle keeps rising and qualification cycles are long, so pricing holds; the pool is small in Indian hands because almost all of it is imported.",
+     "params": {
+      "op_share": 3,
+      "pricing_power": 4,
+      "roic": 4,
+      "barriers": 5,
+      "bottleneck": 4,
+      "pool_growth": 4,
+      "cash_conversion": 3,
+      "switching": 4
+     },
+     "score": 3.85,
+     "score100": 77,
+     "coverage": 100
+    },
+    {
+     "node": "Li-ion cells & active materials",
+     "basis": "The largest and fastest-growing pool in the chain and the binding bottleneck - and the worst cash-conversion business in it: gigafactory capital, ramp losses and returns that only appear at high utilisation.",
+     "params": {
+      "op_share": 5,
+      "pricing_power": 3,
+      "roic": 2,
+      "barriers": 5,
+      "bottleneck": 5,
+      "pool_growth": 5,
+      "cash_conversion": 1,
+      "switching": 4
+     },
+     "score": 3.8,
+     "score100": 76,
+     "coverage": 100
+    },
+    {
+     "node": "Two-wheeler OEMs",
+     "basis": "The largest absolute profit pool in the ecosystem and the reason component suppliers earn little: OEM countervailing power is exactly what compresses the tier below.",
+     "params": {
+      "op_share": 5,
+      "pricing_power": 4,
+      "roic": 4,
+      "barriers": 4,
+      "bottleneck": 1,
+      "pool_growth": 3,
+      "cash_conversion": 4,
+      "switching": 4
+     },
+     "score": 3.8,
+     "score100": 76,
+     "coverage": 100
+    },
+    {
+     "node": "ADAS (camera, radar, compute)",
+     "basis": "High barriers and the fastest content growth, but almost entirely imported today, so the Indian chain captures integration rather than the profit pool.",
+     "params": {
+      "op_share": 2,
+      "pricing_power": 3,
+      "roic": 3,
+      "barriers": 5,
+      "bottleneck": 4,
+      "pool_growth": 5,
+      "cash_conversion": 2,
+      "switching": 4
+     },
+     "score": 3.35,
+     "score100": 67,
+     "coverage": 100
+    },
+    {
+     "node": "ICE powertrain & driveline",
+     "basis": "Cash-generative and mature with an installed base that keeps it running, but the pool is in structural decline as EV content displaces engine and driveline value.",
+     "params": {
+      "op_share": 4,
+      "pricing_power": 3,
+      "roic": 4,
+      "barriers": 3,
+      "bottleneck": 2,
+      "pool_growth": 2,
+      "cash_conversion": 4,
+      "switching": 3
+     },
+     "score": 3.25,
+     "score100": 65,
+     "coverage": 100
+    },
+    {
+     "node": "Forgings, castings & precision machining",
+     "basis": "The commodity middle: real capacity and real barriers to entry, but pass-through pricing, weak switching costs and returns set by the metal cycle.",
+     "params": {
+      "op_share": 3,
+      "pricing_power": 2,
+      "roic": 3,
+      "barriers": 3,
+      "bottleneck": 3,
+      "pool_growth": 3,
+      "cash_conversion": 3,
+      "switching": 2
+     },
+     "score": 2.8,
+     "score100": 56,
+     "coverage": 100
+    },
+    {
+     "node": "Battery pack & BMS",
+     "basis": "Assembly-level work below the cell, growing fast but squeezed between cell suppliers upstream and OEMs downstream, with thin value-add per pack.",
+     "params": {
+      "op_share": 2,
+      "pricing_power": 2,
+      "roic": 2,
+      "barriers": 3,
+      "bottleneck": 3,
+      "pool_growth": 5,
+      "cash_conversion": 2,
+      "switching": 3
+     },
+     "score": 2.6,
+     "score100": 52,
+     "coverage": 100
+    }
+   ],
+   "provisional": false,
+   "notes": "Scored against 'Industry-Level Investment Parameters & Scoring Architecture'. Valuation left UNAVAILABLE - no industry-level valuation data. FY26 figures are ACMA's Industry Performance Review (Jul-2026); the FY25 figures carried in the metric cards above are the prior year and remain correct as such. Value capture is a judgement on node economics, not node-level financials.",
+   "overall_rank": 13,
+   "risk_adjusted_rank": 10,
+   "structural_score": 65.7,
+   "current_score": 60,
+   "structural_score_rank": 11,
+   "current_score_rank": 17
   }
  ]
 }
