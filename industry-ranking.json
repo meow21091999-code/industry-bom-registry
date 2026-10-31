@@ -1,7 +1,7 @@
 {
  "registry": "Industry BOM Registry",
  "description": "Industry ranking per \"Industry-Level Investment Parameters & Scoring Architecture\": hierarchical category scores (1–5), overall 0–100, evidence coverage reported, three lenses kept separate. DERIVED — regenerate with node tools/build-industry-ranking.mjs.",
- "generated": "2026-10-30",
+ "generated": "2026-10-31",
  "framework": {
   "category_score": "Σ(parameter weight × parameter score) ÷ Σ(weights of supported parameters)",
   "overall_score": "Σ(category weight × category score ÷ 5) × 100, renormalised over supported categories",
@@ -99,10 +99,10 @@
  },
  "counts": {
   "industries": 77,
-  "scored": 30,
+  "scored": 31,
   "legacy": 0,
-  "unscored": 47,
-  "ranked": 30
+  "unscored": 46,
+  "ranked": 31
  },
  "industries": [
   {
@@ -231,12 +231,12 @@
    "value_capture": [],
    "provisional": false,
    "notes": "Opportunity uses the same series as the Market &amp; growth digest block (Alora Advisory: ~USD 1.5 bn in 2025 to ~USD 7.5 bn by 2030, ~33% nominal CAGR; Grand View&rsquo;s narrower non-utility scope is shown alongside and is not averaged). Valuation left UNAVAILABLE &mdash; no industry valuation series exists.",
-   "overall_rank": 28,
-   "risk_adjusted_rank": 26,
+   "overall_rank": 29,
+   "risk_adjusted_rank": 27,
    "structural_score": 48.6,
    "current_score": 40,
-   "structural_score_rank": 27,
-   "current_score_rank": 17
+   "structural_score_rank": 28,
+   "current_score_rank": 18
   },
   {
    "slug": "battery-management-system-india",
@@ -394,11 +394,11 @@
    "value_capture": [],
    "provisional": false,
    "notes": "Scored against 'Industry-Level Investment Parameters & Scoring Architecture'. Opportunity uses the same Ken Research HV series already carried in this page's Market & growth digest block. Valuation left UNAVAILABLE.",
-   "overall_rank": 3,
-   "risk_adjusted_rank": 4,
+   "overall_rank": 4,
+   "risk_adjusted_rank": 5,
    "structural_score": 68.6,
    "current_score": 80,
-   "structural_score_rank": 4,
+   "structural_score_rank": 5,
    "current_score_rank": 1
   },
   {
@@ -508,10 +508,10 @@
    "value_capture": [],
    "provisional": false,
    "notes": "Scored against 'Industry-Level Investment Parameters & Scoring Architecture'. Cycle position and valuation left UNAVAILABLE — the registry carries no cycle or valuation data for these industries.",
-   "overall_rank": 7,
-   "risk_adjusted_rank": 7,
+   "overall_rank": 8,
+   "risk_adjusted_rank": 8,
    "structural_score": 67.1,
-   "structural_score_rank": 7
+   "structural_score_rank": 8
   },
   {
    "slug": "engine-mro-india",
@@ -633,12 +633,12 @@
    "value_capture": [],
    "provisional": false,
    "notes": "This run REPLACES the prior Market & growth block, which rested on a tier-3 source and reported 3-year and last-year splits as UNAVAILABLE. Opportunity now uses the IMARC series (USD 1.95 bn 2025 to USD 9.75 bn 2030, 38.0% CAGR) and the conflicting NITI Aayog / third-house estimates are shown as a range rather than averaged. Valuation left UNAVAILABLE — no industry valuation series.",
-   "overall_rank": 20,
-   "risk_adjusted_rank": 20,
+   "overall_rank": 21,
+   "risk_adjusted_rank": 21,
    "structural_score": 57.1,
    "current_score": 40,
-   "structural_score_rank": 19,
-   "current_score_rank": 18
+   "structural_score_rank": 20,
+   "current_score_rank": 19
   },
   {
    "slug": "guns-india",
@@ -742,11 +742,11 @@
    "value_capture": [],
    "provisional": false,
    "notes": "Opportunity uses the same series as the Market & growth digest block (KPMG ammunition market of Rs 7,057 cr in 2023 rising to Rs 11,981 cr by 2032 at 4.93%, inside FY26 defence production of Rs 1.78 lakh cr). Valuation left UNAVAILABLE — the registry carries no industry valuation data.",
-   "overall_rank": 14,
-   "risk_adjusted_rank": 19,
+   "overall_rank": 15,
+   "risk_adjusted_rank": 20,
    "structural_score": 58.6,
    "current_score": 80,
-   "structural_score_rank": 18,
+   "structural_score_rank": 19,
    "current_score_rank": 2
   },
   {
@@ -851,12 +851,12 @@
    "value_capture": [],
    "provisional": false,
    "notes": "Opportunity uses the same series as the Market & growth digest block (IFR installations of 9,120 units in 2024 and ~10,500 in 2025, 27% average annual growth 2020–2025, with imports at 85–90% of component value). No rupee market size exists at Level 1 or 2, so none is stated. Valuation left UNAVAILABLE.",
-   "overall_rank": 27,
-   "risk_adjusted_rank": 28,
+   "overall_rank": 28,
+   "risk_adjusted_rank": 29,
    "structural_score": 45.7,
    "current_score": 60,
-   "structural_score_rank": 29,
-   "current_score_rank": 8
+   "structural_score_rank": 30,
+   "current_score_rank": 9
   },
   {
    "slug": "hvdc-power-electronics-india",
@@ -960,12 +960,12 @@
    "value_capture": [],
    "provisional": false,
    "notes": "Scored against 'Industry-Level Investment Parameters & Scoring Architecture'. Opportunity uses the same HVDC series as the Market & growth digest block, with the conflicting second series disclosed rather than averaged. Valuation left UNAVAILABLE.",
-   "overall_rank": 18,
-   "risk_adjusted_rank": 21,
+   "overall_rank": 19,
+   "risk_adjusted_rank": 22,
    "structural_score": 57.1,
    "current_score": 60,
-   "structural_score_rank": 20,
-   "current_score_rank": 9
+   "structural_score_rank": 21,
+   "current_score_rank": 10
   },
   {
    "slug": "industrial-gases-india",
@@ -1075,10 +1075,10 @@
    "value_capture": [],
    "provisional": false,
    "notes": "Scored against 'Industry-Level Investment Parameters & Scoring Architecture'. Cycle position and valuation left UNAVAILABLE — the registry carries no cycle or valuation data for these industries.",
-   "overall_rank": 21,
-   "risk_adjusted_rank": 22,
+   "overall_rank": 22,
+   "risk_adjusted_rank": 23,
    "structural_score": 52.9,
-   "structural_score_rank": 21
+   "structural_score_rank": 22
   },
   {
    "slug": "launch-vehicles-propulsion-india",
@@ -1182,12 +1182,12 @@
    "value_capture": [],
    "provisional": false,
    "notes": "Opportunity uses the same series as the Market & growth digest block (IN-SPACe launch segment of US$720 mn in 2022 rising to a US$3.5 bn potential by 2033, ~15.4% CAGR). Valuation left UNAVAILABLE — the registry carries no industry valuation data.",
-   "overall_rank": 8,
-   "risk_adjusted_rank": 8,
+   "overall_rank": 9,
+   "risk_adjusted_rank": 9,
    "structural_score": 67.1,
    "current_score": 60,
-   "structural_score_rank": 8,
-   "current_score_rank": 10
+   "structural_score_rank": 9,
+   "current_score_rank": 11
   },
   {
    "slug": "li-ion-cell-manufacturing-india",
@@ -1291,12 +1291,12 @@
    "value_capture": [],
    "provisional": false,
    "notes": "Opportunity uses the same series as the Market & growth digest block (IESA demand of 28 GWh in 2025 rising to ~272 GWh by FY2030 at a 36.5% CAGR, against ~2 GWh installed capacity). The two value forecasts disagree (17.65% vs 22.0% CAGR) and are shown as conflicting data rather than reconciled. Valuation left UNAVAILABLE.",
-   "overall_rank": 22,
-   "risk_adjusted_rank": 24,
+   "overall_rank": 23,
+   "risk_adjusted_rank": 25,
    "structural_score": 51.4,
    "current_score": 60,
-   "structural_score_rank": 23,
-   "current_score_rank": 11
+   "structural_score_rank": 24,
+   "current_score_rank": 12
   },
   {
    "slug": "machine-tools-metrology-india",
@@ -1400,11 +1400,11 @@
    "value_capture": [],
    "provisional": false,
    "notes": "Opportunity uses the same series as the Market & growth digest block (IMTMA FY26 consumption of Rs 36,419 cr, imports of Rs 21,628 cr, and the 13.7% eleven-year production CAGR). Valuation left UNAVAILABLE because the registry carries no industry valuation data.",
-   "overall_rank": 12,
-   "risk_adjusted_rank": 11,
+   "overall_rank": 13,
+   "risk_adjusted_rank": 12,
    "structural_score": 60,
    "current_score": 80,
-   "structural_score_rank": 16,
+   "structural_score_rank": 17,
    "current_score_rank": 5
   },
   {
@@ -1509,11 +1509,11 @@
    "value_capture": [],
    "provisional": false,
    "notes": "Opportunity uses the same series as the Market & growth digest block (MarketsandMarkets India missile market US$468.6 mn 2025 to US$2,512.7 mn 2030 at 39.9%, and Grand View India PGM US$2,350.6 mn 2022 to US$3,958.6 mn 2030 at 6.7%, both inside FY26 defence production of Rs 1.78 lakh crore). Valuation left UNAVAILABLE — the registry carries no industry valuation series.",
-   "overall_rank": 9,
-   "risk_adjusted_rank": 15,
+   "overall_rank": 10,
+   "risk_adjusted_rank": 16,
    "structural_score": 62.9,
    "current_score": 80,
-   "structural_score_rank": 12,
+   "structural_score_rank": 13,
    "current_score_rank": 3
   },
   {
@@ -1618,12 +1618,12 @@
    "value_capture": [],
    "provisional": false,
    "notes": "Opportunity uses the same series as the Market &amp; growth digest block (Omdia/IDC: ~153 mn CY2025 to 125&ndash;133 mn CY2026; accessories USD 6.86 bn 2025 to 14.66 bn 2034, ~8.5% five-year CAGR, CALCULATED). Valuation left UNAVAILABLE &mdash; no industry valuation series exists.",
-   "overall_rank": 30,
-   "risk_adjusted_rank": 29,
+   "overall_rank": 31,
+   "risk_adjusted_rank": 30,
    "structural_score": 41.4,
    "current_score": 40,
-   "structural_score_rank": 30,
-   "current_score_rank": 19
+   "structural_score_rank": 31,
+   "current_score_rank": 20
   },
   {
    "slug": "nuclear-pwr-steam-generator-india",
@@ -1750,10 +1750,10 @@
    "value_capture": [],
    "provisional": false,
    "notes": "Scored against 'Industry-Level Investment Parameters & Scoring Architecture'. Cycle position and valuation left UNAVAILABLE — the registry carries no cycle or valuation data for these industries.",
-   "overall_rank": 2,
+   "overall_rank": 3,
    "risk_adjusted_rank": 1,
    "structural_score": 75.7,
-   "structural_score_rank": 3
+   "structural_score_rank": 4
   },
   {
    "slug": "optical-transceivers-india",
@@ -1863,12 +1863,12 @@
    "value_capture": [],
    "provisional": false,
    "notes": "Opportunity uses the same series as the Market & growth digest block (DCPC value of output Rs 9.62 lakh crore FY2018-19 to Rs 15.14 lakh crore FY2023-24, 11.6% CAGR at current prices, inside a Rs 26 lakh crore FY25 chemicals-and-petrochemicals market, against a Rs 65,383 crore FY26 net organic-chemicals import gap). Valuation left UNAVAILABLE — the registry carries no industry valuation series.",
-   "overall_rank": 26,
-   "risk_adjusted_rank": 25,
+   "overall_rank": 27,
+   "risk_adjusted_rank": 26,
    "structural_score": 51.4,
    "current_score": 40,
-   "structural_score_rank": 24,
-   "current_score_rank": 20
+   "structural_score_rank": 25,
+   "current_score_rank": 21
   },
   {
    "slug": "overhead-transmission-line-india",
@@ -1972,12 +1972,12 @@
    "value_capture": [],
    "provisional": false,
    "notes": "Scored against 'Industry-Level Investment Parameters & Scoring Architecture'. Opportunity uses the same T&D EPC series as the Market & growth digest block (Astute Analytica), cross-checked against Transrail's 2029 waypoint. Valuation left UNAVAILABLE.",
-   "overall_rank": 15,
-   "risk_adjusted_rank": 10,
+   "overall_rank": 16,
+   "risk_adjusted_rank": 11,
    "structural_score": 61.4,
    "current_score": 60,
-   "structural_score_rank": 15,
-   "current_score_rank": 15
+   "structural_score_rank": 16,
+   "current_score_rank": 16
   },
   {
    "slug": "pcb-electronic-components-india",
@@ -2087,12 +2087,12 @@
    "value_capture": [],
    "provisional": false,
    "notes": "Opportunity uses the same series as the Market &amp; growth digest block (~$15&ndash;16 bn growing 5&ndash;7% through FY28, and the broader-scope $14.18 bn 2025 to $22.18 bn 2031 at 7.74% CALCULATED). Valuation left UNAVAILABLE &mdash; no industry valuation series exists.",
-   "overall_rank": 29,
-   "risk_adjusted_rank": 27,
+   "overall_rank": 30,
+   "risk_adjusted_rank": 28,
    "structural_score": 48.6,
    "current_score": 40,
-   "structural_score_rank": 28,
-   "current_score_rank": 21
+   "structural_score_rank": 29,
+   "current_score_rank": 22
   },
   {
    "slug": "power-conversion-system-india",
@@ -2196,11 +2196,11 @@
    "value_capture": [],
    "provisional": false,
    "notes": "Opportunity uses the same series as the Market & growth digest block (India BESS US$1.5 bn in 2025 to US$7.5 bn in 2030 at 33% value CAGR, with the PCS slice derived at 15–25% of utility-scale hardware capex, against a CEA 208 GWh by 2030 requirement). Valuation left UNAVAILABLE — the registry carries no industry valuation series.",
-   "overall_rank": 10,
-   "risk_adjusted_rank": 17,
+   "overall_rank": 11,
+   "risk_adjusted_rank": 18,
    "structural_score": 61.4,
    "current_score": 80,
-   "structural_score_rank": 14,
+   "structural_score_rank": 15,
    "current_score_rank": 4
   },
   {
@@ -2425,10 +2425,10 @@
    ],
    "provisional": false,
    "notes": "Scored against 'Industry-Level Investment Parameters & Scoring Architecture'. Cycle position and valuation left UNAVAILABLE — the registry carries no cycle or valuation data for these industries. Value capture scored per node from the review's §4 model — PROVISIONAL judgement, not yet evidenced with node-level financials.",
-   "overall_rank": 11,
-   "risk_adjusted_rank": 9,
+   "overall_rank": 12,
+   "risk_adjusted_rank": 10,
    "structural_score": 64.3,
-   "structural_score_rank": 9
+   "structural_score_rank": 10
   },
   {
    "slug": "power-transformers-india",
@@ -2530,12 +2530,12 @@
    "value_capture": [],
    "provisional": false,
    "notes": "Opportunity uses the same series as the Market &amp; growth digest block (&#8377;40,000 cr FY26 against &#8377;33,000 cr FY25, +21% YoY, CALCULATED from Eninrac; forward CAGR UNAVAILABLE). Valuation is scored from listed-company multiples reported in trade coverage, labelled [REPORTED-T3], not from an industry series.",
-   "overall_rank": 6,
-   "risk_adjusted_rank": 3,
+   "overall_rank": 7,
+   "risk_adjusted_rank": 4,
    "structural_score": 77.1,
    "current_score": 50,
-   "structural_score_rank": 2,
-   "current_score_rank": 16
+   "structural_score_rank": 3,
+   "current_score_rank": 17
   },
   {
    "slug": "power-transmission-india",
@@ -2639,12 +2639,12 @@
    "value_capture": [],
    "provisional": false,
    "notes": "Scored against 'Industry-Level Investment Parameters & Scoring Architecture'. Opportunity uses the same series as the Market & growth digest block (Grand View Research via Kotak Neo, base 2024). Valuation left UNAVAILABLE — the registry carries no industry valuation data.",
-   "overall_rank": 1,
+   "overall_rank": 2,
    "risk_adjusted_rank": 2,
    "structural_score": 81.4,
    "current_score": 60,
    "structural_score_rank": 1,
-   "current_score_rank": 12
+   "current_score_rank": 13
   },
   {
    "slug": "railway-india",
@@ -2754,12 +2754,12 @@
    "value_capture": [],
    "provisional": false,
    "notes": "Opportunity uses the same series as the Market & growth digest block (FY25 permanent-magnet imports of Rs 1,744 crore on 53,748 tonnes, government projection of consumption doubling by 2030 from 2025, and import dependence of 59.6–81.3% by value). Valuation left UNAVAILABLE — no industry valuation series and no listed domestic pure-play.",
-   "overall_rank": 23,
-   "risk_adjusted_rank": 30,
+   "overall_rank": 24,
+   "risk_adjusted_rank": 31,
    "structural_score": 50,
    "current_score": 60,
-   "structural_score_rank": 26,
-   "current_score_rank": 13
+   "structural_score_rank": 27,
+   "current_score_rank": 14
   },
   {
    "slug": "reactor-coolant-pumps-primary-loop-india",
@@ -2869,11 +2869,11 @@
    "value_capture": [],
    "provisional": false,
    "notes": "Opportunity uses the same series as the Market & growth digest block (India robot software US$223.4 mn in 2023 to US$1,312.3 mn by 2030 at 27.7% value CAGR, inside a robotics market of US$1.1 bn in 2025 rising to US$4.6 bn by 2030 at ~33%). Valuation left UNAVAILABLE — the registry carries no industry valuation series.",
-   "overall_rank": 4,
-   "risk_adjusted_rank": 5,
+   "overall_rank": 5,
+   "risk_adjusted_rank": 6,
    "structural_score": 68.6,
    "current_score": 80,
-   "structural_score_rank": 5,
+   "structural_score_rank": 6,
    "current_score_rank": 6
   },
   {
@@ -2910,7 +2910,215 @@
    "slug": "satellite-payloads-india",
    "title": "India Satellite Payloads",
    "group": "Space & Satellites",
-   "scored": false
+   "scored": true,
+   "as_of": "2026-10-31",
+   "categories": {
+    "economics": {
+     "name": "Industry economics & value creation",
+     "weight": 0.2,
+     "lens": "structural",
+     "score": 4,
+     "from": "category",
+     "basis": "Payload economics are good where the work is design-led: Paras earned a 44% EBIT margin on its optics segment in FY26, Data Patterns a 40.1% EBITDA margin on Rs 925 cr, Centum 18-20%+ in build-to-specification against 9-10% in EMS, and Astra's management states space margins exceed defence margins. The drag is not margin but concentration: one buyer, lumpy programmes, and working-capital cycles that took Astra 374 days of cash conversion."
+    },
+    "opportunity": {
+     "name": "Market opportunity & structural growth",
+     "weight": 0.15,
+     "lens": "structural",
+     "score": 5,
+     "from": "category",
+     "basis": "The demand signal is unusually explicit: 196 transponders against a stated requirement of 500 with 300 more directed, a 12-satellite EO constellation under contract to 2029, NVS-04 and NVS-05 targeted by Sep-2027, and a space economy projected from US$9 bn to US$40-45 bn. Historical growth has been slow (~1.6% a year on the economy measure), so the opportunity is forward and programme-driven rather than a trend already in the revenue line."
+    },
+    "competitive": {
+     "name": "Competitive structure & moat",
+     "weight": 0.15,
+     "lens": "structural",
+     "score": 4,
+     "from": "category",
+     "basis": "Design authority sits with ISRO's SAC and flight qualification gates entry, so the qualified supplier set is small and sticky - Astra has run cumulative ISRO space orders above Rs 750 cr across two decades. Barriers protect incumbency but not pricing, because the customer is the state and it sets both price and schedule."
+    },
+    "cycle": {
+     "name": "Current opportunity & cycle position",
+     "weight": 0.15,
+     "lens": "current",
+     "score": 4,
+     "from": "category",
+     "basis": "The cycle is inflecting upward on identifiable events rather than sentiment: NVS-03 launched 30-Oct-2026 and restored the four-satellite constellation, the Rs 2,563 cr GSAT-7C whole-bus order went to NSIL in Oct-2026, the EO-PPP concession was signed in Jan-2026, and NSIL repriced Ku capacity 20% from 1-Apr-2026, the first revision in a decade."
+    },
+    "valuation": {
+     "name": "Valuation & market expectations",
+     "weight": 0.15,
+     "lens": "current",
+     "score": null,
+     "from": null,
+     "basis": "No industry-level valuation series exists for Indian satellite payloads, and no aggregation of listed payload-exposed companies would be a valid proxy because the exposure sits inside diversified defence-electronics businesses. Company multiples are reported (Astra at 71.7x FY26 earnings on ICICI Securities' estimates) but one company cannot define an industry multiple."
+    },
+    "value_chain": {
+     "name": "Value-chain position & bottlenecks",
+     "weight": 0.1,
+     "lens": "structural",
+     "score": 3,
+     "from": "category",
+     "basis": "Domestic capture is solid at the build and screening layer and has improved twice in two years - TWTA productionisation at BEL under the SAC MoU and an indigenous clock now flying on NVS-03 - but detectors, focal planes, high-grade optics and rad-hard die remain imported, and no listed company covers the navigation payload."
+    },
+    "capital": {
+     "name": "Capital intensity & financial quality",
+     "weight": 0.05,
+     "lens": "structural",
+     "score": 3,
+     "from": "category",
+     "basis": "Payload work is materially lighter in capital than the bus: cleanrooms, bonding and RF test benches rather than vacuum chambers and shakers, and Astra funds capex of Rs 40-50 cr a year. The burden is working capital - 374 days of cash conversion at Astra, 225-350 days on Centum's build-to-specification projects."
+    },
+    "technology": {
+     "name": "Technology & innovation",
+     "weight": 0.05,
+     "lens": "structural",
+     "score": 3,
+     "from": "category",
+     "basis": "Design capability is real and current: SAC has delivered transponders from UHF to Ka, GSAT-N2 carries 32 beams and ~48 Gbps of Ka-band throughput, GaN SSPAs substitute for TWTAs on strategic payloads, and an indigenous rubidium clock has flown. The gap is at the component level - detector and rad-hard die design and fabrication are not domestic."
+    },
+    "risk": {
+     "name": "Risk & resilience",
+     "weight": null,
+     "lens": "risk",
+     "score": 3,
+     "from": "category",
+     "basis": "A single state buyer sets price and schedule, four of the highest-value inputs are import-dependent under export-control regimes, qualification is gated by scarce test capacity, and payload failure is mission-ending - but the domestic trend is genuinely improving on TWTA and timing."
+    }
+   },
+   "structural": {
+    "score": 78.6,
+    "coverage": 100
+   },
+   "current": {
+    "score": 80,
+    "coverage": 50
+   },
+   "risk": 3,
+   "risk_adjusted": 47.2,
+   "overall": 78.8,
+   "coverage": 85,
+   "confidence": {
+    "evidence": 4,
+    "primary_source_pct": 55,
+    "missing_critical": [
+     "valuation",
+     "payload-level cost shares",
+     "volume series (payload units / transponders over time)"
+    ]
+   },
+   "value_capture": [
+    {
+     "node": "TWTA / RF power amplification",
+     "basis": "Highest score on the chain: the function is essential to every transponder and SAR transmitter, was historically single-sourced abroad, and now has two domestic paths (BEL's TWTA facility under the SAC MoU, Sep-2024; SAC's GaN SSPA). Barriers are the vacuum-electronics and GaN process know-how, not capital. Rank moved up this run because BEL productionisation converts an import dependency into a domestic order book.",
+     "params": {
+      "op_share": 3,
+      "pricing_power": 4,
+      "roic": 3,
+      "barriers": 5,
+      "bottleneck": 5,
+      "pool_growth": 4,
+      "cash_conversion": 3,
+      "switching": 5
+     },
+     "score": 3.85,
+     "score100": 77,
+     "coverage": 100
+    },
+    {
+     "node": "Navigation payload & atomic clocks",
+     "basis": "No substitute exists for a working clock, so pricing power and switching costs are as high as anything in the chain; the pool is small in revenue terms because there are few satellites, and it is captured by SAC rather than by any listed company. The indigenous clock flying on NVS-03 (30-Oct-2026) is the first evidence that the design can be industrialised.",
+     "params": {
+      "op_share": 2,
+      "pricing_power": 5,
+      "roic": 3,
+      "barriers": 5,
+      "bottleneck": 5,
+      "pool_growth": 4,
+      "cash_conversion": 3,
+      "switching": 5
+     },
+     "score": 3.8,
+     "score100": 76,
+     "coverage": 100
+    },
+    {
+     "node": "Space optics, detectors & focal planes",
+     "basis": "The richest domestic pool by margin - Paras earned 44% EBIT on its optics segment in FY26 - with the fastest-growing demand pool behind it (12-satellite EO-PPP constellation by 2029). Scored below TWTA only because the highest-value element, the detector/FPA, is still imported and therefore not yet capturable in India.",
+     "params": {
+      "op_share": 3,
+      "pricing_power": 4,
+      "roic": 3,
+      "barriers": 5,
+      "bottleneck": 4,
+      "pool_growth": 5,
+      "cash_conversion": 3,
+      "switching": 4
+     },
+     "score": 3.8,
+     "score100": 76,
+     "coverage": 100
+    },
+    {
+     "node": "Payload integration, screening & calibration",
+     "basis": "The largest operating-profit pool available to listed investors: Astra, Centum, Data Patterns, BEL and Paras all sit here, at margins above their corporate averages. Held back by a single state buyer that sets price, and by cash conversion of 374 days at Astra.",
+     "params": {
+      "op_share": 4,
+      "pricing_power": 3,
+      "roic": 4,
+      "barriers": 4,
+      "bottleneck": 3,
+      "pool_growth": 5,
+      "cash_conversion": 3,
+      "switching": 4
+     },
+     "score": 3.75,
+     "score100": 75,
+     "coverage": 100
+    },
+    {
+     "node": "Antennas, feeds & reflectors",
+     "basis": "Steady, material revenue for Astra and BEL, but the least strategic node: several qualified suppliers, no export-control choke point, and apertures below the deployable-reflector class are genuinely competitive.",
+     "params": {
+      "op_share": 4,
+      "pricing_power": 3,
+      "roic": 4,
+      "barriers": 3,
+      "bottleneck": 2,
+      "pool_growth": 4,
+      "cash_conversion": 3,
+      "switching": 3
+     },
+     "score": 3.35,
+     "score100": 67,
+     "coverage": 100
+    },
+    {
+     "node": "MMIC & rad-hard die",
+     "basis": "Lowest score despite the highest strategic weight: the pool is currently foreign, capture in India is design-only (Aelius MMIC IP inside Astra), and a fab route would be capital-heavy with long payback. Scored as the opportunity it would become, not the pool that exists.",
+     "params": {
+      "op_share": 2,
+      "pricing_power": 4,
+      "roic": 2,
+      "barriers": 5,
+      "bottleneck": 4,
+      "pool_growth": 4,
+      "cash_conversion": 2,
+      "switching": 4
+     },
+     "score": 3.25,
+     "score100": 65,
+     "coverage": 100
+    }
+   ],
+   "provisional": false,
+   "notes": "Opportunity and Market & growth use the same scoped series: space economy US$8.4 bn (2022, IN-SPACe) to US$9.0 bn (Aug-2026, PIB), ~1.6% nominal CAGR [CALCULATED]; NSIL revenue Rs 321.77 cr FY22 to Rs 3,000+ cr FY25 [CALCULATED]; transponder gap 196 vs 500. Valuation left UNAVAILABLE - the registry carries no industry valuation series.",
+   "overall_rank": 1,
+   "risk_adjusted_rank": 3,
+   "structural_score": 78.6,
+   "current_score": 80,
+   "structural_score_rank": 2,
+   "current_score_rank": 7
   },
   {
    "slug": "satellite-services-data-india",
@@ -3026,10 +3234,10 @@
    "value_capture": [],
    "provisional": false,
    "notes": "Scored against 'Industry-Level Investment Parameters & Scoring Architecture'. Cycle position and valuation left UNAVAILABLE — the registry carries no cycle or valuation data for these industries.",
-   "overall_rank": 24,
-   "risk_adjusted_rank": 12,
+   "overall_rank": 25,
+   "risk_adjusted_rank": 13,
    "structural_score": 51.4,
-   "structural_score_rank": 25
+   "structural_score_rank": 26
   },
   {
    "slug": "shakti-ew-india",
@@ -3145,12 +3353,12 @@
    "value_capture": [],
    "provisional": false,
    "notes": "Opportunity uses the same series as the Market & growth digest block (DGFT silver HS-category imports: US$184.33 mn FY26 vs an implied US$112.05 mn FY25, +64.51%). Valuation left UNAVAILABLE — no industry valuation series, and the pure-plays are foreign-listed. The CSE import line is an HS proxy, so it overstates paste narrowly and understates it if paste enters under a different code.",
-   "overall_rank": 17,
-   "risk_adjusted_rank": 16,
+   "overall_rank": 18,
+   "risk_adjusted_rank": 17,
    "structural_score": 62.9,
    "current_score": 40,
-   "structural_score_rank": 13,
-   "current_score_rank": 24
+   "structural_score_rank": 14,
+   "current_score_rank": 25
   },
   {
    "slug": "smart-meters-india",
@@ -3260,12 +3468,12 @@
    "value_capture": [],
    "provisional": false,
    "notes": "SMR-specific revenue is UNAVAILABLE — no unit is under construction and no commercial price exists, so opportunity is scored on the nuclear build-out frame and the three sanctioned demonstration projects rather than on an invented SMR market size. Valuation left UNAVAILABLE — no industry valuation series and the core participants are unlisted.",
-   "overall_rank": 25,
-   "risk_adjusted_rank": 23,
+   "overall_rank": 26,
+   "risk_adjusted_rank": 24,
    "structural_score": 52.9,
    "current_score": 40,
-   "structural_score_rank": 22,
-   "current_score_rank": 22
+   "structural_score_rank": 23,
+   "current_score_rank": 23
   },
   {
    "slug": "solar-cells-india",
@@ -3369,12 +3577,12 @@
    "value_capture": [],
    "provisional": false,
    "notes": "Opportunity uses the same series as the Market & growth digest block (CRISIL demand of 60-65 GW FY27; Commerce/TradeStat imported-cell value US$3.06 bn FY26 with a 28.6% two-year CAGR). Valuation left UNAVAILABLE — the registry carries no industry valuation data.",
-   "overall_rank": 16,
-   "risk_adjusted_rank": 14,
+   "overall_rank": 17,
+   "risk_adjusted_rank": 15,
    "structural_score": 64.3,
    "current_score": 40,
-   "structural_score_rank": 11,
-   "current_score_rank": 25
+   "structural_score_rank": 12,
+   "current_score_rank": 26
   },
   {
    "slug": "solar-pv-india",
@@ -3478,12 +3686,12 @@
    "value_capture": [],
    "provisional": false,
    "notes": "Opportunity uses the same series as the Market & growth digest block (PS Market Research, base 2023, 13.4% nominal CAGR 2024-2030). Valuation left UNAVAILABLE — the registry carries no industry valuation data. The panels-only Grand View series (9.4%) is a different scope and is not blended into the score.",
-   "overall_rank": 19,
-   "risk_adjusted_rank": 18,
+   "overall_rank": 20,
+   "risk_adjusted_rank": 19,
    "structural_score": 60,
    "current_score": 40,
-   "structural_score_rank": 17,
-   "current_score_rank": 23
+   "structural_score_rank": 18,
+   "current_score_rank": 24
   },
   {
    "slug": "steam-turbine-india",
@@ -3593,12 +3801,12 @@
    "value_capture": [],
    "provisional": false,
    "notes": "Scored against 'Industry-Level Investment Parameters & Scoring Architecture'. Opportunity uses the same CRISIL transformer series as the Market & growth digest block; the switchgear series is reported separately and never added to it. Valuation left UNAVAILABLE.",
-   "overall_rank": 5,
-   "risk_adjusted_rank": 6,
+   "overall_rank": 6,
+   "risk_adjusted_rank": 7,
    "structural_score": 68.6,
    "current_score": 80,
-   "structural_score_rank": 6,
-   "current_score_rank": 7
+   "structural_score_rank": 7,
+   "current_score_rank": 8
   },
   {
    "slug": "telecom-chipsets-india",
@@ -3718,12 +3926,12 @@
    "value_capture": [],
    "provisional": false,
    "notes": "Opportunity uses the same series as the Market &amp; growth digest block (0.86 mn towers FY26 to 1.04&ndash;1.09 mn FY31 at 4&ndash;5% CAGR, REPORTED-T2, with the CALCULATED 3.9&ndash;4.9% shown alongside). Valuation is scored from one listed proxy&rsquo;s EV/EBITDA, labelled [REPORTED-T3], not from an industry series.",
-   "overall_rank": 13,
-   "risk_adjusted_rank": 13,
+   "overall_rank": 14,
+   "risk_adjusted_rank": 14,
    "structural_score": 64.3,
    "current_score": 60,
-   "structural_score_rank": 10,
-   "current_score_rank": 14
+   "structural_score_rank": 11,
+   "current_score_rank": 15
   },
   {
    "slug": "telecom-transport-equipment-india",
