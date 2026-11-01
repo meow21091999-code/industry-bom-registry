@@ -7,7 +7,7 @@
   "industries": 77,
   "mappings": 2594,
   "multi_industry": 273,
-  "rank_changes": 30
+  "rank_changes": 1
  },
  "companies": [
   {
@@ -805,8 +805,8 @@
     "BHEL"
    ],
    "rank": 2,
-   "previous_rank": 3,
-   "rank_change": 1
+   "previous_rank": 2,
+   "rank_change": 0
   },
   {
    "name": "CG Power & Industrial Solutions",
@@ -1102,8 +1102,8 @@
     "CG Power & Industrial"
    ],
    "rank": 3,
-   "previous_rank": 2,
-   "rank_change": -1
+   "previous_rank": 3,
+   "rank_change": 0
   },
   {
    "name": "Reliance Industries (Jio Platforms)",
@@ -2967,8 +2967,8 @@
     "Mishra Dhatu Nigam"
    ],
    "rank": 11,
-   "previous_rank": 14,
-   "rank_change": 3
+   "previous_rank": 11,
+   "rank_change": 0
   },
   {
    "name": "Hitachi Energy India",
@@ -3170,8 +3170,8 @@
    ],
    "also_known_as": [],
    "rank": 12,
-   "previous_rank": 11,
-   "rank_change": -1
+   "previous_rank": 12,
+   "rank_change": 0
   },
   {
    "name": "Hindalco Industries",
@@ -3347,8 +3347,8 @@
     "Hindalco"
    ],
    "rank": 13,
-   "previous_rank": 12,
-   "rank_change": -1
+   "previous_rank": 13,
+   "rank_change": 0
   },
   {
    "name": "HFCL (HTL Ltd)",
@@ -3572,8 +3572,8 @@
     "HFCL"
    ],
    "rank": 14,
-   "previous_rank": 13,
-   "rank_change": -1
+   "previous_rank": 14,
+   "rank_change": 0
   },
   {
    "name": "Syrma SGS Technology",
@@ -11157,8 +11157,8 @@
    ],
    "also_known_as": [],
    "rank": 80,
-   "previous_rank": 102,
-   "rank_change": 22
+   "previous_rank": 80,
+   "rank_change": 0
   },
   {
    "name": "NTPC Green Energy",
@@ -11228,8 +11228,8 @@
    ],
    "also_known_as": [],
    "rank": 81,
-   "previous_rank": 80,
-   "rank_change": -1
+   "previous_rank": 81,
+   "rank_change": 0
   },
   {
    "name": "Avantel",
@@ -11297,8 +11297,8 @@
    ],
    "also_known_as": [],
    "rank": 82,
-   "previous_rank": 81,
-   "rank_change": -1
+   "previous_rank": 82,
+   "rank_change": 0
   },
   {
    "name": "Premier Energies",
@@ -11362,8 +11362,8 @@
    ],
    "also_known_as": [],
    "rank": 83,
-   "previous_rank": 82,
-   "rank_change": -1
+   "previous_rank": 83,
+   "rank_change": 0
   },
   {
    "name": "Ola Electric Mobility",
@@ -11427,8 +11427,8 @@
     "Ola Electric"
    ],
    "rank": 84,
-   "previous_rank": 83,
-   "rank_change": -1
+   "previous_rank": 84,
+   "rank_change": 0
   },
   {
    "name": "Vindhya Telelinks",
@@ -11495,8 +11495,8 @@
    ],
    "also_known_as": [],
    "rank": 85,
-   "previous_rank": 84,
-   "rank_change": -1
+   "previous_rank": 85,
+   "rank_change": 0
   },
   {
    "name": "IndiGrid",
@@ -11558,8 +11558,8 @@
    ],
    "also_known_as": [],
    "rank": 86,
-   "previous_rank": 85,
-   "rank_change": -1
+   "previous_rank": 86,
+   "rank_change": 0
   },
   {
    "name": "Power Grid Corporation of India",
@@ -11623,8 +11623,8 @@
     "Power Grid Corp of India"
    ],
    "rank": 87,
-   "previous_rank": 86,
-   "rank_change": -1
+   "previous_rank": 87,
+   "rank_change": 0
   },
   {
    "name": "INOX India",
@@ -11693,8 +11693,8 @@
    ],
    "also_known_as": [],
    "rank": 88,
-   "previous_rank": 87,
-   "rank_change": -1
+   "previous_rank": 88,
+   "rank_change": 0
   },
   {
    "name": "Adani Green Energy",
@@ -11756,8 +11756,8 @@
    ],
    "also_known_as": [],
    "rank": 89,
-   "previous_rank": 88,
-   "rank_change": -1
+   "previous_rank": 89,
+   "rank_change": 0
   },
   {
    "name": "Salasar Techno Engineering",
@@ -11826,8 +11826,8 @@
     "Salasar Techno"
    ],
    "rank": 90,
-   "previous_rank": 89,
-   "rank_change": -1
+   "previous_rank": 90,
+   "rank_change": 0
   },
   {
    "name": "Salzer Electronics",
@@ -11889,8 +11889,8 @@
    ],
    "also_known_as": [],
    "rank": 91,
-   "previous_rank": 90,
-   "rank_change": -1
+   "previous_rank": 91,
+   "rank_change": 0
   },
   {
    "name": "SPEL Semiconductor",
@@ -11952,8 +11952,8 @@
    ],
    "also_known_as": [],
    "rank": 92,
-   "previous_rank": 91,
-   "rank_change": -1
+   "previous_rank": 92,
+   "rank_change": 0
   },
   {
    "name": "SPEL Semiconductor",
@@ -12015,8 +12015,8 @@
    ],
    "also_known_as": [],
    "rank": 93,
-   "previous_rank": 92,
-   "rank_change": -1
+   "previous_rank": 93,
+   "rank_change": 0
   },
   {
    "name": "SPEL Semiconductor",
@@ -12078,8 +12078,8 @@
    ],
    "also_known_as": [],
    "rank": 94,
-   "previous_rank": 93,
-   "rank_change": -1
+   "previous_rank": 94,
+   "rank_change": 0
   },
   {
    "name": "HBL Engineering",
@@ -12140,8 +12140,8 @@
    ],
    "also_known_as": [],
    "rank": 95,
-   "previous_rank": 94,
-   "rank_change": -1
+   "previous_rank": 95,
+   "rank_change": 0
   },
   {
    "name": "Solar Industries",
@@ -12205,8 +12205,8 @@
    ],
    "also_known_as": [],
    "rank": 96,
-   "previous_rank": 95,
-   "rank_change": -1
+   "previous_rank": 96,
+   "rank_change": 0
   },
   {
    "name": "KPIT Technologies",
@@ -12268,8 +12268,8 @@
    ],
    "also_known_as": [],
    "rank": 97,
-   "previous_rank": 96,
-   "rank_change": -1
+   "previous_rank": 97,
+   "rank_change": 0
   },
   {
    "name": "MosChip Technologies",
@@ -12331,8 +12331,8 @@
    ],
    "also_known_as": [],
    "rank": 98,
-   "previous_rank": 97,
-   "rank_change": -1
+   "previous_rank": 98,
+   "rank_change": 0
   },
   {
    "name": "Kirloskar Pneumatic",
@@ -12395,8 +12395,8 @@
    ],
    "also_known_as": [],
    "rank": 99,
-   "previous_rank": 98,
-   "rank_change": -1
+   "previous_rank": 99,
+   "rank_change": 0
   },
   {
    "name": "Bharat Petroleum",
@@ -12459,8 +12459,8 @@
     "BPCL"
    ],
    "rank": 100,
-   "previous_rank": 99,
-   "rank_change": -1
+   "previous_rank": 100,
+   "rank_change": 0
   },
   {
    "name": "Epigral",
@@ -12522,8 +12522,8 @@
    ],
    "also_known_as": [],
    "rank": 101,
-   "previous_rank": 100,
-   "rank_change": -1
+   "previous_rank": 101,
+   "rank_change": 0
   },
   {
    "name": "Samvardhana Motherson",
@@ -12585,8 +12585,8 @@
    ],
    "also_known_as": [],
    "rank": 102,
-   "previous_rank": 101,
-   "rank_change": -1
+   "previous_rank": 102,
+   "rank_change": 0
   },
   {
    "name": "Triveni Turbine",
