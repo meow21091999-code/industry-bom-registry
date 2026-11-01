@@ -1,9 +1,9 @@
 {
  "registry": "Industry BOM Registry",
  "description": "Machine-readable node index. For every entry, the node names it contains plus the owning entry slug. Used for DEDUP (industry+scope already analysed) and LINEAGE (auto-linking a new industry to a parent when its name matches a node name). Update on every publish.",
- "generated": "2026-10-31",
- "last_delta_pass": "2026-10-31",
- "delta_note": "Delta pass + full re-run: Satellite Payloads (India), NSE/BSE universe, 9 nodes, 6 listed companies. Facts refreshed to 2026-10-31: NVS-03 launched successfully on GSLV-F18 at 23:51 IST on 30-Oct-2026, carrying an indigenous atomic clock plus procured clocks and the new L1 band; ISRO states the NavIC constellation is restored to its four-satellite minimum (the last clock on IRNSS-1F had failed 13-Mar-2026). Transponder deficit quantified: 196 available (126 leased, 33 public, 37 strategic) against a stated requirement of 500, with 300 more directed [T3]. NSIL raised Ku-band capacity prices 20% from 1-Apr-2026, the first revision since 2016 (36 MHz transponder Rs 6.6 cr to Rs 7.92 cr a year). Company data moved to FY26: Astra Microwave revenue Rs 1,156 cr with space/meteorology/hydrology at Rs 157 cr (13.6%) and a demerger into Astra Space Technologies approved 10-Jun-2026 (appointed date 1-Apr-2027); Centum standalone Rs 973 cr with defence/space/aerospace at 54% and a Rs 518 cr consolidated loss from discontinued overseas operations; Data Patterns Rs 925 cr at 40.1% EBITDA; Paras Rs 476.57 cr consolidated with optics at 42%; BEL Rs 27,610 cr consolidated with a Rs 73,882 cr order book. Corrections from the 2026-10-09 run: the '5 of 11 clocks failed' framing is replaced by the constellation-level fact (restored to four PNT satellites on 30-Oct-2026); the TWTA node is reclassified from a pure import dependency to a domestic productionisation path (BEL-SAC MoU, Sep-2024) with GaN SSPA as the parallel route; atomic clocks are reclassified from STRUCTURAL to partially imported. First scoring of this entry: overall 78.8/100 at 85% coverage, evidence 4, primary-source share 55%; six value-capture nodes scored, TWTA highest at 3.85/5.",
+ "generated": "2026-11-01",
+ "last_delta_pass": "2026-11-01",
+ "delta_note": "Full re-run (daily rotation): Launch Vehicles & Propulsion (India), NSE/BSE universe, 8 nodes, 10 listed companies. Corrections and updates to 2026-11-01: launch cadence corrected from the prior page's '~12 missions/yr' to 12 launch-vehicle missions across the three years to Jun-2026 (~4/yr), 5-6/yr per IN-SPACe and 7 targeted in FY2026-27, against a stated requirement of 50/yr. New this run: LVM3 transfer of technology opened to industry (IN-SPACe EoI Jun-2026, bids Oct-2026, 6-8 groups including L&T, JSW, Adani, Mahindra, Solar Industries, Bharat Forge, Inox India); full PSLV ToT offered to industry (May-2026); HAL-L&T's first industry PSLV slipped to March 2027; SCE-200 power head at 200 t / 100% thrust (05-Sep-2026); LME-1100 LOX-methane gas-generator ignition (09-Oct-2026, integrated engine mid-2027); a Russian RD-191M-class semi-cryogenic engine procurement in approval; Walchandnagar Rs 30.53 cr HS200 motorcase order for Gaganyaan (20-Aug-2026); GSLV-F18/NVS-03 flown 30-Oct-2026 as the 20th GSLV; Gaganyaan-1 NET 30-Nov-2026; Skyroot commercial ops from early 2027 with monthly cadence targeted by end-2027; Agnikul Agnibaan debut moved to 2027. Score moved 65.9 -> 70.6/100 (coverage 85%, evidence 4).",
  "entries": [
   {
    "slug": "power-transmission-india",
@@ -7101,7 +7101,7 @@
    "industry": "Launch Vehicles & Propulsion",
    "scope": "INDIA",
    "path": "industries/launch-vehicles-propulsion-india.html",
-   "analysis_date": "2026-10-09",
+   "analysis_date": "2026-11-01",
    "universe": "NSE/BSE",
    "sector": "Space & Satellites",
    "derived_from": {

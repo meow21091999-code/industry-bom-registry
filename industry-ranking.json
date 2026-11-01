@@ -1,7 +1,7 @@
 {
  "registry": "Industry BOM Registry",
  "description": "Industry ranking per \"Industry-Level Investment Parameters & Scoring Architecture\": hierarchical category scores (1–5), overall 0–100, evidence coverage reported, three lenses kept separate. DERIVED — regenerate with node tools/build-industry-ranking.mjs.",
- "generated": "2026-10-31",
+ "generated": "2026-11-01",
  "framework": {
   "category_score": "Σ(parameter weight × parameter score) ÷ Σ(weights of supported parameters)",
   "overall_score": "Σ(category weight × category score ÷ 5) × 100, renormalised over supported categories",
@@ -645,10 +645,10 @@
    "value_capture": [],
    "provisional": false,
    "notes": "Scored against 'Industry-Level Investment Parameters & Scoring Architecture'. Cycle position and valuation left UNAVAILABLE — the registry carries no cycle or valuation data for these industries.",
-   "overall_rank": 8,
-   "risk_adjusted_rank": 8,
+   "overall_rank": 9,
+   "risk_adjusted_rank": 9,
    "structural_score": 67.1,
-   "structural_score_rank": 8
+   "structural_score_rank": 9
   },
   {
    "slug": "engine-mro-india",
@@ -993,7 +993,7 @@
    "structural_score": 45.7,
    "current_score": 60,
    "structural_score_rank": 35,
-   "current_score_rank": 9
+   "current_score_rank": 10
   },
   {
    "slug": "hvdc-power-electronics-india",
@@ -1102,7 +1102,7 @@
    "structural_score": 57.1,
    "current_score": 60,
    "structural_score_rank": 25,
-   "current_score_rank": 10
+   "current_score_rank": 11
   },
   {
    "slug": "industrial-gases-india",
@@ -1222,7 +1222,7 @@
    "title": "India Launch Vehicles & Propulsion",
    "group": "Space & Satellites",
    "scored": true,
-   "as_of": "2026-10-30",
+   "as_of": "2026-11-01",
    "categories": {
     "economics": {
      "name": "Industry economics & value creation",
@@ -1230,15 +1230,15 @@
      "lens": "structural",
      "score": 3,
      "from": "category",
-     "basis": "Value is genuinely migrating from ISRO to industry through ToT and consortium contracts, but launch is a low-cadence, thin-margin business today with a single anchor customer and lumpy, tender-driven revenue."
+     "basis": "Launch is a low-cadence business with one state customer, so margins come from the work rather than the market. The listed exposures show the spread: MTAR earned a 19.5% EBITDA margin on Rs 876 cr in FY26, Data Patterns 40.1% on Rs 925 cr, while MIDHANI's space segment was only Rs 93 cr of Rs 1,206 cr and HAL's space work is under 2% of Rs 32,250 cr. Value migrates to industry through fixed-price ToT fees (Rs 511 cr SSLV, Rs 860 cr for five PSLVs), which cap upside per programme."
     },
     "opportunity": {
      "name": "Market opportunity & structural growth",
      "weight": 0.15,
      "lens": "structural",
-     "score": 3,
+     "score": 4,
      "from": "category",
-     "basis": "The launch segment runs from US$720 mn in 2022 to a US$3.5 bn potential by 2033 (~15.4% CAGR) inside a US$44 bn space economy, with a cadence gap of ~12 missions flown against 50–60 needed."
+     "basis": "The forward demand signal is explicit and now contractual: three separate technology transfers in train (SSLV signed Sep-2025, full PSLV ToT offered May-2026, LVM3 EoI opened Jun-2026 with bids in Oct-2026), seven launches targeted in FY2026-27 against roughly four to six a year actually flown, 50 a year stated as the requirement, Gaganyaan-1 no earlier than 30-Nov-2026 and NGLV approved with the LME-1100 engine. Historical growth is the weak half - the whole space economy moved only ~1.6% a year between 2022 and Aug-2026 - so the opportunity is forward, programme-driven and not yet in the revenue line."
     },
     "competitive": {
      "name": "Competitive structure & moat",
@@ -1246,15 +1246,15 @@
      "lens": "structural",
      "score": 4,
      "from": "category",
-     "basis": "Very few qualified launch-vehicle primes exist anywhere, and domestically only HAL, L&T and two private entrants (Skyroot, Agnikul) — certification and flight heritage make the barrier structural rather than commercial."
+     "basis": "Flight heritage is a structural barrier: HAL won SSLV against an Adani-backed bidder, and only HAL, L-T and the two private entrants hold any Indian orbital launch capability. The counter-trend this run is that LVM3 ToT drew six to eight bidders including JSW, Adani, Mahindra, Solar Industries, Bharat Forge and Inox India, so the integrator pool is widening and incumbency is worth less than it was. Barriers protect qualification, not pricing - the state sets both price and schedule."
     },
     "cycle": {
      "name": "Current opportunity & cycle position",
      "weight": 0.15,
      "lens": "current",
-     "score": 3,
+     "score": 4,
      "from": "category",
-     "basis": "Tempo and awards are at a high — SSLV ToT, the PSLV consortium, and the first private orbital launch in Jul-2026 — but the underlying mission count is still ~12 a year and demand remains programme-driven."
+     "basis": "The cycle is inflecting on dated events rather than sentiment: GSLV-F18 flew NVS-03 on 30-Oct-2026 as the 20th GSLV flight, Gaganyaan-1 is no earlier than 30-Nov-2026, SCE-200 reached 200-tonne full thrust on 5-Sep-2026, the LME-1100 methalox gas generator was ignited on 9-Oct-2026, and the LVM3 ToT bid window opened in October 2026. The counterweight is a mission count that is still single-digit."
     },
     "valuation": {
      "name": "Valuation & market expectations",
@@ -1262,15 +1262,15 @@
      "lens": "current",
      "score": null,
      "from": null,
-     "basis": "No industry-level valuation data in the registry, and no listed pure-play exists for private launch on which to build a multiple."
+     "basis": "No industry-level valuation series exists for Indian launch vehicles, and no aggregation of the listed exposures would be a valid proxy because every one of them sits inside a diversified defence or engineering business - HAL at Rs 32,250 cr of revenue, BEL at Rs 27,480 cr, L-T's space work inside a Rs 8,366 cr Hi-Tech Manufacturing segment. Company multiples are reported but one company cannot define an industry multiple."
     },
     "value_chain": {
      "name": "Value-chain position & bottlenecks",
      "weight": 0.1,
      "lens": "structural",
-     "score": 4,
+     "score": 3,
      "from": "category",
-     "basis": "At ~90–95% domestic content this is the most indigenous node in the space chain — structures, motor casings, engines, avionics and materials are all sourced in-country, with only high-end electronics and some cryogenic hardware narrow-source."
+     "basis": "Launch is the most indigenous node in the Indian space chain - casings, structures, tanks, engines, avionics and propellant are all made in-country and ISRO's chairman puts industry content at 80-85% of systems. Two dependencies keep it at 3 rather than 4: high-end electronics and rad-hard parts are imported, and a draft contract to procure Russian RD-191M-class semi-cryogenic engines for the LVM3 upgrade is under approval, which would put an import inside the vehicle's performance-critical path."
     },
     "capital": {
      "name": "Capital intensity & financial quality",
@@ -1278,7 +1278,7 @@
      "lens": "structural",
      "score": 2,
      "from": "category",
-     "basis": "Development cycles run years before first revenue, test and launch infrastructure is capital-heavy and government-provided, and demand is anchored by one customer — affordable only for large balance sheets or state backing."
+     "basis": "Development runs years before first revenue, test stands and launch pads are state-provided rather than private, and demand is anchored by one customer. The capital that is required is patient and public: NGLV, Chandrayaan-4 and the first Bharatiya Antariksh Station module were approved as government programmes, and the private entrants are venture-funded. Affordable only for large balance sheets or state backing."
     },
     "technology": {
      "name": "Technology & innovation",
@@ -1286,7 +1286,7 @@
      "lens": "structural",
      "score": 4,
      "from": "category",
-     "basis": "Cryogenic and semi-cryogenic propulsion is a capability held by only a handful of nations, and India designs and builds its own stages, engines and avionics; SCE-200 semi-cryo extends it rather than importing it."
+     "basis": "India holds a capability only a handful of nations have and is extending it on three fronts at once: cryogenic (CE-7.5, CE-20), semi-cryogenic (SCE-200 at 200-tonne full thrust, Sep-2026) and LOX-methane for NGLV (LME-1100 gas-generator ignition Oct-2026, integrated engine targeted mid-2027). Agnikul has flown a single-piece 3D-printed semi-cryogenic engine, and TDB is funding reusable-vehicle work from TRL-4 upward. Not 5 because none of the next-generation engines has yet flown."
     },
     "risk": {
      "name": "Risk & resilience",
@@ -1294,37 +1294,142 @@
      "lens": "risk",
      "score": 3,
      "from": "category",
-     "basis": "Single anchor customer (ISRO/NSIL), execution risk on cadence, unproven commercial scale-up at the private launchers, and long qualification — offset by near-total domestic content and policy commitment."
+     "basis": "Concentrated on one buyer, gated by two launch pads, exposed to a semi-cryogenic engine import and to imported high-end electronics, and carrying genuine execution risk - the industry PSLV has slipped from Q1 FY27 to March 2027 and PSLV-C62 lost its PS3 stage in January 2026. Offset by near-total domestic content, a stated national cadence target and a policy direction that has already transferred one vehicle outright."
     }
    },
    "structural": {
-    "score": 67.1,
+    "score": 68.6,
     "coverage": 100
    },
    "current": {
-    "score": 60,
+    "score": 80,
     "coverage": 50
    },
    "risk": 3,
-   "risk_adjusted": 40.3,
-   "overall": 65.9,
+   "risk_adjusted": 41.2,
+   "overall": 70.6,
    "coverage": 85,
    "confidence": {
-    "evidence": 3,
-    "primary_source_pct": 50,
+    "evidence": 4,
+    "primary_source_pct": 60,
     "missing_critical": [
-     "valuation"
+     "industry valuation series",
+     "launch-level price and cost breakdown per mission",
+     "launch volume series by vehicle type"
     ]
    },
-   "value_capture": [],
+   "value_capture": [
+    {
+     "node": "Launch vehicle systems &amp; serial production (ToT)",
+     "basis": "The largest pool and the one that changed most this run: serial production moved from a state monopoly to a contestable private market with three separate transfers in train (SSLV to HAL at Rs 511 cr, full PSLV ToT offered, LVM3 ToT out for bid). Integration is asset-light because the pads and test stands are public, but pricing power is capped at a fixed ToT fee and a state-set mission price, and cash conversion is slow against a single buyer. Rank moved UP: it is now the top node, where the previous run treated vehicle production as a state activity with industry as a subcontractor.",
+     "params": {
+      "op_share": 5,
+      "pricing_power": 3,
+      "roic": 4,
+      "barriers": 5,
+      "bottleneck": 5,
+      "pool_growth": 5,
+      "cash_conversion": 3,
+      "switching": 5
+     },
+     "score": 4.35,
+     "score100": 87,
+     "coverage": 100
+    },
+    {
+     "node": "Liquid, cryogenic &amp; semi-cryogenic engines",
+     "basis": "The hardest technology on the vehicle and the tightest supplier base: LPSC owns the design, a handful of fabricators (MTAR, L-T, Godrej) execute it, and nothing substitutes for a qualified cryogenic stage. Scored below vehicle systems on operating share because the value is concentrated in few units, and marked DOWN on this run's reading of pool growth: a draft contract to import Russian RD-191M-class semi-cryogenic engines would route part of the LVM3 upgrade spend abroad, while SCE-200 and LME-1100 remain pre-flight.",
+     "params": {
+      "op_share": 4,
+      "pricing_power": 4,
+      "roic": 3,
+      "barriers": 5,
+      "bottleneck": 5,
+      "pool_growth": 4,
+      "cash_conversion": 3,
+      "switching": 5
+     },
+     "score": 4.05,
+     "score100": 81,
+     "coverage": 100
+    },
+    {
+     "node": "Solid propulsion &mdash; motor casings &amp; nozzles",
+     "basis": "Every launch consumes a full set of casings, so this pool grows with cadence more directly than any other - five SSLV missions planned in FY2026-27 alone, each with three solid stages. Barriers are forging, proof-pressure testing and qualification rather than design. Walchandnagar's Rs 30.53 cr HS200 order for Gaganyaan is the clearest evidence that the work is being placed with listed industry.",
+     "params": {
+      "op_share": 4,
+      "pricing_power": 3,
+      "roic": 3,
+      "barriers": 4,
+      "bottleneck": 4,
+      "pool_growth": 5,
+      "cash_conversion": 3,
+      "switching": 4
+     },
+     "score": 3.7,
+     "score100": 74,
+     "coverage": 100
+    },
+    {
+     "node": "Launch services, spaceport &amp; mission operations",
+     "basis": "Two pads, one range and one authorising regulator make this the tightest physical bottleneck in the chain, and mission operations convert into cash quickly once a slot exists. Held back because the pool is government-owned and no NSE/BSE company operates it - BEL touches only the ground electronics.",
+     "params": {
+      "op_share": 3,
+      "pricing_power": 3,
+      "roic": 3,
+      "barriers": 5,
+      "bottleneck": 4,
+      "pool_growth": 4,
+      "cash_conversion": 4,
+      "switching": 5
+     },
+     "score": 3.7,
+     "score100": 74,
+     "coverage": 100
+    },
+    {
+     "node": "Launch-vehicle avionics &amp; guidance",
+     "basis": "The best cash-conversion node with real listed participation - Data Patterns at a 40.1% EBITDA margin on Rs 925 cr, BEL on range and telemetry. Scored lower on strategic weight because several qualified suppliers exist and the guidance algorithms are ISRO's, so the node is build-to-specification rather than a choke point.",
+     "params": {
+      "op_share": 3,
+      "pricing_power": 3,
+      "roic": 4,
+      "barriers": 4,
+      "bottleneck": 2,
+      "pool_growth": 4,
+      "cash_conversion": 4,
+      "switching": 4
+     },
+     "score": 3.45,
+     "score100": 69,
+     "coverage": 100
+    },
+    {
+     "node": "Private small launch vehicles",
+     "basis": "Lowest score despite the highest growth expectation: Vikram-1 reached orbit on 18-Jul-2026 but commercial operations begin only in early 2027, unit economics are unproven at scale, and none of it is reachable in the NSE/BSE universe. Scored as the pool it would become, not the pool that exists - and the one node where a domestic entrant would create a genuinely new listed exposure.",
+     "params": {
+      "op_share": 1,
+      "pricing_power": 3,
+      "roic": 1,
+      "barriers": 4,
+      "bottleneck": 4,
+      "pool_growth": 5,
+      "cash_conversion": 1,
+      "switching": 3
+     },
+     "score": 2.55,
+     "score100": 51,
+     "coverage": 100
+    }
+   ],
    "provisional": false,
-   "notes": "Opportunity uses the same series as the Market & growth digest block (IN-SPACe launch segment of US$720 mn in 2022 rising to a US$3.5 bn potential by 2033, ~15.4% CAGR). Valuation left UNAVAILABLE — the registry carries no industry valuation data.",
-   "overall_rank": 9,
-   "risk_adjusted_rank": 9,
-   "structural_score": 67.1,
-   "current_score": 60,
-   "structural_score_rank": 9,
-   "current_score_rank": 11
+   "notes": "Opportunity and Market - growth use the same scoped series: launch services US$720 mn (2022, IN-SPACe Decadal Vision) to a US$3.5 bn potential by 2033, ~15.5% nominal CAGR [CALCULATED]; the whole space economy US$8.4 bn (2022) to US$9.0 bn (Aug-2026), ~1.6% a year [CALCULATED]; volume 12 launch-vehicle missions in the three years to Jun-2026 (~4 a year), 5-6 a year per IN-SPACe, 7 targeted in FY2026-27, 50 a year stated as the requirement. Valuation left UNAVAILABLE - the registry carries no industry valuation series and no listed pure-play exists.",
+   "overall_rank": 5,
+   "risk_adjusted_rank": 6,
+   "structural_score": 68.6,
+   "current_score": 80,
+   "structural_score_rank": 6,
+   "current_score_rank": 3
   },
   {
    "slug": "li-ion-cell-manufacturing-india",
@@ -1542,7 +1647,7 @@
    "structural_score": 60,
    "current_score": 80,
    "structural_score_rank": 19,
-   "current_score_rank": 5
+   "current_score_rank": 6
   },
   {
    "slug": "missile-india",
@@ -1651,7 +1756,7 @@
    "structural_score": 62.9,
    "current_score": 80,
    "structural_score_rank": 15,
-   "current_score_rank": 3
+   "current_score_rank": 4
   },
   {
    "slug": "mobile-handsets-accessories-india",
@@ -2475,7 +2580,7 @@
    "structural_score": 61.4,
    "current_score": 80,
    "structural_score_rank": 17,
-   "current_score_rank": 4
+   "current_score_rank": 5
   },
   {
    "slug": "power-semiconductor-osat-india",
@@ -2804,7 +2909,7 @@
    "value_capture": [],
    "provisional": false,
    "notes": "Opportunity uses the same series as the Market &amp; growth digest block (&#8377;40,000 cr FY26 against &#8377;33,000 cr FY25, +21% YoY, CALCULATED from Eninrac; forward CAGR UNAVAILABLE). Valuation is scored from listed-company multiples reported in trade coverage, labelled [REPORTED-T3], not from an industry series.",
-   "overall_rank": 7,
+   "overall_rank": 8,
    "risk_adjusted_rank": 4,
    "structural_score": 77.1,
    "current_score": 50,
@@ -3383,12 +3488,12 @@
    ],
    "provisional": false,
    "notes": "Opportunity uses the same series as the Market & growth digest block (India robot software US$223.4 mn in 2023 to US$1,312.3 mn by 2030 at 27.7% value CAGR, inside a robotics market of US$1.1 bn in 2025 rising to US$4.6 bn by 2030 at ~33%). Valuation left UNAVAILABLE — the registry carries no industry valuation series.",
-   "overall_rank": 5,
-   "risk_adjusted_rank": 6,
+   "overall_rank": 6,
+   "risk_adjusted_rank": 7,
    "structural_score": 68.6,
    "current_score": 80,
-   "structural_score_rank": 6,
-   "current_score_rank": 6
+   "structural_score_rank": 7,
+   "current_score_rank": 7
   },
   {
    "slug": "robotics-india",
@@ -4280,7 +4385,7 @@
    "structural_score": 78.6,
    "current_score": 80,
    "structural_score_rank": 2,
-   "current_score_rank": 7
+   "current_score_rank": 8
   },
   {
    "slug": "satellite-services-data-india",
@@ -5308,12 +5413,12 @@
    ],
    "provisional": false,
    "notes": "Scored against 'Industry-Level Investment Parameters & Scoring Architecture'. Opportunity uses the same CRISIL transformer series as the Market & growth digest block; the switchgear series is reported separately and never added to it. Valuation left UNAVAILABLE.",
-   "overall_rank": 6,
-   "risk_adjusted_rank": 7,
+   "overall_rank": 7,
+   "risk_adjusted_rank": 8,
    "structural_score": 68.6,
    "current_score": 80,
-   "structural_score_rank": 7,
-   "current_score_rank": 8
+   "structural_score_rank": 8,
+   "current_score_rank": 9
   },
   {
    "slug": "telecom-chipsets-india",

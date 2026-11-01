@@ -1,13 +1,13 @@
 {
  "registry": "Industry BOM Registry",
  "description": "Company index. Every company mentioned across the registry, the industries it appears in, and its position (exposure) in each. DERIVED from the entry pages by tools/build-companies.mjs — regenerate on every publish, never hand-edit.",
- "generated": "2026-10-31",
+ "generated": "2026-11-01",
  "counts": {
   "companies": 529,
   "industries": 77,
-  "mappings": 2592,
+  "mappings": 2594,
   "multi_industry": 273,
-  "rank_changes": 1
+  "rank_changes": 30
  },
  "companies": [
   {
@@ -16,7 +16,7 @@
    "symbol": "LT",
    "industries_count": 25,
    "direct_count": 17,
-   "nodes_count": 71,
+   "nodes_count": 70,
    "industries": [
     {
      "name": "India Agrochemicals & Crop Protection",
@@ -121,17 +121,16 @@
       {
        "exposure": "direct",
        "nodes": [
-        "Composite Structures (Carbon Fibre)",
         "LV Structures & Propellant Tanks",
-        "Launch Services & Spaceport",
         "Launch Vehicle Systems (PSLV / GSLV / LVM3 / SSLV)",
+        "Liquid & Cryogenic Engines",
         "Solid Propulsion — Motor Casings & Nozzles"
        ]
       },
       {
        "exposure": "supplier",
        "nodes": [
-        "Liquid & Cryogenic Engines"
+        "Composite Structures (Carbon Fibre)"
        ]
       }
      ]
@@ -445,6 +444,371 @@
    "rank_change": 0
   },
   {
+   "name": "Bharat Heavy Electricals",
+   "ticker": "NSE/BSE: BHEL",
+   "symbol": "BHEL",
+   "industries_count": 20,
+   "direct_count": 13,
+   "nodes_count": 93,
+   "industries": [
+    {
+     "name": "India Condenser & Heat Rejection",
+     "slug": "condenser-heat-rejection-india",
+     "positions": [
+      {
+       "exposure": "direct",
+       "nodes": [
+        "Air-Cooled Condenser (ACC)",
+        "Condenser Aftermarket: Inspection & Retubing",
+        "Condenser Instrumentation",
+        "Condenser Shell, Water Boxes & Hotwell",
+        "Tubesheets & Tube-to-Tubesheet Joints",
+        "Vacuum & Air-Extraction System"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "India Green Hydrogen & Electrolyser Manufacturing",
+     "slug": "green-hydrogen-electrolyser-india",
+     "positions": [
+      {
+       "exposure": "direct",
+       "nodes": [
+        "Electrolyser Stack"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "India HVDC & Power Electronics",
+     "slug": "hvdc-power-electronics-india",
+     "positions": [
+      {
+       "exposure": "direct",
+       "nodes": [
+        "AC Substation Interface (Switchgear / ICTs / Filters)",
+        "Converter Transformers & Reactors",
+        "HVDC Converter Stations",
+        "Smoothing & Valve Reactors"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "India Industrial Gases",
+     "slug": "industrial-gases-india",
+     "positions": [
+      {
+       "exposure": "supplier",
+       "nodes": [
+        "Compressors, turboexpanders & PFHE"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "India Launch Vehicles & Propulsion",
+     "slug": "launch-vehicles-propulsion-india",
+     "positions": [
+      {
+       "exposure": "supplier",
+       "nodes": [
+        "LV Structures & Propellant Tanks",
+        "Solid Propulsion — Motor Casings & Nozzles"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "India Nuclear PWR Steam Generator",
+     "slug": "nuclear-pwr-steam-generator-india",
+     "positions": [
+      {
+       "exposure": "direct",
+       "nodes": [
+        "Erection & Commissioning",
+        "Feedwater Distributor & Downcomer",
+        "Moisture Separators & Steam Dryers",
+        "NDT, Eddy-Current & Leak Testing",
+        "Nozzles, Manways & Safe-Ends",
+        "Shell, Heads & Tubesheet",
+        "Tube-to-Tubesheet Welding & Expanding"
+       ]
+      },
+      {
+       "exposure": "indirect",
+       "nodes": [
+        "SG Level & Pressure Instrumentation",
+        "Tube Inspection, Plugging & Replacement"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "India Organic Chemicals",
+     "slug": "organic-chemicals-india",
+     "positions": [
+      {
+       "exposure": "supplier",
+       "nodes": [
+        "Process Equipment, EPC & Licensed Technology"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "India Power & Distribution Transformers",
+     "slug": "power-transformers-india",
+     "positions": [
+      {
+       "exposure": "conglomerate",
+       "nodes": [
+        "Finished transformer — power (incl. EHV/765 kV)"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "India Power Transmission",
+     "slug": "power-transmission-india",
+     "positions": [
+      {
+       "exposure": "conglomerate",
+       "nodes": [
+        "EHV Power Transformers & Reactors"
+       ]
+      },
+      {
+       "exposure": "direct",
+       "nodes": [
+        "GIS / AIS Switchgear",
+        "HVDC Converter Stations & Control",
+        "STATCOM · Synchronous Condensers · FACTS",
+        "Synchronous Condenser Machines"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "India Railway",
+     "slug": "railway-india",
+     "positions": [
+      {
+       "exposure": "direct",
+       "nodes": [
+        "Locomotives (electric)",
+        "Traction & propulsion"
+       ]
+      },
+      {
+       "exposure": "indirect",
+       "nodes": [
+        "Rolling stock — wagons, coaches & trainsets",
+        "Signalling, telecom & Kavach"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "India Reactor Coolant Pumps & Primary Loop",
+     "slug": "reactor-coolant-pumps-primary-loop-india",
+     "positions": [
+      {
+       "exposure": "direct",
+       "nodes": [
+        "Erection, Integration & Commissioning",
+        "NDT, Hydro, Coastdown & Certification QA",
+        "PCP Motor, Flywheel & Drive",
+        "Primary Loop Piping, Headers & Valves"
+       ]
+      },
+      {
+       "exposure": "indirect",
+       "nodes": [
+        "Pump Instrumentation & Protection"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "India Satellite Bus & Subsystems",
+     "slug": "satellite-bus-subsystems-india",
+     "positions": [
+      {
+       "exposure": "supplier",
+       "nodes": [
+        "Power System (Arrays, Batteries, Regulators)"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "India Shipbuilding & Ship Repair",
+     "slug": "shipbuilding-ship-repair-india",
+     "positions": [
+      {
+       "exposure": "indirect",
+       "nodes": [
+        "Marine Electrical, IPMS & Navigation"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "India Small Modular Reactor",
+     "slug": "smr-india",
+     "positions": [
+      {
+       "exposure": "direct",
+       "nodes": [
+        "Containment & Pressure Boundary",
+        "EPC, Civil & Construction",
+        "Electrical Power & Switchgear",
+        "Instrumentation & Control",
+        "Reactor Coolant Pumps & Primary Loop",
+        "Steam Generator / Heat Exchanger",
+        "Turbomachinery (Turbine Island)"
+       ]
+      },
+      {
+       "exposure": "indirect",
+       "nodes": [
+        "Aftermarket / O&M / Life Extension"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "India Steam Turbine (Turbine Proper)",
+     "slug": "steam-turbine-india",
+     "positions": [
+      {
+       "exposure": "direct",
+       "nodes": [
+        "Aftermarket: Blade & Rotor Replacement",
+        "Balancing, Overspeed & NDT",
+        "Cylinders, Casings & Steam Chest",
+        "Main Stop & Control Valves",
+        "Seals, Bearings & Glands",
+        "Turbine Blading",
+        "Turbine Rotor & Shaft"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "India Turbine Generator & Electrical Train",
+     "slug": "turbine-generator-india",
+     "positions": [
+      {
+       "exposure": "direct",
+       "nodes": [
+        "Aftermarket: Rewinds, Spares & Retrofits",
+        "Exciter & AVR",
+        "Generator Circuit Breaker & Bus Ducts",
+        "Generator Cooling (H&#8322; / Water)",
+        "Generator Rotor & Retaining Rings",
+        "Generator Stator & Winding",
+        "Generator Testing & Commissioning",
+        "Generator Transformer",
+        "Protection & Synchronising",
+        "Switchgear & Switchyard"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "India Turbine Island (Turbomachinery)",
+     "slug": "turbine-island-india",
+     "positions": [
+      {
+       "exposure": "direct",
+       "nodes": [
+        "Aftermarket: Spares, Overhaul & Retrofits",
+        "Boiler Feed Pumps",
+        "Civil, Erection & Commissioning",
+        "Condensate & Feedwater Heaters / Deaerator",
+        "Cylinders, Casings & Valves",
+        "DCS / Plant Control & Instrumentation",
+        "Generator & Exciter",
+        "Generator Transformer, GCB & Switchgear",
+        "Lube & Control Oil System",
+        "Moisture Separator Reheater (Nuclear)",
+        "NDT, Rotor Balancing & Overspeed Testing",
+        "Seals, Bearings & Glands",
+        "Surface Condenser & Heat Rejection",
+        "Turbine Blading & Blades",
+        "Turbine Governing, EHC & Protection",
+        "Turbine Rotor & Forgings",
+        "Welding Consumables & Fabrication"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "India Turbine Island Auxiliaries",
+     "slug": "turbine-auxiliaries-india",
+     "positions": [
+      {
+       "exposure": "direct",
+       "nodes": [
+        "Auxiliaries Aftermarket: Overhaul & Upgrades",
+        "Boiler Feed Pumps",
+        "Condensate Extraction Pumps",
+        "DCS / Plant Control & Instrumentation",
+        "Deaerator",
+        "LP / HP Feedwater Heaters",
+        "Lube & Control Oil System",
+        "Moisture Separator Reheater (Nuclear)",
+        "Turbine Governing, EHC & Protection",
+        "Turning Gear & Jacking Oil"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Overhead Transmission Line",
+     "slug": "overhead-transmission-line-india",
+     "positions": [
+      {
+       "exposure": "conglomerate",
+       "nodes": [
+        "Insulators"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Substation Equipment",
+     "slug": "substation-equipment-india",
+     "positions": [
+      {
+       "exposure": "direct",
+       "nodes": [
+        "Converter transformer",
+        "HVDC & power electronics",
+        "Power transformers & reactors",
+        "Substation Equipment"
+       ]
+      },
+      {
+       "exposure": "indirect",
+       "nodes": [
+        "Instrument transformers (CT / PT)"
+       ]
+      }
+     ]
+    }
+   ],
+   "also_known_as": [
+    "BHEL"
+   ],
+   "rank": 2,
+   "previous_rank": 3,
+   "rank_change": 1
+  },
+  {
    "name": "CG Power & Industrial Solutions",
    "ticker": "NSE/BSE: CGPOWER",
    "symbol": "CGPOWER",
@@ -737,361 +1101,9 @@
     "CG Power",
     "CG Power & Industrial"
    ],
-   "rank": 2,
-   "previous_rank": 2,
-   "rank_change": 0
-  },
-  {
-   "name": "Bharat Heavy Electricals",
-   "ticker": "NSE/BSE: BHEL",
-   "symbol": "BHEL",
-   "industries_count": 19,
-   "direct_count": 13,
-   "nodes_count": 91,
-   "industries": [
-    {
-     "name": "India Condenser & Heat Rejection",
-     "slug": "condenser-heat-rejection-india",
-     "positions": [
-      {
-       "exposure": "direct",
-       "nodes": [
-        "Air-Cooled Condenser (ACC)",
-        "Condenser Aftermarket: Inspection & Retubing",
-        "Condenser Instrumentation",
-        "Condenser Shell, Water Boxes & Hotwell",
-        "Tubesheets & Tube-to-Tubesheet Joints",
-        "Vacuum & Air-Extraction System"
-       ]
-      }
-     ]
-    },
-    {
-     "name": "India Green Hydrogen & Electrolyser Manufacturing",
-     "slug": "green-hydrogen-electrolyser-india",
-     "positions": [
-      {
-       "exposure": "direct",
-       "nodes": [
-        "Electrolyser Stack"
-       ]
-      }
-     ]
-    },
-    {
-     "name": "India HVDC & Power Electronics",
-     "slug": "hvdc-power-electronics-india",
-     "positions": [
-      {
-       "exposure": "direct",
-       "nodes": [
-        "AC Substation Interface (Switchgear / ICTs / Filters)",
-        "Converter Transformers & Reactors",
-        "HVDC Converter Stations",
-        "Smoothing & Valve Reactors"
-       ]
-      }
-     ]
-    },
-    {
-     "name": "India Industrial Gases",
-     "slug": "industrial-gases-india",
-     "positions": [
-      {
-       "exposure": "supplier",
-       "nodes": [
-        "Compressors, turboexpanders & PFHE"
-       ]
-      }
-     ]
-    },
-    {
-     "name": "India Nuclear PWR Steam Generator",
-     "slug": "nuclear-pwr-steam-generator-india",
-     "positions": [
-      {
-       "exposure": "direct",
-       "nodes": [
-        "Erection & Commissioning",
-        "Feedwater Distributor & Downcomer",
-        "Moisture Separators & Steam Dryers",
-        "NDT, Eddy-Current & Leak Testing",
-        "Nozzles, Manways & Safe-Ends",
-        "Shell, Heads & Tubesheet",
-        "Tube-to-Tubesheet Welding & Expanding"
-       ]
-      },
-      {
-       "exposure": "indirect",
-       "nodes": [
-        "SG Level & Pressure Instrumentation",
-        "Tube Inspection, Plugging & Replacement"
-       ]
-      }
-     ]
-    },
-    {
-     "name": "India Organic Chemicals",
-     "slug": "organic-chemicals-india",
-     "positions": [
-      {
-       "exposure": "supplier",
-       "nodes": [
-        "Process Equipment, EPC & Licensed Technology"
-       ]
-      }
-     ]
-    },
-    {
-     "name": "India Power & Distribution Transformers",
-     "slug": "power-transformers-india",
-     "positions": [
-      {
-       "exposure": "conglomerate",
-       "nodes": [
-        "Finished transformer — power (incl. EHV/765 kV)"
-       ]
-      }
-     ]
-    },
-    {
-     "name": "India Power Transmission",
-     "slug": "power-transmission-india",
-     "positions": [
-      {
-       "exposure": "conglomerate",
-       "nodes": [
-        "EHV Power Transformers & Reactors"
-       ]
-      },
-      {
-       "exposure": "direct",
-       "nodes": [
-        "GIS / AIS Switchgear",
-        "HVDC Converter Stations & Control",
-        "STATCOM · Synchronous Condensers · FACTS",
-        "Synchronous Condenser Machines"
-       ]
-      }
-     ]
-    },
-    {
-     "name": "India Railway",
-     "slug": "railway-india",
-     "positions": [
-      {
-       "exposure": "direct",
-       "nodes": [
-        "Locomotives (electric)",
-        "Traction & propulsion"
-       ]
-      },
-      {
-       "exposure": "indirect",
-       "nodes": [
-        "Rolling stock — wagons, coaches & trainsets",
-        "Signalling, telecom & Kavach"
-       ]
-      }
-     ]
-    },
-    {
-     "name": "India Reactor Coolant Pumps & Primary Loop",
-     "slug": "reactor-coolant-pumps-primary-loop-india",
-     "positions": [
-      {
-       "exposure": "direct",
-       "nodes": [
-        "Erection, Integration & Commissioning",
-        "NDT, Hydro, Coastdown & Certification QA",
-        "PCP Motor, Flywheel & Drive",
-        "Primary Loop Piping, Headers & Valves"
-       ]
-      },
-      {
-       "exposure": "indirect",
-       "nodes": [
-        "Pump Instrumentation & Protection"
-       ]
-      }
-     ]
-    },
-    {
-     "name": "India Satellite Bus & Subsystems",
-     "slug": "satellite-bus-subsystems-india",
-     "positions": [
-      {
-       "exposure": "supplier",
-       "nodes": [
-        "Power System (Arrays, Batteries, Regulators)"
-       ]
-      }
-     ]
-    },
-    {
-     "name": "India Shipbuilding & Ship Repair",
-     "slug": "shipbuilding-ship-repair-india",
-     "positions": [
-      {
-       "exposure": "indirect",
-       "nodes": [
-        "Marine Electrical, IPMS & Navigation"
-       ]
-      }
-     ]
-    },
-    {
-     "name": "India Small Modular Reactor",
-     "slug": "smr-india",
-     "positions": [
-      {
-       "exposure": "direct",
-       "nodes": [
-        "Containment & Pressure Boundary",
-        "EPC, Civil & Construction",
-        "Electrical Power & Switchgear",
-        "Instrumentation & Control",
-        "Reactor Coolant Pumps & Primary Loop",
-        "Steam Generator / Heat Exchanger",
-        "Turbomachinery (Turbine Island)"
-       ]
-      },
-      {
-       "exposure": "indirect",
-       "nodes": [
-        "Aftermarket / O&M / Life Extension"
-       ]
-      }
-     ]
-    },
-    {
-     "name": "India Steam Turbine (Turbine Proper)",
-     "slug": "steam-turbine-india",
-     "positions": [
-      {
-       "exposure": "direct",
-       "nodes": [
-        "Aftermarket: Blade & Rotor Replacement",
-        "Balancing, Overspeed & NDT",
-        "Cylinders, Casings & Steam Chest",
-        "Main Stop & Control Valves",
-        "Seals, Bearings & Glands",
-        "Turbine Blading",
-        "Turbine Rotor & Shaft"
-       ]
-      }
-     ]
-    },
-    {
-     "name": "India Turbine Generator & Electrical Train",
-     "slug": "turbine-generator-india",
-     "positions": [
-      {
-       "exposure": "direct",
-       "nodes": [
-        "Aftermarket: Rewinds, Spares & Retrofits",
-        "Exciter & AVR",
-        "Generator Circuit Breaker & Bus Ducts",
-        "Generator Cooling (H&#8322; / Water)",
-        "Generator Rotor & Retaining Rings",
-        "Generator Stator & Winding",
-        "Generator Testing & Commissioning",
-        "Generator Transformer",
-        "Protection & Synchronising",
-        "Switchgear & Switchyard"
-       ]
-      }
-     ]
-    },
-    {
-     "name": "India Turbine Island (Turbomachinery)",
-     "slug": "turbine-island-india",
-     "positions": [
-      {
-       "exposure": "direct",
-       "nodes": [
-        "Aftermarket: Spares, Overhaul & Retrofits",
-        "Boiler Feed Pumps",
-        "Civil, Erection & Commissioning",
-        "Condensate & Feedwater Heaters / Deaerator",
-        "Cylinders, Casings & Valves",
-        "DCS / Plant Control & Instrumentation",
-        "Generator & Exciter",
-        "Generator Transformer, GCB & Switchgear",
-        "Lube & Control Oil System",
-        "Moisture Separator Reheater (Nuclear)",
-        "NDT, Rotor Balancing & Overspeed Testing",
-        "Seals, Bearings & Glands",
-        "Surface Condenser & Heat Rejection",
-        "Turbine Blading & Blades",
-        "Turbine Governing, EHC & Protection",
-        "Turbine Rotor & Forgings",
-        "Welding Consumables & Fabrication"
-       ]
-      }
-     ]
-    },
-    {
-     "name": "India Turbine Island Auxiliaries",
-     "slug": "turbine-auxiliaries-india",
-     "positions": [
-      {
-       "exposure": "direct",
-       "nodes": [
-        "Auxiliaries Aftermarket: Overhaul & Upgrades",
-        "Boiler Feed Pumps",
-        "Condensate Extraction Pumps",
-        "DCS / Plant Control & Instrumentation",
-        "Deaerator",
-        "LP / HP Feedwater Heaters",
-        "Lube & Control Oil System",
-        "Moisture Separator Reheater (Nuclear)",
-        "Turbine Governing, EHC & Protection",
-        "Turning Gear & Jacking Oil"
-       ]
-      }
-     ]
-    },
-    {
-     "name": "Overhead Transmission Line",
-     "slug": "overhead-transmission-line-india",
-     "positions": [
-      {
-       "exposure": "conglomerate",
-       "nodes": [
-        "Insulators"
-       ]
-      }
-     ]
-    },
-    {
-     "name": "Substation Equipment",
-     "slug": "substation-equipment-india",
-     "positions": [
-      {
-       "exposure": "direct",
-       "nodes": [
-        "Converter transformer",
-        "HVDC & power electronics",
-        "Power transformers & reactors",
-        "Substation Equipment"
-       ]
-      },
-      {
-       "exposure": "indirect",
-       "nodes": [
-        "Instrument transformers (CT / PT)"
-       ]
-      }
-     ]
-    }
-   ],
-   "also_known_as": [
-    "BHEL"
-   ],
    "rank": 3,
-   "previous_rank": 3,
-   "rank_change": 0
+   "previous_rank": 2,
+   "rank_change": -1
   },
   {
    "name": "Reliance Industries (Jio Platforms)",
@@ -1381,7 +1393,7 @@
    "symbol": "BEL",
    "industries_count": 17,
    "direct_count": 11,
-   "nodes_count": 55,
+   "nodes_count": 56,
    "industries": [
     {
      "name": "Cryocooler (India)",
@@ -1513,6 +1525,12 @@
        "exposure": "direct",
        "nodes": [
         "Launch-Vehicle Avionics & Guidance"
+       ]
+      },
+      {
+       "exposure": "supplier",
+       "nodes": [
+        "Launch Services & Spaceport"
        ]
       }
      ]
@@ -2742,6 +2760,217 @@
    "rank_change": 0
   },
   {
+   "name": "Mishra Dhatu Nigam (MIDHANI)",
+   "ticker": "NSE/BSE: MIDHANI",
+   "symbol": "MIDHANI",
+   "industries_count": 13,
+   "direct_count": 11,
+   "nodes_count": 18,
+   "industries": [
+    {
+     "name": "India Aircraft MRO & Civil Aerospace Components",
+     "slug": "aircraft-mro-civil-aerospace-india",
+     "positions": [
+      {
+       "exposure": "direct",
+       "nodes": [
+        "Materials — Titanium, Superalloys, Aluminium, Composites"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "India Guns",
+     "slug": "guns-india",
+     "positions": [
+      {
+       "exposure": "direct",
+       "nodes": [
+        "Special Steels & Alloys"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "India Launch Vehicles & Propulsion",
+     "slug": "launch-vehicles-propulsion-india",
+     "positions": [
+      {
+       "exposure": "supplier",
+       "nodes": [
+        "LV Structures & Propellant Tanks"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "India Missiles",
+     "slug": "missile-india",
+     "positions": [
+      {
+       "exposure": "direct",
+       "nodes": [
+        "Motor Casings & Special Materials"
+       ]
+      },
+      {
+       "exposure": "supplier",
+       "nodes": [
+        "Airframe, Structures & Thermal Protection"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "India Nuclear PWR Steam Generator",
+     "slug": "nuclear-pwr-steam-generator-india",
+     "positions": [
+      {
+       "exposure": "direct",
+       "nodes": [
+        "Heavy Forgings & Special Steels"
+       ]
+      },
+      {
+       "exposure": "supplier",
+       "nodes": [
+        "Shell, Heads & Tubesheet"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "India Reactor Coolant Pumps & Primary Loop",
+     "slug": "reactor-coolant-pumps-primary-loop-india",
+     "positions": [
+      {
+       "exposure": "direct",
+       "nodes": [
+        "Heavy Forgings & Special Steels"
+       ]
+      },
+      {
+       "exposure": "supplier",
+       "nodes": [
+        "Casing, Impeller & Pressure Boundary"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "India Satellite",
+     "slug": "satellite-india",
+     "positions": [
+      {
+       "exposure": "direct",
+       "nodes": [
+        "Space-grade Materials (Superalloys, Ti, Composites)"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "India Satellite Bus & Subsystems",
+     "slug": "satellite-bus-subsystems-india",
+     "positions": [
+      {
+       "exposure": "direct",
+       "nodes": [
+        "Space-grade Materials (Superalloys, Ti, Composites)"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "India Shipbuilding & Ship Repair",
+     "slug": "shipbuilding-ship-repair-india",
+     "positions": [
+      {
+       "exposure": "direct",
+       "nodes": [
+        "Shipbuilding-Grade Steel & Special Steels"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "India Small Modular Reactor",
+     "slug": "smr-india",
+     "positions": [
+      {
+       "exposure": "direct",
+       "nodes": [
+        "Heavy Forgings & Special Materials"
+       ]
+      },
+      {
+       "exposure": "supplier",
+       "nodes": [
+        "Containment & Pressure Boundary"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "India Steam Turbine (Turbine Proper)",
+     "slug": "steam-turbine-india",
+     "positions": [
+      {
+       "exposure": "direct",
+       "nodes": [
+        "Special Steels & Superalloys"
+       ]
+      },
+      {
+       "exposure": "supplier",
+       "nodes": [
+        "Turbine Blading",
+        "Turbine Rotor & Shaft"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "India Turbine Generator & Electrical Train",
+     "slug": "turbine-generator-india",
+     "positions": [
+      {
+       "exposure": "supplier",
+       "nodes": [
+        "Generator Rotor & Retaining Rings"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "India Turbine Island (Turbomachinery)",
+     "slug": "turbine-island-india",
+     "positions": [
+      {
+       "exposure": "direct",
+       "nodes": [
+        "Special Steels & Superalloys"
+       ]
+      },
+      {
+       "exposure": "supplier",
+       "nodes": [
+        "Turbine Blading & Blades",
+        "Turbine Rotor & Forgings"
+       ]
+      }
+     ]
+    }
+   ],
+   "also_known_as": [
+    "MIDHANI",
+    "Mishra Dhatu Nigam"
+   ],
+   "rank": 11,
+   "previous_rank": 14,
+   "rank_change": 3
+  },
+  {
    "name": "Hitachi Energy India",
    "ticker": "NSE/BSE: POWERINDIA",
    "symbol": "POWERINDIA",
@@ -2940,9 +3169,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 11,
+   "rank": 12,
    "previous_rank": 11,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Hindalco Industries",
@@ -3117,9 +3346,9 @@
    "also_known_as": [
     "Hindalco"
    ],
-   "rank": 12,
+   "rank": 13,
    "previous_rank": 12,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "HFCL (HTL Ltd)",
@@ -3342,208 +3571,9 @@
    "also_known_as": [
     "HFCL"
    ],
-   "rank": 13,
-   "previous_rank": 13,
-   "rank_change": 0
-  },
-  {
-   "name": "Mishra Dhatu Nigam (MIDHANI)",
-   "ticker": "NSE/BSE: MIDHANI",
-   "symbol": "MIDHANI",
-   "industries_count": 12,
-   "direct_count": 11,
-   "nodes_count": 17,
-   "industries": [
-    {
-     "name": "India Aircraft MRO & Civil Aerospace Components",
-     "slug": "aircraft-mro-civil-aerospace-india",
-     "positions": [
-      {
-       "exposure": "direct",
-       "nodes": [
-        "Materials — Titanium, Superalloys, Aluminium, Composites"
-       ]
-      }
-     ]
-    },
-    {
-     "name": "India Guns",
-     "slug": "guns-india",
-     "positions": [
-      {
-       "exposure": "direct",
-       "nodes": [
-        "Special Steels & Alloys"
-       ]
-      }
-     ]
-    },
-    {
-     "name": "India Missiles",
-     "slug": "missile-india",
-     "positions": [
-      {
-       "exposure": "direct",
-       "nodes": [
-        "Motor Casings & Special Materials"
-       ]
-      },
-      {
-       "exposure": "supplier",
-       "nodes": [
-        "Airframe, Structures & Thermal Protection"
-       ]
-      }
-     ]
-    },
-    {
-     "name": "India Nuclear PWR Steam Generator",
-     "slug": "nuclear-pwr-steam-generator-india",
-     "positions": [
-      {
-       "exposure": "direct",
-       "nodes": [
-        "Heavy Forgings & Special Steels"
-       ]
-      },
-      {
-       "exposure": "supplier",
-       "nodes": [
-        "Shell, Heads & Tubesheet"
-       ]
-      }
-     ]
-    },
-    {
-     "name": "India Reactor Coolant Pumps & Primary Loop",
-     "slug": "reactor-coolant-pumps-primary-loop-india",
-     "positions": [
-      {
-       "exposure": "direct",
-       "nodes": [
-        "Heavy Forgings & Special Steels"
-       ]
-      },
-      {
-       "exposure": "supplier",
-       "nodes": [
-        "Casing, Impeller & Pressure Boundary"
-       ]
-      }
-     ]
-    },
-    {
-     "name": "India Satellite",
-     "slug": "satellite-india",
-     "positions": [
-      {
-       "exposure": "direct",
-       "nodes": [
-        "Space-grade Materials (Superalloys, Ti, Composites)"
-       ]
-      }
-     ]
-    },
-    {
-     "name": "India Satellite Bus & Subsystems",
-     "slug": "satellite-bus-subsystems-india",
-     "positions": [
-      {
-       "exposure": "direct",
-       "nodes": [
-        "Space-grade Materials (Superalloys, Ti, Composites)"
-       ]
-      }
-     ]
-    },
-    {
-     "name": "India Shipbuilding & Ship Repair",
-     "slug": "shipbuilding-ship-repair-india",
-     "positions": [
-      {
-       "exposure": "direct",
-       "nodes": [
-        "Shipbuilding-Grade Steel & Special Steels"
-       ]
-      }
-     ]
-    },
-    {
-     "name": "India Small Modular Reactor",
-     "slug": "smr-india",
-     "positions": [
-      {
-       "exposure": "direct",
-       "nodes": [
-        "Heavy Forgings & Special Materials"
-       ]
-      },
-      {
-       "exposure": "supplier",
-       "nodes": [
-        "Containment & Pressure Boundary"
-       ]
-      }
-     ]
-    },
-    {
-     "name": "India Steam Turbine (Turbine Proper)",
-     "slug": "steam-turbine-india",
-     "positions": [
-      {
-       "exposure": "direct",
-       "nodes": [
-        "Special Steels & Superalloys"
-       ]
-      },
-      {
-       "exposure": "supplier",
-       "nodes": [
-        "Turbine Blading",
-        "Turbine Rotor & Shaft"
-       ]
-      }
-     ]
-    },
-    {
-     "name": "India Turbine Generator & Electrical Train",
-     "slug": "turbine-generator-india",
-     "positions": [
-      {
-       "exposure": "supplier",
-       "nodes": [
-        "Generator Rotor & Retaining Rings"
-       ]
-      }
-     ]
-    },
-    {
-     "name": "India Turbine Island (Turbomachinery)",
-     "slug": "turbine-island-india",
-     "positions": [
-      {
-       "exposure": "direct",
-       "nodes": [
-        "Special Steels & Superalloys"
-       ]
-      },
-      {
-       "exposure": "supplier",
-       "nodes": [
-        "Turbine Blading & Blades",
-        "Turbine Rotor & Forgings"
-       ]
-      }
-     ]
-    }
-   ],
-   "also_known_as": [
-    "MIDHANI",
-    "Mishra Dhatu Nigam"
-   ],
    "rank": 14,
-   "previous_rank": 14,
-   "rank_change": 0
+   "previous_rank": 13,
+   "rank_change": -1
   },
   {
    "name": "Syrma SGS Technology",
@@ -8176,17 +8206,10 @@
        ]
       },
       {
-       "exposure": "indirect",
-       "nodes": [
-        "Launch Services & Spaceport"
-       ]
-      },
-      {
        "exposure": "supplier",
        "nodes": [
         "Composite Structures (Carbon Fibre)",
-        "LV Structures & Propellant Tanks",
-        "Liquid & Cryogenic Engines"
+        "LV Structures & Propellant Tanks"
        ]
       }
      ]
@@ -11058,6 +11081,86 @@
    "rank_change": 0
   },
   {
+   "name": "Apollo Micro Systems",
+   "ticker": "NSE/BSE: APOLLO",
+   "symbol": "APOLLO",
+   "industries_count": 5,
+   "direct_count": 0,
+   "nodes_count": 6,
+   "industries": [
+    {
+     "name": "Defence Electro-Optics & Thermal Imaging (India)",
+     "slug": "defence-electro-optics-india",
+     "positions": [
+      {
+       "exposure": "indirect",
+       "nodes": [
+        "Handheld & Weapon Sights"
+       ]
+      },
+      {
+       "exposure": "supplier",
+       "nodes": [
+        "Readout Electronics, ROIC & Image Processing"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "India Launch Vehicles & Propulsion",
+     "slug": "launch-vehicles-propulsion-india",
+     "positions": [
+      {
+       "exposure": "indirect",
+       "nodes": [
+        "Launch-Vehicle Avionics & Guidance"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "India Missiles",
+     "slug": "missile-india",
+     "positions": [
+      {
+       "exposure": "supplier",
+       "nodes": [
+        "Guidance, Navigation & Avionics"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "India Satellite Payloads",
+     "slug": "satellite-payloads-india",
+     "positions": [
+      {
+       "exposure": "supplier",
+       "nodes": [
+        "Antennas, Feeds & Reflectors"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Shakti EW System (India)",
+     "slug": "shakti-ew-india",
+     "positions": [
+      {
+       "exposure": "supplier",
+       "nodes": [
+        "RF/Microwave Subsystems"
+       ]
+      }
+     ]
+    }
+   ],
+   "also_known_as": [],
+   "rank": 80,
+   "previous_rank": 102,
+   "rank_change": 22
+  },
+  {
    "name": "NTPC Green Energy",
    "ticker": "NSE/BSE: NTPCGREEN",
    "symbol": "NTPCGREEN",
@@ -11124,9 +11227,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 80,
+   "rank": 81,
    "previous_rank": 80,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Avantel",
@@ -11193,9 +11296,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 81,
+   "rank": 82,
    "previous_rank": 81,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Premier Energies",
@@ -11258,9 +11361,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 82,
+   "rank": 83,
    "previous_rank": 82,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Ola Electric Mobility",
@@ -11323,9 +11426,9 @@
    "also_known_as": [
     "Ola Electric"
    ],
-   "rank": 83,
+   "rank": 84,
    "previous_rank": 83,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Vindhya Telelinks",
@@ -11391,9 +11494,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 84,
+   "rank": 85,
    "previous_rank": 84,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "IndiGrid",
@@ -11454,9 +11557,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 85,
+   "rank": 86,
    "previous_rank": 85,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Power Grid Corporation of India",
@@ -11519,9 +11622,9 @@
    "also_known_as": [
     "Power Grid Corp of India"
    ],
-   "rank": 86,
+   "rank": 87,
    "previous_rank": 86,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "INOX India",
@@ -11589,9 +11692,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 87,
+   "rank": 88,
    "previous_rank": 87,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Adani Green Energy",
@@ -11652,9 +11755,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 88,
+   "rank": 89,
    "previous_rank": 88,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Salasar Techno Engineering",
@@ -11722,9 +11825,9 @@
    "also_known_as": [
     "Salasar Techno"
    ],
-   "rank": 89,
+   "rank": 90,
    "previous_rank": 89,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Salzer Electronics",
@@ -11785,9 +11888,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 90,
+   "rank": 91,
    "previous_rank": 90,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "SPEL Semiconductor",
@@ -11848,9 +11951,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 91,
+   "rank": 92,
    "previous_rank": 91,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "SPEL Semiconductor",
@@ -11911,9 +12014,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 92,
+   "rank": 93,
    "previous_rank": 92,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "SPEL Semiconductor",
@@ -11974,9 +12077,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 93,
+   "rank": 94,
    "previous_rank": 93,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "HBL Engineering",
@@ -12036,9 +12139,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 94,
+   "rank": 95,
    "previous_rank": 94,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Solar Industries",
@@ -12101,9 +12204,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 95,
+   "rank": 96,
    "previous_rank": 95,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "KPIT Technologies",
@@ -12164,9 +12267,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 96,
+   "rank": 97,
    "previous_rank": 96,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "MosChip Technologies",
@@ -12227,9 +12330,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 97,
+   "rank": 98,
    "previous_rank": 97,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Kirloskar Pneumatic",
@@ -12291,9 +12394,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 98,
+   "rank": 99,
    "previous_rank": 98,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Bharat Petroleum",
@@ -12355,9 +12458,9 @@
    "also_known_as": [
     "BPCL"
    ],
-   "rank": 99,
+   "rank": 100,
    "previous_rank": 99,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Epigral",
@@ -12418,9 +12521,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 100,
+   "rank": 101,
    "previous_rank": 100,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Samvardhana Motherson",
@@ -12481,77 +12584,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 101,
-   "previous_rank": 101,
-   "rank_change": 0
-  },
-  {
-   "name": "Apollo Micro Systems",
-   "ticker": "NSE/BSE: APOLLO",
-   "symbol": "APOLLO",
-   "industries_count": 4,
-   "direct_count": 0,
-   "nodes_count": 5,
-   "industries": [
-    {
-     "name": "Defence Electro-Optics & Thermal Imaging (India)",
-     "slug": "defence-electro-optics-india",
-     "positions": [
-      {
-       "exposure": "indirect",
-       "nodes": [
-        "Handheld & Weapon Sights"
-       ]
-      },
-      {
-       "exposure": "supplier",
-       "nodes": [
-        "Readout Electronics, ROIC & Image Processing"
-       ]
-      }
-     ]
-    },
-    {
-     "name": "India Missiles",
-     "slug": "missile-india",
-     "positions": [
-      {
-       "exposure": "supplier",
-       "nodes": [
-        "Guidance, Navigation & Avionics"
-       ]
-      }
-     ]
-    },
-    {
-     "name": "India Satellite Payloads",
-     "slug": "satellite-payloads-india",
-     "positions": [
-      {
-       "exposure": "supplier",
-       "nodes": [
-        "Antennas, Feeds & Reflectors"
-       ]
-      }
-     ]
-    },
-    {
-     "name": "Shakti EW System (India)",
-     "slug": "shakti-ew-india",
-     "positions": [
-      {
-       "exposure": "supplier",
-       "nodes": [
-        "RF/Microwave Subsystems"
-       ]
-      }
-     ]
-    }
-   ],
-   "also_known_as": [],
    "rank": 102,
-   "previous_rank": 102,
-   "rank_change": 0
+   "previous_rank": 101,
+   "rank_change": -1
   },
   {
    "name": "Triveni Turbine",
