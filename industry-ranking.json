@@ -679,7 +679,7 @@
     },
     {
      "node": "Display modules",
-     "basis": "Effectively 100% imported today and one of the largest value blocks inside a handset BOM; Dixon's 74:26 JV with HKC carries a &#8377;370 cr commitment for 24 mn smartphone displays a year, which is a licence-and-partner barrier rather than a capital one - and the JV trials have already slipped, so the pool is real but not yet captured.",
+     "basis": "Effectively 100% imported today and one of the largest value blocks inside a handset BOM; Dixon's 74:26 JV with HKC carries a ₹370 cr commitment for 24 mn smartphone displays a year, which is a licence-and-partner barrier rather than a capital one - and the JV trials have already slipped, so the pool is real but not yet captured.",
      "params": {
       "op_share": 3,
       "pricing_power": 3,
@@ -696,7 +696,7 @@
     },
     {
      "node": "Camera modules",
-     "basis": "Largely imported, with Dixon's Q Tech JV scaling 40 mn to 190-200 mn units a year for &#8377;6,000-7,000 cr of revenue - but management guides to sub-10% EBITDA margin on it, so this is a share-of-BOM play rather than a margin play.",
+     "basis": "Largely imported, with Dixon's Q Tech JV scaling 40 mn to 190-200 mn units a year for ₹6,000-7,000 cr of revenue - but management guides to sub-10% EBITDA margin on it, so this is a share-of-BOM play rather than a margin play.",
      "params": {
       "op_share": 2,
       "pricing_power": 3,
@@ -729,7 +729,7 @@
      "coverage": 100
     },
     {
-     "node": "Connectors &amp; wire harness",
+     "node": "Connectors & wire harness",
      "basis": "Import-dominated, and the ECMS list is pulling global connector makers in directly (TE Connectivity, Molex, Amphenol) rather than through Indian partners - so the domestic share of this node is more likely to arrive as a foreign-owned plant than as an Indian business.",
      "params": {
       "op_share": 1,
@@ -746,7 +746,7 @@
      "coverage": 100
     },
     {
-     "node": "EMS / ODM system assembly &amp; box-build",
+     "node": "EMS / ODM system assembly & box-build",
      "basis": "The biggest revenue pool in the chain and the thinnest: Dixon's FY26 operating margin was 2.1%, and its CFO put mobile assembly at ~3.5% before the 5-6% PLI benefit. Dixon's Q2 FY27 operating margin fell to 2.7% from 3.8% as material costs reached 94.9% of revenue - scale without pricing power.",
      "params": {
       "op_share": 4,
@@ -763,7 +763,7 @@
      "coverage": 100
     },
     {
-     "node": "Enclosures &amp; mechanicals",
+     "node": "Enclosures & mechanicals",
      "basis": "Domestic and low-barrier: sheet-metal, tooling and moulding capacity already exists, so localisation here adds volume but little margin - the node is a share-of-BOM contributor, not a profit pool.",
      "params": {
       "op_share": 2,
@@ -781,7 +781,7 @@
     }
    ],
    "provisional": false,
-   "notes": "Scored against 'Industry-Level Investment Parameters &amp; Scoring Architecture'. Cycle position and valuation left UNAVAILABLE — the registry carries no cycle or valuation data for these industries. Value capture (added 2026-11-01) scores 8 nodes taken verbatim from this page's own BOM tree and value-chain ladder, on the separate Registry Review &#167;4 weighting (op_share 20%, pricing_power 15%, roic 15%, barriers 15%, bottleneck 10%, pool_growth 10%, cash_conversion 10%, switching 5%). It answers 'which node keeps the money' and is not blended into the industry score above.",
+   "notes": "Scored against 'Industry-Level Investment Parameters & Scoring Architecture'. Cycle position and valuation left UNAVAILABLE — the registry carries no cycle or valuation data for these industries. Value capture (added 2026-11-01) scores 8 nodes taken verbatim from this page's own BOM tree and value-chain ladder, on the separate Registry Review §4 weighting (op_share 20%, pricing_power 15%, roic 15%, barriers 15%, bottleneck 10%, pool_growth 10%, cash_conversion 10%, switching 5%). It answers 'which node keeps the money' and is not blended into the industry score above.",
    "overall_rank": 9,
    "risk_adjusted_rank": 9,
    "structural_score": 67.1,
@@ -1795,7 +1795,7 @@
      "coverage": 100
     },
     {
-     "node": "Spindles &amp; Precision Linear Motion",
+     "node": "Spindles & Precision Linear Motion",
      "basis": "Largely imported (ball screws, linear guideways, feedback elements) and the accuracy of the whole machine is set here; Jyoti makes its own spindles in Rajkot, which is the single biggest reason its gross margin sits where it does. For everyone else this is a foreign toll on domestic assembly.",
      "params": {
       "op_share": 2,
@@ -1813,7 +1813,7 @@
     },
     {
      "node": "CNC Machines (lathes / VMCs / 5-axis)",
-     "basis": "The pool that exists today: Jyoti CNC did &#8377;2,093 cr consolidated in FY26 at a 25.2% EBITDA margin, and its 55.1% gross margin against Macpower's 38.5% is a direct read on how much of the machine a builder makes itself. Pricing power is real at the high end (40% of Jyoti's order book is above &#8377;2 cr a machine) and absent at the entry level, where China supplied 30% of FY26 imports.",
+     "basis": "The pool that exists today: Jyoti CNC did ₹2,093 cr consolidated in FY26 at a 25.2% EBITDA margin, and its 55.1% gross margin against Macpower's 38.5% is a direct read on how much of the machine a builder makes itself. Pricing power is real at the high end (40% of Jyoti's order book is above ₹2 cr a machine) and absent at the entry level, where China supplied 30% of FY26 imports.",
      "params": {
       "op_share": 5,
       "pricing_power": 3,
@@ -1829,7 +1829,7 @@
      "coverage": 100
     },
     {
-     "node": "Metrology (CMMs &amp; Gear Testers)",
+     "node": "Metrology (CMMs & Gear Testers)",
      "basis": "Effectively imported with no listed Indian maker at robotics grade; small in revenue but it is the node that certifies every other node's output, so it carries pricing power out of all proportion to its size.",
      "params": {
       "op_share": 1,
@@ -1846,7 +1846,7 @@
      "coverage": 100
     },
     {
-     "node": "Precision Bearings &amp; Cages",
+     "node": "Precision Bearings & Cages",
      "basis": "Partly domestic at commodity grades, effectively imported at machine-tool grades where Schaeffler, SKF and Timken set the specification; a small pool with a hard qualification gate and a long design-in cycle.",
      "params": {
       "op_share": 2,
@@ -1863,7 +1863,7 @@
      "coverage": 100
     },
     {
-     "node": "Gear &amp; Thread Grinding Machines",
+     "node": "Gear & Thread Grinding Machines",
      "basis": "Effectively imported and a narrow niche serving gearboxes, reducers and defence drivetrains - the machine that gates the harmonic/RV reducer and gear-making chains, with volumes too small to justify a domestic line yet.",
      "params": {
       "op_share": 1,
@@ -1880,7 +1880,7 @@
      "coverage": 100
     },
     {
-     "node": "Cutting Tools &amp; Abrasives",
+     "node": "Cutting Tools & Abrasives",
      "basis": "The one node where India is genuinely strong - Kennametal, Carborundum and Grindwell Norton - but it is a consumable, sold on price and availability against global brands, with no bottleneck position and a recurring but unremarkable margin.",
      "params": {
       "op_share": 2,
@@ -1898,7 +1898,7 @@
     }
    ],
    "provisional": false,
-   "notes": "Opportunity uses the same series as the Market &amp; growth digest block (IMTMA FY26 consumption of Rs 36,419 cr, imports of Rs 21,628 cr, and the 13.7% eleven-year production CAGR). Valuation left UNAVAILABLE because the registry carries no industry valuation data. Value capture (added 2026-11-01) scores 7 nodes taken verbatim from this page's own BOM tree and value-chain ladder, on the separate Registry Review &#167;4 weighting (op_share 20%, pricing_power 15%, roic 15%, barriers 15%, bottleneck 10%, pool_growth 10%, cash_conversion 10%, switching 5%). It answers 'which node keeps the money' and is not blended into the industry score above.",
+   "notes": "Opportunity uses the same series as the Market & growth digest block (IMTMA FY26 consumption of Rs 36,419 cr, imports of Rs 21,628 cr, and the 13.7% eleven-year production CAGR). Valuation left UNAVAILABLE because the registry carries no industry valuation data. Value capture (added 2026-11-01) scores 7 nodes taken verbatim from this page's own BOM tree and value-chain ladder, on the separate Registry Review §4 weighting (op_share 20%, pricing_power 15%, roic 15%, barriers 15%, bottleneck 10%, pool_growth 10%, cash_conversion 10%, switching 5%). It answers 'which node keeps the money' and is not blended into the industry score above.",
    "overall_rank": 15,
    "risk_adjusted_rank": 13,
    "structural_score": 60,
@@ -2007,8 +2007,8 @@
    },
    "value_capture": [
     {
-     "node": "Propellants &amp; Energetic Materials",
-     "basis": "The best economics in the chain: Solar Industries ran a 26.7% EBITDA margin and 27.4% RoCE in FY26 with defence revenue up 94% to &#8377;2,634 cr and a &#8377;21,300 cr order book. Energetics are licence-gated, chemically hazardous and cannot be sourced on the spot market, which is precisely why a private maker earns a margin the prime does not.",
+     "node": "Propellants & Energetic Materials",
+     "basis": "The best economics in the chain: Solar Industries ran a 26.7% EBITDA margin and 27.4% RoCE in FY26 with defence revenue up 94% to ₹2,634 cr and a ₹21,300 cr order book. Energetics are licence-gated, chemically hazardous and cannot be sourced on the spot market, which is precisely why a private maker earns a margin the prime does not.",
      "params": {
       "op_share": 3,
       "pricing_power": 4,
@@ -2024,7 +2024,7 @@
      "coverage": 100
     },
     {
-     "node": "Seekers (RF / IIR) &amp; RF Front-End",
+     "node": "Seekers (RF / IIR) & RF Front-End",
      "basis": "The binding technology constraint on Indian missile programmes and historically imported; BDL delivered the first indigenously fabricated RF seeker for Akash-NG from its own Seeker Facility Centre, and DRDO has opened RF-seeker ToT. A small pool with the highest pricing power in the chain because the alternative is an export-control queue.",
      "params": {
       "op_share": 2,
@@ -2042,7 +2042,7 @@
     },
     {
      "node": "Missile Systems (Prime Integration)",
-     "basis": "The largest pool and the highest barrier - BDL is the designated prime production agency with a &#8377;26,176 cr order book (10.6x FY26 revenue) and nil debt - but the economics are set by a single buyer on fixed-contract terms. FY26 revenue fell 27% to &#8377;2,442 cr and EBITDA margin hit a decade low of 9.1%; gross current assets above 651 days make this the worst cash conversion in the chain, which is why the score sits below the barriers it carries.",
+     "basis": "The largest pool and the highest barrier - BDL is the designated prime production agency with a ₹26,176 cr order book (10.6x FY26 revenue) and nil debt - but the economics are set by a single buyer on fixed-contract terms. FY26 revenue fell 27% to ₹2,442 cr and EBITDA margin hit a decade low of 9.1%; gross current assets above 651 days make this the worst cash conversion in the chain, which is why the score sits below the barriers it carries.",
      "params": {
       "op_share": 5,
       "pricing_power": 3,
@@ -2058,7 +2058,7 @@
      "coverage": 100
     },
     {
-     "node": "Guidance, Navigation &amp; Avionics",
+     "node": "Guidance, Navigation & Avionics",
      "basis": "Partly imported with RLG/FOG/MEMS being indigenised; design authority sits with DRDO and the primes, so a supplier earns a qualified-part margin rather than system margin, but requalification is slow enough to protect the position once held.",
      "params": {
       "op_share": 2,
@@ -2075,7 +2075,7 @@
      "coverage": 100
     },
     {
-     "node": "Warheads, Explosives &amp; Fuzing",
+     "node": "Warheads, Explosives & Fuzing",
      "basis": "Domestic with a few specialty energetic inputs imported; licensed, safety-gated and adjacent to the propellant pool, which is where the returns concentrate. Volume follows missile orders with a lag, so the pool grows later than the prime's order book.",
      "params": {
       "op_share": 2,
@@ -2092,7 +2092,7 @@
      "coverage": 100
     },
     {
-     "node": "Propulsion &amp; Rocket Motors",
+     "node": "Propulsion & Rocket Motors",
      "basis": "Solid motors are domestic and increasingly contested between BDL, Solar Industries and private motor makers, so the barrier is qualification rather than capability; some specialty inputs remain imported. Case-bonding and grain design are the defensible part of the node.",
      "params": {
       "op_share": 3,
@@ -2109,8 +2109,8 @@
      "coverage": 100
     },
     {
-     "node": "Motor Casings &amp; Special Materials",
-     "basis": "Imported metals and alloys of roughly &#8377;8,000 cr across the programme; a fabrication node with real tonnage but commodity-like pass-through, and the most exposed to input-price and import-licence swings.",
+     "node": "Motor Casings & Special Materials",
+     "basis": "Imported metals and alloys of roughly ₹8,000 cr across the programme; a fabrication node with real tonnage but commodity-like pass-through, and the most exposed to input-price and import-licence swings.",
      "params": {
       "op_share": 2,
       "pricing_power": 3,
@@ -2126,7 +2126,7 @@
      "coverage": 100
     },
     {
-     "node": "Test &amp; Evaluation / Range Infrastructure",
+     "node": "Test & Evaluation / Range Infrastructure",
      "basis": "State-owned and capacity-constrained: ranges and instrumentation are a public good that gates every programme's schedule, but they generate no commercial margin - a bottleneck node that is a cost centre, not a profit pool.",
      "params": {
       "op_share": 1,
@@ -2143,7 +2143,7 @@
      "coverage": 100
     },
     {
-     "node": "Launchers, Canisters &amp; Fire Control",
+     "node": "Launchers, Canisters & Fire Control",
      "basis": "Mostly domestic and structurally competitive - fabrication and hydraulics work that several private firms can bid, with no technology gate and no scarcity value.",
      "params": {
       "op_share": 2,
@@ -2161,7 +2161,7 @@
     }
    ],
    "provisional": false,
-   "notes": "Opportunity uses the same series as the Market &amp; growth digest block (MarketsandMarkets India missile market US$468.6 mn 2025 to US$2,512.7 mn 2030 at 39.9%, and Grand View India PGM US$2,350.6 mn 2022 to US$3,958.6 mn 2030 at 6.7%, both inside FY26 defence production of Rs 1.78 lakh crore). Valuation left UNAVAILABLE — the registry carries no industry valuation series. Value capture (added 2026-11-01) scores 9 nodes taken verbatim from this page's own BOM tree and value-chain ladder, on the separate Registry Review &#167;4 weighting (op_share 20%, pricing_power 15%, roic 15%, barriers 15%, bottleneck 10%, pool_growth 10%, cash_conversion 10%, switching 5%). It answers 'which node keeps the money' and is not blended into the industry score above.",
+   "notes": "Opportunity uses the same series as the Market & growth digest block (MarketsandMarkets India missile market US$468.6 mn 2025 to US$2,512.7 mn 2030 at 39.9%, and Grand View India PGM US$2,350.6 mn 2022 to US$3,958.6 mn 2030 at 6.7%, both inside FY26 defence production of Rs 1.78 lakh crore). Valuation left UNAVAILABLE — the registry carries no industry valuation series. Value capture (added 2026-11-01) scores 9 nodes taken verbatim from this page's own BOM tree and value-chain ladder, on the separate Registry Review §4 weighting (op_share 20%, pricing_power 15%, roic 15%, barriers 15%, bottleneck 10%, pool_growth 10%, cash_conversion 10%, switching 5%). It answers 'which node keeps the money' and is not blended into the industry score above.",
    "overall_rank": 10,
    "risk_adjusted_rank": 20,
    "structural_score": 62.9,
@@ -2985,7 +2985,7 @@
    },
    "value_capture": [
     {
-     "node": "Control &amp; Grid-forming Firmware",
+     "node": "Control & Grid-forming Firmware",
      "basis": "Foreign IP today, and the node policy is being written around: CSIR-NAL has pre-assessed grid-forming algorithms and black-start capability, and the MNRE draft mandate requires indigenous control software on every BESS on the Indian grid. Software is where a domestic entrant can own value without owning a fab.",
      "params": {
       "op_share": 3,
@@ -3019,7 +3019,7 @@
      "coverage": 100
     },
     {
-     "node": "Gate Drivers &amp; Control ICs",
+     "node": "Gate Drivers & Control ICs",
      "basis": "~100% imported and designed in lockstep with the module it drives, so it is rarely a standalone purchase - the switching cost is a redesign, not a re-quote.",
      "params": {
       "op_share": 2,
@@ -3036,7 +3036,7 @@
      "coverage": 100
     },
     {
-     "node": "PCS Manufacturing &amp; Integration",
+     "node": "PCS Manufacturing & Integration",
      "basis": "The node India already does, and the one that carries the revenue: PCS is 15-25% of utility-scale hardware capex, with 30-50% localisation by cost. But Quality Power guides BESS/PCS margins at 10-12% today rising to 17-18% only with scale, against Chinese suppliers (Sungrow, Sineng, Ginlong) who set the price and have raised it twice in 2026.",
      "params": {
       "op_share": 4,
@@ -3087,7 +3087,7 @@
      "coverage": 100
     },
     {
-     "node": "Magnetics, Inductors &amp; Chokes",
+     "node": "Magnetics, Inductors & Chokes",
      "basis": "A small domestic industry serving commodity applications, with high-frequency magnetics for SiC/GaN designs almost entirely imported; core material supply (ferrite, nanocrystalline) is the real constraint.",
      "params": {
       "op_share": 1,
@@ -3104,7 +3104,7 @@
      "coverage": 100
     },
     {
-     "node": "Inverter-duty Transformer &amp; Switchgear",
+     "node": "Inverter-duty Transformer & Switchgear",
      "basis": "Mostly domestic and served by the established transformer and switchgear base, so it is a beneficiary of BESS volume rather than a gate on it - and the returns belong to the transformer node, not to this one.",
      "params": {
       "op_share": 2,
@@ -3122,7 +3122,7 @@
     }
    ],
    "provisional": false,
-   "notes": "Opportunity uses the same series as the Market &amp; growth digest block (India BESS US$1.5 bn in 2025 to US$7.5 bn in 2030 at 33% value CAGR, with the PCS slice derived at 15–25% of utility-scale hardware capex, against a CEA 208 GWh by 2030 requirement). Valuation left UNAVAILABLE — the registry carries no industry valuation series. Value capture (added 2026-11-01) scores 8 nodes taken verbatim from this page's own BOM tree and value-chain ladder, on the separate Registry Review &#167;4 weighting (op_share 20%, pricing_power 15%, roic 15%, barriers 15%, bottleneck 10%, pool_growth 10%, cash_conversion 10%, switching 5%). It answers 'which node keeps the money' and is not blended into the industry score above.",
+   "notes": "Opportunity uses the same series as the Market & growth digest block (India BESS US$1.5 bn in 2025 to US$7.5 bn in 2030 at 33% value CAGR, with the PCS slice derived at 15–25% of utility-scale hardware capex, against a CEA 208 GWh by 2030 requirement). Valuation left UNAVAILABLE — the registry carries no industry valuation series. Value capture (added 2026-11-01) scores 8 nodes taken verbatim from this page's own BOM tree and value-chain ladder, on the separate Registry Review §4 weighting (op_share 20%, pricing_power 15%, roic 15%, barriers 15%, bottleneck 10%, pool_growth 10%, cash_conversion 10%, switching 5%). It answers 'which node keeps the money' and is not blended into the industry score above.",
    "overall_rank": 12,
    "risk_adjusted_rank": 22,
    "structural_score": 61.4,
@@ -3457,7 +3457,7 @@
    "value_capture": [
     {
      "node": "Finished transformer — power (incl. EHV/765 kV)",
-     "basis": "The node that keeps the money today: CG Power's Power segment earned 21.9% PBIT on &#8377;5,138 cr in FY26 (up from 19.0%) with 22% ROCE at company level; TARIL ran 15.4% standalone EBITDA on &#8377;2,395 cr with ROCE of 19.1%; Hitachi Energy India 15.4% operational EBITDA on &#8377;8,148 cr. The pool grows with a record order backlog (Hitachi &#8377;29,555 cr, +53.5%; CG &#8377;15,719 cr, +59%), but cash conversion is the weak leg - TARIL's working capital runs on 18-24 month utility execution cycles.",
+     "basis": "The node that keeps the money today: CG Power's Power segment earned 21.9% PBIT on ₹5,138 cr in FY26 (up from 19.0%) with 22% ROCE at company level; TARIL ran 15.4% standalone EBITDA on ₹2,395 cr with ROCE of 19.1%; Hitachi Energy India 15.4% operational EBITDA on ₹8,148 cr. The pool grows with a record order backlog (Hitachi ₹29,555 cr, +53.5%; CG ₹15,719 cr, +59%), but cash conversion is the weak leg - TARIL's working capital runs on 18-24 month utility execution cycles.",
      "params": {
       "op_share": 5,
       "pricing_power": 4,
@@ -3558,7 +3558,7 @@
      "coverage": 100
     },
     {
-     "node": "Core-coil assembly &amp; winding process",
+     "node": "Core-coil assembly & winding process",
      "basis": "Domestic, skilled-labour-bound and the step where operating leverage is actually earned - TARIL's FY26 record 33,763 MVA output against 29,118 MVA in FY25 is what lifted margin - but it is a process inside the OEM, not a separately priced node.",
      "params": {
       "op_share": 2,
@@ -3575,7 +3575,7 @@
      "coverage": 100
     },
     {
-     "node": "Finished transformer — distribution &amp; specialty",
+     "node": "Finished transformer — distribution & specialty",
      "basis": "Crowded, state-utility-tendered and volume-led; the competitive floor of the chain, and the segment where a sub-scale maker competes on price rather than on qualification.",
      "params": {
       "op_share": 2,
@@ -3593,7 +3593,7 @@
     }
    ],
    "provisional": false,
-   "notes": "Opportunity uses the same series as the Market &amp; growth digest block (&#8377;40,000 cr FY26 against &#8377;33,000 cr FY25, +21% YoY, CALCULATED from Eninrac; forward CAGR UNAVAILABLE). Valuation is scored from listed-company multiples reported in trade coverage, labelled [REPORTED-T3], not from an industry series. Value capture (added 2026-11-01) scores 8 nodes taken verbatim from this page's own BOM tree and value-chain ladder, on the separate Registry Review &#167;4 weighting (op_share 20%, pricing_power 15%, roic 15%, barriers 15%, bottleneck 10%, pool_growth 10%, cash_conversion 10%, switching 5%). It answers 'which node keeps the money' and is not blended into the industry score above.",
+   "notes": "Opportunity uses the same series as the Market & growth digest block (₹40,000 cr FY26 against ₹33,000 cr FY25, +21% YoY, CALCULATED from Eninrac; forward CAGR UNAVAILABLE). Valuation is scored from listed-company multiples reported in trade coverage, labelled [REPORTED-T3], not from an industry series. Value capture (added 2026-11-01) scores 8 nodes taken verbatim from this page's own BOM tree and value-chain ladder, on the separate Registry Review §4 weighting (op_share 20%, pricing_power 15%, roic 15%, barriers 15%, bottleneck 10%, pool_growth 10%, cash_conversion 10%, switching 5%). It answers 'which node keeps the money' and is not blended into the industry score above.",
    "overall_rank": 8,
    "risk_adjusted_rank": 4,
    "structural_score": 77.1,
