@@ -106,18 +106,18 @@
       <script type="text/plain" class="diagram-source">
 graph TD
   L0["<b>Level 0</b><br/>Wastewater Treatment<br/>(India)"]
-  L0 --> A["A &middot; Collection &amp; conveyance<br/>sewers &middot; manholes &middot; pumping"]
-  L0 --> B["B &middot; Primary treatment<br/>screening &middot; grit &middot; settling"]
-  L0 --> C["C &middot; Biological treatment<br/>ASP &middot; SBR &middot; MBBR &middot; UASB &middot; MBR"]
-  L0 --> D["D &middot; Tertiary &amp; reuse<br/>filtration &middot; UF/RO &middot; TTRO &middot; disinfection"]
-  L0 --> E["E &middot; Industrial effluent &amp; ZLD<br/>physico-chemical &middot; MEE &middot; ATFD"]
-  L0 --> F["F &middot; Sludge &amp; septage<br/>thickening &middot; dewatering &middot; FSTP &middot; biogas"]
-  L0 --> G["G &middot; Rotating equipment<br/>pumps &middot; blowers &middot; mixers &middot; diffusers"]
-  L0 --> H["H &middot; Chemicals &amp; membranes<br/>PAC &middot; polymer &middot; resin &middot; RO/UF/MBR"]
-  L0 --> I["I &middot; Instruments &amp; digital<br/>SCADA &middot; flow &middot; BOD/COD &middot; IoT"]
-  L0 --> J["J &middot; Civil &amp; delivery<br/>RCC tanks &middot; EPC &middot; power &middot; land"]
-  L0 --> K["K &middot; O&amp;M &amp; aftermarket<br/>10&ndash;20 yr O&amp;M &middot; spares &middot; desludging"]
-  L0 --> L["L &middot; Standards &amp; regulation<br/>CPCB &middot; SPCB consent &middot; NGT &middot; BIS"]
+  L0 --> A["A · Collection &amp; conveyance<br/>sewers · manholes · pumping"]
+  L0 --> B["B · Primary treatment<br/>screening · grit · settling"]
+  L0 --> C["C · Biological treatment<br/>ASP · SBR · MBBR · UASB · MBR"]
+  L0 --> D["D · Tertiary &amp; reuse<br/>filtration · UF/RO · TTRO · disinfection"]
+  L0 --> E["E · Industrial effluent &amp; ZLD<br/>physico-chemical · MEE · ATFD"]
+  L0 --> F["F · Sludge &amp; septage<br/>thickening · dewatering · FSTP · biogas"]
+  L0 --> G["G · Rotating equipment<br/>pumps · blowers · mixers · diffusers"]
+  L0 --> H["H · Chemicals &amp; membranes<br/>PAC · polymer · resin · RO/UF/MBR"]
+  L0 --> I["I · Instruments &amp; digital<br/>SCADA · flow · BOD/COD · IoT"]
+  L0 --> J["J · Civil &amp; delivery<br/>RCC tanks · EPC · power · land"]
+  L0 --> K["K · O&amp;M &amp; aftermarket<br/>10–20 yr O&amp;M · spares · desludging"]
+  L0 --> L["L · Standards &amp; regulation<br/>CPCB · SPCB consent · NGT · BIS"]
   classDef high fill:#c0392b,stroke:#8e2b20,color:#fff,stroke-width:2px;
   classDef med fill:#d4a73a,stroke:#a37f22,color:#241a05,stroke-width:1.5px;
   classDef low fill:#7f8c8d,stroke:#5c6b6c,color:#fff,stroke-width:1.2px;
@@ -631,12 +631,13 @@ function renderPanel(node) {
 }
 
 const PTREE = [
-  { icon:'A', group:'Silicon chain', ids:['polysilicon','wafer'] },
-  { icon:'B', group:'Cell fabrication', ids:['cell'] },
-  { icon:'C', group:'Module &amp; BoM ancillaries', ids:['module','glass','encapsulant','backsheet','frame','silverpaste'] },
-  { icon:'D', group:'Balance of System', ids:['inverter'] },
-  { icon:'E', group:'Manufacturing equipment', ids:['moduleequip'] },
-  { icon:'F', group:'Project / EPC / Developer', ids:['epc','developer'] }
+  { icon:'A', group:'Collection &amp; civil', ids:['sewer'] },
+  { icon:'B', group:'Municipal treatment &amp; O&amp;M', ids:['stpepc','bio'] },
+  { icon:'C', group:'Membranes &amp; reuse', ids:['membranes','reuse'] },
+  { icon:'D', group:'Industrial effluent', ids:['zld'] },
+  { icon:'E', group:'Sludge &amp; septage', ids:['sludge'] },
+  { icon:'F', group:'Equipment &amp; chemicals', ids:['pumps','chem'] },
+  { icon:'G', group:'Instruments, O&amp;M &amp; recovery', ids:['inst','om'] }
 ];
 let firstBtn = null;
 PTREE.forEach((grp) => {
@@ -675,7 +676,7 @@ PTREE.forEach((grp) => {
   wrap.appendChild(body);
   nodesEl.appendChild(wrap);
 });
-if (firstBtn) { firstBtn.classList.add('is-active'); renderPanel(NODES.find((n) => n.id === 'cell')); }
+if (firstBtn) { firstBtn.classList.add('is-active'); renderPanel(NODES.find((n) => n.id === 'sewer')); }
 
 </script>
 
