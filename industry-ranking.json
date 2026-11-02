@@ -1013,9 +1013,146 @@
      "valuation"
     ]
    },
-   "value_capture": [],
+   "value_capture": [
+    {
+     "node": "Propellants, Explosives & Primers",
+     "basis": "The deepest bottleneck in the chain: propellant capacity runs 5–6× short of demand and NC/NG and primers are partly imported [REPORTED-T2]. Supply is a near-duopoly — Premier Explosives as India's first private solid-propellant maker (MRSAM, LRSAM, Astra) and Solar Industries, with Munitions India's cordite factories as the state leg. Scarcity plus qualification-gated supply is the strongest pricing position on this page, and Solar's own guidance of holding 27–28% EBITDA rests on energetics and defence mix.",
+     "params": {
+      "op_share": 4,
+      "pricing_power": 5,
+      "roic": 4,
+      "barriers": 5,
+      "bottleneck": 5,
+      "pool_growth": 5,
+      "cash_conversion": 3,
+      "switching": 5
+     },
+     "score": 4.45,
+     "score100": 89,
+     "coverage": 100
+    },
+    {
+     "node": "Ammunition & Cartridges",
+     "basis": "The largest volume pool and the fastest-growing private one. Solar Industries did FY26 revenue of ₹9,838 cr at ₹2,622 cr EBITDA (26.7%) and 27.4% RoCE, with defence revenue of ₹2,634 cr (+94%) and a ₹21,300 cr order book of which ~₹18,000 cr is defence [REPORTED-T1: FY26 annual report and May-2026 earnings call]; Munitions India carries a ₹28,939 cr order book [REPORTED-T1]. Demand is set by the services rather than the market, so switching is slow and pricing is negotiated — strong but not commodity pass-through.",
+     "params": {
+      "op_share": 5,
+      "pricing_power": 4,
+      "roic": 4,
+      "barriers": 4,
+      "bottleneck": 4,
+      "pool_growth": 5,
+      "cash_conversion": 3,
+      "switching": 4
+     },
+     "score": 4.2,
+     "score100": 84,
+     "coverage": 100
+    },
+    {
+     "node": "Artillery & Large-Calibre Guns",
+     "basis": "High-value, low-volume, and now majority-private: Bharat Forge holds a 60% share of ATAGS (184 guns of the ₹6,900 cr order) and L&T supplies the K9 Vajra-T (₹7,629 cr, 100 guns) [REPORTED-T2]. Value per platform is high and requalification is glacial, which protects price — but revenue is lumpy and tender-timed, which is why cash conversion and op_share are scored below the ammunition layer.",
+     "params": {
+      "op_share": 3,
+      "pricing_power": 4,
+      "roic": 3,
+      "barriers": 4,
+      "bottleneck": 2,
+      "pool_growth": 4,
+      "cash_conversion": 3,
+      "switching": 5
+     },
+     "score": 3.4,
+     "score100": 68,
+     "coverage": 100
+    },
+    {
+     "node": "Barrels, Breech & Forgings",
+     "basis": "Gun-barrel metallurgy is the qualification gate: Bharat Forge is the world's largest forgings maker and the ATAGS barrel source, Yantra India is the state barrel forger, and cold-hammer forging machinery is imported [REPORTED-T2]. A small revenue pool with disproportionate strategic weight — the barrier is process know-how, not scale.",
+     "params": {
+      "op_share": 2,
+      "pricing_power": 4,
+      "roic": 3,
+      "barriers": 4,
+      "bottleneck": 4,
+      "pool_growth": 3,
+      "cash_conversion": 3,
+      "switching": 5
+     },
+     "score": 3.3,
+     "score100": 66,
+     "coverage": 100
+    },
+    {
+     "node": "Systems Integration / OEM",
+     "basis": "BEL and BDL sit on the integration layer with the largest absolute order books — BDL at ~₹26,176 cr as of 31-Mar-2026 [REPORTED-T1] — but cash conversion is weak against government receivables and pricing is cost-plus or L1-tender rather than proprietary. Large pool, thin retained margin.",
+     "params": {
+      "op_share": 4,
+      "pricing_power": 3,
+      "roic": 3,
+      "barriers": 4,
+      "bottleneck": 1,
+      "pool_growth": 4,
+      "cash_conversion": 2,
+      "switching": 5
+     },
+     "score": 3.25,
+     "score100": 65,
+     "coverage": 100
+    },
+    {
+     "node": "Special Steels & Alloys",
+     "basis": "Few qualified domestic sources: MIDHANI for special steels, superalloys and titanium, Kalyani Steels for the ATAGS barrel alloy [REPORTED-T2]. The barrier is qualification rather than volume, and defence steel is a minority share of both companies' revenue, so the pool is strategically important and economically modest.",
+     "params": {
+      "op_share": 2,
+      "pricing_power": 3,
+      "roic": 2,
+      "barriers": 4,
+      "bottleneck": 3,
+      "pool_growth": 3,
+      "cash_conversion": 2,
+      "switching": 4
+     },
+     "score": 2.75,
+     "score100": 55,
+     "coverage": 100
+    },
+    {
+     "node": "Brass Cases, Cups & Projectiles",
+     "basis": "The metal-forms layer is concentrated among unlisted players (Mittal Group: ~2 bn cups and 300 mn cases/yr at Indore) with copper and antimony import-dependent [REPORTED-T3]. No listed coverage in the selected universe, so the pool's economics are visible only through its customers' cost base — scored as a cost-bearer, not a value keeper.",
+     "params": {
+      "op_share": 2,
+      "pricing_power": 2,
+      "roic": 2,
+      "barriers": 3,
+      "bottleneck": 3,
+      "pool_growth": 3,
+      "cash_conversion": 2,
+      "switching": 3
+     },
+     "score": 2.4,
+     "score100": 48,
+     "coverage": 100
+    },
+    {
+     "node": "Small Arms (Rifles / LMG / Pistols)",
+     "basis": "Mid-value and shifting from DPSU to private integrated hubs — Adani's Gwalior LMG line (up to 100,000 weapons/yr, >90% domestic sourcing) and IRRPL's AK-203 at Korwa (601,427 rifles) [REPORTED-T2]. Several well-funded entrants chasing a modest pool is exactly the mix that compresses price, hence the low pricing-power score.",
+     "params": {
+      "op_share": 2,
+      "pricing_power": 2,
+      "roic": 2,
+      "barriers": 3,
+      "bottleneck": 1,
+      "pool_growth": 3,
+      "cash_conversion": 2,
+      "switching": 4
+     },
+     "score": 2.25,
+     "score100": 45,
+     "coverage": 100
+    }
+   ],
    "provisional": false,
-   "notes": "Opportunity uses the same series as the Market & growth digest block (KPMG ammunition market of Rs 7,057 cr in 2023 rising to Rs 11,981 cr by 2032 at 4.93%, inside FY26 defence production of Rs 1.78 lakh cr). Valuation left UNAVAILABLE — the registry carries no industry valuation data.",
+   "notes": "Opportunity uses the same series as the Market & growth digest block (KPMG ammunition market of Rs 7,057 cr in 2023 rising to Rs 11,981 cr by 2032 at 4.93%, inside FY26 defence production of Rs 1.78 lakh cr). Valuation left UNAVAILABLE — the registry carries no industry valuation data. Value capture (added 2026-11-02) scores 8 nodes taken verbatim from this page's own BOM tree and value-chain ladder, on the separate Registry Review §4 weighting (op_share 20%, pricing_power 15%, roic 15%, barriers 15%, bottleneck 10%, pool_growth 10%, cash_conversion 10%, switching 5%). It answers 'which node keeps the money' and is not blended into the industry score above.",
    "overall_rank": 17,
    "risk_adjusted_rank": 25,
    "structural_score": 58.6,
@@ -2759,9 +2896,146 @@
      "valuation"
     ]
    },
-   "value_capture": [],
+   "value_capture": [
+    {
+     "node": "Reconductoring (asset-light growth)",
+     "basis": "The highest-return pool on the page because it reuses existing right of way: APAR has executed 272+ reconductoring projects and bundles HTLS supply with turnkey execution [REPORTED-T1]. Asset-light, cash-generative, and pulled by utilities that would rather avoid a new-line clearance than build one.",
+     "params": {
+      "op_share": 3,
+      "pricing_power": 4,
+      "roic": 4,
+      "barriers": 3,
+      "bottleneck": 2,
+      "pool_growth": 5,
+      "cash_conversion": 4,
+      "switching": 4
+     },
+     "score": 3.55,
+     "score100": 71,
+     "coverage": 100
+    },
+    {
+     "node": "HTLS (ACCC / ACSS / GAP)",
+     "basis": "The premium sub-node where the margin actually sits: APAR's premium mix rose to 45.8% in FY26 from 40.6% and lifted EBITDA per tonne 17.3% [REPORTED-T1]. ACCC is made under licence from CTC Global, so the IP is licensed rather than owned — which caps the barrier — while reconductoring (272+ projects executed) is the demand engine.",
+     "params": {
+      "op_share": 2,
+      "pricing_power": 4,
+      "roic": 4,
+      "barriers": 4,
+      "bottleneck": 2,
+      "pool_growth": 5,
+      "cash_conversion": 3,
+      "switching": 3
+     },
+     "score": 3.35,
+     "score100": 67,
+     "coverage": 100
+    },
+    {
+     "node": "Hollow / apparatus insulators",
+     "basis": "The most concentrated node on the page: composite hollow (CHCI) is made by few players globally, and Aditya Birla Power Composites is India's first large-scale CHCI maker as a Grasim (51%) / MR Germany (49%) JV, with MR sharing the technology exclusively [REPORTED-T2: CARE Ratings]. Tiny pool, near-monopoly economics, and the part must be type-tested with the apparatus it insulates.",
+     "params": {
+      "op_share": 1,
+      "pricing_power": 4,
+      "roic": 3,
+      "barriers": 5,
+      "bottleneck": 4,
+      "pool_growth": 4,
+      "cash_conversion": 3,
+      "switching": 5
+     },
+     "score": 3.35,
+     "score100": 67,
+     "coverage": 100
+    },
+    {
+     "node": "Conductor system",
+     "basis": "The largest listed pool in the chain: APAR's conductor division did ₹12,712 cr revenue in FY26 (+32.7%) at ₹1,040 cr EBITDA (8.2%) and ₹43,012 EBITDA/tonne, with premium (HTLS/AL59) at 45.8% of mix and a ₹7,671 cr order book [REPORTED-T1: APAR FY26 investor update]. Aluminium is commodity-linked, so pricing power is mix-driven rather than structural, and working capital is heavy against utility payment cycles.",
+     "params": {
+      "op_share": 4,
+      "pricing_power": 3,
+      "roic": 3,
+      "barriers": 4,
+      "bottleneck": 2,
+      "pool_growth": 4,
+      "cash_conversion": 2,
+      "switching": 3
+     },
+     "score": 3.25,
+     "score100": 65,
+     "coverage": 100
+    },
+    {
+     "node": "Composite silicone long-rod",
+     "basis": "The technology-substitution node: composite is ~43% of the Indian insulator mix in 2025 and gains where contamination performance and weight matter [REPORTED-T2], and Deccan Enterprises has qualified to 765 kV AC / 800 kV HVDC. Qualification per voltage class is the barrier, which is what separates it from commodity porcelain.",
+     "params": {
+      "op_share": 2,
+      "pricing_power": 3,
+      "roic": 3,
+      "barriers": 4,
+      "bottleneck": 3,
+      "pool_growth": 4,
+      "cash_conversion": 3,
+      "switching": 4
+     },
+     "score": 3.1,
+     "score100": 62,
+     "coverage": 100
+    },
+    {
+     "node": "OPGW fibre cable",
+     "basis": "Import-linked and bottlenecked: the optical fibre inside the OPGW is the constrained input, and there is no listed OPGW/insulator pure-play in the selected universe [REPORTED-T2]. Value accrues to the qualified integrator rather than the cable assembler — which is why APAR is building the capability alongside its conductor franchise.",
+     "params": {
+      "op_share": 1,
+      "pricing_power": 3,
+      "roic": 3,
+      "barriers": 4,
+      "bottleneck": 4,
+      "pool_growth": 4,
+      "cash_conversion": 3,
+      "switching": 4
+     },
+     "score": 3,
+     "score100": 60,
+     "coverage": 100
+    },
+    {
+     "node": "Transmission towers / structures",
+     "basis": "Fabrication is competitive and thin: KEC carries ~4.8 lakh t/yr of tower capacity and Transrail 1.84 lakh t/yr, yet the EPC layer that owns them earns 7.1% consolidated EBITDA on ₹23,506 cr of FY26 revenue [REPORTED-T1: KEC FY26 results], and Salasar's 8.1% EBITDA on ₹1,503 cr marks the pure-fabrication ceiling. Steel and zinc pass straight through.",
+     "params": {
+      "op_share": 3,
+      "pricing_power": 2,
+      "roic": 2,
+      "barriers": 2,
+      "bottleneck": 2,
+      "pool_growth": 4,
+      "cash_conversion": 2,
+      "switching": 2
+     },
+     "score": 2.4,
+     "score100": 48,
+     "coverage": 100
+    },
+    {
+     "node": "Insulators",
+     "basis": "The weakest economics on the page: Grasim's Aditya Birla Insulators did ₹479 cr of revenue in FY25 with EBITDA of just ₹7 cr against 41,727 t of capacity [REPORTED-T1: Grasim FY25 annual report], and IEEMA reports domestic overcapacity with Chinese product at ~67% of India's insulator import value [REPORTED-T2]. A necessary node with almost no retained margin, and no listed pure-play in the selected universe.",
+     "params": {
+      "op_share": 2,
+      "pricing_power": 1,
+      "roic": 1,
+      "barriers": 2,
+      "bottleneck": 2,
+      "pool_growth": 3,
+      "cash_conversion": 2,
+      "switching": 2
+     },
+     "score": 1.8,
+     "score100": 36,
+     "coverage": 100
+    }
+   ],
    "provisional": false,
-   "notes": "Scored against 'Industry-Level Investment Parameters & Scoring Architecture'. Opportunity uses the same T&D EPC series as the Market & growth digest block (Astute Analytica), cross-checked against Transrail's 2029 waypoint. Valuation left UNAVAILABLE.",
+   "notes": "Scored against 'Industry-Level Investment Parameters & Scoring Architecture'. Opportunity uses the same T&D EPC series as the Market & growth digest block (Astute Analytica), cross-checked against Transrail's 2029 waypoint. Valuation left UNAVAILABLE. Value capture (added 2026-11-02) scores 8 nodes taken verbatim from this page's own BOM tree and value-chain ladder, on the separate Registry Review §4 weighting (op_share 20%, pricing_power 15%, roic 15%, barriers 15%, bottleneck 10%, pool_growth 10%, cash_conversion 10%, switching 5%). It answers 'which node keeps the money' and is not blended into the industry score above.",
    "overall_rank": 18,
    "risk_adjusted_rank": 12,
    "structural_score": 61.4,
@@ -5516,9 +5790,146 @@
      "valuation"
     ]
    },
-   "value_capture": [],
+   "value_capture": [
+    {
+     "node": "Front-side Ag paste",
+     "basis": "Where the IP and the margin sit: global PV paste is concentrated — the top three hold ~68% of revenue and China is ~92% of output [REPORTED-T2: QY Research] — while TOPCon paste gross margins run roughly 5–20% [REPORTED-T3], making the pool a formulation spread rather than a metal spread. India buys it rather than makes it: imports of US$184.33 mn in FY26, +64.5% YoY, 65% from China [REPORTED-T1: DGFT via CSE].",
+     "params": {
+      "op_share": 5,
+      "pricing_power": 4,
+      "roic": 4,
+      "barriers": 5,
+      "bottleneck": 5,
+      "pool_growth": 3,
+      "cash_conversion": 3,
+      "switching": 4
+     },
+     "score": 4.25,
+     "score100": 85,
+     "coverage": 100
+    },
+    {
+     "node": "Glass frit (Pb-Te-O)",
+     "basis": "The smallest and most defensible node: Solamet's 229 active patents centre on the Pb-Te-O frit system that underpins PERC and mainstream TOPCon pastes, and DKEM paid CNY 696 mn for a 60% stake specifically to absorb that IP [REPORTED-T2: pv magazine, Jun-2025]. Tiny revenue, near-monopoly economics, and effectively impossible to substitute without reformulating the entire paste.",
+     "params": {
+      "op_share": 1,
+      "pricing_power": 5,
+      "roic": 4,
+      "barriers": 5,
+      "bottleneck": 4,
+      "pool_growth": 3,
+      "cash_conversion": 4,
+      "switching": 5
+     },
+     "score": 3.65,
+     "score100": 73,
+     "coverage": 100
+    },
+    {
+     "node": "Silver-coated copper paste",
+     "basis": "The substitution play: DKEM's pilot replaced 60–80% of silver with copper cores at 98.7% of pure-silver conductivity, cutting metallisation cost by ~US$0.012/W [REPORTED-T3: Mordor]. No revenue at scale yet — 2–3 ppt fill-factor loss after damp-heat ageing still restrains adoption — so op_share is 1 and pool_growth 5: the optionality is the value.",
+     "params": {
+      "op_share": 1,
+      "pricing_power": 4,
+      "roic": 4,
+      "barriers": 4,
+      "bottleneck": 3,
+      "pool_growth": 5,
+      "cash_conversion": 3,
+      "switching": 3
+     },
+     "score": 3.25,
+     "score100": 65,
+     "coverage": 100
+    },
+    {
+     "node": "Ni/Cu/Ag electroplating",
+     "basis": "The plating route is the structural threat to the whole paste pool, because it removes silver rather than thrifting it; the same ITRPV trajectory that erodes paste demand is what makes plating the beneficiary [REPORTED-T2]. Value shifts to plating chemistry and equipment suppliers, none of them Indian-listed.",
+     "params": {
+      "op_share": 1,
+      "pricing_power": 4,
+      "roic": 3,
+      "barriers": 4,
+      "bottleneck": 3,
+      "pool_growth": 4,
+      "cash_conversion": 3,
+      "switching": 3
+     },
+     "score": 3,
+     "score100": 60,
+     "coverage": 100
+    },
+    {
+     "node": "Screen printing & drying",
+     "basis": "A process node with real leverage: fine-mesh screens and printers set line width and therefore silver consumption per cell, and the printers and screens are imported. Recipes are qualified to the printer, so switching is slow — but the value is captured by the equipment vendor, not by the Indian cell maker that operates it.",
+     "params": {
+      "op_share": 2,
+      "pricing_power": 3,
+      "roic": 3,
+      "barriers": 3,
+      "bottleneck": 4,
+      "pool_growth": 3,
+      "cash_conversion": 3,
+      "switching": 4
+     },
+     "score": 2.95,
+     "score100": 59,
+     "coverage": 100
+    },
+    {
+     "node": "Silver metal & silver powder",
+     "basis": "Silver is priced off the metal with no formulation margin, and high-purity PV-grade powder is the constrained step; India's listed exposure is Hindustan Zinc's by-product silver [INFERENCE]. DGFT silver-bar restrictions from 16-May-2026 and a 15% duty raise the landed cost of the input without creating domestic value — the metal flows through the chain, it does not stay in it.",
+     "params": {
+      "op_share": 3,
+      "pricing_power": 2,
+      "roic": 2,
+      "barriers": 3,
+      "bottleneck": 3,
+      "pool_growth": 3,
+      "cash_conversion": 2,
+      "switching": 2
+     },
+     "score": 2.55,
+     "score100": 51,
+     "coverage": 100
+    },
+    {
+     "node": "Rear Al paste & Ag/Al pads",
+     "basis": "The shrinking half of the stack: aluminium rear paste loses share as TOPCon dual-layer metallisation displaces Al-BSF, and per-cell Ag/Al pad content falls with silver thrifting — ITRPV sees HJT silver-based metallisation falling from ~75% of production in 2025 to ~10% by 2036 [REPORTED-T2, cited on this page]. A pool in structural decline rather than a pool under pressure.",
+     "params": {
+      "op_share": 2,
+      "pricing_power": 2,
+      "roic": 3,
+      "barriers": 2,
+      "bottleneck": 2,
+      "pool_growth": 2,
+      "cash_conversion": 3,
+      "switching": 2
+     },
+     "score": 2.25,
+     "score100": 45,
+     "coverage": 100
+    },
+    {
+     "node": "Organic vehicle & solvents",
+     "basis": "Commodity chemistry bundled into the paste recipe: the formulator captures the value and the vehicle supplier is a cost line. Low barriers and easy substitution are why it scores at the bottom of the chain on every structural parameter except cash conversion.",
+     "params": {
+      "op_share": 1,
+      "pricing_power": 2,
+      "roic": 3,
+      "barriers": 2,
+      "bottleneck": 2,
+      "pool_growth": 3,
+      "cash_conversion": 3,
+      "switching": 2
+     },
+     "score": 2.15,
+     "score100": 43,
+     "coverage": 100
+    }
+   ],
    "provisional": false,
-   "notes": "Opportunity uses the same series as the Market & growth digest block (DGFT silver HS-category imports: US$184.33 mn FY26 vs an implied US$112.05 mn FY25, +64.51%). Valuation left UNAVAILABLE — no industry valuation series, and the pure-plays are foreign-listed. The CSE import line is an HS proxy, so it overstates paste narrowly and understates it if paste enters under a different code.",
+   "notes": "Opportunity uses the same series as the Market & growth digest block (DGFT silver HS-category imports: US$184.33 mn FY26 vs an implied US$112.05 mn FY25, +64.51%). Valuation left UNAVAILABLE — no industry valuation series, and the pure-plays are foreign-listed. The CSE import line is an HS proxy, so it overstates paste narrowly and understates it if paste enters under a different code. Value capture (added 2026-11-02) scores 8 nodes taken verbatim from this page's own BOM tree and value-chain ladder, on the separate Registry Review §4 weighting (op_share 20%, pricing_power 15%, roic 15%, barriers 15%, bottleneck 10%, pool_growth 10%, cash_conversion 10%, switching 5%). It answers 'which node keeps the money' and is not blended into the industry score above.",
    "overall_rank": 21,
    "risk_adjusted_rank": 22,
    "structural_score": 62.9,
@@ -5740,9 +6151,129 @@
      "valuation"
     ]
    },
-   "value_capture": [],
+   "value_capture": [
+    {
+     "node": "Incoming wafer",
+     "basis": "The node that decides an Indian cell's cost and the one India does not have: wafers are ~97% Chinese, and ALMM-III from 1-Jun-2028 makes domestic wafer supply a condition of listing [REPORTED-T2: Mercom]. Scored on the economics of the node rather than on Indian revenue — monopoly-like pricing and switching, but op_share is set at 2 because the value leaves India entirely.",
+     "params": {
+      "op_share": 2,
+      "pricing_power": 5,
+      "roic": 4,
+      "barriers": 5,
+      "bottleneck": 5,
+      "pool_growth": 5,
+      "cash_conversion": 3,
+      "switching": 5
+     },
+     "score": 4.05,
+     "score100": 81,
+     "coverage": 100
+    },
+    {
+     "node": "Solar Cell Fabrication",
+     "basis": "The largest listed pool and currently the most profitable: Premier Energies did FY26 revenue of ₹7,824 cr at 30.4% operating EBITDA and 33.5% ROCE [REPORTED-T1: Q4 FY26 investor presentation], against Waaree's 22.3% FY26 operating EBITDA and 18.5% in Q4 FY26 [REPORTED-T1]. Pricing power is eroding as capacity compounds — 36.6 GW in Jun-2026 heading to ~103 GW by Dec-2026 — and module oversupply at 217 GW against 55–60 GW of installations drags cell realisations down [REPORTED-T2: ICRA, Aug-2026].",
+     "params": {
+      "op_share": 5,
+      "pricing_power": 2,
+      "roic": 4,
+      "barriers": 4,
+      "bottleneck": 3,
+      "pool_growth": 5,
+      "cash_conversion": 2,
+      "switching": 3
+     },
+     "score": 3.65,
+     "score100": 73,
+     "coverage": 100
+    },
+    {
+     "node": "Ingot & polysilicon",
+     "basis": "~93% Chinese polysilicon: the highest-barrier, most capital-hungry node, and the one Indian entrants have only announced — Premier's 10 GW ingot-wafer (5 GW by Dec-2027, 5 GW by Dec-2028) and Waaree's 10 GW at ₹6,200 cr by FY28 [REPORTED-T1/T2]. No Indian revenue yet, so op_share is 1; the score is a statement about the pool's structure, not about a business that exists.",
+     "params": {
+      "op_share": 1,
+      "pricing_power": 5,
+      "roic": 3,
+      "barriers": 5,
+      "bottleneck": 5,
+      "pool_growth": 4,
+      "cash_conversion": 2,
+      "switching": 5
+     },
+     "score": 3.5,
+     "score100": 70,
+     "coverage": 100
+    },
+    {
+     "node": "Metallisation paste (Ag / Al)",
+     "basis": "Metallisation is up to ~12% of cell manufacturing cost and the qualified-supplier list is short: the global PV paste top three hold ~68% of revenue and China is ~92% of output [REPORTED-T2: QY Research]. Value leaks out of India entirely — domestic paste production is near zero and imports were US$184.33 mn in FY26, +64.5% [REPORTED-T1: DGFT via CSE].",
+     "params": {
+      "op_share": 2,
+      "pricing_power": 4,
+      "roic": 4,
+      "barriers": 4,
+      "bottleneck": 4,
+      "pool_growth": 4,
+      "cash_conversion": 3,
+      "switching": 4
+     },
+     "score": 3.5,
+     "score100": 70,
+     "coverage": 100
+    },
+    {
+     "node": "Diffusion / PECVD / ALD tools",
+     "basis": "The equipment layer is imported and concentrated: every listed Indian cell expansion — Premier's 7 GW Naidupeta, Waaree's 10 GW — is a machinery order booked abroad [REPORTED-T1], and Emmvee's 1.4 GW TOPCon line was ramped on German equipment. Process recipes are qualified to the tool, so switching is slow and the vendor captures value before the Indian cell earns any.",
+     "params": {
+      "op_share": 2,
+      "pricing_power": 4,
+      "roic": 3,
+      "barriers": 5,
+      "bottleneck": 4,
+      "pool_growth": 4,
+      "cash_conversion": 3,
+      "switching": 4
+     },
+     "score": 3.5,
+     "score100": 70,
+     "coverage": 100
+    },
+    {
+     "node": "Testing, sorting & ALMM qualification",
+     "basis": "A gate rather than a pool: ALMM List-II listing — mandatory for utility bids after 31-Aug-2025 and in force from 1-Jun-2026 — is what converts capacity into revenue, and testing and sorting is the instrument [REPORTED-T2]. Small revenue, high strategic leverage, and the qualification record is itself the asset.",
+     "params": {
+      "op_share": 1,
+      "pricing_power": 3,
+      "roic": 3,
+      "barriers": 3,
+      "bottleneck": 3,
+      "pool_growth": 4,
+      "cash_conversion": 3,
+      "switching": 3
+     },
+     "score": 2.7,
+     "score100": 54,
+     "coverage": 100
+    },
+    {
+     "node": "Silver powder & high-purity silver",
+     "basis": "Silver is priced off the metal, so the pool is a refining spread rather than an IP margin; high-purity PV-grade powder is the constrained step. India's listed exposure is upstream metal only — Hindustan Zinc's by-product silver [INFERENCE] — and DGFT silver-bar restrictions from 16-May-2026 plus a 15% duty raise landed cost without adding domestic value.",
+     "params": {
+      "op_share": 1,
+      "pricing_power": 3,
+      "roic": 2,
+      "barriers": 4,
+      "bottleneck": 4,
+      "pool_growth": 3,
+      "cash_conversion": 2,
+      "switching": 3
+     },
+     "score": 2.6,
+     "score100": 52,
+     "coverage": 100
+    }
+   ],
    "provisional": false,
-   "notes": "Opportunity uses the same series as the Market & growth digest block (CRISIL demand of 60-65 GW FY27; Commerce/TradeStat imported-cell value US$3.06 bn FY26 with a 28.6% two-year CAGR). Valuation left UNAVAILABLE — the registry carries no industry valuation data.",
+   "notes": "Opportunity uses the same series as the Market & growth digest block (CRISIL demand of 60-65 GW FY27; Commerce/TradeStat imported-cell value US$3.06 bn FY26 with a 28.6% two-year CAGR). Valuation left UNAVAILABLE — the registry carries no industry valuation data. Value capture (added 2026-11-02) scores 7 nodes taken verbatim from this page's own BOM tree and value-chain ladder, on the separate Registry Review §4 weighting (op_share 20%, pricing_power 15%, roic 15%, barriers 15%, bottleneck 10%, pool_growth 10%, cash_conversion 10%, switching 5%). It answers 'which node keeps the money' and is not blended into the industry score above.",
    "overall_rank": 19,
    "risk_adjusted_rank": 20,
    "structural_score": 64.3,
@@ -6226,9 +6757,146 @@
     "primary_source_pct": 62,
     "missing_critical": []
    },
-   "value_capture": [],
+   "value_capture": [
+    {
+     "node": "TowerCo Operation, Sharing & Tenancy",
+     "basis": "The rent annuity is where the money sits: Indus Towers ran Q2 FY27 revenue of ₹8,516 cr at 19.1% ROCE and 1.63 tenancy, and Altius reported Q1 FY27 revenue of ₹6,025 cr with ₹375 cr PAT and a ₹4.02/unit distribution [REPORTED-T1]. Pricing power is the weak leg — revenue per tower is falling ~2.0% YoY against co-location growth of 5.9% — and the barrier is land, right of way and site power rather than technology. Switching is slow on long-term MSAs, but three telco customers make this a monopsony facing an oligopoly.",
+     "params": {
+      "op_share": 5,
+      "pricing_power": 2,
+      "roic": 4,
+      "barriers": 4,
+      "bottleneck": 3,
+      "pool_growth": 3,
+      "cash_conversion": 3,
+      "switching": 4
+     },
+     "score": 3.6,
+     "score100": 72,
+     "coverage": 100
+    },
+    {
+     "node": "Active Sharing & DCIP Layer (new, 2026 rules)",
+     "basis": "Authorisation-gated rather than capital-gated, so pricing power and barriers come from the licence, not the asset: the July-2026 DCIP authorisation lets a towerco host RAN on its own passive estate. No revenue yet, so op_share is scored 1 — the value is optionality on the existing rent base, and it accrues only to towercos that already own the sites.",
+     "params": {
+      "op_share": 1,
+      "pricing_power": 4,
+      "roic": 3,
+      "barriers": 4,
+      "bottleneck": 2,
+      "pool_growth": 5,
+      "cash_conversion": 3,
+      "switching": 4
+     },
+     "score": 3.05,
+     "score100": 61,
+     "coverage": 100
+    },
+    {
+     "node": "In-Building Solutions / Small Cells / DAS",
+     "basis": "The newest pool, opened by the 20-Jul-2026 Network Authorisation Rules that let a towerco complete IBS under DCIP [REPORTED-T2]; small-cell and DAS silicon is imported. Small today — hence op_share of 1 — but fastest-growing by construction, and the pool is being created by regulation rather than by an existing revenue line.",
+     "params": {
+      "op_share": 1,
+      "pricing_power": 3,
+      "roic": 3,
+      "barriers": 3,
+      "bottleneck": 2,
+      "pool_growth": 5,
+      "cash_conversion": 3,
+      "switching": 3
+     },
+     "score": 2.7,
+     "score100": 54,
+     "coverage": 100
+    },
+    {
+     "node": "Remote Monitoring, IoT & Energy Management",
+     "basis": "A software layer on an ageing base: high ROIC and cash conversion by nature, low capital intensity, and no listed pure-play — it is bundled into the towerco's O&M contract or sold as a site controller by Exicom-class vendors. That bundling is exactly why the value is captured by whoever already owns the site relationship.",
+     "params": {
+      "op_share": 1,
+      "pricing_power": 3,
+      "roic": 4,
+      "barriers": 2,
+      "bottleneck": 2,
+      "pool_growth": 4,
+      "cash_conversion": 4,
+      "switching": 3
+     },
+     "score": 2.7,
+     "score100": 54,
+     "coverage": 100
+    },
+    {
+     "node": "Batteries (VRLA Lead-Acid & Li-ion)",
+     "basis": "The largest single capex line per site and the largest leak: LFP and lithium cells are imported while packs are assembled locally, and energy is a negative-margin pass-through (−4.6% spread, Q1 FY27) [REPORTED-T2], so the battery sits inside a cost-recovery mechanism rather than earning a margin of its own. Lithium retrofit of the existing base is the growth leg. There is no listed Indian cell supplier, which is why the pool is scored on economics the Indian chain does not keep.",
+     "params": {
+      "op_share": 3,
+      "pricing_power": 1,
+      "roic": 2,
+      "barriers": 3,
+      "bottleneck": 4,
+      "pool_growth": 4,
+      "cash_conversion": 2,
+      "switching": 3
+     },
+     "score": 2.65,
+     "score100": 53,
+     "coverage": 100
+    },
+    {
+     "node": "Solar & Green Energy (ESCo Model)",
+     "basis": "An ESCo energy model defends the towerco's margin against the negative energy spread rather than creating a separate pool; modules are domestic but cells are imported. Growth follows diesel displacement across ~0.86 mn sites [REPORTED-T2]. The return is real but it is a cost-avoidance return, so pricing power is scored low.",
+     "params": {
+      "op_share": 2,
+      "pricing_power": 2,
+      "roic": 3,
+      "barriers": 2,
+      "bottleneck": 3,
+      "pool_growth": 4,
+      "cash_conversion": 3,
+      "switching": 3
+     },
+     "score": 2.6,
+     "score100": 52,
+     "coverage": 100
+    },
+    {
+     "node": "Macro Tower Structure (Lattice & Monopole)",
+     "basis": "Fabrication is the domestic but thin node: Salasar Techno did FY26 revenue of ₹1,502.8 cr at ₹121.5 cr EBITDA (8.1%) and ₹17.6 cr PAT (1.2%) on ~1.96 lakh t of tower and galvanising capacity [REPORTED-T1: FY26 annual report], with margins absorbing higher zinc and a heavier site-work mix. Galvanising is gas-exposed and was the Q1 FY27 constraint; barriers are low against ~211,000 MTPA of aggregate capacity, and buyers are the towercos and EPCs themselves.",
+     "params": {
+      "op_share": 3,
+      "pricing_power": 2,
+      "roic": 2,
+      "barriers": 2,
+      "bottleneck": 3,
+      "pool_growth": 3,
+      "cash_conversion": 2,
+      "switching": 2
+     },
+     "score": 2.4,
+     "score100": 48,
+     "coverage": 100
+    },
+    {
+     "node": "Site Power System (SMPS / DC Power Plant)",
+     "basis": "Exicom, the closest listed proxy, ran standalone FY26 revenue of ₹895 cr (+19%) at 7.8% EBITDA, improving from 5.8% in Q1 to 10.6% in Q4, and won a ~₹113 cr DC-power order from a major private telco [REPORTED-T1: Exicom press release, 19-May-2026]. Rectifier modules and the power semiconductors inside them are imported, so the binding constraint sits with the input supplier rather than the assembler; demand support is the 120,000+ site upgrades and new builds planned for FY27 [REPORTED-T2].",
+     "params": {
+      "op_share": 2,
+      "pricing_power": 2,
+      "roic": 2,
+      "barriers": 2,
+      "bottleneck": 4,
+      "pool_growth": 3,
+      "cash_conversion": 2,
+      "switching": 3
+     },
+     "score": 2.35,
+     "score100": 47,
+     "coverage": 100
+    }
+   ],
    "provisional": false,
-   "notes": "Opportunity uses the same series as the Market &amp; growth digest block (0.86 mn towers FY26 to 1.04&ndash;1.09 mn FY31 at 4&ndash;5% CAGR, REPORTED-T2, with the CALCULATED 3.9&ndash;4.9% shown alongside). Valuation is scored from one listed proxy&rsquo;s EV/EBITDA, labelled [REPORTED-T3], not from an industry series.",
+   "notes": "Opportunity uses the same series as the Market &amp; growth digest block (0.86 mn towers FY26 to 1.04&ndash;1.09 mn FY31 at 4&ndash;5% CAGR, REPORTED-T2, with the CALCULATED 3.9&ndash;4.9% shown alongside). Valuation is scored from one listed proxy&rsquo;s EV/EBITDA, labelled [REPORTED-T3], not from an industry series. Value capture (added 2026-11-02) scores 8 nodes taken verbatim from this page's own BOM tree and value-chain ladder, on the separate Registry Review §4 weighting (op_share 20%, pricing_power 15%, roic 15%, barriers 15%, bottleneck 10%, pool_growth 10%, cash_conversion 10%, switching 5%). It answers 'which node keeps the money' and is not blended into the industry score above.",
    "overall_rank": 16,
    "risk_adjusted_rank": 19,
    "structural_score": 64.3,
