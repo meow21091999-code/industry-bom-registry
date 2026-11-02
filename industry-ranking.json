@@ -1,7 +1,7 @@
 {
  "registry": "Industry BOM Registry",
  "description": "Industry ranking per \"Industry-Level Investment Parameters & Scoring Architecture\": hierarchical category scores (1–5), overall 0–100, evidence coverage reported, three lenses kept separate. DERIVED — regenerate with node tools/build-industry-ranking.mjs.",
- "generated": "2026-11-01",
+ "generated": "2026-11-02",
  "framework": {
   "category_score": "Σ(parameter weight × parameter score) ÷ Σ(weights of supported parameters)",
   "overall_score": "Σ(category weight × category score ÷ 5) × 100, renormalised over supported categories",
@@ -907,11 +907,11 @@
    "value_capture": [],
    "provisional": false,
    "notes": "This run REPLACES the prior Market & growth block, which rested on a tier-3 source and reported 3-year and last-year splits as UNAVAILABLE. Opportunity now uses the IMARC series (USD 1.95 bn 2025 to USD 9.75 bn 2030, 38.0% CAGR) and the conflicting NITI Aayog / third-house estimates are shown as a range rather than averaged. Valuation left UNAVAILABLE — no industry valuation series.",
-   "overall_rank": 27,
+   "overall_rank": 26,
    "risk_adjusted_rank": 26,
    "structural_score": 57.1,
    "current_score": 40,
-   "structural_score_rank": 25,
+   "structural_score_rank": 24,
    "current_score_rank": 22
   },
   {
@@ -1020,7 +1020,7 @@
    "risk_adjusted_rank": 25,
    "structural_score": 58.6,
    "current_score": 80,
-   "structural_score_rank": 23,
+   "structural_score_rank": 22,
    "current_score_rank": 2
   },
   {
@@ -1234,11 +1234,11 @@
    "value_capture": [],
    "provisional": false,
    "notes": "Scored against 'Industry-Level Investment Parameters & Scoring Architecture'. Opportunity uses the same HVDC series as the Market & growth digest block, with the conflicting second series disclosed rather than averaged. Valuation left UNAVAILABLE.",
-   "overall_rank": 23,
+   "overall_rank": 22,
    "risk_adjusted_rank": 27,
    "structural_score": 57.1,
    "current_score": 60,
-   "structural_score_rank": 26,
+   "structural_score_rank": 25,
    "current_score_rank": 11
   },
   {
@@ -1349,7 +1349,7 @@
    "value_capture": [],
    "provisional": false,
    "notes": "Scored against 'Industry-Level Investment Parameters & Scoring Architecture'. Cycle position and valuation left UNAVAILABLE — the registry carries no cycle or valuation data for these industries.",
-   "overall_rank": 28,
+   "overall_rank": 27,
    "risk_adjusted_rank": 29,
    "structural_score": 52.9,
    "structural_score_rank": 28
@@ -1670,7 +1670,7 @@
    "value_capture": [],
    "provisional": false,
    "notes": "Opportunity uses the same series as the Market & growth digest block (IESA demand of 28 GWh in 2025 rising to ~272 GWh by FY2030 at a 36.5% CAGR, against ~2 GWh installed capacity). The two value forecasts disagree (17.65% vs 22.0% CAGR) and are shown as conflicting data rather than reconciled. Valuation left UNAVAILABLE.",
-   "overall_rank": 29,
+   "overall_rank": 28,
    "risk_adjusted_rank": 31,
    "structural_score": 51.4,
    "current_score": 60,
@@ -4404,11 +4404,11 @@
    ],
    "provisional": false,
    "notes": "Scored against 'Industry-Level Investment Parameters & Scoring Architecture'. Valuation left UNAVAILABLE - the registry carries no industry-level valuation data. Cycle scored on IFR installation growth and the 2026 PLI lapse. Value capture is a judgement on node economics from the page's own bottleneck and import-dependency evidence, not from node-level financials.",
-   "overall_rank": 24,
+   "overall_rank": 23,
    "risk_adjusted_rank": 28,
    "structural_score": 55.7,
    "current_score": 60,
-   "structural_score_rank": 27,
+   "structural_score_rank": 26,
    "current_score_rank": 15
   },
   {
@@ -4428,7 +4428,7 @@
    "title": "India Satellite Ground Segment",
    "group": "Space & Satellites",
    "scored": true,
-   "as_of": "2026-10-31",
+   "as_of": "2026-11-02",
    "categories": {
     "economics": {
      "name": "Industry economics & value creation",
@@ -4436,15 +4436,15 @@
      "lens": "structural",
      "score": 2,
      "from": "category",
-     "basis": "Integration and services work on a bill of materials whose RF core - BUC/LNB, modems, baseband - is imported; the domestic share of a gateway is labour and civil works, so margins are thin."
+     "basis": "The chain runs on a bill of materials whose highest-margin items are imported. Nelco, the largest listed operator, earned a 9.5% EBITDA margin and a 1.0% PAT margin in FY26; Avantel's FY26 revenue fell 10.9%. Domestic value-add is civil works, integration and antennas."
     },
     "opportunity": {
      "name": "Market opportunity & structural growth",
      "weight": 0.15,
      "lens": "structural",
-     "score": 4,
+     "score": 3,
      "from": "category",
-     "basis": "USD 0.14 bn (2022) to USD 2.5 bn potential (2033) at 30% CAGR [REPORTED-T1: IN-SPACe, 2023], and a 20% indigenisation mandate that converts policy into addressable demand."
+     "basis": "Equipment pool USD 1,014.3 mn (2026) growing 14.3% to 2031 [REPORTED-T2: MarketsandMarkets, Jul 2026] and a USD 2.5 bn 2033 policy ambition [REPORTED-T1: IN-SPACe, 2023] - but the 20% localisation clause was dropped from the 2026 authorisation rules and no commercial LEO service has launched. Downgraded from 4: the demand anchor weakened."
     },
     "competitive": {
      "name": "Competitive structure & moat",
@@ -4452,15 +4452,15 @@
      "lens": "structural",
      "score": 3,
      "from": "category",
-     "basis": "Fragmented across BEL, L&T Smart World, Avantel, Nelco and Hughes India; no single domestic RF-front-end supplier of scale, and foreign vendors hold the high-performance antenna tier."
+     "basis": "Fragmented domestically across L&T Smart World, BEL, Avantel, Nelco and unlisted Hughes India and Bhawani Satcom; no domestic baseband supplier of scale, and foreign vendors hold the high-performance antenna and modem tiers."
     },
     "cycle": {
      "name": "Current opportunity & cycle position",
      "weight": 0.15,
      "lens": "current",
-     "score": null,
-     "from": null,
-     "basis": "No cycle-position evidence on the page - demand-supply balance not established."
+     "score": 2,
+     "from": "category",
+     "basis": "Capacity is ahead of revenue and the legacy base is contracting: 20 Starlink gateway sites are built and idle pending Cabinet and security clearance, while VSAT terminals fell 21.8% in the year to June 2026. Pre-launch, not mid-cycle."
     },
     "valuation": {
      "name": "Valuation & market expectations",
@@ -4468,7 +4468,7 @@
      "lens": "current",
      "score": null,
      "from": null,
-     "basis": "No industry-level valuation data in the registry."
+     "basis": "No industry-level valuation data in the registry; the listed cohort is three small caps and one conglomerate segment, so an industry multiple would not be meaningful."
     },
     "value_chain": {
      "name": "Value-chain position & bottlenecks",
@@ -4476,7 +4476,7 @@
      "lens": "structural",
      "score": 4,
      "from": "category",
-     "basis": "Imports are 55-70% of satellite-antenna value and virtually all phased-array and large-aperture systems - a well-defined substitution pool rather than a diffuse gap."
+     "basis": "A well-defined substitution pool rather than a diffuse gap: baseband, modems, BUC/HPA and ESA antennas are identifiable imported blocks with named foreign suppliers, and the 20% GMPCS undertaking creates a dated demand signal for whoever qualifies."
     },
     "capital": {
      "name": "Capital intensity & financial quality",
@@ -4484,7 +4484,7 @@
      "lens": "structural",
      "score": 3,
      "from": "category",
-     "basis": "Antenna and gateway manufacturing is moderate-capex; test ranges, anechoic chambers and qualification facilities are the heavy items and are the real entry cost."
+     "basis": "Antenna and gateway manufacturing is moderate-capex; anechoic chambers, outdoor antenna ranges and environmental qualification are the heavy items and the real entry cost. Working capital is heavy - Nelco's debtors ran at 123 days in FY26."
     },
     "technology": {
      "name": "Technology & innovation",
@@ -4492,7 +4492,7 @@
      "lens": "structural",
      "score": 2,
      "from": "category",
-     "basis": "Antenna and RF design capability is thin above Ku-band; electronically steerable arrays are entirely imported and GaN module fabrication does not exist domestically."
+     "basis": "Antenna and RF design capability thins above Ku-band; electronically steered arrays are entirely imported; GaN module fabrication does not exist domestically. The technology frontier is moving toward ESA and software-defined gateways, both of which India does not make."
     },
     "risk": {
      "name": "Risk & resilience",
@@ -4500,48 +4500,69 @@
      "lens": "risk",
      "score": 3,
      "from": "category",
-     "basis": "The security mandate supports demand and the customer base is creditworthy, but revenue is government-weighted and the critical RF content is still imported."
+     "basis": "Customers are creditworthy and the security regime guarantees Indian gateways rather than displacing them, but revenue is government- and policy-timed, launch dates have slipped repeatedly, and the critical RF and baseband content is still imported."
     }
    },
    "structural": {
-    "score": 60,
+    "score": 55.7,
     "coverage": 100
    },
-   "current": null,
+   "current": {
+    "score": 40,
+    "coverage": 50
+   },
    "risk": 3,
-   "risk_adjusted": 36,
-   "overall": 60,
-   "coverage": 70,
+   "risk_adjusted": 33.4,
+   "overall": 52.9,
+   "coverage": 85,
    "confidence": {
     "evidence": 4,
-    "primary_source_pct": 55,
+    "primary_source_pct": 65,
     "missing_critical": [
-     "realised segment revenue",
-     "industry ROIC",
-     "domestic value-add per gateway"
+     "realised ground-segment revenue by node",
+     "node-level margin and ROIC",
+     "domestic value-add per gateway",
+     "timing of GMPCS security clearance and Cabinet spectrum decision"
     ]
    },
    "value_capture": [
     {
      "node": "Ground RF chains, baseband & modems",
-     "basis": "The highest value-add in the ground chain and the part that is imported: modems and RF front-ends carry proprietary margin and are specified into a network for its life.",
+     "basis": "Moved up on barriers and bottleneck: the baseband platform is proprietary foreign hardware specified into a network for its life, and for LEO it is designed jointly with the constellation, so it cannot be swapped. Highest margin per rupee in the chain and almost entirely imported - the pool India does not capture. Rank unchanged at 1; score up from 76 to 84.",
      "params": {
       "op_share": 4,
       "pricing_power": 4,
       "roic": 4,
-      "barriers": 4,
-      "bottleneck": 4,
-      "pool_growth": 3,
+      "barriers": 5,
+      "bottleneck": 5,
+      "pool_growth": 4,
       "cash_conversion": 3,
-      "switching": 4
+      "switching": 5
      },
-     "score": 3.8,
-     "score100": 76,
+     "score": 4.2,
+     "score100": 84,
+     "coverage": 100
+    },
+    {
+     "node": "Earth-station & gateway antennas",
+     "basis": "MOVED UP from 3 to 2. Avantel's Rs 122.58 cr NSIL order for nine Ka-ready stations and the Rs 117.88 cr DRDO ground-segment hub show this is the node where Indian listed companies actually book ground-segment work, and the pool is growing with LEO and defence TT&C demand. Barriers are still only moderate - the antenna is engineered metal, not proprietary silicon.",
+     "params": {
+      "op_share": 3,
+      "pricing_power": 3,
+      "roic": 3,
+      "barriers": 3,
+      "bottleneck": 4,
+      "pool_growth": 5,
+      "cash_conversion": 3,
+      "switching": 3
+     },
+     "score": 3.3,
+     "score100": 66,
      "coverage": 100
     },
     {
      "node": "TT&C ground systems & mission ops",
-     "basis": "Small pool but sticky: mission operations and TT&C are contracted for a satellite's life and cannot be switched without re-qualifying the ground segment.",
+     "basis": "MOVED UP from 5 to 3. Small pool but the stickiest: mission operations are contracted for a satellite's life and cannot be re-qualified cheaply. Switching raised to 5 on that basis; pool growth held at 3 because the customer is one agency.",
      "params": {
       "op_share": 2,
       "pricing_power": 3,
@@ -4550,49 +4571,32 @@
       "bottleneck": 4,
       "pool_growth": 3,
       "cash_conversion": 4,
-      "switching": 4
+      "switching": 5
      },
-     "score": 3.2,
-     "score100": 64,
-     "coverage": 100
-    },
-    {
-     "node": "Ground station / earth-station antennas",
-     "basis": "Where L&T, Avantel and BEL actually compete - large-aperture and tracking antennas are partly indigenised, with defence demand favouring domestic content.",
-     "params": {
-      "op_share": 3,
-      "pricing_power": 3,
-      "roic": 3,
-      "barriers": 3,
-      "bottleneck": 3,
-      "pool_growth": 4,
-      "cash_conversion": 3,
-      "switching": 3
-     },
-     "score": 3.1,
-     "score100": 62,
+     "score": 3.25,
+     "score100": 65,
      "coverage": 100
     },
     {
      "node": "Gateway / hub stations",
-     "basis": "Each gateway is a USD 10-50 mn project and the pool is growing fast with LEO build-out, but it is lumpy project revenue with heavy working capital and modest incremental returns.",
+     "basis": "MOVED DOWN from 2 to 4. Pool growth cut from 5 to 4 because the largest gateway build in Indian history has already happened - Starlink's 20 sites are standing - and the Indian prime's scope inside a gateway is civil works, shelter, diversity site and integration around imported RF and baseband. Lumpy project revenue with heavy working capital.",
      "params": {
       "op_share": 3,
       "pricing_power": 3,
       "roic": 2,
       "barriers": 3,
       "bottleneck": 4,
-      "pool_growth": 5,
+      "pool_growth": 4,
       "cash_conversion": 2,
       "switching": 3
      },
-     "score": 3.05,
-     "score100": 61,
+     "score": 2.95,
+     "score100": 59,
      "coverage": 100
     },
     {
      "node": "Ground-Station-as-a-Service (GSaaS)",
-     "basis": "Nascent subscription model with the fastest pool growth, but tiny today, low barriers, and dependent on ground assets someone else has to fund.",
+     "basis": "Unchanged at 5. Fastest-growing sliver and the least defensible: IN-SPACe authorisations are not scarce, the antenna farm has to be funded before the first customer, and pricing is per pass in a market with global competitors.",
      "params": {
       "op_share": 1,
       "pricing_power": 2,
@@ -4609,28 +4613,30 @@
     },
     {
      "node": "VSAT terminals",
-     "basis": "Structurally the weakest node: standard Ku/C-band terminals are commoditising with 2-4% annual real price erosion, low barriers and no switching cost.",
+     "basis": "Last, and worse than before: pool growth cut from 4 to 2 because the installed base is shrinking - 2,36,039 terminals in June 2025 against 1,84,579 in June 2026. Standard Ku/C terminals are commoditising with no switching cost; the replacement cycle is the only demand.",
      "params": {
       "op_share": 2,
       "pricing_power": 2,
       "roic": 2,
       "barriers": 2,
       "bottleneck": 2,
-      "pool_growth": 4,
+      "pool_growth": 2,
       "cash_conversion": 2,
       "switching": 2
      },
-     "score": 2.2,
-     "score100": 44,
+     "score": 2,
+     "score100": 40,
      "coverage": 100
     }
    ],
    "provisional": false,
-   "notes": "Scored against 'Industry-Level Investment Parameters & Scoring Architecture'. Cycle and valuation left UNAVAILABLE. The 2022 base is IN-SPACe's estimate and the 2033 figure is a market-potential target, not a forecast of realised revenue - the two are not the same claim. Value capture is a judgement on node economics, not node-level financials.",
-   "overall_rank": 19,
-   "risk_adjusted_rank": 14,
-   "structural_score": 60,
-   "structural_score_rank": 20
+   "notes": "Scored against 'Industry-Level Investment Parameters & Scoring Architecture'. Valuation left UNAVAILABLE; coverage 85%. The score fell from 60.0 (2026-10-09) to 51.8 for two distinct reasons: opportunity was cut 4 to 3 because the 20% localisation clause was dropped from the notified 2026 authorisation rules, and the cycle category is now scored at 2 on real evidence (20 idle Starlink gateway sites, VSAT terminals down 21.8%) instead of being unavailable. Coverage rose from 70% to 85%, so part of the fall is the addition of a weak category rather than a deterioration in the others. The IN-SPACe 2022 base and 2033 target are a policy ambition, not a forecast of realised revenue, and are not used as a CAGR. Node-level financials do not exist in public disclosure; value capture is a judgement on node economics.",
+   "overall_rank": 29,
+   "risk_adjusted_rank": 16,
+   "structural_score": 55.7,
+   "current_score": 40,
+   "structural_score_rank": 27,
+   "current_score_rank": 26
   },
   {
    "slug": "satellite-india",
@@ -5279,12 +5285,12 @@
    ],
    "provisional": false,
    "notes": "Scored against 'Industry-Level Investment Parameters & Scoring Architecture'. Valuation left UNAVAILABLE. Two market series with different scopes are shown side by side rather than reconciled - the IN-SPACe figure is a market-potential target, the KPMG figure a service-revenue projection. Value capture is a judgement on node economics, not node-level financials.",
-   "overall_rank": 25,
-   "risk_adjusted_rank": 15,
+   "overall_rank": 24,
+   "risk_adjusted_rank": 14,
    "structural_score": 60,
    "current_score": 40,
-   "structural_score_rank": 21,
-   "current_score_rank": 26
+   "structural_score_rank": 20,
+   "current_score_rank": 27
   },
   {
    "slug": "semiconductor-equipment-materials-india",
@@ -5513,12 +5519,12 @@
    "value_capture": [],
    "provisional": false,
    "notes": "Opportunity uses the same series as the Market & growth digest block (DGFT silver HS-category imports: US$184.33 mn FY26 vs an implied US$112.05 mn FY25, +64.51%). Valuation left UNAVAILABLE — no industry valuation series, and the pure-plays are foreign-listed. The CSE import line is an HS proxy, so it overstates paste narrowly and understates it if paste enters under a different code.",
-   "overall_rank": 22,
+   "overall_rank": 21,
    "risk_adjusted_rank": 22,
    "structural_score": 62.9,
    "current_score": 40,
    "structural_score_rank": 16,
-   "current_score_rank": 29
+   "current_score_rank": 30
   },
   {
    "slug": "smart-meters-india",
@@ -5633,7 +5639,7 @@
    "structural_score": 52.9,
    "current_score": 40,
    "structural_score_rank": 29,
-   "current_score_rank": 27
+   "current_score_rank": 28
   },
   {
    "slug": "solar-cells-india",
@@ -5737,12 +5743,12 @@
    "value_capture": [],
    "provisional": false,
    "notes": "Opportunity uses the same series as the Market & growth digest block (CRISIL demand of 60-65 GW FY27; Commerce/TradeStat imported-cell value US$3.06 bn FY26 with a 28.6% two-year CAGR). Valuation left UNAVAILABLE — the registry carries no industry valuation data.",
-   "overall_rank": 20,
+   "overall_rank": 19,
    "risk_adjusted_rank": 20,
    "structural_score": 64.3,
    "current_score": 40,
    "structural_score_rank": 14,
-   "current_score_rank": 30
+   "current_score_rank": 31
   },
   {
    "slug": "solar-pv-india",
@@ -5846,12 +5852,12 @@
    "value_capture": [],
    "provisional": false,
    "notes": "Opportunity uses the same series as the Market & growth digest block (PS Market Research, base 2023, 13.4% nominal CAGR 2024-2030). Valuation left UNAVAILABLE — the registry carries no industry valuation data. The panels-only Grand View series (9.4%) is a different scope and is not blended into the score.",
-   "overall_rank": 26,
+   "overall_rank": 25,
    "risk_adjusted_rank": 24,
    "structural_score": 60,
    "current_score": 40,
-   "structural_score_rank": 22,
-   "current_score_rank": 28
+   "structural_score_rank": 21,
+   "current_score_rank": 29
   },
   {
    "slug": "steam-turbine-india",
@@ -6715,11 +6721,11 @@
    ],
    "provisional": false,
    "notes": "Opportunity and growth use the IMARC India wastewater treatment plants series (2020 US$3.51bn, 2025 US$4.60bn, 2026 US$4.92bn) — a plant/equipment/EPC scope. The Rs 13.1bn-to-23.8bn (2023-33, 6.2%) figure is an all-water-plus-wastewater scope and the US$2.94bn (2023) figure a narrower equipment scope; neither is blended into the score. Valuation left UNAVAILABLE.",
-   "overall_rank": 21,
-   "risk_adjusted_rank": 16,
+   "overall_rank": 20,
+   "risk_adjusted_rank": 15,
    "structural_score": 58.6,
    "current_score": 60,
-   "structural_score_rank": 24,
+   "structural_score_rank": 23,
    "current_score_rank": 18
   }
  ]
