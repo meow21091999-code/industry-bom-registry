@@ -7,7 +7,7 @@
   "industries": 79,
   "mappings": 2533,
   "multi_industry": 254,
-  "rank_changes": 16
+  "rank_changes": 1
  },
  "companies": [
   {
@@ -13721,8 +13721,8 @@
    ],
    "also_known_as": [],
    "rank": 124,
-   "previous_rank": 125,
-   "rank_change": 1
+   "previous_rank": 124,
+   "rank_change": 0
   },
   {
    "name": "Havells India",
@@ -13774,8 +13774,8 @@
    ],
    "also_known_as": [],
    "rank": 125,
-   "previous_rank": 126,
-   "rank_change": 1
+   "previous_rank": 125,
+   "rank_change": 0
   },
   {
    "name": "Tata Consultancy Services",
@@ -13837,8 +13837,8 @@
    ],
    "also_known_as": [],
    "rank": 126,
-   "previous_rank": 127,
-   "rank_change": 1
+   "previous_rank": 126,
+   "rank_change": 0
   },
   {
    "name": "Praj Industries",
@@ -13894,8 +13894,8 @@
    ],
    "also_known_as": [],
    "rank": 127,
-   "previous_rank": 128,
-   "rank_change": 1
+   "previous_rank": 127,
+   "rank_change": 0
   },
   {
    "name": "RIR Power Electronics",
@@ -13946,8 +13946,8 @@
    ],
    "also_known_as": [],
    "rank": 128,
-   "previous_rank": 129,
-   "rank_change": 1
+   "previous_rank": 128,
+   "rank_change": 0
   },
   {
    "name": "Tata Motors",
@@ -13998,8 +13998,8 @@
    ],
    "also_known_as": [],
    "rank": 129,
-   "previous_rank": 130,
-   "rank_change": 1
+   "previous_rank": 129,
+   "rank_change": 0
   },
   {
    "name": "Deepak Fertilisers & Petrochemicals",
@@ -14051,8 +14051,8 @@
     "Deepak Fertilisers"
    ],
    "rank": 130,
-   "previous_rank": 131,
-   "rank_change": 1
+   "previous_rank": 130,
+   "rank_change": 0
   },
   {
    "name": "Ericsson",
@@ -14102,8 +14102,8 @@
    ],
    "also_known_as": [],
    "rank": 131,
-   "previous_rank": 132,
-   "rank_change": 1
+   "previous_rank": 131,
+   "rank_change": 0
   },
   {
    "name": "Fine-Line Circuits",
@@ -14153,8 +14153,8 @@
    ],
    "also_known_as": [],
    "rank": 132,
-   "previous_rank": 133,
-   "rank_change": 1
+   "previous_rank": 132,
+   "rank_change": 0
   },
   {
    "name": "Nokia",
@@ -14204,8 +14204,8 @@
    ],
    "also_known_as": [],
    "rank": 133,
-   "previous_rank": 134,
-   "rank_change": 1
+   "previous_rank": 133,
+   "rank_change": 0
   },
   {
    "name": "Ramkrishna Forgings",
@@ -14260,8 +14260,8 @@
    ],
    "also_known_as": [],
    "rank": 134,
-   "previous_rank": 135,
-   "rank_change": 1
+   "previous_rank": 134,
+   "rank_change": 0
   },
   {
    "name": "Schneider Electric Infrastructure",
@@ -14311,8 +14311,8 @@
    ],
    "also_known_as": [],
    "rank": 135,
-   "previous_rank": 136,
-   "rank_change": 1
+   "previous_rank": 135,
+   "rank_change": 0
   },
   {
    "name": "Deepak Nitrite",
@@ -14361,8 +14361,8 @@
    ],
    "also_known_as": [],
    "rank": 136,
-   "previous_rank": 137,
-   "rank_change": 1
+   "previous_rank": 136,
+   "rank_change": 0
   },
   {
    "name": "Kirloskar Oil Engines",
@@ -14411,8 +14411,8 @@
    ],
    "also_known_as": [],
    "rank": 137,
-   "previous_rank": 138,
-   "rank_change": 1
+   "previous_rank": 137,
+   "rank_change": 0
   },
   {
    "name": "Quality Power Electrical Equipments",
@@ -14461,8 +14461,8 @@
    ],
    "also_known_as": [],
    "rank": 138,
-   "previous_rank": 124,
-   "rank_change": -14
+   "previous_rank": 138,
+   "rank_change": 0
   },
   {
    "name": "Sterling & Wilson Renewable Energy",
