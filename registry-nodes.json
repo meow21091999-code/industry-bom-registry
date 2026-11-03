@@ -3859,7 +3859,8 @@
     "5g-ran-india",
     "telecom-transport-equipment-india",
     "telecom-towers-india",
-    "telecom-operators-india"
+    "telecom-operators-india",
+    "chip-design-ip-india"
    ],
    "nodes": [
     {
@@ -4999,7 +5000,9 @@
     "slug": "telecom-india",
     "node": "Telecom Chipsets — Baseband & RF Front-End"
    },
-   "drill_downs": [],
+   "drill_downs": [
+    "chip-design-ip-india"
+   ],
    "nodes": [
     {
      "id": "baseband",
@@ -15061,7 +15064,9 @@
    "universe": "NSE/BSE",
    "sector": "Electrical & Electronic Equipment",
    "derived_from": null,
-   "drill_downs": [],
+   "drill_downs": [
+    "chip-design-ip-india"
+   ],
    "nodes": [
     {
      "id": "core-silicon",
@@ -15299,7 +15304,9 @@
    "universe": "NSE/BSE",
    "sector": "Semiconductors & Semiconductor Equipment",
    "derived_from": null,
-   "drill_downs": [],
+   "drill_downs": [
+    "chip-design-ip-india"
+   ],
    "nodes": [
     {
      "id": "wfe",
@@ -17688,7 +17695,28 @@
    "analysis_date": "2026-11-03",
    "universe": "NSE/BSE",
    "sector": "Semiconductors & Semiconductor Equipment",
-   "derived_from": null,
+   "derived_from": [
+    {
+     "industry": "Telecom",
+     "slug": "telecom-india",
+     "node": "EDA Tools, IP & Design Services"
+    },
+    {
+     "industry": "Telecom Chipsets — Baseband & RF Front-End",
+     "slug": "telecom-chipsets-india",
+     "node": "EDA Tools, IP & Design Services"
+    },
+    {
+     "industry": "Semiconductor Equipment & Materials",
+     "slug": "semiconductor-equipment-materials-india",
+     "node": "Fab & tool software (EDA, APC, MES, digital twin)"
+    },
+    {
+     "industry": "Mobile Handsets & Accessories",
+     "slug": "mobile-handsets-accessories-india",
+     "node": "Design, Software & R&D Services"
+    }
+   ],
    "drill_downs": [],
    "nodes": [
     {
