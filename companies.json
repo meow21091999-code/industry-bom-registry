@@ -3,11 +3,11 @@
  "description": "Company index. Every company mentioned across the registry, the industries it appears in, and its position (exposure) in each. DERIVED from the entry pages by tools/build-companies.mjs — regenerate on every publish, never hand-edit.",
  "generated": "2026-11-03",
  "counts": {
-  "companies": 537,
-  "industries": 78,
-  "mappings": 2657,
-  "multi_industry": 277,
-  "rank_changes": 1
+  "companies": 540,
+  "industries": 79,
+  "mappings": 2695,
+  "multi_industry": 279,
+  "rank_changes": 344
  },
  "companies": [
   {
@@ -456,6 +456,316 @@
    "rank_change": 0
   },
   {
+   "name": "CG Power & Industrial Solutions",
+   "ticker": "NSE/BSE: CGPOWER",
+   "symbol": "CGPOWER",
+   "industries_count": 21,
+   "direct_count": 11,
+   "nodes_count": 41,
+   "industries": [
+    {
+     "name": "India 6G (IMT-2030)",
+     "slug": "6g-india",
+     "positions": [
+      {
+       "exposure": "supplier",
+       "nodes": [
+        "RAN & Modem Silicon (RFIC / SoC / FPGA)"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "India Battery Energy Storage (BESS)",
+     "slug": "battery-energy-storage-india",
+     "positions": [
+      {
+       "exposure": "direct",
+       "nodes": [
+        "MV/HV Transformer, Switchgear & Cabling"
+       ]
+      },
+      {
+       "exposure": "indirect",
+       "nodes": [
+        "Power Conversion System (PCS)"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "India Chip Design & IP",
+     "slug": "chip-design-ip-india",
+     "positions": [
+      {
+       "exposure": "conglomerate",
+       "nodes": [
+        "OSAT & Advanced Packaging",
+        "Processor IP (Arm / RISC-V)"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "India Data Centres & AI-Compute",
+     "slug": "data-centre-ai-compute-india",
+     "positions": [
+      {
+       "exposure": "direct",
+       "nodes": [
+        "HV/MV Transformers & Switchgear"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "India Electrical & Electronic Equipment",
+     "slug": "electrical-electronic-equipment-india",
+     "positions": [
+      {
+       "exposure": "direct",
+       "nodes": [
+        "Motors, Drives & Generators",
+        "Power & Distribution Transformers",
+        "Power Electronics & Semiconductors (OSAT)",
+        "Switchgear (LV / MV / HV, GIS, AIS)"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "India EV Powertrain & Traction Systems",
+     "slug": "ev-powertrain-traction-india",
+     "positions": [
+      {
+       "exposure": "indirect",
+       "nodes": [
+        "Power Module (IGBT / SiC)"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "India HVDC & Power Electronics",
+     "slug": "hvdc-power-electronics-india",
+     "positions": [
+      {
+       "exposure": "direct",
+       "nodes": [
+        "AC Substation Interface (Switchgear / ICTs / Filters)",
+        "Converter Transformers & Reactors",
+        "Smoothing & Valve Reactors"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "India PCS & Power Semiconductors",
+     "slug": "power-conversion-system-india",
+     "positions": [
+      {
+       "exposure": "direct",
+       "nodes": [
+        "Inverter-duty Transformer & Switchgear",
+        "Power-semiconductor OSAT / Fab"
+       ]
+      },
+      {
+       "exposure": "indirect",
+       "nodes": [
+        "PCS Manufacturing & Integration"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "India Power & Distribution Transformers",
+     "slug": "power-transformers-india",
+     "positions": [
+      {
+       "exposure": "direct",
+       "nodes": [
+        "Finished transformer — power (incl. EHV/765 kV)"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "India Power Semiconductors & OSAT",
+     "slug": "power-semiconductor-osat-india",
+     "positions": [
+      {
+       "exposure": "direct",
+       "nodes": [
+        "Back-end OSAT / ATMP (assembly, packaging, test)",
+        "Test & qualification (AEC-Q, IATF)"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "India Power Transmission",
+     "slug": "power-transmission-india",
+     "positions": [
+      {
+       "exposure": "direct",
+       "nodes": [
+        "GIS / AIS Switchgear",
+        "STATCOM · Synchronous Condensers · FACTS"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "India Railway",
+     "slug": "railway-india",
+     "positions": [
+      {
+       "exposure": "indirect",
+       "nodes": [
+        "Traction & propulsion"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "India Robotics",
+     "slug": "robotics-india",
+     "positions": [
+      {
+       "exposure": "supplier",
+       "nodes": [
+        "Servo Drives & Motion Controllers",
+        "Servo Motors & Frameless Torque Motors"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "India Room AC & White-Goods Components",
+     "slug": "room-ac-white-goods-components-india",
+     "positions": [
+      {
+       "exposure": "indirect",
+       "nodes": [
+        "Semiconductors (IPM, MCU, Gate Drivers)"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "India Servo Motors & Drives",
+     "slug": "servo-motors-drives-india",
+     "positions": [
+      {
+       "exposure": "supplier",
+       "nodes": [
+        "Servo Drives",
+        "Servo Motors & Frameless Torque Motors"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "India Telecom Chipsets",
+     "slug": "telecom-chipsets-india",
+     "positions": [
+      {
+       "exposure": "conglomerate",
+       "nodes": [
+        "OSAT / Advanced Packaging"
+       ]
+      },
+      {
+       "exposure": "indirect",
+       "nodes": [
+        "Power Amplifier (GaAs / GaN)",
+        "RF Front-End Module (FEM)"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "India Tunnel Boring Machine",
+     "slug": "tunnel-boring-machine-india",
+     "positions": [
+      {
+       "exposure": "supplier",
+       "nodes": [
+        "Electrical Power, VFD Drives, Motors & Cables"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "India Turbine Generator & Electrical Train",
+     "slug": "turbine-generator-india",
+     "positions": [
+      {
+       "exposure": "direct",
+       "nodes": [
+        "Generator Transformer",
+        "Switchgear & Switchyard"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "India Turbine Island (Turbomachinery)",
+     "slug": "turbine-island-india",
+     "positions": [
+      {
+       "exposure": "direct",
+       "nodes": [
+        "Generator Transformer, GCB & Switchgear"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "India Vehicles & Auto Components",
+     "slug": "vehicles-auto-components-india",
+     "positions": [
+      {
+       "exposure": "indirect",
+       "nodes": [
+        "Automotive Semiconductors",
+        "Power Electronics / Inverter"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Substation Equipment",
+     "slug": "substation-equipment-india",
+     "positions": [
+      {
+       "exposure": "direct",
+       "nodes": [
+        "AIS circuit breakers",
+        "Converter transformer",
+        "Power transformers & reactors",
+        "Switchgear (GIS / AIS)"
+       ]
+      },
+      {
+       "exposure": "indirect",
+       "nodes": [
+        "Instrument transformers (CT / PT)"
+       ]
+      }
+     ]
+    }
+   ],
+   "also_known_as": [
+    "CG Power",
+    "CG Power & Industrial"
+   ],
+   "rank": 2,
+   "previous_rank": 3,
+   "rank_change": 1
+  },
+  {
    "name": "Bharat Heavy Electricals",
    "ticker": "NSE/BSE: BHEL",
    "symbol": "BHEL",
@@ -816,306 +1126,9 @@
    "also_known_as": [
     "BHEL"
    ],
-   "rank": 2,
-   "previous_rank": 2,
-   "rank_change": 0
-  },
-  {
-   "name": "CG Power & Industrial Solutions",
-   "ticker": "NSE/BSE: CGPOWER",
-   "symbol": "CGPOWER",
-   "industries_count": 20,
-   "direct_count": 11,
-   "nodes_count": 39,
-   "industries": [
-    {
-     "name": "India 6G (IMT-2030)",
-     "slug": "6g-india",
-     "positions": [
-      {
-       "exposure": "supplier",
-       "nodes": [
-        "RAN & Modem Silicon (RFIC / SoC / FPGA)"
-       ]
-      }
-     ]
-    },
-    {
-     "name": "India Battery Energy Storage (BESS)",
-     "slug": "battery-energy-storage-india",
-     "positions": [
-      {
-       "exposure": "direct",
-       "nodes": [
-        "MV/HV Transformer, Switchgear & Cabling"
-       ]
-      },
-      {
-       "exposure": "indirect",
-       "nodes": [
-        "Power Conversion System (PCS)"
-       ]
-      }
-     ]
-    },
-    {
-     "name": "India Data Centres & AI-Compute",
-     "slug": "data-centre-ai-compute-india",
-     "positions": [
-      {
-       "exposure": "direct",
-       "nodes": [
-        "HV/MV Transformers & Switchgear"
-       ]
-      }
-     ]
-    },
-    {
-     "name": "India Electrical & Electronic Equipment",
-     "slug": "electrical-electronic-equipment-india",
-     "positions": [
-      {
-       "exposure": "direct",
-       "nodes": [
-        "Motors, Drives & Generators",
-        "Power & Distribution Transformers",
-        "Power Electronics & Semiconductors (OSAT)",
-        "Switchgear (LV / MV / HV, GIS, AIS)"
-       ]
-      }
-     ]
-    },
-    {
-     "name": "India EV Powertrain & Traction Systems",
-     "slug": "ev-powertrain-traction-india",
-     "positions": [
-      {
-       "exposure": "indirect",
-       "nodes": [
-        "Power Module (IGBT / SiC)"
-       ]
-      }
-     ]
-    },
-    {
-     "name": "India HVDC & Power Electronics",
-     "slug": "hvdc-power-electronics-india",
-     "positions": [
-      {
-       "exposure": "direct",
-       "nodes": [
-        "AC Substation Interface (Switchgear / ICTs / Filters)",
-        "Converter Transformers & Reactors",
-        "Smoothing & Valve Reactors"
-       ]
-      }
-     ]
-    },
-    {
-     "name": "India PCS & Power Semiconductors",
-     "slug": "power-conversion-system-india",
-     "positions": [
-      {
-       "exposure": "direct",
-       "nodes": [
-        "Inverter-duty Transformer & Switchgear",
-        "Power-semiconductor OSAT / Fab"
-       ]
-      },
-      {
-       "exposure": "indirect",
-       "nodes": [
-        "PCS Manufacturing & Integration"
-       ]
-      }
-     ]
-    },
-    {
-     "name": "India Power & Distribution Transformers",
-     "slug": "power-transformers-india",
-     "positions": [
-      {
-       "exposure": "direct",
-       "nodes": [
-        "Finished transformer — power (incl. EHV/765 kV)"
-       ]
-      }
-     ]
-    },
-    {
-     "name": "India Power Semiconductors & OSAT",
-     "slug": "power-semiconductor-osat-india",
-     "positions": [
-      {
-       "exposure": "direct",
-       "nodes": [
-        "Back-end OSAT / ATMP (assembly, packaging, test)",
-        "Test & qualification (AEC-Q, IATF)"
-       ]
-      }
-     ]
-    },
-    {
-     "name": "India Power Transmission",
-     "slug": "power-transmission-india",
-     "positions": [
-      {
-       "exposure": "direct",
-       "nodes": [
-        "GIS / AIS Switchgear",
-        "STATCOM · Synchronous Condensers · FACTS"
-       ]
-      }
-     ]
-    },
-    {
-     "name": "India Railway",
-     "slug": "railway-india",
-     "positions": [
-      {
-       "exposure": "indirect",
-       "nodes": [
-        "Traction & propulsion"
-       ]
-      }
-     ]
-    },
-    {
-     "name": "India Robotics",
-     "slug": "robotics-india",
-     "positions": [
-      {
-       "exposure": "supplier",
-       "nodes": [
-        "Servo Drives & Motion Controllers",
-        "Servo Motors & Frameless Torque Motors"
-       ]
-      }
-     ]
-    },
-    {
-     "name": "India Room AC & White-Goods Components",
-     "slug": "room-ac-white-goods-components-india",
-     "positions": [
-      {
-       "exposure": "indirect",
-       "nodes": [
-        "Semiconductors (IPM, MCU, Gate Drivers)"
-       ]
-      }
-     ]
-    },
-    {
-     "name": "India Servo Motors & Drives",
-     "slug": "servo-motors-drives-india",
-     "positions": [
-      {
-       "exposure": "supplier",
-       "nodes": [
-        "Servo Drives",
-        "Servo Motors & Frameless Torque Motors"
-       ]
-      }
-     ]
-    },
-    {
-     "name": "India Telecom Chipsets",
-     "slug": "telecom-chipsets-india",
-     "positions": [
-      {
-       "exposure": "conglomerate",
-       "nodes": [
-        "OSAT / Advanced Packaging"
-       ]
-      },
-      {
-       "exposure": "indirect",
-       "nodes": [
-        "Power Amplifier (GaAs / GaN)",
-        "RF Front-End Module (FEM)"
-       ]
-      }
-     ]
-    },
-    {
-     "name": "India Tunnel Boring Machine",
-     "slug": "tunnel-boring-machine-india",
-     "positions": [
-      {
-       "exposure": "supplier",
-       "nodes": [
-        "Electrical Power, VFD Drives, Motors & Cables"
-       ]
-      }
-     ]
-    },
-    {
-     "name": "India Turbine Generator & Electrical Train",
-     "slug": "turbine-generator-india",
-     "positions": [
-      {
-       "exposure": "direct",
-       "nodes": [
-        "Generator Transformer",
-        "Switchgear & Switchyard"
-       ]
-      }
-     ]
-    },
-    {
-     "name": "India Turbine Island (Turbomachinery)",
-     "slug": "turbine-island-india",
-     "positions": [
-      {
-       "exposure": "direct",
-       "nodes": [
-        "Generator Transformer, GCB & Switchgear"
-       ]
-      }
-     ]
-    },
-    {
-     "name": "India Vehicles & Auto Components",
-     "slug": "vehicles-auto-components-india",
-     "positions": [
-      {
-       "exposure": "indirect",
-       "nodes": [
-        "Automotive Semiconductors",
-        "Power Electronics / Inverter"
-       ]
-      }
-     ]
-    },
-    {
-     "name": "Substation Equipment",
-     "slug": "substation-equipment-india",
-     "positions": [
-      {
-       "exposure": "direct",
-       "nodes": [
-        "AIS circuit breakers",
-        "Converter transformer",
-        "Power transformers & reactors",
-        "Switchgear (GIS / AIS)"
-       ]
-      },
-      {
-       "exposure": "indirect",
-       "nodes": [
-        "Instrument transformers (CT / PT)"
-       ]
-      }
-     ]
-    }
-   ],
-   "also_known_as": [
-    "CG Power",
-    "CG Power & Industrial"
-   ],
    "rank": 3,
-   "previous_rank": 3,
-   "rank_change": 0
+   "previous_rank": 2,
+   "rank_change": -1
   },
   {
    "name": "Reliance Industries (Jio Platforms)",
@@ -1927,6 +1940,237 @@
    "rank_change": 0
   },
   {
+   "name": "Kaynes Technology India",
+   "ticker": "NSE/BSE: KAYNES",
+   "symbol": "KAYNES",
+   "industries_count": 15,
+   "direct_count": 11,
+   "nodes_count": 30,
+   "industries": [
+    {
+     "name": "Cryocooler (India)",
+     "slug": "cryocooler-india",
+     "positions": [
+      {
+       "exposure": "conglomerate",
+       "nodes": [
+        "Precision machining & EMS"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "India 6G (IMT-2030)",
+     "slug": "6g-india",
+     "positions": [
+      {
+       "exposure": "direct",
+       "nodes": [
+        "EMS, PCB & Enclosure / Power"
+       ]
+      },
+      {
+       "exposure": "supplier",
+       "nodes": [
+        "RAN & Modem Silicon (RFIC / SoC / FPGA)"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "India Battery Management Systems (BMS)",
+     "slug": "battery-management-system-india",
+     "positions": [
+      {
+       "exposure": "direct",
+       "nodes": [
+        "PCB, Laminate & SMT Assembly"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "India Chip Design & IP",
+     "slug": "chip-design-ip-india",
+     "positions": [
+      {
+       "exposure": "direct",
+       "nodes": [
+        "ATE Test & Silicon Validation",
+        "OSAT & Advanced Packaging"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "India Data Centres & AI-Compute",
+     "slug": "data-centre-ai-compute-india",
+     "positions": [
+      {
+       "exposure": "indirect",
+       "nodes": [
+        "AI Servers & GPU Systems"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "India Data-Centre Liquid Cooling",
+     "slug": "data-centre-liquid-cooling-india",
+     "positions": [
+      {
+       "exposure": "indirect",
+       "nodes": [
+        "AI Servers (Liquid-Ready)",
+        "Immersion Tanks & Immersion-Ready IT"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "India Electrical & Electronic Equipment",
+     "slug": "electrical-electronic-equipment-india",
+     "positions": [
+      {
+       "exposure": "direct",
+       "nodes": [
+        "Electronics Manufacturing Services (EMS/ODM)",
+        "PCBs (Multi-layer, HDI, Flex)",
+        "Power Electronics & Semiconductors (OSAT)"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "India EMS / ODM",
+     "slug": "ems-electronics-manufacturing-india",
+     "positions": [
+      {
+       "exposure": "direct",
+       "nodes": [
+        "Bare PCB (multi-layer / HDI)",
+        "Camera modules",
+        "EMS / ODM system assembly & box-build",
+        "PCBA / SMT assembly"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "India EV Powertrain & Traction Systems",
+     "slug": "ev-powertrain-traction-india",
+     "positions": [
+      {
+       "exposure": "direct",
+       "nodes": [
+        "Inverter PCBA, SMT & Firmware Flashing"
+       ]
+      },
+      {
+       "exposure": "supplier",
+       "nodes": [
+        "Power Module (IGBT / SiC)"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "India Mobile Handsets & Accessories",
+     "slug": "mobile-handsets-accessories-india",
+     "positions": [
+      {
+       "exposure": "direct",
+       "nodes": [
+        "PCB & PCBA (SMT)"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "India PCB & Electronic Components",
+     "slug": "pcb-electronic-components-india",
+     "positions": [
+      {
+       "exposure": "direct",
+       "nodes": [
+        "PCBA / SMT assembly (adjacent)"
+       ]
+      },
+      {
+       "exposure": "indirect",
+       "nodes": [
+        "Multi-layer PCB (&ge;6 layers)"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "India Power Semiconductors & OSAT",
+     "slug": "power-semiconductor-osat-india",
+     "positions": [
+      {
+       "exposure": "direct",
+       "nodes": [
+        "Back-end OSAT / ATMP (assembly, packaging, test)",
+        "Power module assembly",
+        "Test & qualification (AEC-Q, IATF)"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "India Room AC & White-Goods Components",
+     "slug": "room-ac-white-goods-components-india",
+     "positions": [
+      {
+       "exposure": "direct",
+       "nodes": [
+        "Bare PCB & PCB Assembly"
+       ]
+      },
+      {
+       "exposure": "indirect",
+       "nodes": [
+        "PCBA, Control Assemblies & Remotes",
+        "Semiconductors (IPM, MCU, Gate Drivers)"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "India Smart Meters",
+     "slug": "smart-meters-india",
+     "positions": [
+      {
+       "exposure": "direct",
+       "nodes": [
+        "Meter OEM / smart-meter manufacturing"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "India Telecom Chipsets",
+     "slug": "telecom-chipsets-india",
+     "positions": [
+      {
+       "exposure": "indirect",
+       "nodes": [
+        "OSAT / Advanced Packaging",
+        "Test, Marking & Certification"
+       ]
+      }
+     ]
+    }
+   ],
+   "also_known_as": [
+    "Kaynes Technology"
+   ],
+   "rank": 7,
+   "previous_rank": 8,
+   "rank_change": 1
+  },
+  {
    "name": "Dixon Technologies (Dixon Electro Appliances)",
    "ticker": "NSE/BSE: DIXON",
    "symbol": "DIXON",
@@ -2141,227 +2385,9 @@
    "also_known_as": [
     "Dixon Technologies"
    ],
-   "rank": 7,
-   "previous_rank": 7,
-   "rank_change": 0
-  },
-  {
-   "name": "Kaynes Technology India",
-   "ticker": "NSE/BSE: KAYNES",
-   "symbol": "KAYNES",
-   "industries_count": 14,
-   "direct_count": 10,
-   "nodes_count": 28,
-   "industries": [
-    {
-     "name": "Cryocooler (India)",
-     "slug": "cryocooler-india",
-     "positions": [
-      {
-       "exposure": "conglomerate",
-       "nodes": [
-        "Precision machining & EMS"
-       ]
-      }
-     ]
-    },
-    {
-     "name": "India 6G (IMT-2030)",
-     "slug": "6g-india",
-     "positions": [
-      {
-       "exposure": "direct",
-       "nodes": [
-        "EMS, PCB & Enclosure / Power"
-       ]
-      },
-      {
-       "exposure": "supplier",
-       "nodes": [
-        "RAN & Modem Silicon (RFIC / SoC / FPGA)"
-       ]
-      }
-     ]
-    },
-    {
-     "name": "India Battery Management Systems (BMS)",
-     "slug": "battery-management-system-india",
-     "positions": [
-      {
-       "exposure": "direct",
-       "nodes": [
-        "PCB, Laminate & SMT Assembly"
-       ]
-      }
-     ]
-    },
-    {
-     "name": "India Data Centres & AI-Compute",
-     "slug": "data-centre-ai-compute-india",
-     "positions": [
-      {
-       "exposure": "indirect",
-       "nodes": [
-        "AI Servers & GPU Systems"
-       ]
-      }
-     ]
-    },
-    {
-     "name": "India Data-Centre Liquid Cooling",
-     "slug": "data-centre-liquid-cooling-india",
-     "positions": [
-      {
-       "exposure": "indirect",
-       "nodes": [
-        "AI Servers (Liquid-Ready)",
-        "Immersion Tanks & Immersion-Ready IT"
-       ]
-      }
-     ]
-    },
-    {
-     "name": "India Electrical & Electronic Equipment",
-     "slug": "electrical-electronic-equipment-india",
-     "positions": [
-      {
-       "exposure": "direct",
-       "nodes": [
-        "Electronics Manufacturing Services (EMS/ODM)",
-        "PCBs (Multi-layer, HDI, Flex)",
-        "Power Electronics & Semiconductors (OSAT)"
-       ]
-      }
-     ]
-    },
-    {
-     "name": "India EMS / ODM",
-     "slug": "ems-electronics-manufacturing-india",
-     "positions": [
-      {
-       "exposure": "direct",
-       "nodes": [
-        "Bare PCB (multi-layer / HDI)",
-        "Camera modules",
-        "EMS / ODM system assembly & box-build",
-        "PCBA / SMT assembly"
-       ]
-      }
-     ]
-    },
-    {
-     "name": "India EV Powertrain & Traction Systems",
-     "slug": "ev-powertrain-traction-india",
-     "positions": [
-      {
-       "exposure": "direct",
-       "nodes": [
-        "Inverter PCBA, SMT & Firmware Flashing"
-       ]
-      },
-      {
-       "exposure": "supplier",
-       "nodes": [
-        "Power Module (IGBT / SiC)"
-       ]
-      }
-     ]
-    },
-    {
-     "name": "India Mobile Handsets & Accessories",
-     "slug": "mobile-handsets-accessories-india",
-     "positions": [
-      {
-       "exposure": "direct",
-       "nodes": [
-        "PCB & PCBA (SMT)"
-       ]
-      }
-     ]
-    },
-    {
-     "name": "India PCB & Electronic Components",
-     "slug": "pcb-electronic-components-india",
-     "positions": [
-      {
-       "exposure": "direct",
-       "nodes": [
-        "PCBA / SMT assembly (adjacent)"
-       ]
-      },
-      {
-       "exposure": "indirect",
-       "nodes": [
-        "Multi-layer PCB (&ge;6 layers)"
-       ]
-      }
-     ]
-    },
-    {
-     "name": "India Power Semiconductors & OSAT",
-     "slug": "power-semiconductor-osat-india",
-     "positions": [
-      {
-       "exposure": "direct",
-       "nodes": [
-        "Back-end OSAT / ATMP (assembly, packaging, test)",
-        "Power module assembly",
-        "Test & qualification (AEC-Q, IATF)"
-       ]
-      }
-     ]
-    },
-    {
-     "name": "India Room AC & White-Goods Components",
-     "slug": "room-ac-white-goods-components-india",
-     "positions": [
-      {
-       "exposure": "direct",
-       "nodes": [
-        "Bare PCB & PCB Assembly"
-       ]
-      },
-      {
-       "exposure": "indirect",
-       "nodes": [
-        "PCBA, Control Assemblies & Remotes",
-        "Semiconductors (IPM, MCU, Gate Drivers)"
-       ]
-      }
-     ]
-    },
-    {
-     "name": "India Smart Meters",
-     "slug": "smart-meters-india",
-     "positions": [
-      {
-       "exposure": "direct",
-       "nodes": [
-        "Meter OEM / smart-meter manufacturing"
-       ]
-      }
-     ]
-    },
-    {
-     "name": "India Telecom Chipsets",
-     "slug": "telecom-chipsets-india",
-     "positions": [
-      {
-       "exposure": "indirect",
-       "nodes": [
-        "OSAT / Advanced Packaging",
-        "Test, Marking & Certification"
-       ]
-      }
-     ]
-    }
-   ],
-   "also_known_as": [
-    "Kaynes Technology"
-   ],
    "rank": 8,
-   "previous_rank": 8,
-   "rank_change": 0
+   "previous_rank": 7,
+   "rank_change": -1
   },
   {
    "name": "Polycab India",
@@ -6015,6 +6041,175 @@
    "rank_change": 0
   },
   {
+   "name": "Tejas Networks",
+   "ticker": "NSE/BSE: TEJASNET",
+   "symbol": "TEJASNET",
+   "industries_count": 9,
+   "direct_count": 7,
+   "nodes_count": 31,
+   "industries": [
+    {
+     "name": "India 5G / 4G RAN",
+     "slug": "5g-ran-india",
+     "positions": [
+      {
+       "exposure": "direct",
+       "nodes": [
+        "Baseband Unit (BBU / O-DU + O-CU)",
+        "Massive-MIMO Active Antenna Unit (AAU)",
+        "Radio Unit (RRU / RRH)"
+       ]
+      },
+      {
+       "exposure": "indirect",
+       "nodes": [
+        "O-RAN Software (RIC / SMO / vRAN)",
+        "RAN Integration and Managed Services"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "India 6G (IMT-2030)",
+     "slug": "6g-india",
+     "positions": [
+      {
+       "exposure": "direct",
+       "nodes": [
+        "6G Radio Unit (RU / AAU)",
+        "Baseband DU / CU & AI-Native RIC",
+        "Optical Transport, Fronthaul & Fibre"
+       ]
+      },
+      {
+       "exposure": "indirect",
+       "nodes": [
+        "AI-Native Core & Edge Compute",
+        "R&D, Integration & Managed Services",
+        "RAN & Modem Silicon (RFIC / SoC / FPGA)"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "India Chip Design & IP",
+     "slug": "chip-design-ip-india",
+     "positions": [
+      {
+       "exposure": "indirect",
+       "nodes": [
+        "Processor IP (Arm / RISC-V)"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "India Data Centres & AI-Compute",
+     "slug": "data-centre-ai-compute-india",
+     "positions": [
+      {
+       "exposure": "direct",
+       "nodes": [
+        "Racks, PDUs & Networking / Optics"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "India Optical Transceivers",
+     "slug": "optical-transceivers-india",
+     "positions": [
+      {
+       "exposure": "direct",
+       "nodes": [
+        "FTTx / Access Pluggables (10G/25G PON & Fronthaul)",
+        "Network Equipment OEM / Switch Line-Cards",
+        "Pluggable Module Integration & Assembly"
+       ]
+      },
+      {
+       "exposure": "indirect",
+       "nodes": [
+        "Test, Burn-in & Qualification"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "India Telecom",
+     "slug": "telecom-india",
+     "positions": [
+      {
+       "exposure": "direct",
+       "nodes": [
+        "5G / 4G RAN — Base Stations & Radios",
+        "OSS / BSS & Network Software",
+        "Optical Transceivers & Modules",
+        "Routers, Switches & Optical Transport"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "India Telecom Chipsets",
+     "slug": "telecom-chipsets-india",
+     "positions": [
+      {
+       "exposure": "indirect",
+       "nodes": [
+        "Base-Station & RAN Silicon",
+        "DSP / Baseband Processing IP"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "India Telecom Operators",
+     "slug": "telecom-operators-india",
+     "positions": [
+      {
+       "exposure": "direct",
+       "nodes": [
+        "Network Capex — RAN, Core & Transport"
+       ]
+      },
+      {
+       "exposure": "indirect",
+       "nodes": [
+        "Optical Fibre & Cable"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "India Transport Equipment",
+     "slug": "telecom-transport-equipment-india",
+     "positions": [
+      {
+       "exposure": "direct",
+       "nodes": [
+        "DWDM / OTN Optical Transport",
+        "IP / MPLS Routers",
+        "PTN / Packet Transport (MPLS-TP)",
+        "Transport System OEM / Integrator"
+       ]
+      },
+      {
+       "exposure": "indirect",
+       "nodes": [
+        "Network OS / Software & Automation",
+        "SDH / Legacy TDM Transport"
+       ]
+      }
+     ]
+    }
+   ],
+   "also_known_as": [],
+   "rank": 30,
+   "previous_rank": 34,
+   "rank_change": 4
+  },
+  {
    "name": "Kirloskar Brothers",
    "ticker": "NSE/BSE: KIRLOSBROS",
    "symbol": "KIRLOSBROS",
@@ -6143,9 +6338,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 30,
+   "rank": 31,
    "previous_rank": 30,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Amber Enterprises",
@@ -6276,9 +6471,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 31,
+   "rank": 32,
    "previous_rank": 31,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Thermax",
@@ -6427,9 +6622,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 32,
+   "rank": 33,
    "previous_rank": 32,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Adani Enterprises (Adani Defence)",
@@ -6554,166 +6749,9 @@
     "Adani Enterprises",
     "Adani Enterprises (AdaniConneX)"
    ],
-   "rank": 33,
-   "previous_rank": 33,
-   "rank_change": 0
-  },
-  {
-   "name": "Tejas Networks",
-   "ticker": "NSE/BSE: TEJASNET",
-   "symbol": "TEJASNET",
-   "industries_count": 8,
-   "direct_count": 7,
-   "nodes_count": 30,
-   "industries": [
-    {
-     "name": "India 5G / 4G RAN",
-     "slug": "5g-ran-india",
-     "positions": [
-      {
-       "exposure": "direct",
-       "nodes": [
-        "Baseband Unit (BBU / O-DU + O-CU)",
-        "Massive-MIMO Active Antenna Unit (AAU)",
-        "Radio Unit (RRU / RRH)"
-       ]
-      },
-      {
-       "exposure": "indirect",
-       "nodes": [
-        "O-RAN Software (RIC / SMO / vRAN)",
-        "RAN Integration and Managed Services"
-       ]
-      }
-     ]
-    },
-    {
-     "name": "India 6G (IMT-2030)",
-     "slug": "6g-india",
-     "positions": [
-      {
-       "exposure": "direct",
-       "nodes": [
-        "6G Radio Unit (RU / AAU)",
-        "Baseband DU / CU & AI-Native RIC",
-        "Optical Transport, Fronthaul & Fibre"
-       ]
-      },
-      {
-       "exposure": "indirect",
-       "nodes": [
-        "AI-Native Core & Edge Compute",
-        "R&D, Integration & Managed Services",
-        "RAN & Modem Silicon (RFIC / SoC / FPGA)"
-       ]
-      }
-     ]
-    },
-    {
-     "name": "India Data Centres & AI-Compute",
-     "slug": "data-centre-ai-compute-india",
-     "positions": [
-      {
-       "exposure": "direct",
-       "nodes": [
-        "Racks, PDUs & Networking / Optics"
-       ]
-      }
-     ]
-    },
-    {
-     "name": "India Optical Transceivers",
-     "slug": "optical-transceivers-india",
-     "positions": [
-      {
-       "exposure": "direct",
-       "nodes": [
-        "FTTx / Access Pluggables (10G/25G PON & Fronthaul)",
-        "Network Equipment OEM / Switch Line-Cards",
-        "Pluggable Module Integration & Assembly"
-       ]
-      },
-      {
-       "exposure": "indirect",
-       "nodes": [
-        "Test, Burn-in & Qualification"
-       ]
-      }
-     ]
-    },
-    {
-     "name": "India Telecom",
-     "slug": "telecom-india",
-     "positions": [
-      {
-       "exposure": "direct",
-       "nodes": [
-        "5G / 4G RAN — Base Stations & Radios",
-        "OSS / BSS & Network Software",
-        "Optical Transceivers & Modules",
-        "Routers, Switches & Optical Transport"
-       ]
-      }
-     ]
-    },
-    {
-     "name": "India Telecom Chipsets",
-     "slug": "telecom-chipsets-india",
-     "positions": [
-      {
-       "exposure": "indirect",
-       "nodes": [
-        "Base-Station & RAN Silicon",
-        "DSP / Baseband Processing IP"
-       ]
-      }
-     ]
-    },
-    {
-     "name": "India Telecom Operators",
-     "slug": "telecom-operators-india",
-     "positions": [
-      {
-       "exposure": "direct",
-       "nodes": [
-        "Network Capex — RAN, Core & Transport"
-       ]
-      },
-      {
-       "exposure": "indirect",
-       "nodes": [
-        "Optical Fibre & Cable"
-       ]
-      }
-     ]
-    },
-    {
-     "name": "India Transport Equipment",
-     "slug": "telecom-transport-equipment-india",
-     "positions": [
-      {
-       "exposure": "direct",
-       "nodes": [
-        "DWDM / OTN Optical Transport",
-        "IP / MPLS Routers",
-        "PTN / Packet Transport (MPLS-TP)",
-        "Transport System OEM / Integrator"
-       ]
-      },
-      {
-       "exposure": "indirect",
-       "nodes": [
-        "Network OS / Software & Automation",
-        "SDH / Legacy TDM Transport"
-       ]
-      }
-     ]
-    }
-   ],
-   "also_known_as": [],
    "rank": 34,
-   "previous_rank": 34,
-   "rank_change": 0
+   "previous_rank": 33,
+   "rank_change": -1
   },
   {
    "name": "Astra Microwave Products",
@@ -9710,6 +9748,98 @@
    "rank_change": 0
   },
   {
+   "name": "Tata Elxsi",
+   "ticker": "NSE/BSE: TATAELXSI",
+   "symbol": "TATAELXSI",
+   "industries_count": 6,
+   "direct_count": 3,
+   "nodes_count": 12,
+   "industries": [
+    {
+     "name": "India Chip Design & IP",
+     "slug": "chip-design-ip-india",
+     "positions": [
+      {
+       "exposure": "indirect",
+       "nodes": [
+        "Design Services & Turnkey ASIC",
+        "Design Talent & Upskilling",
+        "Micro-architecture & RTL Design"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "India EV Powertrain & Traction Systems",
+     "slug": "ev-powertrain-traction-india",
+     "positions": [
+      {
+       "exposure": "direct",
+       "nodes": [
+        "Motor Control Software, VCU & Functional Safety"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "India Mobile Handsets & Accessories",
+     "slug": "mobile-handsets-accessories-india",
+     "positions": [
+      {
+       "exposure": "direct",
+       "nodes": [
+        "Design, Software & R&D Services"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "India Robot Software & Autonomy",
+     "slug": "robot-software-autonomy-india",
+     "positions": [
+      {
+       "exposure": "indirect",
+       "nodes": [
+        "AI Vision & Perception",
+        "Digital Twin & Simulation"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "India Robotics",
+     "slug": "robotics-india",
+     "positions": [
+      {
+       "exposure": "indirect",
+       "nodes": [
+        "Robot OEMs & Integration",
+        "Robot Software & Autonomy (SLAM / fleet / AI)"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "India Vehicles & Auto Components",
+     "slug": "vehicles-auto-components-india",
+     "positions": [
+      {
+       "exposure": "direct",
+       "nodes": [
+        "Battery Pack & BMS",
+        "Power Electronics / Inverter",
+        "Software / SDV"
+       ]
+      }
+     ]
+    }
+   ],
+   "also_known_as": [],
+   "rank": 62,
+   "previous_rank": 73,
+   "rank_change": 11
+  },
+  {
    "name": "Sona Comstar",
    "ticker": "NSE/BSE: SONACOMS",
    "symbol": "SONACOMS",
@@ -9810,9 +9940,107 @@
     }
    ],
    "also_known_as": [],
-   "rank": 62,
+   "rank": 63,
    "previous_rank": 62,
-   "rank_change": 0
+   "rank_change": -1
+  },
+  {
+   "name": "Cyient",
+   "ticker": "NSE/BSE: CYIENT",
+   "symbol": "CYIENT",
+   "industries_count": 6,
+   "direct_count": 2,
+   "nodes_count": 12,
+   "industries": [
+    {
+     "name": "India Chip Design & IP",
+     "slug": "chip-design-ip-india",
+     "positions": [
+      {
+       "exposure": "direct",
+       "nodes": [
+        "Design Services & Turnkey ASIC",
+        "Physical Design, DFT & Sign-off"
+       ]
+      },
+      {
+       "exposure": "indirect",
+       "nodes": [
+        "Analog & Mixed-Signal Design",
+        "Analog, Power & Security IP",
+        "Functional Verification & DV",
+        "Micro-architecture & RTL Design"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "India Robot Software & Autonomy",
+     "slug": "robot-software-autonomy-india",
+     "positions": [
+      {
+       "exposure": "indirect",
+       "nodes": [
+        "AI Vision & Perception"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "India Robotics",
+     "slug": "robotics-india",
+     "positions": [
+      {
+       "exposure": "indirect",
+       "nodes": [
+        "Robot OEMs & Integration",
+        "Robot Software & Autonomy (SLAM / fleet / AI)"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "India Satellite",
+     "slug": "satellite-india",
+     "positions": [
+      {
+       "exposure": "indirect",
+       "nodes": [
+        "Space Software & Mission Analytics"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "India Satellite Services & Data",
+     "slug": "satellite-services-data-india",
+     "positions": [
+      {
+       "exposure": "indirect",
+       "nodes": [
+        "Space Software & Mission Analytics"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "India Smart Meters",
+     "slug": "smart-meters-india",
+     "positions": [
+      {
+       "exposure": "direct",
+       "nodes": [
+        "MCU / metering SoC",
+        "Metering IC / analog front end (metrology)"
+       ]
+      }
+     ]
+    }
+   ],
+   "also_known_as": [],
+   "rank": 64,
+   "previous_rank": 80,
+   "rank_change": 16
   },
   {
    "name": "SAIL",
@@ -9898,9 +10126,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 63,
+   "rank": 65,
    "previous_rank": 63,
-   "rank_change": 0
+   "rank_change": -2
   },
   {
    "name": "SKF India",
@@ -9984,9 +10212,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 64,
+   "rank": 66,
    "previous_rank": 64,
-   "rank_change": 0
+   "rank_change": -2
   },
   {
    "name": "Timken India",
@@ -10070,9 +10298,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 65,
+   "rank": 67,
    "previous_rank": 65,
-   "rank_change": 0
+   "rank_change": -2
   },
   {
    "name": "PG Electroplast",
@@ -10160,9 +10388,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 66,
+   "rank": 68,
    "previous_rank": 66,
-   "rank_change": 0
+   "rank_change": -2
   },
   {
    "name": "Transformers & Rectifiers (India)",
@@ -10237,9 +10465,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 67,
+   "rank": 69,
    "previous_rank": 67,
-   "rank_change": 0
+   "rank_change": -2
   },
   {
    "name": "Transformers & Rectifiers (India)",
@@ -10314,9 +10542,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 68,
+   "rank": 70,
    "previous_rank": 68,
-   "rank_change": 0
+   "rank_change": -2
   },
   {
    "name": "Bharat Bijlee",
@@ -10397,9 +10625,85 @@
     }
    ],
    "also_known_as": [],
-   "rank": 69,
+   "rank": 71,
    "previous_rank": 69,
-   "rank_change": 0
+   "rank_change": -2
+  },
+  {
+   "name": "SPEL Semiconductor",
+   "ticker": "NSE/BSE: SPELS",
+   "symbol": "SPELS",
+   "industries_count": 5,
+   "direct_count": 4,
+   "nodes_count": 7,
+   "industries": [
+    {
+     "name": "India 6G (IMT-2030)",
+     "slug": "6g-india",
+     "positions": [
+      {
+       "exposure": "supplier",
+       "nodes": [
+        "RAN & Modem Silicon (RFIC / SoC / FPGA)"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "India Chip Design & IP",
+     "slug": "chip-design-ip-india",
+     "positions": [
+      {
+       "exposure": "direct",
+       "nodes": [
+        "ATE Test & Silicon Validation",
+        "OSAT & Advanced Packaging"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "India Electrical & Electronic Equipment",
+     "slug": "electrical-electronic-equipment-india",
+     "positions": [
+      {
+       "exposure": "direct",
+       "nodes": [
+        "Power Electronics & Semiconductors (OSAT)"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "India Power Semiconductors & OSAT",
+     "slug": "power-semiconductor-osat-india",
+     "positions": [
+      {
+       "exposure": "direct",
+       "nodes": [
+        "Back-end OSAT / ATMP (assembly, packaging, test)"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "India Telecom Chipsets",
+     "slug": "telecom-chipsets-india",
+     "positions": [
+      {
+       "exposure": "direct",
+       "nodes": [
+        "OSAT / Advanced Packaging",
+        "Test, Marking & Certification"
+       ]
+      }
+     ]
+    }
+   ],
+   "also_known_as": [],
+   "rank": 72,
+   "previous_rank": 95,
+   "rank_change": 23
   },
   {
    "name": "Blue Star",
@@ -10477,9 +10781,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 70,
+   "rank": 73,
    "previous_rank": 70,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Voltas",
@@ -10557,9 +10861,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 71,
+   "rank": 74,
    "previous_rank": 71,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Kalpataru Projects International",
@@ -10633,87 +10937,95 @@
    "also_known_as": [
     "Kalpataru Projects"
    ],
-   "rank": 72,
+   "rank": 75,
    "previous_rank": 72,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
-   "name": "Tata Elxsi",
-   "ticker": "NSE/BSE: TATAELXSI",
-   "symbol": "TATAELXSI",
+   "name": "MosChip Technologies",
+   "ticker": "NSE/BSE: MOSCHIP",
+   "symbol": "MOSCHIP",
    "industries_count": 5,
    "direct_count": 3,
-   "nodes_count": 9,
+   "nodes_count": 12,
    "industries": [
     {
-     "name": "India EV Powertrain & Traction Systems",
-     "slug": "ev-powertrain-traction-india",
+     "name": "India 6G (IMT-2030)",
+     "slug": "6g-india",
      "positions": [
       {
-       "exposure": "direct",
+       "exposure": "supplier",
        "nodes": [
-        "Motor Control Software, VCU & Functional Safety"
+        "RAN & Modem Silicon (RFIC / SoC / FPGA)"
        ]
       }
      ]
     },
     {
-     "name": "India Mobile Handsets & Accessories",
-     "slug": "mobile-handsets-accessories-india",
+     "name": "India Chip Design & IP",
+     "slug": "chip-design-ip-india",
      "positions": [
       {
        "exposure": "direct",
        "nodes": [
-        "Design, Software & R&D Services"
+        "Analog & Mixed-Signal Design",
+        "Design Services & Turnkey ASIC",
+        "Design Talent & Upskilling",
+        "Functional Verification & DV",
+        "Micro-architecture & RTL Design",
+        "Physical Design, DFT & Sign-off"
+       ]
+      },
+      {
+       "exposure": "indirect",
+       "nodes": [
+        "Emulation & Prototyping Hardware"
        ]
       }
      ]
     },
     {
-     "name": "India Robot Software & Autonomy",
-     "slug": "robot-software-autonomy-india",
+     "name": "India Electrical & Electronic Equipment",
+     "slug": "electrical-electronic-equipment-india",
+     "positions": [
+      {
+       "exposure": "direct",
+       "nodes": [
+        "Power Electronics & Semiconductors (OSAT)"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "India Smart Meters",
+     "slug": "smart-meters-india",
+     "positions": [
+      {
+       "exposure": "direct",
+       "nodes": [
+        "MCU / metering SoC",
+        "Metering IC / analog front end (metrology)"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "India Telecom Chipsets",
+     "slug": "telecom-chipsets-india",
      "positions": [
       {
        "exposure": "indirect",
        "nodes": [
-        "AI Vision & Perception",
-        "Digital Twin & Simulation"
-       ]
-      }
-     ]
-    },
-    {
-     "name": "India Robotics",
-     "slug": "robotics-india",
-     "positions": [
-      {
-       "exposure": "indirect",
-       "nodes": [
-        "Robot OEMs & Integration",
-        "Robot Software & Autonomy (SLAM / fleet / AI)"
-       ]
-      }
-     ]
-    },
-    {
-     "name": "India Vehicles & Auto Components",
-     "slug": "vehicles-auto-components-india",
-     "positions": [
-      {
-       "exposure": "direct",
-       "nodes": [
-        "Battery Pack & BMS",
-        "Power Electronics / Inverter",
-        "Software / SDV"
+        "EDA Tools, IP & Design Services"
        ]
       }
      ]
     }
    ],
    "also_known_as": [],
-   "rank": 73,
-   "previous_rank": 73,
-   "rank_change": 0
+   "rank": 76,
+   "previous_rank": 99,
+   "rank_change": 23
   },
   {
    "name": "Tata Communications",
@@ -10798,9 +11110,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 74,
+   "rank": 77,
    "previous_rank": 74,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Cyient DLM",
@@ -10872,9 +11184,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 75,
+   "rank": 78,
    "previous_rank": 75,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Bharat Dynamics",
@@ -10950,9 +11262,84 @@
     }
    ],
    "also_known_as": [],
-   "rank": 76,
+   "rank": 79,
    "previous_rank": 76,
-   "rank_change": 0
+   "rank_change": -3
+  },
+  {
+   "name": "KPIT Technologies",
+   "ticker": "NSE/BSE: KPITTECH",
+   "symbol": "KPITTECH",
+   "industries_count": 5,
+   "direct_count": 2,
+   "nodes_count": 6,
+   "industries": [
+    {
+     "name": "India Chip Design & IP",
+     "slug": "chip-design-ip-india",
+     "positions": [
+      {
+       "exposure": "indirect",
+       "nodes": [
+        "Micro-architecture & RTL Design"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "India EV Powertrain & Traction Systems",
+     "slug": "ev-powertrain-traction-india",
+     "positions": [
+      {
+       "exposure": "direct",
+       "nodes": [
+        "Motor Control Software, VCU & Functional Safety"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "India Robot Software & Autonomy",
+     "slug": "robot-software-autonomy-india",
+     "positions": [
+      {
+       "exposure": "indirect",
+       "nodes": [
+        "AI Vision & Perception"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "India Robotics",
+     "slug": "robotics-india",
+     "positions": [
+      {
+       "exposure": "indirect",
+       "nodes": [
+        "Robot Software & Autonomy (SLAM / fleet / AI)"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "India Vehicles & Auto Components",
+     "slug": "vehicles-auto-components-india",
+     "positions": [
+      {
+       "exposure": "direct",
+       "nodes": [
+        "ADAS (Camera, Radar, Compute)",
+        "Software / SDV"
+       ]
+      }
+     ]
+    }
+   ],
+   "also_known_as": [],
+   "rank": 80,
+   "previous_rank": 98,
+   "rank_change": 18
   },
   {
    "name": "Schaeffler India",
@@ -11024,9 +11411,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 77,
+   "rank": 81,
    "previous_rank": 77,
-   "rank_change": 0
+   "rank_change": -4
   },
   {
    "name": "Bharat Forge (Kalyani Strategic Systems)",
@@ -11108,9 +11495,9 @@
    "also_known_as": [
     "Bharat Forge"
    ],
-   "rank": 78,
+   "rank": 82,
    "previous_rank": 78,
-   "rank_change": 0
+   "rank_change": -4
   },
   {
    "name": "Kirloskar Pneumatic",
@@ -11184,85 +11571,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 79,
+   "rank": 83,
    "previous_rank": 79,
-   "rank_change": 0
-  },
-  {
-   "name": "Cyient",
-   "ticker": "NSE/BSE: CYIENT",
-   "symbol": "CYIENT",
-   "industries_count": 5,
-   "direct_count": 1,
-   "nodes_count": 6,
-   "industries": [
-    {
-     "name": "India Robot Software & Autonomy",
-     "slug": "robot-software-autonomy-india",
-     "positions": [
-      {
-       "exposure": "indirect",
-       "nodes": [
-        "AI Vision & Perception"
-       ]
-      }
-     ]
-    },
-    {
-     "name": "India Robotics",
-     "slug": "robotics-india",
-     "positions": [
-      {
-       "exposure": "indirect",
-       "nodes": [
-        "Robot OEMs & Integration",
-        "Robot Software & Autonomy (SLAM / fleet / AI)"
-       ]
-      }
-     ]
-    },
-    {
-     "name": "India Satellite",
-     "slug": "satellite-india",
-     "positions": [
-      {
-       "exposure": "indirect",
-       "nodes": [
-        "Space Software & Mission Analytics"
-       ]
-      }
-     ]
-    },
-    {
-     "name": "India Satellite Services & Data",
-     "slug": "satellite-services-data-india",
-     "positions": [
-      {
-       "exposure": "indirect",
-       "nodes": [
-        "Space Software & Mission Analytics"
-       ]
-      }
-     ]
-    },
-    {
-     "name": "India Smart Meters",
-     "slug": "smart-meters-india",
-     "positions": [
-      {
-       "exposure": "direct",
-       "nodes": [
-        "MCU / metering SoC",
-        "Metering IC / analog front end (metrology)"
-       ]
-      }
-     ]
-    }
-   ],
-   "also_known_as": [],
-   "rank": 80,
-   "previous_rank": 80,
-   "rank_change": 0
+   "rank_change": -4
   },
   {
    "name": "Apollo Micro Systems",
@@ -11340,9 +11651,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 81,
+   "rank": 84,
    "previous_rank": 81,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Avantel",
@@ -11409,9 +11720,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 82,
+   "rank": 85,
    "previous_rank": 82,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "NTPC Green Energy",
@@ -11480,9 +11791,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 83,
+   "rank": 86,
    "previous_rank": 83,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Premier Energies",
@@ -11545,9 +11856,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 84,
+   "rank": 87,
    "previous_rank": 84,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Ola Electric Mobility",
@@ -11610,9 +11921,9 @@
    "also_known_as": [
     "Ola Electric"
    ],
-   "rank": 85,
+   "rank": 88,
    "previous_rank": 85,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Vindhya Telelinks",
@@ -11678,9 +11989,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 86,
+   "rank": 89,
    "previous_rank": 86,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "IndiGrid",
@@ -11741,9 +12052,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 87,
+   "rank": 90,
    "previous_rank": 87,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Power Grid Corporation of India",
@@ -11806,9 +12117,9 @@
    "also_known_as": [
     "Power Grid Corp of India"
    ],
-   "rank": 88,
+   "rank": 91,
    "previous_rank": 88,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "INOX India",
@@ -11876,9 +12187,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 89,
+   "rank": 92,
    "previous_rank": 89,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Adani Green Energy",
@@ -11939,9 +12250,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 90,
+   "rank": 93,
    "previous_rank": 90,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Salasar Techno Engineering",
@@ -12009,9 +12320,9 @@
    "also_known_as": [
     "Salasar Techno"
    ],
-   "rank": 91,
+   "rank": 94,
    "previous_rank": 91,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Salzer Electronics",
@@ -12072,9 +12383,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 92,
+   "rank": 95,
    "previous_rank": 92,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "SPEL Semiconductor",
@@ -12135,9 +12446,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 93,
+   "rank": 96,
    "previous_rank": 93,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "SPEL Semiconductor",
@@ -12198,72 +12509,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 94,
+   "rank": 97,
    "previous_rank": 94,
-   "rank_change": 0
-  },
-  {
-   "name": "SPEL Semiconductor",
-   "ticker": "NSE/BSE: SPELS",
-   "symbol": "SPELS",
-   "industries_count": 4,
-   "direct_count": 3,
-   "nodes_count": 5,
-   "industries": [
-    {
-     "name": "India 6G (IMT-2030)",
-     "slug": "6g-india",
-     "positions": [
-      {
-       "exposure": "supplier",
-       "nodes": [
-        "RAN & Modem Silicon (RFIC / SoC / FPGA)"
-       ]
-      }
-     ]
-    },
-    {
-     "name": "India Electrical & Electronic Equipment",
-     "slug": "electrical-electronic-equipment-india",
-     "positions": [
-      {
-       "exposure": "direct",
-       "nodes": [
-        "Power Electronics & Semiconductors (OSAT)"
-       ]
-      }
-     ]
-    },
-    {
-     "name": "India Power Semiconductors & OSAT",
-     "slug": "power-semiconductor-osat-india",
-     "positions": [
-      {
-       "exposure": "direct",
-       "nodes": [
-        "Back-end OSAT / ATMP (assembly, packaging, test)"
-       ]
-      }
-     ]
-    },
-    {
-     "name": "India Telecom Chipsets",
-     "slug": "telecom-chipsets-india",
-     "positions": [
-      {
-       "exposure": "direct",
-       "nodes": [
-        "OSAT / Advanced Packaging",
-        "Test, Marking & Certification"
-       ]
-      }
-     ]
-    }
-   ],
-   "also_known_as": [],
-   "rank": 95,
-   "previous_rank": 95,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "HBL Engineering",
@@ -12323,9 +12571,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 96,
+   "rank": 98,
    "previous_rank": 96,
-   "rank_change": 0
+   "rank_change": -2
   },
   {
    "name": "Solar Industries",
@@ -12388,135 +12636,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 97,
-   "previous_rank": 97,
-   "rank_change": 0
-  },
-  {
-   "name": "KPIT Technologies",
-   "ticker": "NSE/BSE: KPITTECH",
-   "symbol": "KPITTECH",
-   "industries_count": 4,
-   "direct_count": 2,
-   "nodes_count": 5,
-   "industries": [
-    {
-     "name": "India EV Powertrain & Traction Systems",
-     "slug": "ev-powertrain-traction-india",
-     "positions": [
-      {
-       "exposure": "direct",
-       "nodes": [
-        "Motor Control Software, VCU & Functional Safety"
-       ]
-      }
-     ]
-    },
-    {
-     "name": "India Robot Software & Autonomy",
-     "slug": "robot-software-autonomy-india",
-     "positions": [
-      {
-       "exposure": "indirect",
-       "nodes": [
-        "AI Vision & Perception"
-       ]
-      }
-     ]
-    },
-    {
-     "name": "India Robotics",
-     "slug": "robotics-india",
-     "positions": [
-      {
-       "exposure": "indirect",
-       "nodes": [
-        "Robot Software & Autonomy (SLAM / fleet / AI)"
-       ]
-      }
-     ]
-    },
-    {
-     "name": "India Vehicles & Auto Components",
-     "slug": "vehicles-auto-components-india",
-     "positions": [
-      {
-       "exposure": "direct",
-       "nodes": [
-        "ADAS (Camera, Radar, Compute)",
-        "Software / SDV"
-       ]
-      }
-     ]
-    }
-   ],
-   "also_known_as": [],
-   "rank": 98,
-   "previous_rank": 98,
-   "rank_change": 0
-  },
-  {
-   "name": "MosChip Technologies",
-   "ticker": "NSE/BSE: MOSCHIP",
-   "symbol": "MOSCHIP",
-   "industries_count": 4,
-   "direct_count": 2,
-   "nodes_count": 5,
-   "industries": [
-    {
-     "name": "India 6G (IMT-2030)",
-     "slug": "6g-india",
-     "positions": [
-      {
-       "exposure": "supplier",
-       "nodes": [
-        "RAN & Modem Silicon (RFIC / SoC / FPGA)"
-       ]
-      }
-     ]
-    },
-    {
-     "name": "India Electrical & Electronic Equipment",
-     "slug": "electrical-electronic-equipment-india",
-     "positions": [
-      {
-       "exposure": "direct",
-       "nodes": [
-        "Power Electronics & Semiconductors (OSAT)"
-       ]
-      }
-     ]
-    },
-    {
-     "name": "India Smart Meters",
-     "slug": "smart-meters-india",
-     "positions": [
-      {
-       "exposure": "direct",
-       "nodes": [
-        "MCU / metering SoC",
-        "Metering IC / analog front end (metrology)"
-       ]
-      }
-     ]
-    },
-    {
-     "name": "India Telecom Chipsets",
-     "slug": "telecom-chipsets-india",
-     "positions": [
-      {
-       "exposure": "indirect",
-       "nodes": [
-        "EDA Tools, IP & Design Services"
-       ]
-      }
-     ]
-    }
-   ],
-   "also_known_as": [],
    "rank": 99,
-   "previous_rank": 99,
-   "rank_change": 0
+   "previous_rank": 97,
+   "rank_change": -2
   },
   {
    "name": "VA Tech Wabag",
@@ -19271,6 +19393,44 @@
    "rank_change": 0
   },
   {
+   "name": "ASM Technologies",
+   "ticker": "BSE: 526433 (NSE approval in principle)",
+   "symbol": "526433NSEAPPROVALINPRINCIPLE",
+   "industries_count": 2,
+   "direct_count": 1,
+   "nodes_count": 2,
+   "industries": [
+    {
+     "name": "India Chip Design & IP",
+     "slug": "chip-design-ip-india",
+     "positions": [
+      {
+       "exposure": "indirect",
+       "nodes": [
+        "Micro-architecture & RTL Design"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Semiconductor Equipment & Materials · India",
+     "slug": "semiconductor-equipment-materials-india",
+     "positions": [
+      {
+       "exposure": "direct",
+       "nodes": [
+        "Equipment contract manufacturing & design-led manufacturing"
+       ]
+      }
+     ]
+    }
+   ],
+   "also_known_as": [],
+   "rank": 242,
+   "previous_rank": 349,
+   "rank_change": 107
+  },
+  {
    "name": "Carborundum Universal",
    "ticker": "NSE: CARBORUNIV",
    "symbol": "CARBORUNIV",
@@ -19304,9 +19464,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 242,
+   "rank": 243,
    "previous_rank": 242,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Castrol India",
@@ -19342,9 +19502,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 243,
+   "rank": 244,
    "previous_rank": 243,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "DCX Systems",
@@ -19380,9 +19540,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 244,
+   "rank": 245,
    "previous_rank": 244,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Dynamatic Technologies",
@@ -19418,9 +19578,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 245,
+   "rank": 246,
    "previous_rank": 245,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "E2E Networks",
@@ -19456,9 +19616,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 246,
+   "rank": 247,
    "previous_rank": 246,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Grindwell Norton",
@@ -19494,9 +19654,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 247,
+   "rank": 248,
    "previous_rank": 247,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Gulf Oil Lubricants India",
@@ -19532,9 +19692,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 248,
+   "rank": 249,
    "previous_rank": 248,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "HEG",
@@ -19570,9 +19730,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 249,
+   "rank": 250,
    "previous_rank": 249,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Hindustan Construction",
@@ -19608,9 +19768,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 250,
+   "rank": 251,
    "previous_rank": 250,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Jyoti CNC Automation",
@@ -19646,9 +19806,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 251,
+   "rank": 252,
    "previous_rank": 251,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Karamtara Engineering",
@@ -19684,9 +19844,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 252,
+   "rank": 253,
    "previous_rank": 252,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Kennametal India",
@@ -19722,9 +19882,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 253,
+   "rank": 254,
    "previous_rank": 253,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "NCC",
@@ -19759,9 +19919,9 @@
      ]
     }
    ],
-   "rank": 254,
+   "rank": 255,
    "previous_rank": 254,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Neogen Chemicals",
@@ -19797,9 +19957,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 255,
+   "rank": 256,
    "previous_rank": 255,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "NTPC",
@@ -19835,9 +19995,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 256,
+   "rank": 257,
    "previous_rank": 256,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Quality Power Electrical Equipments",
@@ -19873,9 +20033,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 257,
+   "rank": 258,
    "previous_rank": 257,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Rail Vikas Nigam",
@@ -19911,9 +20071,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 258,
+   "rank": 259,
    "previous_rank": 258,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Samsung",
@@ -19949,9 +20109,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 259,
+   "rank": 260,
    "previous_rank": 259,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Shivalik Bimetal Controls",
@@ -19987,9 +20147,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 260,
+   "rank": 261,
    "previous_rank": 260,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "SPML Infra",
@@ -20025,9 +20185,47 @@
     }
    ],
    "also_known_as": [],
-   "rank": 261,
+   "rank": 262,
    "previous_rank": 261,
-   "rank_change": 0
+   "rank_change": -1
+  },
+  {
+   "name": "Tata Technologies",
+   "ticker": "NSE/BSE: TATATECH",
+   "symbol": "TATATECH",
+   "industries_count": 2,
+   "direct_count": 1,
+   "nodes_count": 2,
+   "industries": [
+    {
+     "name": "India Chip Design & IP",
+     "slug": "chip-design-ip-india",
+     "positions": [
+      {
+       "exposure": "indirect",
+       "nodes": [
+        "Micro-architecture & RTL Design"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "India Vehicles & Auto Components",
+     "slug": "vehicles-auto-components-india",
+     "positions": [
+      {
+       "exposure": "direct",
+       "nodes": [
+        "Software / SDV"
+       ]
+      }
+     ]
+    }
+   ],
+   "also_known_as": [],
+   "rank": 263,
+   "previous_rank": 465,
+   "rank_change": 202
   },
   {
    "name": "Techno Electric & Engineering",
@@ -20063,9 +20261,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 262,
+   "rank": 264,
    "previous_rank": 262,
-   "rank_change": 0
+   "rank_change": -2
   },
   {
    "name": "C-DoT",
@@ -20103,9 +20301,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 263,
+   "rank": 265,
    "previous_rank": 263,
-   "rank_change": 0
+   "rank_change": -2
   },
   {
    "name": "C-DoT",
@@ -20143,9 +20341,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 264,
+   "rank": 266,
    "previous_rank": 264,
-   "rank_change": 0
+   "rank_change": -2
   },
   {
    "name": "Wipro",
@@ -20183,9 +20381,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 265,
+   "rank": 267,
    "previous_rank": 265,
-   "rank_change": 0
+   "rank_change": -2
   },
   {
    "name": "VVDN Technologies",
@@ -20222,9 +20420,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 266,
+   "rank": 268,
    "previous_rank": 266,
-   "rank_change": 0
+   "rank_change": -2
   },
   {
    "name": "VVDN Technologies",
@@ -20261,9 +20459,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 267,
+   "rank": 269,
    "previous_rank": 267,
-   "rank_change": 0
+   "rank_change": -2
   },
   {
    "name": "Ingersoll-Rand (India)",
@@ -20298,9 +20496,9 @@
      ]
     }
    ],
-   "rank": 268,
+   "rank": 270,
    "previous_rank": 268,
-   "rank_change": 0
+   "rank_change": -2
   },
   {
    "name": "InterGlobe Aviation (IndiGo)",
@@ -20336,9 +20534,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 269,
+   "rank": 271,
    "previous_rank": 269,
-   "rank_change": 0
+   "rank_change": -2
   },
   {
    "name": "Precision Wires India",
@@ -20374,9 +20572,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 270,
+   "rank": 272,
    "previous_rank": 270,
-   "rank_change": 0
+   "rank_change": -2
   },
   {
    "name": "Sheela Foam",
@@ -20412,9 +20610,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 271,
+   "rank": 273,
    "previous_rank": 271,
-   "rank_change": 0
+   "rank_change": -2
   },
   {
    "name": "Sify Technologies",
@@ -20450,9 +20648,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 272,
+   "rank": 274,
    "previous_rank": 272,
-   "rank_change": 0
+   "rank_change": -2
   },
   {
    "name": "Tarsons Products",
@@ -20488,9 +20686,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 273,
+   "rank": 275,
    "previous_rank": 273,
-   "rank_change": 0
+   "rank_change": -2
   },
   {
    "name": "UltraTech Cement",
@@ -20526,9 +20724,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 274,
+   "rank": 276,
    "previous_rank": 274,
-   "rank_change": 0
+   "rank_change": -2
   },
   {
    "name": "Anupam Rasayan India",
@@ -20564,9 +20762,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 275,
+   "rank": 277,
    "previous_rank": 275,
-   "rank_change": 0
+   "rank_change": -2
   },
   {
    "name": "Gravita India",
@@ -20602,9 +20800,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 276,
+   "rank": 278,
    "previous_rank": 276,
-   "rank_change": 0
+   "rank_change": -2
   },
   {
    "name": "Pitti Engineering",
@@ -20640,9 +20838,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 277,
+   "rank": 279,
    "previous_rank": 277,
-   "rank_change": 0
+   "rank_change": -2
   },
   {
    "name": "Aurobindo Pharma",
@@ -20680,9 +20878,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 278,
+   "rank": 280,
    "previous_rank": 278,
-   "rank_change": 0
+   "rank_change": -2
   },
   {
    "name": "Garden Reach Shipbuilders & Engineers",
@@ -20719,9 +20917,9 @@
      ]
     }
    ],
-   "rank": 279,
+   "rank": 281,
    "previous_rank": 279,
-   "rank_change": 0
+   "rank_change": -2
   },
   {
    "name": "Hemant Surgical Industries",
@@ -20758,9 +20956,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 280,
+   "rank": 282,
    "previous_rank": 280,
-   "rank_change": 0
+   "rank_change": -2
   },
   {
    "name": "Mazagon Dock Shipbuilders",
@@ -20794,9 +20992,45 @@
      ]
     }
    ],
-   "rank": 281,
+   "rank": 283,
    "previous_rank": 281,
-   "rank_change": 0
+   "rank_change": -2
+  },
+  {
+   "name": "Sasken Technologies",
+   "ticker": "NSE/BSE: SASKEN",
+   "symbol": "SASKEN",
+   "industries_count": 1,
+   "direct_count": 1,
+   "nodes_count": 7,
+   "industries": [
+    {
+     "name": "India Chip Design & IP",
+     "slug": "chip-design-ip-india",
+     "positions": [
+      {
+       "exposure": "direct",
+       "nodes": [
+        "ATE Test & Silicon Validation",
+        "Analog & Mixed-Signal Design",
+        "Design Services & Turnkey ASIC",
+        "Functional Verification & DV",
+        "Micro-architecture & RTL Design"
+       ]
+      },
+      {
+       "exposure": "indirect",
+       "nodes": [
+        "Analog, Power & Security IP",
+        "Physical Design, DFT & Sign-off"
+       ]
+      }
+     ]
+    }
+   ],
+   "rank": 284,
+   "previous_rank": null,
+   "rank_change": null
   },
   {
    "name": "Cochin Shipyard",
@@ -20824,9 +21058,9 @@
      ]
     }
    ],
-   "rank": 282,
+   "rank": 285,
    "previous_rank": 282,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Jio Platforms",
@@ -20859,9 +21093,9 @@
      ]
     }
    ],
-   "rank": 283,
+   "rank": 286,
    "previous_rank": 283,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "GSFC",
@@ -20894,9 +21128,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 284,
+   "rank": 287,
    "previous_rank": 284,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Poly Medicure",
@@ -20924,9 +21158,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 285,
+   "rank": 288,
    "previous_rank": 285,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Swan Defence & Heavy Industries",
@@ -20953,9 +21187,9 @@
      ]
     }
    ],
-   "rank": 286,
+   "rank": 289,
    "previous_rank": 286,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Texmaco Rail & Engineering",
@@ -20987,9 +21221,9 @@
      ]
     }
    ],
-   "rank": 287,
+   "rank": 290,
    "previous_rank": 287,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Altius Telecom Infrastructure Trust",
@@ -21021,9 +21255,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 288,
+   "rank": 291,
    "previous_rank": 288,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Dhanuka Agritech",
@@ -21050,9 +21284,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 289,
+   "rank": 292,
    "previous_rank": 289,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Indian Oil Corporation",
@@ -21084,9 +21318,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 290,
+   "rank": 293,
    "previous_rank": 290,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Insecticides (India)",
@@ -21113,9 +21347,42 @@
     }
    ],
    "also_known_as": [],
-   "rank": 291,
+   "rank": 294,
    "previous_rank": 291,
-   "rank_change": 0
+   "rank_change": -3
+  },
+  {
+   "name": "L&T Technology Services",
+   "ticker": "NSE/BSE: LTTS",
+   "symbol": "LTTS",
+   "industries_count": 1,
+   "direct_count": 1,
+   "nodes_count": 4,
+   "industries": [
+    {
+     "name": "India Chip Design & IP",
+     "slug": "chip-design-ip-india",
+     "positions": [
+      {
+       "exposure": "direct",
+       "nodes": [
+        "Functional Verification & DV",
+        "Physical Design, DFT & Sign-off"
+       ]
+      },
+      {
+       "exposure": "indirect",
+       "nodes": [
+        "Design Services & Turnkey ASIC",
+        "Micro-architecture & RTL Design"
+       ]
+      }
+     ]
+    }
+   ],
+   "rank": 295,
+   "previous_rank": null,
+   "rank_change": null
   },
   {
    "name": "Advanced Weapons & Equipment India (AWEIL)",
@@ -21145,9 +21412,9 @@
     "Munitions India Limited (MIL)",
     "Yantra India Limited (YIL)"
    ],
-   "rank": 292,
+   "rank": 296,
    "previous_rank": 292,
-   "rank_change": 0
+   "rank_change": -4
   },
   {
    "name": "Crompton Greaves Consumer",
@@ -21173,9 +21440,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 293,
+   "rank": 297,
    "previous_rank": 293,
-   "rank_change": 0
+   "rank_change": -4
   },
   {
    "name": "EMS Ltd",
@@ -21205,9 +21472,9 @@
      ]
     }
    ],
-   "rank": 294,
+   "rank": 298,
    "previous_rank": 294,
-   "rank_change": 0
+   "rank_change": -4
   },
   {
    "name": "IOL Chemicals & Pharmaceuticals",
@@ -21238,9 +21505,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 295,
+   "rank": 299,
    "previous_rank": 295,
-   "rank_change": 0
+   "rank_change": -4
   },
   {
    "name": "Jupiter Wagons",
@@ -21265,9 +21532,9 @@
      ]
     }
    ],
-   "rank": 296,
+   "rank": 300,
    "previous_rank": 296,
-   "rank_change": 0
+   "rank_change": -4
   },
   {
    "name": "KMS Medisurgi",
@@ -21298,9 +21565,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 297,
+   "rank": 301,
    "previous_rank": 297,
-   "rank_change": 0
+   "rank_change": -4
   },
   {
    "name": "Laurus Labs",
@@ -21326,9 +21593,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 298,
+   "rank": 302,
    "previous_rank": 298,
-   "rank_change": 0
+   "rank_change": -4
   },
   {
    "name": "Marine Electricals (India)",
@@ -21358,9 +21625,9 @@
      ]
     }
    ],
-   "rank": 299,
+   "rank": 303,
    "previous_rank": 299,
-   "rank_change": 0
+   "rank_change": -4
   },
   {
    "name": "Pace Digitek",
@@ -21386,9 +21653,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 300,
+   "rank": 304,
    "previous_rank": 300,
-   "rank_change": 0
+   "rank_change": -4
   },
   {
    "name": "Paradeep Phosphates",
@@ -21414,9 +21681,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 301,
+   "rank": 305,
    "previous_rank": 301,
-   "rank_change": 0
+   "rank_change": -4
   },
   {
    "name": "Shivalik Rasayan",
@@ -21442,9 +21709,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 302,
+   "rank": 306,
    "previous_rank": 302,
-   "rank_change": 0
+   "rank_change": -4
   },
   {
    "name": "Aarti Drugs",
@@ -21469,9 +21736,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 303,
+   "rank": 307,
    "previous_rank": 303,
-   "rank_change": 0
+   "rank_change": -4
   },
   {
    "name": "AIA Engineering",
@@ -21500,9 +21767,9 @@
      ]
     }
    ],
-   "rank": 304,
+   "rank": 308,
    "previous_rank": 304,
-   "rank_change": 0
+   "rank_change": -4
   },
   {
    "name": "Alivus Life Sciences",
@@ -21527,9 +21794,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 305,
+   "rank": 309,
    "previous_rank": 305,
-   "rank_change": 0
+   "rank_change": -4
   },
   {
    "name": "Bajaj Electricals",
@@ -21554,9 +21821,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 306,
+   "rank": 310,
    "previous_rank": 306,
-   "rank_change": 0
+   "rank_change": -4
   },
   {
    "name": "Best Agrolife",
@@ -21581,9 +21848,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 307,
+   "rank": 311,
    "previous_rank": 307,
-   "rank_change": 0
+   "rank_change": -4
   },
   {
    "name": "Bharat Rasayan",
@@ -21608,9 +21875,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 308,
+   "rank": 312,
    "previous_rank": 308,
-   "rank_change": 0
+   "rank_change": -4
   },
   {
    "name": "Concord Biotech",
@@ -21635,9 +21902,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 309,
+   "rank": 313,
    "previous_rank": 309,
-   "rank_change": 0
+   "rank_change": -4
   },
   {
    "name": "Dr Lal PathLabs",
@@ -21667,9 +21934,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 310,
+   "rank": 314,
    "previous_rank": 310,
-   "rank_change": 0
+   "rank_change": -4
   },
   {
    "name": "GAIL (India)",
@@ -21694,9 +21961,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 311,
+   "rank": 315,
    "previous_rank": 311,
-   "rank_change": 0
+   "rank_change": -4
   },
   {
    "name": "Granules India",
@@ -21721,9 +21988,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 312,
+   "rank": 316,
    "previous_rank": 312,
-   "rank_change": 0
+   "rank_change": -4
   },
   {
    "name": "LG Electronics India",
@@ -21747,9 +22014,9 @@
      ]
     }
    ],
-   "rank": 313,
+   "rank": 317,
    "previous_rank": 313,
-   "rank_change": 0
+   "rank_change": -4
   },
   {
    "name": "Lupin",
@@ -21774,9 +22041,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 314,
+   "rank": 318,
    "previous_rank": 314,
-   "rank_change": 0
+   "rank_change": -4
   },
   {
    "name": "Meghmani Finechem",
@@ -21801,9 +22068,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 315,
+   "rank": 319,
    "previous_rank": 315,
-   "rank_change": 0
+   "rank_change": -4
   },
   {
    "name": "Metropolis Healthcare",
@@ -21833,9 +22100,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 316,
+   "rank": 320,
    "previous_rank": 316,
-   "rank_change": 0
+   "rank_change": -4
   },
   {
    "name": "Munitions India Limited (MIL)",
@@ -21859,9 +22126,9 @@
      ]
     }
    ],
-   "rank": 317,
+   "rank": 321,
    "previous_rank": 317,
-   "rank_change": 0
+   "rank_change": -4
   },
   {
    "name": "Neuland Laboratories",
@@ -21886,9 +22153,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 318,
+   "rank": 322,
    "previous_rank": 318,
-   "rank_change": 0
+   "rank_change": -4
   },
   {
    "name": "Nibe Limited",
@@ -21913,9 +22180,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 319,
+   "rank": 323,
    "previous_rank": 319,
-   "rank_change": 0
+   "rank_change": -4
   },
   {
    "name": "Orchid Pharma",
@@ -21940,9 +22207,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 320,
+   "rank": 324,
    "previous_rank": 320,
-   "rank_change": 0
+   "rank_change": -4
   },
   {
    "name": "Punjab Chemicals & Crop Protection",
@@ -21967,9 +22234,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 321,
+   "rank": 325,
    "previous_rank": 321,
-   "rank_change": 0
+   "rank_change": -4
   },
   {
    "name": "Rallis India",
@@ -21994,9 +22261,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 322,
+   "rank": 326,
    "previous_rank": 322,
-   "rank_change": 0
+   "rank_change": -4
   },
   {
    "name": "RITES",
@@ -22025,9 +22292,9 @@
      ]
     }
    ],
-   "rank": 323,
+   "rank": 327,
    "previous_rank": 323,
-   "rank_change": 0
+   "rank_change": -4
   },
   {
    "name": "SMS Pharmaceuticals",
@@ -22052,9 +22319,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 324,
+   "rank": 328,
    "previous_rank": 324,
-   "rank_change": 0
+   "rank_change": -4
   },
   {
    "name": "Southern Gas",
@@ -22078,9 +22345,9 @@
      ]
     }
    ],
-   "rank": 325,
+   "rank": 329,
    "previous_rank": 325,
-   "rank_change": 0
+   "rank_change": -4
   },
   {
    "name": "Stallion India Fluorochemicals",
@@ -22109,9 +22376,9 @@
      ]
     }
    ],
-   "rank": 326,
+   "rank": 330,
    "previous_rank": 326,
-   "rank_change": 0
+   "rank_change": -4
   },
   {
    "name": "Sterling Tools",
@@ -22135,9 +22402,9 @@
      ]
     }
    ],
-   "rank": 327,
+   "rank": 331,
    "previous_rank": 327,
-   "rank_change": 0
+   "rank_change": -4
   },
   {
    "name": "Sun Pharmaceutical",
@@ -22167,9 +22434,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 328,
+   "rank": 332,
    "previous_rank": 328,
-   "rank_change": 0
+   "rank_change": -4
   },
   {
    "name": "Sundaram Clayton",
@@ -22199,9 +22466,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 329,
+   "rank": 333,
    "previous_rank": 329,
-   "rank_change": 0
+   "rank_change": -4
   },
   {
    "name": "Taneja Aerospace",
@@ -22231,9 +22498,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 330,
+   "rank": 334,
    "previous_rank": 330,
-   "rank_change": 0
+   "rank_change": -4
   },
   {
    "name": "Tanla Platforms",
@@ -22263,9 +22530,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 331,
+   "rank": 335,
    "previous_rank": 331,
-   "rank_change": 0
+   "rank_change": -4
   },
   {
    "name": "Unimech Aerospace",
@@ -22290,9 +22557,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 332,
+   "rank": 336,
    "previous_rank": 332,
-   "rank_change": 0
+   "rank_change": -4
   },
   {
    "name": "Universal Cables (UNISTAR)",
@@ -22324,9 +22591,9 @@
    "also_known_as": [
     "Universal Cables"
    ],
-   "rank": 333,
+   "rank": 337,
    "previous_rank": 333,
-   "rank_change": 0
+   "rank_change": -4
   },
   {
    "name": "Aarti Pharmalabs",
@@ -22350,9 +22617,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 334,
+   "rank": 338,
    "previous_rank": 334,
-   "rank_change": 0
+   "rank_change": -4
   },
   {
    "name": "Advanced Enzyme Technologies",
@@ -22376,9 +22643,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 335,
+   "rank": 339,
    "previous_rank": 335,
-   "rank_change": 0
+   "rank_change": -4
   },
   {
    "name": "Aequs",
@@ -22402,9 +22669,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 336,
+   "rank": 340,
    "previous_rank": 336,
-   "rank_change": 0
+   "rank_change": -4
   },
   {
    "name": "Aeroflex Industries",
@@ -22428,9 +22695,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 337,
+   "rank": 341,
    "previous_rank": 337,
-   "rank_change": 0
+   "rank_change": -4
   },
   {
    "name": "Afcons Infrastructure",
@@ -22453,9 +22720,9 @@
      ]
     }
    ],
-   "rank": 338,
+   "rank": 342,
    "previous_rank": 338,
-   "rank_change": 0
+   "rank_change": -4
   },
   {
    "name": "AGNIT Semiconductors",
@@ -22479,9 +22746,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 339,
+   "rank": 343,
    "previous_rank": 339,
-   "rank_change": 0
+   "rank_change": -4
   },
   {
    "name": "Aimtron Electronics",
@@ -22505,9 +22772,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 340,
+   "rank": 344,
    "previous_rank": 340,
-   "rank_change": 0
+   "rank_change": -4
   },
   {
    "name": "Alembic Pharmaceuticals",
@@ -22531,9 +22798,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 341,
+   "rank": 345,
    "previous_rank": 341,
-   "rank_change": 0
+   "rank_change": -4
   },
   {
    "name": "Alkem Laboratories",
@@ -22557,9 +22824,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 342,
+   "rank": 346,
    "previous_rank": 342,
-   "rank_change": 0
+   "rank_change": -4
   },
   {
    "name": "Alpex Solar",
@@ -22583,9 +22850,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 343,
+   "rank": 347,
    "previous_rank": 343,
-   "rank_change": 0
+   "rank_change": -4
   },
   {
    "name": "Andhra Sugars",
@@ -22609,9 +22876,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 344,
+   "rank": 348,
    "previous_rank": 344,
-   "rank_change": 0
+   "rank_change": -4
   },
   {
    "name": "Anthem Biosciences",
@@ -22635,9 +22902,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 345,
+   "rank": 349,
    "previous_rank": 345,
-   "rank_change": 0
+   "rank_change": -4
   },
   {
    "name": "Apollo Tyres",
@@ -22661,9 +22928,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 346,
+   "rank": 350,
    "previous_rank": 346,
-   "rank_change": 0
+   "rank_change": -4
   },
   {
    "name": "Ashapura Minechem",
@@ -22686,9 +22953,9 @@
      ]
     }
    ],
-   "rank": 347,
+   "rank": 351,
    "previous_rank": 347,
-   "rank_change": 0
+   "rank_change": -4
   },
   {
    "name": "Ashok Leyland",
@@ -22711,35 +22978,9 @@
      ]
     }
    ],
-   "rank": 348,
+   "rank": 352,
    "previous_rank": 348,
-   "rank_change": 0
-  },
-  {
-   "name": "ASM Technologies",
-   "ticker": "BSE: 526433 (NSE approval in principle)",
-   "symbol": "526433NSEAPPROVALINPRINCIPLE",
-   "industries_count": 1,
-   "direct_count": 1,
-   "nodes_count": 1,
-   "industries": [
-    {
-     "name": "Semiconductor Equipment & Materials · India",
-     "slug": "semiconductor-equipment-materials-india",
-     "positions": [
-      {
-       "exposure": "direct",
-       "nodes": [
-        "Equipment contract manufacturing & design-led manufacturing"
-       ]
-      }
-     ]
-    }
-   ],
-   "also_known_as": [],
-   "rank": 349,
-   "previous_rank": 349,
-   "rank_change": 0
+   "rank_change": -4
   },
   {
    "name": "Assam Petrochemicals",
@@ -22763,9 +23004,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 350,
+   "rank": 353,
    "previous_rank": 350,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "AWEIL (civil trade)",
@@ -22788,9 +23029,9 @@
      ]
     }
    ],
-   "rank": 351,
+   "rank": 354,
    "previous_rank": 351,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Bajel Projects",
@@ -22814,9 +23055,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 352,
+   "rank": 355,
    "previous_rank": 352,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Balkrishna Industries",
@@ -22840,9 +23081,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 353,
+   "rank": 356,
    "previous_rank": 353,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Biocon",
@@ -22866,9 +23107,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 354,
+   "rank": 357,
    "previous_rank": 354,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Blue Jet Healthcare",
@@ -22892,9 +23133,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 355,
+   "rank": 358,
    "previous_rank": 355,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Bondada Engineering",
@@ -22918,9 +23159,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 356,
+   "rank": 359,
    "previous_rank": 356,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Borosil Renewables",
@@ -22944,9 +23185,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 357,
+   "rank": 360,
    "previous_rank": 357,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "BSNL",
@@ -22970,9 +23211,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 358,
+   "rank": 361,
    "previous_rank": 358,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "CEAT",
@@ -22996,9 +23237,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 359,
+   "rank": 362,
    "previous_rank": 359,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Cemindia Projects (ex-ITD Cementation)",
@@ -23021,9 +23262,9 @@
      ]
     }
    ],
-   "rank": 360,
+   "rank": 363,
    "previous_rank": 360,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Centenial Surgical Suture",
@@ -23047,9 +23288,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 361,
+   "rank": 364,
    "previous_rank": 361,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Chambal Fertilisers",
@@ -23073,9 +23314,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 362,
+   "rank": 365,
    "previous_rank": 362,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Chemfab Alkalis",
@@ -23099,9 +23340,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 363,
+   "rank": 366,
    "previous_rank": 363,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Cipla",
@@ -23125,9 +23366,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 364,
+   "rank": 367,
    "previous_rank": 364,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Clean Science & Technology",
@@ -23151,9 +23392,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 365,
+   "rank": 368,
    "previous_rank": 365,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "CLN Energy",
@@ -23177,9 +23418,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 366,
+   "rank": 369,
    "previous_rank": 366,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Cohance Lifesciences",
@@ -23203,9 +23444,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 367,
+   "rank": 370,
    "previous_rank": 367,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "CONCOR",
@@ -23228,9 +23469,9 @@
      ]
     }
    ],
-   "rank": 368,
+   "rank": 371,
    "previous_rank": 368,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Dharmaj Crop Guard",
@@ -23254,9 +23495,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 369,
+   "rank": 372,
    "previous_rank": 369,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Dilip Buildcon",
@@ -23279,9 +23520,9 @@
      ]
     }
    ],
-   "rank": 370,
+   "rank": 373,
    "previous_rank": 370,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Dishman Carbogen Amcis",
@@ -23305,9 +23546,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 371,
+   "rank": 374,
    "previous_rank": 371,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Divi's Laboratories",
@@ -23331,9 +23572,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 372,
+   "rank": 375,
    "previous_rank": 372,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Dr. Reddy's Laboratories",
@@ -23357,9 +23598,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 373,
+   "rank": 376,
    "previous_rank": 373,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "DRDO — DLRL, Hyderabad",
@@ -23382,9 +23623,9 @@
      ]
     }
    ],
-   "rank": 374,
+   "rank": 377,
    "previous_rank": 374,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Dynamic Cables",
@@ -23408,9 +23649,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 375,
+   "rank": 378,
    "previous_rank": 375,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Ericsson (India-made antennas)",
@@ -23436,9 +23677,9 @@
    "also_known_as": [
     "Ericsson"
    ],
-   "rank": 376,
+   "rank": 379,
    "previous_rank": 376,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Ester Industries",
@@ -23462,9 +23703,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 377,
+   "rank": 380,
    "previous_rank": 377,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Fabtech Technologies Cleanrooms",
@@ -23488,9 +23729,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 378,
+   "rank": 381,
    "previous_rank": 378,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Fermenta Biotech",
@@ -23514,9 +23755,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 379,
+   "rank": 382,
    "previous_rank": 379,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Fresenius Kabi Oncology",
@@ -23540,9 +23781,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 380,
+   "rank": 383,
    "previous_rank": 380,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Frontier Springs",
@@ -23565,9 +23806,9 @@
      ]
     }
    ],
-   "rank": 381,
+   "rank": 384,
    "previous_rank": 381,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "G R Infraprojects",
@@ -23591,9 +23832,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 382,
+   "rank": 385,
    "previous_rank": 382,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Gabriel India",
@@ -23617,9 +23858,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 383,
+   "rank": 386,
    "previous_rank": 383,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Galaxy Transmissions",
@@ -23642,9 +23883,9 @@
      ]
     }
    ],
-   "rank": 384,
+   "rank": 387,
    "previous_rank": 384,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "GHCL",
@@ -23668,9 +23909,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 385,
+   "rank": 388,
    "previous_rank": 385,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "GKB Ophthalmics",
@@ -23694,9 +23935,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 386,
+   "rank": 389,
    "previous_rank": 386,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "GMR Power and Urban Infra",
@@ -23720,9 +23961,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 387,
+   "rank": 390,
    "previous_rank": 387,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "GSP Crop Science",
@@ -23746,9 +23987,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 388,
+   "rank": 391,
    "previous_rank": 388,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "GTL Infrastructure",
@@ -23772,9 +24013,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 389,
+   "rank": 392,
    "previous_rank": 389,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Gujarat Poly Electronics",
@@ -23798,9 +24039,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 390,
+   "rank": 393,
    "previous_rank": 390,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Heranba Industries",
@@ -23824,9 +24065,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 391,
+   "rank": 394,
    "previous_rank": 391,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Hero MotoCorp",
@@ -23850,9 +24091,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 392,
+   "rank": 395,
    "previous_rank": 392,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "High Energy Batteries",
@@ -23876,9 +24117,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 393,
+   "rank": 396,
    "previous_rank": 393,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "IFB Industries",
@@ -23901,9 +24142,9 @@
      ]
     }
    ],
-   "rank": 394,
+   "rank": 397,
    "previous_rank": 394,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "IKIO Technologies",
@@ -23927,9 +24168,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 395,
+   "rank": 398,
    "previous_rank": 395,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "India Glycols",
@@ -23953,9 +24194,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 396,
+   "rank": 399,
    "previous_rank": 396,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "India Pesticides",
@@ -23979,9 +24220,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 397,
+   "rank": 400,
    "previous_rank": 397,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Indo-Russian Rifles Pvt Ltd (IRRPL)",
@@ -24005,9 +24246,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 398,
+   "rank": 401,
    "previous_rank": 398,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "INOX Air Products",
@@ -24030,9 +24271,9 @@
      ]
     }
    ],
-   "rank": 399,
+   "rank": 402,
    "previous_rank": 399,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Insolation Energy",
@@ -24056,9 +24297,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 400,
+   "rank": 403,
    "previous_rank": 400,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "IRCON International",
@@ -24081,9 +24322,9 @@
      ]
     }
    ],
-   "rank": 401,
+   "rank": 404,
    "previous_rank": 401,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "IRFC",
@@ -24106,9 +24347,9 @@
      ]
     }
    ],
-   "rank": 402,
+   "rank": 405,
    "previous_rank": 402,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "J. Kumar Infraprojects",
@@ -24131,9 +24372,9 @@
      ]
     }
    ],
-   "rank": 403,
+   "rank": 406,
    "previous_rank": 403,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "JBM Auto",
@@ -24156,9 +24397,9 @@
      ]
     }
    ],
-   "rank": 404,
+   "rank": 407,
    "previous_rank": 404,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "JK Tyre",
@@ -24182,9 +24423,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 405,
+   "rank": 408,
    "previous_rank": 405,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Jubilant Pharmova",
@@ -24208,9 +24449,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 406,
+   "rank": 409,
    "previous_rank": 406,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Karamtara Engineering",
@@ -24234,9 +24475,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 407,
+   "rank": 410,
    "previous_rank": 407,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Kernex Microsystems",
@@ -24259,9 +24500,9 @@
      ]
     }
    ],
-   "rank": 408,
+   "rank": 411,
    "previous_rank": 408,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Kinvan (DPB Group)",
@@ -24284,9 +24525,9 @@
      ]
     }
    ],
-   "rank": 409,
+   "rank": 412,
    "previous_rank": 409,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Kirloskar Electric",
@@ -24310,9 +24551,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 410,
+   "rank": 413,
    "previous_rank": 410,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Kopran",
@@ -24336,9 +24577,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 411,
+   "rank": 414,
    "previous_rank": 411,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Krsnaa Diagnostics",
@@ -24362,9 +24603,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 412,
+   "rank": 415,
    "previous_rank": 412,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Laser Power & Infra",
@@ -24387,9 +24628,9 @@
      ]
     }
    ],
-   "rank": 413,
+   "rank": 416,
    "previous_rank": 413,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Lumax Industries",
@@ -24413,9 +24654,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 414,
+   "rank": 417,
    "previous_rank": 414,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Manaksia Aluminium",
@@ -24438,9 +24679,9 @@
      ]
     }
    ],
-   "rank": 415,
+   "rank": 418,
    "previous_rank": 415,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Mankind Pharma",
@@ -24464,9 +24705,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 416,
+   "rank": 419,
    "previous_rank": 416,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Meghmani Organics",
@@ -24490,9 +24731,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 417,
+   "rank": 420,
    "previous_rank": 417,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Mittal Group",
@@ -24515,9 +24756,9 @@
      ]
     }
    ],
-   "rank": 418,
+   "rank": 421,
    "previous_rank": 418,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Molbio Diagnostics",
@@ -24541,9 +24782,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 419,
+   "rank": 422,
    "previous_rank": 419,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Morepen Laboratories",
@@ -24567,9 +24808,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 420,
+   "rank": 423,
    "previous_rank": 420,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "MRF",
@@ -24593,9 +24834,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 421,
+   "rank": 424,
    "previous_rank": 421,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "NACL Industries",
@@ -24619,9 +24860,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 422,
+   "rank": 425,
    "previous_rank": 422,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "National Oxygen",
@@ -24644,9 +24885,9 @@
      ]
     }
    ],
-   "rank": 423,
+   "rank": 426,
    "previous_rank": 423,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "National Peroxide",
@@ -24670,9 +24911,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 424,
+   "rank": 427,
    "previous_rank": 424,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Nectar Lifesciences",
@@ -24696,9 +24937,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 425,
+   "rank": 428,
    "previous_rank": 425,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "NHPC",
@@ -24722,9 +24963,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 426,
+   "rank": 429,
    "previous_rank": 426,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Nirma",
@@ -24748,9 +24989,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 427,
+   "rank": 430,
    "previous_rank": 427,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Nureca",
@@ -24774,9 +25015,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 428,
+   "rank": 431,
    "previous_rank": 428,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Olectra Greentech",
@@ -24799,9 +25040,9 @@
      ]
     }
    ],
-   "rank": 429,
+   "rank": 432,
    "previous_rank": 429,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Opto Circuits (India)",
@@ -24825,9 +25066,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 430,
+   "rank": 433,
    "previous_rank": 430,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Oriana Power",
@@ -24851,9 +25092,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 431,
+   "rank": 434,
    "previous_rank": 431,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Orient Cables (India)",
@@ -24877,9 +25118,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 432,
+   "rank": 435,
    "previous_rank": 432,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Panache Digilife",
@@ -24903,9 +25144,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 433,
+   "rank": 436,
    "previous_rank": 433,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Patel Engineering",
@@ -24928,9 +25169,9 @@
      ]
     }
    ],
-   "rank": 434,
+   "rank": 437,
    "previous_rank": 434,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Permanent Magnets Ltd",
@@ -24954,9 +25195,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 435,
+   "rank": 438,
    "previous_rank": 435,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Piramal Pharma",
@@ -24980,9 +25221,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 436,
+   "rank": 439,
    "previous_rank": 436,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Quadrant Future Tek",
@@ -25005,9 +25246,9 @@
      ]
     }
    ],
-   "rank": 437,
+   "rank": 440,
    "previous_rank": 437,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Qualcomm",
@@ -25031,9 +25272,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 438,
+   "rank": 441,
    "previous_rank": 438,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Raaj Medisafe India",
@@ -25056,9 +25297,9 @@
      ]
     }
    ],
-   "rank": 439,
+   "rank": 442,
    "previous_rank": 439,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Rajesh Exports",
@@ -25082,9 +25323,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 440,
+   "rank": 443,
    "previous_rank": 440,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Rashtriya Chemicals & Fertilizers",
@@ -25108,9 +25349,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 441,
+   "rank": 444,
    "previous_rank": 441,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Reliance Infrastructure (Reliance Defence)",
@@ -25134,9 +25375,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 442,
+   "rank": 445,
    "previous_rank": 442,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Rossell Techsys",
@@ -25160,9 +25401,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 443,
+   "rank": 446,
    "previous_rank": 443,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Route Mobile",
@@ -25186,9 +25427,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 444,
+   "rank": 447,
    "previous_rank": 444,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "RR Kabel",
@@ -25212,9 +25453,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 445,
+   "rank": 448,
    "previous_rank": 445,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Saatvik Green Energy",
@@ -25238,9 +25479,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 446,
+   "rank": 449,
    "previous_rank": 446,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Sahajanand Medical Technologies",
@@ -25264,9 +25505,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 447,
+   "rank": 450,
    "previous_rank": 447,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Sahasra Electronic Solutions",
@@ -25290,9 +25531,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 448,
+   "rank": 451,
    "previous_rank": 448,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Sai Life Sciences",
@@ -25316,9 +25557,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 449,
+   "rank": 452,
    "previous_rank": 449,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Servotech Renewable Power System",
@@ -25342,9 +25583,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 450,
+   "rank": 453,
    "previous_rank": 450,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Shakti Pumps (India)",
@@ -25367,9 +25608,9 @@
      ]
     }
    ],
-   "rank": 451,
+   "rank": 454,
    "previous_rank": 451,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Sharda Cropchem",
@@ -25393,9 +25634,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 452,
+   "rank": 455,
    "previous_rank": 452,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Shilpa Medicare",
@@ -25419,9 +25660,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 453,
+   "rank": 456,
    "previous_rank": 453,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Shirke Group",
@@ -25444,9 +25685,9 @@
      ]
     }
    ],
-   "rank": 454,
+   "rank": 457,
    "previous_rank": 454,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "SICGIL India",
@@ -25469,9 +25710,9 @@
      ]
     }
    ],
-   "rank": 455,
+   "rank": 458,
    "previous_rank": 455,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Solara Active Pharma Sciences",
@@ -25495,9 +25736,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 456,
+   "rank": 459,
    "previous_rank": 456,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Solex Energy",
@@ -25521,9 +25762,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 457,
+   "rank": 460,
    "previous_rank": 457,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "SSS Defence",
@@ -25546,9 +25787,9 @@
      ]
     }
    ],
-   "rank": 458,
+   "rank": 461,
    "previous_rank": 458,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Sudarshan Chemical Industries",
@@ -25572,9 +25813,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 459,
+   "rank": 462,
    "previous_rank": 459,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Suraksha Diagnostic",
@@ -25598,9 +25839,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 460,
+   "rank": 463,
    "previous_rank": 460,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Surya Roshni",
@@ -25624,9 +25865,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 461,
+   "rank": 464,
    "previous_rank": 461,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Swelect Energy Systems",
@@ -25650,9 +25891,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 462,
+   "rank": 465,
    "previous_rank": 462,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Syngene International",
@@ -25676,9 +25917,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 463,
+   "rank": 466,
    "previous_rank": 463,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Systematic Industries",
@@ -25704,35 +25945,9 @@
    "also_known_as": [
     "Laser Power & Infra"
    ],
-   "rank": 464,
+   "rank": 467,
    "previous_rank": 464,
-   "rank_change": 0
-  },
-  {
-   "name": "Tata Technologies",
-   "ticker": "NSE/BSE: TATATECH",
-   "symbol": "TATATECH",
-   "industries_count": 1,
-   "direct_count": 1,
-   "nodes_count": 1,
-   "industries": [
-    {
-     "name": "India Vehicles & Auto Components",
-     "slug": "vehicles-auto-components-india",
-     "positions": [
-      {
-       "exposure": "direct",
-       "nodes": [
-        "Software / SDV"
-       ]
-      }
-     ]
-    }
-   ],
-   "also_known_as": [],
-   "rank": 465,
-   "previous_rank": 465,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "TCPL Packaging",
@@ -25756,9 +25971,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 466,
+   "rank": 468,
    "previous_rank": 466,
-   "rank_change": 0
+   "rank_change": -2
   },
   {
    "name": "TechEra Engineering",
@@ -25782,9 +25997,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 467,
+   "rank": 469,
    "previous_rank": 467,
-   "rank_change": 0
+   "rank_change": -2
   },
   {
    "name": "Thyrocare",
@@ -25808,9 +26023,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 468,
+   "rank": 470,
    "previous_rank": 468,
-   "rank_change": 0
+   "rank_change": -2
   },
   {
    "name": "Torrent Pharmaceuticals",
@@ -25834,9 +26049,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 469,
+   "rank": 471,
    "previous_rank": 469,
-   "rank_change": 0
+   "rank_change": -2
   },
   {
    "name": "V-Guard Industries",
@@ -25860,9 +26075,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 470,
+   "rank": 472,
    "previous_rank": 470,
-   "rank_change": 0
+   "rank_change": -2
   },
   {
    "name": "Valiant Organics",
@@ -25886,9 +26101,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 471,
+   "rank": 473,
    "previous_rank": 471,
-   "rank_change": 0
+   "rank_change": -2
   },
   {
    "name": "Varroc Engineering",
@@ -25912,9 +26127,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 472,
+   "rank": 474,
    "previous_rank": 472,
-   "rank_change": 0
+   "rank_change": -2
   },
   {
    "name": "Vinati Organics",
@@ -25938,9 +26153,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 473,
+   "rank": 475,
    "previous_rank": 473,
-   "rank_change": 0
+   "rank_change": -2
   },
   {
    "name": "Vinyas Innovative Technologies",
@@ -25964,9 +26179,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 474,
+   "rank": 476,
    "previous_rank": 474,
-   "rank_change": 0
+   "rank_change": -2
   },
   {
    "name": "Vipul Organics",
@@ -25989,9 +26204,9 @@
      ]
     }
    ],
-   "rank": 475,
+   "rank": 477,
    "previous_rank": 475,
-   "rank_change": 0
+   "rank_change": -2
   },
   {
    "name": "Werywin Defence",
@@ -26014,9 +26229,9 @@
      ]
     }
    ],
-   "rank": 476,
+   "rank": 478,
    "previous_rank": 476,
-   "rank_change": 0
+   "rank_change": -2
   },
   {
    "name": "Whirlpool of India",
@@ -26040,9 +26255,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 477,
+   "rank": 479,
    "previous_rank": 477,
-   "rank_change": 0
+   "rank_change": -2
   },
   {
    "name": "Yantra India Limited (YIL)",
@@ -26065,9 +26280,9 @@
      ]
     }
    ],
-   "rank": 478,
+   "rank": 480,
    "previous_rank": 478,
-   "rank_change": 0
+   "rank_change": -2
   },
   {
    "name": "Yuken India",
@@ -26090,9 +26305,9 @@
      ]
     }
    ],
-   "rank": 479,
+   "rank": 481,
    "previous_rank": 479,
-   "rank_change": 0
+   "rank_change": -2
   },
   {
    "name": "ZTT India",
@@ -26116,9 +26331,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 480,
+   "rank": 482,
    "previous_rank": 480,
-   "rank_change": 0
+   "rank_change": -2
   },
   {
    "name": "KRN Heat Exchanger",
@@ -26144,9 +26359,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 481,
+   "rank": 483,
    "previous_rank": 481,
-   "rank_change": 0
+   "rank_change": -2
   },
   {
    "name": "SJS Enterprises",
@@ -26172,9 +26387,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 482,
+   "rank": 484,
    "previous_rank": 482,
-   "rank_change": 0
+   "rank_change": -2
   },
   {
    "name": "Avience Biomedicals",
@@ -26199,9 +26414,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 483,
+   "rank": 485,
    "previous_rank": 483,
-   "rank_change": 0
+   "rank_change": -2
   },
   {
    "name": "Lenskart Solutions",
@@ -26226,9 +26441,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 484,
+   "rank": 486,
    "previous_rank": 484,
-   "rank_change": 0
+   "rank_change": -2
   },
   {
    "name": "NLC India",
@@ -26253,9 +26468,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 485,
+   "rank": 487,
    "previous_rank": 485,
-   "rank_change": 0
+   "rank_change": -2
   },
   {
    "name": "ONGC",
@@ -26280,9 +26495,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 486,
+   "rank": 488,
    "previous_rank": 486,
-   "rank_change": 0
+   "rank_change": -2
   },
   {
    "name": "SAMEER",
@@ -26307,9 +26522,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 487,
+   "rank": 489,
    "previous_rank": 487,
-   "rank_change": 0
+   "rank_change": -2
   },
   {
    "name": "Adani Power",
@@ -26333,9 +26548,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 488,
+   "rank": 490,
    "previous_rank": 488,
-   "rank_change": 0
+   "rank_change": -2
   },
   {
    "name": "Akzo Nobel India",
@@ -26358,9 +26573,9 @@
      ]
     }
    ],
-   "rank": 489,
+   "rank": 491,
    "previous_rank": 489,
-   "rank_change": 0
+   "rank_change": -2
   },
   {
    "name": "Ambuja Cements",
@@ -26383,9 +26598,9 @@
      ]
     }
    ],
-   "rank": 490,
+   "rank": 492,
    "previous_rank": 490,
-   "rank_change": 0
+   "rank_change": -2
   },
   {
    "name": "Anant Raj (Ashok Cloud)",
@@ -26411,9 +26626,9 @@
    "also_known_as": [
     "Anant Raj"
    ],
-   "rank": 491,
+   "rank": 493,
    "previous_rank": 491,
-   "rank_change": 0
+   "rank_change": -2
   },
   {
    "name": "Apollo Hospitals",
@@ -26437,9 +26652,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 492,
+   "rank": 494,
    "previous_rank": 492,
-   "rank_change": 0
+   "rank_change": -2
   },
   {
    "name": "Ashoka Buildcon",
@@ -26463,9 +26678,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 493,
+   "rank": 495,
    "previous_rank": 493,
-   "rank_change": 0
+   "rank_change": -2
   },
   {
    "name": "Asian Paints",
@@ -26488,9 +26703,9 @@
      ]
     }
    ],
-   "rank": 494,
+   "rank": 496,
    "previous_rank": 494,
-   "rank_change": 0
+   "rank_change": -2
   },
   {
    "name": "Astral Ltd",
@@ -26513,9 +26728,9 @@
      ]
     }
    ],
-   "rank": 495,
+   "rank": 497,
    "previous_rank": 495,
-   "rank_change": 0
+   "rank_change": -2
   },
   {
    "name": "BASF India",
@@ -26538,9 +26753,9 @@
      ]
     }
    ],
-   "rank": 496,
+   "rank": 498,
    "previous_rank": 496,
-   "rank_change": 0
+   "rank_change": -2
   },
   {
    "name": "BPCL / HPCL",
@@ -26564,9 +26779,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 497,
+   "rank": 499,
    "previous_rank": 497,
-   "rank_change": 0
+   "rank_change": -2
   },
   {
    "name": "Coal India",
@@ -26590,9 +26805,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 498,
+   "rank": 500,
    "previous_rank": 498,
-   "rank_change": 0
+   "rank_change": -2
   },
   {
    "name": "CommScope India",
@@ -26616,9 +26831,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 499,
+   "rank": 501,
    "previous_rank": 499,
-   "rank_change": 0
+   "rank_change": -2
   },
   {
    "name": "Confidence Petroleum",
@@ -26641,9 +26856,9 @@
      ]
     }
    ],
-   "rank": 500,
+   "rank": 502,
    "previous_rank": 500,
-   "rank_change": 0
+   "rank_change": -2
   },
   {
    "name": "Dalmia Bharat",
@@ -26666,9 +26881,9 @@
      ]
     }
    ],
-   "rank": 501,
+   "rank": 503,
    "previous_rank": 501,
-   "rank_change": 0
+   "rank_change": -2
   },
   {
    "name": "Elecon Engineering",
@@ -26691,9 +26906,9 @@
      ]
     }
    ],
-   "rank": 502,
+   "rank": 504,
    "previous_rank": 502,
-   "rank_change": 0
+   "rank_change": -2
   },
   {
    "name": "Elgi Equipments",
@@ -26716,9 +26931,9 @@
      ]
     }
    ],
-   "rank": 503,
+   "rank": 505,
    "previous_rank": 503,
-   "rank_change": 0
+   "rank_change": -2
   },
   {
    "name": "Emcure Pharmaceuticals",
@@ -26742,9 +26957,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 504,
+   "rank": 506,
    "previous_rank": 504,
-   "rank_change": 0
+   "rank_change": -2
   },
   {
    "name": "Fine Organic Industries",
@@ -26768,9 +26983,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 505,
+   "rank": 507,
    "previous_rank": 505,
-   "rank_change": 0
+   "rank_change": -2
   },
   {
    "name": "Fineotex Chemical",
@@ -26793,9 +27008,9 @@
      ]
     }
    ],
-   "rank": 506,
+   "rank": 508,
    "previous_rank": 506,
-   "rank_change": 0
+   "rank_change": -2
   },
   {
    "name": "Fortis Healthcare",
@@ -26819,9 +27034,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 507,
+   "rank": 509,
    "previous_rank": 507,
-   "rank_change": 0
+   "rank_change": -2
   },
   {
    "name": "Galaxy Surfactants",
@@ -26845,9 +27060,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 508,
+   "rank": 510,
    "previous_rank": 508,
-   "rank_change": 0
+   "rank_change": -2
   },
   {
    "name": "GMM Pfaudler",
@@ -26871,9 +27086,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 509,
+   "rank": 511,
    "previous_rank": 509,
-   "rank_change": 0
+   "rank_change": -2
   },
   {
    "name": "Harsha Engineers",
@@ -26897,9 +27112,34 @@
     }
    ],
    "also_known_as": [],
-   "rank": 510,
+   "rank": 512,
    "previous_rank": 510,
-   "rank_change": 0
+   "rank_change": -2
+  },
+  {
+   "name": "HCL Technologies",
+   "ticker": "NSE/BSE: HCLTECH",
+   "symbol": "HCLTECH",
+   "industries_count": 1,
+   "direct_count": 0,
+   "nodes_count": 1,
+   "industries": [
+    {
+     "name": "India Chip Design & IP",
+     "slug": "chip-design-ip-india",
+     "positions": [
+      {
+       "exposure": "conglomerate",
+       "nodes": [
+        "Micro-architecture & RTL Design"
+       ]
+      }
+     ]
+    }
+   ],
+   "rank": 513,
+   "previous_rank": null,
+   "rank_change": null
   },
   {
    "name": "Hilltone Software & Gases",
@@ -26922,9 +27162,9 @@
      ]
     }
    ],
-   "rank": 511,
+   "rank": 514,
    "previous_rank": 511,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Kalyani Steels",
@@ -26948,9 +27188,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 512,
+   "rank": 515,
    "previous_rank": 512,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "L&T / KEC / KPIL",
@@ -26974,9 +27214,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 513,
+   "rank": 516,
    "previous_rank": 513,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Lakshmi Machine Works",
@@ -27000,9 +27240,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 514,
+   "rank": 517,
    "previous_rank": 514,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "NRB Bearings",
@@ -27025,9 +27265,9 @@
      ]
     }
    ],
-   "rank": 515,
+   "rank": 518,
    "previous_rank": 515,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Optiemus Infracom",
@@ -27051,9 +27291,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 516,
+   "rank": 519,
    "previous_rank": 516,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "PCBL Chemical",
@@ -27077,9 +27317,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 517,
+   "rank": 520,
    "previous_rank": 517,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Prince Pipes & Fittings",
@@ -27102,9 +27342,9 @@
      ]
     }
    ],
-   "rank": 518,
+   "rank": 521,
    "previous_rank": 518,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "R.P.P. Infra Projects",
@@ -27128,9 +27368,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 519,
+   "rank": 522,
    "previous_rank": 519,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "RailTel",
@@ -27154,9 +27394,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 520,
+   "rank": 523,
    "previous_rank": 520,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Ramky Infrastructure",
@@ -27179,9 +27419,9 @@
      ]
     }
    ],
-   "rank": 521,
+   "rank": 524,
    "previous_rank": 521,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Refex Industries",
@@ -27204,9 +27444,9 @@
      ]
     }
    ],
-   "rank": 522,
+   "rank": 525,
    "previous_rank": 522,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Rishabh Instruments",
@@ -27230,9 +27470,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 523,
+   "rank": 526,
    "previous_rank": 523,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Savita Oil Technologies",
@@ -27256,9 +27496,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 524,
+   "rank": 527,
    "previous_rank": 524,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Shaily Engineering Plastics",
@@ -27282,9 +27522,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 525,
+   "rank": 528,
    "previous_rank": 525,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Starlink",
@@ -27307,9 +27547,9 @@
      ]
     }
    ],
-   "rank": 526,
+   "rank": 529,
    "previous_rank": 526,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "State Bank of India",
@@ -27332,9 +27572,9 @@
      ]
     }
    ],
-   "rank": 527,
+   "rank": 530,
    "previous_rank": 527,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Supreme Industries",
@@ -27357,9 +27597,9 @@
      ]
     }
    ],
-   "rank": 528,
+   "rank": 531,
    "previous_rank": 528,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Tata Advanced Systems",
@@ -27383,9 +27623,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 529,
+   "rank": 532,
    "previous_rank": 529,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Technocraft Industries",
@@ -27409,9 +27649,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 530,
+   "rank": 533,
    "previous_rank": 530,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Titan Company",
@@ -27435,9 +27675,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 531,
+   "rank": 534,
    "previous_rank": 531,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Vidya Wires",
@@ -27461,9 +27701,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 532,
+   "rank": 535,
    "previous_rank": 532,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Vijaya Diagnostic Centre",
@@ -27487,9 +27727,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 533,
+   "rank": 536,
    "previous_rank": 533,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Vimta Labs",
@@ -27513,9 +27753,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 534,
+   "rank": 537,
    "previous_rank": 534,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Welspun Corp",
@@ -27539,9 +27779,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 535,
+   "rank": 538,
    "previous_rank": 535,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Yash Highvoltage",
@@ -27565,9 +27805,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 536,
+   "rank": 539,
    "previous_rank": 536,
-   "rank_change": 0
+   "rank_change": -3
   },
   {
    "name": "Zydus Lifesciences",
@@ -27591,9 +27831,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 537,
+   "rank": 540,
    "previous_rank": 537,
-   "rank_change": 0
+   "rank_change": -3
   }
  ]
 }
