@@ -17677,6 +17677,307 @@
      "in_universe_coverage": true
     }
    ]
+  },
+  {
+   "slug": "chip-design-ip-india",
+   "industry": "Chip Design & IP",
+   "scope": "INDIA",
+   "path": "industries/chip-design-ip-india.html",
+   "analysis_date": "2026-11-03",
+   "universe": "NSE/BSE",
+   "sector": "Semiconductors & Semiconductor Equipment",
+   "derived_from": null,
+   "drill_downs": [],
+   "nodes": [
+    {
+     "id": "rtl",
+     "name": "Micro-architecture & RTL Design",
+     "level": 2,
+     "aliases": [
+      "RTL design",
+      "micro-architecture",
+      "front-end design"
+     ],
+     "priority": "high",
+     "bottleneck": false,
+     "in_universe_coverage": true,
+     "coverage_note": "Listed design services (MosChip, Sasken, LTTS, Cyient) plus captives."
+    },
+    {
+     "id": "verif",
+     "name": "Functional Verification & DV",
+     "level": 2,
+     "aliases": [
+      "verification",
+      "DV",
+      "simulation",
+      "UVM"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": true,
+     "coverage_note": "Listed services cover it; the scale sits in unlisted captives."
+    },
+    {
+     "id": "pd",
+     "name": "Physical Design, DFT & Sign-off",
+     "level": 2,
+     "aliases": [
+      "physical design",
+      "P&R",
+      "place and route",
+      "DFT",
+      "timing closure"
+     ],
+     "priority": "high",
+     "bottleneck": false,
+     "in_universe_coverage": true,
+     "coverage_note": "Listed design services (MosChip, Cyient, LTTS)."
+    },
+    {
+     "id": "analog",
+     "name": "Analog & Mixed-Signal Design",
+     "level": 2,
+     "aliases": [
+      "analog design",
+      "mixed-signal",
+      "AMS",
+      "analog layout"
+     ],
+     "priority": "high",
+     "bottleneck": false,
+     "in_universe_coverage": true,
+     "coverage_note": "Sasken, Cyient Semiconductors, MosChip."
+    },
+    {
+     "id": "eda-fe",
+     "name": "EDA - Front-end Tools",
+     "level": 2,
+     "aliases": [
+      "EDA",
+      "simulation tools",
+      "synthesis",
+      "formal verification"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": false,
+     "coverage_note": "No listed or unlisted Indian EDA vendor; Synopsys/Cadence/Siemens."
+    },
+    {
+     "id": "eda-be",
+     "name": "EDA - Back-end & Sign-off",
+     "level": 2,
+     "aliases": [
+      "sign-off",
+      "DRC",
+      "LVS",
+      "STA",
+      "static timing"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": false,
+     "coverage_note": "No Indian vendor; Siemens Calibre >85% of physical verification."
+    },
+    {
+     "id": "emul",
+     "name": "Emulation & Prototyping Hardware",
+     "level": 2,
+     "aliases": [
+      "emulation",
+      "Palladium",
+      "ZeBu",
+      "prototyping"
+     ],
+     "priority": "med",
+     "bottleneck": false,
+     "in_universe_coverage": false,
+     "coverage_note": "No Indian vendor; Cadence Palladium 55-60%."
+    },
+    {
+     "id": "proc-ip",
+     "name": "Processor IP (Arm / RISC-V)",
+     "level": 2,
+     "aliases": [
+      "processor IP",
+      "CPU core",
+      "Arm",
+      "RISC-V",
+      "ISA licence"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": false,
+     "coverage_note": "InCore, Mindgrove unlisted; Tejas/Saankhya and CG/Axiro are IP-adjacent proxies."
+    },
+    {
+     "id": "iface-ip",
+     "name": "Interface & Foundation IP",
+     "level": 2,
+     "aliases": [
+      "interface IP",
+      "PHY",
+      "PCIe IP",
+      "HBM PHY",
+      "UCIe",
+      "foundation IP"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": false,
+     "coverage_note": "No listed exposure; Synopsys DesignWare dominant; SmartDV private."
+    },
+    {
+     "id": "vip",
+     "name": "Verification IP (VIP)",
+     "level": 3,
+     "aliases": [
+      "VIP",
+      "verification IP",
+      "protocol models"
+     ],
+     "priority": "med",
+     "bottleneck": false,
+     "in_universe_coverage": false,
+     "coverage_note": "SmartDV (Bengaluru) private; no listed exposure."
+    },
+    {
+     "id": "analog-ip",
+     "name": "Analog, Power & Security IP",
+     "level": 3,
+     "aliases": [
+      "analog IP",
+      "power IP",
+      "security IP",
+      "PHY IP"
+     ],
+     "priority": "med",
+     "bottleneck": false,
+     "in_universe_coverage": true,
+     "coverage_note": "Cyient Semiconductors (power ASSP IP), Sasken."
+    },
+    {
+     "id": "compute",
+     "name": "EDA Compute & Licence Servers",
+     "level": 2,
+     "aliases": [
+      "EDA compute",
+      "compute farm",
+      "licence server",
+      "HPC"
+     ],
+     "priority": "med",
+     "bottleneck": false,
+     "in_universe_coverage": false,
+     "coverage_note": "No listed EDA-compute business; GPU-cloud capacity is adjacent only."
+    },
+    {
+     "id": "pdk",
+     "name": "Foundry PDKs & Cell Libraries",
+     "level": 2,
+     "aliases": [
+      "PDK",
+      "process design kit",
+      "standard cell library",
+      "design rules"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": false,
+     "coverage_note": "Foundry-owned; SCL 180nm domestic, Tata-PSMC 28nm from 2029."
+    },
+    {
+     "id": "services",
+     "name": "Design Services & Turnkey ASIC",
+     "level": 2,
+     "aliases": [
+      "design services",
+      "turnkey ASIC",
+      "ODC",
+      "fabless services",
+      "ASIC design"
+     ],
+     "priority": "high",
+     "bottleneck": false,
+     "in_universe_coverage": true,
+     "coverage_note": "MosChip, Cyient Semiconductors, Sasken, LTTS, Tata Elxsi, KPIT, Tata Technologies, HCLTech, ASM Technologies."
+    },
+    {
+     "id": "talent",
+     "name": "Design Talent & Upskilling",
+     "level": 2,
+     "aliases": [
+      "talent",
+      "VLSI engineers",
+      "upskilling",
+      "C2S",
+      "workforce"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": true,
+     "coverage_note": "MosChip MAST; C2S and DLI public infrastructure."
+    },
+    {
+     "id": "tapeout",
+     "name": "Foundry / MPW Tape-out",
+     "level": 2,
+     "aliases": [
+      "tape-out",
+      "MPW",
+      "shuttle",
+      "foundry",
+      "mask"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": false,
+     "coverage_note": "Tata Electronics and SCL unlisted/state-owned; every advanced-node design tapes out abroad."
+    },
+    {
+     "id": "osat",
+     "name": "OSAT & Advanced Packaging",
+     "level": 2,
+     "aliases": [
+      "OSAT",
+      "ATMP",
+      "packaging",
+      "assembly and test"
+     ],
+     "priority": "med",
+     "bottleneck": false,
+     "in_universe_coverage": true,
+     "coverage_note": "Kaynes, CG Power (CG Semi), SPEL."
+    },
+    {
+     "id": "ate",
+     "name": "ATE Test & Silicon Validation",
+     "level": 3,
+     "aliases": [
+      "ATE",
+      "test",
+      "validation",
+      "characterisation"
+     ],
+     "priority": "med",
+     "bottleneck": false,
+     "in_universe_coverage": true,
+     "coverage_note": "Sasken, SPEL, Kaynes; Tessolve unlisted; ATE hardware imported."
+    }
+   ],
+   "related": [
+    {
+     "slug": "telecom-chipsets-india",
+     "node": "EDA Tools, IP & Design Services",
+     "note": "Shared EDA/IP layer; that entry maps it for telecom silicon, this one as the industry itself."
+    },
+    {
+     "slug": "semiconductor-equipment-materials-india",
+     "node": "Fab & tool software (EDA, APC, MES, digital twin)",
+     "note": "Shared EDA/design-software layer."
+    }
+   ]
   }
  ]
 }
