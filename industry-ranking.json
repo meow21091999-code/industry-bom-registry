@@ -4322,7 +4322,7 @@
   {
    "slug": "railway-india",
    "title": "India Railway",
-   "group": "",
+   "group": "Railways & Mass Transit",
    "scored": false
   },
   {
@@ -4886,7 +4886,7 @@
   {
    "slug": "room-ac-white-goods-components-india",
    "title": "India Room AC & White-Goods Components",
-   "group": "",
+   "group": "Consumer Durables & Components",
    "scored": false
   },
   {
@@ -5886,7 +5886,7 @@
   {
    "slug": "shipbuilding-ship-repair-india",
    "title": "India Shipbuilding & Ship Repair",
-   "group": "",
+   "group": "Marine & Shipbuilding",
    "scored": false
   },
   {
@@ -7355,7 +7355,7 @@
   {
    "slug": "tunnel-boring-machine-india",
    "title": "India Tunnel Boring Machine",
-   "group": "",
+   "group": "Construction & Tunnelling Equipment",
    "scored": false
   },
   {

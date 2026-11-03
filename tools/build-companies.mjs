@@ -77,6 +77,13 @@ const rows = base.companies || [];
 const byNorm = new Map(rows.map((r) => [norm(r.name), r]));
 const bySymbol = new Map(rows.filter((r) => r.symbol).map((r) => [r.symbol, r]));
 
+// Corporate-suffix stem, used only as a LAST-RESORT match when neither the exact
+// normalised name nor the ticker symbol resolves. Without it, "X" on one page and
+// "X Ltd" on another become two rows for one company and inflate every count.
+const stemOf = (n) => norm(n).replace(/\s+(ltd|limited|pvt|private|inc|plc|corp|corporation)$/, '').trim();
+const byStem = new Map();
+for (const r of rows) { const k = stemOf(r.name); if (k && !byStem.has(k)) byStem.set(k, r); }
+
 const seenSlugs = new Set();
 const touched = new Set();
 
@@ -115,11 +122,14 @@ for (const file of readdirSync(DIR).filter((f) => f.endsWith('.html')).sort()) {
       const sym = symbolOf(rec.ticker);
       if (sym && bySymbol.has(sym)) row = bySymbol.get(sym);
     }
+    if (!row) row = byStem.get(stemOf(name)) || null;
     if (!row) {
       row = { name, ticker: rec.ticker, symbol: symbolOf(rec.ticker), industries_count: 0, direct_count: 0, nodes_count: 0, industries: [] };
       rows.push(row);
       byNorm.set(norm(name), row);
       if (row.symbol) bySymbol.set(row.symbol, row);
+      const k = stemOf(name);
+      if (k && !byStem.has(k)) byStem.set(k, row);
     }
     if (!row.ticker && rec.ticker) row.ticker = rec.ticker;
     if (!row.symbol && rec.ticker) row.symbol = symbolOf(rec.ticker);
@@ -136,6 +146,56 @@ for (const file of readdirSync(DIR).filter((f) => f.endsWith('.html')).sort()) {
     else (row.industries = row.industries || []).push(record);
     touched.add(row);
   }
+}
+
+// ---- consolidate duplicate rows for the same company ----------------------
+// The same entity reaches the index under several ticker spellings across pages
+// (e.g. MTAR / MTARTECH, three SPEL rows, two Ericsson rows). Match on the
+// normalised name, union the positions, keep one row. Merging is lossless: every
+// industry, exposure and node from the duplicate is folded into the survivor.
+const preferRow = (a, b) => {
+  const score = (r) => [
+    (r.industries || []).length,
+    (r.industries || []).reduce((s, i) => s + (i.positions || []).length, 0),
+    r.symbol && !/^[0-9]+$/.test(r.symbol) ? 1 : 0,   // a real ticker beats a BSE code
+    r.ticker && /:/.test(r.ticker) ? 1 : 0,
+  ];
+  const sa = score(a), sb = score(b);
+  for (let k = 0; k < sa.length; k++) { if (sa[k] !== sb[k]) return sa[k] > sb[k] ? a : b; }
+  return a;
+};
+
+const groups = new Map();
+for (const r of rows) {
+  const k = norm(r.name);
+  if (!groups.has(k)) groups.set(k, []);
+  groups.get(k).push(r);
+}
+const dropped = new Set();
+for (const [, group] of groups) {
+  if (group.length < 2) continue;
+  const keep = group.reduce(preferRow);
+  for (const other of group) {
+    if (other === keep) continue;
+    for (const ind of other.industries || []) {
+      const hit = (keep.industries = keep.industries || []).find((i) => i.slug === ind.slug);
+      if (!hit) { keep.industries.push(ind); continue; }
+      for (const pos of ind.positions || []) {
+        const p = hit.positions.find((x) => x.exposure === pos.exposure);
+        if (!p) { hit.positions.push(pos); continue; }
+        for (const n of pos.nodes || []) if (!p.nodes.includes(n)) p.nodes.push(n);
+      }
+    }
+    if (!keep.ticker && other.ticker) keep.ticker = other.ticker;
+    if (!keep.symbol && other.symbol) keep.symbol = other.symbol;
+    dropped.add(other);
+  }
+}
+if (dropped.size) {
+  const kept = rows.filter((r) => !dropped.has(r));
+  rows.length = 0;
+  rows.push(...kept);
+  console.log(`consolidated ${dropped.size} duplicate row(s) into their canonical company`);
 }
 
 // ---- recompute derived counts --------------------------------------------

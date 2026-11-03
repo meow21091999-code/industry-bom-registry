@@ -7884,7 +7884,8 @@
     "node": "Battery Management System (BMS)"
    },
    "drill_downs": [
-    "pcb-electronic-components-india"
+    "pcb-electronic-components-india",
+    "ev-powertrain-traction-india"
    ],
    "nodes": [
     {
@@ -9487,7 +9488,8 @@
    "sector": "Automotive & Mobility",
    "derived_from": null,
    "drill_downs": [
-    "display-manufacturing-india"
+    "display-manufacturing-india",
+    "ev-powertrain-traction-india"
    ],
    "nodes": [
     {
@@ -17976,6 +17978,249 @@
      "slug": "semiconductor-equipment-materials-india",
      "node": "Fab & tool software (EDA, APC, MES, digital twin)",
      "note": "Shared EDA/design-software layer."
+    }
+   ]
+  },
+  {
+   "slug": "ev-powertrain-traction-india",
+   "industry": "EV Powertrain & Traction Systems",
+   "scope": "INDIA",
+   "path": "industries/ev-powertrain-traction-india.html",
+   "analysis_date": "2026-10-28",
+   "universe": "NSE/BSE",
+   "sector": "Automotive & Mobility",
+   "derived_from": [
+    {
+     "slug": "vehicles-auto-components-india",
+     "industry": "Vehicles & Auto Components",
+     "node": "Passenger-Vehicle EV Powertrain & Battery"
+    },
+    {
+     "slug": "battery-management-system-india",
+     "industry": "Battery Management Systems (BMS)",
+     "node": "BMS Hardware & Control Electronics"
+    }
+   ],
+   "drill_downs": [],
+   "nodes": [
+    {
+     "id": "motor",
+     "name": "Traction Motor Assembly (PMSM / BLDC)",
+     "level": 2,
+     "aliases": [
+      "traction motor",
+      "pmsm motor",
+      "bldc motor",
+      "ev motor",
+      "motor assembly"
+     ],
+     "priority": "high",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "magnets",
+     "name": "Sintered NdFeB Magnets (REPM)",
+     "level": 3,
+     "aliases": [
+      "ndfeb magnet",
+      "sintered magnet",
+      "rare-earth magnet",
+      "repm",
+      "permanent magnet",
+      "neodymium"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "lamination",
+     "name": "Laminations & CRNO Electrical Steel",
+     "level": 3,
+     "aliases": [
+      "crno",
+      "crngo",
+      "electrical steel",
+      "silicon steel",
+      "lamination",
+      "stator lamination"
+     ],
+     "priority": "high",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "winding",
+     "name": "Windings — Enamelled Copper Wire",
+     "level": 3,
+     "aliases": [
+      "enamelled copper wire",
+      "magnet wire",
+      "winding",
+      "copper winding"
+     ],
+     "priority": "med",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "mech",
+     "name": "Shaft, Bearings, Housing & Resolver",
+     "level": 3,
+     "aliases": [
+      "motor shaft",
+      "resolver",
+      "bearing",
+      "motor housing"
+     ],
+     "priority": "med",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "powermodule",
+     "name": "Power Module (IGBT / SiC)",
+     "level": 3,
+     "aliases": [
+      "igbt module",
+      "sic module",
+      "power module",
+      "power semiconductor module"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "controlic",
+     "name": "Gate Driver, MCU & Control ICs",
+     "level": 3,
+     "aliases": [
+      "gate driver",
+      "mcu",
+      "motor control ic",
+      "control ic",
+      "dsp"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": false
+    },
+    {
+     "id": "dclink",
+     "name": "DC-Link Capacitor, Busbar & Current Sensing",
+     "level": 3,
+     "aliases": [
+      "dc-link capacitor",
+      "dc link",
+      "busbar",
+      "current sensor"
+     ],
+     "priority": "med",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "pcba",
+     "name": "Inverter PCBA, SMT & Firmware Flashing",
+     "level": 2,
+     "aliases": [
+      "inverter pcba",
+      "inverter assembly",
+      "smt",
+      "firmware flashing"
+     ],
+     "priority": "med",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "gearbox",
+     "name": "Reduction Gear, Differential & E-Axle",
+     "level": 2,
+     "aliases": [
+      "e-axle",
+      "e axle",
+      "reduction gear",
+      "differential",
+      "gearbox"
+     ],
+     "priority": "high",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "software",
+     "name": "Motor Control Software, VCU & Functional Safety",
+     "level": 2,
+     "aliases": [
+      "motor control software",
+      "foc",
+      "vcu",
+      "functional safety",
+      "asil"
+     ],
+     "priority": "med",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "thermal",
+     "name": "Powertrain Thermal & Cooling",
+     "level": 2,
+     "aliases": [
+      "motor cooling",
+      "inverter cooling",
+      "thermal management",
+      "oil cooling"
+     ],
+     "priority": "med",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "test",
+     "name": "Test, Validation & Homologation",
+     "level": 2,
+     "aliases": [
+      "dyno",
+      "emc test",
+      "homologation",
+      "arai",
+      "validation"
+     ],
+     "priority": "med",
+     "bottleneck": true,
+     "in_universe_coverage": false
+    },
+    {
+     "id": "equipment",
+     "name": "Motor & Inverter Manufacturing Equipment",
+     "level": 2,
+     "aliases": [
+      "winding machine",
+      "hairpin line",
+      "stator line",
+      "dyno line",
+      "manufacturing equipment"
+     ],
+     "priority": "med",
+     "bottleneck": true,
+     "in_universe_coverage": false
+    },
+    {
+     "id": "oem",
+     "name": "OEM Integration & Demand",
+     "level": 1,
+     "aliases": [
+      "oem",
+      "vehicle integration",
+      "traction demand"
+     ],
+     "priority": "med",
+     "bottleneck": false,
+     "in_universe_coverage": true
     }
    ]
   }

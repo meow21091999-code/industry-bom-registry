@@ -282,6 +282,83 @@ if (industryPages.length) {
       repoProblems.push('index.html does not link views/companies-master-list.html — the company list is unreachable');
     }
   }
+  const pageSlugs = industryPages.map((p) => basename(p).replace(/\.html$/, ''));
+
+  // ---- register coverage: an entry page nobody can reach is an orphan ------ 
+  // (four pages once sat on disk, live and correct, with no row in index.html —
+  // invisible to every reader and every link check that only walks the index.)
+  if (existsSync('index.html')) {
+    const idxHtml = readFileSync('index.html', 'utf8');
+    const linkedSlugs = new Set([...idxHtml.matchAll(/href="industries\/([A-Za-z0-9._-]+)\.html/gi)].map((m) => m[1]));
+    const unlisted = pageSlugs.filter((s) => !linkedSlugs.has(s));
+    if (unlisted.length) {
+      repoProblems.push('index.html does not list ' + unlisted.length + ' entry page(s): ' + unlisted.join(', ') +
+        ' — an unlisted page is unreachable from the register');
+    }
+    const dead = [...linkedSlugs].filter((s) => !pageSlugs.includes(s));
+    if (dead.length) {
+      repoProblems.push('index.html links ' + dead.length + ' page(s) that do not exist: ' + dead.join(', '));
+    }
+  }
+
+  // ---- node index: every page indexed, and lineage symmetric both ways ------ 
+  if (existsSync('registry-nodes.json')) {
+    try {
+      const nd = JSON.parse(readFileSync('registry-nodes.json', 'utf8'));
+      const entries = nd.entries || [];
+      const inIndex = new Set(entries.map((e) => e.slug));
+      const missingFromIndex = pageSlugs.filter((s) => !inIndex.has(s));
+      if (missingFromIndex.length) {
+        repoProblems.push('registry-nodes.json has no entry for ' + missingFromIndex.length + ' page(s): ' +
+          missingFromIndex.join(', ') + ' — lineage lookup and node matching cannot see them');
+      }
+      const indexOrphans = [...inIndex].filter((s) => !pageSlugs.includes(s));
+      if (indexOrphans.length) {
+        repoProblems.push('registry-nodes.json lists ' + indexOrphans.length + ' slug(s) with no page: ' + indexOrphans.join(', '));
+      }
+      const asSlugs = (x) => !x ? [] : (Array.isArray(x) ? x.map((i) => (typeof i === 'string' ? i : i.slug)) : (typeof x === 'string' ? [x] : [x.slug]));
+      const bySlug = new Map(entries.map((e) => [e.slug, e]));
+      const oneWay = [];
+      for (const e of entries) {
+        for (const parent of asSlugs(e.derived_from)) {
+          const p = bySlug.get(parent);
+          if (!p) { oneWay.push(e.slug + ' -> missing parent ' + parent); continue; }
+          if (!asSlugs(p.drill_downs).includes(e.slug)) oneWay.push(e.slug + ' derived_from ' + parent + ' but ' + parent + '.drill_downs omits it');
+        }
+        for (const child of asSlugs(e.drill_downs)) {
+          const c = bySlug.get(child);
+          if (!c) { oneWay.push(e.slug + ' drill_downs -> missing child ' + child); continue; }
+          if (!asSlugs(c.derived_from).includes(e.slug)) oneWay.push(e.slug + ' drill_downs ' + child + ' but ' + child + '.derived_from omits it');
+        }
+      }
+      if (oneWay.length) {
+        repoProblems.push('registry-nodes.json lineage is one-way for ' + oneWay.length + ' relation(s): ' +
+          oneWay.slice(0, 4).join('; ') + (oneWay.length > 4 ? ' (+' + (oneWay.length - 4) + ' more)' : ''));
+      }
+    } catch (e) {
+      repoProblems.push('registry-nodes.json is not valid JSON: ' + String(e.message).slice(0, 70));
+    }
+  }
+
+  // ---- derived VIEW freshness: the view carries its own copy of the counts -- 
+  if (existsSync('views/companies-master-list.html') && existsSync('companies.json')) {
+    try {
+      const view = readFileSync('views/companies-master-list.html', 'utf8');
+      const cc = (JSON.parse(readFileSync('companies.json', 'utf8')).counts) || {};
+      const sub = (view.match(/<div class="subtitle">([^<]*)/) || [, ''])[1];
+      const m2 = sub.match(/(\d+)\s+companies\s*&middot;\s*(\d+)\s+industries\s*&middot;\s*(\d+)\s+node mappings/);
+      if (!m2) {
+        repoProblems.push('views/companies-master-list.html headline is unreadable — regenerate with node tools/build-companies-view.mjs');
+      } else if (+m2[1] !== cc.companies || +m2[2] !== cc.industries || +m2[3] !== cc.mappings) {
+        repoProblems.push('views/companies-master-list.html is STALE: it reports ' + m2[1] + ' companies / ' + m2[2] +
+          ' industries / ' + m2[3] + ' node mappings, companies.json has ' + cc.companies + ' / ' + cc.industries +
+          ' / ' + cc.mappings + ' — regenerate with node tools/build-companies-view.mjs');
+      }
+    } catch (e) {
+      repoProblems.push('companies.json is not valid JSON: ' + String(e.message).slice(0, 70));
+    }
+  }
+
   if (repoProblems.length) {
     failures++;
     console.log('FAIL  repo (derived artefacts)');
