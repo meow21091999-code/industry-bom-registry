@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>India Chip Design &amp; IP &mdash; BOM, Value Chain &amp; Company Map</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/registry.css">
+</head>
+<body>
+
+<div style="max-width:1180px;margin:0 auto 18px;font-family:'IBM Plex Mono',monospace;font-size:12px;">
+  <a href="../index.html" style="color:var(--blue);text-decoration:none;border-bottom:1px solid var(--border);">&larr; Industry BOM Registry</a>
+  <span style="color:var(--text-dim);">&nbsp;/&nbsp;Semiconductors &mdash; India</span>
+  <span style="color:var(--text-dim);">&nbsp;/&nbsp;Chip Design &amp; IP</span>
+</div>
+<div class="container">
+
+  <header class="masthead animate" style="--i:0">
+    <div class="eyebrow">Industrial BOM &amp; Value-Chain Dissection</div>
+    <h1>India <span>Chip Design &amp; IP</span></h1>
+    <div class="subtitle">EDA tools, processor and interface IP, RTL-to-GDSII design services and fabless product companies &middot; the layer India owns in talent and rents in tools &middot; BOM tree &middot; value-chain ladder &middot; NSE/BSE company map</div>
+    <div class="scope-bar">
+      <span class="chip chip--gold">Analysis date: 2026-11-03</span>
+      <span class="chip">Scope: INDIA</span>
+      <span class="chip">Interest: investment research</span>
+      <span class="chip">Universe: NSE / BSE</span>
+      <span class="chip chip--high">India lens: ON</span>
+      <span class="chip">Materiality: all exposures</span>
+      <span class="chip">Depth: depth-first &middot; all subsystems</span>
+    </div>
+  </header>
+
+  <section class="animate" style="--i:1"><div class="metric-cards">
+    <div class="metric-card metric-card--gold"><div class="metric-card__val">~20%</div><div class="metric-card__label">India&rsquo;s share of world chip-design engineers</div><div class="metric-card__sub">~1.25 lakh designers &middot; ~180 design centres</div></div>
+    <div class="metric-card metric-card--high"><div class="metric-card__val">US$18 bn</div><div class="metric-card__label">Global EDA + IP market, 2025</div><div class="metric-card__sub">value (nominal) &middot; Big-3 hold &gt;85% &middot; India listed exposure: none</div></div>
+    <div class="metric-card metric-card--gold"><div class="metric-card__val">&#8377;1.27 lakh cr</div><div class="metric-card__label">Semicon 2.0 outlay (US$13.5 bn)</div><div class="metric-card__sub">notified 31-Aug-2026 &middot; DLI 2.0 &asymp; &#8377;5,000 cr inside it</div></div>
+    <div class="metric-card"><div class="metric-card__val">372</div><div class="metric-card__label">Homegrown chip-design startups</div><div class="metric-card__sub">only 11% VC-funded &middot; US$161 mn raised since 2023</div></div>
+    <div class="metric-card"><div class="metric-card__val">24</div><div class="metric-card__label">DLI projects approved</div><div class="metric-card__sub">25 tape-outs &middot; 7 chips fabricated &middot; 140+ IP cores</div></div>
+    <div class="metric-card metric-card--gold"><div class="metric-card__val">12.9%</div><div class="metric-card__label">5-year CAGR (value, nominal)</div><div class="metric-card__sub">India ER&amp;D &mdash; semiconductor vertical &middot; India-only design series [UNAVAILABLE]</div></div>
+    <div class="metric-card metric-card--high"><div class="metric-card__val">~US$4.4 mn</div><div class="metric-card__label">Average Indian chip-design VC round</div><div class="metric-card__sub">vs US$3&ndash;5 mn to build one proof-of-concept chip</div></div>
+  </div></section>
+
+  <section class="animate" style="--i:1">
+    <div class="sec-head"><span class="sec-num">DG</span><span class="sec-title">Digest &mdash; at a glance</span><span class="sec-note">A short summary. Structure and inputs live on the tree; process, value pools and watch items are summarised here.</span></div>
+    <div class="digest">
+      <div class="digest__item"><div class="digest__h">Snapshot</div><p>Chip design and IP is the layer where silicon is conceived and proved before any factory touches it: EDA software, licensed IP blocks, and the design services and fabless companies that turn a specification into a GDSII file. India holds about a fifth of the world&rsquo;s design engineers and almost none of the tools or core IP &mdash; that asymmetry is the whole story.</p></div>
+      <div class="digest__item"><div class="digest__h">Process &amp; equipment</div><ul><li>The spine is a software flow: architecture &rarr; RTL &rarr; verification (60&ndash;70% of engineering effort) &rarr; synthesis &rarr; place-and-route &rarr; sign-off &rarr; GDSII, then tape-out.</li><li>No factory is needed to design. The physical kit is EDA licence servers, emulation hardware (Cadence Palladium holds 55&ndash;60% of advanced-node emulation) and a compute farm.</li><li>Realisation needs a foundry or MPW shuttle plus an OSAT; India&rsquo;s first fab (Tata&ndash;PSMC Dholera) is guided to 2028, so essentially every Indian design tapes out abroad today.</li></ul></div>
+      <div class="digest__item"><div class="digest__h">Bottlenecks</div><ul><li>EDA is a three-vendor chokepoint &mdash; Synopsys holds &gt;90% of static timing sign-off, Siemens Calibre &gt;85% of physical verification. Resilience: YEARS.</li><li>Processor IP is a tollbooth: Arm collected US$2.61 bn of royalties in FY2026. RISC-V is the only credible escape route.</li><li>Capital gates the proof-of-concept: US$3&ndash;5 mn for a POC, US$20&ndash;25 mn at 28 nm, US$750 mn+ at 4/2 nm.</li><li>Demand, not capability, binds: 24 DLI projects and 25 tape-outs, but buyers must requalify to switch vendors.</li><li>Talent is priced by the captives &mdash; ~60% of senior VLSI engineers sit in Bengaluru.</li></ul></div>
+      <div class="digest__item"><div class="digest__h">Value pools</div><ul><li>Value sits upstream: EDA + IP is an US$18 bn pool with software margins, and the NSE/BSE universe has zero exposure to it.</li><li>India&rsquo;s captured pool is design services &mdash; MosChip &#8377;467 cr (FY25), Sasken &#8377;1,113 cr (FY26), Cyient Semiconductors US$25.7 mn &mdash; thin-margin and headcount-linked.</li><li>Cyient Semiconductors lost US$11.2 mn EBIT on US$25.7 mn revenue in FY26: the cost of moving from services to owned silicon.</li><li>Owned product (ASSP/turnkey) is the only Indian pool with gross margin above 40%; Cyient guides 40%+ GM at ~4&times; revenue by FY31.</li><li>OSAT and packaging (Kaynes, CG Power, SPEL) capture the physical end; IP royalties and EDA renewals leak abroad entirely.</li></ul></div>
+      <div class="digest__item"><div class="digest__h">Market &amp; growth</div><ul><li>No India-only chip-design-and-IP revenue series exists &mdash; [UNAVAILABLE]. Nearest scoped proxy: India ER&amp;D services, semiconductor &amp; electronics vertical, 12.85% CAGR 2026&ndash;31 [REPORTED-T2].</li><li>India ER&amp;D services overall: US$147.3 bn (2026) &rarr; US$238.6 bn (2031), 10.14% nominal CAGR [REPORTED-T2]. Value, not volume.</li><li>Global EDA + IP: US$18 bn (2025) &rarr; US$28&ndash;30 bn (2030) [REPORTED-T3], ~9&ndash;11% [CALCULATED]; semiconductor IP alone US$9.3 bn (2025) &rarr; US$18.6 bn (2032) at 10.2% [REPORTED-T2].</li><li>Volume is not measurable here: there is no Indian design-start or tape-out unit series. Tape-outs (25 under DLI) are the physical proxy.</li></ul></div>
+      <div class="digest__item"><div class="digest__h">Watch items</div><ul><li>DLI 2.0 contours unresolved: ~&#8377;5,000 cr outlay, pari-passu matching capital, CDAC IP co-ownership, 3&times; clawback if IP leaves India [LIVE, as of Sep-2026].</li><li>Semicon 2.0 notified 31-Aug-2026 &mdash; &#8377;1.27 lakh cr across six pillars including design.</li><li>Tata&ndash;PSMC Dholera: commercial production guided 2028, 28 nm by 2029.</li><li>C2i Semiconductors sold to Infineon (Aug-2026) &mdash; the first DLI exit, and the first real test of the IP-retention clause.</li></ul></div>
+      <div class="digest__item"><div class="digest__h">Coverage gaps</div><p>No NSE/BSE exposure to EDA, sign-off, emulation, interface IP, verification IP, foundry tape-out or design compute. Listed exposure is design services (9 companies), turnkey ASIC (2), IP-adjacent (2) and OSAT (3).</p></div>
+    </div>
+  </section>
+
+  <section class="animate" style="--i:2">
+    <div class="sec-head">
+      <span class="sec-num">01</span>
+      <span class="sec-title">System Overview</span>
+      <span class="sec-note">Level 0 &rarr; six subsystems<br>clickable BOM tree in section 03</span>
+    </div>
+    <p style="font-size:14px;line-height:1.7;color:var(--text-dim);margin:0 0 14px;">Chip design is not a factory industry &mdash; it is a <b style="color:var(--text)">software-and-IP industry with a physical tail</b>. Level 0 is the designed chip plus the reusable blocks and tools that make it. Six subsystems follow: <b style="color:var(--text)">A Design Creation</b> (architecture, RTL, verification, physical design, analog layout); <b style="color:var(--text)">B EDA Tools</b> (front-end simulation and synthesis, back-end place-and-route and sign-off, emulation); <b style="color:var(--text)">C Semiconductor IP</b> (processor cores, interface and foundation blocks, verification IP, analog and power IP); <b style="color:var(--text)">D Design Compute &amp; PDKs</b> (licence servers, compute farms, foundry process design kits and standard-cell libraries); <b style="color:var(--text)">E Design Services &amp; Talent</b> (offshore design centres, captive GCCs, upskilling); and <b style="color:var(--text)">F Realisation</b> (foundry or MPW tape-out, OSAT packaging, ATE test and silicon validation).</p>
+    <p style="font-size:14px;line-height:1.7;color:var(--text-dim);margin:0;">India&rsquo;s position is inverted relative to the value chain: it is strong in <b style="color:var(--text)">E</b> and competent in <b style="color:var(--text)">A</b>, weak and largely absent in <b style="color:var(--text)">B</b> and <b style="color:var(--text)">C</b>, and only now building <b style="color:var(--text)">F</b>. That is why the industry&rsquo;s economics look like services rather than like software, and why the policy debate (DLI 2.0) is really about who owns the IP.</p>
+  </section>
+
+  <section class="diagram-shell">
+      <p class="diagram-shell__hint">Ctrl/Cmd + wheel to zoom. Drag to pan when zoomed. Double-click to fit.</p>
+      <div class="mermaid-wrap">
+        <div class="zoom-controls">
+          <button type="button" data-action="zoom-in" title="Zoom in">+</button>
+          <button type="button" data-action="zoom-out" title="Zoom out">&minus;</button>
+          <button type="button" data-action="zoom-fit" title="Smart fit">&#8634;</button>
+          <button type="button" data-action="zoom-one" title="1:1 zoom">1:1</button>
+          <button type="button" data-action="zoom-expand" title="Open full size">&#x26F6;</button>
+          <span class="zoom-label">Loading...</span>
+        </div>
+        <div class="mermaid-viewport">
+          <div class="mermaid mermaid-canvas"></div>
+        </div>
+      </div>
+      <script type="text/plain" class="diagram-source">
+graph TD
+  L0["<b>Level 0</b><br/>Chip Design and IP<br/>(India)"]
+  L0 --> A["A &middot; Design Creation"]
+  L0 --> B["B &middot; EDA Tools"]
+  L0 --> C["C &middot; Semiconductor IP"]
+  L0 --> D["D &middot; Design Compute and PDKs"]
+  L0 --> E["E &middot; Design Services and Talent"]
+  L0 --> F["F &middot; Realisation: tape-out, OSAT, test"]
+  A --> A1["Micro-architecture and RTL"]
+  A --> A2["Verification / DV"]
+  A --> A3["Physical design and sign-off"]
+  A --> A4["Analog and mixed-signal layout"]
+  B --> B1["Front-end: sim, lint, synthesis"]
+  B --> B2["Back-end: P and R, DRC/LVS, STA"]
+  B --> B3["Emulation and prototyping"]
+  C --> C1["Processor IP: Arm / RISC-V"]
+  C --> C2["Interface and foundation IP"]
+  C --> C3["Verification IP"]
+  C --> C4["Analog, power and security IP"]
+  D --> D1["EDA compute and licence servers"]
+  D --> D2["Foundry PDKs and cell libraries"]
+  E --> E1["Design services and ODCs"]
+  E --> E2["Captive GCCs"]
+  E --> E3["Talent and upskilling"]
+  F --> F1["Foundry / MPW tape-out"]
+  F --> F2["OSAT and packaging"]
+  F --> F3["ATE test and silicon validation"]
+  classDef high fill:#c0392b,stroke:#8e2b20,color:#fff,stroke-width:2px;
+  classDef med fill:#d4a73a,stroke:#a37f22,color:#241a05,stroke-width:1.5px;
+  classDef root fill:#1e4e8c,stroke:#12335c,color:#fff,stroke-width:2px;
+  class L0 root;
+  class B,C high;
+  class A,E med;
+      </script>
+    </section>
+
+  <section class="animate" style="--i:3">
+    <div class="sec-head">
+      <span class="sec-num">02</span>
+      <span class="sec-title">Value-Chain Ladder &amp; Supplier Tiers</span>
+      <span class="sec-note">foundational inputs &rarr; aftermarket &middot; Tier-4 &rarr; OEM</span>
+    </div>
+    <div class="ladder">
+      <div class="rung rung--1">
+        <div class="rung__label">Tier 4 &middot; Foundational</div>
+        <div class="rung__body"><b>ISA specifications and architecture licences</b> (Arm architecture, x86, RISC-V International) &middot; EDA mathematics (solvers, timing and device models, formal engines) &middot; <b>foundry PDKs and design rules</b> &middot; standard-cell and memory-compiler libraries &middot; compute (CPU/GPU farms, licence servers) &middot; design talent <span class="mini">[STRUCTURAL]</span></div>
+      </div>
+      <div class="rung rung--2">
+        <div class="rung__label">Tier 3 &middot; Tools &amp; reusable blocks</div>
+        <div class="rung__body"><b>EDA point tools and flows</b> (simulation, formal, synthesis, P&amp;R, DRC/LVS, STA, power) &middot; <b>processor IP</b> (Cortex, Neoverse, SiFive, Andes, InCore) &middot; <b>interface and foundation IP</b> (PCIe, CXL, UCIe, HBM PHY, DDR, SerDes, USB) &middot; verification IP &middot; analog and power IP &middot; emulation and prototyping hardware <span class="mini">[STRUCTURAL]</span></div>
+      </div>
+      <div class="rung rung--3">
+        <div class="rung__label">Tier 2 &middot; Design creation</div>
+        <div class="rung__body">Micro-architecture and RTL &middot; <b>functional verification and DFT</b> (60&ndash;70% of engineering effort) &middot; synthesis and timing closure &middot; <b>physical design and sign-off</b> &middot; analog and mixed-signal layout &middot; firmware, BSP and post-silicon validation <span class="mini">India&rsquo;s core strength</span></div>
+      </div>
+      <div class="rung rung--4">
+        <div class="rung__label">Tier 1 &middot; Productisation</div>
+        <div class="rung__body"><b>Turnkey ASIC</b> (concept to working silicon) &middot; <b>fabless product companies and ASSPs</b> &middot; chiplet and SiP integration &middot; package co-design &middot; silicon bring-up and characterisation &middot; customer qualification <span class="mini">the margin layer India is trying to reach</span></div>
+      </div>
+      <div class="rung rung--4">
+        <div class="rung__label">OEM &middot; System</div>
+        <div class="rung__body">System companies and OEMs that specify custom silicon &mdash; telecom and networking, automotive, industrial, surveillance, metering, defence, data-centre and consumer &middot; design wins are decided here, not in the fab</div>
+      </div>
+      <div class="rung rung--3">
+        <div class="rung__label">Realisation</div>
+        <div class="rung__body"><b>Foundry and MPW shuttle</b> (TSMC, GlobalFoundries, UMC, SCL Mohali 180 nm) &rarr; <b>OSAT</b> (assembly, packaging, final test) &rarr; <b>ATE test and qualification</b> &rarr; certification (AEC-Q100, ISO 26262, security Common Criteria)</div>
+      </div>
+      <div class="rung rung--2">
+        <div class="rung__label">Aftermarket &middot; Life cycle</div>
+        <div class="rung__body">Respins and ECOs &middot; <b>IP re-licensing and per-unit royalties</b> (the annuity that pays for the next design) &middot; EDA subscription renewals &middot; design reuse and derivative SKUs &middot; failure analysis and obsolescence management</div>
+      </div>
+    </div>
+    <p class="footnote">Tier ladder follows the discrete-manufacturing form, with one adaptation: Tier 4 here is <b>standards, mathematics and PDKs</b> rather than mined material &mdash; the &ldquo;raw material&rdquo; of a designed chip is specification and physics, not commodity input.</p>
+  </section>
+
+  <section class="animate" style="--i:4">
+    <div class="sec-head">
+      <span class="sec-num">03</span>
+      <span class="sec-title">BOM Tree &amp; Company Map</span>
+      <span class="sec-note">click a node &rarr; its NSE/BSE companies<br>gaps shown explicitly</span>
+    </div>
+    <div class="map-layout">
+      <div class="map-nodes" id="mapNodes"></div>
+      <aside class="map-panel" id="mapPanel" aria-live="polite"></aside>
+    </div>
+    <div class="legend">
+      <span class="legend-item"><span class="legend-swatch" style="background:var(--gold)"></span> HIGH-priority node</span>
+      <span class="legend-item"><span class="legend-swatch" style="background:var(--green)"></span> mapped in NSE/BSE</span>
+      <span class="legend-item"><span class="legend-swatch" style="background:var(--red)"></span> no coverage in universe</span>
+      <span class="legend-item"><span class="flag flag--bott">BOTTLENECK</span> binding constraint</span>
+    </div>
+    <p class="footnote">Materiality threshold used: <b>all exposures, including minor conglomerate segments</b> (as instructed), so a company appears at a node even where the node is a small share of its revenue &mdash; every entry states the exposure type and, where disclosed, the size.</p>
+  </section>
+
+  <section class="animate" style="--i:5">
+    <div class="sec-head">
+      <span class="sec-num">04</span>
+      <span class="sec-title">Company &times; Node Matrix</span>
+      <span class="sec-note">D direct &middot; I indirect &middot; S supplier &middot; C conglomerate &middot; &mdash; none</span>
+    </div>
+    <div class="table-wrap">
+      <div class="table-scroll">
+        <table class="data">
+          <thead>
+            <tr><th>Company</th><th>RTL / Verif</th><th>PD / Sign-off</th><th>Analog / MS</th><th>EDA</th><th>Processor IP</th><th>Interface IP</th><th>Verif IP</th><th>Turnkey ASIC</th><th>Fabless product</th><th>Tape-out</th><th>OSAT</th><th>ATE / Test</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="c">MosChip Technologies</td><td class="cell-d">D</td><td class="cell-d">D</td><td class="cell-d">D</td><td class="cell-x">&mdash;</td><td class="cell-i">I</td><td class="cell-x">&mdash;</td><td class="cell-x">&mdash;</td><td class="cell-d">D</td><td class="cell-i">I</td><td class="cell-x">&mdash;</td><td class="cell-x">&mdash;</td><td class="cell-i">I</td></tr>
+            <tr><td class="c">Sasken Technologies</td><td class="cell-d">D</td><td class="cell-i">I</td><td class="cell-d">D</td><td class="cell-x">&mdash;</td><td class="cell-x">&mdash;</td><td class="cell-x">&mdash;</td><td class="cell-x">&mdash;</td><td class="cell-i">I</td><td class="cell-x">&mdash;</td><td class="cell-x">&mdash;</td><td class="cell-x">&mdash;</td><td class="cell-d">D</td></tr>
+            <tr><td class="c">Cyient (Semiconductors)</td><td class="cell-d">D</td><td class="cell-d">D</td><td class="cell-d">D</td><td class="cell-x">&mdash;</td><td class="cell-x">&mdash;</td><td class="cell-i">I</td><td class="cell-x">&mdash;</td><td class="cell-d">D</td><td class="cell-d">D</td><td class="cell-x">&mdash;</td><td class="cell-x">&mdash;</td><td class="cell-i">I</td></tr>
+            <tr><td class="c">L&amp;T Technology Services</td><td class="cell-d">D</td><td class="cell-d">D</td><td class="cell-i">I</td><td class="cell-x">&mdash;</td><td class="cell-x">&mdash;</td><td class="cell-x">&mdash;</td><td class="cell-x">&mdash;</td><td class="cell-i">I</td><td class="cell-x">&mdash;</td><td class="cell-x">&mdash;</td><td class="cell-x">&mdash;</td><td class="cell-i">I</td></tr>
+            <tr><td class="c">Tata Elxsi</td><td class="cell-i">I</td><td class="cell-x">&mdash;</td><td class="cell-x">&mdash;</td><td class="cell-x">&mdash;</td><td class="cell-x">&mdash;</td><td class="cell-x">&mdash;</td><td class="cell-x">&mdash;</td><td class="cell-x">&mdash;</td><td class="cell-x">&mdash;</td><td class="cell-x">&mdash;</td><td class="cell-x">&mdash;</td><td class="cell-i">I</td></tr>
+            <tr><td class="c">KPIT Technologies</td><td class="cell-i">I</td><td class="cell-x">&mdash;</td><td class="cell-x">&mdash;</td><td class="cell-x">&mdash;</td><td class="cell-x">&mdash;</td><td class="cell-x">&mdash;</td><td class="cell-x">&mdash;</td><td class="cell-x">&mdash;</td><td class="cell-x">&mdash;</td><td class="cell-x">&mdash;</td><td class="cell-x">&mdash;</td><td class="cell-i">I</td></tr>
+            <tr><td class="c">Tata Technologies</td><td class="cell-i">I</td><td class="cell-x">&mdash;</td><td class="cell-x">&mdash;</td><td class="cell-x">&mdash;</td><td class="cell-x">&mdash;</td><td class="cell-x">&mdash;</td><td class="cell-x">&mdash;</td><td class="cell-x">&mdash;</td><td class="cell-x">&mdash;</td><td class="cell-x">&mdash;</td><td class="cell-x">&mdash;</td><td class="cell-x">&mdash;</td></tr>
+            <tr><td class="c">HCL Technologies</td><td class="cell-c">C</td><td class="cell-x">&mdash;</td><td class="cell-x">&mdash;</td><td class="cell-x">&mdash;</td><td class="cell-x">&mdash;</td><td class="cell-x">&mdash;</td><td class="cell-x">&mdash;</td><td class="cell-x">&mdash;</td><td class="cell-x">&mdash;</td><td class="cell-x">&mdash;</td><td class="cell-x">&mdash;</td><td class="cell-c">C</td></tr>
+            <tr><td class="c">ASM Technologies</td><td class="cell-i">I</td><td class="cell-x">&mdash;</td><td class="cell-x">&mdash;</td><td class="cell-x">&mdash;</td><td class="cell-x">&mdash;</td><td class="cell-x">&mdash;</td><td class="cell-x">&mdash;</td><td class="cell-x">&mdash;</td><td class="cell-x">&mdash;</td><td class="cell-x">&mdash;</td><td class="cell-x">&mdash;</td><td class="cell-i">I</td></tr>
+            <tr><td class="c">Tejas Networks</td><td class="cell-x">&mdash;</td><td class="cell-x">&mdash;</td><td class="cell-x">&mdash;</td><td class="cell-x">&mdash;</td><td class="cell-i">I</td><td class="cell-x">&mdash;</td><td class="cell-x">&mdash;</td><td class="cell-x">&mdash;</td><td class="cell-d">D</td><td class="cell-x">&mdash;</td><td class="cell-x">&mdash;</td><td class="cell-x">&mdash;</td></tr>
+            <tr><td class="c">CG Power &amp; Industrial Solutions</td><td class="cell-x">&mdash;</td><td class="cell-x">&mdash;</td><td class="cell-x">&mdash;</td><td class="cell-x">&mdash;</td><td class="cell-c">C</td><td class="cell-c">C</td><td class="cell-x">&mdash;</td><td class="cell-x">&mdash;</td><td class="cell-c">C</td><td class="cell-x">&mdash;</td><td class="cell-c">C</td><td class="cell-c">C</td></tr>
+            <tr><td class="c">Kaynes Technology</td><td class="cell-x">&mdash;</td><td class="cell-x">&mdash;</td><td class="cell-x">&mdash;</td><td class="cell-x">&mdash;</td><td class="cell-x">&mdash;</td><td class="cell-x">&mdash;</td><td class="cell-x">&mdash;</td><td class="cell-x">&mdash;</td><td class="cell-x">&mdash;</td><td class="cell-x">&mdash;</td><td class="cell-d">D</td><td class="cell-d">D</td></tr>
+            <tr><td class="c">SPEL Semiconductor</td><td class="cell-x">&mdash;</td><td class="cell-x">&mdash;</td><td class="cell-x">&mdash;</td><td class="cell-x">&mdash;</td><td class="cell-x">&mdash;</td><td class="cell-x">&mdash;</td><td class="cell-x">&mdash;</td><td class="cell-x">&mdash;</td><td class="cell-x">&mdash;</td><td class="cell-x">&mdash;</td><td class="cell-d">D</td><td class="cell-d">D</td></tr>
+            <tr><td class="c" style="color:var(--text-dim)">EDA &middot; sign-off &middot; interface IP &middot; foundry</td><td class="cell-x">&mdash;</td><td class="cell-x">&mdash;</td><td class="cell-x">&mdash;</td><td class="cell-x">&mdash;</td><td class="cell-x">&mdash;</td><td class="cell-x">&mdash;</td><td class="cell-x">&mdash;</td><td class="cell-x">&mdash;</td><td class="cell-x">&mdash;</td><td class="cell-x">&mdash;</td><td class="cell-x">&mdash;</td><td class="cell-x">&mdash;</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <p class="footnote">The final row is deliberate: five columns of this matrix have <b>no NSE/BSE company at all</b>. Design services are well covered; tools, core IP and foundry access are not covered by anything listed in India.</p>
+  </section>
+
+  <section class="animate" style="--i:6">
+    <div class="sec-head">
+      <span class="sec-num">05</span>
+      <span class="sec-title">Bottlenecks &mdash; Risk &amp; Opportunity</span>
+      <span class="sec-note">dual-readable: every risk is a substitution play</span>
+    </div>
+    <div class="bn">
+      <div class="bn__risk"><div class="bn__h">Risk</div><p><span class="bn__title">EDA is a three-vendor chokepoint</span>Synopsys, Cadence and Siemens EDA take over 85% of an US$18 bn design-software-and-IP market; at advanced nodes Synopsys holds &gt;90% of static timing analysis and Siemens Calibre &gt;85% of physical verification. A US licence requirement on EDA sales to China in 2025 lasted about six weeks before being rescinded &mdash; proof that the tool layer is a switch a government can throw. Resilience: <b>YEARS</b>.</p></div>
+      <div class="bn__opp"><div class="bn__h">Opportunity</div><p><span class="bn__title">Tool access is already subsidised &mdash; the gap is commercial EDA</span>DLI has given EDA access to 103 fabless companies and logged ~2.25 crore tool-hours. India has no commercial EDA vendor at any node. A credible play is not &ldquo;replace Synopsys&rdquo; but domain-specific automation &mdash; the space InCore attacks from YAML-to-RTL rather than RTL-to-GDSII, and where AI-assisted design-flow startups are now forming.</p></div>
+    </div>
+    <div class="bn">
+      <div class="bn__risk"><div class="bn__h">Risk</div><p><span class="bn__title">Processor IP is a tollbooth</span>Arm took US$4.92 bn of revenue in FY2026, US$2.61 bn of it royalties, and its architecture sits in roughly half the compute of the top cloud firms&rsquo; CPUs. An Indian fabless company that rents its core pays a royalty on every unit shipped, in perpetuity, in dollars. Resilience: <b>MONTHS</b> to switch ISA, <b>YEARS</b> to switch ecosystem.</p></div>
+      <div class="bn__opp"><div class="bn__h">Opportunity</div><p><span class="bn__title">RISC-V is the one open door, and India is inside it</span>RISC-V reached roughly 25% penetration and ~20 bn cumulative cores by end-2025, with the commercial RISC-V market projected at 24.3% CAGR to 2032. India already has silicon-proven cores (InCore&rsquo;s Azurite/Calcite, Mindgrove&rsquo;s Secure IoT at 28 nm) &mdash; the missing piece is design wins and a royalty base, not the core itself.</p></div>
+    </div>
+    <div class="bn">
+      <div class="bn__risk"><div class="bn__h">Risk</div><p><span class="bn__title">Tape-out capital and foundry access gate everything</span>A proof-of-concept chip costs US$3&ndash;5 mn; a 28 nm product US$20&ndash;25 mn; 4/2 nm US$750 mn+. Foundries charge a premium for small volumes on 12&ndash;18 month lead times, and a leading-edge respin costs US$50&ndash;100 mn. DLI caps design support at &#8377;15 cr per application &mdash; roughly one POC.</p></div>
+      <div class="bn__opp"><div class="bn__h">Opportunity</div><p><span class="bn__title">MPW shuttles and SCL are the cheap on-ramp</span>Multi-project-wafer shuttles and SCL Mohali&rsquo;s 180 nm line already carried 254 student and startup tape-outs (175 at SCL, 79 abroad). India&rsquo;s first commercial fab (Tata&ndash;PSMC, Dholera) brings 28 nm onshore by 2029 &mdash; a genuine domestic tape-out path for the first time.</p></div>
+    </div>
+    <div class="bn">
+      <div class="bn__risk"><div class="bn__h">Risk</div><p><span class="bn__title">Demand, not capability, is the binding constraint</span>24 DLI projects and 25 tape-outs have produced capability without buyers: switching from Qualcomm, NXP or ST means retesting and requalification for the customer. C2i Semiconductors, a DLI beneficiary, was sold to Infineon within two years because the Indian ecosystem could not take its product to a global buyer. Resilience: <b>MONTHS&ndash;YEARS</b>.</p></div>
+      <div class="bn__opp"><div class="bn__h">Opportunity</div><p><span class="bn__title">Regulated import substitution is the beachhead</span>India restricted uncertified internet-connected CCTV cameras on security grounds, creating room for ~2 mn &ldquo;designed-in-India&rdquo; chips a year; metering, PoS terminals, drones and defence add captive demand where a local vendor has a compliance advantage rather than a price one. Mindgrove is targeting exactly this with ~6 clients in biometrics, CCTV and metering.</p></div>
+    </div>
+    <div class="bn">
+      <div class="bn__risk"><div class="bn__h">Risk</div><p><span class="bn__title">Policy design is itself a risk</span>DLI 2.0 proposes pari-passu matching of VC money, CDAC co-ownership of IP on supported designs, and a 3&times; clawback if IP moves offshore. Only five or six VC funds are active in Indian semicon, so a matching requirement pushes startups toward the narrowest possible capital pool. [LIVE]</p></div>
+      <div class="bn__opp"><div class="bn__h">Opportunity</div><p><span class="bn__title">The capital gap is the addressable market</span>Indian chip-design VC averaged US$4.35 mn a round against a US$3&ndash;5 mn POC cost; global chip-design startup investment was US$12.2 bn in 2025 against India&rsquo;s 0.2% share. Any structure that de-risks the first silicon &mdash; royalty financing, milestone grants, anchor customers &mdash; converts a policy problem into a financing product.</p></div>
+    </div>
+    <div class="bn">
+      <div class="bn__risk"><div class="bn__h">Risk</div><p><span class="bn__title">Talent is priced by the captives</span>Global GCCs offer stock and salaries a startup cannot match; ~60% of India&rsquo;s senior VLSI workforce sits in Bengaluru, and the sector needs ~85,000 more engineers by 2032. A design engineer lost to a captive is a schedule slip, not a hire.</p></div>
+      <div class="bn__opp"><div class="bn__h">Opportunity</div><p><span class="bn__title">Training capacity already exists and is underused</span>C2S has trained 67,000&ndash;68,000 students across 315 institutions with 254 tape-outs, and DLI logged ~2.25 crore EDA tool-hours. The bottleneck is conversion into product companies, not classroom capacity.</p></div>
+    </div>
+  </section>
+
+  <section class="animate" style="--i:8">
+    <div class="sec-head">
+      <span class="sec-num">06</span>
+      <span class="sec-title">Value pools &amp; cost waterfall</span>
+      <span class="sec-note">where value is captured &middot; and which pool leaks to imports</span>
+    </div>
+    <div class="digest">
+      <div class="digest__item"><div class="digest__h">Where value is captured</div><ul><li><b>Tools and IP capture the economics of the whole industry without taking its risk.</b> EDA vendors earn 85%+ gross margins and grow ~13% a year against ~7% semiconductor R&amp;D growth; Arm converts about 95% of revenue into gross profit on a design-once-licence-forever model.</li><li><b>Design services capture revenue but not margin.</b> They are headcount-linked, priced per engineer-month, and exposed to the customer&rsquo;s R&amp;D budget cycle &mdash; which is exactly what hit FY26.</li><li><b>Owned silicon is where the multiple lives.</b> A fabless ASSP business earns 40%+ gross margin; a design-services business earns 12&ndash;25% EBITDA at best.</li><li><b>OSAT captures the physical tail</b> &mdash; real revenue, contract-manufacturing margins, valued as capacity rather than capability.</li></ul></div>
+      <div class="digest__item"><div class="digest__h">Who captures it (India-listed)</div><ul><li><b>MosChip Technologies</b> <small>NSE/BSE: MOSCHIP</small> &mdash; [REPORTED] India&rsquo;s first listed fabless company: design services, IP services and turnkey ASIC; TSMC Design Centre Alliance partner, 200+ SoC tape-outs; revenue &#8377;466.84 cr FY25 (+59%), EBITDA 12.8%.</li><li><b>Sasken Technologies</b> <small>NSE/BSE: SASKEN</small> &mdash; [REPORTED] Chip-to-cognition engineering: analog and mixed-signal design, SoC verification, validation; revenue &#8377;1,113 cr FY26 (+102%, M&amp;A-driven), EBITDA 7.9%.</li><li><b>Cyient</b> <small>NSE/BSE: CYIENT</small> &mdash; [REPORTED] Cyient Semiconductors is a wholly owned fabless product company: US$25.7 mn FY26 revenue, EBIT &minus;US$11.2 mn; 74% of Kinetic Technologies adds ~US$40 mn; targets 40%+ gross margin and ~4&times; revenue by FY31.</li><li><b>L&amp;T Technology Services</b> <small>NSE/BSE: LTTS</small> &mdash; [REPORTED] Complex SoC design, turnkey SoCs at 3/4/5 nm for hyperscalers; US$1.23 bn FY26 revenue, EBIT 14.5%; silicon is a minority of a diversified portfolio.</li><li><b>Tejas Networks</b> <small>NSE/BSE: TEJASNET</small> &mdash; [REPORTED] Owns Saankhya Labs (unlisted, non-material): SDR chipsets and an indigenous multi-core DSP architecture &mdash; the closest listed exposure to Indian processor IP.</li><li><b>CG Power</b> <small>NSE/BSE: CGPOWER</small> &mdash; [REPORTED] Unlisted subsidiary Axiro designs RF/mmWave and GaN front-end IP in India; a minor segment of a power-equipment company.</li></ul></div>
+      <div class="digest__item"><div class="digest__h">Pools that leak to imports</div><ul><li><b>EDA licences</b> &mdash; 100% imported; even the subsidised tools under DLI are foreign licences.</li><li><b>Processor and interface IP</b> &mdash; Arm, Synopsys DesignWare and Cadence IP hold &gt;75% of global IP revenue; India&rsquo;s share of that pool is negligible.</li><li><b>Foundry and mask</b> &mdash; every Indian design tapes out abroad; masks and wafers are dollar-denominated and bought at small-volume premia.</li><li><b>Emulation and prototyping hardware</b> &mdash; Cadence Palladium holds 55&ndash;60% of advanced-node emulation; no Indian vendor.</li></ul></div>
+    </div>
+    <div class="sec-head" style="margin-top:22px"><span class="sec-num">&#8377;</span><span class="sec-title" style="font-size:15px">Cost waterfall &mdash; ranked, directional</span><span class="sec-note">[DERIVED] ordering only</span></div>
+    <div class="ladder">
+      <div class="rung rung--1"><div class="rung__label">1</div><div class="rung__body"><b>Engineering labour</b> &mdash; the dominant line in a services P&amp;L; verification alone is 60&ndash;70% of effort</div></div>
+      <div class="rung rung--2"><div class="rung__label">2</div><div class="rung__body"><b>EDA licences</b> &mdash; roughly 9&ndash;12% of semiconductor R&amp;D spend, and 12&ndash;15% once IP is included <span class="mini">imported</span></div></div>
+      <div class="rung rung--3"><div class="rung__label">3</div><div class="rung__body"><b>IP licence and NRE</b> &mdash; processor, interface and PHY blocks; plus per-unit royalties that persist for the product&rsquo;s life</div></div>
+      <div class="rung rung--4"><div class="rung__label">4</div><div class="rung__body"><b>Tape-out and masks</b> &mdash; US$3&ndash;5 mn for a POC, US$20&ndash;25 mn at 28 nm, US$750 mn+ at 4/2 nm</div></div>
+      <div class="rung rung--4"><div class="rung__label">5</div><div class="rung__body"><b>Emulation and compute</b> &mdash; accelerator boxes and licence servers; a step function, not a linear cost</div></div>
+      <div class="rung rung--1"><div class="rung__label">&#8734;</div><div class="rung__body">Assembly / OSAT and test margin &mdash; now partly domestic, thinnest <span class="mini">India&rsquo;s reachable layer</span></div></div>
+    </div>
+    <p class="footnote">Cost waterfall is a directional [DERIVED] ordering of this entry&rsquo;s nodes, not measured percentages &mdash; exact Indian cost shares are [UNAVAILABLE] in this pass. The only externally anchored figures are the EDA share of semiconductor R&amp;D (9&ndash;12%, rising to 12&ndash;15% with IP) and the tape-out cost points.</p>
+  </section>
+
+  <section class="animate" style="--i:9">
+    <div class="sec-head">
+      <span class="sec-num">07</span>
+      <span class="sec-title">Industry scorecard</span>
+      <span class="sec-note">nine categories &middot; 1 very unattractive &rarr; 5 highly attractive &middot; missing evidence shown as UNAVAILABLE</span>
+    </div>
+    <div class="scorecard"><div class="scorecard__group scorecard__group--structural"><div class="scorecard__h"><b>Structural attractiveness</b><span class="sc-total">58.6 / 100</span></div><div class="sc-row"><div><div class="sc-name">economics<span class="sc-wt">20%</span></div><div class="sc-basis">The Indian pool is services-weighted and priced per engineer-month: MosChip 12.8% EBITDA, Sasken 7.9%, Cyient Semiconductors &minus;US$11.2 mn EBIT on US$25.7 mn revenue in FY26. The industry&rsquo;s high-margin half &mdash; EDA and IP at 85%+ gross margin &mdash; is not present in India at all, so the domestic economics are structurally thinner than the global node they sit in.</div></div><span class="sc-val">3</span></div><div class="sc-row"><div><div class="sc-name">opportunity<span class="sc-wt">15%</span></div><div class="sc-basis">Semicon 2.0 carries &#8377;1.27 lakh cr notified 31-Aug-2026 with a design pillar, DLI 2.0 proposes ~&#8377;5,000 cr (5&times; its predecessor), 372 design startups exist and the semiconductor vertical of India ER&amp;D is the fastest-growing at 12.85% CAGR to 2031 &mdash; a large, policy-underwritten and still-early pool.</div></div><span class="sc-val">4</span></div><div class="sc-row"><div><div class="sc-name">competitive<span class="sc-wt">15%</span></div><div class="sc-basis">Two different competitions: EDA and core IP are a &gt;85% oligopoly India cannot enter at advanced nodes, while Indian design services are fragmented across nine listed firms and hundreds of private ones with no pricing power, bidding for the same captive-adjacent work. Neither structure favours an Indian entrant.</div></div><span class="sc-val">2</span></div><div class="sc-row"><div><div class="sc-name">value_chain<span class="sc-wt">10%</span></div><div class="sc-basis">India captures the labour layer and a sliver of owned product; EDA, processor IP, interface IP, emulation hardware and foundry access are all imported. DLI has produced 25 tape-outs, 7 fabricated chips and 140+ reusable IP cores &mdash; real progress up the chain, but from a very low base.</div></div><span class="sc-val">2</span></div><div class="sc-row"><div><div class="sc-name">capital<span class="sc-wt">5%</span></div><div class="sc-basis">Favourable relative to manufacturing: a design centre costs US$200&ndash;500 mn against US$15&ndash;25 bn for an advanced fab, and an asset-light services model needs almost nothing. Entry capital is low, but the value-creating step (first silicon at US$3&ndash;5 mn) is precisely where Indian venture capital is thinnest.</div></div><span class="sc-val">4</span></div><div class="sc-row"><div><div class="sc-name">technology<span class="sc-wt">5%</span></div><div class="sc-basis">Three live transitions: RISC-V displacing Arm in embedded (~25% penetration by end-2025), chiplets and UCIe changing what &ldquo;a chip&rdquo; is, and AI-assisted design automation compressing the flow. All three lower barriers for a new entrant &mdash; but India is a participant, not the owner, of any of them.</div></div><span class="sc-val">3</span></div></div><div class="scorecard__group scorecard__group--current"><div class="scorecard__h"><b>Current opportunity</b><span class="sc-total">40.0 / 100</span></div><div class="sc-row"><div><div class="sc-name">cycle<span class="sc-wt">15%</span></div><div class="sc-basis">The services cycle is at a five-year low: LTTS, KPIT and Tata Elxsi all posted their slowest annual growth in at least five years in FY26 (8.35%, 4.8% and 0.8%), with global auto OEMs reprioritising R&amp;D away from EV/SDV platforms, while semiconductor GCC hiring fell 22% year-on-year in the first quarter. Policy money is expanding into a contracting services market.</div></div><span class="sc-val">2</span></div><div class="sc-row"><div><div class="sc-name">valuation<span class="sc-wt">15%</span></div><div class="sc-basis">No industry-level valuation data exists for an India chip-design and IP pool &mdash; the listed exposure is ER&amp;D services equity with no comparable sector multiple series, and the fabless product businesses are loss-making at segment level.</div></div><span class="sc-val sc-val--null">UNAVAILABLE</span></div></div><div class="scorecard__group scorecard__group--risk"><div class="scorecard__h"><b>Risk &amp; resilience</b><span class="sc-total">&mdash;</span></div><div class="sc-row"><div><div class="sc-name">risk<span class="sc-wt">no weight</span></div><div class="sc-basis">Four gates: a three-vendor EDA chokepoint that has already been used as an export-control lever once; Arm royalty dependence; a policy regime still negotiating IP co-ownership and a 3&times; offshore-sale clawback; and customer qualification cost that makes switching vendors expensive for buyers. Concentration adds to it &mdash; ~60% of senior VLSI talent in one city.</div></div><span class="sc-val">3</span></div></div></div>
+    <div class="scorecard__foot"><span class="chip chip--gold">Overall 55.3 / 100</span><span class="chip">Coverage 85%</span><span class="chip">As of 2026-11-03</span><span class="chip chip--high">Provisional &mdash; valuation unscored</span></div>
+  </section>
+
+  <p class="footnote animate" style="--i:10">
+    Sources (plain): MeitY / Lok Sabha Unstarred Question 2962 reply on the C2S and DLI programmes (5-Aug-2026) &middot; PIB &mdash; Semicon 2.0 / Semicon India 2026 releases (Jul-2026, 17-Sep-2026) and the DLI factsheet on 24 approved projects, 103 EDA-enabled companies, 25 tape-outs and 140+ IP cores (Jan-2026) &middot; Business Standard and Communications Today on the Semicon 2.0 design notification, Tracxn&rsquo;s 372 startup count and the 11% VC-funding rate (Sep-2026) &middot; Economic Times on DLI 2.0 contours, the ~&#8377;5,000 cr outlay, pari-passu funding, CDAC IP co-ownership and the 3&times; clawback (Jan-2026) &middot; The Ken on the DLI demand gap and Netra Semiconductor&rsquo;s 12 nm tape-out (Jul-2026) &middot; Speciale Invest / Startup Policy Forum, &lsquo;Indian Semiconductor Startup Landscape 2026&rsquo; &mdash; US$206 mn across 51 rounds, US$100.8 mn across 14 DLI-backed companies (Aug-2026) &middot; SemiAnalysis, &lsquo;EDA Market Primer&rsquo; (May-2026) for the US$18 bn EDA+IP market, vendor shares and per-tool concentration &middot; chipsupplychain.org and SemiconductorX EDA summaries (2026) &middot; MarketsandMarkets semiconductor IP and RISC-V forecasts (2026) &middot; Mordor Intelligence, India ER&amp;D services market (2026) for the US$147.3 bn&ndash;US$238.6 bn series and the 12.85% semiconductor vertical CAGR &middot; Inductus GCC, &lsquo;Semiconductor Design Powerhouses&rsquo; (Jul-2026) for design-centre counts, the US$200&ndash;500 mn design-centre cost and the 85,000-engineer gap &middot; IDTA India Semiconductor Opportunity Report 2026 and NITI Aayog (May-2026) &middot; Capgemini, India as a semiconductor GCC hub (Jun-2026) &middot; company results, investor presentations and NSE/BSE filings &mdash; MosChip (26th Annual Report, Q4 FY25 release, CEO presentation), Sasken (Q4 FY26 presentation, FY26 annual report), Cyient (Q4 FY26 annexures, Investor Day Aug-2026), L&amp;T Technology Services (Q4 FY26 presentation), Tata Elxsi (Q4 FY26 release and directors&rsquo; report), KPIT and Tata Technologies FY26 revenue as reported by Mint (Jun-2026), Tejas Networks, CG Power / Axiro, Kaynes Technology, SPEL Semiconductor &middot; Livemint on Mindgrove&rsquo;s first revenue year (Sep-2026) &middot; Inc42 on Morphing Machines&rsquo; &#8377;80 cr Series A (Apr-2026) &middot; EE Times and Circuit Digest interviews with InCore Semiconductors (2025&ndash;2026) &middot; SmartDV company disclosures (2026). All figures date-stamped to the analysis date; time-sensitive facts are cyclical or live and should be re-checked before use. Company mappings are evidence-based; impacts are inference unless reported ([REPORTED] vs [INFERENCE]).
+  </p>
+
+</div>
+
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+
+  const config = {
+    fitPadding: 24, minHeight: 300, maxHeightPx: 900, maxHeightVh: 0.85,
+    maxInitialZoom: 1.7, minZoom: 0.08, maxZoom: 6.5, zoomStep: 0.14, readabilityFloor: 0.55
+  };
+  const clamp = (n, lo, hi) => Math.max(lo, Math.min(hi, n));
+  let activeDrag = null;
+  addEventListener('mousemove', (e) => activeDrag?.onMove(e));
+  addEventListener('mouseup', () => { activeDrag?.onEnd(); activeDrag = null; });
+
+  const isDark = matchMedia('(prefers-color-scheme: dark)').matches;
+  mermaid.initialize({
+    startOnLoad: false, theme: 'base', look: 'classic', layout: 'dagre',
+    themeVariables: {
+      fontFamily: "'IBM Plex Sans', system-ui, sans-serif", fontSize: '15px',
+      lineColor: isDark ? '#5b9bd5' : '#9db4cc',
+      primaryColor: '#eef3f9', primaryTextColor: '#0f2540', primaryBorderColor: '#9db4cc'
+    }
+  });
+
+  function initDiagram(shell) {
+    const canvas = shell.querySelector('.mermaid-canvas');
+    const src = shell.querySelector('.diagram-source');
+    const wrap = shell.querySelector('.mermaid-wrap');
+    const viewport = shell.querySelector('.mermaid-viewport');
+    const label = shell.querySelector('.zoom-label');
+    if (!canvas || !src || !wrap || !viewport) return;
+    const id = 'mmd-' + Math.random().toString(36).slice(2);
+    let svgW = 0, svgH = 0, scale = 1, minS = 0.08, maxS = 6.5, panX = 0, panY = 0;
+
+    function setAdaptiveHeight() {
+      if (!svgH) return;
+      const vhCap = window.innerHeight * config.maxHeightVh;
+      const h = clamp(svgH * scale + config.fitPadding, config.minHeight, Math.min(config.maxHeightPx, vhCap));
+      viewport.style.height = h + 'px';
+    }
+    function applyTransform() {
+      const c = shell.querySelector('.mermaid-canvas svg');
+      if (c) c.style.transform = `translate(${panX}px, ${panY}px) scale(${scale})`;
+      if (label) label.textContent = Math.round(scale * 100) + '%';
+    }
+    function fitDiagram() {
+      const vw = viewport.clientWidth - config.fitPadding;
+      const vh = viewport.clientHeight - config.fitPadding;
+      if (!svgW || !svgH || vw <= 0 || vh <= 0) return;
+      scale = clamp(Math.min(vw / svgW, vh / svgH), config.minZoom, config.maxInitialZoom);
+      panX = (viewport.clientWidth - svgW * scale) / 2;
+      panY = (viewport.clientHeight - svgH * scale) / 2;
+      applyTransform();
+    }
+    function canPan() { return scale > minS * 1.001; }
+    function zoomAround(factor, cx, cy) {
+      const ns = clamp(scale * factor, minS, maxS);
+      const k = ns / scale;
+      panX = cx - k * (cx - panX); panY = cy - k * (cy - panY);
+      scale = ns; applyTransform(); setAdaptiveHeight();
+    }
+    shell.querySelectorAll('.zoom-controls button').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const a = btn.dataset.action;
+        const cx = viewport.clientWidth / 2, cy = viewport.clientHeight / 2;
+        if (a === 'zoom-in') zoomAround(1 + config.zoomStep, cx, cy);
+        else if (a === 'zoom-out') zoomAround(1 / (1 + config.zoomStep), cx, cy);
+        else if (a === 'zoom-fit') fitDiagram();
+        else if (a === 'zoom-one') { scale = 1; panX = 0; panY = 0; applyTransform(); setAdaptiveHeight(); }
+        else if (a === 'zoom-expand') { const w = window.open('', '_blank'); if (w) { w.document.write('<body style="margin:0;background:#fff">' + canvas.innerHTML + '</body>'); } }
+      });
+    });
+    viewport.addEventListener('wheel', (e) => {
+      if (!(e.ctrlKey || e.metaKey)) return;
+      e.preventDefault();
+      const r = viewport.getBoundingClientRect();
+      zoomAround(e.deltaY < 0 ? 1 + config.zoomStep : 1 / (1 + config.zoomStep), e.clientX - r.left, e.clientY - r.top);
+    }, { passive: false });
+    let sx = 0, sy = 0, spx = 0, spy = 0;
+    viewport.addEventListener('mousedown', (e) => {
+      if (!canPan()) return;
+      sx = e.clientX; sy = e.clientY; spx = panX; spy = panY;
+      activeDrag = { onMove: (ev) => { panX = spx + (ev.clientX - sx); panY = spy + (ev.clientY - sy); applyTransform(); }, onEnd: () => {} };
+      viewport.style.cursor = 'grabbing';
+    });
+    viewport.addEventListener('dblclick', () => fitDiagram());
+    let touchDist = 0, touchCx = 0, touchCy = 0;
+    viewport.addEventListener('touchstart', (e) => {
+      if (e.touches.length === 1) { sx = e.touches[0].clientX; sy = e.touches[0].clientY; spx = panX; spy = panY; }
+      else if (e.touches.length === 2) {
+        const r = viewport.getBoundingClientRect();
+        const dx = e.touches[0].clientX - e.touches[1].clientX, dy = e.touches[0].clientY - e.touches[1].clientY;
+        touchDist = Math.sqrt(dx * dx + dy * dy);
+        touchCx = (e.touches[0].clientX + e.touches[1].clientX) / 2 - r.left;
+        touchCy = (e.touches[0].clientY + e.touches[1].clientY) / 2 - r.top;
+      }
+    }, { passive: true });
+    viewport.addEventListener('touchmove', (e) => {
+      if (e.touches.length === 1 && canPan()) {
+        e.preventDefault();
+        panX = spx + (e.touches[0].clientX - sx); panY = spy + (e.touches[0].clientY - sy); applyTransform();
+      } else if (e.touches.length === 2 && touchDist > 0) {
+        e.preventDefault();
+        const dx = e.touches[0].clientX - e.touches[1].clientX, dy = e.touches[0].clientY - e.touches[1].clientY;
+        const d = Math.sqrt(dx * dx + dy * dy);
+        zoomAround(d / touchDist, touchCx, touchCy); touchDist = d;
+      }
+    }, { passive: false });
+    new ResizeObserver(() => { if (svgW) { setAdaptiveHeight(); fitDiagram(); } }).observe(wrap);
+
+    function render() {
+      const def = src.textContent.trim();
+      mermaid.render(id, def).then(({ svg }) => {
+        canvas.innerHTML = svg;
+        const el = canvas.querySelector('svg');
+        if (!el) return;
+        const bb = el.getBBox ? el.getBBox() : { width: el.clientWidth, height: el.clientHeight };
+        svgW = bb.width || el.clientWidth; svgH = bb.height || el.clientHeight;
+        el.style.transformOrigin = '0 0';
+        minS = config.minZoom; maxS = config.maxZoom;
+        setAdaptiveHeight(); fitDiagram();
+      }).catch(() => { canvas.innerHTML = '<pre style="padding:16px;font-size:12px">' + def + '</pre>'; });
+    }
+    render();
+  }
+  document.querySelectorAll('.diagram-shell').forEach(initDiagram);
+</script>
+
+<script>
+/* ===== CLICK-THROUGH COMPANY MAP ===== */
+const NODES = [
+  { id:'rtl', name:'Micro-architecture & RTL Design', pri:'high', bott:false,
+    fn:'Turning a product specification into register-transfer-level code — the first creative act in a chip, and the stage where architecture choices fix power, performance and cost.',
+    importDep:'Domestic capability, exported as service', conc:'Fragmented in India; captive-heavy',
+    companies:[
+      {n:'MosChip Technologies', t:'NSE/BSE: MOSCHIP', e:'direct', m:'Semiconductor segment was ₹132.13 cr of ₹466.84 cr FY25 revenue (~28%); RTL design and design verification are named core capabilities. [REPORTED-T1]', ev:'MosChip 26th Annual Report FY25; Q4 FY25 release'},
+      {n:'Sasken Technologies', t:'NSE/BSE: SASKEN', e:'direct', m:'Semiconductor is one of four verticals inside ₹1,113 cr FY26 revenue; SoC verification and platform engineering are named capabilities. Share of revenue not disclosed. [REPORTED-T1 + INFERENCE]', ev:'Sasken FY26 annual report and Q4 FY26 presentation'},
+      {n:'L&T Technology Services', t:'NSE/BSE: LTTS', e:'indirect', m:'Complex SoC design and turnkey SoCs at 3/4/5 nm for hyperscalers; not disclosed as a separate segment inside US$1.23 bn FY26 revenue. [REPORTED-T1 + INFERENCE]', ev:'LTTS Q4 FY26 investor presentation'},
+      {n:'Cyient', t:'NSE/BSE: CYIENT', e:'indirect', m:'Design services and turnkey ASIC run through wholly owned Cyient Semiconductors (US$25.7 mn FY26 revenue, ~3% of the US$820.8 mn group). [REPORTED-T1]', ev:'Cyient Q4 FY26 annexures; Investor Day Aug-2026'},
+      {n:'Tata Elxsi', t:'NSE/BSE: TATAELXSI', e:'indirect', m:'Silicon-adjacent embedded and hardware engineering within ₹3,757 cr FY26 revenue; no separately disclosed chip-design segment. [INFERENCE]', ev:'Tata Elxsi Q4 FY26 release and directors\u2019 report'},
+      {n:'KPIT Technologies', t:'NSE/BSE: KPITTECH', e:'indirect', m:'Automotive software and hardware engineering with silicon-adjacent work; no disclosed chip-design segment in US$724.8 mn FY26 revenue. [INFERENCE]', ev:'Mint / company FY26 revenue reporting (Jun-2026)'},
+      {n:'Tata Technologies', t:'NSE/BSE: TATATECH', e:'indirect', m:'Engineering services including electronics; no disclosed chip-design segment in US$619.8 mn FY26 revenue. [INFERENCE]', ev:'Mint / company FY26 revenue reporting (Jun-2026)'},
+      {n:'HCL Technologies', t:'NSE/BSE: HCLTECH', e:'conglomerate', m:'ER&D services include silicon engineering for chipmakers; immaterial within US$13.84 bn FY25 revenue. Listed also as a design-ecosystem partner to InCore reference designs. [REPORTED-T2 + INFERENCE]', ev:'Financial Express sector note (May-2025); Forbes India on InCore partnerships'},
+      {n:'ASM Technologies', t:'NSE/BSE: ASMTEC', e:'indirect', m:'Engineering services to semiconductor equipment makers rather than chip design; small-cap, low visibility. [REPORTED-T2]', ev:'Company disclosures; trade coverage'}
+    ] },
+  { id:'verif', name:'Functional Verification & DV', pri:'high', bott:true,
+    fn:'Proving the design works before it is manufactured — simulation, formal, emulation and coverage closure. The single largest labour pool in chip design.',
+    importDep:'Domestic capability (India is the global centre)', conc:'Captive GCCs dominate; services fragmented',
+    companies:[
+      {n:'MosChip Technologies', t:'NSE/BSE: MOSCHIP', e:'direct', m:'900+ VLSI engineers across RTL design, verification, synthesis/DFT and physical design; verification is a named core service. [REPORTED-T1]', ev:'MosChip 26th Annual Report FY25'},
+      {n:'Sasken Technologies', t:'NSE/BSE: SASKEN', e:'direct', m:'SoC verification, validation and firmware are named semiconductor capabilities; revenue share not disclosed. [REPORTED-T1 + INFERENCE]', ev:'Sasken FY26 annual report'},
+      {n:'L&T Technology Services', t:'NSE/BSE: LTTS', e:'direct', m:'Pre- and post-silicon validation and turnkey SoC delivery; semiconductor not a reported segment. [REPORTED-T1 + INFERENCE]', ev:'LTTS Q4 FY26 investor presentation'},
+      {n:'Cyient', t:'NSE/BSE: CYIENT', e:'indirect', m:'Verification and validation within Cyient Semiconductors, ~3% of group revenue. [REPORTED-T1]', ev:'Cyient Q4 FY26 annexures'}
+    ],
+    gap:'LISTED EXPOSURE IS SERVICES ONLY.',
+    near:'Context (unlisted / foreign): verification is where ~20% of the world\u2019s design engineers sit — Qualcomm, Broadcom, Marvell, AMD and MediaTek run it at scale from Bengaluru and Hyderabad. Roughly 60–70% of engineering effort in a modern chip is verification, so this node is the largest Indian labour pool and the least defensible: it is priced per engineer-month and does not accumulate IP.' },
+  { id:'pd', name:'Physical Design, DFT & Sign-off', pri:'high', bott:false,
+    fn:'Synthesis, floorplanning, place-and-route, clock-tree synthesis, timing closure and DRC/LVS sign-off — the back end that turns a netlist into a manufacturable GDSII file.',
+    importDep:'Domestic capability; tools imported', conc:'Fragmented services; tool layer is an oligopoly',
+    companies:[
+      {n:'MosChip Technologies', t:'NSE/BSE: MOSCHIP', e:'direct', m:'Synthesis/DFT/physical design named as a core service line; TSMC Design Centre Alliance partner with 200+ SoC tape-outs. [REPORTED-T1]', ev:'MosChip annual report and CEO presentation'},
+      {n:'Cyient', t:'NSE/BSE: CYIENT', e:'direct', m:'ASIC turnkey design including back-end, through Cyient Semiconductors; 120–150 weeks concept-to-samples disclosed. [REPORTED-T1]', ev:'Cyient Investor Day Aug-2026'},
+      {n:'L&T Technology Services', t:'NSE/BSE: LTTS', e:'direct', m:'Turnkey SoC delivery at 3/4/5 nm implies full back-end capability; not a reported segment. [REPORTED-T1 + INFERENCE]', ev:'LTTS Q4 FY26 investor presentation'},
+      {n:'Sasken Technologies', t:'NSE/BSE: SASKEN', e:'indirect', m:'Analog layout and mixed-signal back-end within semiconductor engagements. [REPORTED-T1 + INFERENCE]', ev:'Sasken FY26 annual report'}
+    ] },
+  { id:'analog', name:'Analog & Mixed-Signal Design', pri:'high', bott:false,
+    fn:'Custom analog, power and mixed-signal circuits — the blocks that interface a digital core to the physical world, and the hardest skill to hire.',
+    importDep:'Partly domestic; IP imported', conc:'Concentrated globally (TI, ADI, Infineon)',
+    companies:[
+      {n:'Sasken Technologies', t:'NSE/BSE: SASKEN', e:'direct', m:'Won a strategic engagement to lead full-chip analog and mixed-signal circuit design for next-generation AI SoCs on a 12 nm process in FY26. [REPORTED-T1]', ev:'Sasken Q4 FY26 investor presentation'},
+      {n:'Cyient', t:'NSE/BSE: CYIENT', e:'indirect', m:'Cyient Semiconductors is building a power-focused ASSP portfolio and took a 74% stake in Kinetic Technologies (adding ~US$40 mn revenue) to own power product IP. [REPORTED-T1]', ev:'Cyient Investor Day Aug-2026; Q4 FY26 annexures'},
+      {n:'MosChip Technologies', t:'NSE/BSE: MOSCHIP', e:'direct', m:'Analog design and analog layout are named service lines, alongside mixed-signal IP design. [REPORTED-T1]', ev:'MosChip annual report and CEO presentation'}
+    ] },
+  { id:'eda-fe', name:'EDA — Front-end Tools', pri:'high', bott:true,
+    fn:'Simulation, lint, formal verification, synthesis and low-power analysis — the software in which the design is written and proved.',
+    importDep:'~100% imported', conc:'Global oligopoly (3 vendors >85%)',
+    companies:[],
+    gap:'NO LISTED PURE-PLAY IN INDIA — AND NONE UNLISTED EITHER.',
+    near:'Global: Synopsys, Cadence and Siemens EDA take over 85% of an US$18 bn EDA+IP market (2025), with Synopsys at 44%, Cadence 30% and Siemens EDA 13% of design-software revenue. China\u2019s largest domestic EDA vendor, Empyrean, earned ~RMB 1.32 bn — about 1% of the Big-3. India has no commercial EDA vendor at any node; the Indian presence is R&D captives (Synopsys employs 5,500+ in India). Under DLI, 103 fabless companies have been given subsidised access to these foreign tools.' },
+  { id:'eda-be', name:'EDA — Back-end & Sign-off', pri:'high', bott:true,
+    fn:'Place-and-route, physical verification (DRC/LVS), static timing analysis and power sign-off. The final gate before a design can be taped out.',
+    importDep:'~100% imported', conc:'Single-vendor per step at advanced nodes',
+    companies:[],
+    gap:'NO LISTED PURE-PLAY IN INDIA.',
+    near:'Global concentration is sharper here than anywhere else in the chain: Siemens EDA\u2019s Calibre holds >85% of physical verification and Synopsys holds >90% of static timing analysis at advanced nodes. A foundry qualifies specific tools against its process, so switching a sign-off tool means re-qualifying the flow — which is why this is the deepest chokepoint in the industry.' },
+  { id:'emul', name:'Emulation & Prototyping Hardware', pri:'med', bott:false,
+    fn:'Hardware accelerators that run a chip design at near-real speed before silicon exists — essential for software bring-up on large SoCs.',
+    importDep:'Imported', conc:'One dominant vendor (Cadence 55–60%)',
+    companies:[
+      {n:'MosChip Technologies', t:'NSE/BSE: MOSCHIP', e:'indirect', m:'Disclosed investment in building emulation expertise to support tier-one engagements. No hardware manufacturing. [REPORTED-T1]', ev:'MosChip CEO presentation (Sep-2025)'}
+    ],
+    near:'Global: Cadence Palladium holds 55–60% of advanced-node hardware emulation, with Synopsys ZeBu and Siemens Veloce. No Indian vendor exists at any scale — the exposure is service capability, not product.' },
+  { id:'proc-ip', name:'Processor IP (Arm / RISC-V)', pri:'high', bott:true,
+    fn:'The CPU core itself — licensed from Arm, or built on the open RISC-V instruction set. The royalty that follows every chip for its whole life.',
+    importDep:'Imported (Arm); emerging domestic (RISC-V)', conc:'Arm ~40%+ of IP revenue; RISC-V fragmenting it',
+    companies:[
+      {n:'Tejas Networks', t:'NSE/BSE: TEJASNET', e:'indirect', m:'Owns Saankhya Labs (unlisted, non-material): an indigenous multi-core DSP/SDR architecture — processor IP, but not a general-purpose CPU core. [REPORTED-T1]', ev:'Tejas Networks disclosures; Saankhya Labs'},
+      {n:'CG Power & Industrial Solutions', t:'NSE/BSE: CGPOWER', e:'conglomerate', m:'Unlisted subsidiary Axiro Semiconductor holds RF/mmWave and GaN front-end IP developed in India. Minor segment of a power-equipment company. [REPORTED-T2 + INFERENCE]', ev:'CG Power / Axiro coverage (The Hindu BusinessLine)'}
+    ],
+    gap:'NO LISTED PROCESSOR-IP PURE-PLAY IN INDIA.',
+    near:'Context (unlisted): InCore Semiconductors licenses RISC-V cores (Azurite, Calcite) with FY25 revenue ₹1.9 cr and a ₹15 cr DLI grant against a ₹30 cr project; Mindgrove Technologies ships a 28 nm RISC-V Secure IoT MCU. Global: Arm took US$4.92 bn in FY2026, US$2.61 bn of it royalties, and its cores sit in ~50% of top-cloud CPU compute. Synopsys DesignWare and Cadence IP hold most of the rest.' },
+  { id:'iface-ip', name:'Interface & Foundation IP', pri:'high', bott:true,
+    fn:'The high-speed plumbing inside a chip: PCIe, CXL, UCIe, HBM PHY, DDR, SerDes and USB controllers, plus standard-cell and memory libraries.',
+    importDep:'~100% imported', conc:'Oligopoly (Synopsys DesignWare dominant)',
+    companies:[],
+    gap:'NO LISTED PURE-PLAY IN INDIA.',
+    near:'Global: Synopsys DesignWare is the largest non-Arm IP business (~28% of IP revenue); Alphawave, Rambus and Cadence share the rest. Interface IP is the most valuable per-block IP category because it must be silicon-proven on each foundry process — a barrier India has not crossed. Context (unlisted): SmartDV, headquartered in Bengaluru, licenses design and verification IP across PCIe 6.0, CXL 3.0, UCIe 3.0 and LPDDR6 to 400+ customers, with ~300 engineers.' },
+  { id:'vip', name:'Verification IP (VIP)', pri:'med', bott:false,
+    fn:'Pre-built protocol models and checkers that let a verification team test a design against a standard without writing the testbench from scratch.',
+    importDep:'Imported, with a real Indian vendor', conc:'Fragmented',
+    companies:[],
+    gap:'NO LISTED PLAYER IN INDIA.',
+    near:'Context (unlisted): SmartDV is the notable Indian-origin IP company — Bengaluru-headquartered, privately held and profitable, 300+ engineers, 400+ customers, India-entity revenue in the ₹10–50 cr band. Synopsys, Cadence and Siemens also sell VIP alongside their tools. This is the one IP sub-node where an Indian company has genuine global standing, and it is entirely outside the listed universe.' },
+  { id:'analog-ip', name:'Analog, Power & Security IP', pri:'med', bott:false,
+    fn:'Reusable analog blocks, power-management IP, PHYs and hardware security roots that most SoCs license rather than design.',
+    importDep:'Partly domestic', conc:'Fragmented',
+    companies:[
+      {n:'Cyient', t:'NSE/BSE: CYIENT', e:'indirect', m:'Owns power product IP through Cyient Semiconductors and the Kinetic Technologies stake; targets 40%+ gross margin on owned silicon. [REPORTED-T1]', ev:'Cyient Investor Day Aug-2026'},
+      {n:'Sasken Technologies', t:'NSE/BSE: SASKEN', e:'indirect', m:'Invests in reusable IP frameworks and analog/mixed-signal capability; no licensed IP product line disclosed. [REPORTED-T1 + INFERENCE]', ev:'Sasken FY26 annual report'}
+    ] },
+  { id:'compute', name:'EDA Compute & Licence Servers', pri:'med', bott:false,
+    fn:'The compute farm and licence infrastructure that runs regression sweeps and physical design — a hard capacity constraint on how fast a design converges.',
+    importDep:'Imported hardware; domestic cloud emerging', conc:'Concentrated (NVIDIA for GPU; x86 duopoly)',
+    companies:[],
+    gap:'NO LISTED PURE-PLAY IN INDIA.',
+    near:'Context: design compute is bought as servers and licences from Dell/HPE/Supermicro with NVIDIA or x86 silicon, or increasingly rented. Indian GPU-cloud capacity (e.g. E2E Networks on NSE Emerge) is adjacent but is not an EDA-compute business, and no listed Indian company sells design-compute capacity at scale. DLI has logged ~2.25 crore EDA tool-hours of subsidised usage — the closest thing to a domestic demand signal.' },
+  { id:'pdk', name:'Foundry PDKs & Cell Libraries', pri:'high', bott:true,
+    fn:'The process design kit and standard-cell/memory libraries a foundry supplies so that a design can be built on its process. Without a PDK there is no design.',
+    importDep:'~100% imported (TSMC, GF, UMC, Samsung)', conc:'Tied to the foundry oligopoly',
+    companies:[],
+    gap:'NO LISTED PURE-PLAY IN INDIA.',
+    near:'PDKs are given by the foundry and are process-specific, so the PDK layer is the foundry layer: TSMC, Samsung, GlobalFoundries, UMC, SMIC. SCL Mohali provides a 180 nm PDK domestically (used for 175 of 254 C2S tape-outs); Tata–PSMC Dholera would add 28 nm onshore from 2029. Until then every Indian design at an advanced node depends on a foreign PDK.' },
+  { id:'services', name:'Design Services & Turnkey ASIC', pri:'high', bott:false,
+    fn:'The commercial engine of Indian chip design: offshore design centres and turnkey ASIC programmes that take a customer from concept to working silicon.',
+    importDep:'Export-led service; domestic demand small', conc:'Fragmented across 9 listed and hundreds of private firms',
+    companies:[
+      {n:'MosChip Technologies', t:'NSE/BSE: MOSCHIP', e:'direct', m:'Semiconductor segment ₹132.13 cr FY25; turnkey ASIC and IP services drove 59% revenue growth to ₹466.84 cr; C-DAC HPC SoC on Arm at TSMC 5 nm; DLI-approved smart energy meter IC. [REPORTED-T1]', ev:'MosChip annual report; Q4 FY25 release; CRISIL rationale'},
+      {n:'Cyient', t:'NSE/BSE: CYIENT', e:'direct', m:'Cyient Semiconductors positions itself as India\u2019s largest custom chip company: US$25.7 mn FY26 revenue, EBIT −US$11.2 mn, targeting ~4× revenue by FY31; won SCL\u2019s 180 nm upgrade over 27 bidders. [REPORTED-T1]', ev:'Cyient Investor Day Aug-2026; Q4 FY26 annexures'},
+      {n:'Sasken Technologies', t:'NSE/BSE: SASKEN', e:'direct', m:'ASIC design services and product solutions; revenue doubled to ₹1,113 cr in FY26 largely through acquisition (Borqs), with semiconductor engagements named as a growth driver. [REPORTED-T1]', ev:'Sasken FY26 annual report and Q4 FY26 presentation'},
+      {n:'L&T Technology Services', t:'NSE/BSE: LTTS', e:'indirect', m:'Turnkey SoC programmes at 3/4/5 nm for hyperscalers and next-generation data-centre chip designs; silicon is not a reported segment inside US$1.23 bn FY26 revenue. [REPORTED-T1 + INFERENCE]', ev:'LTTS Q4 FY26 investor presentation'},
+      {n:'Tata Elxsi', t:'NSE/BSE: TATAELXSI', e:'indirect', m:'Silicon-adjacent embedded and platform engineering; no disclosed chip-design revenue line in ₹3,757 cr FY26 revenue. [INFERENCE]', ev:'Tata Elxsi Q4 FY26 release'}
+    ] },
+  { id:'talent', name:'Design Talent & Upskilling', pri:'high', bott:true,
+    fn:'The input India actually owns: 1.25 lakh semiconductor design engineers, ~180 design centres and a training pipeline of 67,000+ students.',
+    importDep:'Domestic, but exported to captives', conc:'Highly concentrated in Bengaluru (~60% of senior VLSI)',
+    companies:[
+      {n:'MosChip Technologies', t:'NSE/BSE: MOSCHIP', e:'direct', m:'Runs MAST, an in-house training and innovation centre, and its CRISIL rationale cites in-house training capability as a competitive strength; ~1,400 engineers. [REPORTED-T1]', ev:'MosChip annual report; CRISIL rating rationale (Jul-2025)'},
+      {n:'Tata Elxsi', t:'NSE/BSE: TATAELXSI', e:'indirect', m:'Large engineering workforce with design-led training; no chip-specific training revenue disclosed. [INFERENCE]', ev:'Tata Elxsi disclosures'}
+    ],
+    near:'Public infrastructure: C2S has trained 67,000–68,000 students across 315 institutions and produced 254 student tape-outs; DLI logged ~2.25 crore EDA tool-hours. The sector needs ~85,000 more engineers by 2032 — a supply problem measured in years, not quarters.' },
+  { id:'tapeout', name:'Foundry / MPW Tape-out', pri:'high', bott:true,
+    fn:'Committing a finished design to a foundry for fabrication — via a multi-project-wafer shuttle for prototypes, or a dedicated mask set for production.',
+    importDep:'~100% imported', conc:'Foundry oligopoly (TSMC dominant)',
+    companies:[],
+    gap:'NO LISTED PURE-PLAY IN INDIA.',
+    near:'Global: TSMC, Samsung, GlobalFoundries, UMC, SMIC. Domestic: SCL Mohali (180 nm, government-owned) and Tata Electronics\u2019 Dholera fab (110–28 nm, commercial production guided 2028, 28 nm by 2029) — both unlisted or state-owned. Every advanced-node Indian design, including Netra Semiconductor\u2019s 12 nm A2000 and MosChip\u2019s 5 nm C-DAC SoC, tapes out at TSMC.' },
+  { id:'osat', name:'OSAT & Advanced Packaging', pri:'med', bott:false,
+    fn:'Assembly, packaging and final test — where a bare die becomes a shippable component, and where India now has real commercial capacity.',
+    importDep:'Partly domestic (new capacity)', conc:'Fragmented globally; consolidating in India',
+    companies:[
+      {n:'Kaynes Technology', t:'NSE/BSE: KAYNES', e:'direct', m:'Wholly owned Kaynes Semicon runs the Sanand OSAT, in commercial production since 31-Mar-2026; a minor segment of the listed entity. [REPORTED-T1]', ev:'Kaynes Technology disclosures; PIB Semicon India 2026'},
+      {n:'CG Power & Industrial Solutions', t:'NSE/BSE: CGPOWER', e:'conglomerate', m:'CG Semi (CG–Renesas–Stars JV) began commercial packaging 4-Jul-2026; immaterial to a power-equipment business today. [REPORTED-T1 + INFERENCE]', ev:'CG Power disclosures; PIB'},
+      {n:'SPEL Semiconductor', t:'NSE/BSE: SPEL', e:'direct', m:'India\u2019s oldest IC assembly and test house: wafer sort, assembly, final test and turnkey services; small scale and not an ISM-approved unit. [REPORTED-T2]', ev:'Company disclosures; trade coverage'}
+    ] },
+  { id:'ate', name:'ATE Test & Silicon Validation', pri:'med', bott:false,
+    fn:'Post-silicon bring-up, characterisation, qualification and volume test — the step that proves the chip works and keeps it working.',
+    importDep:'Imported ATE; domestic validation services', conc:'ATE oligopoly (Advantest, Teradyne)',
+    companies:[
+      {n:'Sasken Technologies', t:'NSE/BSE: SASKEN', e:'direct', m:'Validation, characterisation and platform integration are named semiconductor services; test engineering for enterprise devices renewed in FY26. [REPORTED-T1]', ev:'Sasken FY26 annual report and Q4 FY26 presentation'},
+      {n:'SPEL Semiconductor', t:'NSE/BSE: SPEL', e:'direct', m:'Final test and turnkey test services at its assembly and test facility. [REPORTED-T2]', ev:'Company disclosures'},
+      {n:'Kaynes Technology', t:'NSE/BSE: KAYNES', e:'direct', m:'OSAT operations include test within the Kaynes Semicon facility. [REPORTED-T1 + INFERENCE]', ev:'Kaynes disclosures; PIB'}
+    ],
+    near:'Context (unlisted): Tessolve is India\u2019s largest independent semiconductor test and validation services company (it acquired Dream Chip Technologies for ~US$45.7 mn) and is not listed. ATE hardware itself — Advantest and Teradyne — is imported.' }
+];
+
+const nodesEl = document.getElementById('mapNodes');
+const panelEl = document.getElementById('mapPanel');
+const PRI_LABEL = { high:'HIGH', med:'MEDIUM', low:'LOW' };
+
+function renderPanel(node) {
+  if (!node) { panelEl.innerHTML = '<div class="map-panel__kicker">Company map</div><div class="map-panel__title">Select a node</div><p class="map-panel__fn">Click any node on the left to see its NSE/BSE companies, exposure type, materiality and evidence.</p>'; return; }
+  let html = '';
+  html += `<div class="map-panel__kicker">${PRI_LABEL[node.pri] || ''} priority node</div>`;
+  html += `<div class="map-panel__title">${node.name}</div>`;
+  html += `<p class="map-panel__fn">${node.fn}</p>`;
+  html += `<div class="map-panel__row">`;
+  if (node.importDep && node.importDep !== 'n/a') html += `<span class="mini">Import: ${node.importDep}</span>`;
+  if (node.conc) html += `<span class="mini">Concentration: ${node.conc}</span>`;
+  if (node.bott) html += `<span class="mini" style="color:var(--gold)">Bottleneck</span>`;
+  html += `</div>`;
+  if (!node.companies || node.companies.length === 0) {
+    html += `<div class="nocov"><b>${node.gap}</b><span class="near">${node.near || ''}</span></div>`;
+    panelEl.innerHTML = html; return;
+  }
+  node.companies.forEach(c => {
+    html += `<div class="co">`;
+    html += `<div class="co__name">${c.n}<span class="co__ticker">${c.t}</span></div>`;
+    html += `<div class="co__tags"><span class="tag tag--${c.e}">${c.e.toUpperCase()}</span></div>`;
+    html += `<div class="co__mat">${c.m}</div>`;
+    if (c.ev) html += `<div class="co__ev">Evidence: ${c.ev}</div>`;
+    html += `</div>`;
+  });
+  if (node.gap) html += `<div class="nocov" style="margin-top:10px;"><b>${node.gap}</b><span class="near">${node.near || ''}</span></div>`;
+  panelEl.innerHTML = html;
+}
+
+const PTREE = [
+  { icon:'A', group:'Design Creation', ids:['rtl','verif','pd','analog'] },
+  { icon:'B', group:'EDA Tools', ids:['eda-fe','eda-be','emul'] },
+  { icon:'C', group:'Semiconductor IP', ids:['proc-ip','iface-ip','vip','analog-ip'] },
+  { icon:'D', group:'Design Compute & PDKs', ids:['compute','pdk'] },
+  { icon:'E', group:'Design Services & Talent', ids:['services','talent'] },
+  { icon:'F', group:'Realisation', ids:['tapeout','osat','ate'] }
+];
+let firstBtn = null;
+PTREE.forEach((grp) => {
+  const wrap = document.createElement('div');
+  const head = document.createElement('button');
+  head.type = 'button';
+  head.style.cssText = 'display:flex;align-items:center;gap:8px;width:100%;text-align:left;background:transparent;border:none;cursor:pointer;padding:8px 6px;font-family:var(--font-mono);font-size:11px;font-weight:600;letter-spacing:.6px;color:var(--text-dim);text-transform:uppercase;';
+  head.innerHTML = '<span class="tgl" style="width:12px;display:inline-block;">&#9662;</span><span>' + grp.icon + ' &middot; ' + grp.group + '</span>';
+  const body = document.createElement('div');
+  body.style.cssText = 'margin-left:14px;border-left:1px dashed var(--border-bright);padding-left:8px;';
+  grp.ids.forEach((id) => {
+    const node = NODES.find((n) => n.id === id);
+    if (!node) return;
+    const btn = document.createElement('button');
+    btn.className = 'node-btn';
+    btn.type = 'button';
+    const dotClass = (!node.companies || node.companies.length === 0) ? 'dot--none' : ('dot--' + node.pri);
+    let flags = '';
+    if (!node.companies || node.companies.length === 0) flags += '<span class="flag flag--gap">GAP</span>';
+    else if (node.bott) flags += '<span class="flag flag--bott">BOTTLENECK</span>';
+    btn.innerHTML = '<div class="node-btn__name"><span class="dot ' + dotClass + '"></span>' + node.name + '</div><div class="node-btn__meta"><span>' + (node.companies || []).length + ' listed</span>' + flags + '</div>';
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.node-btn').forEach((b) => b.classList.remove('is-active'));
+      btn.classList.add('is-active');
+      renderPanel(node);
+    });
+    body.appendChild(btn);
+    if (!firstBtn) firstBtn = btn;
+  });
+  head.addEventListener('click', () => {
+    const hidden = body.style.display === 'none';
+    body.style.display = hidden ? '' : 'none';
+    head.querySelector('.tgl').innerHTML = hidden ? '&#9662;' : '&#9656;';
+  });
+  wrap.appendChild(head);
+  wrap.appendChild(body);
+  nodesEl.appendChild(wrap);
+});
+if (firstBtn) { firstBtn.classList.add('is-active'); renderPanel(NODES.find((n) => n.id === 'rtl')); }
+</script>
+
+<script>window.__MBULLETS=[
+["India accounts for about 20% of the world's semiconductor design engineers — more than 1.25 lakh designers — and hosts roughly 7% of the world's semiconductor global capability centres. Around 180 design centres operate in the country, with Bengaluru holding an estimated 40–45% of the workforce. Scope: engineers in chip design, verification, firmware and embedded functions.","Source: MeitY / Lok Sabha Unstarred Question 2962 reply (5-Aug-2026); Careernet / ETGCC (Jan-2026); Inductus GCC 'Semiconductor Design Powerhouses' (Jul-2026)."],
+["The global EDA + semiconductor-IP market was about US$18 bn in 2025 — design software, simulation software and licensed blocks together — and is put at US$28–30 bn by 2030, an implied ~9–11% nominal CAGR [CALCULATED]. Vendor shares of 2025 design-software revenue: Synopsys 44% (including part of Ansys), Cadence 30%, Siemens EDA 13%, all others 13%. A wider count including services reaches ~US$21 bn.","Source: SemiAnalysis 'EDA Market Primer' (May-2026); chipsupplychain.org (Sep-2026); ESD Alliance quarterly data."],
+["Semicon 2.0 was notified on 31 August 2026 with a ₹1,27,500 crore (~US$13.5 bn) outlay across design, equipment and materials, fabs, ATMP/OSAT, R&D and talent. It overhauled the 2021 Design Linked Incentive scheme: the DLI 2.0 component is reported at ~₹5,000 crore, roughly five times DLI 1.0, and is expected to support at least 50 fabless companies.","Source: PIB / MeitY notifications (Jul–Sep 2026); Economic Times on DLI 2.0 contours (Jan-2026); Communications Today and Business Standard (Sep-2026)."],
+["Tracxn counts 372 homegrown semiconductor chip-design startups, but only 11% are venture-funded; VC investment in the space since 2023 totals just US$161 mn across 37 rounds — an average of US$4.35 mn. Global investment in chip-design startups was US$12.2 bn in 2025, of which India's share was 0.2%. Scope: chip-design startups only, excluding equipment and materials.","Source: Tracxn, via Business Standard and Communications Today (Sep-2026)."],
+["Under the DLI scheme, 24 chip and SoC design projects have been approved, 103 fabless companies have been given access to EDA tools, 25 designs have taped out (including 12 nm at TSMC), 7 chips have been fabricated and 140+ reusable IP cores developed. 14 of the 24 have raised institutional VC, US$100.8 mn in total, of which four companies account for ~56%.","Source: PIB DLI factsheet (Jan-2026); Lok Sabha reply (5-Aug-2026); Speciale Invest / Startup Policy Forum 'Indian Semiconductor Startup Landscape 2026' (Aug-2026)."],
+["No India-only revenue series exists for chip design and IP — that figure is [UNAVAILABLE] and is not estimated here. The nearest scope-matched proxy is the India ER&D services market, whose semiconductor and electronics vertical is forecast to grow at 12.85% CAGR to 2031, the fastest of any vertical, within a total market of US$147.3 bn (2026) rising to US$238.6 bn (2031) at 10.14% nominal CAGR. Value is nominal; there is no volume series, so no volume CAGR can be given. Horizons: 5-year 10.14% [REPORTED-T2]; 3-year and last-year industry-level [UNAVAILABLE] — the last-year read comes from company results instead (LTTS +8.35%, KPIT +4.8%, Tata Elxsi +0.8%, Sasken +102% M&A-driven, MosChip +59% in FY25).","Source: Mordor Intelligence, India ER&D Services Market (2026); Mint on FY26 ER&D growth (Jun-2026); company filings."],
+["A proof-of-concept chip costs US$3–5 mn; a 28 nm product US$20–25 mn; a 4 nm or 2 nm product US$750 mn or more; and a single leading-edge respin US$50–100 mn. DLI's product-design incentive caps support at ₹15 crore (about US$1.5 mn) or 50% of eligible expenditure — roughly the cost of one proof of concept, which is the central criticism of the scheme.","Source: MeitY / ISM official quoted by Economic Times (Jan-2026); SemiAnalysis (May-2026); PIB DLI factsheet."]
+];</script>
+
+<div class="metric-modal" id="regMetricModal" hidden>
+  <div class="metric-modal__backdrop" data-close></div>
+  <div class="metric-modal__panel">
+    <button class="metric-modal__close" data-close aria-label="Close">&#10005;</button>
+    <div class="metric-modal__kicker">Metric detail</div>
+    <div class="metric-modal__val" id="rmVal"></div>
+    <div class="metric-modal__label" id="rmLabel"></div>
+    <ul class="metric-modal__bullets" id="rmBullets"></ul>
+  </div>
+</div>
+
+<script>
+(function(){
+  var B=window.__MBULLETS||[];
+  var cards=[].slice.call(document.querySelectorAll('.metric-cards > .metric-card'));
+  var modal=document.getElementById('regMetricModal');
+  if(!modal) return;
+  function val(el,s){var n=el.querySelector(s);return n?n.textContent.trim():'';}
+  function open(i,el){
+    var b=B[i]||[];
+    document.getElementById('rmVal').textContent=val(el,'.metric-card__val');
+    document.getElementById('rmLabel').textContent=val(el,'.metric-card__label');
+    document.getElementById('rmBullets').innerHTML=b.map(function(x){return '<li>'+x+'</li>';}).join('');
+    modal.hidden=false;
+  }
+  cards.forEach(function(el,i){
+    el.setAttribute('role','button'); el.setAttribute('tabindex','0');
+    el.addEventListener('click',function(){open(i,el);});
+    el.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();open(i,el);}});
+  });
+  modal.addEventListener('click',function(e){if(e.target.hasAttribute('data-close'))modal.hidden=true;});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')modal.hidden=true;});
+})();
+</script>
+
+<script type="application/json" class="industry-score">{"as_of": "2026-11-03", "categories": {"economics": {"score": 3, "basis": "The Indian pool is services-weighted and priced per engineer-month: MosChip 12.8% EBITDA, Sasken 7.9%, Cyient Semiconductors -US$11.2 mn EBIT on US$25.7 mn revenue in FY26. The high-margin half of the node - EDA and IP at 85%+ gross margin - is not present in India at all."}, "opportunity": {"score": 4, "basis": "Semicon 2.0 carries Rs 1.27 lakh crore notified 31-Aug-2026 with a design pillar; DLI 2.0 proposes ~Rs 5,000 crore; 372 design startups exist; the semiconductor vertical of India ER&D is the fastest-growing at 12.85% CAGR to 2031."}, "competitive": {"score": 2, "basis": "EDA and core IP are a >85% oligopoly India cannot enter at advanced nodes; Indian design services are fragmented across nine listed firms with no pricing power. Neither structure favours an Indian entrant."}, "cycle": {"score": 2, "basis": "LTTS, KPIT and Tata Elxsi posted their slowest annual growth in at least five years in FY26 (8.35%, 4.8%, 0.8%) as global auto OEMs reprioritised R&D; semiconductor GCC hiring fell 22% year-on-year in Q1. Policy money is expanding into a contracting services market."}, "valuation": {"score": null, "basis": "No industry-level valuation data for an India chip-design and IP pool: the listed exposure is ER&D services equity with no comparable sector multiple series, and the fabless product businesses are loss-making at segment level."}, "value_chain": {"score": 2, "basis": "India captures the labour layer and a sliver of owned product; EDA, processor IP, interface IP, emulation hardware and foundry access are imported. DLI has produced 25 tape-outs, 7 fabricated chips and 140+ reusable IP cores - real progress from a very low base."}, "capital": {"score": 4, "basis": "A design centre costs US$200-500 mn against US$15-25 bn for an advanced fab, and an asset-light services model needs almost nothing. Entry capital is low, but the value-creating step - first silicon at US$3-5 mn - is where Indian venture capital is thinnest."}, "technology": {"score": 3, "basis": "Three live transitions: RISC-V displacing Arm in embedded (~25% penetration by end-2025), chiplets and UCIe redefining what a chip is, and AI-assisted design automation compressing the flow. All three lower barriers, but India participates rather than owns them."}, "risk": {"score": 3, "basis": "Four gates: a three-vendor EDA chokepoint already used once as an export-control lever; Arm royalty dependence; a policy regime still negotiating IP co-ownership and a 3x offshore-sale clawback; and buyer requalification cost. Concentration adds ~60% of senior VLSI talent in one city."}}, "notes": "Coverage 85% - valuation unscored, so the overall is provisional. Structural 58.6/100, current 40.0/100, overall 55.3/100.", "confidence": {"evidence": 4, "primary_source_pct": 55, "missing_critical": ["India-only chip-design and IP revenue pool (no published series)", "segment-level revenue for chip design inside LTTS / Tata Elxsi / KPIT / Tata Technologies", "industry-level valuation multiples for Indian design services", "disbursed DLI amounts and per-company outcomes"]}, "value_capture": [{"node": "EDA tools and sign-off", "params": {"op_share": 5, "pricing_power": 5, "roic": 5, "barriers": 5, "bottleneck": 5, "pool_growth": 4, "cash_conversion": 5, "switching": 5}, "basis": "85%+ gross margin, 13% revenue CAGR against 7% semiconductor R&D growth, >90% share in static timing and >85% in physical verification, and multi-year switching cost from flow requalification."}, {"node": "Processor and interface IP", "params": {"op_share": 4, "pricing_power": 4, "roic": 5, "barriers": 5, "bottleneck": 5, "pool_growth": 4, "cash_conversion": 4, "switching": 4}, "basis": "Arm converts ~95% of revenue to gross profit and took US$2.61 bn of royalties in FY2026; the IP pool grows 10.2% to 2032. Cash conversion is high but royalty collection lags shipment by quarters."}, {"node": "Design services (RTL to GDSII)", "params": {"op_share": 2, "pricing_power": 1, "roic": 2, "barriers": 1, "bottleneck": 1, "pool_growth": 3, "cash_conversion": 2, "switching": 2}, "basis": "Headcount-linked revenue at 8-25% EBITDA, priced per engineer-month, with no accumulated IP. FY26 growth was the weakest in five years across the listed set."}, {"node": "Turnkey ASIC / fabless product", "params": {"op_share": 3, "pricing_power": 3, "roic": 1, "barriers": 3, "bottleneck": 2, "pool_growth": 4, "cash_conversion": 1, "switching": 3}, "basis": "40%+ gross margin is achievable on owned silicon, but Cyient Semiconductors shows the cost of getting there: -US$11.2 mn EBIT on US$25.7 mn revenue, with 120-150 weeks concept-to-samples tying up working capital."}, {"node": "OSAT and packaging", "params": {"op_share": 2, "pricing_power": 2, "roic": 2, "barriers": 2, "bottleneck": 2, "pool_growth": 4, "cash_conversion": 3, "switching": 3}, "basis": "Contract-manufacturing economics valued as capacity rather than capability, but India now has commercial capacity (Kaynes, CG Semi, SPEL) and packaging precedes fabs in every build-out, so the pool grows with domestic electronics output."}]}</script>
+</body>
+</html>
