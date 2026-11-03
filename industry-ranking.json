@@ -98,11 +98,11 @@
   }
  },
  "counts": {
-  "industries": 78,
-  "scored": 38,
+  "industries": 79,
+  "scored": 39,
   "legacy": 0,
   "unscored": 40,
-  "ranked": 38
+  "ranked": 39
  },
  "industries": [
   {
@@ -231,11 +231,11 @@
    "value_capture": [],
    "provisional": false,
    "notes": "Opportunity uses the same series as the Market &amp; growth digest block (Alora Advisory: ~USD 1.5 bn in 2025 to ~USD 7.5 bn by 2030, ~33% nominal CAGR; Grand View&rsquo;s narrower non-utility scope is shown alongside and is not averaged). Valuation left UNAVAILABLE &mdash; no industry valuation series exists.",
-   "overall_rank": 36,
-   "risk_adjusted_rank": 34,
+   "overall_rank": 37,
+   "risk_adjusted_rank": 35,
    "structural_score": 48.6,
    "current_score": 40,
-   "structural_score_rank": 35,
+   "structural_score_rank": 36,
    "current_score_rank": 22
   },
   {
@@ -243,6 +243,204 @@
    "title": "India Battery Management Systems (BMS)",
    "group": "Energy Storage",
    "scored": false
+  },
+  {
+   "slug": "chip-design-ip-india",
+   "title": "India Chip Design & IP",
+   "group": "Semiconductors & Semiconductor Equipment",
+   "scored": true,
+   "as_of": "2026-11-03",
+   "categories": {
+    "economics": {
+     "name": "Industry economics & value creation",
+     "weight": 0.2,
+     "lens": "structural",
+     "score": 3,
+     "from": "category",
+     "basis": "The Indian pool is services-weighted and priced per engineer-month: MosChip 12.8% EBITDA, Sasken 7.9%, Cyient Semiconductors -US$11.2 mn EBIT on US$25.7 mn revenue in FY26. The high-margin half of the node - EDA and IP at 85%+ gross margin - is not present in India at all."
+    },
+    "opportunity": {
+     "name": "Market opportunity & structural growth",
+     "weight": 0.15,
+     "lens": "structural",
+     "score": 4,
+     "from": "category",
+     "basis": "Semicon 2.0 carries Rs 1.27 lakh crore notified 31-Aug-2026 with a design pillar; DLI 2.0 proposes ~Rs 5,000 crore; 372 design startups exist; the semiconductor vertical of India ER&D is the fastest-growing at 12.85% CAGR to 2031."
+    },
+    "competitive": {
+     "name": "Competitive structure & moat",
+     "weight": 0.15,
+     "lens": "structural",
+     "score": 2,
+     "from": "category",
+     "basis": "EDA and core IP are a >85% oligopoly India cannot enter at advanced nodes; Indian design services are fragmented across nine listed firms with no pricing power. Neither structure favours an Indian entrant."
+    },
+    "cycle": {
+     "name": "Current opportunity & cycle position",
+     "weight": 0.15,
+     "lens": "current",
+     "score": 2,
+     "from": "category",
+     "basis": "LTTS, KPIT and Tata Elxsi posted their slowest annual growth in at least five years in FY26 (8.35%, 4.8%, 0.8%) as global auto OEMs reprioritised R&D; semiconductor GCC hiring fell 22% year-on-year in Q1. Policy money is expanding into a contracting services market."
+    },
+    "valuation": {
+     "name": "Valuation & market expectations",
+     "weight": 0.15,
+     "lens": "current",
+     "score": null,
+     "from": null,
+     "basis": "No industry-level valuation data for an India chip-design and IP pool: the listed exposure is ER&D services equity with no comparable sector multiple series, and the fabless product businesses are loss-making at segment level."
+    },
+    "value_chain": {
+     "name": "Value-chain position & bottlenecks",
+     "weight": 0.1,
+     "lens": "structural",
+     "score": 2,
+     "from": "category",
+     "basis": "India captures the labour layer and a sliver of owned product; EDA, processor IP, interface IP, emulation hardware and foundry access are imported. DLI has produced 25 tape-outs, 7 fabricated chips and 140+ reusable IP cores - real progress from a very low base."
+    },
+    "capital": {
+     "name": "Capital intensity & financial quality",
+     "weight": 0.05,
+     "lens": "structural",
+     "score": 4,
+     "from": "category",
+     "basis": "A design centre costs US$200-500 mn against US$15-25 bn for an advanced fab, and an asset-light services model needs almost nothing. Entry capital is low, but the value-creating step - first silicon at US$3-5 mn - is where Indian venture capital is thinnest."
+    },
+    "technology": {
+     "name": "Technology & innovation",
+     "weight": 0.05,
+     "lens": "structural",
+     "score": 3,
+     "from": "category",
+     "basis": "Three live transitions: RISC-V displacing Arm in embedded (~25% penetration by end-2025), chiplets and UCIe redefining what a chip is, and AI-assisted design automation compressing the flow. All three lower barriers, but India participates rather than owns them."
+    },
+    "risk": {
+     "name": "Risk & resilience",
+     "weight": null,
+     "lens": "risk",
+     "score": 3,
+     "from": "category",
+     "basis": "Four gates: a three-vendor EDA chokepoint already used once as an export-control lever; Arm royalty dependence; a policy regime still negotiating IP co-ownership and a 3x offshore-sale clawback; and buyer requalification cost. Concentration adds ~60% of senior VLSI talent in one city."
+    }
+   },
+   "structural": {
+    "score": 58.6,
+    "coverage": 100
+   },
+   "current": {
+    "score": 40,
+    "coverage": 50
+   },
+   "risk": 3,
+   "risk_adjusted": 35.2,
+   "overall": 55.3,
+   "coverage": 85,
+   "confidence": {
+    "evidence": 4,
+    "primary_source_pct": 55,
+    "missing_critical": [
+     "India-only chip-design and IP revenue pool (no published series)",
+     "segment-level revenue for chip design inside LTTS / Tata Elxsi / KPIT / Tata Technologies",
+     "industry-level valuation multiples for Indian design services",
+     "disbursed DLI amounts and per-company outcomes"
+    ]
+   },
+   "value_capture": [
+    {
+     "node": "EDA tools and sign-off",
+     "basis": "85%+ gross margin, 13% revenue CAGR against 7% semiconductor R&D growth, >90% share in static timing and >85% in physical verification, and multi-year switching cost from flow requalification.",
+     "params": {
+      "op_share": 5,
+      "pricing_power": 5,
+      "roic": 5,
+      "barriers": 5,
+      "bottleneck": 5,
+      "pool_growth": 4,
+      "cash_conversion": 5,
+      "switching": 5
+     },
+     "score": 4.9,
+     "score100": 98,
+     "coverage": 100
+    },
+    {
+     "node": "Processor and interface IP",
+     "basis": "Arm converts ~95% of revenue to gross profit and took US$2.61 bn of royalties in FY2026; the IP pool grows 10.2% to 2032. Cash conversion is high but royalty collection lags shipment by quarters.",
+     "params": {
+      "op_share": 4,
+      "pricing_power": 4,
+      "roic": 5,
+      "barriers": 5,
+      "bottleneck": 5,
+      "pool_growth": 4,
+      "cash_conversion": 4,
+      "switching": 4
+     },
+     "score": 4.4,
+     "score100": 88,
+     "coverage": 100
+    },
+    {
+     "node": "Turnkey ASIC / fabless product",
+     "basis": "40%+ gross margin is achievable on owned silicon, but Cyient Semiconductors shows the cost of getting there: -US$11.2 mn EBIT on US$25.7 mn revenue, with 120-150 weeks concept-to-samples tying up working capital.",
+     "params": {
+      "op_share": 3,
+      "pricing_power": 3,
+      "roic": 1,
+      "barriers": 3,
+      "bottleneck": 2,
+      "pool_growth": 4,
+      "cash_conversion": 1,
+      "switching": 3
+     },
+     "score": 2.5,
+     "score100": 50,
+     "coverage": 100
+    },
+    {
+     "node": "OSAT and packaging",
+     "basis": "Contract-manufacturing economics valued as capacity rather than capability, but India now has commercial capacity (Kaynes, CG Semi, SPEL) and packaging precedes fabs in every build-out, so the pool grows with domestic electronics output.",
+     "params": {
+      "op_share": 2,
+      "pricing_power": 2,
+      "roic": 2,
+      "barriers": 2,
+      "bottleneck": 2,
+      "pool_growth": 4,
+      "cash_conversion": 3,
+      "switching": 3
+     },
+     "score": 2.35,
+     "score100": 47,
+     "coverage": 100
+    },
+    {
+     "node": "Design services (RTL to GDSII)",
+     "basis": "Headcount-linked revenue at 8-25% EBITDA, priced per engineer-month, with no accumulated IP. FY26 growth was the weakest in five years across the listed set.",
+     "params": {
+      "op_share": 2,
+      "pricing_power": 1,
+      "roic": 2,
+      "barriers": 1,
+      "bottleneck": 1,
+      "pool_growth": 3,
+      "cash_conversion": 2,
+      "switching": 2
+     },
+     "score": 1.7,
+     "score100": 34,
+     "coverage": 100
+    }
+   ],
+   "provisional": false,
+   "notes": "Coverage 85% - valuation unscored, so the overall is provisional. Structural 58.6/100, current 40.0/100, overall 55.3/100.",
+   "overall_rank": 27,
+   "risk_adjusted_rank": 16,
+   "structural_score": 58.6,
+   "current_score": 40,
+   "structural_score_rank": 23,
+   "current_score_rank": 23
   },
   {
    "slug": "component-mro-india",
@@ -907,12 +1105,12 @@
    "value_capture": [],
    "provisional": false,
    "notes": "This run REPLACES the prior Market & growth block, which rested on a tier-3 source and reported 3-year and last-year splits as UNAVAILABLE. Opportunity now uses the IMARC series (USD 1.95 bn 2025 to USD 9.75 bn 2030, 38.0% CAGR) and the conflicting NITI Aayog / third-house estimates are shown as a range rather than averaged. Valuation left UNAVAILABLE — no industry valuation series.",
-   "overall_rank": 27,
-   "risk_adjusted_rank": 27,
+   "overall_rank": 28,
+   "risk_adjusted_rank": 28,
    "structural_score": 57.1,
    "current_score": 40,
-   "structural_score_rank": 25,
-   "current_score_rank": 23
+   "structural_score_rank": 26,
+   "current_score_rank": 24
   },
   {
    "slug": "guns-india",
@@ -1154,10 +1352,10 @@
    "provisional": false,
    "notes": "Opportunity uses the same series as the Market & growth digest block (KPMG ammunition market of Rs 7,057 cr in 2023 rising to Rs 11,981 cr by 2032 at 4.93%, inside FY26 defence production of Rs 1.78 lakh cr). Valuation left UNAVAILABLE — the registry carries no industry valuation data. Value capture (added 2026-11-02) scores 8 nodes taken verbatim from this page's own BOM tree and value-chain ladder, on the separate Registry Review §4 weighting (op_share 20%, pricing_power 15%, roic 15%, barriers 15%, bottleneck 10%, pool_growth 10%, cash_conversion 10%, switching 5%). It answers 'which node keeps the money' and is not blended into the industry score above.",
    "overall_rank": 17,
-   "risk_adjusted_rank": 26,
+   "risk_adjusted_rank": 27,
    "structural_score": 58.6,
    "current_score": 80,
-   "structural_score_rank": 23,
+   "structural_score_rank": 24,
    "current_score_rank": 2
   },
   {
@@ -1262,11 +1460,11 @@
    "value_capture": [],
    "provisional": false,
    "notes": "Opportunity uses the same series as the Market & growth digest block (IFR installations of 9,120 units in 2024 and ~10,500 in 2025, 27% average annual growth 2020–2025, with imports at 85–90% of component value). No rupee market size exists at Level 1 or 2, so none is stated. Valuation left UNAVAILABLE.",
-   "overall_rank": 35,
-   "risk_adjusted_rank": 36,
+   "overall_rank": 36,
+   "risk_adjusted_rank": 37,
    "structural_score": 45.7,
    "current_score": 60,
-   "structural_score_rank": 37,
+   "structural_score_rank": 38,
    "current_score_rank": 10
   },
   {
@@ -1372,10 +1570,10 @@
    "provisional": false,
    "notes": "Scored against 'Industry-Level Investment Parameters & Scoring Architecture'. Opportunity uses the same HVDC series as the Market & growth digest block, with the conflicting second series disclosed rather than averaged. Valuation left UNAVAILABLE.",
    "overall_rank": 23,
-   "risk_adjusted_rank": 28,
+   "risk_adjusted_rank": 29,
    "structural_score": 57.1,
    "current_score": 60,
-   "structural_score_rank": 26,
+   "structural_score_rank": 27,
    "current_score_rank": 11
   },
   {
@@ -1486,10 +1684,10 @@
    "value_capture": [],
    "provisional": false,
    "notes": "Scored against 'Industry-Level Investment Parameters & Scoring Architecture'. Cycle position and valuation left UNAVAILABLE — the registry carries no cycle or valuation data for these industries.",
-   "overall_rank": 28,
-   "risk_adjusted_rank": 30,
+   "overall_rank": 29,
+   "risk_adjusted_rank": 31,
    "structural_score": 52.9,
-   "structural_score_rank": 29
+   "structural_score_rank": 30
   },
   {
    "slug": "launch-vehicles-propulsion-india",
@@ -1807,11 +2005,11 @@
    "value_capture": [],
    "provisional": false,
    "notes": "Opportunity uses the same series as the Market & growth digest block (IESA demand of 28 GWh in 2025 rising to ~272 GWh by FY2030 at a 36.5% CAGR, against ~2 GWh installed capacity). The two value forecasts disagree (17.65% vs 22.0% CAGR) and are shown as conflicting data rather than reconciled. Valuation left UNAVAILABLE.",
-   "overall_rank": 29,
-   "risk_adjusted_rank": 32,
+   "overall_rank": 30,
+   "risk_adjusted_rank": 33,
    "structural_score": 51.4,
    "current_score": 60,
-   "structural_score_rank": 31,
+   "structural_score_rank": 32,
    "current_score_rank": 12
   },
   {
@@ -2300,7 +2498,7 @@
    "provisional": false,
    "notes": "Opportunity uses the same series as the Market & growth digest block (MarketsandMarkets India missile market US$468.6 mn 2025 to US$2,512.7 mn 2030 at 39.9%, and Grand View India PGM US$2,350.6 mn 2022 to US$3,958.6 mn 2030 at 6.7%, both inside FY26 defence production of Rs 1.78 lakh crore). Valuation left UNAVAILABLE — the registry carries no industry valuation series. Value capture (added 2026-11-01) scores 9 nodes taken verbatim from this page's own BOM tree and value-chain ladder, on the separate Registry Review §4 weighting (op_share 20%, pricing_power 15%, roic 15%, barriers 15%, bottleneck 10%, pool_growth 10%, cash_conversion 10%, switching 5%). It answers 'which node keeps the money' and is not blended into the industry score above.",
    "overall_rank": 10,
-   "risk_adjusted_rank": 22,
+   "risk_adjusted_rank": 23,
    "structural_score": 62.9,
    "current_score": 80,
    "structural_score_rank": 16,
@@ -2408,12 +2606,12 @@
    "value_capture": [],
    "provisional": false,
    "notes": "Opportunity uses the same series as the Market &amp; growth digest block (Omdia/IDC: ~153 mn CY2025 to 125&ndash;133 mn CY2026; accessories USD 6.86 bn 2025 to 14.66 bn 2034, ~8.5% five-year CAGR, CALCULATED). Valuation left UNAVAILABLE &mdash; no industry valuation series exists.",
-   "overall_rank": 38,
-   "risk_adjusted_rank": 37,
+   "overall_rank": 39,
+   "risk_adjusted_rank": 38,
    "structural_score": 41.4,
    "current_score": 40,
-   "structural_score_rank": 38,
-   "current_score_rank": 24
+   "structural_score_rank": 39,
+   "current_score_rank": 25
   },
   {
    "slug": "nuclear-pwr-steam-generator-india",
@@ -2790,12 +2988,12 @@
    "value_capture": [],
    "provisional": false,
    "notes": "Opportunity uses the same series as the Market & growth digest block (DCPC value of output Rs 9.62 lakh crore FY2018-19 to Rs 15.14 lakh crore FY2023-24, 11.6% CAGR at current prices, inside a Rs 26 lakh crore FY25 chemicals-and-petrochemicals market, against a Rs 65,383 crore FY26 net organic-chemicals import gap). Valuation left UNAVAILABLE — the registry carries no industry valuation series.",
-   "overall_rank": 34,
-   "risk_adjusted_rank": 33,
+   "overall_rank": 35,
+   "risk_adjusted_rank": 34,
    "structural_score": 51.4,
    "current_score": 40,
-   "structural_score_rank": 32,
-   "current_score_rank": 25
+   "structural_score_rank": 33,
+   "current_score_rank": 26
   },
   {
    "slug": "overhead-transmission-line-india",
@@ -3151,12 +3349,12 @@
    "value_capture": [],
    "provisional": false,
    "notes": "Opportunity uses the same series as the Market &amp; growth digest block (~$15&ndash;16 bn growing 5&ndash;7% through FY28, and the broader-scope $14.18 bn 2025 to $22.18 bn 2031 at 7.74% CALCULATED). Valuation left UNAVAILABLE &mdash; no industry valuation series exists.",
-   "overall_rank": 37,
-   "risk_adjusted_rank": 35,
+   "overall_rank": 38,
+   "risk_adjusted_rank": 36,
    "structural_score": 48.6,
    "current_score": 40,
-   "structural_score_rank": 36,
-   "current_score_rank": 26
+   "structural_score_rank": 37,
+   "current_score_rank": 27
   },
   {
    "slug": "power-conversion-system-india",
@@ -3398,7 +3596,7 @@
    "provisional": false,
    "notes": "Opportunity uses the same series as the Market & growth digest block (India BESS US$1.5 bn in 2025 to US$7.5 bn in 2030 at 33% value CAGR, with the PCS slice derived at 15–25% of utility-scale hardware capex, against a CEA 208 GWh by 2030 requirement). Valuation left UNAVAILABLE — the registry carries no industry valuation series. Value capture (added 2026-11-01) scores 8 nodes taken verbatim from this page's own BOM tree and value-chain ladder, on the separate Registry Review §4 weighting (op_share 20%, pricing_power 15%, roic 15%, barriers 15%, bottleneck 10%, pool_growth 10%, cash_conversion 10%, switching 5%). It answers 'which node keeps the money' and is not blended into the industry score above.",
    "overall_rank": 12,
-   "risk_adjusted_rank": 24,
+   "risk_adjusted_rank": 25,
    "structural_score": 61.4,
    "current_score": 80,
    "structural_score_rank": 18,
@@ -4229,11 +4427,11 @@
    "value_capture": [],
    "provisional": false,
    "notes": "Opportunity uses the same series as the Market & growth digest block (FY25 permanent-magnet imports of Rs 1,744 crore on 53,748 tonnes, government projection of consumption doubling by 2030 from 2025, and import dependence of 59.6–81.3% by value). Valuation left UNAVAILABLE — no industry valuation series and no listed domestic pure-play.",
-   "overall_rank": 31,
-   "risk_adjusted_rank": 38,
+   "overall_rank": 32,
+   "risk_adjusted_rank": 39,
    "structural_score": 50,
    "current_score": 60,
-   "structural_score_rank": 34,
+   "structural_score_rank": 35,
    "current_score_rank": 14
   },
   {
@@ -4679,10 +4877,10 @@
    "provisional": false,
    "notes": "Scored against 'Industry-Level Investment Parameters & Scoring Architecture'. Valuation left UNAVAILABLE - the registry carries no industry-level valuation data. Cycle scored on IFR installation growth and the 2026 PLI lapse. Value capture is a judgement on node economics from the page's own bottleneck and import-dependency evidence, not from node-level financials.",
    "overall_rank": 24,
-   "risk_adjusted_rank": 29,
+   "risk_adjusted_rank": 30,
    "structural_score": 55.7,
    "current_score": 60,
-   "structural_score_rank": 27,
+   "structural_score_rank": 28,
    "current_score_rank": 15
   },
   {
@@ -4905,12 +5103,12 @@
    ],
    "provisional": false,
    "notes": "Scored against 'Industry-Level Investment Parameters & Scoring Architecture'. Valuation left UNAVAILABLE; coverage 85%. The score fell from 60.0 (2026-10-09) to 52.9 for two distinct reasons: opportunity was cut 4 to 3 because the 20% localisation clause was dropped from the notified 2026 authorisation rules, and the cycle category is now scored at 2 on real evidence (20 idle Starlink gateway sites, VSAT terminals down 21.8%) instead of being unavailable. Coverage rose from 70% to 85%, so part of the fall is the addition of a weak category rather than a deterioration in the others. The IN-SPACe 2022 base and 2033 target are a policy ambition, not a forecast of realised revenue, and are not used as a CAGR. Node-level financials do not exist in public disclosure; value capture is a judgement on node economics.",
-   "overall_rank": 30,
-   "risk_adjusted_rank": 17,
+   "overall_rank": 31,
+   "risk_adjusted_rank": 18,
    "structural_score": 55.7,
    "current_score": 40,
-   "structural_score_rank": 28,
-   "current_score_rank": 27
+   "structural_score_rank": 29,
+   "current_score_rank": 28
   },
   {
    "slug": "satellite-india",
@@ -5134,7 +5332,7 @@
    "provisional": false,
    "notes": "Scored against 'Industry-Level Investment Parameters & Scoring Architecture'. Cycle and valuation left UNAVAILABLE - the page carries no demand-supply cycle position or industry valuation data. Market sizes and segment CAGRs are the official IN-SPACe Decadal Vision figures. Value capture is a judgement on node economics, not node-level financials.",
    "overall_rank": 11,
-   "risk_adjusted_rank": 19,
+   "risk_adjusted_rank": 20,
    "structural_score": 65.7,
    "structural_score_rank": 11
   },
@@ -5564,7 +5762,7 @@
    "structural_score": 60,
    "current_score": 40,
    "structural_score_rank": 21,
-   "current_score_rank": 28
+   "current_score_rank": 29
   },
   {
    "slug": "semiconductor-equipment-materials-india",
@@ -5674,10 +5872,10 @@
    "value_capture": [],
    "provisional": false,
    "notes": "Scored against 'Industry-Level Investment Parameters & Scoring Architecture'. Cycle position and valuation left UNAVAILABLE — the registry carries no cycle or valuation data for these industries.",
-   "overall_rank": 32,
-   "risk_adjusted_rank": 18,
+   "overall_rank": 33,
+   "risk_adjusted_rank": 19,
    "structural_score": 51.4,
-   "structural_score_rank": 33
+   "structural_score_rank": 34
   },
   {
    "slug": "shakti-ew-india",
@@ -5931,11 +6129,11 @@
    "provisional": false,
    "notes": "Opportunity uses the same series as the Market & growth digest block (DGFT silver HS-category imports: US$184.33 mn FY26 vs an implied US$112.05 mn FY25, +64.51%). Valuation left UNAVAILABLE — no industry valuation series, and the pure-plays are foreign-listed. The CSE import line is an HS proxy, so it overstates paste narrowly and understates it if paste enters under a different code. Value capture (added 2026-11-02) scores 8 nodes taken verbatim from this page's own BOM tree and value-chain ladder, on the separate Registry Review §4 weighting (op_share 20%, pricing_power 15%, roic 15%, barriers 15%, bottleneck 10%, pool_growth 10%, cash_conversion 10%, switching 5%). It answers 'which node keeps the money' and is not blended into the industry score above.",
    "overall_rank": 22,
-   "risk_adjusted_rank": 23,
+   "risk_adjusted_rank": 24,
    "structural_score": 62.9,
    "current_score": 40,
    "structural_score_rank": 17,
-   "current_score_rank": 31
+   "current_score_rank": 32
   },
   {
    "slug": "smart-meters-india",
@@ -6045,12 +6243,12 @@
    "value_capture": [],
    "provisional": false,
    "notes": "SMR-specific revenue is UNAVAILABLE — no unit is under construction and no commercial price exists, so opportunity is scored on the nuclear build-out frame and the three sanctioned demonstration projects rather than on an invented SMR market size. Valuation left UNAVAILABLE — no industry valuation series and the core participants are unlisted.",
-   "overall_rank": 33,
-   "risk_adjusted_rank": 31,
+   "overall_rank": 34,
+   "risk_adjusted_rank": 32,
    "structural_score": 52.9,
    "current_score": 40,
-   "structural_score_rank": 30,
-   "current_score_rank": 29
+   "structural_score_rank": 31,
+   "current_score_rank": 30
   },
   {
    "slug": "solar-cells-india",
@@ -6275,11 +6473,11 @@
    "provisional": false,
    "notes": "Opportunity uses the same series as the Market & growth digest block (CRISIL demand of 60-65 GW FY27; Commerce/TradeStat imported-cell value US$3.06 bn FY26 with a 28.6% two-year CAGR). Valuation left UNAVAILABLE — the registry carries no industry valuation data. Value capture (added 2026-11-02) scores 7 nodes taken verbatim from this page's own BOM tree and value-chain ladder, on the separate Registry Review §4 weighting (op_share 20%, pricing_power 15%, roic 15%, barriers 15%, bottleneck 10%, pool_growth 10%, cash_conversion 10%, switching 5%). It answers 'which node keeps the money' and is not blended into the industry score above.",
    "overall_rank": 20,
-   "risk_adjusted_rank": 21,
+   "risk_adjusted_rank": 22,
    "structural_score": 64.3,
    "current_score": 40,
    "structural_score_rank": 15,
-   "current_score_rank": 32
+   "current_score_rank": 33
   },
   {
    "slug": "solar-pv-india",
@@ -6384,11 +6582,11 @@
    "provisional": false,
    "notes": "Opportunity uses the same series as the Market & growth digest block (PS Market Research, base 2023, 13.4% nominal CAGR 2024-2030). Valuation left UNAVAILABLE — the registry carries no industry valuation data. The panels-only Grand View series (9.4%) is a different scope and is not blended into the score.",
    "overall_rank": 26,
-   "risk_adjusted_rank": 25,
+   "risk_adjusted_rank": 26,
    "structural_score": 60,
    "current_score": 40,
    "structural_score_rank": 22,
-   "current_score_rank": 30
+   "current_score_rank": 31
   },
   {
    "slug": "steam-turbine-india",
@@ -7142,7 +7340,7 @@
    "provisional": false,
    "notes": "Opportunity uses the same series as the Market &amp; growth digest block (0.86 mn towers FY26 to 1.04&ndash;1.09 mn FY31 at 4&ndash;5% CAGR, REPORTED-T2, with the CALCULATED 3.9&ndash;4.9% shown alongside). Valuation is scored from one listed proxy&rsquo;s EV/EBITDA, labelled [REPORTED-T3], not from an industry series. Value capture (added 2026-11-02) scores 8 nodes taken verbatim from this page's own BOM tree and value-chain ladder, on the separate Registry Review §4 weighting (op_share 20%, pricing_power 15%, roic 15%, barriers 15%, bottleneck 10%, pool_growth 10%, cash_conversion 10%, switching 5%). It answers 'which node keeps the money' and is not blended into the industry score above.",
    "overall_rank": 16,
-   "risk_adjusted_rank": 20,
+   "risk_adjusted_rank": 21,
    "structural_score": 64.3,
    "current_score": 60,
    "structural_score_rank": 14,
@@ -7634,10 +7832,10 @@
    "provisional": false,
    "notes": "Opportunity and growth use the IMARC India wastewater treatment plants series (2020 US$3.51bn, 2025 US$4.60bn, 2026 US$4.92bn) — a plant/equipment/EPC scope. The Rs 13.1bn-to-23.8bn (2023-33, 6.2%) figure is an all-water-plus-wastewater scope and the US$2.94bn (2023) figure a narrower equipment scope; neither is blended into the score. Valuation left UNAVAILABLE.",
    "overall_rank": 21,
-   "risk_adjusted_rank": 16,
+   "risk_adjusted_rank": 17,
    "structural_score": 58.6,
    "current_score": 60,
-   "structural_score_rank": 24,
+   "structural_score_rank": 25,
    "current_score_rank": 18
   }
  ]
