@@ -226,7 +226,7 @@ for (const file of files) {
   }
 
   if (!isIndex && !isView && !/Market\s*&(?:amp;)?\s*growth/i.test(html)) {
-    warnings.push('missing the MANDATORY Market & growth digest block (backfill pending - see registry-conformance-workqueue.csv)');
+    warnings.push('missing the MANDATORY Market & growth digest block (backfill pending)');
   }
 
   // component-CSS resolution: every used component class must be defined somewhere
