@@ -1,7 +1,7 @@
 {
  "registry": "Industry BOM Registry",
  "description": "Machine-readable node index. For every entry, the node names it contains plus the owning entry slug. Used for DEDUP (industry+scope already analysed) and LINEAGE (auto-linking a new industry to a parent when its name matches a node name). Update on every publish.",
- "generated": "2026-11-04",
+ "generated": "2026-11-05",
  "last_delta_pass": "2026-11-02",
  "delta_note": "WEEKLY DELTA PASS 2026-11-02 (refresh, not re-analysis). Six entries re-validated against live sources; five carried moved or newly-dated facts and one resolved. MOVED: Organic Chemicals — DGTR issued preliminary findings on 26-Oct-2026 (Case CVD (OI)-07/2025) recommending a provisional CVD of US$83.72-143.82/t on Chinese PVC suspension resin; a duty has been recommended but not notified by the Finance Ministry, and the 6-month MIP lapses ~23-Jan-2027. Risk basis updated, score held at 2 (domestic capacity ~1.6 MMT vs ~4.1 MMT demand caps the relief). MOVED: Condenser Heat Rejection — BHEL ACC package enquiry B/4222/6/0669V1 bid deadline extended again, 30-Oct-2026 -> 23-Nov-2026; still unawarded. MOVED: Data Centre / AI Compute — the C-DAC IndiaAI RFE (C-DAC/GPU/01/2026) closed 29-Oct-2026 and technical proposals opened 30-Oct-2026; the open item is now the empanelment list. MeitY has reportedly accepted global commercial resale for this round (Business Standard 11-Oct-2026), kept separate from the RFE text. RESOLVED: Telecom — Jio Platforms listed 28-Oct-2026 on NSE/BSE (scrip 545004) at Rs 1,358, +21.4% over the Rs 1,119 issue, ~Rs 12.5 lakh crore market cap; the open item moves from the issue to index inclusion. NEW DATED: Rare-Earth Magnets — China's suspension of its October-2025 rare-earth package (MOFCOM/GAC 55-58, 61, 62, including the 0.1% foreign-content rule) lapses 10-Nov-2026 with no extension notice published as of 31-Oct-2026; Announcement 18 of Apr-2025 was never suspended. REPM award still pending at 27-Oct-2026. Risk score held at 1 (already the floor). MOVED (partial): Railway — the ~Rs 40,000 cr / 1 lakh-wagon mega tender is still unfloated and has slipped from H1 to H2 FY27, but a 5,800 BOBRN hopper-wagon procurement was issued 30-Oct-2026 (closing 26-Nov-2026). UNCHANGED on re-validation: Germanium/gallium US-specific suspension to 27-Nov-2026 (no extension published); SHANTI Act rules still unnotified and the Act itself not yet in force; SIGHT electrolyser Tranche-I still without a confirmed fully-commissioned plant; REPM beneficiary award; BHAVYA Rasayan state proposals due 30-Nov-2026; PLI White Goods to FY2028-29 with an extension request live; telecom PLI 2.0 Cabinet approval still pending; China TBM licensing effective 18-Nov-2026 as already carried; CPCB all-industry ZLD still draft; Aksh Optifibre CIRP unchanged. Scores changed: none (two bases updated, as_of 2026-10-30 -> 2026-11-02 on the two scored pages affected).",
  "entries": [
@@ -7754,7 +7754,7 @@
    "industry": "Li-ion Cell Manufacturing",
    "scope": "INDIA",
    "path": "industries/li-ion-cell-manufacturing-india.html",
-   "analysis_date": "2026-10-09",
+   "analysis_date": "2026-11-05",
    "universe": "NSE/BSE",
    "sector": "Energy Storage",
    "derived_from": {
