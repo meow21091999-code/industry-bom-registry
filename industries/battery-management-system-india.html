@@ -26,7 +26,7 @@
     <h1>India <span>Battery Management Systems (BMS)</span></h1>
     <div class="subtitle">The safety-critical control electronics of a battery &middot; architecture &middot; semiconductors &middot; NSE/BSE company map</div>
     <div class="scope-bar">
-      <span class="chip chip--gold">Analysis date: 2026-10-09</span>
+      <span class="chip chip--gold">Analysis date: 2026-11-06</span>
       <span class="chip">Scope: INDIA</span>
       <span class="chip">Interest: investment research</span>
       <span class="chip">Universe: NSE / BSE</span>
@@ -45,32 +45,31 @@
 
   <section class="animate" style="--i:1">
     <div class="metric-cards">
-      <div class="metric-card metric-card--high">
-        <div class="metric-card__val">~90%</div>
-        <div class="metric-card__label">BMS units imported</div>
-        <div class="metric-card__sub">China the largest supplier</div>
-      </div>
       <div class="metric-card metric-card--gold">
-        <div class="metric-card__val">30&ndash;40%</div>
-        <div class="metric-card__label">ICs share of BMS BOM</div>
-        <div class="metric-card__sub">AFE/MCU near-totally imported</div>
+        <div class="metric-card__val">16.5&ndash;34.5%</div>
+        <div class="metric-card__label">CAGR to 2033/34 (value, nominal)</div>
+        <div class="metric-card__sub">two scopes &middot; volume series unavailable</div>
+      </div>
+      <div class="metric-card metric-card--high">
+        <div class="metric-card__val">26 weeks</div>
+        <div class="metric-card__label">AFE IC standard lead time</div>
+        <div class="metric-card__sub">TI BQ-series list &middot; no Indian fab</div>
       </div>
       <div class="metric-card">
-        <div class="metric-card__val">~5%</div>
-        <div class="metric-card__label">BMS share of BESS capex</div>
-        <div class="metric-card__sub">small cost, safety-critical</div>
-      </div>
-      <div class="metric-card metric-card--high">
-        <div class="metric-card__val">1 Sep 2026</div>
-        <div class="metric-card__label">UL 1973 Ed.3 + ISO 15118-20</div>
-        <div class="metric-card__sub">MNRE import gate for BMS/EMS</div>
+        <div class="metric-card__val">13.7 GWh</div>
+        <div class="metric-card__label">BESS operating base, Sep 2026</div>
+        <div class="metric-card__sub">17&times; since Dec 2025 &middot; ~20 GWh expected by FY-end</div>
       </div>
       <div class="metric-card metric-card--gold">
-        <div class="metric-card__val">No listed pure-play</div>
-        <div class="metric-card__label">nearest proxy Endurance/Maxwell</div>
-        <div class="metric-card__sub">via 100%-owned subsidiary</div>
+        <div class="metric-card__val">6.8%</div>
+        <div class="metric-card__label">Maxwell EBITDA margin, H1FY27</div>
+        <div class="metric-card__sub">income &#8377;141 cr, +91% &middot; PAT &#8377;5 cr</div>
       </div>
-
+      <div class="metric-card metric-card--high">
+        <div class="metric-card__val">1 Apr 2027</div>
+        <div class="metric-card__label">CEA Chapter XA in force</div>
+        <div class="metric-card__sub">cell/module/rack BMS monitoring, &gt;650 V</div>
+      </div>
     </div>
   </section>
 
@@ -78,35 +77,34 @@
     <div class="sec-head"><span class="sec-num">DG</span><span class="sec-title">Digest &mdash; at a glance</span><span class="sec-note">short summary; full report in chat</span></div>
     
 <div class="digest">
-<div class="digest__item"><div class="digest__h">Snapshot</div><p>The BMS monitors and protects every cell in a pack — a small share of cost (~5% of BESS capex, 8–12% of container cost) but safety- and cyber-critical. India imports ~90% of BMS units, and the ICs inside are near-totally imported.</p></div>
+<div class="digest__item"><div class="digest__h">Snapshot</div><p>The BMS senses, balances and protects every cell in a pack &mdash; ~5% of BESS capex and 8&ndash;12% of container cost, but the safety and cyber gate on the whole asset. India designs and assembles boards domestically; the silicon and most finished units still come from abroad.</p></div>
 <div class="digest__item"><div class="digest__h">Process &amp; equipment</div><ul>
-<li>Three-tier architecture: BMU (module) &rarr; BCU (rack) &rarr; BAU (container/system); a 5 MWh container is ~1 BAU + 12 BCUs + 48 BMUs over ~5,000 cells.</li>
-<li>Boards are SMT-assembled in India (Napino, Dixon, Syrma, Kaynes) using imported silicon.</li>
-<li>1500 V designs need reinforced isolation and isolated daisy-chain comms.</li></ul></div>
+<li>Three-tier architecture: BMU (module) &rarr; BCU (rack) &rarr; BAU (container); a 5 MWh container is ~1 BAU + 12 BCUs + 48 BMUs over roughly 5,000 cells.</li>
+<li>Boards are SMT-assembled in India and functionally tested, then validated on HIL rigs; 1500 V designs need reinforced isolation and isolated daisy-chain comms.</li>
+<li>Maxwell added a second SMT line in Q2FY27 for in-house ABS ECU and higher BMS volumes; Napino, Syrma and Kaynes supply the wider EMS base.</li></ul></div>
 <div class="digest__item"><div class="digest__h">Bottlenecks</div><ul>
-<li>AFE/MCU/isolation ICs &mdash; a four-supplier global oligopoly (TI, ADI, NXP, ST); no Indian fab.</li>
-<li>Firmware &amp; cybersecurity &mdash; safety-critical talent thin; BMS security flaws documented.</li>
-<li>Container-scale propagation testing not available in India.</li>
-<li>Chinese BMS price competition undercuts indigenous R&amp;D.</li></ul></div>
+<li>AFE, safety-MCU and isolation silicon &mdash; a TI/ADI/NXP/ST oligopoly, 26-week standard lead times, no Indian fab; packaging (OSAT) is not design or fab.</li>
+<li>Firmware and cybersecurity &mdash; the Aug-2026 e-rickshaw Bluetooth BMS hacks showed third-party apps can drop the MOSFETs; AIS-156 cyber testing became mandatory for wireless BMS in Sep-2026.</li>
+<li>Container-scale propagation testing is absent in India, so evidence is imported with the product.</li>
+<li>Chinese BMS price competition undercuts indigenous R&amp;D at the low-voltage end.</li></ul></div>
 <div class="digest__item"><div class="digest__h">Value pools</div><ul>
-<li>ICs are 30&ndash;40% of BMS BOM cost — the pool that leaks abroad.</li>
-<li>Design, firmware and assembly stay domestic — Endurance/Maxwell, HBL, Amara Raja (Nuvation MoU).</li>
-<li>EMS software is mandated domestic (Kalkitech, Statiq, Tuva) — 5&ndash;7% of project value.</li>
-<li>PCB/laminates are ~85% imported — an ECMS-backed localisation target.</li></ul></div>
+<li>ICs take 30&ndash;40% of BMS BOM cost and the pool leaks abroad in full &mdash; the deepest value-capture node in the chain (96/100 on the framework).</li>
+<li>Design, firmware and assembly stay domestic but earn thin margins: Maxwell's H1FY27 EBITDA was 6.8%, and it is ~1.5% of Endurance's consolidated income.</li>
+<li>EMS software is a mandated domestic pool &mdash; MSEDCL's 4 GWh award requires indigenous EMS plus 20% local content.</li>
+<li>The revenue pool sits in integrated packs and BESS: 23.15 GWh/yr of disclosed domestic integration capacity is commissioned, against 13.7 GWh operational nationally.</li></ul></div>
 <div class="digest__item"><div class="digest__h">Market &amp; growth</div><ul>
-<li>India BMS market ~USD 398 mn (2025) &rarr; ~USD 4.09 bn by 2033 &mdash; 34.5% CAGR, nominal, 2026&ndash;2033, all chemistries and applications [REPORTED: Grand View Research, 2026].</li>
-<li>The same node is sized far lower elsewhere &mdash; USD 282 mn (2024) &rarr; USD 700 mn (2029), 20% CAGR [REPORTED: MarketsandMarkets, 2026] &mdash; largely a scope difference, since the higher series carries lead-acid and stationary applications as well as EV [CONFLICTING DATA].</li>
-<li>EV-only BMS is the fastest slice: USD 199 mn (2024) &rarr; USD 3.02 bn (2032), 40.5% CAGR [REPORTED: Market Research Future, Mar 2025].</li>
-<li>Drivers: the lead-acid installed base still earns the most revenue (~68%) while lithium is the fastest-growing chemistry, so growth is a mix shift as much as a volume story [REPORTED: Grand View Research, 2026]; BESS scale-up, where BMS is ~5% of project capex; and 2W/3W electrification, where the BMS is the safety gate rather than a convenience.</li>
-<li>A unit-volume series and a 3-year CAGR are [UNAVAILABLE] in this pass.</li>
-</ul></div>
+<li>Value, nominal: USD 397.7 mn (2025) &rarr; 515.2 mn (2026) &rarr; 4,093.5 mn (2033), a 34.5% CAGR 2026&ndash;2033 [REPORTED: Grand View Research, 2026].</li>
+<li>5-year: USD 281.6 mn (2024) &rarr; 699.6 mn (2029), 20.0% CAGR [CALCULATED from MarketsandMarkets endpoints, 2026].</li>
+<li>Last year: +29.5% (2025&rarr;2026, GVR) and +16.5% (2024&rarr;2025, IMARC: 327.9 &rarr; 1,347.6 mn by 2034) [CALCULATED].</li>
+<li>3-year CAGR: [UNAVAILABLE] &mdash; no source carries a 2027 or 2028 point. The 14&times; spread between series is scope, not disagreement on direction [CONFLICTING DATA].</li>
+<li>Volume: no unit series exists; the physical proxy is BESS capacity &mdash; 13.7 GWh operational (Sep-2026) against 308 GWh tendered since 2018, of which 37% is under execution and 20% cancelled [REPORTED: IESA ESS Market Update]. Growth is volume-led, with mix shifting lead-acid &rarr; lithium.</li></ul></div>
 <div class="digest__item"><div class="digest__h">Watch items</div><ul>
-<li>1 Sep 2026 &mdash; imported BMS/EMS must hold UL 1973 Ed.3 + ISO 15118-20.</li>
-<li>15 Aug 2026 &mdash; source-code-level BMS security audit (IS/IEC 62443-4-2) for BIS ESS applications.</li>
-<li>CEA BESS safety rules (Chapter XA) effective 1 Apr 2027 — cell/module/rack-level BMS monitoring.</li>
-<li>PM E-DRIVE: BMS must be made in India for e-trucks from 1 Sep 2026.</li></ul></div>
+<li>In force since 1 Sep 2026 &mdash; imported BMS/EMS need UL 1973 Ed.3 + ISO 15118-20 (MNRE, 8-Jul-2026).</li>
+<li>23 Nov 2026 &mdash; SECI 16 GWh BESS bids close; NGEL's 10 GW/40 GWh tender opened 4 Nov 2026.</li>
+<li>1 Apr 2027 &mdash; CEA Chapter XA (notified 27-Mar-2026) mandates cell/module/rack BMS monitoring above 650 V.</li>
+<li>BMS localisation is already a subsidy condition for e-trucks under PM E-DRIVE (MHI, 29-Apr-2026).</li></ul></div>
 <div class="digest__item"><div class="digest__h">Coverage gaps</div><ul>
-<li>No NSE/BSE-listed BMS pure-play; the closest listed exposure is Endurance Technologies (via Maxwell Energy).</li>
+<li>No NSE/BSE-listed BMS pure-play and no listed BMS-IC exposure. Nearest proxies: Endurance (Maxwell, ~1.5% of consolidated income) and HBL Engineering.</li>
 </ul></div>
 </div>
   </section>
@@ -136,18 +134,21 @@
 graph TD
   L0["<b>Level 0</b><br/>Battery Management System (BMS)<br/>(India)"]
   L0 --> A["A &middot; Cell-level Sensing<br/>(AFE / BMU)"]
-  L0 --> B["B &middot; Module BMS"]
-  L0 --> C["C &middot; Rack / String<br/>Master (BCU)"]
-  L0 --> D["D &middot; System BMS (BAU)<br/>&amp; Firmware"]
-  L0 --> E["E &middot; Semiconductor<br/>Content"]
-  L0 --> F["F &middot; BMS PCB &amp;<br/>SMT Assembly"]
+  L0 --> B["B &middot; Module &amp; Rack BMS<br/>(BMU / BCU)"]
+  L0 --> C["C &middot; System BMS (BAU)<br/>&amp; Firmware"]
+  L0 --> D["D &middot; Semiconductor<br/>Content"]
+  L0 --> E["E &middot; BMS PCB &amp;<br/>SMT Assembly"]
+  L0 --> F["F &middot; Cybersecurity &amp;<br/>EMS Software"]
   L0 --> G["G &middot; Testing &amp;<br/>Certification"]
+  L0 --> H["H &middot; Domestic Silicon<br/>Path (OSAT)"]
   classDef high fill:#c0392b,stroke:#8e2b20,color:#fff,stroke-width:2px;
   classDef med fill:#d4a73a,stroke:#a37f22,color:#241a05,stroke-width:1.5px;
+  classDef low fill:#3d6b8c,stroke:#2a4d66,color:#fff,stroke-width:1px;
   classDef root fill:#1e4e8c,stroke:#12335c,color:#fff,stroke-width:2px;
   class L0 root;
-  class A,E high;
-  class B,C,D,F,G med;
+  class A,D,F high;
+  class B,C,E,G med;
+  class H low;
       </script>
     </section>
     <div class="legend">
@@ -166,27 +167,27 @@ graph TD
     <div class="ladder">
       <div class="rung rung--1">
         <div class="rung__label">Tier 4 &middot; Raw</div>
-        <div class="rung__body"><b>Semiconductor wafers</b> &middot; PCB laminate &amp; copper foil &middot; connector metals &middot; NTC thermistor materials <span class="mini">imported</span></div>
+        <div class="rung__body"><b>Semiconductor wafers</b> &middot; PCB laminate &amp; copper foil &middot; connector metals &middot; NTC thermistor and shunt materials <span class="mini">imported</span></div>
       </div>
       <div class="rung rung--2">
         <div class="rung__label">Tier 3 &middot; Specialty</div>
-        <div class="rung__body"><b>AFE ICs</b> &middot; MCUs &middot; isolated transceivers &middot; current sensors &middot; multi-layer PCB <span class="mini">TI &middot; ADI &middot; NXP &middot; ST &middot; Infineon (all foreign)</span></div>
+        <div class="rung__body"><b>AFE ICs</b> &middot; safety MCUs &middot; isolated transceivers &amp; DC-DC &middot; current sensors &middot; multi-layer PCB <span class="mini">TI &middot; ADI &middot; NXP &middot; ST &middot; Infineon &mdash; all foreign</span></div>
       </div>
       <div class="rung rung--3">
         <div class="rung__label">Tier 2 &middot; Component</div>
-        <div class="rung__body"><b>BMU / BCU / BAU boards</b> &middot; BMS firmware &middot; contactors, fuses, harness <span class="mini">Endurance/Maxwell &middot; HBL &middot; Napino (unlisted)</span></div>
+        <div class="rung__body"><b>BMU / BCU / BAU boards</b> &middot; BMS firmware &amp; cyber stack &middot; contactors, fuses, harness <span class="mini">Endurance/Maxwell &middot; HBL &middot; Xbattery, Napino, Vecmocon (unlisted)</span></div>
       </div>
       <div class="rung rung--4">
         <div class="rung__label">Tier 1 &middot; System</div>
-        <div class="rung__body"><b>BMS integrated into packs and containers</b> &mdash; BESS integrators and cell/pack makers <span class="mini">Amara Raja &middot; Exide &middot; Waaree &middot; Tata AutoComp Gotion</span></div>
+        <div class="rung__body"><b>BMS integrated into packs, racks and containers</b> &mdash; 23.15 GWh/yr of disclosed domestic integration capacity <span class="mini">Amara Raja &middot; Exide &middot; Waaree &middot; JSW &middot; GoodEnough &middot; TACO Gotion (unlisted)</span></div>
       </div>
       <div class="rung rung--4">
         <div class="rung__label">OEM / Developer</div>
-        <div class="rung__body"><b>BESS developers and EV OEMs</b> as the demand layer <span class="mini">NTPC Green &middot; Tata Power &middot; JSW &middot; Ola</span></div>
+        <div class="rung__body"><b>BESS developers and EV OEMs</b> as the demand layer &mdash; 308 GWh tendered, 13.7 GWh operational <span class="mini">NTPC Green &middot; SECI &middot; MSEDCL &middot; Tata Power &middot; Ola</span></div>
       </div>
       <div class="rung rung--1">
         <div class="rung__label">Aftermarket</div>
-        <div class="rung__body">BMS firmware updates &middot; cybersecurity &middot; diagnostics &middot; second-life re-BMS <span class="mini">service layer</span></div>
+        <div class="rung__body">Firmware and cyber updates &middot; diagnostics &middot; HIL re-validation &middot; second-life re-BMS <span class="mini">service layer</span></div>
       </div>
 
     </div>
@@ -204,6 +205,278 @@ graph TD
     </div>
   </section>
 
+<script>
+const NODES = [
+ {
+  "id": "afe",
+  "name": "AFE / Cell-monitoring ICs",
+  "pri": "high",
+  "bott": true,
+  "fn": "The analog front-end that measures every cell voltage and temperature and drives balancing — the core of the BMS and 30–40% of its BOM cost.",
+  "importDep": "Near-total import",
+  "conc": "Four-supplier oligopoly (TI, ADI, NXP, ST)",
+  "companies": [],
+  "gap": "NO LISTED PURE-PLAY IN INDIA (no domestic BMS-IC design house or fab).",
+  "near": "Supplied by Texas Instruments, Analog Devices, NXP, STMicroelectronics and Infineon. Catalogue lead times run ~26 weeks. Indian OSAT capacity (Kaynes Semicon, CG Semi) packages such silicon but does not design or fabricate it."
+ },
+ {
+  "id": "mcu",
+  "name": "BMS MCU, Isolation & Transceivers",
+  "pri": "high",
+  "bott": true,
+  "fn": "Safety-capable MCU plus isolated CAN/isoSPI transceivers and isolated DC-DC for 1500 V operation.",
+  "importDep": "Near-total import",
+  "conc": "Foreign oligopoly",
+  "companies": [],
+  "gap": "NO LISTED PURE-PLAY IN INDIA.",
+  "near": "NXP S32K3, Infineon AURIX, Renesas and TI; isolation from TI, ADI and Infineon. Automotive-qualified BMS silicon is AEC-Q100 gated, so a design-in change takes years, not months."
+ },
+ {
+  "id": "board",
+  "name": "BMS Design, Firmware & Assembly",
+  "pri": "med",
+  "bott": false,
+  "fn": "Board design, embedded firmware (SOC/SOH, protection) and SMT assembly of the BMS — India's main value-add in the layer, and thin-margin.",
+  "importDep": "Assembly domestic; silicon imported",
+  "conc": "Fragmented",
+  "companies": [
+   {
+    "n": "Endurance Technologies",
+    "t": "NSE/BSE: ENDURANCE",
+    "e": "direct",
+    "m": "Owns 100% of Maxwell Energy; H1FY27 income Rs 141 cr at a 6.8% EBITDA margin — but only ~1.5% of Endurance's consolidated income [REPORTED-T1]",
+    "ev": "Q2 FY27 investor presentation, 3-Nov-2026"
+   },
+   {
+    "n": "HBL Engineering",
+    "t": "NSE/BSE: HBLENGINE",
+    "e": "direct",
+    "m": "In-house BMS for battery and e-drive systems; BMS is a small line inside a Kavach/defence-led business [REPORTED-T2]",
+    "ev": "FY26 annual report; CSL-HBL JV (Jun-2026)"
+   },
+   {
+    "n": "Amara Raja Energy & Mobility",
+    "t": "NSE/BSE: ARE&M",
+    "e": "direct",
+    "m": "ARACT MoU with Nuvation Energy to localise 1500 V high-voltage BMS; packs and BESS carry in-house EMS [REPORTED-T2]",
+    "ev": "Company release; pv magazine India (10-Jul-2026)"
+   },
+   {
+    "n": "Exide Industries",
+    "t": "NSE/BSE: EXIDEIND",
+    "e": "indirect",
+    "m": "BMS inside Li-ion module/pack output (1.5 GWh) rather than as a sold product line [REPORTED-T2]",
+    "ev": "Q2 FY27 earnings call (Nov-2026)"
+   }
+  ],
+  "near": "Maxwell (Endurance), Xbattery (BharatBMS), Napino, Vecmocon and Sensedge are the active Indian designers; all but Endurance's subsidiary are unlisted."
+ },
+ {
+  "id": "fw",
+  "name": "Firmware, EMS Software & Cybersecurity",
+  "pri": "high",
+  "bott": true,
+  "fn": "Safety-critical firmware, the EMS application software that dispatches the asset, and the cyber architecture that now decides whether a BMS may be sold.",
+  "importDep": "Mandated domestic (EMS)",
+  "conc": "Emerging",
+  "companies": [],
+  "gap": "NO LISTED PURE-PLAY IN INDIA.",
+  "near": "Private players: Xbattery (BharatBMS), Maxwell, Vecmocon, Kalkitech, Statiq, Tuva. MSEDCL's 4 GWh award requires indigenous EMS plus 20% local content, and AIS-156 makes cyber testing mandatory for wireless BMS."
+ },
+ {
+  "id": "pcb",
+  "name": "PCB, Laminate & SMT Assembly",
+  "pri": "med",
+  "bott": false,
+  "fn": "The bare PCB, laminate and the SMT line that builds BMS boards — ~85% of PCBs are imported.",
+  "importDep": "~85% PCB imported",
+  "conc": "Concentrated (imports)",
+  "companies": [
+   {
+    "n": "Syrma SGS Technology",
+    "t": "NSE/BSE: SYRMA",
+    "e": "direct",
+    "m": "EMS with PCB and ECMS-backed expansion; automotive and industrial boards [REPORTED-T2]",
+    "ev": "Company disclosures"
+   },
+   {
+    "n": "Kaynes Technology",
+    "t": "NSE/BSE: KAYNES",
+    "e": "direct",
+    "m": "Electronics manufacturing across automotive and industrial boards, plus its own OSAT subsidiary [REPORTED-T2]",
+    "ev": "Company disclosures; Q2 FY27"
+   },
+   {
+    "n": "Dixon Technologies",
+    "t": "NSE/BSE: DIXON",
+    "e": "indirect",
+    "m": "EMS scale; broad electronics rather than BMS-specific [REPORTED-T2]",
+    "ev": "Company disclosures"
+   }
+  ],
+  "near": "Napino (13 SMT lines) and other EMS players are unlisted; ECMS targets roughly half of domestic PCB demand."
+ },
+ {
+  "id": "test",
+  "name": "Testing, Certification & HIL Validation",
+  "pri": "med",
+  "bott": true,
+  "fn": "BMS safety and performance testing (IS 17387, IEC 62619, UL 1973), container-scale propagation testing and HIL validation of firmware.",
+  "importDep": "Domestic (thin)",
+  "conc": "Government-led",
+  "companies": [],
+  "gap": "NO LISTED PURE-PLAY IN INDIA.",
+  "near": "BIS-recognised and NABL labs, TUV, UL, ARAI and iCAT. India lacks a full-scale UL 9540A-style container propagation facility, so that evidence is imported with the product."
+ },
+ {
+  "id": "osat",
+  "name": "Domestic Silicon Path (OSAT)",
+  "pri": "med",
+  "bott": false,
+  "fn": "Assembly, test and packaging of the semiconductors the BMS needs — the first rung of an Indian silicon chain, and not yet design or fab.",
+  "importDep": "Newly domestic (packaging only)",
+  "conc": "Emerging, three-player",
+  "companies": [
+   {
+    "n": "Kaynes Technology",
+    "t": "NSE/BSE: KAYNES",
+    "e": "direct",
+    "m": "Kaynes Semicon Sanand is in commercial production at 2.3 bn units/yr design capacity; automotive and EV end-markets named [REPORTED-T2]",
+    "ev": "The Hindu BusinessLine (18-Sep-2026)"
+   },
+   {
+    "n": "CG Power & Industrial Solutions",
+    "t": "NSE/BSE: CGPOWER",
+    "e": "direct",
+    "m": "CG Semi's G1 OSAT line at Sanand began commercial production in 2026, with a Renesas partnership [REPORTED-T2]",
+    "ev": "CG Semi release; Livemint (22-Oct-2026)"
+   }
+  ],
+  "near": "Tata Electronics' Assam ATMP is unlisted (Tata Sons). Packaging capacity does not by itself supply BMS AFE or safety MCU silicon; design and fab remain absent."
+ },
+ {
+  "id": "integ",
+  "name": "BMS-bundled Packs & Integrated BESS",
+  "pri": "med",
+  "bott": false,
+  "fn": "Integrated packs, racks and containers that bundle BMS with cells, PCS and EMS — where most buyers actually acquire a BMS, and where the revenue sits.",
+  "importDep": "Mixed (cells imported)",
+  "conc": "Fragmented but consolidating",
+  "companies": [
+   {
+    "n": "Amara Raja Energy & Mobility",
+    "t": "NSE/BSE: ARE&M",
+    "e": "direct",
+    "m": "10 GWh BESS gigafactory under construction, in-house EMS, 1.5 GWh pack capacity operational [REPORTED-T2]",
+    "ev": "Q1 FY27 earnings presentation"
+   },
+   {
+    "n": "Exide Industries",
+    "t": "NSE/BSE: EXIDEIND",
+    "e": "direct",
+    "m": "1.5 GWh Li-ion module and pack capacity; 6 GWh cell plant commissioned 23-Sep-2026 [REPORTED-T2]",
+    "ev": "Q2 FY27 earnings call"
+   },
+   {
+    "n": "Waaree Energies",
+    "t": "NSE/BSE: WAAREEENER",
+    "e": "direct",
+    "m": "5.15 GWh/yr BESS assembly commissioned Jul-2026 with in-house BMS/EMS [REPORTED-T2]",
+    "ev": "SMM (30-Sep-2026); company"
+   },
+   {
+    "n": "CLN Energy",
+    "t": "BSE SME: 544347",
+    "e": "direct",
+    "m": "Turnkey all-in-one BESS with smart BMS and cloud EMS [REPORTED-T3]",
+    "ev": "Company disclosures"
+   },
+   {
+    "n": "Tata Motors",
+    "t": "NSE/BSE: TATAMOTORS",
+    "e": "conglomerate",
+    "m": "Via unlisted Tata AutoComp Gotion (6 GWh pack/BESS capacity); immaterial to Tata Motors' consolidated financials [INFERENCE]",
+    "ev": "TACO Gotion disclosures; SMM (30-Sep-2026)"
+   },
+   {
+    "n": "Tata Power",
+    "t": "NSE/BSE: TATAPOWER",
+    "e": "indirect",
+    "m": "BESS deployment and integration as a developer rather than a BMS maker [REPORTED-T2]",
+    "ev": "Company disclosures"
+   }
+  ],
+  "near": "JSW Energy, GoodEnough Energy, Reliance and Vikram Solar are building or running integration capacity; 23.15 GWh/yr of disclosed domestic capacity is commissioned against 13.7 GWh operational nationally."
+ }
+];
+const nodesEl = document.getElementById('mapNodes');
+const panelEl = document.getElementById('mapPanel');
+const PRI_LABEL = { high:'HIGH', med:'MEDIUM', low:'LOW' };
+function renderPanel(node) {
+  if (!node) { panelEl.innerHTML = '<div class="map-panel__kicker">Company map</div><div class="map-panel__title">Select a node</div><p class="map-panel__fn">Click any node on the left to see its NSE/BSE companies, exposure type, materiality and evidence.</p>'; return; }
+  let html = '';
+  html += `<div class="map-panel__kicker">${PRI_LABEL[node.pri] || ''} priority node</div>`;
+  html += `<div class="map-panel__title">${node.name}</div>`;
+  html += `<p class="map-panel__fn">${node.fn}</p>`;
+  html += `<div class="map-panel__row">`;
+  if (node.importDep && node.importDep !== 'n/a') html += `<span class="mini">Import: ${node.importDep}</span>`;
+  if (node.conc) html += `<span class="mini">Concentration: ${node.conc}</span>`;
+  if (node.bott) html += `<span class="mini" style="color:var(--gold)">Bottleneck</span>`;
+  html += `</div>`;
+  if (!node.companies || node.companies.length === 0) {
+    html += `<div class="nocov"><b>${node.gap}</b><span class="near">${node.near}</span></div>`;
+    panelEl.innerHTML = html; return;
+  }
+  node.companies.forEach(c => {
+    html += `<div class="co">`;
+    html += `<div class="co__name">${c.n}<span class="co__ticker">${c.t}</span></div>`;
+    html += `<div class="co__tags"><span class="tag tag--${c.e}">${c.e.toUpperCase()}</span></div>`;
+    html += `<div class="co__mat">${c.m}</div>`;
+    html += `<div class="co__ev">Evidence: ${c.ev}</div>`;
+    html += `</div>`;
+  });
+  if (node.near) html += `<div class="co__ev" style="margin-top:10px;">${node.near}</div>`;
+  panelEl.innerHTML = html;
+}
+const PTREE = [
+  { icon:'A', group:'Sensing & Semiconductors', ids:['afe','mcu'] },
+  { icon:'B', group:'Design & Software', ids:['fw','board'] },
+  { icon:'C', group:'Electronics Build', ids:['pcb','test'] },
+  { icon:'D', group:'Silicon Path', ids:['osat'] },
+  { icon:'E', group:'Integrated Systems', ids:['integ'] }
+];
+let firstBtn = null;
+PTREE.forEach((grp) => {
+  const wrap = document.createElement('div');
+  const head = document.createElement('button');
+  head.type = 'button';
+  head.style.cssText = 'display:flex;align-items:center;gap:8px;width:100%;text-align:left;background:transparent;border:none;cursor:pointer;padding:8px 6px;font-family:var(--font-mono);font-size:11px;font-weight:600;letter-spacing:.6px;color:var(--text-dim);text-transform:uppercase;';
+  head.innerHTML = '<span class="tgl" style="width:12px;display:inline-block;">&#9662;</span><span>' + grp.icon + ' &middot; ' + grp.group + '</span>';
+  const body = document.createElement('div');
+  body.style.cssText = 'margin-left:14px;border-left:1px dashed var(--border-bright);padding-left:8px;';
+  grp.ids.forEach((id) => {
+    const node = NODES.find((n) => n.id === id);
+    if (!node) return;
+    const btn = document.createElement('button');
+    btn.type = 'button'; btn.className = 'node-btn'; btn.style.margin = '6px 0'; btn.dataset.id = id;
+    const hasCov = node.companies && node.companies.length > 0;
+    const dotClass = node.bott ? 'dot--high' : (node.pri === 'med' ? 'dot--med' : 'dot--low');
+    let meta = `<span>${PRI_LABEL[node.pri]}</span>`;
+    if (node.bott) meta += `<span class="flag flag--bott">bottleneck</span>`;
+    if (!hasCov) meta += `<span class="flag flag--gap">no coverage</span>`;
+    btn.innerHTML = `<div class="node-btn__name"><span class="dot ${dotClass}"></span>${node.name}</div><div class="node-btn__meta">${meta}</div>`;
+    btn.addEventListener('click', () => { document.querySelectorAll('.node-btn').forEach((b) => b.classList.toggle('is-active', b.dataset.id === id)); renderPanel(node); });
+    if (!firstBtn) firstBtn = btn;
+    body.appendChild(btn);
+  });
+  head.addEventListener('click', () => { const open = body.style.display !== 'none'; body.style.display = open ? 'none' : 'block'; head.querySelector('.tgl').innerHTML = open ? '&#9656;' : '&#9662;'; });
+  wrap.appendChild(head); wrap.appendChild(body); nodesEl.appendChild(wrap);
+});
+renderPanel(NODES[0]);
+</script>
+
+<script>window.__MBULLETS=[["The India BMS market is sized between USD 327.9 mn and 397.7 mn for 2025 depending on scope, and forecast to 2033/34 at 16.5% to 34.5% CAGR; both are nominal value series.", "The 14x spread at the forecast end is a scope difference (all chemistries and applications vs narrower definitions), not a disagreement about direction.", "Sources: Grand View Research India BMS outlook (2026); IMARC India BMS report (2026). No volume (unit) series is available, so no volume CAGR is quoted."], ["Standard lead time on catalogue battery-monitor ICs is 26 weeks, per distributor listings; automotive-qualified parts and any design-in change take longer.", "AFE, safety MCU and isolation parts come from TI, ADI, NXP and ST, and India has no fab for any of them.", "Source: DigiKey/TI catalogue listings (2026); supplier disclosures. Lead times are cyclical and should be re-checked."], ["13.7 GWh of energy storage was operational in India as of September 2026, 17x the December 2025 level, against 308 GWh tendered since 2018.", "IESA expects roughly 20 GWh by the end of the fiscal year; 37% of tendered capacity is under execution and 20% has been cancelled.", "Source: IESA ESS Market Update (Sep-2026), reported by Energy-Storage.News (5-Oct-2026)."], ["Maxwell Energy, Endurance's BMS subsidiary, reported Rs 141 cr of H1FY27 income (+91% y/y), Rs 10 cr EBITDA (6.8% margin, from 3.4%) and Rs 5 cr PAT.", "It won Rs 53 cr of orders in H1FY27 and holds Rs 256 cr of cumulative peak annualised orders; Q2 income was Rs 85 cr.", "Source: Endurance Technologies investor presentation, 3-Nov-2026 (BSE/NSE filing). Maxwell is ~1.5% of consolidated income."], ["The CEA (Measures relating to Safety and Electric Supply) Amendment Regulations, 2026 were notified on 27 March 2026 and come into force on 1 April 2027.", "Chapter XA defines the BMS as a named BESS component and requires cell, module and rack-level monitoring, two-fault tolerance and fire audits for systems above 650 V.", "Source: CEA gazette notification (Mar-2026); Mercom India (2-Apr-2026); Energetica India (2026)."]];</script>
+
   <section class="animate" style="--i:5">
     <div class="sec-head">
       <span class="sec-num">04</span>
@@ -214,24 +487,26 @@ graph TD
       <div class="table-scroll">
         <table class="data">
           <thead>
-            <tr><th>Company</th><th>AFE/MCU</th><th>BMS Design</th><th>Firmware</th><th>PCB/EMS</th><th>Integrated BESS</th></tr>
+            <tr><th>Company</th><th>AFE/MCU</th><th>BMS Design</th><th>Firmware/EMS</th><th>PCB/EMS</th><th>OSAT</th><th>Integrated BESS</th></tr>
           </thead>
           <tbody>
-<tr><td>Endurance Technologies <small>ENDURANCE</small></td><td class="c cell-x">&mdash;</td><td class="c cell-d">D</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td></tr>
-<tr><td>HBL Engineering <small>HBLENGINE</small></td><td class="c cell-x">&mdash;</td><td class="c cell-d">D</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td></tr>
-<tr><td>Amara Raja Energy & Mobility <small>ARE&M</small></td><td class="c cell-x">&mdash;</td><td class="c cell-d">D</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-d">D</td></tr>
-<tr><td>Exide Industries <small>EXIDEIND</small></td><td class="c cell-x">&mdash;</td><td class="c cell-i">I</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-d">D</td></tr>
-<tr><td>Syrma SGS Technology <small>SYRMA</small></td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-d">D</td><td class="c cell-x">&mdash;</td></tr>
-<tr><td>Kaynes Technology <small>KAYNES</small></td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-d">D</td><td class="c cell-x">&mdash;</td></tr>
-<tr><td>Dixon Technologies <small>DIXON</small></td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-i">I</td><td class="c cell-x">&mdash;</td></tr>
-<tr><td>Waaree Energies <small>WAAREEENER</small></td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-d">D</td></tr>
-<tr><td>CLN Energy <small>544347 (SME)</small></td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-d">D</td></tr>
-<tr><td>Tata Power <small>TATAPOWER</small></td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-i">I</td></tr>
+<tr><td>Endurance Technologies <small>ENDURANCE</small></td><td class="c cell-x">&mdash;</td><td class="c cell-d">D</td><td class="c cell-i">I</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td></tr>
+<tr><td>HBL Engineering <small>HBLENGINE</small></td><td class="c cell-x">&mdash;</td><td class="c cell-d">D</td><td class="c cell-i">I</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-i">I</td></tr>
+<tr><td>Amara Raja Energy &amp; Mobility <small>ARE&amp;M</small></td><td class="c cell-x">&mdash;</td><td class="c cell-d">D</td><td class="c cell-i">I</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-d">D</td></tr>
+<tr><td>Exide Industries <small>EXIDEIND</small></td><td class="c cell-x">&mdash;</td><td class="c cell-i">I</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-d">D</td></tr>
+<tr><td>Syrma SGS Technology <small>SYRMA</small></td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-d">D</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td></tr>
+<tr><td>Kaynes Technology <small>KAYNES</small></td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-d">D</td><td class="c cell-d">D</td><td class="c cell-x">&mdash;</td></tr>
+<tr><td>CG Power &amp; Industrial Solutions <small>CGPOWER</small></td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-d">D</td><td class="c cell-x">&mdash;</td></tr>
+<tr><td>Dixon Technologies <small>DIXON</small></td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-i">I</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td></tr>
+<tr><td>Waaree Energies <small>WAAREEENER</small></td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-d">D</td></tr>
+<tr><td>CLN Energy <small>544347 (SME)</small></td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-d">D</td></tr>
+<tr><td>Tata Motors <small>TATAMOTORS</small></td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-c">C</td></tr>
+<tr><td>Tata Power <small>TATAPOWER</small></td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-i">I</td></tr>
           </tbody>
         </table>
       </div>
     </div>
-    <p class="footnote">D direct &middot; I indirect &middot; S supplier &middot; C conglomerate/minor segment &middot; &mdash; no exposure. Listing status current as of the analysis date. Every mapping is evidence-based; materiality detail is in the click-through panel above.</p>
+    <p class="footnote">D direct &middot; I indirect &middot; S supplier &middot; C conglomerate/minor segment &middot; &mdash; no exposure. Listing status current as of the analysis date. Every mapping is evidence-based; materiality detail is in the click-through panel above. Materiality floor: a node counts as direct only where it is a disclosed business line; Maxwell is carried as a direct node but a minor segment of Endurance (~1.5% of H1FY27 consolidated income).</p>
   </section>
 
   <section class="animate" style="--i:6">
@@ -241,28 +516,31 @@ graph TD
       <span class="sec-note">dual-readable: every risk is a substitution play</span>
     </div>
     <div class="bn">
-      <div class="bn__risk"><div class="bn__h">Risk</div><p><span class="bn__title">AFE/MCU/isolation import dependence</span>AFE ICs, MCUs and isolated transceivers are almost entirely imported; no Indian fab; a Taiwan/Korea disruption hits BMS availability in ~8–12 weeks. Resilience: critical.</p></div>
-      <div class="bn__opp"><div class="bn__h">Opportunity</div><p><span class="bn__title">Indigenous BMS & software</span>MNRE mandates India-developed EMS software; Xbattery, Maxwell and others are building indigenous high-voltage BMS; PM E-DRIVE forces domestic BMS for e-trucks.</p></div>
+      <div class="bn__risk"><div class="bn__h">Risk</div><p><span class="bn__title">AFE, MCU and isolation silicon</span>Almost entirely imported from a four-supplier oligopoly, with 26-week standard lead times on catalogue parts and no Indian fab. Resilience: <b>MONTHS</b> for catalogue parts, <b>YEARS</b> for automotive-qualified AEC-Q100 parts and any design-in change.</p></div>
+      <div class="bn__opp"><div class="bn__h">Opportunity</div><p><span class="bn__title">The one pool worth attacking</span>ICs are 30&ndash;40% of BMS BOM cost and the highest-scoring node in the chain (96/100). The realistic entry is not a fab but an Indian ASSP or a licensed analog core on an Indian OSAT &mdash; Kaynes Semicon (2.3 bn units/yr) and CG Semi's G1 line give packaging, not design. A 12&ndash;24 month qualification cycle is the gate.</p></div>
     </div>
     <div class="bn">
-      <div class="bn__risk"><div class="bn__h">Risk</div><p><span class="bn__title">Firmware & cybersecurity</span>Safety-critical firmware talent is thin; documented BMS flaws (Nuvation CVE, BlueShock) expose safety commands; closed foreign platforms create lock-in. Resilience: low.</p></div>
-      <div class="bn__opp"><div class="bn__h">Opportunity</div><p><span class="bn__title">Security-as-moat</span>IS/IEC 62443-4-2 source-code audits (Aug-2026) and IEC 62443 certification create a compliance moat for firms that invest in secure firmware.</p></div>
+      <div class="bn__risk"><div class="bn__h">Risk</div><p><span class="bn__title">Firmware and cybersecurity</span>The Aug-2026 e-rickshaw BLE hacks showed off-the-shelf JBD/Daly/JK boards accept unauthenticated FET commands from third-party apps; MHI removed the apps and CERT-In issued an advisory, but the flaw is in firmware design. Resilience: <b>MONTHS</b> to patch, <b>YEARS</b> to certify a security architecture.</p></div>
+      <div class="bn__opp"><div class="bn__h">Opportunity</div><p><span class="bn__title">Security as the moat</span>AIS-156 makes cybersecurity testing mandatory for wireless BMS in L-category EVs from Sep-2026, and MoRTH's draft AIS-189/190 extends it to vehicles. Indigenous firmware with authenticated command paths and IS/IEC 62443-4-2 audit trails becomes a compliance advantage, not a cost.</p></div>
     </div>
     <div class="bn">
-      <div class="bn__risk"><div class="bn__h">Risk</div><p><span class="bn__title">Certification & test capacity</span>India lacks full-scale container thermal-runaway propagation testing; IS 17387 certification runs 6–12 weeks; the UL 1973 Ed.3 + ISO 15118-20 gate bites imported BMS from Sep-2026. Resilience: low-to-medium.</p></div>
-      <div class="bn__opp"><div class="bn__h">Opportunity</div><p><span class="bn__title">Local qualification</span>A domestic test ecosystem and the mandated UL/ISO gate favour compliant Indian BMS makers over cheap uncertified imports.</p></div>
+      <div class="bn__risk"><div class="bn__h">Risk</div><p><span class="bn__title">Testing and certification capacity</span>India has no container-scale thermal-runaway propagation facility; IS 17387 / IS 17092 certification queues run 6&ndash;12 weeks and UL 9540A evidence is bought abroad. The MNRE UL 1973 Ed.3 + ISO 15118-20 gate has applied to imports since 1-Sep-2026. Resilience: <b>MONTHS</b>.</p></div>
+      <div class="bn__opp"><div class="bn__h">Opportunity</div><p><span class="bn__title">A domestic qualification market</span>Every imported BMS now needs re-certification evidence, and every domestic BMS needs the same. A NABL/BIS-recognised ESS test ecosystem is an investable services pool that does not exist yet.</p></div>
     </div>
     <div class="bn">
-      <div class="bn__risk"><div class="bn__h">Risk</div><p><span class="bn__title">PCB & Chinese price competition</span>~85% of PCBs are imported; cheap Chinese BMS undercuts indigenous R&D. Resilience: low-to-medium.</p></div>
-      <div class="bn__opp"><div class="bn__h">Opportunity</div><p><span class="bn__title">ECMS & value-addition</span>ECMS is funding domestic PCB/laminate plants, and local-content rules (VGF 20%) pull indigenous BMS/EMS into tenders.</p></div>
+      <div class="bn__risk"><div class="bn__h">Risk</div><p><span class="bn__title">Chinese price competition and PCB imports</span>Low-voltage BMS boards sell on price against Chinese imports, and ~85% of PCBs are imported, so the domestic layer competes on assembly labour against an integrated supply chain. Resilience: <b>WEEKS</b> to switch suppliers, which is precisely why pricing power is weak.</p></div>
+      <div class="bn__opp"><div class="bn__h">Opportunity</div><p><span class="bn__title">Mandates that create a floor</span>PM E-DRIVE makes domestic BMS a condition of e-truck subsidy from 1-Sep-2026; MSEDCL's 4 GWh award requires indigenous EMS and 20% local content; ECMS funds PCB and laminate capacity. The demand is policy-created and therefore dateable.</p></div>
+    </div>
+    <div class="bn">
+      <div class="bn__risk"><div class="bn__h">Risk</div><p><span class="bn__title">Demand concentration and delivery risk</span>Only 13.7 GWh of 308 GWh tendered is operational and 20% of tendered capacity has been cancelled; a slip in the NGEL 40 GWh or SECI 16 GWh awards delays every BMS order behind it. Resilience: <b>MONTHS</b>, but the exposure is lumpy per developer.</p></div>
+      <div class="bn__opp"><div class="bn__h">Opportunity</div><p><span class="bn__title">Installed base and aftermarket</span>An operating base of 13.7 GWh &mdash; heading to ~20 GWh &mdash; needs firmware updates, cyber patching, HIL re-validation and second-life re-BMS. That service pool grows with the installed base, not with new tenders.</p></div>
     </div>
 
     <div class="callout animate" style="--i:7">
-      <strong>Deepest hidden dependency:</strong> the analog front-end and safety MCU silicon — a four-supplier global oligopoly — sits under every Indian BMS, so localising the board and firmware without the chips leaves the most safety-critical layer imported.
+      <strong>Deepest hidden dependency:</strong> the analog front-end and safety MCU. Localising the board, the firmware and the pack still leaves the most safety-critical layer &mdash; the silicon that decides whether a cell is about to fail &mdash; imported from four foreign suppliers, and India's new OSAT capacity packages that silicon rather than designing it.
     </div>
   </section>
 
-    <!-- 06 VALUE POOLS & COST WATERFALL -->
   <section class="animate" style="--i:8">
     <div class="sec-head">
       <span class="sec-num">06</span>
@@ -270,14 +548,52 @@ graph TD
       <span class="sec-note">where value is captured &middot; and which pool leaks to imports</span>
     </div>
     <div class="digest">
-      <div class="digest__item"><div class="digest__h">Where value is captured</div><ul><li>ICs are 30&ndash;40% of BMS BOM cost — the pool that leaks abroad.</li><li>Design, firmware and assembly stay domestic — Endurance/Maxwell, HBL, Amara Raja (Nuvation MoU).</li><li>EMS software is mandated domestic (Kalkitech, Statiq, Tuva) — 5&ndash;7% of project value.</li><li>PCB/laminates are ~85% imported — an ECMS-backed localisation target.</li></ul></div>
-      <div class="digest__item"><div class="digest__h">Who captures it (India-listed)</div><ul><li>[UNAVAILABLE — no listed company in the selected universe on this entry; see coverage gaps.]</li></ul></div>
-      <div class="digest__item"><div class="digest__h">Pools that leak to imports</div><ul><li>No NSE/BSE-listed BMS pure-play; the closest listed exposure is Endurance Technologies (via Maxwell Energy).</li></ul></div>
+      <div class="digest__item"><div class="digest__h">Cost waterfall (ranked)</div><ul><li>Semiconductor content &mdash; 30&ndash;40% of BMS BOM cost, and the whole of it imported.</li><li>PCB, connectors, contactors, shunts and passives &mdash; ~25&ndash;30%, with ~85% of PCB imported.</li><li>Assembly, test and housing &mdash; ~15&ndash;20%, the domestic labour pool.</li><li>Design and firmware &mdash; ~10&ndash;15% of the BOM but the whole of the margin.</li><li>BMS itself is only ~5% of BESS capex and 8&ndash;12% of container cost &mdash; small cost, total safety dependency [DERIVED].</li></ul></div>
+      <div class="digest__item"><div class="digest__h">Where value is captured</div><ul><li>AFE ICs &mdash; the top node at 96/100: pricing power, 5/5 cash conversion and 26-week lead times belong to the supplier.</li><li>Safety MCU and isolation &mdash; 81/100, same oligopoly, marginally less scarce.</li><li>EMS software and cyber &mdash; 67/100, and the one pool a mandate makes domestic.</li><li>Design, firmware and board assembly &mdash; 65/100; Maxwell earned 6.8% EBITDA on Rs 141 cr in H1FY27.</li><li>Integrated packs and BESS &mdash; 64/100: the largest revenue pool, the weakest cash conversion.</li></ul></div>
+      <div class="digest__item"><div class="digest__h">Who captures it (India-listed)</div><ul><li>Endurance (Maxwell) and HBL are the only listed design-layer exposures, and both are small inside larger businesses.</li><li>Amara Raja and Exide capture the pack/container layer; Kaynes, CG Power, Syrma and Dixon capture assembly and packaging, not silicon.</li><li>No listed company captures the AFE pool. It is unavailable within this universe.</li></ul></div>
+      <div class="digest__item"><div class="digest__h">Pools that leak to imports</div><ul><li>AFE, MCU, isolation and transceivers &mdash; the top two nodes of the chain, entirely.</li><li>Most finished BMS units at the low-voltage end, where Chinese boards set the price.</li><li>Certification evidence &mdash; propagation and UL 9540A testing bought abroad.</li></ul></div>
     </div>
+
+      <section class="animate" style="--i:9">
+    <div class="sec-head">
+      <span class="sec-num">07</span>
+      <span class="sec-title">Industry scorecard</span>
+      <span class="sec-note">nine categories &middot; 1 very unattractive &rarr; 5 highly attractive &middot; missing evidence shown as UNAVAILABLE</span>
+    </div>
+    <div class="scorecard"><div class="scorecard__group scorecard__group--structural"><div class="scorecard__h"><b>Structural attractiveness</b><span class="sc-total">65.7 / 100</span></div><div class="sc-row"><div><div class="sc-name">economics<span class="sc-wt">20%</span></div><div class="sc-basis">A capital-light design-and-assemble business with improving but thin margins: Maxwell's H1FY27 EBITDA was 6.8% (from 3.4%) on Rs 141 cr of income, and BESS integrators guide to 5-6% EBIT. Growth is real, pricing power is not.</div></div><span class="sc-val">3</span></div><div class="sc-row"><div><div class="sc-name">opportunity<span class="sc-wt">15%</span></div><div class="sc-basis">308 GWh tendered against 13.7 GWh operational, a 40 GWh NGEL tender opened 4-Nov-2026 and 16 GWh of SECI bids closing 23-Nov-2026, plus 2W/3W electrification. Value series run from a 20% to a 34.5% CAGR depending on scope.</div></div><span class="sc-val">5</span></div><div class="sc-row"><div><div class="sc-name">competitive<span class="sc-wt">15%</span></div><div class="sc-basis">Fragmented domestic design houses and EMS players compete on assembly against integrated Chinese boards, with no IP moat at the low-voltage end; the moat that is forming is certification and cybersecurity compliance, not scale.</div></div><span class="sc-val">2</span></div><div class="sc-row"><div><div class="sc-name">value_chain<span class="sc-wt">10%</span></div><div class="sc-basis">The BMS is a small node (about 5% of BESS capex) sitting under a large import dependency: 30-40% of BOM cost is imported silicon, ~85% of PCB is imported, and the design layer captures margin but not volume.</div></div><span class="sc-val">3</span></div><div class="sc-row"><div><div class="sc-name">capital<span class="sc-wt">5%</span></div><div class="sc-basis">Among the least capital-hungry nodes in the storage chain - SMT lines, HIL rigs and firmware teams rather than gigafactories - which is why design houses can scale on venture money and EMS players can enter on existing lines.</div></div><span class="sc-val">4</span></div><div class="sc-row"><div><div class="sc-name">technology<span class="sc-wt">5%</span></div><div class="sc-basis">India has genuine firmware, 1500 V isolation and ASIL C design capability (Maxwell, HBL, Xbattery, Vecmocon), but the silicon, the cell-level algorithms in the AFE and the security architecture IP remain foreign.</div></div><span class="sc-val">3</span></div></div><div class="scorecard__group scorecard__group--current"><div class="scorecard__h"><b>Current opportunity</b><span class="sc-total">80.0 / 100</span></div><div class="sc-row"><div><div class="sc-name">cycle<span class="sc-wt">15%</span></div><div class="sc-basis">The operating base multiplied 17x in nine months to 13.7 GWh and two large tenders are live this month; Maxwell's income grew 91% in H1FY27. This is the up-cycle of a policy-created market, with lumpy delivery risk behind it.</div></div><span class="sc-val">4</span></div><div class="sc-row"><div><div class="sc-name">valuation<span class="sc-wt">15%</span></div><div class="sc-basis">No industry-level valuation series exists for this node, and the listed proxies are diversified parents whose multiples are set by other businesses.</div></div><span class="sc-val sc-val--null">UNAVAILABLE</span></div></div><div class="scorecard__group scorecard__group--risk"><div class="scorecard__h"><b>Risk &amp; resilience</b><span class="sc-total">&mdash;</span></div><div class="sc-row"><div><div class="sc-name">risk<span class="sc-wt">no weight</span></div><div class="sc-basis">Silicon concentration in four foreign suppliers, documented firmware vulnerabilities, thin margins against Chinese price competition, an operating base still one-twentieth of the tendered pipeline, and a demand floor that depends on policy dates.</div></div><span class="sc-val">2</span></div></div></div>
+    <div class="scorecard__foot"><span class="chip chip--gold">Overall 68.2 / 100</span><span class="chip">Coverage 85%</span><span class="chip">Evidence 3 / 5 &middot; 45% primary</span><span class="chip">As of 2026-11-06</span></div>
+  </section>
     <p class="footnote animate" style="--i:10">
-    Sources (plain): MNRE Grid-Connected BESS Import Compliance Framework (Jul-2026) &middot; Ministry of Power VGF guidelines &amp; EMS-software mandate (2025–26) &middot; BIS / CEA safety rules and IS 17387 &middot; Ministry of Heavy Industries PM E-DRIVE (Apr-2026) &middot; Endurance Technologies and HBL filings &middot; Amara Raja–Nuvation MoU (Jul-2026) &middot; company profiles (Maxwell, Xbattery, Napino) &middot; trade press: The Battery Magazine, Global Indu Brief, Energy-Storage.News, SMM (2026). All figures date-stamped to the analysis date; time-sensitive facts are cyclical or live and should be re-checked before use. Company mappings are evidence-based; impacts are inference unless reported.
+    Sources (plain): MNRE Grid-Connected BESS Import Compliance Framework update (8-Jul-2026, in force 1-Sep-2026) &middot; Central Electricity Authority (Measures relating to Safety and Electric Supply) Amendment Regulations, 2026, Chapter XA (notified 27-Mar-2026, in force 1-Apr-2027) &middot; Ministry of Heavy Industries PM E-DRIVE phased manufacturing programme amendment for N2/N3 e-trucks (29-Apr-2026) &middot; MoRTH AIS-156 amendment on wireless-BMS cybersecurity testing (Sep-2026) and draft AIS-189/190 &middot; BIS IS 17387:2020, IS 17092 and IS 16270:2023 &middot; Endurance Technologies investor presentation and Q2 FY27 results (3-Nov-2026) &middot; Amara Raja Energy &amp; Mobility Q1 FY27 earnings presentation and Nuvation Energy MoU (Jul-2026) &middot; Exide Industries Q2 FY27 call (Nov-2026) &middot; HBL Engineering annual report FY26 and CSL-HBL Green Maritime Propulsion JV (Jun-2026) &middot; CG Semi and Kaynes Semicon production disclosures (2026) &middot; IESA ESS Market Update (Sep-2026) via Energy-Storage.News (5-Oct-2026) &middot; SECI 16 GWh tender (30-Oct-2026), NGEL 10 GW/40 GWh tender (4-Nov-2026), MSEDCL 4 GWh award (Sep-2026) &middot; SMM analysis of India's BESS manufacturing capacity (30-Sep-2026) &middot; Grand View Research India BMS outlook (2026), IMARC India BMS report (2026), MarketsandMarkets India BMS (2026) &middot; DigiKey/TI catalogue lead-time listings (2026) &middot; Circuit Digest BLE-BMS teardown testing (17-Aug-2026) and CERT-In advisory coverage &middot; trade press: The Hindu BusinessLine, Autocar Professional, Mercom India, pv magazine India, ETAuto, Livemint, The Battery Magazine. All figures date-stamped to the analysis date; time-sensitive facts are cyclical or live and should be re-checked before use. Company mappings are evidence-based; impacts are inference unless reported.
+   Re-analysis note (2026-11-06): the prior page carried no scorecard, no value-capture scoring and no metric-detail popups, and is scored for the first time here. Its "~90% of BMS units imported" is now carried as an estimate without an official HS line, alongside IESA/SMM evidence that over 80% of cells and some critical control electronics are imported; the prior page's "30-40% of BOM" IC share is retained as an industry estimate. Maxwell is no longer described as a start-up exposure without scale &mdash; it reported Rs 141 cr of H1FY27 income at a 6.8% EBITDA margin &mdash; but it is only ~1.5% of Endurance's consolidated income, which the prior page did not state. New since the prior run: AIS-156 wireless-BMS cybersecurity testing, the e-rickshaw Bluetooth BMS hacks, the CEA notification date, and India's first OSAT capacity. The prior page's Market Research Future EV-only series was not re-verified in this pass and has been dropped rather than carried.
   </p>
 </div>
+
+<div class="metric-modal" id="regMetricModal" hidden>
+  <div class="metric-modal__backdrop" data-close></div>
+  <div class="metric-modal__panel">
+    <button class="metric-modal__close" data-close aria-label="Close">&#10005;</button>
+    <div class="metric-modal__kicker">Metric detail</div>
+    <div class="metric-modal__val" id="rmVal"></div>
+    <div class="metric-modal__label" id="rmLabel"></div>
+    <ul class="metric-modal__bullets" id="rmBullets"></ul>
+  </div>
+</div>
+
+<script>
+(function(){
+  var B = window.__MBULLETS || [];
+  var modal = document.getElementById('regMetricModal');
+  if (!modal) return;
+  var v = document.getElementById('rmVal'), l = document.getElementById('rmLabel'), ul = document.getElementById('rmBullets');
+  function val(el,s){ var n = el.querySelector(s); return n ? n.textContent.trim() : ''; }
+  function close(){ modal.hidden = true; }
+  function open(card, i){ v.textContent = val(card, '.metric-card__val'); var sub = val(card, '.metric-card__sub'); l.textContent = val(card, '.metric-card__label') + (sub ? ' — ' + sub : ''); ul.innerHTML = (B[i] || []).map(function(x){ return '<li>' + x + '</li>'; }).join(''); modal.hidden = false; }
+  [].slice.call(document.querySelectorAll('.metric-card')).forEach(function(el, i){ el.setAttribute('role','button'); el.setAttribute('tabindex','0'); el.addEventListener('click', function(){ open(el, i); }); el.addEventListener('keydown', function(e){ if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(el, i); } }); });
+  [].slice.call(modal.querySelectorAll('[data-close]')).forEach(function(el){ el.addEventListener('click', close); });
+  document.addEventListener('keydown', function(e){ if (e.key === 'Escape') close(); });
+})();
+</script>
 <script type="module">
   import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
   const config = { fitPadding: 24, minHeight: 300, maxHeightPx: 900, maxHeightVh: 0.85, maxInitialZoom: 1.7, minZoom: 0.08, maxZoom: 6.5, zoomStep: 0.14, readabilityFloor: 0.55 };
@@ -316,108 +632,6 @@ graph TD
   }
   document.querySelectorAll('.diagram-shell').forEach(initDiagram);
 </script>
-
-<script>
-const NODES = [
-  {"id": "afe", "name": "AFE / Cell-monitoring ICs", "pri": "high", "bott": true, "fn": "The analog front-end that measures every cell voltage/temperature and drives balancing — the core of the BMS.", "importDep": "Near-total import", "conc": "Four-supplier oligopoly (TI, ADI, NXP, ST)", "companies": [], "gap": "NO LISTED PURE-PLAY IN INDIA (no domestic BMS-IC fab).", "near": "Supplied by Texas Instruments, Analog Devices, NXP, STMicroelectronics, Infineon, Renesas. Indian BMS makers buy these chipsets; no listed Indian semiconductor exposure."},
-  {"id": "mcu", "name": "BMS MCU, Isolation & Transceivers", "pri": "high", "bott": true, "fn": "Safety-capable MCU plus isolated CAN/isoSPI transceivers and isolated DC-DC for 1500 V operation.", "importDep": "Near-total import", "conc": "Foreign oligopoly", "companies": [], "gap": "NO LISTED PURE-PLAY IN INDIA.", "near": "NXP S32K3, TI, Infineon AURIX, Renesas; isolation from TI/ADI/Infineon. Automotive-qualified BMS silicon lead times ran 26–40 weeks (Q2 2026)."},
-  {"id": "board", "name": "BMS Design, Firmware & Assembly", "pri": "med", "bott": false, "fn": "Board design, embedded firmware (SOC/SOH, protection) and SMT assembly of the BMS — India's main value-add in the layer.", "importDep": "Assembly domestic; silicon imported", "conc": "Fragmented", "companies": [{"n": "Endurance Technologies", "t": "NSE/BSE: ENDURANCE", "e": "direct", "m": "Owns 100% of Maxwell Energy — India's leading BMS maker; closest listed BMS exposure [REPORTED-T1]", "ev": "Company disclosure"}, {"n": "HBL Engineering", "t": "NSE/BSE: HBLENGINE", "e": "direct", "m": "Manufactures BMS & battery monitoring systems in-house within a diversified battery/electronics business [REPORTED-T2]", "ev": "Annual report"}, {"n": "Amara Raja Energy & Mobility", "t": "NSE/BSE: ARE&M", "e": "direct", "m": "MoU with Nuvation Energy (US) to localise 1500 V high-voltage BMS in India [REPORTED-T2]", "ev": "Company / press"}, {"n": "Exide Industries", "t": "NSE/BSE: EXIDEIND", "e": "indirect", "m": "BMS within Li-ion packs via EESL / Nexcharge [REPORTED-T2]", "ev": "Annual report"}], "near": "Maxwell (Endurance), Xbattery, Napino, Vecmocon and others are the active Indian BMS designers; most are unlisted."},
-  {"id": "fw", "name": "BMS Firmware & EMS Software", "pri": "med", "bott": true, "fn": "Safety-critical firmware and the EMS application software that dispatches the asset — now mandated to be developed in India.", "importDep": "Mandated domestic", "conc": "Emerging", "companies": [], "gap": "NO LISTED PURE-PLAY IN INDIA.", "near": "Private players: Xbattery (BharatBMS), Maxwell, Kalkitech, Statiq, Tuva. MoP mandates India-developed EMS software under VGF BESS guidelines."},
-  {"id": "pcb", "name": "PCB, Laminate & SMT Assembly", "pri": "med", "bott": false, "fn": "The bare PCB, laminate and the SMT line that builds BMS boards — ~85% of PCBs are imported.", "importDep": "~85% PCB imported", "conc": "Concentrated (imports)", "companies": [{"n": "Syrma SGS Technology", "t": "NSE/BSE: SYRMA", "e": "direct", "m": "EMS with PCB/ECMS-backed expansion [REPORTED-T2]", "ev": "Company"}, {"n": "Kaynes Technology", "t": "NSE/BSE: KAYNES", "e": "direct", "m": "Electronics manufacturing incl. automotive/industrial boards [REPORTED-T2]", "ev": "Company"}, {"n": "Dixon Technologies", "t": "NSE/BSE: DIXON", "e": "indirect", "m": "EMS scale; broad electronics [REPORTED-T2]", "ev": "Company"}], "near": "Napino (13 SMT lines) and other EMS players are unlisted; ECMS targets ~50% domestic PCB demand."},
-  {"id": "test", "name": "Testing & Certification", "pri": "med", "bott": true, "fn": "BMS safety/performance testing (IS 17387, IEC 62619, UL 1973) and container-scale propagation testing.", "importDep": "Domestic (thin)", "conc": "Government-led", "companies": [], "gap": "NO LISTED PURE-PLAY IN INDIA.", "near": "BIS-recognised/NABL labs, TUV, UL, ARAI. India lacks full-scale UL 9540A-style container propagation testing, forcing reliance on international evidence."},
-  {"id": "integ", "name": "BMS-bundled Integrated BESS", "pri": "med", "bott": false, "fn": "Integrated systems that bundle BMS with cells, PCS and EMS — where most buyers actually acquire a BMS.", "importDep": "Mixed", "conc": "Fragmented", "companies": [{"n": "Waaree Energies", "t": "NSE/BSE: WAAREEENER", "e": "direct", "m": "Integrated BESS with BMS/EMS within Waaree ESS [REPORTED-T2]", "ev": "Company / press"}, {"n": "Amara Raja Energy & Mobility", "t": "NSE/BSE: ARE&M", "e": "direct", "m": "BESS integration with in-house BMS packs [REPORTED-T2]", "ev": "Company"}, {"n": "CLN Energy", "t": "BSE SME: 544347", "e": "direct", "m": "Turnkey all-in-one BESS with smart BMS + cloud EMS [REPORTED-T3]", "ev": "Company ranking page"}]}
-];
-const nodesEl = document.getElementById('mapNodes');
-const panelEl = document.getElementById('mapPanel');
-const PRI_LABEL = { high:'HIGH', med:'MEDIUM', low:'LOW' };
-function renderPanel(node) {
-  if (!node) { panelEl.innerHTML = '<div class="map-panel__kicker">Company map</div><div class="map-panel__title">Select a node</div><p class="map-panel__fn">Click any node on the left to see its NSE/BSE companies, exposure type, materiality and evidence.</p>'; return; }
-  let html = '';
-  html += `<div class="map-panel__kicker">${PRI_LABEL[node.pri] || ''} priority node</div>`;
-  html += `<div class="map-panel__title">${node.name}</div>`;
-  html += `<p class="map-panel__fn">${node.fn}</p>`;
-  html += `<div class="map-panel__row">`;
-  if (node.importDep && node.importDep !== 'n/a') html += `<span class="mini">Import: ${node.importDep}</span>`;
-  if (node.conc) html += `<span class="mini">Concentration: ${node.conc}</span>`;
-  if (node.bott) html += `<span class="mini" style="color:var(--gold)">Bottleneck</span>`;
-  html += `</div>`;
-  if (!node.companies || node.companies.length === 0) {
-    html += `<div class="nocov"><b>${node.gap}</b><span class="near">${node.near}</span></div>`;
-    panelEl.innerHTML = html; return;
-  }
-  node.companies.forEach(c => {
-    html += `<div class="co">`;
-    html += `<div class="co__name">${c.n}<span class="co__ticker">${c.t}</span></div>`;
-    html += `<div class="co__tags"><span class="tag tag--${c.e}">${c.e.toUpperCase()}</span></div>`;
-    html += `<div class="co__mat">${c.m}</div>`;
-    html += `<div class="co__ev">Evidence: ${c.ev}</div>`;
-    html += `</div>`;
-  });
-  if (node.near) html += `<div class="co__ev" style="margin-top:10px;">${node.near}</div>`;
-  panelEl.innerHTML = html;
-}
-const PTREE = [
-  { icon:'A', group:'Sensing & Semiconductors', ids:['afe','mcu'] },
-  { icon:'B', group:'Design & Software', ids:['board','fw'] },
-  { icon:'C', group:'Electronics Build', ids:['pcb','test'] },
-  { icon:'D', group:'Integrated Systems', ids:['integ'] }
-];
-let firstBtn = null;
-PTREE.forEach((grp) => {
-  const wrap = document.createElement('div');
-  const head = document.createElement('button');
-  head.type = 'button';
-  head.style.cssText = 'display:flex;align-items:center;gap:8px;width:100%;text-align:left;background:transparent;border:none;cursor:pointer;padding:8px 6px;font-family:var(--font-mono);font-size:11px;font-weight:600;letter-spacing:.6px;color:var(--text-dim);text-transform:uppercase;';
-  head.innerHTML = '<span class="tgl" style="width:12px;display:inline-block;">&#9662;</span><span>' + grp.icon + ' &middot; ' + grp.group + '</span>';
-  const body = document.createElement('div');
-  body.style.cssText = 'margin-left:14px;border-left:1px dashed var(--border-bright);padding-left:8px;';
-  grp.ids.forEach((id) => {
-    const node = NODES.find((n) => n.id === id);
-    if (!node) return;
-    const btn = document.createElement('button');
-    btn.type = 'button'; btn.className = 'node-btn'; btn.style.margin = '6px 0'; btn.dataset.id = id;
-    const hasCov = node.companies && node.companies.length > 0;
-    const dotClass = node.bott ? 'dot--high' : (node.pri === 'med' ? 'dot--med' : 'dot--low');
-    let meta = `<span>${PRI_LABEL[node.pri]}</span>`;
-    if (node.bott) meta += `<span class="flag flag--bott">bottleneck</span>`;
-    if (!hasCov) meta += `<span class="flag flag--gap">no coverage</span>`;
-    btn.innerHTML = `<div class="node-btn__name"><span class="dot ${dotClass}"></span>${node.name}</div><div class="node-btn__meta">${meta}</div>`;
-    btn.addEventListener('click', () => { document.querySelectorAll('.node-btn').forEach((b) => b.classList.toggle('is-active', b.dataset.id === id)); renderPanel(node); });
-    if (!firstBtn) firstBtn = btn;
-    body.appendChild(btn);
-  });
-  head.addEventListener('click', () => { const open = body.style.display !== 'none'; body.style.display = open ? 'none' : 'block'; head.querySelector('.tgl').innerHTML = open ? '&#9656;' : '&#9662;'; });
-  wrap.appendChild(head); wrap.appendChild(body); nodesEl.appendChild(wrap);
-});
-renderPanel(NODES[0]);
-</script>
-
-<script>window.__MBULLETS=[["Share of BMS units imported into India — China the largest supplier.", "Source: Xbattery / industry (2026)."], ["Share of BMS BOM cost represented by the ICs and microcontroller — the imported core.", "Source: IndexBox India BMS report (2026)."], ["BMS and control electronics' share of BESS capex.", "Source: PL Capital / BESS cost studies (2026)."], ["Date imported BMS/EMS must hold both UL 1973 Edition 3 and ISO 15118-20 under MNRE's framework.", "Source: MNRE (Jul-2026)."], ["There is no NSE/BSE-listed BMS pure-play; Endurance Technologies (via 100%-owned Maxwell Energy) is the closest listed exposure.", "Source: Endurance disclosure (2025)."]];</script>
-
-<div class="metric-modal" id="regMetricModal" hidden>
-  <div class="metric-modal__backdrop" data-close></div>
-  <div class="metric-modal__panel">
-    <button class="metric-modal__close" data-close aria-label="Close">&#10005;</button>
-    <div class="metric-modal__kicker">Metric detail</div>
-    <div class="metric-modal__val" id="rmVal"></div>
-    <div class="metric-modal__label" id="rmLabel"></div>
-    <ul class="metric-modal__bullets" id="rmBullets"></ul>
-  </div>
-</div>
-
-<script>
-(function(){
-  var B = window.__MBULLETS || [];
-  var modal = document.getElementById('regMetricModal');
-  if (!modal) return;
-  var v = document.getElementById('rmVal'), l = document.getElementById('rmLabel'), ul = document.getElementById('rmBullets');
-  function val(el,s){ var n = el.querySelector(s); return n ? n.textContent.trim() : ''; }
-  function close(){ modal.hidden = true; }
-  function open(card, i){ v.textContent = val(card, '.metric-card__val'); var sub = val(card, '.metric-card__sub'); l.textContent = val(card, '.metric-card__label') + (sub ? ' — ' + sub : ''); ul.innerHTML = (B[i] || []).map(function(x){ return '<li>' + x + '</li>'; }).join(''); modal.hidden = false; }
-  [].slice.call(document.querySelectorAll('.metric-card')).forEach(function(el, i){ el.setAttribute('role','button'); el.setAttribute('tabindex','0'); el.addEventListener('click', function(){ open(el, i); }); el.addEventListener('keydown', function(e){ if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(el, i); } }); });
-  [].slice.call(modal.querySelectorAll('[data-close]')).forEach(function(el){ el.addEventListener('click', close); });
-  document.addEventListener('keydown', function(e){ if (e.key === 'Escape') close(); });
-})();
-</script>
+<script type="application/json" class="industry-score">{"as_of": "2026-11-06", "categories": {"economics": {"score": 3, "basis": "A capital-light design-and-assemble business with improving but thin margins: Maxwell's H1FY27 EBITDA was 6.8% (from 3.4%) on Rs 141 cr of income, and BESS integrators guide to 5-6% EBIT. Growth is real, pricing power is not."}, "opportunity": {"score": 5, "basis": "308 GWh tendered against 13.7 GWh operational, a 40 GWh NGEL tender opened 4-Nov-2026 and 16 GWh of SECI bids closing 23-Nov-2026, plus 2W/3W electrification. Value series run from a 20% to a 34.5% CAGR depending on scope."}, "competitive": {"score": 2, "basis": "Fragmented domestic design houses and EMS players compete on assembly against integrated Chinese boards, with no IP moat at the low-voltage end; the moat that is forming is certification and cybersecurity compliance, not scale."}, "cycle": {"score": 4, "basis": "The operating base multiplied 17x in nine months to 13.7 GWh and two large tenders are live this month; Maxwell's income grew 91% in H1FY27. This is the up-cycle of a policy-created market, with lumpy delivery risk behind it."}, "valuation": {"score": null, "basis": "No industry-level valuation series exists for this node, and the listed proxies are diversified parents whose multiples are set by other businesses."}, "value_chain": {"score": 3, "basis": "The BMS is a small node (about 5% of BESS capex) sitting under a large import dependency: 30-40% of BOM cost is imported silicon, ~85% of PCB is imported, and the design layer captures margin but not volume."}, "capital": {"score": 4, "basis": "Among the least capital-hungry nodes in the storage chain - SMT lines, HIL rigs and firmware teams rather than gigafactories - which is why design houses can scale on venture money and EMS players can enter on existing lines."}, "technology": {"score": 3, "basis": "India has genuine firmware, 1500 V isolation and ASIL C design capability (Maxwell, HBL, Xbattery, Vecmocon), but the silicon, the cell-level algorithms in the AFE and the security architecture IP remain foreign."}, "risk": {"score": 2, "basis": "Silicon concentration in four foreign suppliers, documented firmware vulnerabilities, thin margins against Chinese price competition, an operating base still one-twentieth of the tendered pipeline, and a demand floor that depends on policy dates."}}, "notes": "Re-analysed 2026-11-06 under the daily rotation; first scoring of this page. Corrections from the prior run (2026-10-09): the page carried no scorecard, no value capture and no metric popups. '~90% of BMS units imported' is now carried as an estimate without an official HS line; Maxwell is no longer described as an unscaled start-up (H1FY27 income Rs 141 cr, 6.8% EBITDA) but is only ~1.5% of Endurance consolidated income, which the prior page omitted; the Market Research Future EV-only series was not re-verified and has been dropped. New evidence: AIS-156 wireless-BMS cyber testing (Sep-2026), the e-rickshaw Bluetooth BMS hacks (Aug-2026), the CEA notification date (27-Mar-2026), India's first OSAT capacity (Kaynes Semicon, CG Semi), and the SECI/NGEL tender wave. Cycle scored 4 for the first time; valuation remains UNAVAILABLE.", "confidence": {"evidence": 3, "primary_source_pct": 45, "missing_critical": ["BMS import value and China share from official trade data (no HS line)", "unit-volume series and realised per-unit BMS price", "industry-level valuation multiples"], "basis": "The regulatory dates (MNRE framework, CEA notification, MHI PMP amendment) and the Maxwell financials rest on primary sources; the BESS operating-base figures rest on IESA, an industry association, and the market-size range on three commercial research houses with materially different scopes. No official BMS trade series exists, which is why evidence is 3 rather than 4 and primary share 45%."}, "value_capture": [{"node": "AFE & battery-monitor ICs", "params": {"op_share": 5, "pricing_power": 5, "roic": 4, "barriers": 5, "bottleneck": 5, "pool_growth": 5, "cash_conversion": 5, "switching": 4}, "basis": "The top node in the chain and the deepest import gap: 30-40% of BMS BOM cost, a four-supplier oligopoly, 26-week catalogue lead times and no Indian fab or design house. Pricing power and cash conversion are as good as it gets in this chain. Unchanged at rank 1, and still unavailable in the NSE/BSE universe."}, {"node": "BMS MCU, isolation & transceivers", "params": {"op_share": 3, "pricing_power": 4, "roic": 4, "barriers": 5, "bottleneck": 5, "pool_growth": 4, "cash_conversion": 4, "switching": 4}, "basis": "Same oligopoly, marginally less scarce than the AFE because safety MCUs are multi-sourced across NXP, Infineon, Renesas and TI. AEC-Q100 qualification is the barrier that keeps Indian entrants out, not price."}, {"node": "EMS software & BMS cybersecurity", "params": {"op_share": 2, "pricing_power": 3, "roic": 3, "barriers": 4, "bottleneck": 3, "pool_growth": 5, "cash_conversion": 4, "switching": 5}, "basis": "Moved UP two places. Two 2026 mandates turned this from a feature into a gate: MSEDCL's 4 GWh award requires indigenous EMS software with 20% local content, and AIS-156 makes cybersecurity testing mandatory for wireless BMS. Software carries high switching costs and light capital, but the revenue pool is small relative to hardware."}, {"node": "BMS design, firmware & board assembly", "params": {"op_share": 4, "pricing_power": 2, "roic": 2, "barriers": 3, "bottleneck": 4, "pool_growth": 5, "cash_conversion": 3, "switching": 4}, "basis": "Moved DOWN one place. This is where India's listed exposure sits, and it is where the money is thinnest: Maxwell earned 6.8% EBITDA on Rs 141 cr in H1FY27 and is ~1.5% of Endurance's consolidated income. High growth, weak pricing power against Chinese boards, and a customer base that is itself concentrated in a handful of pack makers."}, {"node": "Integrated packs & BESS (Tier-1)", "params": {"op_share": 5, "pricing_power": 2, "roic": 2, "barriers": 3, "bottleneck": 3, "pool_growth": 5, "cash_conversion": 2, "switching": 3}, "basis": "Moved UP one place above PCB assembly, because domestic integration went from announced to commissioned: 23.15 GWh/yr of disclosed capacity is running. It is the largest revenue pool in the chain and the worst cash converter - cells are imported, working capital is heavy and EBIT guidance is 5-6%."}, {"node": "Testing, certification & HIL validation", "params": {"op_share": 1, "pricing_power": 3, "roic": 3, "barriers": 4, "bottleneck": 4, "pool_growth": 4, "cash_conversion": 3, "switching": 3}, "basis": "A small but genuinely scarce pool in India: no container-scale propagation facility exists domestically, so UL 9540A evidence is imported. The MNRE import gate raises the volume of re-certification work without creating capacity to do it."}, {"node": "PCB, laminate & SMT assembly", "params": {"op_share": 3, "pricing_power": 2, "roic": 2, "barriers": 2, "bottleneck": 2, "pool_growth": 4, "cash_conversion": 2, "switching": 2}, "basis": "Moved DOWN one place. The most commoditised node here: ~85% of PCB is imported, barriers are low, and EMS players compete on utilisation. It captures revenue share without capturing margin, and Chinese board-level integration keeps the ceiling low."}]}</script>
 </body>
 </html>

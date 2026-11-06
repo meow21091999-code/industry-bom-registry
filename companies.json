@@ -1,13 +1,13 @@
 {
  "registry": "Industry BOM Registry",
  "description": "Company index. Every company mentioned across the registry, the industries it appears in, and its position (exposure) in each. DERIVED from the entry pages by tools/build-companies.mjs — regenerate on every publish, never hand-edit.",
- "generated": "2026-11-05",
+ "generated": "2026-11-06",
  "counts": {
   "companies": 515,
   "industries": 79,
-  "mappings": 2535,
+  "mappings": 2540,
   "multi_industry": 254,
-  "rank_changes": 1
+  "rank_changes": 44
  },
  "companies": [
   {
@@ -459,9 +459,9 @@
    "name": "CG Power & Industrial Solutions",
    "ticker": "NSE/BSE: CGPOWER",
    "symbol": "CGPOWER",
-   "industries_count": 21,
-   "direct_count": 11,
-   "nodes_count": 41,
+   "industries_count": 22,
+   "direct_count": 12,
+   "nodes_count": 42,
    "industries": [
     {
      "name": "India 6G (IMT-2030)",
@@ -489,6 +489,18 @@
        "exposure": "indirect",
        "nodes": [
         "Power Conversion System (PCS)"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "India Battery Management Systems (BMS)",
+     "slug": "battery-management-system-india",
+     "positions": [
+      {
+       "exposure": "direct",
+       "nodes": [
+        "Domestic Silicon Path (OSAT)"
        ]
       }
      ]
@@ -1945,7 +1957,7 @@
    "symbol": "KAYNES",
    "industries_count": 15,
    "direct_count": 11,
-   "nodes_count": 30,
+   "nodes_count": 31,
    "industries": [
     {
      "name": "Cryocooler (India)",
@@ -1984,6 +1996,7 @@
       {
        "exposure": "direct",
        "nodes": [
+        "Domestic Silicon Path (OSAT)",
         "PCB, Laminate & SMT Assembly"
        ]
       }
@@ -4319,6 +4332,163 @@
    "rank_change": 0
   },
   {
+   "name": "Exide Industries",
+   "ticker": "NSE/BSE: EXIDEIND",
+   "symbol": "EXIDEIND",
+   "industries_count": 11,
+   "direct_count": 6,
+   "nodes_count": 16,
+   "industries": [
+    {
+     "name": "India Battery Energy Storage (BESS)",
+     "slug": "battery-energy-storage-india",
+     "positions": [
+      {
+       "exposure": "direct",
+       "nodes": [
+        "Li-ion Cells (LFP / NMC)",
+        "Modules / Packs / Racks",
+        "Recycling & Second-life"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "India Battery Management Systems (BMS)",
+     "slug": "battery-management-system-india",
+     "positions": [
+      {
+       "exposure": "direct",
+       "nodes": [
+        "BMS-bundled Packs & Integrated BESS"
+       ]
+      },
+      {
+       "exposure": "indirect",
+       "nodes": [
+        "BMS Design, Firmware & Assembly"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "India Data Centres & AI-Compute",
+     "slug": "data-centre-ai-compute-india",
+     "positions": [
+      {
+       "exposure": "supplier",
+       "nodes": [
+        "O&M, E-Waste & Circularity",
+        "UPS, Batteries & BESS"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "India Electrical & Electronic Equipment",
+     "slug": "electrical-electronic-equipment-india",
+     "positions": [
+      {
+       "exposure": "direct",
+       "nodes": [
+        "Energy Storage & Batteries"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "India EMS / ODM",
+     "slug": "ems-electronics-manufacturing-india",
+     "positions": [
+      {
+       "exposure": "supplier",
+       "nodes": [
+        "Battery packs & chargers"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "India Li-ion Cell Manufacturing",
+     "slug": "li-ion-cell-manufacturing-india",
+     "positions": [
+      {
+       "exposure": "direct",
+       "nodes": [
+        "Cell Manufacturing (LFP / NMC)",
+        "Recycling & Second-life"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "India Robotics",
+     "slug": "robotics-india",
+     "positions": [
+      {
+       "exposure": "indirect",
+       "nodes": [
+        "Li-ion Cells & Battery Packs"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "India Telecom",
+     "slug": "telecom-india",
+     "positions": [
+      {
+       "exposure": "supplier",
+       "nodes": [
+        "Tower Energy — Batteries, DG & Solar"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "India Telecom Towers",
+     "slug": "telecom-towers-india",
+     "positions": [
+      {
+       "exposure": "direct",
+       "nodes": [
+        "Batteries (VRLA Lead-Acid & Li-ion)"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "India Vehicles & Auto Components",
+     "slug": "vehicles-auto-components-india",
+     "positions": [
+      {
+       "exposure": "direct",
+       "nodes": [
+        "EV Two-wheeler Powertrain",
+        "Li-ion Cells & Active Materials"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Substation Equipment",
+     "slug": "substation-equipment-india",
+     "positions": [
+      {
+       "exposure": "indirect",
+       "nodes": [
+        "Auxiliary & DC systems"
+       ]
+      }
+     ]
+    }
+   ],
+   "also_known_as": [],
+   "rank": 19,
+   "previous_rank": 20,
+   "rank_change": 1
+  },
+  {
    "name": "Centum Electronics",
    "ticker": "NSE/BSE: CENTUM",
    "symbol": "CENTUM",
@@ -4487,16 +4657,16 @@
     }
    ],
    "also_known_as": [],
-   "rank": 19,
+   "rank": 20,
    "previous_rank": 19,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
-   "name": "Exide Industries",
-   "ticker": "NSE/BSE: EXIDEIND",
-   "symbol": "EXIDEIND",
+   "name": "Tata Power (TP Solar)",
+   "ticker": "NSE/BSE: TATAPOWER",
+   "symbol": "TATAPOWER",
    "industries_count": 11,
-   "direct_count": 5,
+   "direct_count": 4,
    "nodes_count": 15,
    "industries": [
     {
@@ -4506,9 +4676,8 @@
       {
        "exposure": "direct",
        "nodes": [
-        "Li-ion Cells (LFP / NMC)",
-        "Modules / Packs / Racks",
-        "Recycling & Second-life"
+        "Developer / IPP / Owner (BOO)",
+        "EPC, Civil & Grid Integration"
        ]
       }
      ]
@@ -4520,7 +4689,7 @@
       {
        "exposure": "indirect",
        "nodes": [
-        "BMS Design, Firmware & Assembly"
+        "BMS-bundled Packs & Integrated BESS"
        ]
       }
      ]
@@ -4530,10 +4699,9 @@
      "slug": "data-centre-ai-compute-india",
      "positions": [
       {
-       "exposure": "supplier",
+       "exposure": "indirect",
        "nodes": [
-        "O&M, E-Waste & Circularity",
-        "UPS, Batteries & BESS"
+        "Captive RE & Open-Access Power"
        ]
       }
      ]
@@ -4543,58 +4711,70 @@
      "slug": "electrical-electronic-equipment-india",
      "positions": [
       {
-       "exposure": "direct",
+       "exposure": "conglomerate",
        "nodes": [
-        "Energy Storage & Batteries"
+        "Energy Meters / Smart Meters"
        ]
       }
      ]
     },
     {
-     "name": "India EMS / ODM",
-     "slug": "ems-electronics-manufacturing-india",
-     "positions": [
-      {
-       "exposure": "supplier",
-       "nodes": [
-        "Battery packs & chargers"
-       ]
-      }
-     ]
-    },
-    {
-     "name": "India Li-ion Cell Manufacturing",
-     "slug": "li-ion-cell-manufacturing-india",
+     "name": "India Green Hydrogen & Electrolyser Manufacturing",
+     "slug": "green-hydrogen-electrolyser-india",
      "positions": [
       {
        "exposure": "direct",
        "nodes": [
-        "Cell Manufacturing (LFP / NMC)",
-        "Recycling & Second-life"
+        "Project Developer / IPP",
+        "Renewable Power (RTC)"
        ]
       }
      ]
     },
     {
-     "name": "India Robotics",
-     "slug": "robotics-india",
+     "name": "India Small Modular Reactor",
+     "slug": "smr-india",
      "positions": [
       {
        "exposure": "indirect",
        "nodes": [
-        "Li-ion Cells & Battery Packs"
+        "Private BSR / Captive-Power Developers (demand layer)"
        ]
       }
      ]
     },
     {
-     "name": "India Telecom",
-     "slug": "telecom-india",
+     "name": "India Smart Meters",
+     "slug": "smart-meters-india",
      "positions": [
       {
-       "exposure": "supplier",
+       "exposure": "direct",
        "nodes": [
-        "Tower Energy — Batteries, DG & Solar"
+        "AMISP / AMI service (TOTEX / DBFOOT)"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "India Solar PV",
+     "slug": "solar-pv-india",
+     "positions": [
+      {
+       "exposure": "conglomerate",
+       "nodes": [
+        "Solar Cell Fabrication"
+       ]
+      },
+      {
+       "exposure": "direct",
+       "nodes": [
+        "Solar Developer / IPP"
+       ]
+      },
+      {
+       "exposure": "indirect",
+       "nodes": [
+        "Ingots & Wafers"
        ]
       }
      ]
@@ -4604,43 +4784,44 @@
      "slug": "telecom-towers-india",
      "positions": [
       {
-       "exposure": "direct",
+       "exposure": "indirect",
        "nodes": [
-        "Batteries (VRLA Lead-Acid & Li-ion)"
+        "Solar & Green Energy (ESCo Model)"
        ]
       }
      ]
     },
     {
-     "name": "India Vehicles & Auto Components",
-     "slug": "vehicles-auto-components-india",
-     "positions": [
-      {
-       "exposure": "direct",
-       "nodes": [
-        "EV Two-wheeler Powertrain",
-        "Li-ion Cells & Active Materials"
-       ]
-      }
-     ]
-    },
-    {
-     "name": "Substation Equipment",
-     "slug": "substation-equipment-india",
+     "name": "Overhead Transmission Line",
+     "slug": "overhead-transmission-line-india",
      "positions": [
       {
        "exposure": "indirect",
        "nodes": [
-        "Auxiliary & DC systems"
+        "Overhead Transmission Line"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Solar Cell Fabrication",
+     "slug": "solar-cells-india",
+     "positions": [
+      {
+       "exposure": "indirect",
+       "nodes": [
+        "Incoming wafer"
        ]
       }
      ]
     }
    ],
-   "also_known_as": [],
-   "rank": 20,
-   "previous_rank": 20,
-   "rank_change": 0
+   "also_known_as": [
+    "Tata Power"
+   ],
+   "rank": 21,
+   "previous_rank": 26,
+   "rank_change": 5
   },
   {
    "name": "Bharat Forge",
@@ -4797,9 +4978,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 21,
+   "rank": 22,
    "previous_rank": 21,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Siemens Energy India",
@@ -4956,9 +5137,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 22,
+   "rank": 23,
    "previous_rank": 22,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Sterlite Technologies (STL Digital)",
@@ -5121,9 +5302,9 @@
     "Sterlite Technologies",
     "Sterlite Technologies (STL)"
    ],
-   "rank": 23,
+   "rank": 24,
    "previous_rank": 23,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Amara Raja Energy & Mobility",
@@ -5155,7 +5336,7 @@
        "exposure": "direct",
        "nodes": [
         "BMS Design, Firmware & Assembly",
-        "BMS-bundled Integrated BESS"
+        "BMS-bundled Packs & Integrated BESS"
        ]
       }
      ]
@@ -5262,9 +5443,9 @@
    "also_known_as": [
     "Amara Raja"
    ],
-   "rank": 24,
+   "rank": 25,
    "previous_rank": 206,
-   "rank_change": 182
+   "rank_change": 181
   },
   {
    "name": "Siemens India",
@@ -5410,159 +5591,9 @@
    "also_known_as": [
     "Siemens"
    ],
-   "rank": 25,
-   "previous_rank": 25,
-   "rank_change": 0
-  },
-  {
-   "name": "Tata Power (TP Solar)",
-   "ticker": "NSE/BSE: TATAPOWER",
-   "symbol": "TATAPOWER",
-   "industries_count": 10,
-   "direct_count": 4,
-   "nodes_count": 14,
-   "industries": [
-    {
-     "name": "India Battery Energy Storage (BESS)",
-     "slug": "battery-energy-storage-india",
-     "positions": [
-      {
-       "exposure": "direct",
-       "nodes": [
-        "Developer / IPP / Owner (BOO)",
-        "EPC, Civil & Grid Integration"
-       ]
-      }
-     ]
-    },
-    {
-     "name": "India Data Centres & AI-Compute",
-     "slug": "data-centre-ai-compute-india",
-     "positions": [
-      {
-       "exposure": "indirect",
-       "nodes": [
-        "Captive RE & Open-Access Power"
-       ]
-      }
-     ]
-    },
-    {
-     "name": "India Electrical & Electronic Equipment",
-     "slug": "electrical-electronic-equipment-india",
-     "positions": [
-      {
-       "exposure": "conglomerate",
-       "nodes": [
-        "Energy Meters / Smart Meters"
-       ]
-      }
-     ]
-    },
-    {
-     "name": "India Green Hydrogen & Electrolyser Manufacturing",
-     "slug": "green-hydrogen-electrolyser-india",
-     "positions": [
-      {
-       "exposure": "direct",
-       "nodes": [
-        "Project Developer / IPP",
-        "Renewable Power (RTC)"
-       ]
-      }
-     ]
-    },
-    {
-     "name": "India Small Modular Reactor",
-     "slug": "smr-india",
-     "positions": [
-      {
-       "exposure": "indirect",
-       "nodes": [
-        "Private BSR / Captive-Power Developers (demand layer)"
-       ]
-      }
-     ]
-    },
-    {
-     "name": "India Smart Meters",
-     "slug": "smart-meters-india",
-     "positions": [
-      {
-       "exposure": "direct",
-       "nodes": [
-        "AMISP / AMI service (TOTEX / DBFOOT)"
-       ]
-      }
-     ]
-    },
-    {
-     "name": "India Solar PV",
-     "slug": "solar-pv-india",
-     "positions": [
-      {
-       "exposure": "conglomerate",
-       "nodes": [
-        "Solar Cell Fabrication"
-       ]
-      },
-      {
-       "exposure": "direct",
-       "nodes": [
-        "Solar Developer / IPP"
-       ]
-      },
-      {
-       "exposure": "indirect",
-       "nodes": [
-        "Ingots & Wafers"
-       ]
-      }
-     ]
-    },
-    {
-     "name": "India Telecom Towers",
-     "slug": "telecom-towers-india",
-     "positions": [
-      {
-       "exposure": "indirect",
-       "nodes": [
-        "Solar & Green Energy (ESCo Model)"
-       ]
-      }
-     ]
-    },
-    {
-     "name": "Overhead Transmission Line",
-     "slug": "overhead-transmission-line-india",
-     "positions": [
-      {
-       "exposure": "indirect",
-       "nodes": [
-        "Overhead Transmission Line"
-       ]
-      }
-     ]
-    },
-    {
-     "name": "Solar Cell Fabrication",
-     "slug": "solar-cells-india",
-     "positions": [
-      {
-       "exposure": "indirect",
-       "nodes": [
-        "Incoming wafer"
-       ]
-      }
-     ]
-    }
-   ],
-   "also_known_as": [
-    "Tata Power"
-   ],
    "rank": 26,
-   "previous_rank": 26,
-   "rank_change": 0
+   "previous_rank": 25,
+   "rank_change": -1
   },
   {
    "name": "Waaree Energies",
@@ -5594,7 +5625,7 @@
       {
        "exposure": "direct",
        "nodes": [
-        "BMS-bundled Integrated BESS"
+        "BMS-bundled Packs & Integrated BESS"
        ]
       }
      ]
@@ -11985,6 +12016,70 @@
    "rank_change": 0
   },
   {
+   "name": "Tata Motors",
+   "ticker": "NSE/BSE: TATAMOTORS",
+   "symbol": "TATAMOTORS",
+   "industries_count": 4,
+   "direct_count": 2,
+   "nodes_count": 6,
+   "industries": [
+    {
+     "name": "India Battery Management Systems (BMS)",
+     "slug": "battery-management-system-india",
+     "positions": [
+      {
+       "exposure": "conglomerate",
+       "nodes": [
+        "BMS-bundled Packs & Integrated BESS"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "India EV Powertrain & Traction Systems",
+     "slug": "ev-powertrain-traction-india",
+     "positions": [
+      {
+       "exposure": "direct",
+       "nodes": [
+        "OEM Integration & Demand",
+        "Traction Motor Assembly (PMSM / BLDC)"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "India Li-ion Cell Manufacturing",
+     "slug": "li-ion-cell-manufacturing-india",
+     "positions": [
+      {
+       "exposure": "indirect",
+       "nodes": [
+        "Cell Manufacturing (LFP / NMC)"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "India Vehicles & Auto Components",
+     "slug": "vehicles-auto-components-india",
+     "positions": [
+      {
+       "exposure": "direct",
+       "nodes": [
+        "Battery Pack & BMS",
+        "Li-ion Cells & Active Materials"
+       ]
+      }
+     ]
+    }
+   ],
+   "also_known_as": [],
+   "rank": 94,
+   "previous_rank": 129,
+   "rank_change": 35
+  },
+  {
    "name": "VA Tech Wabag",
    "ticker": "NSE: WABAG",
    "symbol": "WABAG",
@@ -12054,9 +12149,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 94,
+   "rank": 95,
    "previous_rank": 94,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Bharat Petroleum",
@@ -12118,9 +12213,9 @@
    "also_known_as": [
     "BPCL"
    ],
-   "rank": 95,
+   "rank": 96,
    "previous_rank": 95,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Epigral",
@@ -12181,9 +12276,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 96,
+   "rank": 97,
    "previous_rank": 96,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Samvardhana Motherson",
@@ -12244,9 +12339,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 97,
+   "rank": 98,
    "previous_rank": 97,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Triveni Turbine",
@@ -12316,9 +12411,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 98,
+   "rank": 99,
    "previous_rank": 98,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Ellenbarrie Industrial Gases",
@@ -12372,9 +12467,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 99,
+   "rank": 100,
    "previous_rank": 99,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Transrail Lighting",
@@ -12427,9 +12522,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 100,
+   "rank": 101,
    "previous_rank": 100,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Indus Towers",
@@ -12485,9 +12580,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 101,
+   "rank": 102,
    "previous_rank": 101,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Advait Energy Transitions",
@@ -12537,9 +12632,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 102,
+   "rank": 103,
    "previous_rank": 102,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Anupam Rasayan",
@@ -12589,9 +12684,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 103,
+   "rank": 104,
    "previous_rank": 103,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Gujarat Alkalies & Chemicals",
@@ -12641,9 +12736,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 104,
+   "rank": 105,
    "previous_rank": 104,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Vikram Solar",
@@ -12693,9 +12788,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 105,
+   "rank": 106,
    "previous_rank": 105,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Affordable Robotic & Automation (Humro)",
@@ -12746,9 +12841,9 @@
    "also_known_as": [
     "Affordable Robotic & Automation"
    ],
-   "rank": 106,
+   "rank": 107,
    "previous_rank": 106,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Bharti Hexacom",
@@ -12797,9 +12892,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 107,
+   "rank": 108,
    "previous_rank": 107,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Ideaforge Technology",
@@ -12856,9 +12951,9 @@
     "ideaForge",
     "ideaForge Technology"
    ],
-   "rank": 108,
+   "rank": 109,
    "previous_rank": 108,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Jyoti Structures",
@@ -12907,9 +13002,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 109,
+   "rank": 110,
    "previous_rank": 109,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Paramount Communications",
@@ -12958,9 +13053,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 110,
+   "rank": 111,
    "previous_rank": 110,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Sterlite Electric",
@@ -13008,9 +13103,9 @@
      ]
     }
    ],
-   "rank": 111,
+   "rank": 112,
    "previous_rank": 111,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Torrent Power",
@@ -13064,9 +13159,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 112,
+   "rank": 113,
    "previous_rank": 112,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Vodafone Idea",
@@ -13115,9 +13210,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 113,
+   "rank": 114,
    "previous_rank": 113,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Avalon Technologies",
@@ -13165,9 +13260,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 114,
+   "rank": 115,
    "previous_rank": 114,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Indo Tech Transformers",
@@ -13217,9 +13312,9 @@
    "also_known_as": [
     "Indotech Transformers"
    ],
-   "rank": 115,
+   "rank": 116,
    "previous_rank": 115,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Nelco",
@@ -13268,9 +13363,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 116,
+   "rank": 117,
    "previous_rank": 116,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "R R Kabel",
@@ -13318,9 +13413,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 117,
+   "rank": 118,
    "previous_rank": 117,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Shilchar Technologies",
@@ -13368,9 +13463,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 118,
+   "rank": 119,
    "previous_rank": 118,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Modern Insulators",
@@ -13418,9 +13513,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 119,
+   "rank": 120,
    "previous_rank": 119,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Uno Minda",
@@ -13486,9 +13581,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 120,
+   "rank": 121,
    "previous_rank": 120,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Ion Exchange (India)",
@@ -13542,9 +13637,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 121,
+   "rank": 122,
    "previous_rank": 121,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "TD Power Systems",
@@ -13608,9 +13703,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 122,
+   "rank": 123,
    "previous_rank": 122,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Endurance Technologies",
@@ -13662,9 +13757,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 123,
+   "rank": 124,
    "previous_rank": 123,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Aarti Industries",
@@ -13720,9 +13815,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 124,
+   "rank": 125,
    "previous_rank": 124,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Havells India",
@@ -13773,9 +13868,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 125,
+   "rank": 126,
    "previous_rank": 125,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Tata Consultancy Services",
@@ -13836,9 +13931,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 126,
+   "rank": 127,
    "previous_rank": 126,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "Praj Industries",
@@ -13893,9 +13988,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 127,
+   "rank": 128,
    "previous_rank": 127,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "name": "RIR Power Electronics",
@@ -13945,61 +14040,9 @@
     }
    ],
    "also_known_as": [],
-   "rank": 128,
-   "previous_rank": 128,
-   "rank_change": 0
-  },
-  {
-   "name": "Tata Motors",
-   "ticker": "NSE/BSE: TATAMOTORS",
-   "symbol": "TATAMOTORS",
-   "industries_count": 3,
-   "direct_count": 2,
-   "nodes_count": 5,
-   "industries": [
-    {
-     "name": "India EV Powertrain & Traction Systems",
-     "slug": "ev-powertrain-traction-india",
-     "positions": [
-      {
-       "exposure": "direct",
-       "nodes": [
-        "OEM Integration & Demand",
-        "Traction Motor Assembly (PMSM / BLDC)"
-       ]
-      }
-     ]
-    },
-    {
-     "name": "India Li-ion Cell Manufacturing",
-     "slug": "li-ion-cell-manufacturing-india",
-     "positions": [
-      {
-       "exposure": "indirect",
-       "nodes": [
-        "Cell Manufacturing (LFP / NMC)"
-       ]
-      }
-     ]
-    },
-    {
-     "name": "India Vehicles & Auto Components",
-     "slug": "vehicles-auto-components-india",
-     "positions": [
-      {
-       "exposure": "direct",
-       "nodes": [
-        "Battery Pack & BMS",
-        "Li-ion Cells & Active Materials"
-       ]
-      }
-     ]
-    }
-   ],
-   "also_known_as": [],
    "rank": 129,
-   "previous_rank": 129,
-   "rank_change": 0
+   "previous_rank": 128,
+   "rank_change": -1
   },
   {
    "name": "Deepak Fertilisers & Petrochemicals",
@@ -21873,7 +21916,7 @@
       {
        "exposure": "direct",
        "nodes": [
-        "BMS-bundled Integrated BESS"
+        "BMS-bundled Packs & Integrated BESS"
        ]
       }
      ]
