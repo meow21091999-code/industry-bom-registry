@@ -1,7 +1,7 @@
 {
  "registry": "Industry BOM Registry",
  "description": "Machine-readable node index. For every entry, the node names it contains plus the owning entry slug. Used for DEDUP (industry+scope already analysed) and LINEAGE (auto-linking a new industry to a parent when its name matches a node name). Update on every publish.",
- "generated": "2026-11-06",
+ "generated": "2026-11-07",
  "last_delta_pass": "2026-11-02",
  "delta_note": "WEEKLY DELTA PASS 2026-11-02 (refresh, not re-analysis). Six entries re-validated against live sources; five carried moved or newly-dated facts and one resolved. MOVED: Organic Chemicals — DGTR issued preliminary findings on 26-Oct-2026 (Case CVD (OI)-07/2025) recommending a provisional CVD of US$83.72-143.82/t on Chinese PVC suspension resin; a duty has been recommended but not notified by the Finance Ministry, and the 6-month MIP lapses ~23-Jan-2027. Risk basis updated, score held at 2 (domestic capacity ~1.6 MMT vs ~4.1 MMT demand caps the relief). MOVED: Condenser Heat Rejection — BHEL ACC package enquiry B/4222/6/0669V1 bid deadline extended again, 30-Oct-2026 -> 23-Nov-2026; still unawarded. MOVED: Data Centre / AI Compute — the C-DAC IndiaAI RFE (C-DAC/GPU/01/2026) closed 29-Oct-2026 and technical proposals opened 30-Oct-2026; the open item is now the empanelment list. MeitY has reportedly accepted global commercial resale for this round (Business Standard 11-Oct-2026), kept separate from the RFE text. RESOLVED: Telecom — Jio Platforms listed 28-Oct-2026 on NSE/BSE (scrip 545004) at Rs 1,358, +21.4% over the Rs 1,119 issue, ~Rs 12.5 lakh crore market cap; the open item moves from the issue to index inclusion. NEW DATED: Rare-Earth Magnets — China's suspension of its October-2025 rare-earth package (MOFCOM/GAC 55-58, 61, 62, including the 0.1% foreign-content rule) lapses 10-Nov-2026 with no extension notice published as of 31-Oct-2026; Announcement 18 of Apr-2025 was never suspended. REPM award still pending at 27-Oct-2026. Risk score held at 1 (already the floor). MOVED (partial): Railway — the ~Rs 40,000 cr / 1 lakh-wagon mega tender is still unfloated and has slipped from H1 to H2 FY27, but a 5,800 BOBRN hopper-wagon procurement was issued 30-Oct-2026 (closing 26-Nov-2026). UNCHANGED on re-validation: Germanium/gallium US-specific suspension to 27-Nov-2026 (no extension published); SHANTI Act rules still unnotified and the Act itself not yet in force; SIGHT electrolyser Tranche-I still without a confirmed fully-commissioned plant; REPM beneficiary award; BHAVYA Rasayan state proposals due 30-Nov-2026; PLI White Goods to FY2028-29 with an extension request live; telecom PLI 2.0 Cabinet approval still pending; China TBM licensing effective 18-Nov-2026 as already carried; CPCB all-industry ZLD still draft; Aksh Optifibre CIRP unchanged. Scores changed: none (two bases updated, as_of 2026-10-30 -> 2026-11-02 on the two scored pages affected).",
  "entries": [
@@ -18293,6 +18293,217 @@
       "oem",
       "vehicle integration",
       "traction demand"
+     ],
+     "priority": "med",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    }
+   ]
+  },
+  {
+   "slug": "pumped-hydro-india",
+   "industry": "Pumped Storage Hydropower (PSH)",
+   "scope": "INDIA",
+   "path": "industries/pumped-hydro-india.html",
+   "analysis_date": "2026-11-07",
+   "universe": "NSE/BSE",
+   "sector": "Energy Storage",
+   "derived_from": null,
+   "drill_downs": [],
+   "nodes": [
+    {
+     "id": "pt",
+     "name": "Reversible Pump-Turbine",
+     "level": 1,
+     "aliases": [
+      "pump turbine",
+      "pump-turbine",
+      "reversible pump turbine",
+      "reversible francis turbine",
+      "runner",
+      "francis turbine",
+      "pumped storage turbine"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "gen",
+     "name": "Generator-Motor & Excitation",
+     "level": 2,
+     "aliases": [
+      "generator motor",
+      "motor generator",
+      "motor-generator",
+      "excitation",
+      "synchronous machine",
+      "hydro generator"
+     ],
+     "priority": "high",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "dfim",
+     "name": "Variable-Speed Drive (DFIM rotor converter)",
+     "level": 2,
+     "aliases": [
+      "dfim",
+      "doubly fed induction machine",
+      "variable speed drive",
+      "rotor converter",
+      "back to back converter",
+      "static frequency converter"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": false
+    },
+    {
+     "id": "valve",
+     "name": "Main Inlet Valve, Governor & Auxiliaries",
+     "level": 2,
+     "aliases": [
+      "main inlet valve",
+      "spherical valve",
+      "butterfly valve",
+      "governor",
+      "auxiliaries"
+     ],
+     "priority": "med",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "hm",
+     "name": "Hydro-Mechanical — Penstocks, Gates, Hoists",
+     "level": 1,
+     "aliases": [
+      "hydro mechanical",
+      "hydro-mechanical",
+      "penstock",
+      "steel liner",
+      "pressure shaft",
+      "gates",
+      "hoists",
+      "trash rack",
+      "radial gate"
+     ],
+     "priority": "high",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "civil",
+     "name": "Civil Works — Caverns, Tunnels, Dams",
+     "level": 1,
+     "aliases": [
+      "civil works",
+      "underground powerhouse",
+      "machine hall",
+      "cavern",
+      "headrace tunnel",
+      "tailrace",
+      "surge shaft",
+      "dam",
+      "tunnelling"
+     ],
+     "priority": "high",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "plant",
+     "name": "Underground Construction Plant",
+     "level": 2,
+     "aliases": [
+      "tbm",
+      "tunnel boring machine",
+      "raise borer",
+      "drill jumbo",
+      "shotcrete",
+      "construction plant"
+     ],
+     "priority": "med",
+     "bottleneck": true,
+     "in_universe_coverage": false
+    },
+    {
+     "id": "grid",
+     "name": "Step-up Transformer, GIS & Switchgear",
+     "level": 1,
+     "aliases": [
+      "step up transformer",
+      "generator transformer",
+      "gis",
+      "switchgear",
+      "grid interface",
+      "protection"
+     ],
+     "priority": "med",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "epc",
+     "name": "E&M and EPC Integration, Commissioning",
+     "level": 1,
+     "aliases": [
+      "epc",
+      "e&m package",
+      "electro-mechanical package",
+      "commissioning",
+      "model testing",
+      "integration"
+     ],
+     "priority": "high",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "dev",
+     "name": "Developer / Owner (PSPPA)",
+     "level": 1,
+     "aliases": [
+      "developer",
+      "ipp",
+      "psppa",
+      "pumped storage developer",
+      "psp owner",
+      "offtake"
+     ],
+     "priority": "high",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "mat",
+     "name": "Steel Plate, CRGO & Heavy Castings",
+     "level": 1,
+     "aliases": [
+      "crgo",
+      "electrical steel",
+      "steel plate",
+      "castings",
+      "ca6nm",
+      "forgings"
+     ],
+     "priority": "med",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "om",
+     "name": "O&M, R&M and Model Testing",
+     "level": 2,
+     "aliases": [
+      "o&m",
+      "renovation and modernisation",
+      "r&m",
+      "model testing",
+      "aftermarket",
+      "spares"
      ],
      "priority": "med",
      "bottleneck": false,
