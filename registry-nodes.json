@@ -8043,7 +8043,7 @@
    "industry": "PCS & Power Semiconductors",
    "scope": "INDIA",
    "path": "industries/power-conversion-system-india.html",
-   "analysis_date": "2026-10-09",
+   "analysis_date": "2026-11-07",
    "universe": "NSE/BSE",
    "sector": "Energy Storage",
    "derived_from": {
@@ -8110,7 +8110,7 @@
     },
     {
      "id": "ctrl",
-     "name": "Control & Grid-forming Firmware",
+     "name": "Grid-forming Control & EMS",
      "level": 3,
      "aliases": [
       "grid-forming",
@@ -8133,7 +8133,7 @@
       "inverter",
       "bidirectional inverter"
      ],
-     "priority": "med",
+     "priority": "high",
      "bottleneck": false,
      "in_universe_coverage": true
     },
@@ -8152,7 +8152,7 @@
     },
     {
      "id": "osat",
-     "name": "Power-semiconductor OSAT / Fab",
+     "name": "Power-module OSAT & Device Fab",
      "level": 3,
      "aliases": [
       "osat",

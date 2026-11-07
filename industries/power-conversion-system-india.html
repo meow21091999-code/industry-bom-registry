@@ -13,7 +13,6 @@
 <div style="max-width:1180px;margin:0 auto 18px;font-family:'IBM Plex Mono',monospace;font-size:12px;">
   <a href="../index.html" style="color:var(--blue);text-decoration:none;border-bottom:1px solid var(--border);">&larr; Industry BOM Registry</a>
   <span style="color:var(--text-dim);">&nbsp;/&nbsp;Energy Storage &mdash; India&nbsp;/&nbsp;PCS &amp; Power Semiconductors</span>
-  <div style="margin-top:8px;color:var(--gold);">Derived from: Battery Energy Storage (BESS) (India) &rarr; node &ldquo;Power Conversion System (PCS)&rdquo;</div>
 </div>
 <div class="container">
   <div style="display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;background:var(--gold-dim);border:1px solid var(--gold);border-radius:10px;padding:12px 16px;margin-bottom:18px;">
@@ -26,11 +25,12 @@
     <h1>India <span>PCS &amp; Power Semiconductors</span></h1>
     <div class="subtitle">The bidirectional inverter and the power devices inside it &middot; architecture &middot; devices &middot; NSE/BSE company map</div>
     <div class="scope-bar">
-      <span class="chip chip--gold">Analysis date: 2026-10-09</span>
+      <span class="chip chip--gold">Analysis date: 2026-11-07</span>
       <span class="chip">Scope: INDIA</span>
       <span class="chip">Interest: investment research</span>
       <span class="chip">Universe: NSE / BSE</span>
       <span class="chip chip--high">India lens: ON</span>
+      <span class="chip">Materiality: all exposures</span>
       <span class="chip">Depth: depth-first</span>
     </div>
   </header>
@@ -38,61 +38,72 @@
   <section class="animate" style="--i:1">
     <div class="metric-cards">
       <div class="metric-card metric-card--gold">
-        <div class="metric-card__val">~15%</div>
-        <div class="metric-card__label">PCS share of BESS capex</div>
-        <div class="metric-card__sub">10&ndash;18% across sources</div>
+        <div class="metric-card__val">40%</div>
+        <div class="metric-card__label">domestic content on VGF-backed BESS</div>
+        <div class="metric-card__sub">from 20% local content, Dec-2025</div>
       </div>
       <div class="metric-card metric-card--high">
         <div class="metric-card__val">100%</div>
-        <div class="metric-card__label">power semiconductors imported</div>
-        <div class="metric-card__sub">no Indian IGBT/SiC fab</div>
-      </div>
-      <div class="metric-card metric-card--high">
-        <div class="metric-card__val">1 Jul 2027</div>
-        <div class="metric-card__label">grid-forming PCS mandatory</div>
-        <div class="metric-card__sub">CEA draft; all BESS PCS</div>
+        <div class="metric-card__label">power devices imported</div>
+        <div class="metric-card__sub">no IGBT / SiC fab in India</div>
       </div>
       <div class="metric-card metric-card--gold">
-        <div class="metric-card__val">&ge;60%</div>
-        <div class="metric-card__label">PCS/EMS localisation draft</div>
-        <div class="metric-card__sub">&ge;100 MW grid-forming, from 2027</div>
+        <div class="metric-card__val">1.25 MW</div>
+        <div class="metric-card__label">largest central PCS built in India</div>
+        <div class="metric-card__sub">Delta 1.1 MW &middot; Statcon 1.25 / 1.725 MW</div>
       </div>
       <div class="metric-card">
-        <div class="metric-card__val">>1 MW</div>
-        <div class="metric-card__label">central PCS not made in India</div>
-        <div class="metric-card__sub">string inverters localising</div>
+        <div class="metric-card__val">11&ndash;22%</div>
+        <div class="metric-card__label">PCS share of BESS cost</div>
+        <div class="metric-card__sub">scope-dependent &middot; five surveys</div>
       </div>
-
+      <div class="metric-card metric-card--gold">
+        <div class="metric-card__val">38.0%</div>
+        <div class="metric-card__label">5-year CAGR &middot; value (nominal)</div>
+        <div class="metric-card__sub">US$1.5 bn &rarr; US$7.5 bn, 2025&ndash;30 &middot; volume 5-yr [UNAVAILABLE]</div>
+      </div>
     </div>
   </section>
 
   <section class="animate" style="--i:1">
     <div class="sec-head"><span class="sec-num">DG</span><span class="sec-title">Digest &mdash; at a glance</span><span class="sec-note">short summary; full report in chat</span></div>
-    
+
 <div class="digest">
-<div class="digest__item"><div class="digest__h">Snapshot</div><p>The PCS is the bidirectional inverter connecting the battery DC bus to the grid — ~15% of BESS capex, and the second-largest value pool. India assembles string PCS, but the power devices and grid-forming control IP are foreign.</p></div>
+<div class="digest__item"><div class="digest__h">Snapshot</div><p>The power conversion system is the bidirectional inverter between a battery DC bus and the grid &mdash; 11&ndash;22% of BESS cost depending on scope, and the node where India's storage build-out meets its semiconductor gap. India assembles PCS cabinets up to 1.25 MW; every power device, gate driver, film capacitor and utility-scale plant controller inside them is imported.</p></div>
 <div class="digest__item"><div class="digest__h">Process &amp; equipment</div><ul>
-<li>Topologies: 2-/3-level (NPC/ANPC) on a 1000–1500 V DC bus; central, string or hybrid architectures.</li>
-<li>Key build: IGBT/SiC modules, gate drivers, magnetics/inductors, DC-link film capacitors, real-time DSP/MCU, isolation transformer.</li>
-<li>Assembly is localisable (Delta, ABB, Statcon, Ador); the silicon is not.</li></ul></div>
+<li>Topologies are 2- and 3-level (NPC/ANPC) on a 1000&ndash;1500 V DC bus, in central, string or hybrid architecture; SiC is entering at the string end.</li>
+<li>The build is device stacks, gate drivers, magnetics, DC-link film capacitors, control boards, cooling and enclosure &mdash; then factory test at full power into a resistive or grid-simulator load.</li>
+<li>Localisable steps are cabinet assembly, magnetics winding, harness and integration; the semiconductor front end is not.</li>
+<li>Key machinery: SMT lines, wave/selective solder, busbar fabrication, coil winding, potting, environmental chambers and a MW-class test bay.</li></ul></div>
 <div class="digest__item"><div class="digest__h">Bottlenecks</div><ul>
-<li>No Indian IGBT/SiC power-device fab; CG Semi is OSAT only.</li>
-<li>Grid-forming control IP (VSM, droop, black-start) is held abroad.</li>
-<li>Magnetics materials and DC-link film capacitors are largely imported.</li>
-<li>Central PCS >1 MW and SiC platforms still imported (~2–3 years from localisation).</li></ul></div>
+<li>Power devices &mdash; 100% imported, no Indian IGBT or SiC fab; SiC module lead times run 12&ndash;16 weeks. Resilience: years.</li>
+<li>Grid-forming control at plant scale &mdash; Indian capability exists at 1&ndash;2 MW unit size, unproven at 100 MW+ plant level. Months to years.</li>
+<li>DC-link film capacitors and nanocrystalline cores &mdash; imported, small value, long qualification. Months.</li>
+<li>Utility-scale price competition &mdash; Chinese inverters held 85.5% of central-inverter shipments in Q1 2026. Structural on cost.</li>
+<li>Certification and test capacity &mdash; BIS/BEE compliance plus grid-forming validation; the test bays are few. Months.</li></ul></div>
 <div class="digest__item"><div class="digest__h">Value pools</div><ul>
-<li>PCS hardware &mdash; Hitachi Energy India, ABB India, CG Power, Servotech, Waaree, Vikram, Premier.</li>
-<li>Power semiconductors &mdash; the pool that leaks entirely; CG Semi (CGPOWER) is the only listed OSAT exposure.</li>
-<li>Grid-forming firmware &mdash; foreign IP today, a localisation frontier.</li>
-<li>Inverter-duty transformers &amp; switchgear &mdash; a domestic oligopoly (CG Power, Hitachi Energy).</li></ul></div>
-<div class="digest__item"><div class="digest__h">Market &amp; growth</div><ul><li><b>Envelope (nominal, T2):</b> India’s BESS market was <b>US$1.5 bn in 2025</b> and is projected at <b>US$7.5 bn by 2030</b> — a <b>33% value CAGR</b>; scope = grid-connected and behind-the-meter storage including hardware, installation, software and services, excluding residential and EV-embedded storage <span class="mini">[REPORTED-T2: Alora Advisory, 22-Feb-2026]</span>. A narrower non-utility scope gives <b>US$461.6 mn (2024) → US$2,430.5 mn (2030)</b> at the same <b>33%</b> <span class="mini">[REPORTED-T2: Grand View Research, 2026]</span> — the two differ on scope, not on direction.</li><li><b>PCS pool (derived):</b> the power conversion system is <b>15–25% of utility-scale BESS hardware capex</b> <span class="mini">[REPORTED-T2: sector DPR citing CEA/IEC practice, 2026]</span>, implying a PCS pool of roughly <b>US$0.23–0.38 bn in 2025</b> scaling with the envelope to roughly <b>US$1.1–1.9 bn by 2030</b>. <span class="mini">[DERIVED: 15–25% × the BESS envelope; not a separately surveyed series]</span></li><li><b>Volume (the sharper series):</b> cumulative installed BESS <b>0.95 GWh (2025) → 47 GWh (2030)</b> <span class="mini">[REPORTED-T2: Alora Advisory]</span>, against a CEA National Electricity Plan requirement of <b>208 GWh by 2030</b> and <b>35.8 GWh already under construction</b> <span class="mini">[REPORTED-T1: CEA via PIB, 30-Mar-2026]</span>. Capacity grows ~95% a year against ~33% value growth because per-kWh pricing falls 8–12% a year.</li><li><b>Drivers:</b> a CEA draft requiring <b>grid-forming control on all BESS PCS from 1-Jul-2027</b>; an MNRE draft (May-2026) requiring <b>≥60% localisation of PCS/EMS</b> for ≥100 MW grid-forming BESS from 2027; and the 500 GW non-fossil target behind the storage build-out. <span class="mini">[REPORTED-T1: CEA / MNRE drafts]</span></li></ul></div><div class="digest__item"><div class="digest__h">Watch items</div><ul>
-<li>1 Jul 2027 &mdash; CEA draft: all BESS PCS must have grid-forming control.</li>
-<li>MNRE draft (May-2026) &mdash; &ge;60% localisation of PCS/EMS for &ge;100 MW grid-forming BESS from 2027.</li>
-<li>CG Semi G2 OSAT (Oct–Nov 2027); Tata–PSMC Dholera first silicon ~Dec-2026 (logic, not power).</li>
-<li>Six Chinese firms pre-approved to JV with Indian makers under the MNRE draft.</li></ul></div>
+<li>Power devices capture the most operating profit and leak entirely abroad &mdash; Infineon, onsemi, Mitsubishi, Fuji, ST, Rohm.</li>
+<li>Grid-forming firmware and plant EMS are the highest-return pool per rupee of capital; India's capability here is unlisted.</li>
+<li>PCS assembly is domestic, contested and thin &mdash; Hitachi Energy India explicitly guides BESS balance-of-plant margins below its portfolio average.</li>
+<li>Inverter-duty transformers and MV switchgear are the part of the AC block India makes well, and the listed names (CG Power, Hitachi Energy, Shilchar, Voltamp) earn real margin there.</li>
+<li>The 40% DCR is a price umbrella for whoever can document domestic content first &mdash; and a compliance cost for everyone else.</li>
+<li>Power-module OSAT is a small pool today: CG Semi G1 is 300 million units a year of assembly and test, with G2 production late 2028&ndash;2029.</li></ul></div>
+<div class="digest__item"><div class="digest__h">Market &amp; growth</div><ul>
+<li><b>Five-year, value (nominal):</b> US$1.5 bn (2025) to US$7.5 bn (2030) = <b>38.0% CAGR</b> <span class="mini">[CALCULATED from the sourced endpoints; scope = grid and behind-the-meter storage, hardware, installation, software and services, excluding residential and EV-embedded]</span>.</li>
+<li><b>Five-year, volume:</b> [UNAVAILABLE] &mdash; no scope-matched installed-GWh series exists for 2025&ndash;2030 in the sources retrieved.</li>
+<li><b>Three-year, value and volume:</b> [UNAVAILABLE] &mdash; the nearest anchor is the tender book (308 GWh tendered since 2018, of which 167 GWh BESS), which is a pipeline, not installed capacity.</li>
+<li><b>Last year, volume:</b> 13.7 GWh operating at Sep-2026, about <b>17&times;</b> the Dec-2025 base, heading to roughly 20 GWh by end-FY26 <span class="mini">[REPORTED-T2: Energy-Storage.News, 05-Oct-2026]</span>; last-year value is [UNAVAILABLE] on the same scope.</li>
+<li><b>Price versus physical:</b> value grows far slower than capacity because per-kWh prices keep falling; the PCS pool scales with MW, so it deflates less than the cell pool but is a smaller share of a shrinking rupee per kWh.</li>
+<li><b>Brake:</b> FY27 storage tendering is down 26% year-on-year and 20% of tendered capacity has already been cancelled <span class="mini">[REPORTED-T2: Energy-Storage.News, 05-Oct-2026]</span>.</li></ul></div>
+<div class="digest__item"><div class="digest__h">Watch items</div><ul>
+<li>04-Nov-2026 &mdash; VGF approved: ₹14,500 crore, 92 GWh (30 GWh BESS), 40% DCR, FY27&ndash;FY31.</li>
+<li>15-Oct-2026 &mdash; CEA draft consultation closed (extended from 04-Oct); the final regulation has not been notified.</li>
+<li>01-Jul-2027 &mdash; CEA draft would require grid-forming control on all BESS PCS and on 15% of inverters in new RE plants.</li>
+<li>01-Apr-2027 &mdash; CEA BESS technical standards take effect: PCS efficiency ≥95%, AC-AC round-trip ≥70%.</li>
+<li>Mid-2027 &mdash; CG Semi G2 qualification; SiCSem's SiC fab and Tata&ndash;PSMC's Dholera fab remain under construction.</li></ul></div>
 <div class="digest__item"><div class="digest__h">Coverage gaps</div><ul>
-<li>No listed pure-play for IGBT/SiC devices or grid-forming control IP; Ador, Statcon, Wattpower, Delta-India are unlisted.</li>
-</ul></div>
+<li>No listed exposure to power devices, gate drivers, DC-link film capacitors or grid-forming control IP; CG Semi is OSAT only.</li>
+<li>Delta Electronics India, Statcon Energiaa, Ador Digatron, Wattpower and Enertech &mdash; the firms actually building central-class PCS in India &mdash; are unlisted.</li></ul></div>
 </div>
   </section>
 
@@ -127,12 +138,19 @@ graph TD
   L0 --> E["E &middot; AC Interface<br/>(transformer, switchgear)"]
   L0 --> F["F &middot; PCS Assembly<br/>&amp; Integration"]
   L0 --> G["G &middot; Testing &amp;<br/>Certification"]
+  A --> A1["1200-1700 V IGBT modules<br/><i>imported</i>"]
+  A --> A2["SiC MOSFET modules<br/><i>imported</i>"]
+  A --> A3["Isolated gate drivers<br/><i>imported</i>"]
+  D --> D1["DSP / MCU platform<br/><i>imported</i>"]
+  D --> D2["GFM algorithm<br/>(VSM, droop, black start)"]
+  D --> D3["Plant EMS / SCADA"]
   classDef high fill:#c0392b,stroke:#8e2b20,color:#fff,stroke-width:2px;
   classDef med fill:#d4a73a,stroke:#a37f22,color:#241a05,stroke-width:1.5px;
   classDef root fill:#1e4e8c,stroke:#12335c,color:#fff,stroke-width:2px;
   class L0 root;
   class A,D high;
-  class B,C,E,F,G med;
+  class A1,A2,A3,D1 high;
+  class B,C,E,F,G,D2,D3 med;
       </script>
     </section>
     <div class="legend">
@@ -151,30 +169,22 @@ graph TD
     <div class="ladder">
       <div class="rung rung--1">
         <div class="rung__label">Tier 4 &middot; Raw</div>
-        <div class="rung__body"><b>Silicon / SiC substrate</b> &middot; copper &middot; electrical steel &middot; ferrite / nanocrystalline cores &middot; polypropylene film <span class="mini">imported</span></div>
+        <div class="rung__body"><b>Silicon / SiC substrate</b> &middot; copper &middot; electrical steel &middot; ferrite and nanocrystalline cores &middot; polypropylene film &middot; aluminium <span class="mini">imported, except copper and aluminium</span></div>
       </div>
       <div class="rung rung--2">
         <div class="rung__label">Tier 3 &middot; Specialty</div>
-        <div class="rung__body"><b>IGBT / SiC modules</b> &middot; gate-driver ICs &middot; DSP/MCU &middot; film capacitors &middot; magnetics cores <span class="mini">Infineon &middot; onsemi &middot; Mitsubishi &middot; Fuji &middot; TI (all foreign)</span></div>
+        <div class="rung__body"><b>IGBT and SiC modules</b> &middot; isolated gate drivers &middot; DSP/MCU &middot; DC-link film capacitors &middot; cores <span class="mini">Infineon &middot; onsemi &middot; Mitsubishi &middot; Fuji &middot; ST &middot; Rohm &middot; TI &middot; TDK &mdash; all foreign</span></div>
       </div>
       <div class="rung rung--3">
         <div class="rung__label">Tier 2 &middot; Component</div>
-        <div class="rung__body"><b>PCS cabinets</b> &middot; inverter-duty transformers &middot; MV switchgear &middot; control PCBs <span class="mini">Hitachi Energy &middot; ABB &middot; CG Power &middot; Servotech</span></div>
+        <div class="rung__body"><b>PCS cabinets</b> &middot; inverter-duty transformers &middot; MV switchgear &middot; control PCBs &middot; magnetics <span class="mini">Hitachi Energy India &middot; ABB India &middot; CG Power &middot; Servotech &middot; Waaree &middot; Shilchar &middot; Voltamp &middot; Delta-India (unlisted) &middot; Statcon (unlisted) &middot; Ador (unlisted)</span></div>
       </div>
       <div class="rung rung--4">
         <div class="rung__label">Tier 1 &middot; System</div>
-        <div class="rung__body"><b>PCS + transformer + switchgear AC blocks &amp; BESS integration</b> <span class="mini">Hitachi Energy &middot; Waaree &middot; Premier &middot; Vikram</span></div>
+        <div class="rung__body"><b>BESS AC blocks and EPC</b> &middot; integration &middot; grid connection &middot; O&amp;M and grid-forming retrofit <span class="mini">Hitachi Energy India (165 MW / 330 MWh) &middot; Waaree ESS &middot; Premier &middot; Sungrow &middot; Sineng &middot; Fluence &middot; GE Vernova</span></div>
       </div>
-      <div class="rung rung--4">
-        <div class="rung__label">OEM / Developer</div>
-        <div class="rung__body"><b>BESS developers and EPCs</b> as the demand layer <span class="mini">NTPC Green &middot; Tata Power &middot; Adani &middot; JSW</span></div>
-      </div>
-      <div class="rung rung--1">
-        <div class="rung__label">Aftermarket</div>
-        <div class="rung__body">PCS service &middot; firmware/GFM upgrades &middot; spares &middot; retrofits <span class="mini">incumbent-led</span></div>
-      </div>
-
     </div>
+    <p class="footnote">The ladder is the discrete-manufacturing form. Value capture is inverted against it: Tier 4 and Tier 3 hold the margin, Tier 2 holds the volume, Tier 1 holds the customer relationship.</p>
   </section>
 
   <section class="animate" style="--i:4">
@@ -199,7 +209,7 @@ graph TD
       <div class="table-scroll">
         <table class="data">
           <thead>
-            <tr><th>Company</th><th>PCS</th><th>Power Semi</th><th>Transformer</th><th>OSAT</th></tr>
+            <tr><th>Company</th><th>PCS</th><th>Power semi</th><th>Transformer</th><th>OSAT</th></tr>
           </thead>
           <tbody>
 <tr><td>Hitachi Energy India <small>POWERINDIA</small></td><td class="c cell-d">D</td><td class="c cell-x">&mdash;</td><td class="c cell-d">D</td><td class="c cell-x">&mdash;</td></tr>
@@ -210,14 +220,15 @@ graph TD
 <tr><td>Vikram Solar <small>VIKRAMSOLR</small></td><td class="c cell-d">D</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td></tr>
 <tr><td>Premier Energies <small>PREMIERENE</small></td><td class="c cell-d">D</td><td class="c cell-x">&mdash;</td><td class="c cell-i">I</td><td class="c cell-x">&mdash;</td></tr>
 <tr><td>Siemens Energy India <small>ENRIN</small></td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-d">D</td><td class="c cell-x">&mdash;</td></tr>
-<tr><td>GE Vernova T&D India <small>GVT&D</small></td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-d">D</td><td class="c cell-x">&mdash;</td></tr>
+<tr><td>GE Vernova T&amp;D India <small>GVT&amp;D</small></td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-d">D</td><td class="c cell-x">&mdash;</td></tr>
 <tr><td>Voltamp Transformers <small>VOLTAMP</small></td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-d">D</td><td class="c cell-x">&mdash;</td></tr>
 <tr><td>Shilchar Technologies <small>SHILCHAR</small></td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-d">D</td><td class="c cell-x">&mdash;</td></tr>
+<tr><td>Kaynes Technology <small>KAYNES</small></td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-x">&mdash;</td><td class="c cell-i">I</td></tr>
           </tbody>
         </table>
       </div>
     </div>
-    <p class="footnote">D direct &middot; I indirect &middot; S supplier &middot; C conglomerate/minor segment &middot; &mdash; no exposure. Listing status current as of the analysis date. Every mapping is evidence-based; materiality detail is in the click-through panel above.</p>
+    <p class="footnote">D direct &middot; I indirect &middot; S supplier &middot; C conglomerate/minor segment &middot; &mdash; no exposure. Listing status verified as of the analysis date. Every mapping is evidence-based; materiality detail is in the click-through panel above. Materiality floor: all exposures, including minor segments, with the segment share stated where reported.</p>
   </section>
 
   <section class="animate" style="--i:6">
@@ -227,53 +238,96 @@ graph TD
       <span class="sec-note">dual-readable: every risk is a substitution play</span>
     </div>
     <div class="bn">
-      <div class="bn__risk"><div class="bn__h">Risk</div><p><span class="bn__title">No Indian power-semiconductor fab</span>Every IGBT/SiC device in an Indian PCS is imported; CG Semi is OSAT assembly/test; Dholera makes logic, not power; a fab is 3–5+ years and US$1–5 bn away. Resilience: critical.</p></div>
-      <div class="bn__opp"><div class="bn__h">Opportunity</div><p><span class="bn__title">OSAT today, fab tomorrow</span>CG Semi's Sanand OSAT (Jul-2026) is the first step; the India Semiconductor Mission and power-device demand make a domestic device line the logical next node.</p></div>
+      <div class="bn__risk"><div class="bn__h">Risk</div><p><span class="bn__title">No power-device fab</span>India makes none of the 1200&ndash;1700 V IGBT or SiC modules inside a PCS; 100% of power valves and about 90% of wide-bandgap devices are imported. CG Semi is assembly and test. Resilience: years.</p></div>
+      <div class="bn__opp"><div class="bn__h">Opportunity</div><p><span class="bn__title">OSAT today, fab tomorrow</span>Five ISM units are in commercial operation and Semicon 2.0 carries ₹1,27,500 crore. The step from OSAT to a discrete power line is smaller than to a logic fab, and CDIL already runs Si and SiC discrete production at Mohali.</p></div>
     </div>
     <div class="bn">
-      <div class="bn__risk"><div class="bn__h">Risk</div><p><span class="bn__title">Grid-forming control IP</span>GFM (VSM, droop, synthetic inertia, black-start) IP is held by SMA, GE Vernova, Sungrow and Tesla; Indian competence is nascent. Resilience: high.</p></div>
-      <div class="bn__opp"><div class="bn__h">Opportunity</div><p><span class="bn__title">The CEA mandate creates a market</span>Making grid-forming PCS mandatory from Jul-2027 creates a captive domestic market for whoever builds the control stack locally.</p></div>
+      <div class="bn__risk"><div class="bn__h">Risk</div><p><span class="bn__title">Utility-scale price competition</span>Chinese suppliers held 85.5% of central-inverter shipments in Q1 2026, and Indian-made battery components cost 18&ndash;61% more than imported equivalents. On an unsubsidised bid, the imported PCS wins on price. Resilience: structural.</p></div>
+      <div class="bn__opp"><div class="bn__h">Opportunity</div><p><span class="bn__title">The 40% DCR is a price umbrella</span>The Nov-2026 VGF scheme makes 40% domestic content a condition of support on 30 GWh of BESS. Localising the 60% of PCS value that is not silicon &mdash; magnetics, busbars, sheet metal, harness, assembly labour &mdash; is the fastest route to a compliant bill of materials.</p></div>
     </div>
     <div class="bn">
-      <div class="bn__risk"><div class="bn__h">Risk</div><p><span class="bn__title">Magnetics & film capacitors</span>Magnetics materials and DC-link film capacitors are largely imported; domestic quality/scale is a work in progress. Resilience: medium-high.</p></div>
-      <div class="bn__opp"><div class="bn__h">Opportunity</div><p><span class="bn__title">Passive localisation</span>Rising PCS volume plus the ≥60% localisation draft pull passive-component and magnetics manufacturing into India.</p></div>
+      <div class="bn__risk"><div class="bn__h">Risk</div><p><span class="bn__title">Grid-forming at plant scale</span>The CEA draft would require grid-forming control on every BESS PCS from 01-Jul-2027, and the CEA advisory already asks for stability at short-circuit ratios at or below 2.0 with response inside 5&ndash;30 ms. Indian capability is proven at 1&ndash;2 MW units, not at 100 MW plants. Resilience: months to years.</p></div>
+      <div class="bn__opp"><div class="bn__h">Opportunity</div><p><span class="bn__title">A mandate that creates the market</span>If the draft is notified, every BESS PCS sold in India needs compliant firmware and a validation report &mdash; a services and IP pool with almost no capex. Statcon and Ador hold unit-level capability; the plant controller is the open position.</p></div>
     </div>
     <div class="bn">
-      <div class="bn__risk"><div class="bn__h">Risk</div><p><span class="bn__title">Central PCS & silicon-import cost</span>Central inverters >1 MW and SiC platforms are imported; long-term BESS duty deferment can disadvantage domestic integrators. Resilience: high.</p></div>
-      <div class="bn__opp"><div class="bn__h">Opportunity</div><p><span class="bn__title">Localisation policy</span>The ≥60% PCS/EMS localisation draft and the 20% DCR route procurement to domestic builders; six Chinese firms may only participate via JVs.</p></div>
+      <div class="bn__risk"><div class="bn__h">Risk</div><p><span class="bn__title">Passives and cores</span>DC-link polypropylene film capacitors and nanocrystalline or ferrite cores are imported, small in value but long in qualification; a substituted part re-opens the PCS type test. Resilience: months.</p></div>
+      <div class="bn__opp"><div class="bn__h">Opportunity</div><p><span class="bn__title">A ₹100&ndash;200 crore localisation</span>A 1000&ndash;1500 V DC-link film line and a wound-core line are small-ticket projects by fab standards, and both feed inverters, EV chargers and drives at once, not only BESS.</p></div>
     </div>
-
-    <div class="callout animate" style="--i:7">
-      <strong>Deepest hidden dependency:</strong> the power semiconductor itself — India can assemble a PCS cabinet but makes none of the IGBT/SiC devices or the grid-forming control IP inside it, so the two highest-value, hardest-to-copy layers remain entirely foreign.
+    <div class="bn">
+      <div class="bn__risk"><div class="bn__h">Risk</div><p><span class="bn__title">Certification and test capacity</span>BIS and BEE compliance plus the CEA BESS standards from 01-Apr-2027 (PCS efficiency ≥95%, AC-AC round-trip ≥70%) require MW-class test bays and grid simulators; few exist in India and queues stretch lead times. Resilience: months.</p></div>
+      <div class="bn__opp"><div class="bn__h">Opportunity</div><p><span class="bn__title">Test bay as a service</span>A shared grid-forming validation facility would serve every PCS vendor in the country and is the sort of asset a listed BoS player could host at a regulated return.</p></div>
     </div>
   </section>
 
-    <!-- 06 VALUE POOLS & COST WATERFALL -->
-  <section class="animate" style="--i:8">
+  <section class="animate" style="--i:7">
     <div class="sec-head">
       <span class="sec-num">06</span>
       <span class="sec-title">Value pools &amp; cost waterfall</span>
-      <span class="sec-note">where value is captured &middot; and which pool leaks to imports</span>
+      <span class="sec-note">scope-matched, not averaged</span>
     </div>
-    <div class="digest">
-      <div class="digest__item"><div class="digest__h">Where value is captured</div><ul><li>PCS hardware &mdash; Hitachi Energy India, ABB India, CG Power, Servotech, Waaree, Vikram, Premier.</li><li>Power semiconductors &mdash; the pool that leaks entirely; CG Semi (CGPOWER) is the only listed OSAT exposure.</li><li>Grid-forming firmware &mdash; foreign IP today, a localisation frontier.</li><li>Inverter-duty transformers &amp; switchgear &mdash; a domestic oligopoly (CG Power, Hitachi Energy).</li></ul></div>
-      <div class="digest__item"><div class="digest__h">Who captures it (India-listed)</div><ul><li>[UNAVAILABLE — no listed company in the selected universe on this entry; see coverage gaps.]</li></ul></div>
-      <div class="digest__item"><div class="digest__h">Pools that leak to imports</div><ul><li>No listed pure-play for IGBT/SiC devices or grid-forming control IP; Ador, Statcon, Wattpower, Delta-India are unlisted.</li></ul></div>
+    <div class="table-wrap">
+      <div class="table-scroll">
+        <table class="data">
+          <thead>
+            <tr><th>PCS share estimate</th><th>Scope it is measured on</th><th>Date and source</th></tr>
+          </thead>
+          <tbody>
+<tr><td>11&ndash;13.5%</td><td>Complete AC-turnkey utility project, 220 kV interconnect</td><td>Nov-2026 &middot; Ultrathone</td></tr>
+<tr><td>12&ndash;16%</td><td>BESS capex at ₹16&ndash;23 lakh/MWh</td><td>Jun-2026 &middot; IISE guide</td></tr>
+<tr><td>8&ndash;15%</td><td>Container system, ex-works</td><td>Oct-2026 &middot; SuproBESS</td></tr>
+<tr><td>18&ndash;22%</td><td>Total project capex, including EPC</td><td>Sep-2026 &middot; CLN Energy</td></tr>
+<tr><td>~10%</td><td>Core equipment stack, PCS plus EMS, at US$75/kWh</td><td>Ember, &ldquo;How cheap is BESS&rdquo;</td></tr>
+          </tbody>
+        </table>
+      </div>
     </div>
-      <section class="animate" style="--i:9">
+    <p class="footnote">The five figures are not interchangeable: the denominator changes from container to project. Read as a band, the PCS is 8&ndash;22% of whatever is being measured, and the earlier single-point &ldquo;~15%&rdquo; hid that spread. [CONFLICTING DATA &mdash; scopes differ by design, not by error.]</p>
+    <div class="table-wrap">
+      <div class="table-scroll">
+        <table class="data">
+          <thead>
+            <tr><th>Ranked pool, 2-hour utility BESS in India</th><th>Share</th><th>Who keeps it</th></tr>
+          </thead>
+          <tbody>
+<tr><td>Battery cells and DC blocks</td><td>52&ndash;55% of ex-works DC system</td><td>Imported cells; Indian cell capacity is ~2 GWh against 180&ndash;220 GWh of announced container assembly</td></tr>
+<tr><td>Balance of system &mdash; structure, BMS, thermal, fire, cabling</td><td>24&ndash;28% of ex-works</td><td>Partly Indian: enclosures, HVAC and fire suppression localise; BMS silicon does not</td></tr>
+<tr><td>EPC, civil and commissioning</td><td>25&ndash;40% on top of equipment</td><td>Domestic, competed, thin margin</td></tr>
+<tr><td>PCS and EMS</td><td>11&ndash;13.5% of AC turnkey</td><td>Split: cabinet domestic, devices and plant firmware foreign</td></tr>
+<tr><td>MV/HV grid interface &mdash; transformer, switchgear, protection</td><td>[UNAVAILABLE] as a share</td><td>Domestic oligopoly; the listed pool with the clearest margin</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <p class="footnote">AC turnkey runs US$125&ndash;155/kWh against US$75&ndash;88/kWh for the DC enclosure, so roughly 40% of project cost sits on the AC side where the PCS, transformer and switchgear live [CALCULATED]. Value capture does not track that: the device layer earns a higher share of operating profit than the assembly step India performs, which is why the PCS rank falls in the value-capture table even as its revenue pool grows.</p>
+  </section>
+
+  <section class="animate" style="--i:8">
     <div class="sec-head">
       <span class="sec-num">07</span>
       <span class="sec-title">Industry scorecard</span>
       <span class="sec-note">nine categories &middot; 1 very unattractive &rarr; 5 highly attractive &middot; missing evidence shown as UNAVAILABLE</span>
     </div>
-    <div class="scorecard"><div class="scorecard__group scorecard__group--structural"><div class="scorecard__h"><b>Structural attractiveness</b><span class="sc-total">61.4 / 100</span></div><div class="sc-row"><div><div class="sc-name">economics<span class="sc-wt">20%</span></div><div class="sc-basis">Value growth (33% a year) trails capacity growth (~95%) because per-kWh pricing falls 8–12% annually, so volume players earn and pure-play hardware vendors face margin compression; domestic assembly is viable but not a margin pool.</div></div><span class="sc-val">3</span></div><div class="sc-row"><div><div class="sc-name">opportunity<span class="sc-wt">15%</span></div><div class="sc-basis">India BESS grows from US$1.5 bn in 2025 to US$7.5 bn by 2030 at a 33% value CAGR, inside a CEA requirement of 208 GWh of storage by 2030 with 35.8 GWh already under construction; the PCS slice is 15–25% of utility-scale hardware capex, and a draft MNRE rule would reserve 60% localisation of PCS/EMS for domestic makers from 2027.</div></div><span class="sc-val">4</span></div><div class="sc-row"><div><div class="sc-name">competitive<span class="sc-wt">15%</span></div><div class="sc-basis">PCS assembly is contested by listed majors (Hitachi Energy India, ABB India, CG Power) and unlisted specialists (Delta-India, Statcon, Ador, Wattpower), while the device layer is a foreign oligopoly (Infineon, onsemi, Mitsubishi, Fuji, TI); grid-forming firmware is held abroad, so domestic competition is real but sits below the value.</div></div><span class="sc-val">3</span></div><div class="sc-row"><div><div class="sc-name">value_chain<span class="sc-wt">10%</span></div><div class="sc-basis">India assembles string PCS but has no IGBT or SiC power-device fab (CG Semi is OSAT only), and magnetics cores, DC-link film capacitors, gate-driver ICs, DSP/MCU and grid-forming control IP are all imported — the value leaks almost entirely at the silicon and firmware layers.</div></div><span class="sc-val">2</span></div><div class="sc-row"><div><div class="sc-name">capital<span class="sc-wt">5%</span></div><div class="sc-basis">PCS assembly is far less capital-intensive than cell manufacturing, but grid-forming firmware development, certification and utility-scale test capability require sustained R&amp;amp;D, and central PCS above 1 MW remains an import until local platforms mature.</div></div><span class="sc-val">3</span></div><div class="sc-row"><div><div class="sc-name">technology<span class="sc-wt">5%</span></div><div class="sc-basis">The transition from silicon IGBT to SiC MOSFET and from grid-following to grid-forming control is the defining technology axis, and India is a follower on both — localisation is a component-by-component process expected to take two to three years.</div></div><span class="sc-val">3</span></div></div><div class="scorecard__group scorecard__group--current"><div class="scorecard__h"><b>Current opportunity</b><span class="sc-total">80.0 / 100</span></div><div class="sc-row"><div><div class="sc-name">cycle<span class="sc-wt">15%</span></div><div class="sc-basis">At a clear inflection: the contracted pipeline multiplied fivefold to 92 GWh in 2025, 102 GWh of fresh tenders were issued, tariffs reached commercially viable levels, and commissioning rather than policy is now the binding constraint.</div></div><span class="sc-val">4</span></div><div class="sc-row"><div><div class="sc-name">valuation<span class="sc-wt">15%</span></div><div class="sc-basis">No industry-level valuation series is carried in the registry for the PCS or BESS-equipment layer; company multiples are not an industry multiple.</div></div><span class="sc-val sc-val--null">UNAVAILABLE</span></div></div><div class="scorecard__group scorecard__group--risk"><div class="scorecard__h"><b>Risk &amp; resilience</b><span class="sc-total">&mdash;</span></div><div class="sc-row"><div><div class="sc-name">risk<span class="sc-wt">no weight</span></div><div class="sc-basis">Demand depends on two unfinalised instruments (the CEA grid-forming mandate and the MNRE localisation draft), the device layer is import-gated, and pre-approved Chinese JV partners add execution and policy risk.</div></div><span class="sc-val">2</span></div></div></div>
-    <div class="scorecard__foot"><span class="chip chip--gold">Overall 64.7 / 100</span><span class="chip">Coverage 85%</span><span class="chip">As of 2026-10-30</span></div>
+    <div class="scorecard"><div class="scorecard__group scorecard__group--structural"><div class="scorecard__h"><b>Structural attractiveness</b><span class="sc-total">57.1 / 100</span></div>
+      <div class="sc-row"><div><div class="sc-name">economics<span class="sc-wt">20%</span></div><div class="sc-basis">The PCS is a small, price-competed slice of a system whose per-kWh price keeps falling. Device-integrated makers earn 27% gross margin on storage PCS (Sineng, H1 2026) and 32% on integrated systems (Sungrow), while an Indian assembler buying imported silicon and selling into a 85.5%-Chinese central-inverter market earns far less &mdash; Hitachi Energy India itself guides BESS balance-of-plant margins below its portfolio average.</div></div><div class="sc-val">3</div></div>
+      <div class="sc-row"><div><div class="sc-name">opportunity<span class="sc-wt">15%</span></div><div class="sc-basis">13.7 GWh operates against a 411 GWh requirement by FY32, and the Nov-2026 VGF scheme alone underwrites 30 GWh of BESS with a 40% domestic-content condition. The CEA draft would put grid-forming control on 100% of BESS PCS from 01-Jul-2027 &mdash; a policy-anchored demand step, not a forecast.</div></div><div class="sc-val">4</div></div>
+      <div class="sc-row"><div><div class="sc-name">competitive<span class="sc-wt">15%</span></div><div class="sc-basis">Unattractive in the direction that matters: the supply side is a foreign oligopoly on devices and a Chinese cost leader on inverters (Sungrow, Sineng and Hopewind took 84% of central-inverter shipments in Q1 2026), while Indian assembly is fragmented and largely unlisted. Competition is fierce where margins are thin and absent where they are fat.</div></div><div class="sc-val">2</div></div>
+      <div class="sc-row"><div><div class="sc-name">value_chain<span class="sc-wt">10%</span></div><div class="sc-basis">Cabinet assembly, magnetics winding and the AC-side transformer are genuinely Indian; devices, gate drivers, film capacitors, cores and plant-level firmware are imported. The domestic share of a PCS bill of materials is real but sits below the value.</div></div><div class="sc-val">2</div></div>
+      <div class="sc-row"><div><div class="sc-name">capital<span class="sc-wt">5%</span></div><div class="sc-basis">A PCS assembly line is a ₹100&ndash;300 crore asset, not a US$1&ndash;5 bn fab, and it can be run on imported silicon &mdash; which is precisely why entry is easy and returns are competed away. The capital barrier sits one layer up, at the device line.</div></div><div class="sc-val">4</div></div>
+      <div class="sc-row"><div><div class="sc-name">technology<span class="sc-wt">5%</span></div><div class="sc-basis">Two live migrations run at once: silicon IGBT to SiC MOSFET, and grid-following to grid-forming control. India follows on both, with unit-level grid-forming capability and no device capability. SiC lead times of 12&ndash;16 weeks mean the migration is gated by supply, not by demand.</div></div><div class="sc-val">2</div></div>
+    </div><div class="scorecard__group scorecard__group--current"><div class="scorecard__h"><b>Current opportunity</b><span class="sc-total">60.0 / 100</span></div>
+      <div class="sc-row"><div><div class="sc-name">cycle<span class="sc-wt">15%</span></div><div class="sc-basis">Installations are inflecting &mdash; 13.7 GWh at Sep-2026 against a Dec-2025 base about one-seventeenth of it &mdash; but the order book is cooling: FY27 storage tendering is down 26% year-on-year, 20% of tendered capacity has been cancelled, and inverter shipments fell 35% quarter-on-quarter in Q2 2026. Early upswing in delivery, late peak in ordering.</div></div><div class="sc-val">3</div></div>
+      <div class="sc-row"><div><div class="sc-name">valuation<span class="sc-wt">15%</span></div><div class="sc-basis">No industry-level valuation series exists for Indian PCS or power-semiconductor manufacturing, and none is carried in the registry. Company multiples &mdash; including a listed grid-equipment major trading near 90&times; earnings &mdash; are company facts, not an industry valuation. [UNAVAILABLE]</div></div><div class="sc-val sc-val--null">UNAVAILABLE</div></div>
+    </div><div class="scorecard__group scorecard__group--risk"><div class="scorecard__h"><b>Risk &amp; resilience</b><span class="sc-total">2 / 5</span></div>
+      <div class="sc-row"><div><div class="sc-name">risk<span class="sc-wt">no weight</span></div><div class="sc-basis">Three gates: a device layer that is 100% imported with years-long substitution, demand that depends on two instruments not yet notified (the CEA draft and the MNRE localisation draft) plus a 40% DCR that raises input cost by 18&ndash;61%, and a cost position that loses to Chinese suppliers on any unsubsidised bid. The VGF scheme underwrites volume; it does not fix the cost gap.</div></div><div class="sc-val">2</div></div>
+    </div>
+    <div class="scorecard__foot"><span class="chip chip--gold">Overall 57.6 / 100</span><span class="chip">Coverage 85%</span><span class="chip">Evidence 3 / 5 &middot; 55% primary</span><span class="chip">Provisional &mdash; valuation unscored</span><span class="chip">As of 2026-11-07</span></div></div>
   </section>
-  <script type="application/json" class="industry-score">{"as_of": "2026-10-30", "categories": {"economics": {"score": 3, "basis": "Value growth (33% a year) trails capacity growth (~95%) because per-kWh pricing falls 8–12% annually, so volume players earn and pure-play hardware vendors face margin compression; domestic assembly is viable but not a margin pool."}, "opportunity": {"score": 4, "basis": "India BESS grows from US$1.5 bn in 2025 to US$7.5 bn by 2030 at a 33% value CAGR, inside a CEA requirement of 208 GWh of storage by 2030 with 35.8 GWh already under construction; the PCS slice is 15–25% of utility-scale hardware capex, and a draft MNRE rule would reserve 60% localisation of PCS/EMS for domestic makers from 2027."}, "competitive": {"score": 3, "basis": "PCS assembly is contested by listed majors (Hitachi Energy India, ABB India, CG Power) and unlisted specialists (Delta-India, Statcon, Ador, Wattpower), while the device layer is a foreign oligopoly (Infineon, onsemi, Mitsubishi, Fuji, TI); grid-forming firmware is held abroad, so domestic competition is real but sits below the value."}, "cycle": {"score": 4, "basis": "At a clear inflection: the contracted pipeline multiplied fivefold to 92 GWh in 2025, 102 GWh of fresh tenders were issued, tariffs reached commercially viable levels, and commissioning rather than policy is now the binding constraint."}, "valuation": {"score": null, "basis": "No industry-level valuation series is carried in the registry for the PCS or BESS-equipment layer; company multiples are not an industry multiple."}, "value_chain": {"score": 2, "basis": "India assembles string PCS but has no IGBT or SiC power-device fab (CG Semi is OSAT only), and magnetics cores, DC-link film capacitors, gate-driver ICs, DSP/MCU and grid-forming control IP are all imported — the value leaks almost entirely at the silicon and firmware layers."}, "capital": {"score": 3, "basis": "PCS assembly is far less capital-intensive than cell manufacturing, but grid-forming firmware development, certification and utility-scale test capability require sustained R&amp;D, and central PCS above 1 MW remains an import until local platforms mature."}, "technology": {"score": 3, "basis": "The transition from silicon IGBT to SiC MOSFET and from grid-following to grid-forming control is the defining technology axis, and India is a follower on both — localisation is a component-by-component process expected to take two to three years."}, "risk": {"score": 2, "basis": "Demand depends on two unfinalised instruments (the CEA grid-forming mandate and the MNRE localisation draft), the device layer is import-gated, and pre-approved Chinese JV partners add execution and policy risk."}}, "notes": "Opportunity uses the same series as the Market & growth digest block (India BESS US$1.5 bn in 2025 to US$7.5 bn in 2030 at 33% value CAGR, with the PCS slice derived at 15–25% of utility-scale hardware capex, against a CEA 208 GWh by 2030 requirement). Valuation left UNAVAILABLE — the registry carries no industry valuation series. Value capture (added 2026-11-01) scores 8 nodes taken verbatim from this page's own BOM tree and value-chain ladder, on the separate Registry Review §4 weighting (op_share 20%, pricing_power 15%, roic 15%, barriers 15%, bottleneck 10%, pool_growth 10%, cash_conversion 10%, switching 5%). It answers 'which node keeps the money' and is not blended into the industry score above.", "confidence": {"evidence": 4, "primary_source_pct": 67, "missing_critical": ["valuation"], "basis": "MECHANICAL DERIVATION from the page's own sources line, not a fresh analyst rating: 4 primary-source signals vs 2 secondary in the cited list (primary keywords: government, regulator, filings, statistics; secondary: trade press, market research, associations). missing_critical lists the categories scored null on this page."}, "value_capture": [{"node": "IGBT / SiC Power Modules", "params": {"op_share": 4, "pricing_power": 5, "roic": 3, "barriers": 5, "bottleneck": 5, "pool_growth": 4, "cash_conversion": 3, "switching": 5}, "basis": "Effectively 100% imported and named by Quality Power's management as the binding constraint on PCS output globally, not just in India. The module is the largest single cost line in a converter and the one input whose availability - not price - sets delivery schedules; a qualified domestic module would be a genuine toll on the whole chain."}, {"node": "Control & Grid-forming Firmware", "params": {"op_share": 3, "pricing_power": 5, "roic": 4, "barriers": 5, "bottleneck": 4, "pool_growth": 5, "cash_conversion": 4, "switching": 5}, "basis": "Foreign IP today, and the node policy is being written around: CSIR-NAL has pre-assessed grid-forming algorithms and black-start capability, and the MNRE draft mandate requires indigenous control software on every BESS on the Indian grid. Software is where a domestic entrant can own value without owning a fab."}, {"node": "Gate Drivers & Control ICs", "params": {"op_share": 2, "pricing_power": 4, "roic": 3, "barriers": 4, "bottleneck": 4, "pool_growth": 4, "cash_conversion": 3, "switching": 4}, "basis": "~100% imported and designed in lockstep with the module it drives, so it is rarely a standalone purchase - the switching cost is a redesign, not a re-quote."}, {"node": "PCS Manufacturing & Integration", "params": {"op_share": 4, "pricing_power": 2, "roic": 3, "barriers": 3, "bottleneck": 3, "pool_growth": 5, "cash_conversion": 3, "switching": 3}, "basis": "The node India already does, and the one that carries the revenue: PCS is 15-25% of utility-scale hardware capex, with 30-50% localisation by cost. But Quality Power guides BESS/PCS margins at 10-12% today rising to 17-18% only with scale, against Chinese suppliers (Sungrow, Sineng, Ginlong) who set the price and have raised it twice in 2026."}, {"node": "DC-link Film Capacitors", "params": {"op_share": 1, "pricing_power": 4, "roic": 3, "barriers": 4, "bottleneck": 3, "pool_growth": 4, "cash_conversion": 3, "switching": 4}, "basis": "Largely imported from a handful of European and Japanese makers; a life-limiting component whose voltage and ripple ratings decide warranty exposure, so qualification carries more weight than price and India has no equivalent production base."}, {"node": "Magnetics, Inductors & Chokes", "params": {"op_share": 1, "pricing_power": 3, "roic": 3, "barriers": 3, "bottleneck": 3, "pool_growth": 4, "cash_conversion": 3, "switching": 3}, "basis": "A small domestic industry serving commodity applications, with high-frequency magnetics for SiC/GaN designs almost entirely imported; core material supply (ferrite, nanocrystalline) is the real constraint."}, {"node": "Inverter-duty Transformer & Switchgear", "params": {"op_share": 2, "pricing_power": 2, "roic": 3, "barriers": 2, "bottleneck": 2, "pool_growth": 4, "cash_conversion": 3, "switching": 2}, "basis": "Mostly domestic and served by the established transformer and switchgear base, so it is a beneficiary of BESS volume rather than a gate on it - and the returns belong to the transformer node, not to this one."}, {"node": "Power-semiconductor OSAT / Fab", "params": {"op_share": 1, "pricing_power": 3, "roic": 2, "barriers": 5, "bottleneck": 4, "pool_growth": 5, "cash_conversion": 1, "switching": 4}, "basis": "Nascent - India has OSAT capacity coming but no power-device fab - so this is a strategic option rather than a current pool: the highest barrier and the weakest cash conversion in the chain, and the node whose absence keeps every other node import-dependent."}]}</script>
-<p class="footnote animate" style="--i:10">
-    Sources (plain): CEA draft Technical Standards for Construction (2nd Amendment) 2026 &amp; Connectivity Regulations draft (2026) &middot; MNRE draft Local Sourcing Mandate for Grid-Forming BESS (May-2026) &middot; Ministry of Power VGF / DCR directives &middot; India Semiconductor Mission approvals (2026) &middot; company filings (Hitachi Energy India, ABB India, CG Power, Servotech, Premier, Waaree, Vikram Solar) &middot; PL Capital power report (Jan-2026) &middot; trade press: pv-magazine India, Energy-Storage.News, The Battery Magazine, EQ Magazine, SMM (2026). All figures date-stamped to the analysis date; time-sensitive facts are cyclical or live and should be re-checked before use. Company mappings are evidence-based; impacts are inference unless reported.
-   <b>Backfill sources (2026-10-30):</b> CEA draft Technical Standards for Construction (2nd Amendment) and National Electricity Plan; MNRE grid-forming BESS localisation draft (May-2026); PIB release on development of battery energy storage systems (30-Mar-2026); Alora Advisory India BESS market outlook to 2030 (22-Feb-2026); Grand View Research India BESS outlook (2026); sector DPR on smart inverters for BESS (2026) for the 15–25% PCS capex share; company filings (Hitachi Energy India, ABB India, CG Power). <b>Value-capture sources (2026-11-01):</b> Quality Power Electrical Equipments Q1 FY27 call (Power Peak Digest, 16-Aug-2026) - IGBT availability the main global PCS constraint, PCS order pipeline ~USD 60 mn; Quality Power Q4 FY26 call (May-2026) - BESS/PCS margins 10-12% rising to 17-18% at scale; MNRE draft grid-forming BESS localisation mandate (22-May-2026) with CSIR-NAL pre-assessment of grid-forming algorithms; India BESS localisation review (Apr-2026) - PCS 15-25% of hardware cost, 30-50% localisation by cost; Solar Energy / Saur Energy (16-Sep-2026) - Sungrow, Sineng and Ginlong storage price increases through 2026; Zenergize (Sep-2026) - film capacitors, magnetics and high-layer PCBs import-dominated.</p>
+    <p class="footnote animate" style="--i:10">
+    Sources (plain): Union Cabinet and PMO release on the ₹14,500 crore Viability Gap Funding scheme for 92 GWh of grid-scale storage, 04-Nov-2026, with the accompanying ₹2,814 crore lithium and nickel processing scheme &middot; BW Businessworld on bidding and localisation frictions in Indian storage, 06-Nov-2026 &middot; TaiyangNews and Procupy summaries of the 40% domestic content requirement, 04-Nov-2026 &middot; Central Electricity Authority, draft Technical Standards for Construction of Electric Plants and Electric Lines (Second Amendment) Regulations 2026, published 03-Sep-2026, consultation extended from 04-Oct to 15-Oct-2026, with Regulation 106B(20) on grid-forming inverters and co-located storage &middot; PV Tech, Energetica India and REAR coverage of the CEA draft, Sep&ndash;Oct-2026 &middot; MNRE draft on 60% localisation of PCS and EMS for grid-forming BESS, May-2026 &middot; Energy-Storage.News, &ldquo;India&rsquo;s BESS ambition: from import dependence to manufacturing scale&rdquo;, 05-Oct-2026 &middot; JMK Research inverter shipment data for Q1 and Q2 2026, reported by pv magazine, 04-Jun-2026 &middot; Hitachi Energy India Q1 FY27 results and investor presentation, 07-Aug-2026 &middot; CG Power Q2 FY27 press release, 23-Oct-2026, and the NSE disclosure of CG Semi&rsquo;s G1 commercial production, 04-Jul-2026 &middot; Premier Energies Q2 FY27 results, Nov-2026 &middot; Servotech Renewable Power System investor presentation, 04-Nov-2026 &middot; pv magazine on Waaree Power&rsquo;s 4.15 GW string-inverter capacity, 05-Oct-2026 &middot; Delta Electronics India release on 110 MW of Make-in-India 1.1 MW PCS, 06-Jan-2026, and Delta Electronics (Thailand) SET filing on the Krishnagiri factory, 13-Feb-2026 &middot; EPR Magazine interview with Statcon Energiaa, 08-Sep-2026, and TaiyangNews on Ador Digatron&rsquo;s string PCS at REI 2026 &middot; India Semiconductor Mission project tracker, 07-Oct-2026 &middot; IndiaBUILD power-semiconductor valve tracker, 20-Jul-2026 &middot; Techadyant Labs import-dependency notes on discrete power MOSFETs and IGBTs, and on EV power modules &middot; Ultrathone BESS capex guide, 05-Nov-2026 &middot; IISE BESS system guide, Jun-2026 &middot; SilicIndia Energies BESS cost guide, Jun-2026 &middot; CLN Energy BESS pricing note, Sep-2026 &middot; Ember, &ldquo;How cheap is battery storage&rdquo; &middot; Autocar Professional on SiCSem and the Odisha semiconductor hub, 18-Sep-2026 &middot; Qbits Energy on BCD and ALMM treatment of inverters, Jun-2026.
+  </p>
 </div>
+
+<script type="module">
 <script type="module">
   import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
   const config = { fitPadding: 24, minHeight: 300, maxHeightPx: 900, maxHeightVh: 0.85, maxInitialZoom: 1.7, minZoom: 0.08, maxZoom: 6.5, zoomStep: 0.14, readabilityFloor: 0.55 };
@@ -312,17 +366,211 @@ graph TD
   }
   document.querySelectorAll('.diagram-shell').forEach(initDiagram);
 </script>
+</script>
 
 <script>
 const NODES = [
-  {"id": "igbt", "name": "IGBT / SiC Power Modules", "pri": "high", "bott": true, "fn": "The switching devices at the heart of the PCS (1200–1700 V IGBT; SiC for efficiency and footprint).", "importDep": "~100% imported", "conc": "Infineon/Mitsubishi/Fuji (~55–65% of high-end)", "companies": [], "gap": "NO LISTED PURE-PLAY IN INDIA (no IGBT/SiC fab).", "near": "Global suppliers Infineon, onsemi, Mitsubishi, Fuji, STMicro, Rohm, Wolfspeed; Chinese BYD Semi, StarPower. CG Semi (Sanand) is OSAT assembly/test only."},
-  {"id": "gate", "name": "Gate Drivers & Control ICs", "pri": "high", "bott": true, "fn": "Isolated gate-driver ICs and real-time DSP/MCU that drive and protect the power devices.", "importDep": "~100% imported", "conc": "Foreign oligopoly", "companies": [], "gap": "NO LISTED PURE-PLAY IN INDIA.", "near": "Infineon EiceDRIVER, TI, STMicro, ADI; TI C2000 / Infineon AURIX MCUs. Tata–PSMC Dholera (28–110 nm) will make logic/MCU, not power devices, from ~2027."},
-  {"id": "magn", "name": "Magnetics, Inductors & Chokes", "pri": "med", "bott": false, "fn": "Filter/boost inductors and line chokes (ferrite/nanocrystalline cores) that shape size, loss and EMI.", "importDep": "High import dependence", "conc": "Foreign (Bourns, TDK, Schaffner)", "companies": [], "gap": "NO LISTED PURE-PLAY IN INDIA.", "near": "Ador states sourcing magnetics materials domestically at the required quality/scale is 'still a work in progress'."},
-  {"id": "cap", "name": "DC-link Film Capacitors", "pri": "med", "bott": false, "fn": "Polypropylene film capacitors in the DC link (low ESR/ESL, self-healing, >100,000 h life).", "importDep": "Largely imported", "conc": "Foreign (TDK, Vishay, KEMET)", "companies": [], "gap": "NO LISTED PURE-PLAY IN INDIA.", "near": "Supplied by TDK, Vishay, KEMET/YAGEO, Knowles, ICEL, CRE/Xuansn; film/foil technology base is foreign."},
-  {"id": "ctrl", "name": "Control & Grid-forming Firmware", "pri": "high", "bott": true, "fn": "The control software — current/voltage loops, PLL, and the grid-forming (VSM, droop, black-start) algorithms that CEA now mandates.", "importDep": "Foreign IP", "conc": "Foreign oligopoly (SMA, GE Vernova, Sungrow)", "companies": [], "gap": "NO LISTED PURE-PLAY IN INDIA.", "near": "Grid-forming IP held by SMA, GE Vernova, Sungrow, Tesla, Fluence; Ador says Indian grid-forming/black-start expertise is 'still building'. A localisation frontier with no listed vehicle."},
-  {"id": "make", "name": "PCS Manufacturing & Integration", "pri": "med", "bott": false, "fn": "Assembling the PCS cabinet and integrating it into AC blocks — India's live, localisable value-add.", "importDep": "Assembly domestic; silicon imported", "conc": "Consolidating", "companies": [{"n": "Hitachi Energy India", "t": "NSE/BSE: POWERINDIA", "e": "direct", "m": "First India BESS order 165 MW/330 MWh (Q1FY27); says PCS 'not yet localized' [REPORTED-T1]", "ev": "Company / results"}, {"n": "ABB India", "t": "NSE/BSE: ABB", "e": "direct", "m": "PCS for BESS, utility solar inverters, wind converters; ~85% local-for-local [REPORTED-T2]", "ev": "Company / press"}, {"n": "CG Power", "t": "NSE/BSE: CGPOWER", "e": "indirect", "m": "Power electronics, drives, switchgear; adjacent to PCS [REPORTED-T2]", "ev": "Company"}, {"n": "Servotech Renewable Power System", "t": "NSE/BSE: SERVOTECH", "e": "direct", "m": "In-house PCS/BESS and inverters; 'power brains' positioning [REPORTED-T2]", "ev": "Investor presentation"}, {"n": "Waaree Energies", "t": "NSE/BSE: WAAREEENER", "e": "direct", "m": "Inverters/PCS within Waaree ESS [REPORTED-T2]", "ev": "Company / press"}, {"n": "Vikram Solar", "t": "NSE/BSE: VIKRAMSOLR", "e": "direct", "m": "'PowerHive' utility-scale storage / PCS [REPORTED-T2]", "ev": "Press"}, {"n": "Premier Energies", "t": "NSE/BSE: PREMIERENE", "e": "direct", "m": "BESS + inverters/transformers; RCT Germany JV [REPORTED-T2]", "ev": "BSE filing"}], "near": "Ador (500 kW string PCS), Statcon Energiaa, Wattpower and Delta Electronics India build PCS locally but are unlisted; Sungrow/Sineng lead on price."},
-  {"id": "acint", "name": "Inverter-duty Transformer & Switchgear", "pri": "med", "bott": false, "fn": "The AC-side step-up transformer (K-factor rated) and MV switchgear that complete the AC block.", "importDep": "Mostly domestic", "conc": "Oligopoly", "companies": [{"n": "CG Power", "t": "NSE/BSE: CGPOWER", "e": "direct", "m": "Transformers & switchgear; capacity scaling toward ~120,000 MVA [REPORTED-T2]", "ev": "Company"}, {"n": "Hitachi Energy India", "t": "NSE/BSE: POWERINDIA", "e": "direct", "m": "Transformers, GIS/AIS; ~₹2,000 cr Vadodara LPT factory (FY28) [REPORTED-T1]", "ev": "Company / press"}], "near": "ABB India, Siemens, Schneider, L&T and Ornet/Marsons/KLR are domestic; HV transformer lead times are tight globally."},
-  {"id": "osat", "name": "Power-semiconductor OSAT / Fab", "pri": "high", "bott": true, "fn": "Assembly, test and (aspirationally) fabrication of power semiconductors — the route toward a domestic device line.", "importDep": "Nascent (OSAT only)", "conc": "One listed OSAT", "companies": [{"n": "CG Power", "t": "NSE/BSE: CGPOWER", "e": "direct", "m": "CG Semi (92.3% JV with Renesas/Stars) — India's first end-to-end OSAT at Sanand; G1 production Jul-2026, G2 Oct–Nov 2027 [REPORTED-T1]", "ev": "Company / PIB"}], "near": "OSAT is assembly/test, not a power-device fab. Crystal Matrix (GaN, Dholera) and Suchi Semicon (OSAT, Surat) are ISM-approved but not power-device fabs."}
+ {
+  "id": "igbt",
+  "name": "IGBT / SiC Power Modules",
+  "pri": "high",
+  "bott": true,
+  "fn": "The switching devices at the heart of the PCS — 1200–1700 V silicon IGBT modules today, SiC MOSFET modules for higher switching frequency and smaller cabinets. Every one of them is imported.",
+  "importDep": "100% imported (no domestic device fab)",
+  "conc": "Infineon, onsemi, Mitsubishi, Fuji, ST, Rohm (~55–65% of high-end)",
+  "companies": [],
+  "gap": "NO COVERAGE IN SELECTED UNIVERSE — no listed Indian IGBT/SiC device maker exists.",
+  "near": "CG Semi (Sanand) is OSAT assembly and test only. SiCSem's silicon-carbide fab in Odisha, built with UK-based Clas-SiC, is under construction; Crystal Matrix's GaN fab at Dholera was approved in May-2026; CDIL's Mohali discrete expansion (Si and SiC MOSFETs, IGBTs, Schottky) is in commercial operation. None makes a 1200–1700 V IGBT module today."
+ },
+ {
+  "id": "gate",
+  "name": "Gate Drivers & Control ICs",
+  "pri": "high",
+  "bott": true,
+  "fn": "Isolated gate-driver ICs and the real-time DSP/MCU that close the current loop and enforce protection — the devices that decide switching loss and fault behaviour.",
+  "importDep": "~100% imported",
+  "conc": "Foreign oligopoly (Infineon, TI, ST, ADI)",
+  "companies": [],
+  "gap": "NO COVERAGE IN SELECTED UNIVERSE.",
+  "near": "Infineon EiceDRIVER, TI C2000, Infineon AURIX, ST STM32. Tata–PSMC Dholera (28–110 nm logic) will make MCU-class silicon from late 2026–2027, not power devices or isolated drivers."
+ },
+ {
+  "id": "ctrl",
+  "name": "Grid-forming Control & EMS",
+  "pri": "high",
+  "bott": true,
+  "fn": "The control layer — current and voltage loops, PLL, and the grid-forming algorithms (virtual synchronous machine, droop, synthetic inertia, black start) that the CEA now wants on every BESS PCS, plus the plant-level EMS/SCADA above it.",
+  "importDep": "Partly domestic at the string/PCS level; plant EMS imported",
+  "conc": "Fragmented in India; foreign at the utility-scale end",
+  "companies": [],
+  "gap": "NO LISTED PURE-PLAY. Grid-forming capability in India sits in unlisted firms.",
+  "near": "Statcon Energiaa has supplied PCS and grid-forming inverters for more than 11 years and claims the largest installed portfolio in India; Ador Digatron demonstrated a grid-forming string PCS at REI 2026. Utility-scale plant controllers remain SMA, GE Vernova, Sungrow, Fluence and Hitachi Energy. Indian grid-forming capability is real at 1–2 MW unit size and unproven at plant scale."
+ },
+ {
+  "id": "magn",
+  "name": "Magnetics, Inductors & Chokes",
+  "pri": "med",
+  "bott": false,
+  "fn": "Boost/filter inductors and line chokes on ferrite, powdered-iron or nanocrystalline cores — they set cabinet size, loss and EMI signature.",
+  "importDep": "Cores imported; winding domestic",
+  "conc": "Foreign cores (TDK, Hitachi Metals, Vacuumschmelze)",
+  "companies": [],
+  "gap": "NO COVERAGE IN SELECTED UNIVERSE.",
+  "near": "Domestic winding shops exist in the transformer cluster; the nanocrystalline and ferrite core material is imported. A low-barrier localisation target once volume justifies a core line."
+ },
+ {
+  "id": "cap",
+  "name": "DC-link Film Capacitors",
+  "pri": "med",
+  "bott": false,
+  "fn": "Polypropylene film capacitors across the DC link — low ESR/ESL, self-healing, >100,000 h life; a small line item that decides PCS lifetime and derating.",
+  "importDep": "Largely imported",
+  "conc": "Foreign (TDK/EPCOS, Vishay, KEMET/YAGEO, ICEL)",
+  "companies": [],
+  "gap": "NO COVERAGE IN SELECTED UNIVERSE.",
+  "near": "Metallised polypropylene film and the winding/self-healing process are foreign; Indian capacitor makers serve LV power electronics, not 1000–1500 V DC-link duty."
+ },
+ {
+  "id": "make",
+  "name": "PCS Manufacturing & Integration",
+  "pri": "high",
+  "bott": false,
+  "fn": "Building the PCS cabinet and integrating it into an AC block — magnetics, DC-link, device stacks, cooling, control boards, enclosure, factory test. India's live, contested value-add.",
+  "importDep": "Assembly domestic; silicon, cores and film imported",
+  "conc": "Fragmented in India; foreign OEMs hold utility scale",
+  "companies": [
+   {
+    "n": "Hitachi Energy India",
+    "t": "NSE/BSE: POWERINDIA",
+    "e": "direct",
+    "m": "First Indian BESS order 165 MW / 330 MWh (Q1 FY27) with a scope covering PCS, grid integration, automation and BMS software, batteries excluded; management flags BESS balance-of-plant margins below the portfolio average [REPORTED-T1]",
+    "ev": "Q1 FY27 results and concall, 07-Aug-2026"
+   },
+   {
+    "n": "ABB India",
+    "t": "NSE/BSE: ABB",
+    "e": "direct",
+    "m": "PCS for BESS, utility solar inverters and wind converters from the Bengaluru and Vadodara plants; ~85% local-for-local by value [REPORTED-T2]",
+    "ev": "Company disclosures and press"
+   },
+   {
+    "n": "Servotech Renewable Power System",
+    "t": "NSE/BSE: SERVOTECH",
+    "e": "direct",
+    "m": "In-house PCS, BESS cabinets and EV chargers; small revenue base, so the PCS share is high but the absolute pool is small [REPORTED-T2]",
+    "ev": "Investor presentation, 04-Nov-2026"
+   },
+   {
+    "n": "Waaree Energies",
+    "t": "NSE/BSE: WAAREEENER",
+    "e": "direct",
+    "m": "Waaree Power string inverter capacity raised to 4.15 GW after a 1.1 GW line at Sarodhi (05-Oct-2026); BESS containers and PCS sit inside Waaree ESS [REPORTED-T2]",
+    "ev": "Company filing and pv magazine, 05-Oct-2026"
+   },
+   {
+    "n": "Premier Energies",
+    "t": "NSE/BSE: PREMIERENE",
+    "e": "direct",
+    "m": "BESS, inverters and inverter-duty transformers; Q2 FY27 revenue +43%, PAT ₹458 crore +30% [REPORTED-T2]",
+    "ev": "Q2 FY27 results, Nov-2026"
+   },
+   {
+    "n": "Vikram Solar",
+    "t": "NSE/BSE: VIKRAMSOLR",
+    "e": "direct",
+    "m": "Utility-scale storage and PCS under the PowerHive line [REPORTED-T2]",
+    "ev": "Company and press"
+   },
+   {
+    "n": "CG Power",
+    "t": "NSE/BSE: CGPOWER",
+    "e": "indirect",
+    "m": "Drives, power electronics and switchgear adjacent to the PCS; no disclosed PCS line of its own [REPORTED-T2]",
+    "ev": "Q2 FY27 results, 23-Oct-2026"
+   }
+  ],
+  "near": "Unlisted and therefore outside the universe: Delta Electronics India, which shipped 100 units of its Make-in-India 1.1 MW bidirectional PCS (110 MW) to Prostarm in Jan-2026; Statcon Energiaa with 1.25 and 1.725 MW PCS; Ador Digatron with a 1.25 MW string PCS; Wattpower and Enertech. Sungrow, Sineng and Hopewind supply utility-scale PCS into India from China."
+ },
+ {
+  "id": "acint",
+  "name": "Inverter-duty Transformer & Switchgear",
+  "pri": "med",
+  "bott": false,
+  "fn": "The AC-side step-up transformer (K-factor rated for harmonic load) and the MV switchgear that complete the AC block — the part of the PCS package India genuinely makes.",
+  "importDep": "Mostly domestic",
+  "conc": "Domestic oligopoly plus foreign parents",
+  "companies": [
+   {
+    "n": "CG Power",
+    "t": "NSE/BSE: CGPOWER",
+    "e": "direct",
+    "m": "Transformers, switchgear and drives; Q2 FY27 consolidated sales ₹3,802 crore +30%, PAT ₹409 crore, order backlog ₹23,646 crore [REPORTED-T1]",
+    "ev": "Q2 FY27 press release, 23-Oct-2026"
+   },
+   {
+    "n": "Hitachi Energy India",
+    "t": "NSE/BSE: POWERINDIA",
+    "e": "direct",
+    "m": "Transformers, GIS/AIS and grid integration; record order backlog ₹32,222 crore at Q1 FY27, revenue +68.6% [REPORTED-T1]",
+    "ev": "Q1 FY27 results, 07-Aug-2026"
+   },
+   {
+    "n": "Siemens Energy India",
+    "t": "NSE/BSE: ENRIN",
+    "e": "direct",
+    "m": "Transformers, switchgear and grid technology; the listed Indian arm after the 2025 demerger [REPORTED-T2]",
+    "ev": "Company disclosures"
+   },
+   {
+    "n": "GE Vernova T&D India",
+    "t": "NSE/BSE: GVT&amp;D",
+    "e": "direct",
+    "m": "Transformers, GIS and HVDC equipment [REPORTED-T2]",
+    "ev": "Company disclosures"
+   },
+   {
+    "n": "Voltamp Transformers",
+    "t": "NSE/BSE: VOLTAMP",
+    "e": "direct",
+    "m": "Dry-type and oil-filled distribution and inverter-duty transformers [REPORTED-T2]",
+    "ev": "Company disclosures"
+   },
+   {
+    "n": "Shilchar Technologies",
+    "t": "NSE/BSE: SHILCHAR",
+    "e": "direct",
+    "m": "Inverter-duty and solar-duty transformers; a small-cap pure-play on the AC side of the PCS block [REPORTED-T2]",
+    "ev": "Company disclosures"
+   }
+  ],
+  "near": "ABB India, Schneider and L&amp;T also build here; HV transformer lead times remain the constraint globally, not capacity in India."
+ },
+ {
+  "id": "osat",
+  "name": "Power-module OSAT & Device Fab",
+  "pri": "high",
+  "bott": true,
+  "fn": "Assembly, test and — aspirationally — fabrication of power semiconductors: the only route from assembling PCS cabinets to owning the device inside them.",
+  "importDep": "Nascent; assembly and test only",
+  "conc": "One listed OSAT; fabs foreign",
+  "companies": [
+   {
+    "n": "CG Power",
+    "t": "NSE/BSE: CGPOWER",
+    "e": "direct",
+    "m": "CG Semi (joint venture with Renesas and Stars Microelectronics) began commercial production at its G1 OSAT in Sanand on 04-Jul-2026, peak capacity 300 million units a year; G2 qualification mid-2027 with production late 2028–2029; project cost ₹7,500 crore [REPORTED-T1]",
+    "ev": "NSE disclosure 04-Jul-2026; Q2 FY27 results"
+   },
+   {
+    "n": "Kaynes Technology",
+    "t": "NSE/BSE: KAYNES",
+    "e": "indirect",
+    "m": "Kaynes Semicon OSAT at Sanand, ₹3,300 crore, ISM-approved and in commercial operation; not a power-device line [REPORTED-T1]",
+    "ev": "ISM project tracker, 07-Oct-2026"
+   }
+  ],
+  "near": "Twelve units are approved under Semicon 1.0 and five are documented in commercial operation as of 07-Oct-2026 — Micron, CG Semi, Kaynes Semicon, CDIL's discrete expansion and Suchi Semicon — all assembly, packaging or discrete-device plants. The only silicon fab, Tata–PSMC at Dholera, is under construction. SiCSem (SiC, Odisha) and Crystal Matrix (GaN, Dholera) are the two compound-semiconductor projects that could eventually serve power conversion."
+ }
 ];
 const nodesEl = document.getElementById('mapNodes');
 const panelEl = document.getElementById('mapPanel');
@@ -387,9 +635,10 @@ PTREE.forEach((grp) => {
   wrap.appendChild(head); wrap.appendChild(body); nodesEl.appendChild(wrap);
 });
 renderPanel(NODES[0]);
+
 </script>
 
-<script>window.__MBULLETS=[["PCS and inverter share of BESS capex (10–18% across sources).", "Source: PL Capital / BESS cost studies (2026)."], ["Share of PCS power semiconductors imported — India has no IGBT/SiC fab.", "Source: industry / India Semiconductor Mission (2026)."], ["Date all BESS PCS must have grid-forming control under the CEA draft.", "Source: CEA (Sep-2026)."], ["Localisation threshold for PCS/EMS in ≥100 MW grid-forming BESS tenders under the MNRE draft.", "Source: MNRE (May-2026)."], ["Central PCS above 1 MW is still imported; string-inverter capacity is localising.", "Source: industry / trade press (2026)."]];</script>
+<script>window.__MBULLETS=[["The Nov-2026 VGF scheme ties ₹14,500 crore of support for 92 GWh of grid-scale storage (30 GWh of it batteries) to a minimum 40% domestic content requirement on BESS projects [REPORTED-T1: PMO release, 04-Nov-2026].", "It replaces a weaker regime: the Ministry of Power's Dec-2025 note asked for 20% local content plus an indigenous EMS, and MNRE's May-2026 draft asks for ≥60% localisation of PCS and EMS on ≥100 MW grid-forming projects [REPORTED-T1: MNRE draft].", "Scope: the 40% is measured on the BESS project, not on the PCS alone, so it pulls PCS, EMS and balance-of-plant content into the count without reserving any of it for a single component.", "The gap it has to bridge: a Ministry of Heavy Industries study found Indian-made battery components cost 18–61% more than imported equivalents [REPORTED-T2]."], ["India imports 100% of its thyristor and IGBT power valves and about 90% of wide-bandgap devices [REPORTED-T2: IndiaBUILD tracker, 20-Jul-2026].", "Discrete power MOSFET and IGBT imports run about US$0.80 bn a year, sourced from Germany (35%), Japan (25%) and the USA (20%) [REPORTED-T3: Techadyant Labs].", "CG Semi's Sanand OSAT is assembly and test, not fabrication; the five ISM units in commercial operation are all packaging or discrete plants [REPORTED-T1: ISM tracker, 07-Oct-2026].", "The nearest device fab is SiCSem's silicon-carbide line in Odisha, under construction, and Crystal Matrix's GaN fab at Dholera, approved May-2026."], ["Delta Electronics India shipped 100 units of a Make-in-India 1.1 MW bidirectional PCS (110 MW) to Prostarm in Jan-2026 [REPORTED-T1: company release, 06-Jan-2026].", "Statcon Energiaa lists 1.25 MW and 1.725 MW PCS units with grid-forming control and has supplied them for over 11 years; Ador Digatron showed a 1.25 MW grid-forming string PCS at REI 2026 [REPORTED-T2].", "So the earlier reading that central-class PCS above 1 MW is not made in India was wrong: it is made, by unlisted firms. The import dependence is in the silicon, the cores and the film capacitors, not in the cabinet.", "What is not made in India: 1200–1700 V IGBT modules, isolated gate drivers, DC-link film capacitors and utility-scale plant controllers."], ["PCS share of BESS cost, by scope: 11–13.5% of a complete AC-turnkey project (Nov-2026); 8–15% of container ex-works cost (Oct-2026); 12–16% of BESS capex at ₹16–23 lakh/MWh (Jun-2026); 18–22% of total project capex (Sep-2026); about 10% of a US$75/kWh core-equipment stack once EMS is included (Ember) [CONFLICTING DATA — the scopes differ, so the figures are not interchangeable].", "Arithmetic check: AC turnkey runs US$125–155/kWh against US$75–88/kWh for the DC enclosure, so the AC-side share is roughly 40% of project cost and a 12% PCS share of that is about 5% of the DC block's price per kWh.", "Value capture does not follow the physical share: the device and firmware layers above the PCS take a larger share of operating profit than the assembly step that India performs."], ["Five-year value CAGR: (7.5 ÷ 1.5)^(1/5) − 1 = 38.0%, from a US$1.5 bn Indian BESS market in 2025 to US$7.5 bn in 2030, nominal [CALCULATED from the sourced endpoints; the underlying survey is Alora Advisory].", "Scope: grid-connected and behind-the-meter storage including hardware, installation, software and services; excludes residential and EV-embedded storage. A narrower non-utility series runs US$461.6 mn (2024) to US$2,430.5 mn (2030) [REPORTED-T2: Grand View Research].", "Three-year value and volume growth are [UNAVAILABLE]: no scope-matched 2023–2026 installed series was retrieved. The last-year volume move is real — 13.7 GWh operating in Sep-2026, about 17× the Dec-2025 base, heading to roughly 20 GWh by end-FY26 [REPORTED-T2: Energy-Storage.News, 05-Oct-2026].", "Price versus volume: the government's own pipeline implies capacity growing far faster than value, because per-kWh prices keep falling; the PCS pool grows with MW, not with MWh, so it is less exposed to that deflation than the cell pool."]];</script>
 
 <div class="metric-modal" id="regMetricModal" hidden>
   <div class="metric-modal__backdrop" data-close></div>
@@ -410,11 +659,188 @@ renderPanel(NODES[0]);
   var v = document.getElementById('rmVal'), l = document.getElementById('rmLabel'), ul = document.getElementById('rmBullets');
   function val(el,s){ var n = el.querySelector(s); return n ? n.textContent.trim() : ''; }
   function close(){ modal.hidden = true; }
-  function open(card, i){ v.textContent = val(card, '.metric-card__val'); var sub = val(card, '.metric-card__sub'); l.textContent = val(card, '.metric-card__label') + (sub ? ' — ' + sub : ''); ul.innerHTML = (B[i] || []).map(function(x){ return '<li>' + x + '</li>'; }).join(''); modal.hidden = false; }
-  [].slice.call(document.querySelectorAll('.metric-card')).forEach(function(el, i){ el.setAttribute('role','button'); el.setAttribute('tabindex','0'); el.addEventListener('click', function(){ open(el, i); }); el.addEventListener('keydown', function(e){ if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(el, i); } }); });
+  function open(card, i){
+    v.textContent = val(card, '.metric-card__val');
+    var sub = val(card, '.metric-card__sub');
+    l.textContent = val(card, '.metric-card__label') + (sub ? ' — ' + sub : '');
+    ul.innerHTML = (B[i] || []).map(function(x){ return '<li>' + x + '</li>'; }).join('');
+    modal.hidden = false;
+  }
+  [].slice.call(document.querySelectorAll('.metric-card')).forEach(function(el, i){
+    el.setAttribute('role','button'); el.setAttribute('tabindex','0');
+    el.addEventListener('click', function(){ open(el, i); });
+    el.addEventListener('keydown', function(e){ if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(el, i); } });
+  });
   [].slice.call(modal.querySelectorAll('[data-close]')).forEach(function(el){ el.addEventListener('click', close); });
   document.addEventListener('keydown', function(e){ if (e.key === 'Escape') close(); });
 })();
 </script>
+
+<script type="application/json" class="industry-score">{
+  "as_of": "2026-11-07",
+  "categories": {
+    "economics": {
+      "score": 3,
+      "basis": "The PCS is an 8-22% slice of BESS cost depending on scope, inside a system whose per-kWh price keeps falling. Device-integrated makers earn 27.05% gross margin on storage PCS (Sineng, H1 2026) and 32.43% on integrated systems (Sungrow) while Kehua earns 21.81%; an Indian assembler buying imported silicon and selling against Chinese cost leaders earns far less, and Hitachi Energy India guides BESS balance-of-plant margins below its portfolio average."
+    },
+    "opportunity": {
+      "score": 4,
+      "basis": "13.7 GWh operates at Sep-2026 against a 411 GWh requirement by FY31-32; the Nov-2026 VGF scheme underwrites 30 GWh of BESS with a 40% domestic content condition, and the CEA draft would put grid-forming control on 100% of BESS PCS from 01-Jul-2027. Demand is policy-anchored rather than forecast."
+    },
+    "competitive": {
+      "score": 2,
+      "basis": "Unattractive structure: a foreign oligopoly on devices (Infineon, onsemi, Mitsubishi, Fuji, ST, Rohm) and Chinese cost leadership on inverters (Sungrow, Sineng and Hopewind took 84% of central-inverter shipments in Q1 2026; Chinese firms held 85.5% in the same quarter), against fragmented, largely unlisted Indian assembly. Competition is intense where margins are thin and absent where they are fat."
+    },
+    "cycle": {
+      "score": 3,
+      "basis": "Delivery is inflecting - 13.7 GWh at Sep-2026 against a Dec-2025 base about one-seventeenth of it - but ordering is cooling: FY27 storage tendering down 26% year-on-year, 20% of tendered capacity cancelled, and inverter shipments down 35% quarter-on-quarter in Q2 2026. Early upswing in delivery, late peak in ordering."
+    },
+    "valuation": {
+      "score": null,
+      "basis": "No industry-level valuation series exists for Indian PCS or power-semiconductor manufacturing and none is carried in the registry. Company multiples are company facts, not an industry valuation. [UNAVAILABLE]"
+    },
+    "value_chain": {
+      "score": 2,
+      "basis": "Cabinet assembly, magnetics winding and the AC-side transformer are Indian; 1200-1700 V IGBT and SiC modules, isolated gate drivers, DC-link film capacitors, nanocrystalline cores and plant-level firmware are imported. India holds the volume layer and not the margin layer."
+    },
+    "capital": {
+      "score": 4,
+      "basis": "A PCS assembly line is a low-hundred-crore asset that can run on imported silicon, so capital is not the barrier to entry - which is why entry is crowded and returns are competed away. The capital barrier sits one layer up, at a device line costing US$1-5 bn."
+    },
+    "technology": {
+      "score": 2,
+      "basis": "Two migrations run at once - silicon IGBT to SiC MOSFET, and grid-following to grid-forming control - and India follows on both: unit-level grid-forming capability (Statcon, Ador) but no device capability, with SiC module lead times of 12-16 weeks gating the transition."
+    },
+    "risk": {
+      "score": 2,
+      "basis": "Three gates: a device layer 100% imported with years-long substitution; demand resting on instruments not yet notified (CEA draft, MNRE localisation draft) plus a 40% DCR that raises input cost 18-61% on the MHI estimate; and a cost position that loses to Chinese suppliers on any unsubsidised bid. VGF underwrites volume, not competitiveness."
+    }
+  },
+  "confidence": {
+    "evidence": 3,
+    "primary_source_pct": 55,
+    "missing_critical": [
+      "a surveyed value figure for the Indian PCS market in rupees or dollars (all estimates here are shares of a BESS envelope, not a PCS series)",
+      "segment revenue disclosure splitting PCS or inverter revenue from transformers and switchgear at the listed companies",
+      "import value of IGBT and SiC modules by HS line for India, to size the leaking device pool directly",
+      "ex-works price per kW of Indian-made versus imported central PCS at matched scope"
+    ]
+  },
+  "value_capture": [
+    {
+      "node": "IGBT / SiC Power Modules",
+      "params": {
+        "op_share": 5,
+        "pricing_power": 5,
+        "roic": 3,
+        "barriers": 5,
+        "bottleneck": 5,
+        "pool_growth": 4,
+        "cash_conversion": 3,
+        "switching": 5
+      },
+      "basis": "The largest operating-profit pool in the chain and 100% imported: a five-firm oligopoly with 2,550 HHI, SiC lead times of 12-16 weeks and requalification cost on any substitute. Rated up on pricing power because the Nov-2026 DCR and the CEA mandate both increase device content per project without adding a domestic supplier."
+    },
+    {
+      "node": "Grid-forming Control & EMS",
+      "params": {
+        "op_share": 3,
+        "pricing_power": 5,
+        "roic": 5,
+        "barriers": 5,
+        "bottleneck": 4,
+        "pool_growth": 5,
+        "cash_conversion": 4,
+        "switching": 5
+      },
+      "basis": "Software and IP with almost no capital: if the CEA draft is notified, every BESS PCS sold in India needs compliant firmware and a validation report from 01-Jul-2027. Highest return on capital in the chain; the constraint is that Indian capability sits in unlisted firms."
+    },
+    {
+      "node": "Inverter-duty Transformer & Switchgear",
+      "params": {
+        "op_share": 4,
+        "pricing_power": 3,
+        "roic": 4,
+        "barriers": 3,
+        "bottleneck": 2,
+        "pool_growth": 4,
+        "cash_conversion": 3,
+        "switching": 3
+      },
+      "basis": "Rated up sharply: this is the part of the PCS AC block India makes competitively, and it is where the listed pool earns. CG Power posted Q2 FY27 sales of Rs 3,802 crore (+30%) with a Rs 23,646 crore backlog and Hitachi Energy India a Rs 32,222 crore backlog - transformer and switchgear scarcity, not PCS scarcity, is doing the pricing."
+    },
+    {
+      "node": "Gate Drivers & Control ICs",
+      "params": {
+        "op_share": 2,
+        "pricing_power": 4,
+        "roic": 3,
+        "barriers": 4,
+        "bottleneck": 4,
+        "pool_growth": 4,
+        "cash_conversion": 3,
+        "switching": 4
+      },
+      "basis": "Small revenue share but a genuine single-point dependency: an isolated gate driver cannot be swapped without retesting the whole power stack. Foreign oligopoly, no Indian option."
+    },
+    {
+      "node": "DC-link Film Capacitors",
+      "params": {
+        "op_share": 1,
+        "pricing_power": 4,
+        "roic": 3,
+        "barriers": 4,
+        "bottleneck": 3,
+        "pool_growth": 4,
+        "cash_conversion": 3,
+        "switching": 4
+      },
+      "basis": "Negligible revenue share, high switching cost, and a qualification cycle that makes it sticky. A plausible first localisation for a passive-components maker."
+    },
+    {
+      "node": "Magnetics, Inductors & Chokes",
+      "params": {
+        "op_share": 2,
+        "pricing_power": 3,
+        "roic": 3,
+        "barriers": 3,
+        "bottleneck": 3,
+        "pool_growth": 4,
+        "cash_conversion": 3,
+        "switching": 3
+      },
+      "basis": "Rated up: winding is already domestic and the DCR creates demand for documented local content, but the core material is imported and pricing power is limited by commodity copper."
+    },
+    {
+      "node": "PCS Manufacturing & Integration",
+      "params": {
+        "op_share": 3,
+        "pricing_power": 2,
+        "roic": 3,
+        "barriers": 2,
+        "bottleneck": 2,
+        "pool_growth": 5,
+        "cash_conversion": 2,
+        "switching": 2
+      },
+      "basis": "Rated down: the pool grows fastest and is where the listed names sit, but the new evidence is that central-class PCS to 1.25 MW is already built in India by unlisted firms (Delta 1.1 MW, Statcon 1.25 and 1.725 MW, Ador 1.25 MW), so the barrier is lower than assumed and the price competition harder - 85.5% of central-inverter shipments were Chinese in Q1 2026."
+    },
+    {
+      "node": "Power-module OSAT",
+      "params": {
+        "op_share": 2,
+        "pricing_power": 2,
+        "roic": 2,
+        "barriers": 4,
+        "bottleneck": 3,
+        "pool_growth": 5,
+        "cash_conversion": 1,
+        "switching": 2
+      },
+      "basis": "Rated down: CG Semi G1 is in commercial production at 300 million units a year, but G2 qualification has slipped to mid-2027 with production late 2028-2029, the pool is assembly and test rather than fabrication, and the cash cycle on a Rs 7,500 crore project is punishing against a small revenue base."
+    }
+  ],
+  "notes": "Re-run 2026-11-07 against the 2026-10-09 entry. Three things moved the score. First, the Nov-2026 VGF scheme puts 40% domestic content on 30 GWh of BESS, replacing a 20% local-content note and the still-draft 60% MNRE proposal - a firmer demand underwriting, hence opportunity held at 4. Second, evidence that central PCS above 1 MW is already made in India (Delta, Statcon, Ador) cut the assumed barrier and pushed competitive from 3 to 2 and PCS integration down the value-capture table. Third, the order book cooled - FY27 tendering down 26%, a fifth of tendered capacity cancelled, inverter shipments down 35% QoQ - moving cycle from 4 to 3. Capital was raised from 3 to 4 because the assembly step is cheap to enter, which is a statement about barriers, not about returns. Overall falls from 64.7 to 57.6 on 85% coverage; valuation remains unscored and the score is provisional."
+}</script>
 </body>
 </html>
