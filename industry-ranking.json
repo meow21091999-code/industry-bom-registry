@@ -10542,7 +10542,7 @@
    "title": "India Rare-Earth Magnets",
    "group": "Robotics & Automation",
    "scored": true,
-   "as_of": "2026-11-02",
+   "as_of": "2026-11-09",
    "categories": {
     "economics": {
      "name": "Industry economics & value creation",
@@ -10566,7 +10566,7 @@
      "lens": "structural",
      "score": 3,
      "from": "category",
-     "basis": "Today the market is a 93%-China import monopoly with IREL the sole domestic oxide supplier; the scheme deliberately creates a five-player domestic structure capped at 1,200 MTPA each, so concentration is being designed in rather than competed away."
+     "basis": "Today the market is a 93%-China import monopoly with IREL the sole domestic oxide supplier; the scheme deliberately creates a five-player domestic structure capped at 1,200 MTPA each, so concentration is being designed in rather than competed away. The 9-Nov-2026 financial bids sharpen that picture: 16 bidders chased five slots and cleared at nil to &#8377;505/kg against a &#8377;2,150/kg ceiling, so the sales-linked rent per kilogram will be a fraction of the outlay and the five winners will be competing on magnet price rather than on subsidy."
     },
     "cycle": {
      "name": "Current opportunity & cycle position",
@@ -10614,7 +10614,7 @@
      "lens": "risk",
      "score": 1,
      "from": "category",
-     "basis": "China’s April-2025 export controls already stopped Indian production lines with two to three weeks of stock, price undercutting is documented, the beneficiary award is still pending (not notified as of 27-Oct-2026), and the whole case rests on one scheme that has not yet delivered a tonne. Score held at 1 on the 2026-11-02 delta pass — it is already the floor — but the dated regime risk sharpened: the suspension of China’s October-2025 package (Announcements 55–58, 61, 62, including the 0.1% foreign-content rule) lapses on 10-Nov-2026 with no extension notice published as of 31-Oct-2026, while Announcement 18 of Apr-2025 was never suspended."
+     "basis": "China’s April-2025 export controls already stopped Indian production lines with two to three weeks of stock, price undercutting is documented, the beneficiary award is still pending (financial bids opened, award not notified as of 9-Nov-2026), and the whole case rests on one scheme that has not yet delivered a tonne. Score held at 1 on the 2026-11-02 delta pass — it is already the floor — but the dated regime risk sharpened: the suspension of China’s October-2025 package (Announcements 55–58, 61, 62, including the 0.1% foreign-content rule) lapses on 10-Nov-2026 with no extension notice published as of 31-Oct-2026, while Announcement 18 of Apr-2025 was never suspended."
     }
    },
    "structural": {
@@ -10639,7 +10639,7 @@
    "value_capture": [
     {
      "node": "Sintered NdFeB Magnets",
-     "basis": "The node the whole chain exists to make and the highest-value item in a motor BOM, but India's output is zero until the first integrated plant lands around 2028, so the pool is captured abroad today. Pricing is the weak leg: finished REPMs are about 43% costlier in India than international prices, and the scheme's sales-linked incentive (capped ₹2,150/kg, 40% of turnover) is what closes that gap rather than any market power. Demand is not the constraint — MHI's own 2030 requirement is 8,220 t against nil domestic output.",
+     "basis": "The node the whole chain exists to make and the highest-value item in a motor BOM, but India's output is zero until the first integrated plant lands around 2028, so the pool is captured abroad today. Parameters left unchanged on the 2026-11-09 delta pass: the financial bids clearing at nil-&#8377;505/kg against a &#8377;2,150/kg ceiling mean the incentive transfers far less rent than the ceiling implies, so the node's economics rest on magnet pricing rather than subsidy - which the existing roic of 2 already assumes. Pricing is the weak leg: finished REPMs are about 43% costlier in India than international prices, and the scheme's sales-linked incentive (capped ₹2,150/kg, 40% of turnover) is what closes that gap rather than any market power. Demand is not the constraint — MHI's own 2030 requirement is 8,220 t against nil domestic output.",
      "params": {
       "op_share": 5,
       "pricing_power": 3,
@@ -12093,7 +12093,7 @@
    "title": "India Satellite Services & Data",
    "group": "Space & Satellites",
    "scored": true,
-   "as_of": "2026-10-31",
+   "as_of": "2026-11-09",
    "categories": {
     "economics": {
      "name": "Industry economics & value creation",
@@ -12181,8 +12181,8 @@
    "overall": 56.5,
    "coverage": 85,
    "confidence": {
-    "evidence": 3,
-    "primary_source_pct": 45,
+    "evidence": 4,
+    "primary_source_pct": 50,
     "missing_critical": [
      "realised satcom service revenue",
      "operator ARPU and margins",
@@ -13495,7 +13495,7 @@
    "title": "Solar Cell Fabrication",
    "group": "Renewable Energy",
    "scored": true,
-   "as_of": "2026-10-30",
+   "as_of": "2026-11-09",
    "categories": {
     "economics": {
      "name": "Industry economics & value creation",
@@ -13567,7 +13567,7 @@
      "lens": "risk",
      "score": 2,
      "from": "category",
-     "basis": "US AD ~123% / CVD ~126% on Indian cells, >99% wafer dependence on China, and a demand floor that rests on ALCM thresholds, the 31-Dec-2026 net-metering cut-off and exemption decisions."
+     "basis": "US AD ~123% / CVD ~126% on Indian cells in force since 9-Nov-2026, >99% wafer dependence on China, and a demand floor that rests on ALCM thresholds, the 31-Dec-2026 net-metering cut-off and exemption decisions."
     }
    },
    "structural": {
@@ -13584,7 +13584,7 @@
    "coverage": 85,
    "confidence": {
     "evidence": 4,
-    "primary_source_pct": 60,
+    "primary_source_pct": 64,
     "missing_critical": [
      "valuation"
     ]
@@ -13724,7 +13724,7 @@
    "title": "India Solar PV",
    "group": "Renewable Energy",
    "scored": true,
-   "as_of": "2026-10-30",
+   "as_of": "2026-11-09",
    "categories": {
     "economics": {
      "name": "Industry economics & value creation",
@@ -13796,7 +13796,7 @@
      "lens": "risk",
      "score": 2,
      "from": "category",
-     "basis": "US AD ~123% / CVD ~126% on Indian cells and modules with orders due 2-Nov-2026, Chinese curbs on equipment and wafer technology, and a demand mix that depends on ALMM/ALCM thresholds and net-metering exemptions."
+     "basis": "US AD ~123% / CVD ~126% on Indian cells and modules now in force from 9-Nov-2026 at AD 123.04% / CVD 126.09%, Chinese curbs on equipment and wafer technology, and a demand mix that depends on ALMM/ALCM thresholds and net-metering exemptions."
     }
    },
    "structural": {
@@ -13812,8 +13812,8 @@
    "overall": 56.5,
    "coverage": 85,
    "confidence": {
-    "evidence": 3,
-    "primary_source_pct": 46,
+    "evidence": 4,
+    "primary_source_pct": 50,
     "missing_critical": [
      "valuation"
     ]
@@ -15469,7 +15469,7 @@
    "title": "India Wastewater Treatment",
    "group": "Water & Wastewater",
    "scored": true,
-   "as_of": "2026-11-01",
+   "as_of": "2026-11-09",
    "categories": {
     "economics": {
      "name": "Industry economics & value creation",
@@ -15558,7 +15558,7 @@
    "coverage": 85,
    "confidence": {
     "evidence": 4,
-    "primary_source_pct": 62,
+    "primary_source_pct": 66,
     "missing_critical": [
      "valuation",
      "industry-level margin series",
