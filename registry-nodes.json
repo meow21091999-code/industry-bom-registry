@@ -8177,7 +8177,11 @@
    "analysis_date": "2026-10-12",
    "universe": "NSE/BSE",
    "sector": "Healthcare & Medical Devices",
-   "derived_from": null,
+   "derived_from": {
+    "industry": "Medical Devices",
+    "slug": "medical-devices-india",
+    "node": "Optical, Medical & Surgical Apparatus"
+   },
    "drill_downs": [],
    "nodes": [
     {
@@ -18533,6 +18537,395 @@
      "priority": "med",
      "bottleneck": false,
      "in_universe_coverage": true
+    }
+   ]
+  },
+  {
+   "slug": "medical-devices-india",
+   "industry": "Medical Devices",
+   "scope": "INDIA",
+   "path": "industries/medical-devices-india.html",
+   "analysis_date": "2026-11-09",
+   "universe": "NSE/BSE",
+   "sector": "Healthcare & Medical Devices",
+   "derived_from": null,
+   "drill_downs": [
+    "optical-medical-surgical-apparatus-india"
+   ],
+   "nodes": [
+    {
+     "id": "ortho-implants",
+     "name": "Orthopaedic Implants",
+     "level": 1,
+     "aliases": [
+      "orthopaedic implant",
+      "knee implant",
+      "hip implant",
+      "joint replacement",
+      "trauma implant",
+      "spinal implant"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "kneehip",
+     "name": "Knee & Hip Replacement Systems",
+     "level": 2,
+     "aliases": [
+      "knee replacement",
+      "hip replacement",
+      "TKR",
+      "THR",
+      "femoral component",
+      "acetabular cup",
+      "UHMWPE liner"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "trauma",
+     "name": "Trauma, Spine & Extremity Fixation",
+     "level": 2,
+     "aliases": [
+      "trauma plate",
+      "locking plate",
+      "bone screw",
+      "intramedullary nail",
+      "pedicle screw",
+      "spine cage",
+      "external fixator"
+     ],
+     "priority": "high",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "instruments",
+     "name": "Instrument Sets & Single-Use Guides",
+     "level": 2,
+     "aliases": [
+      "instrument set",
+      "trial implant",
+      "cutting guide",
+      "patient-specific guide",
+      "sterilisation tray"
+     ],
+     "priority": "med",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "cement",
+     "name": "Bone Cement, Grafts & Substitutes",
+     "level": 2,
+     "aliases": [
+      "bone cement",
+      "PMMA cement",
+      "bone graft",
+      "allograft",
+      "DBM"
+     ],
+     "priority": "low",
+     "bottleneck": false,
+     "in_universe_coverage": false
+    },
+    {
+     "id": "stents",
+     "name": "Coronary Stents & Drug-Coated Balloons",
+     "level": 2,
+     "aliases": [
+      "stent",
+      "DES",
+      "BMS",
+      "drug eluting stent",
+      "drug-coated balloon",
+      "DCB",
+      "bioresorbable scaffold"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "tavi",
+     "name": "TAVI & Structural Heart",
+     "level": 2,
+     "aliases": [
+      "TAVI",
+      "TAVR",
+      "transcatheter valve",
+      "heart valve",
+      "occluder",
+      "annuloplasty"
+     ],
+     "priority": "high",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "pacing",
+     "name": "Implantable Pacemakers, Leads & Active Implants",
+     "level": 2,
+     "aliases": [
+      "pacemaker",
+      "leads",
+      "CRT",
+      "ICD",
+      "neurostimulator",
+      "implantable electronic device"
+     ],
+     "priority": "med",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "vascular",
+     "name": "Vascular Grafts, Occluders & Peripheral Intervention",
+     "level": 2,
+     "aliases": [
+      "vascular graft",
+      "stent graft",
+      "EVAR",
+      "occluder",
+      "peripheral stent",
+      "renal stent"
+     ],
+     "priority": "med",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "catheters",
+     "name": "Interventional Catheters, Guidewires & Balloons",
+     "level": 2,
+     "aliases": [
+      "catheter",
+      "guidewire",
+      "balloon catheter",
+      "guiding catheter",
+      "microcatheter",
+      "introducer"
+     ],
+     "priority": "high",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "dental",
+     "name": "Dental Implants, Abutments & Prosthetics",
+     "level": 2,
+     "aliases": [
+      "dental implant",
+      "abutment",
+      "endosteal implant",
+      "prosthodontics",
+      "dental prosthetics"
+     ],
+     "priority": "med",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "zirconia",
+     "name": "Zirconia & Ceramic Restorative Materials",
+     "level": 2,
+     "aliases": [
+      "zirconia",
+      "Y-TZP",
+      "lithium disilicate",
+      "CAD/CAM blank",
+      "ceramic restoration"
+     ],
+     "priority": "low",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "biomaterials",
+     "name": "Implant-grade Biomaterials",
+     "level": 1,
+     "aliases": [
+      "biomaterial",
+      "implant grade material",
+      "medical grade polymer",
+      "medical grade alloy"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "titanium",
+     "name": "Implant-grade Titanium & Ti-6Al-4V ELI",
+     "level": 2,
+     "aliases": [
+      "titanium",
+      "Ti-6Al-4V",
+      "ASTM F136",
+      "ELI",
+      "titanium bar",
+      "titanium sponge"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "cocr",
+     "name": "CoCrMo Alloys & Wrought Bar",
+     "level": 2,
+     "aliases": [
+      "CoCr",
+      "CoCrMo",
+      "cobalt chrome",
+      "ASTM F1537",
+      "ASTM F75"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "polymers",
+     "name": "UHMWPE Bearings, PEEK & CFR-PEEK",
+     "level": 2,
+     "aliases": [
+      "UHMWPE",
+      "PEEK",
+      "CFR-PEEK",
+      "vitamin E polyethylene",
+      "bearing insert"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": false
+    },
+    {
+     "id": "coatings",
+     "name": "Surface Engineering — HA, TiN/TiNbN, SLA & Anodising",
+     "level": 2,
+     "aliases": [
+      "hydroxyapatite",
+      "HA coating",
+      "TiN",
+      "TiNbN",
+      "SLA",
+      "anodising",
+      "surface treatment",
+      "plasma spray"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "nitinol",
+     "name": "Nitinol & Shape-Memory Alloys",
+     "level": 2,
+     "aliases": [
+      "nitinol",
+      "shape memory alloy",
+      "superelastic"
+     ],
+     "priority": "low",
+     "bottleneck": true,
+     "in_universe_coverage": false
+    },
+    {
+     "id": "machining",
+     "name": "Precision Machining, Polishing & Metrology",
+     "level": 2,
+     "aliases": [
+      "5-axis machining",
+      "wire EDM",
+      "polishing",
+      "passivation",
+      "CMM",
+      "metrology"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": false
+    },
+    {
+     "id": "steril",
+     "name": "Sterilisation & Sterile Barrier Packaging",
+     "level": 2,
+     "aliases": [
+      "EtO sterilisation",
+      "gamma sterilisation",
+      "sterile barrier",
+      "Tyvek pouch",
+      "loan licence"
+     ],
+     "priority": "med",
+     "bottleneck": true,
+     "in_universe_coverage": false
+    },
+    {
+     "id": "cleanroom",
+     "name": "Cleanrooms & Clean Utilities",
+     "level": 2,
+     "aliases": [
+      "cleanroom",
+      "HEPA",
+      "purified water",
+      "ISO Class 7",
+      "clean utilities"
+     ],
+     "priority": "med",
+     "bottleneck": false,
+     "in_universe_coverage": false
+    },
+    {
+     "id": "testing",
+     "name": "Biocompatibility & Mechanical Test Laboratories",
+     "level": 2,
+     "aliases": [
+      "ISO 10993",
+      "biocompatibility",
+      "fatigue testing",
+      "wear testing",
+      "corrosion testing",
+      "NABL lab"
+     ],
+     "priority": "med",
+     "bottleneck": true,
+     "in_universe_coverage": false
+    },
+    {
+     "id": "channel",
+     "name": "Hospital Channel, Distributors & Tenders",
+     "level": 2,
+     "aliases": [
+      "distributor",
+      "hospital channel",
+      "GeM tender",
+      "trade margin",
+      "procurement"
+     ],
+     "priority": "med",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "revision",
+     "name": "Revision Surgery, Reprocessing & Biomedical Waste",
+     "level": 2,
+     "aliases": [
+      "revision surgery",
+      "reprocessing",
+      "explant",
+      "biomedical waste",
+      "refurbishment"
+     ],
+     "priority": "low",
+     "bottleneck": false,
+     "in_universe_coverage": false
     }
    ]
   }
