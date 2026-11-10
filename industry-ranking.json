@@ -1,7 +1,7 @@
 {
  "registry": "Industry BOM Registry",
  "description": "Industry ranking per \"Industry-Level Investment Parameters & Scoring Architecture\": hierarchical category scores (1–5), overall 0–100, evidence coverage reported, three lenses kept separate. DERIVED — regenerate with node tools/build-industry-ranking.mjs.",
- "generated": "2026-11-09",
+ "generated": "2026-11-10",
  "framework": {
   "category_score": "Σ(parameter weight × parameter score) ÷ Σ(weights of supported parameters)",
   "overall_score": "Σ(category weight × category score ÷ 5) × 100, renormalised over supported categories",
@@ -843,7 +843,7 @@
    "provisional": false,
    "notes": "First industry score on this page, 2026-11-06 (Tier-2 backfill). Market size and growth are the Rubix FY25/FY28 series already carried in the digest and now re-verified; the Statista $10.3 bn variant is a scope difference and is shown, not averaged.",
    "overall_rank": 27,
-   "risk_adjusted_rank": 15,
+   "risk_adjusted_rank": 14,
    "structural_score": 64.3,
    "current_score": 60,
    "structural_score_rank": 23,
@@ -1835,7 +1835,7 @@
    "provisional": false,
    "notes": "Coverage 85% - valuation unscored, so the overall is provisional. Structural 58.6/100, current 40.0/100, overall 55.3/100.",
    "overall_rank": 48,
-   "risk_adjusted_rank": 25,
+   "risk_adjusted_rank": 24,
    "structural_score": 58.6,
    "current_score": 40,
    "structural_score_rank": 42,
@@ -2083,7 +2083,7 @@
    "provisional": false,
    "notes": "First industry score on this page, 2026-11-06 (Tier-2 backfill). The India component-MRO figure replaces a previous [UNAVAILABLE]: $1.106 bn for 2026 from a secondary house, with the global component pool shown beside it and the India CAGR left UNAVAILABLE rather than inferred. Opportunity is scored high on substitution headroom, not on measured growth.",
    "overall_rank": 35,
-   "risk_adjusted_rank": 18,
+   "risk_adjusted_rank": 17,
    "structural_score": 61.4,
    "current_score": 60,
    "structural_score_rank": 32,
@@ -2312,8 +2312,8 @@
    ],
    "provisional": false,
    "notes": "Newly scored 2026-11-07 in the content backfill. Opportunity uses exactly the series in the Market & growth digest block; valuation is null because the registry carries no industry-level valuation series for this node. Value capture scored from this page's own BOM tree and value-chain ladder, using the node names already on the page.",
-   "overall_rank": 3,
-   "risk_adjusted_rank": 6,
+   "overall_rank": 4,
+   "risk_adjusted_rank": 5,
    "structural_score": 68.6,
    "current_score": 80,
    "structural_score_rank": 8,
@@ -4023,8 +4023,8 @@
    ],
    "provisional": false,
    "notes": "Scored against 'Industry-Level Investment Parameters & Scoring Architecture'. Opportunity uses the same Ken Research HV series already carried in this page's Market & growth digest block. Valuation left UNAVAILABLE.",
-   "overall_rank": 4,
-   "risk_adjusted_rank": 7,
+   "overall_rank": 5,
+   "risk_adjusted_rank": 6,
    "structural_score": 68.6,
    "current_score": 80,
    "structural_score_rank": 9,
@@ -4517,7 +4517,7 @@
    "provisional": false,
    "notes": "Scored against 'Industry-Level Investment Parameters & Scoring Architecture'. Cycle position and valuation left UNAVAILABLE — the registry carries no cycle or valuation data for these industries. Value capture (added 2026-11-01) scores 8 nodes taken verbatim from this page's own BOM tree and value-chain ladder, on the separate Registry Review §4 weighting (op_share 20%, pricing_power 15%, roic 15%, barriers 15%, bottleneck 10%, pool_growth 10%, cash_conversion 10%, switching 5%). It answers 'which node keeps the money' and is not blended into the industry score above.",
    "overall_rank": 17,
-   "risk_adjusted_rank": 12,
+   "risk_adjusted_rank": 11,
    "structural_score": 67.1,
    "structural_score_rank": 14
   },
@@ -6419,7 +6419,7 @@
    "provisional": false,
    "notes": "Opportunity uses the same series as the Market & growth digest block (US$1,020m in 2020 to US$1,410m in 2025, 6.7% five-year CAGR, 12.4 mn tonnes). The wider IMARC (US$3.81 bn) and TechSci (US$5.06 bn) sizes are different scopes and are not blended in. Valuation UNAVAILABLE - the market leader is unlisted.",
    "overall_rank": 19,
-   "risk_adjusted_rank": 8,
+   "risk_adjusted_rank": 7,
    "structural_score": 68.6,
    "current_score": 60,
    "structural_score_rank": 10,
@@ -6876,8 +6876,8 @@
    ],
    "provisional": false,
    "notes": "Opportunity and Market - growth use the same scoped series: launch services US$720 mn (2022, IN-SPACe Decadal Vision) to a US$3.5 bn potential by 2033, ~15.5% nominal CAGR [CALCULATED]; the whole space economy US$8.4 bn (2022) to US$9.0 bn (Aug-2026), ~1.6% a year [CALCULATED]; volume 12 launch-vehicle missions in the three years to Jun-2026 (~4 a year), 5-6 a year per IN-SPACe, 7 targeted in FY2026-27, 50 a year stated as the requirement. Valuation left UNAVAILABLE - the registry carries no industry valuation series and no listed pure-play exists.",
-   "overall_rank": 5,
-   "risk_adjusted_rank": 9,
+   "overall_rank": 6,
+   "risk_adjusted_rank": 8,
    "structural_score": 68.6,
    "current_score": 80,
    "structural_score_rank": 11,
@@ -7353,7 +7353,7 @@
    "provisional": false,
    "notes": "Opportunity uses the same series as the Market & growth digest block (IMTMA FY26 consumption of Rs 36,419 cr, imports of Rs 21,628 cr, and the 13.7% eleven-year production CAGR). Valuation left UNAVAILABLE because the registry carries no industry valuation data. Value capture (added 2026-11-01) scores 7 nodes taken verbatim from this page's own BOM tree and value-chain ladder, on the separate Registry Review §4 weighting (op_share 20%, pricing_power 15%, roic 15%, barriers 15%, bottleneck 10%, pool_growth 10%, cash_conversion 10%, switching 5%). It answers 'which node keeps the money' and is not blended into the industry score above.",
    "overall_rank": 29,
-   "risk_adjusted_rank": 21,
+   "risk_adjusted_rank": 20,
    "structural_score": 60,
    "current_score": 80,
    "structural_score_rank": 37,
@@ -8339,8 +8339,8 @@
    ],
    "provisional": false,
    "notes": "Opportunity uses the same series as the Market & growth digest block (India nuclear-plant equipment ~$2.8 bn in 2026 to ~$7.4 bn in 2035 at an 11.4% CAGR [REPORTED-T3, MarkWide], with the SG at ~7% of the ~₹19 lakh cr 100 GW build). Valuation left UNAVAILABLE — there is no node-level valuation series and the owner and designer are unlisted. Value capture (2026-11-05) scores 8 nodes taken verbatim from this page's own BOM tree and value-chain ladder, on the separate Registry Review §4 weighting; it answers 'which node keeps the money' and is never blended into the industry score above.",
-   "overall_rank": 9,
-   "risk_adjusted_rank": 4,
+   "overall_rank": 10,
+   "risk_adjusted_rank": 3,
    "structural_score": 71.4,
    "current_score": 60,
    "structural_score_rank": 5,
@@ -9099,11 +9099,11 @@
    "provisional": false,
    "notes": "Scored against 'Industry-Level Investment Parameters & Scoring Architecture'. Opportunity uses the same T&D EPC series as the Market & growth digest block (Astute Analytica), cross-checked against Transrail's 2029 waypoint. Valuation left UNAVAILABLE. Value capture (added 2026-11-02) scores 8 nodes taken verbatim from this page's own BOM tree and value-chain ladder, on the separate Registry Review §4 weighting (op_share 20%, pricing_power 15%, roic 15%, barriers 15%, bottleneck 10%, pool_growth 10%, cash_conversion 10%, switching 5%). It answers 'which node keeps the money' and is not blended into the industry score above.",
    "overall_rank": 38,
-   "risk_adjusted_rank": 20,
+   "risk_adjusted_rank": 19,
    "structural_score": 61.4,
    "current_score": 60,
    "structural_score_rank": 34,
-   "current_score_rank": 42
+   "current_score_rank": 43
   },
   {
    "slug": "pcb-electronic-components-india",
@@ -9829,7 +9829,7 @@
    "provisional": false,
    "notes": "Scored against 'Industry-Level Investment Parameters & Scoring Architecture'. Cycle position and valuation left UNAVAILABLE — the registry carries no cycle or valuation data for these industries. Value capture scored per node from the review's §4 model — PROVISIONAL judgement, not yet evidenced with node-level financials.",
    "overall_rank": 25,
-   "risk_adjusted_rank": 16,
+   "risk_adjusted_rank": 15,
    "structural_score": 64.3,
    "structural_score_rank": 26
   },
@@ -9838,7 +9838,7 @@
    "title": "India Power & Distribution Transformers",
    "group": "Electrical & Electronic Equipment",
    "scored": true,
-   "as_of": "2026-10-30",
+   "as_of": "2026-11-10",
    "categories": {
     "economics": {
      "name": "Industry economics & value creation",
@@ -9846,7 +9846,7 @@
      "lens": "structural",
      "score": 4,
      "from": "category",
-     "basis": "OEM margins have turned structural rather than cyclical: TARIL ran a 15.4% standalone EBITDA margin on &#8377;2,395 cr of FY26 revenue and guides 16% for FY27, and CG Power's power segment earns 21.9% PBIT - but the pricing rests on a 36-48 month global supply crunch rather than on product differentiation."
+     "basis": "OEM economics are strong but no longer uniformly so: CG Power's Power Systems segment earned 25.0% PBIT on ₹1,769 cr in Q2 FY27 (up 430 bps YoY), GE Vernova T&D ran a 28.6% PBT margin, TARIL 16.1% EBITDA and Hitachi Energy 16.0% in Q1 FY27 — while Voltamp, the most industrial-exposed name, lost 543 bps of gross margin and 393 bps of EBITDA margin in the same quarter on input costs and legacy fixed-price orders. Industry-wide CRISIL put operating margins at only 8–10%, so the returns are concentrated in EHV/utility-facing capacity, not spread across the sector."
     },
     "opportunity": {
      "name": "Market opportunity & structural growth",
@@ -9854,7 +9854,7 @@
      "lens": "structural",
      "score": 4,
      "from": "category",
-     "basis": "The market is &#8377;40,000 cr in FY26 against &#8377;33,000 cr in FY25, +21% YoY [CALCULATED from Eninrac], on a &#8377;25.7 lakh cr power and T&amp;D capex programme to 2030 with peak demand doubling from 277 GW to 459 GW by FY36; a forward CAGR series is [UNAVAILABLE], so the case rests on live order books (TARIL &#8377;7,237 cr, +32% YoY at 30-Sep-2026) rather than a published rate."
+     "basis": "Demand visibility is the strongest part of the case and it is now measured, not projected: 1,13,013 MVA of transformation capacity was added in FY26 (90% of the CEA target) against an FY27 target of 1,58,339 MVA, power-transformer production rose 31.6% in FY26 (Q4 +58.5%), and the NEP successor plan to 2035-36 carries another ₹7.93 lakh cr for ~828 GVA. A five-year value CAGR remains [UNAVAILABLE]; the volume path (transformation capacity from 1,478 GVA in Jun-2026 to 2,345 GVA by 2032) is [REPORTED-T1]."
     },
     "competitive": {
      "name": "Competitive structure & moat",
@@ -9862,7 +9862,7 @@
      "lens": "structural",
      "score": 4,
      "from": "category",
-     "basis": "EHV and HVDC classes are a tight oligopoly of five or six qualified makers, announced capacity (CG Power to ~110,000 MVA, Hitachi Energy's &#8377;2,000 cr Karjan plant) is not yet delivered, and qualification at 765 kV takes years - the strongest competitive structure in the electrical-equipment chain."
+     "basis": "The moat is qualification, not capital. Only about half of transformers pass short-circuit testing at the first attempt and 765 kV qualification needs 3–4 years of field performance [REPORTED-T2, Choice Institutional, Oct-2026]; HVDC remains a two-player contest (Hitachi Energy and GE Vernova, with BHEL in consortium). But the field is widening — Voltamp's Jarod EHV plant went live on 7-Oct-2026, CG Power's Sehore plant on 4-Sep-2026, and Atlanta's 765 kV line is running at 7–8% utilisation — so the oligopoly is being contested at 400 kV rather than at 765 kV/HVDC."
     },
     "cycle": {
      "name": "Current opportunity & cycle position",
@@ -9870,15 +9870,15 @@
      "lens": "current",
      "score": 3,
      "from": "category",
-     "basis": "Demand is at a cyclical high with 24-42 month EHV lead times, but new capacity lands through FY27-28 exactly as the CRGO anti-dumping investigation (initiated 22-Jun-2026) threatens a 12-18 month input-cost squeeze before JSW-JFE's domestic capacity is live."
+     "basis": "Demand sits at a cyclical high (peak demand hit a record 270.82 GW in summer 2026; 400/765 kV orders are being booked for FY29–30 execution) while ~315 GVA of announced capacity lands across FY27–FY30 — CG Power, TARIL, Voltamp, Bharat Bijlee, Shilchar and Siemens Energy India are all commissioning or expanding. FY26 TBCB ordering was thin (16 schemes vs 45 in FY25) and the HVDC pipeline of ~₹1.0 lakh cr is not yet awarded, so the risk is a margin peak in FY27–28 rather than a demand peak."
     },
     "valuation": {
      "name": "Valuation & market expectations",
      "weight": 0.15,
      "lens": "current",
-     "score": 2,
+     "score": 3,
      "from": "category",
-     "basis": "The registry carries no industry-level multiple series; trade coverage of Jul-2026 quoted the listed OEM set at 95x to 167x earnings [REPORTED-T3], which prices in much of the order book already for a capital-goods up-cycle."
+     "basis": "CORRECTION from the prior run: the earlier basis quoted the listed set at 95x–167x earnings. Actual multiples on 9-Nov-2026 are two-tier — the EHV/HVDC majors at 89x (CG Power) and 109x (Hitachi Energy), and the pure-play transformer makers at 21.7x (Bharat Bijlee) to 32.4x (Shilchar), with TARIL at 30.2x and Voltamp at 30.4x [REPORTED-T2]. The industry is therefore expensive only where the HVDC optionality sits; brokers value Hitachi at 60x two-year forward and GE Vernova at 55x while Elara rates Hitachi a Sell on 60x FY28-29E — the dispersion, not the level, is the signal."
     },
     "value_chain": {
      "name": "Value-chain position & bottlenecks",
@@ -9886,7 +9886,7 @@
      "lens": "structural",
      "score": 4,
      "from": "category",
-     "basis": "India performs every transformer step from core cutting to impulse testing, so the chain is domestic at system level; the leaks are narrow but binding - CRGO (~90% imported), RIP bushings and vacuum OLTCs (>80% imported) - and backward integration (TARIL's CTC, pressboard, bushing and CRGO lines by Q1 FY28) is closing them."
+     "basis": "India now performs essentially every transformer step from core slitting to impulse testing, and finished power-transformer imports have collapsed to ₹177 cr in FY26 (-60% YoY) — the system-level chain is domestic. The leaks are the same three and they are narrowing unevenly: CRGO (~90% imported, domestic capacity only from FY2028), RIP bushing cores (~95% imported, with four Indian localisers building), and vacuum OLTCs (>80% imported, no qualified Indian maker). Distribution-transformer imports, by contrast, nearly doubled to ₹2,085 cr in FY26."
     },
     "capital": {
      "name": "Capital intensity & financial quality",
@@ -9894,7 +9894,7 @@
      "lens": "structural",
      "score": 3,
      "from": "category",
-     "basis": "Capex per MVA is moderate and brownfield-expandable, but the model is working-capital heavy on 18-24 month execution cycles and the customer book is dominated by state utilities, so returns depend on payment discipline as much as on capacity."
+     "basis": "Capex per MVA stays modest and brownfield-led — CG Power adds 10,000 MVA for ₹68 cr, TARIL adds ~35,000 MVA for about ₹150 cr — but the model is working-capital heavy on 18–24 month execution cycles (TARIL debt/equity 0.35x, ROCE 23.3%; CG Power annualised ROCE 27%), and the customer book is dominated by state utilities and TBCB EPCs."
     },
     "technology": {
      "name": "Technology & innovation",
@@ -9902,15 +9902,15 @@
      "lens": "structural",
      "score": 3,
      "from": "category",
-     "basis": "765 kV manufacture is established and HVDC is being qualified (TARIL expects 15-16 months to HVDC capability), but design validation sits behind a small number of accredited high-voltage and short-circuit labs, which is why lead time rather than know-how sets the pace."
+     "basis": "765 kV manufacture is established across five or six makers and 1,200 kV testing exists in-house (CG Power's Sehore line covers 220–1,200 kV; TARIL runs a 1,200 kV UHV lab), but HVDC converter technology sits with two firms and design validation still queues behind scarce accredited short-circuit and impulse capacity — which is why lead time, not know-how, sets the pace."
     },
     "risk": {
      "name": "Risk & resilience",
      "weight": null,
      "lens": "risk",
-     "score": 3,
+     "score": 2,
      "from": "category",
-     "basis": "Three exposures stack: a live CRGO duty decision that would raise cost without reducing import dependence, copper at 35-45% of active material cost, and a customer base that is overwhelmingly state utilities and EPC contractors."
+     "basis": "Downgraded from 3 to 2 on evidence that arrived this quarter: record copper (LME ~US$13,950/t on 6-Nov-2026, +35% YoY) is squeezing firm-price order books — Voltamp's gross margin fell 543 bps, Atlanta's EBITDA 201 bps and Shilchar's 1,049 bps YoY — while a live CRGO anti-dumping case could raise core-steel cost without relieving import dependence, and three of the four largest customers are state utilities or TBCB vehicles."
     }
    },
    "structural": {
@@ -9918,22 +9918,26 @@
     "coverage": 100
    },
    "current": {
-    "score": 50,
+    "score": 60,
     "coverage": 100
    },
-   "risk": 3,
-   "risk_adjusted": 46.3,
-   "overall": 69,
+   "risk": 2,
+   "risk_adjusted": 30.8,
+   "overall": 72,
    "coverage": 100,
    "confidence": {
     "evidence": 4,
-    "primary_source_pct": 71,
-    "missing_critical": []
+    "primary_source_pct": 74,
+    "missing_critical": [
+     "FY27 industry value in ₹ cr (no published series after the FY26 projection)",
+     "measured cost shares per transformer class (only blended realisation is disclosed)",
+     "OLTC and RIP-core import value by HS code, to size the two remaining leaks"
+    ]
    },
    "value_capture": [
     {
-     "node": "Finished transformer — power (incl. EHV/765 kV)",
-     "basis": "The node that keeps the money today: CG Power's Power segment earned 21.9% PBIT on ₹5,138 cr in FY26 (up from 19.0%) with 22% ROCE at company level; TARIL ran 15.4% standalone EBITDA on ₹2,395 cr with ROCE of 19.1%; Hitachi Energy India 15.4% operational EBITDA on ₹8,148 cr. The pool grows with a record order backlog (Hitachi ₹29,555 cr, +53.5%; CG ₹15,719 cr, +59%), but cash conversion is the weak leg - TARIL's working capital runs on 18-24 month utility execution cycles.",
+     "node": "Finished transformer &mdash; power (incl. EHV/765 kV)",
+     "basis": "Still the node that keeps the money, and the evidence strengthened in Q2 FY27: CG Power's Power Systems segment earned 25.0% PBIT on &#8377;1,769 cr with backlog up 81% to &#8377;18,964 cr, GE Vernova T&amp;D ran 28.6% PBT on &#8377;2,027 cr with a &#8377;21,443 cr backlog, TARIL 16.1% EBITDA on &#8377;709 cr and Hitachi Energy 16.0% operational EBITDA in Q1 FY27 on a &#8377;32,222 cr backlog. The pool is growing faster than capacity can be built, but cash conversion stays the weak leg on 18&ndash;24 month utility cycles.",
      "params": {
       "op_share": 5,
       "pricing_power": 4,
@@ -9949,11 +9953,28 @@
      "coverage": 100
     },
     {
-     "node": "CRGO electrical-steel core",
-     "basis": "The single input that decides whether an Indian EHV line can run: ~90% imported against 4.0-4.5 lakh t of demand, with JSW-JFE's Nashik/Vijayanagar capacity scaling 50k to 250k t and a DGTR anti-dumping investigation live. Pricing power is structural while domestic supply is thin; the return on capital is not, because the same duty that protects the mill raises the OEM's cost.",
+     "node": "On-load tap changer (OLTC)",
+     "basis": "Unchanged and still the highest-switching-cost node in the chain: &gt;80% imported on a Reinhausen-led oligopoly, a moving part whose failure mode is a transformer outage, and no Indian maker qualified on vacuum OLTCs at scale. Small pool, disproportionate pricing power.",
+     "params": {
+      "op_share": 2,
+      "pricing_power": 5,
+      "roic": 4,
+      "barriers": 5,
+      "bottleneck": 4,
+      "pool_growth": 4,
+      "cash_conversion": 4,
+      "switching": 5
+     },
+     "score": 3.95,
+     "score100": 79,
+     "coverage": 100
+    },
+    {
+     "node": "CRGO electrical-steel core (mill)",
+     "basis": "Moved DOWN one step on pricing power (5&rarr;4): JSW JFE Nashik runs at ~102% utilisation but CARE Ratings reports net sales realisations moderating through 2025-26 on rising import penetration and global capacity additions, and India's GOES price (~US$1,830/t in Sep-2026) is a discount to North America's US$4,290/t. The strategic weight is unchanged &mdash; ~90% of 4.0&ndash;4.5 lakh t of demand is imported and the DGTR case (initiated 22-Jun-2026, no finding yet) is live &mdash; but the protected-margin story is weaker than the bottleneck story.",
      "params": {
       "op_share": 3,
-      "pricing_power": 5,
+      "pricing_power": 4,
       "roic": 3,
       "barriers": 5,
       "bottleneck": 5,
@@ -9961,47 +9982,47 @@
       "cash_conversion": 3,
       "switching": 5
      },
-     "score": 4,
-     "score100": 80,
+     "score": 3.85,
+     "score100": 77,
      "coverage": 100
     },
     {
      "node": "HV bushings (OIP / RIP condenser)",
-     "basis": "Significant import dependence with RIP cores concentrated abroad, and a component that must be type-tested with the transformer it sits on - so the barrier is qualification, not just plant. TARIL is building RIP bushing capacity as one of five backward-integration lines, expecting 200-300 bps of incremental EBITDA margin from the set by Q1 FY28.",
+     "basis": "Moved DOWN on barriers (5&rarr;4) and bottleneck (4&rarr;3): Yash Highvoltage grew revenue 95% to &#8377;194.5 cr in H1 FY27 at 86% RIP mix with a &#8377;760 cr order book, and four Indian players (Yash, CG Power, Hitachi India and MIM) are now building localised RIP capacity, so RIP supply has stabilised. What has not localised is the capacitive core &mdash; ~95% imported &mdash; and localised 420/550 kV bushings only arrive in Q4 FY28.",
      "params": {
       "op_share": 2,
       "pricing_power": 5,
       "roic": 4,
-      "barriers": 5,
-      "bottleneck": 4,
-      "pool_growth": 4,
+      "barriers": 4,
+      "bottleneck": 3,
+      "pool_growth": 5,
       "cash_conversion": 4,
-      "switching": 5
+      "switching": 4
      },
-     "score": 3.95,
-     "score100": 79,
+     "score": 3.75,
+     "score100": 75,
      "coverage": 100
     },
     {
-     "node": "On-load tap changer (OLTC)",
-     "basis": "More than 80% imported on a Reinhausen-led global oligopoly, on a moving part whose failure mode is a transformer outage - the highest switching cost in the chain. A small pool with disproportionate pricing power and no Indian qualified maker in evidence.",
+     "node": "CRGO lamination &amp; core processing",
+     "basis": "NEW node this run, and the one that moved into the investable set: Vilas Transcore (NSE: VILAS) has tripled CRGO lamination capacity to 36,000 MTPA, won POWERGRID approval for slitting and lamination cutting to 220 kV, and grew H1 FY27 sales volume 28.1% to 11,697 MT &mdash; but at a 7.1% PAT margin, with realisations falling as CRGO prices eased. A capital-light, low-barrier processing step between the mill and the OEM: good returns on capital, weak pricing power.",
      "params": {
       "op_share": 2,
-      "pricing_power": 5,
+      "pricing_power": 2,
       "roic": 4,
-      "barriers": 5,
-      "bottleneck": 4,
+      "barriers": 3,
+      "bottleneck": 3,
       "pool_growth": 4,
-      "cash_conversion": 4,
-      "switching": 5
+      "cash_conversion": 3,
+      "switching": 3
      },
-     "score": 3.95,
-     "score100": 79,
+     "score": 2.9,
+     "score100": 58,
      "coverage": 100
     },
     {
-     "node": "Windings — copper/aluminium CTC/PICC",
-     "basis": "Large in revenue (winding wires/CTC are 75.3% of KSH International's FY26 revenue) but metal-indexed, so pricing passes through rather than accrues; CTC capacity is the narrower, better-priced slice, and Apar, Precision Wires and Vidya Wires are all adding it.",
+     "node": "Windings &mdash; copper/aluminium CTC/PICC",
+     "basis": "Large in revenue (winding wires and CTC are 75.3% of KSH International's FY26 revenue) but metal-indexed, so a record copper price (LME ~US$13,950/t, +35% YoY) passes straight through rather than accruing. CTC capacity is the narrower, better-priced slice, and Apar, Precision Wires, Vidya Wires and now Vilas are all adding it.",
      "params": {
       "op_share": 3,
       "pricing_power": 2,
@@ -10017,8 +10038,8 @@
      "coverage": 100
     },
     {
-     "node": "Testing — routine, impulse, short-circuit",
-     "basis": "Not a revenue pool but an entry gate: TARIL treats in-house highest-voltage and short-circuit testing as a competitive advantage and completed dynamic short-circuit testing to IEC 60076-5 on ten units across FY26-H1 FY27, while accredited lab capacity is scarce enough to set lead times.",
+     "node": "Testing &mdash; routine, impulse, short-circuit",
+     "basis": "Not a revenue pool but the entry gate, and the gate is measurable: only ~50% of transformers pass short-circuit testing first time, TARIL completed dynamic short-circuit testing to IEC 60076-5 on ten units across FY26&ndash;H1 FY27, and accredited high-power lab capacity is the constraint that shows up as lead time.",
      "params": {
       "op_share": 1,
       "pricing_power": 3,
@@ -10034,8 +10055,8 @@
      "coverage": 100
     },
     {
-     "node": "Core-coil assembly & winding process",
-     "basis": "Domestic, skilled-labour-bound and the step where operating leverage is actually earned - TARIL's FY26 record 33,763 MVA output against 29,118 MVA in FY25 is what lifted margin - but it is a process inside the OEM, not a separately priced node.",
+     "node": "Core-coil assembly &amp; winding process",
+     "basis": "Domestic, skilled-labour-bound and the step where operating leverage is actually earned &mdash; TARIL's Q2 FY27 EBITDA doubled to &#8377;114 cr on 66% revenue growth as utilisation improved &mdash; but it is a process inside the OEM, not a separately priced node.",
      "params": {
       "op_share": 2,
       "pricing_power": 3,
@@ -10051,8 +10072,8 @@
      "coverage": 100
     },
     {
-     "node": "Finished transformer — distribution & specialty",
-     "basis": "Crowded, state-utility-tendered and volume-led; the competitive floor of the chain, and the segment where a sub-scale maker competes on price rather than on qualification.",
+     "node": "Finished transformer &mdash; distribution &amp; specialty",
+     "basis": "Crowded, state-utility-tendered and volume-led, and the only node with a visible import leak: distribution-transformer production grew just 3.4% in FY26 while DT imports nearly doubled to &#8377;2,085 cr. The competitive floor of the chain.",
      "params": {
       "op_share": 2,
       "pricing_power": 2,
@@ -10069,13 +10090,13 @@
     }
    ],
    "provisional": false,
-   "notes": "Opportunity uses the same series as the Market & growth digest block (₹40,000 cr FY26 against ₹33,000 cr FY25, +21% YoY, CALCULATED from Eninrac; forward CAGR UNAVAILABLE). Valuation is scored from listed-company multiples reported in trade coverage, labelled [REPORTED-T3], not from an industry series. Value capture (added 2026-11-01) scores 8 nodes taken verbatim from this page's own BOM tree and value-chain ladder, on the separate Registry Review §4 weighting (op_share 20%, pricing_power 15%, roic 15%, barriers 15%, bottleneck 10%, pool_growth 10%, cash_conversion 10%, switching 5%). It answers 'which node keeps the money' and is not blended into the industry score above.",
-   "overall_rank": 11,
-   "risk_adjusted_rank": 3,
+   "notes": "Full re-analysis 2026-11-10. Corrections from the prior run: (a) EHV lead times were carried at 24-42 months from global coverage and are replaced with India-specific Ministry of Power/CTUIL figures (220 kV 11-15 months, 400 kV ~15, 765 kV 20-24); (b) the valuation basis '95x to 167x' was wrong and is replaced with measured 9-Nov-2026 multiples (CG Power 89x, Hitachi 109x, TARIL 30.2x, Voltamp 30.4x, Shilchar 32.4x, Bharat Bijlee 21.7x), which lifts valuation from 2 to 3; (c) risk moves 3 -> 2 on reported margin compression from record copper; (d) bushing localisation is later than previously stated - localised 420/550 kV lands in Q4 FY28, not H2 FY27. Market & growth uses the same series as the digest block: FY26 ~₹40,000 cr (CRISIL/Eninrac projection), 3-year value CAGR 15.5% [CALCULATED], last-year value +10-11% (CRISIL) vs +21% implied by Eninrac [CONFLICTING DATA], volume +31.6% power-transformer production and +31.4% capacity added. Value capture scores 9 nodes from this page's own BOM tree and ladder on the Registry Review §4 weighting, plus one new node (CRGO lamination & core processing) that entered the investable set with Vilas Transcore's NSE listing.",
+   "overall_rank": 3,
+   "risk_adjusted_rank": 27,
    "structural_score": 77.1,
-   "current_score": 50,
+   "current_score": 60,
    "structural_score_rank": 2,
-   "current_score_rank": 43
+   "current_score_rank": 35
   },
   {
    "slug": "power-transmission-india",
@@ -10301,7 +10322,7 @@
    ],
    "provisional": false,
    "notes": "Scored against 'Industry-Level Investment Parameters & Scoring Architecture'. Overall = sum(category weight x score / 5) x 100, renormalised over supported categories: (4x.20 + 5x.15 + 3x.15 + 2x.15 + 4x.10 + 3x.05 + 3x.05) = 3.00; 3.00/0.85 = 3.53; overall = 3.00/5/0.85 x 100 = 70.6. Coverage 85% (valuation null). Structural group 77.1, current-opportunity group 40.0. Re-scored 2026-11-08: competitive 4->3 (border-country supplier opening, ~300 GVA capacity being added), cycle 3->2 (order books fullest in a decade, prices +70-80% since 2021), risk 3->2 (capitalisation guidance cut on RoW, CRGO duty pending).",
-   "overall_rank": 6,
+   "overall_rank": 7,
    "risk_adjusted_rank": 28,
    "structural_score": 77.1,
    "current_score": 40,
@@ -10533,11 +10554,11 @@
    "provisional": false,
    "notes": "",
    "overall_rank": 37,
-   "risk_adjusted_rank": 19,
+   "risk_adjusted_rank": 18,
    "structural_score": 61.4,
    "current_score": 60,
    "structural_score_rank": 33,
-   "current_score_rank": 35
+   "current_score_rank": 36
   },
   {
    "slug": "railway-india",
@@ -10763,7 +10784,7 @@
    "provisional": false,
    "notes": "Opportunity uses the same series as the Market & growth digest block (FY27 BE ₹2.93 lakh cr, +10.5% on FY26 RE). Valuation left UNAVAILABLE. Freight volume growth (1,670 to 1,765 MT) is treated as the demand leg of opportunity, not as a separate growth claim. Value capture scored from this page's own 14-node tree and ladder.",
    "overall_rank": 20,
-   "risk_adjusted_rank": 17,
+   "risk_adjusted_rank": 16,
    "structural_score": 64.3,
    "current_score": 80,
    "structural_score_rank": 27,
@@ -10979,7 +11000,7 @@
    "structural_score": 50,
    "current_score": 60,
    "structural_score_rank": 59,
-   "current_score_rank": 36
+   "current_score_rank": 37
   },
   {
    "slug": "reactor-coolant-pumps-primary-loop-india",
@@ -11203,12 +11224,12 @@
    ],
    "provisional": false,
    "notes": "Opportunity uses the same series as the Market & growth digest block (India nuclear-grade pumps ~$460 mn in 2025 to ~$980 mn in 2030, a 16.3% CAGR [CALCULATED] from [REPORTED-T3, GEP Research]). Valuation left UNAVAILABLE — no node-level valuation series exists. Value capture (2026-11-05) scores 7 nodes taken verbatim from this page's own BOM tree and value-chain ladder on the separate Registry Review §4 weighting, and is not blended into the industry score.",
-   "overall_rank": 10,
-   "risk_adjusted_rank": 5,
+   "overall_rank": 11,
+   "risk_adjusted_rank": 4,
    "structural_score": 71.4,
    "current_score": 60,
    "structural_score_rank": 6,
-   "current_score_rank": 37
+   "current_score_rank": 38
   },
   {
    "slug": "robot-software-autonomy-india",
@@ -11415,8 +11436,8 @@
    ],
    "provisional": false,
    "notes": "Opportunity uses the same series as the Market & growth digest block (India robot software US$223.4 mn in 2023 to US$1,312.3 mn by 2030 at 27.7% value CAGR, inside a robotics market of US$1.1 bn in 2025 rising to US$4.6 bn by 2030 at ~33%). Valuation left UNAVAILABLE — the registry carries no industry valuation series.",
-   "overall_rank": 7,
-   "risk_adjusted_rank": 10,
+   "overall_rank": 8,
+   "risk_adjusted_rank": 9,
    "structural_score": 68.6,
    "current_score": 80,
    "structural_score_rank": 12,
@@ -11651,7 +11672,7 @@
    "structural_score": 55.7,
    "current_score": 60,
    "structural_score_rank": 49,
-   "current_score_rank": 38
+   "current_score_rank": 39
   },
   {
    "slug": "room-ac-white-goods-components-india",
@@ -11874,7 +11895,7 @@
    "provisional": false,
    "notes": "Scored against 'Industry-Level Investment Parameters & Scoring Architecture'. Valuation left UNAVAILABLE; coverage 85%. The score fell from 60.0 (2026-10-09) to 52.9 for two distinct reasons: opportunity was cut 4 to 3 because the 20% localisation clause was dropped from the notified 2026 authorisation rules, and the cycle category is now scored at 2 on real evidence (20 idle Starlink gateway sites, VSAT terminals down 21.8%) instead of being unavailable. Coverage rose from 70% to 85%, so part of the fall is the addition of a weak category rather than a deterioration in the others. The IN-SPACe 2022 base and 2033 target are a policy ambition, not a forecast of realised revenue, and are not used as a CAGR. Node-level financials do not exist in public disclosure; value capture is a judgement on node economics.",
    "overall_rank": 54,
-   "risk_adjusted_rank": 27,
+   "risk_adjusted_rank": 26,
    "structural_score": 55.7,
    "current_score": 40,
    "structural_score_rank": 50,
@@ -12528,7 +12549,7 @@
    "provisional": false,
    "notes": "Scored against 'Industry-Level Investment Parameters & Scoring Architecture'. Valuation left UNAVAILABLE. Two market series with different scopes are shown side by side rather than reconciled - the IN-SPACe figure is a market-potential target, the KPMG figure a service-revenue projection. Value capture is a judgement on node economics, not node-level financials.",
    "overall_rank": 46,
-   "risk_adjusted_rank": 22,
+   "risk_adjusted_rank": 21,
    "structural_score": 60,
    "current_score": 40,
    "structural_score_rank": 38,
@@ -13487,7 +13508,7 @@
    "provisional": false,
    "notes": "Opportunity uses the identical figures as the Market & growth digest block (20.33 crore sanctioned, 5.73 crore installed at 30-Jun-2026, ~₹90,000 cr meter-maker opportunity per CRISIL Jun-2025). A value CAGR is deliberately left out because the page carries no published series - the score rests on committed volume, not on an invented rate. Valuation UNAVAILABLE.",
    "overall_rank": 30,
-   "risk_adjusted_rank": 23,
+   "risk_adjusted_rank": 22,
    "structural_score": 60,
    "current_score": 80,
    "structural_score_rank": 39,
@@ -14442,8 +14463,8 @@
    ],
    "provisional": false,
    "notes": "Scored against 'Industry-Level Investment Parameters & Scoring Architecture'. Opportunity uses the same CRISIL transformer series as the Market & growth digest block; the switchgear series is reported separately and never added to it. Valuation left UNAVAILABLE.",
-   "overall_rank": 8,
-   "risk_adjusted_rank": 11,
+   "overall_rank": 9,
+   "risk_adjusted_rank": 10,
    "structural_score": 68.6,
    "current_score": 80,
    "structural_score_rank": 13,
@@ -14945,7 +14966,7 @@
    "provisional": false,
    "notes": "First scored pass for this page - it carried no score block before this run, so there is no prior score to compare. Scored against 'Industry-Level Investment Parameters & Scoring Architecture'; all nine categories supported, coverage 100%, overall 62.0. The two constraints on the score are structural, not cyclical: value capture sits with the operator annuity and the state, while the imported radio layer takes the capex, and the sector's next earnings leg depends on a tariff rise that the market leader has declined to lead. Revenue growth in FY26 was volume-led (data +24.74%) with per-GB realisation down 10.59%, so the operating leverage that would justify current multiples has not yet appeared in the reported series. Company-level figures are used as evidence for the industry, never as the industry total.",
    "overall_rank": 34,
-   "risk_adjusted_rank": 13,
+   "risk_adjusted_rank": 12,
    "structural_score": 67.1,
    "current_score": 50,
    "structural_score_rank": 15,
@@ -15193,7 +15214,7 @@
    "structural_score": 64.3,
    "current_score": 60,
    "structural_score_rank": 28,
-   "current_score_rank": 39
+   "current_score_rank": 40
   },
   {
    "slug": "telecom-transport-equipment-india",
@@ -15459,7 +15480,7 @@
    "provisional": false,
    "notes": "Opportunity uses the same series as the Market & growth digest block (India steam turbines ~$3.33 bn in 2022 to ~$4.38 bn in 2030, a ~3.5% CAGR [CALCULATED] from [REPORTED-T3, Grand View Research], with the CEA construction pipeline as the volume driver). Valuation left UNAVAILABLE — no node-level valuation series exists. Value capture (2026-11-05) scores 8 nodes taken verbatim from this page's own BOM tree and value-chain ladder on the separate Registry Review §4 weighting, and is not blended into the industry score.",
    "overall_rank": 31,
-   "risk_adjusted_rank": 24,
+   "risk_adjusted_rank": 23,
    "structural_score": 60,
    "current_score": 80,
    "structural_score_rank": 41,
@@ -15690,11 +15711,11 @@
    "provisional": false,
    "notes": "Scored against 'Industry-Level Investment Parameters & Scoring Architecture'. Valuation left UNAVAILABLE - no industry-level valuation data. FY26 figures are ACMA's Industry Performance Review (Jul-2026); the FY25 figures carried in the metric cards above are the prior year and remain correct as such. Value capture is a judgement on node economics, not node-level financials.",
    "overall_rank": 24,
-   "risk_adjusted_rank": 14,
+   "risk_adjusted_rank": 13,
    "structural_score": 65.7,
    "current_score": 60,
    "structural_score_rank": 22,
-   "current_score_rank": 40
+   "current_score_rank": 41
   },
   {
    "slug": "wastewater-treatment-india",
@@ -15921,11 +15942,11 @@
    "provisional": false,
    "notes": "Opportunity and growth use the IMARC India wastewater treatment plants series (2020 US$3.51bn, 2025 US$4.60bn, 2026 US$4.92bn) — a plant/equipment/EPC scope. The Rs 13.1bn-to-23.8bn (2023-33, 6.2%) figure is an all-water-plus-wastewater scope and the US$2.94bn (2023) figure a narrower equipment scope; neither is blended into the score. Valuation left UNAVAILABLE.",
    "overall_rank": 40,
-   "risk_adjusted_rank": 26,
+   "risk_adjusted_rank": 25,
    "structural_score": 58.6,
    "current_score": 60,
    "structural_score_rank": 45,
-   "current_score_rank": 41
+   "current_score_rank": 42
   }
  ]
 }
