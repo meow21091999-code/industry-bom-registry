@@ -9910,7 +9910,7 @@
      "lens": "risk",
      "score": 2,
      "from": "category",
-     "basis": "Downgraded from 3 to 2 on evidence that arrived this quarter: record copper (LME ~US$13,950/t on 6-Nov-2026, +35% YoY) is squeezing firm-price order books — Voltamp's gross margin fell 543 bps, Atlanta's EBITDA 201 bps and Shilchar's 1,049 bps YoY — while a live CRGO anti-dumping case could raise core-steel cost without relieving import dependence, and three of the four largest customers are state utilities or TBCB vehicles."
+     "basis": "Downgraded from 3 to 2 on evidence that arrived this quarter: record copper (LME ~US$13,950/t on 6-Nov-2026, +35% YoY) is squeezing firm-price order books — Voltamp's gross margin fell 543 bps, Atlanta's EBITDA 201 bps and Shilchar's 1,049 bps YoY — while a live CRGO anti-dumping case could raise core-steel cost without relieving import dependence, and customer mix decides who absorbs it — GE Vernova's backlog is 78% private utilities, while TARIL bids ~80% domestic with an even government/private split and the distribution-transformer makers sell to state utilities on tender."
     }
    },
    "structural": {
@@ -9936,8 +9936,8 @@
    },
    "value_capture": [
     {
-     "node": "Finished transformer &mdash; power (incl. EHV/765 kV)",
-     "basis": "Still the node that keeps the money, and the evidence strengthened in Q2 FY27: CG Power's Power Systems segment earned 25.0% PBIT on &#8377;1,769 cr with backlog up 81% to &#8377;18,964 cr, GE Vernova T&amp;D ran 28.6% PBT on &#8377;2,027 cr with a &#8377;21,443 cr backlog, TARIL 16.1% EBITDA on &#8377;709 cr and Hitachi Energy 16.0% operational EBITDA in Q1 FY27 on a &#8377;32,222 cr backlog. The pool is growing faster than capacity can be built, but cash conversion stays the weak leg on 18&ndash;24 month utility cycles.",
+     "node": "Finished transformer — power (incl. EHV/765 kV)",
+     "basis": "Still the node that keeps the money, and the evidence strengthened in Q2 FY27: CG Power's Power Systems segment earned 25.0% PBIT on &#8377;1,769 cr with backlog up 81% to &#8377;18,964 cr, GE Vernova T&D ran 28.6% PBT on &#8377;2,027 cr with a &#8377;21,443 cr backlog, TARIL 16.1% EBITDA on &#8377;709 cr and Hitachi Energy 16.0% operational EBITDA in Q1 FY27 on a &#8377;32,222 cr backlog. The pool is growing faster than capacity can be built, but cash conversion stays the weak leg on 18–24 month utility cycles.",
      "params": {
       "op_share": 5,
       "pricing_power": 4,
@@ -9971,7 +9971,7 @@
     },
     {
      "node": "CRGO electrical-steel core (mill)",
-     "basis": "Moved DOWN one step on pricing power (5&rarr;4): JSW JFE Nashik runs at ~102% utilisation but CARE Ratings reports net sales realisations moderating through 2025-26 on rising import penetration and global capacity additions, and India's GOES price (~US$1,830/t in Sep-2026) is a discount to North America's US$4,290/t. The strategic weight is unchanged &mdash; ~90% of 4.0&ndash;4.5 lakh t of demand is imported and the DGTR case (initiated 22-Jun-2026, no finding yet) is live &mdash; but the protected-margin story is weaker than the bottleneck story.",
+     "basis": "Moved DOWN one step on pricing power (5&rarr;4): JSW JFE Nashik runs at ~102% utilisation but CARE Ratings reports net sales realisations moderating through 2025-26 on rising import penetration and global capacity additions, and India's GOES price (~US$1,830/t in Sep-2026) is a discount to North America's US$4,290/t. The strategic weight is unchanged — ~90% of 4.0–4.5 lakh t of demand is imported and the DGTR case (initiated 22-Jun-2026, no finding yet) is live — but the protected-margin story is weaker than the bottleneck story.",
      "params": {
       "op_share": 3,
       "pricing_power": 4,
@@ -9988,7 +9988,7 @@
     },
     {
      "node": "HV bushings (OIP / RIP condenser)",
-     "basis": "Moved DOWN on barriers (5&rarr;4) and bottleneck (4&rarr;3): Yash Highvoltage grew revenue 95% to &#8377;194.5 cr in H1 FY27 at 86% RIP mix with a &#8377;760 cr order book, and four Indian players (Yash, CG Power, Hitachi India and MIM) are now building localised RIP capacity, so RIP supply has stabilised. What has not localised is the capacitive core &mdash; ~95% imported &mdash; and localised 420/550 kV bushings only arrive in Q4 FY28.",
+     "basis": "Moved DOWN on barriers (5&rarr;4) and bottleneck (4&rarr;3): Yash Highvoltage grew revenue 95% to &#8377;194.5 cr in H1 FY27 at 86% RIP mix with a &#8377;760 cr order book, and four Indian players (Yash, CG Power, Hitachi India and MIM) are now building localised RIP capacity, so RIP supply has stabilised. What has not localised is the capacitive core — ~95% imported — and localised 420/550 kV bushings only arrive in Q4 FY28.",
      "params": {
       "op_share": 2,
       "pricing_power": 5,
@@ -10004,8 +10004,8 @@
      "coverage": 100
     },
     {
-     "node": "CRGO lamination &amp; core processing",
-     "basis": "NEW node this run, and the one that moved into the investable set: Vilas Transcore (NSE: VILAS) has tripled CRGO lamination capacity to 36,000 MTPA, won POWERGRID approval for slitting and lamination cutting to 220 kV, and grew H1 FY27 sales volume 28.1% to 11,697 MT &mdash; but at a 7.1% PAT margin, with realisations falling as CRGO prices eased. A capital-light, low-barrier processing step between the mill and the OEM: good returns on capital, weak pricing power.",
+     "node": "CRGO lamination & core processing",
+     "basis": "NEW node this run, and the one that moved into the investable set: Vilas Transcore (NSE: VILAS) has tripled CRGO lamination capacity to 36,000 MTPA, won POWERGRID approval for slitting and lamination cutting to 220 kV, and grew H1 FY27 sales volume 28.1% to 11,697 MT — but at a 7.1% PAT margin, with realisations falling as CRGO prices eased. A capital-light, low-barrier processing step between the mill and the OEM: good returns on capital, weak pricing power.",
      "params": {
       "op_share": 2,
       "pricing_power": 2,
@@ -10021,7 +10021,7 @@
      "coverage": 100
     },
     {
-     "node": "Windings &mdash; copper/aluminium CTC/PICC",
+     "node": "Windings — copper/aluminium CTC/PICC",
      "basis": "Large in revenue (winding wires and CTC are 75.3% of KSH International's FY26 revenue) but metal-indexed, so a record copper price (LME ~US$13,950/t, +35% YoY) passes straight through rather than accruing. CTC capacity is the narrower, better-priced slice, and Apar, Precision Wires, Vidya Wires and now Vilas are all adding it.",
      "params": {
       "op_share": 3,
@@ -10038,8 +10038,8 @@
      "coverage": 100
     },
     {
-     "node": "Testing &mdash; routine, impulse, short-circuit",
-     "basis": "Not a revenue pool but the entry gate, and the gate is measurable: only ~50% of transformers pass short-circuit testing first time, TARIL completed dynamic short-circuit testing to IEC 60076-5 on ten units across FY26&ndash;H1 FY27, and accredited high-power lab capacity is the constraint that shows up as lead time.",
+     "node": "Testing — routine, impulse, short-circuit",
+     "basis": "Not a revenue pool but the entry gate, and the gate is measurable: only ~50% of transformers pass short-circuit testing first time, TARIL completed dynamic short-circuit testing to IEC 60076-5 on ten units across FY26–H1 FY27, and accredited high-power lab capacity is the constraint that shows up as lead time.",
      "params": {
       "op_share": 1,
       "pricing_power": 3,
@@ -10055,8 +10055,8 @@
      "coverage": 100
     },
     {
-     "node": "Core-coil assembly &amp; winding process",
-     "basis": "Domestic, skilled-labour-bound and the step where operating leverage is actually earned &mdash; TARIL's Q2 FY27 EBITDA doubled to &#8377;114 cr on 66% revenue growth as utilisation improved &mdash; but it is a process inside the OEM, not a separately priced node.",
+     "node": "Core-coil assembly & winding process",
+     "basis": "Domestic, skilled-labour-bound and the step where operating leverage is actually earned — TARIL's Q2 FY27 EBITDA doubled to &#8377;114 cr on 66% revenue growth as utilisation improved — but it is a process inside the OEM, not a separately priced node.",
      "params": {
       "op_share": 2,
       "pricing_power": 3,
@@ -10072,7 +10072,7 @@
      "coverage": 100
     },
     {
-     "node": "Finished transformer &mdash; distribution &amp; specialty",
+     "node": "Finished transformer — distribution & specialty",
      "basis": "Crowded, state-utility-tendered and volume-led, and the only node with a visible import leak: distribution-transformer production grew just 3.4% in FY26 while DT imports nearly doubled to &#8377;2,085 cr. The competitive floor of the chain.",
      "params": {
       "op_share": 2,

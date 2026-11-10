@@ -7,7 +7,7 @@
   "industries": 81,
   "mappings": 2611,
   "multi_industry": 260,
-  "rank_changes": 16
+  "rank_changes": 1
  },
  "companies": [
   {
@@ -11778,8 +11778,8 @@
    ],
    "also_known_as": [],
    "rank": 86,
-   "previous_rank": 90,
-   "rank_change": 4
+   "previous_rank": 86,
+   "rank_change": 0
   },
   {
    "name": "Torrent Power",
@@ -11846,8 +11846,8 @@
    ],
    "also_known_as": [],
    "rank": 87,
-   "previous_rank": 86,
-   "rank_change": -1
+   "previous_rank": 87,
+   "rank_change": 0
   },
   {
    "name": "Vindhya Telelinks",
@@ -11914,8 +11914,8 @@
    ],
    "also_known_as": [],
    "rank": 88,
-   "previous_rank": 87,
-   "rank_change": -1
+   "previous_rank": 88,
+   "rank_change": 0
   },
   {
    "name": "IndiGrid",
@@ -11977,8 +11977,8 @@
    ],
    "also_known_as": [],
    "rank": 89,
-   "previous_rank": 88,
-   "rank_change": -1
+   "previous_rank": 89,
+   "rank_change": 0
   },
   {
    "name": "Power Grid Corporation of India",
@@ -12042,8 +12042,8 @@
     "Power Grid Corp of India"
    ],
    "rank": 90,
-   "previous_rank": 89,
-   "rank_change": -1
+   "previous_rank": 90,
+   "rank_change": 0
   },
   {
    "name": "INOX India",
@@ -13443,8 +13443,8 @@
     "Indotech Transformers"
    ],
    "rank": 113,
-   "previous_rank": 118,
-   "rank_change": 5
+   "previous_rank": 113,
+   "rank_change": 0
   },
   {
    "name": "Jyoti Structures",
@@ -13494,8 +13494,8 @@
    ],
    "also_known_as": [],
    "rank": 114,
-   "previous_rank": 113,
-   "rank_change": -1
+   "previous_rank": 114,
+   "rank_change": 0
   },
   {
    "name": "Paramount Communications",
@@ -13545,8 +13545,8 @@
    ],
    "also_known_as": [],
    "rank": 115,
-   "previous_rank": 114,
-   "rank_change": -1
+   "previous_rank": 115,
+   "rank_change": 0
   },
   {
    "name": "Sterlite Electric",
@@ -13595,8 +13595,8 @@
     }
    ],
    "rank": 116,
-   "previous_rank": 115,
-   "rank_change": -1
+   "previous_rank": 116,
+   "rank_change": 0
   },
   {
    "name": "Vodafone Idea",
@@ -13646,8 +13646,8 @@
    ],
    "also_known_as": [],
    "rank": 117,
-   "previous_rank": 116,
-   "rank_change": -1
+   "previous_rank": 117,
+   "rank_change": 0
   },
   {
    "name": "Avalon Technologies",
@@ -13696,8 +13696,8 @@
    ],
    "also_known_as": [],
    "rank": 118,
-   "previous_rank": 117,
-   "rank_change": -1
+   "previous_rank": 118,
+   "rank_change": 0
   },
   {
    "name": "Nelco",
@@ -26782,8 +26782,8 @@
     }
    ],
    "rank": 518,
-   "previous_rank": null,
-   "rank_change": null
+   "previous_rank": 518,
+   "rank_change": 0
   },
   {
    "name": "Vimta Labs",
@@ -26808,8 +26808,8 @@
    ],
    "also_known_as": [],
    "rank": 519,
-   "previous_rank": 518,
-   "rank_change": -1
+   "previous_rank": 519,
+   "rank_change": 0
   },
   {
    "name": "Welspun Corp",
@@ -26834,8 +26834,8 @@
    ],
    "also_known_as": [],
    "rank": 520,
-   "previous_rank": 519,
-   "rank_change": -1
+   "previous_rank": 520,
+   "rank_change": 0
   },
   {
    "name": "Yash Highvoltage",
@@ -26860,8 +26860,8 @@
    ],
    "also_known_as": [],
    "rank": 521,
-   "previous_rank": 520,
-   "rank_change": -1
+   "previous_rank": 521,
+   "rank_change": 0
   },
   {
    "name": "Zydus Lifesciences",
@@ -26886,8 +26886,8 @@
    ],
    "also_known_as": [],
    "rank": 522,
-   "previous_rank": 521,
-   "rank_change": -1
+   "previous_rank": 522,
+   "rank_change": 0
   }
  ]
 }
