@@ -18928,6 +18928,179 @@
      "in_universe_coverage": false
     }
    ]
+  },
+  {
+   "slug": "solid-state-transformer-india",
+   "industry": "Solid State Transformer",
+   "scope": "INDIA",
+   "path": "industries/solid-state-transformer-india.html",
+   "analysis_date": "2026-11-10",
+   "universe": "NSE/BSE",
+   "sector": "Power & Electrical Infrastructure",
+   "derived_from": null,
+   "drill_downs": [],
+   "nodes": [
+    {
+     "id": "sic",
+     "name": "SiC Power Modules & Gate Drive",
+     "level": 1,
+     "aliases": [
+      "sic module",
+      "sic mosfet",
+      "silicon carbide module",
+      "power module",
+      "igbt module",
+      "gate driver",
+      "sic device"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "mft",
+     "name": "Medium-Frequency Transformer & Magnetics",
+     "level": 1,
+     "aliases": [
+      "mft",
+      "medium frequency transformer",
+      "high frequency transformer",
+      "nanocrystalline core",
+      "ferrite core",
+      "isolation transformer"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": false
+    },
+    {
+     "id": "caps",
+     "name": "DC-link Film Capacitors",
+     "level": 2,
+     "aliases": [
+      "dc link capacitor",
+      "film capacitor",
+      "polypropylene film capacitor"
+     ],
+     "priority": "medium",
+     "bottleneck": false,
+     "in_universe_coverage": false
+    },
+    {
+     "id": "ctrl",
+     "name": "Control, Firmware & Grid-Forming",
+     "level": 1,
+     "aliases": [
+      "grid forming control",
+      "converter control",
+      "firmware",
+      "ems",
+      "fpga control"
+     ],
+     "priority": "high",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "integ",
+     "name": "SST Integration & Cabinet Build",
+     "level": 1,
+     "aliases": [
+      "solid state transformer",
+      "sst",
+      "power electronic transformer",
+      "pet",
+      "mv sst"
+     ],
+     "priority": "high",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "mv",
+     "name": "MV Insulation, Switchgear & Enclosure",
+     "level": 1,
+     "aliases": [
+      "mv switchgear",
+      "bushing",
+      "enclosure",
+      "insulation coordination"
+     ],
+     "priority": "medium",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "cool",
+     "name": "Cooling & Thermal Management",
+     "level": 2,
+     "aliases": [
+      "cold plate",
+      "liquid cooling",
+      "coolant loop"
+     ],
+     "priority": "medium",
+     "bottleneck": false,
+     "in_universe_coverage": false
+    },
+    {
+     "id": "test",
+     "name": "Test, Certification & Grid-Code Validation",
+     "level": 1,
+     "aliases": [
+      "iec 62477",
+      "ul 2877",
+      "partial discharge test",
+      "type test",
+      "certification"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": false
+    },
+    {
+     "id": "demand",
+     "name": "Deployment: 800 VDC Data Centres, EV Hubs, Rail",
+     "level": 1,
+     "aliases": [
+      "800 vdc",
+      "data centre power",
+      "megawatt charging",
+      "mcs",
+      "traction converter"
+     ],
+     "priority": "high",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "transformer",
+     "name": "Incumbent Transformer Alternative",
+     "level": 1,
+     "aliases": [
+      "power transformer",
+      "distribution transformer",
+      "low frequency transformer",
+      "lft"
+     ],
+     "priority": "medium",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "recycle",
+     "name": "Aftermarket, Spares & Recycling",
+     "level": 1,
+     "aliases": [
+      "aftermarket",
+      "recycling",
+      "refurbishment"
+     ],
+     "priority": "low",
+     "bottleneck": false,
+     "in_universe_coverage": false
+    }
+   ]
   }
  ]
 }
