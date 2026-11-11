@@ -58,9 +58,16 @@ const KNOWN_COMPONENTS = new Set([
 const CANONICAL_SAMPLES = ['metric-card', 'metric-cards', 'digest', 'digest__item', 'metric-modal'];
 const INDEX_FORBIDDEN = ['metric-card', 'metric-cards', 'metric-modal'];
 
+// The nine score-block categories. All nine live INSIDE categories{} — risk included
+// (it carries no weight, but it is a category and the ranking builder reads it there).
+const SCORE_CATEGORIES = ['economics', 'opportunity', 'competitive', 'cycle', 'valuation',
+  'value_chain', 'capital', 'technology', 'risk'];
+const VALUE_CAPTURE_PARAMS = ['op_share', 'pricing_power', 'roic', 'barriers',
+  'bottleneck', 'pool_growth', 'cash_conversion', 'switching'];
+
 function collectFiles(args) {
   const out = [];
-  const roots = args.length ? args : ['index.html', 'industries'];
+  const roots = args.length ? args : ['index.html', 'industries', 'views'];
   for (const r of roots) {
     if (!existsSync(r)) continue;
     if (statSync(r).isDirectory()) {
@@ -190,6 +197,78 @@ for (const file of files) {
   // every entry page should be scored; unscored pages are a warning until the backfill clears them
   if (!isIndex && !isView && !/class="industry-score"/.test(html)) {
     warnings.push('no industry-score block — the industry scorecard is not scored yet (backfill pending)');
+  }
+
+  // NAVIGATION: every page below the root must carry a way back to the register.
+  // An entry page or a derived view with no breadcrumb is a dead end — the reader
+  // arrives from the index and cannot return without the browser's back button.
+  if (!isIndex && !/href="\.\.\/index\.html"/.test(html)) {
+    problems.push('no breadcrumb link back to the register (href="../index.html") — the page is a dead end');
+  }
+
+  // SCORE-BLOCK SCHEMA: the nine categories must sit INSIDE categories{}, risk included.
+  // Five pages once carried "risk" as a TOP-LEVEL key: they rendered correctly but
+  // build-industry-ranking.mjs reads block.categories[risk], so those five silently
+  // lost their resilience score and dropped out of the risk-adjusted ranking.
+  if (/class="industry-score"/.test(html)) {
+    const m = html.match(/<script[^>]*class="industry-score"[^>]*>([\s\S]*?)<\/script>/);
+    if (!m) {
+      problems.push('industry-score block could not be read (malformed <script class="industry-score">)');
+    } else {
+      let block = null;
+      try {
+        block = JSON.parse(m[1]);
+      } catch (e) {
+        problems.push('industry-score block is not valid JSON: ' + String(e.message).slice(0, 70));
+      }
+      if (block) {
+        const cats = block.categories || {};
+        const missing = SCORE_CATEGORIES.filter((c) => !(c in cats));
+        if (missing.length) {
+          problems.push('industry-score block is missing categor' + (missing.length > 1 ? 'ies ' : 'y ') +
+            missing.join(', ') + ' inside categories{} — score them (null with a basis is allowed) rather than omitting them');
+        }
+        const stray = SCORE_CATEGORIES.filter((c) => c in block);
+        if (stray.length) {
+          problems.push('industry-score block carries ' + stray.join(', ') + ' at the TOP LEVEL — ' +
+            'every category must sit inside categories{} or the ranking builder will not read it');
+        }
+        for (const c of SCORE_CATEGORIES) {
+          if (cats[c] && typeof cats[c] === 'object' && !('basis' in cats[c])) {
+            problems.push('industry-score category ' + c + ' has no basis line');
+          }
+        }
+        if (!block.confidence || typeof block.confidence !== 'object') {
+          warnings.push('score block has no confidence object (evidence 1-5 + primary_source_pct) — predates the rule');
+        } else {
+          const ev = block.confidence.evidence;
+          const pct = block.confidence.primary_source_pct;
+          if (!(Number.isInteger(ev) && ev >= 1 && ev <= 5)) {
+            problems.push('confidence.evidence must be an integer 1-5 (found ' + JSON.stringify(ev) + ')');
+          }
+          if (!(typeof pct === 'number' && pct >= 0 && pct <= 100)) {
+            problems.push('confidence.primary_source_pct must be 0-100 (found ' + JSON.stringify(pct) + ')');
+          }
+        }
+        if (Array.isArray(block.value_capture)) {
+          block.value_capture.forEach((n, i) => {
+            const label = (n && n.node) ? '"' + n.node + '"' : '#' + i;
+            if (!n || !n.node) problems.push('value_capture entry ' + label + ' has no node name');
+            const params = (n && n.params) || {};
+            const have = VALUE_CAPTURE_PARAMS.filter((k) => k in params);
+            if (have.length < 4) {
+              problems.push('value_capture node ' + label + ' carries only ' + have.length +
+                ' of the 8 parameters (at least 4 are required)');
+            }
+            const outOfRange = have.filter((k) => !(typeof params[k] === 'number' && params[k] >= 1 && params[k] <= 5));
+            if (outOfRange.length) {
+              problems.push('value_capture node ' + label + ' has parameters outside the 1-5 scale: ' + outOfRange.join(', '));
+            }
+            if (!n || !n.basis) problems.push('value_capture node ' + label + ' has no basis line');
+          });
+        }
+      }
+    }
   }
 
   // data-script integrity: NODES must be declared once and parse.

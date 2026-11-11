@@ -403,7 +403,13 @@ table.data.detail .grp-start { border-left: 1px solid var(--border-bright); }
    top of each other. This table's header scrolls with the content instead. */
 table.data.detail thead th { position: static; }
 table.data.detail td { padding: 6px 7px; }
-</style></head><body><div class="container">
+</style></head><body>
+<div style="max-width:1180px;margin:0 auto 18px;font-family:'IBM Plex Mono',monospace;font-size:12px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;">
+  <span><a href="../index.html" style="color:var(--blue);text-decoration:none;border-bottom:1px solid var(--border);">&larr; Industry BOM Registry</a>
+  <span style="color:var(--text-dim);">&nbsp;/&nbsp;Industries ranked</span></span>
+  <a href="companies-master-list.html" style="color:var(--blue);text-decoration:none;border-bottom:1px solid var(--border);">Company master list &rarr;</a>
+</div>
+<div class="container">
 <header class="masthead">
   <div class="eyebrow">Industry BOM Registry &middot; derived view</div>
   <h1>Industries <span>ranked</span></h1>

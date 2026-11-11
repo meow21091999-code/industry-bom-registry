@@ -52,7 +52,13 @@ let out = `<!DOCTYPE html>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/registry.css?v=${CSS_VERSION}">
-${STYLE}</head><body><div class="container">
+${STYLE}</head><body>
+<div style="max-width:1180px;margin:0 auto 18px;font-family:'IBM Plex Mono',monospace;font-size:12px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;">
+  <span><a href="../index.html" style="color:var(--blue);text-decoration:none;border-bottom:1px solid var(--border);">&larr; Industry BOM Registry</a>
+  <span style="color:var(--text-dim);">&nbsp;/&nbsp;Company master list</span></span>
+  <a href="industries-ranked.html" style="color:var(--blue);text-decoration:none;border-bottom:1px solid var(--border);">Industries ranked &rarr;</a>
+</div>
+<div class="container">
 
 <header class="masthead">
   <div class="eyebrow">Industry BOM Registry &middot; derived view</div>
