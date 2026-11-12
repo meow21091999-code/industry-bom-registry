@@ -1,7 +1,7 @@
 {
  "registry": "Industry BOM Registry",
  "description": "Industry ranking per \"Industry-Level Investment Parameters & Scoring Architecture\": hierarchical category scores (1–5), overall 0–100, evidence coverage reported, three lenses kept separate. DERIVED — regenerate with node tools/build-industry-ranking.mjs.",
- "generated": "2026-11-11",
+ "generated": "2026-11-12",
  "framework": {
   "category_score": "Σ(parameter weight × parameter score) ÷ Σ(weights of supported parameters)",
   "overall_score": "Σ(category weight × category score ÷ 5) × 100, renormalised over supported categories",
@@ -599,7 +599,7 @@
    "structural_score": 41.4,
    "current_score": 40,
    "structural_score_rank": 76,
-   "current_score_rank": 56
+   "current_score_rank": 57
   },
   {
    "slug": "agrochemicals-crop-protection-india",
@@ -842,7 +842,7 @@
    ],
    "provisional": false,
    "notes": "First industry score on this page, 2026-11-06 (Tier-2 backfill). Market size and growth are the Rubix FY25/FY28 series already carried in the digest and now re-verified; the Statista $10.3 bn variant is a scope difference and is shown, not averaged.",
-   "overall_rank": 33,
+   "overall_rank": 32,
    "risk_adjusted_rank": 14,
    "structural_score": 64.3,
    "current_score": 60,
@@ -1839,7 +1839,7 @@
    "structural_score": 58.6,
    "current_score": 40,
    "structural_score_rank": 47,
-   "current_score_rank": 57
+   "current_score_rank": 58
   },
   {
    "slug": "component-mro-india",
@@ -4278,7 +4278,7 @@
    "structural_score": 65.7,
    "current_score": 40,
    "structural_score_rank": 21,
-   "current_score_rank": 58
+   "current_score_rank": 59
   },
   {
    "slug": "ems-electronics-manufacturing-india",
@@ -4764,7 +4764,7 @@
    ],
    "provisional": false,
    "notes": "Scored during the 2026-11-09 backfill pass from the page's own evidence and the industry-data sourcing ladder; valuation left UNAVAILABLE because no industry-level multiple series exists.",
-   "overall_rank": 34,
+   "overall_rank": 33,
    "risk_adjusted_rank": 23,
    "structural_score": 60,
    "current_score": 80,
@@ -5260,7 +5260,7 @@
    ],
    "provisional": false,
    "notes": "Scored during the 2026-11-09 backfill pass from the page's own evidence and the industry-data sourcing ladder; valuation left UNAVAILABLE because no industry-level multiple series exists.",
-   "overall_rank": 32,
+   "overall_rank": 31,
    "risk_adjusted_rank": 22,
    "structural_score": 60,
    "current_score": 80,
@@ -5494,7 +5494,7 @@
    "structural_score": 57.1,
    "current_score": 40,
    "structural_score_rank": 52,
-   "current_score_rank": 59
+   "current_score_rank": 60
   },
   {
    "slug": "guns-india",
@@ -7133,7 +7133,7 @@
    "structural_score": 51.4,
    "current_score": 40,
    "structural_score_rank": 62,
-   "current_score_rank": 60
+   "current_score_rank": 61
   },
   {
    "slug": "machine-tools-metrology-india",
@@ -8103,7 +8103,7 @@
    "structural_score": 41.4,
    "current_score": 40,
    "structural_score_rank": 77,
-   "current_score_rank": 61
+   "current_score_rank": 62
   },
   {
    "slug": "nuclear-pwr-steam-generator-india",
@@ -9830,7 +9830,7 @@
    "structural_score": 51.4,
    "current_score": 40,
    "structural_score_rank": 64,
-   "current_score_rank": 62
+   "current_score_rank": 63
   },
   {
    "slug": "overhead-transmission-line-india",
@@ -10076,7 +10076,7 @@
    "structural_score": 61.4,
    "current_score": 60,
    "structural_score_rank": 40,
-   "current_score_rank": 54
+   "current_score_rank": 55
   },
   {
    "slug": "pcb-electronic-components-india",
@@ -10570,7 +10570,7 @@
    "structural_score": 48.6,
    "current_score": 40,
    "structural_score_rank": 72,
-   "current_score_rank": 63
+   "current_score_rank": 64
   },
   {
    "slug": "power-conversion-system-india",
@@ -10826,7 +10826,7 @@
    "title": "India Power Semiconductors & OSAT",
    "group": "Electrical & Electronic Equipment",
    "scored": true,
-   "as_of": "2026-10-30",
+   "as_of": "2026-11-12",
    "categories": {
     "economics": {
      "name": "Industry economics & value creation",
@@ -10834,7 +10834,7 @@
      "lens": "structural",
      "score": 3,
      "from": "category",
-     "basis": "India build capacity ~USD 0.4 bn against ~USD 3-4 bn of demand — the industry earns on assembly today, not on wafer economics."
+     "basis": "Domestic build capacity ~USD 0.4 bn against ~USD 3-4 bn of demand; the industry earns on assembly today, where material is 45-50% of cost and 60-70% of that is imported."
     },
     "opportunity": {
      "name": "Market opportunity & structural growth",
@@ -10842,7 +10842,7 @@
      "lens": "structural",
      "score": 4,
      "from": "category",
-     "basis": "Power-discrete market ~USD 1.86 bn (2025) to ~USD 4.05 bn by 2032, 12% CAGR; import substitution is the growth engine."
+     "basis": "Discrete power semiconductor and module market USD 1.86 bn (2025) to USD 4.05 bn (2032), 12% CAGR; import substitution is the growth engine."
     },
     "competitive": {
      "name": "Competitive structure & moat",
@@ -10850,15 +10850,15 @@
      "lens": "structural",
      "score": 3,
      "from": "category",
-     "basis": "Global majors hold the technology; India's entry point is OSAT/ATMP, 9 of 12 ISM units."
+     "basis": "Global majors hold device technology and Chinese capacity sets price; India's entry point is OSAT — 9 of the 12 approved units are back-end, and 5 units in total are producing."
     },
     "cycle": {
      "name": "Current opportunity & cycle position",
      "weight": 0.15,
      "lens": "current",
-     "score": null,
-     "from": null,
-     "basis": "No cycle-position evidence on the page — demand-supply balance not established."
+     "score": 3,
+     "from": "category",
+     "basis": "Split market: 8-inch MOSFET/IGBT lines at ~90% utilisation with 10-15% price increases in H1 2026, while automotive SiC is in surplus and 6-inch substrate fell from ~USD 1,500 to ~USD 500. Input inflation (components +30-35%, PCB +10-12%, 6-8 month lead times) squeezes assemblers."
     },
     "valuation": {
      "name": "Valuation & market expectations",
@@ -10866,7 +10866,7 @@
      "lens": "current",
      "score": null,
      "from": null,
-     "basis": "No industry-level valuation data in the registry."
+     "basis": "No industry-level valuation data in the registry; listed proxies trade on EMS and capital-goods multiples, which are not an industry multiple."
     },
     "value_chain": {
      "name": "Value-chain position & bottlenecks",
@@ -10874,7 +10874,7 @@
      "lens": "structural",
      "score": 4,
      "from": "category",
-     "basis": "Clear bottlenecks: no Indian leadframe stamper, moulding compound or bonding wire; ~95% of leadframe material imported."
+     "basis": "Bottlenecks are explicit and now have named first movers: no qualified Indian leadframe, EMC or bonding wire, but Tata-Enomoto, Kinesis and Voltix have entered the frame."
     },
     "capital": {
      "name": "Capital intensity & financial quality",
@@ -10882,7 +10882,7 @@
      "lens": "structural",
      "score": 2,
      "from": "category",
-     "basis": "Heavy fixed capital (fab/OSAT) with long lead times; capital intensity is a drag on returns, not a moat yet."
+     "basis": "Heavy fixed capital with long payback; CG Power has spent ~INR 20 bn for semiconductor EBIT breakeven only from FY28, and ~70% equipment-capex subsidy is what makes the arithmetic close."
     },
     "technology": {
      "name": "Technology & innovation",
@@ -10890,7 +10890,7 @@
      "lens": "structural",
      "score": 2,
      "from": "category",
-     "basis": "Licensed process and assembly; little indigenous design or IP."
+     "basis": "Processes are licensed (PSMC, Clas-SiC, Renesas) and assembly-led; the first indigenous SiC epi line and a fabless 1200V SiC platform exist but are pre-scale."
     },
     "risk": {
      "name": "Risk & resilience",
@@ -10898,49 +10898,35 @@
      "lens": "risk",
      "score": 3,
      "from": "category",
-     "basis": "Policy-dependent and execution-heavy, but the strategic priority is durable."
+     "basis": "Policy-dependent, qualification-gated and execution-heavy, but the strategic priority and the incentive stack are durable through Semicon 2.0."
     }
    },
    "structural": {
     "score": 64.3,
     "coverage": 100
    },
-   "current": null,
+   "current": {
+    "score": 60,
+    "coverage": 50
+   },
    "risk": 3,
    "risk_adjusted": 38.6,
-   "overall": 64.3,
-   "coverage": 70,
+   "overall": 63.5,
+   "coverage": 85,
    "confidence": {
-    "evidence": 3,
-    "primary_source_pct": 40,
+    "evidence": 4,
+    "primary_source_pct": 55,
     "missing_critical": [
      "industry capex",
      "industry ROIC",
-     "cycle position",
-     "industry valuation"
+     "volume series for the market",
+     "industry-level valuation"
     ]
    },
    "value_capture": [
     {
-     "node": "Chip design & IP",
-     "basis": "Licensed IP and reference designs carry the highest margins in the chain; switching costs are structural because a design win locks the socket.",
-     "params": {
-      "op_share": 4,
-      "pricing_power": 5,
-      "roic": 5,
-      "barriers": 5,
-      "bottleneck": 4,
-      "pool_growth": 4,
-      "cash_conversion": 5,
-      "switching": 4
-     },
-     "score": 4.55,
-     "score100": 91,
-     "coverage": 100
-    },
-    {
      "node": "Semiconductor equipment",
-     "basis": "Installed base plus service revenue; qualification takes years, so customers do not switch. Tool supply is the binding constraint on any new fab.",
+     "basis": "Installed base plus service revenue and multi-year qualification; tool supply is the binding constraint on every new fab, and Semicon 2.0 Pillar 2 exists because of it. Ranked first this pass, up from second.",
      "params": {
       "op_share": 4,
       "pricing_power": 5,
@@ -10956,11 +10942,45 @@
      "coverage": 100
     },
     {
+     "node": "Chip design & IP",
+     "basis": "Highest margins and best cash conversion in the chain, and a design win locks the socket; op_share trimmed because the power-device design pool is narrower than logic. Ranked second, down from first.",
+     "params": {
+      "op_share": 3,
+      "pricing_power": 5,
+      "roic": 5,
+      "barriers": 5,
+      "bottleneck": 3,
+      "pool_growth": 4,
+      "cash_conversion": 5,
+      "switching": 4
+     },
+     "score": 4.25,
+     "score100": 85,
+     "coverage": 100
+    },
+    {
+     "node": "Specialty packaging materials",
+     "basis": "Leadframe, wire and compound are qualified into a process and cannot be swapped casually; 35-40% of material cost sits in the leadframe alone. Bottleneck weight raised as localisation intent (Enomoto, Kinesis) proved how hard the layer is.",
+     "params": {
+      "op_share": 4,
+      "pricing_power": 4,
+      "roic": 4,
+      "barriers": 4,
+      "bottleneck": 5,
+      "pool_growth": 3,
+      "cash_conversion": 4,
+      "switching": 4
+     },
+     "score": 4,
+     "score100": 80,
+     "coverage": 100
+    },
+    {
      "node": "Wafer fabrication",
-     "basis": "Largest absolute profit pool but the most capital-hungry: enormous fixed assets, heavy depreciation, and returns depend entirely on utilisation.",
+     "basis": "Largest absolute profit pool, but enormous fixed assets, heavy depreciation and returns that depend entirely on utilisation; Chinese capacity now sets pricing power.",
      "params": {
       "op_share": 5,
-      "pricing_power": 4,
+      "pricing_power": 3,
       "roic": 2,
       "barriers": 5,
       "bottleneck": 5,
@@ -10968,30 +10988,13 @@
       "cash_conversion": 1,
       "switching": 3
      },
-     "score": 3.8,
-     "score100": 76,
+     "score": 3.65,
+     "score100": 73,
      "coverage": 100
     },
     {
-     "node": "Specialty materials",
-     "basis": "Qualification barriers are high and customer concentration is real; pricing holds while the material is specified into a qualified process.",
-     "params": {
-      "op_share": 3,
-      "pricing_power": 4,
-      "roic": 4,
-      "barriers": 4,
-      "bottleneck": 4,
-      "pool_growth": 3,
-      "cash_conversion": 3,
-      "switching": 4
-     },
-     "score": 3.6,
-     "score100": 72,
-     "coverage": 100
-    },
-    {
-     "node": "End-product companies",
-     "basis": "Owns the customer and the brand, so cash conversion is good; but it is not a bottleneck — it can be served by any qualified supplier.",
+     "node": "End-product / system (inverter, PCS, EV drivetrain)",
+     "basis": "Owns the customer and the brand so cash conversion is good, but it is not a bottleneck and can be served by any qualified supplier.",
      "params": {
       "op_share": 3,
       "pricing_power": 3,
@@ -11007,8 +11010,25 @@
      "coverage": 100
     },
     {
+     "node": "SiC substrate & epitaxy",
+     "basis": "Added this pass as its own node. The pool grows fastest of any input, but 6-inch substrate prices collapsed from ~USD 1,500 to ~USD 500 and 8-inch is now the benchmark, so barriers and pricing power are eroding faster than volume grows.",
+     "params": {
+      "op_share": 3,
+      "pricing_power": 2,
+      "roic": 2,
+      "barriers": 3,
+      "bottleneck": 4,
+      "pool_growth": 5,
+      "cash_conversion": 2,
+      "switching": 2
+     },
+     "score": 2.85,
+     "score100": 57,
+     "coverage": 100
+    },
+    {
      "node": "OSAT / advanced packaging",
-     "basis": "Assembly and test is where India's capacity is being built, but it is the thin-margin end of the chain: pricing power is weak and capital is heavy.",
+     "basis": "Where India's capacity is being built, but the thin-margin end: pricing power is weak, material is 45-50% of cost and 60-70% of it is imported, and CG Semi expects breakeven only in FY28.",
      "params": {
       "op_share": 2,
       "pricing_power": 2,
@@ -11024,29 +11044,31 @@
      "coverage": 100
     },
     {
-     "node": "Electronic manufacturing",
-     "basis": "Build-to-print. Lowest profit share and lowest pricing power in the chain; value accrues to whoever owns the design.",
+     "node": "Power module assembly",
+     "basis": "Grows fastest (modules at 16% CAGR versus 12% for the market) but is the thinnest pool: dies are imported and the assembler adds process, not design.",
      "params": {
-      "op_share": 1,
-      "pricing_power": 1,
+      "op_share": 2,
+      "pricing_power": 2,
       "roic": 2,
       "barriers": 2,
       "bottleneck": 2,
-      "pool_growth": 3,
+      "pool_growth": 4,
       "cash_conversion": 2,
-      "switching": 1
+      "switching": 2
      },
-     "score": 1.7,
-     "score100": 34,
+     "score": 2.2,
+     "score100": 44,
      "coverage": 100
     }
    ],
    "provisional": false,
-   "notes": "Scored against 'Industry-Level Investment Parameters & Scoring Architecture'. Cycle position and valuation left UNAVAILABLE — the registry carries no cycle or valuation data for these industries. Value capture scored per node from the review's §4 model — PROVISIONAL judgement, not yet evidenced with node-level financials.",
-   "overall_rank": 31,
+   "notes": "Scored against 'Industry-Level Investment Parameters & Scoring Architecture'. Cycle is scored for the first time (it was UNAVAILABLE in the 2026-10-09 pass) from Yole, TrendForce and channel price data; valuation stays UNAVAILABLE, so coverage is 85%. Value capture scored per node from the review's section 4 model on the 1-5 scale.",
+   "overall_rank": 34,
    "risk_adjusted_rank": 15,
    "structural_score": 64.3,
-   "structural_score_rank": 28
+   "current_score": 60,
+   "structural_score_rank": 28,
+   "current_score_rank": 45
   },
   {
    "slug": "power-transformers-india",
@@ -11542,7 +11564,7 @@
    "structural_score": 77.1,
    "current_score": 40,
    "structural_score_rank": 4,
-   "current_score_rank": 64
+   "current_score_rank": 65
   },
   {
    "slug": "pumped-hydro-india",
@@ -11773,7 +11795,7 @@
    "structural_score": 61.4,
    "current_score": 60,
    "structural_score_rank": 37,
-   "current_score_rank": 45
+   "current_score_rank": 46
   },
   {
    "slug": "railway-india",
@@ -12215,7 +12237,7 @@
    "structural_score": 50,
    "current_score": 60,
    "structural_score_rank": 68,
-   "current_score_rank": 46
+   "current_score_rank": 47
   },
   {
    "slug": "reactor-coolant-pumps-primary-loop-india",
@@ -12444,7 +12466,7 @@
    "structural_score": 71.4,
    "current_score": 60,
    "structural_score_rank": 7,
-   "current_score_rank": 47
+   "current_score_rank": 48
   },
   {
    "slug": "robot-software-autonomy-india",
@@ -12887,7 +12909,7 @@
    "structural_score": 55.7,
    "current_score": 60,
    "structural_score_rank": 55,
-   "current_score_rank": 48
+   "current_score_rank": 49
   },
   {
    "slug": "room-ac-white-goods-components-india",
@@ -13598,7 +13620,7 @@
    "structural_score": 55.7,
    "current_score": 40,
    "structural_score_rank": 56,
-   "current_score_rank": 65
+   "current_score_rank": 66
   },
   {
    "slug": "satellite-india",
@@ -14252,7 +14274,7 @@
    "structural_score": 60,
    "current_score": 40,
    "structural_score_rank": 44,
-   "current_score_rank": 66
+   "current_score_rank": 67
   },
   {
    "slug": "semiconductor-equipment-materials-india",
@@ -15208,7 +15230,7 @@
    "structural_score": 62.9,
    "current_score": 40,
    "structural_score_rank": 35,
-   "current_score_rank": 70
+   "current_score_rank": 71
   },
   {
    "slug": "smart-meters-india",
@@ -15685,7 +15707,7 @@
    "structural_score": 52.9,
    "current_score": 40,
    "structural_score_rank": 60,
-   "current_score_rank": 67
+   "current_score_rank": 68
   },
   {
    "slug": "solar-cells-india",
@@ -15914,7 +15936,7 @@
    "structural_score": 64.3,
    "current_score": 40,
    "structural_score_rank": 31,
-   "current_score_rank": 71
+   "current_score_rank": 72
   },
   {
    "slug": "solar-pv-india",
@@ -16160,7 +16182,7 @@
    "structural_score": 60,
    "current_score": 40,
    "structural_score_rank": 45,
-   "current_score_rank": 68
+   "current_score_rank": 69
   },
   {
    "slug": "solid-state-transformer-india",
@@ -16376,7 +16398,7 @@
    "structural_score": 50,
    "current_score": 60,
    "structural_score_rank": 69,
-   "current_score_rank": 49
+   "current_score_rank": 50
   },
   {
    "slug": "steam-turbine-india",
@@ -17118,7 +17140,7 @@
    "structural_score": 51.4,
    "current_score": 60,
    "structural_score_rank": 66,
-   "current_score_rank": 50
+   "current_score_rank": 51
   },
   {
    "slug": "telecom-india",
@@ -17364,7 +17386,7 @@
    "structural_score": 58.6,
    "current_score": 40,
    "structural_score_rank": 50,
-   "current_score_rank": 69
+   "current_score_rank": 70
   },
   {
    "slug": "telecom-operators-india",
@@ -17614,7 +17636,7 @@
    "structural_score": 67.1,
    "current_score": 50,
    "structural_score_rank": 16,
-   "current_score_rank": 55
+   "current_score_rank": 56
   },
   {
    "slug": "telecom-towers-india",
@@ -17858,7 +17880,7 @@
    "structural_score": 64.3,
    "current_score": 60,
    "structural_score_rank": 30,
-   "current_score_rank": 51
+   "current_score_rank": 52
   },
   {
    "slug": "telecom-transport-equipment-india",
@@ -18359,7 +18381,7 @@
    "structural_score": 65.7,
    "current_score": 60,
    "structural_score_rank": 23,
-   "current_score_rank": 52
+   "current_score_rank": 53
   },
   {
    "slug": "wastewater-treatment-india",
@@ -18590,7 +18612,7 @@
    "structural_score": 58.6,
    "current_score": 60,
    "structural_score_rank": 51,
-   "current_score_rank": 53
+   "current_score_rank": 54
   }
  ]
 }
