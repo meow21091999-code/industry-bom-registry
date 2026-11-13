@@ -98,11 +98,11 @@
   }
  },
  "counts": {
-  "industries": 83,
-  "scored": 83,
+  "industries": 84,
+  "scored": 84,
   "legacy": 0,
   "unscored": 0,
-  "ranked": 83
+  "ranked": 84
  },
  "industries": [
   {
@@ -594,11 +594,11 @@
    ],
    "provisional": false,
    "notes": "First industry score on this page, 2026-11-06 (Tier-2 backfill). Scored as a pre-commercial technology family: economics and valuation are deliberately low or UNAVAILABLE because there is no revenue pool yet, and the opportunity score is held at mixed rather than high because the India base is nil.",
-   "overall_rank": 82,
-   "risk_adjusted_rank": 81,
+   "overall_rank": 83,
+   "risk_adjusted_rank": 82,
    "structural_score": 41.4,
    "current_score": 40,
-   "structural_score_rank": 82,
+   "structural_score_rank": 83,
    "current_score_rank": 64
   },
   {
@@ -2741,10 +2741,10 @@
    "provisional": false,
    "notes": "Newly scored 2026-11-07 in the content backfill. Opportunity uses exactly the series in the Market & growth digest block; valuation is null because the registry carries no industry-level valuation series for this node. Value capture scored from this page's own BOM tree and value-chain ladder, using the node names already on the page.",
    "overall_rank": 80,
-   "risk_adjusted_rank": 80,
+   "risk_adjusted_rank": 81,
    "structural_score": 44.3,
    "current_score": 60,
-   "structural_score_rank": 81,
+   "structural_score_rank": 82,
    "current_score_rank": 31
   },
   {
@@ -6145,10 +6145,10 @@
    "provisional": false,
    "notes": "Opportunity uses the same series as the Market & growth digest block (IFR installations of 9,120 units in 2024 and ~10,500 in 2025, 27% average annual growth 2020–2025, with imports at 85–90% of component value). No rupee market size exists at Level 1 or 2, so none is stated. Valuation left UNAVAILABLE. Value capture (added 2026-11-04) scores six nodes from this page's BOM tree and ladder on the separate Registry Review §4 weighting (op_share 20%, pricing_power 15%, roic 15%, barriers 15%, bottleneck 10%, pool_growth 10%, cash_conversion 10%, switching 5%). It answers 'which node keeps the money' and is not blended into the industry score above; with no domestic reducer maker, the scoring describes pools the incumbents hold and an Indian entrant would have to take.",
    "overall_rank": 79,
-   "risk_adjusted_rank": 79,
+   "risk_adjusted_rank": 80,
    "structural_score": 45.7,
    "current_score": 60,
-   "structural_score_rank": 80,
+   "structural_score_rank": 81,
    "current_score_rank": 39
   },
   {
@@ -8295,11 +8295,11 @@
    ],
    "provisional": false,
    "notes": "Opportunity uses the same series as the Market &amp; growth digest block (Omdia/IDC: ~153 mn CY2025 to 125&ndash;133 mn CY2026; accessories USD 6.86 bn 2025 to 14.66 bn 2034, ~8.5% five-year CAGR, CALCULATED). Valuation left UNAVAILABLE &mdash; no industry valuation series exists. Value capture (added 2026-11-04) scores eight nodes from this page's BOM tree and value-chain ladder on the separate Registry Review §4 weighting (op_share 20%, pricing_power 15%, roic 15%, barriers 15%, bottleneck 10%, pool_growth 10%, cash_conversion 10%, switching 5%). It answers 'which node keeps the money' and is not blended into the industry score above.",
-   "overall_rank": 83,
-   "risk_adjusted_rank": 82,
+   "overall_rank": 84,
+   "risk_adjusted_rank": 83,
    "structural_score": 41.4,
    "current_score": 40,
-   "structural_score_rank": 83,
+   "structural_score_rank": 84,
    "current_score_rank": 69
   },
   {
@@ -12036,6 +12036,221 @@
    "current_score_rank": 49
   },
   {
+   "slug": "quantum-computing-india",
+   "title": "Quantum Computing (India)",
+   "group": "Quantum Technology",
+   "scored": true,
+   "as_of": "2026-11-13",
+   "categories": {
+    "economics": {
+     "name": "Industry economics & value creation",
+     "weight": 0.2,
+     "lens": "structural",
+     "score": 2,
+     "from": "category",
+     "basis": "India's quantum activity is grant- and programme-funded, not a revenue industry: the National Quantum Mission carries Rs 6,003.65 cr over eight years and only Rs 699.5 cr of Rs 2,330.68 cr sanctioned across the four hubs had been released by Feb-2026. The commercial pool is small (India quantum computing at USD 98-121 M in 2025 depending on scope) and the hardware value - dilution refrigerator, control electronics, qubits - accrues to foreign suppliers. QpiAI reports EBITDA-level profitability at a small base [REPORTED-T3], which is the exception rather than the industry."
+    },
+    "opportunity": {
+     "name": "Market opportunity & structural growth",
+     "weight": 0.15,
+     "lens": "structural",
+     "score": 4,
+     "from": "category",
+     "basis": "India quantum computing is forecast to grow at 24.9% (P&S, USD 98.4 M 2025 to USD 465.8 M 2032) to 50.2% (MarketsandMarkets, USD 120.8 M 2025 to USD 922.1 M 2030) [CONFLICTING DATA - scope], on top of a Rs 6,003.65 cr mission whose FY2026-27 allocation rose to Rs 900 cr. The near-term demand is procurement-led: IBM's Quantum System Two at Amaravati (Feb-2027), 17 NQM startups, and defence/space quantum sensing. Growth is real but off a tiny base and dependent on public money."
+    },
+    "competitive": {
+     "name": "Competitive structure & moat",
+     "weight": 0.15,
+     "lens": "structural",
+     "score": 2,
+     "from": "category",
+     "basis": "The global structure is an oligopoly of IBM, Google, Quantinuum, IonQ, PsiQuantum and D-Wave, with cryogenics and control electronics held by a handful of European and US firms. India's credible positions are early: QpiAI's 25-qubit Indus (Apr-2025) and 64-qubit Kaveri chip (Nov-2025) plus a Bengaluru foundry (Aug-2026), a 1,000 km QKD link from QNu Labs, and prototype components (Dimira cables, PrenishQ lasers, TIFR LNAs). That is a pilot position, not a competitive one."
+    },
+    "cycle": {
+     "name": "Current opportunity & cycle position",
+     "weight": 0.15,
+     "lens": "current",
+     "score": 2,
+     "from": "category",
+     "basis": "The cycle here is the public-funding cycle, not the business cycle. Demand moves on mission approvals, budget allocations and procurement rounds - the NQM allocation itself swung from Rs 600 cr budgeted to Rs 755 cr revised to Rs 900 cr in one year - and Gartner expects more than 50% of quantum computing startups to fail by 2030 as the market rejects losing qubit modalities. Volumes are lumpy and grant-dependent."
+    },
+    "valuation": {
+     "name": "Valuation & market expectations",
+     "weight": 0.15,
+     "lens": "current",
+     "score": null,
+     "from": null,
+     "basis": "No listed Indian company derives material revenue from quantum computing, so there is no industry valuation series to score. The adjacent listed exposures are IT-services multiples and industrial-gas/cryogenics multiples that price entirely different businesses. Scoring them would be a scope error."
+    },
+    "value_chain": {
+     "name": "Value-chain position & bottlenecks",
+     "weight": 0.1,
+     "lens": "structural",
+     "score": 2,
+     "from": "category",
+     "basis": "Value sits upstream in the dilution refrigerator (often the largest single line in a small system), control and readout electronics, and the qubit fab; and downstream in facility integration and applications. India captures facility EPC (L&T at Amaravati), cryostats and vacuum vessels (INOX India), helium distribution (Linde India) and the algorithms/services layer, and imports the machine itself."
+    },
+    "capital": {
+     "name": "Capital intensity & financial quality",
+     "weight": 0.05,
+     "lens": "structural",
+     "score": 2,
+     "from": "category",
+     "basis": "Capital intensity is high relative to revenue: QpiAI has invested about USD 20-25 M in its foundry alone, on top of a USD 32 M Series A and a Rs 50 cr NCD at 13.85%. Public capital is the main non-dilutive route (NQM seed up to Rs 5 cr, scale-up up to Rs 25 cr, DRDO's Rs 500 cr TDF corpus), and a dilution refrigerator costs USD 600k-1 M before any qubit exists."
+    },
+    "technology": {
+     "name": "Technology & innovation",
+     "weight": 0.05,
+     "lens": "structural",
+     "score": 2,
+     "from": "category",
+     "basis": "The technology is migrating on several fronts at once - transmon to tunable-coupler and flip-chip architectures, superconducting versus trapped-ion versus photonic modalities, and the shift from NISQ to error-corrected logical qubits. India is at 25-64 physical qubits against NQM targets of 50-1,000 in eight years, and its own hardware roadmap (Ganges 128 qubits in Q1-2027) is being built against a moving target."
+    },
+    "risk": {
+     "name": "Risk & resilience",
+     "weight": null,
+     "lens": "risk",
+     "score": 2,
+     "from": "category",
+     "basis": "Four structural risks stack: helium-3 scarcity (US DOE-dominated, USD 1,000-20,000 per litre, no substitute), a cryogenics duopoly with 6-9 month lead times, export controls on lasers, vapour cells and UHV parts that Indian founders describe as tightening, and a deep dependence on imported FPGAs and microwave electronics. Any one of these can slip a programme by quarters."
+    }
+   },
+   "structural": {
+    "score": 48.6,
+    "coverage": 100
+   },
+   "current": {
+    "score": 40,
+    "coverage": 50
+   },
+   "risk": 2,
+   "risk_adjusted": 19.4,
+   "overall": 47.1,
+   "coverage": 85,
+   "confidence": {
+    "evidence": 3,
+    "primary_source_pct": 60,
+    "missing_critical": [
+     "India quantum hardware revenue split by node",
+     "domestic margin and pricing data",
+     "unit-volume series for installed systems",
+     "capex per installed system in India"
+    ]
+   },
+   "value_capture": [
+    {
+     "node": "Dilution refrigerator & cryostat",
+     "basis": "The largest single line in a small superconducting system (USD 600k-1 M) and the most concentrated supply chain in the industry - Bluefors and Oxford Instruments above 70% of the quantum market, 6-9 month lead times, and helium-3 as a hard input constraint. India's share of this pool is close to zero today.",
+     "params": {
+      "op_share": 5,
+      "pricing_power": 4,
+      "roic": 3,
+      "barriers": 5,
+      "bottleneck": 5,
+      "pool_growth": 4,
+      "cash_conversion": 3,
+      "switching": 5
+     },
+     "score": 4.25,
+     "score100": 85,
+     "coverage": 100
+    },
+    {
+     "node": "Control & readout electronics",
+     "basis": "Second-largest system cost line and the one scaling fastest with qubit count - every added qubit adds rack hardware. Zurich Instruments, Qblox and Quantum Machines hold proprietary positions; India imports FPGAs and microwave chains and is only at prototype stage on power supplies and control racks.",
+     "params": {
+      "op_share": 4,
+      "pricing_power": 3,
+      "roic": 3,
+      "barriers": 4,
+      "bottleneck": 4,
+      "pool_growth": 5,
+      "cash_conversion": 3,
+      "switching": 4
+     },
+     "score": 3.7,
+     "score100": 74,
+     "coverage": 100
+    },
+    {
+     "node": "Lasers, combs & photonics",
+     "basis": "Essential to every non-superconducting platform and export-controlled, which supports pricing power. Ti:sapphire lasers are entirely imported into India and frequency combs come from three or four firms; the domestic entrants (PrenishQ, QuPrayog) are pre-revenue.",
+     "params": {
+      "op_share": 3,
+      "pricing_power": 4,
+      "roic": 3,
+      "barriers": 4,
+      "bottleneck": 4,
+      "pool_growth": 4,
+      "cash_conversion": 3,
+      "switching": 4
+     },
+     "score": 3.55,
+     "score100": 71,
+     "coverage": 100
+    },
+    {
+     "node": "Qubit chip / QPU fabrication",
+     "basis": "The highest strategic barrier and the worst cash economics: fab capex, low yields and no pricing power while modalities are unsettled. QpiAI's USD 20-25 M foundry is a national capability bet rather than a proven profit pool, and Gartner expects most startups in this layer to fail by 2030.",
+     "params": {
+      "op_share": 3,
+      "pricing_power": 3,
+      "roic": 1,
+      "barriers": 5,
+      "bottleneck": 5,
+      "pool_growth": 5,
+      "cash_conversion": 1,
+      "switching": 4
+     },
+     "score": 3.25,
+     "score100": 65,
+     "coverage": 100
+    },
+    {
+     "node": "Facility build & systems integration",
+     "basis": "The pool India actually captures today: the Amaravati Quantum Computer Centre was built by L&T and the two test facilities were assembled from seven organisations' components in under eight months. Real revenue, low barriers, contract-based and not repeatable at scale.",
+     "params": {
+      "op_share": 3,
+      "pricing_power": 2,
+      "roic": 3,
+      "barriers": 2,
+      "bottleneck": 2,
+      "pool_growth": 4,
+      "cash_conversion": 3,
+      "switching": 2
+     },
+     "score": 2.65,
+     "score100": 53,
+     "coverage": 100
+    },
+    {
+     "node": "Algorithms, applications & services",
+     "basis": "Where six listed Indian IT firms compete. Cash conversion is good and growth is the fastest in the stack, but the pool is thin, the barriers are low, and no company discloses it as a revenue line - so it is strategic positioning rather than an earnings pool today.",
+     "params": {
+      "op_share": 2,
+      "pricing_power": 2,
+      "roic": 3,
+      "barriers": 2,
+      "bottleneck": 1,
+      "pool_growth": 5,
+      "cash_conversion": 4,
+      "switching": 2
+     },
+     "score": 2.55,
+     "score100": 51,
+     "coverage": 100
+    }
+   ],
+   "provisional": false,
+   "notes": "Scored 2026-11-13 during the grounding pass for this page. Opportunity uses exactly the India series in the Market & growth digest block; valuation is null because no listed Indian exposure prices this industry. Value capture is scored from this page's own BOM tree and ladder. Company-level claims are evidence-based; all impacts are inference unless reported.",
+   "overall_rank": 82,
+   "risk_adjusted_rank": 78,
+   "structural_score": 48.6,
+   "current_score": 40,
+   "structural_score_rank": 79,
+   "current_score_rank": 78
+  },
+  {
    "slug": "railway-india",
    "title": "India Railway",
    "group": "Railways & Mass Transit",
@@ -12471,7 +12686,7 @@
    "provisional": false,
    "notes": "Opportunity uses the same series as the Market & growth digest block (FY25 permanent-magnet imports of Rs 1,744 crore on 53,748 tonnes, government projection of consumption doubling by 2030 from 2025, and import dependence of 59.6–81.3% by value). Valuation left UNAVAILABLE — no industry valuation series and no listed domestic pure-play. Value capture (added 2026-11-04) scores five nodes from this page's own BOM tree and ladder plus the demand node, on the separate Registry Review §4 weighting (op_share 20%, pricing_power 15%, roic 15%, barriers 15%, bottleneck 10%, pool_growth 10%, cash_conversion 10%, switching 5%). It answers 'which node keeps the money' and is not blended into the industry score above.",
    "overall_rank": 71,
-   "risk_adjusted_rank": 83,
+   "risk_adjusted_rank": 84,
    "structural_score": 50,
    "current_score": 60,
    "structural_score_rank": 74,
@@ -14756,10 +14971,10 @@
    "provisional": false,
    "notes": "Scored 2026-11-11 in the content-backfill pass. Market size and growth are the digest's own Market &amp; growth figures; because India has no published equipment or materials market size, the opportunity score rests on the global equipment series and the Indian project pipeline, which is stated on the page.",
    "overall_rank": 57,
-   "risk_adjusted_rank": 78,
+   "risk_adjusted_rank": 79,
    "structural_score": 48.6,
    "current_score": 100,
-   "structural_score_rank": 79,
+   "structural_score_rank": 80,
    "current_score_rank": 3
   },
   {
@@ -15710,7 +15925,7 @@
    "structural_score": 62.9,
    "current_score": 40,
    "structural_score_rank": 37,
-   "current_score_rank": 78
+   "current_score_rank": 79
   },
   {
    "slug": "smart-meters-india",
@@ -16416,7 +16631,7 @@
    "structural_score": 64.3,
    "current_score": 40,
    "structural_score_rank": 33,
-   "current_score_rank": 79
+   "current_score_rank": 80
   },
   {
    "slug": "solar-pv-india",

@@ -19415,6 +19415,243 @@
      "in_universe_coverage": false
     }
    ]
+  },
+  {
+   "slug": "quantum-computing-india",
+   "industry": "Quantum Computing",
+   "scope": "INDIA",
+   "path": "industries/quantum-computing-india.html",
+   "analysis_date": "2026-11-13",
+   "universe": "NSE/BSE",
+   "sector": "Quantum Technology",
+   "derived_from": null,
+   "related": [
+    {
+     "slug": "cryocooler-india",
+     "node": "Dilution refrigerator & cryostat",
+     "note": "Cryocooler page owns the closed-cycle cooler node this industry consumes; sibling, not derived_from."
+    },
+    {
+     "slug": "chip-design-ip-india",
+     "node": "QPU fabrication / EDA",
+     "note": "Shared design-tool and fabless layer."
+    }
+   ],
+   "drill_downs": [],
+   "nodes": [
+    {
+     "id": "qubit",
+     "name": "Qubit chip & QPU fabrication",
+     "level": 1,
+     "aliases": [
+      "qubit",
+      "qubit chip",
+      "qpu",
+      "quantum processor",
+      "josephson junction",
+      "transmon",
+      "superconducting qubit"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": false
+    },
+    {
+     "id": "cryo",
+     "name": "Dilution refrigerator & cryostat",
+     "level": 1,
+     "aliases": [
+      "dilution refrigerator",
+      "dilution fridge",
+      "cryostat",
+      "millikelvin",
+      "cryogenics"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "control",
+     "name": "Control & measurement electronics",
+     "level": 1,
+     "aliases": [
+      "control electronics",
+      "readout electronics",
+      "awg",
+      "fpga",
+      "microwave generator",
+      "qubit controller"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "cryowiring",
+     "name": "Cryogenic wiring, amplifiers & circulators",
+     "level": 1,
+     "aliases": [
+      "cryogenic cable",
+      "cryo coax",
+      "low noise amplifier",
+      "lna",
+      "circulator",
+      "cryogenic wiring"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": false
+    },
+    {
+     "id": "helium",
+     "name": "Helium-3 and helium-4",
+     "level": 1,
+     "aliases": [
+      "helium",
+      "helium-3",
+      "helium-4",
+      "he-3"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "photonics",
+     "name": "Lasers, frequency combs & photonics",
+     "level": 1,
+     "aliases": [
+      "laser",
+      "frequency comb",
+      "single photon detector",
+      "photonics",
+      "optical cavity",
+      "vapour cell"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": false
+    },
+    {
+     "id": "materials",
+     "name": "Quantum-grade materials & wafers",
+     "level": 1,
+     "aliases": [
+      "quantum materials",
+      "soi wafer",
+      "silicon-28",
+      "sapphire wafer",
+      "niobium",
+      "superconducting film"
+     ],
+     "priority": "high",
+     "bottleneck": false,
+     "in_universe_coverage": false
+    },
+    {
+     "id": "vacuum",
+     "name": "UHV, vacuum & vibration isolation",
+     "level": 1,
+     "aliases": [
+      "uhv",
+      "vacuum chamber",
+      "ion pump",
+      "vibration isolation"
+     ],
+     "priority": "med",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "software",
+     "name": "Software stack, compilers & EDA",
+     "level": 1,
+     "aliases": [
+      "quantum software",
+      "compiler",
+      "eda",
+      "error correction decoder",
+      "qiskit"
+     ],
+     "priority": "med",
+     "bottleneck": false,
+     "in_universe_coverage": false
+    },
+    {
+     "id": "fabinfra",
+     "name": "Fab, cleanroom & process equipment",
+     "level": 1,
+     "aliases": [
+      "cleanroom",
+      "quantum foundry",
+      "fab equipment",
+      "lithography",
+      "sputter",
+      "icp-rie"
+     ],
+     "priority": "high",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "test",
+     "name": "Test, metrology & calibration",
+     "level": 1,
+     "aliases": [
+      "cryogenic test",
+      "metrology",
+      "probe station",
+      "vna",
+      "gate fidelity"
+     ],
+     "priority": "med",
+     "bottleneck": false,
+     "in_universe_coverage": false
+    },
+    {
+     "id": "power",
+     "name": "Precision power supplies & cryogenic electronics",
+     "level": 1,
+     "aliases": [
+      "precision power supply",
+      "bias electronics",
+      "low-noise supply"
+     ],
+     "priority": "med",
+     "bottleneck": false,
+     "in_universe_coverage": false
+    },
+    {
+     "id": "apps",
+     "name": "Algorithms, applications & services",
+     "level": 1,
+     "aliases": [
+      "quantum algorithms",
+      "quantum applications",
+      "quantum consulting",
+      "quantum services"
+     ],
+     "priority": "med",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "qkd",
+     "name": "Quantum-safe & QKD (adjacent demand)",
+     "level": 1,
+     "aliases": [
+      "qkd",
+      "quantum key distribution",
+      "post-quantum cryptography",
+      "quantum-safe",
+      "pqc"
+     ],
+     "priority": "med",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    }
+   ]
   }
  ]
 }
