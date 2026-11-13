@@ -10859,7 +10859,9 @@
    "universe": "NSE/BSE",
    "sector": "Defence & Aerospace",
    "derived_from": null,
-   "drill_downs": [],
+   "drill_downs": [
+    "ammunition-cartridges-india"
+   ],
    "nodes": [
     {
      "id": "smallarms",
@@ -19112,6 +19114,301 @@
       "aftermarket",
       "recycling",
       "refurbishment"
+     ],
+     "priority": "low",
+     "bottleneck": false,
+     "in_universe_coverage": false
+    }
+   ]
+  },
+  {
+   "slug": "ammunition-cartridges-india",
+   "industry": "Ammunition & Cartridges",
+   "scope": "INDIA",
+   "path": "industries/ammunition-cartridges-india.html",
+   "analysis_date": "2026-11-13",
+   "universe": "NSE/BSE",
+   "sector": "Defence & Aerospace",
+   "derived_from": {
+    "industry": "Guns",
+    "slug": "guns-india",
+    "node": "Ammunition & Cartridges"
+   },
+   "drill_downs": [],
+   "related": [
+    {
+     "slug": "missile-india",
+     "node": "Propellants & Energetic Materials",
+     "note": "Shared energetics base."
+    },
+    {
+     "slug": "organic-chemicals-india",
+     "node": "Organic Chemicals",
+     "note": "Nitrocellulose, toluene and solvent inputs."
+    },
+    {
+     "slug": "machine-tools-metrology-india",
+     "node": "CNC Machines",
+     "note": "Forging and machining equipment."
+    }
+   ],
+   "nodes": [
+    {
+     "id": "smallcal",
+     "name": "Small-Calibre Ammunition (5.56 / 7.62 / 9 mm / 12.7 mm)",
+     "level": 2,
+     "aliases": [
+      "small calibre",
+      "small-calibre",
+      "small caliber",
+      "5.56",
+      "7.62",
+      "9mm",
+      "9 mm",
+      "12.7",
+      "cartridge",
+      "cartridges",
+      "rounds",
+      "rifle ammunition",
+      "pistol ammunition"
+     ],
+     "priority": "high",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "medcal",
+     "name": "Medium-Calibre (20–40 mm)",
+     "level": 2,
+     "aliases": [
+      "medium calibre",
+      "medium-calibre",
+      "medium caliber",
+      "20mm",
+      "23mm",
+      "25mm",
+      "30mm",
+      "40mm",
+      "autocannon ammunition",
+      "grenade launcher ammunition"
+     ],
+     "priority": "high",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "shells",
+     "name": "155 mm / 105 mm Shell Bodies (Ready-to-Fill)",
+     "level": 2,
+     "aliases": [
+      "155mm",
+      "155 mm",
+      "shell body",
+      "empty shell",
+      "ready to fill",
+      "RTF",
+      "M107",
+      "ERFB",
+      "artillery shell",
+      "shell bodies",
+      "105mm"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "filling",
+     "name": "Filling, Assembly & Load-Assemble-Pack (LAP)",
+     "level": 2,
+     "aliases": [
+      "filling",
+      "explosive filling",
+      "LAP",
+      "load assemble pack",
+      "charge assembly",
+      "warhead filling",
+      "ammunition assembly"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "propellants",
+     "name": "Propellants (NC/NG, ball powder, composite)",
+     "level": 2,
+     "aliases": [
+      "propellant",
+      "propellants",
+      "nitrocellulose",
+      "nitroglycerine",
+      "ball powder",
+      "double base",
+      "single base",
+      "triple base",
+      "composite propellant",
+      "gun powder",
+      "smokeless powder"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "primers",
+     "name": "Primers & Initiators",
+     "level": 3,
+     "aliases": [
+      "primer",
+      "primers",
+      "initiator",
+      "initiators",
+      "percussion cap",
+      "detonator",
+      "ignition cap"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": false
+    },
+    {
+     "id": "explosives",
+     "name": "High Explosives (TNT / RDX / HMX)",
+     "level": 2,
+     "aliases": [
+      "explosive",
+      "explosives",
+      "TNT",
+      "RDX",
+      "HMX",
+      "high explosive",
+      "energetics",
+      "high energy materials"
+     ],
+     "priority": "medium",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "fuzes",
+     "name": "Fuzes, Base-Bleed & Trajectory Units",
+     "level": 3,
+     "aliases": [
+      "fuze",
+      "fuzes",
+      "fuse",
+      "base bleed",
+      "base-bleed",
+      "boat tail",
+      "proximity fuze",
+      "trajectory correction",
+      "shell fuze"
+     ],
+     "priority": "high",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "brass",
+     "name": "Cartridge Brass, Cups & Bullet Jackets",
+     "level": 3,
+     "aliases": [
+      "brass",
+      "cartridge brass",
+      "brass strip",
+      "brass cups",
+      "case cups",
+      "gilding metal",
+      "bullet jacket",
+      "CuZn30",
+      "CuZn10",
+      "copper strip"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "steel",
+     "name": "Shell Steel, Forging & Machining",
+     "level": 3,
+     "aliases": [
+      "shell steel",
+      "shell forging",
+      "forged shell",
+      "forging",
+      "billet",
+      "heat treatment",
+      "machined shell"
+     ],
+     "priority": "medium",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "loitering",
+     "name": "Loitering Munitions & Precision Rounds",
+     "level": 2,
+     "aliases": [
+      "loitering munition",
+      "loitering munitions",
+      "precision round",
+      "guided shell",
+      "kamikaze drone",
+      "PGM"
+     ],
+     "priority": "medium",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "proof",
+     "name": "Proof, Test & DGQA Qualification",
+     "level": 2,
+     "aliases": [
+      "proof",
+      "proof firing",
+      "DGQA",
+      "CQA",
+      "proof range",
+      "acceptance testing",
+      "ammunition testing"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": false
+    },
+    {
+     "id": "machinery",
+     "name": "Ammunition Machinery & Automation Lines",
+     "level": 3,
+     "aliases": [
+      "cupping press",
+      "draw press",
+      "nitration plant",
+      "melt pour",
+      "LAP line",
+      "ammunition machinery",
+      "loading machine",
+      "X-ray inspection"
+     ],
+     "priority": "medium",
+     "bottleneck": true,
+     "in_universe_coverage": false
+    },
+    {
+     "id": "demil",
+     "name": "Demilitarisation, Shelf-Life & Recycling",
+     "level": 3,
+     "aliases": [
+      "demilitarisation",
+      "demilitarization",
+      "demil",
+      "shelf life",
+      "ammunition recycling",
+      "brass recovery",
+      "expired ammunition"
      ],
      "priority": "low",
      "bottleneck": false,
