@@ -1,7 +1,7 @@
 {
  "registry": "Industry BOM Registry",
  "description": "Company index. Every company mentioned across the registry, the industries it appears in, and its position (exposure) in each. DERIVED from the entry pages by tools/build-companies.mjs — regenerate on every publish, never hand-edit.",
- "generated": "2026-11-12",
+ "generated": "2026-11-13",
  "counts": {
   "companies": 523,
   "industries": 82,

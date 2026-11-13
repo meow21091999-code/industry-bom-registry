@@ -1,7 +1,7 @@
 {
  "registry": "Industry BOM Registry",
  "description": "Industry ranking per \"Industry-Level Investment Parameters & Scoring Architecture\": hierarchical category scores (1–5), overall 0–100, evidence coverage reported, three lenses kept separate. DERIVED — regenerate with node tools/build-industry-ranking.mjs.",
- "generated": "2026-11-12",
+ "generated": "2026-11-13",
  "framework": {
   "category_score": "Σ(parameter weight × parameter score) ÷ Σ(weights of supported parameters)",
   "overall_score": "Σ(category weight × category score ÷ 5) × 100, renormalised over supported categories",
@@ -346,11 +346,11 @@
    ],
    "provisional": false,
    "notes": "First industry score on this page, 2026-11-06 (Tier-2 backfill). Market size and growth are the NITI Aayog/KPMG TANE series already carried in the digest; valuation stays UNAVAILABLE because no industry series exists. Value capture scored for the first time here, on the page's own tree nodes.",
-   "overall_rank": 65,
-   "risk_adjusted_rank": 69,
+   "overall_rank": 66,
+   "risk_adjusted_rank": 70,
    "structural_score": 51.4,
    "current_score": 60,
-   "structural_score_rank": 66,
+   "structural_score_rank": 67,
    "current_score_rank": 31
   },
   {
@@ -599,7 +599,7 @@
    "structural_score": 41.4,
    "current_score": 40,
    "structural_score_rank": 81,
-   "current_score_rank": 61
+   "current_score_rank": 62
   },
   {
    "slug": "agrochemicals-crop-protection-india",
@@ -1090,7 +1090,7 @@
    ],
    "provisional": false,
    "notes": "First industry score on this page, 2026-11-06 (Tier-2 backfill). The market series is shown as a range across four houses rather than a point, and the opportunity score is held at mixed because the growth rate and the leak are pulling in opposite directions. Valuation stays UNAVAILABLE.",
-   "overall_rank": 72,
+   "overall_rank": 73,
    "risk_adjusted_rank": 38,
    "structural_score": 48.6,
    "current_score": 60,
@@ -1405,7 +1405,7 @@
    ],
    "provisional": false,
    "notes": "Full re-analysis 2026-11-04 (previous 2026-10-09/30). Cycle raised 2 -> 3 on the commissioning inflection: 8.2 GWh added Jan-Jun 2026 against under 100 MWh a year earlier, 198 GWh pipeline at Sep-2026, Crisil expecting 45-50 GWh across FY27-28. Value and volume CAGRs come from different houses and are shown separately, never divided into each other. Valuation stays UNAVAILABLE: one listed integrator's multiple is not an industry series.",
-   "overall_rank": 73,
+   "overall_rank": 74,
    "risk_adjusted_rank": 75,
    "structural_score": 48.6,
    "current_score": 60,
@@ -1834,12 +1834,12 @@
    ],
    "provisional": false,
    "notes": "Coverage 85% - valuation unscored, so the overall is provisional. Structural 58.6/100, current 40.0/100, overall 55.3/100.",
-   "overall_rank": 60,
+   "overall_rank": 61,
    "risk_adjusted_rank": 28,
    "structural_score": 58.6,
    "current_score": 40,
    "structural_score_rank": 50,
-   "current_score_rank": 62
+   "current_score_rank": 63
   },
   {
    "slug": "component-mro-india",
@@ -3565,11 +3565,11 @@
    ],
    "provisional": false,
    "notes": "Scored during the 2026-11-09 backfill pass from the page's own evidence and the industry-data sourcing ladder; valuation left UNAVAILABLE because no industry-level multiple series exists.",
-   "overall_rank": 61,
+   "overall_rank": 62,
    "risk_adjusted_rank": 32,
    "structural_score": 54.3,
    "current_score": 60,
-   "structural_score_rank": 61,
+   "structural_score_rank": 62,
    "current_score_rank": 36
   },
   {
@@ -4278,7 +4278,7 @@
    "structural_score": 65.7,
    "current_score": 40,
    "structural_score_rank": 22,
-   "current_score_rank": 63
+   "current_score_rank": 64
   },
   {
    "slug": "ems-electronics-manufacturing-india",
@@ -5489,12 +5489,12 @@
    ],
    "provisional": false,
    "notes": "This run REPLACES the prior Market & growth block, which rested on a tier-3 source and reported 3-year and last-year splits as UNAVAILABLE. Opportunity now uses the IMARC series (USD 1.95 bn 2025 to USD 9.75 bn 2030, 38.0% CAGR) and the conflicting NITI Aayog / third-house estimates are shown as a range rather than averaged. Valuation left UNAVAILABLE — no industry valuation series. Value capture scored 2026-11-03 from this page's own BOM tree and ladder; the industry categories above are unchanged from the 2026-10-30 scoring.",
-   "overall_rank": 64,
+   "overall_rank": 65,
    "risk_adjusted_rank": 61,
    "structural_score": 57.1,
    "current_score": 40,
    "structural_score_rank": 56,
-   "current_score_rank": 64
+   "current_score_rank": 65
   },
   {
    "slug": "guns-india",
@@ -6669,10 +6669,10 @@
    ],
    "provisional": false,
    "notes": "Scored against 'Industry-Level Investment Parameters & Scoring Architecture'. Opportunity uses the same India inorganic-chemicals series as the Market & growth digest block (USD 44.6 bn 2024 to USD 74.1 bn 2033, 5.8% nominal CAGR); the rupee production series and the chlor-alkali sub-segment are shown beside it, not blended. Cycle position and valuation left UNAVAILABLE - the registry carries no cycle or valuation data for these industries.",
-   "overall_rank": 66,
-   "risk_adjusted_rank": 65,
+   "overall_rank": 67,
+   "risk_adjusted_rank": 66,
    "structural_score": 52.9,
-   "structural_score_rank": 62
+   "structural_score_rank": 63
   },
   {
    "slug": "launch-vehicles-propulsion-india",
@@ -7128,12 +7128,12 @@
    ],
    "provisional": false,
    "notes": "Re-analysed 2026-11-05 under the daily rotation. Corrections from the prior run: the 10 GWh ACC-PLI tender did NOT close on 13-Oct-2026 - it was extended to 10-Nov-2026 (technical bids 11-Nov); installed capacity is 1 GWh of 40 GWh awarded, not ~2 GWh of a working programme; Reliance's 40-to-120 GWh Jamnagar cell plan is no longer corroborated and is carried as capacity-not-disclosed with a late-2026 to 2027 production guide; HEG is now HEG Advanced Materials (HEGAM) after the demerger; Himadri's LFP plant is at a 2,000 tpa milestone, not 40,000 tpa; and the prior run's 36.5% volume CAGR was inconsistent with its own 28-to-272 GWh endpoints - the calculated figure is 57.6%. Cycle moved 3 to 2 on the PLI execution record and the first monthly fall in Chinese cell schedules of 2026. Valuation remains UNAVAILABLE. Value capture re-scored 2026-11-05; electrolyte bottleneck 3 to 2, moving it below foils.",
-   "overall_rank": 75,
-   "risk_adjusted_rank": 70,
+   "overall_rank": 76,
+   "risk_adjusted_rank": 71,
    "structural_score": 51.4,
    "current_score": 40,
-   "structural_score_rank": 67,
-   "current_score_rank": 65
+   "structural_score_rank": 68,
+   "current_score_rank": 66
   },
   {
    "slug": "machine-tools-metrology-india",
@@ -8103,7 +8103,7 @@
    "structural_score": 41.4,
    "current_score": 40,
    "structural_score_rank": 82,
-   "current_score_rank": 66
+   "current_score_rank": 67
   },
   {
    "slug": "nuclear-pwr-steam-generator-india",
@@ -9579,11 +9579,11 @@
    ],
    "provisional": false,
    "notes": "Scored 2026-11-10 in the content-backfill pass. Two conflicting market scopes are shown side by side in the digest and neither is averaged; the opportunity score rests on the narrower, better-anchored one.",
-   "overall_rank": 56,
-   "risk_adjusted_rank": 71,
+   "overall_rank": 57,
+   "risk_adjusted_rank": 72,
    "structural_score": 51.4,
    "current_score": 80,
-   "structural_score_rank": 68,
+   "structural_score_rank": 69,
    "current_score_rank": 17
   },
   {
@@ -9591,15 +9591,15 @@
    "title": "India Organic Chemicals",
    "group": "Chemicals & Petrochemicals",
    "scored": true,
-   "as_of": "2026-11-02",
+   "as_of": "2026-11-13",
    "categories": {
     "economics": {
      "name": "Industry economics & value creation",
      "weight": 0.2,
      "lens": "structural",
-     "score": 2,
+     "score": 3,
      "from": "category",
-     "basis": "Commodity spreads have compressed hard under Chinese overcapacity: Chemplast Sanmar’s FY26 EBITDA margin was 4.7% (from 5.0%) and DCW’s specialty margin fell to 29.7% from 35.3% even as volumes rose, with CPVC realisations down more than 20% — value of output grew 11.6% a year but the rupee of output earns less."
+     "basis": "The intermediate layer re-rated hard in Q2 FY27 — Deepak Nitrite's consolidated EBITDA rose 187% year on year to Rs 643 crore at a 21% margin, Navin Fluorine's EBITDA margin reached 34.2% and SRF's PAT grew 31% — but the commodity end is still losing money: Chemplast Sanmar posted a Rs 5 crore PAT loss with value-added chemicals under pressure and caustic soda in global oversupply. The rupee of output now earns more only where it is protected or specialised, which is why the score moves to 3 rather than 4."
     },
     "opportunity": {
      "name": "Market opportunity & structural growth",
@@ -9607,7 +9607,7 @@
      "lens": "structural",
      "score": 3,
      "from": "category",
-     "basis": "Chemical industry value of output grew 11.6% a year from Rs 9.62 lakh crore in FY2018-19 to Rs 15.14 lakh crore in FY2023-24, inside a Rs 26 lakh crore chemicals-and-petrochemicals market in FY25, with a Rs 65,383 crore net organic-chemicals import gap to substitute — but organic-chemical utilisation is falling (64.3% in FY24 toward 57.7% by FY30), so the growth is arriving into surplus capacity."
+     "basis": "Value of output grew 11.6% a year at current prices to Rs 15.14 lakh crore in FY2023-24 inside a ~USD 220 billion sector that PIB projects at USD 300 billion by 2030, and the HS-29 import gap was Rs 42,784 crore in FY26 — but volume grew only 2.8% a year and organic-chemical utilisation has fallen to 64.3% (FY24) from 73.2% (FY19), so growth still arrives into surplus capacity."
     },
     "competitive": {
      "name": "Competitive structure & moat",
@@ -9615,15 +9615,15 @@
      "lens": "structural",
      "score": 3,
      "from": "category",
-     "basis": "Structurally fragmented — over 80,000 products across large, medium and small firms — so commodity grades are price-takers against Chinese imports, while specialty and fine chemistry carries real switching costs and customer qualification; the moat exists but only in the specialty layer."
+     "basis": "Structurally fragmented across more than 80,000 products, so commodity grades are price-takers against Chinese imports; the moat is real only in specialty and fine chemistry, where qualification cycles bind customers. The same quarter proves the split: a 22% phenolics EBIT margin at Deepak against a PAT loss at Chemplast's commodity PVC."
     },
     "cycle": {
      "name": "Current opportunity & cycle position",
      "weight": 0.15,
      "lens": "current",
-     "score": 2,
+     "score": 3,
      "from": "category",
-     "basis": "Clearly mid-downcycle: China added 9 mmtpa of ethylene in CY25, pushing its surplus to 11.5 mmtpa (+121%), propylene oversupply is forecast at 20.3 mmtpa, and consensus FY26 estimates for listed specialty names were cut by up to 67% since FY24-end."
+     "basis": "A genuine upswing is under way — Q2 FY27 was a record for Deepak, +57% revenue for Navin Fluorine and +35% for SRF — but it was driven by freight, war-related supply dislocation and trade remedies rather than by capacity closure, and China's anti-involution campaign upgrades sub-scale naphtha crackers to a 2028 deadline instead of shutting them. Recovery is cyclical, not structural: score raised from 2 to 3, not higher."
     },
     "valuation": {
      "name": "Valuation & market expectations",
@@ -9631,7 +9631,7 @@
      "lens": "current",
      "score": null,
      "from": null,
-     "basis": "No industry-level valuation series is carried in the registry; the sector-wide de-rating is reported but no industry multiple series is available to score."
+     "basis": "No industry-level valuation series is carried in the registry; the sector-wide re-rating is reported but no industry multiple series is available to score."
     },
     "value_chain": {
      "name": "Value-chain position & bottlenecks",
@@ -9639,7 +9639,7 @@
      "lens": "structural",
      "score": 3,
      "from": "category",
-     "basis": "Integrated upstream (RIL, IOCL, GAIL, OPaL) and a competitive specialty export base are genuinely domestic, but ~45% of petrochemical intermediates, nearly all catalysts, and cracker/reformer process technology are imported, and the solvent layer is the largest value leak."
+     "basis": "Upstream and a competitive specialty export base are genuinely domestic, and phenol-acetone is closing its import gap with Adperma's 345 kt train — but ~66% of PVC demand, over 3 MMT of methanol, ~1.2 MMT of acetic acid, nearly all catalysts and all cracker and reformer technology are still imported, and the solvent layer remains the largest leak."
     },
     "capital": {
      "name": "Capital intensity & financial quality",
@@ -9647,7 +9647,7 @@
      "lens": "structural",
      "score": 2,
      "from": "category",
-     "basis": "Very capital-intensive with long gestation — the IOCL Paradip petrochemical complex alone is Rs 61,077 crore and commissions in 2029 — and the downcycle means new capacity is being added into 60% utilisation."
+     "basis": "Very capital-intensive with long gestation — Adani's Mundra PVC is Rs 26,000 crore for 1 MMTPA and commissions in FY28, IOCL's Paradip complex is Rs 61,077 crore for 2029 — and much of it is being added while the market still absorbs Chinese surplus and domestic utilisation sits near 60%."
     },
     "technology": {
      "name": "Technology & innovation",
@@ -9655,7 +9655,7 @@
      "lens": "structural",
      "score": 2,
      "from": "category",
-     "basis": "Cracker and reformer technology is licensed from Linde, Lummus, KBR and Technip, catalysts are almost entirely imported, and R&amp;D intensity is structurally low; process-chemistry skills are scarce."
+     "basis": "Cracker and reformer technology is licensed from Linde, Lummus, KBR and Technip, catalysts are almost entirely imported, and process-chemistry skills are scarce and cannot be bought quickly; R&D intensity is structurally low outside a handful of specialty firms."
     },
     "risk": {
      "name": "Risk & resilience",
@@ -9663,32 +9663,51 @@
      "lens": "risk",
      "score": 2,
      "from": "category",
-     "basis": "Chinese dumping drives both price and policy risk — an S-PVC minimum import price running to ~23-Jan-2027, a CVD probe widened to 13 producer groups that reached preliminary findings on 26-Oct-2026 recommending a provisional duty of US$83.72–143.82/t (awaiting Finance Ministry notification), feedstock volatility from the Middle East war, and QCOs that have been rescinded and could return. Score held at 2 on the 2026-11-02 delta pass: a recommendation is not a notified duty, and domestic capacity of ~1.6 MMT against ~4.1 MMT of demand limits the pricing relief even if it is notified."
+     "basis": "Trade-remedy outcomes are the swing factor and all of them land inside one six-month window: the S-PVC countervailing duty recommended on 26-Oct-2026 but not notified, the minimum import price expiring around 24-Jan-2027, the phenol anti-dumping case with no findings, and the Madras High Court's provisional assessment of paste-PVC imports. Add a structural Chinese surplus and Middle East feedstock volatility. Held at 2."
     }
    },
    "structural": {
-    "score": 51.4,
+    "score": 57.1,
     "coverage": 100
    },
    "current": {
-    "score": 40,
+    "score": 60,
     "coverage": 50
    },
    "risk": 2,
-   "risk_adjusted": 20.6,
-   "overall": 49.4,
+   "risk_adjusted": 22.8,
+   "overall": 57.6,
    "coverage": 85,
    "confidence": {
     "evidence": 4,
-    "primary_source_pct": 69,
+    "primary_source_pct": 62,
     "missing_critical": [
-     "valuation"
+     "industry-level valuation multiple series",
+     "FY26 value of output (the DCPC series ends FY2023-24)",
+     "profit-pool split by node, so operating-profit share rests on segment disclosures rather than an industry account"
     ]
    },
    "value_capture": [
     {
-     "node": "Fluorochemicals & Fluoropolymers",
-     "basis": "The deepest chemistry barrier in the complex: fluorspar to HF to fluoropolymers and refrigerants, held by a handful of Indian players, with Gujarat Fluorochemicals running a standalone EBITDA margin of about 28% in Q4 FY26 on firm refrigerant pricing. Deepak Nitrite is now building an ultra-pure anhydrous HF plant in a separate entity to feed its own fluorination — evidence that the input, not the reactor, is the toll.",
+     "node": "Specialty & fine chemistry (agro / pharma intermediates, CDMO)",
+     "basis": "Moved to the top of the chain: SRF chemicals revenue +25% and Navin Fluorine revenue +57% at a 34.2% EBITDA margin in Q2 FY27, with qualification cycles and USFDA/REACH registration binding customers. Segment disclosures, not an industry profit account.",
+     "params": {
+      "op_share": 5,
+      "pricing_power": 4,
+      "roic": 4,
+      "barriers": 4,
+      "bottleneck": 3,
+      "pool_growth": 5,
+      "cash_conversion": 4,
+      "switching": 5
+     },
+     "score": 4.25,
+     "score100": 85,
+     "coverage": 100
+    },
+    {
+     "node": "Fluorochemicals & refrigerants",
+     "basis": "Captive HF is the moat and fluorspar is China-concentrated; SRF reported robust refrigerant volumes with positive pricing momentum in Q2 FY27, and Chemplast began R-32 market seeding with capacity due by end-FY27.",
      "params": {
       "op_share": 3,
       "pricing_power": 4,
@@ -9696,33 +9715,67 @@
       "barriers": 5,
       "bottleneck": 4,
       "pool_growth": 4,
-      "cash_conversion": 3,
+      "cash_conversion": 4,
       "switching": 4
+     },
+     "score": 3.95,
+     "score100": 79,
+     "coverage": 100
+    },
+    {
+     "node": "Licensed process technology & engineering (cracker, reformer, phenol)",
+     "basis": "Royalty and licence economics on every Indian cracker, reformer and phenol train, with Linde, Lummus, KBR and Technip as the licensors; no domestic substitute, and switching means rebuilding the plant.",
+     "params": {
+      "op_share": 2,
+      "pricing_power": 5,
+      "roic": 4,
+      "barriers": 5,
+      "bottleneck": 4,
+      "pool_growth": 3,
+      "cash_conversion": 4,
+      "switching": 5
      },
      "score": 3.85,
      "score100": 77,
      "coverage": 100
     },
     {
-     "node": "Olefins — Ethylene, Propylene, Butadiene",
-     "basis": "The biggest revenue pool in the complex and the least rewarding per rupee: Reliance's O2C segment turned ₹6,62,401 crore of FY26 revenue into ₹60,546 crore of EBITDA, a 9.1% margin, and that is the integrated best case. Asian cracker utilisation fell to roughly 60% from 80% as Chinese and Southeast Asian capacity came online, and polymer deltas are set in dollars per tonne (PE $306, PP $293 in FY26). The barrier is capital and feedstock, not technology — which is exactly why the pool is large and the margin thin.",
+     "node": "Olefins & crackers (ethylene, propylene)",
+     "basis": "The largest revenue pool and the gate on everything downstream, but a commodity spread: propylene availability was disturbed for six months and Deepak had to buy from non-traditional sources at higher prices.",
      "params": {
       "op_share": 5,
       "pricing_power": 2,
-      "roic": 2,
+      "roic": 3,
       "barriers": 5,
       "bottleneck": 5,
-      "pool_growth": 4,
-      "cash_conversion": 3,
-      "switching": 4
+      "pool_growth": 3,
+      "cash_conversion": 4,
+      "switching": 3
      },
-     "score": 3.75,
-     "score100": 75,
+     "score": 3.85,
+     "score100": 77,
      "coverage": 100
     },
     {
-     "node": "Polymerisation & Reforming Catalysts",
-     "basis": "Almost fully imported, tiny in revenue, and impossible to substitute once a plant is designed around it — Ziegler-Natta and reforming catalysts are specified with the licensed process, so the catalyst maker sits inside the technology licensor's specification. The highest pricing power and switching cost on the page with the smallest pool; no NSE/BSE pure-play, so the value is visible only as a cost line on someone else's P&L.",
+     "node": "Phenol / acetone / IPA",
+     "basis": "RANK MOVED UP. A record phenolics quarter (Rs 2,291 crore revenue, Rs 515 crore EBIT, ~22% margin) lifted this node on import dislocation, freight and duty protection — but Adperma's 345 kt train lands in Q4 FY27 into a ~600 kt market with Deepak Chem Tech adding 300 kt by FY28, so the realised 2026 profitability is flagged to compress once the new capacity ramps.",
+     "params": {
+      "op_share": 3,
+      "pricing_power": 4,
+      "roic": 4,
+      "barriers": 4,
+      "bottleneck": 3,
+      "pool_growth": 4,
+      "cash_conversion": 4,
+      "switching": 3
+     },
+     "score": 3.65,
+     "score100": 73,
+     "coverage": 100
+    },
+    {
+     "node": "Catalysts (reforming, Ziegler-Natta, metallocene)",
+     "basis": "Tiny revenue, near-total import dependence and the highest margin per tonne in the chain; no listed Indian player, so the pool is entirely offshore.",
      "params": {
       "op_share": 1,
       "pricing_power": 5,
@@ -9738,99 +9791,82 @@
      "coverage": 100
     },
     {
-     "node": "Phenol, Acetone & IPA",
-     "basis": "The clearest import-substitution pool in the complex and, this year, the best-earning one: Deepak Nitrite's Phenolics segment earned a 22.5% EBIT margin in Q2 FY27 against 10.9% a year earlier, and 1H FY27 EBIT of ₹9.3bn already beat its previous best full year of ₹8.7bn. India consumes about 600 kt of phenol growing 6–7% a year, China does not participate in the Indian market, and the import duty was reinstated in Q2 FY27 — protection plus integration rather than pure scarcity.",
+     "node": "Industrial gases",
+     "basis": "On-site take-or-pay contracts and high cash conversion; Linde India is the only listed pure-play and every new cracker, phenol train and PVC line adds a gas contract.",
      "params": {
-      "op_share": 3,
-      "pricing_power": 4,
-      "roic": 4,
-      "barriers": 4,
-      "bottleneck": 3,
-      "pool_growth": 3,
-      "cash_conversion": 3,
-      "switching": 3
-     },
-     "score": 3.45,
-     "score100": 69,
-     "coverage": 100
-    },
-    {
-     "node": "Agrochemical Intermediates",
-     "basis": "India's strongest export pull and the highest-return chemistry on the page: PI Industries ran a 27.8% EBITDA margin in Q4 FY26 and SRF's chemicals business an EBIT margin near 28%. The barrier is registration and customer qualification rather than plant, and the switching cost is a multi-year dossier — which is why this node earns specialty margins while the commodity nodes next door earn spreads.",
-     "params": {
-      "op_share": 3,
+      "op_share": 2,
       "pricing_power": 3,
-      "roic": 4,
-      "barriers": 4,
-      "bottleneck": 3,
-      "pool_growth": 4,
-      "cash_conversion": 3,
-      "switching": 4
-     },
-     "score": 3.45,
-     "score100": 69,
-     "coverage": 100
-    },
-    {
-     "node": "Aromatics — Benzene, Toluene, Xylenes, PX",
-     "basis": "A reforming-stream business whose spread moves with someone else's capacity: the PX-naphtha delta rose 3.3% in FY26 while the PTA-PX delta fell 9.8% on Chinese PTA expansion, so the aromatics producer keeps the upstream half of the chain's margin and hands the downstream half away. Domestic and oligopolistic (RIL, IOCL, BPCL/HPCL streams), but a commodity with no proprietary position.",
-     "params": {
-      "op_share": 3,
-      "pricing_power": 2,
       "roic": 3,
       "barriers": 4,
       "bottleneck": 3,
       "pool_growth": 3,
-      "cash_conversion": 3,
-      "switching": 3
+      "cash_conversion": 5,
+      "switching": 5
      },
-     "score": 3,
-     "score100": 60,
+     "score": 3.25,
+     "score100": 65,
      "coverage": 100
     },
     {
-     "node": "PVC (Suspension + Paste)",
-     "basis": "The most import-exposed node on the page and a live trade-remedy case rather than a moat: a Minimum Import Price of US$0.766/kg on suspension PVC from 24-Jul-2026, and DGTR's preliminary findings of 26-Oct-2026 recommending a provisional countervailing duty of US$83.72–143.82/t on Chinese material. A domestic producer here earns whatever the duty wall allows and loses it when the wall moves.",
+     "node": "PVC (suspension resin)",
+     "basis": "Large revenue pool, worst economics: commodity grade, ~66% of demand imported, remedy-dependent, and Chemplast Sanmar still posted a PAT loss in Q2 FY27 despite the MIP. Adani Mundra and RIL expansion will grow the pool while compressing the spread.",
      "params": {
-      "op_share": 3,
+      "op_share": 4,
       "pricing_power": 1,
       "roic": 1,
-      "barriers": 2,
-      "bottleneck": 2,
+      "barriers": 3,
+      "bottleneck": 4,
       "pool_growth": 3,
       "cash_conversion": 2,
-      "switching": 1
+      "switching": 2
      },
-     "score": 1.95,
-     "score100": 39,
+     "score": 2.55,
+     "score100": 51,
      "coverage": 100
     },
     {
-     "node": "Chlor-Alkali & Derivatives",
-     "basis": "An electricity-and-salt spread dressed as a chemical business: Chemplast Sanmar earned a 4% consolidated EBITDA margin in Q2 FY26 and capacity is growing faster than demand, so India is structurally long caustic and exports the surplus at Asia-Pacific netbacks. Its strategic weight is as the chlorine source that balances a complex, not as a profit pool.",
+     "node": "Methanol & acetic acid (import-led)",
+     "basis": "Over 3 MMT of methanol and ~1.2 MMT of acetic acid imported because domestic gas is not competitively priced; domestic producers earn a protected spread rather than a proprietary one.",
+     "params": {
+      "op_share": 1,
+      "pricing_power": 2,
+      "roic": 2,
+      "barriers": 3,
+      "bottleneck": 4,
+      "pool_growth": 3,
+      "cash_conversion": 3,
+      "switching": 2
+     },
+     "score": 2.35,
+     "score100": 47,
+     "coverage": 100
+    },
+    {
+     "node": "Chlor-alkali & derivatives",
+     "basis": "Caustic soda pricing stayed under pressure through Q2 FY27 on global oversupply and weak demand, with Chemplast's Karaikal shutdown and reduced Mettur operations cutting volumes; chlorine co-product economics, not price, decide the pool.",
      "params": {
       "op_share": 3,
       "pricing_power": 1,
-      "roic": 1,
+      "roic": 2,
       "barriers": 2,
       "bottleneck": 3,
       "pool_growth": 2,
-      "cash_conversion": 2,
-      "switching": 1
+      "cash_conversion": 3,
+      "switching": 2
      },
-     "score": 1.95,
-     "score100": 39,
+     "score": 2.25,
+     "score100": 45,
      "coverage": 100
     }
    ],
    "provisional": false,
-   "notes": "Opportunity uses the same series as the Market & growth digest block (DCPC value of output Rs 9.62 lakh crore FY2018-19 to Rs 15.14 lakh crore FY2023-24, 11.6% CAGR at current prices, inside a Rs 26 lakh crore FY25 chemicals-and-petrochemicals market, against a Rs 65,383 crore FY26 net organic-chemicals import gap). Valuation left UNAVAILABLE — the registry carries no industry valuation series. Value capture (added 2026-11-04) scores eight nodes taken from this page's BOM tree and value-chain ladder on the separate Registry Review §4 weighting (op_share 20%, pricing_power 15%, roic 15%, barriers 15%, bottleneck 10%, pool_growth 10%, cash_conversion 10%, switching 5%). It answers 'which node keeps the money' and is not blended into the industry score above.",
-   "overall_rank": 76,
-   "risk_adjusted_rank": 72,
-   "structural_score": 51.4,
-   "current_score": 40,
-   "structural_score_rank": 69,
-   "current_score_rank": 67
+   "notes": "Full re-analysis 2026-11-13 (daily rotation). Scores moved on new Q2 FY27 evidence: economics 2->3 and cycle 2->3 on record intermediate-layer profitability; risk held at 2 because every trade remedy that could change the picture is still unnotified or expiring within six months. Value capture: phenol/acetone moved up on realised 2026 margins and is flagged to fall back once Adperma commissions.",
+   "overall_rank": 53,
+   "risk_adjusted_rank": 63,
+   "structural_score": 57.1,
+   "current_score": 60,
+   "structural_score_rank": 58,
+   "current_score_rank": 43
   },
   {
    "slug": "overhead-transmission-line-india",
@@ -10076,7 +10112,7 @@
    "structural_score": 61.4,
    "current_score": 60,
    "structural_score_rank": 42,
-   "current_score_rank": 58
+   "current_score_rank": 59
   },
   {
    "slug": "pcb-electronic-components-india",
@@ -10319,7 +10355,7 @@
    ],
    "provisional": false,
    "notes": "Scored 2026-11-10 in the content-backfill pass. Market sizes conflict across scopes (Mordor's $3.31 bn 2026 bare-PCB series against HSIE's $6.3 bn CY24 total-PCB series); the digest's own figure is used for the opportunity score and neither is averaged.",
-   "overall_rank": 62,
+   "overall_rank": 63,
    "risk_adjusted_rank": 37,
    "structural_score": 50,
    "current_score": 80,
@@ -10814,12 +10850,12 @@
    ],
    "provisional": false,
    "notes": "Re-run 2026-11-07 against the 2026-10-09 entry. Three things moved the score. First, the Nov-2026 VGF scheme puts 40% domestic content on 30 GWh of BESS, replacing a 20% local-content note and the still-draft 60% MNRE proposal - a firmer demand underwriting, hence opportunity held at 4. Second, evidence that central PCS above 1 MW is already made in India (Delta, Statcon, Ador) cut the assumed barrier and pushed competitive from 3 to 2 and PCS integration down the value-capture table. Third, the order book cooled - FY27 tendering down 26%, a fifth of tendered capacity cancelled, inverter shipments down 35% QoQ - moving cycle from 4 to 3. Capital was raised from 3 to 4 because the assembly step is cheap to enter, which is a statement about barriers, not about returns. Overall falls from 64.7 to 57.6 on 85% coverage; valuation remains unscored and the score is provisional.",
-   "overall_rank": 53,
-   "risk_adjusted_rank": 63,
+   "overall_rank": 54,
+   "risk_adjusted_rank": 64,
    "structural_score": 57.1,
    "current_score": 60,
-   "structural_score_rank": 58,
-   "current_score_rank": 43
+   "structural_score_rank": 59,
+   "current_score_rank": 44
   },
   {
    "slug": "power-semiconductor-osat-india",
@@ -11068,7 +11104,7 @@
    "structural_score": 64.3,
    "current_score": 60,
    "structural_score_rank": 29,
-   "current_score_rank": 45
+   "current_score_rank": 46
   },
   {
    "slug": "power-transformers-india",
@@ -11333,7 +11369,7 @@
    "structural_score": 77.1,
    "current_score": 60,
    "structural_score_rank": 3,
-   "current_score_rank": 44
+   "current_score_rank": 45
   },
   {
    "slug": "power-transmission-india",
@@ -11795,7 +11831,7 @@
    "structural_score": 61.4,
    "current_score": 60,
    "structural_score_rank": 38,
-   "current_score_rank": 46
+   "current_score_rank": 47
   },
   {
    "slug": "railway-india",
@@ -12232,12 +12268,12 @@
    ],
    "provisional": false,
    "notes": "Opportunity uses the same series as the Market & growth digest block (FY25 permanent-magnet imports of Rs 1,744 crore on 53,748 tonnes, government projection of consumption doubling by 2030 from 2025, and import dependence of 59.6–81.3% by value). Valuation left UNAVAILABLE — no industry valuation series and no listed domestic pure-play. Value capture (added 2026-11-04) scores five nodes from this page's own BOM tree and ladder plus the demand node, on the separate Registry Review §4 weighting (op_share 20%, pricing_power 15%, roic 15%, barriers 15%, bottleneck 10%, pool_growth 10%, cash_conversion 10%, switching 5%). It answers 'which node keeps the money' and is not blended into the industry score above.",
-   "overall_rank": 69,
+   "overall_rank": 70,
    "risk_adjusted_rank": 82,
    "structural_score": 50,
    "current_score": 60,
    "structural_score_rank": 73,
-   "current_score_rank": 47
+   "current_score_rank": 48
   },
   {
    "slug": "reactor-coolant-pumps-primary-loop-india",
@@ -12466,7 +12502,7 @@
    "structural_score": 71.4,
    "current_score": 60,
    "structural_score_rank": 7,
-   "current_score_rank": 48
+   "current_score_rank": 49
   },
   {
    "slug": "robot-software-autonomy-india",
@@ -12904,12 +12940,12 @@
    ],
    "provisional": false,
    "notes": "Scored against 'Industry-Level Investment Parameters & Scoring Architecture'. Valuation left UNAVAILABLE - the registry carries no industry-level valuation data. Cycle scored on IFR installation growth and the 2026 PLI lapse. Value capture is a judgement on node economics from the page's own bottleneck and import-dependency evidence, not from node-level financials.",
-   "overall_rank": 57,
-   "risk_adjusted_rank": 64,
+   "overall_rank": 58,
+   "risk_adjusted_rank": 65,
    "structural_score": 55.7,
    "current_score": 60,
-   "structural_score_rank": 59,
-   "current_score_rank": 49
+   "structural_score_rank": 60,
+   "current_score_rank": 50
   },
   {
    "slug": "room-ac-white-goods-components-india",
@@ -13615,11 +13651,11 @@
    ],
    "provisional": false,
    "notes": "Scored against 'Industry-Level Investment Parameters & Scoring Architecture'. Valuation left UNAVAILABLE; coverage 85%. The score fell from 60.0 (2026-10-09) to 52.9 for two distinct reasons: opportunity was cut 4 to 3 because the 20% localisation clause was dropped from the notified 2026 authorisation rules, and the cycle category is now scored at 2 on real evidence (20 idle Starlink gateway sites, VSAT terminals down 21.8%) instead of being unavailable. Coverage rose from 70% to 85%, so part of the fall is the addition of a weak category rather than a deterioration in the others. The IN-SPACe 2022 base and 2033 target are a policy ambition, not a forecast of realised revenue, and are not used as a CAGR. Node-level financials do not exist in public disclosure; value capture is a judgement on node economics.",
-   "overall_rank": 67,
+   "overall_rank": 68,
    "risk_adjusted_rank": 31,
    "structural_score": 55.7,
    "current_score": 40,
-   "structural_score_rank": 60,
+   "structural_score_rank": 61,
    "current_score_rank": 70
   },
   {
@@ -14269,7 +14305,7 @@
    ],
    "provisional": false,
    "notes": "Scored against 'Industry-Level Investment Parameters & Scoring Architecture'. Valuation left UNAVAILABLE. Two market series with different scopes are shown side by side rather than reconciled - the IN-SPACe figure is a market-potential target, the KPMG figure a service-revenue projection. Value capture is a judgement on node economics, not node-level financials.",
-   "overall_rank": 58,
+   "overall_rank": 59,
    "risk_adjusted_rank": 25,
    "structural_score": 60,
    "current_score": 40,
@@ -14517,7 +14553,7 @@
    ],
    "provisional": false,
    "notes": "Scored 2026-11-11 in the content-backfill pass. Market size and growth are the digest's own Market &amp; growth figures; because India has no published equipment or materials market size, the opportunity score rests on the global equipment series and the Indian project pipeline, which is stated on the page.",
-   "overall_rank": 55,
+   "overall_rank": 56,
    "risk_adjusted_rank": 77,
    "structural_score": 48.6,
    "current_score": 100,
@@ -14729,7 +14765,7 @@
    ],
    "provisional": false,
    "notes": "Scored against 'Industry-Level Investment Parameters & Scoring Architecture'. Cycle position and valuation left UNAVAILABLE — the registry carries no cycle or valuation data for these industries. Value capture (added 2026-11-04) scores the six nodes in this page's BOM tree on the separate Registry Review §4 weighting (op_share 20%, pricing_power 15%, roic 15%, barriers 15%, bottleneck 10%, pool_growth 10%, cash_conversion 10%, switching 5%). It answers 'which node keeps the money' and is not blended into the industry score above.",
-   "overall_rank": 71,
+   "overall_rank": 72,
    "risk_adjusted_rank": 36,
    "structural_score": 51.4,
    "structural_score_rank": 70
@@ -14980,7 +15016,7 @@
    "structural_score": 67.1,
    "current_score": 60,
    "structural_score_rank": 17,
-   "current_score_rank": 59
+   "current_score_rank": 60
   },
   {
    "slug": "shipbuilding-ship-repair-india",
@@ -15221,11 +15257,11 @@
    ],
    "provisional": false,
    "notes": "Opportunity uses the same figures as the Market & growth digest block (1.1 mn CGT order book, 0.5% global, deliveries 2026-30 ~2x 2021-25, GT output 57,637 in 2025). 3-year and 5-year value CAGRs are left UNAVAILABLE because revenue is delivery-lumpy and no consistent India series exists. Valuation UNAVAILABLE.",
-   "overall_rank": 54,
-   "risk_adjusted_rank": 66,
+   "overall_rank": 55,
+   "risk_adjusted_rank": 67,
    "structural_score": 52.9,
    "current_score": 80,
-   "structural_score_rank": 63,
+   "structural_score_rank": 64,
    "current_score_rank": 25
   },
   {
@@ -15944,11 +15980,11 @@
    ],
    "provisional": false,
    "notes": "SMR-specific revenue is UNAVAILABLE — no unit is under construction and no commercial price exists, so opportunity is scored on the nuclear build-out frame and the three sanctioned demonstration projects rather than on an invented SMR market size. Valuation left UNAVAILABLE — no industry valuation series and the core participants are unlisted.",
-   "overall_rank": 74,
-   "risk_adjusted_rank": 67,
+   "overall_rank": 75,
+   "risk_adjusted_rank": 68,
    "structural_score": 52.9,
    "current_score": 40,
-   "structural_score_rank": 64,
+   "structural_score_rank": 65,
    "current_score_rank": 72
   },
   {
@@ -16419,7 +16455,7 @@
    ],
    "provisional": false,
    "notes": "Opportunity uses the same series as the Market & growth digest block (PS Market Research, base 2023, 13.4% nominal CAGR 2024-2030). Valuation left UNAVAILABLE — the registry carries no industry valuation data. The panels-only Grand View series (9.4%) is a different scope and is not blended into the score. Value capture scored 2026-11-03 from this page's own BOM tree and ladder; the industry categories above are unchanged from the 2026-10-30 scoring.",
-   "overall_rank": 59,
+   "overall_rank": 60,
    "risk_adjusted_rank": 57,
    "structural_score": 60,
    "current_score": 40,
@@ -16635,12 +16671,12 @@
    ],
    "provisional": false,
    "notes": "",
-   "overall_rank": 70,
+   "overall_rank": 71,
    "risk_adjusted_rank": 74,
    "structural_score": 50,
    "current_score": 60,
    "structural_score_rank": 74,
-   "current_score_rank": 50
+   "current_score_rank": 51
   },
   {
    "slug": "steam-turbine-india",
@@ -17377,12 +17413,12 @@
    ],
    "provisional": false,
    "notes": "Scored 2026-11-11 in the content-backfill pass. Market size and growth are the digest's own Market &amp; growth figures; both published India scopes are shown rather than averaged, and the RF power semiconductor series is used only as evidence of the chipset slice.",
-   "overall_rank": 68,
+   "overall_rank": 69,
    "risk_adjusted_rank": 73,
    "structural_score": 51.4,
    "current_score": 60,
    "structural_score_rank": 71,
-   "current_score_rank": 51
+   "current_score_rank": 52
   },
   {
    "slug": "telecom-india",
@@ -17623,7 +17659,7 @@
    ],
    "provisional": false,
    "notes": "Opportunity uses the identical series as the Market & growth digest block (NITI Aayog / KPMG, base FY25, ~10% nominal CAGR to FY32). Valuation left UNAVAILABLE - no industry valuation series on the page. The traffic-versus-revenue gap (~17% vs ~2.7% CAGR) is treated as a monetisation risk inside economics, not as growth. Value capture scored from this page's own 16-node BOM tree and ladder.",
-   "overall_rank": 63,
+   "overall_rank": 64,
    "risk_adjusted_rank": 60,
    "structural_score": 58.6,
    "current_score": 40,
@@ -17878,7 +17914,7 @@
    "structural_score": 67.1,
    "current_score": 50,
    "structural_score_rank": 16,
-   "current_score_rank": 60
+   "current_score_rank": 61
   },
   {
    "slug": "telecom-towers-india",
@@ -18122,7 +18158,7 @@
    "structural_score": 64.3,
    "current_score": 60,
    "structural_score_rank": 31,
-   "current_score_rank": 52
+   "current_score_rank": 53
   },
   {
    "slug": "telecom-transport-equipment-india",
@@ -18366,10 +18402,10 @@
    "provisional": false,
    "notes": "Opportunity uses the exact series in the Market & growth digest block (India OTN $1.78 bn 2025 → $2.81 bn 2031 at 7.88% CAGR 2026–31 [REPORTED-T2, Mordor]). Value capture scores 8 nodes taken verbatim from this page's own BOM tree and value-chain ladder on the separate Registry Review §4 weighting, and is not blended into the industry score.",
    "overall_rank": 77,
-   "risk_adjusted_rank": 68,
+   "risk_adjusted_rank": 69,
    "structural_score": 52.9,
    "current_score": 40,
-   "structural_score_rank": 65,
+   "structural_score_rank": 66,
    "current_score_rank": 75
   },
   {
@@ -18619,7 +18655,7 @@
    "structural_score": 61.4,
    "current_score": 60,
    "structural_score_rank": 41,
-   "current_score_rank": 53
+   "current_score_rank": 54
   },
   {
    "slug": "turbine-auxiliaries-india",
@@ -18867,7 +18903,7 @@
    "structural_score": 58.6,
    "current_score": 60,
    "structural_score_rank": 54,
-   "current_score_rank": 55
+   "current_score_rank": 56
   },
   {
    "slug": "turbine-generator-india",
@@ -19115,7 +19151,7 @@
    "structural_score": 60,
    "current_score": 60,
    "structural_score_rank": 48,
-   "current_score_rank": 54
+   "current_score_rank": 55
   },
   {
    "slug": "turbine-island-india",
@@ -19592,7 +19628,7 @@
    "structural_score": 65.7,
    "current_score": 60,
    "structural_score_rank": 24,
-   "current_score_rank": 56
+   "current_score_rank": 57
   },
   {
    "slug": "wastewater-treatment-india",
@@ -19823,7 +19859,7 @@
    "structural_score": 58.6,
    "current_score": 60,
    "structural_score_rank": 55,
-   "current_score_rank": 57
+   "current_score_rank": 58
   }
  ]
 }
