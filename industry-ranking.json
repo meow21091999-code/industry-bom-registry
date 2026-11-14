@@ -1,7 +1,7 @@
 {
  "registry": "Industry BOM Registry",
  "description": "Industry ranking per \"Industry-Level Investment Parameters & Scoring Architecture\": hierarchical category scores (1–5), overall 0–100, evidence coverage reported, three lenses kept separate. DERIVED — regenerate with node tools/build-industry-ranking.mjs.",
- "generated": "2026-11-13",
+ "generated": "2026-11-14",
  "framework": {
   "category_score": "Σ(parameter weight × parameter score) ÷ Σ(weights of supported parameters)",
   "overall_score": "Σ(category weight × category score ÷ 5) × 100, renormalised over supported categories",
@@ -347,11 +347,11 @@
    "provisional": false,
    "notes": "First industry score on this page, 2026-11-06 (Tier-2 backfill). Market size and growth are the NITI Aayog/KPMG TANE series already carried in the digest; valuation stays UNAVAILABLE because no industry series exists. Value capture scored for the first time here, on the page's own tree nodes.",
    "overall_rank": 67,
-   "risk_adjusted_rank": 71,
+   "risk_adjusted_rank": 70,
    "structural_score": 51.4,
    "current_score": 60,
-   "structural_score_rank": 68,
-   "current_score_rank": 32
+   "structural_score_rank": 67,
+   "current_score_rank": 33
   },
   {
    "slug": "6g-india",
@@ -599,7 +599,7 @@
    "structural_score": 41.4,
    "current_score": 40,
    "structural_score_rank": 83,
-   "current_score_rank": 64
+   "current_score_rank": 65
   },
   {
    "slug": "agrochemicals-crop-protection-india",
@@ -847,7 +847,7 @@
    "structural_score": 64.3,
    "current_score": 60,
    "structural_score_rank": 26,
-   "current_score_rank": 33
+   "current_score_rank": 34
   },
   {
    "slug": "aircraft-mro-civil-aerospace-india",
@@ -1094,8 +1094,8 @@
    "risk_adjusted_rank": 39,
    "structural_score": 48.6,
    "current_score": 60,
-   "structural_score_rank": 76,
-   "current_score_rank": 34
+   "structural_score_rank": 75,
+   "current_score_rank": 35
   },
   {
    "slug": "ammunition-cartridges-india",
@@ -1603,11 +1603,11 @@
    "provisional": false,
    "notes": "Full re-analysis 2026-11-04 (previous 2026-10-09/30). Cycle raised 2 -> 3 on the commissioning inflection: 8.2 GWh added Jan-Jun 2026 against under 100 MWh a year earlier, 198 GWh pipeline at Sep-2026, Crisil expecting 45-50 GWh across FY27-28. Value and volume CAGRs come from different houses and are shown separately, never divided into each other. Valuation stays UNAVAILABLE: one listed integrator's multiple is not an industry series.",
    "overall_rank": 75,
-   "risk_adjusted_rank": 76,
+   "risk_adjusted_rank": 75,
    "structural_score": 48.6,
    "current_score": 60,
-   "structural_score_rank": 77,
-   "current_score_rank": 35
+   "structural_score_rank": 76,
+   "current_score_rank": 36
   },
   {
    "slug": "battery-management-system-india",
@@ -2036,7 +2036,7 @@
    "structural_score": 58.6,
    "current_score": 40,
    "structural_score_rank": 51,
-   "current_score_rank": 65
+   "current_score_rank": 66
   },
   {
    "slug": "component-mro-india",
@@ -2284,7 +2284,7 @@
    "structural_score": 61.4,
    "current_score": 60,
    "structural_score_rank": 38,
-   "current_score_rank": 36
+   "current_score_rank": 37
   },
   {
    "slug": "condenser-heat-rejection-india",
@@ -2745,7 +2745,7 @@
    "structural_score": 44.3,
    "current_score": 60,
    "structural_score_rank": 82,
-   "current_score_rank": 31
+   "current_score_rank": 32
   },
   {
    "slug": "data-centre-ai-compute-india",
@@ -3767,7 +3767,7 @@
    "structural_score": 54.3,
    "current_score": 60,
    "structural_score_rank": 63,
-   "current_score_rank": 37
+   "current_score_rank": 38
   },
   {
    "slug": "drone-subsystems-india",
@@ -3981,7 +3981,7 @@
    "structural_score": 65.7,
    "current_score": 60,
    "structural_score_rank": 22,
-   "current_score_rank": 38
+   "current_score_rank": 39
   },
   {
    "slug": "ehv-hv-cables-india",
@@ -4475,7 +4475,7 @@
    "structural_score": 65.7,
    "current_score": 40,
    "structural_score_rank": 23,
-   "current_score_rank": 66
+   "current_score_rank": 67
   },
   {
    "slug": "ems-electronics-manufacturing-india",
@@ -5691,7 +5691,7 @@
    "structural_score": 57.1,
    "current_score": 40,
    "structural_score_rank": 57,
-   "current_score_rank": 67
+   "current_score_rank": 68
   },
   {
    "slug": "guns-india",
@@ -6149,7 +6149,7 @@
    "structural_score": 45.7,
    "current_score": 60,
    "structural_score_rank": 81,
-   "current_score_rank": 39
+   "current_score_rank": 40
   },
   {
    "slug": "hvdc-power-electronics-india",
@@ -6378,7 +6378,7 @@
    "structural_score": 57.1,
    "current_score": 60,
    "structural_score_rank": 58,
-   "current_score_rank": 40
+   "current_score_rank": 41
   },
   {
    "slug": "industrial-gases-india",
@@ -6625,22 +6625,22 @@
    "structural_score": 68.6,
    "current_score": 60,
    "structural_score_rank": 11,
-   "current_score_rank": 41
+   "current_score_rank": 42
   },
   {
    "slug": "inorganic-chemicals-india",
    "title": "India Inorganic Chemicals",
    "group": "Chemicals & Petrochemicals",
    "scored": true,
-   "as_of": "2026-11-03",
+   "as_of": "2026-11-14",
    "categories": {
     "economics": {
      "name": "Industry economics & value creation",
      "weight": 0.2,
      "lens": "structural",
-     "score": 3,
+     "score": 2,
      "from": "category",
-     "basis": "Commodity process economics; profitability tracks spreads rather than pricing power."
+     "basis": "Commodity process economics with spreads at a cyclical low: Grasim's chemicals EBITDA fell 11% year on year in Q2 FY27 to ₹326 crore despite 15% revenue growth, on higher power costs, and Tata Chemicals' Industrial Essentials segment lost ₹120 crore of EBIT. CFR-SEA caustic at $390/t is a five-year low and soda-ash realisations stay soft on global oversupply; only contract-locked gases and integrated chlorine derivatives earn through the cycle."
     },
     "opportunity": {
      "name": "Market opportunity & structural growth",
@@ -6648,7 +6648,7 @@
      "lens": "structural",
      "score": 3,
      "from": "category",
-     "basis": "India inorganic chemicals USD 44.6 bn (2024) to USD 74.1 bn (2033) at a 5.8% nominal CAGR, with caustic soda capacity at 63.84 lakh t/yr running at ~79% utilisation - a mid-single-digit volume market where growth comes from alumina and solar glass while a structural caustic surplus caps realisations."
+     "basis": "India inorganic chemicals USD 44.6 bn (2024) to USD 74.09 bn (2033) at a 5.8% nominal CAGR, with volume led by soda-ash demand at 4.5-5% a year FY27-30 and caustic demand at low-double-digit growth in FY27 on 3 mtpa of new alumina capacity  -  a mid-single-digit volume market where a ~2 mtpa caustic wave in FY28-29 and 2.169 mtpa of soda ash by FY2030 cap the upside."
     },
     "competitive": {
      "name": "Competitive structure & moat",
@@ -6656,15 +6656,15 @@
      "lens": "structural",
      "score": 2,
      "from": "category",
-     "basis": "Commodity producers exposed to anti-dumping actions and import competition."
+     "basis": "Six domestic soda-ash producers and roughly 36 chlor-alkali units competing against structurally surplus Chinese, US and Turkish capacity; profitability depends on trade remedies rather than on moats  -  DGTR found imports absorbed about 85% of the incremental demand between FY23 and the most recent period, and the top six caustic producers' share is expected to fall to ~50% from 65% once the FY28-29 additions land."
     },
     "cycle": {
      "name": "Current opportunity & cycle position",
      "weight": 0.15,
      "lens": "current",
-     "score": null,
-     "from": null,
-     "basis": "No cycle-position evidence on the page."
+     "score": 4,
+     "from": "category",
+     "basis": "Prices sit at a cyclical trough with protection arriving: CFR-SEA caustic at a five-year low of $390/t, Chinese soda-ash producer inventory at ~1.89 Mt with a US producer cutting 1.5 Mt at Wyoming, domestic caustic utilisation estimated at 85-90% in FY27, and DGTR recommending a two-year import quota. The read is [INFERENCE] from reported prices and margins, not a forecast; the risk is that the quota is not notified or is diluted."
     },
     "valuation": {
      "name": "Valuation & market expectations",
@@ -6672,7 +6672,7 @@
      "lens": "current",
      "score": null,
      "from": null,
-     "basis": "No industry-level valuation data in the registry."
+     "basis": "No industry-level valuation data in the registry. Linde India's widely reported ~98x earnings is a single-company datapoint, not an industry multiple."
     },
     "value_chain": {
      "name": "Value-chain position & bottlenecks",
@@ -6680,7 +6680,7 @@
      "lens": "structural",
      "score": 3,
      "from": "category",
-     "basis": "Chlor-alkali and soda ash sit mid-chain; value is in energy and feedstock, not in the layer."
+     "basis": "The complex sits mid-chain and leaks value to feedstock: rock phosphate, potash, ammonia and sulphur are imported, and the domestic layer earns a conversion spread. Where the layer has moved up  -  Grasim's chlorine integration to ~67% by FY27 exit, smelter by-product acid, GHCL's low-cost soda ash  -  returns are visibly better, so the score stays at 3 rather than 2."
     },
     "capital": {
      "name": "Capital intensity & financial quality",
@@ -6688,7 +6688,7 @@
      "lens": "structural",
      "score": 2,
      "from": "category",
-     "basis": "Heavy process capital — chlor-alkali and soda-ash plants are long-lived, capital-hungry assets."
+     "basis": "Heavy process capital: GHCL's greenfield soda-ash line is ₹6,500 crore for 1.1 MMT, chlor-alkali is of the order of ₹1 crore per daily tonne, and fertiliser working capital is heavy and subsidy-funded. Plants are long-lived and returns are set by the spread over energy and feedstock."
     },
     "technology": {
      "name": "Technology & innovation",
@@ -6696,7 +6696,7 @@
      "lens": "structural",
      "score": 2,
      "from": "category",
-     "basis": "Process engineering, little proprietary IP."
+     "basis": "Mature process engineering  -  membrane cells, Solvay soda ash, DCDA acid, cryogenic ASUs  -  with little proprietary IP held in India. The genuinely technical nodes (ion-exchange membranes, ASU cold boxes, process licences) are imported, which is a dependency rather than an advantage."
     },
     "risk": {
      "name": "Risk & resilience",
@@ -6704,66 +6704,69 @@
      "lens": "risk",
      "score": 2,
      "from": "category",
-     "basis": "Commodity spreads, trade remedy exposure and energy cost sensitivity."
+     "basis": "Three live exposures: Gulf-sourced ammonia and sulphur moving through the Strait of Hormuz (ammonia +60%, sulphur +50% since March 2026), trade-remedy dependence for soda ash where the quota is not yet notified, and energy-cost sensitivity across a coal- and gas-based chlor-alkali fleet."
     }
    },
    "structural": {
-    "score": 52.9,
+    "score": 47.1,
     "coverage": 100
    },
-   "current": null,
+   "current": {
+    "score": 80,
+    "coverage": 50
+   },
    "risk": 2,
-   "risk_adjusted": 21.2,
+   "risk_adjusted": 18.8,
    "overall": 52.9,
-   "coverage": 70,
+   "coverage": 85,
    "confidence": {
-    "evidence": 3,
-    "primary_source_pct": 40,
+    "evidence": 4,
+    "primary_source_pct": 55,
     "missing_critical": [
      "industry capex",
      "industry ROIC",
-     "cycle position",
-     "industry valuation"
+     "industry valuation",
+     "notified soda-ash quota terms"
     ]
    },
    "value_capture": [
     {
      "node": "Industrial & Specialty Gases",
-     "basis": "Industrial gases are the most attractive pool in the complex - sold on 15-20 year take-or-pay contracts on-site at the customer's fence, with a handful of global majors and near-total switching cost. The bulk of the Indian pool sits with unlisted MNC joint ventures (INOX Air Products, Linde, Air Liquide), so the returns exist but are largely unavailable to a listed investor.",
+     "basis": "Still the most attractive pool in the complex - sold on 15-20 year take-or-pay contracts at the customer's fence, with near-total switching cost and a market growing ~6-7% a year. Linde India's Q2 FY27 revenue rose 12.3% while EBITDA fell 18%, so the growth is real but the margin is being taxed by input costs. pool_growth raised 3 -> 4 on Linde's guidance of ~7% market growth with electronics at 12-15%. The bulk of the Indian pool still sits with unlisted MNC joint ventures, so the returns exist but are largely unavailable to a listed investor.",
      "params": {
       "op_share": 4,
       "pricing_power": 5,
       "roic": 4,
       "barriers": 5,
       "bottleneck": 3,
-      "pool_growth": 3,
+      "pool_growth": 4,
       "cash_conversion": 4,
       "switching": 5
      },
-     "score": 4.15,
-     "score100": 83,
+     "score": 4.25,
+     "score100": 85,
      "coverage": 100
     },
     {
      "node": "Soda Ash (Na₂CO₃)",
-     "basis": "Soda ash is the best-earning listed node in the complex: GHCL ran a 23.8% EBITDA margin in Q2 FY26 with net cash, because the Solvay route is capital-heavy enough to deter entry and the domestic base is six producers. Pricing power is policy-derived rather than structural - realisations fell ~9% year-on-year once the minimum import price lapsed on 31-Dec-2025, and the live protection is a safeguard probe, not a moat.",
+     "basis": "The best-earning listed node, but the pool is policy-set rather than earned: GHCL held a 24.7% EBITDA margin with net cash in Q2 FY27 while Tata's Industrial Essentials segment lost Rs 120 crore of EBIT, and DGTR measured industry ROCE falling to an index of 71 against 100 in FY20-21. roic cut 4 -> 3 on that split. Pricing power stays at 2 - realisations are soft with Chinese producer inventory near 1.89 Mt, and the relief in train is an import quota recommendation, not a structural moat.",
      "params": {
       "op_share": 4,
       "pricing_power": 2,
-      "roic": 4,
+      "roic": 3,
       "barriers": 3,
       "bottleneck": 2,
       "pool_growth": 3,
       "cash_conversion": 4,
       "switching": 2
      },
-     "score": 3.15,
-     "score100": 63,
+     "score": 3,
+     "score100": 60,
      "coverage": 100
     },
     {
      "node": "Rock Phosphate",
-     "basis": "Rock phosphate is the binding upstream constraint - India imports it and the domestic mining layer has no listed coverage. The pool is small in revenue but carries real pricing power and a long substitution timeline, which is why it scores higher on bottleneck than on operating-profit share.",
+     "basis": "The binding upstream constraint. India imports it, there is no listed domestic miner, and the West Asia shock made the dependency visible again - rock phosphate and phosphoric acid rose less than ammonia and sulphur but still re-priced the chain. Small in revenue, real in pricing power, long in substitution timeline. Unchanged.",
      "params": {
       "op_share": 1,
       "pricing_power": 3,
@@ -6779,8 +6782,42 @@
      "coverage": 100
     },
     {
+     "node": "Chlorine & Derivatives",
+     "basis": "The clearest value migration in the complex. Chlorine is priced domestically and has reset from persistently negative to roughly zero - Epigral expects it never to return to negative, and Grasim reports Gujarat flat to slightly positive - which shifts cost recovery from caustic to chlorine. Grasim's integration reached 64% in H1 FY27 against ~67% guided at FY27 exit, with CPVC (50 KTPA) and ECH (50 KTPA) commissioned in Aug and Oct 2026. pricing_power 2 -> 3 and bottleneck 2 -> 3; it now outranks PVC.",
+     "params": {
+      "op_share": 2,
+      "pricing_power": 3,
+      "roic": 2,
+      "barriers": 2,
+      "bottleneck": 3,
+      "pool_growth": 3,
+      "cash_conversion": 2,
+      "switching": 2
+     },
+     "score": 2.35,
+     "score100": 47,
+     "coverage": 100
+    },
+    {
+     "node": "Chlor-Alkali & Caustic Soda",
+     "basis": "A thin electricity-and-salt spread, but the trough is doing some work: Grasim's ECU held at Rs 33,587/t (+2% YoY) even with CFR-SEA caustic at a five-year low of $390/t, because domestic realisations are set at import parity and the rupee has weakened. pricing_power and roic raised 1 -> 2 on that resilience and on 85-90% utilisation in FY27; they go back down when ~2 mtpa of new capacity lands in FY28-29.",
+     "params": {
+      "op_share": 3,
+      "pricing_power": 2,
+      "roic": 2,
+      "barriers": 2,
+      "bottleneck": 3,
+      "pool_growth": 2,
+      "cash_conversion": 2,
+      "switching": 1
+     },
+     "score": 2.25,
+     "score100": 45,
+     "coverage": 100
+    },
+    {
      "node": "PVC / CPVC",
-     "basis": "PVC is the largest single outlet for chlorine and therefore the node that decides whether a chlor-alkali complex is balanced - but Indian suspension PVC is being dumped into from China, Europe and Japan, and Chemplast's own FY26 shows the result: Rs 4,224 crore of revenue for Rs 198 crore of EBITDA. Barriers are capital, not technology.",
+     "basis": "The largest single chlorine outlet and therefore the node that decides whether a chlor-alkali complex is balanced, but Indian suspension PVC is being dumped into from China, Europe and Japan and the returns show it. Barriers are capital, not technology. Unchanged: the new CPVC and ECH capacity adds volume, not pricing power.",
      "params": {
       "op_share": 3,
       "pricing_power": 1,
@@ -6796,44 +6833,27 @@
      "coverage": 100
     },
     {
-     "node": "Chlorine & Derivatives",
-     "basis": "Chlorine is where the complex's value is migrating, since caustic is oversupplied and chlorine derivatives are not - but Indian integration into chloromethanes, PVC and specialty chlorinated products is thin, and merchant chlorine frequently clears at a negative netback because it cannot be stored or shipped.",
+     "node": "Sulphuric Acid (H₂SO₄)",
+     "basis": "Largely a by-product of copper and zinc smelting, which makes it a cost hedge for the fertiliser complex rather than a profit pool. pricing_power raised 1 -> 2: sulphur is up ~50% since March 2026 and smelter-acid producers get that pass-through for free, while sulphur-burners absorb it. Barriers remain minimal and the product clears at import parity.",
      "params": {
       "op_share": 2,
       "pricing_power": 2,
       "roic": 2,
-      "barriers": 2,
+      "barriers": 1,
       "bottleneck": 2,
-      "pool_growth": 3,
-      "cash_conversion": 2,
-      "switching": 2
-     },
-     "score": 2.1,
-     "score100": 42,
-     "coverage": 100
-    },
-    {
-     "node": "Chlor-Alkali & Caustic Soda",
-     "basis": "Caustic soda is a thin-margin commodity whose profitability is an electricity and salt spread: Chemplast Sanmar earned a 4% consolidated EBITDA margin in Q2 FY26 and GACL barely broke even. Capacity is growing ~9% a year against 4-5.5% demand growth, so India is structurally long and exports the surplus at Asia-Pacific netbacks.",
-     "params": {
-      "op_share": 3,
-      "pricing_power": 1,
-      "roic": 1,
-      "barriers": 2,
-      "bottleneck": 3,
       "pool_growth": 2,
-      "cash_conversion": 2,
+      "cash_conversion": 3,
       "switching": 1
      },
-     "score": 1.95,
-     "score100": 39,
+     "score": 1.9,
+     "score100": 38,
      "coverage": 100
     },
     {
      "node": "DAP (18-46-0)",
-     "basis": "In phosphate fertiliser the pool is captured by the subsidy, not by the market: the NBS rate sets realisation, imported ammonia, sulphur and rock phosphate set cost, and the manufacturer earns a conversion fee on a working-capital-heavy cycle. Cash conversion is the weakest in the complex.",
+     "basis": "The pool is captured by the subsidy, not the market, and in FY27 the subsidy does not cover the cost: DAP has been landing near $900-930/t CFR against a breakeven around $510/t, and NBS plus the Rs 3,500/t special package still leaves roughly Rs 23,000/t of under-recovery. op_share cut 3 -> 2 - the conversion fee is real only for producers with their own phosphoric acid. Cash conversion remains the weakest in the complex.",
      "params": {
-      "op_share": 3,
+      "op_share": 2,
       "pricing_power": 1,
       "roic": 1,
       "barriers": 2,
@@ -6842,34 +6862,19 @@
       "cash_conversion": 1,
       "switching": 2
      },
-     "score": 1.9,
-     "score100": 38,
-     "coverage": 100
-    },
-    {
-     "node": "Sulphuric Acid (H₂SO₄)",
-     "basis": "Sulphuric acid is largely a by-product of copper and zinc smelting, which makes it a cost hedge for the fertiliser complex rather than a profit pool in its own right. Barriers are minimal and the product is sold at import parity.",
-     "params": {
-      "op_share": 2,
-      "pricing_power": 1,
-      "roic": 2,
-      "barriers": 1,
-      "bottleneck": 2,
-      "pool_growth": 2,
-      "cash_conversion": 3,
-      "switching": 1
-     },
-     "score": 1.75,
-     "score100": 35,
+     "score": 1.7,
+     "score100": 34,
      "coverage": 100
     }
    ],
    "provisional": false,
-   "notes": "Scored against 'Industry-Level Investment Parameters & Scoring Architecture'. Opportunity uses the same India inorganic-chemicals series as the Market & growth digest block (USD 44.6 bn 2024 to USD 74.1 bn 2033, 5.8% nominal CAGR); the rupee production series and the chlor-alkali sub-segment are shown beside it, not blended. Cycle position and valuation left UNAVAILABLE - the registry carries no cycle or valuation data for these industries.",
+   "notes": "Scored against 'Industry-Level Investment Parameters & Scoring Architecture' during the 2026-11-14 full re-analysis. Opportunity uses the same India inorganic-chemicals series as the Market & growth digest block (USD 44.6 bn 2024 to USD 74.09 bn 2033, 5.8% nominal CAGR); the rupee production series, the narrower USD 16.3 bn series and the 3.95% alternative CAGR are shown beside it, not blended. Cycle is now scored (was UNAVAILABLE) because Q2 FY27 filings give a price and margin position: CFR-SEA caustic at a five-year low, Chinese soda-ash inventory near 1.89 Mt, and a pending two-year import quota. Valuation stays UNAVAILABLE - the registry holds no industry-level valuation data. Economics moved 3 -> 2 on the Q2 FY27 evidence (Grasim chemicals EBITDA -11%, Tata Industrial Essentials EBIT -Rs 120 crore).",
    "overall_rank": 68,
-   "risk_adjusted_rank": 67,
-   "structural_score": 52.9,
-   "structural_score_rank": 64
+   "risk_adjusted_rank": 79,
+   "structural_score": 47.1,
+   "current_score": 80,
+   "structural_score_rank": 80,
+   "current_score_rank": 15
   },
   {
    "slug": "launch-vehicles-propulsion-india",
@@ -7083,7 +7088,7 @@
    "structural_score": 68.6,
    "current_score": 80,
    "structural_score_rank": 12,
-   "current_score_rank": 15
+   "current_score_rank": 16
   },
   {
    "slug": "li-ion-cell-manufacturing-india",
@@ -7326,11 +7331,11 @@
    "provisional": false,
    "notes": "Re-analysed 2026-11-05 under the daily rotation. Corrections from the prior run: the 10 GWh ACC-PLI tender did NOT close on 13-Oct-2026 - it was extended to 10-Nov-2026 (technical bids 11-Nov); installed capacity is 1 GWh of 40 GWh awarded, not ~2 GWh of a working programme; Reliance's 40-to-120 GWh Jamnagar cell plan is no longer corroborated and is carried as capacity-not-disclosed with a late-2026 to 2027 production guide; HEG is now HEG Advanced Materials (HEGAM) after the demerger; Himadri's LFP plant is at a 2,000 tpa milestone, not 40,000 tpa; and the prior run's 36.5% volume CAGR was inconsistent with its own 28-to-272 GWh endpoints - the calculated figure is 57.6%. Cycle moved 3 to 2 on the PLI execution record and the first monthly fall in Chinese cell schedules of 2026. Valuation remains UNAVAILABLE. Value capture re-scored 2026-11-05; electrolyte bottleneck 3 to 2, moving it below foils.",
    "overall_rank": 77,
-   "risk_adjusted_rank": 72,
+   "risk_adjusted_rank": 71,
    "structural_score": 51.4,
    "current_score": 40,
-   "structural_score_rank": 69,
-   "current_score_rank": 68
+   "structural_score_rank": 68,
+   "current_score_rank": 69
   },
   {
    "slug": "machine-tools-metrology-india",
@@ -7559,7 +7564,7 @@
    "structural_score": 60,
    "current_score": 80,
    "structural_score_rank": 46,
-   "current_score_rank": 20
+   "current_score_rank": 21
   },
   {
    "slug": "medical-devices-india",
@@ -7791,7 +7796,7 @@
    "structural_score": 70,
    "current_score": 60,
    "structural_score_rank": 8,
-   "current_score_rank": 42
+   "current_score_rank": 43
   },
   {
    "slug": "missile-india",
@@ -8054,7 +8059,7 @@
    "structural_score": 62.9,
    "current_score": 80,
    "structural_score_rank": 34,
-   "current_score_rank": 16
+   "current_score_rank": 17
   },
   {
    "slug": "mobile-handsets-accessories-india",
@@ -8300,7 +8305,7 @@
    "structural_score": 41.4,
    "current_score": 40,
    "structural_score_rank": 84,
-   "current_score_rank": 69
+   "current_score_rank": 70
   },
   {
    "slug": "nuclear-pwr-steam-generator-india",
@@ -8546,7 +8551,7 @@
    "structural_score": 71.4,
    "current_score": 60,
    "structural_score_rank": 6,
-   "current_score_rank": 43
+   "current_score_rank": 44
   },
   {
    "slug": "optical-fibre-cable-india",
@@ -8794,7 +8799,7 @@
    "structural_score": 62.9,
    "current_score": 80,
    "structural_score_rank": 35,
-   "current_score_rank": 17
+   "current_score_rank": 18
   },
   {
    "slug": "optical-fibre-india",
@@ -9538,7 +9543,7 @@
    "structural_score": 75.7,
    "current_score": 60,
    "structural_score_rank": 5,
-   "current_score_rank": 44
+   "current_score_rank": 45
   },
   {
    "slug": "optical-transceivers-india",
@@ -9782,11 +9787,11 @@
    "provisional": false,
    "notes": "Scored 2026-11-10 in the content-backfill pass. Two conflicting market scopes are shown side by side in the digest and neither is averaged; the opportunity score rests on the narrower, better-anchored one.",
    "overall_rank": 58,
-   "risk_adjusted_rank": 73,
+   "risk_adjusted_rank": 72,
    "structural_score": 51.4,
    "current_score": 80,
-   "structural_score_rank": 70,
-   "current_score_rank": 18
+   "structural_score_rank": 69,
+   "current_score_rank": 19
   },
   {
    "slug": "organic-chemicals-india",
@@ -10068,7 +10073,7 @@
    "structural_score": 57.1,
    "current_score": 60,
    "structural_score_rank": 59,
-   "current_score_rank": 45
+   "current_score_rank": 46
   },
   {
    "slug": "overhead-transmission-line-india",
@@ -10314,7 +10319,7 @@
    "structural_score": 61.4,
    "current_score": 60,
    "structural_score_rank": 43,
-   "current_score_rank": 61
+   "current_score_rank": 62
   },
   {
    "slug": "pcb-electronic-components-india",
@@ -10561,8 +10566,8 @@
    "risk_adjusted_rank": 38,
    "structural_score": 50,
    "current_score": 80,
-   "structural_score_rank": 73,
-   "current_score_rank": 19
+   "structural_score_rank": 72,
+   "current_score_rank": 20
   },
   {
    "slug": "pharma-api-bulk-drugs-india",
@@ -10804,11 +10809,11 @@
    "provisional": false,
    "notes": "Opportunity uses the same series as the Market &amp; growth digest block (~$15&ndash;16 bn growing 5&ndash;7% through FY28, and the broader-scope $14.18 bn 2025 to $22.18 bn 2031 at 7.74% CALCULATED). Valuation left UNAVAILABLE &mdash; no industry valuation series exists.",
    "overall_rank": 81,
-   "risk_adjusted_rank": 77,
+   "risk_adjusted_rank": 76,
    "structural_score": 48.6,
    "current_score": 40,
-   "structural_score_rank": 78,
-   "current_score_rank": 70
+   "structural_score_rank": 77,
+   "current_score_rank": 71
   },
   {
    "slug": "power-conversion-system-india",
@@ -11057,7 +11062,7 @@
    "structural_score": 57.1,
    "current_score": 60,
    "structural_score_rank": 60,
-   "current_score_rank": 46
+   "current_score_rank": 47
   },
   {
    "slug": "power-semiconductor-osat-india",
@@ -11306,7 +11311,7 @@
    "structural_score": 64.3,
    "current_score": 60,
    "structural_score_rank": 30,
-   "current_score_rank": 48
+   "current_score_rank": 49
   },
   {
    "slug": "power-transformers-india",
@@ -11571,7 +11576,7 @@
    "structural_score": 77.1,
    "current_score": 60,
    "structural_score_rank": 3,
-   "current_score_rank": 47
+   "current_score_rank": 48
   },
   {
    "slug": "power-transmission-india",
@@ -11802,7 +11807,7 @@
    "structural_score": 77.1,
    "current_score": 40,
    "structural_score_rank": 4,
-   "current_score_rank": 71
+   "current_score_rank": 72
   },
   {
    "slug": "pumped-hydro-india",
@@ -12033,7 +12038,7 @@
    "structural_score": 61.4,
    "current_score": 60,
    "structural_score_rank": 39,
-   "current_score_rank": 49
+   "current_score_rank": 50
   },
   {
    "slug": "quantum-computing-india",
@@ -12244,11 +12249,11 @@
    "provisional": false,
    "notes": "Scored 2026-11-13 during the grounding pass for this page. Opportunity uses exactly the India series in the Market & growth digest block; valuation is null because no listed Indian exposure prices this industry. Value capture is scored from this page's own BOM tree and ladder. Company-level claims are evidence-based; all impacts are inference unless reported.",
    "overall_rank": 82,
-   "risk_adjusted_rank": 78,
+   "risk_adjusted_rank": 77,
    "structural_score": 48.6,
    "current_score": 40,
-   "structural_score_rank": 79,
-   "current_score_rank": 78
+   "structural_score_rank": 78,
+   "current_score_rank": 79
   },
   {
    "slug": "railway-india",
@@ -12478,7 +12483,7 @@
    "structural_score": 64.3,
    "current_score": 80,
    "structural_score_rank": 31,
-   "current_score_rank": 21
+   "current_score_rank": 22
   },
   {
    "slug": "rare-earth-magnets-india",
@@ -12689,8 +12694,8 @@
    "risk_adjusted_rank": 84,
    "structural_score": 50,
    "current_score": 60,
-   "structural_score_rank": 74,
-   "current_score_rank": 50
+   "structural_score_rank": 73,
+   "current_score_rank": 51
   },
   {
    "slug": "reactor-coolant-pumps-primary-loop-india",
@@ -12919,7 +12924,7 @@
    "structural_score": 71.4,
    "current_score": 60,
    "structural_score_rank": 7,
-   "current_score_rank": 51
+   "current_score_rank": 52
   },
   {
    "slug": "robot-software-autonomy-india",
@@ -13131,7 +13136,7 @@
    "structural_score": 68.6,
    "current_score": 80,
    "structural_score_rank": 13,
-   "current_score_rank": 22
+   "current_score_rank": 23
   },
   {
    "slug": "robotics-india",
@@ -13362,7 +13367,7 @@
    "structural_score": 55.7,
    "current_score": 60,
    "structural_score_rank": 61,
-   "current_score_rank": 52
+   "current_score_rank": 53
   },
   {
    "slug": "room-ac-white-goods-components-india",
@@ -13610,7 +13615,7 @@
    "structural_score": 62.9,
    "current_score": 80,
    "structural_score_rank": 36,
-   "current_score_rank": 23
+   "current_score_rank": 24
   },
   {
    "slug": "satellite-bus-subsystems-india",
@@ -13858,7 +13863,7 @@
    "structural_score": 61.4,
    "current_score": 80,
    "structural_score_rank": 40,
-   "current_score_rank": 24
+   "current_score_rank": 25
   },
   {
    "slug": "satellite-ground-segment-india",
@@ -14073,7 +14078,7 @@
    "structural_score": 55.7,
    "current_score": 40,
    "structural_score_rank": 62,
-   "current_score_rank": 72
+   "current_score_rank": 73
   },
   {
    "slug": "satellite-india",
@@ -14513,7 +14518,7 @@
    "structural_score": 78.6,
    "current_score": 80,
    "structural_score_rank": 2,
-   "current_score_rank": 25
+   "current_score_rank": 26
   },
   {
    "slug": "satellite-services-data-india",
@@ -14727,7 +14732,7 @@
    "structural_score": 60,
    "current_score": 40,
    "structural_score_rank": 47,
-   "current_score_rank": 73
+   "current_score_rank": 74
   },
   {
    "slug": "semiconductor-equipment-materials-india",
@@ -14971,10 +14976,10 @@
    "provisional": false,
    "notes": "Scored 2026-11-11 in the content-backfill pass. Market size and growth are the digest's own Market &amp; growth figures; because India has no published equipment or materials market size, the opportunity score rests on the global equipment series and the Indian project pipeline, which is stated on the page.",
    "overall_rank": 57,
-   "risk_adjusted_rank": 79,
+   "risk_adjusted_rank": 78,
    "structural_score": 48.6,
    "current_score": 100,
-   "structural_score_rank": 80,
+   "structural_score_rank": 79,
    "current_score_rank": 3
   },
   {
@@ -15185,7 +15190,7 @@
    "overall_rank": 73,
    "risk_adjusted_rank": 37,
    "structural_score": 51.4,
-   "structural_score_rank": 71
+   "structural_score_rank": 70
   },
   {
    "slug": "shakti-ew-india",
@@ -15433,7 +15438,7 @@
    "structural_score": 67.1,
    "current_score": 60,
    "structural_score_rank": 17,
-   "current_score_rank": 62
+   "current_score_rank": 63
   },
   {
    "slug": "shipbuilding-ship-repair-india",
@@ -15675,11 +15680,11 @@
    "provisional": false,
    "notes": "Opportunity uses the same figures as the Market & growth digest block (1.1 mn CGT order book, 0.5% global, deliveries 2026-30 ~2x 2021-25, GT output 57,637 in 2025). 3-year and 5-year value CAGRs are left UNAVAILABLE because revenue is delivery-lumpy and no consistent India series exists. Valuation UNAVAILABLE.",
    "overall_rank": 56,
-   "risk_adjusted_rank": 68,
+   "risk_adjusted_rank": 67,
    "structural_score": 52.9,
    "current_score": 80,
-   "structural_score_rank": 65,
-   "current_score_rank": 26
+   "structural_score_rank": 64,
+   "current_score_rank": 27
   },
   {
    "slug": "silver-paste-metallisation-india",
@@ -15925,7 +15930,7 @@
    "structural_score": 62.9,
    "current_score": 40,
    "structural_score_rank": 37,
-   "current_score_rank": 79
+   "current_score_rank": 80
   },
   {
    "slug": "smart-meters-india",
@@ -16173,7 +16178,7 @@
    "structural_score": 58.6,
    "current_score": 80,
    "structural_score_rank": 53,
-   "current_score_rank": 27
+   "current_score_rank": 28
   },
   {
    "slug": "smr-india",
@@ -16398,11 +16403,11 @@
    "provisional": false,
    "notes": "SMR-specific revenue is UNAVAILABLE — no unit is under construction and no commercial price exists, so opportunity is scored on the nuclear build-out frame and the three sanctioned demonstration projects rather than on an invented SMR market size. Valuation left UNAVAILABLE — no industry valuation series and the core participants are unlisted.",
    "overall_rank": 76,
-   "risk_adjusted_rank": 69,
+   "risk_adjusted_rank": 68,
    "structural_score": 52.9,
    "current_score": 40,
-   "structural_score_rank": 66,
-   "current_score_rank": 74
+   "structural_score_rank": 65,
+   "current_score_rank": 75
   },
   {
    "slug": "solar-cells-india",
@@ -16631,7 +16636,7 @@
    "structural_score": 64.3,
    "current_score": 40,
    "structural_score_rank": 33,
-   "current_score_rank": 80
+   "current_score_rank": 81
   },
   {
    "slug": "solar-pv-india",
@@ -16877,7 +16882,7 @@
    "structural_score": 60,
    "current_score": 40,
    "structural_score_rank": 48,
-   "current_score_rank": 75
+   "current_score_rank": 76
   },
   {
    "slug": "solid-state-transformer-india",
@@ -17089,11 +17094,11 @@
    "provisional": false,
    "notes": "",
    "overall_rank": 72,
-   "risk_adjusted_rank": 75,
+   "risk_adjusted_rank": 74,
    "structural_score": 50,
    "current_score": 60,
-   "structural_score_rank": 75,
-   "current_score_rank": 53
+   "structural_score_rank": 74,
+   "current_score_rank": 54
   },
   {
    "slug": "steam-turbine-india",
@@ -17341,7 +17346,7 @@
    "structural_score": 61.4,
    "current_score": 80,
    "structural_score_rank": 41,
-   "current_score_rank": 28
+   "current_score_rank": 29
   },
   {
    "slug": "substation-equipment-india",
@@ -17587,7 +17592,7 @@
    "structural_score": 68.6,
    "current_score": 80,
    "structural_score_rank": 14,
-   "current_score_rank": 30
+   "current_score_rank": 31
   },
   {
    "slug": "telecom-chipsets-india",
@@ -17831,11 +17836,11 @@
    "provisional": false,
    "notes": "Scored 2026-11-11 in the content-backfill pass. Market size and growth are the digest's own Market &amp; growth figures; both published India scopes are shown rather than averaged, and the RF power semiconductor series is used only as evidence of the chipset slice.",
    "overall_rank": 70,
-   "risk_adjusted_rank": 74,
+   "risk_adjusted_rank": 73,
    "structural_score": 51.4,
    "current_score": 60,
-   "structural_score_rank": 72,
-   "current_score_rank": 54
+   "structural_score_rank": 71,
+   "current_score_rank": 55
   },
   {
    "slug": "telecom-india",
@@ -18081,7 +18086,7 @@
    "structural_score": 58.6,
    "current_score": 40,
    "structural_score_rank": 54,
-   "current_score_rank": 76
+   "current_score_rank": 77
   },
   {
    "slug": "telecom-operators-india",
@@ -18331,7 +18336,7 @@
    "structural_score": 67.1,
    "current_score": 50,
    "structural_score_rank": 16,
-   "current_score_rank": 63
+   "current_score_rank": 64
   },
   {
    "slug": "telecom-towers-india",
@@ -18575,7 +18580,7 @@
    "structural_score": 64.3,
    "current_score": 60,
    "structural_score_rank": 32,
-   "current_score_rank": 55
+   "current_score_rank": 56
   },
   {
    "slug": "telecom-transport-equipment-india",
@@ -18819,11 +18824,11 @@
    "provisional": false,
    "notes": "Opportunity uses the exact series in the Market & growth digest block (India OTN $1.78 bn 2025 → $2.81 bn 2031 at 7.88% CAGR 2026–31 [REPORTED-T2, Mordor]). Value capture scores 8 nodes taken verbatim from this page's own BOM tree and value-chain ladder on the separate Registry Review §4 weighting, and is not blended into the industry score.",
    "overall_rank": 78,
-   "risk_adjusted_rank": 70,
+   "risk_adjusted_rank": 69,
    "structural_score": 52.9,
    "current_score": 40,
-   "structural_score_rank": 67,
-   "current_score_rank": 77
+   "structural_score_rank": 66,
+   "current_score_rank": 78
   },
   {
    "slug": "tunnel-boring-machine-india",
@@ -19072,7 +19077,7 @@
    "structural_score": 61.4,
    "current_score": 60,
    "structural_score_rank": 42,
-   "current_score_rank": 56
+   "current_score_rank": 57
   },
   {
    "slug": "turbine-auxiliaries-india",
@@ -19320,7 +19325,7 @@
    "structural_score": 58.6,
    "current_score": 60,
    "structural_score_rank": 55,
-   "current_score_rank": 58
+   "current_score_rank": 59
   },
   {
    "slug": "turbine-generator-india",
@@ -19568,7 +19573,7 @@
    "structural_score": 60,
    "current_score": 60,
    "structural_score_rank": 49,
-   "current_score_rank": 57
+   "current_score_rank": 58
   },
   {
    "slug": "turbine-island-india",
@@ -19814,7 +19819,7 @@
    "structural_score": 60,
    "current_score": 80,
    "structural_score_rank": 50,
-   "current_score_rank": 29
+   "current_score_rank": 30
   },
   {
    "slug": "vehicles-auto-components-india",
@@ -20045,7 +20050,7 @@
    "structural_score": 65.7,
    "current_score": 60,
    "structural_score_rank": 25,
-   "current_score_rank": 59
+   "current_score_rank": 60
   },
   {
    "slug": "wastewater-treatment-india",
@@ -20276,7 +20281,7 @@
    "structural_score": 58.6,
    "current_score": 60,
    "structural_score_rank": 56,
-   "current_score_rank": 60
+   "current_score_rank": 61
   }
  ]
 }
