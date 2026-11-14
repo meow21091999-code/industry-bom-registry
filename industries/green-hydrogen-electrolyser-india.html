@@ -31,6 +31,13 @@
     </div>
   </header>
 
+  <div style="display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;background:var(--gold-dim);border:1px solid var(--gold);border-radius:10px;padding:14px 18px;margin-bottom:24px;">
+    <span style="font-size:13px;line-height:1.5;"><strong style="color:var(--text);">Drill-down available &rarr;</strong> <span style="color:var(--text-dim);">1 deep-dive entry branches from this page.</span></span>
+    <span style="display:flex;gap:10px;flex-wrap:wrap;">
+      <a href="green-ammonia-india.html" style="font-family:var(--font-mono);font-size:12px;font-weight:600;color:var(--gold);text-decoration:none;border:1px solid var(--gold);border-radius:6px;padding:6px 12px;white-space:nowrap;background:var(--surface);">Green Ammonia &rarr;</a>
+    </span>
+  </div>
+
   <!-- METRIC CARDS -->
   <section class="animate" style="--i:1">
     <div class="metric-cards">
@@ -563,6 +570,7 @@ const NODES = [
   { id:'ammonia', name:'Green Ammonia / Derivatives', pri:'med', bott:true,
     fn:'Conversion of green H&#8322; into green ammonia, methanol and SAF — the export and fertiliser-facing value pool. Prices discovered at ₹49.75–64.74/kg for ammonia under SIGHT Mode-2A.',
     importDep:'n/a', conc:'Concentrating (Reliance, Adani, NTPC, ACME)',
+    drillTo:'green-ammonia-india.html', drillLabel:'Green Ammonia — India',
     companies:[
       {n:'NTPC Green Energy', t:'NSE: NTPCGREEN', e:'direct', m:'Pudimadaka hub — 4,300 TPD green ammonia, MeOH, SAF', ev:'NGEL / NTPC'},
       {n:'Reliance Industries', t:'NSE: RELIANCE', e:'direct', m:'90,000 t/yr SIGHT award; 15-yr green-ammonia SPA with Samsung C&amp;T (US$3bn+)', ev:'RIL filing 16-Mar-2026'},
