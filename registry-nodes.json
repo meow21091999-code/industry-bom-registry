@@ -14434,7 +14434,9 @@
    "universe": "NSE/BSE",
    "sector": "Agriculture & Crop Inputs",
    "derived_from": null,
-   "drill_downs": [],
+   "drill_downs": [
+    "agrochemical-cdmo-csm-india"
+   ],
    "nodes": [
     {
      "id": "ai-insect",
@@ -19900,6 +19902,196 @@
      "priority": "low",
      "bottleneck": false,
      "in_universe_coverage": false
+    }
+   ]
+  },
+  {
+   "slug": "agrochemical-cdmo-csm-india",
+   "industry": "Agrochemical CDMO / CSM",
+   "scope": "INDIA",
+   "path": "industries/agrochemical-cdmo-csm-india.html",
+   "analysis_date": "2026-11-14",
+   "universe": "NSE/BSE",
+   "sector": "Agriculture & Crop Inputs",
+   "derived_from": {
+    "industry": "Agrochemicals & Crop Protection",
+    "slug": "agrochemicals-crop-protection-india",
+    "node": "Contract Synthesis & Manufacturing (CDMO/CSM)"
+   },
+   "drill_downs": [],
+   "nodes": [
+    {
+     "id": "csm-innov",
+     "name": "Innovator Agrochemical CSM / CDMO",
+     "level": 1,
+     "aliases": [
+      "csm",
+      "cdmo",
+      "custom synthesis",
+      "contract manufacturing",
+      "innovator outsourcing",
+      "patented molecule"
+     ],
+     "priority": "high",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "cram-generic",
+     "name": "Generic CRAM — off-patent technicals",
+     "level": 1,
+     "aliases": [
+      "cram",
+      "off-patent technicals",
+      "generic contract manufacturing",
+      "post-patent"
+     ],
+     "priority": "high",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "ksm",
+     "name": "Advanced Intermediates & KSM",
+     "level": 2,
+     "aliases": [
+      "ksm",
+      "key starting materials",
+      "advanced intermediates",
+      "pyridine",
+      "chloro-aromatics",
+      "pyrazole",
+      "ethyl chloroformate"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "fluoro",
+     "name": "Fluorination — AHF / HF to fluoro-intermediates",
+     "level": 2,
+     "aliases": [
+      "fluorination",
+      "ahf",
+      "hf",
+      "fluoro-intermediates",
+      "fluorspar",
+      "trifluoromethyl"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "flow",
+     "name": "Flow chemistry & process intensification",
+     "level": 2,
+     "aliases": [
+      "flow chemistry",
+      "continuous processing",
+      "process intensification",
+      "multi-purpose plant"
+     ],
+     "priority": "med",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "equip",
+     "name": "Reactors, ANFD & glass-lined equipment",
+     "level": 2,
+     "aliases": [
+      "glass lined reactor",
+      "gle",
+      "anfd",
+      "nutsche",
+      "process equipment",
+      "reactors"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "util",
+     "name": "Utilities, ZLD & effluent treatment",
+     "level": 2,
+     "aliases": [
+      "zld",
+      "effluent",
+      "etp",
+      "solvent recovery",
+      "incinerator",
+      "utilities"
+     ],
+     "priority": "med",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "analytics",
+     "name": "Analytical, bio-efficacy & regulatory dossiers",
+     "level": 2,
+     "aliases": [
+      "analytical",
+      "glp",
+      "dossier",
+      "bio-efficacy",
+      "residue",
+      "cro"
+     ],
+     "priority": "med",
+     "bottleneck": false,
+     "in_universe_coverage": false
+    },
+    {
+     "id": "people",
+     "name": "Process R&D, skills & IP",
+     "level": 2,
+     "aliases": [
+      "process r&d",
+      "process chemistry",
+      "ip protection",
+      "process safety",
+      "skills"
+     ],
+     "priority": "high",
+     "bottleneck": true,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "demand",
+     "name": "Innovator demand & customer concentration",
+     "level": 1,
+     "aliases": [
+      "innovator demand",
+      "customer concentration",
+      "bayer",
+      "basf",
+      "syngenta",
+      "fmc",
+      "corteva"
+     ],
+     "priority": "high",
+     "bottleneck": false,
+     "in_universe_coverage": true
+    },
+    {
+     "id": "policy",
+     "name": "Trade remedies, PLI & registration policy",
+     "level": 1,
+     "aliases": [
+      "anti-dumping",
+      "trade remedies",
+      "pli",
+      "registration policy",
+      "glufosinate",
+      "pesticides management bill"
+     ],
+     "priority": "med",
+     "bottleneck": false,
+     "in_universe_coverage": true
     }
    ]
   }
