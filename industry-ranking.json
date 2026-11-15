@@ -1316,7 +1316,7 @@
    "title": "India Ammunition & Cartridges",
    "group": "Defence & Aerospace",
    "scored": true,
-   "as_of": "2026-11-13",
+   "as_of": "2026-11-15",
    "categories": {
     "economics": {
      "name": "Industry economics & value creation",
@@ -1332,7 +1332,7 @@
      "lens": "structural",
      "score": 4,
      "from": "category",
-     "basis": "&#8377;15,899 cr of import-dependent ammunition is formally under indigenisation, ~70% of defence-grade nitrocellulose is imported, and Europe's 155 mm shortage has turned India into a shell-body exporter — exports +62.66% in FY26."
+     "basis": "&#8377;15,899 cr of import-dependent ammunition is formally under indigenisation, ~70% of defence-grade nitrocellulose is imported, and Europe's 155 mm shortage has turned India into a shell-body exporter — exports +62.66% in FY26. Horizons on the domestic-consumption series: 4.93% 5-year (2026-31), 4.94% 3-year (2026-29), +4.85% last year (2025); the indigenisation and export legs, not the base growth rate, carry the score."
     },
     "competitive": {
      "name": "Competitive structure & moat",
@@ -1500,7 +1500,7 @@
     }
    ],
    "provisional": false,
-   "notes": "Industry-level scorecard, not a company score. Valuation unsupported in this run; coverage below 100% is shown, not imputed.",
+   "notes": "Industry-level scorecard, not a company score. Valuation unsupported in this run; coverage below 100% is shown, not imputed. Delta pass 15-Nov-2026: added 5-year (4.93%), 3-year (4.94%) and last-year (+4.85%) horizons with the calibre volume series; scores unchanged.",
    "overall_rank": 15,
    "risk_adjusted_rank": 14,
    "structural_score": 65.7,
@@ -2723,7 +2723,7 @@
    ],
    "provisional": false,
    "notes": "Newly scored 2026-11-07 in the content backfill. Opportunity uses exactly the series in the Market & growth digest block; valuation is null because the registry carries no industry-level valuation series for this node. Value capture scored from this page's own BOM tree and value-chain ladder, using the node names already on the page.",
-   "overall_rank": 5,
+   "overall_rank": 4,
    "risk_adjusted_rank": 6,
    "structural_score": 68.6,
    "current_score": 80,
@@ -4436,7 +4436,7 @@
    ],
    "provisional": false,
    "notes": "Scored against 'Industry-Level Investment Parameters & Scoring Architecture'. Opportunity uses the same Ken Research HV series already carried in this page's Market & growth digest block. Valuation left UNAVAILABLE. Delta pass 2026-11-13: HV cable size and CAGR re-confirmed (Ken Research via Primecab); last-year momentum checked against the IEEMA FY26 growth index.",
-   "overall_rank": 6,
+   "overall_rank": 5,
    "risk_adjusted_rank": 7,
    "structural_score": 68.6,
    "current_score": 80,
@@ -7511,7 +7511,7 @@
    ],
    "provisional": false,
    "notes": "Opportunity and Market - growth use the same scoped series: launch services US$720 mn (2022, IN-SPACe Decadal Vision) to a US$3.5 bn potential by 2033, ~15.5% nominal CAGR [CALCULATED]; the whole space economy US$8.4 bn (2022) to US$9.0 bn (Aug-2026), ~1.6% a year [CALCULATED]; volume 12 launch-vehicle missions in the three years to Jun-2026 (~4 a year), 5-6 a year per IN-SPACe, 7 targeted in FY2026-27, 50 a year stated as the requirement. Valuation left UNAVAILABLE - the registry carries no industry valuation series and no listed pure-play exists.",
-   "overall_rank": 7,
+   "overall_rank": 6,
    "risk_adjusted_rank": 9,
    "structural_score": 68.6,
    "current_score": 80,
@@ -8974,11 +8974,11 @@
    ],
    "provisional": false,
    "notes": "Opportunity uses the same series as the Market & growth digest block (India nuclear-plant equipment ~$2.8 bn in 2026 to ~$7.4 bn in 2035 at an 11.4% CAGR [REPORTED-T3, MarkWide], with the SG at ~7% of the ~₹19 lakh cr 100 GW build). Valuation left UNAVAILABLE — there is no node-level valuation series and the owner and designer are unlisted. Value capture (2026-11-05) scores 8 nodes taken verbatim from this page's own BOM tree and value-chain ladder, on the separate Registry Review §4 weighting; it answers 'which node keeps the money' and is never blended into the industry score above.",
-   "overall_rank": 12,
+   "overall_rank": 11,
    "risk_adjusted_rank": 3,
    "structural_score": 71.4,
    "current_score": 60,
-   "structural_score_rank": 6,
+   "structural_score_rank": 5,
    "current_score_rank": 44
   },
   {
@@ -9234,7 +9234,7 @@
    "title": "India Optical Fibre",
    "group": "Telecom",
    "scored": true,
-   "as_of": "2026-11-10",
+   "as_of": "2026-11-15",
    "categories": {
     "economics": {
      "name": "Industry economics & value creation",
@@ -9250,7 +9250,7 @@
      "lens": "structural",
      "score": 4,
      "from": "category",
-     "basis": "India OFC market $550 mn in 2025 rising to just over $1 bn by 2031 - about 11% nominal CAGR, value only, no volume series (tele.net/EY, Aug-2026). Demand is expected to roughly triple to ~60 mn fkm a year, with data centres at 18-20% of global fibre demand in 2026 rising to 30-35% in 2027 (TrendForce, Oct-2026). The substitution gap - preform 65-75% imported - is the larger prize."
+     "basis": "India OFC market $550 mn in 2025 rising to just over $1 bn by 2031 - about 11% nominal CAGR, value only, no volume series (tele.net/EY, Aug-2026). Demand is expected to roughly triple to ~60 mn fkm a year, with data centres at 18-20% of global fibre demand in 2026 rising to 30-35% in 2027 (TrendForce, Oct-2026). The substitution gap - preform 65-75% imported - is the larger prize. On the wider cable-plus-accessories scope Maximize puts the same growth at 20.11% (USD 1.73 bn 2024 to USD 7.50 bn 2032), so 11-20% is the defensible band; the score stays 4 because the substitution leg - preform 65-75% imported - rather than the band sets it."
     },
     "competitive": {
      "name": "Competitive structure & moat",
@@ -9469,8 +9469,8 @@
     }
    ],
    "provisional": false,
-   "notes": "Scored 2026-11-10 in the content-backfill pass. The market figure and growth rate behind the opportunity score are the same ones carried in the digest's Market & growth block; company results are used as evidence of industry economics, never summed into an industry size.",
-   "overall_rank": 8,
+   "notes": "Scored 2026-11-10 in the content-backfill pass. The market figure and growth rate behind the opportunity score are the same ones carried in the digest's Market & growth block; company results are used as evidence of industry economics, never summed into an industry size. Delta pass 15-Nov-2026: added 5-year (20.1%, 2024-29) and 3-year (20.1%, 2024-27) horizons on the Maximize scope, and the 6Wresearch 2031 endpoint; scores unchanged.",
+   "overall_rank": 7,
    "risk_adjusted_rank": 51,
    "structural_score": 64.3,
    "current_score": 100,
@@ -9730,7 +9730,7 @@
    "title": "India Optical, Medical & Surgical Apparatus",
    "group": "Healthcare & Medical Devices",
    "scored": true,
-   "as_of": "2026-11-13",
+   "as_of": "2026-11-15",
    "categories": {
     "economics": {
      "name": "Industry economics & value creation",
@@ -9744,9 +9744,9 @@
      "name": "Market opportunity & structural growth",
      "weight": 0.15,
      "lens": "structural",
-     "score": 5,
+     "score": 4,
      "from": "category",
-     "basis": "India medical-device market USD 15.2 bn (2025) to USD 50.1 bn (2030) at a 26.9% nominal CAGR (base disputed at USD 14-17.5 bn, so the implied range is 23-29%), with 70-80% of demand imported."
+     "basis": "India medical-device demand is USD 15.2 bn (2025) heading to USD 50.1 bn (2030) on the Rubix series (26.9% nominal CAGR) and to INR 1.0 tn / ~USD 11.0 bn on BMI/Fitch's (6.6% USD, 7.7% INR) - a 6.6-26.9% band [CONFLICTING DATA], so growth alone no longer carries a top score. What is not in doubt is the substitution leg: 70-80% of demand is imported, electro-medical equipment is ~60% of the import bill, and FY25 imports were 2.1x exports. Scored 4 rather than 5 because the growth evidence is now a 4x range and the fastest-growing device classes (orthopaedics, prosthetics) are not the optical/surgical nodes this page covers."
     },
     "competitive": {
      "name": "Competitive structure & moat",
@@ -9806,7 +9806,7 @@
     }
    },
    "structural": {
-    "score": 75.7,
+    "score": 71.4,
     "coverage": 100
    },
    "current": {
@@ -9814,8 +9814,8 @@
     "coverage": 50
    },
    "risk": 4,
-   "risk_adjusted": 60.6,
-   "overall": 72.9,
+   "risk_adjusted": 57.1,
+   "overall": 69.4,
    "coverage": 85,
    "confidence": {
     "evidence": 4,
@@ -9965,12 +9965,12 @@
     }
    ],
    "provisional": false,
-   "notes": "Scored against \"Industry-Level Investment Parameters & Scoring Architecture\". Delta pass 2026-11-13: cycle position filled from PLI-MD 2.0 (PIB, 10-Nov-2026) and the FY26 trade data; valuation stays UNAVAILABLE because no industry-level valuation series exists. Market size and growth are the Rubix/IBEF series already carried in the digest; value capture is scored on the page's own tree nodes.",
-   "overall_rank": 3,
+   "notes": "Scored against \"Industry-Level Investment Parameters & Scoring Architecture\". Delta pass 2026-11-13: cycle position filled from PLI-MD 2.0 (PIB, 10-Nov-2026) and the FY26 trade data; valuation stays UNAVAILABLE because no industry-level valuation series exists. Market size and growth are the Rubix/IBEF series already carried in the digest; value capture is scored on the page's own tree nodes. Delta pass 15-Nov-2026: added the 5-year/3-year/last-year horizon readout and the BMI/Fitch series (INR 1.0 tn by 2030, 6.6% USD CAGR, +5.4% in 2026 after +14.9% in 2025); opportunity corrected 5 -> 4 because the growth band widened to 6.6-26.9%.",
+   "overall_rank": 12,
    "risk_adjusted_rank": 1,
-   "structural_score": 75.7,
+   "structural_score": 71.4,
    "current_score": 60,
-   "structural_score_rank": 5,
+   "structural_score_rank": 6,
    "current_score_rank": 45
   },
   {
@@ -12034,7 +12034,7 @@
    ],
    "provisional": false,
    "notes": "Full re-analysis 2026-11-10. Corrections from the prior run: (a) EHV lead times were carried at 24-42 months from global coverage and are replaced with India-specific Ministry of Power/CTUIL figures (220 kV 11-15 months, 400 kV ~15, 765 kV 20-24); (b) the valuation basis '95x to 167x' was wrong and is replaced with measured 9-Nov-2026 multiples (CG Power 89x, Hitachi 109x, TARIL 30.2x, Voltamp 30.4x, Shilchar 32.4x, Bharat Bijlee 21.7x), which lifts valuation from 2 to 3; (c) risk moves 3 -> 2 on reported margin compression from record copper; (d) bushing localisation is later than previously stated - localised 420/550 kV lands in Q4 FY28, not H2 FY27. Market & growth uses the same series as the digest block: FY26 ~₹40,000 cr (CRISIL/Eninrac projection), 3-year value CAGR 15.5% [CALCULATED], last-year value +10-11% (CRISIL) vs +21% implied by Eninrac [CONFLICTING DATA], volume +31.6% power-transformer production and +31.4% capacity added. Value capture scores 9 nodes from this page's own BOM tree and ladder on the Registry Review §4 weighting, plus one new node (CRGO lamination & core processing) that entered the investable set with Vilas Transcore's NSE listing. Delta pass 2026-11-13: market size and growth re-confirmed against CRISIL (Aug-2025) and IEEMA FY26; CRGO anti-dumping status re-checked &mdash; no duty notified as of 11-Nov-2026.",
-   "overall_rank": 4,
+   "overall_rank": 3,
    "risk_adjusted_rank": 36,
    "structural_score": 77.1,
    "current_score": 60,
@@ -12265,7 +12265,7 @@
    ],
    "provisional": false,
    "notes": "Scored against 'Industry-Level Investment Parameters & Scoring Architecture'. Overall = sum(category weight x score / 5) x 100, renormalised over supported categories: (4x.20 + 5x.15 + 3x.15 + 2x.15 + 4x.10 + 3x.05 + 3x.05) = 3.00; 3.00/0.85 = 3.53; overall = 3.00/5/0.85 x 100 = 70.6. Coverage 85% (valuation null). Structural group 77.1, current-opportunity group 40.0. Re-scored 2026-11-08: competitive 4->3 (border-country supplier opening, ~300 GVA capacity being added), cycle 3->2 (order books fullest in a decade, prices +70-80% since 2021), risk 3->2 (capitalisation guidance cut on RoW, CRGO duty pending).",
-   "overall_rank": 9,
+   "overall_rank": 8,
    "risk_adjusted_rank": 37,
    "structural_score": 77.1,
    "current_score": 40,
@@ -13394,7 +13394,7 @@
    "title": "India Robot Software & Autonomy",
    "group": "Robotics & Automation",
    "scored": true,
-   "as_of": "2026-11-13",
+   "as_of": "2026-11-15",
    "categories": {
     "economics": {
      "name": "Industry economics & value creation",
@@ -13410,7 +13410,7 @@
      "lens": "structural",
      "score": 4,
      "from": "category",
-     "basis": "India robot software grows from US$223.4 mn in 2023 to US$1,312.3 mn by 2030 at a 27.7% value CAGR, inside a robotics market going from US$1.1 bn in 2025 to US$4.6 bn by 2030 (~33% CAGR), with software the fastest-growing offering segment and payback down to 1.5–2 years."
+     "basis": "India robot software grows from US$223.4 mn in 2023 to US$1,312.3 mn by 2030 at a 27.7% value CAGR, inside a robotics market going from US$1.1 bn in 2025 to US$4.6 bn by 2030 (~33% CAGR), with software the fastest-growing offering segment and payback down to 1.5–2 years. Horizons on the same path: ~29.2% 5-year (2025-30) and 27.7% 3-year (2025-28) [CALCULATED]; last-year revenue growth for the software pool is [UNAVAILABLE]."
     },
     "competitive": {
      "name": "Competitive structure & moat",
@@ -13593,8 +13593,8 @@
     }
    ],
    "provisional": false,
-   "notes": "Opportunity uses the same series as the Market & growth digest block (India robot software US$223.4 mn in 2023 to US$1,312.3 mn by 2030 at 27.7% value CAGR, inside a robotics market of US$1.1 bn in 2025 rising to US$4.6 bn by 2030 at ~33%). Valuation left UNAVAILABLE — the registry carries no industry valuation series. Delta pass 2026-11-13: software CAGR re-confirmed; last-year volume cross-checked against the IFR World Robotics 2026 India release.",
-   "overall_rank": 10,
+   "notes": "Opportunity uses the same series as the Market & growth digest block (India robot software US$223.4 mn in 2023 to US$1,312.3 mn by 2030 at 27.7% value CAGR, inside a robotics market of US$1.1 bn in 2025 rising to US$4.6 bn by 2030 at ~33%). Valuation left UNAVAILABLE — the registry carries no industry valuation series. Delta pass 2026-11-13: software CAGR re-confirmed; last-year volume cross-checked against the IFR World Robotics 2026 India release. Delta pass 15-Nov-2026: added 5-year (29.2%) and 3-year (27.7%) horizons derived from the Next Move endpoints and the Avendus envelope 5-year (33.1%); last-year software growth remains [UNAVAILABLE]; scores unchanged.",
+   "overall_rank": 9,
    "risk_adjusted_rank": 10,
    "structural_score": 68.6,
    "current_score": 80,
@@ -17816,7 +17816,7 @@
    "title": "Substation Equipment",
    "group": "Power & Electrical Infrastructure",
    "scored": true,
-   "as_of": "2026-11-13",
+   "as_of": "2026-11-15",
    "categories": {
     "economics": {
      "name": "Industry economics & value creation",
@@ -17832,7 +17832,7 @@
      "lens": "structural",
      "score": 4,
      "from": "category",
-     "basis": "Transformer market Rs 33,000 cr (FY25) to over Rs 40,000 cr (FY26) at 10-11%, with a Rs 70,000-75,000 cr opportunity across FY26-FY27 and switchgear at 7.7% to 2035."
+     "basis": "Transformer market Rs 33,000 cr (FY25) to over Rs 40,000 cr (FY26) at 10-11%, with a Rs 70,000-75,000 cr opportunity across FY26-FY27 and switchgear at 7.7% to 2035. Horizons: 11.5% 5-year on the NEP transformation-capacity series (1,070,950 to 1,847,280 MVA, FY22-FY27) [CALCULATED]; revenue 5-year and 3-year [UNAVAILABLE] on published endpoints; last year +12.6% on the IEEMA FY26 index with power transformers +31.6%."
     },
     "competitive": {
      "name": "Competitive structure & moat",
@@ -18049,8 +18049,8 @@
     }
    ],
    "provisional": false,
-   "notes": "Scored against 'Industry-Level Investment Parameters & Scoring Architecture'. Opportunity uses the same CRISIL transformer series as the Market & growth digest block; the switchgear series is reported separately and never added to it. Valuation left UNAVAILABLE. Delta pass 2026-11-13: transformer series re-confirmed (CRISIL Aug-2025, IEEMA FY26); CRGO duty status re-checked, still unnotified.",
-   "overall_rank": 11,
+   "notes": "Scored against 'Industry-Level Investment Parameters & Scoring Architecture'. Opportunity uses the same CRISIL transformer series as the Market & growth digest block; the switchgear series is reported separately and never added to it. Valuation left UNAVAILABLE. Delta pass 2026-11-13: transformer series re-confirmed (CRISIL Aug-2025, IEEMA FY26); CRGO duty status re-checked, still unnotified. Delta pass 15-Nov-2026: added the 11.5% 5-year capacity CAGR, the FY26 last-year readout and the FY26 ordering slowdown (16 schemes vs 45); scores unchanged.",
+   "overall_rank": 10,
    "risk_adjusted_rank": 11,
    "structural_score": 68.6,
    "current_score": 80,
