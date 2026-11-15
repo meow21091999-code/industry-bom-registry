@@ -1,7 +1,7 @@
 {
  "registry": "Industry BOM Registry",
  "description": "Industry ranking per \"Industry-Level Investment Parameters & Scoring Architecture\": hierarchical category scores (1–5), overall 0–100, evidence coverage reported, three lenses kept separate. DERIVED — regenerate with node tools/build-industry-ranking.mjs.",
- "generated": "2026-11-14",
+ "generated": "2026-11-15",
  "framework": {
   "category_score": "Σ(parameter weight × parameter score) ÷ Σ(weights of supported parameters)",
   "overall_score": "Σ(category weight × category score ÷ 5) × 100, renormalised over supported categories",
@@ -2493,11 +2493,11 @@
    ],
    "provisional": false,
    "notes": "First industry score on this page, 2026-11-06 (Tier-2 backfill). The India component-MRO figure replaces a previous [UNAVAILABLE]: $1.106 bn for 2026 from a secondary house, with the global component pool shown beside it and the India CAGR left UNAVAILABLE rather than inferred. Opportunity is scored high on substitution headroom, not on measured growth.",
-   "overall_rank": 44,
-   "risk_adjusted_rank": 21,
+   "overall_rank": 45,
+   "risk_adjusted_rank": 22,
    "structural_score": 61.4,
    "current_score": 60,
-   "structural_score_rank": 39,
+   "structural_score_rank": 40,
    "current_score_rank": 37
   },
   {
@@ -4684,7 +4684,7 @@
    ],
    "provisional": false,
    "notes": "Scored against 'Industry-Level Investment Parameters & Scoring Architecture'. Overall = sum(category weight x score / 5) x 100, renormalised over supported categories: (3x.20 + 4x.15 + 3x.15 + 2x.15 + 3x.10 + 4x.05 + 3x.05) = 2.60; 2.60/0.85 = 3.059; overall = 3.059/5 x 100 = 61.2. Coverage 85% (valuation null). Structural group 65.7, current-opportunity group 40.0, risk lens 40.0. First scored pass for this entry (the 2026-10-09 version carried no score block). Direction changes versus the prior prose: transformers are now ranked above cables on profit capture, and machinery plus rare-earth magnets were added as first-class bottlenecks.",
-   "overall_rank": 45,
+   "overall_rank": 46,
    "risk_adjusted_rank": 47,
    "structural_score": 65.7,
    "current_score": 40,
@@ -10508,7 +10508,7 @@
    "title": "Overhead Transmission Line",
    "group": "Power & Electrical Infrastructure",
    "scored": true,
-   "as_of": "2026-10-30",
+   "as_of": "2026-11-15",
    "categories": {
     "economics": {
      "name": "Industry economics & value creation",
@@ -10516,7 +10516,7 @@
      "lens": "structural",
      "score": 3,
      "from": "category",
-     "basis": "EPC margins are thin and steel, zinc and aluminium pass through; the annuity economics sit with the asset owner, not the line contractor."
+     "basis": "The contracting layer earns thin, cyclical margins and passes metal through: KEC's Q2 FY27 EBITDA fell to 5.0% from 7.1% as aluminium, steel and zinc inflated between award and execution, and its PBT margin was 0.7%. The annuity economics sit with the regulated asset owner (PGCIL H1 FY27 EBITDA Rs 19,778 cr on Rs 23,752 cr of income, ~83%; AESL transmission 92%)."
     },
     "opportunity": {
      "name": "Market opportunity & structural growth",
@@ -10524,7 +10524,7 @@
      "lens": "structural",
      "score": 4,
      "from": "category",
-     "basis": "T&D EPC USD 14.68 bn (2025) to USD 35.20 bn (2035) at 9.34%, with overhead lines 81.67% of it; FY27 line target of 25,146 ckm is roughly double FY26 additions."
+     "basis": "FY27's target of 16,554 ckm of 220 kV+ lines is the highest ever and 36% above FY26's 12,139 ckm; H1 FY27 already delivered 6,108 ckm, 2.5x H1 FY26, with 63% on the ISTS network. TBCB awards reached a record ~Rs 1.4 lakh crore in H1 FY27 and PGCIL holds Rs 2.20 lakh crore of works in hand against a Rs 67,233 cr bidding pipeline."
     },
     "competitive": {
      "name": "Competitive structure & moat",
@@ -10532,7 +10532,7 @@
      "lens": "structural",
      "score": 3,
      "from": "category",
-     "basis": "Fragmented EPC field with five to six scaled players; tower capacity is more concentrated (KEC ~4.8 lakh t/yr, Skipper 3.75-4.5 lakh t/yr)."
+     "basis": "EPC is fragmented across five or six scaled players who now bid against each other and against re-entering incumbents - KEC won Rs 3,000 cr of PGCIL work after a 15-month gap, its largest India T&D order at ~Rs 1,200 cr. Tower fabrication is more concentrated (Skipper to 4,50,000 t/yr, KEC ~4.8 lakh t/yr), but APAR reports more competition entering HTLS conductors."
     },
     "cycle": {
      "name": "Current opportunity & cycle position",
@@ -10540,7 +10540,7 @@
      "lens": "current",
      "score": 3,
      "from": "category",
-     "basis": "Order books at records and the FY27 target is nearly double FY26, but the 21% FY26 shortfall shows execution, not demand, is the binding constraint."
+     "basis": "Execution has inflected - H1 FY27 additions are 2.5x year-ago - but the FY27 target still needs ~1,740 ckm a month in H2 against a 1,018 ckm H1 average, PGCIL has cut capitalisation guidance on land acquisition, and metal prices have only just begun to correct from their June 2026 peak."
     },
     "valuation": {
      "name": "Valuation & market expectations",
@@ -10548,7 +10548,7 @@
      "lens": "current",
      "score": null,
      "from": null,
-     "basis": "No industry-level valuation data in the registry."
+     "basis": "No industry-level valuation data in the registry; broker views exist at company level only and are not an industry valuation input."
     },
     "value_chain": {
      "name": "Value-chain position & bottlenecks",
@@ -10556,7 +10556,7 @@
      "lens": "structural",
      "score": 3,
      "from": "category",
-     "basis": "Towers and conductors are domestic and export-competitive; value leaks at OPGW fibre, composite long-rod and hollow insulators and compression hardware."
+     "basis": "Towers, ACSR/AL-59 conductors and porcelain are domestic and export-competitive - India is the world's second-largest insulator producer at 402 mn units. Value still leaks at composite conductor core, high-fibre OPGW (China-owned ZTT India) and composite/hollow insulators, where China supplied 67% of India's insulator import value in 2024."
     },
     "capital": {
      "name": "Capital intensity & financial quality",
@@ -10564,15 +10564,15 @@
      "lens": "structural",
      "score": 2,
      "from": "category",
-     "basis": "Working-capital-heavy contracting with retention and mobilisation funding; tower plants are only a few hundred crore each, so capital is not the barrier."
+     "basis": "Working capital, not plant, is the financial constraint: KEC carries 155 days of net working capital and Rs 7,793 cr of net debt with interest at 3.5% of revenue, while tower plants cost only a few hundred crore each. The asset-owner layer is capital-heavy but financed on regulated returns."
     },
     "technology": {
      "name": "Technology & innovation",
      "weight": 0.05,
      "lens": "structural",
-     "score": 2,
+     "score": 3,
      "from": "category",
-     "basis": "Mature technology; HTLS conductors and monopoles are the only real steps, and both are already commercial."
+     "basis": "No longer static: the CEA's amended technical standards (notified 9-Oct-2025, adopted through advisories in Jul-Aug 2026) make tower and conductor configuration the compliance route to narrower forest right-of-way, turning HTLS, CFCC and monopoles from options into design requirements; OPGW fibre counts are moving from 24 to 48/96/144."
     },
     "risk": {
      "name": "Risk & resilience",
@@ -10580,11 +10580,11 @@
      "lens": "risk",
      "score": 3,
      "from": "category",
-     "basis": "Right-of-way and forest clearance is the single binding constraint; steel and zinc price swings hit margins; four China-owned plants hold a bidding exemption to 2028."
+     "basis": "Right-of-way is the single binding constraint and is not resolved - PGCIL cut FY27 capitalisation guidance on it. Metal price swings compress contracting margins, four China-owned plants may bid until Jun-2028, and ZTT India dominates high-fibre OPGW."
     }
    },
    "structural": {
-    "score": 61.4,
+    "score": 62.9,
     "coverage": 100
    },
    "current": {
@@ -10592,20 +10592,38 @@
     "coverage": 50
    },
    "risk": 3,
-   "risk_adjusted": 36.8,
-   "overall": 61.2,
+   "risk_adjusted": 37.7,
+   "overall": 62.4,
    "coverage": 85,
    "confidence": {
     "evidence": 4,
-    "primary_source_pct": 75,
+    "primary_source_pct": 80,
     "missing_critical": [
-     "valuation"
+     "valuation",
+     "segment-level insulator and hardware economics"
     ]
    },
    "value_capture": [
     {
+     "node": "Transmission asset ownership (TBCB / TSA annuity)",
+     "basis": "NEW IN THIS RUN, and the node that actually keeps the money. PGCIL earned Rs 19,778 cr of H1 FY27 EBITDA on Rs 23,752 cr of consolidated income (~83%) under a 35-year TSA; AESL's transmission segment ran a 92% EBITDA margin and IndiGrid's operational EBITDA margin was 89.7%. Returns are regulated and availability-linked, which caps the upside (roic 3) but makes cash flows contractual; entry requires TBCB prequalification and project equity (barriers 5), and the pool is growing into Rs 2.20 lakh crore of PGCIL works in hand plus a Rs 67,233 cr bidding pipeline [REPORTED-T1: POWERGRID and IndiGrid Q2 FY27, AESL Q2 FY27].",
+     "params": {
+      "op_share": 5,
+      "pricing_power": 4,
+      "roic": 3,
+      "barriers": 5,
+      "bottleneck": 3,
+      "pool_growth": 5,
+      "cash_conversion": 3,
+      "switching": 5
+     },
+     "score": 4.15,
+     "score100": 83,
+     "coverage": 100
+    },
+    {
      "node": "Reconductoring (asset-light growth)",
-     "basis": "The highest-return pool on the page because it reuses existing right of way: APAR has executed 272+ reconductoring projects and bundles HTLS supply with turnkey execution [REPORTED-T1]. Asset-light, cash-generative, and pulled by utilities that would rather avoid a new-line clearance than build one.",
+     "basis": "Holds its position as the highest-return operating pool because it reuses existing right-of-way: APAR has executed 272+ reconductoring projects and bundles HTLS supply with turnkey execution, and Transrail booked Rs 777 cr of HTLS reconductoring orders in Q2 FY27. The CEA/MoEFCC right-of-way regime reinforces it - narrower corridors are only available to HTLS and pole configurations [REPORTED-T1: APAR and Transrail Q2 FY27; CEA advisory Jul-2026].",
      "params": {
       "op_share": 3,
       "pricing_power": 4,
@@ -10621,25 +10639,8 @@
      "coverage": 100
     },
     {
-     "node": "HTLS (ACCC / ACSS / GAP)",
-     "basis": "The premium sub-node where the margin actually sits: APAR's premium mix rose to 45.8% in FY26 from 40.6% and lifted EBITDA per tonne 17.3% [REPORTED-T1]. ACCC is made under licence from CTC Global, so the IP is licensed rather than owned — which caps the barrier — while reconductoring (272+ projects executed) is the demand engine.",
-     "params": {
-      "op_share": 2,
-      "pricing_power": 4,
-      "roic": 4,
-      "barriers": 4,
-      "bottleneck": 2,
-      "pool_growth": 5,
-      "cash_conversion": 3,
-      "switching": 3
-     },
-     "score": 3.35,
-     "score100": 67,
-     "coverage": 100
-    },
-    {
      "node": "Hollow / apparatus insulators",
-     "basis": "The most concentrated node on the page: composite hollow (CHCI) is made by few players globally, and Aditya Birla Power Composites is India's first large-scale CHCI maker as a Grasim (51%) / MR Germany (49%) JV, with MR sharing the technology exclusively [REPORTED-T2: CARE Ratings]. Tiny pool, near-monopoly economics, and the part must be type-tested with the apparatus it insulates.",
+     "basis": "Unchanged and still the most concentrated node: composite hollow (CHCI) is made by few players globally, and Aditya Birla Power Composites is India's first large-scale CHCI maker as a Grasim (51%) / MR Germany (49%) JV with exclusive technology access [REPORTED-T2: CARE Ratings]. The part must be type-tested with the apparatus it insulates, which is the real barrier; the pool is tiny but near-monopoly.",
      "params": {
       "op_share": 1,
       "pricing_power": 4,
@@ -10655,8 +10656,25 @@
      "coverage": 100
     },
     {
+     "node": "OPGW fibre cable",
+     "basis": "MOVED UP (59 to 66). op_share and pool_growth both raised on hard evidence: APAR won a single Rs 960 cr 48-fibre OPGW order from KPCL and its first 144-fibre order, with in-house SUS tubes; utilities are moving from 24 to 48/96/144 fibre for data-centre traffic, and the 60% minimum-local-content rule on OPGW tilts procurement domestic. Against that, ZTT India (China-owned, Tirupati, 24,000 km) holds a large share and Advait runs at 30-35% utilisation, so the pool still leaks [REPORTED-T1: APAR Q2 FY27; DPIIT MLC list].",
+     "params": {
+      "op_share": 2,
+      "pricing_power": 3,
+      "roic": 3,
+      "barriers": 4,
+      "bottleneck": 4,
+      "pool_growth": 5,
+      "cash_conversion": 3,
+      "switching": 4
+     },
+     "score": 3.3,
+     "score100": 66,
+     "coverage": 100
+    },
+    {
      "node": "Conductor system",
-     "basis": "The largest listed pool in the chain: APAR's conductor division did ₹12,712 cr revenue in FY26 (+32.7%) at ₹1,040 cr EBITDA (8.2%) and ₹43,012 EBITDA/tonne, with premium (HTLS/AL59) at 45.8% of mix and a ₹7,671 cr order book [REPORTED-T1: APAR FY26 investor update]. Aluminium is commodity-linked, so pricing power is mix-driven rather than structural, and working capital is heavy against utility payment cycles.",
+     "basis": "Still the largest listed materials pool, but the character of its growth changed: APAR's conductor division did Rs 3,753 cr in Q2 FY27 (+21.1%) on a 9.2% VOLUME DECLINE, lifting EBITDA per tonne to Rs 48,241 from Rs 39,363 - so this cycle's revenue is metal price and mix, not tonnage. Premium mix fell to 39.4% from 45.3% and management flags more competition entering, which is why pricing_power is held at 3 rather than raised [REPORTED-T1: APAR Q2 FY27].",
      "params": {
       "op_share": 4,
       "pricing_power": 3,
@@ -10672,8 +10690,25 @@
      "coverage": 100
     },
     {
+     "node": "HTLS (ACCC / ACSS / GAP)",
+     "basis": "MOVED DOWN (67 to 64) on pricing power, not demand. The demand case strengthened - the CEA's amended standards make HTLS the compliance route to narrower forest right-of-way, and APAR cites two recent CEA changes in its favour - but its premium mix fell 5.9 points year-on-year to 39.4% and it says competition is rising, with market share likely to fall even as volumes hold. ACCC remains under CTC Global licence, so the IP is licensed rather than owned [REPORTED-T1: APAR Q2 FY27; CEA regs].",
+     "params": {
+      "op_share": 2,
+      "pricing_power": 3,
+      "roic": 4,
+      "barriers": 4,
+      "bottleneck": 2,
+      "pool_growth": 5,
+      "cash_conversion": 3,
+      "switching": 3
+     },
+     "score": 3.2,
+     "score100": 64,
+     "coverage": 100
+    },
+    {
      "node": "Composite silicone long-rod",
-     "basis": "The technology-substitution node: composite is ~43% of the Indian insulator mix in 2025 and gains where contamination performance and weight matter [REPORTED-T2], and Deccan Enterprises has qualified to 765 kV AC / 800 kV HVDC. Qualification per voltage class is the barrier, which is what separates it from commodity porcelain.",
+     "basis": "The technology-substitution node: composite is a rising share of the Indian insulator mix on contamination and weight performance, and the new right-of-way regime favours pole structures where composite long-rod is the standard fitting. POWERGRID's CIS01 bulk composite-long-rod package (spec Rev-06, Jun-2026) and TANTRANSCO's Nov-2026 765 kV polymer tender show the demand is now standing, not episodic. Qualification per voltage class is the barrier [REPORTED-T1: POWERGRID spec; T2: tender notice].",
      "params": {
       "op_share": 2,
       "pricing_power": 3,
@@ -10689,42 +10724,42 @@
      "coverage": 100
     },
     {
-     "node": "OPGW fibre cable",
-     "basis": "Import-linked and bottlenecked: the optical fibre inside the OPGW is the constrained input, and there is no listed OPGW/insulator pure-play in the selected universe [REPORTED-T2]. Value accrues to the qualified integrator rather than the cable assembler — which is why APAR is building the capability alongside its conductor franchise.",
-     "params": {
-      "op_share": 1,
-      "pricing_power": 3,
-      "roic": 3,
-      "barriers": 4,
-      "bottleneck": 4,
-      "pool_growth": 4,
-      "cash_conversion": 3,
-      "switching": 4
-     },
-     "score": 3,
-     "score100": 60,
-     "coverage": 100
-    },
-    {
      "node": "Transmission towers / structures",
-     "basis": "Fabrication is competitive and thin: KEC carries ~4.8 lakh t/yr of tower capacity and Transrail 1.84 lakh t/yr, yet the EPC layer that owns them earns 7.1% consolidated EBITDA on ₹23,506 cr of FY26 revenue [REPORTED-T1: KEC FY26 results], and Salasar's 8.1% EBITDA on ₹1,503 cr marks the pure-fabrication ceiling. Steel and zinc pass straight through.",
+     "basis": "MOVED UP (48 to 53) on balance-sheet repair rather than pricing. Skipper's Q2 FY27 EBITDA margin reached 10.5%, PAT grew 56%, gross debt fell ~Rs 358 cr, D/E improved to 0.38x and CRISIL upgraded it to A+/stable; its order book is Rs 10,066 cr with a 75,000 MTPA expansion landing in H2 FY27. Pricing power stays low - steel and zinc pass straight through and the EPC layer owning the plants earned only 5.0% EBITDA in the same quarter [REPORTED-T1: Skipper and KEC Q2 FY27].",
      "params": {
       "op_share": 3,
       "pricing_power": 2,
+      "roic": 3,
+      "barriers": 2,
+      "bottleneck": 2,
+      "pool_growth": 4,
+      "cash_conversion": 3,
+      "switching": 2
+     },
+     "score": 2.65,
+     "score100": 53,
+     "coverage": 100
+    },
+    {
+     "node": "Line EPC & stringing",
+     "basis": "NEW IN THIS RUN, and the point of the whole map: this is the biggest revenue pool in the chain - KEC's order book is a record Rs 39,946 cr (Rs 43,500 cr with L1) and KPIL's is Rs 71,846 cr - and the worst profit pool. KEC's Q2 FY27 EBITDA fell to 5.0% from 7.1%, PBT margin was 0.7%, net working capital 155 days and net debt Rs 7,793 cr. Fixed-price contracts against volatile metal with RoW-driven schedule risk is the structural reason [REPORTED-T1: KEC and KPIL Q2 FY27].",
+     "params": {
+      "op_share": 4,
+      "pricing_power": 1,
       "roic": 2,
       "barriers": 2,
       "bottleneck": 2,
       "pool_growth": 4,
-      "cash_conversion": 2,
+      "cash_conversion": 1,
       "switching": 2
      },
-     "score": 2.4,
-     "score100": 48,
+     "score": 2.35,
+     "score100": 47,
      "coverage": 100
     },
     {
-     "node": "Insulators",
-     "basis": "The weakest economics on the page: Grasim's Aditya Birla Insulators did ₹479 cr of revenue in FY25 with EBITDA of just ₹7 cr against 41,727 t of capacity [REPORTED-T1: Grasim FY25 annual report], and IEEMA reports domestic overcapacity with Chinese product at ~67% of India's insulator import value [REPORTED-T2]. A necessary node with almost no retained margin, and no listed pure-play in the selected universe.",
+     "node": "Insulators (porcelain / glass disc)",
+     "basis": "The weakest economics on the page and unchanged this run: Grasim's Aditya Birla Insulators did Rs 479 cr of revenue in FY25 with EBITDA of just Rs 7 cr against 41,727 t of capacity [REPORTED-T1: Grasim FY25 annual report]. India is the world's second-largest producer at 402 mn units, but China supplied 67% of India's insulator import value in 2024 (US$87 mn), which sets the price ceiling. Necessary node, almost no retained margin, no listed pure-play in the universe.",
      "params": {
       "op_share": 2,
       "pricing_power": 1,
@@ -10741,12 +10776,12 @@
     }
    ],
    "provisional": false,
-   "notes": "Scored against 'Industry-Level Investment Parameters & Scoring Architecture'. Opportunity uses the same T&D EPC series as the Market & growth digest block (Astute Analytica), cross-checked against Transrail's 2029 waypoint. Valuation left UNAVAILABLE. Value capture (added 2026-11-02) scores 8 nodes taken verbatim from this page's own BOM tree and value-chain ladder, on the separate Registry Review §4 weighting (op_share 20%, pricing_power 15%, roic 15%, barriers 15%, bottleneck 10%, pool_growth 10%, cash_conversion 10%, switching 5%). It answers 'which node keeps the money' and is not blended into the industry score above.",
-   "overall_rank": 48,
-   "risk_adjusted_rank": 23,
-   "structural_score": 61.4,
+   "notes": "Scored against 'Industry-Level Investment Parameters & Scoring Architecture'. Re-scored 2026-11-15 from the Q2/H1 FY27 filing cycle and CEA's September-2026 statistics; the previous block was as_of 2026-10-30. Only technology moved among the eight weighted categories (2 -> 3, on the CEA amended standards and MoEFCC forest-RoW regime making tower/conductor configuration a compliance variable); every other basis line was rewritten on new evidence while the score held. Valuation stays UNAVAILABLE - broker notes on POWERGRID or KEC are company views, not an industry valuation input. Coverage 85%. Value capture is scored separately on the Registry Review §4 weighting (op_share 20%, pricing_power 15%, roic 15%, barriers 15%, bottleneck 10%, pool_growth 10%, cash_conversion 10%, switching 5%) and never blended into the industry score; this run adds the two nodes the prior array omitted - regulated asset ownership (the top pool) and line EPC (the largest revenue pool and the worst profit pool) - and re-scores eight existing nodes on Q2 FY27 evidence.",
+   "overall_rank": 43,
+   "risk_adjusted_rank": 21,
+   "structural_score": 62.9,
    "current_score": 60,
-   "structural_score_rank": 44,
+   "structural_score_rank": 38,
    "current_score_rank": 62
   },
   {
@@ -12461,11 +12496,11 @@
    ],
    "provisional": false,
    "notes": "",
-   "overall_rank": 46,
-   "risk_adjusted_rank": 22,
+   "overall_rank": 47,
+   "risk_adjusted_rank": 23,
    "structural_score": 61.4,
    "current_score": 60,
-   "structural_score_rank": 40,
+   "structural_score_rank": 41,
    "current_score_rank": 50
   },
   {
@@ -14290,7 +14325,7 @@
    "risk_adjusted_rank": 56,
    "structural_score": 61.4,
    "current_score": 80,
-   "structural_score_rank": 41,
+   "structural_score_rank": 42,
    "current_score_rank": 25
   },
   {
@@ -16357,7 +16392,7 @@
    "risk_adjusted_rank": 55,
    "structural_score": 62.9,
    "current_score": 40,
-   "structural_score_rank": 38,
+   "structural_score_rank": 39,
    "current_score_rank": 82
   },
   {
@@ -17773,7 +17808,7 @@
    "risk_adjusted_rank": 57,
    "structural_score": 61.4,
    "current_score": 80,
-   "structural_score_rank": 42,
+   "structural_score_rank": 43,
    "current_score_rank": 29
   },
   {
@@ -18759,7 +18794,7 @@
    ],
    "provisional": false,
    "notes": "First scored pass for this page - it carried no score block before this run, so there is no prior score to compare. Scored against 'Industry-Level Investment Parameters & Scoring Architecture'; all nine categories supported, coverage 100%, overall 62.0. The two constraints on the score are structural, not cyclical: value capture sits with the operator annuity and the state, while the imported radio layer takes the capex, and the sector's next earnings leg depends on a tariff rise that the market leader has declined to lead. Revenue growth in FY26 was volume-led (data +24.74%) with per-GB realisation down 10.59%, so the operating leverage that would justify current multiples has not yet appeared in the reported series. Company-level figures are used as evidence for the industry, never as the industry total.",
-   "overall_rank": 43,
+   "overall_rank": 44,
    "risk_adjusted_rank": 13,
    "structural_score": 67.1,
    "current_score": 50,
@@ -19500,11 +19535,11 @@
    ],
    "provisional": false,
    "notes": "Opportunity uses the exact series in the Market & growth digest block (India ₹8,000 cr FY24 → ₹11,000 cr FY30E, 5.5% CAGR [CALCULATED]; global $7.36 bn 2024 → $9.79 bn 2030 at 4.87% [REPORTED-T2]). Valuation is UNAVAILABLE, so coverage is 85%. Value capture scores 8 nodes taken verbatim from this page's own BOM tree and value-chain ladder on the separate Registry Review §4 weighting, and is not blended into the industry score.",
-   "overall_rank": 47,
+   "overall_rank": 48,
    "risk_adjusted_rank": 58,
    "structural_score": 61.4,
    "current_score": 60,
-   "structural_score_rank": 43,
+   "structural_score_rank": 44,
    "current_score_rank": 57
   },
   {
