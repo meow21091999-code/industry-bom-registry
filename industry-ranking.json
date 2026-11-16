@@ -2521,7 +2521,7 @@
      "lens": "structural",
      "score": 4,
      "from": "category",
-     "basis": "India needs 86,440 MW of additional thermal capacity by FY36, with 63,545 MW already under implementation (47,545 MW under construction, 16,000 MW awarded) [REPORTED-T1: CEA National Generation Plan, Mar-2026], and every new unit carries a condenser. Dry cooling is the growth vector: India air-cooled heat exchangers USD 271.5 mn (2024) to USD 450.8 mn (2029), 10.7% CAGR [REPORTED-T3: MarketsandMarkets]."
+     "basis": "India needs 86,440 MW of additional thermal capacity by FY36, with 63,545 MW already under implementation (47,545 MW under construction, 16,000 MW awarded) [REPORTED-T1: CEA National Generation Plan, Mar-2026], and every new unit carries a condenser. Dry cooling is the growth vector: India air-cooled heat exchangers USD 271.5 mn (2024) to USD 450.8 mn (2029), 10.7% CAGR [REPORTED-T3: MarketsandMarkets]. The condenser market itself has only a CAGR, not a value series: ~6.4% 2025-2034 [REPORTED-T3: HTF Market Intelligence], which is why opportunity rests on the CEA build programme plus the dry-cooling vector."
     },
     "competitive": {
      "name": "Competitive structure & moat",
@@ -6600,7 +6600,7 @@
      "lens": "structural",
      "score": 4,
      "from": "category",
-     "basis": "The physical pipeline stays large — 32.3 GW in the NEP, 14.5 GW under implementation, ~&#8377;1.3 L cr of system capex at &#8377;4,137 cr/GW [CALCULATED] — but its composition moved in November: the 5 GW Leh leg was dropped for a &#8377;31,428 cr HVAC scheme while a 6 GW ±800 kV VSC bipole entered through the &#8377;68,816 cr 1150 kV corridor. One terminal award in FY27 so far."
+     "basis": "The physical pipeline stays large — 32.3 GW in the NEP, 14.5 GW under implementation, ~&#8377;1.3 L cr of system capex at &#8377;4,137 cr/GW [CALCULATED] — but its composition moved in November: the 5 GW Leh leg was dropped for a &#8377;31,428 cr HVAC scheme while a 6 GW ±800 kV VSC bipole entered through the &#8377;68,816 cr 1150 kV corridor. One terminal award in FY27 so far. Market series quoted on the same page: India HVDC transmission-systems USD 15.07 bn (2025) to USD 31.06 bn (2035), 7.5% nominal CAGR [REPORTED-T3: Future Market Insights, Feb-2025], against a second house at USD 2.8 bn (2026) to USD 7.4 bn (2035), 11.4% [REPORTED-T3: Morgan Reed Insights] - a scope gap shown as a range, never averaged."
     },
     "competitive": {
      "name": "Competitive structure & moat",
