@@ -1,7 +1,7 @@
 {
  "registry": "Industry BOM Registry",
  "description": "Industry ranking per \"Industry-Level Investment Parameters & Scoring Architecture\": hierarchical category scores (1–5), overall 0–100, evidence coverage reported, three lenses kept separate. DERIVED — regenerate with node tools/build-industry-ranking.mjs.",
- "generated": "2026-11-15",
+ "generated": "2026-11-16",
  "framework": {
   "category_score": "Σ(parameter weight × parameter score) ÷ Σ(weights of supported parameters)",
   "overall_score": "Σ(category weight × category score ÷ 5) × 100, renormalised over supported categories",
@@ -808,11 +808,11 @@
    ],
    "provisional": false,
    "notes": "",
-   "overall_rank": 34,
+   "overall_rank": 35,
    "risk_adjusted_rank": 5,
    "structural_score": 68.6,
    "current_score": 40,
-   "structural_score_rank": 9,
+   "structural_score_rank": 10,
    "current_score_rank": 66
   },
   {
@@ -1056,11 +1056,11 @@
    ],
    "provisional": false,
    "notes": "First industry score on this page, 2026-11-06 (Tier-2 backfill). Market size and growth are the Rubix FY25/FY28 series already carried in the digest and now re-verified; the Statista $10.3 bn variant is a scope difference and is shown, not averaged.",
-   "overall_rank": 35,
+   "overall_rank": 36,
    "risk_adjusted_rank": 16,
    "structural_score": 64.3,
    "current_score": 60,
-   "structural_score_rank": 27,
+   "structural_score_rank": 28,
    "current_score_rank": 34
   },
   {
@@ -1505,7 +1505,7 @@
    "risk_adjusted_rank": 14,
    "structural_score": 65.7,
    "current_score": 80,
-   "structural_score_rank": 20,
+   "structural_score_rank": 21,
    "current_score_rank": 6
   },
   {
@@ -2048,10 +2048,10 @@
    "provisional": false,
    "notes": "Re-analysed 2026-11-06 under the daily rotation; first scoring of this page. Corrections from the prior run (2026-10-09): the page carried no scorecard, no value capture and no metric popups. '~90% of BMS units imported' is now carried as an estimate without an official HS line; Maxwell is no longer described as an unscaled start-up (H1FY27 income Rs 141 cr, 6.8% EBITDA) but is only ~1.5% of Endurance consolidated income, which the prior page omitted; the Market Research Future EV-only series was not re-verified and has been dropped. New evidence: AIS-156 wireless-BMS cyber testing (Sep-2026), the e-rickshaw Bluetooth BMS hacks (Aug-2026), the CEA notification date (27-Mar-2026), India's first OSAT capacity (Kaynes Semicon, CG Semi), and the SECI/NGEL tender wave. Cycle scored 4 for the first time; valuation remains UNAVAILABLE.",
    "overall_rank": 16,
-   "risk_adjusted_rank": 44,
+   "risk_adjusted_rank": 45,
    "structural_score": 65.7,
    "current_score": 80,
-   "structural_score_rank": 21,
+   "structural_score_rank": 22,
    "current_score_rank": 7
   },
   {
@@ -2249,7 +2249,7 @@
    "risk_adjusted_rank": 30,
    "structural_score": 58.6,
    "current_score": 40,
-   "structural_score_rank": 52,
+   "structural_score_rank": 53,
    "current_score_rank": 67
   },
   {
@@ -2493,11 +2493,11 @@
    ],
    "provisional": false,
    "notes": "First industry score on this page, 2026-11-06 (Tier-2 backfill). The India component-MRO figure replaces a previous [UNAVAILABLE]: $1.106 bn for 2026 from a secondary house, with the global component pool shown beside it and the India CAGR left UNAVAILABLE rather than inferred. Opportunity is scored high on substitution headroom, not on measured growth.",
-   "overall_rank": 45,
+   "overall_rank": 46,
    "risk_adjusted_rank": 22,
    "structural_score": 61.4,
    "current_score": 60,
-   "structural_score_rank": 40,
+   "structural_score_rank": 41,
    "current_score_rank": 37
   },
   {
@@ -2727,7 +2727,7 @@
    "risk_adjusted_rank": 6,
    "structural_score": 68.6,
    "current_score": 80,
-   "structural_score_rank": 10,
+   "structural_score_rank": 11,
    "current_score_rank": 8
   },
   {
@@ -3218,10 +3218,10 @@
    "provisional": false,
    "notes": "Newly scored 2026-11-07 in the content backfill. Opportunity uses exactly the series in the Market & growth digest block; valuation is null because the registry carries no industry-level valuation series for this node. Value capture scored from this page's own BOM tree and value-chain ladder, using the node names already on the page.",
    "overall_rank": 17,
-   "risk_adjusted_rank": 45,
+   "risk_adjusted_rank": 46,
    "structural_score": 65.7,
    "current_score": 80,
-   "structural_score_rank": 22,
+   "structural_score_rank": 23,
    "current_score_rank": 9
   },
   {
@@ -3465,11 +3465,11 @@
    ],
    "provisional": false,
    "notes": "Newly scored 2026-11-07 in the content backfill. Opportunity uses exactly the series in the Market & growth digest block; valuation is null because the registry carries no industry-level valuation series for this node. Value capture scored from this page's own BOM tree and value-chain ladder, using the node names already on the page.",
-   "overall_rank": 19,
-   "risk_adjusted_rank": 49,
+   "overall_rank": 20,
+   "risk_adjusted_rank": 50,
    "structural_score": 64.3,
    "current_score": 80,
-   "structural_score_rank": 28,
+   "structural_score_rank": 29,
    "current_score_rank": 10
   },
   {
@@ -3729,10 +3729,10 @@
    "provisional": false,
    "notes": "Newly scored 2026-11-07 in the content backfill. Opportunity uses exactly the series in the Market & growth digest block; valuation is null because the registry carries no industry-level valuation series for this node. Value capture scored from this page's own BOM tree and value-chain ladder, using the node names already on the page.",
    "overall_rank": 14,
-   "risk_adjusted_rank": 43,
+   "risk_adjusted_rank": 44,
    "structural_score": 65.7,
    "current_score": 80,
-   "structural_score_rank": 19,
+   "structural_score_rank": 20,
    "current_score_rank": 4
   },
   {
@@ -4190,11 +4190,11 @@
    ],
    "provisional": false,
    "notes": "Scored during the 2026-11-09 backfill pass from the page's own evidence and the industry-data sourcing ladder; valuation left UNAVAILABLE because no industry-level multiple series exists.",
-   "overall_rank": 29,
-   "risk_adjusted_rank": 46,
+   "overall_rank": 30,
+   "risk_adjusted_rank": 47,
    "structural_score": 65.7,
    "current_score": 60,
-   "structural_score_rank": 23,
+   "structural_score_rank": 24,
    "current_score_rank": 39
   },
   {
@@ -4440,7 +4440,7 @@
    "risk_adjusted_rank": 7,
    "structural_score": 68.6,
    "current_score": 80,
-   "structural_score_rank": 11,
+   "structural_score_rank": 12,
    "current_score_rank": 11
   },
   {
@@ -4684,11 +4684,11 @@
    ],
    "provisional": false,
    "notes": "Scored against 'Industry-Level Investment Parameters & Scoring Architecture'. Overall = sum(category weight x score / 5) x 100, renormalised over supported categories: (3x.20 + 4x.15 + 3x.15 + 2x.15 + 3x.10 + 4x.05 + 3x.05) = 2.60; 2.60/0.85 = 3.059; overall = 3.059/5 x 100 = 61.2. Coverage 85% (valuation null). Structural group 65.7, current-opportunity group 40.0, risk lens 40.0. First scored pass for this entry (the 2026-10-09 version carried no score block). Direction changes versus the prior prose: transformers are now ranked above cables on profit capture, and machinery plus rare-earth magnets were added as first-class bottlenecks.",
-   "overall_rank": 46,
-   "risk_adjusted_rank": 47,
+   "overall_rank": 47,
+   "risk_adjusted_rank": 48,
    "structural_score": 65.7,
    "current_score": 40,
-   "structural_score_rank": 24,
+   "structural_score_rank": 25,
    "current_score_rank": 68
   },
   {
@@ -4929,10 +4929,10 @@
    ],
    "provisional": false,
    "notes": "Scored against 'Industry-Level Investment Parameters & Scoring Architecture'. Cycle position and valuation left UNAVAILABLE — the registry carries no cycle or valuation data for these industries. Value capture (added 2026-11-01) scores 8 nodes taken verbatim from this page's own BOM tree and value-chain ladder, on the separate Registry Review §4 weighting (op_share 20%, pricing_power 15%, roic 15%, barriers 15%, bottleneck 10%, pool_growth 10%, cash_conversion 10%, switching 5%). It answers 'which node keeps the money' and is not blended into the industry score above.",
-   "overall_rank": 20,
+   "overall_rank": 21,
    "risk_adjusted_rank": 12,
    "structural_score": 67.1,
-   "structural_score_rank": 16
+   "structural_score_rank": 17
   },
   {
    "slug": "engine-mro-india",
@@ -5175,11 +5175,11 @@
    ],
    "provisional": false,
    "notes": "Scored during the 2026-11-09 backfill pass from the page's own evidence and the industry-data sourcing ladder; valuation left UNAVAILABLE because no industry-level multiple series exists.",
-   "overall_rank": 36,
+   "overall_rank": 37,
    "risk_adjusted_rank": 25,
    "structural_score": 60,
    "current_score": 80,
-   "structural_score_rank": 46,
+   "structural_score_rank": 47,
    "current_score_rank": 12
   },
   {
@@ -5423,11 +5423,11 @@
    ],
    "provisional": false,
    "notes": "Scored during the 2026-11-09 backfill pass from the page's own evidence and the industry-data sourcing ladder; valuation left UNAVAILABLE because no industry-level multiple series exists.",
-   "overall_rank": 21,
-   "risk_adjusted_rank": 50,
+   "overall_rank": 22,
+   "risk_adjusted_rank": 51,
    "structural_score": 64.3,
    "current_score": 80,
-   "structural_score_rank": 29,
+   "structural_score_rank": 30,
    "current_score_rank": 13
   },
   {
@@ -5671,11 +5671,11 @@
    ],
    "provisional": false,
    "notes": "Scored during the 2026-11-09 backfill pass from the page's own evidence and the industry-data sourcing ladder; valuation left UNAVAILABLE because no industry-level multiple series exists.",
-   "overall_rank": 33,
+   "overall_rank": 34,
    "risk_adjusted_rank": 24,
    "structural_score": 60,
    "current_score": 80,
-   "structural_score_rank": 45,
+   "structural_score_rank": 46,
    "current_score_rank": 5
   },
   {
@@ -5886,10 +5886,10 @@
    "provisional": false,
    "notes": "Scored on India green ammonia as an industry, not on any company. Valuation left null: no listed pure-play and no industry revenue multiple. Coverage 85%; provisional. Value-capture scores are component-level and never blend into the industry score.",
    "overall_rank": 67,
-   "risk_adjusted_rank": 63,
+   "risk_adjusted_rank": 64,
    "structural_score": 57.1,
    "current_score": 40,
-   "structural_score_rank": 58,
+   "structural_score_rank": 59,
    "current_score_rank": 69
   },
   {
@@ -6115,10 +6115,10 @@
    "provisional": false,
    "notes": "This run REPLACES the prior Market & growth block, which rested on a tier-3 source and reported 3-year and last-year splits as UNAVAILABLE. Opportunity now uses the IMARC series (USD 1.95 bn 2025 to USD 9.75 bn 2030, 38.0% CAGR) and the conflicting NITI Aayog / third-house estimates are shown as a range rather than averaged. Valuation left UNAVAILABLE — no industry valuation series. Value capture scored 2026-11-03 from this page's own BOM tree and ladder; the industry categories above are unchanged from the 2026-10-30 scoring.",
    "overall_rank": 68,
-   "risk_adjusted_rank": 64,
+   "risk_adjusted_rank": 65,
    "structural_score": 57.1,
    "current_score": 40,
-   "structural_score_rank": 59,
+   "structural_score_rank": 60,
    "current_score_rank": 70
   },
   {
@@ -6360,11 +6360,11 @@
    ],
    "provisional": false,
    "notes": "Opportunity uses the same series as the Market & growth digest block (KPMG ammunition market of Rs 7,057 cr in 2023 rising to Rs 11,981 cr by 2032 at 4.93%, inside FY26 defence production of Rs 1.78 lakh cr). Valuation left UNAVAILABLE — the registry carries no industry valuation data. Value capture (added 2026-11-02) scores 8 nodes taken verbatim from this page's own BOM tree and value-chain ladder, on the separate Registry Review §4 weighting (op_share 20%, pricing_power 15%, roic 15%, barriers 15%, bottleneck 10%, pool_growth 10%, cash_conversion 10%, switching 5%). It answers 'which node keeps the money' and is not blended into the industry score above.",
-   "overall_rank": 41,
-   "risk_adjusted_rank": 60,
+   "overall_rank": 42,
+   "risk_adjusted_rank": 61,
    "structural_score": 58.6,
    "current_score": 80,
-   "structural_score_rank": 53,
+   "structural_score_rank": 54,
    "current_score_rank": 14
   },
   {
@@ -6584,15 +6584,15 @@
    "title": "India HVDC & Power Electronics",
    "group": "Power & Electrical Infrastructure",
    "scored": true,
-   "as_of": "2026-10-30",
+   "as_of": "2026-11-16",
    "categories": {
     "economics": {
      "name": "Industry economics & value creation",
      "weight": 0.2,
      "lens": "structural",
-     "score": 3,
+     "score": 4,
      "from": "category",
-     "basis": "Attractive at project level for the few qualified bidders, but converter-station content is ~100% imported, so Indian participants capture civil works and erection rather than equipment margin."
+     "basis": "Q2FY27 reported margins are double-digit at every domestic converter-station supplier — Hitachi Energy India 16.5% operational EBITDA on revenue up 63.5%, GE Vernova T&D 27.1% EBITDA, BHEL's industry segment 19.5% EBIT — on record backlogs of &#8377;33,335 cr and &#8377;21,443 cr. The qualifier is cash, not margin."
     },
     "opportunity": {
      "name": "Market opportunity & structural growth",
@@ -6600,15 +6600,15 @@
      "lens": "structural",
      "score": 4,
      "from": "category",
-     "basis": "32.3 GW NEP pipeline implying ~Rs 1.3 L cr of system capex [CALCULATED], with the market series at USD 15.07 bn (2025) to USD 31.06 bn (2035) at 7.5% — large, but the two market series conflict."
+     "basis": "The physical pipeline stays large — 32.3 GW in the NEP, 14.5 GW under implementation, ~&#8377;1.3 L cr of system capex at &#8377;4,137 cr/GW [CALCULATED] — but its composition moved in November: the 5 GW Leh leg was dropped for a &#8377;31,428 cr HVAC scheme while a 6 GW ±800 kV VSC bipole entered through the &#8377;68,816 cr 1150 kV corridor. One terminal award in FY27 so far."
     },
     "competitive": {
      "name": "Competitive structure & moat",
      "weight": 0.15,
      "lens": "structural",
-     "score": 2,
+     "score": 3,
      "from": "category",
-     "basis": "Valves and control code are a three-player global oligopoly; Indian participation is via JV and localisation mandate rather than independent capability."
+     "basis": "A two-consortium duopoly on LCC terminals — Hitachi Energy + BHEL hold Khavda and Bhadla, GE Vernova took Barmer-II — which is more defensible than a scatter of bidders, but four Chinese-linked OEMs hold a two-year procurement window to 23-Jun-2028 and TARIL is entering converter transformers."
     },
     "cycle": {
      "name": "Current opportunity & cycle position",
@@ -6616,7 +6616,7 @@
      "lens": "current",
      "score": 3,
      "from": "category",
-     "basis": "Awards are lumpy and infrequent rather than cyclical — Barmer in Aug-2026, Khavda poles in 2028-29 — so order timing, not the cycle, drives sentiment."
+     "basis": "An award calendar rather than a cycle: two terminal awards in FY25, one in FY26, one so far in FY27, with the next two to three awaiting NCT clearance and expected to be tendered in 2027; revenue recognition is 4–10%, so the HVDC revenue inflection is FY28–FY29."
     },
     "valuation": {
      "name": "Valuation & market expectations",
@@ -6630,9 +6630,9 @@
      "name": "Value-chain position & bottlenecks",
      "weight": 0.1,
      "lens": "structural",
-     "score": 2,
+     "score": 3,
      "from": "category",
-     "basis": "Converter stations, DC XLPE compound and pre-moulded joints are all foreign; the localisation ladder (30% to FY28, 60% by FY35) is the only route in, and the first Indian converter-transformer order only landed in Dec-2025."
+     "basis": "Three domestic-capability firsts have landed in twelve months — Hitachi's Chengalpattu valve line, GE Vernova's Chennai LCC/VSC valve line and TARIL's first Indian-origin converter-transformer order — against a mandate that requires only 30% local content to March 2028; the devices, the DC compound and the control source code remain foreign."
     },
     "capital": {
      "name": "Capital intensity & financial quality",
@@ -6640,7 +6640,7 @@
      "lens": "structural",
      "score": 4,
      "from": "category",
-     "basis": "Project capital is enormous (Rs 24,819 cr for one 6 GW link) but borne by TBCB developers on regulated returns; equipment-level capex is modest."
+     "basis": "Project capital is enormous (&#8377;24,819 cr for one 6 GW link) and sits with TBCB developers on regulated returns; equipment capex is rising but modest — GE Vernova's &#8377;1,100 cr expansion and Hitachi's &#8377;1,000 cr line are each a small fraction of one year's backlog."
     },
     "technology": {
      "name": "Technology & innovation",
@@ -6648,7 +6648,7 @@
      "lens": "structural",
      "score": 2,
      "from": "category",
-     "basis": "High-power thyristors, IGBT/SiC devices, converter control software and DC cable compound are all offshore — the deepest technology gap in the grid."
+     "basis": "The 800 kV VSC technology cleared by NCT in 2026 moves new schemes from thyristor LCC to IGBT-based MMC, which deepens rather than narrows the gap: India assembles valves but makes neither the IGBT, the MMC submodule design nor the converter control code, and has no DC XLPE compound."
     },
     "risk": {
      "name": "Risk & resilience",
@@ -6656,11 +6656,11 @@
      "lens": "risk",
      "score": 2,
      "from": "category",
-     "basis": "The highest single-source concentration in the grid, plus Chinese component import relief running to Jul-2028 that undercuts the localisation case."
+     "basis": "Concentration plus a live procurement failure: the Leh HVDC scheme collapsed on 29-Oct-2026 on equipment-maker objections, the Chinese-linked exemption runs to 23-Jun-2028, and HVDC contract assets are draining working capital at the lead supplier."
     }
    },
    "structural": {
-    "score": 57.1,
+    "score": 70,
     "coverage": 100
    },
    "current": {
@@ -6668,37 +6668,38 @@
     "coverage": 50
    },
    "risk": 2,
-   "risk_adjusted": 22.8,
-   "overall": 57.6,
+   "risk_adjusted": 28,
+   "overall": 68.2,
    "coverage": 85,
    "confidence": {
     "evidence": 4,
-    "primary_source_pct": 86,
+    "primary_source_pct": 60,
     "missing_critical": [
-     "valuation"
+     "valuation",
+     "industry-level HVDC capex by year"
     ]
    },
    "value_capture": [
     {
-     "node": "Control & Protection Systems (MACH / SCADA)",
-     "basis": "Proprietary control code is where converter-station margin is concentrated: it is software, it is specified once per link, and it cannot be reverse-engineered by the EPC. Pool growth is low because it is sold only with a converter station, but cash conversion and switching costs are the best in the chain.",
+     "node": "Control &amp; Protection Systems (MACH / SCADA)",
+     "basis": "Moved up (88 to 90): pool_growth raised 3 to 4 as grid-automation content per bay rises with digital substations and HVDC control orders, and Hitachi's grid-automation franchise now spans a 180,000+ ckm utility network. Still the best cash conversion in the chain &mdash; the system stays with the asset for the substation's life.",
      "params": {
       "op_share": 3,
       "pricing_power": 5,
       "roic": 5,
       "barriers": 5,
       "bottleneck": 5,
-      "pool_growth": 3,
+      "pool_growth": 4,
       "cash_conversion": 5,
       "switching": 5
      },
-     "score": 4.4,
-     "score100": 88,
+     "score": 4.5,
+     "score100": 90,
      "coverage": 100
     },
     {
      "node": "Converter Valves (Thyristor / IGBT / MMC)",
-     "basis": "The valve is the single largest equipment line inside a converter station and its IP sits with a three-player global oligopoly; Indian content is assembly at Hitachi Chennai and a GE Vernova Chennai line from 2027, so the domestic participant earns conversion margin on an imported thyristor bill. Barriers and switching are the highest in the chain: no utility requalifies a valve supplier inside a project cycle.",
+     "basis": "Held at 85. The largest pool per project and the hardest to localise; the VSC shift transfers valve content from thyristors to IGBT/MMC submodules, which keeps the design IP with the parent and makes Indian assembly less sovereign, not more.",
      "params": {
       "op_share": 5,
       "pricing_power": 4,
@@ -6715,7 +6716,7 @@
     },
     {
      "node": "Power Semiconductors (Thyristor / IGBT / SiC)",
-     "basis": "High-power devices carry the deepest technology gap in the Indian grid - there is no domestic high-power fab and the SiC line at Odisha is only approved. Economics are fab economics: excellent pricing power and barriers, poor cash conversion against very large sunk capital.",
+     "basis": "Held at 73. Long-lead devices are what both consortiums secure first on award, so the pool is real and scarce; but SiCSem's SEZ approval (15-Sep-2026) and CG Semi's OSAT are not HVDC-class wafer capacity, so India's position is unchanged.",
      "params": {
       "op_share": 4,
       "pricing_power": 4,
@@ -6731,8 +6732,8 @@
      "coverage": 100
     },
     {
-     "node": "Converter Transformers & Reactors",
-     "basis": "Custom-built and individually type-tested at 18-36 month leads, which is a genuine schedule bottleneck, but the manufacturing capability is now domestic - TARIL took the first Indian-origin private order in Dec-2025 and BHEL, CG Power and TARIL all build here. Long leads plus large advances mean working capital, not margin, is the constraint.",
+     "node": "Converter Transformers &amp; Reactors",
+     "basis": "Held at 71. The entrant prices the node at ~40% of project capex, which makes it the largest single equipment pool; TARIL's empanelment after a clean repair is the one event that would move it.",
      "params": {
       "op_share": 3,
       "pricing_power": 4,
@@ -6749,7 +6750,7 @@
     },
     {
      "node": "HVDC Cables (MI / XLPE DC)",
-     "basis": "DC-rated cable is a global three-or-four-supplier product because the XLPE DC compound and pre-moulded joints are not made in India; Sterlite, KEI and Polycab are building capacity against the localisation mandate. Pricing power is real while capacity is short, but cable is capital-hungry and the compound stays imported.",
+     "basis": "Held at 69. The pool only becomes large with offshore wind and island links (Paradeep&ndash;Port Blair, cross-border); until then the domestic EHV cable build is HVAC-weighted and the DC compound leaks abroad.",
      "params": {
       "op_share": 3,
       "pricing_power": 4,
@@ -6766,24 +6767,24 @@
     },
     {
      "node": "HVDC Converter Stations",
-     "basis": "The station is the largest revenue line and where BHEL plus Hitachi execute Khavda-Nagpur and Bhadla-Fatehpur, but it is consortium contracting priced against a regulated-return buyer, so the revenue is big and the margin is not. Local-content rules (30% to FY28, 60% by FY35) protect the position without creating pricing power.",
+     "basis": "Moved up (62 to 68): pricing_power 2 to 3 and roic 2 to 3 on reported evidence &mdash; 16.5% operational EBITDA at Hitachi and 27.1% at GE Vernova on record backlogs. Cash conversion stays at 2: Hitachi's H1 operating cash flow fell to Rs 91 cr on HVDC contract assets.",
      "params": {
       "op_share": 4,
-      "pricing_power": 2,
-      "roic": 2,
+      "pricing_power": 3,
+      "roic": 3,
       "barriers": 4,
       "bottleneck": 3,
       "pool_growth": 4,
       "cash_conversion": 2,
       "switching": 4
      },
-     "score": 3.1,
-     "score100": 62,
+     "score": 3.4,
+     "score100": 68,
      "coverage": 100
     },
     {
      "node": "Transmission Developer / Owner",
-     "basis": "TBCB developers such as PGCIL, Adani Energy Solutions, Resonia and IndiGrid hold a 25-35 year regulated-return annuity: predictable cash and high switching costs once the link is built, but the tariff is discovered at auction and capital cost is the whole game. This is a bond-like pool, not a margin pool.",
+     "basis": "Held at 52. TBCB tariffs are won competitively and then fixed for 25&ndash;35 years: predictable cash, no pricing power. The Ladakh switch to HVAC and the 1150 kV corridor both add developer capex without changing that economics.",
      "params": {
       "op_share": 3,
       "pricing_power": 1,
@@ -6800,12 +6801,12 @@
     }
    ],
    "provisional": false,
-   "notes": "Scored against 'Industry-Level Investment Parameters & Scoring Architecture'. Opportunity uses the same HVDC series as the Market & growth digest block, with the conflicting second series disclosed rather than averaged. Valuation left UNAVAILABLE. Value capture scored 2026-11-03 from this page's own BOM tree and ladder; the industry categories above are unchanged from the 2026-10-30 scoring.",
-   "overall_rank": 54,
-   "risk_adjusted_rank": 65,
-   "structural_score": 57.1,
+   "notes": "Re-scored 2026-11-16 on the Q2FY27 results season, the NCT's 44th meeting and 1150 kV decisions, and the Barmer-II award. Economics 3->4, competitive 2->3 and value_chain 2->3 on reported margins, the GE Barmer award and three domestic-capability firsts; opportunity held at 4 because the Leh HVDC deletion offsets the new VSC scheme; risk held at 2. Valuation still UNAVAILABLE. Market & growth uses the same HVDC series as the digest block, with the conflicting second series disclosed rather than averaged.",
+   "overall_rank": 18,
+   "risk_adjusted_rank": 41,
+   "structural_score": 70,
    "current_score": 60,
-   "structural_score_rank": 60,
+   "structural_score_rank": 8,
    "current_score_rank": 41
   },
   {
@@ -7048,11 +7049,11 @@
    ],
    "provisional": false,
    "notes": "Opportunity uses the same series as the Market & growth digest block (US$1,020m in 2020 to US$1,410m in 2025, 6.7% five-year CAGR, 12.4 mn tonnes). The wider IMARC (US$3.81 bn) and TechSci (US$5.06 bn) sizes are different scopes and are not blended in. Valuation UNAVAILABLE - the market leader is unlisted.",
-   "overall_rank": 22,
+   "overall_rank": 23,
    "risk_adjusted_rank": 8,
    "structural_score": 68.6,
    "current_score": 60,
-   "structural_score_rank": 12,
+   "structural_score_rank": 13,
    "current_score_rank": 42
   },
   {
@@ -7515,7 +7516,7 @@
    "risk_adjusted_rank": 9,
    "structural_score": 68.6,
    "current_score": 80,
-   "structural_score_rank": 13,
+   "structural_score_rank": 14,
    "current_score_rank": 16
   },
   {
@@ -7987,11 +7988,11 @@
    ],
    "provisional": false,
    "notes": "Opportunity uses the same series as the Market & growth digest block (IMTMA FY26 consumption of Rs 36,419 cr, imports of Rs 21,628 cr, and the 13.7% eleven-year production CAGR). Valuation left UNAVAILABLE because the registry carries no industry valuation data. Value capture (added 2026-11-01) scores 7 nodes taken verbatim from this page's own BOM tree and value-chain ladder, on the separate Registry Review §4 weighting (op_share 20%, pricing_power 15%, roic 15%, barriers 15%, bottleneck 10%, pool_growth 10%, cash_conversion 10%, switching 5%). It answers 'which node keeps the money' and is not blended into the industry score above.",
-   "overall_rank": 38,
+   "overall_rank": 39,
    "risk_adjusted_rank": 26,
    "structural_score": 60,
    "current_score": 80,
-   "structural_score_rank": 47,
+   "structural_score_rank": 48,
    "current_score_rank": 21
   },
   {
@@ -8219,11 +8220,11 @@
    ],
    "provisional": false,
    "notes": "Scored against 'Industry-Level Investment Parameters & Scoring Architecture'. Overall = sum(weight x score / 5) x 100, renormalised over supported categories: (4x.20 + 4x.15 + 3x.15 + 3x.15 + 3x.10 + 3x.05 + 3x.05) = 2.90 over supported weight 0.85 -> 68.2. Coverage 85% (valuation null: no industry valuation series; the only pure-play has two weeks of trading history). Structural group 70.0, current-opportunity group 60.0, risk lens 40.",
-   "overall_rank": 18,
-   "risk_adjusted_rank": 41,
+   "overall_rank": 19,
+   "risk_adjusted_rank": 42,
    "structural_score": 70,
    "current_score": 60,
-   "structural_score_rank": 8,
+   "structural_score_rank": 9,
    "current_score_rank": 43
   },
   {
@@ -8482,11 +8483,11 @@
    ],
    "provisional": false,
    "notes": "Opportunity uses the same series as the Market & growth digest block (MarketsandMarkets India missile market US$468.6 mn 2025 to US$2,512.7 mn 2030 at 39.9%, and Grand View India PGM US$2,350.6 mn 2022 to US$3,958.6 mn 2030 at 6.7%, both inside FY26 defence production of Rs 1.78 lakh crore). Valuation left UNAVAILABLE — the registry carries no industry valuation series. Value capture (added 2026-11-01) scores 9 nodes taken verbatim from this page's own BOM tree and value-chain ladder, on the separate Registry Review §4 weighting (op_share 20%, pricing_power 15%, roic 15%, barriers 15%, bottleneck 10%, pool_growth 10%, cash_conversion 10%, switching 5%). It answers 'which node keeps the money' and is not blended into the industry score above.",
-   "overall_rank": 24,
-   "risk_adjusted_rank": 54,
+   "overall_rank": 25,
+   "risk_adjusted_rank": 55,
    "structural_score": 62.9,
    "current_score": 80,
-   "structural_score_rank": 35,
+   "structural_score_rank": 36,
    "current_score_rank": 17
   },
   {
@@ -9222,11 +9223,11 @@
    ],
    "provisional": false,
    "notes": "Scored 2026-11-10 in the content-backfill pass. Market size and growth are the digest's own Market & growth figures; company data appears only as evidence of node economics.",
-   "overall_rank": 25,
+   "overall_rank": 26,
    "risk_adjusted_rank": 19,
    "structural_score": 62.9,
    "current_score": 80,
-   "structural_score_rank": 36,
+   "structural_score_rank": 37,
    "current_score_rank": 18
   },
   {
@@ -9471,10 +9472,10 @@
    "provisional": false,
    "notes": "Scored 2026-11-10 in the content-backfill pass. The market figure and growth rate behind the opportunity score are the same ones carried in the digest's Market & growth block; company results are used as evidence of industry economics, never summed into an industry size. Delta pass 15-Nov-2026: added 5-year (20.1%, 2024-29) and 3-year (20.1%, 2024-27) horizons on the Maximize scope, and the 6Wresearch 2031 endpoint; scores unchanged.",
    "overall_rank": 7,
-   "risk_adjusted_rank": 51,
+   "risk_adjusted_rank": 52,
    "structural_score": 64.3,
    "current_score": 100,
-   "structural_score_rank": 30,
+   "structural_score_rank": 31,
    "current_score_rank": 1
   },
   {
@@ -10777,11 +10778,11 @@
    ],
    "provisional": false,
    "notes": "Scored against 'Industry-Level Investment Parameters & Scoring Architecture'. Re-scored 2026-11-15 from the Q2/H1 FY27 filing cycle and CEA's September-2026 statistics; the previous block was as_of 2026-10-30. Only technology moved among the eight weighted categories (2 -> 3, on the CEA amended standards and MoEFCC forest-RoW regime making tower/conductor configuration a compliance variable); every other basis line was rewritten on new evidence while the score held. Valuation stays UNAVAILABLE - broker notes on POWERGRID or KEC are company views, not an industry valuation input. Coverage 85%. Value capture is scored separately on the Registry Review §4 weighting (op_share 20%, pricing_power 15%, roic 15%, barriers 15%, bottleneck 10%, pool_growth 10%, cash_conversion 10%, switching 5%) and never blended into the industry score; this run adds the two nodes the prior array omitted - regulated asset ownership (the top pool) and line EPC (the largest revenue pool and the worst profit pool) - and re-scores eight existing nodes on Q2 FY27 evidence.",
-   "overall_rank": 43,
+   "overall_rank": 44,
    "risk_adjusted_rank": 21,
    "structural_score": 62.9,
    "current_score": 60,
-   "structural_score_rank": 38,
+   "structural_score_rank": 39,
    "current_score_rank": 62
   },
   {
@@ -11769,11 +11770,11 @@
    ],
    "provisional": false,
    "notes": "Scored against 'Industry-Level Investment Parameters & Scoring Architecture'. Cycle is scored for the first time (it was UNAVAILABLE in the 2026-10-09 pass) from Yole, TrendForce and channel price data; valuation stays UNAVAILABLE, so coverage is 85%. Value capture scored per node from the review's section 4 model on the 1-5 scale.",
-   "overall_rank": 37,
+   "overall_rank": 38,
    "risk_adjusted_rank": 17,
    "structural_score": 64.3,
    "current_score": 60,
-   "structural_score_rank": 31,
+   "structural_score_rank": 32,
    "current_score_rank": 49
   },
   {
@@ -12496,11 +12497,11 @@
    ],
    "provisional": false,
    "notes": "",
-   "overall_rank": 47,
+   "overall_rank": 48,
    "risk_adjusted_rank": 23,
    "structural_score": 61.4,
    "current_score": 60,
-   "structural_score_rank": 41,
+   "structural_score_rank": 42,
    "current_score_rank": 50
   },
   {
@@ -12941,11 +12942,11 @@
    ],
    "provisional": false,
    "notes": "Opportunity uses the same series as the Market & growth digest block (FY27 BE ₹2.93 lakh cr, +10.5% on FY26 RE). Valuation left UNAVAILABLE. Freight volume growth (1,670 to 1,765 MT) is treated as the demand leg of opportunity, not as a separate growth claim. Value capture scored from this page's own 14-node tree and ladder.",
-   "overall_rank": 23,
+   "overall_rank": 24,
    "risk_adjusted_rank": 18,
    "structural_score": 64.3,
    "current_score": 80,
-   "structural_score_rank": 32,
+   "structural_score_rank": 33,
    "current_score_rank": 22
   },
   {
@@ -13598,7 +13599,7 @@
    "risk_adjusted_rank": 10,
    "structural_score": 68.6,
    "current_score": 80,
-   "structural_score_rank": 14,
+   "structural_score_rank": 15,
    "current_score_rank": 23
   },
   {
@@ -14073,11 +14074,11 @@
    ],
    "provisional": false,
    "notes": "Scored 2026-11-11 in the content-backfill pass. Market size and growth are the digest's own Market &amp; growth figures; volume is used as the growth measure because the page shows value to be price-inflated.",
-   "overall_rank": 26,
+   "overall_rank": 27,
    "risk_adjusted_rank": 20,
    "structural_score": 62.9,
    "current_score": 80,
-   "structural_score_rank": 37,
+   "structural_score_rank": 38,
    "current_score_rank": 24
   },
   {
@@ -14321,11 +14322,11 @@
    ],
    "provisional": false,
    "notes": "Scored 2026-11-11 in the content-backfill pass. Market size and growth are the digest's own Market &amp; growth figures; the budget series and the NSIL commercial series are both stated on the page and both underpin the opportunity score.",
-   "overall_rank": 30,
-   "risk_adjusted_rank": 56,
+   "overall_rank": 31,
+   "risk_adjusted_rank": 57,
    "structural_score": 61.4,
    "current_score": 80,
-   "structural_score_rank": 42,
+   "structural_score_rank": 43,
    "current_score_rank": 25
   },
   {
@@ -14764,10 +14765,10 @@
    ],
    "provisional": false,
    "notes": "Scored against 'Industry-Level Investment Parameters & Scoring Architecture'. Cycle and valuation left UNAVAILABLE - the page carries no demand-supply cycle position or industry valuation data. Market sizes and segment CAGRs are the official IN-SPACe Decadal Vision figures. Value capture is a judgement on node economics, not node-level financials.",
-   "overall_rank": 27,
-   "risk_adjusted_rank": 48,
+   "overall_rank": 28,
+   "risk_adjusted_rank": 49,
    "structural_score": 65.7,
-   "structural_score_rank": 25
+   "structural_score_rank": 26
   },
   {
    "slug": "satellite-payloads-india",
@@ -15194,7 +15195,7 @@
    "risk_adjusted_rank": 27,
    "structural_score": 60,
    "current_score": 40,
-   "structural_score_rank": 48,
+   "structural_score_rank": 49,
    "current_score_rank": 76
   },
   {
@@ -15896,11 +15897,11 @@
    ],
    "provisional": false,
    "notes": "Opportunity uses the exact series in the Market & growth digest block (India EW ₹3,200 cr FY24 → ₹9,200 cr FY35 baseline, ~10.1% CAGR [CALCULATED]; ₹15,000–22,000 cr upside scenarios [SCENARIO]). Value capture scores 8 nodes taken verbatim from this page's own BOM tree and value-chain ladder on the separate Registry Review §4 weighting, and is not blended into the industry score.",
-   "overall_rank": 28,
-   "risk_adjusted_rank": 42,
+   "overall_rank": 29,
+   "risk_adjusted_rank": 43,
    "structural_score": 67.1,
    "current_score": 60,
-   "structural_score_rank": 18,
+   "structural_score_rank": 19,
    "current_score_rank": 63
   },
   {
@@ -16388,11 +16389,11 @@
    ],
    "provisional": false,
    "notes": "Opportunity uses the same series as the Market & growth digest block (DGFT silver HS-category imports: US$184.33 mn FY26 vs an implied US$112.05 mn FY25, +64.51%). Valuation left UNAVAILABLE — no industry valuation series, and the pure-plays are foreign-listed. The CSE import line is an HS proxy, so it overstates paste narrowly and understates it if paste enters under a different code. Value capture (added 2026-11-02) scores 8 nodes taken verbatim from this page's own BOM tree and value-chain ladder, on the separate Registry Review §4 weighting (op_share 20%, pricing_power 15%, roic 15%, barriers 15%, bottleneck 10%, pool_growth 10%, cash_conversion 10%, switching 5%). It answers 'which node keeps the money' and is not blended into the industry score above.",
-   "overall_rank": 53,
-   "risk_adjusted_rank": 55,
+   "overall_rank": 54,
+   "risk_adjusted_rank": 56,
    "structural_score": 62.9,
    "current_score": 40,
-   "structural_score_rank": 39,
+   "structural_score_rank": 40,
    "current_score_rank": 82
   },
   {
@@ -16636,11 +16637,11 @@
    ],
    "provisional": false,
    "notes": "Opportunity uses the identical figures as the Market & growth digest block (20.33 crore sanctioned, 5.73 crore installed at 30-Jun-2026, ~₹90,000 cr meter-maker opportunity per CRISIL Jun-2025). A value CAGR is deliberately left out because no published series exists - the score rests on committed volume, not an invented rate. Valuation UNAVAILABLE. Re-scored 2026-11-11: capital 3->2 and risk 3->2 on the realised margin compression and working-capital evidence; economics, opportunity, competitive, value_chain, cycle and technology held.",
-   "overall_rank": 42,
-   "risk_adjusted_rank": 61,
+   "overall_rank": 43,
+   "risk_adjusted_rank": 62,
    "structural_score": 58.6,
    "current_score": 80,
-   "structural_score_rank": 54,
+   "structural_score_rank": 55,
    "current_score_rank": 28
   },
   {
@@ -17094,11 +17095,11 @@
    ],
    "provisional": false,
    "notes": "Opportunity uses the same series as the Market & growth digest block (CRISIL demand of 60-65 GW FY27; Commerce/TradeStat imported-cell value US$3.06 bn FY26 with a 28.6% two-year CAGR). Valuation left UNAVAILABLE — the registry carries no industry valuation data. Value capture (added 2026-11-02) scores 7 nodes taken verbatim from this page's own BOM tree and value-chain ladder, on the separate Registry Review §4 weighting (op_share 20%, pricing_power 15%, roic 15%, barriers 15%, bottleneck 10%, pool_growth 10%, cash_conversion 10%, switching 5%). It answers 'which node keeps the money' and is not blended into the industry score above.",
-   "overall_rank": 50,
-   "risk_adjusted_rank": 53,
+   "overall_rank": 51,
+   "risk_adjusted_rank": 54,
    "structural_score": 64.3,
    "current_score": 40,
-   "structural_score_rank": 34,
+   "structural_score_rank": 35,
    "current_score_rank": 83
   },
   {
@@ -17341,10 +17342,10 @@
    "provisional": false,
    "notes": "Opportunity uses the same series as the Market & growth digest block (PS Market Research, base 2023, 13.4% nominal CAGR 2024-2030). Valuation left UNAVAILABLE — the registry carries no industry valuation data. The panels-only Grand View series (9.4%) is a different scope and is not blended into the score. Value capture scored 2026-11-03 from this page's own BOM tree and ladder; the industry categories above are unchanged from the 2026-10-30 scoring.",
    "overall_rank": 62,
-   "risk_adjusted_rank": 59,
+   "risk_adjusted_rank": 60,
    "structural_score": 60,
    "current_score": 40,
-   "structural_score_rank": 49,
+   "structural_score_rank": 50,
    "current_score_rank": 78
   },
   {
@@ -17804,11 +17805,11 @@
    ],
    "provisional": false,
    "notes": "Scored 2026-11-11 in the content-backfill pass. Market size and growth are the digest's own Market &amp; growth figures, so the opportunity score rests on exactly the figures shown there.",
-   "overall_rank": 31,
-   "risk_adjusted_rank": 57,
+   "overall_rank": 32,
+   "risk_adjusted_rank": 58,
    "structural_score": 61.4,
    "current_score": 80,
-   "structural_score_rank": 43,
+   "structural_score_rank": 44,
    "current_score_rank": 29
   },
   {
@@ -18054,7 +18055,7 @@
    "risk_adjusted_rank": 11,
    "structural_score": 68.6,
    "current_score": 80,
-   "structural_score_rank": 15,
+   "structural_score_rank": 16,
    "current_score_rank": 31
   },
   {
@@ -18545,10 +18546,10 @@
    "provisional": false,
    "notes": "Opportunity uses the identical series as the Market & growth digest block (NITI Aayog / KPMG, base FY25, ~10% nominal CAGR to FY32). Valuation left UNAVAILABLE - no industry valuation series on the page. The traffic-versus-revenue gap (~17% vs ~2.7% CAGR) is treated as a monetisation risk inside economics, not as growth. Value capture scored from this page's own 16-node BOM tree and ladder.",
    "overall_rank": 66,
-   "risk_adjusted_rank": 62,
+   "risk_adjusted_rank": 63,
    "structural_score": 58.6,
    "current_score": 40,
-   "structural_score_rank": 55,
+   "structural_score_rank": 56,
    "current_score_rank": 79
   },
   {
@@ -18794,11 +18795,11 @@
    ],
    "provisional": false,
    "notes": "First scored pass for this page - it carried no score block before this run, so there is no prior score to compare. Scored against 'Industry-Level Investment Parameters & Scoring Architecture'; all nine categories supported, coverage 100%, overall 62.0. The two constraints on the score are structural, not cyclical: value capture sits with the operator annuity and the state, while the imported radio layer takes the capex, and the sector's next earnings leg depends on a tariff rise that the market leader has declined to lead. Revenue growth in FY26 was volume-led (data +24.74%) with per-GB realisation down 10.59%, so the operating leverage that would justify current multiples has not yet appeared in the reported series. Company-level figures are used as evidence for the industry, never as the industry total.",
-   "overall_rank": 44,
+   "overall_rank": 45,
    "risk_adjusted_rank": 13,
    "structural_score": 67.1,
    "current_score": 50,
-   "structural_score_rank": 17,
+   "structural_score_rank": 18,
    "current_score_rank": 64
   },
   {
@@ -19038,11 +19039,11 @@
    ],
    "provisional": false,
    "notes": "Opportunity uses the same series as the Market &amp; growth digest block (0.86 mn towers FY26 to 1.04&ndash;1.09 mn FY31 at 4&ndash;5% CAGR, REPORTED-T2, with the CALCULATED 3.9&ndash;4.9% shown alongside). Valuation is scored from one listed proxy&rsquo;s EV/EBITDA, labelled [REPORTED-T3], not from an industry series. Value capture (added 2026-11-02) scores 8 nodes taken verbatim from this page's own BOM tree and value-chain ladder, on the separate Registry Review §4 weighting (op_share 20%, pricing_power 15%, roic 15%, barriers 15%, bottleneck 10%, pool_growth 10%, cash_conversion 10%, switching 5%). It answers 'which node keeps the money' and is not blended into the industry score above.",
-   "overall_rank": 40,
-   "risk_adjusted_rank": 52,
+   "overall_rank": 41,
+   "risk_adjusted_rank": 53,
    "structural_score": 64.3,
    "current_score": 60,
-   "structural_score_rank": 33,
+   "structural_score_rank": 34,
    "current_score_rank": 56
   },
   {
@@ -19535,11 +19536,11 @@
    ],
    "provisional": false,
    "notes": "Opportunity uses the exact series in the Market & growth digest block (India ₹8,000 cr FY24 → ₹11,000 cr FY30E, 5.5% CAGR [CALCULATED]; global $7.36 bn 2024 → $9.79 bn 2030 at 4.87% [REPORTED-T2]). Valuation is UNAVAILABLE, so coverage is 85%. Value capture scores 8 nodes taken verbatim from this page's own BOM tree and value-chain ladder on the separate Registry Review §4 weighting, and is not blended into the industry score.",
-   "overall_rank": 48,
-   "risk_adjusted_rank": 58,
+   "overall_rank": 49,
+   "risk_adjusted_rank": 59,
    "structural_score": 61.4,
    "current_score": 60,
-   "structural_score_rank": 44,
+   "structural_score_rank": 45,
    "current_score_rank": 57
   },
   {
@@ -19783,11 +19784,11 @@
    ],
    "provisional": false,
    "notes": "Opportunity uses the exact series in the Market & growth digest block (India power-generation DCS $252.9 mn 2025 → $352.9 mn 2030, 6.9% CAGR [REPORTED-T3, MarketsandMarkets]; deaerators 6–8%; global BFPs 4.9%) with the CEA thermal construction pipeline as the physical driver. Value capture scores 8 nodes taken verbatim from this page's own BOM tree and value-chain ladder on the separate Registry Review §4 weighting, and is not blended into the industry score.",
-   "overall_rank": 51,
+   "overall_rank": 52,
    "risk_adjusted_rank": 31,
    "structural_score": 58.6,
    "current_score": 60,
-   "structural_score_rank": 56,
+   "structural_score_rank": 57,
    "current_score_rank": 59
   },
   {
@@ -20031,11 +20032,11 @@
    ],
    "provisional": false,
    "notes": "Opportunity uses the exact series in the Market & growth digest block (India turbo-generators ~$340 mn 2023 → ~$462 mn 2030, ~4.6% CAGR [REPORTED-T3, BlueWeave]), with the 100 GW-by-2047 nuclear roadmap and the supercritical build-out as the physical drivers. Value capture scores 8 nodes taken verbatim from this page's own BOM tree and value-chain ladder on the separate Registry Review §4 weighting, and is not blended into the industry score.",
-   "overall_rank": 49,
+   "overall_rank": 50,
    "risk_adjusted_rank": 28,
    "structural_score": 60,
    "current_score": 60,
-   "structural_score_rank": 50,
+   "structural_score_rank": 51,
    "current_score_rank": 58
   },
   {
@@ -20277,11 +20278,11 @@
    ],
    "provisional": false,
    "notes": "Opportunity uses the same series as the Market & growth digest block (India steam turbines ~$3.33 bn in 2022 to ~$4.38 bn in 2030, a ~3.5% CAGR [CALCULATED] from [REPORTED-T3, Grand View Research], with the CEA construction pipeline as the volume driver). Valuation left UNAVAILABLE — no node-level valuation series exists. Value capture (2026-11-05) scores 8 nodes taken verbatim from this page's own BOM tree and value-chain ladder on the separate Registry Review §4 weighting, and is not blended into the industry score.",
-   "overall_rank": 39,
+   "overall_rank": 40,
    "risk_adjusted_rank": 29,
    "structural_score": 60,
    "current_score": 80,
-   "structural_score_rank": 51,
+   "structural_score_rank": 52,
    "current_score_rank": 30
   },
   {
@@ -20508,11 +20509,11 @@
    ],
    "provisional": false,
    "notes": "Scored against 'Industry-Level Investment Parameters & Scoring Architecture'. Valuation left UNAVAILABLE - no industry-level valuation data. FY26 figures are ACMA's Industry Performance Review (Jul-2026); the FY25 figures carried in the metric cards above are the prior year and remain correct as such. Value capture is a judgement on node economics, not node-level financials.",
-   "overall_rank": 32,
+   "overall_rank": 33,
    "risk_adjusted_rank": 15,
    "structural_score": 65.7,
    "current_score": 60,
-   "structural_score_rank": 26,
+   "structural_score_rank": 27,
    "current_score_rank": 60
   },
   {
@@ -20739,11 +20740,11 @@
    ],
    "provisional": false,
    "notes": "Opportunity and growth use the IMARC India wastewater treatment plants series (2020 US$3.51bn, 2025 US$4.60bn, 2026 US$4.92bn) — a plant/equipment/EPC scope. The Rs 13.1bn-to-23.8bn (2023-33, 6.2%) figure is an all-water-plus-wastewater scope and the US$2.94bn (2023) figure a narrower equipment scope; neither is blended into the score. Valuation left UNAVAILABLE.",
-   "overall_rank": 52,
+   "overall_rank": 53,
    "risk_adjusted_rank": 32,
    "structural_score": 58.6,
    "current_score": 60,
-   "structural_score_rank": 57,
+   "structural_score_rank": 58,
    "current_score_rank": 61
   }
  ]
