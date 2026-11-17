@@ -1,7 +1,7 @@
 {
  "registry": "Industry BOM Registry",
  "description": "Industry ranking per \"Industry-Level Investment Parameters & Scoring Architecture\": hierarchical category scores (1–5), overall 0–100, evidence coverage reported, three lenses kept separate. DERIVED — regenerate with node tools/build-industry-ranking.mjs.",
- "generated": "2026-11-16",
+ "generated": "2026-11-17",
  "framework": {
   "category_score": "Σ(parameter weight × parameter score) ÷ Σ(weights of supported parameters)",
   "overall_score": "Σ(category weight × category score ÷ 5) × 100, renormalised over supported categories",
@@ -4202,7 +4202,7 @@
    "title": "India EHV / HV Power Cables",
    "group": "Power & Electrical Infrastructure",
    "scored": true,
-   "as_of": "2026-11-13",
+   "as_of": "2026-11-17",
    "categories": {
     "economics": {
      "name": "Industry economics & value creation",
@@ -4210,7 +4210,7 @@
      "lens": "structural",
      "score": 4,
      "from": "category",
-     "basis": "Cable makers are earning record margins on a richer EHV and export mix, with branded distribution supporting pricing power in LV/MV."
+     "basis": "Q2 FY27 margins are still record-level on a richer mix — Polycab W&C EBIT 14.2% on revenue up 47%, Apar cable 11.0%, R R Kabel 9.4% — against ~11% industry EBIT in FY26, with high-teens ROIC. The qualifier is quality of growth: volumes rose mid-to-high single digit while revenue rose 47–53%, so most of the reported expansion is metal pass-through, and working capital swings with it."
     },
     "opportunity": {
      "name": "Market opportunity & structural growth",
@@ -4218,7 +4218,7 @@
      "lens": "structural",
      "score": 4,
      "from": "category",
-     "basis": "HV cable (above 33 kV, land) Rs 8,038 cr (CY2024) to Rs 20,344 cr (CY2030F) at 16.7% nominal CAGR — the fastest voltage band — inside a wires-and-cables market going from Rs 1,00,000 cr (FY26) to Rs 1,57,500 cr (FY30)."
+     "basis": "Demand is being executed, not just planned: FY27's target is 16,554 ckm of 220 kV+ lines (+36% on FY26) and H1 FY27 already added 6,108 ckm, 2.5x H1 FY26 [REPORTED-T1: CEA]. The addressable cable pool is narrower than the headline — EHV (66 kV+) ~₹3,500 cr with ~half imported [REPORTED-T2: Headsup B2B, 3-Nov-2026] — inside a wires-and-cables market of ₹1.0 lakh cr (FY26) heading to ~₹1.75 lakh cr by FY30 at ~13% [REPORTED-T2: Motilal Oswal; Equirus]."
     },
     "competitive": {
      "name": "Competitive structure & moat",
@@ -4226,7 +4226,7 @@
      "lens": "structural",
      "score": 3,
      "from": "category",
-     "basis": "Consolidating into six or seven listed majors, but LV and MV remain crowded and price-competitive."
+     "basis": "220 kV+ remains a six-or-seven-player club with utility type-testing as the gate, but the 132 kV rung is filling fast — SPM Group commissioned a 132 kV CCV line and Diamond Power is adding a sixth CCV line for ₹25 cr — while LV and MV stay crowded and price-competitive."
     },
     "cycle": {
      "name": "Current opportunity & cycle position",
@@ -4234,7 +4234,7 @@
      "lens": "current",
      "score": 4,
      "from": "category",
-     "basis": "Capacity is being added into a rising market — Polycab's EHV line by end-CY2026, KEI Sanand Phase-II by Mar-2027 — with HV/EHV output up 10.3% in FY26."
+     "basis": "Capacity is landing into a rising market but later than planned: KEI Sanand Phase-II end-Mar-2027, Polycab EHV now FY28 (from end-CY2026), Diamond's 132 kV line Dec-2027 — so import share stays near half through FY27 while demand executes at 2.5x last year's pace. Copper's 10% fall from the September record is a working-capital tailwind and a value-growth headwind."
     },
     "valuation": {
      "name": "Valuation & market expectations",
@@ -4242,7 +4242,7 @@
      "lens": "current",
      "score": null,
      "from": null,
-     "basis": "No industry-level valuation data in the registry."
+     "basis": "No industry-level valuation data in the registry — no sourced multiple series for the cables sector as of 2026-11-17."
     },
     "value_chain": {
      "name": "Value-chain position & bottlenecks",
@@ -4250,7 +4250,7 @@
      "lens": "structural",
      "score": 3,
      "from": "category",
-     "basis": "Conductor drawing and insulation are domestic; HV/EHV XLPE and semiconductive compounds are foreign, and ~50% of EHV consumption is still imported."
+     "basis": "The chain deepened in 2026: conductors and 66–132 kV compound are domestic (Ddev), 400 kV HVAC cable is made and exported (Universal), and 550 kV-class lines are being built. Above that it is still imported — super-clean 220–400 kV compound, EHV accessories, every CV line, all submarine cable — and ~50% of EHV consumption is bought in."
     },
     "capital": {
      "name": "Capital intensity & financial quality",
@@ -4258,7 +4258,7 @@
      "lens": "structural",
      "score": 3,
      "from": "category",
-     "basis": "VCV/CCV lines are capital-heavy with 2-3 year lead times and no Indian equipment OEM — a genuine barrier that also slows capacity response."
+     "basis": "The top of the chain is capital-heavy — Polycab's EHV line is 550 kV-class under a Brugg licence and slipped to FY28, KEI has paid ₹1,876 cr into Sanand with a ₹2,000 cr project cost — but the bottom rung is cheap: a 132 kV CCV line is ₹25 cr, so the capital barrier is voltage-specific rather than uniform."
     },
     "technology": {
      "name": "Technology & innovation",
@@ -4266,7 +4266,7 @@
      "lens": "structural",
      "score": 2,
      "from": "category",
-     "basis": "550 kV is the domestic frontier and submarine cable is absent entirely — no plant and no repair ship."
+     "basis": "India makes 400 kV HVAC routinely and 550 kV at the frontier (Universal, Sterlite), but has no super-clean EHV compound above 132 kV, no submarine cable of any kind, and no HVDC cable qualification at scale — while Hanwha verified 500 kV HVAC materials and Borouge added XLPE capacity abroad in 2026."
     },
     "risk": {
      "name": "Risk & resilience",
@@ -4274,7 +4274,7 @@
      "lens": "risk",
      "score": 3,
      "from": "category",
-     "basis": "Concentrated compound supply (Borouge/Borealis, Hanwha), imported EHV competition, and copper and aluminium price volatility."
+     "basis": "Compound supply is concentrated in Borouge/Borealis and Hanwha and is being expanded abroad, not in India; EHV imports hold ~half the market; copper and aluminium swings move both inventory and reported growth; and the offshore-wind EHV cable schemes are on hold on cost."
     }
    },
    "structural": {
@@ -4291,15 +4291,17 @@
    "coverage": 85,
    "confidence": {
     "evidence": 4,
-    "primary_source_pct": 67,
+    "primary_source_pct": 74,
     "missing_critical": [
-     "valuation"
+     "valuation",
+     "EHV/HV circuit-km volume series",
+     "segment-level EHV revenue disclosure"
     ]
    },
    "value_capture": [
     {
      "node": "EHV / HV Power Cables",
-     "basis": "The node that keeps the money today: record margins on a richer EHV and export mix, high-teens ROIC at Polycab and KEI, and a 16.7% segment CAGR - though the capability rests on imported lines and compounds.",
+     "basis": "Still the node that keeps the money — Q2 FY27 W&C EBIT 14.2% at Polycab, 9.4% at R R Kabel, 11.0% in Apar's cable division — but cash conversion was cut from 4 to 3: value growth of 47–53% on mid-single-digit volumes is metal pass-through, and KEI carried a ~₹1,200 cr H1 inventory build, so earnings quality depends on where copper goes next.",
      "params": {
       "op_share": 5,
       "pricing_power": 4,
@@ -4307,16 +4309,16 @@
       "barriers": 4,
       "bottleneck": 3,
       "pool_growth": 5,
-      "cash_conversion": 4,
+      "cash_conversion": 3,
       "switching": 3
      },
-     "score": 4.3,
-     "score100": 86,
+     "score": 4.2,
+     "score100": 84,
      "coverage": 100
     },
     {
-     "node": "XLPE compound (HV/EHV grade)",
-     "basis": "Imported and concentrated, and the single input that decides whether an Indian EHV line can run at all; a qualified domestic compound would be a genuine toll.",
+     "node": "Joints, terminations & accessories",
+     "basis": "Risen from sixth to second. A ~USD 100 mn market, ~35% EHV, still largely imported with one limited-range domestic maker, and utilities qualify accessories as tightly as cable — pricing power, barriers and bottleneck were all raised a notch because the compound gap beneath it is closing while this one is not.",
      "params": {
       "op_share": 2,
       "pricing_power": 5,
@@ -4324,75 +4326,41 @@
       "barriers": 5,
       "bottleneck": 5,
       "pool_growth": 4,
-      "cash_conversion": 4,
-      "switching": 5
-     },
-     "score": 4.05,
-     "score100": 81,
-     "coverage": 100
-    },
-    {
-     "node": "Semiconductive compound",
-     "basis": "A narrower version of the same story: no Indian maker, formulated to the cable OEM's process, requalification measured in years.",
-     "params": {
-      "op_share": 1,
-      "pricing_power": 5,
-      "roic": 4,
-      "barriers": 5,
-      "bottleneck": 4,
-      "pool_growth": 4,
-      "cash_conversion": 4,
-      "switching": 5
-     },
-     "score": 3.75,
-     "score100": 75,
-     "coverage": 100
-    },
-    {
-     "node": "CCV / VCV line & equipment",
-     "basis": "The capital good that gates entry: every new EHV plant in India is an imported CCV or VCV line, so the equipment maker earns the capex cycle rather than the cable cycle.",
-     "params": {
-      "op_share": 1,
-      "pricing_power": 5,
-      "roic": 4,
-      "barriers": 5,
-      "bottleneck": 4,
-      "pool_growth": 4,
       "cash_conversion": 3,
-      "switching": 5
+      "switching": 4
      },
-     "score": 3.65,
-     "score100": 73,
+     "score": 3.9,
+     "score100": 78,
      "coverage": 100
     },
     {
-     "node": "Joints, terminations & accessories",
-     "basis": "Accessories carry more margin per unit than the cable and are largely imported at EHV: a small pool with disproportionate pricing power.",
+     "node": "XLPE compound (HV/EHV grade)",
+     "basis": "Fallen from second to third. The 'no Indian maker' premise is no longer true below 220 kV: Ddev Plastiks supplies 66–132 kV including WTR grades and Diamond Power is building an 18,000 t super-clean line for 66–400 kV. Pricing power, barriers and switching were each cut a point; the 220–400 kV merchant grade keeps the bottleneck at 5.",
      "params": {
       "op_share": 2,
       "pricing_power": 4,
       "roic": 4,
       "barriers": 4,
-      "bottleneck": 4,
+      "bottleneck": 5,
       "pool_growth": 4,
-      "cash_conversion": 3,
+      "cash_conversion": 4,
       "switching": 4
      },
-     "score": 3.5,
-     "score100": 70,
+     "score": 3.7,
+     "score100": 74,
      "coverage": 100
     },
     {
-     "node": "Submarine cable & lay vessels",
-     "basis": "No Indian plant and no Indian lay vessel - the pool exists only as an import, and the barrier is a ship as much as a factory.",
+     "node": "CCV / VCV line & equipment",
+     "basis": "Still the gate on every new EHV plant — Polycab's line slipped to FY28 on delivery timing, which is exactly the equipment maker's pricing power — but barriers were cut from 5 to 4 because a 132 kV CCV line costs only ₹25 cr (Diamond Power), so the moat holds at 220 kV and above rather than across the segment.",
      "params": {
       "op_share": 1,
       "pricing_power": 5,
-      "roic": 3,
-      "barriers": 5,
+      "roic": 4,
+      "barriers": 4,
       "bottleneck": 4,
-      "pool_growth": 5,
-      "cash_conversion": 2,
+      "pool_growth": 4,
+      "cash_conversion": 3,
       "switching": 5
      },
      "score": 3.5,
@@ -4400,8 +4368,42 @@
      "coverage": 100
     },
     {
+     "node": "Semiconductive compound",
+     "basis": "Fallen from third to fifth, on the same evidence as the insulation compound: Ddev makes semiconductive compounds at volume domestically, but not the super-smooth EHV screen grade — so the pool is real but narrower than the page previously implied.",
+     "params": {
+      "op_share": 1,
+      "pricing_power": 4,
+      "roic": 4,
+      "barriers": 4,
+      "bottleneck": 4,
+      "pool_growth": 4,
+      "cash_conversion": 4,
+      "switching": 4
+     },
+     "score": 3.4,
+     "score100": 68,
+     "coverage": 100
+    },
+    {
+     "node": "Submarine cable & lay vessels",
+     "basis": "Fallen from fourth to sixth, the largest move in this run. Barriers stay maximal (no plant, no vessel, no repair ship) but pool growth was cut from 5 to 3 and bottleneck from 4 to 3: the TN 500 MW and Gujarat 1 GW offshore-wind EHV cable schemes were put on hold on cost in 2026, so the demand that justified the pool has slipped right.",
+     "params": {
+      "op_share": 1,
+      "pricing_power": 5,
+      "roic": 3,
+      "barriers": 5,
+      "bottleneck": 3,
+      "pool_growth": 3,
+      "cash_conversion": 2,
+      "switching": 5
+     },
+     "score": 3.2,
+     "score100": 64,
+     "coverage": 100
+    },
+    {
      "node": "Installation / cable-laying EPC",
-     "basis": "Domestic and competitive, L1-tendered, with route and right-of-way risk: it carries the schedule but not the margin.",
+     "basis": "Unchanged. Domestic, L1-tendered, with route and right-of-way risk: it carries the schedule but not the margin, and T&D lead times of 18–24 months sit in the EPC book, not the EPC margin.",
      "params": {
       "op_share": 2,
       "pricing_power": 2,
@@ -4418,7 +4420,7 @@
     },
     {
      "node": "Conductor system",
-     "basis": "Copper and aluminium pass through at metal-indexed prices; Apar's scale wins volume, not pricing power.",
+     "basis": "Unchanged. Copper and aluminium pass through at LME-indexed prices; Apar's scale wins volume, not pricing power, and its export book fell 45% YoY in Q2 FY27 as US demand weakened.",
      "params": {
       "op_share": 2,
       "pricing_power": 2,
@@ -4435,7 +4437,7 @@
     }
    ],
    "provisional": false,
-   "notes": "Scored against 'Industry-Level Investment Parameters & Scoring Architecture'. Opportunity uses the same Ken Research HV series already carried in this page's Market & growth digest block. Valuation left UNAVAILABLE. Delta pass 2026-11-13: HV cable size and CAGR re-confirmed (Ken Research via Primecab); last-year momentum checked against the IEEMA FY26 growth index.",
+   "notes": "Scored against 'Industry-Level Investment Parameters & Scoring Architecture'. Full re-analysis 2026-11-17: Q2 FY27 filings and call transcripts (Polycab, KEI, R R Kabel, Apar, Universal, Diamond Power), CEA FY27 transmission statistics, SEBI Sterlite addendum, BIS Cables QCO 2020 product list, DGTR copper-data-cable findings, LME settlements, and OEM interviews (Troester, Maillefer). Overall score unchanged at 70.6 because two offsetting moves cancelled: cycle evidence strengthened on execution while the EHV timing slipped a year. Valuation left UNAVAILABLE — no imputation. Two value-capture nodes re-ranked materially (accessories up, submarine cable down).",
    "overall_rank": 5,
    "risk_adjusted_rank": 7,
    "structural_score": 68.6,

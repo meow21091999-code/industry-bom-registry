@@ -1,7 +1,7 @@
 {
  "registry": "Industry BOM Registry",
  "description": "Machine-readable node index. For every entry, the node names it contains plus the owning entry slug. Used for DEDUP (industry+scope already analysed) and LINEAGE (auto-linking a new industry to a parent when its name matches a node name). Update on every publish.",
- "generated": "2026-11-16",
+ "generated": "2026-11-17",
  "last_delta_pass": "2026-11-16",
  "delta_note": "WEEKLY DELTA PASS 2026-11-16 (refresh, not re-analysis). Ten entries re-validated against live sources. MOVED (regime, positive): China extended its suspension of the October-2025 export-control package — MOFCOM/GACC Announcement 58 of 2026 (9-Nov-2026) keeps Announcements 55-58, 61 and 62 of 2025 suspended from 11-Nov-2026 to 10-Jan-2027, one day before the old text lapsed. The 10-Nov-2026 cliff carried across Rare-Earth Magnets, Electrical & Electronic Equipment, Li-ion Cell Manufacturing and Semiconductor Equipment & Materials did not fall; corrections written on all four pages. Risk scores held (Rare-Earth 1, EEE 2, Li-ion 2) because a two-month deferral leaves the structural exposure and the April-2025 licensing on seven medium/heavy rare earths — never suspended — in place. STILL OPEN, NOW NEAREST: the separate US-specific gallium/germanium/antimony suspension (Announcement 2025 No. 72) still lapses 27-Nov-2026 with no extension published as of 12-Nov-2026 — carried unchanged on Semiconductor Equipment, Defence Electro-Optics and the three optical-fibre entries. RESOLVED: Power Transformers — Hitachi Energy India Q2 FY27 printed 12-Nov-2026 (orders Rs 4,120.8 cr +85.9% YoY, revenue Rs 2,996.5 cr +63.5%, record backlog Rs 33,335.4 cr) and POWERGRID issued the Barmer-South Kalamb HVDC Letter of Award on 3-Nov-2026 to GE Vernova T&D India; both were forward items. Smart Meters — Genus Power Q2 FY27 printed 14-Nov-2026 (revenue Rs 1,132.6 cr, -1.4% YoY; consolidated PAT Rs 158.6 cr, +10.9% on associate income; executable order book Rs 22,634 cr at 30-Sep-2026 against Rs 24,020 cr at 30-Jun-2026). Battery Energy Storage and Li-ion Cell — the 10 GWh grid-scale ACC-PLI tender closed 10-Nov-2026 with 22 bids and technical bids opened 11-Nov-2026 (PIB, 12-Nov-2026). MOVED (negative): Smart Meters — KSEB extended Kerala Phase II bid validity three months to 2-Feb-2027 with no work order and no installation before March 2027, and the Tamil Nadu packages now open bids 26-Nov-2026 to 17-Feb-2027 against an unchanged March-2028 RDSS deadline. MOVED: Data Centre Liquid Cooling — the Chemours-Navin Fluorine two-phase immersion fluid plant at Surat has slipped again, from Jul-Aug 2026 to Q3 FY27 (Navin Fluorine Q2 FY27 call 30-Oct-2026; investor presentation 13-Nov-2026), with Chemours purchase orders already in hand. Semiconductors — MeitY issued the Semicon 2.0 Pillars 2-4 guidelines on 16-Sep-2026 and opened the portal with applications live on 6-Nov-2026 (PIB), and the Dholera Dec-2026 trial-production date was corrected to the government's stated 2028 commissioning milestone. Display Manufacturing — ECMS approvals moved 106 to 118 on 12 further approvals worth Rs 7,503 cr (6-Nov-2026), and the Dixon-HKC mobile-display line slipped to early FY28 while the notebook/automotive lines hold Q4FY27. Agrochemical CDMO/CSM — the DGFT minimum import price on glufosinate was not left to lapse: Notification 43/2026 (12-Oct-2026) extended it to 12-Apr-2027, while the DGTR-recommended duty rise to US$5,004/t still awaits Finance Ministry notification. UNCHANGED on re-validation: DGTR CRGO anti-dumping finding (no provisional or final duty notified as of 11-Nov-2026); Kerala and Tamil Nadu remain unawarded; REPM beneficiary award pending after the 9-Nov-2026 financial bids; BHAVYA Rasayan state proposals due 30-Nov-2026; ECMS 118 approvals; the 27-Nov-2026 Ga/Ge/Sb date. SCORES CHANGED: one category — Smart Meters cycle 4 -> 3 (two of three live awards slipped a quarter while the March-2028 deadline did not move; overall 62.4 -> 58.8), and one value-capture parameter — Meter OEM pool_growth 5 -> 4 on the Genus order-book contraction. Every other entry held its score with a correction note written on the page. as_of refreshed to 2026-11-16 on the eight scored pages whose score block was touched; Agrochemical CDMO/CSM and Data Centre Liquid Cooling carry the correction on the page with their score blocks left untouched.",
  "entries": [
@@ -1222,7 +1222,7 @@
    "industry": "EHV / HV Power Cables",
    "scope": "INDIA",
    "path": "industries/ehv-hv-cables-india.html",
-   "analysis_date": "2026-10-10",
+   "analysis_date": "2026-11-17",
    "universe": "NSE/BSE",
    "sector": "Power & Electrical Infrastructure",
    "derived_from": {
@@ -1289,7 +1289,7 @@
      ],
      "priority": "high",
      "bottleneck": true,
-     "in_universe_coverage": false
+     "in_universe_coverage": true
     },
     {
      "id": "xlpe",
@@ -1305,7 +1305,7 @@
      ],
      "priority": "high",
      "bottleneck": true,
-     "in_universe_coverage": false
+     "in_universe_coverage": true
     },
     {
      "id": "semicon",
@@ -1319,7 +1319,7 @@
      ],
      "priority": "high",
      "bottleneck": true,
-     "in_universe_coverage": false
+     "in_universe_coverage": true
     },
     {
      "id": "screen",
@@ -1415,7 +1415,7 @@
      ],
      "priority": "medium",
      "bottleneck": false,
-     "in_universe_coverage": false
+     "in_universe_coverage": true
     },
     {
      "id": "install",
