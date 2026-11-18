@@ -1,7 +1,7 @@
 {
  "registry": "Industry BOM Registry",
  "description": "Industry ranking per \"Industry-Level Investment Parameters & Scoring Architecture\": hierarchical category scores (1–5), overall 0–100, evidence coverage reported, three lenses kept separate. DERIVED — regenerate with node tools/build-industry-ranking.mjs.",
- "generated": "2026-11-17",
+ "generated": "2026-11-18",
  "framework": {
   "category_score": "Σ(parameter weight × parameter score) ÷ Σ(weights of supported parameters)",
   "overall_score": "Σ(category weight × category score ÷ 5) × 100, renormalised over supported categories",
@@ -8234,7 +8234,7 @@
    "title": "India Missiles",
    "group": "Defence & Aerospace",
    "scored": true,
-   "as_of": "2026-10-30",
+   "as_of": "2026-11-18",
    "categories": {
     "economics": {
      "name": "Industry economics & value creation",
@@ -8242,7 +8242,7 @@
      "lens": "structural",
      "score": 3,
      "from": "category",
-     "basis": "Integrator economics are thin and volatile: BDL’s FY26 EBITDA margin fell to 9.1%, its lowest on record, as revenue dropped 27% on a higher share of bought-out components, while electronics-side BEL earned a 30% EBITDA margin in FY26 — value sits in electronics and energetics, not in airframe integration."
+     "basis": "Split by layer. Integrator economics deteriorated: BDL Q2 FY27 EBITDA margin 6.1% (from 16.3%), PAT -15% on revenue +45.1%, guidance 10-12% for FY27. Upstream held: Premier 11.9%, Solar 29.02%, Astra Microwave 33.8%, MIDHANI 16.8% EBITDA in the same quarter."
     },
     "opportunity": {
      "name": "Market opportunity & structural growth",
@@ -8250,7 +8250,7 @@
      "lens": "structural",
      "score": 4,
      "from": "category",
-     "basis": "The missile pool grows 39.9% a year on the narrow procurement estimate (US$468.6 mn in 2025 to US$2,512.7 mn in 2030) or 6.7% on the wider precision-guided-munitions estimate (US$2,350.6 mn in 2022 to US$3,958.6 mn in 2030); either way it sits inside FY26 defence production of Rs 1.78 lakh crore growing 15.6%, with BDL’s order book at 10.6x revenue giving unusually visible forward demand."
+     "basis": "FY27 capital acquisition Rs 1.85 lakh cr (+24% YoY), other-equipment head Rs 82,218 cr (+62%), 75% domestic reservation. Programme pipeline: QRSAM ~1,000 missiles (~Rs 30,000 cr, unsigned), Akash-NG ~1,000 under evaluation, Astra Mk-2 ToT. Horizons: 5-year value CAGR 39.9% nominal (USD 468.6 mn 2025 to 2,512.7 mn 2030) [REPORTED-T2: MarketsandMarkets]; 3-year forward 66.5% [CALCULATED: (2,195.5/475.5)^(1/3)-1]; last year +1.5% [CALCULATED]. Volume CAGR [UNAVAILABLE]."
     },
     "competitive": {
      "name": "Competitive structure & moat",
@@ -8258,7 +8258,7 @@
      "lens": "structural",
      "score": 3,
      "from": "category",
-     "basis": "Design IP stays with DRDO and integration is a BDL/BEL duopoly, with private entry now opening through the Aug-2026 ToT; barriers are high and durable, but the single buyer (MoD) sets price and timing, so incumbency protects volume rather than margin."
+     "basis": "Moving from nomination to contest. BDL's de facto monopoly on DRDO conventional missiles ends with the 25-Aug-2026 ToT; five private groups (ICOMM, Adani, Bharat Forge, Tata, Mahindra) are named for Astra Mk-2, with Pralay next. Larger market, weaker incumbent pricing power."
     },
     "cycle": {
      "name": "Current opportunity & cycle position",
@@ -8266,7 +8266,7 @@
      "lens": "current",
      "score": 4,
      "from": "category",
-     "basis": "Demand is at a record and inflecting: FY26 defence production +15.6%, exports +62.7% to Rs 38,424 crore, BDL’s order book at Rs 26,176 crore, and FY27 guided back to ~Rs 4,500 crore revenue as delayed Akash and Astra deliveries clear."
+     "basis": "In up-cycle: FY27 capital outlay +17.62% to Rs 2.19 lakh cr, missiles-and-munitions head +62%, DAC cleared Rs 2.12 lakh cr of AoNs in one sitting on 26-Oct-2026 (82% Indian), exports Rs 38,424 cr in FY26 (+62.7%). Execution, not demand, binds."
     },
     "valuation": {
      "name": "Valuation & market expectations",
@@ -8274,7 +8274,7 @@
      "lens": "current",
      "score": null,
      "from": null,
-     "basis": "No industry-level valuation series is carried in the registry; company multiples are reported (BDL at 70.5x FY27E EPS on Motilal Oswal’s estimates) but one company cannot define an industry multiple."
+     "basis": "No industry-level valuation data in the registry."
     },
     "value_chain": {
      "name": "Value-chain position & bottlenecks",
@@ -8282,15 +8282,15 @@
      "lens": "structural",
      "score": 3,
      "from": "category",
-     "basis": "Around 65% of defence equipment is now produced domestically and ~91% of ammunition variants are indigenised, but seekers (Astra Mk-1), radars and specialty metals (nickel, cobalt, molybdenum, tungsten, ~Rs 8,000 crore imported) remain the imported nodes, and solid propellant is a near-duopoly."
+     "basis": "Energetics, maraging steel and RF electronics are domestic but capacity-tight; input special metals (tungsten, cobalt, nickel, molybdenum), seeker dies and MMICs, and ammonium perchlorate are imported. DRDO retains design certification and quality assurance."
     },
     "capital": {
      "name": "Capital intensity & financial quality",
      "weight": 0.05,
      "lens": "structural",
-     "score": 2,
+     "score": 3,
      "from": "category",
-     "basis": "Capital-heavy and slow: BDL is committing Rs 5 bn to a 160-acre naval systems plant plus the Ibrahimpatnam and Jhansi facilities, on receivables that took 109 days even after a 38% improvement; DPSU advances soften it, private entrants carry it alone."
+     "basis": "Integration is comparatively capital-light now that design comes by licence, lowering entry cost for ToT licensees; energetics plants, proof facilities and hazardous-material licensing remain heavy and slow (Premier RDX/HMX 100 to 600 t/yr, ~Rs 32 cr capex, first output Dec-2026)."
     },
     "technology": {
      "name": "Technology & innovation",
@@ -8298,7 +8298,7 @@
      "lens": "structural",
      "score": 3,
      "from": "category",
-     "basis": "DRDO design capability is real and deep, but the GaN AESA seeker is still in development, scramjet/hypersonic propulsion is aspirational, and much of the precision manufacturing equipment is bought in."
+     "basis": "Design IP is DRDO's and transfers as a licence rather than as capability; GaN AESA seekers are still in development, scramjet propulsion is development-stage, and the BrahMos programme runs ~70% indigenous content against an 85% target."
     },
     "risk": {
      "name": "Risk & resilience",
@@ -8306,11 +8306,11 @@
      "lens": "risk",
      "score": 2,
      "from": "category",
-     "basis": "A single buyer sets price and schedule, the seeker and radar supply chain has already proven a delivery single point of failure, and the licensing and export-control regime constrains both entry and exit."
+     "basis": "Single-source integration (BDL), imported special metals and seeker dies, near-duopoly in energetics, and a QRSAM contract still unsigned seven years after trials closed (Dec-2019). Offsetting: Junput operational from Oct-2026 and the ToT opening widening the integrator base."
     }
    },
    "structural": {
-    "score": 62.9,
+    "score": 64.3,
     "coverage": 100
    },
    "current": {
@@ -8318,178 +8318,180 @@
     "coverage": 50
    },
    "risk": 2,
-   "risk_adjusted": 25.2,
-   "overall": 65.9,
+   "risk_adjusted": 25.7,
+   "overall": 67.1,
    "coverage": 85,
    "confidence": {
-    "evidence": 3,
-    "primary_source_pct": 42,
+    "evidence": 4,
+    "primary_source_pct": 64,
     "missing_critical": [
-     "valuation"
+     "valuation",
+     "missile-specific volume series",
+     "segment-level margin disclosure by node"
     ]
    },
    "value_capture": [
     {
      "node": "Propellants & Energetic Materials",
-     "basis": "The best economics in the chain: Solar Industries ran a 26.7% EBITDA margin and 27.4% RoCE in FY26 with defence revenue up 94% to ₹2,634 cr and a ₹21,300 cr order book. Energetics are licence-gated, chemically hazardous and cannot be sourced on the spot market, which is precisely why a private maker earns a margin the prime does not.",
+     "basis": "The tightest pool in the chain: a near-duopoly, an order book of Rs 1,642 cr at 4.23x FY26 revenue (96% defence), and an RDX/HMX line going from 100 to 600 t/yr against fluid USD 60-70/kg pricing. Up from 85 to 88.",
      "params": {
-      "op_share": 3,
-      "pricing_power": 4,
-      "roic": 5,
-      "barriers": 5,
-      "bottleneck": 5,
-      "pool_growth": 5,
-      "cash_conversion": 3,
-      "switching": 5
-     },
-     "score": 4.25,
-     "score100": 85,
-     "coverage": 100
-    },
-    {
-     "node": "Seekers (RF / IIR) & RF Front-End",
-     "basis": "The binding technology constraint on Indian missile programmes and historically imported; BDL delivered the first indigenously fabricated RF seeker for Akash-NG from its own Seeker Facility Centre, and DRDO has opened RF-seeker ToT. A small pool with the highest pricing power in the chain because the alternative is an export-control queue.",
-     "params": {
-      "op_share": 2,
+      "op_share": 4,
       "pricing_power": 5,
       "roic": 4,
       "barriers": 5,
       "bottleneck": 5,
       "pool_growth": 5,
       "cash_conversion": 3,
-      "switching": 5
+      "switching": 4
      },
-     "score": 4.05,
-     "score100": 81,
+     "score": 4.4,
+     "score100": 88,
      "coverage": 100
     },
     {
-     "node": "Missile Systems (Prime Integration)",
-     "basis": "The largest pool and the highest barrier - BDL is the designated prime production agency with a ₹26,176 cr order book (10.6x FY26 revenue) and nil debt - but the economics are set by a single buyer on fixed-contract terms. FY26 revenue fell 27% to ₹2,442 cr and EBITDA margin hit a decade low of 9.1%; gross current assets above 651 days make this the worst cash conversion in the chain, which is why the score sits below the barriers it carries.",
+     "node": "Seekers (RF / IIR) & RF Front-End",
+     "basis": "Highest value density per kilogram and the narrowest qualification gate; Astra Microwave ran 33.8% EBITDA on a Rs 4,708 cr consolidated book in Q2 FY27. Up from 81 to 86.",
      "params": {
-      "op_share": 5,
-      "pricing_power": 3,
-      "roic": 3,
-      "barriers": 5,
-      "bottleneck": 4,
-      "pool_growth": 5,
-      "cash_conversion": 1,
-      "switching": 5
-     },
-     "score": 3.9,
-     "score100": 78,
-     "coverage": 100
-    },
-    {
-     "node": "Guidance, Navigation & Avionics",
-     "basis": "Partly imported with RLG/FOG/MEMS being indigenised; design authority sits with DRDO and the primes, so a supplier earns a qualified-part margin rather than system margin, but requalification is slow enough to protect the position once held.",
-     "params": {
-      "op_share": 2,
-      "pricing_power": 4,
+      "op_share": 4,
+      "pricing_power": 5,
       "roic": 4,
-      "barriers": 4,
-      "bottleneck": 4,
+      "barriers": 5,
+      "bottleneck": 5,
       "pool_growth": 4,
       "cash_conversion": 3,
       "switching": 4
      },
-     "score": 3.5,
-     "score100": 70,
+     "score": 4.3,
+     "score100": 86,
      "coverage": 100
     },
     {
      "node": "Warheads, Explosives & Fuzing",
-     "basis": "Domestic with a few specialty energetic inputs imported; licensed, safety-gated and adjacent to the propellant pool, which is where the returns concentrate. Volume follows missile orders with a lag, so the pool grows later than the prime's order book.",
+     "basis": "Solar's warhead and high-energy-material line sits inside a 29% EBITDA business, and RDX/HMX supply is short against export demand. Up from 70 to 77.",
      "params": {
-      "op_share": 2,
+      "op_share": 4,
       "pricing_power": 4,
       "roic": 4,
       "barriers": 4,
       "bottleneck": 4,
       "pool_growth": 4,
       "cash_conversion": 3,
-      "switching": 4
+      "switching": 3
+     },
+     "score": 3.85,
+     "score100": 77,
+     "coverage": 100
+    },
+    {
+     "node": "Guidance, Navigation & Avionics",
+     "basis": "Electronics content per missile keeps rising and the suppliers are listed; Data Patterns' H1 inflows were nearly 3x year-ago. Up from 70 to 75.",
+     "params": {
+      "op_share": 4,
+      "pricing_power": 4,
+      "roic": 4,
+      "barriers": 4,
+      "bottleneck": 3,
+      "pool_growth": 4,
+      "cash_conversion": 3,
+      "switching": 3
+     },
+     "score": 3.75,
+     "score100": 75,
+     "coverage": 100
+    },
+    {
+     "node": "Propulsion & Rocket Motors",
+     "basis": "Demand is not in question (Solar's Pinaka family heading to ~Rs 9,000 cr) but motor assembly is more contestable than energetics and consumes working capital. Up from 66 to 70.",
+     "params": {
+      "op_share": 3,
+      "pricing_power": 4,
+      "roic": 3,
+      "barriers": 4,
+      "bottleneck": 4,
+      "pool_growth": 5,
+      "cash_conversion": 2,
+      "switching": 3
      },
      "score": 3.5,
      "score100": 70,
      "coverage": 100
     },
     {
-     "node": "Propulsion & Rocket Motors",
-     "basis": "Solid motors are domestic and increasingly contested between BDL, Solar Industries and private motor makers, so the barrier is qualification rather than capability; some specialty inputs remain imported. Case-bonding and grain design are the defensible part of the node.",
+     "node": "Motor Casings & Special Materials",
+     "basis": "MIDHANI is a near-monopoly on maraging steel with a Rs 2,164 cr book and PAT up 115%, but it is a materials pass-through with slow cash conversion and imported input metal. Up from 56 to 67.",
      "params": {
-      "op_share": 3,
-      "pricing_power": 3,
+      "op_share": 2,
+      "pricing_power": 4,
       "roic": 3,
-      "barriers": 4,
+      "barriers": 5,
+      "bottleneck": 4,
+      "pool_growth": 4,
+      "cash_conversion": 2,
+      "switching": 3
+     },
+     "score": 3.35,
+     "score100": 67,
+     "coverage": 100
+    },
+    {
+     "node": "Missile Systems (Prime Integration)",
+     "basis": "THE MOVER, DOWN FROM 78 TO 65. Largest revenue pool (Rs 26,176 cr book) and the weakest margin: 6.1% EBITDA in Q2 FY27, guidance 10-12%, and the ToT opening converts a nomination monopoly into a contested business. Revenue is not profit.",
+     "params": {
+      "op_share": 5,
+      "pricing_power": 2,
+      "roic": 2,
+      "barriers": 3,
       "bottleneck": 4,
       "pool_growth": 4,
       "cash_conversion": 2,
       "switching": 4
      },
-     "score": 3.3,
-     "score100": 66,
-     "coverage": 100
-    },
-    {
-     "node": "Motor Casings & Special Materials",
-     "basis": "Imported metals and alloys of roughly ₹8,000 cr across the programme; a fabrication node with real tonnage but commodity-like pass-through, and the most exposed to input-price and import-licence swings.",
-     "params": {
-      "op_share": 2,
-      "pricing_power": 3,
-      "roic": 3,
-      "barriers": 3,
-      "bottleneck": 3,
-      "pool_growth": 4,
-      "cash_conversion": 2,
-      "switching": 3
-     },
-     "score": 2.8,
-     "score100": 56,
+     "score": 3.25,
+     "score100": 65,
      "coverage": 100
     },
     {
      "node": "Test & Evaluation / Range Infrastructure",
-     "basis": "State-owned and capacity-constrained: ranges and instrumentation are a public good that gates every programme's schedule, but they generate no commercial margin - a bottleneck node that is a cost centre, not a profit pool.",
+     "basis": "A genuine bottleneck that is easing (Junput operational Oct-2026) but DRDO-owned, so it gates everyone else's schedule without creating a listed revenue pool. Up from 50 to 58.",
      "params": {
       "op_share": 1,
-      "pricing_power": 2,
-      "roic": 1,
-      "barriers": 4,
+      "pricing_power": 3,
+      "roic": 2,
+      "barriers": 5,
       "bottleneck": 4,
-      "pool_growth": 4,
-      "cash_conversion": 2,
-      "switching": 5
+      "pool_growth": 3,
+      "cash_conversion": 3,
+      "switching": 4
      },
-     "score": 2.5,
-     "score100": 50,
+     "score": 2.9,
+     "score100": 58,
      "coverage": 100
     },
     {
      "node": "Launchers, Canisters & Fire Control",
-     "basis": "Mostly domestic and structurally competitive - fabrication and hydraulics work that several private firms can bid, with no technology gate and no scarcity value.",
+     "basis": "Domestic, structurally simple and tender-priced; L&T's 8x8 launcher role is real but small against its book. Up from 40 to 45.",
      "params": {
       "op_share": 2,
-      "pricing_power": 2,
+      "pricing_power": 3,
       "roic": 2,
       "barriers": 2,
-      "bottleneck": 1,
+      "bottleneck": 2,
       "pool_growth": 3,
       "cash_conversion": 2,
       "switching": 2
      },
-     "score": 2,
-     "score100": 40,
+     "score": 2.25,
+     "score100": 45,
      "coverage": 100
     }
    ],
    "provisional": false,
-   "notes": "Opportunity uses the same series as the Market & growth digest block (MarketsandMarkets India missile market US$468.6 mn 2025 to US$2,512.7 mn 2030 at 39.9%, and Grand View India PGM US$2,350.6 mn 2022 to US$3,958.6 mn 2030 at 6.7%, both inside FY26 defence production of Rs 1.78 lakh crore). Valuation left UNAVAILABLE — the registry carries no industry valuation series. Value capture (added 2026-11-01) scores 9 nodes taken verbatim from this page's own BOM tree and value-chain ladder, on the separate Registry Review §4 weighting (op_share 20%, pricing_power 15%, roic 15%, barriers 15%, bottleneck 10%, pool_growth 10%, cash_conversion 10%, switching 5%). It answers 'which node keeps the money' and is not blended into the industry score above.",
-   "overall_rank": 25,
-   "risk_adjusted_rank": 55,
-   "structural_score": 62.9,
+   "notes": "Scored against 'Industry-Level Investment Parameters & Scoring Architecture'. Delta pass 18-Nov-2026 (full re-analysis, prev. 2026-10-10): economics held at 3 on better evidence (BDL margin 6.1% vs upstream 12-34%); opportunity held at 4 (budget pivot confirmed, QRSAM still unsigned); competitive held at 3 (ToT shifts the structure); capital moved 2 to 3 because licensing design lowers integration entry cost; cycle held at 4; risk held at 2. Overall 65.9 to 67.1, coverage 85%. Value capture re-scored: Missile Systems fell from 78 to 65 (3rd to 7th) on the Q2 FY27 margin print, while Propellants (85 to 88), Seekers (81 to 86), Warheads (70 to 77) and Casings (56 to 67) rose. Valuation left UNAVAILABLE. Market & growth uses the MarketsandMarkets India missile series only; the same house's rocket-and-missile series (8.1% to 2029) is a different scope and is never summed with it.",
+   "overall_rank": 24,
+   "risk_adjusted_rank": 52,
+   "structural_score": 64.3,
    "current_score": 80,
-   "structural_score_rank": 36,
+   "structural_score_rank": 31,
    "current_score_rank": 17
   },
   {
@@ -9474,10 +9476,10 @@
    "provisional": false,
    "notes": "Scored 2026-11-10 in the content-backfill pass. The market figure and growth rate behind the opportunity score are the same ones carried in the digest's Market & growth block; company results are used as evidence of industry economics, never summed into an industry size. Delta pass 15-Nov-2026: added 5-year (20.1%, 2024-29) and 3-year (20.1%, 2024-27) horizons on the Maximize scope, and the 6Wresearch 2031 endpoint; scores unchanged.",
    "overall_rank": 7,
-   "risk_adjusted_rank": 52,
+   "risk_adjusted_rank": 53,
    "structural_score": 64.3,
    "current_score": 100,
-   "structural_score_rank": 31,
+   "structural_score_rank": 32,
    "current_score_rank": 1
   },
   {
@@ -11776,7 +11778,7 @@
    "risk_adjusted_rank": 17,
    "structural_score": 64.3,
    "current_score": 60,
-   "structural_score_rank": 32,
+   "structural_score_rank": 33,
    "current_score_rank": 48
   },
   {
@@ -12944,11 +12946,11 @@
    ],
    "provisional": false,
    "notes": "Opportunity uses the same series as the Market & growth digest block (FY27 BE ₹2.93 lakh cr, +10.5% on FY26 RE). Valuation left UNAVAILABLE. Freight volume growth (1,670 to 1,765 MT) is treated as the demand leg of opportunity, not as a separate growth claim. Value capture scored from this page's own 14-node tree and ladder.",
-   "overall_rank": 24,
+   "overall_rank": 25,
    "risk_adjusted_rank": 18,
    "structural_score": 64.3,
    "current_score": 80,
-   "structural_score_rank": 33,
+   "structural_score_rank": 34,
    "current_score_rank": 22
   },
   {
@@ -17098,10 +17100,10 @@
    "provisional": false,
    "notes": "Opportunity uses the same series as the Market & growth digest block (CRISIL demand of 60-65 GW FY27; Commerce/TradeStat imported-cell value US$3.06 bn FY26 with a 28.6% two-year CAGR). Valuation left UNAVAILABLE — the registry carries no industry valuation data. Value capture (added 2026-11-02) scores 7 nodes taken verbatim from this page's own BOM tree and value-chain ladder, on the separate Registry Review §4 weighting (op_share 20%, pricing_power 15%, roic 15%, barriers 15%, bottleneck 10%, pool_growth 10%, cash_conversion 10%, switching 5%). It answers 'which node keeps the money' and is not blended into the industry score above.",
    "overall_rank": 50,
-   "risk_adjusted_rank": 54,
+   "risk_adjusted_rank": 55,
    "structural_score": 64.3,
    "current_score": 40,
-   "structural_score_rank": 35,
+   "structural_score_rank": 36,
    "current_score_rank": 83
   },
   {
@@ -19042,10 +19044,10 @@
    "provisional": false,
    "notes": "Opportunity uses the same series as the Market &amp; growth digest block (0.86 mn towers FY26 to 1.04&ndash;1.09 mn FY31 at 4&ndash;5% CAGR, REPORTED-T2, with the CALCULATED 3.9&ndash;4.9% shown alongside). Valuation is scored from one listed proxy&rsquo;s EV/EBITDA, labelled [REPORTED-T3], not from an industry series. Value capture (added 2026-11-02) scores 8 nodes taken verbatim from this page's own BOM tree and value-chain ladder, on the separate Registry Review §4 weighting (op_share 20%, pricing_power 15%, roic 15%, barriers 15%, bottleneck 10%, pool_growth 10%, cash_conversion 10%, switching 5%). It answers 'which node keeps the money' and is not blended into the industry score above.",
    "overall_rank": 41,
-   "risk_adjusted_rank": 53,
+   "risk_adjusted_rank": 54,
    "structural_score": 64.3,
    "current_score": 60,
-   "structural_score_rank": 34,
+   "structural_score_rank": 35,
    "current_score_rank": 56
   },
   {
